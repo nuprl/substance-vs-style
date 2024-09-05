@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "studenteval_nlp"
+version = "1.0.0"
+description = "NLP analysis of StudentEval prompts."
+authors = ["Francesca Lucchetti <lucchetti.f@northeastern.edu>"]
+license = "Other"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+datasets = "^2.19.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -5,7 +5,6 @@ import pandas as pd
 from functools import partial
 """
 Eventually add filters based on headers
-slider for selecting problem id, code and arrow
 """
 HEADERS = ["__index_level_0__", "problem", "username", "entrypoint", "tests_passed", "total_tests"]
 DATATYPES = ["number", "str", "str", "str", "number", "number"]
@@ -67,22 +66,17 @@ def main(args):
             interactive=False,
         )
         
-        # display submitted text for problem id
         prompt = gr.Code("__prompt__", language="python", label="Prompt")            
 
-        # display prompt for problem id
         submitted_text = gr.Textbox("__submitted_text__", type="text", label="Submitted Text")
                 
-        # display completion for problem id
         completion = gr.Code("__completion__", language="python", label="Completion")
                 
         with gr.Row():
             assertions = gr.Code("__assertions__", language="python", label="Assertions")
             prints = gr.Code("__prints__", language="python", label="Prints")
         
-        # on slider change, update all data
         components = [slider, header_data, success_data, prompt, submitted_text, completion, assertions, prints]
-        # This needs to be called at some point prior to the first call to callback.flag()
  
         slider.input(fn=partial(update_components, ds), inputs=components, outputs=components)
         

@@ -70,7 +70,7 @@ def main(args):
 
     with gr.Blocks(theme="gradio/monochrome") as demo:
         # slider for selecting problem id
-        slider = gr.Slider(0, len(ds), step=1, label="Problem ID (click and arrow keys to navigate):")
+        slider = gr.Slider(0, len(ds) - 1, step=1, label="Problem ID (click and arrow keys to navigate):")
         # display headers in dataframe for problem id
         header_data = gr.Dataframe(
             headers=HEADERS,

@@ -101,8 +101,8 @@ def main(args):
         
         with gr.Column():
             with gr.Row():
-                code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
                 code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
+                code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
         
         gr.Markdown("**Logging and Filtering**\n")
         with gr.Column():

@@ -89,7 +89,12 @@ def run_problem(ex):
         if exit_code == 0:
             tests_passed += 1
     assert tests_passed <= len(tests)
-    return {**ex, "is_success": tests_passed == len(tests), "tests_passed": tests_passed}
+    is_success = bool(tests_passed == len(tests))
+    return {**ex, "is_success": is_success, "tests_passed": tests_passed,
+            "is_first_failure": ex["first_attempt"] and not is_success, 
+            "is_first_success": ex["first_attempt"] and is_success, 
+            "is_last_failure": ex["last_attempt"] and not is_success,
+            "is_last_success": ex["last_attempt"] and is_success,}
 
 def main(args):
     ds = datasets.load_from_disk(args.dataset)

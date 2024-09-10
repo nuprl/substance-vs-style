@@ -69,17 +69,18 @@ def update_components(
 def filter_by(
     dataset_name, 
     dataset_split,
-    fs_box, ls_box, ff_box, lf_box, is_success_box, 
+    fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box, 
     problem_box,
     student_box,
     slider,
     *components_to_update):
     ds = load_dataset(dataset_name, split=dataset_split)
-    success_boxes = [fs_box, ls_box, ff_box, lf_box, is_success_box]
+    success_boxes = [fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box]
     ds = ds.to_pandas()
-    labels = ["is_first_success","is_last_success","is_first_failure","is_last_failure","is_success"]
+    labels = ["is_first_success","is_last_success","is_first_failure","is_last_failure",
+              "first_attempt","last_attempt","is_success"]
     for label, box in zip(labels, success_boxes):
-        if box != None:
+        if box:
             ds = ds[ds[label] == box]
     
     if problem_box != None:
@@ -137,7 +138,7 @@ def main(args):
                 code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
                 code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
         
-        gr.Markdown("**Logging and Filtering**\n")
+        gr.Markdown("**Logging**\n")
         with gr.Column():
             with gr.Row():
                 flagbtn = gr.Button("Flag this example to log file")
@@ -155,13 +156,19 @@ def main(args):
                   preprocess=False, show_progress="full", trigger_mode="once")
 
         # add filtering options
+        gr.Markdown("**Filtering (reload to clear all filters)**\n")
         with gr.Row():
-            fs_box = gr.Checkbox(label="is_first_success")
-            ls_box = gr.Checkbox(label="is_last_success")
-            ff_box = gr.Checkbox(label="is_first_failure")
-            lf_box = gr.Checkbox(label="is_last_failure")
+            with gr.Column():
+                fs_box = gr.Checkbox(label="is_first_success")
+                ls_box = gr.Checkbox(label="is_last_success")
+            with gr.Column():
+                ff_box = gr.Checkbox(label="is_first_failure")
+                lf_box = gr.Checkbox(label="is_last_failure")
+            with gr.Column():
+                f_box = gr.Checkbox(label="first_attempt")
+                l_box = gr.Checkbox(label="last_attempt")
             is_success_box = gr.Checkbox(label="is_success")
-            success_boxes = [fs_box, ls_box, ff_box, lf_box, is_success_box]
+            success_boxes = [fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box]
             problem_box = gr.Dropdown(label="problem", choices = problem_names)
             student_box = gr.Dropdown(label="username", choices = student_usernames)
             filter_btn = gr.Button("Filter")

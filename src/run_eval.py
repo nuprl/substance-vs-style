@@ -69,9 +69,9 @@ def run_problem(ex):
     assert len(tests) == ex["total_tests"]
     
     for idx,test in enumerate(tests):
-        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + test
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f'{ex["_id"]}_{idx}_') as f:
-        # with open(f"/tmp/{prefix}.py", "w") as f:
+        assert ex["prompt"] not in ex["completion"]
+        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ test
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}") as f:
             f.write(prompt)
             f.flush()
             try:
@@ -88,14 +88,15 @@ def run_problem(ex):
         
         if exit_code == 0:
             tests_passed += 1
-    assert tests_passed <= len(tests)
-    is_success = bool(tests_passed == len(tests))
+    assert tests_passed <= ex["total_tests"]
+    is_success = bool(tests_passed == ex["total_tests"])
     return {**ex, "is_success": is_success, "tests_passed": tests_passed,
             "is_first_failure": ex["first_attempt"] and not is_success, 
             "is_first_success": ex["first_attempt"] and is_success, 
             "is_last_failure": ex["last_attempt"] and not is_success,
             "is_last_success": ex["last_attempt"] and is_success,}
 
+    
 def main(args):
     ds = datasets.load_from_disk(args.dataset)
     ds = ds.map(lambda x,i: {**x["extras"], "completion": x["completion"],
@@ -120,3 +121,42 @@ if __name__ == "__main__":
     parser.add_argument("outdataset")
     args = parser.parse_args()
     main(args)
+    
+    
+    
+"""
+PYTESTS
+"""
+
+
+def test_run_problem():
+    ex = {
+        "assertions": '''assert generateCardDeck(['S', 'H', 'D'], ['1', '2', 'A']) == ['D1', 'D2', 'DA', 'H1', 'H2', 'HA',  'S1', 'S2', 'SA']
+assert generateCardDeck(['H', 'D'], ['6', 'Q', 'J', '2']) == ['D2', 'D6', 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']
+assert generateCardDeck(['H'], ['2']) == ['H2']''',
+        "total_tests":3,
+        "first_attempt":True,
+        "last_attempt":True,
+        "_id":1521,
+        "completion":'''# Create a list of suits
+    suits = ['H', 'D', 'C', 'S']
+
+    # Create a list of values
+    vals = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+
+    # Create a list of cards
+    cards = []
+
+    # Create a nested loop to combine suits and values
+    for suit in suits:
+        for val in vals:
+            cards.append(suit + val)
+
+    # Print the list of cards''',
+        "prompt":'''def generateCardDeck(suits, vals):
+    """
+    The program, generateCardDeck(suits, vals):, defines Card as the input data, Card == ['H'], ['2'], and creates an output that combines both [] of information.
+    """''',
+    }
+    res = run_problem(ex)
+    assert res["is_success"] == False

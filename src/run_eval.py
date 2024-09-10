@@ -26,6 +26,12 @@ Run studenteval completions from a dataset with columns
     - tests_passed
     - total_tests
     - username
+    
+1. Overwrites extras-completion with completion
+2. runs every completion and overwrites is_success
+3. Creates a dataset with 2 splits:
+    test - for each problem, stores the first successful completion if it exists
+    all_completions - the eval results of all completions (for computing pass@k)
 """
 import datasets
 import argparse
@@ -39,7 +45,8 @@ EXECUTION_TIMEOUT = 15
 
 def generate_splits(ds):
     # save main as csv
-    ds.to_csv("/tmp/studenteval_completions.csv")
+    df = ds.to_pandas()
+    df.to_csv("/tmp/studenteval_completions.csv")
     filtered_data = {}
     for item in ds:
         idx = item["__index_level_0__"]
@@ -49,7 +56,8 @@ def generate_splits(ds):
         else:
             filtered_data[idx] = item
     # save filtered csv
-    pd.DataFrame.from_records(filtered_data).to_csv("/tmp/studenteval_filtered.csv")
+    df = pd.DataFrame.from_records(list(filtered_data.values()))
+    df.to_csv("/tmp/studenteval_filtered.csv")
     return datasets.load_dataset("csv", data_files={
         "test": "/tmp/studenteval_filtered.csv",
         "all_completions": "/tmp/studenteval_completions.csv"
@@ -84,22 +92,22 @@ def run_problem(ex):
     return {**ex, "is_success": tests_passed == len(tests), "tests_passed": tests_passed}
 
 def main(args):
-    ds = datasets.load_from_disk(args.dataset).select(range(1000))
+    ds = datasets.load_from_disk(args.dataset)
     ds = ds.map(lambda x,i: {**x["extras"], "completion": x["completion"],
                            "completion_id": x["completion_id"], "temperature": x["temperature"], "_id": i}, desc="Flattening", with_indices=True)
-    print(ds)
+
     with ThreadPoolExecutor(max_workers=cpu_count() - 1) as executor:
         res = list(tqdm(executor.map(run_problem, ds), total=len(ds)))
         ds = datasets.Dataset.from_list(res)
         
     ds = ds.remove_columns(["extras","_id"])
-    print(ds)
     # create splits
-    ds = generate_splits(ds)
-    print(ds)
+    ds = generate_splits(ds).remove_columns("Unnamed: 0")
     ds.save_to_disk(args.outdataset)
+    print(ds)
     # num success
-    print(ds.to_pandas()["is_success"].mean())
+    print(ds["all_completions"].to_pandas()["is_success"].mean())
+    print(ds["test"].to_pandas()["is_success"].mean())
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -6,11 +6,8 @@ quick fix: `list of ...` -> `list of lists of ...`
 
 imprecise language (list instead of list of list)- word `recursive` may be needed
 - id 11: correct, uses `rows and columns`
-
 - id 33: uses more technical lang and is correct, eg. `if there is no error`
-
 - id 37: too handholdy, results in wrong output because instructions are wrong.
-
 - id 59: prompt is fine, output is still wrong
 - id 60: model makes rec call correctly, but interprets number as just `int` and ignores `float`
 - id 62-65: model often misses `list of lists` in the prompt

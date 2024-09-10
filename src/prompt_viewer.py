@@ -33,6 +33,8 @@ def update_components(
     code_err, 
     code_output
 ):
+    if isinstance(ds, gr.State):
+        ds = ds.value
     row = ds.iloc[[slider]]
     header_data = gr.Dataframe(
         headers=HEADERS,
@@ -52,7 +54,7 @@ def update_components(
         value=row[SUCCESS_HEADERS],
         interactive=False
     )
-    row = ds.iloc[slider]
+    row = row.iloc[0]
     prompt = gr.Code(row["prompt"], language="python", label="Prompt")
     submitted_text = gr.Textbox(row["submitted_text"], type="text", label="Submitted Text")
     completion = gr.Code(row["completion"], language="python", label="Completion")
@@ -60,15 +62,46 @@ def update_components(
     prints = gr.Code(row["prints"], language="python", label="Prints")
     code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
     code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
+    slider = gr.Slider(0, len(ds) - 1, step=1, label="Problem ID (click and arrow keys to navigate):", value=slider)
     return [slider, header_data, success_data, prompt, submitted_text, 
             completion, assertions, prints, code_err, code_output]
+
+def filter_by(
+    dataset_name, 
+    dataset_split,
+    fs_box, ls_box, ff_box, lf_box, is_success_box, 
+    problem_box,
+    student_box,
+    slider,
+    *components_to_update):
+    ds = load_dataset(dataset_name, split=dataset_split)
+    success_boxes = [fs_box, ls_box, ff_box, lf_box, is_success_box]
+    ds = ds.to_pandas()
+    labels = ["is_first_success","is_last_success","is_first_failure","is_last_failure","is_success"]
+    for label, box in zip(labels, success_boxes):
+        if box != None:
+            ds = ds[ds[label] == box]
+    
+    if problem_box != None:
+        ds = ds[ds["problem"] == problem_box]
+        
+    if student_box != None:
+        ds = ds[ds["username"] == student_box]
+    
+    dataset = gr.State(ds)
+    return [dataset, *update_components(ds, 0, *components_to_update)]
         
 def main(args):
-    ds = pd.read_parquet("hf://datasets/wellesley-easel/StudentEval/data/test-00000-of-00001.parquet")
-    
+    ds = load_dataset(args.dataset, split=args.split)
+    ds = ds.to_pandas()    
     callback = gr.SimpleCSVLogger()
-
+    student_usernames = list(set(ds["username"]))
+    student_usernames.sort(key=lambda x: int(x.replace("student","")))
+    problem_names = list(set(ds["problem"]))
+    problem_names.sort()
+    
     with gr.Blocks(theme="gradio/monochrome") as demo:
+        dataset = gr.State(ds)
         # slider for selecting problem id
         slider = gr.Slider(0, len(ds) - 1, step=1, label="Problem ID (click and arrow keys to navigate):")
         # display headers in dataframe for problem id
@@ -115,13 +148,26 @@ def main(args):
         runbtn.click(fn=capture_output, inputs=[prompt, completion, prints], outputs=[code_err,code_output])
         # change example on slider change
         components = [slider, header_data, success_data, prompt, submitted_text, completion, assertions, prints, code_err, code_output]
-        slider.input(fn=partial(update_components, ds), inputs=components, outputs=components)
+        slider.input(fn=update_components, inputs=[dataset, *components], outputs=components)
         # log
         callback.setup(components, "flagged_data_points")
         flagbtn.click(lambda *args: callback.flag(list(args)), components, flagout,
                   preprocess=False, show_progress="full", trigger_mode="once")
 
-        # TODO: add filtering options
+        # add filtering options
+        with gr.Row():
+            fs_box = gr.Checkbox(label="is_first_success")
+            ls_box = gr.Checkbox(label="is_last_success")
+            ff_box = gr.Checkbox(label="is_first_failure")
+            lf_box = gr.Checkbox(label="is_last_failure")
+            is_success_box = gr.Checkbox(label="is_success")
+            success_boxes = [fs_box, ls_box, ff_box, lf_box, is_success_box]
+            problem_box = gr.Dropdown(label="problem", choices = problem_names)
+            student_box = gr.Dropdown(label="username", choices = student_usernames)
+            filter_btn = gr.Button("Filter")
+        
+        filter_btn.click(fn=partial(filter_by, args.dataset, args.split), inputs=[*success_boxes, problem_box, student_box, *components], 
+                         outputs=[dataset, *components])
 
     demo.launch(share=args.share)
     

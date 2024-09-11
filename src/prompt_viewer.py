@@ -1,9 +1,9 @@
 import gradio as gr
-from datasets import load_dataset
 import argparse
 import pandas as pd
 from functools import partial
 import subprocess
+from utils import load
 """
 Eventually add filters based on headers
 """
@@ -69,12 +69,12 @@ def update_components(
 def filter_by(
     dataset_name, 
     dataset_split,
-    fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box, 
+    fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box, is_failure_box, 
     problem_box,
     student_box,
     slider,
     *components_to_update):
-    ds = load_dataset(dataset_name, split=dataset_split)
+    ds = load(dataset_name, split=dataset_split)
     success_boxes = [fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box]
     ds = ds.to_pandas()
     labels = ["is_first_success","is_last_success","is_first_failure","is_last_failure",
@@ -83,6 +83,9 @@ def filter_by(
         if box:
             ds = ds[ds[label] == box]
     
+    if is_failure_box != None:
+        ds = ds[ds["is_success"] == box]
+            
     if problem_box != None:
         ds = ds[ds["problem"] == problem_box]
         
@@ -93,7 +96,7 @@ def filter_by(
     return [dataset, *update_components(ds, 0, *components_to_update)]
         
 def main(args):
-    ds = load_dataset(args.dataset, split=args.split)
+    ds = load(args.dataset,args.split)
     ds = ds.to_pandas()    
     callback = gr.SimpleCSVLogger()
     student_usernames = list(set(ds["username"]))
@@ -167,8 +170,10 @@ def main(args):
             with gr.Column():
                 f_box = gr.Checkbox(label="first_attempt")
                 l_box = gr.Checkbox(label="last_attempt")
-            is_success_box = gr.Checkbox(label="is_success")
-            success_boxes = [fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box]
+            with gr.Column():
+                is_success_box = gr.Checkbox(label="is_success")
+                is_failure_box = gr.Checkbox(label="is_failure", value=False)
+            success_boxes = [fs_box, ls_box, ff_box, lf_box, f_box, l_box, is_success_box, is_failure_box]
             problem_box = gr.Dropdown(label="problem", choices = problem_names)
             student_box = gr.Dropdown(label="username", choices = student_usernames)
             filter_btn = gr.Button("Filter")
@@ -180,8 +185,8 @@ def main(args):
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", type=str, default="wellesley-easel/StudentEval")
-    parser.add_argument("--split", type=str, default="test")
+    parser.add_argument("dataset", type=str, default="wellesley-easel/StudentEval")
+    parser.add_argument("--split", type=str, default=None)
     parser.add_argument("--share", action="store_true")
     args = parser.parse_args()
     main(args)

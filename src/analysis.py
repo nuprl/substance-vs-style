@@ -7,37 +7,8 @@ from datasets import load_dataset, load_from_disk
 import argparse
 from multiprocessing import cpu_count
 import pandas as pd
+from utils import load, estimator
 
-# from bigcode studenteval
-def _get_group(item):
-    """
-    These boolean flags are mutually exclusive in the dataset. We turn them into a
-    a string for easy grouping with Pandas.
-    """
-    if item["is_first_success"]:
-        return "First Success"
-    if item["is_last_success"]:
-        return "Last Success"
-    if item["is_first_failure"]:
-        return "First Failure"
-    if item["is_last_failure"]:
-        return "Last Failure"
-    return None
-
-# from Multipl-E
-def estimator(n: int, c: int, k: int) -> float:
-    """
-    Calculates 1 - comb(n - c, k) / comb(n, k).
-    """
-    if n - c < k:
-        return 1.0
-    return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
-
-def load(dataset, split):
-    if os.path.exists(dataset):
-        return load_from_disk(dataset)[split]
-    else:
-        return load_dataset(dataset, split=split)
     
 def pass_k_per_field(df, field, k):
     df_field = df.groupby([field,"__index_level_0__"]).agg({
@@ -51,7 +22,6 @@ def pass_k_per_field(df, field, k):
 def main(args):
     ds = load(args.dataset, split=args.split)
     print(ds)
-    
     for field in ["problem","username"]:
         df_field = pass_k_per_field(ds.to_pandas(), field, k=1)
         per_field = df_field[[field,'pass@1']].groupby(field).agg({'pass@1':'mean'}).reset_index().sort_values("pass@1")

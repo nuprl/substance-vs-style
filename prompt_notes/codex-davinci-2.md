@@ -74,7 +74,7 @@ Most errors are forgetting to convert `str` to `int`, or returning str instead o
 
 ## Remove odd
 
-- id290: prompt forgets about floats
+- id290, 296: prompt forgets about floats
 
 
 ## Quick fixes

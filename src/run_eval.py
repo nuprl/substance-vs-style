@@ -1,5 +1,7 @@
 """
-Run studenteval completions from a dataset with columns
+Heavily inspired by bigcode_evaluation_harness.
+Evaluate studenteval completions from a dataset with the following columns.
+This dataset can be generated using batched_lm_generation.vllm_base.
 
 - prompt
 - temperature
@@ -10,27 +12,20 @@ Run studenteval completions from a dataset with columns
 - extras
     - __index_level_0__
     - assertions
-    - completion
     - entrypoint
     - first_attempt
-    - is_first_failure
-    - is_first_success
-    - is_last_failure
-    - is_last_success
-    - is_success
     - last_attempt
     - prints
     - problem
+    - total_tests
     - prompt
     - submitted_text
-    - tests_passed
-    - total_tests
     - username
     
-1. Overwrites extras-completion with completion
-2. runs every completion and overwrites is_success
+1. Flattens dataset to remove `extras` field
+2. runs every completion and records `is_success, is_first_success, is_first_failure, is_last success, is_last_failure, tests_passed`
 3. Creates a dataset with 2 splits:
-    test - for each problem, stores the first successful completion if it exists
+    test - for each problem, stores the first completion (simulates 1 completion)
     all_completions - the eval results of all completions (for computing pass@k)
 """
 import datasets
@@ -50,10 +45,7 @@ def generate_splits(ds):
     filtered_data = {}
     for item in ds:
         idx = item["__index_level_0__"]
-        if idx in filtered_data.keys():
-            if not filtered_data[idx]["is_success"] and item["is_success"]:
-                filtered_data[idx] = item
-        else:
+        if not idx in filtered_data.keys():
             filtered_data[idx] = item
     # save filtered csv
     df = pd.DataFrame.from_records(list(filtered_data.values()))
@@ -112,8 +104,8 @@ def main(args):
     ds.save_to_disk(args.outdataset)
     print(ds)
     # num success
-    print(ds["all_completions"].to_pandas()["is_success"].mean())
-    print(ds["test"].to_pandas()["is_success"].mean())
+    print("All completions pass@1:", ds["all_completions"].to_pandas()["is_success"].mean())
+    print("Test split pass@1:", ds["test"].to_pandas()["is_success"].mean())
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

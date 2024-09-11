@@ -6,6 +6,7 @@ import numpy as np
 from datasets import load_dataset, load_from_disk
 import argparse
 from multiprocessing import cpu_count
+import pandas as pd
 
 # from bigcode studenteval
 def _get_group(item):
@@ -47,26 +48,11 @@ def load(dataset, split):
     
 def main(args):
     n_tasks = 953
-    ds = load(args.dataset, split=args.split).select(range(n_tasks*20))
+    ds = load(args.dataset, split=args.split)
     print(ds)
-    pass_k_per_prompt = pass_k_per_field(ds, "__index_level_0__", n=20, k=1, extras={"problem":"first"})
-    print(pass_k_per_prompt)
-    pass_k_per_problem = pass_k_per_prompt.groupby("problem").agg({"pass@1":"mean"})
-    
-    print(pass_k_per_problem["pass@1"].mean())
-    
-    ds = ds.map(lambda x: {**x, "group": _get_group(x)}, num_proc=cpu_count()-1)
-    results_df = ds.to_pandas().groupby(["problem", "prompt", "group"]).agg(
-        c=("is_success", np.sum), n=("is_success", "count")
-    )
-    print(results_df)
-    results_df.reset_index(inplace=True)
-    results_df["pass1"] = results_df.apply(
-        lambda row: estimator(row["n"], row["c"], 1), axis=1
-    )
-    # # Calculate mean pass@1 for each group
-    results_df = results_df.groupby(["group"]).agg(pass1=("pass1", np.mean))
-    print(results_df)
+    pass_k_per_problem = pass_k_per_field(ds, "problem", n=20, k=1)
+    print("Pass@1 per problem:\n",pass_k_per_problem)
+    print("Mean:", pass_k_per_problem["pass@1"].mean())
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
@@ -74,3 +60,19 @@ if __name__=="__main__":
     parser.add_argument("--split", default="all_completions")
     args = parser.parse_args()
     main(args)
+    
+"""
+PYTESTS
+"""
+
+# Replicated bigcode eval to ensure same results
+def test_against_bigcode():
+    ds = load("llama3.1_8b_base_studenteval", split="test")
+    ds = ds.map(lambda x: {**x, 
+                           "success": x["is_success"],
+                           "program": x["prompt"].strip()+"\n    "+x["completion"]+"\n\n"+x["assertions"]}, num_proc=cpu_count()-1)
+    df = ds.to_pandas()
+    bigcode_df = pd.read_csv("tests/bigcode_eval_results_llama3.1_8b_base_sep11.csv")
+    merged = pd.merge(df, bigcode_df, on="program")
+    num_eq = merged[merged["success_y"] == merged["success_x"]]
+    assert len(num_eq) == len(merged)

@@ -24,7 +24,7 @@ RULES = {
 }
 
 def main_with_args(original_dataset: str, output_path: Path):
-    original_dataset = datasets.load_dataset(original_dataset, split="test")
+    original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
     new_dataset = [ ]
     # also add the original dataset to the new dataset
     for item in original_dataset:
@@ -44,7 +44,7 @@ def main_with_args(original_dataset: str, output_path: Path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--original_dataset", type=str, default="arjunguha/StudentEval-Filtered")
+    parser.add_argument("--original_dataset", type=str, default="wellesley-easel/StudentEval")
     parser.add_argument("--output_path", type=Path, default=Path("mutated_dataset.jsonl"))
     args = parser.parse_args()
     main_with_args(args.original_dataset, args.output_path)

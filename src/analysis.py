@@ -33,13 +33,6 @@ def estimator(n: int, c: int, k: int) -> float:
         return 1.0
     return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
 
-
-def pass_k_per_field(ds, field, n, k=1, extras={}):
-    ds = ds.to_pandas()[[field, "is_success", *list(extras.keys())]]
-    ds = ds.groupby(field).agg({"is_success": "sum", field: "first", **extras})
-    ds[f"pass@{k}"] = ds["is_success"].apply(lambda x: estimator(n,x, k))
-    return ds
-
 def load(dataset, split):
     if os.path.exists(dataset):
         return load_from_disk(dataset)[split]
@@ -47,10 +40,11 @@ def load(dataset, split):
         return load_dataset(dataset, split=split)
     
 def main(args):
-    n_tasks = 953
     ds = load(args.dataset, split=args.split)
-    print(ds)
-    pass_k_per_problem = pass_k_per_field(ds, "problem", n=20, k=1)
+    pass_k_per_problem = ds.to_pandas().groupby("problem").agg({"is_success": "sum", "completion_id": lambda x: max(x) + 1})
+    pass_k_per_problem = pass_k_per_problem.rename(columns={"is_success":"c","completion_id":"n"}).reset_index()
+    pass_k_per_problem["pass@1"] = pass_k_per_problem.apply(lambda x: estimator(x["n"], x["c"], 1),axis=1)
+    pass_k_per_problem = pass_k_per_problem[["problem","pass@1"]]
     print("Pass@1 per problem:\n",pass_k_per_problem)
     print("Mean:", pass_k_per_problem["pass@1"].mean())
 

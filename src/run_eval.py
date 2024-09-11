@@ -42,14 +42,10 @@ def generate_splits(ds):
     # save main as csv
     df = ds.to_pandas()
     df.to_csv("/tmp/studenteval_completions.csv")
-    filtered_data = {}
-    for item in ds:
-        idx = item["__index_level_0__"]
-        if not idx in filtered_data.keys():
-            filtered_data[idx] = item
+    # drop all completions but 0
+    filtered_df = df[df["completion_id"] == 0]
     # save filtered csv
-    df = pd.DataFrame.from_records(list(filtered_data.values()))
-    df.to_csv("/tmp/studenteval_filtered.csv")
+    filtered_df.to_csv("/tmp/studenteval_filtered.csv")
     return datasets.load_dataset("csv", data_files={
         "test": "/tmp/studenteval_filtered.csv",
         "all_completions": "/tmp/studenteval_completions.csv"
@@ -90,6 +86,7 @@ def run_problem(ex):
 
     
 def main(args):
+    datasets.disable_caching()
     ds = datasets.load_from_disk(args.dataset)
     ds = ds.map(lambda x,i: {**x["extras"], "completion": x["completion"],
                            "completion_id": x["completion_id"], "temperature": x["temperature"], "_id": i}, desc="Flattening", with_indices=True)
@@ -100,12 +97,12 @@ def main(args):
         
     ds = ds.remove_columns(["extras","_id"])
     # create splits
-    ds = generate_splits(ds).remove_columns("Unnamed: 0")
+    ds = generate_splits(ds)
     ds.save_to_disk(args.outdataset)
     print(ds)
     # num success
-    print("All completions pass@1:", ds["all_completions"].to_pandas()["is_success"].mean())
-    print("Test split pass@1:", ds["test"].to_pandas()["is_success"].mean())
+    print("All completions success rate:", ds["all_completions"].to_pandas()["is_success"].mean())
+    print("Test split success rate:", ds["test"].to_pandas()["is_success"].mean())
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

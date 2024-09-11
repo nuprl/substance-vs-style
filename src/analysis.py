@@ -39,15 +39,25 @@ def load(dataset, split):
     else:
         return load_dataset(dataset, split=split)
     
+def pass_k_per_field(df, field, k):
+    df_field = df.groupby([field,"__index_level_0__"]).agg({
+        "is_success": "sum", 
+        "completion_id": lambda x: max(x) + 1
+        }).reset_index()
+    df_field = df_field.rename(columns={"is_success":"c","completion_id":"n", "__index_level_0__":"prompt_id"})
+    df_field["pass@1"] = df_field.apply(lambda x: estimator(x["n"], x["c"], k),axis=1)
+    return df_field
+    
 def main(args):
     ds = load(args.dataset, split=args.split)
-    pass_k_per_problem = ds.to_pandas().groupby("problem").agg({"is_success": "sum", "completion_id": lambda x: max(x) + 1})
-    pass_k_per_problem = pass_k_per_problem.rename(columns={"is_success":"c","completion_id":"n"}).reset_index()
-    pass_k_per_problem["pass@1"] = pass_k_per_problem.apply(lambda x: estimator(x["n"], x["c"], 1),axis=1)
-    pass_k_per_problem = pass_k_per_problem[["problem","pass@1"]]
-    print("Pass@1 per problem:\n",pass_k_per_problem)
-    print("Mean:", pass_k_per_problem["pass@1"].mean())
-
+    print(ds)
+    
+    for field in ["problem","username"]:
+        df_field = pass_k_per_field(ds.to_pandas(), field, k=1)
+        per_field = df_field[[field,'pass@1']].groupby(field).agg({'pass@1':'mean'}).reset_index().sort_values("pass@1")
+        print(f"Mean Pass@1 per {field}:\n{per_field}")
+        print(f"Mean pass@1:", df_field["pass@1"].mean())
+    
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("dataset")

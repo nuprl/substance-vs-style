@@ -190,16 +190,6 @@ TAGS = {
     "variables": "keys",
 }
 
-def extract_parts(prompt: str):
-    match = re.search(r'(.*?\"\"\"\s*)(.*?)(\s*\"\"\".*)', prompt, re.DOTALL)
-    if match:
-        before = match.group(1)  # Includes the triple quotes and spaces/newlines after the first triple quotes
-        docstring = match.group(2)  # The content inside the triple quotes
-        after = match.group(3)  # Includes the spaces/newlines before and the triple quotes after the content
-        return before, docstring, after
-    else:
-        return None, None, None
-
     
 def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
     """
@@ -218,14 +208,13 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
     dataset manually to address cases where the rules go wrong. After inspection,
     we can apply substitutions.
     """
-    #prompt might look like this def add_up(arr):"""takes a list of strings, integers, and floats and returns the sum of all the integers and floats."""
-    #search for """ in prompt
-    #Get the text between the first and second """
-    before,docstring,after = extract_parts(prompt)
-    doc = nlp(docstring)
+    doc = nlp(prompt)
     new_prompt = []
+    last_end = 0
     for token in doc:
         # lemma = token.lemma_
+        if token.idx > last_end:
+            new_prompt.append(prompt[last_end:token.idx])
         if token.text in TAGS:
             new_prompt.append(f"${TAGS[token.text]}:{token.text}$")
         elif token.text.lower() in TAGS:
@@ -234,25 +223,45 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
             new_prompt.append(f"${uppercasetag}:{token.text}$")
         else:
             new_prompt.append(token.text)
-    modified_prompt = " ".join(new_prompt)
-    modified_prompt = re.sub(r'\s+([.,!?])', r'\1', modified_prompt)  # Remove spaces before punctuation
-    return f"{before}{modified_prompt}{after}"
+        last_end = token.idx + len(token.text)
+    if last_end < len(prompt):
+        new_prompt.append(prompt[last_end:])
+    modified_prompt = "".join(new_prompt)
+    return modified_prompt
 
-# original_dataset = datasets.load_dataset('wellesley-easel/StudentEval', split="only_subsets")
-# prompt0 = original_dataset[10]['prompt']
-# prompt0m = tag_prompt(spacy.load("en_core_web_trf"), prompt0)
-# print(prompt0)
-# print(prompt0m)
-
-# """
 def main_with_args(original_dataset: str, output_path: Path):
     nlp = spacy.load("en_core_web_trf")
     original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
+    #[ ] Drop columns that seem pointless: prints, tests_passed,  total_tests, completion.  (Some of these are now stale – after substitution, we are going to get different values for these columns)
+    columns_to_drop = ['prints', 'tests_passed', 'total_tests', 'completion', 'is_success','first_attempt','last_attempt','is_first_success', 'is_first_failure', 'is_last_success', 'is_last_failure'] 
+
     results = [ ]
     for item in original_dataset:
         original_prompt = item["prompt"]
         tagged_prompt = tag_prompt(nlp, original_prompt)
-        results.append({ **item, "prompt": tagged_prompt })
+        item['prompt'] = tagged_prompt
+        #[ ] Single column “subset” with values first_success / first_failure / last_success / last_failure
+        subset_value = None
+        if item['is_first_success']:
+            subset_value = 'first_success' 
+        elif item['is_last_success']:
+            subset_value = 'last_success'
+        elif item['is_first_failure']:
+            subset_value = 'first_failure'
+        elif item['is_last_failure']:
+            subset_value = 'last_failure'
+        else:
+            raise ValueError("No subset value found")
+        item['subset'] = subset_value
+        # Drop columns that seem pointless
+        for column in columns_to_drop:
+            del item[column]
+        # Reorder fields so that index is last
+        reordered_item = {k: v for k, v in item.items() if k != '__index_level_0__'}
+        if '__index_level_0__' in item:
+            reordered_item['__index_level_0__'] = item['__index_level_0__']
+        results.append(reordered_item)
+
     with output_path.open("w") as f:
         for item in results:
             f.write(json.dumps(item) + "\n")
@@ -268,4 +277,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# """

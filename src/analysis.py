@@ -22,7 +22,7 @@ def pass_k_per_field(df, field, k):
 def main(args):
     ds = load(args.dataset, split=args.split)
     print(ds)
-    for field in ["problem","username"]:
+    for field in ["problem","username","prompt"]:
         df_field = pass_k_per_field(ds.to_pandas(), field, k=1)
         per_field = df_field[[field,'pass@1']].groupby(field).agg({'pass@1':'mean'}).reset_index().sort_values("pass@1")
         print(f"Mean Pass@1 per {field}:\n{per_field}")

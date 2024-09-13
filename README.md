@@ -1,5 +1,19 @@
 # NLP analysis of StudentEval
 
+## Workflow
+
+1. We first apply a tagging process to every prompt in the first/last success/failure subsets of StudentEval.
+   For example, given a prompt `"Outputs if the number input is even"`, the tagged prompt becomes
+   `"$Returns:prints$ if the number $parameter:input$ is even"`. This process is semi-automated.
+
+   a. `mutated_dataset_builder/main.py` rule-based script that creates a preliminary tagged dataset
+      [nuprl-staging/studenteval_tagged_prompts](https://huggingface.co/datasets/nuprl-staging/studenteval_tagged_prompts).
+   b. We transform this dataset to the file [FILL], which we manually edit.
+   c. We map these edits back to a new split of the tagged dataset
+
+2. [FILL]
+
+
 ## Use of AI assistants
 
 Copilot used in this project.

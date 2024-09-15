@@ -8,7 +8,7 @@
 
    a. `mutated_dataset_builder/main.py` rule-based script that creates a preliminary tagged dataset
       [nuprl-staging/studenteval_tagged_prompts](https://huggingface.co/datasets/nuprl-staging/studenteval_tagged_prompts).
-   b. We transform this dataset to the file [FILL], which we manually edit.
+   b. We transform this dataset to the file [tagged_prompts_for_edits](https://github.com/franlucc/studenteval_nlp/blob/main/tagged_prompts_for_edits.yaml) by running json_to_yaml.py. We manually edit this file.
    c. We map these edits back to a new split of the tagged dataset
 
 2. [FILL]

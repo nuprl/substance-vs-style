@@ -68,17 +68,15 @@ def run_problem(ex):
                     ["python3", f.name],
                     timeout=EXECUTION_TIMEOUT,
                     capture_output=True,
-                    # stdout=subprocess.DEVNULL,
-                    # stderr=subprocess.DEVNULL,
                     stdin=subprocess.DEVNULL,
                 )
                 exit_code = result.returncode
                 stderr = result.stderr
                 stdout = result.stdout
-                # if stdout is not None:
-                #     stdout = stdout.decode("utf-8")
-                # if stderr is not None:
-                #     stderr = stderr.decode("utf-8")
+                if stdout is not None:
+                    stdout = stdout.decode("utf-8")
+                if stderr is not None:
+                    stderr = stderr.decode("utf-8")
             except subprocess.TimeoutExpired:
                 exit_code = 1
         

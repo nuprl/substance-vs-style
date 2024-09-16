@@ -58,19 +58,27 @@ def run_problem(ex):
     
     for idx,test in enumerate(tests):
         assert ex["prompt"] not in ex["completion"]
-        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ test
+        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ test + "\n" + ex["prints"]
         with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}") as f:
             f.write(prompt)
             f.flush()
+            stdout, stderr= None,None
             try:
                 result = subprocess.run(
                     ["python3", f.name],
                     timeout=EXECUTION_TIMEOUT,
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL,
+                    capture_output=True,
+                    # stdout=subprocess.DEVNULL,
+                    # stderr=subprocess.DEVNULL,
                     stdin=subprocess.DEVNULL,
                 )
                 exit_code = result.returncode
+                stderr = result.stderr
+                stdout = result.stdout
+                # if stdout is not None:
+                #     stdout = stdout.decode("utf-8")
+                # if stderr is not None:
+                #     stderr = stderr.decode("utf-8")
             except subprocess.TimeoutExpired:
                 exit_code = 1
         
@@ -79,6 +87,7 @@ def run_problem(ex):
     assert tests_passed <= ex["total_tests"]
     is_success = bool(tests_passed == ex["total_tests"])
     return {**ex, "is_success": is_success, "tests_passed": tests_passed,
+            "stderr":stderr,"stdout":stdout,
             "is_first_failure": ex["first_attempt"] and not is_success, 
             "is_first_success": ex["first_attempt"] and is_success, 
             "is_last_failure": ex["last_attempt"] and not is_success,

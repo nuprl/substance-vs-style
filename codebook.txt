@@ -1,0 +1,106 @@
+OVERALL NOTES 
+
+- The coding pass is for determining locations where we may be over or under tagging
+- typos are idiosyncratic tags (e.g. $integer:intger$) that should be added
+- for the problem convert, if referenced as the problem, should not be $typecast:convert$
+
+CATEGORY/TERM SPECIFIC NOTES
+
+string	word
+string	phrase
+string	string
+string	set of characters
+string	characters
+NOTE: do not tag when a "letter" Refers to the concept of a letter in English. 
+NOTE: take a "C style" mindset here, in that a single character is not a string 
+
+list	brackets
+list	set of brackets
+list	set
+list	list
+list	array
+list	sequence array
+
+return	output
+return	return
+return	print
+return	produce
+return	display
+return	provides
+return	gives
+
+parameter	parameter
+parameter	input
+parameter	argument
+parameter	value provided
+
+takes	takes
+takes	gets
+takes	receives
+takes	brings in
+takes	accept
+NOTE: $takes:takes$ should be $takes:takes in$ if followed by an "in" (ditto for similar constructs)
+
+provides	enter
+
+insert	add
+insert	insert
+insert	append
+insert	attach
+NOTE: applies when the types are NOT the same (e.g. adding a number to a list)
+NOTE: common add is issue is a tag of add that is the mathematical operation and not the list/string operation 
+
+concatenate	combine
+concatenate	splice
+concatenate	concatenate
+concatenate	put together
+NOTE: the rule is that these tags only apply if the types that are being concatenated are the same 
+
+loop	go through
+loop	run through
+loop	iterate through
+loop	loop through
+loop	move through
+loop	run a for loop through
+loop	looks through
+loop	executes a for loop with
+loop	loops over
+
+skip	avoid
+skip	neglect
+skip	ignore
+skip	remove
+skip	skip
+
+dictionary	map
+dictionary	dictionary
+dictionary	array
+dictionary	list of keys and values
+NOTE: For add_word ONLY, instances of map should not be substituted/tagged as it's a variable name.
+
+key	key
+key	item
+key	entry
+key	attribute
+key	part
+key	element
+key	parameter
+key	variable
+NOTE: $key$ should only be used for dictionary.
+NOTE: variable and item are very common oversubstitutes 
+
+typecast	convert
+NOTE: this is coded specifically only if the mention is unique to a type change, e.g. '1' to 1 or 1.2 to 1
+
+typecast	cast
+typecast	change
+typecast	turn into
+typecast	type cast
+typecast	typecast
+typecast	treat as
+
+integer	integer
+integer	whole number
+integer	int
+integer	number without decimal
+integer	non-decimal

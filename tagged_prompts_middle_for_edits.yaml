@@ -27,7 +27,7 @@ submitted_text: |-
 prompt: |-
   def add_up(arr):
       """
-      $Input:Input$: $list:list$ of $keys:items$, that may be a combination of $strings:strings$ and $integers:integers$. Function checks each $key:item$ in the $list:list$ to check if it is an $integer:integer$ or a $string:string$. If it is an $integer:integer$ it $concatenates:adds$ it to a new $list:list$. If it is not an $integer:integer$ it $skips:ignores$ it. $Returns:Outputs$ the sum of each ingter in the new $list:list$. If the original $list:list$ contains no $integers:integers$, $return:return$ 0
+      $Input:Input$: $list:list$ of items, that may be a combination of $strings:strings$ and $integers:integers$. Function checks each item in the $list:list$ to check if it is an $integer:integer$ or a $string:string$. If it is an $integer:integer$ it $concatenates:adds$ it to a new $list:list$. If it is not an $integer:integer$ it $skips:ignores$ it. $Returns:Outputs$ the sum of each $integer:ingter$ in the new $list:list$. If the original $list:list$ contains no $integers:integers$, $return:return$ 0
       """
       
 subset: middle
@@ -1009,7 +1009,7 @@ submitted_text: |
 prompt: |-
   def subtract_add(lst):
       """
-      if there are no values stored in the $input:given$ $list:array$, $return:return$ 0. Else, $input:given$ an $list:array$ of $strings:characters$ containing $integers:integers$, $typecast:convert$ the $strings:characters$ into $integers:integers$. Store the first number in the $list:array$ in a count $key:variable$. then subtract the next number from the count. With the next number, $concatenate:add$ it to the count and then alternate between subtracting and $concatenating:adding$ until you get to the end of the $list:array$. $return:return$ the count
+      if there are no values stored in the given $list:array$, $return:return$ 0. Else, given an $list:array$ of $strings:characters$ containing $integers:integers$, $typecast:convert$ the $strings:characters$ into $integers:integers$. Store the first number in the $list:array$ in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the $list:array$. $return:return$ the count
 
       """
       
@@ -1028,7 +1028,7 @@ submitted_text: |-
 prompt: |-
   def subtract_add(lst):
       """
-      Create a $key:variable$ for the result. If the $list:list$ contains 0 $keys:elements$, $return:return$ 0. If the $list:list$ contains 1 $key:element$, $return:return$ that $key:element$. If the $list:list$ contains 2 or more $keys:elements$: subtract the second $key:element$ from the first and save the result, then $concatenate:add$ the third $key:element$ to that result, and continue on alternating subtraction and addition until the end of the $list:list$.
+      Create a variable for the result. If the $list:list$ contains 0 elements, $return:return$ 0. If the $list:list$ contains 1 element, $return:return$ that element. If the $list:list$ contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the $list:list$.
       """
       
 subset: middle
@@ -1380,7 +1380,7 @@ submitted_text: convert the list of index number into string of capital letters 
 prompt: |-
   def convert(lst):
       """
-      $typecast:convert$ the $list:list$ of index number into $string:string$ of capital letters of corresponding index numbers of alphabetical table and then $concatenate:insert$ into a $list:list$ (-1 represent where to split into a new $key:element$)
+      convert the $list:list$ of index number into $string:string$ of capital letters of corresponding index numbers of alphabetical table and then insert into a $list:list$ (-1 represent where to split into a new element)
       """
       
 subset: middle
@@ -1414,7 +1414,7 @@ submitted_text: |-
 prompt: |-
   def convert(lst):
       """
-      User $inputs:inputs$ a $list:list$ of numbers ranging from -1 to 25, and function $returns:outputs$ a $list:list$ of the corresponding letters and line breaks. Function $typecasts:converts$ the $integers:integers$ from 0-25 into letters by matching the number with the corresponding letter of the alphabet. When the user $inputs:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. 
+      User $inputs:inputs$ a $list:list$ of numbers ranging from -1 to 25, and function $returns:outputs$ a $list:list$ of the corresponding letters and line breaks. Function converts the $integers:integers$ from 0-25 into letters by matching the number with the corresponding letter of the alphabet. When the user $inputs:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. 
       """
       
 subset: middle
@@ -1552,7 +1552,7 @@ submitted_text: change numbers to letters matching the order of the alphabet sta
 prompt: |-
   def convert(lst):
       """
-      $typecast:change$ numbers to letters matching the order of the alphabet starting at 0 as A $skipping:ignoring$ any negative numbers in the $list:list$.
+      change numbers to letters matching the order of the alphabet starting at 0 as A $skipping:ignoring$ any negative numbers in the $list:list$.
       """
       
 subset: middle
@@ -2194,7 +2194,7 @@ submitted_text: |-
 prompt: |-
   def convert(lst):
       """
-      $Input:Given$ a $list:list$, $returns:returns$ a $list:list$ with letters from the alphabet that correspond to the index in the $input:inputted$ $list:list$, starting from zero. Corresponding letters should be $concatenated:combined$ as one $string:string$ to $concatenate:insert$ into the $list:list$. A negative one indicates the start of a new $key:item$ in the $list:list$.
+      Given a $list:list$, $returns:returns$ a $list:list$ with letters from the alphabet that correspond to the index in the $input:inputted$ $list:list$, starting from zero. Corresponding letters should be $concatenated:combined$ as one $string:string$ to $concatenate:insert$ into the $list:list$. A negative one indicates the start of a new $key:item$ in the $list:list$.
       """
       
 subset: middle
@@ -3686,7 +3686,7 @@ submitted_text: |-
 prompt: |-
   def times_with(meetings):
       """
-      This function $inputs:takes$ in a $list:list$ within a $list:list$, consisting of the age as an $integer:integer$, and names as a $string:string$. The $return:output$ creates a $dictionary:dictionary$ where the $key:key$ is the name and $concatenates:appends$ the value which is the age that is $input:given$. 
+      This function $inputs1:takes in$ a $list:list$ within a $list:list$, consisting of the age as an $integer:integer$, and names as a $string:string$. The output creates a $dictionary:dictionary$ where the $key:key$ is the name and $concatenates:appends$ the value which is the age that is given. 
       """
       
 subset: middle
@@ -4244,7 +4244,7 @@ submitted_text: |-
 prompt: |-
   def print_time(day,hour):
       """
-      $Input:Given$ two $inputs:parameters$,  the first being the day and the second being a measurement of time, $return:return$ "weekend" if the day is 'Sat' or 'Sun', and $return:return$ weekday if the day is neither. $Return:Return$ "sleeping" if the measurement of time is between '0' and '8', inclusive.
+      Given two $inputs:parameters$,  the first being the day and the second being a measurement of time, $return:return$ "weekend" if the day is 'Sat' or 'Sun', and $return:return$ weekday if the day is neither. $Return:Return$ "sleeping" if the measurement of time is between '0' and '8', inclusive.
       """
       
 subset: middle
@@ -5215,7 +5215,7 @@ submitted_text: |-
 prompt: |-
   def hasHorizontalWin(board, letter):
       """
-      Measure the height and width of a 2D $list:array$, which will be iterated over. If all $keys:elements$ of a row or all $keys:elements$ of a column in a 2D $list:array$ are the same, $return:return$ true. make sure to check all $keys:elements$ in the row or column. Else, $return:return$ false.
+      Measure the height and width of a 2D $list:array$, which will be iterated over. If all elements of a row or all elements of a column in a 2D $list:array$ are the same, $return:return$ true. make sure to check all elements in the row or column. Else, $return:return$ false.
       """
       
 subset: middle
@@ -5395,7 +5395,7 @@ submitted_text: |
 prompt: |-
   def readingIceCream(lines):
       """
-      For each $list:list$ $key:entry$, parse through the $string:string$ and keep track of the number of "\" $strings:characters$. When the number of "\" is 2, isolate the rest of the $string:string$. Then isolate the remainder of that $string:string$, starting at index 1. $Typecast:Convert$ this $string:string$ to a float. Keep track of the float for each $key:entry$ and $concatenate:add$ them all together, $returning:returning$ the sum for each $list:list$
+      For each $list:list$ entry, $loop through:parse through$ the $string:string$ and keep track of the number of "\" characters. When the number of "\" is 2, isolate the rest of the $string:string$. Then isolate the remainder of that $string:string$, starting at index 1. $Typecast:Convert$ this $string:string$ to a float. Keep track of the float for each entry and add them all together, $returning:returning$ the sum for each $list:list$
 
       """
       
@@ -5804,7 +5804,7 @@ submitted_text: |-
 prompt: |-
   def readingIceCream(lines):
       """
-      $input:given$ a $list:list$ of $strings:strings$, split each $string:string$ by \. for each new $string:string$, if it starts with t, eliminate the t. next find the sting that contains a number, $typecast:convert$ it to a float, and $concatenate:add$ it to running total. $return:output$ this total
+      given a $list:list$ of $strings:strings$, split each $string:string$ by \. for each new $string:string$, if it starts with t, eliminate the t. next find the $string:sting$ that contains a number, $typecast:convert$ it to a float, and add it to running total. $return:output$ this total
       """
       
 subset: middle
@@ -5907,7 +5907,7 @@ submitted_text: |-
 prompt: |-
   def findHorizontals(puzzle,wordList):
       """
-      $Input:Given$ two $lists:lists$ labeled puzzle and wordList, for each $string:word$ in the wordList, if the same letters appear in one of the $strings:strings$ in puzzle, create a $dictionary:dictionary$ with the corresponding $string:word$ in WordList as the $key:key$ and the position of the $string:string$ where the letters show up in puzzle as the value. 
+      Given two $lists:lists$ labeled puzzle and wordList, for each $string:word$ in the wordList, if the same letters appear in one of the $strings:strings$ in puzzle, create a $dictionary:dictionary$ with the corresponding $string:word$ in WordList as the $key:key$ and the position of the $string:string$ where the letters show up in puzzle as the value. 
       """
       
 subset: middle
@@ -7285,7 +7285,7 @@ submitted_text: |-
 prompt: |-
   def combine(l1,l2):
       """
-      Count the number of $keys:elements$ in the $input:inputted$ $list:list$, store this number as n. Divide n by 2 store it as m, then $concatenate:combine$ the 1st $key:element$ in the $list:list$ with the 1+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Then $concatenate:combine$ the 2nd $key:element$ in the $list:list$ with the 2+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Loop through every first mth $key:element$ in the $list:list$.
+      Count the number of elements in the $input:inputted$ $list:list$, store this number as n. Divide n by 2 store it as m, then $concatenate:combine$ the 1st element in the $list:list$ with the 1+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Then $concatenate:combine$ the 2nd $key:element$ in the $list:list$ with the 2+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Loop through every first mth $key:element$ in the $list:list$.
       """
       
 subset: middle
@@ -7368,7 +7368,7 @@ submitted_text: create function which take 1 input (value). create list of ascen
 prompt: |-
   def pattern(value):
       """
-      create function which $input:take$ 1 $input:input$ (value). create $list:list$ of ascending numbers of value. $concatenate:insert$ that $list:list$ value times into a new $list:list$
+      create function which $input:take$ 1 $input:input$ (value). create $list:list$ of ascending numbers of value. insert that $list:list$ value times into a new $list:list$
       """
       
 subset: middle
@@ -11361,7 +11361,7 @@ submitted_text: |-
 prompt: |-
   def generateCardDeck(suits, vals):
       """
-      def generateCardDeck(suits, vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines Card=[], Card then flips the order of suit[] making the $keys:variables$ $return:print$ in the opposite order, this program then $returns:outputs$ and combination of the suit [] and val []
+      def generateCardDeck(suits, vals): $inputs1:brings in$ the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines Card=[], Card then flips the order of suit[] making the variables $return:print$ in the opposite order, this program then $returns:outputs$ and combination of the suit [] and val []
   def generateCardDeck(suits, vals): brings in the information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then $returns:outputs$ and combination of the opposite order of the suit [] and the val [].
   def generateCardDeck(suits, vals): brings in the information:['H'], ['2'] and defines Card=[], this program then $returns:outputs$ and combination of both the suit [] and the val [].
       """

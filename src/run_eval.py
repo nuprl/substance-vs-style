@@ -12,14 +12,12 @@ This dataset can be generated using batched_lm_generation.vllm_base.
 - extras
     - __index_level_0__
     - assertions
-    - entrypoint
     - first_attempt
     - last_attempt
     - prints
     - problem
     - total_tests
     - prompt
-    - submitted_text
     - username
     
 1. Flattens dataset to remove `extras` field
@@ -28,6 +26,7 @@ This dataset can be generated using batched_lm_generation.vllm_base.
     test - for each problem, stores the first completion (simulates 1 completion)
     all_completions - the eval results of all completions (for computing pass@k)
 """
+import os
 import datasets
 import argparse
 import subprocess
@@ -36,6 +35,7 @@ from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 from tqdm import tqdm
 import tempfile
+from utils import load
 EXECUTION_TIMEOUT = 15
 
 def generate_splits(ds):
@@ -43,13 +43,27 @@ def generate_splits(ds):
     df = ds.to_pandas()
     df.to_csv("/tmp/studenteval_completions.csv")
     # drop all completions but 0
-    filtered_df = df[df["completion_id"] == 0]
-    # save filtered csv
-    filtered_df.to_csv("/tmp/studenteval_filtered.csv")
-    return datasets.load_dataset("csv", data_files={
-        "test": "/tmp/studenteval_filtered.csv",
-        "all_completions": "/tmp/studenteval_completions.csv"
-    })
+    if "completion_id" in df.columns:
+        filtered_df = df[df["completion_id"] == 0]
+        # save filtered csv
+        filtered_df.to_csv("/tmp/studenteval_filtered.csv")
+    
+    if not os.path.exists("/tmp/studenteval_filtered.csv"):
+        data_files = {"test": "/tmp/studenteval_completions.csv"}
+    else:
+        data_files={
+            "test": "/tmp/studenteval_filtered.csv",
+            "all_completions": "/tmp/studenteval_completions.csv"
+        }
+        
+    ds = datasets.load_dataset("csv", data_files=data_files)
+        
+    if os.path.exists("/tmp/studenteval_filtered.csv"):
+        os.remove("/tmp/studenteval_filtered.csv")
+    if os.path.exists("/tmp/studenteval_completions.csv"):
+        os.remove("/tmp/studenteval_completions.csv")
+        
+    return ds
     
 def run_problem(ex):
     tests_passed = 0
@@ -58,11 +72,11 @@ def run_problem(ex):
     
     for idx,test in enumerate(tests):
         assert ex["prompt"] not in ex["completion"]
-        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ test + "\n" + ex["prints"]
+        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ test
         with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}") as f:
             f.write(prompt)
             f.flush()
-            stdout, stderr= None,None
+            stderr= None
             try:
                 result = subprocess.run(
                     ["python3", f.name],
@@ -72,9 +86,6 @@ def run_problem(ex):
                 )
                 exit_code = result.returncode
                 stderr = result.stderr
-                stdout = result.stdout
-                if stdout is not None:
-                    stdout = stdout.decode("utf-8")
                 if stderr is not None:
                     stderr = stderr.decode("utf-8")
             except subprocess.TimeoutExpired:
@@ -82,6 +93,25 @@ def run_problem(ex):
         
         if exit_code == 0:
             tests_passed += 1
+            
+        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ ex["prints"]
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}_prints") as f:
+            f.write(prompt)
+            f.flush()
+            stdout= None
+            try:
+                result = subprocess.run(
+                    ["python3", f.name],
+                    timeout=EXECUTION_TIMEOUT,
+                    capture_output=True,
+                    stdin=subprocess.DEVNULL,
+                )
+                stdout = result.stdout
+                if stdout is not None:
+                    stdout = stdout.decode("utf-8")
+            except subprocess.TimeoutExpired:
+                pass
+        
     assert tests_passed <= ex["total_tests"]
     is_success = bool(tests_passed == ex["total_tests"])
     return {**ex, "is_success": is_success, "tests_passed": tests_passed,
@@ -91,39 +121,42 @@ def run_problem(ex):
             "is_last_failure": ex["last_attempt"] and not is_success,
             "is_last_success": ex["last_attempt"] and is_success,}
 
+def flatten(x, i):
+    extras = x.pop("extras", None)
+    if extras:
+        x = {**extras, **x}
+    return {**x, "_id": i}
     
 def main(args):
     datasets.disable_caching()
-    ds = datasets.load_from_disk(args.dataset)
-    ds = ds.map(lambda x,i: {**x["extras"], "completion": x["completion"],
-                           "completion_id": x["completion_id"], "temperature": x["temperature"], "_id": i}, desc="Flattening", with_indices=True)
+    ds = load(args.dataset, args.split)
+    ds = ds.map(flatten, desc="Flattening", with_indices=True)
 
     with ThreadPoolExecutor(max_workers=cpu_count() - 1) as executor:
         res = list(tqdm(executor.map(run_problem, ds), total=len(ds)))
         ds = datasets.Dataset.from_list(res)
         
-    ds = ds.remove_columns(["extras","_id"])
+    ds = ds.remove_columns(["_id"])
     # create splits
     ds = generate_splits(ds)
     ds.save_to_disk(args.outdataset)
     print(ds)
     # num success
-    print("All completions success rate:", ds["all_completions"].to_pandas()["is_success"].mean())
     print("Test split success rate:", ds["test"].to_pandas()["is_success"].mean())
+    print("All completions success rate:", ds["all_completions"].to_pandas()["is_success"].mean())
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("dataset")
     parser.add_argument("outdataset")
+    parser.add_argument("--split", type=str, default=None)
     args = parser.parse_args()
     main(args)
-    
     
     
 """
 PYTESTS
 """
-
 
 def test_run_problem():
     ex = {

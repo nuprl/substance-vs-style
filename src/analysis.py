@@ -1,6 +1,7 @@
 """
 Takes a dataset with an "all_completions" split and computes metrics over it
 """
+import json
 import os
 import numpy as np
 from datasets import load_dataset, load_from_disk
@@ -8,9 +9,31 @@ import argparse
 from multiprocessing import cpu_count
 import pandas as pd
 from utils import load, estimator
+import re
 
+def extract_error_message(x):
+    match = re.search("\n(\w+Error):", str(x))
+    if match:
+        error = match.groups()[-1]
+        error_idx = x.index(error)
+        return x[error_idx:] #.split(":")[0]
+    else:
+        return x
+
+def anonimize_filename(stderr):
+    return re.sub("/tmp/.*?\.py", "/tmp/file.py", stderr)
+
+def fmt(std):
+    if std is None:
+        return "__"
+    if len(std) == 0:
+        return "__"
+    else:
+        return anonimize_filename(std.encode("utf-8").decode('unicode_escape'))
     
 def pass_k_per_field(df, field, k):
+    if "completion_id" not in df.columns:
+        df["completion_id"] = [0]*len(df)
     df_field = df.groupby([field,"__index_level_0__"]).agg({
         "is_success": "sum", 
         "completion_id": lambda x: max(x) + 1
@@ -27,6 +50,46 @@ def main(args):
         per_field = df_field[[field,'pass@1']].groupby(field).agg({'pass@1':'mean'}).reset_index().sort_values("pass@1")
         print(f"Mean Pass@1 per {field}:\n{per_field}")
         print(f"Mean pass@1:", df_field["pass@1"].mean())
+        
+    # problems where first_attempt = Fail and last_attempt = Success
+    df = ds.to_pandas()
+    df = df[df["first_attempt"] != df["is_success"]]
+    succ_problems = df.groupby(["problem","username"]).agg({"is_success": "any"}).reset_index()
+    
+    def successful_students(x):
+        candidates = succ_problems[succ_problems["is_success"]]
+        candidates = list(zip(candidates["username"].to_list(), candidates["problem"].to_list()))
+        return (x["username"], x["problem"]) in candidates
+    
+    ds_filtered = ds.filter(successful_students)
+    print(ds_filtered)
+    ds_filtered.save_to_disk("student_improved")
+    ds_filtered.to_pandas().to_csv("student_improved.csv")
+    
+    print(succ_problems["is_success"].value_counts(), succ_problems)
+
+    # for each problem, see how many stderr and stdouts exist    
+    ds_fmt = ds.map(lambda x: {**x, "stdout": fmt(x["stdout"]), "stderr": fmt(x["stderr"]), 
+                           "error_message": extract_error_message(fmt(x["stderr"]))})
+    df = ds_fmt.to_pandas()
+    df = df.groupby("problem").agg({"stderr": "unique", "stdout": "unique", "error_message":"unique","prompt":"unique"}).reset_index()
+    
+    # save clusters
+    cluster_data = df.to_json("cluster.json", indent=4)
+    
+    def setsize(x):
+        x = set(x)
+        try:
+            x.remove("__") # placeholder
+        except KeyError:
+            pass
+        return len(x)
+    
+    df["error_message"] = df["error_message"].apply(setsize)
+    df["stderr"] = df["stderr"].apply(setsize)
+    df["stdout"] = df["stdout"].apply(setsize)
+    df["prompt"] = df["prompt"].apply(setsize)
+    print(df)
     
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

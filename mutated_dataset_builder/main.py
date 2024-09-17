@@ -7,7 +7,7 @@ import re
 #string, list, dictionary, integer, return, input, concatenate
 #and maybe also:loop, skip, typecast, key
 
-# For each KEY:VALUE pair, when we see the word KEY in the prompt, we tag it
+# For each KEY:VALUE pair of TAGS, when we see the word KEY in the prompt, we tag it
 # with VALUE using tag_prompt.
 #See charlie_sysnonyms.csv
 TAGS = {
@@ -19,16 +19,22 @@ TAGS = {
     "string": "string",
     "strings": "strings",
     "set of characters": "string",
-    "characters": "strings",
+    "sets of characters": "strings",
     "character": "string",
+    "characters": "strings",
     #list:
     "brackets": "list",
+    "brackets": "lists",
     "set of brackets": "list",
+    "set of brackets": "lists",
     "set": "list",
+    "sets": "lists",
     "list": "list",
     "lists": "lists",
     "array": "list",
+    "arrays": "lists",
     "sequence": "list",
+    "sequences": "lists",
     #dictionary:
     "map": "dictionary",
     "maps": "dictionaries",
@@ -40,12 +46,14 @@ TAGS = {
     "integer": "integer",
     "integers": "integers",
     "whole number": "integer",
+    "whole numbers": "integers",
     "int": "integer",
+    "ints": "integers",
     #return
     "output": "return",
     "outputs": "returns",
-    "outputed": "returned",
-    "outputing": "returning",
+    "outputted": "returned",
+    "outputting": "returning",
     "return": "return",
     "returns": "returns",
     "returned": "returned",
@@ -67,21 +75,28 @@ TAGS = {
     "parameters": "inputs",
     "input": "input",
     "inputs": "inputs",
-    "inputed": "input",
+    "inputed": "input",#input pass tense is input?
     "inputted": "input",
     "argument": "input",
     "arguments": "inputs",
     "take": "input",
     "takes": "inputs",
     "provided": "input",
+    "provided": "inputs",
     "enter": "input",
     "enters": "inputs",
     "entered": "input",
-    "brings in": "input",
+    "bring in": "input",
+    "brings in": "inputs",
     "given": "input",
+    "given": "inputs",
     "passed": "input",
+    "passed": "inputs",
     "accept": "input",
+    "accepts": "inputs",
+    "get": "input",
     "gets": "inputs",
+    "receive": "input",
     "receives": "inputs",
     #concatenate
     "add": "concatenate",
@@ -123,8 +138,10 @@ TAGS = {
     "loops through": "loops through",
     "run a for loop through": "loop through",
     "runs a for loop through": "loops through",
+    "look through": "loop through",
     "looks through": "loops through",
-    "executes a for loop": "loops",
+    "execute a for loop": "loop through",
+    "executes a for loop": "loops through",
     "loop over": "loop through",
     "loops over": "loops through",
     #skip
@@ -171,6 +188,9 @@ TAGS = {
     "typecasted": "typecasted",
     "typecasting": "typecasting",
     "treat": "typecast",
+    "treats": "typecasts",
+    "treated": "typecasted",
+    "treating": "typecasting",
     #key
     "key": "key",
     "keys": "keys",

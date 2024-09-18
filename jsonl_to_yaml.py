@@ -16,7 +16,9 @@ yaml.representer.add_representer(str, str_presenter)
 yaml.default_flow_style = False
 yaml.allow_unicode = True
 
-with open('tagged_prompts.jsonl', 'r') as jsonl_file, open('outputtry.yaml', 'w') as yaml_file:
-    for line in jsonl_file:
-        data = json.loads(line)
-        yaml.dump(data, yaml_file)
+with open('tagged_prompts_middle.jsonl', 'r') as jsonl_file:
+    data_list = [json.loads(line) for line in jsonl_file]
+
+# Write the list of dictionaries to the YAML file as a properly indented list
+with open('tagged_prompts_for_edits_middle.yaml', 'w') as yaml_file:
+    yaml.dump(data_list, yaml_file)

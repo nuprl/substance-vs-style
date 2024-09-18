@@ -70,43 +70,37 @@ TAGS = {
     "displays": "returns",
     "displayed": "returned",
     "displaying": "returning",
+    #parameter
+    "parameter": "parameter",
+    "parameters": "parameters",
+    "argument": "parameter",
+    "arguments": "parameters",
+    "value provided": "parameter",
+    "values provided": "parameters",
     #input
-    "parameter": "input",
-    "parameters": "inputs",
     "input": "input",
     "inputs": "inputs",
-    "inputed": "input",#input pass tense is input?
-    "inputted": "input",
-    "argument": "input",
-    "arguments": "inputs",
-    "take": "input",
-    "takes": "inputs",
-    "provided": "input",
-    "provided": "inputs",
-    "enter": "input",
-    "enters": "inputs",
-    "entered": "input",
-    "bring in": "input",
-    "brings in": "inputs",
-    "given": "input",
-    "given": "inputs",
-    "passed": "input",
-    "passed": "inputs",
-    "accept": "input",
-    "accepts": "inputs",
-    "get": "input",
-    "gets": "inputs",
-    "receive": "input",
-    "receives": "inputs",
+    "inputed": "inputted",
+    "inputted": "inputted",
+    #takes
+    "take": "take",
+    "takes": "takes",
+    "bring in": "take",
+    "brings in": "takes",
+    "accept": "take",
+    "accepts": "takes",
+    "get": "take",
+    "gets": "takes",
+    "receive": "take",
+    "receives": "takes",
+    #provide
+    "provide": "provide",
+    "provides": "provides",
+    "provided": "provided",
+    "enter": "provide",
+    "enters": "provides",
+    "entered": "provided",
     #concatenate
-    "add": "concatenate",
-    "adds": "concatenates",
-    "added": "concatenated",
-    "adding": "concatenating",
-    "insert": "concatenate",
-    "inserts": "concatenates",
-    "inserted": "concatenated",
-    "inserting": "concatenating",
     "combine": "concatenate",
     "combines": "concatenates",
     "combined": "concatenated",
@@ -115,18 +109,27 @@ TAGS = {
     "splices": "concatenates",
     "spliced": "concatenated",
     "splicing": "concatenating",
-    "attach": "concatenate",
-    "attaches": "concatenates",
-    "attached": "concatenated",
-    "attaching": "concatenating",
     "concatenate": "concatenate",
     "concatenates": "concatenates",
     "concatenated": "concatenated",
     "concatenating": "concatenating",
-    "append": "concatenate",
-    "appends": "concatenates",
-    "appended": "concatenated",
-    "appending": "concatenating",
+    #insert
+    "add": "insert",
+    "adds": "inserts",
+    "added": "inserted",
+    "adding": "inserting",
+    "insert": "insert",
+    "inserts": "inserts",
+    "inserted": "inserted",
+    "inserting": "inserting",
+    "attach": "insert",
+    "attaches": "inserts",
+    "attached": "inserted",
+    "attaching": "inserting",
+    "append": "insert",
+    "appends": "inserts",
+    "appended": "inserted",
+    "appending": "inserting",
     #loop
     "go through": "loop through",
     "goes through": "loops through",
@@ -140,8 +143,8 @@ TAGS = {
     "runs a for loop through": "loops through",
     "look through": "loop through",
     "looks through": "loops through",
-    "execute a for loop": "loop through",
-    "executes a for loop": "loops through",
+    "execute a for loop with": "loop through",
+    "executes a for loop with": "loops through",
     "loop over": "loop through",
     "loops over": "loops through",
     #skip
@@ -219,7 +222,7 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
 
     This function will return the following string:
 
-    This function $$returns:prints$$ the $$string:word$$ "Hello".
+    This function $returns:prints$ the $string:word$ "Hello".
     (the form $CATEGORY:ORIGINAL$)
 
     Thus, all possible words that we may substitute are tagged with their category.
@@ -231,10 +234,31 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
     doc = nlp(prompt)
     new_prompt = []
     last_end = 0
-    for token in doc:
-        # lemma = token.lemma_
-        if token.idx > last_end:
-            new_prompt.append(prompt[last_end:token.idx])
+    i = 0
+    
+    while i < len(doc):
+        if doc[i].idx > last_end:
+            new_prompt.append(prompt[last_end:doc[i].idx])
+
+        # Check for five-token phrases
+        if i < len(doc) - 4:
+            five_token_phrase = f"{doc[i].text} {doc[i+1].text} {doc[i+2].text} {doc[i+3].text} {doc[i+4].text}"
+            if five_token_phrase in TAGS:
+                new_prompt.append(f"${TAGS[five_token_phrase]}:{five_token_phrase}$")
+                last_end = doc[i+4].idx + len(doc[i+4].text)
+                i += 5
+                continue
+        # Check for two-token phrases
+        if i < len(doc) - 1:
+            two_token_phrase = f"{doc[i].text} {doc[i+1].text}"
+            if two_token_phrase in TAGS:
+                new_prompt.append(f"${TAGS[two_token_phrase]}:{two_token_phrase}$")
+                last_end = doc[i+1].idx + len(doc[i+1].text)
+                i += 2
+                continue
+        
+        # Handle single-token categories
+        token = doc[i]
         if token.text in TAGS:
             new_prompt.append(f"${TAGS[token.text]}:{token.text}$")
         elif token.text.lower() in TAGS:
@@ -243,7 +267,10 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
             new_prompt.append(f"${uppercasetag}:{token.text}$")
         else:
             new_prompt.append(token.text)
+        
         last_end = token.idx + len(token.text)
+        i += 1
+
     if last_end < len(prompt):
         new_prompt.append(prompt[last_end:])
     modified_prompt = "".join(new_prompt)
@@ -251,35 +278,44 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
 
 def main_with_args(original_dataset: str, output_path: Path):
     nlp = spacy.load("en_core_web_trf")
-    original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
+    # original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
+    full_dataset = datasets.load_dataset(original_dataset, split="test")
+    middle_dataset = full_dataset.filter(lambda x: not x['first_attempt'] and not x['last_attempt'])
     #[ ] Drop columns that seem pointless: prints, tests_passed,  total_tests, completion.  (Some of these are now stale – after substitution, we are going to get different values for these columns)
     columns_to_drop = ['prints', 'tests_passed', 'total_tests', 'completion', 'is_success','first_attempt','last_attempt','is_first_success', 'is_first_failure', 'is_last_success', 'is_last_failure'] 
 
     results = [ ]
-    for item in original_dataset:
+    for item in middle_dataset:#middle_dataset
         original_prompt = item["prompt"]
         tagged_prompt = tag_prompt(nlp, original_prompt)
         item['prompt'] = tagged_prompt
         #[ ] Single column “subset” with values first_success / first_failure / last_success / last_failure
-        subset_value = None
-        if item['is_first_success']:
-            subset_value = 'first_success' 
-        elif item['is_last_success']:
-            subset_value = 'last_success'
-        elif item['is_first_failure']:
-            subset_value = 'first_failure'
-        elif item['is_last_failure']:
-            subset_value = 'last_failure'
-        else:
-            raise ValueError("No subset value found")
+        # subset_value = None
+        # if item['is_first_success']:
+        #     subset_value = 'first_success' 
+        # elif item['is_last_success']:
+        #     subset_value = 'last_success'
+        # elif item['is_first_failure']:
+        #     subset_value = 'first_failure'
+        # elif item['is_last_failure']:
+        #     subset_value = 'last_failure'
+        # else:
+        #     raise ValueError("No subset value found")
+        subset_value = 'middle_failure'
+        if item['is_success']:
+            subset_value = 'middle_success'
         item['subset'] = subset_value
         # Drop columns that seem pointless
         for column in columns_to_drop:
             del item[column]
-        # Reorder fields so that index is last
-        reordered_item = {k: v for k, v in item.items() if k != '__index_level_0__'}
+        # Reorder fields so that '__index_level_0__' is first
+        reordered_item = {}
         if '__index_level_0__' in item:
             reordered_item['__index_level_0__'] = item['__index_level_0__']
+
+        # Add the rest of the fields, excluding '__index_level_0__'
+        reordered_item.update({k: v for k, v in item.items() if k != '__index_level_0__'})
+
         results.append(reordered_item)
 
     with output_path.open("w") as f:
@@ -291,7 +327,7 @@ def main_with_args(original_dataset: str, output_path: Path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--original_dataset", type=str, default="wellesley-easel/StudentEval")
-    parser.add_argument("--output_path", type=Path, default=Path("tagged_prompts.jsonl"))
+    parser.add_argument("--output_path", type=Path, default=Path("tagged_prompts_middle.jsonl"))
     args = parser.parse_args()
     main_with_args(args.original_dataset, args.output_path)
 

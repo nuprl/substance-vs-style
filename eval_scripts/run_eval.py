@@ -2,6 +2,7 @@
 Heavily inspired by bigcode_evaluation_harness.
 Evaluate studenteval completions from a dataset with the following columns.
 This dataset can be generated using batched_lm_generation.vllm_base.
+[Can also handle a dataset in the original wellesley-easel/StudentEval format]
 
 - prompt
 - temperature
@@ -21,10 +22,11 @@ This dataset can be generated using batched_lm_generation.vllm_base.
     - username
     
 1. Flattens dataset to remove `extras` field
-2. runs every completion and records `is_success, is_first_success, is_first_failure, is_last success, is_last_failure, tests_passed`
+2. runs every completion and records `is_success, is_first_success, is_first_failure, is_last success, 
+is_last_failure, tests_passed, stderr, stdout`
 3. Creates a dataset with 2 splits:
     test - for each problem, stores the first completion (simulates 1 completion)
-    all_completions - the eval results of all completions (for computing pass@k)
+    all_completions - the eval results of all completions (for computing pass@k - if all_completions split is passed)
 """
 import os
 import datasets
@@ -38,34 +40,34 @@ import tempfile
 from utils import load
 EXECUTION_TIMEOUT = 15
 
-def generate_splits(ds):
-    # save main as csv
-    df = ds.to_pandas()
-    df.to_csv("/tmp/studenteval_completions.csv")
-    # drop all completions but 0
-    if "completion_id" in df.columns:
-        filtered_df = df[df["completion_id"] == 0]
-        # save filtered csv
-        filtered_df.to_csv("/tmp/studenteval_filtered.csv")
-    
-    if not os.path.exists("/tmp/studenteval_filtered.csv"):
-        data_files = {"test": "/tmp/studenteval_completions.csv"}
-    else:
-        data_files={
-            "test": "/tmp/studenteval_filtered.csv",
-            "all_completions": "/tmp/studenteval_completions.csv"
-        }
-        
-    ds = datasets.load_dataset("csv", data_files=data_files)
-        
-    if os.path.exists("/tmp/studenteval_filtered.csv"):
-        os.remove("/tmp/studenteval_filtered.csv")
-    if os.path.exists("/tmp/studenteval_completions.csv"):
-        os.remove("/tmp/studenteval_completions.csv")
-        
+def remove_columns(ds, columns):
+    for col in columns:
+        if col in ds.column_names:
+            ds = ds.remove_columns(col)
     return ds
+
+def generate_splits(ds):
+    if "completion_id" in ds.column_names:
+        # filter all completions but compltion 0 (simulates n=1 completions)
+        filtered_ds = ds.filter(lambda x: x["completion_id"] == 0, num_proc=cpu_count())
+        new_ds = datasets.DatasetDict({
+            "test": filtered_ds,
+            "all_completions": ds
+        })
+    else:
+        new_ds = datasets.DatasetDict({
+            "test": ds
+        })
+
+    for split_name in new_ds.keys():
+        new_ds[split_name] = remove_columns(new_ds[split_name], ["_id","Unnamed: 0"])
+    return new_ds
     
-def run_problem(ex):
+def run_problem(ex: dict) -> dict:
+    """
+    Runs each assertion for a prompt separately. Collects num tests passed.
+    Runs each print statement separately. Collects stdout and stderr
+    """
     tests_passed = 0
     tests = ["assert "+ a for a in ex["assertions"].split("assert ") if a != ""]
     assert len(tests) == ex["total_tests"]
@@ -76,7 +78,6 @@ def run_problem(ex):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}") as f:
             f.write(prompt)
             f.flush()
-            stderr= None
             try:
                 result = subprocess.run(
                     ["python3", f.name],
@@ -85,16 +86,16 @@ def run_problem(ex):
                     stdin=subprocess.DEVNULL,
                 )
                 exit_code = result.returncode
-                stderr = result.stderr
-                if stderr is not None:
-                    stderr = stderr.decode("utf-8")
             except subprocess.TimeoutExpired:
                 exit_code = 1
         
         if exit_code == 0:
             tests_passed += 1
-            
-        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ ex["prints"]
+    
+    prints = ["print(" + p for p in ex["prints"].split("print(") if p != ""]
+    all_stdouts,all_stderrs = [],[]
+    for idx,print_stmt in enumerate(prints):   
+        prompt = ex["prompt"].strip() + "\n    " + ex["completion"] + "\n"+ print_stmt
         with tempfile.NamedTemporaryFile(mode="w", suffix=".py", prefix=f"{ex['_id']}_{idx}_prints") as f:
             f.write(prompt)
             f.flush()
@@ -109,13 +110,18 @@ def run_problem(ex):
                 stdout = result.stdout
                 if stdout is not None:
                     stdout = stdout.decode("utf-8")
+                all_stdouts.append(stdout)
+                stderr = result.stderr
+                if stderr is not None:
+                    stderr = stderr.decode("utf-8")
+                all_stderrs.append(stderr)
             except subprocess.TimeoutExpired:
                 pass
-        
+    
     assert tests_passed <= ex["total_tests"]
     is_success = bool(tests_passed == ex["total_tests"])
     return {**ex, "is_success": is_success, "tests_passed": tests_passed,
-            "stderr":stderr,"stdout":stdout,
+            "stderr": all_stderrs,"stdout": all_stdouts,
             "is_first_failure": ex["first_attempt"] and not is_success, 
             "is_first_success": ex["first_attempt"] and is_success, 
             "is_last_failure": ex["last_attempt"] and not is_success,
@@ -135,15 +141,17 @@ def main(args):
     with ThreadPoolExecutor(max_workers=cpu_count() - 1) as executor:
         res = list(tqdm(executor.map(run_problem, ds), total=len(ds)))
         ds = datasets.Dataset.from_list(res)
-        
-    ds = ds.remove_columns(["_id"])
+    
     # create splits
     ds = generate_splits(ds)
     ds.save_to_disk(args.outdataset)
+    
+    # print some info
     print(ds)
-    # num success
-    print("Test split success rate:", ds["test"].to_pandas()["is_success"].mean())
-    print("All completions success rate:", ds["all_completions"].to_pandas()["is_success"].mean())
+    for split_name, split in ds.items():
+        print(split_name, split.info)
+        # success rate
+        print(f"{split_name} split success rate:", split.to_pandas()["is_success"].mean())
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

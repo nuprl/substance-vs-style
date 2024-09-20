@@ -1,0 +1,230 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -12,12 +12,7 @@
+     the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are
+  !!int "2": |-
+    ---
+    +++
+    @@ -40,4 +40,16 @@
+     the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -2,33 +2,19 @@
+     planets_mass(planets): """ if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket """
+  !!int "4": |-
+    ---
+    +++
+    @@ -40,4 +40,11 @@
+     returns the total.+The+sun+and+pluto+are+not+planets. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -2,7 +2,7 @@
+     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
+  !!int "6": |-
+    ---
+    +++
+    @@ -7,49 +7,19 @@
+     that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -2,19 +2,12 @@
+     planets_mass(planets): """ if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 """
+  !!int "8": |-
+    ---
+    +++
+    @@ -9,6 +9,23 @@
+     a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
+     the masses of+only the planets and
+  !!int "9": |-
+    ---
+    +++
+    @@ -7,24 +7,17 @@
+     and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
+  !!int "10": |-
+    ---
+    +++
+    @@ -5,9 +5,11 @@
+     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
+"nodes":
+  !!int "0":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          if planet[1] > 16:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          if planet[1] > 16:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(planets_mass({'Pluto': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          if planet[1] > 16:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "1":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 19, in <module>
+          print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 18, in planets_mass
+          mass_
+      NameError: name 'mass_' is not defined. Did you mean: 'mass_16'?
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 19, in <module>
+          print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 18, in planets_mass
+          mass_
+      NameError: name 'mass_' is not defined. Did you mean: 'mass_16'?
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 19, in <module>
+          print(planets_mass({'Pluto': 100}))
+        File "/tmp/file.py", line 18, in planets_mass
+          mass_
+      NameError: name 'mass_' is not defined. Did you mean: 'mass_16'?
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      0
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      15
+    - |
+      15
+    - |
+      0
+    "stdout_id": !!int |-
+      3
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      115
+    - |
+      145
+    - |
+      100
+    "stdout_id": !!int |-
+      4
+  !!int "5":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 8, in planets_mass
+          mass_list.append(planets[planet]['mass'])
+      TypeError: 'int' object is not subscriptable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 8, in planets_mass
+          mass_list.append(planets[planet]['mass'])
+      TypeError: 'int' object is not subscriptable
+    - ""
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      0
+  !!int "6":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          total += planets[planet]['mass']
+      TypeError: 'int' object is not subscriptable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          total += planets[planet]['mass']
+      TypeError: 'int' object is not subscriptable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(planets_mass({'Pluto': 100}))
+        File "/tmp/file.py", line 7, in planets_mass
+          total += planets[planet]['mass']
+      TypeError: 'int' object is not subscriptable
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+"student_color":
+  "student14": |-
+    blue
+  "student46": |-
+    red
+  "student53": |-
+    green
+  "student55": |-
+    cyan

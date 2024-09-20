@@ -1,0 +1,87 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -8,7 +8,8 @@
+     list contains the-letter+uppercase+letters Q or U,
+  !!int "1": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     of letters, return-True+"True" if the list@@ -15,9 +15,11 @@
+     a Q or-U,+U+or+both, and-False+"False" if the list
+  !!int "2": |-
+    ---
+    +++
+    @@ -7,7 +7,9 @@
+     in lst has-"Q",+"Q"+or+"U", return True. If
+  !!int "3": |-
+    ---
+    +++
+    @@ -12,10 +12,11 @@
+     the list has-a-Q+the+letter+"Q" or-U+"U" or both, and
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      False
+    - |
+      False
+    - |
+      False
+    - |
+      False
+    "stdout_id": !!int |-
+      0
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      False
+    - |
+      True
+    - |
+      True
+    - |
+      True
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      False
+    - |
+      True
+    - |
+      False
+    - |
+      True
+    "stdout_id": !!int |-
+      2
+"student_color":
+  "student12": |-
+    blue
+  "student38": |-
+    red
+  "student77": |-
+    green

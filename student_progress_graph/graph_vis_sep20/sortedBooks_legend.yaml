@@ -1,0 +1,246 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -26,4 +26,18 @@
+     the author key.+Order+each+dictionary+in+the+list+by+ascending+the+values+in+the+year+key. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -27,5 +27,12 @@
+     corresponds to that-parameter+parameter,+with+a+line+break+between+each+entry """
+  !!int "3": |-
+    ---
+    +++
+    @@ -28,9 +28,12 @@
+     to that parameter,-separated-by+with+each+sub-dictionary+starting+on a+new line-break """
+  !!int "4": |-
+    ---
+    +++
+    @@ -25,13 +25,15 @@
+     of the author-key.-Order+key+and each dictionary in the list+is+sorted by ascending the
+  !!int "5": |-
+    ---
+    +++
+    @@ -31,12 +31,12 @@
+     to that parameter,-with-each-input-entry-on-a-new-line+sorted+in+order+according+to+the+year+value """
+  !!int "6": |-
+    ---
+    +++
+    @@ -8,8 +8,8 @@
+     entries in the-dictionary-books+input+list where the value
+  !!int "7": |-
+    ---
+    +++
+    @@ -22,7 +22,16 @@
+     input string in-a-dictionary-list+the+order+from+lowest+to+highest+value+of+their+'year'+key+value """
+  !!int "8": |-
+    ---
+    +++
+    @@ -9,6 +9,7 @@
+     in the dictionary+books where the value
+  !!int "9": |-
+    ---
+    +++
+    @@ -23,4 +23,12 @@
+     the input writer.+Sort+the+entries+in+order+of+increasing+year. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -25,6 +25,15 @@
+     match the string.+Sort+the+dictionaries+by+"year"+in+an+ascending+order. Return the updated
+  !!int "11": |-
+    ---
+    +++
+    @@ -17,6 +17,9 @@
+     name. Then return+a+list+with all input entries@@ -30,8 +33,8 @@
+     parameter, with each-sub-dictionary-starting+input+entry on a new
+  !!int "12": |-
+    ---
+    +++
+    @@ -28,11 +28,9 @@
+     to that parameter,-with+separated+by a line break-between-each-entry """
+  !!int "13": |-
+    ---
+    +++
+    @@ -21,4 +21,8 @@
+     the input string+in+a+dictionary+list """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      [{'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}]
+    - |
+      [{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    - |
+      []
+    "stdout_id": !!int |-
+      3
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      [{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]
+    - |
+      [{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    - |
+      []
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 7
+          print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],
+      IndentationError: expected an indented block after 'if' statement on line 6
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "3":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},
+        File "/tmp/file.py", line 5, in sortedBooks
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+        File "/tmp/file.py", line 5, in <listcomp>
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+      AttributeError: 'dict' object has no attribute 'split'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},
+        File "/tmp/file.py", line 5, in sortedBooks
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+        File "/tmp/file.py", line 5, in <listcomp>
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+      AttributeError: 'dict' object has no attribute 'split'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],
+        File "/tmp/file.py", line 5, in sortedBooks
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+        File "/tmp/file.py", line 5, in <listcomp>
+          return '
+      '.join([book for book in books if book.split(' - ')[1] == writer])
+      AttributeError: 'dict' object has no attribute 'split'
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "4":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 9
+          sortedBooks(books, 'J. R. R. Tolkien')
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 9
+          sortedBooks(books, 'J. R. R. Tolkien')
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 9
+          sortedBooks(books, 'J. R. R. Tolkien')
+      IndentationError: expected an indented block after 'if' statement on line 6
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      [{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    - |
+      [{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    - |
+      [{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    "stdout_id": !!int |-
+      0
+  !!int "6":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},
+        File "/tmp/file.py", line 5, in sortedBooks
+          return {k: v for k, v in books.items() if v['author'] == writer}
+      AttributeError: 'list' object has no attribute 'items'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},
+        File "/tmp/file.py", line 5, in sortedBooks
+          return {k: v for k, v in books.items() if v['author'] == writer}
+      AttributeError: 'list' object has no attribute 'items'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],
+        File "/tmp/file.py", line 5, in sortedBooks
+          return {k: v for k, v in books.items() if v['author'] == writer}
+      AttributeError: 'list' object has no attribute 'items'
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+"student_color":
+  "student27": |-
+    blue
+  "student29": |-
+    red
+  "student49": |-
+    green
+  "student68": |-
+    cyan
+  "student70": |-
+    pink

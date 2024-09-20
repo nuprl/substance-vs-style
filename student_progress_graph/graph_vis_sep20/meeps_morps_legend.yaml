@@ -1,0 +1,83 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -5,9 +5,9 @@
+     the number of-'meep'+'Meep' and-'morp'+'Morp' in a list
+  !!int "1": |-
+    ---
+    +++
+    @@ -10,6 +10,7 @@
+     and output a+tuple count of how
+  !!int "2": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     and output a-tuple+list count of how
+  !!int "3": |-
+    ---
+    +++
+    @@ -11,4 +11,7 @@
+     in a list+as+a+list """
+  !!int "4": |-
+    ---
+    +++
+    @@ -13,6 +13,9 @@
+     input and return+a+list+with the number of@@ -24,8 +27,5 @@
+     number that "Morp"-appears-in-a-list+appears. """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      (0, 0)
+    - |
+      (0, 0)
+    - |
+      (0, 0)
+    "stdout_id": !!int |-
+      0
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      (3, 2)
+    - |
+      (2, 0)
+    - |
+      (0, 0)
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [3, 2]
+    - |
+      [2, 0]
+    - |
+      [0, 0]
+    "stdout_id": !!int |-
+      2
+"student_color":
+  "student16": |-
+    blue
+  "student22": |-
+    red
+  "student5": |-
+    green

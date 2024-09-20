@@ -1,0 +1,164 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -30,4 +30,20 @@
+     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
+  !!int "1": ""
+  !!int "2": |-
+    ---
+    +++
+    @@ -20,17 +20,4 @@
+     with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
+  !!int "3": |-
+    ---
+    +++
+    @@ -19,5 +19,23 @@
+     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
+  !!int "4": |-
+    ---
+    +++
+    @@ -15,5 +15,16 @@
+     to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -31,4 +31,16 @@
+     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -26,5 +26,17 @@
+     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -23,8 +23,7 @@
+     out of range-don't-change-that-letter.+ignore+the+index. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -19,5 +19,18 @@
+     list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
+  !!int "9": |-
+    ---
+    +++
+    @@ -20,22 +20,17 @@
+     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
+  !!int "10": |-
+    ---
+    +++
+    @@ -4,12 +4,16 @@
+     Replace letters in+input s that are located in+index l to+the+input c """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - |
+      uvurybudy loves upples.
+    - |
+      iqe cream is the bestq
+    - |
+      toast and jam and toast and ham
+    "stdout_id": !!int |-
+      0
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - |
+      uvurybudy loves upples.
+    - |
+      iqe cream is the best
+    - |
+      toast and jam and toast and ham
+    "stdout_id": !!int |-
+      2
+  !!int "2":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(set_chars('Everybody loves apples.', "u", [0,2,6,16]))
+        File "/tmp/file.py", line 6, in set_chars
+          s = s.replace(i,c)
+      TypeError: replace() argument 1 must be str, not int
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(set_chars('ice cream is the best', 'q', [1,21]))
+        File "/tmp/file.py", line 6, in set_chars
+          s = s.replace(i,c)
+      TypeError: replace() argument 1 must be str, not int
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - |
+      toast and jam and toast and ham
+    "stdout_id": !!int |-
+      1
+  !!int "3":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(set_chars('ice cream is the best', 'q', [1,21]))
+        File "/tmp/file.py", line 7, in set_chars
+          s[i] = c
+      IndexError: list assignment index out of range
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      uvurybudy loves upples.
+    - ""
+    - |
+      toast and jam and toast and ham
+    "stdout_id": !!int |-
+      3
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(set_chars('toast and jam and toast and ham', 't', []))
+        File "/tmp/file.py", line 5, in set_chars
+          if l[0] == 0:
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      uverybody loves apples.
+    - |
+      iqe cream is the best
+    - ""
+    "stdout_id": !!int |-
+      4
+"student_color":
+  "student19": |-
+    blue
+  "student20": |-
+    red
+  "student42": |-
+    green
+  "student57": |-
+    cyan
+  "student77": |-
+    pink

@@ -1,0 +1,178 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -11,7 +11,6 @@
+     is a String-treename key and a@@ -28,8 +27,8 @@
+     that has a-treename-"Aspen"+key,+"Aspen", whose number is
+  !!int "2": |-
+    ---
+    +++
+    @@ -2,13 +2,11 @@
+     check_for_aspen(trees): """ If+'Aspen'+is+in the-name-of-the-dictionary-is-'Aspen',+dictionary, returns 'Yup'. Otherwise
+  !!int "3": |-
+    ---
+    +++
+    @@ -4,6 +4,9 @@
+     If the name+of+the+dictionary is 'Aspen', returns
+  !!int "4": |-
+    ---
+    +++
+    @@ -8,10 +8,6 @@
+     if there is-a-value-that-has a key, "Aspen".
+  !!int "5": |-
+    ---
+    +++
+    @@ -5,13 +5,11 @@
+     if "aspen" is-one-of-the-keys+a+key in a-dict.+dictionary. Return "Yup" if
+  !!int "6": |-
+    ---
+    +++
+    @@ -2,39 +2,19 @@
+     check_for_aspen(trees): """ given-an-array-formatted-so-that-there-is a-String-key-and-a-number-associated-with-that-key,+dictionary check if there is+a value that has a key,-"Aspen",-whose-number-is-greater-than-0.+"Aspen". return "Yup" if
+  !!int "7": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     values. Check if-"aspen"+"Aspen" is one of
+  !!int "8": |-
+    ---
+    +++
+    @@ -1,15 +1,24 @@
+     def check_for_aspen(trees): """+A+dict+object+contains+keys+and+values. Check if "aspen" is-a-key+one+of+the+keys in a-dictionary.+dict. Return "Yup" if
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      Nope
+    - |
+      Nope
+    - |
+      Nope
+    "stdout_id": !!int |-
+      2
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      Nope
+    - |
+      Yup
+    - |
+      Yup
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Oak": 3, "Birch": 5, "Elm": 2}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree.name == 'Aspen':
+      AttributeError: 'str' object has no attribute 'name'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Aspen": 7, "Beech": 15}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree.name == 'Aspen':
+      AttributeError: 'str' object has no attribute 'name'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Beech": 8, "Maple": 2, "Aspen": 3}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree.name == 'Aspen':
+      AttributeError: 'str' object has no attribute 'name'
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "3":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Oak": 3, "Birch": 5, "Elm": 2}))
+        File "/tmp/file.py", line 5, in check_for_aspen
+          if trees['name'] == 'Aspen':
+      KeyError: 'name'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Aspen": 7, "Beech": 15}))
+        File "/tmp/file.py", line 5, in check_for_aspen
+          if trees['name'] == 'Aspen':
+      KeyError: 'name'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Beech": 8, "Maple": 2, "Aspen": 3}))
+        File "/tmp/file.py", line 5, in check_for_aspen
+          if trees['name'] == 'Aspen':
+      KeyError: 'name'
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "4":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Oak": 3, "Birch": 5, "Elm": 2}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree["treename"] == "Aspen" and tree["number"] > 0:
+      TypeError: string indices must be integers
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Aspen": 7, "Beech": 15}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree["treename"] == "Aspen" and tree["number"] > 0:
+      TypeError: string indices must be integers
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(check_for_aspen({"Beech": 8, "Maple": 2, "Aspen": 3}))
+        File "/tmp/file.py", line 6, in check_for_aspen
+          if tree["treename"] == "Aspen" and tree["number"] > 0:
+      TypeError: string indices must be integers
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+"student_color":
+  "student27": |-
+    blue
+  "student49": |-
+    red
+  "student67": |-
+    green
+  "student68": |-
+    cyan

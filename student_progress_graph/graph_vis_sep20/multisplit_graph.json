@@ -1,0 +1,68 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "color": "red",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "color": "red",
+            "id": 2
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "color": "red",
+            "id": 3
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 1,
+                "color": "blue",
+                "username": "student15",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 0,
+                "color": "red",
+                "username": "student45",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "red",
+                "username": "student45",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "green",
+                "username": "student55",
+                "id": 1,
+                "key": 0
+            }
+        ]
+    ]
+}

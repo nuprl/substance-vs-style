@@ -1,0 +1,201 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -36,14 +36,15 @@
+     number it adds-a+the+number zero to the end of the-integar.+integer. Then the output
+  !!int "1": |-
+    ---
+    +++
+    @@ -37,13 +37,17 @@
+     it adds the-number+integer zero to the end of the+number+and+returns+an integer. Then the
+  !!int "2": |-
+    ---
+    +++
+    @@ -48,4 +48,10 @@
+     score + 1.+This+function+always+returns+an+int """
+  !!int "3": |-
+    ---
+    +++
+    @@ -36,7 +36,13 @@
+     end of the-number+number,+casts+it+back+into+an+int and returns it.@@ -48,10 +54,4 @@
+     score + 1.-This-function-always-returns-an-int """
+  !!int "4": |-
+    ---
+    +++
+    @@ -15,7 +15,7 @@
+     number is greater-then+than 9. If the@@ -24,7 +24,6 @@
+     negative it turns-it into a positive@@ -41,6 +40,9 @@
+     zero to the+end+of+the number. Then the
+  !!int "5": |-
+    ---
+    +++
+    @@ -4,7 +4,33 @@
+     takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@
+     more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place """
+  !!int "6": |-
+    ---
+    +++
+    @@ -10,11 +10,14 @@
+     the number is-negative,+below+10, make it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -16,9 +16,12 @@
+     the function returns-it-as-positive.+the+absolute+value+of+the+integer. If the integer
+  !!int "8": |-
+    ---
+    +++
+    @@ -43,7 +43,7 @@
+     end of the-number.+integar. Then the output
+  !!int "9": |-
+    ---
+    +++
+    @@ -11,4 +11,21 @@
+     its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20' """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      10
+    - |
+      01
+    - |
+      11
+    - |
+      16
+    - |
+      21
+    "stdout_id": !!int |-
+      2
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      10
+    - |
+      10
+    - |
+      11
+    - |
+      16
+    - |
+      21
+    "stdout_id": !!int |-
+      4
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      11
+    - |
+      10
+    - |
+      11
+    - |
+      16
+    - |
+      21
+    "stdout_id": !!int |-
+      1
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      10
+    - |
+      2
+    - |
+      11
+    - |
+      16
+    - |
+      21
+    "stdout_id": !!int |-
+      0
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      11
+    - |
+      2
+    - |
+      11
+    - |
+      16
+    - |
+      21
+    "stdout_id": !!int |-
+      5
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      10
+    - |
+      1
+    - |
+      10
+    - |
+      15
+    - |
+      20
+    "stdout_id": !!int |-
+      3
+"student_color":
+  "student23": |-
+    blue
+  "student33": |-
+    red
+  "student50": |-
+    green
+  "student59": |-
+    cyan
+  "student60": |-
+    pink
+  "student75": |-
+    black

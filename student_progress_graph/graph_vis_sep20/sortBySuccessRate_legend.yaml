@@ -1,0 +1,120 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -1,7 +1,12 @@
+     def sortBySuccessRate(nominations): """-Create+For+each+dictionary+in+list,+create a new dictionary
+  !!int "1": |-
+    ---
+    +++
+    @@ -46,7 +46,13 @@
+     of the key-'noms'.+'noms',+rounded+to+the+second+decimal+place. The outputted list
+  !!int "2": |-
+    ---
+    +++
+    @@ -1,27 +1,38 @@
+     def sortBySuccessRate(nominations): """+the+input+is+a+list+of+dictionaries. the function will divide the-number-of-wins+value+within+key+'wins' by the+value+within+key+'noms'.+the+new number-of-noms.-this will be-defined-by-the+stores+as+a new-variable+key, 'success'. the function@@ -31,13 +42,21 @@
+     a list that-orders+reorders the-input+dictionaries+within+the+original+list, in-increasing order of+highest success-values+value+to+lowest+success+value. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -29,6 +29,13 @@
+     divided by 'noms.'+Round+success+to+nearest+2+decimal+places. Sort by success
+  !!int "4": |-
+    ---
+    +++
+    @@ -23,6 +23,15 @@
+     within key 'noms'.+this+number+will+be+rounded+to+two+decimal+values. the new number
+"nodes":
+  !!int "0":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\n\
+      KeyError: 1\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 7, in sortBySuccessRate
+          success.append(nominations[i][1]/nominations[i][2])
+      KeyError: 1
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\n\
+      KeyError: 1\n"
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      1
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429},\
+      \ {'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}]\n"
+    - |
+      [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n"
+    "stdout_id": !!int |-
+      2
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}, {'nominee':\
+      \ 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\xC3\
+      \xA9', 'wins': 28, 'noms': 79, 'success': 0.35}]\n"
+    - |
+      [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee':\
+      \ 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n"
+    "stdout_id": !!int |-
+      0
+  !!int "3":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value\
+      \ in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          for key, value in nominations.items():
+      AttributeError: 'list' object has no attribute 'items'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key,\
+      \ value in nominations.items():\nAttributeError: 'list' object has no attribute\
+      \ 'items'\n"
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      1
+"student_color":
+  "student40": |-
+    blue
+  "student63": |-
+    red
+  "student64": |-
+    green

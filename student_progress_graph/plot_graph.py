@@ -41,7 +41,6 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
     END_NODE_COLOR = "green"
     STD_NODE_COLOR = "blue"
     COLORS = [
-        # 'red',
         'blue',
         'red',
         'green',

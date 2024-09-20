@@ -18,6 +18,8 @@ from functools import partial
 from multiprocessing import cpu_count
 import yaml
 import pandas as pd
+from collections import defaultdict
+import json
 
 def anonimize_filename(stderr):
     return re.sub("/tmp/.*?\.py", "/tmp/file.py", stderr)
@@ -36,34 +38,57 @@ def extract_error_message(stderr):
     stderr = stderr.strip().split("\n")[-1].split("Error:")[0].strip()
     return f"{stderr}Error"
 
-def number_attempts(ds):
-    df = ds.to_pandas()
-    total_num_attempts = len(df.groupby(["problem","username"]))
-    df["num_attempts"] = [1]*len(df)
-    df["attempt_num_min"] = list(range(len(df)))
-    df_new = df.groupby(["problem","username"]).agg({"num_attempts": "sum", "attempt_num_min": "first"}).reset_index()
-    df = df[[c for c in df.columns if not c in ["num_attempts","attempt_num_min"]]]
-    df = df.merge(df_new, on=["username","problem"])
-    df["attempt_id"] = df["attempt_num_min"].apply(lambda x: int((total_num_attempts * x) / max(df["attempt_num_min"])))
-    df["attempt_num"] = list(range(len(df)))
-    df["attempt_num"] = df["attempt_num"] - df["attempt_num_min"]
-    return Dataset.from_pandas(df[[c for c in df.columns if c != ["attempt_num_min"]]])
-
 def get_diff(prev, new):
     # ndiff shows full prompt, unified_diff shows localized change
     diff = difflib.unified_diff(prev.split(),new.split())
     return ''.join(diff)
 
+def number_attempts(ds):
+    """
+    Key is (problem, username)
+    """
+    def get_key(x):
+        return (x["problem"], x["username"])
+    
+    # compute total num attempts per key
+    df = ds.to_pandas()
+    total_num_attempts = len(df.groupby(["problem","username"]))
+    df["num_attempts"] = [1]*len(df)
+    df = df.groupby(["problem","username"]).agg({"num_attempts": "sum"}).reset_index()
+    key_to_num_attempts = {}
+    for dikt in df.to_dict("records"):
+        key_to_num_attempts[get_key(dikt)] = dikt["num_attempts"]
+    ds = ds.map(lambda x: {**x, "num_attempts": key_to_num_attempts[get_key(x)]},
+                num_proc=cpu_count(), desc="Counting attempts")
+    
+    # make attempt_ids per key
+    new_ds, counter = None, None
+    for i, row in enumerate(ds):
+        if i == 0:
+            new_ds = [{**row, "attempt_id": 0}]
+            counter = 0
+            continue
+        prev_problem, prev_username = get_key(new_ds[-1])
+        if row["problem"] != prev_problem or row["username"] != prev_username:
+            # start new counter
+            counter = 0
+        else:
+            # continue counter
+            counter += 1
+        new_ds.append({**row, "attempt_id": counter})
+    
+    return Dataset.from_list(new_ds)
+
+
 def compute_diffs(ds):
-    ds = number_attempts(ds)
     new_ds = []
     for i,row in enumerate(ds):
-        if row["attempt_num"] == 0:
+        if row["attempt_id"] == 0:
             new_ds.append({**row, "diff": None})
         else:
             prev = ds[i-1]
             # sanity check
-            assert (prev["attempt_num"] == row["attempt_num"]-1 and 
+            assert (prev["attempt_id"] == row["attempt_id"]-1 and 
                     prev["username"] == row["username"] and
                     prev["problem"] == row["problem"])
             new_ds.append({**row, "diff": get_diff(prev["prompt"], row["prompt"])})
@@ -81,75 +106,68 @@ def compute_clusters(ds):
             clusters[item["problem"]][key].add(item_key)
             
     # convert to lists for yaml
-    for k_prob,v_prob in clusters.items():
-        for key, set_val in v_prob.items():
-            list_val = list(set_val)
+    for problem_name,problem_data in clusters.items():
+        for k,v in problem_data.items():
+            list_val = list(v)
             for i,ele in enumerate(list_val):
                 if isinstance(ele, tuple):
                     list_val[i] = list(ele)
-            clusters[k_prob][key] = list_val
+            clusters[problem_name][k] = list_val
 
     return clusters
 
 def compute_trajectories(ds):
     # for each problem, collect student trajectory paths  
     trajectories = {problem: {} for problem in set(ds["problem"])}
-    ds = ds.sort(["username","problem","attempt_id"])
+    
+    # populate {problem: {username: {}}}
     for data in ds:
         if not data["username"] in trajectories[data["problem"]].keys():
             trajectories[data["problem"]].update(
                 {data["username"]: 
-                    {"stderr": [], "stdout": [], "diff": [], "prompt":[], "edges":[]}
+                    {"stderr": [], 
+                     "stdout": [], 
+                     "diff": [], 
+                     "prompt":[], 
+                     "edges":[],
+                     "attempt_id": []}
                 })
             
-        for key in ["stderr","stdout","diff","prompt"]:
+        for key in ["stderr","stdout","diff","prompt","attempt_id"]:
             trajectories[data["problem"]][data["username"]][key].append(data[key])
-        
+    
+    # populate edges separately
     for prob, traj in trajectories.items():
         for student, data in traj.items():
+            # sanity check order
+            order_ids = data["attempt_id"]
+            assert order_ids == list(range(max(order_ids)+1)), order_ids
+            assert len(order_ids) == len(data["stdout"]) == len(data["stderr"])
+            
             nodes = [list(n) for n in zip(data["stdout"], data["stderr"])]
             edges = [list(e) for e in zip(nodes, nodes[1:])]
             trajectories[prob][student]["edges"] = edges
 
     return trajectories
     
-    
-def main(args):
-    ds = load(args.dataset, args.split)
-    print(ds)
-    
-    # problems where first_attempt = Fail and last_attempt = Success
+def show_info(ds, clusters, trajectories):
+    """
+    Print/Check some info for debug
+    """
+    # check attempt_id computed correctly
     df = ds.to_pandas()
-    df = df[df["first_attempt"] != df["is_success"]]
-    succ_problems = df.groupby(["problem","username"]).agg({"is_success": "any"}).reset_index()
+    num_attempts = df.groupby(["problem", "username"]).agg({
+        "num_attempts":"first"
+        }).reset_index().rename(columns={"num_attempts":"attempt_id"})
+    max_attempt_ids = df.groupby(["problem", "username"]).agg({
+        "attempt_id": (lambda x: max(x) + 1)
+        }).reset_index()
+    assert num_attempts.equals(max_attempt_ids), f"{num_attempts} != {max_attempt_ids}"
     
-    def successful_students(x):
-        candidates = succ_problems[succ_problems["is_success"]]
-        candidates = list(zip(candidates["username"].to_list(), candidates["problem"].to_list()))
-        return (x["username"], x["problem"]) in candidates
+    # last attempt should always have attempt_id = max
+    last_attempt_ds = ds.filter(lambda x: x["last_attempt"] and x["attempt_id"]+1 == x["num_attempts"], num_proc=cpu_count())
+    assert len(last_attempt_ds) == len(df[df["last_attempt"]])
     
-    ds = ds.filter(successful_students)
-    print("Post filter:\n", ds)
-    
-    # add diffs, normalize stderr/stdout
-    ds = compute_diffs(ds)
-    ds = ds.map(lambda x: {
-        **x, 
-        "stderr": [fmt(item) for item in x["stderr"]],
-        "stdout":  [fmt(item) for item in x["stdout"]],
-        "error_message": [extract_error_message(fmt(item)) for item in x["stderr"]]
-    }, num_proc = cpu_count())
-    ds.save_to_disk(args.outdataset)
-    
-    df = ds.to_pandas()
-    num_attempts = len(df.groupby(["problem","username"]))
-    print(df, num_attempts, max(df["attempt_id"]))
-    
-    # compute clusters(nodes) for each problem
-    clusters = compute_clusters(ds)
-    with open(args.clusters_yaml, "w") as fp:
-        yaml.dump(clusters, fp)
-        
     # count clusters
     data = []
     for k,v in clusters.items():
@@ -159,12 +177,7 @@ def main(args):
                      "prompts": len(v["prompt"])})
     
     df_counts = pd.DataFrame(data)
-    print(df_counts)
-    
-    # compute trajectories(edges) for each problem
-    trajectories = compute_trajectories(ds)
-    with open(args.trajectories_yaml, "w") as fp:
-        yaml.dump(trajectories, fp)
+    print("[INFO] Clusters of stdout/stderr for each problem:\n", df_counts)
     
     # print some trajectories data
     #   - for each problem, how many students
@@ -176,7 +189,80 @@ def main(args):
             "num_students": len(traj),
             "len_trajectories": [len(v["stdout"]) for v in traj.values()]
         })
-    print(pd.DataFrame(problem_data))
+    print("\n[INFO] Student trajectory info for each problem:\n", pd.DataFrame(problem_data))
+    
+    # check that there is 1 end node for each problem
+    problem_to_end_nodes = {}
+    for item in ds:
+        if item["last_attempt"]:
+            node = ("\n".join(item["stdout"]), "\n".join(item["stderr"]))
+            if item["problem"] not in problem_to_end_nodes.keys():
+                problem_to_end_nodes[item["problem"]] = set()
+            problem_to_end_nodes[item["problem"]].add(node)
+    end_node_counts = {k:len(v) for k,v in problem_to_end_nodes.items()}
+    print("\n[INFO] How many end nodes for each problem:")
+    print(json.dumps(end_node_counts, indent=4, sort_keys=True))
+    
+    # inspect entries with multiple end nodes
+    multi_end_nodes_info = []
+    for k,v in problem_to_end_nodes.items():
+        if len(v) > 1:
+            tests = list(set(df[df["problem"] == k]["assertions"].to_list()))
+            prints = list(set(df[df["problem"] == k]["prints"].to_list()))
+            assert len(tests) == 1
+            assert len(prints) == 1
+            multi_end_nodes_info.append({
+                "problem": k,
+                "node": list(v),
+                # "tests": tests,
+                # "prints": prints
+            })
+    with open("/tmp/multi_end_nodes.yaml","w") as fp:
+        yaml.dump(multi_end_nodes_info, fp, default_style="|")
+    
+def main(args):
+    ds = load(args.dataset, args.split)
+    ds = number_attempts(ds)
+    print(ds)
+    
+    # problems where first_attempt = Fail and last_attempt = Success
+    #   - ignore entried where the first attempt was also last (no progression)
+    ds = ds.filter(lambda x: not (x["first_attempt"] and x["last_attempt"]), 
+                   num_proc=cpu_count(), desc="Filtering out non-progressions")
+    successful = ds.filter(lambda x: x["last_attempt"] and x["is_success"], 
+                    num_proc=cpu_count(), desc="Filter by successful last")
+    candidates = set(list(zip(successful["problem"], successful["username"])))
+    ds = ds.filter(lambda x: (x["problem"], x["username"]) in candidates, 
+                   num_proc=cpu_count(), desc="Filter candidates")
+    print("Post filter:\n", ds)
+    
+    # sanity: sort by attempt_number
+    ds = ds.sort(["problem","username","attempt_id"])
+    
+    # add diffs, normalize stderr/stdout
+    ds = compute_diffs(ds)
+    ds = ds.map(lambda x: {
+        **x, 
+        "stderr": [fmt(item) for item in x["stderr"]],
+        "stdout":  [fmt(item) for item in x["stdout"]],
+        "error_message": [extract_error_message(fmt(item)) for item in x["stderr"]]
+    }, num_proc = cpu_count())
+    ds.save_to_disk(args.outdataset)
+    
+    # compute clusters(nodes) for each problem
+    clusters = compute_clusters(ds)
+    with open(args.clusters_yaml, "w") as fp:
+        yaml.dump(clusters, fp)
+    
+    # compute trajectories(edges) for each problem
+    trajectories = compute_trajectories(ds)
+    with open(args.trajectories_yaml, "w") as fp:
+        yaml.dump(trajectories, fp)
+        
+    """
+    Print/Check some info for debug
+    """
+    # show_info(ds, clusters,trajectories)
     
 
 if __name__=="__main__":

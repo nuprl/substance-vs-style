@@ -5,7 +5,8 @@ Creates a subset of a dataset with completions + stderr/stdout columns, s.t.:
 - for each student change, compute diffs from previous prompt
 - numbers student attempts
 
-Also, creates a yaml file outlining stdout/stderr clusters for each problem.
+Also, creates a yaml file outlining stdout/stderr clusters for each problem +
+creates a yaml file outlining student trajectories for each problem
 """
 import argparse
 from utils import load
@@ -73,9 +74,43 @@ def compute_clusters(ds):
                           "error_message": set(), "prompt": set()} for problem in set(ds["problem"])}
     for item in ds:
         for key in ["stderr","stdout","error_message","prompt"]:
-            clusters[item["problem"]][key].add(tuple(item[key]))
+            item_key = item[key]
+            if isinstance(item_key, list):
+                item_key = tuple(item_key)
+            clusters[item["problem"]][key].add(item_key)
             
+    # convert to lists for yaml
+    for k_prob,v_prob in clusters.items():
+        for key, set_val in v_prob.items():
+            list_val = list(set_val)
+            for i,ele in enumerate(list_val):
+                if isinstance(ele, tuple):
+                    list_val[i] = list(ele)
+            clusters[k_prob][key] = list_val
+
     return clusters
+
+def compute_trajectories(ds):
+    # for each problem, collect student trajectory paths  
+    trajectories = {problem: {} for problem in set(ds["problem"])}
+    ds = ds.sort(["username","problem","attempt_id"])
+    for data in ds:
+        if not data["username"] in trajectories[data["problem"]].keys():
+            trajectories[data["problem"]].update(
+                {data["username"]: 
+                    {"stderr": [], "stdout": [], "diff": [], "prompt":[], "edges":[]}
+                })
+            
+        for key in ["stderr","stdout","diff","prompt"]:
+            trajectories[data["problem"]][data["username"]][key].append(data[key])
+        
+    for prob, traj in trajectories.items():
+        for student, data in traj.items():
+            nodes = [list(n) for n in zip(data["stdout"], data["stderr"])]
+            edges = [list(e) for e in zip(nodes, nodes[1:])]
+            trajectories[prob][student]["edges"] = edges
+
+    return trajectories
     
     
 def main(args):
@@ -103,16 +138,17 @@ def main(args):
         "stdout":  [fmt(item) for item in x["stdout"]],
         "error_message": [extract_error_message(fmt(item)) for item in x["stderr"]]
     }, num_proc = cpu_count())
-    
     ds.save_to_disk(args.outdataset)
     
     df = ds.to_pandas()
     num_attempts = len(df.groupby(["problem","username"]))
     print(df, num_attempts, max(df["attempt_id"]))
     
+    # compute clusters(nodes) for each problem
     clusters = compute_clusters(ds)
     with open(args.clusters_yaml, "w") as fp:
         yaml.dump(clusters, fp)
+        
     # count clusters
     data = []
     for k,v in clusters.items():
@@ -124,11 +160,30 @@ def main(args):
     df_counts = pd.DataFrame(data)
     print(df_counts)
     
+    # compute trajectories(edges) for each problem
+    trajectories = compute_trajectories(ds)
+    with open(args.trajectories_yaml, "w") as fp:
+        yaml.dump(trajectories, fp)
+    
+    # print some trajectories data
+    #   - for each problem, how many students
+    #   - for each problem, len list of trajectories
+    problem_data = []
+    for problem, traj in trajectories.items():
+        problem_data.append({
+            "problem":problem,
+            "num_students": len(traj),
+            "len_trajectories": [len(v["stdout"]) for v in traj.values()]
+        })
+    print(pd.DataFrame(problem_data))
+    
+
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("dataset")
     parser.add_argument("outdataset")
     parser.add_argument("clusters_yaml")
+    parser.add_argument("trajectories_yaml")
     parser.add_argument("--split", type=str, default=None)
     args = parser.parse_args()
     main(args)

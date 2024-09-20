@@ -3,6 +3,16 @@ OVERALL NOTES
 - The coding pass is for determining locations where we may be over or under tagging
 - typos are idiosyncratic tags (e.g. $integer:intger$) that should be added
 - for the problem convert, if referenced as the problem, should not be $typecast:convert$
+- If the grammatical structure doesn't fit, untag as much as tag
+- spell check your additional tags, Molly
+- The tag needs to be meaningful in the prompt to be tagged (when combine could be any other), we are looking for specific meanings
+- Read submitted text first and then compare 
+
+PROBLEM SPECIFIC FEEDBACK 
+- for the problem convert, if referenced as the problem, should not be $typecast:convert$
+- for the problem combine, if it references the problem or a generic "blend" operation, don't tag $concatenate:combine$ 
+- Also do not tag any parameter or function names that are also 
+categories/terms 
 
 CATEGORY/TERM SPECIFIC NOTES
 
@@ -28,11 +38,17 @@ return	produce
 return	display
 return	provides
 return	gives
+NOTE: do not tag return as a noun or adjective, only a verb 
+
+input   input
+NOTE: should NEVER remain $input:input$, should always be 
+recategorized as parameter or takes (or provides)
 
 parameter	parameter
-parameter	input
 parameter	argument
 parameter	value provided
+NOTE: this is the  "thing" take is the "action" 
+NOTE: $inputted value$ and $value inputted$, ONLY do this when it is value/expression/term/item/variable (value is a placeholder for a generic expression)
 
 takes	takes
 takes	gets
@@ -42,6 +58,7 @@ takes	accept
 NOTE: $takes:takes$ should be $takes:takes in$ if followed by an "in" (ditto for similar constructs)
 
 provides	enter
+NOTE: only HUMAN at the command line level enter
 
 insert	add
 insert	insert
@@ -65,6 +82,7 @@ loop	run a for loop through
 loop	looks through
 loop	executes a for loop with
 loop	loops over
+NOTE: Weird captialization in these tags was NOT autocaptured, so make sure to add in review
 
 skip	avoid
 skip	neglect
@@ -88,6 +106,7 @@ key	parameter
 key	variable
 NOTE: $key$ should only be used for dictionary.
 NOTE: variable and item are very common oversubstitutes 
+NOTE: there is a totally correct tag of $key: key value$
 
 typecast	convert
 NOTE: this is coded specifically only if the mention is unique to a type change, e.g. '1' to 1 or 1.2 to 1

@@ -6,11 +6,11 @@ from tqdm import tqdm
 from typing import Union
 import argparse
 import yaml
+import sys
 import networkx as nx
 import os
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-import matplotlib.colors as mcolors
 from collections import defaultdict
 import itertools
 import json
@@ -23,11 +23,11 @@ def assign_cluster_ids(clusters: list)-> dict:
         legend[d] = i
     return legend
 
-def get_node_from_label(graph, target_label):
+def get_node_from_labels(graph, target_labels: dict):
     for node, data in graph.nodes(data=True):
-        if data.get('label') == target_label:
+        if all([data.get(k) == v for k,v in target_labels.items()]):
             return node
-    raise ValueError(f"Node not found:\n{target_label}")
+    raise ValueError(f"Node not found:\n{target_labels}")
 
 def custom_plt_legend(student_colors:dict):
     custom_lines, labels = [],[]
@@ -58,9 +58,9 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
     stdout_to_id_dict = assign_cluster_ids(clusters["stdout"])
     diffs = []
     for v in trajectories.values():
-        diffs.extend(v["diff"])
-    diff_to_id_dict = assign_cluster_ids(diffs)
-    
+        diffs.extend(v["diff"][1:]) # ignore first trivial None diff
+        
+    diff_to_id_dict = assign_cluster_ids(list(set(diffs)))
     stderr_to_id = (lambda x: stderr_to_id_dict["\n".join(x)])
     stdout_to_id = (lambda x: stdout_to_id_dict["\n".join(x)])
     
@@ -68,10 +68,14 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
               "edges": defaultdict(lambda _ : {}), 
               "student_color": defaultdict(lambda _ : {})}
     
+    # build set of nodes based on represented stdout/stderr pairs
     std_out_err_clusters = []
     seen = set()
     for _, student_data in trajectories.items():
         for i,(node_from, node_to) in enumerate(student_data["edges"]):
+            # edges are:
+            #   node_from: (stdout, stderr)
+            #   node_to: (stdout, stderr)
             if str(node_from) not in seen:
                 std_out_err_clusters.append(node_from)
                 seen.add(str(node_from))
@@ -81,27 +85,38 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
     
     for i,(stdout,stderr) in enumerate(std_out_err_clusters):
         # add node with ids as label
-        label = (stdout_to_id(stdout), stderr_to_id(stderr))
-
-        G.add_node(i, label=label, color=STD_NODE_COLOR)
-        legend["nodes"][i] = {"stderr": stderr, "stdout": stdout,
-                              "stderr_id": stderr_to_id(stderr), "stdout_id": stdout_to_id(stdout)}
+        stderr_id = stderr_to_id(stderr)
+        stdout_id = stdout_to_id(stdout)
+        G.add_node(i, stderr_id=stderr_id, stdout_id=stdout_id, color=STD_NODE_COLOR)
+        legend["nodes"][i] = {
+            "stderr": stderr, 
+            "stdout": stdout,
+            "stderr_id": stderr_id,
+            "stdout_id": stdout_id}
     
-    start_nodes = []
-    end_nodes = []
-    for student, student_data in trajectories.items():
+    start_nodes, end_nodes = [],[]
+    for student_name, student_data in trajectories.items():
         # student has unique color
         # add edges with arrows, diff ids as label
         color = COLORS.pop()
-        legend["student_color"][student] = color
-        for i,(node_from_label, node_to_label) in enumerate(student_data["edges"]):
-            node_from_label = (stdout_to_id(node_from_label[0]), stderr_to_id(node_from_label[1]))
-            node_to_label = (stdout_to_id(node_to_label[0]), stderr_to_id(node_to_label[1]))
-            node_from = get_node_from_label(G, node_from_label)
-            node_to = get_node_from_label(G, node_to_label)
-            edge_id = diff_to_id_dict[student_data["diff"][i]]
-            G.add_edge(node_from, node_to, label=edge_id, color=color, username=student)
-            legend["edges"][edge_id] = student_data["diff"][i]
+        legend["student_color"][student_name] = color
+        for i,(node_from_std, node_to_std) in enumerate(student_data["edges"]):
+            node_from = get_node_from_labels(
+                G, 
+                {"stdout_id":stdout_to_id(node_from_std[0]),
+                "stderr_id":stderr_to_id(node_from_std[1])}
+            )
+            node_to = get_node_from_labels(
+                G, 
+                {"stdout_id":stdout_to_id(node_to_std[0]),
+                "stderr_id":stderr_to_id(node_to_std[1])}
+            )
+            # diff computed from next node, so diff[0] is always None (first attempt)
+            diff = student_data["diff"][i+1]
+            edge_label = diff_to_id_dict[diff]
+            G.add_edge(node_from, node_to, diff=edge_label, color=color, username=student_name)
+            legend["edges"][edge_label] = diff
+            
             if i == len(student_data["edges"]) - 1:
                 end_nodes.append(node_to)
             if i == 0:
@@ -117,7 +132,7 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             
     return G, legend
 
-def draw_multidigraph(G, attr_name = "label", ax=None):
+def draw_multidigraph(G, ax=None):
     """
     # https://networkx.org/documentation/stable/auto_examples/drawing/plot_multigraphs.html
     Length of connectionstyle must be at least that of a maximum number of edges
@@ -145,7 +160,7 @@ def draw_multidigraph(G, attr_name = "label", ax=None):
     )
 
     labels = {
-        tuple(edge): attrs[attr_name]
+        tuple(edge): f"diff_{attrs['diff']}"
         for *edge, attrs in G.edges(keys=True, data=True)
     }
     nx.draw_networkx_edge_labels(
@@ -159,6 +174,15 @@ def draw_multidigraph(G, attr_name = "label", ax=None):
         ax=ax,
     )
 
+def to_yaml_fmt(legend):
+    legend = {k: dict(v) for k, v in legend.items()}
+    for k, v in legend["edges"].items():
+        if v is None:
+            legend["edges"][k] = ""
+        else:
+            legend["edges"][k] = v.replace(" \n","\n")
+
+    return legend
 
 def main(args):
     with open(args.clusters_yaml,"r") as fp:
@@ -174,10 +198,10 @@ def main(args):
         graph = nx.MultiDiGraph()
         graph, legend = problem_graph(graph, clusters[problem], trajectories[problem])
         with open(f"{args.outdir}/{problem}_legend.yaml", "w") as fp:
-            yaml.dump(legend, fp)
-        with open(f"{args.outdir}/{problem}_legend.json", "w") as fp:
-            json.dump(legend, fp, indent=4)
-
+            yaml_legend = to_yaml_fmt(legend)
+            yaml.dump(yaml_legend, fp, default_style="|")
+        with open(f"{args.outdir}/{problem}_graph.json", "w") as fp:
+            json.dump(nx.readwrite.json_graph.adjacency_data(graph), fp, indent=4)
         draw_multidigraph(graph)
         
         plt.legend(*custom_plt_legend(legend["student_color"]))
@@ -185,6 +209,7 @@ def main(args):
         plt.savefig(f"{args.outdir}/{problem}.pdf")
         graph.clear()
         plt.clf()
+        
         
     # TODO: all problems in one doc?
     

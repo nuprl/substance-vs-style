@@ -50,8 +50,9 @@ def number_attempts(ds):
     return Dataset.from_pandas(df[[c for c in df.columns if c != ["attempt_num_min"]]])
 
 def get_diff(prev, new):
+    # ndiff shows full prompt, unified_diff shows localized change
     diff = difflib.unified_diff(prev.split(),new.split())
-    return '\n'.join(diff)
+    return ''.join(diff)
 
 def compute_diffs(ds):
     ds = number_attempts(ds)

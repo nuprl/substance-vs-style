@@ -11,7 +11,7 @@ creates a yaml file outlining student trajectories for each problem
 import argparse
 from utils import load
 import numpy as np
-from datasets import Dataset
+from datasets import Dataset, disable_caching
 import difflib
 import re
 from functools import partial
@@ -20,6 +20,7 @@ import yaml
 import pandas as pd
 from collections import defaultdict
 import json
+disable_caching()
 
 def anonimize_filename(stderr):
     return re.sub("/tmp/.*?\.py", "/tmp/file.py", stderr)

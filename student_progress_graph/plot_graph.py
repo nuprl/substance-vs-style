@@ -2,6 +2,7 @@
 Given a clusters.yaml and a trajectories.yaml, plots the progresss graph
 for each problem
 """
+from re import M
 from tqdm import tqdm
 from typing import Union
 import argparse
@@ -14,6 +15,41 @@ from matplotlib.lines import Line2D
 from collections import defaultdict
 import itertools
 import json
+import gravis
+
+COLORS_TO_HEX = {
+    'blue': '#0000FF',
+    'red': '#FF0000',
+    'green': '#008000',
+    'cyan': '#00FFFF',
+    'pink': '#FFC0CB',
+    'black': '#000000',
+    'orange': '#FFA500',
+    'purple': '#800080',
+    'brown': '#A52A2A',
+    'yellow': '#FFFF00',
+}
+START_NODE_COLOR = "red"
+END_NODE_COLOR = "green"
+STD_NODE_COLOR = "blue"
+COLORS = [
+    'blue',
+    'red',
+    'green',
+    'cyan',
+    'pink',
+    'black',
+    'orange',
+    'purple',
+    'brown',
+    'yellow',
+]
+COLORS.reverse()
+HTML_HEADER="""<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>"""
 
 def assign_cluster_ids(clusters: list)-> dict:
     legend = {}
@@ -37,22 +73,6 @@ def custom_plt_legend(student_colors:dict):
     return custom_lines, labels
 
 def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
-    START_NODE_COLOR = "red"
-    END_NODE_COLOR = "green"
-    STD_NODE_COLOR = "blue"
-    COLORS = [
-        'blue',
-        'red',
-        'green',
-        'cyan',
-        'pink',
-        'black',
-        'orange',
-        'purple',
-        'brown',
-        'yellow'
-    ]
-    COLORS.reverse()
     stderr_to_id_dict = assign_cluster_ids(clusters["stderr"])
     stdout_to_id_dict = assign_cluster_ids(clusters["stdout"])
     diffs = []
@@ -86,7 +106,17 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
         # add node with ids as label
         stderr_id = stderr_to_id(stderr)
         stdout_id = stdout_to_id(stdout)
-        G.add_node(i, stderr_id=stderr_id, stdout_id=stdout_id, color=STD_NODE_COLOR)
+        stderr_text = "\n".join(stderr)
+        if stderr_text.strip() == "":
+            stderr_text = "_no_stderr_"
+        stdout_text = "\n".join([s for s in stdout if s.strip() != "[]"])
+        if stdout_text.strip() == "":
+            stdout_text = "_no_stdout_"
+        G.add_node(i, 
+                   stderr_id=stderr_id, 
+                   stdout_id=stdout_id, 
+                   hover=f"stdout:\n{stdout_text}\nstderr:\n{stderr_text}",
+                   color=STD_NODE_COLOR,)
         legend["nodes"][i] = {
             "stderr": stderr, 
             "stdout": stdout,
@@ -94,10 +124,10 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             "stdout_id": stdout_id}
     
     start_nodes, end_nodes = [],[]
-    for student_name, student_data in trajectories.items():
+    for i,(student_name, student_data) in enumerate(trajectories.items()):
         # student has unique color
         # add edges with arrows, diff ids as label
-        color = COLORS.pop()
+        color = COLORS[i]
         legend["student_color"][student_name] = color
         for i,(node_from_std, node_to_std) in enumerate(student_data["edges"]):
             node_from = get_node_from_labels(
@@ -113,7 +143,14 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             # diff computed from next node, so diff[0] is always None (first attempt)
             diff = student_data["diff"][i+1]
             edge_label = diff_to_id_dict[diff]
-            G.add_edge(node_from, node_to, diff=edge_label, color=color, username=student_name)
+            G.add_edge(
+                node_from, 
+                node_to, 
+                diff=edge_label, 
+                color=color,
+                arrow_color=color,
+                username=student_name,
+                hover=f"username:{student_name}\ndiff:\n{diff}")
             legend["edges"][edge_label] = diff
             
             if i == len(student_data["edges"]) - 1:
@@ -131,13 +168,26 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             
     return G, legend
 
-def draw_multidigraph(G, ax=None):
+def generate_legend_html(legend_dict):
+    legend_items = []
+    
+    for student, color in legend_dict.items():
+        color = COLORS_TO_HEX[color]
+        legend_items.append(f'<div style="display: flex; align-items: center; margin-bottom: 5px;">'
+                            f'<div style="width: 20px; height: 10px; background-color: {color}; margin-right: 5px;"></div>'
+                            f'<span>{student}</span></div>')
+    
+    legend_html = '<div style="font-family: Arial, sans-serif;">' + ''.join(legend_items) + '</div>'
+    return legend_html
+
+def draw_multidigraph(G, legend, save_to):
     """
     # https://networkx.org/documentation/stable/auto_examples/drawing/plot_multigraphs.html
     Length of connectionstyle must be at least that of a maximum number of edges
     between pair of nodes. This number is maximum one-sided connections
     for directed graph and maximum total connections for undirected graph.
     """
+    ax,fig = plt.gca(), plt.gcf()
     # Works with arc3 and angle3 connectionstyles
     if len(G.out_degree()) == 0:
         # a known bug
@@ -178,7 +228,22 @@ def draw_multidigraph(G, ax=None):
         bbox={"alpha": 0},
         ax=ax,
     )
-
+    gravis_fmt = gravis.convert.networkx_to_gjgf(G)
+    fig = gravis.d3(data=gravis_fmt,edge_curvature=0.4,
+            node_hover_tooltip=True,
+            edge_hover_tooltip=True,
+            graph_height=1000, zoom_factor=2.5,
+            # show_menu=True
+            )
+    
+    html_legend = generate_legend_html(legend["student_color"])
+    with open(save_to.replace(".pdf", ".html"), "w") as fp:
+        fp.write(fig.to_html().replace(HTML_HEADER, HTML_HEADER + "\n" + html_legend))
+    plt.legend(*custom_plt_legend(legend["student_color"]))
+    plt.tight_layout()
+    plt.savefig(save_to)
+    return fig
+    
 def to_yaml_fmt(legend):
     legend = {k: dict(v) for k, v in legend.items()}
     for k, v in legend["edges"].items():
@@ -207,11 +272,9 @@ def main(args):
             yaml.dump(yaml_legend, fp, default_style="|")
         with open(f"{args.outdir}/{problem}_graph.json", "w") as fp:
             json.dump(nx.readwrite.json_graph.adjacency_data(graph), fp, indent=4)
-        draw_multidigraph(graph)
         
-        plt.legend(*custom_plt_legend(legend["student_color"]))
-        plt.tight_layout()
-        plt.savefig(f"{args.outdir}/{problem}.pdf")
+        draw_multidigraph(graph, legend, f"{args.outdir}/{problem}.pdf")
+        # clear
         graph.clear()
         plt.clf()
         

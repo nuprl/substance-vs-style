@@ -3,24 +3,23 @@
   !!int "1": |-
     ---
     +++
-    @@ -28,4 +28,14 @@
-     the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. """
+    @@ -19,4 +19,10 @@
+     the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. """
   !!int "2": |-
+    ---
+    +++
+    @@ -18,5 +18,8 @@
+     associated with that-month.+month,+in+lower+case. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -9,7 +9,15 @@
+     string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the
+  !!int "4": |-
     ---
     +++
     @@ -16,6 +16,15 @@
      is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three
-  !!int "3": |-
-    ---
-    +++
-    @@ -22,29 +22,20 @@
-     If month is-"December", "January",-or-"February", season is 'winter'. If month is-"March", "April",-or-"May", season is 'spring'. If month is-"June",-"July",-or "August", season is@@ -52,10 +43,7 @@
-     If month is-"September", "October",-or-"November", season is 'fall'.
-  !!int "4": |-
-    ---
-    +++
-    @@ -26,5 +26,11 @@
-     class of the-input"+input,+produce+an+all+lower+case+string" """
   !!int "5": |-
     ---
     +++
@@ -29,33 +28,34 @@
   !!int "6": |-
     ---
     +++
-    @@ -58,5 +58,5 @@
-     "November", season is-"fall".+'fall'. """
+    @@ -26,5 +26,11 @@
+     class of the-input"+input,+produce+an+all+lower+case+string" """
   !!int "7": |-
-    ---
-    +++
-    @@ -19,12 +19,16 @@
-     the output lowercase.-It-uses+If the string-"fall"-instead-of-"autumn".+is+'September',+'October',+or+'November',+the+output+is+'fall'. """
-  !!int "8": |-
     ---
     +++
     @@ -16,48 +16,34 @@
      is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.
-  !!int "9": |-
-    ---
-    +++
-    @@ -10,4 +10,13 @@
-     string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. """
-  !!int "10": |-
+  !!int "8": |-
     ---
     +++
     @@ -19,16 +19,4 @@
      the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -22,29 +22,20 @@
+     If month is-"December", "January",-or-"February", season is 'winter'. If month is-"March", "April",-or-"May", season is 'spring'. If month is-"June",-"July",-or "August", season is@@ -52,10 +43,7 @@
+     If month is-"September", "October",-or-"November", season is 'fall'.
+  !!int "10": |-
+    ---
+    +++
+    @@ -19,12 +19,16 @@
+     the output lowercase.-It-uses+If the string-"fall"-instead-of-"autumn".+is+'September',+'October',+or+'November',+the+output+is+'fall'. """
   !!int "11": |-
     ---
     +++
-    @@ -9,7 +9,15 @@
-     string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the
+    @@ -19,4 +19,12 @@
+     the output lowercase.+It+uses+the+string+"fall"+instead+of+"autumn". """
   !!int "12": |-
     ---
     +++
@@ -64,18 +64,18 @@
   !!int "13": |-
     ---
     +++
-    @@ -19,4 +19,12 @@
-     the output lowercase.+It+uses+the+string+"fall"+instead+of+"autumn". """
+    @@ -10,4 +10,13 @@
+     string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. """
   !!int "14": |-
     ---
     +++
-    @@ -18,5 +18,8 @@
-     associated with that-month.+month,+in+lower+case. """
+    @@ -28,4 +28,14 @@
+     the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. """
   !!int "15": |-
     ---
     +++
-    @@ -19,4 +19,10 @@
-     the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. """
+    @@ -58,5 +58,5 @@
+     "November", season is-"fall".+'fall'. """
 "nodes":
   !!int "0":
     "stderr":
@@ -321,14 +321,14 @@
       0
 "student_color":
   "student45": |-
-    yellow
+    #d83034
   "student46": |-
-    brown
+    #f9e858
   "student47": |-
-    purple
+    #008dff
   "student55": |-
-    orange
+    #4ecb8d
   "student7": |-
-    black
+    #c701ff
   "student9": |-
-    pink
+    #ffcd8e

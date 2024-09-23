@@ -1,5 +1,9 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -41,4 +41,18 @@
+     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
   !!int "1": |-
     ---
     +++
@@ -11,11 +15,7 @@
     @@ -24,7 +24,7 @@
      The function then-prints+returns the string in@@ -42,7 +42,7 @@
      dictionary, the function-prints+returns 'UNK' for that
-  !!int "3": |-
-    ---
-    +++
-    @@ -41,4 +41,18 @@
-     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
+  !!int "3": ""
 "nodes":
   !!int "0":
     "stderr":
@@ -101,8 +101,8 @@
       2
 "student_color":
   "student50": |-
-    yellow
+    #d83034
   "student59": |-
-    brown
+    #f9e858
   "student60": |-
-    purple
+    #008dff

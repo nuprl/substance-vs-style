@@ -2,38 +2,38 @@
   !!int "0": |-
     ---
     +++
-    @@ -17,7 +17,5 @@
-     and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0 """
-  !!int "1": |-
-    ---
-    +++
-    @@ -17,5 +17,8 @@
-     and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+"[]" """
-  !!int "2": |-
-    ---
-    +++
-    @@ -51,4 +51,19 @@
-     is a value.+if+the+name+appears+more+than+once,+add+the+new+number+to+the+previous+number """
-  !!int "3": |-
-    ---
-    +++
-    @@ -56,4 +56,38 @@
-     added to that.+The+function+then+would+return+a+dictionary+containing+the+total+value+assigned+to+every+string.+Given+[+[30,+['Alice',+'Bob',+'Carol']]+],+the+function+would+return+{+'Alice':+30,+'Bob':+30,+'Carol':+30+} """
-  !!int "4": |-
-    ---
-    +++
     @@ -17,5 +17,5 @@
      and output of-val1,2,3:val1+val:val1 """
-  !!int "5": |-
-    ---
-    +++
-    @@ -17,8 +17,9 @@
-     and output of-val(1,2,3):val0,-print-without-"[]"+val1:val0,+increase+val1+++1 """
-  !!int "6": |-
+  !!int "1": |-
     ---
     +++
     @@ -17,5 +17,7 @@
      and output of-val:val1+val1:val1,+val2:val1,+val3:val1 """
+  !!int "2": |-
+    ---
+    +++
+    @@ -17,5 +17,8 @@
+     and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+"[]" """
+  !!int "3": |-
+    ---
+    +++
+    @@ -17,7 +17,5 @@
+     and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0 """
+  !!int "4": |-
+    ---
+    +++
+    @@ -56,4 +56,38 @@
+     added to that.+The+function+then+would+return+a+dictionary+containing+the+total+value+assigned+to+every+string.+Given+[+[30,+['Alice',+'Bob',+'Carol']]+],+the+function+would+return+{+'Alice':+30,+'Bob':+30,+'Carol':+30+} """
+  !!int "5": |-
+    ---
+    +++
+    @@ -51,4 +51,19 @@
+     is a value.+if+the+name+appears+more+than+once,+add+the+new+number+to+the+previous+number """
+  !!int "6": |-
+    ---
+    +++
+    @@ -17,8 +17,9 @@
+     and output of-val(1,2,3):val0,-print-without-"[]"+val1:val0,+increase+val1+++1 """
 "nodes":
   !!int "0":
     "stderr":
@@ -186,10 +186,10 @@
       3
 "student_color":
   "student33": |-
-    yellow
+    #d83034
   "student60": |-
-    brown
+    #f9e858
   "student69": |-
-    purple
+    #008dff
   "student75": |-
-    orange
+    #4ecb8d

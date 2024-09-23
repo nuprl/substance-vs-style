@@ -2,13 +2,13 @@
   !!int "0": |-
     ---
     +++
-    @@ -4,7 +4,7 @@
-     """ Find the-key+keys in the list.
+    @@ -14,20 +14,17 @@
+     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
   !!int "1": |-
     ---
     +++
-    @@ -14,20 +14,17 @@
-     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
+    @@ -4,7 +4,7 @@
+     """ Find the-key+keys in the list.
   !!int "2": |-
     ---
     +++
@@ -17,28 +17,28 @@
   !!int "3": |-
     ---
     +++
-    @@ -2,15 +2,18 @@
-     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
-  !!int "4": |-
-    ---
-    +++
     @@ -2,33 +2,27 @@
      create_list(dt, lst): """-Return+Loop+through+each+element+in+lst+and+return the value stored in-the-key+it in-dt-corresponding-to-the-keys-in-lst.+dt. If you-can+can't find-it,-then-return the value,-if-not,-then return None. """
-  !!int "5": |-
-    ---
-    +++
-    @@ -15,10 +15,18 @@
-     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
-  !!int "6": |-
+  !!int "4": |-
     ---
     +++
     @@ -15,5 +15,15 @@
      the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
-  !!int "7": |-
+  !!int "5": |-
     ---
     +++
     @@ -2,13 +2,42 @@
      create_list(dt, lst): """-Create-a-list+Take+the+values+that+can+be+accessed+in+dt using the-values-of+keys+in the-keys+lst,+and+create+a+new+list+with+the+values.+If+the+key+in+lst+does+not+exist+in+dt,+add+None+to+the+list. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -15,10 +15,18 @@
+     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -2,15 +2,18 @@
+     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
 "nodes":
   !!int "0":
     "stderr":
@@ -212,14 +212,14 @@
       4
 "student_color":
   "student20": |-
-    yellow
+    #d83034
   "student36": |-
-    brown
+    #f9e858
   "student42": |-
-    purple
+    #008dff
   "student43": |-
-    orange
+    #4ecb8d
   "student54": |-
-    black
+    #c701ff
   "student57": |-
-    pink
+    #ffcd8e

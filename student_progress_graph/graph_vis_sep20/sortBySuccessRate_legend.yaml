@@ -2,8 +2,8 @@
   !!int "0": |-
     ---
     +++
-    @@ -23,6 +23,15 @@
-     within key 'noms'.+this+number+will+be+rounded+to+two+decimal+values. the new number
+    @@ -1,7 +1,12 @@
+     def sortBySuccessRate(nominations): """-Create+For+each+dictionary+in+list,+create a new dictionary
   !!int "1": |-
     ---
     +++
@@ -12,19 +12,19 @@
   !!int "2": |-
     ---
     +++
-    @@ -1,7 +1,12 @@
-     def sortBySuccessRate(nominations): """-Create+For+each+dictionary+in+list,+create a new dictionary
-  !!int "3": |-
-    ---
-    +++
     @@ -46,7 +46,13 @@
      of the key-'noms'.+'noms',+rounded+to+the+second+decimal+place. The outputted list
-  !!int "4": |-
+  !!int "3": |-
     ---
     +++
     @@ -1,27 +1,38 @@
      def sortBySuccessRate(nominations): """+the+input+is+a+list+of+dictionaries. the function will divide the-number-of-wins+value+within+key+'wins' by the+value+within+key+'noms'.+the+new number-of-noms.-this will be-defined-by-the+stores+as+a new-variable+key, 'success'. the function@@ -31,13 +42,21 @@
      a list that-orders+reorders the-input+dictionaries+within+the+original+list, in-increasing order of+highest success-values+value+to+lowest+success+value. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -23,6 +23,15 @@
+     within key 'noms'.+this+number+will+be+rounded+to+two+decimal+values. the new number
 "nodes":
   !!int "0":
     "stderr":
@@ -113,8 +113,8 @@
       0
 "student_color":
   "student40": |-
-    yellow
+    #d83034
   "student63": |-
-    brown
+    #f9e858
   "student64": |-
-    purple
+    #008dff

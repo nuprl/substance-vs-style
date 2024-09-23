@@ -2,13 +2,13 @@
   !!int "0": |-
     ---
     +++
-    @@ -1,10 +1,18 @@
-     def combine(l1,l2): """-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other """
+    @@ -1,18 +1,23 @@
+     def combine(l1,l2): """-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two """
   !!int "1": |-
     ---
     +++
-    @@ -2,8 +2,11 @@
-     combine(l1,l2): """ Combine-all elements+sharing+the+same+index in two lists
+    @@ -1,10 +1,18 @@
+     def combine(l1,l2): """-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other """
   !!int "2": |-
     ---
     +++
@@ -17,8 +17,8 @@
   !!int "3": |-
     ---
     +++
-    @@ -1,18 +1,7 @@
-     def combine(l1,l2): """-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other """
+    @@ -7,43 +7,48 @@
+     of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. """
   !!int "4": |-
     ---
     +++
@@ -27,33 +27,33 @@
   !!int "5": |-
     ---
     +++
-    @@ -4,9 +4,5 @@
-     Combine the two-lists,-alternating-the-lists-inside.+lists. """
+    @@ -2,8 +2,11 @@
+     combine(l1,l2): """ Combine-all elements+sharing+the+same+index in two lists
   !!int "6": |-
-    ---
-    +++
-    @@ -1,18 +1,23 @@
-     def combine(l1,l2): """-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two """
-  !!int "7": |-
-    ---
-    +++
-    @@ -1,10 +1,10 @@
-     def combine(l1,l2): """-Combine-all-elements-within+Take two lists+and+combine+them """
-  !!int "8": |-
     ---
     +++
     @@ -2,6 +2,9 @@
      combine(l1,l2): """ Combine+all+elements+in two lists """
-  !!int "9": |-
-    ---
-    +++
-    @@ -7,43 +7,48 @@
-     of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. """
-  !!int "10": |-
+  !!int "7": |-
     ---
     +++
     @@ -1,11 +1,17 @@
      def combine(l1,l2): """-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.
+  !!int "8": |-
+    ---
+    +++
+    @@ -1,10 +1,10 @@
+     def combine(l1,l2): """-Combine-all-elements-within+Take two lists+and+combine+them """
+  !!int "9": |-
+    ---
+    +++
+    @@ -4,9 +4,5 @@
+     Combine the two-lists,-alternating-the-lists-inside.+lists. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -1,18 +1,7 @@
+     def combine(l1,l2): """-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other """
 "nodes":
   !!int "0":
     "stderr":
@@ -190,10 +190,10 @@
       4
 "student_color":
   "student19": |-
-    yellow
+    #d83034
   "student20": |-
-    brown
+    #f9e858
   "student42": |-
-    purple
+    #008dff
   "student54": |-
-    orange
+    #4ecb8d

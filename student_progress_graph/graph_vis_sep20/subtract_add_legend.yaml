@@ -3,26 +3,25 @@
   !!int "1": |-
     ---
     +++
-    @@ -18,7 +18,7 @@
-     correspond to an-even+odd index by -1.
+    @@ -15,10 +15,11 @@
+     list entries that+don't correspond to an-odd+even index by -1.
   !!int "2": |-
-    ---
-    +++
-    @@ -8,7 +8,7 @@
-     a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@
-     is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum
-  !!int "3": |-
     ---
     +++
     @@ -1,41 +1,32 @@
      def subtract_add(lst): """-Take+Subtract the-first-two-items+second+item in the array list-and-change-them-into-integers+from+the+first+item. then-take+subtract+the+forth+item+from+the+third+item then-take-the-next-two-integers-and-subtract-them-from-each-other.-sum+add the two-values-return-the-product.+sums. if there are
-  !!int "4": |-
+  !!int "3": |-
     ---
     +++
     @@ -2,9 +2,12 @@
      subtract_add(lst): """ Change-them+the+first+two+items into-integers.+integers Subtract the second@@ -17,6 +20,14 @@
      the first item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8 +49,13 @@
      two items in-the list+change+those+two+items+into+integers subtract the second
+  !!int "4": |-
+    ---
+    +++
+    @@ -1,6 +1,19 @@
+     def subtract_add(lst): """+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array
   !!int "5": |-
     ---
     +++
@@ -31,18 +30,19 @@
   !!int "6": |-
     ---
     +++
-    @@ -5,7 +5,13 @@
-     a list of-integers,+strings,+type+cast+to+integers+and+then take the first
+    @@ -8,7 +8,7 @@
+     a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@
+     is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum
   !!int "7": |-
     ---
     +++
-    @@ -15,10 +15,11 @@
-     list entries that+don't correspond to an-odd+even index by -1.
+    @@ -1,6 +1,10 @@
+     def subtract_add(lst): """+Change+them+into+integers. Subtract the second
   !!int "8": |-
     ---
     +++
-    @@ -1,6 +1,19 @@
-     def subtract_add(lst): """+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array
+    @@ -18,7 +18,7 @@
+     correspond to an-even+odd index by -1.
   !!int "9": |-
     ---
     +++
@@ -52,8 +52,8 @@
   !!int "10": |-
     ---
     +++
-    @@ -1,6 +1,10 @@
-     def subtract_add(lst): """+Change+them+into+integers. Subtract the second
+    @@ -5,7 +5,13 @@
+     a list of-integers,+strings,+type+cast+to+integers+and+then take the first
 "nodes":
   !!int "0":
     "stderr":
@@ -334,12 +334,12 @@
       4
 "student_color":
   "student27": |-
-    yellow
+    #d83034
   "student29": |-
-    brown
+    #f9e858
   "student49": |-
-    purple
+    #008dff
   "student66": |-
-    orange
+    #4ecb8d
   "student68": |-
-    black
+    #c701ff

@@ -2,18 +2,19 @@
   !!int "0": |-
     ---
     +++
-    @@ -34,5 +34,5 @@
-     the word. return-word+map """
+    @@ -13,7 +13,6 @@
+     with the given-line number as a@@ -22,4 +21,8 @@
+     the inputted dictionary.+Returns+the+new+dictionary. """
   !!int "1": |-
+    ---
+    +++
+    @@ -17,5 +17,7 @@
+     number as the-value+value.+Return+map. """
+  !!int "2": |-
     ---
     +++
     @@ -32,4 +32,9 @@
      in the dictionary.+The+function+returns+the+dictionary. """
-  !!int "2": |-
-    ---
-    +++
-    @@ -63,4 +63,8 @@
-     as a value.+Returns+an+updated+map. """
   !!int "3": |-
     ---
     +++
@@ -22,19 +23,18 @@
   !!int "4": |-
     ---
     +++
-    @@ -13,7 +13,6 @@
-     with the given-line number as a@@ -22,4 +21,8 @@
-     the inputted dictionary.+Returns+the+new+dictionary. """
+    @@ -22,5 +22,9 @@
+     line_number as the-value+value,+returns+the+appended+dictionary """
   !!int "5": |-
     ---
     +++
-    @@ -22,5 +22,9 @@
-     line_number as the-value+value,+returns+the+appended+dictionary """
+    @@ -63,4 +63,8 @@
+     as a value.+Returns+an+updated+map. """
   !!int "6": |-
     ---
     +++
-    @@ -17,5 +17,7 @@
-     number as the-value+value.+Return+map. """
+    @@ -34,5 +34,5 @@
+     the word. return-word+map """
 "nodes":
   !!int "0":
     "stderr":
@@ -86,14 +86,14 @@
       2
 "student_color":
   "student10": |-
-    yellow
+    #d83034
   "student21": |-
-    brown
+    #f9e858
   "student25": |-
-    purple
+    #008dff
   "student4": |-
-    orange
+    #4ecb8d
   "student41": |-
-    black
+    #c701ff
   "student51": |-
-    pink
+    #ffcd8e

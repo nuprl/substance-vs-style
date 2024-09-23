@@ -3,49 +3,49 @@
   !!int "1": |-
     ---
     +++
-    @@ -4,10 +4,14 @@
-     Function returns multiples-between+from+the first-two-items+item+to+the+second+item in the input
+    @@ -37,5 +37,11 @@
+     at the stopping-number.+number+but+including+it+in+the+list. """
   !!int "2": |-
-    ---
-    +++
-    @@ -23,5 +23,12 @@
-     also given as-inputs+inputs.+The+end+input+should+also+be+included """
-  !!int "3": |-
-    ---
-    +++
-    @@ -7,30 +7,25 @@
-     list of integers-[start-number,-final-number,-step-size]+[start,+stop,+factor] and output a+list+starting+at+the+closest+even+number+to+the+start,+and including the-last-number,-and-the-5-closest-numbers-in-the-step-size-to-that-last+stop number """
-  !!int "4": |-
     ---
     +++
     @@ -12,6 +12,10 @@
      the second item+(including+the+second+item) in the input
-  !!int "5": |-
-    ---
-    +++
-    @@ -37,5 +37,11 @@
-     at the stopping-number.+number+but+including+it+in+the+list. """
-  !!int "6": |-
+  !!int "3": |-
     ---
     +++
     @@ -12,17 +12,34 @@
      input. The first-and-second number of the input-are+is the-bounds+starting+bound and the+second+number+is+the+the+ending+bound,+but+is+included+in+the+list+of+multiples+if+applicable.+The last number is
-  !!int "7": |-
+  !!int "4": |-
+    ---
+    +++
+    @@ -7,30 +7,25 @@
+     list of integers-[start-number,-final-number,-step-size]+[start,+stop,+factor] and output a+list+starting+at+the+closest+even+number+to+the+start,+and including the-last-number,-and-the-5-closest-numbers-in-the-step-size-to-that-last+stop number """
+  !!int "5": |-
+    ---
+    +++
+    @@ -23,5 +23,12 @@
+     also given as-inputs+inputs.+The+end+input+should+also+be+included """
+  !!int "6": |-
     ---
     +++
     @@ -10,7 +10,7 @@
      of the factor-in+between the range of@@ -18,5 +18,11 @@
      start and stop+numbers,+including+the+start+and+stop numbers. """
-  !!int "8": |-
+  !!int "7": |-
     ---
     +++
     @@ -16,9 +16,21 @@
      and output a-list-based-on-those-parameters+including+the+last+number,+and+the+5+closest+numbers+in+the+step+size+to+that+last+number """
-  !!int "9": |-
+  !!int "8": |-
     ---
     +++
     @@ -10,7 +10,7 @@
      of the factor-between+in the range of
+  !!int "9": |-
+    ---
+    +++
+    @@ -4,10 +4,14 @@
+     Function returns multiples-between+from+the first-two-items+item+to+the+second+item in the input
 "nodes":
   !!int "0":
     "stderr":
@@ -138,14 +138,14 @@
       1
 "student_color":
   "student13": |-
-    yellow
+    #d83034
   "student22": |-
-    brown
+    #f9e858
   "student5": |-
-    purple
+    #008dff
   "student61": |-
-    orange
+    #4ecb8d
   "student72": |-
-    black
+    #c701ff
   "student74": |-
-    pink
+    #ffcd8e

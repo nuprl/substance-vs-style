@@ -3,8 +3,9 @@
   !!int "1": |-
     ---
     +++
-    @@ -5,9 +5,11 @@
-     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
+    @@ -9,6 +9,23 @@
+     a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
+     the masses of+only the planets and
   !!int "2": |-
     ---
     +++
@@ -23,24 +24,23 @@
   !!int "5": |-
     ---
     +++
-    @@ -12,12 +12,7 @@
-     the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are
+    @@ -5,9 +5,11 @@
+     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
   !!int "6": |-
     ---
     +++
-    @@ -9,6 +9,23 @@
-     a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
-     the masses of+only the planets and
+    @@ -12,12 +12,7 @@
+     the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are
   !!int "7": |-
-    ---
-    +++
-    @@ -40,4 +40,11 @@
-     returns the total.+The+sun+and+pluto+are+not+planets. """
-  !!int "8": |-
     ---
     +++
     @@ -7,24 +7,17 @@
      and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
+  !!int "8": |-
+    ---
+    +++
+    @@ -2,7 +2,7 @@
+     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
   !!int "9": |-
     ---
     +++
@@ -49,8 +49,8 @@
   !!int "10": |-
     ---
     +++
-    @@ -2,7 +2,7 @@
-     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
+    @@ -40,4 +40,11 @@
+     returns the total.+The+sun+and+pluto+are+not+planets. """
 "nodes":
   !!int "0":
     "stderr":
@@ -221,10 +221,10 @@
       0
 "student_color":
   "student14": |-
-    yellow
+    #d83034
   "student46": |-
-    brown
+    #f9e858
   "student53": |-
-    purple
+    #008dff
   "student55": |-
-    orange
+    #4ecb8d

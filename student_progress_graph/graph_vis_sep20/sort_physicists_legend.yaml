@@ -2,43 +2,41 @@
   !!int "0": |-
     ---
     +++
+    @@ -18,7 +18,7 @@
+     return just the-names+names, in order of
+  !!int "1": |-
+    ---
+    +++
+    @@ -26,4 +26,11 @@
+     in a list.+Then+sort+the+list+into+alphabetical+order. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -29,23 +29,45 @@
+     Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -16,10 +16,12 @@
+     is "Physics" return+just the names-based-on+in+order+of what year they
+  !!int "4": |-
+    ---
+    +++
+    @@ -40,4 +40,8 @@
+     the big list.+Return+this+sorted+list """
+  !!int "5": |-
+    ---
+    +++
     @@ -1,7 +1,7 @@
      def sort_physicists(scientists): """-Create+Return a list of@@ -10,9 +10,8 @@
      element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@
      says "Physics". Sort-the+this list from least@@ -37,7 +36,7 @@
      list within the-big+scientists list. Return this
-  !!int "1": |-
-    ---
-    +++
-    @@ -29,23 +29,45 @@
-     Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. """
-  !!int "2": |-
-    ---
-    +++
-    @@ -26,4 +26,11 @@
-     in a list.+Then+sort+the+list+into+alphabetical+order. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -8,8 +8,7 @@
-     the 0th element-in-the+each list within the@@ -34,7 +33,7 @@
-     1st value in-the+each list within the@@ -43,5 +42,5 @@
-     Return this sorted-list+list. """
-  !!int "4": |-
+  !!int "6": |-
     ---
     +++
     @@ -1,20 +1,29 @@
      def sort_physicists(scientists): """+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is "Physics" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to
-  !!int "5": |-
-    ---
-    +++
-    @@ -16,10 +16,12 @@
-     is "Physics" return+just the names-based-on+in+order+of what year they
-  !!int "6": |-
-    ---
-    +++
-    @@ -18,7 +18,7 @@
-     return just the-names+names, in order of
   !!int "7": |-
     ---
     +++
@@ -47,18 +45,20 @@
   !!int "8": |-
     ---
     +++
-    @@ -36,5 +36,10 @@
-     based on the+number,+but+don't+return+the number. """
+    @@ -36,7 +36,13 @@
+     based on the-number,+number+given+in+the+set+of+lists, but don't return
   !!int "9": |-
     ---
     +++
-    @@ -40,4 +40,8 @@
-     the big list.+Return+this+sorted+list """
+    @@ -36,5 +36,10 @@
+     based on the+number,+but+don't+return+the number. """
   !!int "10": |-
     ---
     +++
-    @@ -36,7 +36,13 @@
-     based on the-number,+number+given+in+the+set+of+lists, but don't return
+    @@ -8,8 +8,7 @@
+     the 0th element-in-the+each list within the@@ -34,7 +33,7 @@
+     1st value in-the+each list within the@@ -43,5 +42,5 @@
+     Return this sorted-list+list. """
 "nodes":
   !!int "0":
     "stderr":
@@ -179,8 +179,8 @@
       4
 "student_color":
   "student12": |-
-    yellow
+    #d83034
   "student36": |-
-    brown
+    #f9e858
   "student77": |-
-    purple
+    #008dff

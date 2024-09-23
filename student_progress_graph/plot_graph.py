@@ -17,34 +17,20 @@ import itertools
 import json
 import gravis
 
-COLORS_TO_HEX = {
-    'blue': '#0000FF',
-    'red': '#FF0000',
-    'green': '#008000',
-    'cyan': '#00FFFF',
-    'pink': '#FFC0CB',
-    'black': '#000000',
-    'orange': '#FFA500',
-    'purple': '#800080',
-    'brown': '#A52A2A',
-    'yellow': '#FFFF00',
-}
 START_NODE_COLOR = "red"
 END_NODE_COLOR = "green"
 STD_NODE_COLOR = "blue"
+
 COLORS = [
-    'blue',
-    'red',
-    'green',
-    'cyan',
-    'pink',
-    'black',
-    'orange',
-    'purple',
-    'brown',
-    'yellow',
+    '#d83034', # red
+    '#f9e858', # yellow
+    '#008dff', # med blue
+    '#4ecb8d', # green
+    '#c701ff', # purple
+    '#ffcd8e', # light orange
+    '#003a7d', # dark blue
+    '#Ff73b6', # pink
 ]
-COLORS.reverse()
 HTML_HEADER="""<!DOCTYPE html>
 <html>
 <head>
@@ -172,7 +158,7 @@ def generate_legend_html(legend_dict):
     legend_items = []
     
     for student, color in legend_dict.items():
-        color = COLORS_TO_HEX[color]
+        # color = COLORS_TO_HEX[color]
         legend_items.append(f'<div style="display: flex; align-items: center; margin-bottom: 5px;">'
                             f'<div style="width: 20px; height: 10px; background-color: {color}; margin-right: 5px;"></div>'
                             f'<span>{student}</span></div>')
@@ -232,7 +218,7 @@ def draw_multidigraph(G, legend, save_to):
     fig = gravis.d3(data=gravis_fmt,edge_curvature=0.4,
             node_hover_tooltip=True,
             edge_hover_tooltip=True,
-            graph_height=1000, zoom_factor=2.5,
+            graph_height=700, zoom_factor=2.5,
             # show_menu=True
             )
     
@@ -279,7 +265,6 @@ def main(args):
         plt.clf()
         
         
-    # TODO: all problems in one doc?
     
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

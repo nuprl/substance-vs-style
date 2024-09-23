@@ -2,13 +2,14 @@
   !!int "0": |-
     ---
     +++
-    @@ -17,8 +17,12 @@
-     the slice and-display+replace+it+in the-original+string;+return+the string """
+    @@ -19,6 +19,6 @@
+     and display the-new+original string """
   !!int "1": |-
     ---
     +++
-    @@ -19,6 +19,6 @@
-     and display the-new+original string """
+    @@ -11,7 +11,7 @@
+     i. Function would-flip+write the first i@@ -19,20 +19,39 @@
+     of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output """
   !!int "2": |-
     ---
     +++
@@ -17,9 +18,8 @@
   !!int "3": |-
     ---
     +++
-    @@ -11,7 +11,7 @@
-     i. Function would-flip+write the first i@@ -19,20 +19,39 @@
-     of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output """
+    @@ -17,8 +17,12 @@
+     the slice and-display+replace+it+in the-original+string;+return+the string """
 "nodes":
   !!int "0":
     "stderr":
@@ -103,8 +103,8 @@
       3
 "student_color":
   "student10": |-
-    yellow
+    #d83034
   "student25": |-
-    brown
+    #f9e858
   "student26": |-
-    purple
+    #008dff

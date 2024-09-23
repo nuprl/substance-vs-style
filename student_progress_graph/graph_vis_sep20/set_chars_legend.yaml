@@ -3,43 +3,43 @@
   !!int "1": |-
     ---
     +++
-    @@ -23,8 +23,7 @@
-     out of range-don't-change-that-letter.+ignore+the+index. """
+    @@ -20,22 +20,17 @@
+     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
   !!int "2": |-
-    ---
-    +++
-    @@ -30,4 +30,20 @@
-     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -20,17 +20,4 @@
-     with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
-  !!int "4": |-
     ---
     +++
     @@ -19,5 +19,18 @@
      list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
-  !!int "5": |-
-    ---
-    +++
-    @@ -26,5 +26,17 @@
-     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -20,22 +20,17 @@
-     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
-  !!int "7": |-
-    ---
-    +++
-    @@ -4,12 +4,16 @@
-     Replace letters in+input s that are located in+index l to+the+input c """
-  !!int "8": |-
+  !!int "3": |-
     ---
     +++
     @@ -31,4 +31,16 @@
      with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -20,17 +20,4 @@
+     with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
+  !!int "5": |-
+    ---
+    +++
+    @@ -4,12 +4,16 @@
+     Replace letters in+input s that are located in+index l to+the+input c """
+  !!int "6": |-
+    ---
+    +++
+    @@ -26,5 +26,17 @@
+     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -23,8 +23,7 @@
+     out of range-don't-change-that-letter.+ignore+the+index. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -30,4 +30,20 @@
+     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
   !!int "9": |-
     ---
     +++
@@ -153,12 +153,12 @@
       3
 "student_color":
   "student19": |-
-    yellow
+    #d83034
   "student20": |-
-    brown
+    #f9e858
   "student42": |-
-    purple
+    #008dff
   "student57": |-
-    orange
+    #4ecb8d
   "student77": |-
-    black
+    #c701ff

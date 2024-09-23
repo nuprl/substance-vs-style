@@ -1,0 +1,878 @@
+- __index_level_0__: 75
+  problem: add_up
+  entrypoint: add_up
+  assertions: |-
+    assert add_up([ [ 'one', 2, 3, 4 ] ]) == 9
+    assert add_up([ [ 3, 'hello', 3.4 ] ]) == 6.4
+    assert add_up([ [ ] ]) == 0
+  username: student65
+  submitted_text: |-
+    For each list in an array, this function takes each entry in the list and adds them to the total if the entry is a number. Otherwise, it adds 0.
+  prompt: |-
+    def add_up(arr):
+        """
+        For each $list:list$ in an $list:array$, this function $takes:takes$ each $key:entry$ in the $list:list$ and $inserts:adds$ them to the total if the $key:entry$ is a number. Otherwise, it $inserts:adds$ 0.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 113
+  problem: subtract_add
+  entrypoint: subtract_add
+  assertions: |-
+    assert subtract_add(['1', '2', '3', '4']) == -2
+    assert subtract_add(['0', '2']) == -2
+    assert subtract_add(['0', '0']) == 0
+    assert subtract_add([ ]) == 0
+  username: student78
+  submitted_text: |-
+    given a list, convert each item in the list to an integer. subract the second integer from the first and then with that total, add the next integer. with that total subtract the next integer. repeat this until all integers in the list have been either added or subtracted and output the final total. if the list is blank, output 0.
+  prompt: |-
+    def subtract_add(lst):
+        """
+        given a $list:list$, $typecast:convert$ each $key:item$ in the $list:list$ to an $integer:integer$. subract the second $integer:integer$ from the first and then with that total, $insert:add$ the next $integer:integer$. with that total subtract the next $integer:integer$. repeat this until all $integers:integers$ in the $list:list$ have been either $inserted:added$ or subtracted and $return:output$ the final total. if the $list:list$ is blank, $return:output$ 0.
+        """
+        
+  subset: first_success
+- __index_level_0__: 206
+  problem: convert
+  entrypoint: convert
+  assertions: |-
+    assert convert([0, 1, 2, 3]) == ['ABCD']
+    assert convert([0, -1, 1, -1, 2]) == ['A', 'B', 'C']
+    assert convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]) == ['BBB', 'ZZZ', 'ABC']
+  username: student52
+  submitted_text: |-
+    If there is "0" in lst, then put "A" into new list; If there is "1" in lst, then put "B" into new list; If there is "2" in lst, then put "C" into new list; If there is "4" in lst, then put "D" into new list. Return new list.
+  prompt: |-
+    def convert(lst):
+        """
+        If there is "0" in lst, then put "A" into new $list:list$; If there is "1" in lst, then put "B" into new $list:list$; If there is "2" in lst, then put "C" into new $list:list$; If there is "4" in lst, then put "D" into new $list:list$. $Return:Return$ new $list:list$.
+        """
+        
+  subset: first_failure
+- __index_level_0__: 233
+  problem: order_strings
+  entrypoint: order_strings
+  assertions: |-
+    assert order_strings(['c', 'b', 'a', 'd']) == ['b', 'a', 'd', 'c']
+    assert order_strings([1, 2, 3, 4, 5, 6]) == [3, 2, 1, 6, 5, 4]
+    assert order_strings(['hello', 'aaa', 'bbb', 'ccc']) == ['bbb', 'aaa', 'hello', 'ccc']
+  username: student52
+  submitted_text: |-
+    For each item in lst, if the item bigger than the last one, then move it as the first item of lst. Return lst.
+  prompt: |-
+    def order_strings(lst):
+        """
+        For each $key:item$ in lst, if the $key:item$ bigger than the last one, then move it as the first $key:item$ of lst. $Return:Return$ lst.
+        """
+        
+  subset: first_failure
+- __index_level_0__: 255
+  problem: add_int
+  entrypoint: add_int
+  assertions: |-
+    assert add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5) == ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    assert add_int([8, 56, 8, '5', '4'], 1) == [9, 57, 9, '51', '41']
+    assert add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5) == ['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]
+  username: student77
+  submitted_text: |-
+    Given a list of numbers, lists, and strings as well as a number, append the number to the strings in the list, add the number to the numbers in the list, and do nothing to the lists in the list.
+  prompt: |-
+    def add_int(lst, num):
+        """
+        Given a $list:list$ of numbers, $lists:lists$, and $strings:strings$ as well as a number, $insert:append$ the number to the $strings:strings$ in the $list:list$, $insert:add$ the number to the numbers in the $list:list$, and do nothing to the $lists:lists$ in the $list:list$.
+        """
+        
+  subset: last_success
+- __index_level_0__: 289
+  problem: check_prime
+  entrypoint: check_prime
+  assertions: |-
+    assert check_prime('2') == True
+    assert check_prime('8') == False
+    assert check_prime('9') == False
+    assert check_prime('11') == True
+  username: student78
+  submitted_text: |-
+    given a sting, convert it to an int. divide the number by each number counting up starting at 2. if the output is another int and is not the same number as the original int, output False. If the output is the same as the original int output True.
+  prompt: |-
+    def check_prime(num):
+        """
+        given a sting, $typecast:convert$ it to an $integer:int$. divide the number by each number counting up starting at 2. if the $return:output$ is another $integer:int$ and is not the same number as the original $integer:int$, $return:output$ False. If the $return:output$ is the same as the original $integer:int$ $return:output$ True.
+        """
+        
+  subset: first_success
+- __index_level_0__: 350
+  problem: remove_odd
+  entrypoint: remove_odd
+  assertions: |-
+    assert remove_odd([4.3, 4, 5, 2, 7]) == [4.3, 4, 2]
+    assert remove_odd([1.1, 2.2, 3.3]) == [1.1, 2.2, 3.3]
+    assert remove_odd([3, 5, 7]) == []
+  username: student52
+  submitted_text: |-
+    If each item in lst can be divided by 2 wihtout remainder, then keep it. If the item in lst cannot be divided by 2 without remainder, then cut it off from lst. Return lst.
+  prompt: |-
+    def remove_odd(lst):
+        """
+        If each $key:item$ in lst can be divided by 2 wihtout remainder, then keep it. If the $key:item$ in lst cannot be divided by 2 without remainder, then cut it off from lst. $Return:Return$ lst.
+        """
+        
+  subset: first_failure
+- __index_level_0__: 368
+  problem: create_list
+  entrypoint: create_list
+  assertions: |-
+    assert create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']) == ['b', 'd', None]
+    assert create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]) == ['a', None, 'c']
+    assert create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']) == [None, None, None]
+  username: student77
+  submitted_text: |-
+    Given a dictionary with key/value pairs and a list of either strings or numbers, return the values in the dictionary if they are included in the list, and return None if they are not.
+  prompt: |-
+    def create_list(dt, lst):
+        """
+        Given a $dictionary:dictionary$ with $key:key$/value pairs and a $list:list$ of either $strings:strings$ or numbers, $return:return$ the values in the $dictionary:dictionary$ if they are included in the $list:list$, and $return:return$ None if they are not.
+        """
+        
+  subset: first_success
+- __index_level_0__: 382
+  problem: has_qu
+  entrypoint: has_qu
+  assertions: |-
+    assert has_qu(["A", "B", "C"]) == False
+    assert has_qu(["A", "Q", "C"]) == True
+    assert has_qu(["A", "U", "C"]) == True
+    assert has_qu(["Q", "U"]) == True
+  username: student77
+  submitted_text: |-
+    Given a list of letters, return "True" if the list has the letter "Q" or "U" or both, and "False" if the list does not.
+  prompt: |-
+    def has_qu(lst):
+        """
+        Given a $list:list$ of letters, $return:return$ "True" if the $list:list$ has the letter "Q" or "U" or both, and "False" if the $list:list$ does not.
+        """
+        
+  subset: last_success
+- __index_level_0__: 424
+  problem: planets_mass
+  entrypoint: planets_mass
+  assertions: |-
+    assert planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}) == 15
+    assert planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}) == 15
+    assert planets_mass({'Pluto': 100}) == 0
+  username: student65
+  submitted_text: |-
+    This function takes the input of a dictionary. If the key is the name of a planet, its value is added to the total mass. Otherwise, 0 is added. The function returns the total mass of all planets in the dictionary.
+  prompt: |-
+    def planets_mass(planets):
+        """
+        This function $takes:takes$ the $input:input$ of a $dictionary:dictionary$. If the $key:key$ is the name of a planet, its value is $inserted:added$ to the total mass. Otherwise, 0 is $inserted:added$. The function $returns:returns$ the total mass of all planets in the $dictionary:dictionary$.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 445
+  problem: student_grades
+  entrypoint: student_grades
+  assertions: |-
+    assert student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}) == {'Alice': ['A','A'], 'Bob': ['A','B']}
+    assert student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}) == {'Alice': []}
+    assert student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}) == {'Sam': ['B', 'B'], 'Ari':[], 'Chris':['A'] }
+  username: student74
+  submitted_text: |-
+    students correspond to a number. Then, the students are assigned a letter grade. The code should keep track of the letter grade for each student. Any unassigned students should be ignored.
+  prompt: |-
+    def student_grades(students, grades):
+        """
+        students correspond to a number. Then, the students are assigned a letter grade. The code should keep track of the letter grade for each student. Any unassigned students should be $skipped:ignored$.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 490
+  problem: times_with
+  entrypoint: times_with
+  assertions: |-
+    assert times_with([ [30, ['Alice', 'Bob', 'Carol']] ]) == { 'Alice': 30, 'Bob': 30, 'Carol': 30 }
+    assert times_with([ [30, ['Alice', 'Bob', 'Carol']], [20, ['Alice', 'Bob']] ]) == { 'Alice': 50, 'Bob': 50, 'Carol': 30 }
+    assert times_with([ [10, ['Alice', 'Bob']], [5, ['Carol']] ]) == {'Alice': 10, 'Bob': 10, 'Carol': 5}
+  username: student79
+  submitted_text: you are going to have a nested list as an input. the inner most
+    lists are going to have strings. next to them in an outer list they will have
+    an integer. your goal is to create a dictionary with the keys of names in the
+    inner most lists and with the corresponding number and return.
+  prompt: |-
+    def times_with(meetings):
+        """
+        you are going to have a nested $list:list$ as an $input:input$. the inner most $lists:lists$ are going to have $strings:strings$. next to them in an outer $list:list$ they will have an $integer:integer$. your goal is to create a $dictionary:dictionary$ with the $keys:keys$ of names in the inner most $lists:lists$ and with the corresponding number and $return:return$.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 511
+  problem: meeps_morps
+  entrypoint: meeps_morps
+  assertions: |-
+    assert meeps_morps(['Meep', 'Morp', 'Meep', 'Meep', 'Suitcase', 'Kind', 'Morp']) == [3,2]
+    assert meeps_morps(['Meep', 'Meep', 'Suitcase', 'Kind']) == [2,0]
+    assert meeps_morps(['Suitcase', 'Kind', 'Carrot', 'Meat', 'Morpling']) == [0,0]
+  username: student74
+  submitted_text: |-
+    finds how many strings say "Meep" or "Morp" and stores the amount. The number of Meep goes first, and the number of Morp goes second
+  prompt: |-
+    def meeps_morps(items):
+        """
+        finds how many $strings:strings$ say "Meep" or "Morp" and stores the amount. The number of Meep goes first, and the number of Morp goes second
+        """
+        
+  subset: first_success
+- __index_level_0__: 538
+  problem: print_time
+  entrypoint: print_time
+  assertions: |-
+    assert print_time('Sat', 12) == 'weekend'
+    assert print_time('Sun', 12) == 'weekend'
+    assert print_time('Mon', 9) == 'weekday'
+    assert print_time('Tue', 23) == 'weekday'
+    assert print_time('Wed', 0) == 'sleeping'
+    assert print_time('Thu', 8) == 'sleeping'
+  username: student77
+  submitted_text: |-
+    Given two parameters,  the first being the day and the second being a measurement of time, return "weekend" if the day is Sat or Sun, and return weekday if the day is neither. Return "sleeping" if the measurement of time is between 0 and 8, inclusive. If the time is any other, return either "weekend" or "weekday".
+  prompt: |-
+    def print_time(day,hour):
+        """
+        Given two $parameters:parameters$,  the first being the day and the second being a measurement of time, $return:return$ "weekend" if the day is Sat or Sun, and $return:return$ weekday if the day is neither. $Return:Return$ "sleeping" if the measurement of time is between 0 and 8, inclusive. If the time is any other, $return:return$ either "weekend" or "weekday".
+        """
+        
+  subset: last_success
+- __index_level_0__: 560
+  problem: mod_end
+  entrypoint: mod_end
+  assertions: |-
+    assert mod_end(['jumping', 'bumping', 'singing', 'picking'], 'ing') == ['jumps', 'bumps', 'sings', 'picks']
+    assert mod_end(['dreaded', 'edited', 'heated'], 'ed') == ['dreads', 'edits', 'heats']
+    assert mod_end(['nearer', 'closer'], 'er') == ['nears', 'closs']
+  username: student77
+  submitted_text: |-
+    Given a list of words and a string that specifies an ending, remove the ending from the words inside the list, and instead append 's' to the new words with their original endings having been removed.
+  prompt: |-
+    def mod_end(words, ending):
+        """
+        Given a $list:list$ of $strings:words$ and a $string:string$ that specifies an ending, $skip:remove$ the ending from the $strings:words$ inside the $list:list$, and instead $insert:append$ 's' to the new $strings:words$ with their original endings having been $skipped:removed$.
+        """
+        
+  subset: first_success
+- __index_level_0__: 588
+  problem: increaseScore
+  entrypoint: increaseScore
+  assertions: |-
+    assert increaseScore(-10) == 10
+    assert increaseScore(1) == 10
+    assert increaseScore(10) == 11
+    assert increaseScore(15) == 16
+    assert increaseScore(20) == 21
+  username: student79
+  submitted_text: |-
+    if you get an input of -10 return 10, if you get an input of 1 return a 10, if you get a 10 return 11 if you get 15 return 16 if you get 20 return 21
+  prompt: |-
+    def increaseScore(score):
+        """
+        if you $take:get$ an $input:input$ of -10 $return:return$ 10, if you $take:get$ an $input:input$ of 1 $return:return$ a 10, if you $take:get$ a 10 $return:return$ 11 if you $take:get$ 15 $return:return$ 16 if you $take:get$ 20 $return:return$ 21
+        """
+        
+  subset: first_success
+- __index_level_0__: 647
+  problem: getSeason
+  entrypoint: getSeason
+  assertions: |-
+    assert getSeason('January') == 'winter'
+    assert getSeason('April') == 'spring'
+    assert getSeason('August') == 'summer'
+    assert getSeason('October') == 'fall'
+  username: student65
+  submitted_text: |-
+    This function inputs a string of the name of a month and returns the name of the season it is in (in the northern hemisphere). The input should be capitalized, the output should not.
+  prompt: |-
+    def getSeason(month):
+        """
+        This function $inputs:inputs$ a $string:string$ of the name of a month and $returns:returns$ the name of the season it is in (in the northern hemisphere). The $input:input$ should be capitalized, the $return:output$ should not.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 675
+  problem: assessVowels
+  entrypoint: assessVowels
+  assertions: |-
+    assert assessVowels('I ate an apple') == ['I', 'a', 'e', 'a', 'a', 'e']
+    assert assessVowels('Another string here') == ['A', 'o', 'e', 'i', 'e', 'e']
+    assert assessVowels('cAbbAge') == ['A', 'A', 'e']
+    assert assessVowels('') == []
+  username: student74
+  submitted_text: |-
+    puts all the vowels of a string in a list, including capital and lower case letters
+  prompt: |-
+    def assessVowels(s):
+        """
+        puts all the vowels of a $string:string$ in a $list:list$, including capital and lower case letters
+        """
+        
+  subset: last_success
+- __index_level_0__: 704
+  problem: hasHorizontalWin
+  entrypoint: hasHorizontalWin
+  assertions: |-
+    assert hasHorizontalWin([['', '',  'X', 'O', 'X'],
+    ['X', 'X', 'X', 'X', 'X'],
+    ['X', 'O', 'X', 'O', 'O'],
+    ['',  '',  '',  'X', 'O'],
+    ['',  '',  '',  '',  'O']],
+    'X') == True
+    assert hasHorizontalWin([['', '',  'X', 'O', 'X'],
+    ['X', 'X', 'X', 'X', 'O'],
+    ['X', 'X', 'X', 'O', 'O'],
+    ['',  '',  '',  'X', 'O'],
+    ['',  '',  '',  '',  'O']],
+    'X') == False
+    assert hasHorizontalWin([['', '',  'X', 'O', 'X'],
+    ['X', 'X', 'O', 'X', 'O'],
+    ['X', 'O', 'X', 'O', 'O'],
+    ['',  '',  '',  'X', 'O'],
+    ['',  '',  '',  '',  'O']],
+    'X') == False
+  username: student79
+  submitted_text: |-
+    you will have a list of lists consisting of X and O as strings. if in a single list all the elements are X you return true, else you return false.
+  prompt: |-
+    def hasHorizontalWin(board, letter):
+        """
+        you will have a $list:list$ of $lists:lists$ consisting of X and O as $strings:strings$. if in a single $list:list$ all the $keys:elements$ are X you $return:return$ true, else you $return:return$ false.
+        """
+        
+  subset: first_success
+- __index_level_0__: 749
+  problem: readingIceCream
+  entrypoint: readingIceCream
+  assertions: |-
+    assert readingIceCream(["peppermint\tice cream\t3",
+    "lemon\tfrozen yogurt\t10",
+    "pumpkin\tice cream\t2.5",
+    "monster\tice cream\t21"]) == 36.5
+    assert readingIceCream(["salty\tfrozen yogurt\t10"]) == 10
+    assert readingIceCream(["salty\tfrozen yogurt\t0"]) == 0
+  username: student78
+  submitted_text: |-
+    given a list of strings, split each string by \. for each new string, if it starts with t, eliminate the t. next find the sting that contains a number, convert it to a float, and add it to running total. output this total
+  prompt: |-
+    def readingIceCream(lines):
+        """
+        given a $list:list$ of $strings:strings$, split each $string:string$ by \. for each new $string:string$, if it starts with t, eliminate the t. next find the sting that contains a number, $typecast:convert$ it to a float, and $insert:add$ it to running total. $return:output$ this total
+        """
+        
+  subset: last_failure
+- __index_level_0__: 780
+  problem: findHorizontals
+  entrypoint: findHorizontals
+  assertions: |-
+    assert findHorizontals(["ztac","zzzz","teaz","part","zzzz"],
+    ["cat","dog","tea","party"]) == {"cat":0, "tea":2}
+    assert findHorizontals(["ztac","zzzz","teaz","part","zzzz"],
+    ["to","apple","ape","party"]) == {}
+    assert findHorizontals(["as", "be", "sa", "it"],
+    ["it"]) == {'it': 3}
+  username: student78
+  submitted_text: |-
+    given that puzzle is a list of strings, check if the letters of each string in wordList is contained in any of the strings in puzzle. if the string in wordList is in any of the strings in puzzle, add it to a dictionary with the key as the sting in wordList and the output as the position of the string in puzzle
+  prompt: |-
+    def findHorizontals(puzzle,wordList):
+        """
+        given that puzzle is a $list:list$ of $strings:strings$, check if the letters of each $string:string$ in wordList is contained in any of the $strings:strings$ in puzzle. if the $string:string$ in wordList is in any of the $strings:strings$ in puzzle, $insert:add$ it to a $dictionary:dictionary$ with the $key:key$ as the sting in wordList and the $return:output$ as the position of the $string:string$ in puzzle
+        """
+        
+  subset: last_failure
+- __index_level_0__: 810
+  problem: partialWordle
+  entrypoint: partialWordle
+  assertions: |-
+    assert partialWordle(["zzzz","bbbb","lyre","part","apes"],
+    'pare') == [0,0,4,6,3]
+    assert partialWordle(["aaaa","wall","woah","deal","howl"],
+    "word") == [0,2,4,1,3]
+    assert partialWordle(["real","hill","ream","meal","curl"],
+    "roll") == [4,4,2,2,3]
+  username: student65
+  submitted_text: |-
+    For each word in guessList, this function returns a list of scores compared to the hiddenWord. For every letter in the right place it adds 2 points, and for every letter which is in hiddenWord but not in the right place it adds 1 point.
+  prompt: |-
+    def partialWordle(guessList,hiddenWord):
+        """
+        For each $string:word$ in guessList, this function $returns:returns$ a $list:list$ of scores compared to the hiddenWord. For every letter in the right place it $inserts:adds$ 2 points, and for every letter which is in hiddenWord but not in the right place it $inserts:adds$ 1 point.
+        """
+        
+  subset: first_success
+- __index_level_0__: 829
+  problem: andCount
+  entrypoint: andCount
+  assertions: |-
+    assert andCount(['--&-','----','-&--','---&',]) == 3
+    assert andCount(['&&&-','-----','--&&&','-----',]) == 6
+    assert andCount(['----', '----', '----', '----']) == 0
+  username: student78
+  submitted_text: |-
+    given a list of strings, concatenate the strings into one long string. read through the long string and count the number of '&' found. output that number.
+  prompt: |-
+    def andCount(andGrid):
+        """
+        given a $list:list$ of $strings:strings$, $concatenate:concatenate$ the $strings:strings$ into one long $string:string$. read through the long $string:string$ and count the number of '&' found. $return:output$ that number.
+        """
+        
+  subset: first_success
+- __index_level_0__: 857
+  problem: set_chars
+  entrypoint: set_chars
+  assertions: |-
+    assert set_chars('Everybody loves apples.', "u", [0,2,6,16]) == 'uvurybudy loves upples.'
+    assert set_chars('ice cream is the best', 'q', [1,21]) == 'iqe cream is the best'
+    assert set_chars('toast and jam and toast and ham', 't', []) == 'toast and jam and toast and ham'
+  username: student77
+  submitted_text: |-
+    Given a string, a letter, and locations specified in a list, remove the letters in the string in the locations specified in the list, and replace them with the letter. If the location is outside the range of the list, do nothing.
+  prompt: |-
+    def set_chars(s,c,l):
+        """
+        Given a $string:string$, a letter, and locations specified in a $list:list$, $skip:remove$ the letters in the $string:string$ in the locations specified in the $list:list$, and replace them with the letter. If the location is outside the range of the $list:list$, do nothing.
+        """
+        
+  subset: last_success
+- __index_level_0__: 897
+  problem: altText
+  entrypoint: altText
+  assertions: |-
+    assert altText('I love to see dolphins swim.') == 'I LoVe tO SeE DoLpHiNs sWiM.'
+    assert altText('computers') == 'CoMpUtErS'
+    assert altText('t') == 'T'
+  username: student79
+  submitted_text: |-
+    for this function, you get an input of a string. For every character that is not a space, you start by capitalizing and then alternate with not capitalizing.
+  prompt: |-
+    def altText(s):
+        """
+        for this function, you $take:get$ an $input:input$ of a $string:string$. For every $string:character$ that is not a space, you start by capitalizing and then alternate with not capitalizing.
+        """
+        
+  subset: first_success
+- __index_level_0__: 945
+  problem: changeSection
+  entrypoint: changeSection
+  assertions: |-
+    assert changeSection('Turn towards the door.', 9) == 'awot nruTrds the door.'
+    assert changeSection('the tall sail', 13) == 'lias llat eht'
+    assert changeSection('establishing', 1) == 'establishing'
+  username: student51
+  submitted_text: flip the position of the characters in the string up to the specified
+    index
+  prompt: |-
+    def changeSection(s,i):
+        """
+        flip the position of the $strings:characters$ in the $string:string$ up to the specified index
+        """
+        
+  subset: last_failure
+- __index_level_0__: 962
+  problem: edit_col
+  entrypoint: edit_col
+  assertions: |-
+    assert edit_col([[1,2,3], [4,5,6], [7,8,9]], 1, 6) == [[1,6,3], [4,6,6], [7,6,9]]
+    assert edit_col([[1,1,1,1,1], [1,1,1,1,1]], 0, 9) == [[9,1,1,1,1], [9,1,1,1,1]]
+    assert edit_col([[2,3]], 1, 1) == [[2,1]]
+  username: student78
+  submitted_text: |-
+    if mat is a list of lists, input n in the i position of each list. output the modified list of lists
+  prompt: |-
+    def edit_col(mat,i,n):
+        """
+        if mat is a $list:list$ of $lists:lists$, $input:input$ n in the i position of each $list:list$. $return:output$ the modified $list:list$ of $lists:lists$
+        """
+        
+  subset: first_success
+- __index_level_0__: 985
+  problem: combine
+  entrypoint: combine
+  assertions: |-
+    assert combine([[1,2,3],[4,5,6],[7,8,9]],[[10,20,30],[40,50,60],[70,80,90]]) == [[1,2,3,10,20,30],[4,5,6,40,50,60],[7,8,9,70,80,90]]
+    assert combine([[9,8,7]], [[0,1,2]]) == [[9,8,7,0,1,2]]
+    assert combine([[2,3],[1,1],[10,11],[4, 5]],[[1, 1],[14, 15],[3, 2],[77, 87]]) == [[2,3,1,1],[1,1,14,15],[10,11,3,2],[4,5,77,87]]
+  username: student77
+  submitted_text: |-
+    Given two sets of lists, combine the respective places of each list into one larger list, then combine those combined lists into another set. For example, the first list of the first set should be combined with the first of the second, etc.
+  prompt: |-
+    def combine(l1,l2):
+        """
+        Given two $lists:sets$ of $lists:lists$, $concatenate:combine$ the respective places of each $list:list$ into one larger $list:list$, then $concatenate:combine$ those $concatenated:combined$ $lists:lists$ into another $list:set$. For example, the first $list:list$ of the first $list:set$ should be $concatenated:combined$ with the first of the second, etc.
+        """
+        
+  subset: first_success
+- __index_level_0__: 1013
+  problem: pattern
+  entrypoint: pattern
+  assertions: |-
+    assert pattern(3) == [[1,2,3],[1,2,3],[1,2,3]]
+    assert pattern(4) == [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]
+    assert pattern(2) == [[1,2],[1,2]]
+  username: student52
+  submitted_text: 'Return a list contains the same number of list as value. Each list
+    contains each number from 1 to the given value. '
+  prompt: |-
+    def pattern(value):
+        """
+        $Return:Return$ a $list:list$ contains the same number of $list:list$ as value. Each $list:list$ contains each number from 1 to the given value. 
+        """
+        
+  subset: first_success
+- __index_level_0__: 1031
+  problem: reduce
+  entrypoint: reduce
+  assertions: |-
+    assert reduce('^^1-1^^') == '__1-1__'
+    assert reduce('~^--^~') == '~_--_~'
+    assert reduce('|O.0|') == '|O.0|'
+  username: student52
+  submitted_text: |-
+    Test if the item in val is "^", then change to "_", return new val. If there is no "^" in val, then return val.
+  prompt: |-
+    def reduce(val):
+        """
+        Test if the $key:item$ in val is "^", then $typecast:change$ to "_", $return:return$ new val. If there is no "^" in val, then $return:return$ val.
+        """
+        
+  subset: first_success
+- __index_level_0__: 1063
+  problem: fib
+  entrypoint: fib
+  assertions: |-
+    assert fib(1) == True
+    assert fib(13) == True
+    assert fib(21) == True
+    assert fib(19) == False
+  username: student73
+  submitted_text: |-
+    if the number is [1, 13, 21] the output should be True, but if it is any other number, the output is false
+  prompt: |-
+    def fib(n):
+        """
+        if the number is [1, 13, 21] the $return:output$ should be True, but if it is any other number, the $return:output$ is false
+        """
+        
+  subset: first_success
+- __index_level_0__: 1090
+  problem: add_word
+  entrypoint: add_word
+  assertions: |-
+    assert add_word('bright', 1, {'twas': [1]}) == {'twas': [1], 'bright': [1]}
+    assert add_word('five', 5, {'one': [1], 'three': [3, 3, 3, 5], 'five': [3, 5, 5, 5, 5]}) == {'one': [1], 'three': [3, 3, 3, 5], 'five': [3, 5, 5, 5, 5, 5]}
+    assert add_word('laughing', 7, {'i': [1, 6], 'heard': [1], 'a': [1, 4], 'asked': [6]}) == {'i': [1, 6], 'heard': [1], 'a': [1, 4], 'asked': [6], 'laughing': [7]}
+  username: student52
+  submitted_text: |-
+    Add word as one of the key of map, add line_number as the value of key into map. Return map.
+  prompt: |-
+    def add_word(word, line_number, $dictionary:map$):
+        """
+        $Insert:Add$ $string:word$ as one of the $key:key$ of $dictionary:map$, $insert:add$ line_number as the value of $key:key$ into $dictionary:map$. $Return:Return$ $dictionary:map$.
+        """
+        
+  subset: first_success
+- __index_level_0__: 1119
+  problem: check_for_aspen
+  entrypoint: check_for_aspen
+  assertions: |-
+    assert check_for_aspen({"Oak": 3, "Birch": 5, "Elm": 2}) == "Nope"
+    assert check_for_aspen({"Aspen": 7, "Beech": 15}) == "Yup"
+    assert check_for_aspen({"Beech": 8, "Maple": 2, "Aspen": 3}) == "Yup"
+  username: student78
+  submitted_text: |-
+    given a dictionary, if one of the keys is 'Aspen', output 'Yup', if not, output 'Nope'
+  prompt: |-
+    def check_for_aspen(trees):
+        """
+        given a $dictionary:dictionary$, if one of the $keys:keys$ is 'Aspen', $return:output$ 'Yup', if not, $return:output$ 'Nope'
+        """
+        
+  subset: first_success
+- __index_level_0__: 1140
+  problem: multisplit
+  entrypoint: multisplit
+  assertions: |-
+    assert multisplit("a man! wow- the dog, much hat! much hair!",['-','!','?',','],'~') == 'a man~ wow~ the dog~ much hat~ much hair~'
+    assert multisplit('celestial teas: a guide',[' ',':'],'!') == 'celestial!teas!!a!guide'
+    assert multisplit('celestial teas: a guide',[],'!') == 'celestial teas: a guide'
+  username: student65
+  submitted_text: |-
+    For each element of the string s, if the element is in the list chars, replace that element with sep
+  prompt: |-
+    def multisplit(s,chars,sep):
+        """
+        For each $key:element$ of the $string:string$ s, if the $key:element$ is in the $list:list$ chars, replace that $key:element$ with sep
+        """
+        
+  subset: first_success
+- __index_level_0__: 1177
+  problem: sortedBooks
+  entrypoint: sortedBooks
+  assertions: |-
+    assert sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},
+    {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, 
+    {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}, 
+    {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}], 
+    'Austen') == [{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813},
+    {'author': 'Austen', 'book': 'Emma', 'year': 1815}, 
+    {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]
+    assert sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},
+      {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}], 
+      'Woolf') == [{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]
+    assert sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],
+      'Austen') == []
+  username: student78
+  submitted_text: |-
+    if books is a list of dictionaries, output a list of dictionaries where the associated data to the key 'author' is equal to the input writer
+  prompt: |-
+    def sortedBooks(books, writer):
+        """
+        if books is a $list:list$ of $dictionaries:dictionaries$, $return:output$ a $list:list$ of $dictionaries:dictionaries$ where the associated data to the $key:key$ 'author' is equal to the $input:input$ writer
+        """
+        
+  subset: last_failure
+- __index_level_0__: 1223
+  problem: sortBySuccessRate
+  entrypoint: sortBySuccessRate
+  assertions: |-
+    assert sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, 
+    {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, 
+    {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]) == [{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}, 
+    {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, 
+    {'nominee': 'Beyoncé', 'wins': 28, 'noms': 79, 'success': 0.35}]
+    assert sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+    {'nominee': 'Swift', 'wins': 11, 'noms': 41}, 
+    {'nominee': 'Thomas', 'wins': 11, 'noms': 38}]) == [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29},
+    {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27},
+    {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]
+    assert sortBySuccessRate([{'nominee': 'Beyoncé', 'wins': 28, 'noms': 79},
+     {'nominee': 'Babyface','wins': 11, 'noms': 49}]) == [{'nominee': 'Beyoncé', 'wins': 28, 'noms': 79, 'success': 0.35}, 
+    {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]
+  username: student79
+  submitted_text: you are going to have a list of dictionaries as an input. as an
+    output you are going to add another variable called success to each dictionary
+    which is the wins divided by the value of noms. you are then going to sort the
+    dictionary according to decreasing success. use two decimal places for the success
+    and put each dictionary on a separate line.
+  prompt: |-
+    def sortBySuccessRate(nominations):
+        """
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success. use two decimal places for the success and put each $dictionary:dictionary$ on a separate line.
+        """
+        
+  subset: last_failure
+- __index_level_0__: 1237
+  problem: layoverTrips
+  entrypoint: layoverTrips
+  assertions: |-
+    assert layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, 
+    {'origin':'BOS', 'dest':'JFK', 'hrs':1.0},
+    {'origin':'JFK', 'dest':'LAX', 'hrs':1.0},
+    {'origin':'LAX', 'dest':'SEA', 'hrs':1.0},
+    {'origin':'JFK', 'dest':'ATL', 'hrs':1.0}], 'BOS') == ['ATL','LAX']
+    assert layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, 
+    {'origin':'BOS', 'dest':'JFK', 'hrs':1.0},
+    {'origin':'ORD', 'dest':'SEA', 'hrs':1.0}], 'ORD') == []
+    assert layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},
+     {'origin':'SEA', 'dest':'JFK', 'hrs':2.0},
+     {'origin':'SEA', 'dest':'ATL','hrs':1.0}], 'LAX') == ['ATL','JFK']
+  username: student37
+  submitted_text: |-
+    Write a function which takes a list of dictionaries and a string and finds the dictionaries in the input list which have the string mapped to 'origin', and then finds the dictionaries where 'origin' is mapped to 
+  prompt: |-
+    def layoverTrips(flights, start):
+        """
+        Write a function which $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ and a $string:string$ and finds the $dictionaries:dictionaries$ in the $input:input$ $list:list$ which have the $string:string$ mapped to 'origin', and then finds the $dictionaries:dictionaries$ where 'origin' is mapped to 
+        """
+        
+  subset: first_failure
+- __index_level_0__: 1275
+  problem: sort_physicists
+  entrypoint: sort_physicists
+  assertions: |-
+    assert sort_physicists([["Youyou",91,"Chemistry"],["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]) == ['Peiris', 'Ghez', 'Strickland']
+    assert sort_physicists([["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]) == ['Peiris', 'Ghez', 'Strickland']
+    assert sort_physicists([["Taylor",59,"Computer Science"],["Tu",91,"Chemistry"],["Ghez",56,"Physics"]]) == ['Ghez']
+  username: student77
+  submitted_text: |-
+    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is "Physics" in a list. Then sort the scientists based on the numbers given in the set of lists from smallest to largest. For example, if the scientist has the smallest number attached to them in the set of lists, they should be placed first in the output list.
+  prompt: |-
+    def sort_physicists(scientists):
+        """
+        Given a $list:set$ of $lists:lists$ with a scientist, number, and a subject, respectively, only $return:return$ the scientist if the subject is "Physics" in a $list:list$. Then sort the scientists based on the numbers given in the $list:set$ of $lists:lists$ from smallest to largest. For example, if the scientist has the smallest number $inserted:attached$ to them in the $list:set$ of $lists:lists$, they should be placed first in the $return:output$ $list:list$.
+        """
+        
+  subset: last_success
+- __index_level_0__: 1307
+  problem: find_multiples
+  entrypoint: find_multiples
+  assertions: |-
+    assert find_multiples(1,100,20) == [20, 40, 60, 80, 100]
+    assert find_multiples(10, 30, 5) == [10, 15, 20, 25, 30]
+    assert find_multiples(1000,2000,177) == [1062, 1239, 1416, 1593, 1770, 1947]
+  username: student74
+  submitted_text: 'the code should increase the amount of a number by the factor given.
+    Where to start and end are also given as inputs. The end input should also be
+    included '
+  prompt: |-
+    def find_multiples(start,stop,factor):
+        """
+        the code should increase the amount of a number by the factor given. Where to start and end are also given as $inputs:inputs$. The end $input:input$ should also be included 
+        """
+        
+  subset: last_success
+- __index_level_0__: 1344
+  problem: total_bill
+  entrypoint: total_bill
+  assertions: |-
+    assert total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07) == 15.44
+    assert total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.0) == 14.43
+    assert total_bill([['bread', 2, 3.50]], 0.5) == 10.5
+  username: student79
+  submitted_text: you will have two inputs a list of lists and the tax rate. for every
+    list in the list of lists multiply the second and third item and add all of them
+    and then multiply that by the sales tax plus 1. if the resulting number has more
+    than two decimal places shorten it to two decimal places.
+  prompt: |-
+    def total_bill(grocery_list, sales_tax):
+        """
+        you will have two $inputs:inputs$ a $list:list$ of $lists:lists$ and the tax rate. for every $list:list$ in the $list:list$ of $lists:lists$ multiply the second and third $key:item$ and $insert:add$ all of them and then multiply that by the sales tax plus 1. if the resulting number has more than two decimal places shorten it to two decimal places.
+        """
+        
+  subset: last_success
+- __index_level_0__: 1371
+  problem: translate
+  entrypoint: translate
+  assertions: |-
+    assert translate({"one":"un", "two":"deux", "three":"trois", "four":"quatre",
+      "I":"je", "you":"tu", "and":"et", "cats":"chats", "love":"aime",
+      "like":"aime", "my":"mes"}, 
+      "I like my three cats") == 'je aime mes trois chats'
+    assert translate({"one":"un", "two":"deux", "three":"trois", "four":"quatre",
+      "I":"je", "you":"tu", "and":"et", "cats":"chats", "love":"aime",
+      "like":"aime", "my":"mes"}, 
+      "I like my three marmots") == 'je aime mes trois UNK'
+    assert translate({"one":"ett", "two":"tva", "three":"tre", "four":"fyra"},
+    "five six seven eight") == 'UNK UNK UNK UNK'
+  username: student79
+  submitted_text: |-
+    for the function above, you use a dictionary and a sentence. for each word in the sentence you get the corresponding value from the dictionary and concatenate. if the word is not in the dictionary you concatenate the word UNK.
+  prompt: |-
+    def translate(lexicon,sentence):
+        """
+        for the function above, you use a $dictionary:dictionary$ and a sentence. for each $string:word$ in the sentence you $take:get$ the corresponding value from the $dictionary:dictionary$ and $concatenate:concatenate$. if the $string:word$ is not in the $dictionary:dictionary$ you $concatenate:concatenate$ the $string:word$ UNK.
+        """
+        
+  subset: first_success
+- __index_level_0__: 1460
+  problem: topScores
+  entrypoint: topScores
+  assertions: |-
+    assert topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]) == ['Penelope', 'Alex', 'Rachel']
+    assert topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]) == ['Ben', 'Alex', 'Ro', 'Ira', 'Kip']
+    assert topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]) == []
+  username: student65
+  submitted_text: |-
+    This function has a list of lists of length 2 as inputs. First, sort the lists by the first entry in descending order. If the first entry in the list (the score) is greater than or equal to 80, add the second entry in the list (the name) to a list to be output at the end. 
+  prompt: |-
+    def topScores(lst):
+        """
+        This function has a $list:list$ of $lists:lists$ of length 2 as $inputs:inputs$. First, sort the $lists:lists$ by the first $key:entry$ in descending order. If the first $key:entry$ in the $list:list$ (the score) is greater than or equal to 80, $insert:add$ the second $key:entry$ in the $list:list$ (the name) to a $list:list$ to be $return:output$ at the end. 
+        """
+        
+  subset: last_failure
+- __index_level_0__: 1539
+  problem: generateCardDeck
+  entrypoint: generateCardDeck
+  assertions: |-
+    assert generateCardDeck(['S', 'H', 'D'], ['1', '2', 'A']) == ['D1', 'D2', 'DA', 'H1', 'H2', 'HA',  'S1', 'S2', 'SA']
+    assert generateCardDeck(['H', 'D'], ['6', 'Q', 'J', '2']) == ['D2', 'D6', 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']
+    assert generateCardDeck(['H'], ['2']) == ['H2']
+  username: student79
+  submitted_text: |
+    there are two lists, both with strings. you should use a nested for loop to concatenate the two strings and then add them to a list in decreasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). "J" is smaller than "Q", which is smaller than "A". suit takes precedence over rank. when you concatenate the letter should be before the number. 
+  prompt: |-
+    def generateCardDeck(suits, vals):
+        """
+        there are two $lists:lists$, both with $strings:strings$. you should use a nested for loop to $concatenate:concatenate$ the two $strings:strings$ and then $insert:add$ them to a $list:list$ in decreasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). "J" is smaller than "Q", which is smaller than "A". suit $takes:takes$ precedence over rank. when you $concatenate:concatenate$ the letter should be before the number. 
+
+        """
+        
+  subset: last_failure
+- __index_level_0__: 1582
+  problem: reverseWords
+  entrypoint: reverseWords
+  assertions: |-
+    assert reverseWords(['eat', 'tree']) == ['eert', 'tae']
+    assert reverseWords(['ax', 'by', 'chaz']) == ['xa', 'yb', 'zahc']
+    assert reverseWords(['by', 'chaz', 'ax']) == ['xa', 'yb', 'zahc']
+  username: student65
+  submitted_text: |-
+    This function reverses the order of every string in words, then alphabetizes the resulting list. 
+  prompt: |-
+    def reverseWords(words):
+        """
+        This function reverses the order of every $string:string$ in $strings:words$, then alphabetizes the resulting $list:list$. 
+        """
+        
+  subset: first_success
+- __index_level_0__: 1629
+  problem: percentWin
+  entrypoint: percentWin
+  assertions: |-
+    assert percentWin(['1', '1', 'X', '2'], ['1', '1', '1', '2']) == '75%'
+    assert percentWin(['2', 'X', 'X'], ['2', '2', '2']) == '33%'
+    assert percentWin(['2', '1', '2', '1', '2'], ['2', '1', '2', '1', '2']) == '100%'
+  username: student52
+  submitted_text: |-
+    Add the items in guess and answers together, find out which value different than others and get its counts. Divid the sum number of items in guess and answers by the number of the different value. Return the value in percent after divided. If the different items same as other items in both guess and answers, then return "100%"
+  prompt: |-
+    def percentWin(guess,answers):
+        """
+        $Insert:Add$ the $keys:items$ in guess and answers together, find out which value different than others and $take:get$ its counts. Divid the sum number of $keys:items$ in guess and answers by the number of the different value. $Return:Return$ the value in percent after divided. If the different $keys:items$ same as other $keys:items$ in both guess and answers, then $return:return$ "100%"
+        """
+        
+  subset: first_failure
+- __index_level_0__: 1644
+  problem: correctNumberofPlayers
+  entrypoint: correctNumberofPlayers
+  assertions: |-
+    assert correctNumberofPlayers([['Brian', "Ertz", "Long", "Mewis", "Press"], ['Falk', 'Glas', "Seger", "Hurtig", "Rolfo"]]) == True
+    assert correctNumberofPlayers([['Brian', "Ertz", "Long", "Mewis", "Press"], ['Falk', 'Glas', "Seger", "Hurtig"]]) == False
+    assert correctNumberofPlayers([['Brian',"Ertz","Long", "Mewis","Press"], ['Falk','Glas',"Seger","Hurtig","Rolfo"], ["Bartoli","Linari","Gama","Galli","Caruso"]]) == True
+  username: student74
+  submitted_text: 'the code should store up to five strings. Each nested list should
+    equal five and output true. The whole list can be any length. Any nested list
+    less or more than five should output false '
+  prompt: |-
+    def correctNumberofPlayers(teams):
+        """
+        the code should store up to five $strings:strings$. Each nested $list:list$ should equal five and $return:output$ true. The whole $list:list$ can be any length. Any nested $list:list$ less or more than five should $return:output$ false 
+        """
+        
+  subset: last_success
+- __index_level_0__: 1668
+  problem: exp
+  entrypoint: exp
+  assertions: |-
+    assert exp([1, 2, 3], 1) == [1,2,3]
+    assert exp([2,2,2], 3) == [8,8,8]
+    assert exp([2], 2) == [4]
+  username: student65
+  submitted_text: |-
+    For each element in lst, this function raises the element to the power of val and returns the resulting list
+  prompt: |-
+    def exp(lst, val):
+        """
+        For each $key:element$ in lst, this function raises the $key:element$ to the power of val and $returns:returns$ the resulting $list:list$
+        """
+        
+  subset: last_success

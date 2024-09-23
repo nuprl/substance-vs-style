@@ -5,19 +5,22 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\n{'twas': [1], 'bright': [1]}\n\n{'one': [1], 'three': [3, 3, 3, 5], 'five': [3, 5, 5, 5, 5, 5]}\n\n{'i': [1, 6], 'heard': [1], 'a': [1, 4], 'asked': [6], 'laughing': [7]}\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
             "stdout_id": 2,
+            "hover": "stdout:\nbright\n\nfive\n\nlaughing\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         }
@@ -25,44 +28,56 @@
     "adjacency": [
         [
             {
-                "diff": 6,
-                "color": "blue",
+                "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student10",
+                "hover": "username:student10\ndiff:\n--- \n+++ \n@@ -63,4 +63,8 @@\n as a value.+Returns+an+updated+map. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
                 "diff": 1,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -32,4 +32,9 @@\n in the dictionary.+The+function+returns+the+dictionary. \"\"\"",
                 "id": 1,
                 "key": 1
             },
             {
                 "diff": 5,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student4",
+                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -22,5 +22,9 @@\n line_number as the-value+value,+returns+the+appended+dictionary \"\"\"",
                 "id": 1,
                 "key": 2
             },
             {
-                "diff": 3,
-                "color": "pink",
+                "diff": 4,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student41",
+                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -13,7 +13,6 @@\n with the given-line number as a@@ -22,4 +21,8 @@\n the inputted dictionary.+Returns+the+new+dictionary. \"\"\"",
                 "id": 1,
                 "key": 3
             },
             {
-                "diff": 4,
-                "color": "black",
+                "diff": 6,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student51",
+                "hover": "username:student51\ndiff:\n--- \n+++ \n@@ -17,5 +17,7 @@\n number as the-value+value.+Return+map. \"\"\"",
                 "id": 1,
                 "key": 4
             },
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student21",
+                "hover": "username:student21\ndiff:\n--- \n+++ \n@@ -32,5 +32,7 @@\n number to the+word.+return word \"\"\"",
                 "id": 2,
                 "key": 0
             }
@@ -70,9 +85,11 @@
         [],
         [
             {
-                "diff": 2,
-                "color": "red",
+                "diff": 0,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student21",
+                "hover": "username:student21\ndiff:\n--- \n+++ \n@@ -34,5 +34,5 @@\n the word. return-word+map \"\"\"",
                 "id": 1,
                 "key": 0
             }

@@ -5,85 +5,99 @@
     "nodes": [
         {
             "stderr_id": 1,
-            "stdout_id": 10,
+            "stdout_id": 2,
+            "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Kip', 'Sam', 'Ben', 'Alex', 'Ro', 'Ira']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 1,
-            "stdout_id": 4,
+            "stdout_id": 10,
+            "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 1,
-            "stdout_id": 8,
+            "stdout_id": 0,
+            "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         },
         {
             "stderr_id": 1,
-            "stdout_id": 1,
+            "stdout_id": 7,
+            "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
             "stderr_id": 5,
             "stdout_id": 5,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "red",
             "id": 4
         },
         {
             "stderr_id": 1,
-            "stdout_id": 3,
+            "stdout_id": 8,
+            "hover": "stdout:\n['Matt', 'Rachel', 'Pete']\n\n['Matt', 'Sam', 'Hans']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
             "stderr_id": 1,
-            "stdout_id": 0,
+            "stdout_id": 9,
+            "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
             "stderr_id": 1,
-            "stdout_id": 7,
+            "stdout_id": 3,
+            "hover": "stdout:\n['Alex', 'Penelope', 'Rachel']\n\n['Ben', 'Ira', 'Kip', 'Ro', 'Sam']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 7
         },
         {
             "stderr_id": 1,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 2,
             "stdout_id": 5,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 4,
+            "stderr_id": 3,
             "stdout_id": 6,
+            "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    return new\nNameError: name 'new' is not defined\n\n",
             "color": "blue",
             "id": 10
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 4,
             "stdout_id": 6,
+            "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    new_\nNameError: name 'new_' is not defined\n\n",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 0,
             "stdout_id": 5,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n",
             "color": "red",
             "id": 12
         },
         {
             "stderr_id": 1,
-            "stdout_id": 9,
+            "stdout_id": 4,
+            "hover": "stdout:\n['Penelope', 'Alex']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 13
         }
@@ -91,48 +105,60 @@
     "adjacency": [
         [
             {
-                "diff": 5,
-                "color": "blue",
+                "diff": 4,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student31",
+                "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -39,5 +39,12 @@\n a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 11,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -30,4 +30,30 @@\n this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index. \"\"\"",
                 "id": 6,
                 "key": 0
             },
             {
-                "diff": 15,
-                "color": "green",
+                "diff": 0,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -33,23 +33,31 @@\n This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. \"\"\"",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 14,
-                "color": "blue",
+                "diff": 7,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student31",
+                "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -22,7 +22,17 @@\n a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns a list of@@ -32,19 +42,8 @@\n corresponding scores were-the-highest,-and-were a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. \"\"\"",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 16,
-                "color": "blue",
+                "diff": 13,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student31",
+                "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -45,5 +45,12 @@\n a minimum of-80.+80,+with+a+maximum+list+length+of+5. \"\"\"",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 10,
-                "color": "green",
+                "diff": 2,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -33,11 +33,10 @@\n This function returns-all the-name+names of-the+5 students with grades",
                 "id": 3,
                 "key": 1
             }
@@ -140,97 +166,119 @@
         [],
         [
             {
-                "diff": 4,
-                "color": "red",
+                "diff": 14,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,15 +3,31 @@\n \"\"\" taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
-                "color": "red",
+                "diff": 16,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n zeroth index is-less+more than or equal",
                 "id": 0,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "red",
+                "diff": 5,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -30,26 +30,29 @@\n this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 15,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,10 +3,15 @@\n \"\"\" taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth",
                 "id": 8,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 9,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,15 +3,25 @@\n \"\"\" taken lst,+loop+through+each+list+and sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list if the zeroth",
                 "id": 9,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 6,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -1,60 +1,59 @@\n def topScores(lst): \"\"\"-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the",
                 "id": 10,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 13,
-                "color": "red",
+                "diff": 9,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -53,7 +53,6 @@\n and return this-new list. If the@@ -62,15 +61,17 @@\n larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. \"\"\"",
                 "id": 11,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 7,
-                "color": "red",
+                "diff": 11,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -20,7 +20,9 @@\n equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@\n index into a+another+defined new list and",
                 "id": 11,
                 "key": 0
             },
             {
-                "diff": 8,
-                "color": "red",
+                "diff": 12,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -1,81 +1,44 @@\n def topScores(lst): \"\"\"-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. \"\"\"",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "green",
+                "diff": 10,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -5,18 +5,33 @@\n a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name",
                 "id": 13,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 12,
-                "color": "green",
+                "diff": 8,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -48,6 +48,8 @@\n grades are higher+or+equal than 80. \"\"\"",
                 "id": 0,
                 "key": 0
             }

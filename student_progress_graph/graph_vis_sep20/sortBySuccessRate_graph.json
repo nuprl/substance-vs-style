@@ -4,26 +4,30 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 0,
+            "stderr_id": 1,
+            "stdout_id": 1,
+            "hover": "stdout:\n[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}]\n\n[{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 1
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 2,
+            "hover": "stdout:\n[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}, {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}]\n\n[{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         },
         {
             "stderr_id": 2,
-            "stdout_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n",
             "color": "red",
             "id": 3
         }
@@ -31,32 +35,40 @@
     "adjacency": [
         [
             {
-                "diff": 0,
-                "color": "blue",
+                "diff": 4,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -1,27 +1,38 @@\n def sortBySuccessRate(nominations): \"\"\"+the+input+is+a+list+of+dictionaries. the function will divide the-number-of-wins+value+within+key+'wins' by the+value+within+key+'noms'.+the+new number-of-noms.-this will be-defined-by-the+stores+as+a new-variable+key, 'success'. the function@@ -31,13 +42,21 @@\n a list that-orders+reorders the-input+dictionaries+within+the+original+list, in-increasing order of+highest success-values+value+to+lowest+success+value. \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -23,6 +23,15 @@\n within key 'noms'.+this+number+will+be+rounded+to+two+decimal+values. the new number",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student63",
+                "hover": "username:student63\ndiff:\n--- \n+++ \n@@ -46,7 +46,13 @@\n of the key-'noms'.+'noms',+rounded+to+the+second+decimal+place. The outputted list",
                 "id": 2,
                 "key": 1
             },
             {
-                "diff": 3,
-                "color": "green",
+                "diff": 1,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -29,6 +29,13 @@\n divided by 'noms.'+Round+success+to+nearest+2+decimal+places. Sort by success",
                 "id": 2,
                 "key": 2
             }
@@ -64,9 +76,11 @@
         [],
         [
             {
-                "diff": 4,
-                "color": "green",
+                "diff": 2,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -1,7 +1,12 @@\n def sortBySuccessRate(nominations): \"\"\"-Create+For+each+dictionary+in+list,+create a new dictionary",
                 "id": 1,
                 "key": 0
             }

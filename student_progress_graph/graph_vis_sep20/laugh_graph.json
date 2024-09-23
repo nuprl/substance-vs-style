@@ -4,44 +4,51 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
-            "stdout_id": 0,
+            "stderr_id": 1,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    laugh(3)\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 9\n    laugh(3)\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 9\n    laugh(3)\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\nhahahaha hahaha haha ha \n\nha \n\nhahaha haha ha \n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\nh ha haa haaa \n\nh \n\nh ha haa \n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 6,
+            "hover": "stdout:\nhaaaa haaa haa ha \n\nha \n\nhaaa haa ha \n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\nhaa ha ha\n\nha\n\nha ha\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\nhi hii  hiii   hiiii\n\nhi\n\nhi hii  hiii\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 5,
+            "hover": "stdout:\nhaaaa haaa haa ha\n\nha\n\nhaaa haa ha\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 6
         }
@@ -49,18 +56,22 @@
     "adjacency": [
         [
             {
-                "diff": 3,
-                "color": "blue",
+                "diff": 1,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -12,13 +12,19 @@\n as an input,+creates+an+empty+string+called+laugh, and uses a for loop to-print+append an h followed@@ -44,11 +50,14 @@\n etc. until it-prints-a+appends+an h followed by one a+all+into+laugh \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
-                "color": "blue",
+                "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -19,45 +19,55 @@\n called laugh, and-uses+then+executes a for loop-to-append+with+i+in+range+size+where+i+is+decreased+by+one+after+each+iteration,+and+the+contents+of+the+for+loop+is+that an h followed by-size+i+number+of a's and-then a-space,+space+is+appended+to+laugh, and then-an-h-followed-by-size-1-a's-and-then-a-space,-etc.-until-it-appends-an-h-followed-by-one-a-all-into laugh+is+returned+after+the+loop \"\"\"",
                 "id": 2,
                 "key": 0
             }
@@ -68,35 +79,43 @@
         [
             {
                 "diff": 0,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -37,7 +37,12 @@\n one after each-iteration,+iteration+and+i+starts+at+size, and the contents",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -28,7 +28,7 @@\n i in range-size+size-2 where i is@@ -69,10 +69,13 @@\n laugh, and then+after+the+loop,+append+'ha'+and laugh is returned-after-the-loop \"\"\"",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
-                "color": "blue",
+                "diff": 4,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -19,63 +19,33 @@\n called laugh, and-then-executes+the+uses a for loop-with-i-in-range-size-2-where-i-is-decreased-by-one-after-each-iteration-and-i-starts-at-size,-and-the-contents-of-the-for-loop-is-that+to+append an h followed by i-number-of a's-and+for+each+0<i<=size,+append a space-is-appended-to-laugh,-and-then-after+before+each+h+except the-loop,-append-'ha'-and-laugh-is-returned+first+h+in+the+string \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 5,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -31,10 +31,16 @@\n followed by i+number a's for each-0<i<=size,+0<i<=size+starting+with+i+=+size, append a space",
                 "id": 6,
                 "key": 0
             }

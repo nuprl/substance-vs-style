@@ -6,18 +6,21 @@
         {
             "stderr_id": 0,
             "stdout_id": 2,
+            "hover": "stdout:\n[4, 2]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
             "stdout_id": 1,
+            "hover": "stdout:\n[4, 2]\n\n[2.2]\n\n[5]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 0,
             "stdout_id": 0,
+            "hover": "stdout:\n[4.3, 4, 2]\n\n[1.1, 2.2, 3.3]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         }
@@ -25,30 +28,38 @@
     "adjacency": [
         [
             {
-                "diff": 4,
-                "color": "blue",
+                "diff": 1,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -12,8 +12,9 @@\n list of numbers-without-odd-integer+with+decimals+or+even numbers. \"\"\"",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 0,
-                "color": "blue",
+                "diff": 4,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -13,7 +13,7 @@\n of numbers with-decimals+doubles or even numbers.",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -13,8 +13,7 @@\n of numbers with-doubles-or+only even numbers. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -7,12 +7,24 @@\n list of numbers.+create+a+ODD+list+of+odd+numbers+1+through+10. returns the list of numbers-without-odd-numbers.+with+numbers+in+ODD+removed. \"\"\"",
                 "id": 2,
                 "key": 0
             }
@@ -56,8 +67,10 @@
         [
             {
                 "diff": 3,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -12,8 +12,7 @@\n list of numbers-with-only-even+without+odd numbers. \"\"\"",
                 "id": 0,
                 "key": 0
             }

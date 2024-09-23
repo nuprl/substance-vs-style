@@ -4,62 +4,72 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 0,
+            "stderr_id": 2,
+            "stdout_id": 6,
+            "hover": "stdout:\nTrue\n\nTrue\n\nTrue\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 4,
             "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 2,
+            "hover": "stdout:\nFalse\n\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 3,
             "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(1))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(13))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(21))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(19))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
+            "hover": "stdout:\nTrue\n\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\nTrue\n\n\n\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(13))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(21))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(19))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 6,
+            "stderr_id": 2,
+            "stdout_id": 5,
+            "hover": "stdout:\n1\n\n233\n\n10946\n\n4181\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 5,
+            "stderr_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\nTrue\n\n377\n\n17711\n\n6765\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 8
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 4,
+            "stderr_id": 2,
+            "stdout_id": 7,
+            "hover": "stdout:\nTrue\n\nTrue\n\nTrue\n\nTrue\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 9
         }
@@ -67,9 +77,11 @@
     "adjacency": [
         [
             {
-                "diff": 6,
-                "color": "blue",
+                "diff": 15,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student11",
+                "hover": "username:student11\ndiff:\n--- \n+++ \n@@ -7,7 +7,7 @@\n if n==1 or-13+n==13 or-21+n==21 \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -77,134 +89,157 @@
         [],
         [
             {
-                "diff": 14,
-                "color": "red",
+                "diff": 12,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -1,16 +1,25 @@\n def fib(n): \"\"\"-If+Check inputted number+against+the+set+of+Fibonacci+numbers.+If+the+number is-a-Fibonacci-number,+in+the+set, return-true,-otherwise+True,+otherwise, return-false.+False. \"\"\"",
                 "id": 3,
                 "key": 0
             },
             {
                 "diff": 0,
-                "color": "red",
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n",
                 "id": 5,
                 "key": 0
             },
             {
                 "diff": 0,
-                "color": "red",
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n",
                 "id": 5,
                 "key": 1
             },
             {
-                "diff": 9,
-                "color": "red",
+                "diff": 11,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -1,14 +1,23 @@\n def fib(n): \"\"\"+Put+all+possible+Fibonacci+numbers+in+a+set. Check if+the inputted number is-a-Fibonacci-number.+in+that+set. If it is,@@ -18,9 +27,9 @@\n it is not-a-Fibonacci-number,+in+the+set, return False. \"\"\"",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 11,
-                "color": "red",
+                "diff": 6,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -2,9 +2,11 @@\n fib(n): \"\"\" Check+if inputted number-against+is+in the set of",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 10,
-                "color": "cyan",
+                "diff": 9,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student22",
+                "hover": "username:student22\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n of the list-['1','13','21']+[1,13,21] and return a",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -6,19 +6,12 @@\n inputted number is-in-the-set-of+a Fibonacci-numbers.+number. If-the-number-is-in-the-set,+it+is, return True, otherwise,",
                 "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -13,8 +13,14 @@\n it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number, return False. \"\"\"",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student13",
+                "hover": "username:student13\ndiff:\n",
+                "id": 2,
+                "key": 1
+            },
+            {
+                "diff": 0,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student13",
+                "hover": "username:student13\ndiff:\n",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 13,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student8",
+                "hover": "username:student8\ndiff:\n--- \n+++ \n@@ -1,16 +1,18 @@\n def fib(n): \"\"\"-Returns-True+Checks if the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student13",
+                "hover": "username:student13\ndiff:\n--- \n+++ \n@@ -1,35 +1,25 @@\n def fib(n): \"\"\"-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns True.-If+Else, it-is-not-in-the-set,-return+returns False. \"\"\"",
+                "id": 1,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 8,
-                "color": "red",
-                "username": "student13",
-                "id": 2,
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student2",
+                "hover": "username:student2\ndiff:\n--- \n+++ \n@@ -10,5 +10,16 @@\n value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a 9 \"\"\"",
+                "id": 7,
                 "key": 0
             },
             {
-                "diff": 0,
-                "color": "red",
-                "username": "student13",
-                "id": 2,
+                "diff": 14,
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student2",
+                "hover": "username:student2\ndiff:\n--- \n+++ \n@@ -3,6 +3,12 @@\n \"\"\" this function+returns+only+true+or+false.+It returns false if",
+                "id": 7,
                 "key": 1
             },
             {
-                "diff": 0,
-                "color": "red",
-                "username": "student13",
-                "id": 5,
+                "diff": 10,
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student2",
+                "hover": "username:student2\ndiff:\n--- \n+++ \n@@ -14,18 +14,15 @@\n if the value-contains-a-'9'+is+19 but returns true if the value-does+is not-contain-a-9+19 \"\"\"",
+                "id": 1,
                 "key": 0
             },
             {
                 "diff": 3,
-                "color": "black",
-                "username": "student8",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 12,
-                "color": "red",
-                "username": "student13",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 15,
-                "color": "green",
-                "username": "student2",
-                "id": 7,
-                "key": 0
-            },
-            {
-                "diff": 7,
-                "color": "green",
-                "username": "student2",
-                "id": 7,
-                "key": 1
-            },
-            {
-                "diff": 1,
-                "color": "green",
-                "username": "student2",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 2,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student22",
+                "hover": "username:student22\ndiff:\n--- \n+++ \n@@ -1,20 +1,21 @@\n def fib(n): \"\"\"-write-a-function-that-checks+check to see if-a+the number is part of the-fibonacci-sequence+list+['1','13','21']+and+return+a+boolean+value \"\"\"",
                 "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 13,
-                "color": "pink",
-                "username": "student37",
-                "id": 1,
                 "key": 0
             }
         ],
@@ -212,7 +247,20 @@
             {
                 "diff": 4,
                 "color": "black",
+                "arrow_color": "black",
+                "username": "student37",
+                "hover": "username:student37\ndiff:\n--- \n+++ \n@@ -9,26 +9,45 @@\n an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return False-if-it-is-not \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student8",
+                "hover": "username:student8\ndiff:\n--- \n+++ \n@@ -2,13 +2,15 @@\n fib(n): \"\"\" Returns-whether-or-not-a+True+if+the number is a Fibonacci-number+number,+or+False+otherwise. \"\"\"",
                 "id": 5,
                 "key": 0
             }

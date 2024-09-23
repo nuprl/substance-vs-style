@@ -5,55 +5,64 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 8,
+            "stdout_id": 1,
+            "hover": "stdout:\n75.0%\n\n33.333333333333336%\n\n100.0%\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\n75%\n\n33%\n\n100%\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 8,
+            "hover": "stdout:\n0.75\n\n0.3333333333333333\n\n1.0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
             "stdout_id": 5,
+            "hover": "stdout:\n75.0\n\n33.33333333333333\n\n100.0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 6,
+            "hover": "stdout:\n75.0%\n\n33.33333333333333%\n\n100.0%\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 7,
+            "hover": "stdout:\n75.0%\n\n33.33%\n\n100.0%\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
             "stderr_id": 0,
-            "stdout_id": 7,
+            "stdout_id": 0,
+            "hover": "stdout:\n25.0%\n\n66.67%\n\n0.0%\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 6
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 4,
+            "hover": "stdout:\n75.0%\n\n33.33333333333334%\n\n100.0%\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 7
         },
         {
             "stderr_id": 0,
-            "stdout_id": 6,
+            "stdout_id": 3,
+            "hover": "stdout:\n75\n\n33\n\n100\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         }
@@ -61,9 +70,11 @@
     "adjacency": [
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student0",
+                "hover": "username:student0\ndiff:\n--- \n+++ \n@@ -26,6 +26,8 @@\n the string of+integer+of num times 100",
                 "id": 1,
                 "key": 0
             }
@@ -71,161 +82,203 @@
         [],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -14,7 +14,12 @@\n and calculates the-similarity-in-percents+similarity,+then+give+the+answer+as+a+percentage \"\"\"",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 19,
-                "color": "red",
+                "diff": 14,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -16,10 +16,9 @@\n the similarity, then-give+multiply the answer-as-a-percentage+by+100 \"\"\"",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 17,
-                "color": "green",
+                "diff": 15,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student18",
+                "hover": "username:student18\ndiff:\n--- \n+++ \n@@ -22,4 +22,16 @@\n guess and answers.+Then,+multiply+100+to+the+value+and+add+'%'+at+the+end. \"\"\"",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 14,
-                "color": "pink",
+                "diff": 4,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -22,4 +22,18 @@\n the answer list.+The+percentage+is+multiplied+by+100+and+\"%\"+is+added+to+the+final+result. \"\"\"",
                 "id": 4,
                 "key": 1
             },
             {
                 "diff": 9,
-                "color": "orange",
+                "color": "cyan",
+                "arrow_color": "cyan",
                 "username": "student4",
+                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -17,5 +17,13 @@\n items in list-2+2,+returns+in+whole+number+format+including+percent+sign \"\"\"",
                 "id": 4,
                 "key": 2
             },
             {
-                "diff": 13,
-                "color": "purple",
+                "diff": 5,
+                "color": "green",
+                "arrow_color": "green",
                 "username": "student51",
+                "hover": "username:student51\ndiff:\n--- \n+++ \n@@ -13,4 +13,7 @@\n of matching items+in+percent+notation \"\"\"",
                 "id": 4,
                 "key": 3
             },
             {
-                "diff": 10,
-                "color": "black",
+                "diff": 13,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student3",
+                "hover": "username:student3\ndiff:\n--- \n+++ \n@@ -22,4 +22,25 @@\n guess and answers+then+divide+with+the+number+of+element+of+answers.+then+times+the+results+100+times+and+round+up+the+to+interger \"\"\"",
                 "id": 8,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 16,
-                "color": "red",
+                "diff": 17,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -15,10 +15,12 @@\n calculates the similarity,-then-multiply+lastly+turn the answer-by-100+into+a+percent+number \"\"\"",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 21,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -23,4 +23,8 @@\n a percent number+with+the+percent+symbol \"\"\"",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 20,
-                "color": "red",
-                "username": "student17",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 5,
-                "color": "orange",
-                "username": "student4",
-                "id": 1,
-                "key": 1
-            },
-            {
-                "diff": 15,
-                "color": "green",
-                "username": "student18",
-                "id": 5,
-                "key": 0
-            },
-            {
-                "diff": 3,
-                "color": "pink",
-                "username": "student25",
-                "id": 5,
-                "key": 1
-            },
-            {
                 "diff": 11,
-                "color": "orange",
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -26,5 +26,11 @@\n with the percent-symbol+symbol,+rounding+to+the+nearest+whole+number \"\"\"",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 19,
+                "color": "cyan",
+                "arrow_color": "cyan",
                 "username": "student4",
+                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -19,9 +19,13 @@\n list 2, returns-in-integer-format+number+rounded+to+the+nearest+whole+numbers including percent sign",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 21,
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student18",
+                "hover": "username:student18\ndiff:\n--- \n+++ \n@@ -28,6 +28,9 @@\n to the value+while+rounding+up and add '%'",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "black",
+                "arrow_color": "black",
+                "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -27,7 +27,8 @@\n is multiplied by-100+100,+rounded, and \"%\" is",
+                "id": 5,
+                "key": 1
+            },
+            {
+                "diff": 20,
+                "color": "cyan",
+                "arrow_color": "cyan",
+                "username": "student4",
+                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -20,8 +20,7 @@\n 2, returns in-whole-number+integer format including percent",
                 "id": 4,
                 "key": 0
             },
             {
                 "diff": 6,
-                "color": "purple",
+                "color": "green",
+                "arrow_color": "green",
                 "username": "student51",
+                "hover": "username:student51\ndiff:\n--- \n+++ \n@@ -13,6 +13,12 @@\n of matching items+rounded+tot+he+nearest+whole+number in percent notation",
                 "id": 8,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "green",
+                "diff": 18,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student18",
+                "hover": "username:student18\ndiff:\n--- \n+++ \n@@ -31,6 +31,10 @@\n while rounding up+to+the+nearest+integer and add '%'",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 18,
-                "color": "pink",
+                "diff": 7,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -28,7 +28,11 @@\n multiplied by 100,-rounded,+rounded+to+have+no+decimal, and \"%\" is",
                 "id": 1,
                 "key": 1
             }
         ],
         [
             {
-                "diff": 7,
-                "color": "cyan",
+                "diff": 10,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student21",
+                "hover": "username:student21\ndiff:\n--- \n+++ \n@@ -18,10 +18,14 @@\n length of the-list-and+list, multiply by+100.+Subtract+this+number+from 100. Return the",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 8,
-                "color": "cyan",
+                "diff": 0,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student21",
+                "hover": "username:student21\ndiff:\n--- \n+++ \n@@ -34,6 +34,9 @@\n this obtained number+as+an+integer plus the percentage",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
-                "color": "black",
+                "diff": 12,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student3",
+                "hover": "username:student3\ndiff:\n--- \n+++ \n@@ -42,5 +42,11 @@\n up the to-interger+integer.+add+percentage+sign+after+the+results \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 12,
-                "color": "purple",
+                "diff": 16,
+                "color": "green",
+                "arrow_color": "green",
                 "username": "student51",
+                "hover": "username:student51\ndiff:\n--- \n+++ \n@@ -13,13 +13,16 @@\n of matching items+as+a+string rounded-tot-he+to+the nearest whole number-in-percent-notation+with+a+% \"\"\"",
                 "id": 1,
                 "key": 1
             }

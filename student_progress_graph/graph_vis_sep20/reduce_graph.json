@@ -5,19 +5,22 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n4\n\n2\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n('__1-1__', 4)\n\n('~_--_~', 2)\n\n('|O.0|', 0)\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n__1-1__\n\n~_--_~\n\n|O.0|\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         }
@@ -25,9 +28,11 @@
     "adjacency": [
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 1,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student26",
+                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -14,7 +14,11 @@\n as '_', then-print+return+a+copy+of the+new string \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -35,15 +40,19 @@
         [
             {
                 "diff": 0,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student26",
+                "hover": "username:student26\ndiff:\n",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student26",
+                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -20,5 +20,10 @@\n of the new-string+string.+Do+not+display+the+count \"\"\"",
                 "id": 2,
                 "key": 0
             }

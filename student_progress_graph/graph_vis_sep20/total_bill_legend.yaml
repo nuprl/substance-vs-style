@@ -3,54 +3,54 @@
   !!int "1": |-
     ---
     +++
-    @@ -39,4 +39,11 @@
-     items returns it.+This+function+rounds+to+2+decimal+points """
+    @@ -16,8 +16,21 @@
+     within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@
+     of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. """
   !!int "2": |-
-    ---
-    +++
-    @@ -48,7 +48,12 @@
-     inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -27,4 +27,11 @@
-     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -51,5 +51,13 @@
-     to give the+output.+The output+is+rounded+to+two+decimal+points. """
-  !!int "5": |-
     ---
     +++
     @@ -6,10 +6,10 @@
      grocery_list, multiple index-0+1 with index-1,+2, repeat for all
-  !!int "6": |-
+  !!int "3": |-
     ---
     +++
-    @@ -16,8 +16,21 @@
-     within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@
-     of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. """
-  !!int "7": |-
+    @@ -39,4 +39,11 @@
+     items returns it.+This+function+rounds+to+2+decimal+points """
+  !!int "4": |-
     ---
     +++
-    @@ -42,6 +42,8 @@
-     that value by+1+plus the inputted number.
-  !!int "8": |-
-    ---
-    +++
-    @@ -68,6 +68,17 @@
-     and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return
-  !!int "9": |-
+    @@ -27,4 +27,11 @@
+     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
+  !!int "5": |-
     ---
     +++
     @@ -66,5 +66,10 @@
      added to the-"total"+"total",+truncated+to+two+decimal+places. """
-  !!int "10": |-
+  !!int "6": |-
     ---
     +++
     @@ -17,5 +17,19 @@
      index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -68,6 +68,17 @@
+     and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return
+  !!int "8": |-
+    ---
+    +++
+    @@ -42,6 +42,8 @@
+     that value by+1+plus the inputted number.
+  !!int "9": |-
+    ---
+    +++
+    @@ -51,5 +51,13 @@
+     to give the+output.+The output+is+rounded+to+two+decimal+points. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -48,7 +48,12 @@
+     inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. """
 "nodes":
   !!int "0":
     "stderr":
@@ -58,7 +58,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       15.4401
@@ -67,14 +67,14 @@
     - |
       10.5
     "stdout_id": !!int |-
-      2
+      4
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       15.44
@@ -83,14 +83,14 @@
     - |
       10.5
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       15.440100000000001
@@ -99,14 +99,14 @@
     - |
       10.5
     "stdout_id": !!int |-
-      4
+      3
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       1.0101
@@ -140,25 +140,25 @@
           total += item[0] * item[1]
       TypeError: unsupported operand type(s) for +=: 'int' and 'str'
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      1
 "student_color":
   "student33": |-
-    blue
+    yellow
   "student35": |-
-    red
+    brown
   "student40": |-
-    green
+    purple
   "student44": |-
-    cyan
-  "student60": |-
-    pink
-  "student63": |-
-    black
-  "student64": |-
     orange
+  "student60": |-
+    black
+  "student63": |-
+    pink
+  "student64": |-
+    cyan

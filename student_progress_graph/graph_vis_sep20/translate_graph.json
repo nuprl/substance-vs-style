@@ -4,26 +4,30 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\nje aime mes trois chats\n\nje aime mes trois marmots\n\nfive six seven eight\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\nje aime mes trois chats\n\nje aime mes trois UNK\n\nUNK UNK UNK UNK\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "blue",
             "id": 3
         }
@@ -31,16 +35,20 @@
     "adjacency": [
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student50",
+                "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -41,4 +41,18 @@\n in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+\"UNK\" \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 3,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student59",
+                "hover": "username:student59\ndiff:\n--- \n+++ \n@@ -16,5 +16,26 @@\n of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' \"\"\"",
                 "id": 1,
                 "key": 1
             }
@@ -49,8 +57,10 @@
         [
             {
                 "diff": 0,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n",
                 "id": 3,
                 "key": 0
             }
@@ -58,15 +68,19 @@
         [
             {
                 "diff": 0,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "green",
+                "diff": 2,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -24,7 +24,7 @@\n The function then-prints+returns the string in@@ -42,7 +42,7 @@\n dictionary, the function-prints+returns 'UNK' for that",
                 "id": 1,
                 "key": 0
             }

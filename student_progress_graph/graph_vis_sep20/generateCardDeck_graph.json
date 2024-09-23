@@ -5,37 +5,43 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 1,
+            "hover": "stdout:\n['S1', 'S2', 'SA', 'H1', 'H2', 'HA', 'D1', 'D2', 'DA']\n\n['H6', 'HQ', 'HJ', 'H2', 'D6', 'DQ', 'DJ', 'D2']\n\n['H2']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 2,
+            "hover": "stdout:\n['D1', 'D2', 'DA', 'H1', 'H2', 'HA', 'S1', 'S2', 'SA']\n\n['D2', 'D6', 'DJ', 'DQ', 'H2', 'H6', 'HJ', 'HQ']\n\n['H2']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n['1S', '2S', 'AS', '1H', '2H', 'AH', '1D', '2D', 'AD']\n\n['6H', 'QH', 'JH', '2H', '6D', 'QD', 'JD', '2D']\n\n['2H']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n['1D', '1H', '1S', '2D', '2H', '2S', 'AD', 'AH', 'AS']\n\n['2D', '2H', '6D', '6H', 'JD', 'JH', 'QD', 'QH']\n\n['2H']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
             "stderr_id": 1,
-            "stdout_id": 2,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n",
             "color": "red",
             "id": 4
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 5,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         }
@@ -43,114 +49,146 @@
     "adjacency": [
         [
             {
-                "diff": 10,
-                "color": "blue",
+                "diff": 20,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student33",
+                "hover": "username:student33\ndiff:\n--- \n+++ \n@@ -10,14 +10,32 @@\n of input strings+\"suits\" and another series of input-strings,-and-then+strings+\"vals\".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it splices each string",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 15,
-                "color": "red",
+                "diff": 12,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -42,11 +42,28 @@\n the new strings+in+the+new+list will appear in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in numerical order. \"\"\"",
                 "id": 1,
                 "key": 1
             },
             {
                 "diff": 0,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student50",
+                "hover": "username:student50\ndiff:\n",
                 "id": 1,
                 "key": 2
             },
             {
-                "diff": 6,
-                "color": "cyan",
+                "diff": 10,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -22,7 +22,9 @@\n combination of these-parameters.+parameters+sorted+alphabetically. As an example.@@ -50,19 +52,4 @@\n 'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S \"\"\"",
                 "id": 1,
                 "key": 3
             },
             {
-                "diff": 20,
-                "color": "pink",
+                "diff": 19,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student63",
+                "hover": "username:student63\ndiff:\n--- \n+++ \n@@ -38,4 +38,20 @@\n each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string. \"\"\"",
                 "id": 1,
                 "key": 4
             },
             {
-                "diff": 5,
-                "color": "red",
+                "diff": 14,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -39,4 +39,12 @@\n numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order. \"\"\"",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 9,
-                "color": "red",
+                "diff": 15,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -46,5 +46,7 @@\n appear in alphabetical+and+numerical order. \"\"\"",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 4,
-                "color": "green",
+                "diff": 7,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student50",
+                "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -88,5 +88,12 @@\n list in alphabetical-order.+order+and+numerical+order+[ex.+A1,+B2,+C3] \"\"\"",
                 "id": 0,
                 "key": 2
             },
             {
-                "diff": 21,
-                "color": "green",
+                "diff": 13,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student50",
+                "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -83,17 +83,18 @@\n the new list.-Return+Reorder the+new list+to+make+it in alphabetical-order and numerical-order-[ex.-A1,-B2,-C3]+order,+then+return \"\"\"",
                 "id": 0,
                 "key": 3
             },
             {
-                "diff": 12,
-                "color": "cyan",
+                "diff": 17,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -58,13 +58,11 @@\n list is ordered-alphabetically.-'D6'-would-be-in-the-list-before-'S1'+C+then+D+then+H+then+S \"\"\"",
                 "id": 0,
                 "key": 4
             },
             {
-                "diff": 3,
-                "color": "black",
+                "diff": 1,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -31,5 +31,7 @@\n be in alphabetical-order.+order+of+suits. \"\"\"",
                 "id": 0,
                 "key": 5
             },
             {
-                "diff": 17,
-                "color": "black",
+                "diff": 3,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -32,6 +32,6 @@\n in alphabetical order-of+by suits. \"\"\"",
                 "id": 0,
                 "key": 6
             },
             {
-                "diff": 8,
-                "color": "black",
+                "diff": 6,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -33,5 +33,6 @@\n alphabetical order by-suits.+first+character. \"\"\"",
                 "id": 0,
                 "key": 7
             },
             {
-                "diff": 13,
-                "color": "cyan",
+                "diff": 21,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -49,5 +49,12 @@\n 'DQ', 'H2','H6', 'HJ',-'HQ']+'HQ'].+This+function+prints+the+final+values+alphabetically. \"\"\"",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 18,
-                "color": "black",
+                "diff": 11,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -23,4 +23,12 @@\n values in vals.+Results+in+vals+must+be+in+alphabetical+order. \"\"\"",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 11,
-                "color": "black",
+                "diff": 9,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -23,16 +23,15 @@\n values in vals.-Each+Sort+each card in-list-must-be-in+deck+by alphabetical order-by+of first character. \"\"\"",
                 "id": 3,
                 "key": 0
             }
@@ -158,50 +196,62 @@
         [],
         [
             {
-                "diff": 19,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -30,5 +30,13 @@\n in the other-list.+list,+with+letters+appearing+first+and+numbers+appearing+second. \"\"\"",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 14,
-                "color": "black",
+                "diff": 5,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -23,9 +23,10 @@\n values in vals.-Results+Each+card in-vals+list must be in",
                 "id": 0,
                 "key": 1
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "green",
+                "diff": 16,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student50",
+                "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -34,7 +34,31 @@\n which will be-returned.+returned+[ex,+if+the+first+element+of+the+first+list+is+F+and+an+element+of+the+second+list+is+7,+combine+them+like+F7]. Keep adding the",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 16,
-                "color": "black",
+                "diff": 18,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -32,6 +32,6 @@\n alphabetical order of-first+suit character. \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "cyan",
+                "diff": 8,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -23,4 +23,31 @@\n of these parameters.+As+an+example.+If+you+input+['H',+'D']+as+suits+and+['6',+'Q',+'J',+'2']+as+vals,+the+function+prints+['D2',+'D6',+'DJ',+'DQ',+'H2','H6',+'HJ',+'HQ'] \"\"\"",
                 "id": 0,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 7,
-                "color": "cyan",
+                "diff": 4,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -50,11 +50,21 @@\n 'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1' \"\"\"",
                 "id": 0,
                 "key": 0
             }

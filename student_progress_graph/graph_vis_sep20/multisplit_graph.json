@@ -5,25 +5,29 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n['a man', ' wow', ' the dog', ' much hat', ' much hair', '']\n\n['celestial', 'teas', '', 'a', 'guide']\n\n['celestial teas: a guide']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\na man~ wow~ the dog~ much hat~ much hair~\n\ncelestial!teas!!a!guide\n\ncelestial teas: a guide\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\na man~! wow~- the dog~, much hat~! much hair~!\n\ncelestial! teas!:! a! guide\n\ncelestial teas: a guide\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\na man~ wow~ the dog\n\ncelestial!teas!!a!guide\n\ncelestial teas: a guide\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         }
@@ -32,8 +36,10 @@
         [
             {
                 "diff": 3,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student15",
+                "hover": "username:student15\ndiff:\n--- \n+++ \n@@ -1,18 +1,26 @@\n def multisplit(s,chars,sep): \"\"\"-removes-everything+for+every+character in the-list+list,+looks+through+the+string and+if+the+character+is+in+the+string, replaces it with-what-is-after-the-list.+sep. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -41,16 +47,20 @@
         [],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student45",
+                "hover": "username:student45\ndiff:\n--- \n+++ \n@@ -42,7 +42,18 @@\n present, we split+s,+remove+the+character+from s+at+the+index+where+we+split, and insert sep.",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 2,
-                "color": "red",
+                "diff": 0,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student45",
+                "hover": "username:student45\ndiff:\n--- \n+++ \n@@ -42,8 +42,9 @@\n present, we split-s,-remove+s+and+replace the character from@@ -53,8 +54,7 @@\n index where we-split,-and-insert+split+with sep. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -58,8 +68,10 @@
         [
             {
                 "diff": 1,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -27,7 +27,11 @@\n separated by a-comma+double+quotes+or+simple+quotes and remove the",
                 "id": 1,
                 "key": 0
             }

@@ -6,6 +6,7 @@
         {
             "stderr_id": 0,
             "stdout_id": 0,
+            "hover": "stdout:\nTrue\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 0
         }
@@ -13,16 +14,20 @@
     "adjacency": [
         [
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student35",
+                "hover": "username:student35\ndiff:\n--- \n+++ \n@@ -34,14 +34,9 @@\n all the values-are-the-exact-same-as-that-of-'letter'.+match+with+letter. If so, it",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student69",
+                "hover": "username:student69\ndiff:\n--- \n+++ \n@@ -5,18 +5,43 @@\n Enter a list+where+the+0th+index+is+a+list of lists of-strings.+strings,+and+the+1st+index+is+a+character. if any list+in+the+0th+index has five consecutive-'X'-values,+values+of+the+character+entered+in+the+1st+index, return true. else",
                 "id": 0,
                 "key": 1
             }

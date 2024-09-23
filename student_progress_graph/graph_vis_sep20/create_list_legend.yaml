@@ -2,13 +2,13 @@
   !!int "0": |-
     ---
     +++
-    @@ -2,15 +2,18 @@
-     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
+    @@ -4,7 +4,7 @@
+     """ Find the-key+keys in the list.
   !!int "1": |-
     ---
     +++
-    @@ -15,5 +15,15 @@
-     the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
+    @@ -14,20 +14,17 @@
+     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
   !!int "2": |-
     ---
     +++
@@ -17,8 +17,8 @@
   !!int "3": |-
     ---
     +++
-    @@ -14,20 +14,17 @@
-     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
+    @@ -2,15 +2,18 @@
+     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
   !!int "4": |-
     ---
     +++
@@ -27,18 +27,18 @@
   !!int "5": |-
     ---
     +++
-    @@ -2,13 +2,42 @@
-     create_list(dt, lst): """-Create-a-list+Take+the+values+that+can+be+accessed+in+dt using the-values-of+keys+in the-keys+lst,+and+create+a+new+list+with+the+values.+If+the+key+in+lst+does+not+exist+in+dt,+add+None+to+the+list. """
+    @@ -15,10 +15,18 @@
+     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
   !!int "6": |-
     ---
     +++
-    @@ -15,10 +15,18 @@
-     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
+    @@ -15,5 +15,15 @@
+     the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
   !!int "7": |-
     ---
     +++
-    @@ -4,7 +4,7 @@
-     """ Find the-key+keys in the list.
+    @@ -2,13 +2,42 @@
+     create_list(dt, lst): """-Create-a-list+Take+the+values+that+can+be+accessed+in+dt using the-values-of+keys+in the-keys+lst,+and+create+a+new+list+with+the+values.+If+the+key+in+lst+does+not+exist+in+dt,+add+None+to+the+list. """
 "nodes":
   !!int "0":
     "stderr":
@@ -46,7 +46,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - |
       ['a', 't', 'c', 'b', 'd']
@@ -62,7 +62,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - |
       ['b', 'd', None]
@@ -71,7 +71,7 @@
     - |
       [None, None, None]
     "stdout_id": !!int |-
-      2
+      1
   !!int "2":
     "stderr":
     - |
@@ -102,13 +102,13 @@
           return [dt[i] for i in lst]
       KeyError: 'a'
     "stderr_id": !!int |-
-      3
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      2
   !!int "3":
     "stderr":
     - |
@@ -133,13 +133,13 @@
           new_list.append(dt[i])
       KeyError: 'a'
     "stderr_id": !!int |-
-      0
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      2
   !!int "4":
     "stderr":
     - ""
@@ -154,7 +154,7 @@
       TypeError: 'in <string>' requires string as left operand, not int
     - ""
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - |
       None
@@ -187,20 +187,20 @@
           if dt.key == lst[0]:
       AttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?
     "stderr_id": !!int |-
-      2
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      2
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - |
       b
@@ -212,14 +212,14 @@
       4
 "student_color":
   "student20": |-
-    blue
+    yellow
   "student36": |-
-    red
+    brown
   "student42": |-
-    green
+    purple
   "student43": |-
-    cyan
+    orange
   "student54": |-
-    pink
-  "student57": |-
     black
+  "student57": |-
+    pink

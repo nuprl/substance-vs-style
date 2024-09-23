@@ -4,44 +4,51 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
+            "stderr_id": 2,
             "stdout_id": 0,
+            "hover": "stdout:\n['a', 't', 'c', 'b', 'd']\n\n[1, 5, 3, 'a', 'b', 'c']\n\n['a', 'b', 'c', 't', 'r', 'e']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n['b', 'd', None]\n\n['a', None, 'c']\n\n[None, None, None]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 'c'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 5\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 'a'\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 'c'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 5\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 'a'\n",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 4,
+            "stderr_id": 0,
             "stdout_id": 3,
+            "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 8, in create_list\n    return create_list(dt[lst[0]], lst[1:])\n  File \"/tmp/file.py\", line 7, in create_list\n    if lst[0] in dt:\nTypeError: 'in <string>' requires string as left operand, not int\n\n",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 4,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 2,
             "stdout_id": 4,
+            "hover": "stdout:\nb\n\na\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 6
         }
@@ -49,9 +56,11 @@
     "adjacency": [
         [
             {
-                "diff": 5,
-                "color": "blue",
+                "diff": 7,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -2,13 +2,42 @@\n create_list(dt, lst): \"\"\"-Create-a-list+Take+the+values+that+can+be+accessed+in+dt using the-values-of+keys+in the-keys+lst,+and+create+a+new+list+with+the+values.+If+the+key+in+lst+does+not+exist+in+dt,+add+None+to+the+list. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -59,16 +68,20 @@
         [],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -2,15 +2,18 @@\n create_list(dt, lst): \"\"\"-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst \"\"\"",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 6,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -15,5 +15,15 @@\n the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -76,8 +89,10 @@
         [
             {
                 "diff": 2,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student42",
+                "hover": "username:student42\ndiff:\n--- \n+++ \n@@ -32,4 +32,28 @@\n in the dictionary.+if+an+element+of+the+list+doesnt+appear+as+a+key+in+the+dictionary,+it+should+show+up+in+the+output+list+as+None \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -85,33 +100,41 @@
         [
             {
                 "diff": 4,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student43",
+                "hover": "username:student43\ndiff:\n--- \n+++ \n@@ -2,33 +2,27 @@\n create_list(dt, lst): \"\"\"-Return+Loop+through+each+element+in+lst+and+return the value stored in-the-key+it in-dt-corresponding-to-the-keys-in-lst.+dt. If you-can+can't find-it,-then-return the value,-if-not,-then return None. \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 7,
-                "color": "pink",
+                "diff": 0,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n \"\"\" Find the-key+keys in the list.",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "pink",
+                "diff": 5,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -15,10 +15,18 @@\n value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 3,
-                "color": "black",
+                "diff": 1,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student57",
+                "hover": "username:student57\ndiff:\n--- \n+++ \n@@ -14,20 +14,17 @@\n in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None \"\"\"",
                 "id": 1,
                 "key": 1
             }

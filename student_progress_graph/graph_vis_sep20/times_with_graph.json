@@ -6,48 +6,56 @@
         {
             "stderr_id": 2,
             "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(times_with([ [30, ['Alice', 'Bob', 'Carol']] ]))\n  File \"/tmp/file.py\", line 7, in times_with\n    if meetings[i][1][j] in times_with_dict:\nNameError: name 'times_with_dict' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(times_with([ [30, ['Alice', 'Bob', 'Carol']], [20, ['Alice', 'Bob']] ]))\n  File \"/tmp/file.py\", line 7, in times_with\n    if meetings[i][1][j] in times_with_dict:\nNameError: name 'times_with_dict' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(times_with([ [10, ['Alice', 'Bob']], [5, ['Carol']] ]))\n  File \"/tmp/file.py\", line 7, in times_with\n    if meetings[i][1][j] in times_with_dict:\nNameError: name 'times_with_dict' is not defined\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 6,
+            "hover": "stdout:\n{'Alice': 30, 'Bob': 30, 'Carol': 30}\n\n{'Alice': 50, 'Bob': 50, 'Carol': 30}\n\n{'Alice': 10, 'Bob': 10, 'Carol': 5}\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 5,
+            "stderr_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n{'Alice': 30, 'Bob': 30, 'Carol': 30}\n\n{'Alice': 20, 'Bob': 20, 'Carol': 30}\n\n{'Alice': 10, 'Bob': 10, 'Carol': 5}\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 6,
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n[[0, ['Alice', 'Bob', 'Carol']]]\n\n[[1, ['Alice', 'Bob', 'Carol']], [0, ['Alice', 'Bob']]]\n\n[[1, ['Alice', 'Bob']], [0, ['Carol']]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 4,
+            "stderr_id": 1,
+            "stdout_id": 5,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 1,
+            "hover": "stdout:\n['30:30']\n\n['30:30', '20:20']\n\n['10:10', '5:5']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 0,
+            "hover": "stdout:\n{'Alice': [30], 'Bob': [30], 'Carol': [30]}\n\n{'Alice': [30, 20], 'Bob': [30, 20], 'Carol': [30]}\n\n{'Alice': [10], 'Bob': [10], 'Carol': [5]}\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print(times_with([ [30, ['Alice', 'Bob', 'Carol']] ]))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(times_with([ [30, ['Alice', 'Bob', 'Carol']], [20, ['Alice', 'Bob']] ]))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(times_with([ [10, ['Alice', 'Bob']], [5, ['Carol']] ]))\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "blue",
             "id": 7
         }
@@ -55,9 +63,11 @@
     "adjacency": [
         [
             {
-                "diff": 5,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -56,4 +56,38 @@\n added to that.+The+function+then+would+return+a+dictionary+containing+the+total+value+assigned+to+every+string.+Given+[+[30,+['Alice',+'Bob',+'Carol']]+],+the+function+would+return+{+'Alice':+30,+'Bob':+30,+'Carol':+30+} \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -65,18 +75,22 @@
         [],
         [
             {
-                "diff": 3,
-                "color": "green",
+                "diff": 2,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student69",
+                "hover": "username:student69\ndiff:\n--- \n+++ \n@@ -51,4 +51,19 @@\n is a value.+if+the+name+appears+more+than+once,+add+the+new+number+to+the+previous+number \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "cyan",
+                "diff": 4,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -17,5 +17,5 @@\n and output of-val1,2,3:val1+val:val1 \"\"\"",
                 "id": 4,
                 "key": 0
             }
@@ -84,35 +98,43 @@
         [
             {
                 "diff": 6,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -17,5 +17,7 @@\n and output of-val:val1+val1:val1,+val2:val1,+val3:val1 \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
-                "color": "cyan",
+                "diff": 0,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -17,7 +17,5 @@\n and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0 \"\"\"",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
-                "color": "cyan",
+                "diff": 1,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -17,5 +17,8 @@\n and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+\"[]\" \"\"\"",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "cyan",
+                "diff": 5,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -17,8 +17,9 @@\n and output of-val(1,2,3):val0,-print-without-\"[]\"+val1:val0,+increase+val1+++1 \"\"\"",
                 "id": 1,
                 "key": 0
             }

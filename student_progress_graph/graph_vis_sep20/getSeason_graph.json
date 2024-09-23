@@ -4,62 +4,72 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 3,
+            "stdout_id": 3,
+            "hover": "stdout:\nwinter\n\nspring\n\nsummer\n\nfall\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    print(getSeason('January'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('April'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('August'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('October'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 3,
+            "stdout_id": 5,
+            "hover": "stdout:\nWinter\n\nSpring\n\nSummer\n\nFall\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 3,
+            "stdout_id": 1,
+            "hover": "stdout:\nwinter\n\nspring\n\nsummer\n\nautumn\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n",
             "color": "blue",
             "id": 6
         },
         {
             "stderr_id": 2,
-            "stdout_id": 2,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('January'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('April'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('August'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('October'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 3,
+            "stdout_id": 6,
+            "hover": "stdout:\nInvalid month\n\nInvalid month\n\nInvalid month\n\nInvalid month\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 3,
             "stdout_id": 0,
+            "hover": "stdout:\nWinter\n\nSpring\n\nSummer\n\nAutumn\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 9
         }
@@ -68,36 +78,46 @@
         [
             {
                 "diff": 0,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student45",
+                "hover": "username:student45\ndiff:\n",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 11,
-                "color": "blue",
+                "diff": 6,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student45",
+                "hover": "username:student45\ndiff:\n--- \n+++ \n@@ -58,5 +58,5 @@\n \"November\", season is-\"fall\".+'fall'. \"\"\"",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 10,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student45",
+                "hover": "username:student45\ndiff:\n--- \n+++ \n@@ -22,29 +22,20 @@\n If month is-\"December\", \"January\",-or-\"February\", season is 'winter'. If month is-\"March\", \"April\",-or-\"May\", season is 'spring'. If month is-\"June\",-\"July\",-or \"August\", season is@@ -52,10 +43,7 @@\n If month is-\"September\", \"October\",-or-\"November\", season is 'fall'.",
                 "id": 1,
                 "key": 0
             },
             {
                 "diff": 0,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 14,
-                "color": "black",
+                "diff": 7,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student9",
+                "hover": "username:student9\ndiff:\n--- \n+++ \n@@ -19,12 +19,16 @@\n the output lowercase.-It-uses+If the string-\"fall\"-instead-of-\"autumn\".+is+'September',+'October',+or+'November',+the+output+is+'fall'. \"\"\"",
                 "id": 2,
                 "key": 0
             }
@@ -106,86 +126,39 @@
         [
             {
                 "diff": 0,
-                "color": "red",
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student46",
+                "hover": "username:student46\ndiff:\n",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 12,
-                "color": "red",
+                "diff": 14,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student46",
+                "hover": "username:student46\ndiff:\n--- \n+++ \n@@ -18,5 +18,8 @@\n associated with that-month.+month,+in+lower+case. \"\"\"",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 7,
-                "color": "black",
+                "diff": 10,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student9",
+                "hover": "username:student9\ndiff:\n--- \n+++ \n@@ -19,16 +19,4 @@\n the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 11,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student46",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "green",
-                "username": "student47",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 6,
-                "color": "pink",
-                "username": "student7",
-                "id": 1,
-                "key": 1
-            },
-            {
-                "diff": 15,
-                "color": "cyan",
-                "username": "student55",
-                "id": 0,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 13,
-                "color": "cyan",
-                "username": "student55",
-                "id": 6,
-                "key": 0
-            },
-            {
-                "diff": 8,
-                "color": "black",
-                "username": "student9",
-                "id": 0,
-                "key": 0
-            },
-            {
-                "diff": 3,
-                "color": "black",
-                "username": "student9",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 0,
-                "color": "cyan",
-                "username": "student55",
+                "hover": "username:student46\ndiff:\n--- \n+++ \n@@ -9,7 +9,15 @@\n string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the",
                 "id": 1,
                 "key": 0
             }
@@ -193,17 +166,90 @@
         [
             {
                 "diff": 4,
-                "color": "pink",
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student47",
+                "hover": "username:student47\ndiff:\n--- \n+++ \n@@ -26,5 +26,11 @@\n class of the-input\"+input,+produce+an+all+lower+case+string\" \"\"\"",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 12,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student7",
-                "id": 8,
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -20,31 +20,27 @@\n February, and March-are-considered-to-be-winter;+will+return+\"winter\"; April, May, and June-are-considered-to-be-spring;+will+return+\"spring\"; July, August, and September-are-considered-summer;+will+return+\"summer\"; and the rest-are-considered-fall.+will+return+\"fall\". \"\"\"",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 1,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -28,4 +28,14 @@\n the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. \"\"\"",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -38,4 +38,15 @@\n be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'. \"\"\"",
+                "id": 6,
+                "key": 0
+            },
+            {
+                "diff": 13,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student9",
+                "hover": "username:student9\ndiff:\n--- \n+++ \n@@ -19,4 +19,12 @@\n the output lowercase.+It+uses+the+string+\"fall\"+instead+of+\"autumn\". \"\"\"",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 15,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student9",
+                "hover": "username:student9\ndiff:\n--- \n+++ \n@@ -19,4 +19,10 @@\n the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student55",
+                "hover": "username:student55\ndiff:\n",
+                "id": 1,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 2,
-                "color": "pink",
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -16,6 +16,15 @@\n is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 8,
+                "color": "black",
+                "arrow_color": "black",
+                "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -16,48 +16,34 @@\n is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.",
                 "id": 4,
                 "key": 0
             }
@@ -211,8 +257,10 @@
         [
             {
                 "diff": 9,
-                "color": "black",
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student9",
+                "hover": "username:student9\ndiff:\n--- \n+++ \n@@ -10,4 +10,13 @@\n string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. \"\"\"",
                 "id": 5,
                 "key": 0
             }

@@ -2,41 +2,41 @@
   !!int "0": |-
     ---
     +++
+    @@ -6,7 +6,8 @@
+     a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@
+     in the list,-and add the number@@ -32,5 +32,14 @@
+     numbers in the+list,+and+do+nothing+to+the+lists+in+the list. """
+  !!int "1": |-
+    ---
+    +++
+    @@ -60,5 +60,25 @@
+     they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless """
+  !!int "2": |-
+    ---
+    +++
     @@ -17,4 +17,20 @@
      the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. """
-  !!int "1": |-
+  !!int "3": |-
+    ---
+    +++
+    @@ -22,11 +22,16 @@
+     is a string,-add-it+append+the+integer+on to the end+of+the+string to create a
+  !!int "4": |-
     ---
     +++
     @@ -18,7 +18,10 @@
      outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@
      of the list+to+the+number """
-  !!int "2": |-
-    ---
-    +++
-    @@ -22,11 +22,16 @@
-     is a string,-add-it+append+the+integer+on to the end+of+the+string to create a
-  !!int "3": |-
+  !!int "5": |-
     ---
     +++
     @@ -42,11 +42,5 @@
      is an integer,-or-a-string-containing-an-integer, concatenate. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -6,7 +6,8 @@
-     a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@
-     in the list,-and add the number@@ -32,5 +32,14 @@
-     numbers in the+list,+and+do+nothing+to+the+lists+in+the list. """
-  !!int "5": |-
+  !!int "6": |-
     ---
     +++
     @@ -22,15 +22,26 @@
      is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -60,5 +60,25 @@
-     they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless """
   !!int "7": |-
     ---
     +++
@@ -58,7 +58,7 @@
     - |
       ['hello', 'aaa', 'bbb', ['list'], 6, 9]
     "stdout_id": !!int |-
-      7
+      2
   !!int "1":
     "stderr":
     - ""
@@ -74,7 +74,7 @@
     - |
       ['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]
     "stdout_id": !!int |-
-      3
+      0
   !!int "2":
     "stderr":
     - ""
@@ -87,7 +87,7 @@
           i += num
       TypeError: 'int' object is not iterable
     "stderr_id": !!int |-
-      3
+      2
     "stdout":
     - |
       ['hello', 'aaa', 'bbb', 'ccc', 1, 4]
@@ -95,7 +95,7 @@
       [8, 56, 8, '5', '4']
     - ""
     "stdout_id": !!int |-
-      0
+      5
   !!int "3":
     "stderr":
     - ""
@@ -111,7 +111,7 @@
     - |
       ['hello5', 'aaa5', 'bbb5', 6, 9]
     "stdout_id": !!int |-
-      2
+      4
   !!int "4":
     "stderr":
     - |
@@ -142,13 +142,13 @@
           return [x + num for x in lst]
       TypeError: can only concatenate str (not "int") to str
     "stderr_id": !!int |-
-      0
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      3
   !!int "5":
     "stderr":
     - ""
@@ -164,7 +164,7 @@
     - |
       ['hello', 'aaa', 'bbb', 6, 9]
     "stdout_id": !!int |-
-      6
+      7
   !!int "6":
     "stderr":
     - |2
@@ -180,13 +180,13 @@
           print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
       IndentationError: expected an indented block after 'else' statement on line 14
     "stderr_id": !!int |-
-      5
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      3
   !!int "7":
     "stderr":
     - ""
@@ -199,7 +199,7 @@
           new_lst.append(item + num)
       TypeError: can only concatenate list (not "int") to list
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
@@ -207,7 +207,7 @@
       [9, 57, 9, 6, 5]
     - ""
     "stdout_id": !!int |-
-      1
+      6
   !!int "8":
     "stderr":
     - ""
@@ -220,7 +220,7 @@
           lst[i] = lst[i] + num
       TypeError: can only concatenate list (not "int") to list
     "stderr_id": !!int |-
-      4
+      5
     "stdout":
     - |
       ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
@@ -228,15 +228,15 @@
       [9, 57, 9, '51', '41']
     - ""
     "stdout_id": !!int |-
-      5
+      1
 "student_color":
   "student19": |-
-    blue
+    yellow
   "student36": |-
-    red
+    brown
   "student42": |-
-    green
+    purple
   "student54": |-
-    cyan
+    orange
   "student77": |-
-    pink
+    black

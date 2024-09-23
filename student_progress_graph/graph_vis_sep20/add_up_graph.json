@@ -6,18 +6,21 @@
         {
             "stderr_id": 0,
             "stdout_id": 0,
+            "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n9\n\n6.4\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 1,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "blue",
             "id": 2
         }
@@ -25,37 +28,47 @@
     "adjacency": [
         [
             {
-                "diff": 5,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student24",
+                "hover": "username:student24\ndiff:\n--- \n+++ \n@@ -5,20 +5,31 @@\n items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 5,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -1,10 +1,9 @@\n def add_up(arr): \"\"\"-sums-the-total-of+adds+up+only integers and floats",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 3,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -1,9 +1,7 @@\n def add_up(arr): \"\"\"-adds-up-only+sums integers and floats",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 2,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -1,13 +1,18 @@\n def add_up(arr): \"\"\"+iterates+through+the+array+and sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,",
                 "id": 0,
                 "key": 2
             },
             {
                 "diff": 4,
-                "color": "red",
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -6,19 +6,6 @@\n the array and-sums-the-total-of-integers-and-floats.-strings-are-ignored,-empty-spots-count-as-0+prints+i \"\"\"",
                 "id": 2,
                 "key": 0
             }
@@ -63,9 +76,11 @@
         [],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student7",
+                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -4,8 +4,23 @@\n iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 \"\"\"",
                 "id": 1,
                 "key": 0
             }

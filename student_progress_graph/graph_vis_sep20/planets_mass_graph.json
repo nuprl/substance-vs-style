@@ -4,44 +4,51 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 2,
-            "stdout_id": 3,
+            "stderr_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 1,
-            "stdout_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 0,
             "stdout_id": 1,
+            "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n15\n\n15\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n115\n\n145\n\n100\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 0,
+            "stderr_id": 2,
+            "stdout_id": 3,
+            "hover": "stdout:\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    mass_list.append(planets[planet]['mass'])\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    mass_list.append(planets[planet]['mass'])\nTypeError: 'int' object is not subscriptable\n\n",
             "color": "red",
             "id": 5
         },
         {
             "stderr_id": 4,
-            "stdout_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n",
             "color": "blue",
             "id": 6
         }
@@ -50,33 +57,41 @@
         [
             {
                 "diff": 2,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student14",
+                "hover": "username:student14\ndiff:\n--- \n+++ \n@@ -2,33 +2,19 @@\n planets_mass(planets): \"\"\" if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
-                "color": "blue",
+                "diff": 9,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student14",
+                "hover": "username:student14\ndiff:\n--- \n+++ \n@@ -2,19 +2,12 @@\n planets_mass(planets): \"\"\" if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 \"\"\"",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 8,
-                "color": "blue",
+                "diff": 1,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student14",
+                "hover": "username:student14\ndiff:\n--- \n+++ \n@@ -5,9 +5,11 @@\n 'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 \"\"\"",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 7,
-                "color": "blue",
+                "diff": 10,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student14",
+                "hover": "username:student14\ndiff:\n--- \n+++ \n@@ -2,7 +2,7 @@\n planets_mass(planets): \"\"\" if-'sun'+'Sun' is in planets,",
                 "id": 3,
                 "key": 0
             }
@@ -85,54 +100,68 @@
         [
             {
                 "diff": 0,
-                "color": "red",
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student46",
+                "hover": "username:student46\ndiff:\n",
                 "id": 4,
                 "key": 0
-            },
-            {
-                "diff": 3,
-                "color": "cyan",
-                "username": "student55",
-                "id": 4,
-                "key": 1
             },
             {
                 "diff": 4,
-                "color": "red",
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -40,4 +40,16 @@\n the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. \"\"\"",
+                "id": 4,
+                "key": 1
+            },
+            {
+                "diff": 5,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student46",
+                "hover": "username:student46\ndiff:\n--- \n+++ \n@@ -12,12 +12,7 @@\n the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 6,
-                "color": "cyan",
+                "diff": 7,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -40,4 +40,11 @@\n returns the total.+The+sun+and+pluto+are+not+planets. \"\"\"",
                 "id": 3,
                 "key": 1
             },
             {
-                "diff": 1,
-                "color": "cyan",
+                "diff": 3,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -7,49 +7,19 @@\n that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. \"\"\"",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 9,
-                "color": "green",
+                "diff": 8,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student53",
+                "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -7,24 +7,17 @@\n and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value \"\"\"",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 10,
-                "color": "cyan",
+                "diff": 6,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student55",
+                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -9,6 +9,23 @@\n a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@\n the masses of+only the planets and",
                 "id": 4,
                 "key": 0
             }

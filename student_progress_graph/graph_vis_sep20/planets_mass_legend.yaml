@@ -3,8 +3,8 @@
   !!int "1": |-
     ---
     +++
-    @@ -7,49 +7,19 @@
-     that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. """
+    @@ -5,9 +5,11 @@
+     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
   !!int "2": |-
     ---
     +++
@@ -13,44 +13,44 @@
   !!int "3": |-
     ---
     +++
+    @@ -7,49 +7,19 @@
+     that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. """
+  !!int "4": |-
+    ---
+    +++
     @@ -40,4 +40,16 @@
      the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. """
-  !!int "4": |-
+  !!int "5": |-
     ---
     +++
     @@ -12,12 +12,7 @@
      the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are
-  !!int "5": |-
-    ---
-    +++
-    @@ -2,19 +2,12 @@
-     planets_mass(planets): """ if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 """
   !!int "6": |-
-    ---
-    +++
-    @@ -40,4 +40,11 @@
-     returns the total.+The+sun+and+pluto+are+not+planets. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -2,7 +2,7 @@
-     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
-  !!int "8": |-
-    ---
-    +++
-    @@ -5,9 +5,11 @@
-     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
-  !!int "9": |-
-    ---
-    +++
-    @@ -7,24 +7,17 @@
-     and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
-  !!int "10": |-
     ---
     +++
     @@ -9,6 +9,23 @@
      a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
      the masses of+only the planets and
+  !!int "7": |-
+    ---
+    +++
+    @@ -40,4 +40,11 @@
+     returns the total.+The+sun+and+pluto+are+not+planets. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -7,24 +7,17 @@
+     and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
+  !!int "9": |-
+    ---
+    +++
+    @@ -2,19 +2,12 @@
+     planets_mass(planets): """ if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 """
+  !!int "10": |-
+    ---
+    +++
+    @@ -2,7 +2,7 @@
+     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
 "nodes":
   !!int "0":
     "stderr":
@@ -76,13 +76,13 @@
           if planet[1] > 16:
       TypeError: '>' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "1":
     "stderr":
     - |
@@ -113,14 +113,14 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       0
@@ -136,7 +136,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       15
@@ -145,14 +145,14 @@
     - |
       0
     "stdout_id": !!int |-
-      4
+      2
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       115
@@ -161,7 +161,7 @@
     - |
       100
     "stdout_id": !!int |-
-      2
+      4
   !!int "5":
     "stderr":
     - |
@@ -180,14 +180,14 @@
       TypeError: 'int' object is not subscriptable
     - ""
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - ""
     - |
       0
     "stdout_id": !!int |-
-      0
+      3
   !!int "6":
     "stderr":
     - |
@@ -218,13 +218,13 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
 "student_color":
   "student14": |-
-    blue
+    yellow
   "student46": |-
-    red
+    brown
   "student53": |-
-    green
+    purple
   "student55": |-
-    cyan
+    orange

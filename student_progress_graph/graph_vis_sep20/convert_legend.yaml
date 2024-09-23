@@ -3,18 +3,19 @@
   !!int "1": |-
     ---
     +++
-    @@ -33,6 +33,7 @@
-     variable. While the+iterating number is not
+    @@ -30,9 +30,13 @@
+     a temp string-variable,-have-it+variable.+While+the+number+is+not+negative, add the letter@@ -61,16 +65,6 @@
+     the answer list.-If-encounter-a-negative-number,-start-a-new-temp-string. Return the answer
   !!int "2": |-
     ---
     +++
-    @@ -29,7 +29,11 @@
-     negative numbers as+commas+and points of-seperation.+separation+between+strings. """
+    @@ -12,6 +12,7 @@
+     list with the+capital letters in the
   !!int "3": |-
     ---
     +++
-    @@ -23,33 +23,4 @@
-     in the list.-Then-take-the-list-of-converted-letters,-removing-any-commas-between-letters-in-the-last-when-the-letters-are-in-alphabetical-order,-or-when-they-are-the-same-letters. """
+    @@ -15,14 +15,5 @@
+     at 0 as-A,-turning-the-negative-numbers-into-commas-separating-the-letters.+A. """
   !!int "4": |-
     ---
     +++
@@ -23,132 +24,133 @@
   !!int "5": |-
     ---
     +++
-    @@ -15,19 +15,28 @@
-     at 0 as-A,-turning-the+A+ignoring+any negative numbers-into-commas,-and-then-turning+in the-output-into-one-string.+list.+Removing+the+commas+in+the+answer+when+the+letters+are+the+same+or+in+alphabetical+order. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -16,9 +16,12 @@
-     0 as A,-turning-negative-numbers-into-commas.+using+the+-1+points+to+separate+the+string. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -15,14 +15,5 @@
-     at 0 as-A,-turning-the-negative-numbers-into-commas-separating-the-letters.+A. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -16,19 +16,10 @@
-     0 as A-ignoring-any+turning+all negative numbers-in-the-list.-Removing-all-commas-in-the-list-of-outputs+into+commas. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -15,12 +15,19 @@
-     at 0 as-A.-ignoring-any+A,+turning+the negative numbers-in+into+commas,+and+then+turning the-list.+output+into+one+string. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -20,5 +20,11 @@
-     negative numbers into-""+"",+grouping+the+output+as+one+string. """
-  !!int "11": |-
-    ---
-    +++
-    @@ -24,9 +24,15 @@
-     commas, and then-turning+group the-output+letters+in+alphabetical+order+or+the+same into one string
-  !!int "12": |-
-    ---
-    +++
-    @@ -5,32 +5,57 @@
-     a list of-numbers-and-returns-a+numbers,+have+another list with the+letters+in+the+alphabet,+create+an+answer+list,+iterate+through+the+input+list,+append+the+letter+with+the corresponding-indexes+index of the-alphabet,-where-negative-numbers-as-indexes-means-to-take+list+with+the+letters in the-next-index-as+alphabet+to+the+answer+list,+create a new string+when+encounter+a+negative+number,+and+return+the+answer+list """
-  !!int "13": |-
-    ---
-    +++
-    @@ -23,20 +23,4 @@
-     in the list.-Removing-the-commas-in-the-output-when-the-letters-are-the-same-or-in-alphabetical-order. """
-  !!int "14": |-
-    ---
-    +++
-    @@ -16,4 +16,20 @@
-     0 as A.+grouping+the+output+as+a+single+string,+then+use+the+negative+numbers+as+points+of+seperation. """
-  !!int "15": |-
-    ---
-    +++
-    @@ -16,9 +16,18 @@
-     0 as A,+grouping+the+answer+as+one+string,+and+then using the -1+as points to separate
-  !!int "16": |-
-    ---
-    +++
-    @@ -1,36 +1,20 @@
-     def convert(lst): """-change-numbers-to-letters-matching-the-order-of-the-alphabet-starting-at-0-as-A,-grouping-the-answer-as-one-string,-and-then-using-the--1-as-points-to-separate-the-string.+input:+[1,+1,+1,+-1,+25,+25,+25,+-1,+0,+1,+2]+output:+['BBB',+'ZZZ',+'ABC'] """
-  !!int "17": |-
-    ---
-    +++
-    @@ -21,22 +21,8 @@
-     negative numbers into-commas,-and-then-group+commas+separating the-letters-in-alphabetical-order-or-the-same-into-one-string-in-a-list.+letters. """
-  !!int "18": |-
-    ---
-    +++
-    @@ -12,6 +12,7 @@
-     list with the+capital letters in the
-  !!int "19": |-
-    ---
-    +++
-    @@ -32,9 +32,7 @@
-     string variable. While-the-iterating-number+num is not negative,
-  !!int "20": |-
-    ---
-    +++
-    @@ -21,10 +21,14 @@
-     numbers into "",+and grouping the output as one-string.+string+in+a+list. """
-  !!int "21": |-
-    ---
-    +++
-    @@ -6,36 +6,40 @@
-     list of numbers.-Have-another+Create+a+ABC list with the letters in the-alphabet,+alphabet and create an answer-list.-When-iterating+string.+Iterate through the input list,-create-a-temp-string-variable.-While-num+if+there is-not-negative,+"-1"+then+add+'+'+to+the+answer+string,+or+otherwise, add the letter@@ -45,27 +49,17 @@
-     index of the-list-with-the-letters-in-the-alphabet-to-the-temp-variable.-Append-the-temp-variable-into+answer+string.+Split the answer-list.-Return+string+at+'+'.+return the answer-list.+string. """
-  !!int "22": |-
-    ---
-    +++
-    @@ -29,14 +29,23 @@
-     to a string.-If--1,-start-the-next-character-with+When+-1+appears+make a new-string.+string+and+add+the+following+characters+to+it.+return+a+list+of+strings. """
-  !!int "23": |-
-    ---
-    +++
-    @@ -18,13 +18,20 @@
-     create an answer-list,-iterate+list.+When+iterating through the input list,-append+create+a+temp+string+variable+and+assign the letter with@@ -42,20 +49,29 @@
-     alphabet to the+temp+variable,+append+the+temp+variable+into+the answer list,-create+and+start a new+temp string when encounter a negative-number,-and-return+number.+Return the answer-list+list. """
-  !!int "24": |-
-    ---
-    +++
-    @@ -16,11 +16,6 @@
-     0 as A,-turning-negative-numbers-into-"", and grouping the@@ -30,5 +25,11 @@
-     string in a-list.+list,+using+-1+as+places+to+slice. """
-  !!int "25": |-
-    ---
-    +++
     @@ -16,28 +16,9 @@
      0 as A,-1-as-B.-grouping-the-output-as-a-single-string,-then-turn-the+turning negative numbers-as-commas-and-points-of-separation-between-the-strings.+into+commas. """
-  !!int "26": |-
-    ---
-    +++
-    @@ -23,4 +23,33 @@
-     in the list.+Then+take+the+list+of+converted+letters,+removing+any+commas+between+letters+in+the+last+when+the+letters+are+in+alphabetical+order,+or+when+they+are+the+same+letters. """
-  !!int "27": |-
-    ---
-    +++
-    @@ -28,7 +28,7 @@
-     commas in the-answer+output when the letters
-  !!int "28": |-
-    ---
-    +++
-    @@ -15,11 +15,22 @@
-     at 0 as-A+A, turning-all+the negative numbers into-commas.+commas,+and+then+turning+the+output+into+one+string+in+a+list. """
-  !!int "29": |-
+  !!int "6": |-
     ---
     +++
     @@ -1,7 +1,9 @@
      def convert(lst): """-input:+if+user+inputs [1, 1, 1,@@ -12,9 +14,11 @@
      -1, 0, 1,-2]-output:+2],+output+should+be ['BBB', 'ZZZ',-'ABC']+'ABC']. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -21,10 +21,14 @@
+     numbers into "",+and grouping the output as one-string.+string+in+a+list. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -16,11 +16,6 @@
+     0 as A,-turning-negative-numbers-into-"", and grouping the@@ -30,5 +25,11 @@
+     string in a-list.+list,+using+-1+as+places+to+slice. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -29,14 +29,23 @@
+     to a string.-If--1,-start-the-next-character-with+When+-1+appears+make a new-string.+string+and+add+the+following+characters+to+it.+return+a+list+of+strings. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -15,5 +15,12 @@
+     at 0 as-A+A.+ignoring+any+negative+numbers+in+the+list. """
+  !!int "11": |-
+    ---
+    +++
+    @@ -21,22 +21,8 @@
+     negative numbers into-commas,-and-then-group+commas+separating the-letters-in-alphabetical-order-or-the-same-into-one-string-in-a-list.+letters. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -1,36 +1,20 @@
+     def convert(lst): """-change-numbers-to-letters-matching-the-order-of-the-alphabet-starting-at-0-as-A,-grouping-the-answer-as-one-string,-and-then-using-the--1-as-points-to-separate-the-string.+input:+[1,+1,+1,+-1,+25,+25,+25,+-1,+0,+1,+2]+output:+['BBB',+'ZZZ',+'ABC'] """
+  !!int "13": |-
+    ---
+    +++
+    @@ -15,12 +15,19 @@
+     at 0 as-A.-ignoring-any+A,+turning+the negative numbers-in+into+commas,+and+then+turning the-list.+output+into+one+string. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -23,20 +23,4 @@
+     in the list.-Removing-the-commas-in-the-output-when-the-letters-are-the-same-or-in-alphabetical-order. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -32,9 +32,7 @@
+     string variable. While-the-iterating-number+num is not negative,
+  !!int "16": |-
+    ---
+    +++
+    @@ -18,13 +18,20 @@
+     create an answer-list,-iterate+list.+When+iterating through the input list,-append+create+a+temp+string+variable+and+assign the letter with@@ -42,20 +49,29 @@
+     alphabet to the+temp+variable,+append+the+temp+variable+into+the answer list,-create+and+start a new+temp string when encounter a negative-number,-and-return+number.+Return the answer-list+list. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -6,36 +6,40 @@
+     list of numbers.-Have-another+Create+a+ABC list with the letters in the-alphabet,+alphabet and create an answer-list.-When-iterating+string.+Iterate through the input list,-create-a-temp-string-variable.-While-num+if+there is-not-negative,+"-1"+then+add+'+'+to+the+answer+string,+or+otherwise, add the letter@@ -45,27 +49,17 @@
+     index of the-list-with-the-letters-in-the-alphabet-to-the-temp-variable.-Append-the-temp-variable-into+answer+string.+Split the answer-list.-Return+string+at+'+'.+return the answer-list.+string. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -24,7 +24,7 @@
+     single string, then-use+turn the negative numbers@@ -35,5 +35,6 @@
+     of separation between+the strings. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -24,9 +24,15 @@
+     commas, and then-turning+group the-output+letters+in+alphabetical+order+or+the+same into one string
+  !!int "20": |-
+    ---
+    +++
+    @@ -23,4 +23,12 @@
+     in the list.+Removing+all+commas+in+the+list+of+outputs """
+  !!int "21": |-
+    ---
+    +++
+    @@ -16,9 +16,12 @@
+     0 as A,-turning-negative-numbers-into-commas.+using+the+-1+points+to+separate+the+string. """
+  !!int "22": |-
+    ---
+    +++
+    @@ -15,19 +15,28 @@
+     at 0 as-A,-turning-the+A+ignoring+any negative numbers-into-commas,-and-then-turning+in the-output-into-one-string.+list.+Removing+the+commas+in+the+answer+when+the+letters+are+the+same+or+in+alphabetical+order. """
+  !!int "23": |-
+    ---
+    +++
+    @@ -28,7 +28,7 @@
+     commas in the-answer+output when the letters
+  !!int "24": |-
+    ---
+    +++
+    @@ -16,19 +16,10 @@
+     0 as A-ignoring-any+turning+all negative numbers-in-the-list.-Removing-all-commas-in-the-list-of-outputs+into+commas. """
+  !!int "25": |-
+    ---
+    +++
+    @@ -23,4 +23,33 @@
+     in the list.+Then+take+the+list+of+converted+letters,+removing+any+commas+between+letters+in+the+last+when+the+letters+are+in+alphabetical+order,+or+when+they+are+the+same+letters. """
+  !!int "26": |-
+    ---
+    +++
+    @@ -16,4 +16,20 @@
+     0 as A.+grouping+the+output+as+a+single+string,+then+use+the+negative+numbers+as+points+of+seperation. """
+  !!int "27": |-
+    ---
+    +++
+    @@ -5,32 +5,57 @@
+     a list of-numbers-and-returns-a+numbers,+have+another list with the+letters+in+the+alphabet,+create+an+answer+list,+iterate+through+the+input+list,+append+the+letter+with+the corresponding-indexes+index of the-alphabet,-where-negative-numbers-as-indexes-means-to-take+list+with+the+letters in the-next-index-as+alphabet+to+the+answer+list,+create a new string+when+encounter+a+negative+number,+and+return+the+answer+list """
+  !!int "28": |-
+    ---
+    +++
+    @@ -23,33 +23,4 @@
+     in the list.-Then-take-the-list-of-converted-letters,-removing-any-commas-between-letters-in-the-last-when-the-letters-are-in-alphabetical-order,-or-when-they-are-the-same-letters. """
+  !!int "29": |-
+    ---
+    +++
+    @@ -16,9 +16,18 @@
+     0 as A,+grouping+the+answer+as+one+string,+and+then using the -1+as points to separate
   !!int "30": |-
     ---
     +++
@@ -160,30 +162,28 @@
   !!int "31": |-
     ---
     +++
-    @@ -24,7 +24,7 @@
-     single string, then-use+turn the negative numbers@@ -35,5 +35,6 @@
-     of separation between+the strings. """
+    @@ -33,6 +33,7 @@
+     variable. While the+iterating number is not
   !!int "32": |-
-    ---
-    +++
-    @@ -23,4 +23,12 @@
-     in the list.+Removing+all+commas+in+the+list+of+outputs """
-  !!int "33": |-
     ---
     +++
     @@ -1,24 +1,24 @@
      def convert(lst): """-if-user-inputs-[1,-1,-1,--1,-25,-25,-25,--1,-0,-1,-2],-output-should-be-['BBB',-'ZZZ',-'ABC'].+change+numbers+to+letters+matching+the+order+of+the+alphabet+starting+at+0+as+A,+turning+negative+numbers+into+"" """
+  !!int "33": |-
+    ---
+    +++
+    @@ -20,5 +20,11 @@
+     negative numbers into-""+"",+grouping+the+output+as+one+string. """
   !!int "34": |-
     ---
     +++
-    @@ -15,5 +15,12 @@
-     at 0 as-A+A.+ignoring+any+negative+numbers+in+the+list. """
+    @@ -29,7 +29,11 @@
+     negative numbers as+commas+and points of-seperation.+separation+between+strings. """
   !!int "35": |-
     ---
     +++
-    @@ -30,9 +30,13 @@
-     a temp string-variable,-have-it+variable.+While+the+number+is+not+negative, add the letter@@ -61,16 +65,6 @@
-     the answer list.-If-encounter-a-negative-number,-start-a-new-temp-string. Return the answer
+    @@ -15,11 +15,22 @@
+     at 0 as-A+A, turning-all+the negative numbers into-commas.+commas,+and+then+turning+the+output+into+one+string+in+a+list. """
 "nodes":
   !!int "0":
     "stderr":
@@ -209,13 +209,13 @@
           new_lst.append(alphabet[i])
       NameError: name 'alphabet' is not defined
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "1":
     "stderr":
     - |2
@@ -234,13 +234,13 @@
                    ^
       SyntaxError: expected ':'
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "2":
     "stderr":
     - |2
@@ -256,13 +256,13 @@
           print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))
       IndentationError: expected an indented block after 'for' statement on line 8
     "stderr_id": !!int |-
-      5
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "3":
     "stderr":
     - ""
@@ -278,7 +278,7 @@
     - |
       None
     "stdout_id": !!int |-
-      8
+      5
   !!int "4":
     "stderr":
     - ""
@@ -294,7 +294,7 @@
     - |
       ['bbb', 'zzz', 'abc']
     "stdout_id": !!int |-
-      17
+      16
   !!int "5":
     "stderr":
     - ""
@@ -310,7 +310,7 @@
     - |
       ['BBB', 'ZZZ', 'ABC']
     "stdout_id": !!int |-
-      13
+      4
   !!int "6":
     "stderr":
     - ""
@@ -326,7 +326,7 @@
     - |
       ['B', 'B', 'B', '@', 'Z', 'Z', 'Z', '@', 'A', 'B', 'C']
     "stdout_id": !!int |-
-      16
+      19
   !!int "7":
     "stderr":
     - ""
@@ -342,7 +342,7 @@
     - |
       ['B', 'B', 'B', 'Z', 'Z', 'Z', 'A', 'B', 'C']
     "stdout_id": !!int |-
-      14
+      1
   !!int "8":
     "stderr":
     - ""
@@ -358,7 +358,7 @@
     - |
       BBB,ZZZ,ABC
     "stdout_id": !!int |-
-      15
+      6
   !!int "9":
     "stderr":
     - ""
@@ -374,7 +374,7 @@
     - |
       BZABC
     "stdout_id": !!int |-
-      19
+      14
   !!int "10":
     "stderr":
     - ""
@@ -390,7 +390,7 @@
     - |
       BBBZZZABC
     "stdout_id": !!int |-
-      0
+      15
   !!int "11":
     "stderr":
     - ""
@@ -406,7 +406,7 @@
     - |
       B,B,B,Z,Z,Z,A,B,C
     "stdout_id": !!int |-
-      4
+      3
   !!int "12":
     "stderr":
     - ""
@@ -422,7 +422,7 @@
     - |
       B,B,B,,,Z,Z,Z,,,A,B,C
     "stdout_id": !!int |-
-      2
+      18
   !!int "13":
     "stderr":
     - ""
@@ -438,7 +438,7 @@
     - |
       ['BBB,ZZZ,ABC']
     "stdout_id": !!int |-
-      1
+      12
   !!int "14":
     "stderr":
     - |
@@ -463,13 +463,13 @@
           lst = [''.join(g) for k, g in groupby(lst)]
       NameError: name 'groupby' is not defined
     "stderr_id": !!int |-
-      1
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "15":
     "stderr":
     - ""
@@ -485,7 +485,7 @@
     - |
       ['A', 'A', 'A', ',', 'Y', 'Y', 'Y', ',', 'A', 'B']
     "stdout_id": !!int |-
-      7
+      13
   !!int "16":
     "stderr":
     - ""
@@ -501,7 +501,7 @@
     - |
       AAAAYYYAAB
     "stdout_id": !!int |-
-      10
+      2
   !!int "17":
     "stderr":
     - ""
@@ -517,7 +517,7 @@
     - |
       ['BBB@ZZZ@BC']
     "stdout_id": !!int |-
-      5
+      10
   !!int "18":
     "stderr":
     - ""
@@ -533,7 +533,7 @@
     - |
       BBB@ZZZ@ABC
     "stdout_id": !!int |-
-      9
+      17
   !!int "19":
     "stderr":
     - ""
@@ -549,7 +549,7 @@
     - |
       AAA,YYY,AAB
     "stdout_id": !!int |-
-      12
+      0
   !!int "20":
     "stderr":
     - ""
@@ -565,7 +565,7 @@
     - |
       ['B', 'B', 'B', '-', 'Z', 'Z', 'Z', '-', 'A', 'B', 'C']
     "stdout_id": !!int |-
-      18
+      8
   !!int "21":
     "stderr":
     - |2
@@ -584,13 +584,13 @@
                          ^
       SyntaxError: invalid syntax
     "stderr_id": !!int |-
-      6
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "22":
     "stderr":
     - |2
@@ -609,13 +609,13 @@
                  ^
       SyntaxError: invalid syntax
     "stderr_id": !!int |-
-      7
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "23":
     "stderr":
     - ""
@@ -631,7 +631,7 @@
     - |
       ['B', 'B', 'B', '', 'Z', 'Z', 'Z', '', 'A', 'B', 'C']
     "stdout_id": !!int |-
-      11
+      7
   !!int "24":
     "stderr":
     - |
@@ -656,13 +656,13 @@
           result[-1] += chr(i + 65)
       IndexError: list index out of range
     "stderr_id": !!int |-
-      2
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      6
+      11
   !!int "25":
     "stderr":
     - ""
@@ -678,11 +678,11 @@
     - |
       BBB ZZZ ABC
     "stdout_id": !!int |-
-      3
+      9
 "student_color":
   "student0": |-
-    blue
+    yellow
   "student17": |-
-    red
+    brown
   "student51": |-
-    green
+    purple

@@ -3,13 +3,13 @@
   !!int "1": |-
     ---
     +++
-    @@ -20,5 +20,10 @@
-     of the new-string+string.+Do+not+display+the+count """
+    @@ -14,7 +14,11 @@
+     as '_', then-print+return+a+copy+of the+new string """
   !!int "2": |-
     ---
     +++
-    @@ -14,7 +14,11 @@
-     as '_', then-print+return+a+copy+of the+new string """
+    @@ -20,5 +20,10 @@
+     of the new-string+string.+Do+not+display+the+count """
 "nodes":
   !!int "0":
     "stderr":
@@ -26,7 +26,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "1":
     "stderr":
     - ""
@@ -42,7 +42,7 @@
     - |
       ('|O.0|', 0)
     "stdout_id": !!int |-
-      0
+      2
   !!int "2":
     "stderr":
     - ""
@@ -58,7 +58,7 @@
     - |
       |O.0|
     "stdout_id": !!int |-
-      1
+      0
 "student_color":
   "student26": |-
-    blue
+    yellow

@@ -2,14 +2,13 @@
   !!int "0": |-
     ---
     +++
-    @@ -13,4 +13,10 @@
-     in the input+in+the+same+order+(repetitions+ok) """
+    @@ -8,7 +8,13 @@
+     characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
   !!int "1": |-
     ---
     +++
-    @@ -7,12 +7,8 @@
-     of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@
-     them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. """
+    @@ -5,7 +5,11 @@
+     a list of+both the+uppercase+and+lowercase vowels in the
   !!int "2": |-
     ---
     +++
@@ -18,23 +17,24 @@
   !!int "3": |-
     ---
     +++
+    @@ -7,12 +7,8 @@
+     of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@
+     them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -13,4 +13,10 @@
+     in the input+in+the+same+order+(repetitions+ok) """
+  !!int "5": |-
+    ---
+    +++
     @@ -17,6 +17,8 @@
      the same order+including+capitalizations (repetitions ok) """
-  !!int "4": |-
+  !!int "6": |-
     ---
     +++
     @@ -22,6 +22,22 @@
      in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
-  !!int "5": |-
-    ---
-    +++
-    @@ -8,7 +8,13 @@
-     characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
-  !!int "6": |-
-    ---
-    +++
-    @@ -5,7 +5,11 @@
-     a list of+both the+uppercase+and+lowercase vowels in the
   !!int "7": |-
     ---
     +++
@@ -59,7 +59,7 @@
     - |
       []
     "stdout_id": !!int |-
-      0
+      2
   !!int "1":
     "stderr":
     - ""
@@ -97,7 +97,7 @@
     - |
       []
     "stdout_id": !!int |-
-      2
+      0
   !!int "3":
     "stderr":
     - ""
@@ -119,14 +119,14 @@
       1
 "student_color":
   "student13": |-
-    blue
+    yellow
   "student16": |-
-    red
+    brown
   "student22": |-
-    green
+    purple
   "student37": |-
-    cyan
+    orange
   "student72": |-
-    pink
-  "student74": |-
     black
+  "student74": |-
+    pink

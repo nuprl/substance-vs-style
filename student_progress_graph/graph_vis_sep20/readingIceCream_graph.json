@@ -4,80 +4,93 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 3,
-            "stdout_id": 0,
+            "stderr_id": 6,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += int(line.split(\"\t\")[2])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 2,
-            "stdout_id": 4,
+            "stdout_id": 0,
+            "hover": "stdout:\n36.5\n\n10.0\n\n0.0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += int(line.split('\t')[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 2,
             "stdout_id": 5,
+            "hover": "stdout:\n34\n\n10\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
             "stderr_id": 9,
-            "stdout_id": 3,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'ice cream'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'frozen yogurt'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'frozen yogurt'\n",
             "color": "red",
             "id": 4
         },
         {
             "stderr_id": 2,
-            "stdout_id": 2,
+            "stdout_id": 3,
+            "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 8,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[2])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 3,
+            "stderr_id": 3,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'peppermint\tice cream\t3'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'salty\tfrozen yogurt\t10'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'salty\tfrozen yogurt\t0'\n",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 0,
+            "stderr_id": 4,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += int(line.split()[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 0,
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    count += int(line[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "red",
             "id": 9
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 0,
+            "stderr_id": 5,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 9, in readingIceCream\n    sum += int(line[second + 1:])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "red",
             "id": 10
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 0,
+            "stderr_id": 7,
+            "stdout_id": 2,
+            "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 12, in readingIceCream\n    sum += int(line[i+1:])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 11
         },
         {
             "stderr_id": 2,
-            "stdout_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n36.5\n\n10\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 12
         }
@@ -85,9 +98,11 @@
     "adjacency": [
         [
             {
-                "diff": 7,
-                "color": "blue",
+                "diff": 4,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student27",
+                "hover": "username:student27\ndiff:\n--- \n+++ \n@@ -47,4 +47,11 @@\n of each string.+The+value+can+be+integers+or+floats. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -95,63 +110,55 @@
         [],
         [
             {
-                "diff": 8,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student32",
+                "hover": "username:student32\ndiff:\n--- \n+++ \n@@ -22,4 +22,12 @@\n in the element.+the+sum+should+not+be+limited+to+integers \"\"\"",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 10,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student32",
+                "hover": "username:student32\ndiff:\n--- \n+++ \n@@ -25,9 +25,8 @@\n the sum should-not-be-limited-to-integers+include+numbers+with+decimals \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "green",
+                "diff": 10,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student62",
+                "hover": "username:student62\ndiff:\n--- \n+++ \n@@ -12,7 +12,12 @@\n after '\\t' to-count,+count+if+it+is+an+integer, returns sum \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
-                "color": "green",
+                "diff": 7,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student62",
+                "hover": "username:student62\ndiff:\n--- \n+++ \n@@ -10,14 +10,11 @@\n number directly after+the+second '\\t' to-count-if-it-is-an-integer,+count, returns sum \"\"\"",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "green",
+                "diff": 6,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student62",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 4,
-                "color": "cyan",
-                "username": "student66",
-                "id": 8,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "cyan",
-                "username": "student66",
+                "hover": "username:student62\ndiff:\n--- \n+++ \n@@ -7,7 +7,7 @@\n in list, adds-number+float directly after the",
                 "id": 1,
                 "key": 0
             }
@@ -159,8 +166,21 @@
         [
             {
                 "diff": 9,
-                "color": "pink",
-                "username": "student68",
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -1,17 +1,26 @@\n def readingIceCream(lines): \"\"\"-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum \"\"\"",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 8,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -3,7 +3,7 @@\n \"\"\" take the-integer+float at the end",
                 "id": 1,
                 "key": 0
             }
@@ -169,16 +189,31 @@
             {
                 "diff": 0,
                 "color": "black",
+                "arrow_color": "black",
+                "username": "student68",
+                "hover": "username:student68\ndiff:\n--- \n+++ \n@@ -20,7 +20,7 @@\n should be a-number+double and add it",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -34,12 +34,12 @@\n convert it into-an-integer,+a+number, then add that-integer+number to the sum.",
                 "id": 11,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "black",
+                "diff": 3,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -29,17 +29,32 @@\n rest of the+string.+If+this+remaining+portion+of+the string-and+contains+\".\", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.",
                 "id": 12,
                 "key": 0
             }

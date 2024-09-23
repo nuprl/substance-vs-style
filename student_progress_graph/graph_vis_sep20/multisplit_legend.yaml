@@ -2,8 +2,9 @@
   !!int "0": |-
     ---
     +++
-    @@ -42,7 +42,18 @@
-     present, we split+s,+remove+the+character+from s+at+the+index+where+we+split, and insert sep.
+    @@ -42,8 +42,9 @@
+     present, we split-s,-remove+s+and+replace the character from@@ -53,8 +54,7 @@
+     index where we-split,-and-insert+split+with sep. """
   !!int "1": |-
     ---
     +++
@@ -12,9 +13,8 @@
   !!int "2": |-
     ---
     +++
-    @@ -42,8 +42,9 @@
-     present, we split-s,-remove+s+and+replace the character from@@ -53,8 +54,7 @@
-     index where we-split,-and-insert+split+with sep. """
+    @@ -42,7 +42,18 @@
+     present, we split+s,+remove+the+character+from s+at+the+index+where+we+split, and insert sep.
   !!int "3": |-
     ---
     +++
@@ -36,7 +36,7 @@
     - |
       ['celestial teas: a guide']
     "stdout_id": !!int |-
-      3
+      0
   !!int "1":
     "stderr":
     - ""
@@ -52,7 +52,7 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - ""
@@ -68,7 +68,7 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      0
+      3
   !!int "3":
     "stderr":
     - ""
@@ -84,11 +84,11 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      2
+      1
 "student_color":
   "student15": |-
-    blue
+    yellow
   "student45": |-
-    red
+    brown
   "student55": |-
-    green
+    purple

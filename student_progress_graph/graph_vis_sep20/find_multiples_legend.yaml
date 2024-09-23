@@ -3,49 +3,49 @@
   !!int "1": |-
     ---
     +++
-    @@ -16,9 +16,21 @@
-     and output a-list-based-on-those-parameters+including+the+last+number,+and+the+5+closest+numbers+in+the+step+size+to+that+last+number """
+    @@ -4,10 +4,14 @@
+     Function returns multiples-between+from+the first-two-items+item+to+the+second+item in the input
   !!int "2": |-
-    ---
-    +++
-    @@ -37,5 +37,11 @@
-     at the stopping-number.+number+but+including+it+in+the+list. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -12,17 +12,34 @@
-     input. The first-and-second number of the input-are+is the-bounds+starting+bound and the+second+number+is+the+the+ending+bound,+but+is+included+in+the+list+of+multiples+if+applicable.+The last number is
-  !!int "4": |-
     ---
     +++
     @@ -23,5 +23,12 @@
      also given as-inputs+inputs.+The+end+input+should+also+be+included """
-  !!int "5": |-
-    ---
-    +++
-    @@ -12,6 +12,10 @@
-     the second item+(including+the+second+item) in the input
-  !!int "6": |-
-    ---
-    +++
-    @@ -4,10 +4,14 @@
-     Function returns multiples-between+from+the first-two-items+item+to+the+second+item in the input
-  !!int "7": |-
+  !!int "3": |-
     ---
     +++
     @@ -7,30 +7,25 @@
      list of integers-[start-number,-final-number,-step-size]+[start,+stop,+factor] and output a+list+starting+at+the+closest+even+number+to+the+start,+and including the-last-number,-and-the-5-closest-numbers-in-the-step-size-to-that-last+stop number """
-  !!int "8": |-
+  !!int "4": |-
     ---
     +++
-    @@ -10,7 +10,7 @@
-     of the factor-between+in the range of
-  !!int "9": |-
+    @@ -12,6 +12,10 @@
+     the second item+(including+the+second+item) in the input
+  !!int "5": |-
+    ---
+    +++
+    @@ -37,5 +37,11 @@
+     at the stopping-number.+number+but+including+it+in+the+list. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -12,17 +12,34 @@
+     input. The first-and-second number of the input-are+is the-bounds+starting+bound and the+second+number+is+the+the+ending+bound,+but+is+included+in+the+list+of+multiples+if+applicable.+The last number is
+  !!int "7": |-
     ---
     +++
     @@ -10,7 +10,7 @@
      of the factor-in+between the range of@@ -18,5 +18,11 @@
      start and stop+numbers,+including+the+start+and+stop numbers. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -16,9 +16,21 @@
+     and output a-list-based-on-those-parameters+including+the+last+number,+and+the+5+closest+numbers+in+the+step+size+to+that+last+number """
+  !!int "9": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     of the factor-between+in the range of
 "nodes":
   !!int "0":
     "stderr":
@@ -62,7 +62,7 @@
     - |
       [1062, 1239, 1416, 1593, 1770, 1947]
     "stdout_id": !!int |-
-      0
+      2
   !!int "1":
     "stderr":
     - ""
@@ -94,7 +94,7 @@
     - |
       [1000, 1177, 1354, 1531, 1708, 1885]
     "stdout_id": !!int |-
-      2
+      4
   !!int "3":
     "stderr":
     - |2
@@ -119,7 +119,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "4":
     "stderr":
     - ""
@@ -135,17 +135,17 @@
     - |
       (1885, [1177, 1354, 1531, 1708, 1885])
     "stdout_id": !!int |-
-      4
+      1
 "student_color":
   "student13": |-
-    blue
+    yellow
   "student22": |-
-    red
+    brown
   "student5": |-
-    green
+    purple
   "student61": |-
-    cyan
+    orange
   "student72": |-
-    pink
-  "student74": |-
     black
+  "student74": |-
+    pink

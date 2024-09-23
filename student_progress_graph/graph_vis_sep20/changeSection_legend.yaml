@@ -2,24 +2,24 @@
   !!int "0": |-
     ---
     +++
-    @@ -19,6 +19,6 @@
-     and display the-new+original string """
+    @@ -17,8 +17,12 @@
+     the slice and-display+replace+it+in the-original+string;+return+the string """
   !!int "1": |-
     ---
     +++
-    @@ -17,8 +17,12 @@
-     the slice and-display+replace+it+in the-original+string;+return+the string """
+    @@ -19,6 +19,6 @@
+     and display the-new+original string """
   !!int "2": |-
+    ---
+    +++
+    @@ -16,6 +16,16 @@
+     the given string.+In+this+case,+indexing+starts+with+"1"+instead+of+"0". At the given
+  !!int "3": |-
     ---
     +++
     @@ -11,7 +11,7 @@
      i. Function would-flip+write the first i@@ -19,20 +19,39 @@
      of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output """
-  !!int "3": |-
-    ---
-    +++
-    @@ -16,6 +16,16 @@
-     the given string.+In+this+case,+indexing+starts+with+"1"+instead+of+"0". At the given
 "nodes":
   !!int "0":
     "stderr":
@@ -36,7 +36,7 @@
     - |
       stablishinge
     "stdout_id": !!int |-
-      0
+      4
   !!int "1":
     "stderr":
     - ""
@@ -52,7 +52,7 @@
     - |
       establishing
     "stdout_id": !!int |-
-      4
+      0
   !!int "2":
     "stderr":
     - ""
@@ -103,8 +103,8 @@
       3
 "student_color":
   "student10": |-
-    blue
+    yellow
   "student25": |-
-    red
+    brown
   "student26": |-
-    green
+    purple

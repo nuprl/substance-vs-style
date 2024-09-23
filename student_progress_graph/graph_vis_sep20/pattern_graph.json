@@ -4,38 +4,44 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n112233\n\n11223344\n\n1122\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n[[1, 2, 3], [1, 2, 3]]\n\n[[1, 2, 3], [1, 2, 3]]\n\n[[1, 2], [1, 2]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n[[1, 2, 3], [1, 2, 3], [1, 2, 3]]\n\n[[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]\n\n[[1, 2], [1, 2]]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 5,
+            "hover": "stdout:\n[[1], [1, 2], [1, 2, 3]]\n\n[[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]\n\n[[1], [1, 2]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n[[0, 1, 2], [0, 1, 2], [0, 1, 2]]\n\n[[0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3]]\n\n[[0, 1], [0, 1]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         }
@@ -44,26 +50,32 @@
         [
             {
                 "diff": 0,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
-                "color": "blue",
+                "diff": 7,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -1,11 +1,13 @@\n def pattern(value): \"\"\"-count-to-the-letter-of-the-input+if+given+2+output+two+lists+1,2+and+1,2 \"\"\"",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student17",
+                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -10,4 +10,16 @@\n 1,2 and 1,2+if+given+3+out+put+3+lists+1,2,3+and+1,2,3+and+1,2,3 \"\"\"",
                 "id": 3,
                 "key": 0
             }
@@ -71,30 +83,38 @@
         [],
         [
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 5,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -9,9 +9,10 @@\n integer and creates-a+one list-with+including+the numbers 1 to@@ -26,9 +27,7 @@\n for the given-value-and-returns,+value, appending each list",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 5,
-                "color": "green",
+                "diff": 4,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student4",
+                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -1,18 +1,9 @@\n def pattern(value): \"\"\"-uses-the-given-number-to-produce+creates a-given-number-of-lists,-each+list containing elements counting@@ -22,5 +13,17 @@\n given number from-one+1,+duplicates+this+list+by+the+given+number+into+a+list+of+lists \"\"\"",
                 "id": 3,
                 "key": 1
             },
             {
-                "diff": 7,
-                "color": "cyan",
+                "diff": 1,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student41",
+                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -20,8 +20,10 @@\n to the value.-Each-list+All+of+the+lists within the output",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 3,
-                "color": "cyan",
+                "diff": 2,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student41",
+                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -30,16 +30,12 @@\n list should have-each+every integer-greater-than+between zero-up-to, and-including, the-value-inputted.+inputted+value. \"\"\"",
                 "id": 5,
                 "key": 0
             }
@@ -102,8 +122,10 @@
         [
             {
                 "diff": 6,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student41",
+                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -33,8 +33,11 @@\n every integer between-zero+one and+one+more+than the inputted value.",
                 "id": 3,
                 "key": 0
             }

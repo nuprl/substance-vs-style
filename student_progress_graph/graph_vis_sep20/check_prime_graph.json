@@ -4,56 +4,65 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 4,
+            "stderr_id": 3,
             "stdout_id": 0,
+            "hover": "stdout:\nTrue\n\nFalse\n\nFalse\n\nTrue\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 7,
+            "stderr_id": 5,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 8,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num % 4 == 0 or num % 3 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num % 4 == 0 or num % 3 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num % 4 == 0 or num % 3 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num % 4 == 0 or num % 3 == 0:\nTypeError: not all arguments converted during string formatting\n",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 8,
+            "stderr_id": 2,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num % 2 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num % 2 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num % 2 == 0:\nTypeError: not all arguments converted during string formatting\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num % 2 == 0:\nTypeError: not all arguments converted during string formatting\n",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 4,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num <= 1:\nTypeError: '<=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num <= 1:\nTypeError: '<=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num <= 1:\nTypeError: '<=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num <= 1:\nTypeError: '<=' not supported between instances of 'str' and 'int'\n",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 5,
+            "stderr_id": 7,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 10, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 10, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 10, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 10, in check_prime\n    for i in range(2, num):\nTypeError: 'str' object cannot be interpreted as an integer\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 0,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num < 2:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num < 2:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num < 2:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 5, in check_prime\n    if num < 2:\nTypeError: '<' not supported between instances of 'str' and 'int'\n",
             "color": "blue",
             "id": 7
         },
         {
             "stderr_id": 6,
             "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('2'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num < 2 or num % 2 == 0:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('8'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num < 2 or num % 2 == 0:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('9'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num < 2 or num % 2 == 0:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(check_prime('11'))\n  File \"/tmp/file.py\", line 7, in check_prime\n    if num < 2 or num % 2 == 0:\nTypeError: '<' not supported between instances of 'str' and 'int'\n",
             "color": "blue",
             "id": 8
         }
@@ -61,130 +70,162 @@
     "adjacency": [
         [
             {
+                "diff": 9,
+                "color": "yellow",
+                "arrow_color": "yellow",
+                "username": "student29",
+                "hover": "username:student29\ndiff:\n--- \n+++ \n@@ -1,10 +1,15 @@\n def check_prime(num): \"\"\"+Convert+each+input+to+an+integer. If-the-input-number+that+integer is prime return",
+                "id": 0,
+                "key": 0
+            },
+            {
                 "diff": 0,
-                "color": "blue",
-                "username": "student29",
-                "id": 0,
-                "key": 0
-            },
-            {
-                "diff": 14,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student49",
+                "hover": "username:student49\ndiff:\n--- \n+++ \n@@ -2,6 +2,12 @@\n check_prime(num): \"\"\" given+a+string+type+cast+it+into an integer, if",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 13,
-                "color": "blue",
+                "diff": 7,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student29",
+                "hover": "username:student29\ndiff:\n--- \n+++ \n@@ -2,19 +2,30 @@\n check_prime(num): \"\"\" Convert-each+the input to an integer.-If-that+Then+check+if+the integer is+a prime+number+and return-\"True\".-Else,-return+\"True\"+if+it+is+prime+and \"False\"+if+it's+not \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 6,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student32",
+                "hover": "username:student32\ndiff:\n--- \n+++ \n@@ -1,7 +1,11 @@\n def check_prime(num): \"\"\"-if+Turns+num+into+int.+If num is a",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 3,
-                "color": "green",
+                "diff": 8,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student49",
+                "hover": "username:student49\ndiff:\n--- \n+++ \n@@ -1,18 +1,13 @@\n def check_prime(num): \"\"\"-given-a-string-type-cast-it-into+typecast+num+as an integer, if-the-integer+num is only divisible",
                 "id": 1,
                 "key": 2
             },
             {
-                "diff": 1,
-                "color": "cyan",
+                "diff": 13,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -5,7 +5,12 @@\n the number is-prime+not+divisible+buy+4+or+3 return true else",
                 "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 15,
-                "color": "red",
-                "username": "student32",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 8,
-                "color": "cyan",
-                "username": "student66",
-                "id": 0,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 7,
-                "color": "cyan",
-                "username": "student66",
-                "id": 3,
-                "key": 0
-            },
-            {
-                "diff": 9,
-                "color": "cyan",
-                "username": "student66",
-                "id": 3,
-                "key": 1
-            },
-            {
-                "diff": 10,
-                "color": "cyan",
-                "username": "student66",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 4,
-                "color": "pink",
-                "username": "student67",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 11,
-                "color": "black",
-                "username": "student70",
-                "id": 6,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 2,
-                "color": "black",
-                "username": "student70",
-                "id": 7,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 12,
-                "color": "black",
-                "username": "student70",
-                "id": 8,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student32",
+                "hover": "username:student32\ndiff:\n--- \n+++ \n@@ -5,16 +5,14 @@\n num into int.-If+Return+a+bool+indicating+if num is a prime-number,-return-\"True\".-if-not,-return-\"False\"+number. \"\"\"",
+                "id": 1,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 5,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -8,4 +8,7 @@\n prime return true+else+return+false \"\"\"",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -1,6 +1,12 @@\n def check_prime(num): \"\"\"+change+the+string+into+an+in if the number",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 11,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -6,7 +6,7 @@\n string into an-in+integer if the number",
+                "id": 3,
+                "key": 1
+            },
+            {
+                "diff": 4,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -3,7 +3,7 @@\n \"\"\" change the-string+input into an integer",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
                 "color": "black",
+                "arrow_color": "black",
+                "username": "student67",
+                "hover": "username:student67\ndiff:\n--- \n+++ \n@@ -1,6 +1,11 @@\n def check_prime(num): \"\"\"+Converts+input+into+an+integer. Returns 'True' if",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 1,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -1,6 +1,12 @@\n def check_prime(num): \"\"\"+convert+the+input+to+an+integer. return whether the",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 15,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -1,17 +1,18 @@\n def check_prime(num): \"\"\"-convert-the-input-to-an-integer.-return-whether+save the input num+to+an+integer+variable.+return+whether+this+integer is prime. \"\"\"",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 10,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -1,14 +1,13 @@\n def check_prime(num): \"\"\"-save+treat the input num-to+as an-integer-variable.+integer. return whether this",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 14,
+                "color": "pink",
+                "arrow_color": "pink",
+                "username": "student70",
+                "hover": "username:student70\ndiff:\n--- \n+++ \n@@ -1,13 +1,20 @@\n def check_prime(num): \"\"\"-treat+create+a+new+variable+that+saves the input num as an-integer.+integer+using+int(). return whether this",
                 "id": 1,
                 "key": 0
             }

@@ -2,91 +2,91 @@
   !!int "0": |-
     ---
     +++
-    @@ -1,60 +1,59 @@
-     def topScores(lst): """-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the
+    @@ -33,23 +33,31 @@
+     This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. """
   !!int "1": |-
-    ---
-    +++
-    @@ -3,10 +3,15 @@
-     """ taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth
-  !!int "2": |-
-    ---
-    +++
-    @@ -5,18 +5,33 @@
-     a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name
-  !!int "3": |-
-    ---
-    +++
-    @@ -12,7 +12,7 @@
-     zeroth index is-less+more than or equal
-  !!int "4": |-
-    ---
-    +++
-    @@ -3,15 +3,31 @@
-     """ taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 """
-  !!int "5": |-
-    ---
-    +++
-    @@ -39,5 +39,12 @@
-     a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -30,26 +30,29 @@
-     this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the
-  !!int "7": |-
-    ---
-    +++
-    @@ -20,7 +20,9 @@
-     equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@
-     index into a+another+defined new list and
-  !!int "8": |-
-    ---
-    +++
-    @@ -1,81 +1,44 @@
-     def topScores(lst): """-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. """
-  !!int "9": |-
     ---
     +++
     @@ -3,15 +3,25 @@
      """ taken lst,+loop+through+each+list+and sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list if the zeroth
-  !!int "10": |-
+  !!int "2": |-
     ---
     +++
     @@ -33,11 +33,10 @@
      This function returns-all the-name+names of-the+5 students with grades
-  !!int "11": |-
+  !!int "3": |-
     ---
     +++
     @@ -30,4 +30,30 @@
      this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index. """
-  !!int "12": |-
+  !!int "4": |-
     ---
     +++
-    @@ -48,6 +48,8 @@
-     grades are higher+or+equal than 80. """
-  !!int "13": |-
+    @@ -39,5 +39,12 @@
+     a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. """
+  !!int "5": |-
     ---
     +++
-    @@ -53,7 +53,6 @@
-     and return this-new list. If the@@ -62,15 +61,17 @@
-     larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. """
-  !!int "14": |-
+    @@ -30,26 +30,29 @@
+     this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,60 +1,59 @@
+     def topScores(lst): """-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the
+  !!int "7": |-
     ---
     +++
     @@ -22,7 +22,17 @@
      a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns a list of@@ -32,19 +42,8 @@
      corresponding scores were-the-highest,-and-were a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. """
-  !!int "15": |-
+  !!int "8": |-
     ---
     +++
-    @@ -33,23 +33,31 @@
-     This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. """
-  !!int "16": |-
+    @@ -48,6 +48,8 @@
+     grades are higher+or+equal than 80. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -53,7 +53,6 @@
+     and return this-new list. If the@@ -62,15 +61,17 @@
+     larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -5,18 +5,33 @@
+     a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name
+  !!int "11": |-
+    ---
+    +++
+    @@ -20,7 +20,9 @@
+     equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@
+     index into a+another+defined new list and
+  !!int "12": |-
+    ---
+    +++
+    @@ -1,81 +1,44 @@
+     def topScores(lst): """-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. """
+  !!int "13": |-
     ---
     +++
     @@ -45,5 +45,12 @@
      a minimum of-80.+80,+with+a+maximum+list+length+of+5. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -3,15 +3,31 @@
+     """ taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 """
+  !!int "15": |-
+    ---
+    +++
+    @@ -3,10 +3,15 @@
+     """ taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth
+  !!int "16": |-
+    ---
+    +++
+    @@ -12,7 +12,7 @@
+     zeroth index is-less+more than or equal
 "nodes":
   !!int "0":
     "stderr":
@@ -103,7 +103,7 @@
     - |
       []
     "stdout_id": !!int |-
-      10
+      2
   !!int "1":
     "stderr":
     - ""
@@ -119,7 +119,7 @@
     - |
       []
     "stdout_id": !!int |-
-      4
+      10
   !!int "2":
     "stderr":
     - ""
@@ -135,7 +135,7 @@
     - |
       []
     "stdout_id": !!int |-
-      8
+      0
   !!int "3":
     "stderr":
     - ""
@@ -151,7 +151,7 @@
     - |
       []
     "stdout_id": !!int |-
-      1
+      7
   !!int "4":
     "stderr":
     - |
@@ -204,7 +204,7 @@
     - |
       ['Bob', 'Rachel', 'Alex']
     "stdout_id": !!int |-
-      3
+      8
   !!int "6":
     "stderr":
     - ""
@@ -220,7 +220,7 @@
     - |
       []
     "stdout_id": !!int |-
-      0
+      9
   !!int "7":
     "stderr":
     - ""
@@ -236,7 +236,7 @@
     - |
       []
     "stdout_id": !!int |-
-      7
+      3
   !!int "8":
     "stderr":
     - ""
@@ -252,7 +252,7 @@
     - |
       []
     "stdout_id": !!int |-
-      2
+      1
   !!int "9":
     "stderr":
     - |
@@ -277,7 +277,7 @@
           i.sort(reverse=True)
       TypeError: '<' not supported between instances of 'int' and 'str'
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - ""
@@ -296,7 +296,7 @@
       NameError: name 'new' is not defined
     - ""
     "stderr_id": !!int |-
-      4
+      3
     "stdout":
     - |
       None
@@ -317,7 +317,7 @@
       NameError: name 'new_' is not defined
     - ""
     "stderr_id": !!int |-
-      2
+      4
     "stdout":
     - |
       None
@@ -356,7 +356,7 @@
           return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
       TypeError: '>' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - ""
     - ""
@@ -378,11 +378,11 @@
     - |
       []
     "stdout_id": !!int |-
-      9
+      4
 "student_color":
   "student31": |-
-    blue
+    yellow
   "student53": |-
-    red
+    brown
   "student55": |-
-    green
+    purple

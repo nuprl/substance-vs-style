@@ -4,32 +4,37 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n15.4401\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n15.44\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n15.440100000000001\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 0,
+            "hover": "stdout:\n1.0101\n\n0.0\n\n3.5\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 3,
+            "stderr_id": 1,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.0))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['bread', 2, 3.50]], 0.5))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n",
             "color": "red",
             "id": 4
         }
@@ -37,23 +42,29 @@
     "adjacency": [
         [
             {
-                "diff": 9,
-                "color": "blue",
+                "diff": 5,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student33",
+                "hover": "username:student33\ndiff:\n--- \n+++ \n@@ -66,5 +66,10 @@\n added to the-\"total\"+\"total\",+truncated+to+two+decimal+places. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 8,
-                "color": "green",
+                "diff": 7,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -68,6 +68,17 @@\n and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 10,
-                "color": "cyan",
+                "diff": 6,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student44",
+                "hover": "username:student44\ndiff:\n--- \n+++ \n@@ -17,5 +17,19 @@\n index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. \"\"\"",
                 "id": 1,
                 "key": 2
             }
@@ -61,46 +72,58 @@
         [],
         [
             {
-                "diff": 4,
-                "color": "red",
+                "diff": 9,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student35",
+                "hover": "username:student35\ndiff:\n--- \n+++ \n@@ -51,5 +51,13 @@\n to give the+output.+The output+is+rounded+to+two+decimal+points. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 1,
-                "color": "pink",
+                "diff": 3,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -39,4 +39,11 @@\n items returns it.+This+function+rounds+to+2+decimal+points \"\"\"",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 2,
-                "color": "black",
+                "diff": 10,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student63",
+                "hover": "username:student63\ndiff:\n--- \n+++ \n@@ -48,7 +48,12 @@\n inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. \"\"\"",
                 "id": 1,
                 "key": 2
             },
             {
-                "diff": 3,
-                "color": "orange",
+                "diff": 4,
+                "color": "cyan",
+                "arrow_color": "cyan",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -27,4 +27,11 @@\n sale_tax to result.+Round+to+the+nearest+2+decimal+places. \"\"\"",
                 "id": 1,
                 "key": 3
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "green",
+                "diff": 1,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student40",
+                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -16,8 +16,21 @@\n within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@\n of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. \"\"\"",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 7,
-                "color": "black",
+                "diff": 8,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student63",
+                "hover": "username:student63\ndiff:\n--- \n+++ \n@@ -42,6 +42,8 @@\n that value by+1+plus the inputted number.",
                 "id": 2,
                 "key": 0
             }
@@ -108,15 +131,19 @@
         [
             {
                 "diff": 0,
-                "color": "orange",
+                "color": "cyan",
+                "arrow_color": "cyan",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 5,
-                "color": "orange",
+                "diff": 2,
+                "color": "cyan",
+                "arrow_color": "cyan",
                 "username": "student64",
+                "hover": "username:student64\ndiff:\n--- \n+++ \n@@ -6,10 +6,10 @@\n grocery_list, multiple index-0+1 with index-1,+2, repeat for all",
                 "id": 2,
                 "key": 0
             }

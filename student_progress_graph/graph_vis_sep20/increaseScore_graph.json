@@ -5,37 +5,43 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n10\n\n01\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n10\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 5,
+            "hover": "stdout:\n11\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 2,
+            "hover": "stdout:\n10\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 0,
+            "hover": "stdout:\n11\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 1,
+            "hover": "stdout:\n10\n\n1\n\n10\n\n15\n\n20\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         }
@@ -43,73 +49,11 @@
     "adjacency": [
         [
             {
-                "diff": 0,
-                "color": "blue",
-                "username": "student23",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 4,
-                "color": "blue",
-                "username": "student23",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 6,
-                "color": "blue",
-                "username": "student23",
-                "id": 1,
-                "key": 1
-            },
-            {
                 "diff": 1,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student23",
-                "id": 1,
-                "key": 2
-            },
-            {
-                "diff": 5,
-                "color": "pink",
-                "username": "student60",
-                "id": 1,
-                "key": 3
-            },
-            {
-                "diff": 8,
-                "color": "pink",
-                "username": "student60",
-                "id": 1,
-                "key": 4
-            }
-        ],
-        [
-            {
-                "diff": 7,
-                "color": "red",
-                "username": "student33",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 3,
-                "color": "green",
-                "username": "student50",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 9,
-                "color": "cyan",
-                "username": "student59",
+                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -15,7 +15,7 @@\n number is greater-then+than 9. If the@@ -24,7 +24,6 @@\n negative it turns-it into a positive@@ -41,6 +40,9 @@\n zero to the+end+of+the number. Then the",
                 "id": 1,
                 "key": 0
             }
@@ -117,8 +61,90 @@
         [
             {
                 "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
+                "username": "student23",
+                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -43,7 +43,7 @@\n end of the-number.+integar. Then the output",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 5,
+                "color": "yellow",
+                "arrow_color": "yellow",
+                "username": "student23",
+                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -36,14 +36,15 @@\n number it adds-a+the+number zero to the end of the-integar.+integer. Then the output",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
+                "username": "student23",
+                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -37,13 +37,17 @@\n it adds the-number+integer zero to the end of the+number+and+returns+an integer. Then the",
+                "id": 1,
+                "key": 2
+            },
+            {
+                "diff": 8,
                 "color": "black",
+                "arrow_color": "black",
+                "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -48,4 +48,10 @@\n score + 1.+This+function+always+returns+an+int \"\"\"",
+                "id": 1,
+                "key": 3
+            },
+            {
+                "diff": 9,
+                "color": "black",
+                "arrow_color": "black",
+                "username": "student60",
+                "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n end of the-number+number,+casts+it+back+into+an+int and returns it.@@ -48,10 +54,4 @@\n score + 1.-This-function-always-returns-an-int \"\"\"",
+                "id": 1,
+                "key": 4
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student33",
+                "hover": "username:student33\ndiff:\n--- \n+++ \n@@ -16,9 +16,12 @@\n the function returns-it-as-positive.+the+absolute+value+of+the+integer. If the integer",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "purple",
+                "arrow_color": "purple",
+                "username": "student50",
+                "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -10,11 +10,14 @@\n the number is-negative,+below+10, make it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student59",
+                "hover": "username:student59\ndiff:\n--- \n+++ \n@@ -4,7 +4,33 @@\n takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@\n more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "pink",
+                "arrow_color": "pink",
                 "username": "student75",
+                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -11,4 +11,21 @@\n its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20' \"\"\"",
                 "id": 1,
                 "key": 0
             }

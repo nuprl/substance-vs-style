@@ -2,74 +2,74 @@
   !!int "0": |-
     ---
     +++
-    @@ -17,7 +17,7 @@
-     time is between-0-8+0-9 return sleeping """
-  !!int "1": |-
-    ---
-    +++
     @@ -12,9 +12,11 @@
      the hour is-between-0-and+less+than+or+equal+to 8, return the
-  !!int "2": ""
+  !!int "1": ""
+  !!int "2": |-
+    ---
+    +++
+    @@ -18,9 +18,9 @@
+     the day is-Saturday+Sat or-Sunday.+Sun. Else, return weekday
   !!int "3": |-
-    ---
-    +++
-    @@ -11,7 +11,8 @@
-     8, return sleeping.-Return+Else,+return weekend if the@@ -20,7 +21,8 @@
-     Saturday or Sunday.-Return+Else,+return weekday if the
-  !!int "4": |-
-    ---
-    +++
-    @@ -2,9 +2,9 @@
-     print_time(day,hour): """ If-sat+Sat or-sun,+Sun, print weekend. If
-  !!int "5": |-
     ---
     +++
     @@ -5,15 +5,15 @@
      Sat or Sun,-print+return weekend. If Mon-Fri,-print+return weekday. If hours 0-8,-print+return sleeping. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -1,6 +1,11 @@
-     def print_time(day,hour): """+If+hours+0-8,+return+sleeping. If Sat or@@ -11,9 +16,4 @@
-     Mon-Fri, return weekday.-If-hours-0-8,-return-sleeping. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -1,6 +1,15 @@
-     def print_time(day,hour): """+If+hour+is+from+0+to+8,+return+'sleeping'. Return 'weekend' if@@ -13,13 +22,4 @@
-     'weekday' if not.-If-hour-is-from-0-to-8,-return-'sleeping'. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -1,28 +1,35 @@
-     def print_time(day,hour): """+If+the+hour+is+between+0+and+8,+return+sleeping. Return+weekend if the day-of-the-week is-a+Saturday+or+Sunday.+Return weekday-or-weekend if the-hour+day is-not+any+day between-0+Monday and-8.-Else,-return-sleeping.+Friday. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -16,7 +16,7 @@
-     0 and 8,-output+return the string "sleeping".@@ -34,11 +34,13 @@
-     and if so,-output+return the string "weekend". else,-output+return+the+string "weekday". """
-  !!int "10": |-
+  !!int "4": |-
     ---
     +++
     @@ -4,6 +4,10 @@
      If hours 0-8,+or+equal+to+8, return sleeping. If
-  !!int "11": |-
+  !!int "5": |-
+    ---
+    +++
+    @@ -2,9 +2,9 @@
+     print_time(day,hour): """ If-sat+Sat or-sun,+Sun, print weekend. If
+  !!int "6": |-
     ---
     +++
     @@ -23,9 +23,9 @@
      the day is-'Sat'+Sat or-'Sun',+Sun, and return weekday@@ -43,8 +43,19 @@
      time is between-'0'+0 and-'8',+8, inclusive.+If+the+time+is+any+other,+return+either+"weekend"+or+"weekday". """
-  !!int "12": |-
+  !!int "7": |-
     ---
     +++
-    @@ -18,9 +18,9 @@
-     the day is-Saturday+Sat or-Sunday.+Sun. Else, return weekday
-  !!int "13": |-
+    @@ -1,28 +1,35 @@
+     def print_time(day,hour): """+If+the+hour+is+between+0+and+8,+return+sleeping. Return+weekend if the day-of-the-week is-a+Saturday+or+Sunday.+Return weekday-or-weekend if the-hour+day is-not+any+day between-0+Monday and-8.-Else,-return-sleeping.+Friday. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -1,6 +1,11 @@
+     def print_time(day,hour): """+If+hours+0-8,+return+sleeping. If Sat or@@ -11,9 +16,4 @@
+     Mon-Fri, return weekday.-If-hours-0-8,-return-sleeping. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -11,7 +11,8 @@
+     8, return sleeping.-Return+Else,+return weekend if the@@ -20,7 +21,8 @@
+     Saturday or Sunday.-Return+Else,+return weekday if the
+  !!int "10": |-
+    ---
+    +++
+    @@ -17,7 +17,7 @@
+     time is between-0-8+0-9 return sleeping """
+  !!int "11": |-
     ---
     +++
     @@ -1,31 +1,13 @@
      def print_time(day,hour): """-Accept-the-day-of-the-week,-and-the-time-of-day-and-if-the-time-is-between-9-23-return+Return weekend for Sat and Sun-and+or weekday for any
+  !!int "12": |-
+    ---
+    +++
+    @@ -16,7 +16,7 @@
+     0 and 8,-output+return the string "sleeping".@@ -34,11 +34,13 @@
+     and if so,-output+return the string "weekend". else,-output+return+the+string "weekday". """
+  !!int "13": |-
+    ---
+    +++
+    @@ -1,6 +1,15 @@
+     def print_time(day,hour): """+If+hour+is+from+0+to+8,+return+'sleeping'. Return 'weekend' if@@ -13,13 +22,4 @@
+     'weekday' if not.-If-hour-is-from-0-to-8,-return-'sleeping'. """
 "nodes":
   !!int "0":
     "stderr":
@@ -80,7 +80,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       Invalid day
@@ -95,7 +95,7 @@
     - |
       Invalid day
     "stdout_id": !!int |-
-      5
+      6
   !!int "1":
     "stderr":
     - ""
@@ -105,7 +105,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       weekday
@@ -120,7 +120,7 @@
     - |
       weekday
     "stdout_id": !!int |-
-      2
+      5
   !!int "2":
     "stderr":
     - ""
@@ -130,7 +130,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       weekday
@@ -145,7 +145,7 @@
     - |
       sleeping
     "stdout_id": !!int |-
-      6
+      3
   !!int "3":
     "stderr":
     - ""
@@ -155,7 +155,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       weekend
@@ -180,7 +180,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       Weekday
@@ -195,7 +195,7 @@
     - |
       Sleeping
     "stdout_id": !!int |-
-      1
+      4
   !!int "5":
     "stderr":
     - ""
@@ -205,7 +205,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       weekend
@@ -230,7 +230,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       weekend
@@ -245,7 +245,7 @@
     - |
       weekday
     "stdout_id": !!int |-
-      4
+      1
   !!int "7":
     "stderr":
     - |2
@@ -279,7 +279,7 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 5
     "stderr_id": !!int |-
-      3
+      4
     "stdout":
     - ""
     - ""
@@ -288,7 +288,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      2
   !!int "8":
     "stderr":
     - |2
@@ -322,7 +322,7 @@
                     ^
       SyntaxError: '(' was never closed
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - ""
     - ""
@@ -331,7 +331,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      2
   !!int "9":
     "stderr":
     - |2
@@ -365,7 +365,7 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 5
     "stderr_id": !!int |-
-      5
+      3
     "stdout":
     - ""
     - ""
@@ -374,7 +374,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      2
   !!int "10":
     "stderr":
     - |2
@@ -408,7 +408,7 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 5
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - ""
@@ -417,7 +417,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      2
   !!int "11":
     "stderr":
     - |
@@ -451,7 +451,7 @@
           print_
       NameError: name 'print_' is not defined. Did you mean: 'print'?
     "stderr_id": !!int |-
-      4
+      5
     "stdout":
     - ""
     - ""
@@ -460,19 +460,19 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      2
 "student_color":
   "student12": |-
-    blue
+    yellow
   "student36": |-
-    red
+    brown
   "student38": |-
-    green
+    purple
   "student42": |-
-    cyan
-  "student43": |-
-    pink
-  "student54": |-
-    black
-  "student77": |-
     orange
+  "student43": |-
+    black
+  "student54": |-
+    pink
+  "student77": |-
+    cyan

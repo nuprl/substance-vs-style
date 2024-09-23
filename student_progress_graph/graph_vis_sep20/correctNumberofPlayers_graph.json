@@ -5,19 +5,22 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\nTrue\n\nFalse\n\nTrue\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 1,
-            "stdout_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian', \"Ertz\", \"Long\", \"Mewis\", \"Press\"], ['Falk', 'Glas', \"Seger\", \"Hurtig\", \"Rolfo\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian', \"Ertz\", \"Long\", \"Mewis\", \"Press\"], ['Falk', 'Glas', \"Seger\", \"Hurtig\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian',\"Ertz\",\"Long\", \"Mewis\",\"Press\"], ['Falk','Glas',\"Seger\",\"Hurtig\",\"Rolfo\"], [\"Bartoli\",\"Linari\",\"Gama\",\"Galli\",\"Caruso\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n",
             "color": "red",
             "id": 2
         }
@@ -25,16 +28,20 @@
     "adjacency": [
         [
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student22",
+                "hover": "username:student22\ndiff:\n--- \n+++ \n@@ -8,20 +8,14 @@\n of lists and-returns-a-boleean-based-on+checks+to+see if-the-number-of-elements-in-the+each list-are+is the same+length \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 0,
-                "color": "green",
+                "diff": 2,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student74",
+                "hover": "username:student74\ndiff:\n--- \n+++ \n@@ -10,6 +10,7 @@\n five strings. Each+nested list should equal@@ -17,12 +18,20 @@\n and output true.+The+whole+list+can+be+any+length. Any+nested list less or more-then+than five should output",
                 "id": 1,
                 "key": 1
             }
@@ -42,9 +49,11 @@
         [],
         [
             {
-                "diff": 2,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student61",
+                "hover": "username:student61\ndiff:\n--- \n+++ \n@@ -7,26 +7,19 @@\n True if the-lists-have+counts+are the same-count-of-items and will return False if the-lists-do+counts+are not-have the same-count-of-items \"\"\"",
                 "id": 1,
                 "key": 0
             }

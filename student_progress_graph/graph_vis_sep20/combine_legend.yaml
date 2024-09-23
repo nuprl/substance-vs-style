@@ -2,58 +2,58 @@
   !!int "0": |-
     ---
     +++
-    @@ -1,11 +1,17 @@
-     def combine(l1,l2): """-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.
-  !!int "1": |-
-    ---
-    +++
-    @@ -7,43 +7,48 @@
-     of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. """
-  !!int "2": |-
-    ---
-    +++
-    @@ -61,4 +61,34 @@
-     and so forth.+since+the+elements+of+l1+and+l2+are+lists,+assemble+a+new+list+from+the+elements+of+those+lists,+instead+of+simply+trying+to+append+one+element+onto+the+other """
-  !!int "3": |-
-    ---
-    +++
-    @@ -2,6 +2,9 @@
-     combine(l1,l2): """ Combine+all+elements+in two lists """
-  !!int "4": |-
-    ---
-    +++
-    @@ -1,18 +1,7 @@
-     def combine(l1,l2): """-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other """
-  !!int "5": |-
-    ---
-    +++
     @@ -1,10 +1,18 @@
      def combine(l1,l2): """-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other """
-  !!int "6": |-
-    ---
-    +++
-    @@ -4,9 +4,5 @@
-     Combine the two-lists,-alternating-the-lists-inside.+lists. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -1,18 +1,23 @@
-     def combine(l1,l2): """-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two """
-  !!int "8": |-
+  !!int "1": |-
     ---
     +++
     @@ -2,8 +2,11 @@
      combine(l1,l2): """ Combine-all elements+sharing+the+same+index in two lists
-  !!int "9": |-
+  !!int "2": |-
     ---
     +++
     @@ -4,5 +4,9 @@
      Combine the two-lists.+lists+into+one+single+list. """
-  !!int "10": |-
+  !!int "3": |-
+    ---
+    +++
+    @@ -1,18 +1,7 @@
+     def combine(l1,l2): """-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other """
+  !!int "4": |-
+    ---
+    +++
+    @@ -61,4 +61,34 @@
+     and so forth.+since+the+elements+of+l1+and+l2+are+lists,+assemble+a+new+list+from+the+elements+of+those+lists,+instead+of+simply+trying+to+append+one+element+onto+the+other """
+  !!int "5": |-
+    ---
+    +++
+    @@ -4,9 +4,5 @@
+     Combine the two-lists,-alternating-the-lists-inside.+lists. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,18 +1,23 @@
+     def combine(l1,l2): """-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two """
+  !!int "7": |-
     ---
     +++
     @@ -1,10 +1,10 @@
      def combine(l1,l2): """-Combine-all-elements-within+Take two lists+and+combine+them """
+  !!int "8": |-
+    ---
+    +++
+    @@ -2,6 +2,9 @@
+     combine(l1,l2): """ Combine+all+elements+in two lists """
+  !!int "9": |-
+    ---
+    +++
+    @@ -7,43 +7,48 @@
+     of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -1,11 +1,17 @@
+     def combine(l1,l2): """-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.
 "nodes":
   !!int "0":
     "stderr":
@@ -70,7 +70,7 @@
     - |
       [[[2, 3], [1, 1]], [[1, 1], [14, 15]], [[10, 11], [3, 2]], [[4, 5], [77, 87]]]
     "stdout_id": !!int |-
-      5
+      6
   !!int "1":
     "stderr":
     - ""
@@ -86,7 +86,7 @@
     - |
       [[2, 3, 1, 1], [1, 1, 14, 15], [10, 11, 3, 2], [4, 5, 77, 87]]
     "stdout_id": !!int |-
-      6
+      5
   !!int "2":
     "stderr":
     - ""
@@ -102,7 +102,7 @@
     - |
       [[2, 3, 1, 1], [2, 3, 14, 15], [2, 3, 3, 2], [2, 3, 77, 87], [1, 1, 1, 1], [1, 1, 14, 15], [1, 1, 3, 2], [1, 1, 77, 87], [10, 11, 1, 1], [10, 11, 14, 15], [10, 11, 3, 2], [10, 11, 77, 87], [4, 5, 1, 1], [4, 5, 14, 15], [4, 5, 3, 2], [4, 5, 77, 87]]
     "stdout_id": !!int |-
-      3
+      0
   !!int "3":
     "stderr":
     - ""
@@ -118,7 +118,7 @@
     - |
       [[2, 3], [1, 1], [10, 11], [4, 5], [1, 1], [14, 15], [3, 2], [77, 87]]
     "stdout_id": !!int |-
-      4
+      2
   !!int "4":
     "stderr":
     - ""
@@ -134,7 +134,7 @@
     - |
       [[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], [4, 5], [77, 87]]
     "stdout_id": !!int |-
-      2
+      1
   !!int "5":
     "stderr":
     - |
@@ -171,7 +171,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      3
   !!int "6":
     "stderr":
     - ""
@@ -187,13 +187,13 @@
     - |
       [[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], 4, 5]
     "stdout_id": !!int |-
-      0
+      4
 "student_color":
   "student19": |-
-    blue
+    yellow
   "student20": |-
-    red
+    brown
   "student42": |-
-    green
+    purple
   "student54": |-
-    cyan
+    orange

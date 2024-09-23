@@ -3,13 +3,13 @@
   !!int "1": |-
     ---
     +++
-    @@ -4,6 +4,9 @@
-     If the name+of+the+dictionary is 'Aspen', returns
+    @@ -2,13 +2,11 @@
+     check_for_aspen(trees): """ If+'Aspen'+is+in the-name-of-the-dictionary-is-'Aspen',+dictionary, returns 'Yup'. Otherwise
   !!int "2": |-
     ---
     +++
-    @@ -2,13 +2,11 @@
-     check_for_aspen(trees): """ If+'Aspen'+is+in the-name-of-the-dictionary-is-'Aspen',+dictionary, returns 'Yup'. Otherwise
+    @@ -10,7 +10,7 @@
+     values. Check if-"aspen"+"Aspen" is one of
   !!int "3": |-
     ---
     +++
@@ -18,18 +18,19 @@
   !!int "4": |-
     ---
     +++
-    @@ -10,7 +10,7 @@
-     values. Check if-"aspen"+"Aspen" is one of
+    @@ -5,13 +5,11 @@
+     if "aspen" is-one-of-the-keys+a+key in a-dict.+dictionary. Return "Yup" if
   !!int "5": |-
     ---
     +++
-    @@ -5,13 +5,11 @@
-     if "aspen" is-one-of-the-keys+a+key in a-dict.+dictionary. Return "Yup" if
+    @@ -11,7 +11,6 @@
+     is a String-treename key and a@@ -28,8 +27,8 @@
+     that has a-treename-"Aspen"+key,+"Aspen", whose number is
   !!int "6": |-
     ---
     +++
-    @@ -8,10 +8,6 @@
-     if there is-a-value-that-has a key, "Aspen".
+    @@ -4,6 +4,9 @@
+     If the name+of+the+dictionary is 'Aspen', returns
   !!int "7": |-
     ---
     +++
@@ -38,9 +39,8 @@
   !!int "8": |-
     ---
     +++
-    @@ -11,7 +11,6 @@
-     is a String-treename key and a@@ -28,8 +27,8 @@
-     that has a-treename-"Aspen"+key,+"Aspen", whose number is
+    @@ -8,10 +8,6 @@
+     if there is-a-value-that-has a key, "Aspen".
 "nodes":
   !!int "0":
     "stderr":
@@ -48,7 +48,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       Nope
@@ -57,14 +57,14 @@
     - |
       Nope
     "stdout_id": !!int |-
-      1
+      2
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       Nope
@@ -73,7 +73,7 @@
     - |
       Yup
     "stdout_id": !!int |-
-      2
+      0
   !!int "2":
     "stderr":
     - |
@@ -98,13 +98,13 @@
           if tree.name == 'Aspen':
       AttributeError: 'str' object has no attribute 'name'
     "stderr_id": !!int |-
-      3
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      0
+      1
   !!int "3":
     "stderr":
     - |
@@ -129,13 +129,13 @@
           if trees['name'] == 'Aspen':
       KeyError: 'name'
     "stderr_id": !!int |-
-      1
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      0
+      1
   !!int "4":
     "stderr":
     - |
@@ -160,19 +160,19 @@
           if tree["treename"] == "Aspen" and tree["number"] > 0:
       TypeError: string indices must be integers
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      0
+      1
 "student_color":
   "student27": |-
-    blue
+    yellow
   "student49": |-
-    red
+    brown
   "student67": |-
-    green
+    purple
   "student68": |-
-    cyan
+    orange

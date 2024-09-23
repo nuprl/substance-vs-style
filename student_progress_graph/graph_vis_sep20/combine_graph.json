@@ -5,43 +5,50 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 6,
+            "hover": "stdout:\n[[[1, 2, 3], [10, 20, 30]], [[4, 5, 6], [40, 50, 60]], [[7, 8, 9], [70, 80, 90]]]\n\n[[[9, 8, 7], [0, 1, 2]]]\n\n[[[2, 3], [1, 1]], [[1, 1], [14, 15]], [[10, 11], [3, 2]], [[4, 5], [77, 87]]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 6,
+            "stdout_id": 5,
+            "hover": "stdout:\n[[1, 2, 3, 10, 20, 30], [4, 5, 6, 40, 50, 60], [7, 8, 9, 70, 80, 90]]\n\n[[9, 8, 7, 0, 1, 2]]\n\n[[2, 3, 1, 1], [1, 1, 14, 15], [10, 11, 3, 2], [4, 5, 77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n[[1, 2, 3, 10, 20, 30], [1, 2, 3, 40, 50, 60], [1, 2, 3, 70, 80, 90], [4, 5, 6, 10, 20, 30], [4, 5, 6, 40, 50, 60], [4, 5, 6, 70, 80, 90], [7, 8, 9, 10, 20, 30], [7, 8, 9, 40, 50, 60], [7, 8, 9, 70, 80, 90]]\n\n[[9, 8, 7, 0, 1, 2]]\n\n[[2, 3, 1, 1], [2, 3, 14, 15], [2, 3, 3, 2], [2, 3, 77, 87], [1, 1, 1, 1], [1, 1, 14, 15], [1, 1, 3, 2], [1, 1, 77, 87], [10, 11, 1, 1], [10, 11, 14, 15], [10, 11, 3, 2], [10, 11, 77, 87], [4, 5, 1, 1], [4, 5, 14, 15], [4, 5, 3, 2], [4, 5, 77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 2,
+            "hover": "stdout:\n[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 20, 30], [40, 50, 60], [70, 80, 90]]\n\n[[9, 8, 7], [0, 1, 2]]\n\n[[2, 3], [1, 1], [10, 11], [4, 5], [1, 1], [14, 15], [3, 2], [77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n[[1, 2, 3], [10, 20, 30], [4, 5, 6], [40, 50, 60], [7, 8, 9], [70, 80, 90]]\n\n[[9, 8, 7], [0, 1, 2]]\n\n[[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], [4, 5], [77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
             "stderr_id": 1,
-            "stdout_id": 1,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[1,2,3],[4,5,6],[7,8,9]],[[10,20,30],[40,50,60],[70,80,90]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[9,8,7]], [[0,1,2]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[2,3],[1,1],[10,11],[4, 5]],[[1, 1],[14, 15],[3, 2],[77, 87]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n",
             "color": "red",
             "id": 5
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n[[1, 2, 3], [10, 20, 30], [4, 5, 6], [40, 50, 60], 7, 8, 9]\n\n[9, 8, 7]\n\n[[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], 4, 5]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         }
@@ -49,16 +56,20 @@
     "adjacency": [
         [
             {
-                "diff": 1,
-                "color": "blue",
+                "diff": 9,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student19",
+                "hover": "username:student19\ndiff:\n--- \n+++ \n@@ -7,43 +7,48 @@\n of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. \"\"\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 2,
-                "color": "green",
+                "diff": 4,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student42",
+                "hover": "username:student42\ndiff:\n--- \n+++ \n@@ -61,4 +61,34 @@\n and so forth.+since+the+elements+of+l1+and+l2+are+lists,+assemble+a+new+list+from+the+elements+of+those+lists,+instead+of+simply+trying+to+append+one+element+onto+the+other \"\"\"",
                 "id": 1,
                 "key": 1
             }
@@ -66,9 +77,69 @@
         [],
         [
             {
-                "diff": 10,
-                "color": "red",
+                "diff": 7,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -1,10 +1,10 @@\n def combine(l1,l2): \"\"\"-Combine-all-elements-within+Take two lists+and+combine+them \"\"\"",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -1,10 +1,18 @@\n def combine(l1,l2): \"\"\"-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other \"\"\"",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -2,6 +2,9 @@\n combine(l1,l2): \"\"\" Combine+all+elements+in two lists \"\"\"",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -4,5 +4,9 @@\n Combine the two-lists.+lists+into+one+single+list. \"\"\"",
+                "id": 3,
+                "key": 1
+            },
+            {
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -2,8 +2,11 @@\n combine(l1,l2): \"\"\" Combine-all elements+sharing+the+same+index in two lists",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 10,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -1,11 +1,17 @@\n def combine(l1,l2): \"\"\"-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "brown",
+                "arrow_color": "brown",
+                "username": "student20",
+                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -1,18 +1,7 @@\n def combine(l1,l2): \"\"\"-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other \"\"\"",
                 "id": 3,
                 "key": 0
             }
@@ -76,45 +147,10 @@
         [
             {
                 "diff": 5,
-                "color": "red",
-                "username": "student20",
-                "id": 4,
-                "key": 0
-            },
-            {
-                "diff": 3,
-                "color": "red",
-                "username": "student20",
-                "id": 3,
-                "key": 0
-            },
-            {
-                "diff": 9,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student54",
-                "id": 3,
-                "key": 1
-            },
-            {
-                "diff": 8,
-                "color": "red",
-                "username": "student20",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 0,
-                "color": "cyan",
-                "username": "student54",
-                "id": 6,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 4,
-                "color": "red",
-                "username": "student20",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -4,9 +4,5 @@\n Combine the two-lists,-alternating-the-lists-inside.+lists. \"\"\"",
                 "id": 3,
                 "key": 0
             }
@@ -122,17 +158,10 @@
         [
             {
                 "diff": 6,
-                "color": "cyan",
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student54",
-                "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 7,
-                "color": "cyan",
-                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -1,18 +1,23 @@\n def combine(l1,l2): \"\"\"-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two \"\"\"",
                 "id": 1,
                 "key": 0
             }

@@ -4,62 +4,72 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 7,
-            "stdout_id": 5,
+            "stderr_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 3,
+            "stderr_id": 4,
+            "stdout_id": 1,
+            "hover": "stdout:\n-2\n\n-2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 4,
             "stdout_id": 6,
+            "hover": "stdout:\n2\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\n",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 4,
+            "stderr_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 0,
+            "stderr_id": 5,
+            "stdout_id": 5,
+            "hover": "stdout:\n-4\n\n\n\n0\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\n",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 5,
+            "stderr_id": 7,
+            "stdout_id": 0,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 5,
+            "stderr_id": 2,
+            "stdout_id": 0,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 6,
+            "stdout_id": 3,
+            "hover": "stdout:\n-2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    count = int(lst[0])\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 4,
+            "hover": "stdout:\n4\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
         }
@@ -67,9 +77,11 @@
     "adjacency": [
         [
             {
-                "diff": 10,
-                "color": "blue",
+                "diff": 2,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student27",
+                "hover": "username:student27\ndiff:\n--- \n+++ \n@@ -8,7 +8,7 @@\n a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@\n is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum",
                 "id": 1,
                 "key": 0
             }
@@ -77,86 +89,106 @@
         [],
         [
             {
-                "diff": 2,
-                "color": "red",
+                "diff": 1,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student29",
+                "hover": "username:student29\ndiff:\n--- \n+++ \n@@ -18,7 +18,7 @@\n correspond to an-even+odd index by -1.",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 5,
-                "color": "red",
+                "diff": 7,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student29",
+                "hover": "username:student29\ndiff:\n--- \n+++ \n@@ -15,10 +15,11 @@\n list entries that+don't correspond to an-odd+even index by -1.",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 8,
-                "color": "pink",
+                "diff": 5,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student68",
+                "hover": "username:student68\ndiff:\n--- \n+++ \n@@ -13,33 +13,36 @@\n characters into integers.-Starting-from-the-front-of-the-array,-subtract+Store the first-two-numbers-and-store-that+number+in+the+array in a count variable. then-add+subtract the next number+from+the+count.+With+the+next+number,+add+it to the-count.+count+and+then alternate between subtracting",
                 "id": 8,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
-                "color": "green",
+                "diff": 6,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student49",
+                "hover": "username:student49\ndiff:\n--- \n+++ \n@@ -5,7 +5,13 @@\n a list of-integers,+strings,+type+cast+to+integers+and+then take the first",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "cyan",
+                "diff": 0,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student66",
+                "hover": "username:student66\ndiff:\n",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
-                "color": "cyan",
+                "diff": 3,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -1,41 +1,32 @@\n def subtract_add(lst): \"\"\"-Take+Subtract the-first-two-items+second+item in the array list-and-change-them-into-integers+from+the+first+item. then-take+subtract+the+forth+item+from+the+third+item then-take-the-next-two-integers-and-subtract-them-from-each-other.-sum+add the two-values-return-the-product.+sums. if there are",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 7,
-                "color": "cyan",
+                "diff": 10,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -1,6 +1,10 @@\n def subtract_add(lst): \"\"\"+Change+them+into+integers. Subtract the second",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 9,
-                "color": "cyan",
+                "diff": 4,
+                "color": "orange",
+                "arrow_color": "orange",
                 "username": "student66",
+                "hover": "username:student66\ndiff:\n--- \n+++ \n@@ -2,9 +2,12 @@\n subtract_add(lst): \"\"\" Change-them+the+first+two+items into-integers.+integers Subtract the second@@ -17,6 +20,14 @@\n the first item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8 +49,13 @@\n two items in-the list+change+those+two+items+into+integers subtract the second",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "pink",
+                "diff": 8,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student68",
+                "hover": "username:student68\ndiff:\n--- \n+++ \n@@ -1,6 +1,19 @@\n def subtract_add(lst): \"\"\"+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array",
                 "id": 9,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
-                "color": "pink",
+                "diff": 9,
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student68",
+                "hover": "username:student68\ndiff:\n--- \n+++ \n@@ -1,20 +1,7 @@\n def subtract_add(lst): \"\"\"-if-there-are-no-values-stored-in-the-given-array,-return-0.-Else,-given+Given an array of@@ -72,5 +59,13 @@\n array. return the-count+count.+If+the+given+array+is+empty,+return+0. \"\"\"",
                 "id": 1,
                 "key": 0
             }

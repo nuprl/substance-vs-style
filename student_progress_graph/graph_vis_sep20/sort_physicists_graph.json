@@ -4,38 +4,44 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 4,
+            "stderr_id": 1,
+            "stdout_id": 3,
+            "hover": "stdout:\n['Peiris', 'Ghez', 'Strickland']\n\n['Peiris', 'Ghez', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Youyou\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Taylor\",59,\"Computer Science\"],[\"Tu\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 5,
+            "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics'], ['Youyou', 91, 'Chemistry']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics'], ['Taylor', 59, 'Computer Science'], ['Tu', 91, 'Chemistry']]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 1,
+            "hover": "stdout:\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 3,
+            "stderr_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics']]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         }
@@ -44,22 +50,28 @@
         [
             {
                 "diff": 9,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student12",
+                "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -40,4 +40,8 @@\n the big list.+Return+this+sorted+list \"\"\"",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 10,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student12",
+                "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -8,8 +8,7 @@\n the 0th element-in-the+each list within the@@ -34,7 +33,7 @@\n 1st value in-the+each list within the@@ -43,5 +42,5 @@\n Return this sorted-list+list. \"\"\"",
                 "id": 0,
                 "key": 1
             },
             {
-                "diff": 7,
-                "color": "blue",
+                "diff": 0,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student12",
+                "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -1,7 +1,7 @@\n def sort_physicists(scientists): \"\"\"-Create+Return a list of@@ -10,9 +10,8 @@\n element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@\n says \"Physics\". Sort-the+this list from least@@ -37,7 +36,7 @@\n list within the-big+scientists list. Return this",
                 "id": 1,
                 "key": 0
             }
@@ -67,64 +79,80 @@
         [],
         [
             {
-                "diff": 5,
-                "color": "red",
+                "diff": 4,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -1,20 +1,29 @@\n def sort_physicists(scientists): \"\"\"+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is \"Physics\" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 8,
-                "color": "red",
+                "diff": 5,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -16,10 +16,12 @@\n is \"Physics\" return+just the names-based-on+in+order+of what year they",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
-                "color": "red",
+                "diff": 6,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -18,7 +18,7 @@\n return just the-names+names, in order of",
                 "id": 1,
                 "key": 0
             },
             {
                 "diff": 1,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -29,23 +29,45 @@\n Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. \"\"\"",
                 "id": 1,
                 "key": 1
             },
             {
                 "diff": 2,
-                "color": "green",
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -26,4 +26,11 @@\n in a list.+Then+sort+the+list+into+alphabetical+order. \"\"\"",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 6,
-                "color": "green",
+                "diff": 10,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n based on the-number,+number+given+in+the+set+of+lists, but don't return",
                 "id": 4,
                 "key": 1
             },
             {
-                "diff": 4,
-                "color": "green",
+                "diff": 7,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -31,6 +31,10 @@\n the list into-alphabetical-order.+ascending+order+based+on+the+number. \"\"\"",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
-                "color": "green",
+                "diff": 8,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -36,5 +36,10 @@\n based on the+number,+but+don't+return+the number. \"\"\"",
                 "id": 4,
                 "key": 0
             }

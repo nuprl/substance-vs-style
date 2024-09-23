@@ -5,55 +5,64 @@
     "nodes": [
         {
             "stderr_id": 1,
-            "stdout_id": 7,
+            "stdout_id": 2,
+            "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', ['list'], 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 1,
-            "stdout_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 0,
+            "stderr_id": 2,
+            "stdout_id": 5,
+            "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 1, 4]\n\n[8, 56, 8, '5', '4']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    i += num\nTypeError: 'int' object is not iterable\n",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 1,
-            "stdout_id": 2,
+            "stdout_id": 4,
+            "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 4,
+            "stderr_id": 3,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int([8, 56, 8, '5', '4'], 1))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n",
             "color": "red",
             "id": 4
         },
         {
             "stderr_id": 1,
-            "stdout_id": 6,
+            "stdout_id": 7,
+            "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 4,
+            "stderr_id": 4,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int([8, 56, 8, '5', '4'], 1))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 6,
+            "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, 6, 5]\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 13, in add_int\n    new_lst.append(item + num)\nTypeError: can only concatenate list (not \"int\") to list\n",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 5,
+            "stderr_id": 5,
+            "stdout_id": 1,
+            "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    lst[i] = lst[i] + num\nTypeError: can only concatenate list (not \"int\") to list\n",
             "color": "red",
             "id": 8
         }
@@ -62,8 +71,10 @@
         [
             {
                 "diff": 7,
-                "color": "blue",
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student19",
+                "hover": "username:student19\ndiff:\n--- \n+++ \n@@ -6,25 +6,39 @@\n an input list-(which-can-have-both-strings-and-integers) and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers in the+list,+the input-list.+integer+is+added+to+that+number. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -71,18 +82,66 @@
         [],
         [
             {
-                "diff": 1,
-                "color": "red",
+                "diff": 4,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student36",
+                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -18,7 +18,10 @@\n outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@\n of the list+to+the+number \"\"\"",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
-                "color": "green",
+                "diff": 1,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student42",
+                "hover": "username:student42\ndiff:\n--- \n+++ \n@@ -60,5 +60,25 @@\n they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless \"\"\"",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -17,4 +17,20 @@\n the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. \"\"\"",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -22,15 +22,26 @@\n is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. \"\"\"",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -22,11 +22,16 @@\n is a string,-add-it+append+the+integer+on to the end+of+the+string to create a",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "orange",
+                "arrow_color": "orange",
+                "username": "student54",
+                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -42,11 +42,5 @@\n is an integer,-or-a-string-containing-an-integer, concatenate. \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -90,44 +149,10 @@
         [
             {
                 "diff": 0,
-                "color": "cyan",
-                "username": "student54",
-                "id": 5,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "cyan",
-                "username": "student54",
-                "id": 6,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 2,
-                "color": "cyan",
-                "username": "student54",
-                "id": 7,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 3,
-                "color": "cyan",
-                "username": "student54",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 4,
-                "color": "pink",
+                "color": "black",
+                "arrow_color": "black",
                 "username": "student77",
+                "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -6,7 +6,8 @@\n a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@\n in the list,-and add the number@@ -32,5 +32,14 @@\n numbers in the+list,+and+do+nothing+to+the+lists+in+the list. \"\"\"",
                 "id": 1,
                 "key": 0
             }

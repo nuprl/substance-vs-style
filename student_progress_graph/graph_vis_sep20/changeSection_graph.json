@@ -5,31 +5,36 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\nrds the door.Turn towa\n\nthe tall sail\n\nstablishinge\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 0,
+            "hover": "stdout:\nawot nruTrds the door.\n\nlias llat eht\n\nestablishing\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
             "stdout_id": 1,
+            "hover": "stdout:\nrawot nruTds the door.\n\nlias llat eht\n\nsetablishing\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
             "stdout_id": 2,
+            "hover": "stdout:\nawot nru\n\nlias llat eh\n\n\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
             "stderr_id": 0,
             "stdout_id": 3,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         }
@@ -37,9 +42,11 @@
     "adjacency": [
         [
             {
-                "diff": 2,
-                "color": "blue",
+                "diff": 3,
+                "color": "yellow",
+                "arrow_color": "yellow",
                 "username": "student10",
+                "hover": "username:student10\ndiff:\n--- \n+++ \n@@ -11,7 +11,7 @@\n i. Function would-flip+write the first i@@ -19,20 +19,39 @@\n of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output \"\"\"",
                 "id": 1,
                 "key": 0
             }
@@ -47,27 +54,33 @@
         [],
         [
             {
-                "diff": 3,
-                "color": "red",
+                "diff": 2,
+                "color": "brown",
+                "arrow_color": "brown",
                 "username": "student25",
+                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -16,6 +16,16 @@\n the given string.+In+this+case,+indexing+starts+with+\"1\"+instead+of+\"0\". At the given",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
-                "color": "green",
+                "diff": 1,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student26",
+                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -19,6 +19,6 @@\n and display the-new+original string \"\"\"",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
-                "color": "green",
+                "diff": 0,
+                "color": "purple",
+                "arrow_color": "purple",
                 "username": "student26",
+                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -17,8 +17,12 @@\n the slice and-display+replace+it+in the-original+string;+return+the string \"\"\"",
                 "id": 1,
                 "key": 0
             }

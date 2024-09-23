@@ -2,23 +2,23 @@
   !!int "0": |-
     ---
     +++
-    @@ -4,8 +4,23 @@
-     iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 """
+    @@ -5,20 +5,31 @@
+     items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. """
   !!int "1": |-
-    ---
-    +++
-    @@ -1,10 +1,9 @@
-     def add_up(arr): """-sums-the-total-of+adds+up+only integers and floats
-  !!int "2": |-
     ---
     +++
     @@ -1,13 +1,18 @@
      def add_up(arr): """+iterates+through+the+array+and sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,
-  !!int "3": |-
+  !!int "2": |-
     ---
     +++
     @@ -1,9 +1,7 @@
      def add_up(arr): """-adds-up-only+sums integers and floats
+  !!int "3": |-
+    ---
+    +++
+    @@ -4,8 +4,23 @@
+     iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 """
   !!int "4": |-
     ---
     +++
@@ -27,8 +27,8 @@
   !!int "5": |-
     ---
     +++
-    @@ -5,20 +5,31 @@
-     items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. """
+    @@ -1,10 +1,9 @@
+     def add_up(arr): """-sums-the-total-of+adds+up+only integers and floats
 "nodes":
   !!int "0":
     "stderr":
@@ -61,7 +61,7 @@
     - |
       0
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - |2
@@ -83,9 +83,9 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      1
 "student_color":
   "student24": |-
-    blue
+    yellow
   "student7": |-
-    red
+    brown

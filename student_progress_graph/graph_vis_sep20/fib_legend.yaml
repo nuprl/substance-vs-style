@@ -3,79 +3,79 @@
   !!int "1": |-
     ---
     +++
-    @@ -3,6 +3,12 @@
-     """ this function+returns+only+true+or+false.+It returns false if
+    @@ -14,18 +14,15 @@
+     if the value-contains-a-'9'+is+19 but returns true if the value-does+is not-contain-a-9+19 """
   !!int "2": |-
-    ---
-    +++
-    @@ -12,7 +12,7 @@
-     of the list-['1','13','21']+[1,13,21] and return a
-  !!int "3": |-
     ---
     +++
     @@ -1,20 +1,21 @@
      def fib(n): """-write-a-function-that-checks+check to see if-a+the number is part of the-fibonacci-sequence+list+['1','13','21']+and+return+a+boolean+value """
+  !!int "3": |-
+    ---
+    +++
+    @@ -1,16 +1,18 @@
+     def fib(n): """-Returns-True+Checks if the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers """
   !!int "4": |-
     ---
     +++
-    @@ -1,35 +1,25 @@
-     def fib(n): """-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns True.-If+Else, it-is-not-in-the-set,-return+returns False. """
+    @@ -2,13 +2,15 @@
+     fib(n): """ Returns-whether-or-not-a+True+if+the number is a Fibonacci-number+number,+or+False+otherwise. """
   !!int "5": |-
-    ---
-    +++
-    @@ -9,26 +9,45 @@
-     an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return False-if-it-is-not """
-  !!int "6": |-
     ---
     +++
     @@ -6,19 +6,12 @@
      inputted number is-in-the-set-of+a Fibonacci-numbers.+number. If-the-number-is-in-the-set,+it+is, return True, otherwise,
+  !!int "6": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     if n==1 or-13+n==13 or-21+n==21 """
   !!int "7": |-
     ---
     +++
-    @@ -2,9 +2,11 @@
-     fib(n): """ Check+if inputted number-against+is+in the set of
+    @@ -3,6 +3,12 @@
+     """ this function+returns+only+true+or+false.+It returns false if
   !!int "8": |-
+    ---
+    +++
+    @@ -13,8 +13,14 @@
+     it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number, return False. """
+  !!int "9": |-
     ---
     +++
     @@ -1,14 +1,23 @@
      def fib(n): """+Put+all+possible+Fibonacci+numbers+in+a+set. Check if+the inputted number is-a-Fibonacci-number.+in+that+set. If it is,@@ -18,9 +27,9 @@
      it is not-a-Fibonacci-number,+in+the+set, return False. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -1,16 +1,18 @@
-     def fib(n): """-Returns-True+Checks if the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers """
   !!int "10": |-
     ---
     +++
-    @@ -10,5 +10,16 @@
-     value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a 9 """
+    @@ -12,7 +12,7 @@
+     of the list-['1','13','21']+[1,13,21] and return a
   !!int "11": |-
     ---
     +++
-    @@ -14,18 +14,15 @@
-     if the value-contains-a-'9'+is+19 but returns true if the value-does+is not-contain-a-9+19 """
+    @@ -2,9 +2,11 @@
+     fib(n): """ Check+if inputted number-against+is+in the set of
   !!int "12": |-
+    ---
+    +++
+    @@ -1,35 +1,25 @@
+     def fib(n): """-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns True.-If+Else, it-is-not-in-the-set,-return+returns False. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -9,26 +9,45 @@
+     an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return False-if-it-is-not """
+  !!int "14": |-
     ---
     +++
     @@ -1,16 +1,25 @@
      def fib(n): """-If+Check inputted number+against+the+set+of+Fibonacci+numbers.+If+the+number is-a-Fibonacci-number,+in+the+set, return-true,-otherwise+True,+otherwise, return-false.+False. """
-  !!int "13": |-
-    ---
-    +++
-    @@ -13,8 +13,14 @@
-     it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number, return False. """
-  !!int "14": |-
-    ---
-    +++
-    @@ -2,13 +2,15 @@
-     fib(n): """ Returns-whether-or-not-a+True+if+the number is a Fibonacci-number+number,+or+False+otherwise. """
   !!int "15": |-
     ---
     +++
-    @@ -7,7 +7,7 @@
-     if n==1 or-13+n==13 or-21+n==21 """
+    @@ -10,5 +10,16 @@
+     value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a 9 """
 "nodes":
   !!int "0":
     "stderr":
@@ -100,14 +100,14 @@
           ^
       IndentationError: expected an indented block after 'elif' statement on line 9
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - ""
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      3
   !!int "1":
     "stderr":
     - ""
@@ -115,7 +115,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       True
@@ -150,14 +150,14 @@
                    ^
       SyntaxError: invalid syntax
     "stderr_id": !!int |-
-      1
+      4
     "stdout":
     - ""
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      3
   !!int "3":
     "stderr":
     - ""
@@ -165,7 +165,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       False
@@ -176,7 +176,7 @@
     - |
       False
     "stdout_id": !!int |-
-      3
+      1
   !!int "4":
     "stderr":
     - |
@@ -208,14 +208,14 @@
           if n in fib_set:
       NameError: name 'fib_set' is not defined
     "stderr_id": !!int |-
-      4
+      1
     "stdout":
     - ""
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      3
   !!int "5":
     "stderr":
     - ""
@@ -223,7 +223,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       True
@@ -234,7 +234,7 @@
     - |
       False
     "stdout_id": !!int |-
-      1
+      2
   !!int "6":
     "stderr":
     - ""
@@ -260,7 +260,7 @@
           fib_set.add(fib_set.pop() + fib_set.pop())
       KeyError: 'pop from an empty set'
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - |
       True
@@ -276,7 +276,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       1
@@ -287,7 +287,7 @@
     - |
       4181
     "stdout_id": !!int |-
-      5
+      6
   !!int "8":
     "stderr":
     - ""
@@ -295,7 +295,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       True
@@ -306,7 +306,7 @@
     - |
       6765
     "stdout_id": !!int |-
-      2
+      5
   !!int "9":
     "stderr":
     - ""
@@ -314,7 +314,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       True
@@ -325,7 +325,7 @@
     - |
       True
     "stdout_id": !!int |-
-      6
+      4
 "student_color":
   "student11": |-
     blue

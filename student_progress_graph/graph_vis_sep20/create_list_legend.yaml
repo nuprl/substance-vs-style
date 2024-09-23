@@ -2,33 +2,33 @@
   !!int "0": |-
     ---
     +++
-    @@ -32,4 +32,28 @@
-     in the dictionary.+if+an+element+of+the+list+doesnt+appear+as+a+key+in+the+dictionary,+it+should+show+up+in+the+output+list+as+None """
+    @@ -2,15 +2,18 @@
+     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
   !!int "1": |-
-    ---
-    +++
-    @@ -2,33 +2,27 @@
-     create_list(dt, lst): """-Return+Loop+through+each+element+in+lst+and+return the value stored in-the-key+it in-dt-corresponding-to-the-keys-in-lst.+dt. If you-can+can't find-it,-then-return the value,-if-not,-then return None. """
-  !!int "2": |-
     ---
     +++
     @@ -15,5 +15,15 @@
      the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
+  !!int "2": |-
+    ---
+    +++
+    @@ -32,4 +32,28 @@
+     in the dictionary.+if+an+element+of+the+list+doesnt+appear+as+a+key+in+the+dictionary,+it+should+show+up+in+the+output+list+as+None """
   !!int "3": |-
+    ---
+    +++
+    @@ -14,20 +14,17 @@
+     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
+  !!int "4": |-
+    ---
+    +++
+    @@ -2,33 +2,27 @@
+     create_list(dt, lst): """-Return+Loop+through+each+element+in+lst+and+return the value stored in-the-key+it in-dt-corresponding-to-the-keys-in-lst.+dt. If you-can+can't find-it,-then-return the value,-if-not,-then return None. """
+  !!int "5": |-
     ---
     +++
     @@ -2,13 +2,42 @@
      create_list(dt, lst): """-Create-a-list+Take+the+values+that+can+be+accessed+in+dt using the-values-of+keys+in the-keys+lst,+and+create+a+new+list+with+the+values.+If+the+key+in+lst+does+not+exist+in+dt,+add+None+to+the+list. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -2,15 +2,18 @@
-     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
-  !!int "5": |-
-    ---
-    +++
-    @@ -4,7 +4,7 @@
-     """ Find the-key+keys in the list.
   !!int "6": |-
     ---
     +++
@@ -37,8 +37,8 @@
   !!int "7": |-
     ---
     +++
-    @@ -14,20 +14,17 @@
-     in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
+    @@ -4,7 +4,7 @@
+     """ Find the-key+keys in the list.
 "nodes":
   !!int "0":
     "stderr":
@@ -46,7 +46,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       ['a', 't', 'c', 'b', 'd']
@@ -55,14 +55,14 @@
     - |
       ['a', 'b', 'c', 't', 'r', 'e']
     "stdout_id": !!int |-
-      1
+      0
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       ['b', 'd', None]
@@ -71,7 +71,7 @@
     - |
       [None, None, None]
     "stdout_id": !!int |-
-      4
+      2
   !!int "2":
     "stderr":
     - |
@@ -102,13 +102,13 @@
           return [dt[i] for i in lst]
       KeyError: 'a'
     "stderr_id": !!int |-
-      0
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      1
   !!int "3":
     "stderr":
     - |
@@ -133,13 +133,13 @@
           new_list.append(dt[i])
       KeyError: 'a'
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      1
   !!int "4":
     "stderr":
     - ""
@@ -162,7 +162,7 @@
     - |
       None
     "stdout_id": !!int |-
-      0
+      3
   !!int "5":
     "stderr":
     - |
@@ -187,20 +187,20 @@
           if dt.key == lst[0]:
       AttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      1
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - |
       b
@@ -209,7 +209,7 @@
     - |
       None
     "stdout_id": !!int |-
-      3
+      4
 "student_color":
   "student20": |-
     blue

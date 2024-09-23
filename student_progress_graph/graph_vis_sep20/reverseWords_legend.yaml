@@ -1,46 +1,46 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
+  !!int "0": |-
+    ---
+    +++
+    @@ -7,10 +7,9 @@
+     of words, reverses-the-words,+them and-puts+orders them in alphabetical
+  !!int "1": ""
+  !!int "2": |-
     ---
     +++
     @@ -8,18 +8,7 @@
      a list of-strings,-it-will-sort-the strings-alphabetically-by-the-first-character.-Then it will make@@ -30,4 +19,18 @@
      the strings reverse.+Then+it+will+sort+the+list+alphabetically+by+the+last+character+in+each+string """
-  !!int "2": |-
-    ---
-    +++
-    @@ -7,10 +7,9 @@
-     of words, reverses-the-words,+them and-puts+orders them in alphabetical
   !!int "3": |-
-    ---
-    +++
-    @@ -7,11 +7,15 @@
-     of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. """
-  !!int "4": |-
     ---
     +++
     @@ -30,17 +30,6 @@
      outputted list is-also in-the-reverse-order-that-the-strings-were-in-the-inputted-list+alphabetical """
-  !!int "5": |-
-    ---
-    +++
-    @@ -19,5 +19,28 @@
-     of the original-string+string.+The+order+of+the+strings+in+the+outputted+list+is+also+in+the+reverse+order+that+the+strings+were+in+the+inputted+list """
-  !!int "6": |-
-    ---
-    +++
-    @@ -10,5 +10,12 @@
-     in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order """
-  !!int "7": |-
-    ---
-    +++
-    @@ -20,16 +20,16 @@
-     the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order """
-  !!int "8": |-
+  !!int "4": |-
     ---
     +++
     @@ -22,4 +22,21 @@
      in a list.+The+order+of+the+strings+in+the+return+statement+should+be+in+alphabetical+order+from+the+input. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -10,5 +10,12 @@
+     in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order """
+  !!int "6": |-
+    ---
+    +++
+    @@ -19,5 +19,28 @@
+     of the original-string+string.+The+order+of+the+strings+in+the+outputted+list+is+also+in+the+reverse+order+that+the+strings+were+in+the+inputted+list """
+  !!int "7": |-
+    ---
+    +++
+    @@ -7,11 +7,15 @@
+     of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -20,16 +20,16 @@
+     the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order """
 "nodes":
   !!int "0":
     "stderr":
@@ -57,7 +57,7 @@
     - |
       ['ax', 'by', 'chaz']
     "stdout_id": !!int |-
-      0
+      5
   !!int "1":
     "stderr":
     - ""
@@ -104,7 +104,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      4
   !!int "3":
     "stderr":
     - ""
@@ -136,7 +136,7 @@
     - |
       ['yb', 'zahc', 'xa']
     "stdout_id": !!int |-
-      4
+      1
   !!int "5":
     "stderr":
     - ""
@@ -152,7 +152,7 @@
     - |
       ['xa', 'zahc', 'yb']
     "stdout_id": !!int |-
-      5
+      0
   !!int "6":
     "stderr":
     - ""
@@ -168,7 +168,7 @@
     - |
       ['ax', 'by', 'chaz']
     "stdout_id": !!int |-
-      1
+      3
 "student_color":
   "student1": |-
     blue

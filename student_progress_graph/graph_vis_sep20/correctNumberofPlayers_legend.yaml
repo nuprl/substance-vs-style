@@ -2,19 +2,19 @@
   !!int "0": |-
     ---
     +++
-    @@ -7,26 +7,19 @@
-     True if the-lists-have+counts+are the same-count-of-items and will return False if the-lists-do+counts+are not-have the same-count-of-items """
-  !!int "1": |-
-    ---
-    +++
     @@ -10,6 +10,7 @@
      five strings. Each+nested list should equal@@ -17,12 +18,20 @@
      and output true.+The+whole+list+can+be+any+length. Any+nested list less or more-then+than five should output
-  !!int "2": |-
+  !!int "1": |-
     ---
     +++
     @@ -8,20 +8,14 @@
      of lists and-returns-a-boleean-based-on+checks+to+see if-the-number-of-elements-in-the+each list-are+is the same+length """
+  !!int "2": |-
+    ---
+    +++
+    @@ -7,26 +7,19 @@
+     True if the-lists-have+counts+are the same-count-of-items and will return False if the-lists-do+counts+are not-have the same-count-of-items """
 "nodes":
   !!int "0":
     "stderr":
@@ -22,7 +22,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       False
@@ -38,7 +38,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       True
@@ -72,7 +72,7 @@
           if len(teams) == len(players):
       NameError: name 'players' is not defined
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""

@@ -2,83 +2,83 @@
   !!int "0": |-
     ---
     +++
-    @@ -1,17 +1,18 @@
-     def check_prime(num): """-convert-the-input-to-an-integer.-return-whether+save the input num+to+an+integer+variable.+return+whether+this+integer is prime. """
+    @@ -1,10 +1,15 @@
+     def check_prime(num): """+Convert+each+input+to+an+integer. If-the-input-number+that+integer is prime return
   !!int "1": |-
-    ---
-    +++
-    @@ -1,14 +1,13 @@
-     def check_prime(num): """-save+treat the input num-to+as an-integer-variable.+integer. return whether this
-  !!int "2": |-
-    ---
-    +++
-    @@ -1,13 +1,20 @@
-     def check_prime(num): """-treat+create+a+new+variable+that+saves the input num as an-integer.+integer+using+int(). return whether this
-  !!int "3": |-
-    ---
-    +++
-    @@ -1,6 +1,12 @@
-     def check_prime(num): """+change+the+string+into+an+in if the number
-  !!int "4": |-
-    ---
-    +++
-    @@ -2,19 +2,30 @@
-     check_prime(num): """ Convert-each+the input to an integer.-If-that+Then+check+if+the integer is+a prime+number+and return-"True".-Else,-return+"True"+if+it+is+prime+and "False"+if+it's+not """
-  !!int "5": |-
-    ---
-    +++
-    @@ -6,7 +6,7 @@
-     string into an-in+integer if the number
-  !!int "6": |-
-    ---
-    +++
-    @@ -2,6 +2,12 @@
-     check_prime(num): """ given+a+string+type+cast+it+into an integer, if
-  !!int "7": |-
-    ---
-    +++
-    @@ -8,4 +8,7 @@
-     prime return true+else+return+false """
-  !!int "8": |-
-    ---
-    +++
-    @@ -1,7 +1,11 @@
-     def check_prime(num): """-if+Turns+num+into+int.+If num is a
-  !!int "9": |-
-    ---
-    +++
-    @@ -3,7 +3,7 @@
-     """ change the-string+input into an integer
-  !!int "10": |-
-    ---
-    +++
-    @@ -1,6 +1,12 @@
-     def check_prime(num): """+convert+the+input+to+an+integer. return whether the
-  !!int "11": |-
-    ---
-    +++
-    @@ -1,6 +1,11 @@
-     def check_prime(num): """+Converts+input+into+an+integer. Returns 'True' if
-  !!int "12": |-
-    ---
-    +++
-    @@ -1,18 +1,13 @@
-     def check_prime(num): """-given-a-string-type-cast-it-into+typecast+num+as an integer, if-the-integer+num is only divisible
-  !!int "13": |-
     ---
     +++
     @@ -5,7 +5,12 @@
      the number is-prime+not+divisible+buy+4+or+3 return true else
+  !!int "2": |-
+    ---
+    +++
+    @@ -1,17 +1,18 @@
+     def check_prime(num): """-convert-the-input-to-an-integer.-return-whether+save the input num+to+an+integer+variable.+return+whether+this+integer is prime. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -1,18 +1,13 @@
+     def check_prime(num): """-given-a-string-type-cast-it-into+typecast+num+as an integer, if-the-integer+num is only divisible
+  !!int "4": |-
+    ---
+    +++
+    @@ -1,6 +1,11 @@
+     def check_prime(num): """+Converts+input+into+an+integer. Returns 'True' if
+  !!int "5": |-
+    ---
+    +++
+    @@ -1,13 +1,20 @@
+     def check_prime(num): """-treat+create+a+new+variable+that+saves the input num as an-integer.+integer+using+int(). return whether this
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,7 +1,11 @@
+     def check_prime(num): """-if+Turns+num+into+int.+If num is a
+  !!int "7": |-
+    ---
+    +++
+    @@ -1,6 +1,12 @@
+     def check_prime(num): """+change+the+string+into+an+in if the number
+  !!int "8": |-
+    ---
+    +++
+    @@ -8,4 +8,7 @@
+     prime return true+else+return+false """
+  !!int "9": |-
+    ---
+    +++
+    @@ -6,7 +6,7 @@
+     string into an-in+integer if the number
+  !!int "10": |-
+    ---
+    +++
+    @@ -3,7 +3,7 @@
+     """ change the-string+input into an integer
+  !!int "11": |-
+    ---
+    +++
+    @@ -1,6 +1,12 @@
+     def check_prime(num): """+convert+the+input+to+an+integer. return whether the
+  !!int "12": |-
+    ---
+    +++
+    @@ -1,14 +1,13 @@
+     def check_prime(num): """-save+treat the input num-to+as an-integer-variable.+integer. return whether this
+  !!int "13": |-
+    ---
+    +++
+    @@ -2,19 +2,30 @@
+     check_prime(num): """ Convert-each+the input to an integer.-If-that+Then+check+if+the integer is+a prime+number+and return-"True".-Else,-return+"True"+if+it+is+prime+and "False"+if+it's+not """
   !!int "14": |-
+    ---
+    +++
+    @@ -2,6 +2,12 @@
+     check_prime(num): """ given+a+string+type+cast+it+into an integer, if
+  !!int "15": |-
     ---
     +++
     @@ -5,16 +5,14 @@
      num into int.-If+Return+a+bool+indicating+if num is a prime-number,-return-"True".-if-not,-return-"False"+number. """
-  !!int "15": |-
-    ---
-    +++
-    @@ -1,10 +1,15 @@
-     def check_prime(num): """+Convert+each+input+to+an+integer. If-the-input-number+that+integer is prime return
 "nodes":
   !!int "0":
     "stderr":
@@ -111,7 +111,7 @@
           for i in range(2, num):
       TypeError: 'str' object cannot be interpreted as an integer
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - ""
     - ""
@@ -126,7 +126,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      4
     "stdout":
     - |
       True
@@ -169,7 +169,7 @@
           for i in range(2, num):
       TypeError: 'str' object cannot be interpreted as an integer
     "stderr_id": !!int |-
-      2
+      7
     "stdout":
     - ""
     - ""
@@ -208,7 +208,7 @@
           if num % 4 == 0 or num % 3 == 0:
       TypeError: not all arguments converted during string formatting
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
@@ -247,7 +247,7 @@
           if num % 2 == 0:
       TypeError: not all arguments converted during string formatting
     "stderr_id": !!int |-
-      6
+      8
     "stdout":
     - ""
     - ""
@@ -286,7 +286,7 @@
           if num <= 1:
       TypeError: '<=' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      1
+      3
     "stdout":
     - ""
     - ""
@@ -325,7 +325,7 @@
           for i in range(2, num):
       TypeError: 'str' object cannot be interpreted as an integer
     "stderr_id": !!int |-
-      4
+      5
     "stdout":
     - ""
     - ""
@@ -364,7 +364,7 @@
           if num < 2:
       TypeError: '<' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      7
+      2
     "stdout":
     - ""
     - ""
@@ -403,7 +403,7 @@
           if num < 2 or num % 2 == 0:
       TypeError: '<' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      8
+      6
     "stdout":
     - ""
     - ""

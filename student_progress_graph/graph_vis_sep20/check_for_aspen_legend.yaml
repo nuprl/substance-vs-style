@@ -3,9 +3,8 @@
   !!int "1": |-
     ---
     +++
-    @@ -11,7 +11,6 @@
-     is a String-treename key and a@@ -28,8 +27,8 @@
-     that has a-treename-"Aspen"+key,+"Aspen", whose number is
+    @@ -4,6 +4,9 @@
+     If the name+of+the+dictionary is 'Aspen', returns
   !!int "2": |-
     ---
     +++
@@ -14,13 +13,13 @@
   !!int "3": |-
     ---
     +++
-    @@ -4,6 +4,9 @@
-     If the name+of+the+dictionary is 'Aspen', returns
+    @@ -2,39 +2,19 @@
+     check_for_aspen(trees): """ given-an-array-formatted-so-that-there-is a-String-key-and-a-number-associated-with-that-key,+dictionary check if there is+a value that has a key,-"Aspen",-whose-number-is-greater-than-0.+"Aspen". return "Yup" if
   !!int "4": |-
     ---
     +++
-    @@ -8,10 +8,6 @@
-     if there is-a-value-that-has a key, "Aspen".
+    @@ -10,7 +10,7 @@
+     values. Check if-"aspen"+"Aspen" is one of
   !!int "5": |-
     ---
     +++
@@ -29,18 +28,19 @@
   !!int "6": |-
     ---
     +++
-    @@ -2,39 +2,19 @@
-     check_for_aspen(trees): """ given-an-array-formatted-so-that-there-is a-String-key-and-a-number-associated-with-that-key,+dictionary check if there is+a value that has a key,-"Aspen",-whose-number-is-greater-than-0.+"Aspen". return "Yup" if
+    @@ -8,10 +8,6 @@
+     if there is-a-value-that-has a key, "Aspen".
   !!int "7": |-
-    ---
-    +++
-    @@ -10,7 +10,7 @@
-     values. Check if-"aspen"+"Aspen" is one of
-  !!int "8": |-
     ---
     +++
     @@ -1,15 +1,24 @@
      def check_for_aspen(trees): """+A+dict+object+contains+keys+and+values. Check if "aspen" is-a-key+one+of+the+keys in a-dictionary.+dict. Return "Yup" if
+  !!int "8": |-
+    ---
+    +++
+    @@ -11,7 +11,6 @@
+     is a String-treename key and a@@ -28,8 +27,8 @@
+     that has a-treename-"Aspen"+key,+"Aspen", whose number is
 "nodes":
   !!int "0":
     "stderr":
@@ -48,7 +48,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - |
       Nope
@@ -57,14 +57,14 @@
     - |
       Nope
     "stdout_id": !!int |-
-      2
+      1
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - |
       Nope
@@ -73,7 +73,7 @@
     - |
       Yup
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - |
@@ -98,7 +98,7 @@
           if tree.name == 'Aspen':
       AttributeError: 'str' object has no attribute 'name'
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - ""
     - ""
@@ -160,7 +160,7 @@
           if tree["treename"] == "Aspen" and tree["number"] > 0:
       TypeError: string indices must be integers
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - ""
     - ""

@@ -4,44 +4,44 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 2,
+            "stderr_id": 1,
             "stdout_id": 3,
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 3,
-            "stdout_id": 2,
+            "stdout_id": 1,
             "color": "blue",
             "id": 2
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "color": "blue",
+            "id": 3
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 1,
+            "color": "blue",
+            "id": 4
         },
         {
             "stderr_id": 1,
             "stdout_id": 2,
             "color": "blue",
-            "id": 3
-        },
-        {
-            "stderr_id": 4,
-            "stdout_id": 2,
-            "color": "blue",
-            "id": 4
-        },
-        {
-            "stderr_id": 2,
-            "stdout_id": 0,
-            "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 1,
             "color": "blue",
             "id": 6
         }
@@ -49,7 +49,7 @@
     "adjacency": [
         [
             {
-                "diff": 10,
+                "diff": 11,
                 "color": "blue",
                 "username": "student27",
                 "id": 1,
@@ -63,35 +63,35 @@
                 "key": 1
             },
             {
-                "diff": 7,
+                "diff": 1,
                 "color": "cyan",
                 "username": "student68",
                 "id": 1,
                 "key": 2
             },
             {
-                "diff": 9,
+                "diff": 3,
                 "color": "pink",
                 "username": "student70",
                 "id": 1,
                 "key": 3
             },
             {
-                "diff": 2,
+                "diff": 10,
                 "color": "red",
                 "username": "student29",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 12,
                 "color": "green",
                 "username": "student49",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 2,
                 "color": "cyan",
                 "username": "student68",
                 "id": 0,
@@ -115,7 +115,7 @@
         [],
         [
             {
-                "diff": 12,
+                "diff": 7,
                 "color": "red",
                 "username": "student29",
                 "id": 3,
@@ -124,7 +124,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 4,
                 "color": "red",
                 "username": "student29",
                 "id": 4,
@@ -133,7 +133,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 9,
                 "color": "red",
                 "username": "student29",
                 "id": 0,
@@ -142,7 +142,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 13,
                 "color": "green",
                 "username": "student49",
                 "id": 1,

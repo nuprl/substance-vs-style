@@ -1,21 +1,21 @@
 "edges":
-  !!int "0": |-
-    ---
-    +++
-    @@ -16,5 +16,26 @@
-     of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' """
-  !!int "1": ""
-  !!int "2": |-
+  !!int "0": ""
+  !!int "1": |-
     ---
     +++
     @@ -24,7 +24,7 @@
      The function then-prints+returns the string in@@ -42,7 +42,7 @@
      dictionary, the function-prints+returns 'UNK' for that
-  !!int "3": |-
+  !!int "2": |-
     ---
     +++
     @@ -41,4 +41,18 @@
      in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
+  !!int "3": |-
+    ---
+    +++
+    @@ -16,5 +16,26 @@
+     of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' """
 "nodes":
   !!int "0":
     "stderr":
@@ -23,7 +23,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - |
       je aime mes trois chats
@@ -32,14 +32,14 @@
     - |
       five six seven eight
     "stdout_id": !!int |-
-      2
+      0
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - |
       je aime mes trois chats
@@ -48,7 +48,7 @@
     - |
       UNK UNK UNK UNK
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - |2
@@ -67,13 +67,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 10
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      0
+      1
   !!int "3":
     "stderr":
     - |2
@@ -92,13 +92,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      0
+      1
 "student_color":
   "student50": |-
     blue

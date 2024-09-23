@@ -1,40 +1,40 @@
 "edges":
-  !!int "0": |-
-    ---
-    +++
-    @@ -30,4 +30,20 @@
-     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
-  !!int "1": ""
-  !!int "2": |-
+  !!int "0": ""
+  !!int "1": |-
     ---
     +++
     @@ -20,17 +20,4 @@
      with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
-  !!int "3": |-
-    ---
-    +++
-    @@ -19,5 +19,23 @@
-     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
-  !!int "4": |-
+  !!int "2": |-
     ---
     +++
     @@ -15,5 +15,16 @@
      to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. """
-  !!int "5": |-
-    ---
-    +++
-    @@ -31,4 +31,16 @@
-     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -26,5 +26,17 @@
-     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
-  !!int "7": |-
+  !!int "3": |-
     ---
     +++
     @@ -23,8 +23,7 @@
      out of range-don't-change-that-letter.+ignore+the+index. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -4,12 +4,16 @@
+     Replace letters in+input s that are located in+index l to+the+input c """
+  !!int "5": |-
+    ---
+    +++
+    @@ -20,22 +20,17 @@
+     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
+  !!int "6": |-
+    ---
+    +++
+    @@ -31,4 +31,16 @@
+     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -26,5 +26,17 @@
+     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
   !!int "8": |-
     ---
     +++
@@ -43,13 +43,13 @@
   !!int "9": |-
     ---
     +++
-    @@ -20,22 +20,17 @@
-     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
+    @@ -19,5 +19,23 @@
+     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
   !!int "10": |-
     ---
     +++
-    @@ -4,12 +4,16 @@
-     Replace letters in+input s that are located in+index l to+the+input c """
+    @@ -30,4 +30,20 @@
+     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
 "nodes":
   !!int "0":
     "stderr":
@@ -66,7 +66,7 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      0
+      4
   !!int "1":
     "stderr":
     - ""
@@ -121,7 +121,7 @@
       IndexError: list assignment index out of range
     - ""
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - |
       uvurybudy loves upples.
@@ -142,7 +142,7 @@
           if l[0] == 0:
       IndexError: list index out of range
     "stderr_id": !!int |-
-      3
+      2
     "stdout":
     - |
       uverybody loves apples.
@@ -150,7 +150,7 @@
       iqe cream is the best
     - ""
     "stdout_id": !!int |-
-      4
+      0
 "student_color":
   "student19": |-
     blue

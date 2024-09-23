@@ -139,7 +139,12 @@ def draw_multidigraph(G, ax=None):
     for directed graph and maximum total connections for undirected graph.
     """
     # Works with arc3 and angle3 connectionstyles
-    connectionstyle = [f"arc3,rad={r}" for r in itertools.accumulate([0.15] * 4)]
+    if len(G.out_degree()) == 0:
+        # a known bug
+        max_num_edge_per_node = 3
+    else:
+        max_num_edge_per_node = max([d for n,d in G.out_degree()])
+    connectionstyle = [f"arc3,rad={r}" for r in itertools.accumulate([0.15] * max_num_edge_per_node)]
     # connectionstyle = [f"angle3,angleA={r}" for r in itertools.accumulate([30] * 4)]
     edge_colors, edgelist = [],[]
     for edge, color in nx.get_edge_attributes(G, 'color').items():
@@ -159,9 +164,10 @@ def draw_multidigraph(G, ax=None):
     )
 
     labels = {
-        tuple(edge): f"diff_{attrs['diff']}"
+        tuple(edge): attrs['diff']
         for *edge, attrs in G.edges(keys=True, data=True)
     }
+    
     nx.draw_networkx_edge_labels(
         G,
         pos,

@@ -2,28 +2,28 @@
   !!int "0": |-
     ---
     +++
-    @@ -12,8 +12,9 @@
-     list of numbers-without-odd-integer+with+decimals+or+even numbers. """
+    @@ -13,7 +13,7 @@
+     of numbers with-decimals+doubles or even numbers.
   !!int "1": |-
-    ---
-    +++
-    @@ -12,8 +12,7 @@
-     list of numbers-with-only-even+without+odd numbers. """
-  !!int "2": |-
     ---
     +++
     @@ -13,8 +13,7 @@
      of numbers with-doubles-or+only even numbers. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -13,7 +13,7 @@
-     of numbers with-decimals+doubles or even numbers.
-  !!int "4": |-
+  !!int "2": |-
     ---
     +++
     @@ -7,12 +7,24 @@
      list of numbers.+create+a+ODD+list+of+odd+numbers+1+through+10. returns the list of numbers-without-odd-numbers.+with+numbers+in+ODD+removed. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -12,8 +12,7 @@
+     list of numbers-with-only-even+without+odd numbers. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -12,8 +12,9 @@
+     list of numbers-without-odd-integer+with+decimals+or+even numbers. """
 "nodes":
   !!int "0":
     "stderr":
@@ -40,7 +40,7 @@
     - |
       []
     "stdout_id": !!int |-
-      1
+      2
   !!int "1":
     "stderr":
     - ""
@@ -56,7 +56,7 @@
     - |
       [5]
     "stdout_id": !!int |-
-      2
+      1
   !!int "2":
     "stderr":
     - ""

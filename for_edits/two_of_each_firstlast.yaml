@@ -30,7 +30,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        The $parameter:input$ will be a $list:list$ of $integers:integers$. $Return:Return$ 0 if the $list:list$ is empty. Otherwise, subtract the sum of all the $integers:integers$ with odd positions from the sum of all the $integers:integers$ with even positions.
+        The $input:input$ will be a $list:list$ of $integers:integers$. $Return:Return$ 0 if the $list:list$ is empty. Otherwise, subtract the sum of all the $integers:integers$ with odd positions from the sum of all the $integers:integers$ with even positions.
         """
         
   subset: first_failure
@@ -49,7 +49,7 @@
   prompt: |-
     def convert(lst):
         """
-        $takes:takes$ a $list:list$ of numbers and $returns:returns$ a $list:list$ with the corresponding indexes of the alphabet, where negative numbers as indexes means to take in the next index as a new $string:string$
+        $takes:takes$ a $list:list$ of numbers and $returns:returns$ a $list:list$ with the corresponding indexes of the alphabet, where negative numbers as indexes means to $take:take$ in the next index as a new $string:string$
         """
         
   subset: first_failure
@@ -67,7 +67,7 @@
   prompt: |-
     def order_strings(lst):
         """
-        change the order of the first and third element of the $list:list$
+        $typecast:change$ the order of the first and third $key:element$ of the $list:list$
         """
         
   subset: first_failure
@@ -86,7 +86,7 @@
   prompt: |-
     def add_int(lst, num):
         """
-        For each element in the $list:list$ lst, if the element is a $string:string$, $insert:append$ the number num to the end of the $string:string$. If the element is an $integer:integer$, add num to it. If it is any other type, do not do anything to it.
+        For each $key:element$ in the $list:list$ lst, if the $key:element$ is a $string:string$, $insert:append$ the number num to the end of the $string:string$. If the $key:element$ is an $integer:integer$, $insert:add$ num to it. If it is any other type, do not do anything to it.
 
         """
         
@@ -106,7 +106,7 @@
   prompt: |-
     def check_prime(num):
         """
-        $Typecast:Convert$ the $parameter:input$ into $integers:integers$ and check if it is a prime number.
+        $Typecast:Convert$ the $input:input$ into $integers:integers$ and check if it is a prime number.
         """
         
   subset: first_success
@@ -125,7 +125,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $takes:takes in$ a $list:list$ of numbers. $returns:returns$ the $list:list$ of numbers without odd $integer:integer$ numbers.
+        $takes:takes$ in a $list:list$ of numbers. $returns:returns$ the $list:list$ of numbers without odd $integer:integer$ numbers.
         """
         
   subset: first_failure
@@ -144,7 +144,7 @@
   prompt: |-
     def create_list(dt, lst):
         """
-        Using the $dictionary:dictionary$ provided, replace each letter (which is the $key:key$ in the $dictionary:dictionary$)in the $list:list$ with the value. If the letter is not found in the $dictionary:dictionary$'s $keys:keys$, replace that letter with None. $Return:Return$ the resulting $list:list$.
+        Using the $dictionary:dictionary$ $provided:provided$, replace each letter (which is the $key:key$ in the dictionary)in the $list:list$ with the value. If the letter is not found in the $dictionary:dictionary$'s $keys:keys$, replace that letter with None. $Return:Return$ the resulting $list:list$.
         """
         
   subset: first_success
@@ -202,7 +202,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        This function $returns:prints$ a new $dictionary:dictionary$ containing the $strings:strings$ that appear in the first $dictionary:dictionary$ the $lists:lists$ of $string:stings$ that appear in the second $dictionary:dictionary$
+        This function $returns:prints$ a new $dictionary:dictionary$ containing the $strings:strings$ that appear in the first $dictionary:dictionary$ the $lists:lists$ of stings that appear in the second $dictionary:dictionary$
         """
         
   subset: first_failure
@@ -221,7 +221,7 @@
   prompt: |-
     def times_with(meetings):
         """
-        This function $takes:takes in$ a $list:list$ within a $list:list$, consisting of the age as an $integer:integer$, and names as a $string:string$. The $return:output$ creates a $dictionary:dictionary$ where the age given is the value for the names given 
+        This function $takes:takes$ in a $list:list$ within a $list:list$, consisting of the age as an $integer:integer$, and names as a $string:string$. The $return:output$ creates a $dictionary:dictionary$ where the age given is the value for the names given 
         """
         
   subset: first_failure
@@ -304,7 +304,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        This function $takes:takes in$ a number and adds one if the number is greater then 9. If the number is negative it turns it into a positive number. If it is a single-digit number it adds a zero to the number. Then the output is $returned:returned$ with the updated number.
+        This function $takes:takes$ in a number and $inserts:adds$ one if the number is greater then 9. If the number is negative it $typecasts:turns$ it into a positive number. If it is a single-digit number it $inserts:adds$ a zero to the number. Then the $return:output$ is $returned:returned$ with the updated number.
         """
         
   subset: first_failure

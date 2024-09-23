@@ -2,9 +2,8 @@ OVERALL NOTES
 
 - The coding pass is for determining locations where we may be over or under tagging
 - typos are idiosyncratic tags (e.g. $integer:intger$) that should be added
-- for the problem convert, if referenced as the problem, should not be $typecast:convert$
 - If the grammatical structure doesn't fit, untag as much as tag
-- spell check your additional tags, Molly
+- spell check your additional tags
 - The tag needs to be meaningful in the prompt to be tagged (when combine could be any other), we are looking for specific meanings
 - Read submitted text first and then compare 
 
@@ -23,6 +22,7 @@ string	set of characters
 string	characters
 NOTE: do not tag when a "letter" Refers to the concept of a letter in English. 
 NOTE: take a "C style" mindset here, in that a single character is not a string 
+NOTE: pay attention for multisplit
 
 list	brackets
 list	set of brackets
@@ -83,12 +83,14 @@ loop	looks through
 loop	executes a for loop with
 loop	loops over
 NOTE: Weird captialization in these tags was NOT autocaptured, so make sure to add in review
+NOTE: verb uses only. 
 
 skip	avoid
 skip	neglect
 skip	ignore
 skip	remove
 skip	skip
+NOTE: is properly "skip" not just "remove" (that was a separate category that we removed)
 
 dictionary	map
 dictionary	dictionary

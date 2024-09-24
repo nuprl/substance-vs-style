@@ -1,0 +1,131 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 7,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n",
+            "color": "blue",
+            "id": 1
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n",
+            "color": "red",
+            "id": 2
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n",
+            "color": "red",
+            "id": 3
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n",
+            "color": "grey",
+            "id": 4
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 1,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 5
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n",
+            "color": "grey",
+            "id": 6
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n",
+            "color": "red",
+            "id": 7
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 0,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student13",
+                "hover": "username:student13\n\ndiff:\n\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted origin, the function will return the possible destinations with one layover location. \n    \"\"\"\n        layover = []\n    for i in range(len(flights)):\n        if flights[i][0] == start:\n            layover.append(flights[i][1])\n    return layover\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted origin, the function will return the possible destinations with one layover location. \n    \"\"\"\n        layover = {}\n    for i in flights:\n        if i[0] == start:\n            layover[i[1]] = i[2]\n    return layover\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student16",
+                "hover": "username:student16\n\ndiff:\n--- \n+++ \n@@ -17,4 +17,7 @@\n of the flight+and+the+start \"\"\"\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    give the location of layover based on the origin, destination, and length of the flight\n    \"\"\"\n        layover = []\n    for i in range(len(flights)):\n        if flights[i][0] == start:\n            layover.append(flights[i][1])\n    return layover\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    give the location of layover based on the origin, destination, and length of the flight and the start\n    \"\"\"\n        layover = []\n    for i in range(len(flights)):\n        layover.append(flights[i][0] + start)\n    return layover\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student13",
+                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -10,12 +10,15 @@\n the function will-return+check the+given+flights+and+find possible destinations-with+within one-layover-location.+layover. \"\"\"\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted origin, the function will return the possible destinations with one layover location. \n    \"\"\"\n        layover = {}\n    for i in flights:\n        if i[0] == start:\n            layover[i[1]] = i[2]\n    return layover\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted origin, the function will check the given flights and find possible destinations within one layover.\n    \"\"\"\n        layover = []\n    for flight in flights:\n        if flight.origin == start:\n            layover.append(flight.destination)\n    return layover\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "diff": 2,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student22",
+                "hover": "username:student22\n\ndiff:\n--- \n+++ \n@@ -9,19 +9,38 @@\n of dictionaries and-outputs a-list-of-values+string,+uses that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string \"\"\"\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    takes in a list of dictionaries and outputs a list of values that can be made with two key value pair matches\n    \"\"\"\n        layover = []\n    for i in range(len(flights)):\n        for j in range(len(flights)):\n            if i != j:\n                if flights[i][\"to\"] == flights[j][\"from\"]:\n                    layover.append([flights[i][\"from\"], flights[i][\"to\"], flights[j][\"to\"]])\n    return layover\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    takes in a list of dictionaries and a string, uses that string as the value for 'origin', finds a corresponding 'dest' and does that twice. if it can do it twice, output the corresponding 'dest', if not output an empty string\n\n    \"\"\"\n        #print(flights)\n    #print(start)\n    #print(flights[0]['origin'])\n    #print(flights[0]['dest'])\n    #print(flights[1]['origin'])\n    #print(flights[1]['dest'])\n    #print(flights[2]['origin'])\n    #print(flights[2]['dest'])\n   ",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 0,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student5",
+                "hover": "username:student5\n\ndiff:\n\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    this function will take a list of flights and the starting city and return the possible layovers with the staring city\n    \"\"\"\n        layovers = []\n    for flight in flights:\n        if flight[0] == start:\n            layovers.append(flight[1])\n    return layovers\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    this function will take a list of flights and the starting city and return the possible layovers with the staring city\n    \"\"\"\n        layovers = []\n    for flight in flights:\n        if flight[0] == start:\n            layovers.append(flight)\n    return layovers\n",
+                "id": 6,
+                "key": 0
+            },
+            {
+                "diff": 3,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student5",
+                "hover": "username:student5\n\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n flights and the-starting+origin city and return@@ -22,5 +22,52 @@\n with the staring+city.+Each+item+in+the+list+of+flights+will+first+state+the+origin city+and+then+state+the+destination+city.+If+there+is+a+flight+with+a+destination+city+the+same+as+the+same+as+a+flight+with+the+origin+city+then+add+it+the+the+output+list. \"\"\"\n\nFROM completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    this function will take a list of flights and the starting city and return the possible layovers with the staring city\n    \"\"\"\n        layovers = []\n    for flight in flights:\n        if flight[0] == start:\n            layovers.append(flight)\n    return layovers\n\n\nTO completion:\ndef layoverTrips(flights, start):\n    \"\"\"\n    this function will take a list of flights and the origin city and return the possible layovers with the staring city. Each item in the list of flights will first state the origin city and then state the destination city. If there is a flight with a destination city the same as the same as a flight with the origin city then add it the the output list. \n    \"\"\"\n        layover = []\n    for i in range(len(flights)):\n        for j in range(len(flights)):\n            if flights[i][1] == flights[j][0]:\n                layover.append([flights[i][0], flights[i][1], flights[j][1]])\n    return layover\n",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        []
+    ]
+}

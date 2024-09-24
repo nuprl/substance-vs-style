@@ -1,0 +1,62 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\nTrue\n\nFalse\n\nTrue\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian', \"Ertz\", \"Long\", \"Mewis\", \"Press\"], ['Falk', 'Glas', \"Seger\", \"Hurtig\", \"Rolfo\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian', \"Ertz\", \"Long\", \"Mewis\", \"Press\"], ['Falk', 'Glas', \"Seger\", \"Hurtig\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(correctNumberofPlayers([['Brian',\"Ertz\",\"Long\", \"Mewis\",\"Press\"], ['Falk','Glas',\"Seger\",\"Hurtig\",\"Rolfo\"], [\"Bartoli\",\"Linari\",\"Gama\",\"Galli\",\"Caruso\"]]))\n  File \"/tmp/file.py\", line 5, in correctNumberofPlayers\n    if len(teams) == len(players):\nNameError: name 'players' is not defined\n",
+            "color": "grey",
+            "id": 2
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 2,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student22",
+                "hover": "username:student22\n\ndiff:\n--- \n+++ \n@@ -8,20 +8,14 @@\n of lists and-returns-a-boleean-based-on+checks+to+see if-the-number-of-elements-in-the+each list-are+is the same+length \"\"\"\n\nFROM completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    takes in a list of lists and returns a boleean based on if the number of elements in the list are the same \n    \"\"\"\n        if len(teams) == len(teams[0]):\n        return True\n    else:\n        return False\n\n\nTO completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    takes in a list of lists and checks to see if each list is the same length\n    \"\"\"\n        for team in teams:\n        if len(team) != len(teams[0]):\n            return False\n    return True\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student74",
+                "hover": "username:student74\n\ndiff:\n--- \n+++ \n@@ -10,6 +10,7 @@\n five strings. Each+nested list should equal@@ -17,12 +18,20 @@\n and output true.+The+whole+list+can+be+any+length. Any+nested list less or more-then+than five should output\n\nFROM completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    the code should store up to five strings. Each list should equal five and output true. Any list less or more then five should output false \n    \"\"\"\n        if len(teams) == 5:\n        return True\n    else:\n        return False\n\n\nTO completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    the code should store up to five strings. Each nested list should equal five and output true. The whole list can be any length. Any nested list less or more than five should output false \n    \"\"\"\n        for team in teams:\n        if len(team) != 5:\n            return False\n    return True\n",
+                "id": 1,
+                "key": 1
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 0,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student61",
+                "hover": "username:student61\n\ndiff:\n--- \n+++ \n@@ -7,26 +7,19 @@\n True if the-lists-have+counts+are the same-count-of-items and will return False if the-lists-do+counts+are not-have the same-count-of-items \"\"\"\n\nFROM completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    function will return True if the lists have the same count of items and will return False if the lists do not have the same count of items\n    \"\"\"\n        if len(teams) == len(players):\n        return True\n    else:\n        return False\n\n\nTO completion:\ndef correctNumberofPlayers(teams):\n    \"\"\"\n    function will return True if the counts are the same and will return False if the counts are not the same\n    \"\"\"\n        count = 0\n    for team in teams:\n        if count == 0:\n            count = len(team)\n        else:\n            if count != len(team):\n                return False\n    return True\n",
+                "id": 1,
+                "key": 0
+            }
+        ]
+    ]
+}

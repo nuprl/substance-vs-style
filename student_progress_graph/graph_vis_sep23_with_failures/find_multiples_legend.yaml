@@ -1,0 +1,324 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -14,4 +14,9 @@
+     the stop number+and+include+the+stop+number """
+  !!int "1": ""
+  !!int "2": |-
+    ---
+    +++
+    @@ -4,14 +4,17 @@
+     This function prints-values-from the start+value+and+adds+the+factor until+it+reaches the stop-by-the-factor+value """
+  !!int "3": |-
+    ---
+    +++
+    @@ -23,5 +23,12 @@
+     also given as-inputs+inputs.+The+end+input+should+also+be+included """
+  !!int "4": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     of the factor-in+between the range of@@ -18,5 +18,11 @@
+     start and stop+numbers,+including+the+start+and+stop numbers. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -13,10 +13,13 @@
+     until the stop-number-and-include+number,+including the stop number+and+return+as+list """
+  !!int "6": |-
+    ---
+    +++
+    @@ -16,9 +16,21 @@
+     and output a-list-based-on-those-parameters+including+the+last+number,+and+the+5+closest+numbers+in+the+step+size+to+that+last+number """
+  !!int "7": |-
+    ---
+    +++
+    @@ -37,5 +37,11 @@
+     at the stopping-number.+number+but+including+it+in+the+list. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -4,10 +4,14 @@
+     Function returns multiples-between+from+the first-two-items+item+to+the+second+item in the input
+  !!int "9": |-
+    ---
+    +++
+    @@ -12,6 +12,10 @@
+     the second item+(including+the+second+item) in the input
+  !!int "10": |-
+    ---
+    +++
+    @@ -27,7 +27,7 @@
+     we get the-stop.+stop-start. Then create a
+  !!int "11": |-
+    ---
+    +++
+    @@ -5,16 +5,18 @@
+     function ask for-start,+three+inputs:start, stop,-factor-and-by+factor.+By adding up start*factor and-getting+records+all+the sum of those
+  !!int "12": |-
+    ---
+    +++
+    @@ -12,17 +12,34 @@
+     input. The first-and-second number of the input-are+is the-bounds+starting+bound and the+second+number+is+the+the+ending+bound,+but+is+included+in+the+list+of+multiples+if+applicable.+The last number is
+  !!int "13": |-
+    ---
+    +++
+    @@ -7,30 +7,25 @@
+     list of integers-[start-number,-final-number,-step-size]+[start,+stop,+factor] and output a+list+starting+at+the+closest+even+number+to+the+start,+and including the-last-number,-and-the-5-closest-numbers-in-the-step-size-to-that-last+stop number """
+  !!int "14": |-
+    ---
+    +++
+    @@ -35,5 +35,5 @@
+     to hold those-values+values. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     of the factor-between+in the range of
+  !!int "16": |-
+    ---
+    +++
+    @@ -10,6 +10,7 @@
+     and adds the+value factor until it
+  !!int "17": |-
+    ---
+    +++
+    @@ -27,7 +27,7 @@
+     we get the-stop-start.+sum==stop. Then create a
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [20, 40, 60, 80]
+    - |
+      [10, 15, 20, 25]
+    - |
+      [1062, 1239, 1416, 1593, 1770, 1947]
+    "stdout_id": !!int |-
+      7
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [20, 40, 60, 80, 100]
+    - |
+      [50]
+    - |
+      [177000]
+    "stdout_id": !!int |-
+      0
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [20, 40, 60, 80]
+    - |
+      []
+    - |
+      []
+    "stdout_id": !!int |-
+      6
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [20, 40, 60, 80, 100]
+    - |
+      [10, 15, 20, 25, 30]
+    - |
+      [1062, 1239, 1416, 1593, 1770, 1947]
+    "stdout_id": !!int |-
+      1
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      range(1, 101, 20)
+    - |
+      range(10, 31, 5)
+    - |
+      range(1000, 2001, 177)
+    "stdout_id": !!int |-
+      5
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 21, 41, 61, 81]
+    - |
+      [10, 15, 20, 25, 30]
+    - |
+      [1000, 1177, 1354, 1531, 1708, 1885]
+    "stdout_id": !!int |-
+      4
+  !!int "6":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 6
+          print(find_multiples(1,100,20))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    - |2
+        File "/tmp/file.py", line 6
+          print(find_multiples(10, 30, 5))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    - |2
+        File "/tmp/file.py", line 6
+          print(find_multiples(1000,2000,177))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "7":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          find_multiples(start,stop,factor)
+      NameError: name 'start' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          find_multiples(start,stop,factor)
+      NameError: name 'start' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          find_multiples(start,stop,factor)
+      NameError: name 'start' is not defined
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "8":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      8
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 21, 41, 61, 81]
+    - |
+      [10, 15, 20, 25]
+    - |
+      [1000, 1177, 1354, 1531, 1708, 1885]
+    "stdout_id": !!int |-
+      3
+  !!int "10":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          closest_numbers = [last_number +
+                            ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          closest_numbers = [last_number +
+                            ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          closest_numbers = [last_number +
+                            ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "11":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      (81, [1, 21, 41, 61, 81])
+    - |
+      (25, [10, 15, 20, 25])
+    - |
+      (1885, [1177, 1354, 1531, 1708, 1885])
+    "stdout_id": !!int |-
+      9
+"student_color":
+  "student11": |-
+    #d83034
+  "student13": |-
+    #f9e858
+  "student16": |-
+    #008dff
+  "student2": |-
+    #4ecb8d
+  "student22": |-
+    #c701ff
+  "student5": |-
+    #ffcd8e
+  "student61": |-
+    #003a7d
+  "student72": |-
+    #Ff73b6
+  "student74": |-
+    #ff7f50

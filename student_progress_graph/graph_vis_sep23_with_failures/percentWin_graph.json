@@ -1,0 +1,430 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n75.0%\n\n33.333333333333336%\n\n100.0%\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 13,
+            "hover": "stdout:\n75%\n\n33%\n\n100%\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 5,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print \"Error: Lists are not of equal length.\"\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 6\n    print \"Error: Lists are not of equal length.\"\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 6\n    print \"Error: Lists are not of equal length.\"\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n",
+            "color": "grey",
+            "id": 2
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 11,
+            "hover": "stdout:\n0.75\n\n0.3333333333333333\n\n1.0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 3
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 9,
+            "hover": "stdout:\n75.0%\n\n33.33333333333333%\n\n100.0%\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 4
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n75.0\n\n33.33333333333333\n\n100.0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 5
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 10,
+            "hover": "stdout:\n75.0%\n\n33.33%\n\n100.0%\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 6
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\n25.0%\n\n66.67%\n\n0.0%\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 7
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 12,
+            "hover": "stdout:\n75.0%\n\n33.33333333333334%\n\n100.0%\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 8
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 6,
+            "hover": "stdout:\n75.0\n\n33.0\n\n100.0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 9
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 7,
+            "hover": "stdout:\n75\n\n33\n\n100\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 10
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n0.0\n\n0.0\n\n0.0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 11
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 8,
+            "hover": "stdout:\n75.0\n\n33.33\n\n100.0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 12
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 13
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 15,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student0",
+                "hover": "username:student0\n\ndiff:\n--- \n+++ \n@@ -26,6 +26,8 @@\n the string of+integer+of num times 100\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    takes in two lists. If the lists have the same value at the same index, add one to a num variable. return the string of num times 100 divided by the length of the first list and concatenate a percent sign.\n    \"\"\"\n        num = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            num += 1\n    return str(num*100/len(guess)) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    takes in two lists. If the lists have the same value at the same index, add one to a num variable. return the string of integer of num times 100 divided by the length of the first list and concatenate a percent sign.\n    \"\"\"\n        num = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            num += 1\n    return str(num * 100 // len(guess)) + \"%\"\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 26,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student30",
+                "hover": "username:student30\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n Take in array-guess.+A. Create variable X@@ -26,35 +26,19 @@\n add 1 to-X.-Create-variable-Y,-equal-to-X+Y.+Return+Y divided by the size of the-guess-array.-Return-variable-Z,-equal-to-Y+array, rounded to the nearest-integer-with-'%'-appended-to-it.+percent. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Take in array guess. Create variable X equal to 0. Iterate through array A. When a character is present in Array A, add 1 to X. Create variable Y, equal to X divided by the size of the guess array. Return variable Z, equal to Y rounded to the nearest integer with '%' appended to it.\n    \"\"\"\n        X = 0\n    for i in range(len(guess)):\n        if guess[i] in answers:\n            X += 1\n    Y = X/len(guess)\n    Z = str(round(Y*100)) + '%'\n    return Z\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Take in array A. Create variable X equal to 0. Iterate through array A. When a character is present in Array A, add 1 to Y. Return Y divided by the size of the array, rounded to the nearest percent.\n    \"\"\"\n        x = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            x += 1\n    return round(x/len(guess)*100,2)\n",
+                "id": 12,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student10",
+                "hover": "username:student10\n\ndiff:\n--- \n+++ \n@@ -28,5 +28,5 @@\n the two items-match.+match \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match.\n    \"\"\"\n        if len(guess) != len(answers):\n        print \"Error: Lists are not of equal length.\"\n        return\n    else:\n        count = 0\n        for i in range(len(guess)):\n            if guess[i] == answers[i]:\n                count += 1\n        return (count/float(len(guess)))*100\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 13,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student10",
+                "hover": "username:student10\n\ndiff:\n--- \n+++ \n@@ -28,5 +28,16 @@\n the two items-match+match,+as+an+integer+value+with+a+%+sign+at+the+end. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match, as an integer value with a % sign at the end.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)+\"%\"\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 19,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student18",
+                "hover": "username:student18\n\ndiff:\n--- \n+++ \n@@ -22,4 +22,16 @@\n guess and answers.+Then,+multiply+100+to+the+value+and+add+'%'+at+the+end. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. \n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value and add '%' at the end. \n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    percent = count/len(guess) * 100\n    return str(percent) + '%'\n",
+                "id": 4,
+                "key": 1
+            },
+            {
+                "diff": 23,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student25",
+                "hover": "username:student25\n\ndiff:\n--- \n+++ \n@@ -22,4 +22,18 @@\n the answer list.+The+percentage+is+multiplied+by+100+and+\"%\"+is+added+to+the+final+result. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list. The percentage is multiplied by 100 and \"%\" is added to the final result.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess) * 100) + \"%\"\n",
+                "id": 4,
+                "key": 2
+            },
+            {
+                "diff": 22,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student4",
+                "hover": "username:student4\n\ndiff:\n--- \n+++ \n@@ -17,5 +17,13 @@\n items in list-2+2,+returns+in+whole+number+format+including+percent+sign \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2\n    \"\"\"\n        correct = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            correct += 1\n    return correct/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2, returns in whole number format including percent sign\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100) + \"%\"\n",
+                "id": 4,
+                "key": 3
+            },
+            {
+                "diff": 17,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student51",
+                "hover": "username:student51\n\ndiff:\n--- \n+++ \n@@ -13,4 +13,7 @@\n of matching items+in+percent+notation \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items in percent notation\n    \"\"\"\n        if len(guess) != len(answers):\n        return \"ERROR: lists are not the same length\"\n    else:\n        correct = 0\n        for i in range(len(guess)):\n            if guess[i] == answers[i]:\n                correct += 1\n        return str(correct/len(guess)*100)+\"%\"\n",
+                "id": 4,
+                "key": 4
+            },
+            {
+                "diff": 32,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -14,7 +14,12 @@\n and calculates the-similarity-in-percents+similarity,+then+give+the+answer+as+a+percentage \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity in percents\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    return matches/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, then give the answer as a percentage\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 3,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -16,10 +16,9 @@\n the similarity, then-give+multiply the answer-as-a-percentage+by+100 \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, then give the answer as a percentage\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, then multiply the answer by 100\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    return matches/len(guess)*100\n",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 9,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student26",
+                "hover": "username:student26\n\ndiff:\n--- \n+++ \n@@ -20,8 +20,15 @@\n and display the+difference,+multiply+the difference-as-a-percentage+by+100+and+display+followed+by+% \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference as a percentage\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference, multiply the difference by 100 and display followed by %\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return (count/len(guess))*100\n",
+                "id": 5,
+                "key": 1
+            },
+            {
+                "diff": 10,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student3",
+                "hover": "username:student3\n\ndiff:\n--- \n+++ \n@@ -22,4 +22,25 @@\n guess and answers+then+divide+with+the+number+of+element+of+answers.+then+times+the+results+100+times+and+round+up+the+to+interger \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    create a function with 2 inputs: guess (list) and answers(list). find the number of the element match in guess and answers\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    create a function with 2 inputs: guess (list) and answers(list). find the number of the element match in guess and answers then divide with the number of element of answers. then times the results 100 times and round up the to interger\n    \"\"\"\n        return round(len([i for i,j in zip(guess,answers) if i==j])/len(answers)*100)\n",
+                "id": 10,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 25,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student10",
+                "hover": "username:student10\n\ndiff:\n--- \n+++ \n@@ -32,7 +32,10 @@\n as an integer-value+with+no+decimal+spaces with a %\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match, as an integer value with a % sign at the end.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)+\"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    User inputs two lists of equal length. Program would compare each item against second list's corresponding item, and would return the percentage of times the two items match, as an integer with no decimal spaces with a % sign at the end.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)+\"%\"\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 20,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student4",
+                "hover": "username:student4\n\ndiff:\n--- \n+++ \n@@ -20,8 +20,7 @@\n 2, returns in-whole-number+integer format including percent\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2, returns in whole number format including percent sign\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2, returns in integer format including percent sign\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100) + \"%\"\n",
+                "id": 4,
+                "key": 1
+            },
+            {
+                "diff": 4,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -26,5 +26,11 @@\n with the percent-symbol+symbol,+rounding+to+the+nearest+whole+number \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, lastly turn the answer into a percent number with the percent symbol\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    percent = matches/len(guess)\n    return str(percent*100) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, lastly turn the answer into a percent number with the percent symbol, rounding to the nearest whole number\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    percent = str(round((matches/len(guess))*100)) + \"%\"\n    return percent\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 27,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student4",
+                "hover": "username:student4\n\ndiff:\n--- \n+++ \n@@ -19,9 +19,13 @@\n list 2, returns-in-integer-format+number+rounded+to+the+nearest+whole+numbers including percent sign\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2, returns in integer format including percent sign\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess)*100) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    determines the percent of items in list 1 that are identical to the items in list 2, returns number rounded to the nearest whole numbers including percent sign\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    percent = count/len(guess)\n    return str(round(percent*100)) + \"%\"\n",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 8,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student18",
+                "hover": "username:student18\n\ndiff:\n--- \n+++ \n@@ -28,6 +28,9 @@\n to the value+while+rounding+up and add '%'\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value and add '%' at the end. \n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    percent = count/len(guess) * 100\n    return str(percent) + '%'\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value while rounding up and add '%' at the end. \n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(round(count/len(guess)*100,2)) + '%'\n",
+                "id": 6,
+                "key": 0
+            },
+            {
+                "diff": 31,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student25",
+                "hover": "username:student25\n\ndiff:\n--- \n+++ \n@@ -27,7 +27,8 @@\n is multiplied by-100+100,+rounded, and \"%\" is\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list. The percentage is multiplied by 100 and \"%\" is added to the final result.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(count/len(guess) * 100) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list. The percentage is multiplied by 100, rounded, and \"%\" is added to the final result.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(round(count/len(guess)*100,2)) + \"%\"\n",
+                "id": 6,
+                "key": 1
+            },
+            {
+                "diff": 14,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student26",
+                "hover": "username:student26\n\ndiff:\n--- \n+++ \n@@ -20,7 +20,13 @@\n and display the-difference.+difference+rounded+to+the+nearest+whole+number. Multiply the difference\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference. Multiply the difference by 100 and display followed by '%'\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str((count/len(guess))*100) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference rounded to the nearest whole number. Multiply the difference by 100 and display followed by '%'\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return round((count/len(guess))*100,0)\n",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 7,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student51",
+                "hover": "username:student51\n\ndiff:\n--- \n+++ \n@@ -13,6 +13,12 @@\n of matching items+rounded+tot+he+nearest+whole+number in percent notation\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items in percent notation\n    \"\"\"\n        if len(guess) != len(answers):\n        return \"ERROR: lists are not the same length\"\n    else:\n        correct = 0\n        for i in range(len(guess)):\n            if guess[i] == answers[i]:\n                correct += 1\n        return str(correct/len(guess)*100)+\"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items rounded tot he nearest whole number in percent notation\n    \"\"\"\n        return round(100*len([i for i, j in zip(guess, answers) if i == j])/len(answers))\n",
+                "id": 10,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -15,10 +15,12 @@\n calculates the similarity,-then-multiply+lastly+turn the answer-by-100+into+a+percent+number \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, then multiply the answer by 100\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    return matches/len(guess)*100\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, lastly turn the answer into a percent number\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    return (matches/len(guess))*100\n",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -23,4 +23,8 @@\n a percent number+with+the+percent+symbol \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, lastly turn the answer into a percent number\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    return (matches/len(guess))*100\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    matches the numbers and letters of the two given strings and calculates the similarity, lastly turn the answer into a percent number with the percent symbol\n    \"\"\"\n        matches = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            matches += 1\n    percent = matches/len(guess)\n    return str(percent*100) + \"%\"\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 21,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student26",
+                "hover": "username:student26\n\ndiff:\n--- \n+++ \n@@ -20,8 +20,8 @@\n and display the-difference,-multiply+difference.+Multiply the difference by@@ -30,5 +30,5 @@\n display followed by-%+'%' \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference, multiply the difference by 100 and display followed by %\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return (count/len(guess))*100\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference. Multiply the difference by 100 and display followed by '%'\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str((count/len(guess))*100) + \"%\"\n",
+                "id": 4,
+                "key": 1
+            },
+            {
+                "diff": 0,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student26",
+                "hover": "username:student26\n\ndiff:\n\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference as a percentage\n    \"\"\"\n        if len(guess) != len(answers):\n        return \"Error: lists are not the same length\"\n    else:\n        correct = 0\n        for i in range(len(guess)):\n            if guess[i] == answers[i]:\n                correct += 1\n        return (correct/len(guess))*100\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Count how many characters in a range of numbers match those in another range of numbers and display the difference as a percentage\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return count/len(guess)\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student18",
+                "hover": "username:student18\n\ndiff:\n--- \n+++ \n@@ -31,6 +31,10 @@\n while rounding up+to+the+nearest+integer and add '%'\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value while rounding up and add '%' at the end. \n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(round(count/len(guess)*100,2)) + '%'\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Compare the string in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value while rounding up to the nearest integer and add '%' at the end. \n    \"\"\"\n        percent = round(sum(1 for a, b in zip(guess, answers) if a == b) / len(answers) * 100)\n    return str(percent) + '%'\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 18,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student25",
+                "hover": "username:student25\n\ndiff:\n--- \n+++ \n@@ -28,7 +28,11 @@\n multiplied by 100,-rounded,+rounded+to+have+no+decimal, and \"%\" is\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list. The percentage is multiplied by 100, rounded, and \"%\" is added to the final result.\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(round(count/len(guess)*100,2)) + \"%\"\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    This function compares how similar 2 lists are and returns the percent of the guess list that matches the answer list. The percentage is multiplied by 100, rounded to have no decimal, and \"%\" is added to the final result.\n    \"\"\"\n        count = 0\n    for i in range(len(answers)):\n        if answers[i] == guess[i]:\n            count += 1\n    return str(round(count/len(answers)*100)) + \"%\"\n",
+                "id": 1,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 29,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student21",
+                "hover": "username:student21\n\ndiff:\n--- \n+++ \n@@ -18,10 +18,14 @@\n length of the-list-and+list, multiply by+100.+Subtract+this+number+from 100. Return the\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    given two lists, divide the number of 'X' in the first list by the length of the list and multiply by 100. Return the String of this obtained number plus the percentage sign.\n    \"\"\"\n        return str(round(guess.count('X')/len(guess)*100,2))+'%'\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    given two lists, divide the number of 'X' in the first list by the length of the list, multiply by 100. Subtract this number from 100. Return the String of this obtained number plus the percentage sign.\n    \"\"\"\n        return str(100 - (guess.count('X')/len(guess)*100)) + '%'\n",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 11,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student21",
+                "hover": "username:student21\n\ndiff:\n--- \n+++ \n@@ -34,6 +34,9 @@\n this obtained number+as+an+integer plus the percentage\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    given two lists, divide the number of 'X' in the first list by the length of the list, multiply by 100. Subtract this number from 100. Return the String of this obtained number plus the percentage sign.\n    \"\"\"\n        return str(100 - (guess.count('X')/len(guess)*100)) + '%'\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    given two lists, divide the number of 'X' in the first list by the length of the list, multiply by 100. Subtract this number from 100. Return the String of this obtained number as an integer plus the percentage sign.\n    \"\"\"\n        return str(int(100-((guess.count('X')/len(guess))*100)))+'%'\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 28,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student3",
+                "hover": "username:student3\n\ndiff:\n--- \n+++ \n@@ -42,5 +42,11 @@\n up the to-interger+integer.+add+percentage+sign+after+the+results \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    create a function with 2 inputs: guess (list) and answers(list). find the number of the element match in guess and answers then divide with the number of element of answers. then times the results 100 times and round up the to interger\n    \"\"\"\n        return round(len([i for i,j in zip(guess,answers) if i==j])/len(answers)*100)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    create a function with 2 inputs: guess (list) and answers(list). find the number of the element match in guess and answers then divide with the number of element of answers. then times the results 100 times and round up the to integer. add percentage sign after the results\n    \"\"\"\n        return str(round((len([i for i, j in zip(guess, answers) if i == j])/len(answers))*100))+\"%\"\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 30,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student51",
+                "hover": "username:student51\n\ndiff:\n--- \n+++ \n@@ -13,13 +13,16 @@\n of matching items+as+a+string rounded-tot-he+to+the nearest whole number-in-percent-notation+with+a+% \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items rounded tot he nearest whole number in percent notation\n    \"\"\"\n        return round(100*len([i for i, j in zip(guess, answers) if i == j])/len(answers))\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    check both lists for equality and return the percent of matching items as a string rounded to the nearest whole number with a %\n    \"\"\"\n        count = 0\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            count += 1\n    return str(round(count/len(guess)*100)) + \"%\"\n",
+                "id": 1,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 24,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student30",
+                "hover": "username:student30\n\ndiff:\n--- \n+++ \n@@ -4,19 +4,57 @@\n Take in array-A.+guess.+Create+variable+X+equal+to+0. Iterate through array+A.+When+a+character+is+present+in+Array A,-and-record+add+1+to+X.+Create+variable+Y,+equal+to+X+divided+by the-proportion+size of-numbers-in-it-versus-letters.+the+guess+array.+Return+variable+Z,+equal+to+Y+rounded+to+the+nearest+integer+with+'%'+appended+to+it. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Take in array A. Iterate through array A, and record the proportion of numbers in it versus letters.\n    \"\"\"\n        num = 0\n    for i in answers:\n        if i == guess:\n            num += 1\n    return num/len(answers)\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Take in array guess. Create variable X equal to 0. Iterate through array A. When a character is present in Array A, add 1 to X. Create variable Y, equal to X divided by the size of the guess array. Return variable Z, equal to Y rounded to the nearest integer with '%' appended to it.\n    \"\"\"\n        X = 0\n    for i in range(len(guess)):\n        if guess[i] in answers:\n            X += 1\n    Y = X/len(guess)\n    Z = str(round(Y*100)) + '%'\n    return Z\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 16,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student41",
+                "hover": "username:student41\n\ndiff:\n--- \n+++ \n@@ -53,7 +53,13 @@\n of correct responses-as+multiplied+by+100+and+followed+by a-percentage.+percent+sign. \"\"\"\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares each item in the second list to each item in the first list. For each item in the second list that does not match the first list, it subtracts from one, one divided by the total length of the list. Then it prints the proportion of correct responses as a percentage.\n    \"\"\"\n        correct = 1\n    for i in range(len(guess)):\n        if guess[i] != answers[i]:\n            correct -= 1/len(guess)\n    print(\"You got\",correct*100,\"% correct.\")\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares each item in the second list to each item in the first list. For each item in the second list that does not match the first list, it subtracts from one, one divided by the total length of the list. Then it prints the proportion of correct responses multiplied by 100 and followed by a percent sign.\n    \"\"\"\n        correct = 1\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            correct = correct\n        else:\n            correct = correct - (1/len(guess))\n    print(correct*100,'%')\n",
+                "id": 13,
+                "key": 0
+            },
+            {
+                "diff": 12,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student41",
+                "hover": "username:student41\n\ndiff:\n--- \n+++ \n@@ -18,14 +18,14 @@\n the first list.-For-each+Every+time+an item in the second list-that does not match\n\nFROM completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares each item in the second list to each item in the first list. For each item in the second list that does not match the first list, it subtracts from one, one divided by the total length of the list. Then it prints the proportion of correct responses multiplied by 100 and followed by a percent sign.\n    \"\"\"\n        correct = 1\n    for i in range(len(guess)):\n        if guess[i] == answers[i]:\n            correct = correct\n        else:\n            correct = correct - (1/len(guess))\n    print(correct*100,'%')\n\n\nTO completion:\ndef percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares each item in the second list to each item in the first list. Every time an item in the second list does not match the first list, it subtracts from one, one divided by the total length of the list. Then it prints the proportion of correct responses multiplied by 100 and followed by a percent sign.\n    \"\"\"\n        correct = 1\n    for i in range(len(answers)):\n        if guess[i] == answers[i]:\n            correct = correct\n        else:\n            correct = correct - (1/len(answers))\n    print(\"You got\",correct*100,\"% correct.\")\n",
+                "id": 13,
+                "key": 1
+            }
+        ]
+    ]
+}

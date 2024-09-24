@@ -1,0 +1,446 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 5,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 12,
+            "hover": "stdout:\n-2\n\n-2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 5,
+            "hover": "stdout:\n2\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 2
+        },
+        {
+            "stderr_id": 17,
+            "stdout_id": 6,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nIndexError: list index out of range\n",
+            "color": "grey",
+            "id": 3
+        },
+        {
+            "stderr_id": 10,
+            "stdout_id": 0,
+            "hover": "stdout:\n2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nIndexError: list index out of range\n",
+            "color": "blue",
+            "id": 4
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 3,
+            "hover": "stdout:\n6\n\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 5
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 2,
+            "hover": "stdout:\n2\n\n-2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 6
+        },
+        {
+            "stderr_id": 16,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\n",
+            "color": "grey",
+            "id": 7
+        },
+        {
+            "stderr_id": 14,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\n",
+            "color": "grey",
+            "id": 8
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n-2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    count = int(lst[0])\nIndexError: list index out of range\n",
+            "color": "blue",
+            "id": 9
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 11,
+            "hover": "stdout:\n4\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 10
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 6,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n",
+            "color": "grey",
+            "id": 11
+        },
+        {
+            "stderr_id": 9,
+            "stdout_id": 13,
+            "hover": "stdout:\n-4\n\n\n\n0\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\n",
+            "color": "blue",
+            "id": 12
+        },
+        {
+            "stderr_id": 15,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
+            "color": "blue",
+            "id": 13
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
+            "color": "blue",
+            "id": 14
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 8,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
+            "color": "grey",
+            "id": 15
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 1,
+            "hover": "stdout:\n[1, 3, 6, 10]\n\n[0, 2]\n\n[0, 0]\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 16
+        },
+        {
+            "stderr_id": 8,
+            "stdout_id": 10,
+            "hover": "stdout:\n-8\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[-1]\nIndexError: list index out of range\n",
+            "color": "red",
+            "id": 17
+        },
+        {
+            "stderr_id": 11,
+            "stdout_id": 4,
+            "hover": "stdout:\n-2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    count = int(lst[0])\nIndexError: list index out of range\n",
+            "color": "blue",
+            "id": 18
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 6,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nIndexError: list index out of range\n",
+            "color": "grey",
+            "id": 19
+        },
+        {
+            "stderr_id": 12,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
+            "color": "blue",
+            "id": 20
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 6,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n",
+            "color": "blue",
+            "id": 21
+        },
+        {
+            "stderr_id": 13,
+            "stdout_id": 7,
+            "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
+            "color": "blue",
+            "id": 22
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 9,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 23
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 8,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student27",
+                "hover": "username:student27\n\ndiff:\n--- \n+++ \n@@ -8,7 +8,7 @@\n a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@\n is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    The input will be a list of integers. Return 0 if the list is empty. Otherwise, subtract the sum of all the integers with odd positions from the sum of all the integers with even positions.\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        even = 0\n        odd = 0\n        for i in range(len(lst)):\n            if i % 2 == 0:\n                even += lst[i]\n            else:\n                odd += lst[i]\n        return even - odd\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    The input will be a list of strings. Return 0 if the list is empty. Otherwise, convert the strings into integers, then subtract the sum of all the integers with odd positions from the sum of all the integers with even positions. \n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        return sum([int(lst[i]) for i in range(len(lst)) if i % 2 == 0]) - sum([int(lst[i]) for i in range(len(lst)) if i % 2 != 0])\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 11,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -18,7 +18,7 @@\n correspond to an-even+odd index by -1.\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    For each list entry, convert the input to an integer. Multiply list entries that correspond to an even index by -1. Then add all of the list entries together and return their sum. If the list is empty, return 0.\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        for i in range(len(lst)):\n            lst[i] = int(lst[i])\n            if i % 2 == 0:\n                lst[i] *= -1\n        return sum(lst)\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    For each list entry, convert the input to an integer. Multiply list entries that correspond to an odd index by -1. Then add all of the list entries together and return their sum. If the list is empty, return 0.\n    \"\"\"\n        sum = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            lst[i] *= -1\n        sum += lst[i]\n    return sum\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -14,7 +14,11 @@\n each element in-list,+list+and+add+to+count, return-total+count \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, alternate between subtracting and adding each element in list, return total\n    \"\"\"\n        total = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            total -= lst[i]\n        else:\n            total += lst[i]\n    return total\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, alternate between subtracting and adding each element in list and add to count, return count\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n    for i in range(len(lst)):\n        if i % 2 == 0:\n            count -= lst[i]\n        else:\n            count += lst[i]\n    return count\n",
+                "id": 2,
+                "key": 1
+            },
+            {
+                "diff": 19,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -6,13 +6,13 @@\n element into int,-alternate-between-subtracting+subtract+even+indexes and-adding-each-element+add+odd+indexes in list and\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, alternate between subtracting and adding each element in list and add to count, return count\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n    for i in range(len(lst)):\n        if i % 2 == 0:\n            count -= lst[i]\n        else:\n            count += lst[i]\n    return count\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, subtract even indexes and add odd indexes in list and add to count, return count\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            count -= lst[i]\n        else:\n            count += lst[i]\n    return count\n\n",
+                "id": 2,
+                "key": 2
+            },
+            {
+                "diff": 6,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -15,10 +15,11 @@\n list entries that+don't correspond to an-odd+even index by -1.\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    For each list entry, convert the input to an integer. Multiply list entries that correspond to an odd index by -1. Then add all of the list entries together and return their sum. If the list is empty, return 0.\n    \"\"\"\n        sum = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            lst[i] *= -1\n        sum += lst[i]\n    return sum\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    For each list entry, convert the input to an integer. Multiply list entries that don't correspond to an even index by -1. Then add all of the list entries together and return their sum. If the list is empty, return 0.\n    \"\"\"\n        if lst == []:\n        return 0\n    else:\n        total = 0\n        for i in range(len(lst)):\n            if i % 2 == 0:\n                total += int(lst[i])\n            else:\n                total -= int(lst[i])\n        return total\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 23,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -6,19 +6,27 @@\n element into int,+add+first+element+to+count.+if+index+of+element+is+odd, subtract-even-indexes-and-add-odd-indexes-in-list-and+from+count.+if+index+of+element+is+even, add to-count,-return-count+count. \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, subtract even indexes and add odd indexes in list and add to count, return count\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            count -= lst[i]\n        else:\n            count += lst[i]\n    return count\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, add first element to count. if index of element is odd, subtract from count. if index of element is even, add to count.\n    \"\"\"\n        count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 0:\n            count += int(lst[i])\n        else:\n            count -= int(lst[i])\n    return count\n\nprint(subtract_add([\"5\", \"4\", \"6\"]))\nprint(subtract_add([\"1\", \"2\", \"",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 21,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student68",
+                "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -13,33 +13,36 @@\n characters into integers.-Starting-from-the-front-of-the-array,-subtract+Store the first-two-numbers-and-store-that+number+in+the+array in a count variable. then-add+subtract the next number+from+the+count.+With+the+next+number,+add+it to the-count.+count+and+then alternate between subtracting\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    given an array of characters containing integers, convert the characters into integers. Starting from the front of the array, subtract the first two numbers and store that in a count variable. then add the next number to the count. alternate between subtracting and adding until you get to the end of the array. return the count\n\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        if i % 2 == 0:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    given an array of characters containing integers, convert the characters into integers. Store the first number in the array in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the array. return the count\n\n    \"\"\"\n        count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 1:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n",
+                "id": 18,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student32",
+                "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,15 @@\n def subtract_add(lst): \"\"\"+Turns+all+the+elements+in+lst+into+integers.+Then subtracts the last@@ -18,5 +27,10 @@\n elements in the-list.+list,+and+returns+the+resulting+int \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    subtracts the last element in the list from the sum of all the other elements in the list.\n    \"\"\"\n        return sum(lst[:-1]) - lst[-1]\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Turns all the elements in lst into integers. Then subtracts the last element in the list from the sum of all the other elements in the list, and returns the resulting int\n    \"\"\"\n        lst = [int(x) for x in lst]\n    return sum(lst[:-1]) - lst[-1]\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 18,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student32",
+                "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -32,5 +32,13 @@\n returns the resulting-int+int.+If+the+list+is+empty,+it+returns+0 \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Turns all the elements in lst into integers. Then subtracts the last element in the list from the sum of all the other elements in the list, and returns the resulting int\n    \"\"\"\n        lst = [int(x) for x in lst]\n    return sum(lst[:-1]) - lst[-1]\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Turns all the elements in lst into integers. Then subtracts the last element in the list from the sum of all the other elements in the list, and returns the resulting int. If the list is empty, it returns 0\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        sum = 0\n        for i in lst:\n            sum += int(i)\n        return sum - int(lst[-1])\n",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student32",
+                "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -8,31 +8,31 @@\n in lst into-integers.-Then-subtracts-the-last-element-in-the-list-from+integers,+then+finds the sum of all the-other elements in the-list,-and-returns+list+excluding the-resulting-int.+last+one.+Then+it+subtracts+the+last+element+from+the+sum. If the list\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Turns all the elements in lst into integers. Then subtracts the last element in the list from the sum of all the other elements in the list, and returns the resulting int. If the list is empty, it returns 0\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        sum = 0\n        for i in lst:\n            sum += int(i)\n        return sum - int(lst[-1])\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Turns all the elements in lst into integers, then finds the sum of all the elements in the list excluding the last one. Then it subtracts the last element from the sum.\n\nIf the list is empty, it returns 0\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        lst = [int(i) for i in lst]\n        return sum(lst[:-1]) - lst[-1]\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 24,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student49",
+                "hover": "username:student49\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,13 @@\n a list of-integers,+strings,+type+cast+to+integers+and+then take the first\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Given a list of integers, take the first number in the list and alternate between subtracting and adding the next numbers in the list. If the list is empty return 0. Otherwise return the expected output\n    \"\"\"\n        if not lst:\n        return 0\n    else:\n        result = lst[0]\n        for i in range(1, len(lst)):\n            if i % 2 == 0:\n                result += lst[i]\n            else:\n                result -= lst[i]\n        return result\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Given a list of strings, type cast to integers and then take the first number in the list and alternate between subtracting and adding the next numbers in the list. If the list is empty return 0. Otherwise return the expected output\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    else:\n        lst = [int(i) for i in lst]\n        output = lst[0]\n        for i in range(1, len(lst)):\n            if i % 2 == 0:\n                output += lst[i]\n            else:\n                output -= lst[i]\n        return output\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 10,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,11 @@\n def subtract_add(lst): \"\"\"+turn+each+element+into+int, alternate between subtracting\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    alternate between subtracting and adding each element in list, return total\n    \"\"\"\n        total = 0\n    for i in range(len(lst)):\n        if i % 2 == 0:\n            total -= lst[i]\n        else:\n            total += lst[i]\n    return total\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, alternate between subtracting and adding each element in list, return total\n    \"\"\"\n        total = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n        if i % 2 == 0:\n            total -= lst[i]\n        else:\n            total += lst[i]\n    return total\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 14,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -16,7 +16,9 @@\n of element is-odd,+odd+when+int, subtract from count.@@ -25,7 +27,9 @@\n of element is-even,+even+when+int, add to count.\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, add first element to count. if index of element is odd, subtract from count. if index of element is even, add to count.\n    \"\"\"\n        count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 0:\n            count += int(lst[i])\n        else:\n            count -= int(lst[i])\n    return count\n\nprint(subtract_add([\"5\", \"4\", \"6\"]))\nprint(subtract_add([\"1\", \"2\", \"\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    turn each element into int, add first element to count. if index of element is odd when int, subtract from count. if index of element is even when int, add to count.\n    \"\"\"\n        count = 0\n    for i in range(len(lst)):\n        if i == 0:\n            count += int(lst[i])\n        elif int(lst[i]) % 2 == 0:\n            count += int(lst[i])\n        else:\n            count -= int(lst[i])\n    return count\n\nprint(subtract_add(['5', '4', '3',",
+                "id": 10,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 16,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student68",
+                "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -1,20 +1,7 @@\n def subtract_add(lst): \"\"\"-if-there-are-no-values-stored-in-the-given-array,-return-0.-Else,-given+Given an array of@@ -72,5 +59,13 @@\n array. return the-count+count.+If+the+given+array+is+empty,+return+0. \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    if there are no values stored in the given array, return 0. Else, given an array of characters containing integers, convert the characters into integers. Store the first number in the array in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the array. return the count\n\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 0:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Given an array of characters containing integers, convert the characters into integers. Store the first number in the array in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the array. return the count. If the given array is empty, return 0. \n\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 1:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student66",
+                "hover": "username:student66\n\ndiff:\n\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Take the first two items in the array list and change them into integers then take then take the next two integers and subtract them from each other. sum the two values return the product. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    elif len(lst) == 2:\n        return lst[0] - lst[1]\n    else:\n        return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Take the first two items in the array list and change them into integers then take then take the next two integers and subtract them from each other. sum the two values return the product. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\n\n",
+                "id": 12,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 13,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student66",
+                "hover": "username:student66\n\ndiff:\n--- \n+++ \n@@ -1,41 +1,32 @@\n def subtract_add(lst): \"\"\"-Take+Subtract the-first-two-items+second+item in the array list-and-change-them-into-integers+from+the+first+item. then-take+subtract+the+forth+item+from+the+third+item then-take-the-next-two-integers-and-subtract-them-from-each-other.-sum+add the two-values-return-the-product.+sums. if there are\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Take the first two items in the array list and change them into integers then take then take the next two integers and subtract them from each other. sum the two values return the product. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Subtract the second item in the array list from the first item. then subtract the forth item from the third item then add the two sums. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 2:\n        return lst[0] - lst[1]\n    else:\n        return (lst[0] - lst[1]) + (lst[2] - lst[3])\n",
+                "id": 13,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student66",
+                "hover": "username:student66\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,10 @@\n def subtract_add(lst): \"\"\"+Change+them+into+integers. Subtract the second\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Subtract the second item in the array list from the first item. then subtract the forth item from the third item then add the two sums. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 2:\n        return lst[0] - lst[1]\n    else:\n        return (lst[0] - lst[1]) + (lst[2] - lst[3])\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Change them into integers. Subtract the second item in the array list from the first item. then subtract the forth item from the third item then add the two sums. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 2:\n        return lst[0] - lst[1]\n    elif len(lst) == 4:\n        return (lst[0] - lst[1]) + (lst[2] - lst[3])\n    else:\n        return 0\n\n",
+                "id": 14,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 15,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student66",
+                "hover": "username:student66\n\ndiff:\n--- \n+++ \n@@ -2,9 +2,12 @@\n subtract_add(lst): \"\"\" Change-them+the+first+two+items into-integers.+integers Subtract the second@@ -17,6 +20,14 @@\n the first item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8 +49,13 @@\n two items in-the list+change+those+two+items+into+integers subtract the second\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Change them into integers. Subtract the second item in the array list from the first item. then subtract the forth item from the third item then add the two sums. if there are just two items in the list subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 2:\n        return lst[0] - lst[1]\n    elif len(lst) == 4:\n        return (lst[0] - lst[1]) + (lst[2] - lst[3])\n    else:\n        return 0\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Change the first two items into integers Subtract the second item in the array list from the first item. change the third and forth items into integers then subtract the forth item from the third item then add the two sums. if there are just two items in list change those two items into integers subtract the second one from the first one and return the product. if there are no items then return zero\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 2:\n        return int(lst[0]) - int(lst[1])\n    else:\n        return int(lst[0]) - int(lst[1]) + int(lst[2]) - int(lst[3])\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 20,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student67",
+                "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,11 @@\n def subtract_add(lst): \"\"\"+Converts+all+items+to+integer. Subtracts the second\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc.\n    \"\"\"\n        new_lst = []\n    for i in range(len(lst) - 1):\n        new_lst.append(lst[i] - lst[i + 1])\n    return new_lst\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Converts all items to integer. Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc.\n    \"\"\"\n        lst = [int(x) for x in lst]\n    for i in range(len(lst) - 1):\n        lst[i + 1] += lst[i]\n    return lst\n",
+                "id": 16,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 12,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student67",
+                "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -26,4 +26,8 @@\n next number, etc.+Returns+the+final+value. \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Converts all items to integer. Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc.\n    \"\"\"\n        lst = [int(x) for x in lst]\n    for i in range(len(lst) - 1):\n        lst[i + 1] += lst[i]\n    return lst\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Converts all items to integer. Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc. Returns the final value.\n    \"\"\"\n        lst = [int(i) for i in lst]\n    for i in range(len(lst)-1):\n        lst[i+1] = lst[i] - lst[i+1]\n    return lst[-1]\n",
+                "id": 17,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 3,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student68",
+                "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,19 @@\n def subtract_add(lst): \"\"\"+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    given an array of characters containing integers, convert the characters into integers. Store the first number in the array in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the array. return the count\n\n    \"\"\"\n        count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 1:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    if there are no values stored in the given array, return 0. Else, given an array of characters containing integers, convert the characters into integers. Store the first number in the array in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the array. return the count\n\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    count = int(lst[0])\n    for i in range(1, len(lst)):\n        if i % 2 == 0:\n            count -= int(lst[i])\n        else:\n            count += int(lst[i])\n    return count\n\n",
+                "id": 10,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 22,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -1,47 +1,67 @@\n def subtract_add(lst): \"\"\"-Iterates-through+Create+a+variable+for the-inputted-list.-For+result.+If the-first-two+list+contains+0 elements,+return+0.+If+the+list+contains+1+element,+return+that+element.+If+the+list+contains+2+or+more+elements: subtract the second+element from the first and save+the+result,+then+add+the+third+element+to that-result.-For-the-next-element,-add-it-to-the-result.-Continue-to-alternate-adding+result, and-subtracting+continue+on+alternating+subtraction+and+addition until the end of the-list-is-reached.+list. \"\"\"\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Iterates through the inputted list. For the first two elements, subtract the second from the first and save that result. For the next element, add it to the result. Continue to alternate adding and subtracting until the end of the list is reached.\n    \"\"\"\n        result = lst[0] - lst[1]\n    for i in range(2, len(lst)):\n        if i % 2 == 0:\n            result += lst[i]\n        else:\n            result -= lst[i]\n    return result\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return result\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(0, len(lst), 2):\n            if i == 0:\n                result = lst[i] - lst[i+1]\n            elif i == len(lst) - 1:\n                result",
+                "id": 20,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 17,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,12 @@\n def subtract_add(lst): \"\"\"+Convert+all+list+elements+to+integers. Create a variable\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return result\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(0, len(lst), 2):\n            if i == 0:\n                result = lst[i] - lst[i+1]\n            elif i == len(lst) - 1:\n                result\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Convert all list elements to integers. Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(len(lst)):\n            lst[i] = int(lst[i])\n        result = lst[0] - lst[1]\n        for i in range(2, len(lst)",
+                "id": 21,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 9,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -1,12 +1,6 @@\n def subtract_add(lst): \"\"\"-Convert-all-list-elements-to-integers. Create a variable@@ -38,6 +32,11 @@\n or more elements:+treat+all+elements+as+integers. subtract the second\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Convert all list elements to integers. Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(len(lst)):\n            lst[i] = int(lst[i])\n        result = lst[0] - lst[1]\n        for i in range(2, len(lst)\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: treat all elements as integers. subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(len(lst)):\n            if i % 2 == 0:\n                result += lst[i]\n            else:\n                result -= lst[i]\n        return result\n\n",
+                "id": 22,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -7,6 +7,11 @@\n for the result.+Treat+all+elements+as+integers. If the list@@ -32,11 +37,6 @@\n or more elements:-treat-all-elements-as-integers. subtract the second\n\nFROM completion:\ndef subtract_add(lst):\n    \"\"\"\n    Create a variable for the result. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: treat all elements as integers. subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        result = 0\n    if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        for i in range(len(lst)):\n            if i % 2 == 0:\n                result += lst[i]\n            else:\n                result -= lst[i]\n        return result\n\n\n\nTO completion:\ndef subtract_add(lst):\n    \"\"\"\n    Create a variable for the result. Treat all elements as integers. If the list contains 0 elements, return 0. If the list contains 1 element, return that element. If the list contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the list.\n    \"\"\"\n        if len(lst) == 0:\n        return 0\n    elif len(lst) == 1:\n        return lst[0]\n    else:\n        result = int(lst[0])\n        for i in range(1, len(lst)):\n            if i % 2 == 1:\n                result -= int(lst[i])\n            else:\n                result += int(lst[i])\n",
+                "id": 23,
+                "key": 0
+            }
+        ],
+        []
+    ]
+}

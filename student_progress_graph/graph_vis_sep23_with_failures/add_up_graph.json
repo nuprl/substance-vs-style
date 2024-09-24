@@ -1,0 +1,699 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 5,
+            "stdout_id": 6,
+            "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 5, in add_up\n    return sum(arr)\nTypeError: unsupported operand type(s) for +: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 5, in add_up\n    return sum(arr)\nTypeError: unsupported operand type(s) for +: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 5, in add_up\n    return sum(arr)\nTypeError: unsupported operand type(s) for +: 'int' and 'list'\n",
+            "color": "grey",
+            "id": 1
+        },
+        {
+            "stderr_id": 11,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    result += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    result += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    result += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "grey",
+            "id": 2
+        },
+        {
+            "stderr_id": 10,
+            "stdout_id": 4,
+            "hover": "stdout:\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    total += int(arr[i][j])\nValueError: invalid literal for int() with base 10: 'one'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    total += int(arr[i][j])\nValueError: invalid literal for int() with base 10: 'hello'\n\n",
+            "color": "red",
+            "id": 3
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    return arr[0] + add_up(arr[1:])\nTypeError: can only concatenate list (not \"int\") to list\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    return arr[0] + add_up(arr[1:])\nTypeError: can only concatenate list (not \"int\") to list\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    return arr[0] + add_up(arr[1:])\nTypeError: can only concatenate list (not \"int\") to list\n",
+            "color": "blue",
+            "id": 4
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 7,
+            "hover": "stdout:\n9\n\n6.4\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 5
+        },
+        {
+            "stderr_id": 15,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(item)\nTypeError: float() argument must be a string or a real number, not 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(item)\nTypeError: float() argument must be a string or a real number, not 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(item)\nTypeError: float() argument must be a string or a real number, not 'list'\n",
+            "color": "grey",
+            "id": 6
+        },
+        {
+            "stderr_id": 14,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(i)\nTypeError: float() argument must be a string or a real number, not 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(i)\nTypeError: float() argument must be a string or a real number, not 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += float(i)\nTypeError: float() argument must be a string or a real number, not 'list'\n",
+            "color": "blue",
+            "id": 7
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 11, in add_up\n    total += float(item)\nValueError: could not convert string to float: 'one'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 11, in add_up\n    total += float(item)\nValueError: could not convert string to float: 'hello'\n\n",
+            "color": "red",
+            "id": 8
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "grey",
+            "id": 9
+        },
+        {
+            "stderr_id": 12,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    sum += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    sum += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    sum += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "grey",
+            "id": 10
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 1,
+            "hover": "stdout:\n0.0\n\n0.0\n\n0.0\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 11
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 5,
+            "hover": "stdout:\n9\n\n3\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 12
+        },
+        {
+            "stderr_id": 13,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += num\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += num\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    total += num\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "grey",
+            "id": 13
+        },
+        {
+            "stderr_id": 8,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    if item.isdigit():\nAttributeError: 'list' object has no attribute 'isdigit'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    if item.isdigit():\nAttributeError: 'list' object has no attribute 'isdigit'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 7, in add_up\n    if item.isdigit():\nAttributeError: 'list' object has no attribute 'isdigit'\n",
+            "color": "red",
+            "id": 14
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 2,
+            "hover": "stdout:\n0\n\n3\n\n0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 15
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 8\n    add_up([1,2,3,4,5])\nIndentationError: expected an indented block after 'for' statement on line 5\n",
+            "color": "blue",
+            "id": 16
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 11, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 11, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 11, in add_up\n    total += i\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "red",
+            "id": 17
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 13, in add_up\n    total += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 13, in add_up\n    total += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 13, in add_up\n    total += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "blue",
+            "id": 18
+        },
+        {
+            "stderr_id": 9,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(add_up([ [ 'one', 2, 3, 4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    sum += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(add_up([ [ 3, 'hello', 3.4 ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    sum += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(add_up([ [ ] ]))\n  File \"/tmp/file.py\", line 8, in add_up\n    sum += item\nTypeError: unsupported operand type(s) for +=: 'int' and 'list'\n",
+            "color": "blue",
+            "id": 19
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 29,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student1",
+                "hover": "username:student1\n\ndiff:\n--- \n+++ \n@@ -16,7 +16,5 @@\n of all the-integers-and-floats.+numbers. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    takes a list of strings, integers, and floats and returns the sum of all the integers and floats.\n    \"\"\"\n        return sum([x for x in arr if isinstance(x, (int, float))])\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    takes a list of strings, integers, and floats and returns the sum of all the numbers.\n    \"\"\"\n        return sum(arr)\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 19,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -2,7 +2,8 @@\n add_up(arr): \"\"\" if-string+the+arrangement contains characters 2,@@ -20,5 +21,8 @@\n and output the-answer+answer.+else,+return+0 \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    if string contains characters 2, 3, 3.4, or 4, add up those numbers in the string and output the answer\n    \"\"\"\n        total = 0\n    for i in arr:\n        if i == '2':\n            total += 2\n        elif i == '3':\n            total += 3\n        elif i == '3.4':\n            total += 3.4\n        elif i == '4':\n            total += 4\n    return total\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    if the arrangement contains characters 2, 3, 3.4, or 4, add up those numbers in the string and output the answer. else, return 0\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if i == '2' or i == '3' or i == '3.4' or i == '4':\n            sum += int(i)\n    return sum\n",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 23,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -17,7 +17,7 @@\n numbers in the-string+arrangement and output the\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    if the arrangement contains characters 2, 3, 3.4, or 4, add up those numbers in the string and output the answer. else, return 0\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if i == '2' or i == '3' or i == '3.4' or i == '4':\n            sum += int(i)\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    if the arrangement contains characters 2, 3, 3.4, or 4, add up those numbers in the arrangement and output the answer. else, return 0\n    \"\"\"\n        sum = 0\n    for i in range(len(arr)):\n        if arr[i] == 2:\n            sum += 2\n        elif arr[i] == 3:\n            sum += 3\n        elif arr[i] == 3.4:\n            sum += 3.4\n        elif arr[i] == 4:\n            sum += 4\n    return sum\n",
+                "id": 0,
+                "key": 1
+            },
+            {
+                "diff": 8,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -3,7 +3,6 @@\n \"\"\" For each-number variable in the@@ -11,12 +10,15 @@\n if the variable-is+can+be+casted+to a-number,+float, adds the-number+variable to a separate\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    For each number variable in the list, if the variable is a number, adds the number to a separate list. Adds the number in this list together and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        num_list = []\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            num_list.append(i)\n    if len(num_list) == 0:\n        return 0\n    else:\n        return sum(num_list)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For each variable in the list, if the variable can be casted to a float, adds the variable to a separate list. Adds the number in this list together and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n        except:\n            pass\n    if len(nums) == 0:\n        return 0\n    return sum(nums)\n",
+                "id": 0,
+                "key": 2
+            },
+            {
+                "diff": 0,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    For each variable in the list, if the variable can be casted to a float, adds the variable to a separate list. Adds the number in this list together and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n        except:\n            pass\n    if len(nums) == 0:\n        return 0\n    return sum(nums)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For each variable in the list, if the variable can be casted to a float, adds the variable to a separate list. Adds the number in this list together and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n        except:\n            pass\n    if len(nums) == 0:\n        return 0\n    else:\n        return sum(nums)\n",
+                "id": 0,
+                "key": 3
+            },
+            {
+                "diff": 42,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n--- \n+++ \n@@ -4,13 +4,13 @@\n Takes an array.-For+Reads each value in the-array,-if+array.+If it is a@@ -20,6 +20,20 @@\n to the sum.+If+it+is+not+a+number,+skips+to+the+next+value+in+the+array. Output is the\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. For each value in the array, if it is a number, adds it to the sum. Output is the sum of all the numbers in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value in the array. If it is a number, adds it to the sum. If it is not a number, skips to the next value in the array. Output is the sum of all the numbers in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        try:\n            sum += i\n        except:\n            pass\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]))\nprint(add_",
+                "id": 0,
+                "key": 4
+            },
+            {
+                "diff": 0,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value in the array. If it is a number, adds it to the sum. If it is not a number, skips to the next value in the array. Output is the sum of all the numbers in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        try:\n            sum += i\n        except:\n            pass\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]))\nprint(add_\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value in the array. If it is a number, adds it to the sum. If it is not a number, skips to the next value in the array. Output is the sum of all the numbers in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n",
+                "id": 0,
+                "key": 5
+            },
+            {
+                "diff": 5,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -10,7 +10,7 @@\n strings, outputs all-integers+numbers added together that\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings, outputs all integers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\nprint(add_up([1,2,\"a\",3]))\n",
+                "id": 0,
+                "key": 6
+            },
+            {
+                "diff": 43,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Takes in+a+list+within an array, removes\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\nprint(add_up([1,2,\"a\",3]))\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5,\"hello\"]))\nprint(add_up([1,2,3,4,5,\"hello\", \"world\"]))\nprint(add_up([1",
+                "id": 0,
+                "key": 7
+            },
+            {
+                "diff": 0,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5,\"hello\"]))\nprint(add_up([1,2,3,4,5,\"hello\", \"world\"]))\nprint(add_up([1\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n        elif type(i) == float:\n            total += i\n    return total\n\nprint(add_up([1,2,3,'a']))\n",
+                "id": 0,
+                "key": 8
+            },
+            {
+                "diff": 10,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -4,10 +4,15 @@\n Takes in a+array+and+withing+that+array+list,+from+the list-within-an-array, removes all strings,\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n        elif type(i) == float:\n            total += i\n    return total\n\nprint(add_up([1,2,3,'a']))\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in a array and withing that array list, from the list removes all strings, outputs all numbers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n\nprint(add_up([1,2,3,4,5,6,7,8,9]))\nprint(add_up([1,2,3,4,5,6,7,8,9,\"a\"]))\nprint(add_up([1,2,3,4,",
+                "id": 0,
+                "key": 9
+            },
+            {
+                "diff": 49,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -2,12 +2,16 @@\n add_up(arr): \"\"\" \"add-up all the floats in-arr,+arr+into+a+number+named+sum, neglect the item@@ -19,5 +23,7 @@\n is not a-float\"+float,+return+sum\" \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr, neglect the item if the item in arr is not a float\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == float:\n            sum += item\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the floats in arr into a number named sum, neglect the item if the item in arr is not a float, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if isinstance(item, float):\n            sum += item\n    return sum\n",
+                "id": 0,
+                "key": 10
+            },
+            {
+                "diff": 16,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n \"add all the-floats+doubles in arr into\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the floats in arr into a number named sum, neglect the item if the item in arr is not a float, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if isinstance(item, float):\n            sum += item\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a number named sum, neglect the item if the item in arr is not a float, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == float:\n            sum += item\n    return sum\n",
+                "id": 0,
+                "key": 11
+            },
+            {
+                "diff": 2,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -23,7 +23,7 @@\n is not a-float,+double, return sum\" \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a number named sum, neglect the item if the item in arr is not a float, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == float:\n            sum += item\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a number named sum, neglect the item if the item in arr is not a double, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if isinstance(item, int):\n            sum += item\n    return sum\n\n",
+                "id": 0,
+                "key": 12
+            },
+            {
+                "diff": 0,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == int or type(item) == float:\n            total += item\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", 1.5\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        # your code here\n    sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\nprint(add_up([1,2,3,4,5,6,7,8,9,10]))\nprint(add_up([1,2,3,4,5,6,7,8,9,10.5",
+                "id": 0,
+                "key": 13
+            },
+            {
+                "diff": 41,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -5,6 +5,11 @@\n a function that+gets+a+list.+The+function runs through a\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        # your code here\n    sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\nprint(add_up([1,2,3,4,5,6,7,8,9,10]))\nprint(add_up([1,2,3,4,5,6,7,8,9,10.5\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that gets a list. The function runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n",
+                "id": 0,
+                "key": 14
+            },
+            {
+                "diff": 51,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -16,30 +16,24 @@\n list of lists.+If+the+element+is+an+integer+or+float,+sum+all+the+elements+up. The function-should-get-all-numbers-(both-integers-or-floats)-from-the-list-and returns the-sum-of-all-numbers-in-the-inner-list.+sum. The function should\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that gets a list. The function runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that gets a list. The function runs through a list of lists. If the element is an integer or float, sum all the elements up. The function returns the sum. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n",
+                "id": 0,
+                "key": 15
+            },
+            {
+                "diff": 14,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student6",
+                "hover": "username:student6\n\ndiff:\n--- \n+++ \n@@ -15,13 +15,60 @@\n and integers. Function-takes+checks+each+item+in+the+list+to+check+if+it+is+an+integer+or+a+string.+If+it+is+an+integer+it+adds+it+to+a+new+list.+If+it+is+not+an+integer+it+ignores+it.+Outputs the sum of+each+ingter+in the-integers-and-outputs-it+new+list.+If+the+original+list+contains+no+integers,+return+0 \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Input: list of items, that may be a combination of strings and integers. Function takes the sum of the integers and outputs it\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == int:\n            total += item\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Input: list of items, that may be a combination of strings and integers. Function checks each item in the list to check if it is an integer or a string. If it is an integer it adds it to a new list. If it is not an integer it ignores it. Outputs the sum of each ingter in the new list. If the original list contains no integers, return 0\n    \"\"\"\n        new_list = []\n    for item in arr:\n        if type(item) == int:\n            new_list.append(item)\n    return sum(new_list)\n",
+                "id": 0,
+                "key": 16
+            },
+            {
+                "diff": 34,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n function takes entries-in+within an array, and\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries in an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        else:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries within an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for entry in arr:\n        if isinstance(entry, int):\n            total += entry\n        else:\n            total += 0\n    return total\n",
+                "id": 0,
+                "key": 17
+            },
+            {
+                "diff": 3,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -1,10 +1,9 @@\n def add_up(arr): \"\"\"-sums-the-total-of+adds+up+only integers and floats\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    sums the total of integers and floats in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    adds up only integers and floats in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        elif type(i) == str:\n            continue\n        else:\n            total += 0\n    return total\n",
+                "id": 0,
+                "key": 18
+            },
+            {
+                "diff": 48,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -1,9 +1,7 @@\n def add_up(arr): \"\"\"-adds-up-only+sums integers and floats\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    adds up only integers and floats in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        elif type(i) == str:\n            continue\n        else:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    sums integers and floats in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if isinstance(i, int) or isinstance(i, float):\n            total += i\n    return total\n\n",
+                "id": 0,
+                "key": 19
+            },
+            {
+                "diff": 40,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -1,13 +1,18 @@\n def add_up(arr): \"\"\"+iterates+through+the+array+and sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    sums integers and floats in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if isinstance(i, int) or isinstance(i, float):\n            total += i\n    return total\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    iterates through the array and sums the total of integers and floats. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        elif i == None:\n            total += 0\n    return total\n",
+                "id": 0,
+                "key": 20
+            },
+            {
+                "diff": 22,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -1,28 +1,14 @@\n def add_up(arr): \"\"\"-if-the-arrangement-contains-characters-2,-3,-3.4,-or-4, add up-those-numbers+all+number+characters in-the-arrangement-and+each+arrangement. output-the-answer.-else,-return-0+total \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    if the arrangement contains characters 2, 3, 3.4, or 4, add up those numbers in the arrangement and output the answer. else, return 0\n    \"\"\"\n        sum = 0\n    for i in range(len(arr)):\n        if arr[i] == 2:\n            sum += 2\n        elif arr[i] == 3:\n            sum += 3\n        elif arr[i] == 3.4:\n            sum += 3.4\n        elif arr[i] == 4:\n            sum += 4\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    add up all number characters in each arrangement. output total\n    \"\"\"\n        total = 0\n    for i in range(len(arr)):\n        for j in range(len(arr[i])):\n            total += int(arr[i][j])\n    return total\n",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 11,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student24",
+                "hover": "username:student24\n\ndiff:\n--- \n+++ \n@@ -5,20 +5,31 @@\n items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    For items in the list, if the item is an integer add them together. Return the sum of those integers.\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == int:\n            sum += item\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For items in the list inside the list add each item together. If the item is not an integer, ignore any errors. Return the sum of the integers in the list.\n    \"\"\"\n        total = 0\n    for i in arr:\n        for j in i:\n            try:\n                total += j\n            except TypeError:\n                pass\n    return total\n",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 31,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student53",
+                "hover": "username:student53\n\ndiff:\n--- \n+++ \n@@ -3,10 +3,17 @@\n \"\"\" loop through+each+list+in arr and+then loop again+for+each+elemtn and if the\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    loop through arr and loop again and if the element is an integer or float add them and return the sum. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    loop through each list in arr and then loop again for each elemtn and if the element is an integer or float add them and return the sum. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        for j in i:\n            if type(j) == int or type(j) == float:\n                sum += j\n    return sum\n\nprint(add_up([[1,2,3],[4,5,6],[7,8,9]]))\nprint(add_up([[1,2,3],[4,5,6],[7,8,9],[10,",
+                "id": 5,
+                "key": 1
+            },
+            {
+                "diff": 17,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -9,7 +9,7 @@\n arr into a-number+double named sum, neglect\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a number named sum, neglect the item if the item in arr is not a double, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if isinstance(item, int):\n            sum += item\n    return sum\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a double named sum, neglect the item if the item in arr is not a double, return sum\"\n    \"\"\"\n        sum = 0.0\n    for i in arr:\n        if isinstance(i, float):\n            sum += i\n    return sum\n",
+                "id": 11,
+                "key": 0
+            },
+            {
+                "diff": 9,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -7,8 +7,8 @@\n that runs through-an-array+a+list of lists. The@@ -26,7 +26,11 @@\n sum of all-numbers.+numbers+in+the+inner+list. The function should\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through an array of lists. The function should get all numbers from the list and returns the sum of all numbers. The function should avoid strings if they are elements in the list. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int:\n            sum += i\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int:\n            sum += i\n        elif type(i) == list:\n            sum += add_up(i)\n    return sum\n",
+                "id": 12,
+                "key": 0
+            },
+            {
+                "diff": 35,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -1,13 +1,20 @@\n def add_up(arr): \"\"\"-This+For+each+list+in+an+array,+this function takes-entries-within-an-array,+each+entry+in+the+list and adds them\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries within an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for entry in arr:\n        if isinstance(entry, int):\n            total += entry\n        else:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For each list in an array, this function takes each entry in the list and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        for j in i:\n            if isinstance(j, int):\n                total += j\n            else:\n                total += 0\n    return total\n",
+                "id": 12,
+                "key": 1
+            },
+            {
+                "diff": 7,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student6",
+                "hover": "username:student6\n\ndiff:\n--- \n+++ \n@@ -4,16 +4,7 @@\n Input: list of-items,-that-may-be-a-combination-of-strings-and-integers.+strings. Function checks each@@ -26,16 +17,20 @@\n if it is-an-integer-or a-string.+number+character. If it is+a+number,+convert+it+to an integer+and it adds it@@ -47,7 +42,8 @@\n it is not-an+a+number integer it ignores\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Input: list of items, that may be a combination of strings and integers. Function checks each item in the list to check if it is an integer or a string. If it is an integer it adds it to a new list. If it is not an integer it ignores it. Outputs the sum of each ingter in the new list. If the original list contains no integers, return 0\n    \"\"\"\n        new_list = []\n    for item in arr:\n        if type(item) == int:\n            new_list.append(item)\n    return sum(new_list)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Input: list of strings. Function checks each item in the list to check if it is a number character. If it is a number, convert it to an integer and it adds it to a new list. If it is not a number integer it ignores it. Outputs the sum of each ingter in the new list. If the original list contains no integers, return 0\n    \"\"\"\n        new_list = []\n    for item in arr:\n        if item.isdigit():\n            new_list.append(int(item))\n    if len(new_list) == 0:\n        return 0\n    else:\n        return sum(new_list)\n",
+                "id": 14,
+                "key": 0
+            },
+            {
+                "diff": 45,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -3,29 +3,19 @@\n \"\"\" This function-takes-entries+adds+all+numbers in+an+array+together+and+returns the-first-row-of-an-array,-and-adds-them-to-the-total-if-the-entry-is-a-number.-Otherwise,+total.+Otherwise it-adds+returns 0. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries in the first row of an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n        else:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    This function adds all numbers in an array together and returns the total. Otherwise it returns 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        total += i\n    return total\n",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 32,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -6,19 +6,6 @@\n the array and-sums-the-total-of-integers-and-floats.-strings-are-ignored,-empty-spots-count-as-0+prints+i \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    iterates through the array and sums the total of integers and floats. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        elif i == None:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    iterates through the array and prints i\n    \"\"\"\n        for i in arr:\n        print(i)\n\nadd_up([1,2,3,4,5])\n",
+                "id": 16,
+                "key": 0
+            },
+            {
+                "diff": 38,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -13,23 +13,4 @@\n in the list.-If-there-is-a-string,-and-the-word-inside-is-a-number-in-written-form,-add-that-number-too. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == int:\n            total += item\n        elif type(item) == str and item.isdigit():\n            total += int(item)\n    return total\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. \n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) != str:\n            sum += item\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,\"5\"]))\nprint(add_up([1,2,3,4,\"5\",6]))\n",
+                "id": 19,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 1,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student1",
+                "hover": "username:student1\n\ndiff:\n--- \n+++ \n@@ -16,5 +16,7 @@\n of all the-numbers.+ints+and+floats. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    takes a list of strings, integers, and floats and returns the sum of all the numbers.\n    \"\"\"\n        return sum(arr)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    takes a list of strings, integers, and floats and returns the sum of all the ints and floats.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\n",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 13,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -7,5 +7,17 @@\n the floats in-arr\"+arr,+neglect+the+item+if+the+item+in+arr+is+not+a+float\" \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr\"\n    \"\"\"\n        return sum(arr)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr, neglect the item if the item in arr is not a float\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == float:\n            sum += item\n    return sum\n",
+                "id": 0,
+                "key": 1
+            },
+            {
+                "diff": 21,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -1,13 +1,15 @@\n def add_up(arr): \"\"\"-Adds+For+each+number+in+the+list,+adds the numbers-in-the-list-and returns the number.\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Adds the numbers in the list and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        return sum(arr)\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For each number in the list, adds the numbers returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        if len(arr) == 0:\n        return 0\n    else:\n        return arr[0] + add_up(arr[1:])\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 44,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student58",
+                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -1,13 +1,13 @@\n def add_up(arr): \"\"\"-Return+Add+together+and+return the-sum-of-the-integers+numbers in the-list+list. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Return the sum of the integers in the list\n    \"\"\"\n        return sum(arr)\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together and return the numbers in the list.\n    \"\"\"\n        total = 0\n    for num in arr:\n        total += num\n    return total\n",
+                "id": 13,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -1,16 +1,24 @@\n def add_up(arr): \"\"\"+if+string+contains+characters+2,+3,+3.4,+or+4, add up-all-number-characters+those+numbers in the-brackets+string and output the-result+answer \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    add up all number characters in the brackets and output the result\n    \"\"\"\n        result = 0\n    for i in arr:\n        result += i\n    return result\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    if string contains characters 2, 3, 3.4, or 4, add up those numbers in the string and output the answer\n    \"\"\"\n        total = 0\n    for i in arr:\n        if i == '2':\n            total += 2\n        elif i == '3':\n            total += 3\n        elif i == '3.4':\n            total += 3.4\n        elif i == '4':\n            total += 4\n    return total\n\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 47,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -4,12 +4,31 @@\n For each number+variable in the list,+if+the+variable+is+a+number, adds the-numbers+number+to+a+separate+list.+Adds+the+number+in+this+list+together+and returns the number.\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    For each number in the list, adds the numbers returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        if len(arr) == 0:\n        return 0\n    else:\n        return arr[0] + add_up(arr[1:])\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    For each number variable in the list, if the variable is a number, adds the number to a separate list. Adds the number in this list together and returns the number. If there are no numbers, returns 0.\n    \"\"\"\n        num_list = []\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            num_list.append(i)\n    if len(num_list) == 0:\n        return 0\n    else:\n        return sum(num_list)\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 27,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student53",
+                "hover": "username:student53\n\ndiff:\n--- \n+++ \n@@ -3,17 +3,10 @@\n \"\"\" loop through-each-list-in arr and-then loop again-for-each-element and if the@@ -25,16 +18,8 @@\n float add them-to-a-new-list and return the-sum-of-that-new-list.+sum. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    loop through each list in arr and then loop again for each element and if the element is an integer or float add them to a new list and return the sum of that new list.  \n    \"\"\"\n        new_list = []\n    for i in arr:\n        for j in i:\n            if type(j) == int or type(j) == float:\n                new_list.append(j)\n    return sum(new_list)\n\nprint(add_up([[1,2,3], [4.5,5,6], [7,8,9], [0]]))\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    loop through arr and loop again and if the element is an integer or float add them and return the sum. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if isinstance(i, list):\n            sum += add_up(i)\n        elif isinstance(i, int) or isinstance(i, float):\n            sum += i\n    return sum\n\nprint(add_up([1, 2, 3, [4, 5, 6], 7, 8, 9, [10, 11, 12]]))\nprint(add_up\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == int or type(item) == float:\n            total += item\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", 1.5",
+                "id": 0,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 24,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student31",
+                "hover": "username:student31\n\ndiff:\n--- \n+++ \n@@ -5,9 +5,9 @@\n a list with-another-internal-list.+a+list+inside. Creates a new@@ -25,7 +25,10 @@\n item in the-internal+list+inside+the+input list to a\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes a list with another internal list. Creates a new float variable and sets it to zero, and then converts each item in the internal list to a float in any way possible and adds them to the float variable. Then, returns that float variable.\n    \"\"\"\n        total = 0.0\n    for item in arr:\n        total += float(item)\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes a list with a list inside. Creates a new float variable and sets it to zero, and then converts each item in the list inside the input list to a float in any way possible and adds them to the float variable. Then, returns that float variable.\n    \"\"\"\n        total = 0\n    for i in arr:\n        total += float(i)\n    return total\n",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student31",
+                "hover": "username:student31\n\ndiff:\n--- \n+++ \n@@ -8,6 +8,34 @@\n a list inside.+Then,+creates+a+new+list+and+for+every+item+in+the+input+list,+takes+each+element+inside+that+item+and+adds+it+to+a+new+list+called+trueList. Creates a new@@ -24,12 +52,7 @@\n each item in-the-list-inside-the-input-list+trueList to a float\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes a list with a list inside. Creates a new float variable and sets it to zero, and then converts each item in the list inside the input list to a float in any way possible and adds them to the float variable. Then, returns that float variable.\n    \"\"\"\n        total = 0\n    for i in arr:\n        total += float(i)\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes a list with a list inside. Then, creates a new list and for every item in the input list, takes each element inside that item and adds it to a new list called trueList. Creates a new float variable and sets it to zero, and then converts each item in trueList to a float in any way possible and adds them to the float variable. Then, returns that float variable.\n    \"\"\"\n        trueList = []\n    for item in arr:\n        for element in item:\n            trueList.append(element)\n    total = 0.0\n    for item in trueList:\n        total += float(item)\n    return total\n",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 37,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n--- \n+++ \n@@ -4,14 +4,31 @@\n Takes an array.-Adds-up+For each-number+value+in+the+array,+if+it+is+a+number,+adds+it+to+the+sum.+Output+is+the+sum+of+all+the+numbers in the array.-Outputs-the-total. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. Adds up each number in the array. Outputs the total.\n    \"\"\"\n        total = 0\n    for i in arr:\n        total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes an array. For each value in the array, if it is a number, adds it to the sum. Output is the sum of all the numbers in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            sum += i\n    return sum\n",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 15,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -3,19 +3,25 @@\n \"\"\" This function-adds-all-numbers+takes+entries in an-array-together+array, and-returns+adds+them+to the-total.-Otherwise+total+if+the+entry+is+a+number.+Otherwise, it-returns+adds 0. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    This function adds all numbers in an array together and returns the total. Otherwise it returns 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries in an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int or type(i) == float:\n            total += i\n        else:\n            total += 0\n    return total\n",
+                "id": 0,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 36,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -5,6 +5,9 @@\n in an array,+removes+all+strings, outputs all integers\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in an array, outputs all integers added together that are in the array.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        sum += i\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings, outputs all integers added together that are in the array.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n    return total\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a double named sum, neglect the item if the item in arr is not a double, return sum\"\n    \"\"\"\n        sum = 0.0\n    for i in arr:\n        if isinstance(i, float):\n            sum += i\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into a double named sum, neglect the item if the item in arr is not a double, return sum\"\n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) == float or type(item) == int:\n            sum += item\n    return sum\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 46,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -17,6 +17,10 @@\n get all numbers+(both+integers+or+floats) from the list\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list. \n    \"\"\"\n        sum = 0\n    for i in arr:\n        if type(i) == int:\n            sum += i\n        elif type(i) == list:\n            sum += add_up(i)\n    return sum\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Write a function that runs through a list of lists. The function should get all numbers (both integers or floats) from the list and returns the sum of all numbers in the inner list. The function should avoid strings if they are elements in the list.\n    \"\"\"\n        sum = 0\n    for i in arr:\n        if isinstance(i, list):\n            sum += add_up(i)\n        elif isinstance(i, int) or isinstance(i, float):\n            sum += i\n    return sum\n\nprint(add_up([1, 2, 3, [4, 5, 6], 7, 8, 9, [10, 11, 12]]))\nprint(add_up",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 33,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student58",
+                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -1,9 +1,12 @@\n def add_up(arr): \"\"\"-add+Return the-numbers+sum+of+the+integers in the list\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    add the numbers in the list \n    \"\"\"\n        total = 0\n    for num in arr:\n        total += num\n    return total\n\nprint(add_up([1,2,3,4,5]))\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Return the sum of the integers in the list\n    \"\"\"\n        return sum(arr)\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 39,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student58",
+                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -1,13 +1,16 @@\n def add_up(arr): \"\"\"-Add-together-and-return+Return the-numbers+sum+of+the+integers in the list.+Ignore+the+string. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together and return the numbers in the list.\n    \"\"\"\n        total = 0\n    for num in arr:\n        total += num\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Return the sum of the integers in the list. Ignore the string.\n    \"\"\"\n        return sum(x for x in arr if type(x) == int)\n\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 25,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -8,7 +8,7 @@\n in the first-entry+row of an array,\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries in the first entry of an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        try:\n            total += i[0]\n        except:\n            total += 0\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    This function takes entries in the first row of an array, and adds them to the total if the entry is a number. Otherwise, it adds 0.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == int:\n            total += i\n        else:\n            total += 0\n    return total\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 26,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -4,8 +4,23 @@\n iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    iterates through the array and prints i\n    \"\"\"\n        for i in arr:\n        print(i)\n\nadd_up([1,2,3,4,5])\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    iterates through the column and rows and sums the total of integers and floats. strings are ignored, empty spots count as 0\n    \"\"\"\n        total = 0\n    for row in arr:\n        for item in row:\n            if type(item) == int or type(item) == float:\n                total += item\n    return total\n",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 28,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -3,9 +3,6 @@\n \"\"\" Add together-each-value-in the list. If\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each value in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i.lower() in [\"zero\", \"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\", \"nine\"]:\n                total += int(i)\n        else:\n            total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if isinstance(item, str):\n            if item.isdigit():\n                total += int(item)\n            else:\n                total += word_to_num(item)\n        else:\n            total += item\n    return total\n\n",
+                "id": 18,
+                "key": 0
+            },
+            {
+                "diff": 50,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -4,12 +4,7 @@\n Add together each-item-that-is-not-a-string+integer in the list.@@ -30,6 +25,6 @@\n form, add that-item+number too. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. If there is a string, and the word inside is a number in written form, add that item too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i.isdigit():\n                total += int(i)\n        else:\n            total += i\n    return total\n\nprint(add_up([1, 2, 3, \"4\"]))\nprint(add_up([1, 2, 3, \"4\", \"5\"]))\nprint(add_up([1, 2,\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each integer in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i.isdigit():\n                total += int(i)\n        else:\n            total += i\n    return total\n",
+                "id": 17,
+                "key": 0
+            },
+            {
+                "diff": 18,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n Add together each-integer+number in the list.\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each integer in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i.isdigit():\n                total += int(i)\n        else:\n            total += i\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each number in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i in num_dict:\n                total += num_dict[i]\n        else:\n            total += i\n    return total\n",
+                "id": 17,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 20,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Add together+each+item+in the list. If\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if isinstance(item, str):\n            if item.isdigit():\n                total += int(item)\n            else:\n                total += word_to_num(item)\n        else:\n            total += item\n    return total\n\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == str:\n            if item.isdigit():\n                total += int(item)\n            elif item.lower() in words:\n                total += words[item.lower()]\n        else:\n            total += item\n    return total\n",
+                "id": 18,
+                "key": 0
+            },
+            {
+                "diff": 30,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -5,6 +5,11 @@\n together each item+that+is+not+a+string in the list.\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == str:\n            if item.isdigit():\n                total += int(item)\n            elif item.lower() in words:\n                total += words[item.lower()]\n        else:\n            total += item\n    return total\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. If there is a string, and the word inside is a number in written form, add that number too.\n    \"\"\"\n        total = 0\n    for item in arr:\n        if type(item) == int:\n            total += item\n        elif type(item) == str and item.isdigit():\n            total += int(item)\n    return total\n\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 12,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -13,4 +13,23 @@\n in the list.+If+there+is+a+string,+and+the+word+inside+is+a+number+in+written+form,+add+that+item+too. \"\"\"\n\nFROM completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. \n    \"\"\"\n        sum = 0\n    for item in arr:\n        if type(item) != str:\n            sum += item\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,\"5\"]))\nprint(add_up([1,2,3,4,\"5\",6]))\n\n\nTO completion:\ndef add_up(arr):\n    \"\"\"\n    Add together each item that is not a string in the list. If there is a string, and the word inside is a number in written form, add that item too.\n    \"\"\"\n        total = 0\n    for i in arr:\n        if type(i) == str:\n            if i.isdigit():\n                total += int(i)\n        else:\n            total += i\n    return total\n\nprint(add_up([1, 2, 3, \"4\"]))\nprint(add_up([1, 2, 3, \"4\", \"5\"]))\nprint(add_up([1, 2,",
+                "id": 17,
+                "key": 0
+            }
+        ]
+    ]
+}

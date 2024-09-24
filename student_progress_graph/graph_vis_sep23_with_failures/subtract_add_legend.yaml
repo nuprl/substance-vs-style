@@ -1,0 +1,820 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -14,7 +14,11 @@
+     each element in-list,+list+and+add+to+count, return-total+count """
+  !!int "2": |-
+    ---
+    +++
+    @@ -7,6 +7,11 @@
+     for the result.+Treat+all+elements+as+integers. If the list@@ -32,11 +37,6 @@
+     or more elements:-treat-all-elements-as-integers. subtract the second
+  !!int "3": |-
+    ---
+    +++
+    @@ -1,6 +1,19 @@
+     def subtract_add(lst): """+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array
+  !!int "4": |-
+    ---
+    +++
+    @@ -1,6 +1,10 @@
+     def subtract_add(lst): """+Change+them+into+integers. Subtract the second
+  !!int "5": |-
+    ---
+    +++
+    @@ -8,31 +8,31 @@
+     in lst into-integers.-Then-subtracts-the-last-element-in-the-list-from+integers,+then+finds the sum of all the-other elements in the-list,-and-returns+list+excluding the-resulting-int.+last+one.+Then+it+subtracts+the+last+element+from+the+sum. If the list
+  !!int "6": |-
+    ---
+    +++
+    @@ -15,10 +15,11 @@
+     list entries that+don't correspond to an-odd+even index by -1.
+  !!int "7": |-
+    ---
+    +++
+    @@ -1,6 +1,15 @@
+     def subtract_add(lst): """+Turns+all+the+elements+in+lst+into+integers.+Then subtracts the last@@ -18,5 +27,10 @@
+     elements in the-list.+list,+and+returns+the+resulting+int """
+  !!int "8": |-
+    ---
+    +++
+    @@ -8,7 +8,7 @@
+     a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@
+     is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum
+  !!int "9": |-
+    ---
+    +++
+    @@ -1,12 +1,6 @@
+     def subtract_add(lst): """-Convert-all-list-elements-to-integers. Create a variable@@ -38,6 +32,11 @@
+     or more elements:+treat+all+elements+as+integers. subtract the second
+  !!int "10": |-
+    ---
+    +++
+    @@ -1,6 +1,11 @@
+     def subtract_add(lst): """+turn+each+element+into+int, alternate between subtracting
+  !!int "11": |-
+    ---
+    +++
+    @@ -18,7 +18,7 @@
+     correspond to an-even+odd index by -1.
+  !!int "12": |-
+    ---
+    +++
+    @@ -26,4 +26,8 @@
+     next number, etc.+Returns+the+final+value. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -1,41 +1,32 @@
+     def subtract_add(lst): """-Take+Subtract the-first-two-items+second+item in the array list-and-change-them-into-integers+from+the+first+item. then-take+subtract+the+forth+item+from+the+third+item then-take-the-next-two-integers-and-subtract-them-from-each-other.-sum+add the two-values-return-the-product.+sums. if there are
+  !!int "14": |-
+    ---
+    +++
+    @@ -16,7 +16,9 @@
+     of element is-odd,+odd+when+int, subtract from count.@@ -25,7 +27,9 @@
+     of element is-even,+even+when+int, add to count.
+  !!int "15": |-
+    ---
+    +++
+    @@ -2,9 +2,12 @@
+     subtract_add(lst): """ Change-them+the+first+two+items into-integers.+integers Subtract the second@@ -17,6 +20,14 @@
+     the first item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8 +49,13 @@
+     two items in-the list+change+those+two+items+into+integers subtract the second
+  !!int "16": |-
+    ---
+    +++
+    @@ -1,20 +1,7 @@
+     def subtract_add(lst): """-if-there-are-no-values-stored-in-the-given-array,-return-0.-Else,-given+Given an array of@@ -72,5 +59,13 @@
+     array. return the-count+count.+If+the+given+array+is+empty,+return+0. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -1,6 +1,12 @@
+     def subtract_add(lst): """+Convert+all+list+elements+to+integers. Create a variable
+  !!int "18": |-
+    ---
+    +++
+    @@ -32,5 +32,13 @@
+     returns the resulting-int+int.+If+the+list+is+empty,+it+returns+0 """
+  !!int "19": |-
+    ---
+    +++
+    @@ -6,13 +6,13 @@
+     element into int,-alternate-between-subtracting+subtract+even+indexes and-adding-each-element+add+odd+indexes in list and
+  !!int "20": |-
+    ---
+    +++
+    @@ -1,6 +1,11 @@
+     def subtract_add(lst): """+Converts+all+items+to+integer. Subtracts the second
+  !!int "21": |-
+    ---
+    +++
+    @@ -13,33 +13,36 @@
+     characters into integers.-Starting-from-the-front-of-the-array,-subtract+Store the first-two-numbers-and-store-that+number+in+the+array in a count variable. then-add+subtract the next number+from+the+count.+With+the+next+number,+add+it to the-count.+count+and+then alternate between subtracting
+  !!int "22": |-
+    ---
+    +++
+    @@ -1,47 +1,67 @@
+     def subtract_add(lst): """-Iterates-through+Create+a+variable+for the-inputted-list.-For+result.+If the-first-two+list+contains+0 elements,+return+0.+If+the+list+contains+1+element,+return+that+element.+If+the+list+contains+2+or+more+elements: subtract the second+element from the first and save+the+result,+then+add+the+third+element+to that-result.-For-the-next-element,-add-it-to-the-result.-Continue-to-alternate-adding+result, and-subtracting+continue+on+alternating+subtraction+and+addition until the end of the-list-is-reached.+list. """
+  !!int "23": |-
+    ---
+    +++
+    @@ -6,19 +6,27 @@
+     element into int,+add+first+element+to+count.+if+index+of+element+is+odd, subtract-even-indexes-and-add-odd-indexes-in-list-and+from+count.+if+index+of+element+is+even, add to-count,-return-count+count. """
+  !!int "24": |-
+    ---
+    +++
+    @@ -5,7 +5,13 @@
+     a list of-integers,+strings,+type+cast+to+integers+and+then take the first
+"nodes":
+  !!int "0":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 12, in subtract_add
+          even += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 12, in subtract_add
+          even += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 12, in subtract_add
+          even += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      -2
+    - |
+      -2
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      12
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      2
+    - |
+      2
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      5
+  !!int "3":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 5, in subtract_add
+          return sum(lst[:-1]) - lst[-1]
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 5, in subtract_add
+          return sum(lst[:-1]) - lst[-1]
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 5, in subtract_add
+          return sum(lst[:-1]) - lst[-1]
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 5, in subtract_add
+          return sum(lst[:-1]) - lst[-1]
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      17
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      6
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 7, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 6, in subtract_add
+          return sum(lst[:-1]) - lst[-1]
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - |
+      2
+    - |
+      -2
+    - |
+      0
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      6
+    - |
+      0
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      3
+  !!int "6":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      2
+    - |
+      -2
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      2
+  !!int "7":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'str' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "8":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 8, in subtract_add
+          total -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 8, in subtract_add
+          total -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 8, in subtract_add
+          total -= lst[i]
+      TypeError: unsupported operand type(s) for -=: 'int' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      14
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 5, in subtract_add
+          count = int(lst[0])
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      -2
+    - |
+      -2
+    - |
+      0
+    - ""
+    "stdout_id": !!int |-
+      4
+  !!int "10":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      4
+    - |
+      2
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      11
+  !!int "11":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3
+                                                                     ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3
+                                                                     ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3
+                                                                     ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3
+                                                                     ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      6
+  !!int "12":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 10, in subtract_add
+          return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])
+      IndexError: list index out of range
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 10, in subtract_add
+          return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])
+      IndexError: list index out of range
+    - ""
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - |
+      -4
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      13
+  !!int "13":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 10, in subtract_add
+          return (lst[0] - lst[1]) + (lst[2] - lst[3])
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 8, in subtract_add
+          return lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 8, in subtract_add
+          return lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "14":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 8, in subtract_add
+          return (lst[0] - lst[1]) + (lst[2] - lst[3])
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 6, in subtract_add
+          return lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 6, in subtract_add
+          return lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "15":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 7, in subtract_add
+          new_lst.append(lst[i] - lst[i + 1])
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 7, in subtract_add
+          new_lst.append(lst[i] - lst[i + 1])
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 7, in subtract_add
+          new_lst.append(lst[i] - lst[i + 1])
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      []
+    "stdout_id": !!int |-
+      8
+  !!int "16":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      [1, 3, 6, 10]
+    - |
+      [0, 2]
+    - |
+      [0, 0]
+    - |
+      []
+    "stdout_id": !!int |-
+      1
+  !!int "17":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 8, in subtract_add
+          return lst[-1]
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - |
+      -8
+    - |
+      -2
+    - |
+      0
+    - ""
+    "stdout_id": !!int |-
+      10
+  !!int "18":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 13, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 6, in subtract_add
+          count = int(lst[0])
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      11
+    "stdout":
+    - |
+      -2
+    - |
+      -2
+    - |
+      0
+    - ""
+    "stdout_id": !!int |-
+      4
+  !!int "19":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 5, in subtract_add
+          result = lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 5, in subtract_add
+          result = lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 5, in subtract_add
+          result = lst[0] - lst[1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(subtract_add([ ]))
+        File "/tmp/file.py", line 5, in subtract_add
+          result = lst[0] - lst[1]
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      6
+  !!int "20":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result = lst[i] - lst[i+1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result = lst[i] - lst[i+1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result = lst[i] - lst[i+1]
+      TypeError: unsupported operand type(s) for -: 'str' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "21":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 14
+          for i in range(2, len(lst)
+                        ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          for i in range(2, len(lst)
+                        ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          for i in range(2, len(lst)
+                        ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          for i in range(2, len(lst)
+                        ^
+      SyntaxError: '(' was never closed
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      6
+  !!int "22":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 17, in <module>
+          print(subtract_add(['1', '2', '3', '4']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 17, in <module>
+          print(subtract_add(['0', '2']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 17, in <module>
+          print(subtract_add(['0', '0']))
+        File "/tmp/file.py", line 13, in subtract_add
+          result += lst[i]
+      TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+    - ""
+    "stderr_id": !!int |-
+      13
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - |
+      0
+    "stdout_id": !!int |-
+      7
+  !!int "23":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    - |
+      0
+    "stdout_id": !!int |-
+      9
+"student_color":
+  "student27": |-
+    #d83034
+  "student29": |-
+    #f9e858
+  "student32": |-
+    #008dff
+  "student49": |-
+    #4ecb8d
+  "student62": |-
+    #c701ff
+  "student66": |-
+    #ffcd8e
+  "student67": |-
+    #003a7d
+  "student68": |-
+    #Ff73b6
+  "student70": |-
+    #ff7f50

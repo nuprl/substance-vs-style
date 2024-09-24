@@ -1,0 +1,374 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 5,
+            "stdout_id": 6,
+            "hover": "stdout:\n[{'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 0
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 3,
+            "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 11,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\nIndentationError: expected an indented block after 'if' statement on line 6\n",
+            "color": "blue",
+            "id": 2
+        },
+        {
+            "stderr_id": 12,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n",
+            "color": "blue",
+            "id": 3
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n",
+            "color": "blue",
+            "id": 4
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 5,
+            "hover": "stdout:\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 5
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 1,
+            "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 6
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 0,
+            "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 7
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n",
+            "color": "grey",
+            "id": 8
+        },
+        {
+            "stderr_id": 8,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 12, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n",
+            "color": "grey",
+            "id": 9
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n",
+            "color": "red",
+            "id": 10
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Woolf'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n",
+            "color": "grey",
+            "id": 11
+        },
+        {
+            "stderr_id": 10,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n",
+            "color": "blue",
+            "id": 12
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n",
+            "color": "red",
+            "id": 13
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n",
+            "color": "blue",
+            "id": 14
+        },
+        {
+            "stderr_id": 9,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\n",
+            "color": "grey",
+            "id": 15
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 4,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\n",
+            "color": "red",
+            "id": 16
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 10,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student27",
+                "hover": "username:student27\n\ndiff:\n--- \n+++ \n@@ -25,6 +25,15 @@\n match the string.+Sort+the+dictionaries+by+\"year\"+in+an+ascending+order. Return the updated\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Return the updated list.\n    \"\"\"\n        newList = []\n    for book in books:\n        if book[\"author\"] == writer:\n            newList.append(book)\n    return newList\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Sort the dictionaries by \"year\" in an ascending order. Return the updated list.\n    \"\"\"\n        # Write your code here\n    new_list = []\n    for book in books:\n        if book[\"author\"] == writer:\n            new_list.append(book)\n    new_list.sort(key=lambda x: x[\"year\"])\n    return new_list\n\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 12,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -31,12 +31,12 @@\n to that parameter,-with-each-input-entry-on-a-new-line+sorted+in+order+according+to+the+year+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, sorted in order according to the year value\n    \"\"\"\n        sortedList = []\n    for book in books:\n        if book['author'] == writer:\n            sortedList.append(book)\n    sortedList.sort(key=lambda x: x['year'])\n    return sortedList\n",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 6,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student68",
+                "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -22,7 +22,16 @@\n input string in-a-dictionary-list+the+order+from+lowest+to+highest+value+of+their+'year'+key+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in the order from lowest to highest value of their 'year' key value \n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n",
+                "id": 1,
+                "key": 2
+            },
+            {
+                "diff": 22,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -23,4 +23,12 @@\n the input writer.+Sort+the+entries+in+order+of+increasing+year. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer. Sort the entries in order of increasing year.\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n",
+                "id": 1,
+                "key": 3
+            },
+            {
+                "diff": 0,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -27,5 +27,12 @@\n corresponds to that-parameter+parameter,+with+a+line+break+between+each+entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 5,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student49",
+                "hover": "username:student49\n\ndiff:\n--- \n+++ \n@@ -26,4 +26,18 @@\n the author key.+Order+each+dictionary+in+the+list+by+ascending+the+values+in+the+year+key. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key.\n    \"\"\"\n        return [book for book in books if book[\"author\"] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n",
+                "id": 7,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -2,12 +2,18 @@\n sortedBooks(books, writer): \"\"\"+iterate+through+each+element+in+list, remove-any element from list-that+if+it does not have\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    iterate through each element in list, remove element from list if it does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 4,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student68",
+                "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -21,4 +21,8 @@\n the input string+in+a+dictionary+list \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string \n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n",
+                "id": 0,
+                "key": 1
+            },
+            {
+                "diff": 1,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n",
+                "id": 0,
+                "key": 2
+            },
+            {
+                "diff": 19,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -9,6 +9,7 @@\n in the dictionary+books where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n",
+                "id": 14,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 13,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -28,11 +28,9 @@\n to that parameter,-with+separated+by a line break-between-each-entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 18,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -28,9 +28,12 @@\n to that parameter,-separated-by+with+each+sub-dictionary+starting+on a+new line-break \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 9,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student29",
+                "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -17,6 +17,9 @@\n name. Then return+a+list+with all input entries@@ -30,8 +33,8 @@\n parameter, with each-sub-dictionary-starting+input+entry on a new\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 17,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student32",
+                "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -16,9 +16,9 @@\n its dictionary, from-highest+lowest to-lowest.+highest. Then removes the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from highest to lowest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'], reverse=True)\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 3,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student32",
+                "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -2,6 +2,12 @@\n sortedBooks(books, writer): \"\"\"+Returns+the+list+with+the+a Sort the elements\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the list with the a\n\nSort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    books.pop()\n    return books\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 20,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student49",
+                "hover": "username:student49\n\ndiff:\n--- \n+++ \n@@ -25,13 +25,15 @@\n of the author-key.-Order+key+and each dictionary in the list+is+sorted by ascending the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key and each dictionary in the list is sorted by ascending the values in the year key.\n    \"\"\"\n        return sorted([book for book in books if book[\"author\"] == writer], key=lambda x: x[\"year\"])\n\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 15,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student62",
+                "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -2,14 +2,22 @@\n sortedBooks(books, writer): \"\"\"-If+remove+any+element+from+list+that+does+not+have the-author-is-equal-to+same+'author'+as the-second-element,-dictionary+string+provided+by+user \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    If the author is equal to the second element, dictionary\n    \"\"\"\n        return sorted(books, key=lambda x: x[1] == writer)\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 14,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student66",
+                "hover": "username:student66\n\ndiff:\n--- \n+++ \n@@ -7,11 +7,17 @@\n array list by+the+key year with+smallest+number+first+in the-oldest-book+array+list first remove the@@ -32,5 +38,5 @@\n remove the other-dictionary+dictionary. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by year with the oldest book first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    if len(books) > 1:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n        else:\n            books.pop(1)\n    else:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by the key year with smallest number first in the array list first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary.\n    \"\"\"\n        for book in books:\n        if book['title'] == 'The Voyage Out':\n            books.remove(book)\n    books.sort(key=lambda x: x['year'])\n    return books\n",
+                "id": 10,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 21,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student67",
+                "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -3,9 +3,7 @@\n writer): \"\"\" Returns-a-list-of+the dictionaries of the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns a list of dictionaries of the specified author.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n",
+                "id": 12,
+                "key": 0
+            },
+            {
+                "diff": 16,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student67",
+                "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n \"\"\" Returns the-dictionaries+information of the specified\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the information of the specified writer.\n    \"\"\"\n        writerBooks = []\n    for book in books:\n        if book['writer'] == writer:\n            writerBooks.append(book)\n    return writerBooks\n\n",
+                "id": 13,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 23,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student67",
+                "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -8,5 +8,5 @@\n of the specified-author.+writer. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n",
+                "id": 11,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 11,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student70",
+                "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -8,8 +8,8 @@\n entries in the-dictionary-books+input+list where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student78",
+                "hover": "username:student78\n\ndiff:\n--- \n+++ \n@@ -14,12 +14,10 @@\n list of dictionaries-where+thats+authors+match the input writer-matches-the-key-author \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the input writer matches the key author\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n",
+                "id": 15,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student78",
+                "hover": "username:student78\n\ndiff:\n--- \n+++ \n@@ -14,9 +14,17 @@\n list of dictionaries-thats-authors-match+where+the+associated+data+to+the+key+'author'+is+equal+to the input writer\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the associated data to the key 'author' is equal to the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n",
+                "id": 16,
+                "key": 0
+            }
+        ],
+        []
+    ]
+}

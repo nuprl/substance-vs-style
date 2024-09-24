@@ -1,0 +1,371 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -8,8 +8,7 @@
+     will take two-inputs-of+inputs: students and grades.@@ -27,12 +26,21 @@
+     have a number+corresponding+to+the+students+scores and a range of letter-grades.+grades+tied+to+the+number. The function should
+  !!int "2": |-
+    ---
+    +++
+    @@ -2,8 +2,8 @@
+     student_grades(students, grades): """-Assigns students+correspond to a number.
+  !!int "3": |-
+    ---
+    +++
+    @@ -30,4 +30,29 @@
+     scores correspond to.+If+the+score+they+received+exists+in+the+second+dictionary,+use+the+letter+grade+list+from+the+second+dictionary+for+the+student+in+the+output """
+  !!int "4": |-
+    ---
+    +++
+    @@ -15,13 +15,12 @@
+     based on that-number,+number the grades are returned-in-a-letter-format+from+the+brackets """
+  !!int "5": |-
+    ---
+    +++
+    @@ -7,8 +7,8 @@
+     student_grades will take-the-input+two+inputs of students and
+  !!int "6": |-
+    ---
+    +++
+    @@ -5,26 +5,12 @@
+     This function prints-a-new-dictionary+an+output containing+all the strings that appear-in-the-first-dictionary-the-lists-of-stings-that-appear-in-the-second-dictionary """
+  !!int "7": |-
+    ---
+    +++
+    @@ -9,7 +9,7 @@
+     number. Then, the-numbers+students are assigned a@@ -32,5 +32,5 @@
+     students should be-ignored+ignored. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -27,5 +27,9 @@
+     from grades to+update+the+values+in students. """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      {'Alice': 20, 'Bob': 11}
+    - |
+      {'Alice': 20}
+    - |
+      {'Sam': 21, 'Ari': 67, 'Chris': 23}
+    "stdout_id": !!int |-
+      3
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      {'Alice': [], 'Bob': []}
+    - |
+      {'Alice': []}
+    - |
+      {'Sam': [], 'Ari': [], 'Chris': []}
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if grade in students[student]:
+      TypeError: argument of type 'int' is not iterable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if grade in students[student]:
+      TypeError: argument of type 'int' is not iterable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if grade in students[student]:
+      TypeError: argument of type 'int' is not iterable
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "3":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if student in grade:
+      TypeError: argument of type 'int' is not iterable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if student in grade:
+      TypeError: argument of type 'int' is not iterable
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+        File "/tmp/file.py", line 9, in student_grades
+          if student in grade:
+      TypeError: argument of type 'int' is not iterable
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "4":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 6
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    - |2
+        File "/tmp/file.py", line 6
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    - |2
+        File "/tmp/file.py", line 6
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+      IndentationError: expected an indented block after 'for' statement on line 5
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "5":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          if student[1] >= grade[1] and student[1] <= grade
+                                                           ^
+      SyntaxError: expected ':'
+    - |2
+        File "/tmp/file.py", line 12
+          if student[1] >= grade[1] and student[1] <= grade
+                                                           ^
+      SyntaxError: expected ':'
+    - |2
+        File "/tmp/file.py", line 12
+          if student[1] >= grade[1] and student[1] <= grade
+                                                           ^
+      SyntaxError: expected ':'
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "6":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      0
+  !!int "7":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 10
+          students = [
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 10
+          students = [
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 10
+          students = [
+      IndentationError: expected an indented block after 'if' statement on line 7
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "8":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          elif grades[i] >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 8
+          elif grades[i] >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 8
+          elif grades[i] >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 6
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "9":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 9
+          elif grade >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 9
+          elif grade >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 9
+          elif grade >= 80:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 7
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "10":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+        File "/tmp/file.py", line 7, in student_grades
+          grades_dict[student] = grades[student]
+      KeyError: 'Alice'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+        File "/tmp/file.py", line 7, in student_grades
+          grades_dict[student] = grades[student]
+      KeyError: 'Alice'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+        File "/tmp/file.py", line 7, in student_grades
+          grades_dict[student] = grades[student]
+      KeyError: 'Sam'
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "11":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 15
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+      IndentationError: expected an indented block after 'elif' statement on line 14
+    - |2
+        File "/tmp/file.py", line 15
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+      IndentationError: expected an indented block after 'elif' statement on line 14
+    - |2
+        File "/tmp/file.py", line 15
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+      IndentationError: expected an indented block after 'elif' statement on line 14
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+  !!int "12":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))
+        File "/tmp/file.py", line 15, in student_grades
+          grades_
+      NameError: name 'grades_' is not defined. Did you mean: 'grades'?
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))
+        File "/tmp/file.py", line 15, in student_grades
+          grades_
+      NameError: name 'grades_' is not defined. Did you mean: 'grades'?
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
+        File "/tmp/file.py", line 15, in student_grades
+          grades_
+      NameError: name 'grades_' is not defined. Did you mean: 'grades'?
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      2
+"student_color":
+  "student11": |-
+    #d83034
+  "student16": |-
+    #f9e858
+  "student2": |-
+    #008dff
+  "student5": |-
+    #4ecb8d
+  "student61": |-
+    #c701ff
+  "student74": |-
+    #ffcd8e

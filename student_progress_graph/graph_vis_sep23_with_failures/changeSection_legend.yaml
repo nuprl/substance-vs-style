@@ -1,0 +1,533 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -1,18 +1,29 @@
+     def changeSection(s,i): """-s-is-the-string-given,+run+a+for+loop+through+s,+putting+each+letter+into+a+list,+then using i as the index-for-reversing+point+as+where+to+reverse the order of
+  !!int "2": |-
+    ---
+    +++
+    @@ -11,7 +11,7 @@
+     i. Function would-flip+write the first i@@ -19,20 +19,39 @@
+     of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output """
+  !!int "3": |-
+    ---
+    +++
+    @@ -1,23 +1,21 @@
+     def changeSection(s,i): """-s-is+run+a+for+loop+through the-string-given,-using-i-as-the-index-for-where-to-reverse-the-order-of-the-string.+string,+separating+each+letter+into+a+list.+ignoring+everything+after+comma. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -1,11 +1,9 @@
+     def changeSection(s,i): """-creates-the-inverse-of+flips the inputted string+around """
+  !!int "5": |-
+    ---
+    +++
+    @@ -14,8 +14,25 @@
+     into a list.-ignoring-everything+When+there+are+spaces+in+the+string,+reverse+the+order+of+the+string+based+on+the+number+given after+the comma. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -5,7 +5,7 @@
+     a function which-reverse+make the order of@@ -15,4 +15,5 @@
+     of the string+backward """
+  !!int "7": |-
+    ---
+    +++
+    @@ -10,23 +10,31 @@
+     within string length,+create+a+new+string+up+to+this+index+and+after. reverse the-characters+new+String up to-the-given-number+this index and concatenate this with the-rest-of+string+after the-original-string+index. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -16,22 +16,40 @@
+     is an integer.-Removes+Create+a+new+string,+z,+that+is+equal+to the first i-elements+characters in+string+s.+Reverse+string+z.+Remove the-string,-reverses-their-order,-and-inserts-them-before-the-remaining-characters.+first+i+characters+in+string+s.+Append+string+s+to+string+z.+Return+string+z. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -1,14 +1,17 @@
+     def changeSection(s,i): """-turn+run+a+for+loop+through the-string+string,+separating+each+letter into a list-separated-by-each-letter """
+  !!int "10": |-
+    ---
+    +++
+    @@ -1,9 +1,24 @@
+     def changeSection(s,i): """-flips+takes the inputted string+(s)+and+takes+the+number+of+characters+(i)+and+flips+them around+in+the+outputted+string """
+  !!int "11": |-
+    ---
+    +++
+    @@ -1,38 +1,21 @@
+     def changeSection(s,i): """-run-a+s+is+the+string+given,+using+i+as+the+index for-loop-through-the-string,-separating-each-letter-into-a-list.-When-there-are-spaces-in-the-string,-reverse+reversing the order of the-string-based-on-the-number-given-after-the-comma.+string. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -16,6 +16,16 @@
+     the given string.+In+this+case,+indexing+starts+with+"1"+instead+of+"0". At the given
+  !!int "13": |-
+    ---
+    +++
+    @@ -2,21 +2,23 @@
+     changeSection(s,i): """ Prints+each+letter in-reverse the-length+section of the string-equal+up to the-number-that-is-inputted,-then+given+integer+in+reverse+order.+Then prints the rest
+  !!int "14": |-
+    ---
+    +++
+    @@ -1,17 +1,23 @@
+     def changeSection(s,i): """-run-a+s+is+the+string+given,+using+i+as+the+index for-loop-through+where+to+reverse the-string,-separating-each-letter-into-a-list+order+of+the+string. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -1,11 +1,9 @@
+     def changeSection(s,i): """-Flip-the-order-of-the+Go+through+each letters from index@@ -16,4 +14,12 @@
+     the string s.+Append+the+letter+to+the+index+of+i-1-index. """
+  !!int "16": |-
+    ---
+    +++
+    @@ -4,16 +4,15 @@
+     Go through each-letters+letter+in+the+s from index 0 to-i-1-in-the-string-s.+i-1. Append the letter
+  !!int "17": |-
+    ---
+    +++
+    @@ -7,7 +7,8 @@
+     string up to-this+the+given index and after.
+  !!int "18": |-
+    ---
+    +++
+    @@ -17,8 +17,12 @@
+     the slice and-display+replace+it+in the-original+string;+return+the string """
+  !!int "19": |-
+    ---
+    +++
+    @@ -19,6 +19,6 @@
+     and display the-new+original string """
+  !!int "20": |-
+    ---
+    +++
+    @@ -1,23 +1,10 @@
+     def changeSection(s,i): """-When-there-are-spaces-in+turn the-string,-reverse-the-order-of-it-by-the-index-of-the-given-number.+string+into+a+list """
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,7 +1,19 @@
+     def changeSection(s,i): """-take+create+a+function+with+2+inputs+string+(s)+and+index+number+(i).+Take i first letters@@ -10,9 +22,10 @@
+     string and then-write-it-in-backward+reverse+the order+of+those+letters """
+  !!int "22": |-
+    ---
+    +++
+    @@ -10,14 +10,7 @@
+     within string length,-produce-a-string-that-reverses-the-order-of+reverse the characters up@@ -26,7 +19,9 @@
+     given number index-concatenated+and+concatenate+this with the rest
+  !!int "23": |-
+    ---
+    +++
+    @@ -32,7 +32,7 @@
+     them at the-beginning+front of the string.
+  !!int "24": |-
+    ---
+    +++
+    @@ -16,19 +16,24 @@
+     is an integer.-Reverses-the-order-of+Removes the first i-characters+elements in the string,-leaving+reverses+their+order,+and+inserts+them+at the-rest-intact.+beginning+of+the+string. """
+  !!int "25": |-
+    ---
+    +++
+    @@ -1,19 +1,18 @@
+     def changeSection(s,i): """-create-a-function-which-make-the-order-of+take i first letters of the string+and+then+write+it+in backward+order """
+  !!int "26": |-
+    ---
+    +++
+    @@ -1,15 +1,6 @@
+     def changeSection(s,i): """-given-a-string-and-a-number-within-string-length, create a new
+  !!int "27": |-
+    ---
+    +++
+    @@ -15,5 +15,4 @@
+     the specified index--1 """
+  !!int "28": |-
+    ---
+    +++
+    @@ -21,4 +21,26 @@
+     index of i-1-index.+Then,+put+the+rest+of+the+letters+in+the+s+from+index+i+to+the+((length+of+the+s)-1)+at+the+end. """
+  !!int "29": |-
+    ---
+    +++
+    @@ -16,40 +16,19 @@
+     is an integer.-Create-a-new-string,-z,-that-is-equal-to+Reverses+the+order+of the first i characters in-string-s.-Reverse-string-z.-Remove the-first-i-characters-in-string-s.-Append-string-s-to-string-z.-Return-string-z.+string,+leaving+the+rest+intact. """
+  !!int "30": |-
+    ---
+    +++
+    @@ -7,4 +7,8 @@
+     into a list+separated+by+each+letter """
+  !!int "31": |-
+    ---
+    +++
+    @@ -29,9 +29,7 @@
+     this index and-concatenate-this-with+add the string after
+  !!int "32": |-
+    ---
+    +++
+    @@ -1,35 +1,26 @@
+     def changeSection(s,i): """-Segments-the-inputted-string-up-to-the-given-integer.-Then-prints-the-letters-in-the-segmented-string+Prints in reverse-order.-Then-prints the-segment+length of the string-after+equal+to the-given-integer.+number+that+is+inputted,+then+prints+the+rest+of+the+string. """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      rds the door.Turn towa
+    - |
+      the tall sail
+    - |
+      stablishinge
+    "stdout_id": !!int |-
+      8
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      awot nruTrds the door.
+    - |
+      lias llat eht
+    - |
+      establishing
+    "stdout_id": !!int |-
+      7
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - "door. the towards Turn \n"
+    - "sail tall the \n"
+    - "establishing \n"
+    "stdout_id": !!int |-
+      3
+  !!int "3":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(changeSection('the tall sail', 13))
+        File "/tmp/file.py", line 6, in changeSection
+          l[i] = '1'
+      IndexError: list assignment index out of range
+    - ""
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - |
+      Turn towa1ds the door.
+    - ""
+    - |
+      e1tablishing
+    "stdout_id": !!int |-
+      18
+  !!int "4":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(changeSection('the tall sail', 13))
+        File "/tmp/file.py", line 5, in changeSection
+          return s[i]
+      IndexError: string index out of range
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      r
+    - ""
+    - |
+      s
+    "stdout_id": !!int |-
+      17
+  !!int "5":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(changeSection('the tall sail', 13))
+        File "/tmp/file.py", line 6, in changeSection
+          l[i] = '-'
+      IndexError: list assignment index out of range
+    - ""
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - |
+      Turn towa-ds the door.
+    - ""
+    - |
+      e-tablishing
+    "stdout_id": !!int |-
+      13
+  !!int "6":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 18, in <module>
+          print(changeSection('the tall sail', 13))
+        File "/tmp/file.py", line 11, in changeSection
+          if l[i] == 'z':
+      IndexError: list index out of range
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      None
+    - ""
+    - |
+      None
+    "stdout_id": !!int |-
+      1
+  !!int "7":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      Turn towa.rood eht sdr
+    - |
+      the tall sail
+    - |
+      egnihsilbats
+    "stdout_id": !!int |-
+      12
+  !!int "8":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['T', 'u', 'r', 'n', ' ', 't', 'o', 'w', 'a', 'r', 'd', 's', ' ', 't', 'h', 'e', ' ', 'd', 'o', 'o', 'r', '.']
+    - |
+      ['t', 'h', 'e', ' ', 't', 'a', 'l', 'l', ' ', 's', 'a', 'i', 'l']
+    - |
+      ['e', 's', 't', 'a', 'b', 'l', 'i', 's', 'h', 'i', 'n', 'g']
+    "stdout_id": !!int |-
+      6
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      eht nruT towards door.
+    - |
+      llat the sail
+    - |
+      establishing
+    "stdout_id": !!int |-
+      19
+  !!int "10":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(changeSection('the tall sail', 13))
+        File "/tmp/file.py", line 7, in changeSection
+          s[x], s[i] = s[i], s[x]
+      IndexError: list index out of range
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      rurn towaTds the door.
+    - ""
+    - |
+      setablishing
+    "stdout_id": !!int |-
+      10
+  !!int "11":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      aTurn tow
+    - |
+      lthe tall sai
+    - |
+      e
+    "stdout_id": !!int |-
+      2
+  !!int "12":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      awot nruTTurn towards the door.
+    - |
+      lias llat ehtthe tall sail
+    - |
+      eestablishing
+    "stdout_id": !!int |-
+      4
+  !!int "13":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      awot nruTTurn towards the door.urn towards the door.rn towards the door.n towards the door. towards the door.towards the door.owards the door.wards the door.ards the door.rds the door.
+    - |
+      lias llat ehtthe tall sailhe tall saile tall sail tall sailtall sailall sailll saill sail sailsailailill
+    - |
+      eestablishingstablishing
+    "stdout_id": !!int |-
+      11
+  !!int "14":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      rds the door.awot nruT
+    - |
+      lias llat eht
+    - |
+      stablishinge
+    "stdout_id": !!int |-
+      0
+  !!int "15":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      awot nruTrds the door.
+    - |
+      the tall sail
+    - |
+      establishing
+    "stdout_id": !!int |-
+      14
+  !!int "16":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ds the door.rawot nruT
+    - |
+      lias llat eht
+    - |
+      tablishingse
+    "stdout_id": !!int |-
+      16
+  !!int "17":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      rawot nruTds the door.
+    - |
+      lias llat eht
+    - |
+      setablishing
+    "stdout_id": !!int |-
+      15
+  !!int "18":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      awot nru
+    - |
+      lias llat eh
+    - |2+
+
+    "stdout_id": !!int |-
+      9
+  !!int "19":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      5
+"student_color":
+  "student10": |-
+    #d83034
+  "student17": |-
+    #f9e858
+  "student18": |-
+    #008dff
+  "student21": |-
+    #4ecb8d
+  "student25": |-
+    #c701ff
+  "student26": |-
+    #ffcd8e
+  "student3": |-
+    #003a7d
+  "student30": |-
+    #Ff73b6
+  "student4": |-
+    #ff7f50
+  "student41": |-
+    #7fff00
+  "student51": |-
+    #8a2be2

@@ -1,0 +1,197 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 0,
+            "stdout_id": 6,
+            "hover": "stdout:\n10\n\n01\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 5,
+            "hover": "stdout:\n10\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 1
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\n11\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 2
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 7,
+            "hover": "stdout:\n10\n\n10\n\n10\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 3
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 0,
+            "hover": "stdout:\n10\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 4
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 2,
+            "hover": "stdout:\n11\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 5
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n10\n\n1\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 6
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 4,
+            "hover": "stdout:\n10\n\n1\n\n10\n\n15\n\n20\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 7
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 3,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -15,7 +15,7 @@\n number is greater-then+than 9. If the@@ -24,7 +24,6 @@\n negative it turns-it into a positive@@ -41,6 +40,9 @@\n zero to the+end+of+the number. Then the\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater then 9. If the number is negative it turns it into a positive number. If it is a single-digit number it adds a zero to the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = \"0\" + str(score)\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 9,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -43,7 +43,7 @@\n end of the-number.+integar. Then the output\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the integar. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -36,14 +36,15 @@\n number it adds-a+the+number zero to the end of the-integar.+integer. Then the output\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the integar. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the number zero to the end of the integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 12,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -37,13 +37,17 @@\n it adds the-number+integer zero to the end of the+number+and+returns+an integer. Then the\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the number zero to the end of the integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the integer zero to the end of the number and returns an integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n        return score\n    elif score < 0:\n        score = abs(score)\n        return score\n    else:\n        score = str(score)\n        score += '0'\n        score = int(score)\n        return score\n",
+                "id": 1,
+                "key": 2
+            },
+            {
+                "diff": 0,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student60",
+                "hover": "username:student60\n\ndiff:\n--- \n+++ \n@@ -48,4 +48,10 @@\n score + 1.+This+function+always+returns+an+int \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. This function always returns an int\n    \"\"\"\n        if score < 0:\n        return -score\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n",
+                "id": 1,
+                "key": 3
+            },
+            {
+                "diff": 4,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student60",
+                "hover": "username:student60\n\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n end of the-number+number,+casts+it+back+into+an+int and returns it.@@ -48,10 +54,4 @@\n score + 1.-This-function-always-returns-an-int \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. This function always returns an int\n    \"\"\"\n        if score < 0:\n        return -score\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number, casts it back into an int and returns it. Otherwise, the function just returns score + 1. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return int(str(score) + \"0\")\n    else:\n        return score + 1\n",
+                "id": 1,
+                "key": 4
+            },
+            {
+                "diff": 11,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student64",
+                "hover": "username:student64\n\ndiff:\n--- \n+++ \n@@ -19,7 +19,7 @@\n score multiplied by-10.+1. If score is\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    Returns score plus one. If score is less than 10 but greater than zero, returns score multiplied by 10. If score is negative, returns absolute value of score.\n    \"\"\"\n        if score < 10 and score > 0:\n        return score * 10\n    elif score < 0:\n        return abs(score)\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    Returns score plus one. If score is less than 10 but greater than zero, returns score multiplied by 1. If score is negative, returns absolute value of score.\n    \"\"\"\n        if score < 10 and score > 0:\n        return score * 1\n    elif score < 0:\n        return abs(score)\n    else:\n        return score + 1\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student33",
+                "hover": "username:student33\n\ndiff:\n--- \n+++ \n@@ -16,9 +16,12 @@\n the function returns-it-as-positive.+the+absolute+value+of+the+integer. If the integer\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes an integer as input. If the integer is negative, the function returns it as positive. If the integer only has one digit, the function returns a value of 10. If the integer is positive and two or more digits, the function returns the integer plus one. \n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    if score < 10:\n        score = 10\n    else:\n        score = score + 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes an integer as input. If the integer is negative, the function returns the absolute value of the integer. If the integer only has one digit, the function returns a value of 10. If the integer is positive and two or more digits, the function returns the integer plus one. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return 10\n    else:\n        return score + 1\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 10,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student35",
+                "hover": "username:student35\n\ndiff:\n--- \n+++ \n@@ -71,7 +71,10 @@\n (including 10) is-provided,+given+as+initial+input, its value is\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The purpose of the function is to convert the input score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number (including 10) is provided, its value is to be increased by 1.\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n        if score < 10:\n            score = 10\n        else:\n            score += 1\n    else:\n        if score < 10:\n            score = 10\n        else:\n            score += 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The purpose of the function is to convert the input score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number (including 10) is given as initial input, its value is to be increased by 1.\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    if score < 10:\n        score = 10\n    else:\n        score += 1\n    return score\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student35",
+                "hover": "username:student35\n\ndiff:\n--- \n+++ \n@@ -68,6 +68,8 @@\n positive double-digit number+(including+10) is provided, its\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The purpose of the function is to convert the input score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number is provided, its value is to be increased by 1.\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    if score < 10:\n        score = 10\n    if score > 10:\n        score = score + 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The purpose of the function is to convert the input score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number (including 10) is provided, its value is to be increased by 1.\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n        if score < 10:\n            score = 10\n        else:\n            score += 1\n    else:\n        if score < 10:\n            score = 10\n        else:\n            score += 1\n    return score\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student50",
+                "hover": "username:student50\n\ndiff:\n--- \n+++ \n@@ -10,11 +10,14 @@\n the number is-negative,+below+10, make it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The input is an integer. If the number is negative, make it positive. Otherwise, add one.\n    \"\"\"\n        if score < 0:\n        return -score\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The input is an integer. If the number is below 10, make it 10. Else, add one to it.\n    \"\"\"\n        if score < 10:\n        return 10\n    else:\n        return score + 1\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student59",
+                "hover": "username:student59\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,33 @@\n takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@\n more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    takes an integer and returns an integer whose one's place digit is one more than before. if the inputted integer is negative, returns the absolute value of the integer\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    score = score + 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    takes an integer as the input. if the inputted integer is negative, returns the absolute value of the integer. if the inputted integer is positive and is greater than 9, returns an integer whose one's place digit is one more than before. for all other case, returns an integer that adds a zero in the one's place\n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score >= 9:\n        return score + 1\n    else:\n        return score * 10\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 1,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student75",
+                "hover": "username:student75\n\ndiff:\n--- \n+++ \n@@ -11,4 +11,21 @@\n its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20' \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    def increaseScore(score): takes input '-10' and outputs its positive integer\n    \"\"\"\n        if score < 0:\n        score = score * -1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    def increaseScore(score): takes input '-10' and outputs its positive integer\ndef increaseScore(score): inputs '1' and adds 9\ndef increaseScore(score): adds 1 to each input '10', '15', '20'\n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score == 1:\n        return score + 9\n    else:\n        return score + 1\n",
+                "id": 1,
+                "key": 0
+            }
+        ]
+    ]
+}

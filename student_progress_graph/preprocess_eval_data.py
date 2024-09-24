@@ -98,7 +98,8 @@ def compute_diffs(ds):
 def compute_clusters(ds):
     # for each problem, see how many stderr and stdouts exist    
     clusters = {problem: {"stderr": set(), "stdout": set(), 
-                          "error_message": set(), "prompt": set()} for problem in set(ds["problem"])}
+                          "error_message": set(), "prompt": set(), 
+                            } for problem in set(ds["problem"])}
     for item in ds:
         for key in ["stderr","stdout","error_message","prompt"]:
             item_key = item[key]
@@ -130,11 +131,13 @@ def compute_trajectories(ds):
                      "stdout": [], 
                      "diff": [], 
                      "prompt":[], 
+                     "is_success":[],
                      "edges":[],
-                     "attempt_id": []}
+                     "attempt_id": [],
+                     "completion":[]}
                 })
             
-        for key in ["stderr","stdout","diff","prompt","attempt_id"]:
+        for key in ["stderr","stdout","diff","prompt","attempt_id", "is_success","completion"]:
             trajectories[data["problem"]][data["username"]][key].append(data[key])
     
     # populate edges separately
@@ -230,12 +233,13 @@ def main(args):
     #   - ignore entried where the first attempt was also last (no progression)
     ds = ds.filter(lambda x: not (x["first_attempt"] and x["last_attempt"]), 
                    num_proc=cpu_count(), desc="Filtering out non-progressions")
-    successful = ds.filter(lambda x: x["last_attempt"] and x["is_success"], 
-                    num_proc=cpu_count(), desc="Filter by successful last")
-    candidates = set(list(zip(successful["problem"], successful["username"])))
-    ds = ds.filter(lambda x: (x["problem"], x["username"]) in candidates, 
-                   num_proc=cpu_count(), desc="Filter candidates")
-    print("Post filter:\n", ds)
+    if args.include_fails is None:
+        successful = ds.filter(lambda x: x["last_attempt"] and x["is_success"], 
+                        num_proc=cpu_count(), desc="Filter by successful last")
+        candidates = set(list(zip(successful["problem"], successful["username"])))
+        ds = ds.filter(lambda x: (x["problem"], x["username"]) in candidates, 
+                    num_proc=cpu_count(), desc="Filter candidates")
+        print("Post filter:\n", ds)
     
     # sanity: sort by attempt_number
     ds = ds.sort(["problem","username","attempt_id"])
@@ -263,7 +267,8 @@ def main(args):
     """
     Print/Check some info for debug
     """
-    # show_info(ds, clusters,trajectories)
+    if args.show_info:
+        show_info(ds, clusters,trajectories)
     
 
 if __name__=="__main__":
@@ -273,5 +278,7 @@ if __name__=="__main__":
     parser.add_argument("clusters_yaml")
     parser.add_argument("trajectories_yaml")
     parser.add_argument("--split", type=str, default=None)
+    parser.add_argument("--include-fails", action="store_true")
+    parser.add_argument("--show-info", action="store_true")
     args = parser.parse_args()
     main(args)

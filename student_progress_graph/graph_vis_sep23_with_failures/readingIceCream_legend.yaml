@@ -1,0 +1,779 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -17,5 +17,9 @@
+     the number after-t.+t+and+returns+that+value. """
+  !!int "1": |-
+    ---
+    +++
+    @@ -19,6 +19,7 @@
+     you reach the+first "t" character. Isolate
+  !!int "2": |-
+    ---
+    +++
+    @@ -14,22 +14,23 @@
+     t in the-string+string, type cast the value to float.-Then-move+Move to the next string in the-list+list,+if+exists and repeat. Once@@ -44,7 +45,11 @@
+     and add all-removed values+that+were+cast+to+float together. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -11,19 +11,26 @@
+     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next find the sting that contains a-number-and-eliminate-the-'t'-in-it,+number, convert it to
+  !!int "4": |-
+    ---
+    +++
+    @@ -12,7 +12,12 @@
+     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
+  !!int "5": |-
+    ---
+    +++
+    @@ -9,24 +9,16 @@
+     split each string-on+by+\.+find the-'\'-character.-in-the-new-list-of-3-strings,-take-the-string-in-the-3rd-position,+sting+that+contains+a+number+and eliminate the 't'
+  !!int "6": |-
+    ---
+    +++
+    @@ -11,6 +11,38 @@
+     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next+find+the+sting+that+contains+a+number,+convert+it+to+a+float,+and+add+it+to+running+total. output this+total """
+  !!int "7": |-
+    ---
+    +++
+    @@ -9,25 +9,50 @@
+     through the string-until-after+and+keep+track+of the-2nd+number+of "\"-character.+characters.+When+the+number+of+"\"+is+2,+isolate+the+rest+of+the+string. Then-return+isolate the-integer-following-the-"t"-character.+remainder+of+that+string,+starting+at+index+1.+Convert+this+string+to+a+float. Keep track of the-integer+float for each entry
+  !!int "8": |-
+    ---
+    +++
+    @@ -11,38 +11,6 @@
+     string by \.-for-each-new-string,-if-it-starts-with-t,-eliminate-the-t.-next-find-the-sting-that-contains-a-number,-convert-it-to-a-float,-and-add-it-to-running-total. output this-total """
+  !!int "9": |-
+    ---
+    +++
+    @@ -25,9 +25,8 @@
+     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
+  !!int "10": |-
+    ---
+    +++
+    @@ -15,14 +15,21 @@
+     in the string,-type+and+store+in+a+new+list.+Type cast+the+new+list to-an-integer+floats and-then add-them+values together. """
+  !!int "11": |-
+    ---
+    +++
+    @@ -34,12 +34,12 @@
+     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
+  !!int "12": |-
+    ---
+    +++
+    @@ -20,7 +20,7 @@
+     should be a-number+double and add it
+  !!int "13": |-
+    ---
+    +++
+    @@ -2,12 +2,16 @@
+     readingIceCream(lines): """ Convert-what+all+that appears after the-last-t+"ice+cream\t"+or+"frozen+yogurt\t" of each object@@ -15,13 +19,20 @@
+     the list into-numbers,+a+float,+make+a+new+list+of+those+floats, and-then find the sum of-those-numbers+that+list """
+  !!int "14": |-
+    ---
+    +++
+    @@ -1,66 +1,53 @@
+     def readingIceCream(lines): """-For+Starting+at+the+end+of each-list-entry,+string+input, parse-through+backwards+until+you+reach+the+"t"+character.+Isolate the string-and-increase-count-after-each-"\"-character.-When-that-count-is-2,-isolate+from the-rest+"t"+character+until+the+end of the-string.-Then-isolate-the-remainder-of+entry.+Convert that-string,-starting-at-index-1.-Convert-this string to a-float.-Keep-track+float,+then+add+all of the-float+floats for each entry+together and-add-them-all-together,-returning+return the-sum-for-each-list+total. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -1,14 +1,18 @@
+     def readingIceCream(lines): """-Starting+For+each+list+entry,+start at the end of-each-list-entry,+the+corresponding+string, parse backwards until
+  !!int "16": |-
+    ---
+    +++
+    @@ -1,7 +1,19 @@
+     def readingIceCream(lines): """-Returns+Multiplies+the+number+of+letters+in+the+word+before+the+first+\+by the number after
+  !!int "17": |-
+    ---
+    +++
+    @@ -1,17 +1,26 @@
+     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
+  !!int "18": |-
+    ---
+    +++
+    @@ -47,4 +47,11 @@
+     of each string.+The+value+can+be+integers+or+floats. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -7,8 +7,8 @@
+     end of each-string-input,+list+entry, parse backwards until
+  !!int "20": |-
+    ---
+    +++
+    @@ -22,4 +22,12 @@
+     in the element.+the+sum+should+not+be+limited+to+integers """
+  !!int "21": |-
+    ---
+    +++
+    @@ -2,10 +2,8 @@
+     readingIceCream(lines): """ Convert-the-numbers-that-appear+what+appears after the last@@ -17,7 +15,7 @@
+     the list into-integers,+numbers, and then find@@ -25,5 +23,5 @@
+     sum of those-integers+numbers """
+  !!int "22": |-
+    ---
+    +++
+    @@ -10,14 +10,12 @@
+     the string and-keep-track-of-the-number-of+increase+count+after+each "\"-characters.+character. When that count
+  !!int "23": |-
+    ---
+    +++
+    @@ -10,14 +10,11 @@
+     number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
+  !!int "24": |-
+    ---
+    +++
+    @@ -14,18 +14,11 @@
+     t in the-string,-and-store-in-a-new-list.-Type+string+type cast the-new-list+values to floats and
+  !!int "25": |-
+    ---
+    +++
+    @@ -2,9 +2,10 @@
+     readingIceCream(lines): """ Convert-all+the+numbers that-appears+appear after the last@@ -16,14 +17,13 @@
+     the list into-a-float,+integers, and then find the sum of-the-floats+those+integers """
+  !!int "26": |-
+    ---
+    +++
+    @@ -7,11 +7,8 @@
+     appears after the-"ice-cream\t"-or-"frozen-yogurt\t"+final+"t" of each object
+  !!int "27": |-
+    ---
+    +++
+    @@ -19,10 +19,8 @@
+     "\" characters. When-the-number-of-"\"+that+count is 2, isolate
+  !!int "28": |-
+    ---
+    +++
+    @@ -18,11 +18,33 @@
+     type cast the-values+value to-floats+float.+Then+move+to+the+next+string+in+the+list+and+repeat.+Once+the+end+at+the+end+of+the+list and add+all+removed values together. """
+  !!int "29": |-
+    ---
+    +++
+    @@ -3,7 +3,7 @@
+     """ take the-integer+float at the end
+  !!int "30": |-
+    ---
+    +++
+    @@ -29,17 +29,32 @@
+     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
+  !!int "31": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     in list, adds-number+float directly after the
+"nodes":
+  !!int "0":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += int(line.split(\"\t\")[2])\nValueError:\
+      \ invalid literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      17
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - |
+      36.5
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      7
+  !!int "2":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError:\
+      \ invalid literal for int() with base 10: '\tice cream\t3'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError:\
+      \ invalid literal for int() with base 10: 'y\tfrozen yogurt\t10'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError:\
+      \ invalid literal for int() with base 10: 'y\tfrozen yogurt\t0'\n"
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - |
+      0
+    - |
+      0
+    - |
+      0
+    "stdout_id": !!int |-
+      2
+  !!int "4":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    total += float(line[line.rfind(\"t\")+1:])\n\
+      ValueError: could not convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      18
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "5":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    total += float(line[:i][::-1])\nValueError:\
+      \ could not convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      20
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "6":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "7":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 12, in readingIceCream\n    total += float(line[index + 1:])\nValueError:\
+      \ could not convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      13
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "8":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    total += int(line.split('\t')[-1])\nValueError:\
+      \ invalid literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      21
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - |
+      34
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      4
+  !!int "10":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += float(line[line.rfind('t') + 1:])\n\
+      ValueError: could not convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "11":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    sum += int(line.split('t')[-1])\nValueError:\
+      \ invalid literal for int() with base 10: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "12":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += int(line.split('t')[-1])\nValueError:\
+      \ invalid literal for int() with base 10: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "13":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\n\
+      ValueError: could not convert string to float: 'ice cream'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\n\
+      ValueError: could not convert string to float: 'frozen yogurt'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\n\
+      ValueError: could not convert string to float: 'frozen yogurt'\n"
+    "stderr_id": !!int |-
+      14
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "14":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    newList.append(float(line[line.rfind(\"t\"\
+      )+1:]))\nValueError: could not convert string to float: '\tice cream\t3'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      22
+    "stdout":
+    - ""
+    - |
+      10.0
+    - |
+      0.0
+    "stdout_id": !!int |-
+      6
+  !!int "15":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'peppermin'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    "stderr_id": !!int |-
+      25
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "16":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    line = float(line)\nValueError: could not\
+      \ convert string to float: 'peppermin'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    line = float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 11, in readingIceCream\n    line = float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "17":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 9, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'peppermin'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 9, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 9, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'sal'\n"
+    "stderr_id": !!int |-
+      26
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "18":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'ice cream'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'frozen yogurt'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'frozen yogurt'\n"
+    "stderr_id": !!int |-
+      23
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "19":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    count += int(line.split('\t')[2])\nValueError:\
+      \ invalid literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "20":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'peppermint\tice cream\t3'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'salty\tfrozen yogurt\t10'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += float(line)\nValueError: could not\
+      \ convert string to float: 'salty\tfrozen yogurt\t0'\n"
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "21":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    total += int(line.split()[-1])\nValueError:\
+      \ invalid literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      24
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "22":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'cream\t3'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'yogurt\t10'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError:\
+      \ invalid literal for int() with base 10: 'yogurt\t0'\n"
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "23":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      5
+  !!int "24":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError:\
+      \ invalid literal for int() with base 10: 'peppermint\tice'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError:\
+      \ invalid literal for int() with base 10: 'salty\tfrozen'\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError:\
+      \ invalid literal for int() with base 10: 'salty\tfrozen'\n"
+    "stderr_id": !!int |-
+      11
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "25":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    count += int(line[-1])\nValueError: invalid\
+      \ literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "26":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 9, in readingIceCream\n    sum += int(line[second + 1:])\nValueError:\
+      \ invalid literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "27":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 12, in readingIceCream\n    sum += int(line[i+1:])\nValueError: invalid\
+      \ literal for int() with base 10: '2.5'\n"
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      1
+  !!int "28":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - |
+      36.5
+    - |
+      10
+    - |
+      0
+    "stdout_id": !!int |-
+      3
+  !!int "29":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out\
+      \ of range\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out\
+      \ of range\n"
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
+      \    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\"\
+      , line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out\
+      \ of range\n"
+    "stderr_id": !!int |-
+      19
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "30":
+    "stderr":
+    - "  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"peppermint\t\
+      ice cream\t3\",\nIndentationError: expected an indented block after 'for' statement\
+      \ on line 5\n"
+    - "  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"salty\tfrozen\
+      \ yogurt\t10\"]))\nIndentationError: expected an indented block after 'for'\
+      \ statement on line 5\n"
+    - "  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"salty\tfrozen\
+      \ yogurt\t0\"]))\nIndentationError: expected an indented block after 'for' statement\
+      \ on line 5\n"
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      0
+"student_color":
+  "student27": |-
+    #d83034
+  "student29": |-
+    #f9e858
+  "student32": |-
+    #008dff
+  "student34": |-
+    #4ecb8d
+  "student49": |-
+    #c701ff
+  "student62": |-
+    #ffcd8e
+  "student66": |-
+    #003a7d
+  "student67": |-
+    #Ff73b6
+  "student68": |-
+    #ff7f50
+  "student70": |-
+    #7fff00
+  "student78": |-
+    #8a2be2

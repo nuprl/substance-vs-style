@@ -1,0 +1,87 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -5,11 +5,11 @@
+     the "^" to-"_"+"-" and "^" to-"_"+"-" in strings """
+  !!int "2": |-
+    ---
+    +++
+    @@ -20,5 +20,10 @@
+     of the new-string+string.+Do+not+display+the+count """
+  !!int "3": |-
+    ---
+    +++
+    @@ -14,7 +14,11 @@
+     as '_', then-print+return+a+copy+of the+new string """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      __1-1__
+    - |
+      ~_--_~
+    - |
+      |O.0|
+    "stdout_id": !!int |-
+      3
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      --1-1--
+    - |
+      ~----~
+    - |
+      |O.0|
+    "stdout_id": !!int |-
+      0
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      4
+    - |
+      2
+    - |
+      0
+    "stdout_id": !!int |-
+      2
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      ('__1-1__', 4)
+    - |
+      ('~_--_~', 2)
+    - |
+      ('|O.0|', 0)
+    "stdout_id": !!int |-
+      1
+"student_color":
+  "student17": |-
+    #d83034
+  "student26": |-
+    #f9e858

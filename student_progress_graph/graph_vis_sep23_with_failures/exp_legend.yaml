@@ -1,0 +1,92 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -2,11 +2,15 @@
+     exp(lst, val): """-multiply+raise numbers in brackets-by+to+the+power+of+the number outside of
+  !!int "1": |-
+    ---
+    +++
+    @@ -2,16 +2,12 @@
+     exp(lst, val): """-raises+multiplies each number in lst-to-the-power-of-the+by val, returns a
+  !!int "2": |-
+    ---
+    +++
+    @@ -2,30 +2,14 @@
+     exp(lst, val): """-check-what-number-is-outside-each-set-of-brackets.-then-raise+multiply numbers in brackets-to-the-power-of-each+by number outside of-the-corresponding brackets. Return finished
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 2, 3]
+    - |
+      [8, 8, 8]
+    - |
+      2
+    "stdout_id": !!int |-
+      0
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 2, 3]
+    - |
+      [2, 2, 2]
+    - |
+      [2]
+    "stdout_id": !!int |-
+      1
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 2, 3]
+    - |
+      [8, 8, 8]
+    - |
+      [4]
+    "stdout_id": !!int |-
+      2
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      [1, 2, 3]
+    - |
+      [6, 6, 6]
+    - |
+      [4]
+    "stdout_id": !!int |-
+      3
+"student_color":
+  "student14": |-
+    #d83034
+  "student15": |-
+    #f9e858
+  "student39": |-
+    #008dff
+  "student46": |-
+    #4ecb8d
+  "student65": |-
+    #c701ff

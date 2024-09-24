@@ -1,0 +1,582 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 7,
+            "stdout_id": 5,
+            "hover": "stdout:\nInvalid month\n\nInvalid month\n\nInvalid month\n\nInvalid month\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 0
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    print(getSeason('January'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('April'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('August'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(getSeason('October'))\nIndentationError: expected an indented block after 'elif' statement on line 11\n",
+            "color": "red",
+            "id": 1
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 8,
+            "hover": "stdout:\ninvalid month\n\ninvalid month\n\ninvalid month\n\ninvalid month\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 2
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 6,
+            "hover": "stdout:\nerror\n\nerror\n\nerror\n\nerror\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 3
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 4,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 4
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    if months.index(month) in\n                             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    if months.index(month) in\n                             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    if months.index(month) in\n                             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    if months.index(month) in\n                             ^\nSyntaxError: invalid syntax\n",
+            "color": "blue",
+            "id": 5
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']\n                 ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 6\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']\n                 ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 6\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']\n                 ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 6\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']\n                 ^\nSyntaxError: '{' was never closed\n",
+            "color": "blue",
+            "id": 6
+        },
+        {
+            "stderr_id": 12,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    for key, value in seasonDict.\n                                 ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    for key, value in seasonDict.\n                                 ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    for key, value in seasonDict.\n                                 ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 8\n    for key, value in seasonDict.\n                                 ^\nSyntaxError: invalid syntax\n",
+            "color": "blue",
+            "id": 7
+        },
+        {
+            "stderr_id": 9,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    print(getSeason('January'))\nIndentationError: expected an indented block after 'if' statement on line 9\n\n  File \"/tmp/file.py\", line 10\n    print(getSeason('April'))\nIndentationError: expected an indented block after 'if' statement on line 9\n\n  File \"/tmp/file.py\", line 10\n    print(getSeason('August'))\nIndentationError: expected an indented block after 'if' statement on line 9\n\n  File \"/tmp/file.py\", line 10\n    print(getSeason('October'))\nIndentationError: expected an indented block after 'if' statement on line 9\n",
+            "color": "red",
+            "id": 8
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 9,
+            "hover": "stdout:\nInvalid Month\n\nInvalid Month\n\nInvalid Month\n\nInvalid Month\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 9
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    elif month == 3 or month == 4 or month == 5:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == 3 or month == 4 or month == 5:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == 3 or month == 4 or month == 5:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == 3 or month == 4 or month == 5:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n",
+            "color": "grey",
+            "id": 10
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n",
+            "color": "red",
+            "id": 11
+        },
+        {
+            "stderr_id": 10,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == 'September' or month == 'October' or month == 'November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n",
+            "color": "blue",
+            "id": 12
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"September\" or month == \"October\" or month == \"November\n                                                                ^\nSyntaxError: unterminated string literal (detected at line 11)\n",
+            "color": "red",
+            "id": 13
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 1,
+            "hover": "stdout:\nNot a valid month\n\nNot a valid month\n\nNot a valid month\n\nNot a valid month\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 14
+        },
+        {
+            "stderr_id": 11,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(getSeason('January'))\n  File \"/tmp/file.py\", line 5, in getSeason\n    if month >= 3 and month <= 5:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(getSeason('April'))\n  File \"/tmp/file.py\", line 5, in getSeason\n    if month >= 3 and month <= 5:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(getSeason('August'))\n  File \"/tmp/file.py\", line 5, in getSeason\n    if month >= 3 and month <= 5:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(getSeason('October'))\n  File \"/tmp/file.py\", line 5, in getSeason\n    if month >= 3 and month <= 5:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n",
+            "color": "blue",
+            "id": 15
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 2,
+            "hover": "stdout:\nwinter\n\nspring\n\nsummer\n\nfall\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 16
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 0,
+            "hover": "stdout:\nWinter\n\nSpring\n\nSummer\n\nFall\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 17
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 3,
+            "hover": "stdout:\nwinter\n\nspring\n\nsummer\n\nautumn\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 18
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif month == \"June\" or month ==\n                                    ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"June\" or month ==\n                                    ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"June\" or month ==\n                                    ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 11\n    elif month == \"June\" or month ==\n                                    ^\nSyntaxError: invalid syntax\n",
+            "color": "red",
+            "id": 19
+        },
+        {
+            "stderr_id": 8,
+            "stdout_id": 7,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('January'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('April'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('August'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(getSeason('October'))\n  File \"/tmp/file.py\", line 6, in getSeason\n    if month < 4:\nTypeError: '<' not supported between instances of 'str' and 'int'\n",
+            "color": "grey",
+            "id": 20
+        },
+        {
+            "stderr_id": 7,
+            "stdout_id": 10,
+            "hover": "stdout:\nWinter\n\nSpring\n\nSummer\n\nAutumn\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 21
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 11,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student1",
+                "hover": "username:student1\n\ndiff:\n--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Takes the+name+of+a month and returns\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes the month and returns the season that the month falls into.\n    \"\"\"\n        if month in [12, 1, 2]:\n        return 'Winter'\n    elif month in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n        return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n    else:\n        return 'Invalid month'\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes the name of a month and returns the season that the month falls into.\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 9,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student6",
+                "hover": "username:student6\n\ndiff:\n--- \n+++ \n@@ -4,6 +4,9 @@\n Function takes in+the+name+of an inputted month\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in an inputted month of the year and outputs the season that the month is in \n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in the name of an inputted month of the year and outputs the season that the month is in \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 21,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,30 @@\n def getSeason(month): \"\"\"+Has+a+list+of+all+months+in+order,+with+index+0+=+0+and+the+rest+of+the+indexes+corresponding+to+the+correct+month. Has a dictionary\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Has a dictionary matching a season to a month. If the inputted month is in the season, returns that season.\n    \"\"\"\n        season = {\n        \"Winter\": [12, 1, 2],\n        \"Spring\": [3, 4, 5],\n        \"Summer\": [6, 7, 8],\n        \"Fall\": [9, 10, 11]\n    }\n    for key, value in season.items():\n        if month in value:\n            return key\n    return \"Invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order, with index 0 = 0 and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. If the inputted month is in the season, returns that season.\n    \"\"\"\n        months = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]\n    season = {\"Winter\": [0, 1, 11], \"Spring\": [2, 3, 4], \"Summer\": [5, 6, 7], \"Fall\": [8, 9, 10]}\n    for key in season:\n        if months.index(month) in",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 30,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student24",
+                "hover": "username:student24\n\ndiff:\n--- \n+++ \n@@ -1,16 +1,20 @@\n def getSeason(month): \"\"\"-For+If the-given-month,+number+of+a+month+is+in+the+list, return the season-that-occurs-during+for that month \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    For the given month, return the season that occurs during that month\n    \"\"\"\n        if month in [12, 1, 2]:\n        return \"Winter\"\n    elif month in [3, 4, 5]:\n        return \"Spring\"\n    elif month in [6, 7, 8]:\n        return \"Summer\"\n    elif month in [9, 10, 11]:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    If the number of a month is in the list, return the season for that month\n    \"\"\"\n        if month in [12, 1, 2]:\n        return 'Winter'\n    elif month in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n        return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n    else:\n        return 'Invalid Month'\n",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 34,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -16,48 +16,34 @@\n is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. The months are assigned numbers one to twelve, respectively. The first three months of the year are considered to be winter, the next three months are considered to be spring, the next three months are considered summer, and the last three months are considered fall.\n\n    \"\"\"\n        if month == 1 or month == 2 or month == 3:\n        return \"Winter\"\n    elif month == 4 or month == 5 or month == 6:\n        return \"Spring\"\n    elif month == 7 or month == 8 or month == 9:\n        return \"Summer\"\n    elif month == 10 or month == 11 or month == 12:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. January, February, and March are considered to be winter; April, May, and June are considered to be spring; July, August, and September are considered summer; and the rest are considered fall.\n\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"March\":\n        return \"Winter\"\n    elif month == \"April\" or month == \"May\" or month == \"June\":\n        return \"Spring\"\n    elif month == \"July\" or month == \"August\" or month == \"September\":\n        return \"Summer\"\n    else:\n        return \"Fall\"\n",
+                "id": 17,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 17,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student31",
+                "hover": "username:student31\n\ndiff:\n--- \n+++ \n@@ -21,5 +21,10 @@\n that month is-in.+in:+'summer',+'winter',+'spring',+or+'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in.\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in: 'summer', 'winter', 'spring', or 'fall'.\n    \"\"\"\n        if month == 'January' or month == 'February' or month == 'December':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':\n        return 'summer'\n    elif month == 'September' or month == 'October' or month == 'November",
+                "id": 12,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month, then outputs the season commonly associated with that month.\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month, then outputs the season commonly associated with that month.\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 33,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student6",
+                "hover": "username:student6\n\ndiff:\n--- \n+++ \n@@ -21,5 +21,13 @@\n the month is-in+in.+It+returns+and+prints+the+correct+outputted+season \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in the name of an inputted month of the year and outputs the season that the month is in \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in the name of an inputted month of the year and outputs the season that the month is in. It returns and prints the correct outputted season\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 16,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -18,5 +18,8 @@\n associated with that-month.+month,+in+lower+case. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month, then outputs the season commonly associated with that month.\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month, then outputs the season commonly associated with that month, in lower case.\n    \"\"\"\n        if month in [\"january\", \"february\", \"december\"]:\n        return \"winter\"\n    elif month in [\"march\", \"april\", \"may\"]:\n        return \"spring\"\n    elif month in [\"june\", \"july\", \"august\"]:\n        return \"summer\"\n    elif month in [\"september\", \"october\", \"november\"]:\n        return \"fall\"",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 10,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student6",
+                "hover": "username:student6\n\ndiff:\n--- \n+++ \n@@ -29,5 +29,16 @@\n the correct outputted-season+season,+with+a+return+statement+after+each+if,+else+or+elif+statement \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in the name of an inputted month of the year and outputs the season that the month is in. It returns and prints the correct outputted season\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Function takes in the name of an inputted month of the year and outputs the season that the month is in. It returns and prints the correct outputted season, with a return statement after each if, else or elif statement\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        print(\"The month of\", month, \"is in the season of Winter\")\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"The month of\", month, \"is in the season of Spring\")\n        return \"Spring\"\n    elif month == \"June\" or month ==",
+                "id": 19,
+                "key": 0
+            },
+            {
+                "diff": 3,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student65",
+                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -4,8 +4,11 @@\n This function inputs+a+string+of the-string+name of a month@@ -22,5 +25,14 @@\n (in the northern-hemisphere)+hemisphere).+The+input+should+be+capitalized,+the+output+should+not. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    This function inputs the string of a month and returns the name of the season it is in (in the northern hemisphere)\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    This function inputs a string of the name of a month and returns the name of the season it is in (in the northern hemisphere). The input should be capitalized, the output should not.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 0
+            },
+            {
+                "diff": 13,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -19,16 +19,4 @@\n the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. If the string is 'September', 'October', or 'November', the output is 'fall'.\n    \"\"\"\n        if month == 'September' or month == 'October' or month == 'November':\n        return 'fall'\n    elif month == 'December' or month == 'January' or month == 'February':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. \n    \"\"\"\n        if month in ['December', 'January', 'February']:\n        return 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif month in ['September', 'October', 'November']:\n        return 'autumn'\n    else:\n        return 'Error'\n\n",
+                "id": 18,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 27,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -2,42 +2,42 @@\n getSeason(month): \"\"\" if-input-is-December,-January,+month+==+12,+1, or-February,+2, output is winter. If-input-is-March,-April,+month+==+3,+4, or-May,+5, output is spring. If-input-is-June,-July,+month+==+6,+7, or-August,+8, output is summer. If-input-is-September,-October,+month+==+9,+10, or-November,+11, output is fall.\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    if input is December, January, or February, output is winter. If input is March, April, or May, output is spring. If input is June, July, or August, output is summer. If input is September, October, or November, output is fall.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n    else:\n        return \"invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8, output is summer. If month == 9, 10, or 11, output is fall.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n    else:\n        return \"error\"\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -41,4 +41,7 @@\n output is fall.+No+else+statement. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8, output is summer. If month == 9, 10, or 11, output is fall.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n    else:\n        return \"error\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8, output is summer. If month == 9, 10, or 11, output is fall. No else statement.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 37,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student14",
+                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -44,4 +44,10 @@\n No else statement.+12+==+December,+1+==+January \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8, output is summer. If month == 9, 10, or 11, output is fall. No else statement.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8, output is summer. If month == 9, 10, or 11, output is fall. No else statement. 12 == December, 1 == January\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 6,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student46",
+                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -9,7 +9,15 @@\n string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month, then outputs the season commonly associated with that month, in lower case.\n    \"\"\"\n        if month in [\"january\", \"february\", \"december\"]:\n        return \"winter\"\n    elif month in [\"march\", \"april\", \"may\"]:\n        return \"spring\"\n    elif month in [\"june\", \"july\", \"august\"]:\n        return \"summer\"\n    elif month in [\"september\", \"october\", \"november\"]:\n        return \"fall\"\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The functions take in a string, representing a month in with the first letter being upper case, then outputs the season commonly associated with that month, in lower case.\n    \"\"\"\n        if month in [\"December\", \"January\", \"February\"]:\n        return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n        return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n        return \"summer\"\n    elif month in [\"September\", \"October\", \"November\"]:\n        return \"fall\"\n    else:\n        return \"Invalid month\"\n\n",
+                "id": 16,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 24,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -8,12 +8,14 @@\n all months in-order,-with-index+order.+Index 0-=-0+of+the+list+is+'0', and the rest\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order, with index 0 = 0 and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. If the inputted month is in the season, returns that season.\n    \"\"\"\n        months = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]\n    season = {\"Winter\": [0, 1, 11], \"Spring\": [2, 3, 4], \"Summer\": [5, 6, 7], \"Fall\": [8, 9, 10]}\n    for key in season:\n        if months.index(month) in\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order. Index 0 of the list is '0', and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. If the inputted month is in the season, returns that season.\n    \"\"\"\n        months = ['0', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 31,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -36,15 +36,20 @@\n to a month.-If+for+each+key,+value+in+the+dictionary,+if the inputted month-is-in+=+value,+returns the-season,-returns-that-season.+key. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order. Index 0 of the list is '0', and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. If the inputted month is in the season, returns that season.\n    \"\"\"\n        months = ['0', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order. Index 0 of the list is '0', and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. \nfor each key, value in the dictionary, if the inputted month = value, returns the key.\n    \"\"\"\n        months = ['0', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict = {'Winter': [12, 1, 2], 'Spring': [3, 4, 5], 'Summer': [6, 7, 8], 'Fall': [9, 10, 11]}\n    for key, value in seasonDict.",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 18,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student15",
+                "hover": "username:student15\n\ndiff:\n--- \n+++ \n@@ -47,9 +47,19 @@\n the inputted month-=-value,+is+in+the+list+of+values, returns the-key.+key+that+is+matched+with+that+value. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order. Index 0 of the list is '0', and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. \nfor each key, value in the dictionary, if the inputted month = value, returns the key.\n    \"\"\"\n        months = ['0', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict = {'Winter': [12, 1, 2], 'Spring': [3, 4, 5], 'Summer': [6, 7, 8], 'Fall': [9, 10, 11]}\n    for key, value in seasonDict.\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Has a list of all months in order. Index 0 of the list is '0', and the rest of the indexes corresponding to the correct month. Has a dictionary matching a season to a month. \nfor each key, value in the dictionary, if the inputted month is in the list of values, returns the key that is matched with that value.\n    \"\"\"\n        months = ['0','January','February','March','April','May','June','July','August','September','October','November','December']\n    seasons = {'Winter':['December','January','February'],'Spring':['March','April','May'],'Summer':['June','July','August'],'Fall':['September','October','November']}\n    for key, value in seasons.items():\n        if months.index(month) in value:\n",
+                "id": 8,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 0,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student24",
+                "hover": "username:student24\n\ndiff:\n\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    If the number of a month is in the list, return the season for that month\n    \"\"\"\n        if month in [12, 1, 2]:\n        return 'Winter'\n    elif month in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n        return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n    else:\n        return 'Invalid Month'\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    If the number of a month is in the list, return the season for that month\n    \"\"\"\n        if month in [12, 1, 2]:\n        return 'Winter'\n    elif month in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n        return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n    else:\n        return 'Invalid Month'\n\nprint(getSeason(2))\nprint(getSeason(",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 29,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student39",
+                "hover": "username:student39\n\ndiff:\n--- \n+++ \n@@ -10,11 +10,6 @@\n is when provided-with-a-number-corresponding-to a month of@@ -28,4 +23,30 @@\n month belongs to.+The+month+of+the+year+will+correspond+with+a+numerical+value+based+on+the+order+of+the+month+during+the+year.+For+example+January+=+1. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided with a number corresponding to a month of the year to return what season that month belongs to. \n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n    else:\n        return \"Invalid Month\"\n\nprint\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided a month of the year to return what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. For example January = 1.\n    \"\"\"\n        if month >= 3 and month <= 5:\n        return \"Spring\"\n    elif month >= 6 and month <= 8:\n        return \"Summer\"\n    elif month >= 9 and month <= 11:\n        return \"Fall\"\n    else:\n        return \"Winter\"\n",
+                "id": 15,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 14,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student28",
+                "hover": "username:student28\n\ndiff:\n--- \n+++ \n@@ -7,6 +7,11 @@\n one parameter, month.+Month+is+a+string+and Month represents the\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month represents the months in a year. The code should take seasons associated with that month and print the associated season of that month. \n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        print(\"Winter\")\n    elif month == 3 or month == 4 or month == 5:\n        print(\"Spring\")\n    elif month == 6 or month == 7 or month == 8:\n        print(\"Summer\")\n    elif month == 9 or month == 10 or month == 11:\n        print(\"Fall\")\n    else:\n        print(\"Error: Invalid month\")\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month is a string and Month represents the months in a year. The code should take seasons associated with that month and print the associated season of that month. \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        print(\"Winter\")\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\")\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 11,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student28",
+                "hover": "username:student28\n\ndiff:\n--- \n+++ \n@@ -19,6 +19,18 @@\n in a year.+There+are+seasons+associated+with+each+month.+Winter,+spring,+summer,+and+fall. The code should\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month is a string and Month represents the months in a year. The code should take seasons associated with that month and print the associated season of that month. \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        print(\"Winter\")\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\")\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month is a string and Month represents the months in a year. There are seasons associated with each month. Winter, spring, summer, and fall. The code should take seasons associated with that month and print the associated season of that month. \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        print(\"Winter\")\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\")\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 11,
+                "key": 0
+            },
+            {
+                "diff": 26,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student28",
+                "hover": "username:student28\n\ndiff:\n--- \n+++ \n@@ -48,4 +48,17 @@\n of that month.+The+months+of+December,+January,+and+February+should+be+winter,+and+so+on. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month is a string and Month represents the months in a year. There are seasons associated with each month. Winter, spring, summer, and fall. The code should take seasons associated with that month and print the associated season of that month. \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        print(\"Winter\")\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\")\n    elif month == \"September\" or month == \"October\" or month == \"November\":\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    This function takes one parameter, month. Month is a string and Month represents the months in a year. There are seasons associated with each month. Winter, spring, summer, and fall. The code should take seasons associated with that month and print the associated season of that month. The months of December, January, and February should be winter, and so on. \n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"December\":\n        print(\"Winter\")\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\")\n    elif month == \"September\" or month == \"October\" or month == \"November\":",
+                "id": 11,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 35,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student31",
+                "hover": "username:student31\n\ndiff:\n--- \n+++ \n@@ -22,9 +22,37 @@\n month is in:-'summer',-'winter',-'spring',-or-'fall'.+December,+January,+and+February+are+all+in+winter,+March,+April,+and+May+are+all+in+spring,+June,+July,+and+August+are+all+in+summer,+and+October,+September,+and+November+are+all+in+fall. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in: 'summer', 'winter', 'spring', or 'fall'.\n    \"\"\"\n        if month == 'January' or month == 'February' or month == 'December':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':\n        return 'summer'\n    elif month == 'September' or month == 'October' or month == 'November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in: December, January, and February are all in winter, March, April, and May are all in spring, June, July, and August are all in summer, and October, September, and November are all in fall.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, provide the return statement as 'fall'.\n    \"\"\"\n        if month == 'January' or month == 'February' or month == 'December':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':\n        return 'summer'\n    elif month == 'September' or month == 'October' or month == 'November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, provide the return statement as 'fall'.\n    \"\"\"\n        if month in ['January', 'February', 'December']:\n        return 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif month in ['September', 'October', 'November']:\n        return 'fall'\n    else:\n        return 'Invalid month'\n\n",
+                "id": 16,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 8,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student31",
+                "hover": "username:student31\n\ndiff:\n--- \n+++ \n@@ -54,5 +54,7 @@\n are all in-fall.+the+season+\"fall\". \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in: December, January, and February are all in winter, March, April, and May are all in spring, June, July, and August are all in summer, and October, September, and November are all in fall.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes a string corresponding to one month of the year, and returns a string indicating what season that month is in: December, January, and February are all in winter, March, April, and May are all in spring, June, July, and August are all in summer, and October, September, and November are all in the season \"fall\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"December\", \"January\", or \"February\", season is 'winter'. If month is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\", \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\", or \"November\", season is \"fall\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"December\", \"January\", or \"February\", season is 'winter'. If month is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\", \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\", or \"November\", season is \"fall\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 1
+            },
+            {
+                "diff": 36,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n--- \n+++ \n@@ -58,5 +58,5 @@\n \"November\", season is-\"fall\".+'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"December\", \"January\", or \"February\", season is 'winter'. If month is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\", \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\", or \"November\", season is \"fall\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"December\", \"January\", or \"February\", season is 'winter'. If month is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\", \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\", or \"November\", season is 'fall'.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return 'winter'\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return 'spring'\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return 'summer'\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 2
+            },
+            {
+                "diff": 19,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student45",
+                "hover": "username:student45\n\ndiff:\n--- \n+++ \n@@ -22,29 +22,20 @@\n If month is-\"December\", \"January\",-or-\"February\", season is 'winter'. If month is-\"March\", \"April\",-or-\"May\", season is 'spring'. If month is-\"June\",-\"July\",-or \"August\", season is@@ -52,10 +43,7 @@\n If month is-\"September\", \"October\",-or-\"November\", season is 'fall'.\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"December\", \"January\", or \"February\", season is 'winter'. If month is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\", \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\", or \"November\", season is 'fall'.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return 'winter'\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return 'spring'\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return 'summer'\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes one parameter, a string, which we will call month. Outputs a string which we will call season. If month is \"January\", season is 'winter'. If month is \"April\", season is 'spring'. If month is \"August\", season is 'summer'. If month is \"October\", season is 'fall'.\n    \"\"\"\n        if month == \"January\":\n        return \"winter\"\n    elif month == \"April\":\n        return \"spring\"\n    elif month == \"August\":\n        return \"summer\"\n    elif month == \"October\":\n        return \"fall\"\n    else:\n        return \"Invalid month\"\n",
+                "id": 16,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase.\n    \"\"\"\n        if month in [\"December\", \"January\", \"February\"]:\n        return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n        return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n        return \"summer\"\n    elif month in [\"September\", \"October\", \"November\"]:\n        return \"autumn\"\n    else:\n        return \"Invalid month\"\n",
+                "id": 18,
+                "key": 0
+            },
+            {
+                "diff": 12,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -19,12 +19,16 @@\n the output lowercase.-It-uses+If the string-\"fall\"-instead-of-\"autumn\".+is+'September',+'October',+or+'November',+the+output+is+'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. It uses the string \"fall\" instead of \"autumn\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. If the string is 'September', 'October', or 'November', the output is 'fall'.\n    \"\"\"\n        if month == 'September' or month == 'October' or month == 'November':\n        return 'fall'\n    elif month == 'December' or month == 'January' or month == 'February':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 28,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student39",
+                "hover": "username:student39\n\ndiff:\n--- \n+++ \n@@ -12,6 +12,10 @@\n provided with a+number+corresponding+to+a month of the@@ -21,6 +25,7 @@\n what season that+month belongs to. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided with a month of the year to return what season that belongs to. \n    \"\"\"\n        if month in [12,1,2]:\n        return \"Winter\"\n    elif month in [3,4,5]:\n        return \"Spring\"\n    elif month in [6,7,8]:\n        return \"Summer\"\n    elif month in [9,10,11]:\n        return \"Fall\"\n    else:\n        return \"Not a valid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided with a number corresponding to a month of the year to return what season that month belongs to. \n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n    else:\n        return \"Invalid Month\"\n\nprint",
+                "id": 9,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 23,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student39",
+                "hover": "username:student39\n\ndiff:\n--- \n+++ \n@@ -44,9 +44,18 @@\n during the year.-For-example-January-=-1.+The+input+should+be+converted+to+a+numerical+value+before+giving+returning+the+season. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided a month of the year to return what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. For example January = 1.\n    \"\"\"\n        if month >= 3 and month <= 5:\n        return \"Spring\"\n    elif month >= 6 and month <= 8:\n        return \"Summer\"\n    elif month >= 9 and month <= 11:\n        return \"Fall\"\n    else:\n        return \"Winter\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason is when provided a month of the year to return what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. The input should be converted to a numerical value before giving returning the season.\n    \"\"\"\n        if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 1,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student47",
+                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -26,5 +26,11 @@\n class of the-input\"+input,+produce+an+all+lower+case+string\" \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    \"January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the input\"\n    \"\"\"\n        if month in [\"January\", \"February\", \"March\"]:\n        return \"Winter\"\n    elif month in [\"April\", \"May\", \"June\"]:\n        return \"Spring\"\n    elif month in [\"July\", \"August\", \"September\"]:\n        return \"Summer\"\n    elif month in [\"October\", \"November\", \"December\"]:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n\nprint\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    \"January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the input, produce an all lower case string\"\n    \"\"\"\n        if month in [\"January\", \"February\", \"March\"]:\n        return \"winter\"\n    elif month in [\"April\", \"May\", \"June\"]:\n        return \"spring\"\n    elif month in [\"July\", \"August\", \"September\"]:\n        return \"summer\"\n    elif month in [\"October\", \"November\", \"December\"]:\n        return \"fall\"\n    else:\n        return \"Invalid month\"\n\n",
+                "id": 16,
+                "key": 0
+            },
+            {
+                "diff": 20,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -20,31 +20,27 @@\n February, and March-are-considered-to-be-winter;+will+return+\"winter\"; April, May, and June-are-considered-to-be-spring;+will+return+\"spring\"; July, August, and September-are-considered-summer;+will+return+\"summer\"; and the rest-are-considered-fall.+will+return+\"fall\". \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. January, February, and March are considered to be winter; April, May, and June are considered to be spring; July, August, and September are considered summer; and the rest are considered fall.\n\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"March\":\n        return \"Winter\"\n    elif month == \"April\" or month == \"May\" or month == \"June\":\n        return \"Spring\"\n    elif month == \"July\" or month == \"August\" or month == \"September\":\n        return \"Summer\"\n    else:\n        return \"Fall\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. January, February, and March will return \"winter\"; April, May, and June will return \"spring\"; July, August, and September will return \"summer\"; and the rest will return \"fall\".\n\n    \"\"\"\n        if month == \"January\" or month == \"February\" or month == \"March\":\n        return \"winter\"\n    elif month == \"April\" or month == \"May\" or month == \"June\":\n        return \"spring\"\n    elif month == \"July\" or month == \"August\" or month == \"September\":\n        return \"summer\"\n    else:\n        return \"fall\"\n",
+                "id": 16,
+                "key": 1
+            },
+            {
+                "diff": 25,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -28,4 +28,14 @@\n the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere.\n    \"\"\"\n        if month in ['December', 'January', 'February']:\n        return 'Winter'\n    elif month in ['March', 'April', 'May']:\n        return 'Spring'\n    elif month in ['June', 'July', 'August']:\n        return 'Summer'\n    elif month in ['September', 'October', 'November']:\n        return 'Fall'\n    else:\n        return 'Invalid month'\n\nprint\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase.\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student55",
+                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -38,4 +38,15 @@\n be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase.\n    \"\"\"\n        if month in [\"December\", \"January\", \"February\"]:\n        return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n        return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n        return \"summer\"\n    elif month in [\"September\", \"October\", \"November\"]:\n        return \"autumn\"\n    else:\n        return \"Invalid month\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Write a function that gets the name of the month and returns the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, provide the return statement as 'fall'.\n    \"\"\"\n        if month == 'January' or month == 'February' or month == 'December':\n        return 'winter'\n    elif month == 'March' or month == 'April' or month == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July' or month == 'August':\n        return 'summer'\n    elif month == 'September' or month == 'October' or month == 'November",
+                "id": 12,
+                "key": 0
+            },
+            {
+                "diff": 15,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -19,4 +19,12 @@\n the output lowercase.+It+uses+the+string+\"fall\"+instead+of+\"autumn\". \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase.\n    \"\"\"\n        if month in [\"December\", \"January\", \"February\"]:\n        return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n        return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n        return \"summer\"\n    elif month in [\"September\", \"October\", \"November\"]:\n        return \"autumn\"\n    else:\n        return \"Error\"\n\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. It uses the string \"fall\" instead of \"autumn\".\n    \"\"\"\n        if month == \"December\" or month == \"January\" or month == \"February\":\n        return \"winter\"\n    elif month == \"March\" or month == \"April\" or month == \"May\":\n        return \"spring\"\n    elif month == \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\n    elif month == \"September\" or month == \"October\" or month == \"November",
+                "id": 13,
+                "key": 0
+            },
+            {
+                "diff": 4,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -19,4 +19,10 @@\n the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. \n    \"\"\"\n        if month in ['December', 'January', 'February']:\n        return 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif month in ['September', 'October', 'November']:\n        return 'autumn'\n    else:\n        return 'Error'\n\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase. Instead of returning 'autumn', return 'fall'.\n    \"\"\"\n        if month in ('December', 'January', 'February'):\n        return 'winter'\n    elif month in ('March', 'April', 'May'):\n        return 'spring'\n    elif month in ('June', 'July', 'August'):\n        return 'summer'\n    elif month in ('September', 'October', 'November'):\n        return 'fall'\n    else:\n        return 'unknown'\n",
+                "id": 16,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 32,
+                "color": "#00ced1",
+                "arrow_color": "#00ced1",
+                "username": "student7",
+                "hover": "username:student7\n\ndiff:\n--- \n+++ \n@@ -16,6 +16,15 @@\n is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. The first three months of the year are considered to be winter, the next three months are considered to be spring, the next three months are considered summer, and the last three months are considered fall.\n\n    \"\"\"\n        if month < 4:\n        return \"Winter\"\n    elif month < 7:\n        return \"Spring\"\n    elif month < 10:\n        return \"Summer\"\n    else:\n        return \"Fall\"\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns the season for which the month is found in. The months are assigned numbers one to twelve, respectively. The first three months of the year are considered to be winter, the next three months are considered to be spring, the next three months are considered summer, and the last three months are considered fall.\n\n    \"\"\"\n        if month == 1 or month == 2 or month == 3:\n        return \"Winter\"\n    elif month == 4 or month == 5 or month == 6:\n        return \"Spring\"\n    elif month == 7 or month == 8 or month == 9:\n        return \"Summer\"\n    elif month == 10 or month == 11 or month == 12:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 22,
+                "color": "#ff1493",
+                "arrow_color": "#ff1493",
+                "username": "student9",
+                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -10,4 +10,13 @@\n string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. \"\"\"\n\nFROM completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to.\n    \"\"\"\n        if month in (\"December\", \"January\", \"February\"):\n        return \"Winter\"\n    elif month in (\"March\", \"April\", \"May\"):\n        return \"Spring\"\n    elif month in (\"June\", \"July\", \"August\"):\n        return \"Summer\"\n    elif month in (\"September\", \"October\", \"November\"):\n        return \"Autumn\"\n    else:\n        return \"Invalid month\"\n\n\n\nTO completion:\ndef getSeason(month):\n    \"\"\"\n    The function determines which season the string belongs to. It makes the first letter of the output lowercase.\n    \"\"\"\n        if month in [\"December\", \"January\", \"February\"]:\n        return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n        return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n        return \"summer\"\n    elif month in [\"September\", \"October\", \"November\"]:\n        return \"autumn\"\n    else:\n        return \"Error\"\n\n",
+                "id": 18,
+                "key": 0
+            }
+        ]
+    ]
+}

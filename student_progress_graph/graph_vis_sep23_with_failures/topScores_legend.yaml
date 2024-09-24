@@ -1,0 +1,1466 @@
+"edges":
+  !!int "0": |-
+    ---
+    +++
+    @@ -53,7 +53,6 @@
+     and return this-new list. If the@@ -62,15 +61,17 @@
+     larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. """
+  !!int "1": ""
+  !!int "2": |-
+    ---
+    +++
+    @@ -39,5 +39,12 @@
+     a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -44,7 +44,7 @@
+     5 names long-is+if the original list
+  !!int "4": |-
+    ---
+    +++
+    @@ -33,23 +33,31 @@
+     This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -52,6 +52,11 @@
+     than 5 items;+The+returned+list+will+be 3 names long@@ -59,19 +64,25 @@
+     the original list-of-lists has between 4 and 5 items;-else-the+The returned list will be-empty.+empty+if+the+original+list+has+less+than+4+items """
+  !!int "6": |-
+    ---
+    +++
+    @@ -27,9 +27,7 @@
+     created sorting the-names-of-people+namess by their age,
+  !!int "7": |-
+    ---
+    +++
+    @@ -12,7 +12,7 @@
+     zeroth index is-less+more than or equal
+  !!int "8": |-
+    ---
+    +++
+    @@ -1,6 +1,10 @@
+     def topScores(lst): """+Does+not+use+math. For each list
+  !!int "9": |-
+    ---
+    +++
+    @@ -22,7 +22,17 @@
+     a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns a list of@@ -32,19 +42,8 @@
+     corresponding scores were-the-highest,-and-were a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -3,15 +3,31 @@
+     """ taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 """
+  !!int "11": |-
+    ---
+    +++
+    @@ -45,5 +45,12 @@
+     a minimum of-80.+80,+with+a+maximum+list+length+of+5. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -5,18 +5,33 @@
+     a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name
+  !!int "13": |-
+    ---
+    +++
+    @@ -30,18 +30,5 @@
+     from oldest to-youngest,-as-long-as-there-is-less-than-a-10-year-gap-between-the-two.+youngest """
+  !!int "14": |-
+    ---
+    +++
+    @@ -1,18 +1,40 @@
+     def topScores(lst): """-Creates+Iterates+through a+list+of+lists,+with+each+list+housing+the+age+and+name+of+a+person+respectively.+A new list-of+will+be+created+sorting the names-sorted+of+people by-age+their+age, from oldest to-youngest.+youngest """
+  !!int "15": |-
+    ---
+    +++
+    @@ -1,60 +1,59 @@
+     def topScores(lst): """-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the
+  !!int "16": |-
+    ---
+    +++
+    @@ -1,18 +1,28 @@
+     def topScores(lst): """-Return-the-name-of-a-person-in+Check+each+list+inside the list-who-scored-80+given,+and+if+the+list[0]+is+greater+than or-above.+equal+to+80,+return+a+list+of+that+list[1] """
+  !!int "17": |-
+    ---
+    +++
+    @@ -25,6 +25,9 @@
+     is greater than+or+equal+to 80, add the@@ -44,4 +47,22 @@
+     at the end.+The+final+list+should+be+ordered+by+names+with+the+largest+score+to+names+with+the+smallest+score. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -33,5 +33,52 @@
+     from oldest to-youngest+youngest.+The+returned+list+will+be+at+most+5+names+long+is+the+original+list+of+lists+has+more+than+5+items,+if+the+original+list+of+lists+has+between+4+and+5+items,+the+returned+list+will+have+3+names,+else,+the+returned+list+will+be+empty. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -93,9 +93,6 @@
+     1 to finalLst.-The-output-should-be+Output finalLst. """
+  !!int "20": |-
+    ---
+    +++
+    @@ -93,6 +93,9 @@
+     1 to finalLst.-Return+When+that's+finished,+return finalLst. """
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,81 +1,44 @@
+     def topScores(lst): """-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. """
+  !!int "22": |-
+    ---
+    +++
+    @@ -28,7 +28,7 @@
+     of people from+youngest+to oldest-to-youngest """
+  !!int "23": |-
+    ---
+    +++
+    @@ -13,8 +13,9 @@
+     numbers that are-over-80+greater+than+76 are ordered from
+  !!int "24": |-
+    ---
+    +++
+    @@ -70,11 +70,23 @@
+     index 0. Then-convert+make+a+new+list+called+finalLst.+For+each+list+in+newLst,+add the-lists-in-newLst+value+at+index+1 to-strings.+finalLst. """
+  !!int "25": |-
+    ---
+    +++
+    @@ -30,4 +30,30 @@
+     this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index. """
+  !!int "26": |-
+    ---
+    +++
+    @@ -39,55 +39,4 @@
+     oldest to youngest.-If-the-original-list-is-less-than-4-items-long,-the-new-list-will-return-empty.-If-the-original-list-is-between-4-and-5-items-long,-the-new-list-will-return-3-names.-If-the-original-list-is-more-than-5-items-long,-the-new-list-will-return-5-names. """
+  !!int "27": |-
+    ---
+    +++
+    @@ -18,7 +18,9 @@
+     76, adds the-name+[num,+name]+list to a list.@@ -33,7 +35,15 @@
+     in index 0.+Adds+the+names+to+a+second+list. Returns the+second list. """
+  !!int "28": |-
+    ---
+    +++
+    @@ -89,4 +89,6 @@
+     1 to finalLst.+Return+finalLst. """
+  !!int "29": |-
+    ---
+    +++
+    @@ -22,6 +22,11 @@
+     to a list.+Sorts+in+reverse+alphabetical+order. Returns the list.
+  !!int "30": |-
+    ---
+    +++
+    @@ -48,6 +48,8 @@
+     grades are higher+or+equal than 80. """
+  !!int "31": |-
+    ---
+    +++
+    @@ -13,6 +13,14 @@
+     2 as inputs.+First,+sort+the+lists+by+the+first+entry. If the first@@ -47,22 +55,4 @@
+     at the end.-The-final-list-should-be-ordered-by-names-with-the-largest-score-to-names-with-the-smallest-score. """
+  !!int "32": |-
+    ---
+    +++
+    @@ -21,6 +21,7 @@
+     respectively. Returns a+new list of the@@ -39,8 +40,6 @@
+     list will be-at-most 5 names long@@ -48,13 +47,14 @@
+     the original list-of-lists has more than 5-items,+items;+3+names+long if the original@@ -66,15 +66,8 @@
+     4 and 5-items,-the-returned-list-will-have-3-names,-else,+items;+else the returned list
+  !!int "33": |-
+    ---
+    +++
+    @@ -30,4 +30,6 @@
+     the highest scores+above+80 """
+  !!int "34": |-
+    ---
+    +++
+    @@ -25,6 +25,7 @@
+     The strings are+then printed in the
+  !!int "35": |-
+    ---
+    +++
+    @@ -5,27 +5,10 @@
+     each list in-lst,-if+list,+sorts the-number-in-index-0-is-greater-than-80,-adds-the-[num,-name]-list-to-a-list.-Sorts-in+listsin reverse numerical order@@ -35,9 +18,28 @@
+     in index 0.+Divides+the+length+of+the+list+by+2,+rounding+up+to+create+number+"top". Adds the+top+"top" names+in+the+list to a second
+  !!int "36": |-
+    ---
+    +++
+    @@ -1,35 +1,13 @@
+     def topScores(lst): """-Iterates-through+Creates a-list-of-lists,-with-each-list-housing-the-age-and-name-of-a-person-respectively.-A new list-will-be-created of the names-of-people sorted by age
+  !!int "37": |-
+    ---
+    +++
+    @@ -1,8 +1,6 @@
+     def topScores(lst): """-Imports-math. For each list@@ -10,7 +8,8 @@
+     list, sorts the-listsin+lists+in reverse numerical order@@ -20,49 +19,51 @@
+     in index 0.-Divides-the-length-of-the-list-by-2,-rounding-up-to-create-number-"top",-if-the-number-of+If the length of the list is-even,+5, adds-one-to-top.-Adds the top-"top"+3 names-in-the-list to a second list.-Returns+If the+length+of+the+list+is+8,+adds+the+top+5+names+to+a second list.+If+the+length+of+the+list+is+3,+adds+none+of+the+names """
+  !!int "38": |-
+    ---
+    +++
+    @@ -32,6 +32,9 @@
+     add the list+at+index+1 to a new@@ -42,13 +45,22 @@
+     newLst. Then sort-newLst-and+newLst.+If+there+are+more+than+five+lists+in+newLst, remove-all-but+any+lists+after the-three+five lists with the@@ -57,4 +69,12 @@
+     at index 0.+Then+convert+the+lists+in+newLst+to+strings. """
+  !!int "39": |-
+    ---
+    +++
+    @@ -93,9 +93,9 @@
+     1 to finalLst.-When-that's-finished,-return+The+output+should+be finalLst. """
+  !!int "40": |-
+    ---
+    +++
+    @@ -64,9 +64,5 @@
+     Returns the second-list,-but-only-the-names.+list. """
+  !!int "41": |-
+    ---
+    +++
+    @@ -5,12 +5,12 @@
+     function reads the-values+numbers in the list. The-values+numbers that are over@@ -31,5 +31,5 @@
+     of their corresponding-values.+numbers. """
+  !!int "42": |-
+    ---
+    +++
+    @@ -20,7 +20,10 @@
+     by the first-entry.+entry+in+descending+order. If the first
+  !!int "43": |-
+    ---
+    +++
+    @@ -25,8 +25,14 @@
+     Sorts in reverse-alphabetical-order.+numerical+order+by+the+number+in+index+0. Returns the list.
+  !!int "44": |-
+    ---
+    +++
+    @@ -20,7 +20,9 @@
+     equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@
+     index into a+another+defined new list and
+  !!int "45": |-
+    ---
+    +++
+    @@ -9,6 +9,9 @@
+     if the number+in+index+0 is greater than
+  !!int "46": |-
+    ---
+    +++
+    @@ -33,11 +33,10 @@
+     This function returns-all the-name+names of-the+5 students with grades
+  !!int "47": |-
+    ---
+    +++
+    @@ -27,7 +27,6 @@
+     names of people-in from oldest to
+  !!int "48": |-
+    ---
+    +++
+    @@ -19,10 +19,14 @@
+     a person respectively.-Returns-a+A new list+will+be+created+and+returned of the names@@ -35,21 +39,55 @@
+     oldest to youngest.-The-returned-list-will-be-5-names-long-if+If the original list-has+is+less+than+4+items+long,+the+new+list+will+return+empty.+If+the+original+list+is+between+4+and+5+items+long,+the+new+list+will+return+3+names.+If+the+original+list+is more than 5-items.+items+long,+the+new+list+will+return+5+names. """
+  !!int "49": |-
+    ---
+    +++
+    @@ -27,8 +27,11 @@
+     names of people+sorted+by+age from+oldest+to youngest-to-oldest """
+  !!int "50": |-
+    ---
+    +++
+    @@ -6,7 +6,8 @@
+     finds the highest-value+three+values in the list,
+  !!int "51": |-
+    ---
+    +++
+    @@ -64,5 +64,9 @@
+     Returns the second-list.+list,+but+only+the+names. """
+  !!int "52": |-
+    ---
+    +++
+    @@ -27,7 +27,7 @@
+     created sorting the-namess+names by their age,
+  !!int "53": |-
+    ---
+    +++
+    @@ -15,7 +15,7 @@
+     is greater than-76,+80, adds the [num,
+  !!int "54": |-
+    ---
+    +++
+    @@ -45,7 +45,11 @@
+     newLst. Then sort-newLst.+newLst+from+highest+to+lowest. If there are
+  !!int "55": |-
+    ---
+    +++
+    @@ -1,14 +1,16 @@
+     def topScores(lst): """-output+if the-first-four-names-with+string+contains a number above-80+80,+print+its+paired+name """
+  !!int "56": |-
+    ---
+    +++
+    @@ -33,7 +33,22 @@
+     to create number-"top".+"top",+if+the+number+of+the+length+of+the+list+is+even,+adds+one+to+top. Adds the top
+  !!int "57": |-
+    ---
+    +++
+    @@ -51,38 +51,5 @@
+     more than 5-items;-The-returned-list-will-be-3-names-long-if-the-original-list-has-between-4-and-5-items;-The-returned-list-will-be-empty-if-the-original-list-has-less-than-4-items+items. """
+  !!int "58": |-
+    ---
+    +++
+    @@ -3,14 +3,23 @@
+     """ if the+first+item+in+the string-contains-a-number-above+is+equal+to+or+greater+than 80, print-its-paired-name+the+second+item+in+the+string """
+  !!int "59": |-
+    ---
+    +++
+    @@ -30,26 +30,29 @@
+     this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the
+  !!int "60": |-
+    ---
+    +++
+    @@ -3,10 +3,15 @@
+     """ taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth
+  !!int "61": |-
+    ---
+    +++
+    @@ -25,8 +25,6 @@
+     will be created-and-returned of the names
+  !!int "62": |-
+    ---
+    +++
+    @@ -1,9 +1,7 @@
+     def topScores(lst): """-Does-not-use+Imports math. For each
+  !!int "63": |-
+    ---
+    +++
+    @@ -3,27 +3,34 @@
+     """ The function-finds+reads the-highest-three values in the-list,-and-prints+list.+The+values+that+are the-string-next-to-it-in-order+over+80+are+ordered from highest-number to-lowest-number.+lowest.+The+strings+are+printed+in+the+order+of+their+corresponding+values. """
+  !!int "64": |-
+    ---
+    +++
+    @@ -13,7 +13,6 @@
+     values that are-the over 80 are
+  !!int "65": |-
+    ---
+    +++
+    @@ -3,15 +3,25 @@
+     """ taken lst,+loop+through+each+list+and sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list if the zeroth
+  !!int "66": |-
+    ---
+    +++
+    @@ -6,7 +6,7 @@
+     finds the highest-number+value in the list,
+"nodes":
+  !!int "0":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 6
+    "stderr_id": !!int |-
+      18
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "1":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 9
+          topScores([[60, "Fred"], [80, "Barney"], [90, "Wilma"], [70, "Betty"]])
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 9
+          topScores([[60, "Fred"], [80, "Barney"], [90, "Wilma"], [70, "Betty"]])
+      IndentationError: expected an indented block after 'if' statement on line 6
+    - |2
+        File "/tmp/file.py", line 9
+          topScores([[60, "Fred"], [80, "Barney"], [90, "Wilma"], [70, "Betty"]])
+      IndentationError: expected an indented block after 'if' statement on line 6
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "2":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          if i[1] > 76:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 7, in topScores
+          if i[1] > 76:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          if i[1] > 76:
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      20
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Rachel', 'Penelope', 'Alex']
+    - |
+      ['Kip', 'Sam', 'Ben', 'Alex', 'Ro', 'Ira']
+    - |
+      []
+    "stdout_id": !!int |-
+      25
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Rachel', 'Penelope', 'Alex']
+    - |
+      ['Sam', 'Ro', 'Kip', 'Ira', 'Ben', 'Alex']
+    - |
+      []
+    "stdout_id": !!int |-
+      18
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex', 'Rachel']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam']
+    - |
+      []
+    "stdout_id": !!int |-
+      19
+  !!int "6":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira', 'Kip']
+    - |
+      []
+    "stdout_id": !!int |-
+      21
+  !!int "7":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 6, in topScores
+          top = math.ceil(len(lst) / 2)
+      NameError: name 'math' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 6, in topScores
+          top = math.ceil(len(lst) / 2)
+      NameError: name 'math' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 6, in topScores
+          top = math.ceil(len(lst) / 2)
+      NameError: name 'math' is not defined
+    "stderr_id": !!int |-
+      11
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "8":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          lst[i].sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 7, in topScores
+          lst[i].sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          lst[i].sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex', 'Rachel']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira']
+    - |
+      ['Bob', 'Rachel']
+    "stdout_id": !!int |-
+      20
+  !!int "10":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      [[100, 'Penelope'], [99, 'Alex'], [80, 'Rachel']]
+    - |
+      [[100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [95, 'Ira'], [92, 'Kip']]
+    - |
+      [[65, 'Bob'], [65, 'Rachel']]
+    "stdout_id": !!int |-
+      6
+  !!int "11":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex', 'Rachel']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira']
+    - |
+      ['Rachel', 'Bob']
+    "stdout_id": !!int |-
+      26
+  !!int "12":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 8, in topScores
+          lst[i] = sorted(lst[i], reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 8, in topScores
+          lst[i] = sorted(lst[i], reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 8, in topScores
+          lst[i] = sorted(lst[i], reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "13":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 6, in topScores
+          if score >= 80:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 6, in topScores
+          if score >= 80:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 6, in topScores
+          if score >= 80:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      24
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "14":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex', 'Rachel']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira', 'Kip']
+    - |
+      []
+    "stdout_id": !!int |-
+      10
+  !!int "15":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      7
+  !!int "16":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          if lst[i][1] > 80 and lst[i][1] > highestScore
+                                                        ^
+      SyntaxError: expected ':'
+    - |2
+        File "/tmp/file.py", line 12
+          if lst[i][1] > 80 and lst[i][1] > highestScore
+                                                        ^
+      SyntaxError: expected ':'
+    - |2
+        File "/tmp/file.py", line 12
+          if lst[i][1] > 80 and lst[i][1] > highestScore
+                                                        ^
+      SyntaxError: expected ':'
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "17":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      [[100, 'Penelope'], [99, 'Alex'], [80, 'Rachel']]
+    - |
+      [[100, 'Ben'], [99, 'Alex'], [97, 'Ro']]
+    - |
+      []
+    "stdout_id": !!int |-
+      5
+  !!int "18":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 13
+          newLst[i] = str(newLst[
+                                ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 13
+          newLst[i] = str(newLst[
+                                ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 13
+          newLst[i] = str(newLst[
+                                ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "19":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x for x in lst if int(x.split()[1]) > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x for x in lst if int(x.split()[1]) > 80]
+      AttributeError: 'list' object has no attribute 'split'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x for x in lst if int(x.split()[1]) > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x for x in lst if int(x.split()[1]) > 80]
+      AttributeError: 'list' object has no attribute 'split'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x for x in lst if int(x.split()[1]) > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x for x in lst if int(x.split()[1]) > 80]
+      AttributeError: 'list' object has no attribute 'split'
+    "stderr_id": !!int |-
+      14
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "20":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Matt', 'Rachel', 'Pete']
+    - |
+      ['Matt', 'Sam', 'Hans']
+    - |
+      ['Bob', 'Rachel', 'Alex']
+    "stdout_id": !!int |-
+      27
+  !!int "21":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Rachel', 'Penelope', 'Alex']
+    - |
+      ['Sam', 'Ro', 'Kip', 'Ira']
+    - |
+      []
+    "stdout_id": !!int |-
+      11
+  !!int "22":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Alex', 'Penelope', 'Rachel']
+    - |
+      ['Ben', 'Ira', 'Kip', 'Ro', 'Sam']
+    - |
+      []
+    "stdout_id": !!int |-
+      15
+  !!int "23":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Rachel', 'Penelope', 'Alex']
+    - |
+      ['Sam', 'Ro', 'Kip', 'Ira', 'Ben']
+    - |
+      []
+    "stdout_id": !!int |-
+      22
+  !!int "24":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          i.sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 7, in topScores
+          i.sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 7, in topScores
+          i.sort(reverse=True)
+      TypeError: '<' not supported between instances of 'int' and 'str'
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "25":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 14, in topScores
+          return new
+      NameError: name 'new' is not defined
+    - ""
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      None
+    - ""
+    - |
+      None
+    "stdout_id": !!int |-
+      4
+  !!int "26":
+    "stderr":
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 14, in topScores
+          new_
+      NameError: name 'new_' is not defined
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      None
+    - ""
+    - |
+      None
+    "stdout_id": !!int |-
+      4
+  !!int "27":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 5, in topScores
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]
+      TypeError: '>' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "28":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex']
+    - |
+      ['Kip', 'Ben', 'Alex', 'Ro', 'Ira']
+    - |
+      []
+    "stdout_id": !!int |-
+      24
+  !!int "29":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Rachel', 'Alex', 'Penelope']
+    - |
+      ['Sam', 'Kip', 'Ira', 'Ro', 'Alex', 'Ben']
+    - |
+      []
+    "stdout_id": !!int |-
+      13
+  !!int "30":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          top_scores.append(lst[i][1
+                                  ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          top_scores.append(lst[i][1
+                                  ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 12
+          top_scores.append(lst[i][1
+                                  ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      21
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "31":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+        File "/tmp/file.py", line 11, in topScores
+          if lst[i][0] - lst[i+1][0] < 10:
+      IndexError: list index out of range
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+        File "/tmp/file.py", line 11, in topScores
+          if lst[i][0] - lst[i+1][0] < 10:
+      IndexError: list index out of range
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+        File "/tmp/file.py", line 11, in topScores
+          if lst[i][0] - lst[i+1][0] < 10:
+      IndexError: list index out of range
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "32":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Pete', 'Matt', 'Rachel', 'Alex', 'Penelope']
+    - |
+      ['Hans', 'Matt', 'Sam', 'Kip', 'Ira', 'Ro', 'Alex', 'Ben']
+    - |
+      ['Alex', 'Bob', 'Rachel']
+    "stdout_id": !!int |-
+      12
+  !!int "33":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Penelope', 'Alex', 'Rachel', 'Matt', 'Pete']
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam', 'Matt', 'Hans']
+    - |
+      ['Bob', 'Rachel', 'Alex']
+    "stdout_id": !!int |-
+      23
+  !!int "34":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      []
+    - |
+      [[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex']]
+    - |
+      []
+    "stdout_id": !!int |-
+      0
+  !!int "35":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 14
+          if len(l
+                ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          if len(l
+                ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          if len(l
+                ^
+      SyntaxError: '(' was never closed
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "36":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 10
+          return [lst[0][1], lst[1][
+                                   ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 10
+          return [lst[0][1], lst[1][
+                                   ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 10
+          return [lst[0][1], lst[1][
+                                   ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "37":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      None
+    - |
+      ['Ben', 'Alex', 'Ro', 'Ira', 'Kip']
+    - |
+      None
+    "stdout_id": !!int |-
+      2
+  !!int "38":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Matt', 'Rachel', 'Penelope', 'Pete', 'Alex']
+    - |
+      ['Kip', 'Matt', 'Sam', 'Ben', 'Alex', 'Ro', 'Hans', 'Ira']
+    - |
+      ['Bob', 'Rachel', 'Alex']
+    "stdout_id": !!int |-
+      28
+  !!int "39":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      ['Pete', 'Matt', 'Rachel', 'Alex', 'Penelope']
+    - |
+      ['Kip', 'Ira', 'Ro', 'Alex', 'Ben']
+    - |
+      ['Alex', 'Bob', 'Rachel']
+    "stdout_id": !!int |-
+      9
+  !!int "40":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 14
+          newLst.append(lst[i][1
+                              ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          newLst.append(lst[i][1
+                              ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 14
+          newLst.append(lst[i][1
+                              ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "41":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      [80, 50, 100, 76, 99]
+    - |
+      [80, 97, 76, 92, 95, 65, 100, 99]
+    - |
+      [65, 65, 33]
+    "stdout_id": !!int |-
+      17
+  !!int "42":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      [['Penelope', 100], ['Alex', 99], ['Rachel', 80], ['Matt', 76], ['Pete', 50]]
+    - |
+      [['Ben', 100], ['Alex', 99], ['Ro', 97], ['Ira', 95], ['Kip', 92], ['Sam', 80], ['Matt', 76], ['Hans', 65]]
+    - |
+      [['Bob', 65], ['Rachel', 65], ['Alex', 33]]
+    "stdout_id": !!int |-
+      1
+  !!int "43":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          if
+            ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 12
+          if
+            ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 12
+          if
+            ^
+      SyntaxError: invalid syntax
+    "stderr_id": !!int |-
+      19
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "44":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - |
+      [[50, 'Pete'], [76, 'Matt'], [80, 'Rachel'], [99, 'Alex'], [100, 'Penelope']]
+    - |
+      [[65, 'Hans'], [76, 'Matt'], [80, 'Sam'], [92, 'Kip'], [95, 'Ira'], [97, 'Ro'], [99, 'Alex'], [100, 'Ben']]
+    - |
+      [[33, 'Alex'], [65, 'Bob'], [65, 'Rachel']]
+    "stdout_id": !!int |-
+      14
+  !!int "45":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'for' statement on line 6
+    - |2
+        File "/tmp/file.py", line 7
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 6
+    "stderr_id": !!int |-
+      26
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "46":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 11
+    - |2
+        File "/tmp/file.py", line 12
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'for' statement on line 11
+    - |2
+        File "/tmp/file.py", line 12
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 11
+    "stderr_id": !!int |-
+      25
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "47":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 8
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'if' statement on line 7
+    - |2
+        File "/tmp/file.py", line 8
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 7
+    "stderr_id": !!int |-
+      23
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "48":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 10
+    - |2
+        File "/tmp/file.py", line 11
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'if' statement on line 10
+    - |2
+        File "/tmp/file.py", line 11
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'if' statement on line 10
+    "stderr_id": !!int |-
+      13
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "49":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 14
+          print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 13
+    - |2
+        File "/tmp/file.py", line 14
+          print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))
+      IndentationError: expected an indented block after 'for' statement on line 13
+    - |2
+        File "/tmp/file.py", line 14
+          print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))
+      IndentationError: expected an indented block after 'for' statement on line 13
+    "stderr_id": !!int |-
+      27
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+  !!int "50":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          for i in range(len(l
+                            ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 11
+          for i in range(len(l
+                            ^
+      SyntaxError: '(' was never closed
+    - |2
+        File "/tmp/file.py", line 11
+          for i in range(len(l
+                            ^
+      SyntaxError: '(' was never closed
+    "stderr_id": !!int |-
+      22
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      16
+"student_color":
+  "student1": |-
+    #d83034
+  "student14": |-
+    #f9e858
+  "student15": |-
+    #008dff
+  "student24": |-
+    #4ecb8d
+  "student31": |-
+    #c701ff
+  "student39": |-
+    #ffcd8e
+  "student45": |-
+    #003a7d
+  "student47": |-
+    #Ff73b6
+  "student53": |-
+    #ff7f50
+  "student55": |-
+    #7fff00
+  "student6": |-
+    #8a2be2
+  "student65": |-
+    #ffd700
+  "student7": |-
+    #ff4500
+  "student9": |-
+    #00ced1

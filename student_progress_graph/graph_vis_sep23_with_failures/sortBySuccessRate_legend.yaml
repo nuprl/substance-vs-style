@@ -1,0 +1,769 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -39,7 +39,12 @@
+     with the output-value.+value+truncated+to+two+decimal+places. It then sorts@@ -53,5 +58,13 @@
+     "success," highest to-lowest.+lowest,+returning+the+dictionaries+each+on+a+separate+line. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -13,21 +13,17 @@
+     function divides the-integer-in-the-third-place+value+for+"wins" in the dictionary by the-integer-in-the-fourth-place+value+for+"noms" in the dictionary,
+  !!int "3": |-
+    ---
+    +++
+    @@ -4,12 +4,10 @@
+     Add a new-part+element to each-element-in-the+nominee's dictionary called "success".@@ -17,12 +15,17 @@
+     success by dividing+the+number+of wins by-noms.+the+number+of+losses. Return in reverse-alphabetical order. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -12,15 +12,11 @@
+     that have the+keys: nominee, the-amount-of wins, and-the-amount-of noms. A new
+  !!int "5": |-
+    ---
+    +++
+    @@ -42,9 +42,5 @@
+     least amount of-'noms',-indent-after-each-{}+'noms' """
+  !!int "6": |-
+    ---
+    +++
+    @@ -34,7 +34,7 @@
+     the value of-'sucess'+'success' and print the
+  !!int "7": |-
+    ---
+    +++
+    @@ -1,7 +1,12 @@
+     def sortBySuccessRate(nominations): """-Create+For+each+dictionary+in+list,+create a new dictionary
+  !!int "8": |-
+    ---
+    +++
+    @@ -46,7 +46,13 @@
+     of the key-'noms'.+'noms',+rounded+to+the+second+decimal+place. The outputted list
+  !!int "9": |-
+    ---
+    +++
+    @@ -57,13 +57,12 @@
+     for the success-rate and-use-different-lines-to put each dictionary+on+a+separate+line. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -42,5 +42,5 @@
+     least amount of-'noms'+'noms'. """
+  !!int "11": |-
+    ---
+    +++
+    @@ -28,6 +28,13 @@
+     which computes (wins/noms)+(noms+is+the+key+in+the+dictionary) during each loop
+  !!int "12": |-
+    ---
+    +++
+    @@ -42,5 +42,9 @@
+     least amount of+'noms',+indent+after+each 'noms' """
+  !!int "13": |-
+    ---
+    +++
+    @@ -42,5 +42,5 @@
+     least amount of-'noms'.+'noms', """
+  !!int "14": |-
+    ---
+    +++
+    @@ -29,6 +29,13 @@
+     divided by 'noms.'+Round+success+to+nearest+2+decimal+places. Sort by success
+  !!int "15": |-
+    ---
+    +++
+    @@ -50,4 +50,20 @@
+     to decreasing success.+use+two+decimal+places+for+the+success+rate+and+use+different+lines+to+put+each+dictionary """
+  !!int "16": |-
+    ---
+    +++
+    @@ -43,8 +43,11 @@
+     amount of 'noms',-indent-after+print each-'noms'+'nominee'+on+its+own+line """
+  !!int "17": |-
+    ---
+    +++
+    @@ -1,27 +1,38 @@
+     def sortBySuccessRate(nominations): """+the+input+is+a+list+of+dictionaries. the function will divide the-number-of-wins+value+within+key+'wins' by the+value+within+key+'noms'.+the+new number-of-noms.-this will be-defined-by-the+stores+as+a new-variable+key, 'success'. the function@@ -31,13 +42,21 @@
+     a list that-orders+reorders the-input+dictionaries+within+the+original+list, in-increasing order of+highest success-values+value+to+lowest+success+value. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -55,5 +55,8 @@
+     by the highest-success.+success+within+each+dictionary. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -19,4 +19,8 @@
+     in the input+for+the+key+'nominee' """
+  !!int "20": |-
+    ---
+    +++
+    @@ -14,7 +14,11 @@
+     through the dictioanries-backwards.+backwards+using+a+for+loop. A new variable@@ -23,7 +27,14 @@
+     created which computes-(wins/noms).+(wins/noms)+during+each+loop+run+for+every+dictionary. A new list
+  !!int "21": |-
+    ---
+    +++
+    @@ -49,4 +49,20 @@
+     2 decimal places.+Sort+each+dictionary+in+the+list+alphabetically+based+on+the+'nominee'+key.+then+reverse+the+order. """
+  !!int "22": |-
+    ---
+    +++
+    @@ -10,9 +10,7 @@
+     element in the-list-of-dictionaries+dictionary called "success". Calculate
+  !!int "23": |-
+    ---
+    +++
+    @@ -43,5 +43,10 @@
+     dictionary in the-list.+list,+rounded+to+2+decimal+places. """
+  !!int "24": |-
+    ---
+    +++
+    @@ -23,6 +23,15 @@
+     within key 'noms'.+this+number+will+be+rounded+to+two+decimal+values. the new number
+  !!int "25": "---\n+++\n@@ -87,4 +87,49 @@\n single 2d list.+As+an+example.+Given+[{'nominee':+'Beyonc\xE9\
+    ',+'wins':+28,+'noms':+79},+{'nominee':+'Babyface','wins':+11,+'noms':+49}]+as+a+parameter+this+function+outputs+[{'nominee':+'Thomas',+'wins':+11,+'noms':+38,+'success':+0.29},+{'nominee':+'Swift',+'wins':+11,+'noms':+41,+'success':+0.27},+{'nominee':+'Babyface',+'wins':+11,+'noms':+49,+'success':+0.22}]\
+    \ \"\"\""
+  !!int "26": |-
+    ---
+    +++
+    @@ -42,12 +42,5 @@
+     least amount of-'noms',-print-each-'nominee'-on-its-own-line+'noms' """
+  !!int "27": |-
+    ---
+    +++
+    @@ -70,4 +70,21 @@
+     wins to nominations.+This+function+rounds+every+decimal+to+2+decimal+places.+This+functions+output+is+a+single+2d+list. """
+  !!int "28": |-
+    ---
+    +++
+    @@ -34,6 +34,9 @@
+     wins divided by+the+value+of noms. you are
+"nodes":
+  !!int "0":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    wins = nominations[i][\"\
+      Wins\"]\nKeyError: 'Wins'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          wins = nominations[i]["Wins"]
+      KeyError: 'Wins'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    wins = nominations[i][\"\
+      Wins\"]\nKeyError: 'Wins'\n"
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429},\
+      \ {'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}]\n"
+    - |
+      [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n"
+    "stdout_id": !!int |-
+      6
+  !!int "2":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    i[\"success\"\
+      ] = i[\"wins\"] / i[\"nominations\"]\nKeyError: 'nominations'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          i["success"] = i["wins"] / i["nominations"]
+      KeyError: 'nominations'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    i[\"success\"\
+      ] = i[\"wins\"] / i[\"nominations\"]\nKeyError: 'nominations'\n"
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "3":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 8
+    - |2
+        File "/tmp/file.py", line 11
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 8
+    - |2
+        File "/tmp/file.py", line 11
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 8
+    "stderr_id": !!int |-
+      13
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "4":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations
+                         ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations
+                         ^
+      SyntaxError: '[' was never closed
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations
+                         ^
+      SyntaxError: '[' was never closed
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "5":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success = nominations[i]['wins']/nominations[i]['nominations']\n\
+      KeyError: 'nominations'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 7, in sortBySuccessRate
+          success = nominations[i]['wins']/nominations[i]['nominations']
+      KeyError: 'nominations'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success =\
+      \ nominations[i]['wins']/nominations[i]['nominations']\nKeyError: 'nominations'\n"
+    "stderr_id": !!int |-
+      16
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "6":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins
+                                                                                                                                                 ^
+      SyntaxError: unterminated string literal (detected at line 8)
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins
+                                                                                                                                                 ^
+      SyntaxError: unterminated string literal (detected at line 8)
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins
+                                                                                                                                                 ^
+      SyntaxError: unterminated string literal (detected at line 8)
+    "stderr_id": !!int |-
+      11
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "7":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':
+                         ^
+      SyntaxError: '{' was never closed
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':
+                         ^
+      SyntaxError: '{' was never closed
+    - |2
+        File "/tmp/file.py", line 8
+          newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':
+                         ^
+      SyntaxError: '{' was never closed
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "8":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\n\
+      KeyError: 1\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 9, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 7, in sortBySuccessRate
+          success.append(nominations[i][1]/nominations[i][2])
+      KeyError: 1
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\n\
+      KeyError: 1\n"
+    "stderr_id": !!int |-
+      17
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}, {'nominee':\
+      \ 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\xC3\
+      \xA9', 'wins': 28, 'noms': 79, 'success': 0.35}]\n"
+    - |
+      [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee':\
+      \ 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n"
+    "stdout_id": !!int |-
+      5
+  !!int "10":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          sortBySuccessRate(nominations)
+      NameError: name 'nominations' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          sortBySuccessRate(nominations)
+      NameError: name 'nominations' is not defined
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 12, in <module>
+          sortBySuccessRate(nominations)
+      NameError: name 'nominations' is not defined
+    "stderr_id": !!int |-
+      15
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "11":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nom[\"success\"\
+      ] = nom[\"wins\"] / nom[\"nominations\"]\nKeyError: 'nominations'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          nom["success"] = nom["wins"] / nom["nominations"]
+      KeyError: 'nominations'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nom[\"success\"\
+      ] = nom[\"wins\"] / nom[\"nominations\"]\nKeyError: 'nominations'\n"
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "12":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nominations[key][\"\
+      success\"] = nominations[key][\"wins\"] / nominations[key][\"nominations\"]\n\
+      TypeError: list indices must be integers or slices, not dict\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 8, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          nominations[key]["success"] = nominations[key]["wins"] / nominations[key]["nominations"]
+      TypeError: list indices must be integers or slices, not dict
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nominations[key][\"\
+      success\"] = nominations[key][\"wins\"] / nominations[key][\"nominations\"]\n\
+      TypeError: list indices must be integers or slices, not dict\n"
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "13":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    losses = nominee[\"\
+      losses\"]\nKeyError: 'losses'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 7, in sortBySuccessRate
+          losses = nominee["losses"]
+      KeyError: 'losses'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    losses =\
+      \ nominee[\"losses\"]\nKeyError: 'losses'\n"
+    "stderr_id": !!int |-
+      18
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "14":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 5, in sortBySuccessRate\n    return sorted(nominations,\
+      \ key=lambda x: x['successRate'], reverse=True)\n  File \"/tmp/file.py\", line\
+      \ 5, in <lambda>\n    return sorted(nominations, key=lambda x: x['successRate'],\
+      \ reverse=True)\nKeyError: 'successRate'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 5, in sortBySuccessRate
+          return sorted(nominations, key=lambda x: x['successRate'], reverse=True)
+        File "/tmp/file.py", line 5, in <lambda>
+          return sorted(nominations, key=lambda x: x['successRate'], reverse=True)
+      KeyError: 'successRate'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 5, in sortBySuccessRate\n    return sorted(nominations,\
+      \ key=lambda x: x['successRate'], reverse=True)\n  File \"/tmp/file.py\", line\
+      \ 5, in <lambda>\n    return sorted(nominations, key=lambda x: x['successRate'],\
+      \ reverse=True)\nKeyError: 'successRate'\n"
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "15":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'successRate': 0.35}, {'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'successRate': 0.35443037974683544},\
+      \ {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'successRate': 0.6428571428571429}]\n"
+    - |
+      [{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 0.22448979591836735}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'successRate': 0.2682926829268293}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'successRate': 0.2894736842105263}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'successRate': 0.35443037974683544},\
+      \ {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 0.22448979591836735}]\n"
+    "stdout_id": !!int |-
+      1
+  !!int "16":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'successRate': 35.0}, {'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'successRate': 35.44}, {'nominee':\
+      \ 'Krauss', 'wins': 27, 'noms': 42, 'successRate': 64.29}]\n"
+    - |
+      [{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 22.45}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'successRate': 26.83}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'successRate': 28.95}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'successRate': 35.44},\
+      \ {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 22.45}]\n"
+    "stdout_id": !!int |-
+      8
+  !!int "17":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee': 'Krauss',\
+      \ 'wins': 27, 'noms': 42, 'success': 0.64}]\n"
+    - |
+      [{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee':\
+      \ 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n"
+    "stdout_id": !!int |-
+      0
+  !!int "18":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value\
+      \ in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          for key, value in nominations.items():
+      AttributeError: 'list' object has no attribute 'items'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key,\
+      \ value in nominations.items():\nAttributeError: 'list' object has no attribute\
+      \ 'items'\n"
+    "stderr_id": !!int |-
+      19
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "19":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429}]\n"
+    - |
+      [{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}]
+    - "[{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544},\
+      \ {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n"
+    "stdout_id": !!int |-
+      7
+  !!int "20":
+    "stderr":
+    - "  File \"/tmp/file.py\", line 11\n    print(sortBySuccessRate([{'nominee':\
+      \ 'Jones', 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented\
+      \ block after 'for' statement on line 10\n"
+    - |2
+        File "/tmp/file.py", line 11
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+      IndentationError: expected an indented block after 'for' statement on line 10
+    - "  File \"/tmp/file.py\", line 11\n    print(sortBySuccessRate([{'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79},\nIndentationError: expected an\
+      \ indented block after 'for' statement on line 10\n"
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "21":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42}, {'nominee': 'Beyonc\xC3\xA9\
+      ', 'wins': 28, 'noms': 79}, {'nominee': 'Jones', 'wins': 28, 'noms': 80}]\n"
+    - |
+      [{'nominee': 'Thomas', 'wins': 11, 'noms': 38}, {'nominee': 'Swift', 'wins': 11, 'noms': 41}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49}]
+    - "[{'nominee': 'Babyface', 'wins': 11, 'noms': 49}, {'nominee': 'Beyonc\xC3\xA9\
+      ', 'wins': 28, 'noms': 79}]\n"
+    "stdout_id": !!int |-
+      4
+  !!int "22":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 13
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 10
+    - |2
+        File "/tmp/file.py", line 13
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 10
+    - |2
+        File "/tmp/file.py", line 13
+          sortBySuccessRate(nominations)
+      IndentationError: expected an indented block after 'for' statement on line 10
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "23":
+    "stderr":
+    - "  File \"/tmp/file.py\", line 15\n    print(sortBySuccessRate([{'nominee':\
+      \ 'Jones', 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented\
+      \ block after 'for' statement on line 14\n"
+    - |2
+        File "/tmp/file.py", line 15
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+      IndentationError: expected an indented block after 'for' statement on line 14
+    - "  File \"/tmp/file.py\", line 15\n    print(sortBySuccessRate([{'nominee':\
+      \ 'Beyonc\xC3\xA9', 'wins': 28, 'noms': 79},\nIndentationError: expected an\
+      \ indented block after 'for' statement on line 14\n"
+    "stderr_id": !!int |-
+      14
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "24":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      2
+  !!int "25":
+    "stderr":
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80},\
+      \ \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    noms = i[\"nominations\"\
+      ]\nKeyError: 'nominations'\n"
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 10, in <module>
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+        File "/tmp/file.py", line 6, in sortBySuccessRate
+          noms = i["nominations"]
+      KeyError: 'nominations'
+    - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
+      \    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\xA9', 'wins': 28, 'noms':\
+      \ 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    noms = i[\"\
+      nominations\"]\nKeyError: 'nominations'\n"
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+  !!int "26":
+    "stderr":
+    - "  File \"/tmp/file.py\", line 9\n    print(sortBySuccessRate([{'nominee': 'Jones',\
+      \ 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented block after\
+      \ 'for' statement on line 8\n"
+    - |2
+        File "/tmp/file.py", line 9
+          print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},
+      IndentationError: expected an indented block after 'for' statement on line 8
+    - "  File \"/tmp/file.py\", line 9\n    print(sortBySuccessRate([{'nominee': 'Beyonc\xC3\
+      \xA9', 'wins': 28, 'noms': 79},\nIndentationError: expected an indented block\
+      \ after 'for' statement on line 8\n"
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      3
+"student_color":
+  "student23": |-
+    #d83034
+  "student33": |-
+    #f9e858
+  "student35": |-
+    #008dff
+  "student40": |-
+    #4ecb8d
+  "student44": |-
+    #c701ff
+  "student50": |-
+    #ffcd8e
+  "student59": |-
+    #003a7d
+  "student60": |-
+    #Ff73b6
+  "student63": |-
+    #ff7f50
+  "student64": |-
+    #7fff00
+  "student69": |-
+    #8a2be2
+  "student75": |-
+    #ffd700
+  "student79": |-
+    #ff4500

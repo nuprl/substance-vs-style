@@ -1,0 +1,308 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -42,11 +42,5 @@
+     is an integer,-or-a-string-containing-an-integer, concatenate. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -6,7 +6,8 @@
+     a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@
+     in the list,-and add the number@@ -32,5 +32,14 @@
+     numbers in the+list,+and+do+nothing+to+the+lists+in+the list. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -22,9 +22,16 @@
+     num to integer.-Else,-return-position.+If+position+in+lst+is+list,+add+list+to+lst. Return the new
+  !!int "4": |-
+    ---
+    +++
+    @@ -18,7 +18,10 @@
+     outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@
+     of the list+to+the+number """
+  !!int "5": |-
+    ---
+    +++
+    @@ -17,4 +17,20 @@
+     the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -60,5 +60,25 @@
+     they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless """
+  !!int "7": |-
+    ---
+    +++
+    @@ -22,15 +22,26 @@
+     is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -22,6 +22,9 @@
+     num to integer.+Else,+return+position. Return the new
+  !!int "9": |-
+    ---
+    +++
+    @@ -22,11 +22,16 @@
+     is a string,-add-it+append+the+integer+on to the end+of+the+string to create a
+  !!int "10": |-
+    ---
+    +++
+    @@ -6,25 +6,39 @@
+     an input list-(which-can-have-both-strings-and-integers) and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers in the+list,+the input-list.+integer+is+added+to+that+number. """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello', 'aaa', 'bbb', 'ccc', 6, 9]
+    - |
+      [9, 57, 9, '5', '4']
+    - |
+      ['hello', 'aaa', 'bbb', ['list'], 6, 9]
+    "stdout_id": !!int |-
+      7
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - |
+      ['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]
+    "stdout_id": !!int |-
+      6
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+        File "/tmp/file.py", line 9, in add_int
+          i += num
+      TypeError: 'int' object is not iterable
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - |
+      ['hello', 'aaa', 'bbb', 'ccc', 1, 4]
+    - |
+      [8, 56, 8, '5', '4']
+    - ""
+    "stdout_id": !!int |-
+      5
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 16, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+        File "/tmp/file.py", line 10, in add_int
+          new_lst.append(i + num)
+      TypeError: can only concatenate list (not "int") to list
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - ""
+    "stdout_id": !!int |-
+      1
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - |
+      ['hello5', 'aaa5', 'bbb5', ['list', 5], 6, 9]
+    "stdout_id": !!int |-
+      9
+  !!int "5":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - |
+      ['hello5', 'aaa5', 'bbb5', ['list'], 6, 9, 'list']
+    "stdout_id": !!int |-
+      8
+  !!int "6":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - |
+      ['hello5', 'aaa5', 'bbb5', 6, 9]
+    "stdout_id": !!int |-
+      2
+  !!int "7":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))
+        File "/tmp/file.py", line 5, in add_int
+          return [x + num for x in lst]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x + num for x in lst]
+      TypeError: can only concatenate str (not "int") to str
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(add_int([8, 56, 8, '5', '4'], 1))
+        File "/tmp/file.py", line 5, in add_int
+          return [x + num for x in lst]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x + num for x in lst]
+      TypeError: can only concatenate str (not "int") to str
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 6, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+        File "/tmp/file.py", line 5, in add_int
+          return [x + num for x in lst]
+        File "/tmp/file.py", line 5, in <listcomp>
+          return [x + num for x in lst]
+      TypeError: can only concatenate str (not "int") to str
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      4
+  !!int "8":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - |
+      ['hello', 'aaa', 'bbb', 'ccc', 6, 9]
+    - |
+      [9, 57, 9, '5', '4']
+    - |
+      ['hello', 'aaa', 'bbb', 6, 9]
+    "stdout_id": !!int |-
+      3
+  !!int "9":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 15
+          print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))
+      IndentationError: expected an indented block after 'else' statement on line 14
+    - |2
+        File "/tmp/file.py", line 15
+          print(add_int([8, 56, 8, '5', '4'], 1))
+      IndentationError: expected an indented block after 'else' statement on line 14
+    - |2
+        File "/tmp/file.py", line 15
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+      IndentationError: expected an indented block after 'else' statement on line 14
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      4
+  !!int "10":
+    "stderr":
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 15, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+        File "/tmp/file.py", line 13, in add_int
+          new_lst.append(item + num)
+      TypeError: can only concatenate list (not "int") to list
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, 6, 5]
+    - ""
+    "stdout_id": !!int |-
+      0
+  !!int "11":
+    "stderr":
+    - ""
+    - ""
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 11, in <module>
+          print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))
+        File "/tmp/file.py", line 9, in add_int
+          lst[i] = lst[i] + num
+      TypeError: can only concatenate list (not "int") to list
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - |
+      ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - |
+      [9, 57, 9, '51', '41']
+    - ""
+    "stdout_id": !!int |-
+      1
+"student_color":
+  "student19": |-
+    #d83034
+  "student36": |-
+    #f9e858
+  "student38": |-
+    #008dff
+  "student42": |-
+    #4ecb8d
+  "student54": |-
+    #c701ff
+  "student77": |-
+    #ffcd8e

@@ -1,0 +1,296 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 1,
+            "stdout_id": 0,
+            "hover": "stdout:\n9.63\n\n9.0\n\n3.0\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07))\n  File \"/tmp/file.py\", line 8, in total_bill\n    for i in range(len(sales_tax)):\nTypeError: object of type 'float' has no len()\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.0))\n  File \"/tmp/file.py\", line 8, in total_bill\n    for i in range(len(sales_tax)):\nTypeError: object of type 'float' has no len()\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(total_bill([['bread', 2, 3.50]], 0.5))\n  File \"/tmp/file.py\", line 8, in total_bill\n    for i in range(len(sales_tax)):\nTypeError: object of type 'float' has no len()\n",
+            "color": "blue",
+            "id": 1
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 7,
+            "hover": "stdout:\n15.4401\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 2
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n15.44\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 3
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 3,
+            "hover": "stdout:\n15.440100000000001\n\n14.43\n\n10.5\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 4
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 5,
+            "hover": "stdout:\n1.0101\n\n0.0\n\n3.5\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 5
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 6,
+            "hover": "stdout:\n1\n\n0\n\n3\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 6
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 4,
+            "hover": "stdout:\n101.01\n\n0.0\n\n350.0\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 7
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.0))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(total_bill([['bread', 2, 3.50]], 0.5))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[0] * item[1]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n",
+            "color": "grey",
+            "id": 8
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 1,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[1] * item[2]\nTypeError: can't multiply sequence by non-int of type 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(total_bill([['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.0))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[1] * item[2]\nTypeError: can't multiply sequence by non-int of type 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(total_bill([['bread', 2, 3.50]], 0.5))\n  File \"/tmp/file.py\", line 7, in total_bill\n    total += item[1] * item[2]\nTypeError: can't multiply sequence by non-int of type 'str'\n",
+            "color": "red",
+            "id": 9
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 3,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -26,7 +26,7 @@\n the prices and-tax+taxes within the lists\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the price, the tax, and the overall sales tax. All of the prices and tax within the lists are added together. The sales tax is then multiplied by the outcome of the added prices, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for item in grocery_list:\n        total_price += item[1]\n    total_price = total_price + (total_price * sales_tax)\n    return total_price\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the price, the tax, and the overall sales tax. All of the prices and taxes within the lists are added together. The sales tax is then multiplied by the outcome of the added prices, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for i in range(len(grocery_list)):\n        total_price += grocery_list[i][1]\n    for i in range(len(sales_tax)):\n        total_price += sales_tax[i]\n    return total_price\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 9,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -13,35 +13,36 @@\n item purchased, the-price,+amount+of the-tax,+item+purchased,+the+price+for+each+item, and the overall sales tax.-All-of+The+amount+purchased+is+multiplied+with the-prices-and-tax-within-the-lists,-which-is-the-last-two-components-of-the-list-are-added-together.+price+for+each+item,+creating+a+total+amount. The sales tax@@ -53,8 +54,8 @@\n outcome of the-added-prices,+total+amount, and then the\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the price, the tax, and the overall sales tax. All of the prices and tax within the lists, which is the last two components of the list are added together. The sales tax is then multiplied by the outcome of the added prices, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for item in grocery_list:\n        total_price += item[1]\n    total_price = total_price + (total_price * sales_tax)\n    return total_price\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the amount of the item purchased, the price for each item, and the overall sales tax. The amount purchased is multiplied with the price for each item, creating a total amount. The sales tax is then multiplied by the outcome of the total amount, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for item in grocery_list:\n        total_price += item[1] * item[2]\n    total_price = total_price + (total_price * sales_tax)\n    return total_price\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 11,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\n\ndiff:\n--- \n+++ \n@@ -26,10 +26,19 @@\n the prices and-taxes+tax within the-lists+lists,+which+is+the+last+two+components+of+the+list are added together.\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the price, the tax, and the overall sales tax. All of the prices and taxes within the lists are added together. The sales tax is then multiplied by the outcome of the added prices, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for i in range(len(grocery_list)):\n        total_price += grocery_list[i][1]\n    for i in range(len(sales_tax)):\n        total_price += sales_tax[i]\n    return total_price\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a list of the item purchased, the price, the tax, and the overall sales tax. All of the prices and tax within the lists, which is the last two components of the list are added together. The sales tax is then multiplied by the outcome of the added prices, and then the result of the multiplication is added onto the total price. The total price is then returned as the output.\n    \"\"\"\n        total_price = 0\n    for item in grocery_list:\n        total_price += item[1]\n    total_price = total_price + (total_price * sales_tax)\n    return total_price\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student33",
+                "hover": "username:student33\n\ndiff:\n--- \n+++ \n@@ -66,5 +66,10 @@\n added to the-\"total\"+\"total\",+truncated+to+two+decimal+places. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in some number of lists consisting of a string, an integer, and a number, as well as one additional number \"sales tax\". The function multiplies the integer and the number in each list and adds them together for all the lists, giving a \"total\". Then the function multiplies the \"total\" by the \"sales tax\" and outputs that value added to the \"total\"\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total + total * sales_tax\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in some number of lists consisting of a string, an integer, and a number, as well as one additional number \"sales tax\". The function multiplies the integer and the number in each list and adds them together for all the lists, giving a \"total\". Then the function multiplies the \"total\" by the \"sales tax\" and outputs that value added to the \"total\", truncated to two decimal places.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total = round(total * (1 + sales_tax), 2)\n    return total\n",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 15,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student40",
+                "hover": "username:student40\n\ndiff:\n--- \n+++ \n@@ -68,6 +68,17 @@\n and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    the function will multiply the last two values in each list within the list. these numbers will all be added together and stored in variable 'cost'. the variable 'cost' will then be multiplied by the value outside of the list. the product will be stored in a new variable, 'tax'. a new variable, 'total_cost', will contain the sum of the values of 'cost' and 'tax'. the function will return the value of the variable 'total_cost'.\n    \"\"\"\n        cost = 0\n    for item in grocery_list:\n        cost += item[1] * item[2]\n    tax = cost * sales_tax\n    total_cost = cost + tax\n    return total_cost\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    the function will multiply the last two values in each list within the list. these numbers will all be added together and stored in variable 'cost'. the variable 'cost' will then be multiplied by the value outside of the list. the product will be stored in a new variable, 'tax'. a new variable, 'total_cost', will contain the sum of the values of 'cost' and 'tax'. the value of total_cost will be rounded to two decimal places. the function will return the value of the variable 'total_cost'.\n    \"\"\"\n        cost = 0\n    for item in grocery_list:\n        cost += item[1] * item[2]\n    tax = cost * sales_tax\n    total_cost = round(cost + tax, 2)\n    return total_cost\n",
+                "id": 3,
+                "key": 1
+            },
+            {
+                "diff": 17,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student44",
+                "hover": "username:student44\n\ndiff:\n--- \n+++ \n@@ -17,5 +17,19 @@\n index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Add up the values of the product of the values stored in index 1 and 2. \n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total += total * sales_tax\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Add up the values of the product of the values stored in index 1 and 2 and round to the nearest hundredths if there are more than 2 decimal places. \n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += round(item[1] * item[2], 2)\n    total_bill = round(total_bill * (1 + sales_tax), 2)\n    return total_bill\n",
+                "id": 3,
+                "key": 2
+            },
+            {
+                "diff": 21,
+                "color": "#ffd700",
+                "arrow_color": "#ffd700",
+                "username": "student75",
+                "hover": "username:student75\n\ndiff:\n--- \n+++ \n@@ -44,4 +44,7 @@\n outputs the sum+with+four+digits \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    def total_bill(grocery_list, sales_tax): takes input \n[['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07\nand adds val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are added to val 9 and it outputs the sum\n\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total += total * sales_tax\n    return total\n\nprint(total_bill(grocery_list, sales_tax))\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    def total_bill(grocery_list, sales_tax): takes input \n[['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07\nand adds val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are added to val 9 and it outputs the sum with four digits\n\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total = total + (total * sales_tax)\n    return round(total, 2)\n\nprint(total_bill(grocery_list, sales_tax))",
+                "id": 3,
+                "key": 3
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 5,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student35",
+                "hover": "username:student35\n\ndiff:\n--- \n+++ \n@@ -51,5 +51,13 @@\n to give the+output.+The output+is+rounded+to+two+decimal+points. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function is supposed to calculate the total billing amount. From the grocery_list (list of lists), it looks into each individual list and multiplies the numbers provided in each list. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * (sales_tax + 1)\n\nprint(total_bill(grocery_list, sales_tax))\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function is supposed to calculate the total billing amount. From the grocery_list (list of lists), it looks into each individual list and multiplies the numbers provided in each list. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output. The output is rounded to two decimal points.\n    \"\"\"\n        total_bill = 0\n    for i in grocery_list:\n        total_bill += i[1] * i[2]\n    total_bill = round(total_bill * (sales_tax + 1), 2)\n    return total_bill\n",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student50",
+                "hover": "username:student50\n\ndiff:\n--- \n+++ \n@@ -62,4 +62,9 @@\n the sales tax.+Round+to+the+nearest+hundredth \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Receive a list containing items in a grocery list. Each element in the list contains the name of the item, the quantity purchased, and the price of the item. Calculate the total price of each element in the list by multiplying the price by the quantity for each element. Add them up, and multiply the total by the sales tax.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * (1 + sales_tax)\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Receive a list containing items in a grocery list. Each element in the list contains the name of the item, the quantity purchased, and the price of the item. Calculate the total price of each element in the list by multiplying the price by the quantity for each element. Add them up, and multiply the total by the sales tax. Round to the nearest hundredth\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return round(total * (1 + sales_tax), 2)\n\nprint(total_bill(grocery_list, 0.08))\n",
+                "id": 3,
+                "key": 1
+            },
+            {
+                "diff": 20,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student60",
+                "hover": "username:student60\n\ndiff:\n--- \n+++ \n@@ -39,4 +39,11 @@\n items returns it.+This+function+rounds+to+2+decimal+points \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a 2d list and a double as its parameters. The 2d list is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the items returns it. \n    \"\"\"\n        total_bill = 0\n    for i in range(len(grocery_list)):\n        total_bill += grocery_list[i][1] * grocery_list[i][2]\n    total_bill = total_bill * (1 + sales_tax)\n    return total_bill\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function takes in a 2d list and a double as its parameters. The 2d list is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the items returns it. This function rounds to 2 decimal points\n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += item[1] * item[2]\n    total_bill += total_bill * sales_tax\n    return round(total_bill, 2)\n",
+                "id": 3,
+                "key": 2
+            },
+            {
+                "diff": 6,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student63",
+                "hover": "username:student63\n\ndiff:\n--- \n+++ \n@@ -48,7 +48,12 @@\n inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in a list of lists and a number. For every list in the list, the function multiplies the second value by the third value, sums all of the products of each list, and multiplies that value by 1 plus the inputted number. That result is outputted.\n    \"\"\"\n        total = 0\n    for i in range(len(grocery_list)):\n        total += grocery_list[i][1] * grocery_list[i][2]\n    total = total * (1 + sales_tax)\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in a list of lists and a number. For every list in the list, the function multiplies the second value by the third value, sums all of the products of each list, and multiplies that value by 1 plus the inputted number. That result, rounded to two decimal places, is outputted.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total = round(total * (1 + sales_tax), 2)\n    return total\n",
+                "id": 3,
+                "key": 3
+            },
+            {
+                "diff": 4,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student64",
+                "hover": "username:student64\n\ndiff:\n--- \n+++ \n@@ -27,4 +27,11 @@\n sale_tax to result.+Round+to+the+nearest+2+decimal+places. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 1 with index 2, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += item[1] * item[2]\n    total_bill = total_bill * (1 + sales_tax)\n    return total_bill\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 1 with index 2, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result. Round to the nearest 2 decimal places.\n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += (item[1] * item[2])\n    total_bill = round(total_bill * (1 + sales_tax), 2)\n    return total_bill\n",
+                "id": 3,
+                "key": 4
+            },
+            {
+                "diff": 18,
+                "color": "#ff4500",
+                "arrow_color": "#ff4500",
+                "username": "student79",
+                "hover": "username:student79\n\ndiff:\n--- \n+++ \n@@ -43,5 +43,21 @@\n sales tax plus-1+1.+if+the+resulting+number+has+more+than+two+decimal+places+shorten+it+to+two+decimal+places. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    you will have two inputs a list of lists and the tax rate. for every list in the list of lists multiply the second and third item and add all of them and then multiply that by the sales tax plus 1\n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += item[1] * item[2]\n    return total_bill * (sales_tax + 1)\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    you will have two inputs a list of lists and the tax rate. for every list in the list of lists multiply the second and third item and add all of them and then multiply that by the sales tax plus 1. if the resulting number has more than two decimal places shorten it to two decimal places.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total = total * (sales_tax + 1)\n    total = round(total, 2)\n    return total\n\nprint(total_bill(grocery_list, 0.08))",
+                "id": 3,
+                "key": 5
+            }
+        ],
+        [
+            {
+                "diff": 8,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student40",
+                "hover": "username:student40\n\ndiff:\n--- \n+++ \n@@ -16,8 +16,21 @@\n within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@\n of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. \"\"\"\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    the function will multiply the last two values in each list within the list. this value will then be multiplied by the value outside of the list. these two numbers will be added to each other and returned\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2] * sales_tax\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    the function will multiply the last two values in each list within the list. these numbers will all be added together and stored in variable 'cost'. the variable 'cost' will then be multiplied by the value outside of the list. the product will be stored in a new variable, 'tax'. a new variable, 'total_cost', will contain the sum of the values of 'cost' and 'tax'. the function will return the value of the variable 'total_cost'.\n    \"\"\"\n        cost = 0\n    for item in grocery_list:\n        cost += item[1] * item[2]\n    tax = cost * sales_tax\n    total_cost = cost + tax\n    return total_cost\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 16,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student59",
+                "hover": "username:student59\n\ndiff:\n--- \n+++ \n@@ -44,6 +44,8 @@\n sales tax times+100+times the sum of\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an float that is the sales tax times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * sales_tax\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an float that is the sales tax times 100 times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * sales_tax * 100\n",
+                "id": 7,
+                "key": 0
+            },
+            {
+                "diff": 19,
+                "color": "#ff7f50",
+                "arrow_color": "#ff7f50",
+                "username": "student63",
+                "hover": "username:student63\n\ndiff:\n--- \n+++ \n@@ -42,6 +42,8 @@\n that value by+1+plus the inputted number.\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in a list of lists and a number. For every list in the list, the function multiplies the second value by the third value, sums all of the products of each list, and multiplies that value by the inputted number. That result is outputted.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    total *= sales_tax\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    The function takes in a list of lists and a number. For every list in the list, the function multiplies the second value by the third value, sums all of the products of each list, and multiplies that value by 1 plus the inputted number. That result is outputted.\n    \"\"\"\n        total = 0\n    for i in range(len(grocery_list)):\n        total += grocery_list[i][1] * grocery_list[i][2]\n    total = total * (1 + sales_tax)\n    return total\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 14,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student59",
+                "hover": "username:student59\n\ndiff:\n--- \n+++ \n@@ -37,7 +37,7 @@\n order. returns an-integer+float that is the\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an integer that is the sales tax times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return int(total * sales_tax)\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an float that is the sales tax times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * sales_tax\n",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 10,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student59",
+                "hover": "username:student59\n\ndiff:\n--- \n+++ \n@@ -44,7 +44,6 @@\n sales tax times-100 times the sum\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an float that is the sales tax times 100 times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * sales_tax * 100\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a list of groceries and a value for sales tax. the list of groceries contains a list for every item. each item's list contains its name, quantity, and price, in that order. returns an float that is the sales tax times times the sum of all goods' quantity*price\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[1] * item[2]\n    return total * sales_tax\n",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student64",
+                "hover": "username:student64\n\ndiff:\n\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 0 with index 1, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[0] * item[1]\n    total = total * (1 + sales_tax)\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 0 with index 1, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[0] * item[1]\n    total *= 1 + sales_tax\n    return total\n",
+                "id": 8,
+                "key": 0
+            },
+            {
+                "diff": 13,
+                "color": "#7fff00",
+                "arrow_color": "#7fff00",
+                "username": "student64",
+                "hover": "username:student64\n\ndiff:\n--- \n+++ \n@@ -6,10 +6,10 @@\n grocery_list, multiple index-0+1 with index-1,+2, repeat for all\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 0 with index 1, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n        total = 0\n    for item in grocery_list:\n        total += item[0] * item[1]\n    total *= 1 + sales_tax\n    return total\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list, multiple index 1 with index 2, repeat for all lists in grocery_list and add them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n        total_bill = 0\n    for item in grocery_list:\n        total_bill += item[1] * item[2]\n    total_bill = total_bill * (1 + sales_tax)\n    return total_bill\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 12,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student69",
+                "hover": "username:student69\n\ndiff:\n--- \n+++ \n@@ -21,34 +21,13 @@\n is an integer.+for every-element-in-the list-of-lists-is-a-list-with-a-string in the 0th index,-integer-in-the-1st-index-and-integer-in-the-second-index. multiply the integers\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter a list where the 0th index is a list of lists and the 1st index is an integer. every element in the list of lists is a list with a string in the 0th index, integer in the 1st index and integer in the second index. multiply the integers in the first and second indexes of each list in the list of lists. Add each product of each list. Then, multiply by 1 plus the integer in the first index of the input list\n    \"\"\"\n        total = 0\n    for item in grocery_list[0]:\n        total += item[1] * item[2]\n    return total * (1 + sales_tax)\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter a list where the 0th index is a list of lists and the 1st index is an integer. for every list in the 0th index, multiply the integers in the first and second indexes of each list in the list of lists. Add each product of each list. Then, multiply by 1 plus the integer in the first index of the input list\n    \"\"\"\n        total = 0\n    for item in grocery_list[0]:\n        total += item[1] * item[2]\n    return total * (1 + sales_tax)\n",
+                "id": 9,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#8a2be2",
+                "arrow_color": "#8a2be2",
+                "username": "student69",
+                "hover": "username:student69\n\ndiff:\n--- \n+++ \n@@ -28,6 +28,9 @@\n the 0th index,+for+every+list multiply the integers\n\nFROM completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter a list where the 0th index is a list of lists and the 1st index is an integer. for every list in the 0th index, multiply the integers in the first and second indexes of each list in the list of lists. Add each product of each list. Then, multiply by 1 plus the integer in the first index of the input list\n    \"\"\"\n        total = 0\n    for item in grocery_list[0]:\n        total += item[1] * item[2]\n    return total * (1 + sales_tax)\n\n\nTO completion:\ndef total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter a list where the 0th index is a list of lists and the 1st index is an integer. for every list in the 0th index, for every list multiply the integers in the first and second indexes of each list in the list of lists. Add each product of each list. Then, multiply by 1 plus the integer in the first index of the input list\n    \"\"\"\n        total = 0\n    for item in grocery_list[0]:\n        total += item[1] * item[2]\n    return total * (1 + sales_tax)\n\nprint(total_bill(grocery_list, sales_tax))\n",
+                "id": 9,
+                "key": 1
+            }
+        ]
+    ]
+}

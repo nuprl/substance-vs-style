@@ -1,0 +1,223 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 2,
+            "stdout_id": 4,
+            "hover": "stdout:\n['a', 'e', 'a', 'a', 'e']\n\n['o', 'e', 'i', 'e', 'e']\n\n['e']\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 0
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 1,
+            "hover": "stdout:\n['i', 'a', 'e', 'a', 'a', 'e']\n\n['a', 'o', 'e', 'i', 'e', 'e']\n\n['a', 'a', 'e']\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 1
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 0,
+            "hover": "stdout:\n['I', 'a', 'e', 'a', 'a', 'e']\n\n['A', 'o', 'e', 'i', 'e', 'e']\n\n['A', 'A', 'e']\n\nstderr:\n_no_stderr_",
+            "color": "green",
+            "id": 2
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 5,
+            "hover": "stdout:\n['a', 'e']\n\n['o', 'e', 'i']\n\n['e']\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 3
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('I ate an apple'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('Another string here'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('cAbbAge'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels(''))\nIndentationError: expected an indented block after 'if' statement on line 7\n",
+            "color": "grey",
+            "id": 4
+        },
+        {
+            "stderr_id": 2,
+            "stdout_id": 2,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 5
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('I ate an apple'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('Another string here'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('cAbbAge'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels(''))\nIndentationError: expected an indented block after 'if' statement on line 8\n",
+            "color": "blue",
+            "id": 6
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 3,
+            "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n",
+            "color": "red",
+            "id": 7
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 15,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student13",
+                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -8,7 +8,13 @@\n characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    Given a string of characters, the function extracts the vowels in the string and returns them in a list.\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for char in s:\n        if char in vowels:\n            vowelList.append(char)\n    return vowelList\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowels_in_string = []\n    for char in s.lower():\n        if char in vowels:\n            vowels_in_string.append(char)\n    return vowels_in_string\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student16",
+                "hover": "username:student16\n\ndiff:\n--- \n+++ \n@@ -17,6 +17,8 @@\n the same order+including+capitalizations (repetitions ok) \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    return a list of strings with all vowels used in the input in the same order (repetitions ok)\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    return [v for v in s if v in vowels]\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    return a list of strings with all vowels used in the input in the same order including capitalizations (repetitions ok)\n    \"\"\"\n        vowels = []\n    for char in s:\n        if char.lower() in \"aeiou\":\n            vowels.append(char)\n    return vowels\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 14,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student22",
+                "hover": "username:student22\n\ndiff:\n--- \n+++ \n@@ -6,9 +6,22 @@\n a string and+checks+for+uppercase+and+lowercase+vowels+and returns a list of-vowels+those+uppercase+and+lowercase+vowels,+if+any \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    takes in a string and returns a list of vowels \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for letter in s:\n        if letter in vowels:\n            vowelList.append(letter)\n    return vowelList\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    takes in a string and checks for uppercase and lowercase vowels and returns a list of those uppercase and lowercase vowels, if any\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']\n    vowelList = []\n    for letter in s:\n        if letter in vowels:\n            vowelList.append(letter)\n    return vowelList\n",
+                "id": 2,
+                "key": 1
+            },
+            {
+                "diff": 3,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student37",
+                "hover": "username:student37\n\ndiff:\n--- \n+++ \n@@ -22,6 +22,22 @@\n in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    Write a function which takes a string as an input and returns a list of each vowel present in the string, case sensitive\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    return [x for x in s if x in vowels]\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    Write a function which takes a string as an input and returns a list of each vowel present in the string, where capitalized vowels are present in the return list as capitalized and lower case vowels as lower case\n    \"\"\"\n        vowels = ['a','e','i','o','u','A','E','I','O','U']\n    return [x for x in s if x in vowels]\n",
+                "id": 2,
+                "key": 2
+            },
+            {
+                "diff": 7,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student72",
+                "hover": "username:student72\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,11 @@\n a list of+both the+uppercase+and+lowercase vowels in the\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    Return a list of the vowels in the input.\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    return [x for x in s if x in vowels]\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    Return a list of both the uppercase and lowercase vowels in the input.\n    \"\"\"\n        return [c for c in s if c in 'aeiouAEIOU']\n",
+                "id": 2,
+                "key": 3
+            },
+            {
+                "diff": 13,
+                "color": "#Ff73b6",
+                "arrow_color": "#Ff73b6",
+                "username": "student74",
+                "hover": "username:student74\n\ndiff:\n--- \n+++ \n@@ -10,5 +10,11 @@\n string in a-list+list,+including+capital+and+lower+case+letters \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    puts all the vowels of a string in a list\n    \"\"\"\n        vowels = ['a','e','i','o','u']\n    vowelList = []\n    for letter in s:\n        if letter in vowels:\n            vowelList.append(letter)\n    return vowelList\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    puts all the vowels of a string in a list, including capital and lower case letters\n    \"\"\"\n        vowels = ['a','e','i','o','u','A','E','I','O','U']\n    vowelList = []\n    for letter in s:\n        if letter in vowels:\n            vowelList.append(letter)\n    return vowelList\n",
+                "id": 2,
+                "key": 4
+            },
+            {
+                "diff": 9,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -3,7 +3,7 @@\n \"\"\" This function-pints+prints a list containing\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function pints a list containing strings of every vowel from the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    list_of_vowels = []\n    for i in s:\n        if i in vowels:\n            list_of_vowels.append(i)\n    return list_of_vowels\n\nprint(assessVowels('aeiou'))\nprint(assessVowels('abcdefghijklmnop\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list containing strings of every vowel from the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for i in s:\n        if i in vowels:\n            vowelList.append(i)\n    print(vowelList)\n\nassessVowels('supercalifragilisticexpialidocious')\n",
+                "id": 5,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student5",
+                "hover": "username:student5\n\ndiff:\n--- \n+++ \n@@ -28,4 +28,11 @@\n were originally written.+include+both+capital+and+lower+case+letters. \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for char in s:\n        if char in vowels:\n            vowelList.append(char)\n    return vowelList\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    output = []\n    for i in s:\n        if i in vowels:\n            output.append(i)\n    return output\n",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 0,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student5",
+                "hover": "username:student5\n\ndiff:\n--- \n+++ \n@@ -20,14 +20,7 @@\n vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    output = []\n    for i in s:\n        if i in vowels:\n            output.append(i)\n    return output\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    the function assessVowels will take input of a string and return a list of all the vowels in that string. include both capital and lower case letters. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for i in s:\n        if i in vowels:\n            vowelList.append(i)\n    return vowelList\n",
+                "id": 0,
+                "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student13",
+                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -7,12 +7,8 @@\n of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@\n them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowels_in_string = []\n    for char in s.lower():\n        if char in vowels:\n            vowels_in_string.append(char)\n    return vowels_in_string\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    Given a string of characters, the functions should then extract the vowels in the string and returns them in a list, making sure to account for both uppercase and lowercase versions of the vowels. \n    \"\"\"\n        vowels = ['a','e','i','o','u','A','E','I','O','U']\n    vowelList = []\n    for i in s:\n        if i in vowels:\n            vowelList.append(i)\n    return vowelList\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 5,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student16",
+                "hover": "username:student16\n\ndiff:\n--- \n+++ \n@@ -13,4 +13,10 @@\n in the input+in+the+same+order+(repetitions+ok) \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    return a list of strings with all vowels used in the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    used = []\n    for char in s:\n        if char in vowels:\n            if char not in used:\n                used.append(char)\n    return used\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    return a list of strings with all vowels used in the input in the same order (repetitions ok)\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    return [v for v in s if v in vowels]\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 12,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -10,7 +10,7 @@\n strings of every-value+vowel from the input\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function pints a list containing strings of every value from the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n        if i in vowels:\n            print(i)\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function pints a list containing strings of every vowel from the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    list_of_vowels = []\n    for i in s:\n        if i in vowels:\n            list_of_vowels.append(i)\n    return list_of_vowels\n\nprint(assessVowels('aeiou'))\nprint(assessVowels('abcdefghijklmnop",
+                "id": 0,
+                "key": 0
+            },
+            {
+                "diff": 11,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -4,18 +4,6 @@\n This function prints-a-list-of all-\"a\",-\"e\",-\"I\",-or-\"u\"-that-appear-in-the-input+vowels \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list of all \"a\", \"e\", \"I\", or \"u\" that appear in the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for char in s:\n        if char in vowels:\n            print(char)\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints all vowels\n    \"\"\"\n        vowels = set('aeiou')\n    s = s.lower()\n    for vowel in s:\n        if vowel in vowels:\n            print(vowel)\n",
+                "id": 6,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -7,8 +7,5 @@\n a list of-all vowels-that-appear \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list of all vowels that appear\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n        if i in vowels:\n            print(i)\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list of vowels \n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n        if i in vowels:\n            print(i)\n\nassessVowels('supercalifragilisticexpialidocious')\n",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 10,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -6,12 +6,16 @@\n prints a list-containing-strings of-every-vowel-from+all+\"a\",+\"e\",+\"I\",+or+\"u\"+that+appear+in the input \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list containing strings of every vowel from the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    vowelList = []\n    for i in s:\n        if i in vowels:\n            vowelList.append(i)\n    print(vowelList)\n\nassessVowels('supercalifragilisticexpialidocious')\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list of all \"a\", \"e\", \"I\", or \"u\" that appear in the input\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for char in s:\n        if char in vowels:\n            print(char)\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student2",
+                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -4,6 +4,11 @@\n This function prints+a+list+of all vowels+that+appear \"\"\"\n\nFROM completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints all vowels\n    \"\"\"\n        vowels = set('aeiou')\n    s = s.lower()\n    for vowel in s:\n        if vowel in vowels:\n            print(vowel)\n\n\nTO completion:\ndef assessVowels(s):\n    \"\"\"\n    This function prints a list of all vowels that appear\n    \"\"\"\n        vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n        if i in vowels:\n            print(i)\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        []
+    ]
+}

@@ -1,0 +1,140 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -2,52 +2,26 @@
+     hasHorizontalWin(board, letter): """-Measure-the-height-and-width-of+Iterate+through a 2D-array,-which-will-be-iterated-over.+array. If-all-elements-of a row or+column+of+an+array+contain all-elements-of-a-column-in-a-2D-array-are the-same,+same+element, return true.-make-sure-to-check-all-elements-in-the-row-or-column. Else, return false.
+  !!int "2": |-
+    ---
+    +++
+    @@ -10,11 +10,11 @@
+     an index that-has+contains the same value-for+in all the arrays
+  !!int "3": |-
+    ---
+    +++
+    @@ -37,6 +37,17 @@
+     same, return true.+make+sure+to+check+all+elements+in+the+row+or+column. Else, return false.
+  !!int "4": |-
+    ---
+    +++
+    @@ -22,6 +22,21 @@
+     element, return true.+For+example,+if+the+row+length+is+5,+check+all+5+elements+in+the+list. Else, return false.
+  !!int "5": |-
+    ---
+    +++
+    @@ -2,6 +2,20 @@
+     hasHorizontalWin(board, letter): """+Measure+the+height+and+width+of+a+2D+array,+which+will+be+iterated+over. If all elements
+  !!int "6": |-
+    ---
+    +++
+    @@ -7,15 +7,14 @@
+     of lists, if-all-5-characters-in+a list-is-equal-to-letter,+has+consecutive+'X'+or+'O'+character, return true. Otherwise,
+  !!int "7": |-
+    ---
+    +++
+    @@ -5,13 +5,14 @@
+     Looks through a-list-of-lists+dictionary and if one list+inside+the+dictionary contains only 'X'
+  !!int "8": |-
+    ---
+    +++
+    @@ -5,18 +5,43 @@
+     Enter a list+where+the+0th+index+is+a+list of lists of-strings.+strings,+and+the+1st+index+is+a+character. if any list+in+the+0th+index has five consecutive-'X'-values,+values+of+the+character+entered+in+the+1st+index, return true. else
+  !!int "9": |-
+    ---
+    +++
+    @@ -7,10 +7,12 @@
+     of lists, if-a+each+character+in list-has-consecutive+is+an 'X' or 'O'
+  !!int "10": |-
+    ---
+    +++
+    @@ -12,11 +12,9 @@
+     in list is-an-'X'-or-'O'-character,+equal+to+letter, return true. Otherwise,
+  !!int "11": |-
+    ---
+    +++
+    @@ -7,8 +7,9 @@
+     of lists, if-every-character+all+5+characters in list is
+  !!int "12": |-
+    ---
+    +++
+    @@ -34,14 +34,9 @@
+     all the values-are-the-exact-same-as-that-of-'letter'.+match+with+letter. If so, it
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      True
+    - |
+      False
+    - |
+      False
+    "stdout_id": !!int |-
+      1
+  !!int "1":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      True
+    - |
+      True
+    - |
+      False
+    "stdout_id": !!int |-
+      3
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      False
+    - |
+      False
+    - |
+      False
+    "stdout_id": !!int |-
+      2
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - |
+      False
+    - |
+      True
+    - |
+      True
+    "stdout_id": !!int |-
+      0
+"student_color":
+  "student35": |-
+    #d83034
+  "student44": |-
+    #f9e858
+  "student50": |-
+    #008dff
+  "student64": |-
+    #4ecb8d
+  "student69": |-
+    #c701ff
+  "student76": |-
+    #ffcd8e

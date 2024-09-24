@@ -1,0 +1,793 @@
+"edges":
+  !!int "0": ""
+  !!int "1": |-
+    ---
+    +++
+    @@ -26,5 +26,11 @@
+     class of the-input"+input,+produce+an+all+lower+case+string" """
+  !!int "2": |-
+    ---
+    +++
+    @@ -41,4 +41,7 @@
+     output is fall.+No+else+statement. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -4,8 +4,11 @@
+     This function inputs+a+string+of the-string+name of a month@@ -22,5 +25,14 @@
+     (in the northern-hemisphere)+hemisphere).+The+input+should+be+capitalized,+the+output+should+not. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -19,4 +19,10 @@
+     the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -38,4 +38,15 @@
+     be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -9,7 +9,15 @@
+     string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the
+  !!int "7": |-
+    ---
+    +++
+    @@ -19,6 +19,18 @@
+     in a year.+There+are+seasons+associated+with+each+month.+Winter,+spring,+summer,+and+fall. The code should
+  !!int "8": |-
+    ---
+    +++
+    @@ -54,5 +54,7 @@
+     are all in-fall.+the+season+"fall". """
+  !!int "9": |-
+    ---
+    +++
+    @@ -4,6 +4,9 @@
+     Function takes in+the+name+of an inputted month
+  !!int "10": |-
+    ---
+    +++
+    @@ -29,5 +29,16 @@
+     the correct outputted-season+season,+with+a+return+statement+after+each+if,+else+or+elif+statement """
+  !!int "11": |-
+    ---
+    +++
+    @@ -3,6 +3,9 @@
+     """ Takes the+name+of+a month and returns
+  !!int "12": |-
+    ---
+    +++
+    @@ -19,12 +19,16 @@
+     the output lowercase.-It-uses+If the string-"fall"-instead-of-"autumn".+is+'September',+'October',+or+'November',+the+output+is+'fall'. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -19,16 +19,4 @@
+     the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -7,6 +7,11 @@
+     one parameter, month.+Month+is+a+string+and Month represents the
+  !!int "15": |-
+    ---
+    +++
+    @@ -19,4 +19,12 @@
+     the output lowercase.+It+uses+the+string+"fall"+instead+of+"autumn". """
+  !!int "16": |-
+    ---
+    +++
+    @@ -18,5 +18,8 @@
+     associated with that-month.+month,+in+lower+case. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -21,5 +21,10 @@
+     that month is-in.+in:+'summer',+'winter',+'spring',+or+'fall'. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -47,9 +47,19 @@
+     the inputted month-=-value,+is+in+the+list+of+values, returns the-key.+key+that+is+matched+with+that+value. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -22,29 +22,20 @@
+     If month is-"December", "January",-or-"February", season is 'winter'. If month is-"March", "April",-or-"May", season is 'spring'. If month is-"June",-"July",-or "August", season is@@ -52,10 +43,7 @@
+     If month is-"September", "October",-or-"November", season is 'fall'.
+  !!int "20": |-
+    ---
+    +++
+    @@ -20,31 +20,27 @@
+     February, and March-are-considered-to-be-winter;+will+return+"winter"; April, May, and June-are-considered-to-be-spring;+will+return+"spring"; July, August, and September-are-considered-summer;+will+return+"summer"; and the rest-are-considered-fall.+will+return+"fall". """
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,6 +1,30 @@
+     def getSeason(month): """+Has+a+list+of+all+months+in+order,+with+index+0+=+0+and+the+rest+of+the+indexes+corresponding+to+the+correct+month. Has a dictionary
+  !!int "22": |-
+    ---
+    +++
+    @@ -10,4 +10,13 @@
+     string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. """
+  !!int "23": |-
+    ---
+    +++
+    @@ -44,9 +44,18 @@
+     during the year.-For-example-January-=-1.+The+input+should+be+converted+to+a+numerical+value+before+giving+returning+the+season. """
+  !!int "24": |-
+    ---
+    +++
+    @@ -8,12 +8,14 @@
+     all months in-order,-with-index+order.+Index 0-=-0+of+the+list+is+'0', and the rest
+  !!int "25": |-
+    ---
+    +++
+    @@ -28,4 +28,14 @@
+     the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. """
+  !!int "26": |-
+    ---
+    +++
+    @@ -48,4 +48,17 @@
+     of that month.+The+months+of+December,+January,+and+February+should+be+winter,+and+so+on. """
+  !!int "27": |-
+    ---
+    +++
+    @@ -2,42 +2,42 @@
+     getSeason(month): """ if-input-is-December,-January,+month+==+12,+1, or-February,+2, output is winter. If-input-is-March,-April,+month+==+3,+4, or-May,+5, output is spring. If-input-is-June,-July,+month+==+6,+7, or-August,+8, output is summer. If-input-is-September,-October,+month+==+9,+10, or-November,+11, output is fall.
+  !!int "28": |-
+    ---
+    +++
+    @@ -12,6 +12,10 @@
+     provided with a+number+corresponding+to+a month of the@@ -21,6 +25,7 @@
+     what season that+month belongs to. """
+  !!int "29": |-
+    ---
+    +++
+    @@ -10,11 +10,6 @@
+     is when provided-with-a-number-corresponding-to a month of@@ -28,4 +23,30 @@
+     month belongs to.+The+month+of+the+year+will+correspond+with+a+numerical+value+based+on+the+order+of+the+month+during+the+year.+For+example+January+=+1. """
+  !!int "30": |-
+    ---
+    +++
+    @@ -1,16 +1,20 @@
+     def getSeason(month): """-For+If the-given-month,+number+of+a+month+is+in+the+list, return the season-that-occurs-during+for that month """
+  !!int "31": |-
+    ---
+    +++
+    @@ -36,15 +36,20 @@
+     to a month.-If+for+each+key,+value+in+the+dictionary,+if the inputted month-is-in+=+value,+returns the-season,-returns-that-season.+key. """
+  !!int "32": |-
+    ---
+    +++
+    @@ -16,6 +16,15 @@
+     is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three
+  !!int "33": |-
+    ---
+    +++
+    @@ -21,5 +21,13 @@
+     the month is-in+in.+It+returns+and+prints+the+correct+outputted+season """
+  !!int "34": |-
+    ---
+    +++
+    @@ -16,48 +16,34 @@
+     is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.
+  !!int "35": |-
+    ---
+    +++
+    @@ -22,9 +22,37 @@
+     month is in:-'summer',-'winter',-'spring',-or-'fall'.+December,+January,+and+February+are+all+in+winter,+March,+April,+and+May+are+all+in+spring,+June,+July,+and+August+are+all+in+summer,+and+October,+September,+and+November+are+all+in+fall. """
+  !!int "36": |-
+    ---
+    +++
+    @@ -58,5 +58,5 @@
+     "November", season is-"fall".+'fall'. """
+  !!int "37": |-
+    ---
+    +++
+    @@ -44,4 +44,10 @@
+     No else statement.+12+==+December,+1+==+January """
+"nodes":
+  !!int "0":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      Invalid month
+    - |
+      Invalid month
+    - |
+      Invalid month
+    - |
+      Invalid month
+    "stdout_id": !!int |-
+      5
+  !!int "1":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 12
+          print(getSeason('January'))
+      IndentationError: expected an indented block after 'elif' statement on line 11
+    - |2
+        File "/tmp/file.py", line 12
+          print(getSeason('April'))
+      IndentationError: expected an indented block after 'elif' statement on line 11
+    - |2
+        File "/tmp/file.py", line 12
+          print(getSeason('August'))
+      IndentationError: expected an indented block after 'elif' statement on line 11
+    - |2
+        File "/tmp/file.py", line 12
+          print(getSeason('October'))
+      IndentationError: expected an indented block after 'elif' statement on line 11
+    "stderr_id": !!int |-
+      2
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "2":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      invalid month
+    - |
+      invalid month
+    - |
+      invalid month
+    - |
+      invalid month
+    "stdout_id": !!int |-
+      8
+  !!int "3":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      error
+    - |
+      error
+    - |
+      error
+    - |
+      error
+    "stdout_id": !!int |-
+      6
+  !!int "4":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    - |
+      None
+    "stdout_id": !!int |-
+      4
+  !!int "5":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          if months.index(month) in
+                                   ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          if months.index(month) in
+                                   ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          if months.index(month) in
+                                   ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          if months.index(month) in
+                                   ^
+      SyntaxError: invalid syntax
+    "stderr_id": !!int |-
+      0
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "6":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 6
+          seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']
+                       ^
+      SyntaxError: '{' was never closed
+    - |2
+        File "/tmp/file.py", line 6
+          seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']
+                       ^
+      SyntaxError: '{' was never closed
+    - |2
+        File "/tmp/file.py", line 6
+          seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']
+                       ^
+      SyntaxError: '{' was never closed
+    - |2
+        File "/tmp/file.py", line 6
+          seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October', 'November']
+                       ^
+      SyntaxError: '{' was never closed
+    "stderr_id": !!int |-
+      1
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "7":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 8
+          for key, value in seasonDict.
+                                       ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          for key, value in seasonDict.
+                                       ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          for key, value in seasonDict.
+                                       ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 8
+          for key, value in seasonDict.
+                                       ^
+      SyntaxError: invalid syntax
+    "stderr_id": !!int |-
+      12
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "8":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 10
+          print(getSeason('January'))
+      IndentationError: expected an indented block after 'if' statement on line 9
+    - |2
+        File "/tmp/file.py", line 10
+          print(getSeason('April'))
+      IndentationError: expected an indented block after 'if' statement on line 9
+    - |2
+        File "/tmp/file.py", line 10
+          print(getSeason('August'))
+      IndentationError: expected an indented block after 'if' statement on line 9
+    - |2
+        File "/tmp/file.py", line 10
+          print(getSeason('October'))
+      IndentationError: expected an indented block after 'if' statement on line 9
+    "stderr_id": !!int |-
+      9
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "9":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      Invalid Month
+    - |
+      Invalid Month
+    - |
+      Invalid Month
+    - |
+      Invalid Month
+    "stdout_id": !!int |-
+      9
+  !!int "10":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == 3 or month == 4 or month == 5:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == 3 or month == 4 or month == 5:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == 3 or month == 4 or month == 5:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == 3 or month == 4 or month == 5:
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    "stderr_id": !!int |-
+      6
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "11":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == "March" or month == "April" or month == "May":
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == "March" or month == "April" or month == "May":
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == "March" or month == "April" or month == "May":
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    - |2
+        File "/tmp/file.py", line 7
+          elif month == "March" or month == "April" or month == "May":
+          ^
+      IndentationError: expected an indented block after 'if' statement on line 5
+    "stderr_id": !!int |-
+      3
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "12":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == 'September' or month == 'October' or month == 'November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == 'September' or month == 'October' or month == 'November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == 'September' or month == 'October' or month == 'November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == 'September' or month == 'October' or month == 'November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    "stderr_id": !!int |-
+      10
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "13":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "September" or month == "October" or month == "November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "September" or month == "October" or month == "November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "September" or month == "October" or month == "November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "September" or month == "October" or month == "November
+                                                                      ^
+      SyntaxError: unterminated string literal (detected at line 11)
+    "stderr_id": !!int |-
+      4
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "14":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      Not a valid month
+    - |
+      Not a valid month
+    - |
+      Not a valid month
+    - |
+      Not a valid month
+    "stdout_id": !!int |-
+      1
+  !!int "15":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 13, in <module>
+          print(getSeason('January'))
+        File "/tmp/file.py", line 5, in getSeason
+          if month >= 3 and month <= 5:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 13, in <module>
+          print(getSeason('April'))
+        File "/tmp/file.py", line 5, in getSeason
+          if month >= 3 and month <= 5:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 13, in <module>
+          print(getSeason('August'))
+        File "/tmp/file.py", line 5, in getSeason
+          if month >= 3 and month <= 5:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 13, in <module>
+          print(getSeason('October'))
+        File "/tmp/file.py", line 5, in getSeason
+          if month >= 3 and month <= 5:
+      TypeError: '>=' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      11
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "16":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      winter
+    - |
+      spring
+    - |
+      summer
+    - |
+      fall
+    "stdout_id": !!int |-
+      2
+  !!int "17":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      Winter
+    - |
+      Spring
+    - |
+      Summer
+    - |
+      Fall
+    "stdout_id": !!int |-
+      0
+  !!int "18":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      winter
+    - |
+      spring
+    - |
+      summer
+    - |
+      autumn
+    "stdout_id": !!int |-
+      3
+  !!int "19":
+    "stderr":
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "June" or month ==
+                                          ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "June" or month ==
+                                          ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "June" or month ==
+                                          ^
+      SyntaxError: invalid syntax
+    - |2
+        File "/tmp/file.py", line 11
+          elif month == "June" or month ==
+                                          ^
+      SyntaxError: invalid syntax
+    "stderr_id": !!int |-
+      5
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "20":
+    "stderr":
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(getSeason('January'))
+        File "/tmp/file.py", line 6, in getSeason
+          if month < 4:
+      TypeError: '<' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(getSeason('April'))
+        File "/tmp/file.py", line 6, in getSeason
+          if month < 4:
+      TypeError: '<' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(getSeason('August'))
+        File "/tmp/file.py", line 6, in getSeason
+          if month < 4:
+      TypeError: '<' not supported between instances of 'str' and 'int'
+    - |
+      Traceback (most recent call last):
+        File "/tmp/file.py", line 14, in <module>
+          print(getSeason('October'))
+        File "/tmp/file.py", line 6, in getSeason
+          if month < 4:
+      TypeError: '<' not supported between instances of 'str' and 'int'
+    "stderr_id": !!int |-
+      8
+    "stdout":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stdout_id": !!int |-
+      7
+  !!int "21":
+    "stderr":
+    - ""
+    - ""
+    - ""
+    - ""
+    "stderr_id": !!int |-
+      7
+    "stdout":
+    - |
+      Winter
+    - |
+      Spring
+    - |
+      Summer
+    - |
+      Autumn
+    "stdout_id": !!int |-
+      10
+"student_color":
+  "student1": |-
+    #d83034
+  "student14": |-
+    #f9e858
+  "student15": |-
+    #008dff
+  "student24": |-
+    #4ecb8d
+  "student28": |-
+    #c701ff
+  "student31": |-
+    #ffcd8e
+  "student39": |-
+    #003a7d
+  "student45": |-
+    #Ff73b6
+  "student46": |-
+    #ff7f50
+  "student47": |-
+    #7fff00
+  "student55": |-
+    #8a2be2
+  "student6": |-
+    #ffd700
+  "student65": |-
+    #ff4500
+  "student7": |-
+    #00ced1
+  "student9": |-
+    #ff1493

@@ -1,0 +1,178 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": [],
+    "nodes": [
+        {
+            "stderr_id": 5,
+            "stdout_id": 1,
+            "hover": "stdout:\n['b', 'c', 'd', 'a']\n\n[3, 2, 1, 6, 5, 4]\n\n['aaa', 'hello', 'ccc', 'bbb']\n\nstderr:\n_no_stderr_",
+            "color": "grey",
+            "id": 0
+        },
+        {
+            "stderr_id": 0,
+            "stdout_id": 8,
+            "hover": "stdout:\n['b', 'c', 'd', 'a']\n\n\n['aaa', 'hello', 'ccc', 'bbb']\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(order_strings([1, 2, 3, 4, 5, 6]))\n  File \"/tmp/file.py\", line 6, in order_strings\n    if lst[i][0].isdigit():\nTypeError: 'int' object is not subscriptable\n\n",
+            "color": "blue",
+            "id": 1
+        },
+        {
+            "stderr_id": 4,
+            "stdout_id": 3,
+            "hover": "stdout:\n['d', 'a', 'b', 'c']\n\n\n['ccc', 'bbb', 'aaa', 'hello']\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(order_strings([1, 2, 3, 4, 5, 6]))\n  File \"/tmp/file.py\", line 6, in order_strings\n    if lst[i].isdigit():\nAttributeError: 'int' object has no attribute 'isdigit'\n\n",
+            "color": "blue",
+            "id": 2
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 7,
+            "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 3
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 10,
+            "hover": "stdout:\n['d', 'a', 'b', 'c']\n\n[6, 5, 4, 3, 2, 1]\n\n['ccc', 'bbb', 'aaa', 'hello']\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 4
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 9,
+            "hover": "stdout:\n['a', 'd', 'c', 'b']\n\n[4, 5, 6, 1, 2, 3]\n\n['bbb', 'ccc', 'hello', 'aaa']\n\nstderr:\n_no_stderr_",
+            "color": "blue",
+            "id": 5
+        },
+        {
+            "stderr_id": 6,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(order_strings(['c', 'b', 'a', 'd']))\n  File \"/tmp/file.py\", line 5, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(order_strings([1, 2, 3, 4, 5, 6]))\n  File \"/tmp/file.py\", line 5, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(order_strings(['hello', 'aaa', 'bbb', 'ccc']))\n  File \"/tmp/file.py\", line 5, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n",
+            "color": "grey",
+            "id": 6
+        },
+        {
+            "stderr_id": 5,
+            "stdout_id": 6,
+            "hover": "stdout:\n['d', 'c', 'a', 'b']\n\n[6, 2, 4, 5, 3, 1]\n\n['hello', 'aaa', 'ccc', 'bbb']\n\nstderr:\n_no_stderr_",
+            "color": "red",
+            "id": 7
+        },
+        {
+            "stderr_id": 3,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(order_strings(['c', 'b', 'a', 'd']))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.seed(0)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(order_strings([1, 2, 3, 4, 5, 6]))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.seed(0)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(order_strings(['hello', 'aaa', 'bbb', 'ccc']))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.seed(0)\nNameError: name 'random' is not defined\n",
+            "color": "grey",
+            "id": 8
+        },
+        {
+            "stderr_id": 1,
+            "stdout_id": 2,
+            "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(order_strings(['c', 'b', 'a', 'd']))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(order_strings([1, 2, 3, 4, 5, 6]))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(order_strings(['hello', 'aaa', 'bbb', 'ccc']))\n  File \"/tmp/file.py\", line 6, in order_strings\n    random.shuffle(lst)\nNameError: name 'random' is not defined\n",
+            "color": "red",
+            "id": 9
+        }
+    ],
+    "adjacency": [
+        [
+            {
+                "diff": 1,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,10 @@\n def order_strings(lst): \"\"\"+when+there+are+numbers, reversing the order\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    reversing the order of the first of the list and revering the order of the second half of the list\n    \"\"\"\n        return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reversing the order of the first of the list and revering the order of the second half of the list\n    \"\"\"\n        for i in range(len(lst)):\n        if lst[i][0].isdigit():\n            lst[i] = lst[i][::-1]\n    return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 3,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -21,5 +21,5 @@\n half of the-list+list. \"\"\"\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first half of the list and reverse the order of the second half of the list\n    \"\"\"\n        lst[:len(lst)//2] = lst[:len(lst)//2][::-1]\n    lst[len(lst)//2:] = lst[len(lst)//2:][::-1]\n    return lst\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first half of the list and reverse the order of the second half of the list.\n\n    \"\"\"\n        return lst[::-1]\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n there are numbers,-reversing+reverse the order of@@ -15,7 +15,7 @@\n the list and-revering+reversing the order of\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reversing the order of the first of the list and revering the order of the second half of the list\n    \"\"\"\n        for i in range(len(lst)):\n        if lst[i][0].isdigit():\n            lst[i] = lst[i][::-1]\n    return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse the order of the first of the list and reversing the order of the second half of the list\n    \"\"\"\n        for i in range(len(lst)):\n        if lst[i].isdigit():\n            lst[:i] = lst[:i][::-1]\n            lst[i:] = lst[i:][::-1]\n            return lst\n    return lst[::-1]\n",
+                "id": 2,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -15,7 +15,7 @@\n the list and-reversing+reverse the order of\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse the order of the first of the list and reversing the order of the second half of the list\n    \"\"\"\n        for i in range(len(lst)):\n        if lst[i].isdigit():\n            lst[:i] = lst[:i][::-1]\n            lst[i:] = lst[i:][::-1]\n            return lst\n    return lst[::-1]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        # if the list is empty, return an empty list\n    if len(lst) == 0:\n        return []\n    # if the list is of length 1, return the list\n    if len(lst) == 1:\n        return lst\n    # if the list is of length 2, return the list in reverse order\n    if len(lst) == 2:\n        return [lst[1], lst[0]]\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 6,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -1,10 +1,6 @@\n def order_strings(lst): \"\"\"-when-there-are-numbers, reverse the order\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        # if the list is empty, return an empty list\n    if len(lst) == 0:\n        return []\n    # if the list is of length 1, return the list\n    if len(lst) == 1:\n        return lst\n    # if the list is of length 2, return the list in reverse order\n    if len(lst) == 2:\n        return [lst[1], lst[0]]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        return lst[::-1]\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        return lst[::-1]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        n = len(lst)\n    if n % 2 == 0:\n        return lst[n//2:] + lst[:n//2]\n    else:\n        return lst[n//2+1:] + lst[:n//2+1]\n",
+                "id": 5,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student17",
+                "hover": "username:student17\n\ndiff:\n--- \n+++ \n@@ -7,6 +7,7 @@\n of the first+half of the list\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first of the list and reverse the order of the second half of the list\n    \"\"\"\n        n = len(lst)\n    if n % 2 == 0:\n        return lst[n//2:] + lst[:n//2]\n    else:\n        return lst[n//2+1:] + lst[:n//2+1]\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    reverse the order of the first half of the list and reverse the order of the second half of the list\n    \"\"\"\n        lst[:len(lst)//2] = lst[:len(lst)//2][::-1]\n    lst[len(lst)//2:] = lst[len(lst)//2:][::-1]\n    return lst\n",
+                "id": 0,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student25",
+                "hover": "username:student25\n\ndiff:\n--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" This function+imports+random+and randomly changes the\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    This function randomly changes the order of the given list.\n    \"\"\"\n        random.shuffle(lst)\n    return lst\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    This function imports random and randomly changes the order of the given list.\n    \"\"\"\n        import random\n    random.shuffle(lst)\n    return lst\n\n",
+                "id": 7,
+                "key": 0
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 8,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student30",
+                "hover": "username:student30\n\ndiff:\n--- \n+++ \n@@ -1,12 +1,12 @@\n def order_strings(lst): \"\"\"-Initialize-the+Use Python random-module.-Return+module+to+return elements of lst\n\nFROM completion:\ndef order_strings(lst):\n    \"\"\"\n    Initialize the Python random module. Return elements of lst in randomized order.\n\n    \"\"\"\n        random.seed(0)\n    random.shuffle(lst)\n    return lst\n\n\nTO completion:\ndef order_strings(lst):\n    \"\"\"\n    Use Python random module to return elements of lst in randomized order.\n\n    \"\"\"\n        random.shuffle(lst)\n    return lst\n\n",
+                "id": 9,
+                "key": 0
+            }
+        ],
+        []
+    ]
+}

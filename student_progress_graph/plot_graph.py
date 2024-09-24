@@ -17,9 +17,10 @@ import itertools
 import json
 import gravis
 
-START_NODE_COLOR = "red"
-END_NODE_COLOR = "green"
+START_NODE_COLOR = "grey"
 STD_NODE_COLOR = "blue"
+END_NODE_CORR_COLOR = "green"
+END_NODE_INC_COLOR = "red"
 
 COLORS = [
     '#d83034', # red
@@ -30,6 +31,14 @@ COLORS = [
     '#ffcd8e', # light orange
     '#003a7d', # dark blue
     '#Ff73b6', # pink
+    '#ff7f50', # coral
+    '#7fff00', # chartreuse
+    '#8a2be2', # blue violet
+    '#ffd700', # gold
+    '#ff4500', # orange red
+    '#00ced1', # dark turquoise
+    '#ff1493', # deep pink
+    '#9400d3', # dark violet
 ]
 HTML_HEADER="""<!DOCTYPE html>
 <html>
@@ -109,11 +118,11 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             "stderr_id": stderr_id,
             "stdout_id": stdout_id}
     
-    start_nodes, end_nodes = [],[]
-    for i,(student_name, student_data) in enumerate(trajectories.items()):
+    start_nodes, end_nodes_succ, end_nodes_fail = [],[], []
+    for j,(student_name, student_data) in enumerate(trajectories.items()):
         # student has unique color
         # add edges with arrows, diff ids as label
-        color = COLORS[i]
+        color = COLORS[j]
         legend["student_color"][student_name] = color
         for i,(node_from_std, node_to_std) in enumerate(student_data["edges"]):
             node_from = get_node_from_labels(
@@ -136,11 +145,17 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
                 color=color,
                 arrow_color=color,
                 username=student_name,
-                hover=f"username:{student_name}\ndiff:\n{diff}")
+                hover=f"username:{student_name}\n\ndiff:\n{diff}\n\nFROM completion:\n{student_data['prompt'][i]}"+
+                        f"    {student_data['completion'][i]}" + 
+                        f"\n\nTO completion:\n{student_data['prompt'][i+1]}"+
+                        f"    {student_data['completion'][i+1]}")
             legend["edges"][edge_label] = diff
             
             if i == len(student_data["edges"]) - 1:
-                end_nodes.append(node_to)
+                if student_data["is_success"][-1]:
+                    end_nodes_succ.append(node_to)
+                else:
+                    end_nodes_fail.append(node_to)
             if i == 0:
                 start_nodes.append(node_from)
                 
@@ -149,8 +164,10 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
     for node in all_nodes:
         if node in start_nodes:
             G.nodes[node]['color'] = START_NODE_COLOR
-        if node in end_nodes:
-            G.nodes[node]['color'] = END_NODE_COLOR
+        if node in end_nodes_fail:
+            G.nodes[node]['color'] = END_NODE_INC_COLOR
+        if node in end_nodes_succ:
+            G.nodes[node]['color'] = END_NODE_CORR_COLOR
             
     return G, legend
 
@@ -222,7 +239,11 @@ def draw_multidigraph(G, legend, save_to):
             # show_menu=True
             )
     
-    html_legend = generate_legend_html(legend["student_color"])
+    html_legend_students = generate_legend_html(legend["student_color"])
+    html_legend_nodes =  generate_legend_html({"NODE is_last_success": "green", 
+                                               "NODE is_last_failure": "red", 
+                                               "NODE starting": "grey"})
+    html_legend = "\n".join([html_legend_students, html_legend_nodes])
     with open(save_to.replace(".pdf", ".html"), "w") as fp:
         fp.write(fig.to_html().replace(HTML_HEADER, HTML_HEADER + "\n" + html_legend))
     plt.legend(*custom_plt_legend(legend["student_color"]))

@@ -1,10 +1,15 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
+  !!int "0": |-
     ---
     +++
     @@ -1,6 +1,10 @@
      def order_strings(lst): """+when+there+are+numbers, reversing the order
+  !!int "1": |-
+    ---
+    +++
+    @@ -5,7 +5,7 @@
+     there are numbers,-reversing+reverse the order of@@ -15,7 +15,7 @@
+     the list and-revering+reversing the order of
   !!int "2": |-
     ---
     +++
@@ -15,16 +20,12 @@
     +++
     @@ -1,10 +1,6 @@
      def order_strings(lst): """-when-there-are-numbers, reverse the order
-  !!int "4": |-
+  !!int "4": ""
+  !!int "5": |-
     ---
     +++
     @@ -7,6 +7,7 @@
      of the first+half of the list
-  !!int "5": |-
-    ---
-    +++
-    @@ -3,6 +3,9 @@
-     """ This function+imports+random+and randomly changes the
   !!int "6": |-
     ---
     +++
@@ -33,14 +34,13 @@
   !!int "7": |-
     ---
     +++
-    @@ -1,12 +1,12 @@
-     def order_strings(lst): """-Initialize-the+Use Python random-module.-Return+module+to+return elements of lst
+    @@ -3,6 +3,9 @@
+     """ This function+imports+random+and randomly changes the
   !!int "8": |-
     ---
     +++
-    @@ -5,7 +5,7 @@
-     there are numbers,-reversing+reverse the order of@@ -15,7 +15,7 @@
-     the list and-revering+reversing the order of
+    @@ -1,12 +1,12 @@
+     def order_strings(lst): """-Initialize-the+Use Python random-module.-Return+module+to+return elements of lst
 "nodes":
   !!int "0":
     "stderr":
@@ -48,7 +48,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       ['b', 'c', 'd', 'a']
@@ -57,7 +57,7 @@
     - |
       ['aaa', 'hello', 'ccc', 'bbb']
     "stdout_id": !!int |-
-      1
+      5
   !!int "1":
     "stderr":
     - ""
@@ -70,7 +70,7 @@
       TypeError: 'int' object is not subscriptable
     - ""
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - |
       ['b', 'c', 'd', 'a']
@@ -78,7 +78,7 @@
     - |
       ['aaa', 'hello', 'ccc', 'bbb']
     "stdout_id": !!int |-
-      8
+      4
   !!int "2":
     "stderr":
     - ""
@@ -91,7 +91,7 @@
       AttributeError: 'int' object has no attribute 'isdigit'
     - ""
     "stderr_id": !!int |-
-      4
+      1
     "stdout":
     - |
       ['d', 'a', 'b', 'c']
@@ -99,14 +99,14 @@
     - |
       ['ccc', 'bbb', 'aaa', 'hello']
     "stdout_id": !!int |-
-      3
+      8
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       None
@@ -115,14 +115,14 @@
     - |
       None
     "stdout_id": !!int |-
-      7
+      1
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       ['d', 'a', 'b', 'c']
@@ -131,14 +131,14 @@
     - |
       ['ccc', 'bbb', 'aaa', 'hello']
     "stdout_id": !!int |-
-      10
+      9
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       ['a', 'd', 'c', 'b']
@@ -147,7 +147,7 @@
     - |
       ['bbb', 'ccc', 'hello', 'aaa']
     "stdout_id": !!int |-
-      9
+      3
   !!int "6":
     "stderr":
     - |
@@ -172,20 +172,20 @@
           random.shuffle(lst)
       NameError: name 'random' is not defined
     "stderr_id": !!int |-
-      6
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "7":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       ['d', 'c', 'a', 'b']
@@ -194,7 +194,7 @@
     - |
       ['hello', 'aaa', 'ccc', 'bbb']
     "stdout_id": !!int |-
-      6
+      10
   !!int "8":
     "stderr":
     - |
@@ -219,13 +219,13 @@
           random.seed(0)
       NameError: name 'random' is not defined
     "stderr_id": !!int |-
-      3
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "9":
     "stderr":
     - |
@@ -250,13 +250,13 @@
           random.shuffle(lst)
       NameError: name 'random' is not defined
     "stderr_id": !!int |-
-      1
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
 "student_color":
   "student17": |-
     #d83034

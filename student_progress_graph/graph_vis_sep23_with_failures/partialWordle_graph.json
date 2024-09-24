@@ -5,35 +5,35 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n[0, 0, 2, 3, 0]\n\n[0, 1, 2, 0, 1]\n\n[2, 2, 1, 1, 1]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 3,
             "hover": "stdout:\n[0, 0, 2, 3, 3]\n\n[0, 1, 2, 1, 2]\n\n[2, 1, 1, 1, 2]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(partialWordle([\"zzzz\",\"bbbb\",\"lyre\",\"part\",\"apes\"],\n  File \"/tmp/file.py\", line 6, in partialWordle\n    raise NotImplementedError()\nNotImplementedError\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(partialWordle([\"aaaa\",\"wall\",\"woah\",\"deal\",\"howl\"],\n  File \"/tmp/file.py\", line 6, in partialWordle\n    raise NotImplementedError()\nNotImplementedError\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(partialWordle([\"real\",\"hill\",\"ream\",\"meal\",\"curl\"],\n  File \"/tmp/file.py\", line 6, in partialWordle\n    raise NotImplementedError()\nNotImplementedError\n",
             "color": "blue",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 4,
             "hover": "stdout:\n[0, 0, 4, 6, 3]\n\n[0, 2, 4, 1, 3]\n\n[4, 4, 2, 2, 3]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 3,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print(partialWordle([\"zzzz\",\"bbbb\",\"lyre\",\"part\",\"apes\"],\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(partialWordle([\"aaaa\",\"wall\",\"woah\",\"deal\",\"howl\"],\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(partialWordle([\"real\",\"hill\",\"ream\",\"meal\",\"curl\"],\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "grey",
             "id": 4
@@ -53,7 +53,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student55",
@@ -62,7 +62,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student9",
@@ -71,7 +71,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 6,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student9",
@@ -94,7 +94,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 2,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student9",
@@ -112,7 +112,7 @@
                 "key": 1
             },
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student9",

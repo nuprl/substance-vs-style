@@ -4,169 +4,169 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 5,
-            "stdout_id": 7,
+            "stderr_id": 13,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 12, in subtract_add\n    even += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 12,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n-2\n\n-2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 9,
             "hover": "stdout:\n2\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 17,
-            "stdout_id": 6,
+            "stderr_id": 16,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 0,
+            "stderr_id": 3,
+            "stdout_id": 7,
             "hover": "stdout:\n2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return sum(lst[:-1]) - lst[-1]\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 11,
             "hover": "stdout:\n6\n\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\n2\n\n-2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 6
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 7,
+            "stderr_id": 12,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'str' and 'str'\n\n",
             "color": "grey",
             "id": 7
         },
         {
-            "stderr_id": 14,
-            "stdout_id": 7,
+            "stderr_id": 11,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    total -= lst[i]\nTypeError: unsupported operand type(s) for -=: 'int' and 'str'\n\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 4,
+            "stderr_id": 1,
+            "stdout_id": 3,
             "hover": "stdout:\n-2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    count = int(lst[0])\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 11,
+            "stderr_id": 0,
+            "stdout_id": 10,
             "hover": "stdout:\n4\n\n2\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 10
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 6,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    return (int(lst[0]) + int(lst[1])) * (int(lst[2]) - int(lst[3\n                                                               ^\nSyntaxError: '[' was never closed\n",
             "color": "grey",
             "id": 11
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 13,
+            "stderr_id": 5,
+            "stdout_id": 5,
             "hover": "stdout:\n-4\n\n\n\n0\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return int(lst[0]) + int(lst[1]) - int(lst[2]) - int(lst[3])\nIndexError: list index out of range\n\n",
             "color": "blue",
             "id": 12
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 7,
+            "stderr_id": 8,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 10, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "blue",
             "id": 13
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 7,
+            "stderr_id": 9,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return (lst[0] - lst[1]) + (lst[2] - lst[3])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    return lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "blue",
             "id": 14
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 8,
+            "stderr_id": 17,
+            "stdout_id": 2,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 7, in subtract_add\n    new_lst.append(lst[i] - lst[i + 1])\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "grey",
             "id": 15
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 13,
             "hover": "stdout:\n[1, 3, 6, 10]\n\n[0, 2]\n\n[0, 0]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 16
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 10,
+            "stderr_id": 4,
+            "stdout_id": 6,
             "hover": "stdout:\n-8\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 8, in subtract_add\n    return lst[-1]\nIndexError: list index out of range\n",
             "color": "red",
             "id": 17
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 4,
+            "stderr_id": 2,
+            "stdout_id": 3,
             "hover": "stdout:\n-2\n\n-2\n\n0\n\n\nstderr:\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 6, in subtract_add\n    count = int(lst[0])\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 18
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 6,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(subtract_add([ ]))\n  File \"/tmp/file.py\", line 5, in subtract_add\n    result = lst[0] - lst[1]\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 19
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 7,
+            "stderr_id": 14,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result = lst[i] - lst[i+1]\nTypeError: unsupported operand type(s) for -: 'str' and 'str'\n\n",
             "color": "blue",
             "id": 20
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    for i in range(2, len(lst)\n                  ^\nSyntaxError: '(' was never closed\n",
             "color": "blue",
             "id": 21
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 7,
+            "stderr_id": 15,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['1', '2', '3', '4']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['0', '2']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 17, in <module>\n    print(subtract_add(['0', '0']))\n  File \"/tmp/file.py\", line 13, in subtract_add\n    result += lst[i]\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
             "color": "blue",
             "id": 22
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 9,
+            "stderr_id": 0,
+            "stdout_id": 12,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 23
@@ -187,7 +187,7 @@
         [],
         [
             {
-                "diff": 20,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -196,7 +196,7 @@
                 "key": 0
             },
             {
-                "diff": 21,
+                "diff": 8,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -205,7 +205,7 @@
                 "key": 1
             },
             {
-                "diff": 24,
+                "diff": 9,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -214,7 +214,7 @@
                 "key": 2
             },
             {
-                "diff": 4,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -223,7 +223,7 @@
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 10,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -232,7 +232,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 18,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student68",
@@ -243,7 +243,7 @@
         ],
         [
             {
-                "diff": 23,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -254,7 +254,7 @@
         ],
         [
             {
-                "diff": 19,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -265,7 +265,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 5,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -277,7 +277,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 6,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student49",
@@ -288,7 +288,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 7,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -299,7 +299,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 11,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -310,7 +310,7 @@
         ],
         [
             {
-                "diff": 16,
+                "diff": 20,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student68",
@@ -321,7 +321,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 12,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -332,7 +332,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 13,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -343,7 +343,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 14,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -354,7 +354,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 15,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -365,7 +365,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 16,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student67",
@@ -388,7 +388,7 @@
         [],
         [
             {
-                "diff": 6,
+                "diff": 19,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student68",
@@ -399,7 +399,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 21,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -410,7 +410,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 22,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -421,7 +421,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 23,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -432,7 +432,7 @@
         ],
         [
             {
-                "diff": 18,
+                "diff": 24,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",

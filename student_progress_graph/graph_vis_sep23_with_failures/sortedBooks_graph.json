@@ -4,120 +4,120 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 5,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n[{'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 2,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 5
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 6
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 2,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 12, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n",
             "color": "grey",
             "id": 9
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 2,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n",
             "color": "red",
             "id": 10
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 9,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Woolf'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n",
             "color": "grey",
             "id": 11
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 2,
+            "stderr_id": 11,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n",
             "color": "blue",
             "id": 12
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n",
             "color": "red",
             "id": 13
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 12,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n",
             "color": "blue",
             "id": 14
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 4,
+            "stderr_id": 8,
+            "stdout_id": 1,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\n",
             "color": "grey",
             "id": 15
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 4,
+            "stderr_id": 7,
+            "stdout_id": 1,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\n",
             "color": "red",
             "id": 16
@@ -126,7 +126,7 @@
     "adjacency": [
         [
             {
-                "diff": 17,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -135,7 +135,7 @@
                 "key": 0
             },
             {
-                "diff": 23,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -144,7 +144,7 @@
                 "key": 1
             },
             {
-                "diff": 20,
+                "diff": 17,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student68",
@@ -153,7 +153,7 @@
                 "key": 2
             },
             {
-                "diff": 13,
+                "diff": 21,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -162,7 +162,7 @@
                 "key": 3
             },
             {
-                "diff": 14,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -171,7 +171,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student49",
@@ -180,7 +180,7 @@
                 "key": 0
             },
             {
-                "diff": 19,
+                "diff": 11,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -189,7 +189,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 16,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student68",
@@ -198,7 +198,7 @@
                 "key": 1
             },
             {
-                "diff": 0,
+                "diff": 18,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -207,7 +207,7 @@
                 "key": 2
             },
             {
-                "diff": 21,
+                "diff": 19,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -219,7 +219,7 @@
         [],
         [
             {
-                "diff": 4,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -230,7 +230,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -241,7 +241,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -252,7 +252,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -263,7 +263,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -274,7 +274,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student49",
@@ -285,7 +285,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 10,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -296,7 +296,7 @@
         ],
         [
             {
-                "diff": 18,
+                "diff": 12,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -308,7 +308,7 @@
         [],
         [
             {
-                "diff": 8,
+                "diff": 13,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student67",
@@ -317,7 +317,7 @@
                 "key": 0
             },
             {
-                "diff": 16,
+                "diff": 15,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student67",
@@ -328,7 +328,7 @@
         ],
         [
             {
-                "diff": 10,
+                "diff": 14,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student67",
@@ -340,7 +340,7 @@
         [],
         [
             {
-                "diff": 3,
+                "diff": 20,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student70",
@@ -351,7 +351,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 22,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student78",
@@ -360,7 +360,7 @@
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 23,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student78",

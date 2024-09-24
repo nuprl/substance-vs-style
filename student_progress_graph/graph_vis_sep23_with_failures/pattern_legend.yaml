@@ -3,71 +3,71 @@
   !!int "1": |-
     ---
     +++
-    @@ -14,5 +14,14 @@
-     ascending numbers of+value.+insert+that+list value+times+into+a+new+list """
+    @@ -1,11 +1,13 @@
+     def pattern(value): """-count-to-the-letter-of-the-input+if+given+2+output+two+lists+1,2+and+1,2 """
   !!int "2": |-
-    ---
-    +++
-    @@ -20,8 +20,10 @@
-     to the value.-Each-list+All+of+the+lists within the output
-  !!int "3": |-
-    ---
-    +++
-    @@ -14,5 +14,8 @@
-     ascending numbers of-value.+value+start+from+1 """
-  !!int "4": |-
     ---
     +++
     @@ -10,4 +10,16 @@
      1,2 and 1,2+if+given+3+out+put+3+lists+1,2,3+and+1,2,3+and+1,2,3 """
-  !!int "5": |-
-    ---
-    +++
-    @@ -17,5 +17,6 @@
-     value start from-1+1.+insert """
-  !!int "6": |-
-    ---
-    +++
-    @@ -30,16 +30,12 @@
-     list should have-each+every integer-greater-than+between zero-up-to, and-including, the-value-inputted.+inputted+value. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -33,8 +33,11 @@
-     every integer between-zero+one and+one+more+than the inputted value.
-  !!int "8": |-
+  !!int "3": |-
     ---
     +++
     @@ -9,9 +9,10 @@
      integer and creates-a+one list-with+including+the numbers 1 to@@ -26,9 +27,7 @@
      for the given-value-and-returns,+value, appending each list
-  !!int "9": |-
-    ---
-    +++
-    @@ -1,18 +1,9 @@
-     def pattern(value): """-uses-the-given-number-to-produce+creates a-given-number-of-lists,-each+list containing elements counting@@ -22,5 +13,17 @@
-     given number from-one+1,+duplicates+this+list+by+the+given+number+into+a+list+of+lists """
-  !!int "10": |-
+  !!int "4": |-
     ---
     +++
     @@ -3,10 +3,11 @@
      """ Generate a-sequence+set of numbers-ranging+counting+up from 1 to@@ -14,9 +15,9 @@
      given number and-repeat-the-sequence+print+each+set the given number
-  !!int "11": |-
-    ---
-    +++
-    @@ -1,11 +1,13 @@
-     def pattern(value): """-count-to-the-letter-of-the-input+if+given+2+output+two+lists+1,2+and+1,2 """
-  !!int "12": |-
+  !!int "5": |-
     ---
     +++
     @@ -8,22 +8,11 @@
      1 input (value).-Produce+create list of-list-that-have-value-number+ascending+numbers of-list-contain-value-number-ascending-from-1-to value """
-  !!int "13": |-
+  !!int "6": |-
+    ---
+    +++
+    @@ -14,5 +14,14 @@
+     ascending numbers of+value.+insert+that+list value+times+into+a+new+list """
+  !!int "7": |-
     ---
     +++
     @@ -15,13 +15,4 @@
      numbers of value.-insert-that-list-value-times-into-a-new-list """
+  !!int "8": |-
+    ---
+    +++
+    @@ -14,5 +14,8 @@
+     ascending numbers of-value.+value+start+from+1 """
+  !!int "9": |-
+    ---
+    +++
+    @@ -17,5 +17,6 @@
+     value start from-1+1.+insert """
+  !!int "10": |-
+    ---
+    +++
+    @@ -1,18 +1,9 @@
+     def pattern(value): """-uses-the-given-number-to-produce+creates a-given-number-of-lists,-each+list containing elements counting@@ -22,5 +13,17 @@
+     given number from-one+1,+duplicates+this+list+by+the+given+number+into+a+list+of+lists """
+  !!int "11": |-
+    ---
+    +++
+    @@ -20,8 +20,10 @@
+     to the value.-Each-list+All+of+the+lists within the output
+  !!int "12": |-
+    ---
+    +++
+    @@ -30,16 +30,12 @@
+     list should have-each+every integer-greater-than+between zero-up-to, and-including, the-value-inputted.+inputted+value. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -33,8 +33,11 @@
+     every integer between-zero+one and+one+more+than the inputted value.
 "nodes":
   !!int "0":
     "stderr":
@@ -84,20 +84,20 @@
           pattern(5)
       IndentationError: expected an indented block after 'for' statement on line 6
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       112233
@@ -106,14 +106,14 @@
     - |
       1122
     "stdout_id": !!int |-
-      4
+      1
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[1, 2, 3], [1, 2, 3]]
@@ -122,14 +122,14 @@
     - |
       [[1, 2], [1, 2]]
     "stdout_id": !!int |-
-      5
+      7
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
@@ -138,14 +138,14 @@
     - |
       [[1, 2], [1, 2]]
     "stdout_id": !!int |-
-      0
+      6
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[1], [1, 2], [1, 2, 3]]
@@ -154,14 +154,14 @@
     - |
       [[1], [1, 2]]
     "stdout_id": !!int |-
-      6
+      8
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [1, 1, 1, 2, 2, 2, 3, 3, 3]
@@ -170,7 +170,7 @@
     - |
       [1, 1, 2, 2]
     "stdout_id": !!int |-
-      9
+      2
   !!int "6":
     "stderr":
     - |2
@@ -192,14 +192,14 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "7":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [1, 2, 3]
@@ -208,14 +208,14 @@
     - |
       [1, 2]
     "stdout_id": !!int |-
-      1
+      4
   !!int "8":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[1], [2, 2], [3, 3, 3]]
@@ -224,7 +224,7 @@
     - |
       [[1], [2, 2]]
     "stdout_id": !!int |-
-      2
+      9
   !!int "9":
     "stderr":
     - |2
@@ -246,14 +246,14 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "10":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [1, 1, 1, 2, 2, 2, 3, 3, 3]
@@ -262,14 +262,14 @@
     - |
       [1, 1, 1, 2, 2, 2]
     "stdout_id": !!int |-
-      8
+      3
   !!int "11":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
@@ -278,7 +278,7 @@
     - |
       [[0, 1], [0, 1]]
     "stdout_id": !!int |-
-      7
+      5
 "student_color":
   "student17": |-
     #d83034

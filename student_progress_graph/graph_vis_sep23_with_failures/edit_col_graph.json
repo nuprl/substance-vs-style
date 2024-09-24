@@ -4,35 +4,35 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n[2, 6, 8]\n\n[9, 1]\n\n[3]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\n[[1, 6, 3], [4, 6, 6], [7, 6, 9]]\n\n[[9, 1, 1, 1, 1], [9, 1, 1, 1, 1]]\n\n[[2, 1]]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(edit_col([[1,2,3], [4,5,6], [7,8,9]], 1, 6))\n  File \"/tmp/file.py\", line 5, in edit_col\n    mat[i,:] += 1\nTypeError: list indices must be integers or slices, not tuple\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(edit_col([[1,1,1,1,1], [1,1,1,1,1]], 0, 9))\n  File \"/tmp/file.py\", line 5, in edit_col\n    mat[i,:] += 1\nTypeError: list indices must be integers or slices, not tuple\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(edit_col([[2,3]], 1, 1))\n  File \"/tmp/file.py\", line 5, in edit_col\n    mat[i,:] += 1\nTypeError: list indices must be integers or slices, not tuple\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n[[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n\n[[1, 1, 1, 1, 1], [9, 1, 1, 1, 1]]\n\n[[2, 3]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 1,
             "stdout_id": 3,
             "hover": "stdout:\n[[1, 2, 3], [7, 5, 6], [7, 8, 9]]\n\n[[9, 1, 1, 1, 1], [9, 1, 1, 1, 1]]\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(edit_col([[2,3]], 1, 1))\n  File \"/tmp/file.py\", line 7, in edit_col\n    mat[1][0] = i + n\nIndexError: list index out of range\n",
             "color": "blue",
@@ -42,7 +42,7 @@
     "adjacency": [
         [
             {
-                "diff": 1,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student29",
@@ -54,7 +54,7 @@
         [],
         [
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student67",

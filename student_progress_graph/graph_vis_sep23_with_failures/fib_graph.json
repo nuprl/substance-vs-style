@@ -4,14 +4,14 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n\n  File \"/tmp/file.py\", line 11\n    elif n == 21:\n    ^\nIndentationError: expected an indented block after 'elif' statement on line 9\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 0,
             "stdout_id": 6,
             "hover": "stdout:\nTrue\n\nTrue\n\nTrue\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "green",
@@ -19,56 +19,56 @@
         },
         {
             "stderr_id": 3,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 21\n    elif n ==\n             ^\nSyntaxError: invalid syntax\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\nFalse\n\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
             "stderr_id": 4,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(1))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(13))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(21))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(fib(19))\n  File \"/tmp/file.py\", line 5, in fib\n    if n in fib_set:\nNameError: name 'fib_set' is not defined\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\nTrue\n\nFalse\n\nFalse\n\nFalse\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 3,
             "hover": "stdout:\nTrue\n\n\n\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(13))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(21))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(fib(19))\n  File \"/tmp/file.py\", line 10, in fib\n    fib_set.add(fib_set.pop() + fib_set.pop())\nKeyError: 'pop from an empty set'\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 0,
             "stdout_id": 1,
             "hover": "stdout:\n1\n\n233\n\n10946\n\n4181\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\nTrue\n\n377\n\n17711\n\n6765\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\nTrue\n\nTrue\n\nTrue\n\nTrue\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 9
@@ -77,7 +77,7 @@
     "adjacency": [
         [
             {
-                "diff": 10,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -89,7 +89,7 @@
         [],
         [
             {
-                "diff": 16,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -98,7 +98,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -107,7 +107,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -116,7 +116,7 @@
                 "key": 1
             },
             {
-                "diff": 12,
+                "diff": 6,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -127,7 +127,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -136,7 +136,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 13,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",
@@ -147,7 +147,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -158,7 +158,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -167,7 +167,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -176,7 +176,7 @@
                 "key": 1
             },
             {
-                "diff": 1,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -196,7 +196,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 7,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -207,7 +207,7 @@
         ],
         [
             {
-                "diff": 17,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student16",
@@ -216,7 +216,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -225,7 +225,7 @@
                 "key": 1
             },
             {
-                "diff": 4,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -234,7 +234,7 @@
                 "key": 2
             },
             {
-                "diff": 3,
+                "diff": 15,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student5",
@@ -243,7 +243,7 @@
                 "key": 3
             },
             {
-                "diff": 7,
+                "diff": 16,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student5",
@@ -252,7 +252,7 @@
                 "key": 4
             },
             {
-                "diff": 8,
+                "diff": 11,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -261,7 +261,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",
@@ -272,7 +272,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 14,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student37",
@@ -283,7 +283,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 17,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student8",

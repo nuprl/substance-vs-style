@@ -4,92 +4,92 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 5,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n{'Alice': 20, 'Bob': 11}\n\n{'Alice': 20}\n\n{'Sam': 21, 'Ari': 67, 'Chris': 23}\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n{'Alice': [], 'Bob': []}\n\n{'Alice': []}\n\n{'Sam': [], 'Ari': [], 'Chris': []}\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 1
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if grade in students[student]:\nTypeError: argument of type 'int' is not iterable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if grade in students[student]:\nTypeError: argument of type 'int' is not iterable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if grade in students[student]:\nTypeError: argument of type 'int' is not iterable\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 8,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if student in grade:\nTypeError: argument of type 'int' is not iterable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if student in grade:\nTypeError: argument of type 'int' is not iterable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\n  File \"/tmp/file.py\", line 9, in student_grades\n    if student in grade:\nTypeError: argument of type 'int' is not iterable\n",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    if student[1] >= grade[1] and student[1] <= grade\n                                                     ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if student[1] >= grade[1] and student[1] <= grade\n                                                     ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if student[1] >= grade[1] and student[1] <= grade\n                                                     ^\nSyntaxError: expected ':'\n",
             "color": "grey",
             "id": 5
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    students = [\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    students = [\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    students = [\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 2,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    elif grades[i] >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 8\n    elif grades[i] >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 8\n    elif grades[i] >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 2,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    elif grade >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    elif grade >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    elif grade >= 80:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "red",
             "id": 9
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 2,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\n  File \"/tmp/file.py\", line 7, in student_grades\n    grades_dict[student] = grades[student]\nKeyError: 'Alice'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\n  File \"/tmp/file.py\", line 7, in student_grades\n    grades_dict[student] = grades[student]\nKeyError: 'Alice'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\n  File \"/tmp/file.py\", line 7, in student_grades\n    grades_dict[student] = grades[student]\nKeyError: 'Sam'\n",
             "color": "grey",
             "id": 10
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 2,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\nIndentationError: expected an indented block after 'elif' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\nIndentationError: expected an indented block after 'elif' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\nIndentationError: expected an indented block after 'elif' statement on line 14\n",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 2,
+            "stderr_id": 9,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(student_grades({'Alice': 20, 'Bob': 11}, {20: ['A','A'], 11: ['A','B'], 21: ['B']}))\n  File \"/tmp/file.py\", line 15, in student_grades\n    grades_\nNameError: name 'grades_' is not defined. Did you mean: 'grades'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(student_grades({'Alice': 20}, {20: [], 11: ['A','B'], 21: ['A-']}))\n  File \"/tmp/file.py\", line 15, in student_grades\n    grades_\nNameError: name 'grades_' is not defined. Did you mean: 'grades'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))\n  File \"/tmp/file.py\", line 15, in student_grades\n    grades_\nNameError: name 'grades_' is not defined. Did you mean: 'grades'?\n",
             "color": "red",
             "id": 12
@@ -98,7 +98,7 @@
     "adjacency": [
         [
             {
-                "diff": 6,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -107,7 +107,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -118,7 +118,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student16",
@@ -153,7 +153,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student5",
@@ -165,7 +165,7 @@
         [],
         [
             {
-                "diff": 5,
+                "diff": 6,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student61",
@@ -177,7 +177,7 @@
         [],
         [
             {
-                "diff": 2,
+                "diff": 7,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student74",

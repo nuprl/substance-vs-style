@@ -4,56 +4,56 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 7,
+            "stderr_id": 3,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flights[i][0] == start:\nKeyError: 0\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 4,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if i[0] == start:\nKeyError: 0\n",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 1,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight.origin == start:\nAttributeError: 'dict' object has no attribute 'origin'\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 7,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    layover.append(flights[i][0] + start)\nKeyError: 0\n",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 5,
+            "stderr_id": 6,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 9, in layoverTrips\n    if flights[i][\"to\"] == flights[j][\"from\"]:\nKeyError: 'to'\n",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 4,
+            "stderr_id": 0,
             "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 6,
+            "stderr_id": 2,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 7, in layoverTrips\n    if flight[0] == start:\nKeyError: 0\n",
             "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 5,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'BOS', 'dest':'ORD', 'hrs':2.0}, \n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(layoverTrips([{'origin':'LAX', 'dest':'SEA', 'hrs':1.0},\n  File \"/tmp/file.py\", line 8, in layoverTrips\n    if flights[i][1] == flights[j][0]:\nKeyError: 1\n",
             "color": "red",
@@ -83,7 +83,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student13",
@@ -96,7 +96,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student22",

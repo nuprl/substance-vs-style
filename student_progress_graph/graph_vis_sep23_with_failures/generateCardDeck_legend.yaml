@@ -1,97 +1,260 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -15,7 +15,7 @@
+     of the first-dictionary+list adds on the
   !!int "1": |-
     ---
     +++
-    @@ -22,7 +22,9 @@
-     combination of these-parameters.+parameters+sorted+alphabetically. As an example.@@ -50,19 +52,4 @@
-     'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S """
+    @@ -10,8 +10,8 @@
+     The letter at-the-end+index+-1 of the first
   !!int "2": |-
-    ---
-    +++
-    @@ -8,12 +8,14 @@
-     two lists. The-last letter-at+that+comes+first+within the-end-of+alphabet+in the first list
-  !!int "3": |-
-    ---
-    +++
-    @@ -23,4 +23,31 @@
-     of these parameters.+As+an+example.+If+you+input+['H',+'D']+as+suits+and+['6',+'Q',+'J',+'2']+as+vals,+the+function+prints+['D2',+'D6',+'DJ',+'DQ',+'H2','H6',+'HJ',+'HQ'] """
-  !!int "4": |-
-    ---
-    +++
-    @@ -7,13 +7,18 @@
-     arrays of characters.+Reverse+the+order+of+the+first+array. Print an array with the-reverse-of the first array
-  !!int "5": |-
-    ---
-    +++
-    @@ -2,14 +2,11 @@
-     generateCardDeck(suits, vals): """-For-every-value-starting+Starting with the last-one+value in the first@@ -18,13 +15,14 @@
-     with each value+starting+with+the+first+one in the second array-starting-with-the-first-one.+. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -2,108 +2,28 @@
-     generateCardDeck(suits, vals): """-def+The+program, generateCardDeck(suits,-vals):-brings-in+vals):,+defines+Card+as the-information:-['S',-'H',-'D'],-['1',-'2',-'A']+input+data,+Card+==+['H'],+['2'], and-defines-Card=[],-Card-then-flips-the-order+creates+an+output+that+combines+both+[] of-suit[]-making-the-variables-print-in-the-opposite-order,-this-program-then-outputs-and-combination-of-the-suit-[]-and-val-[]-def-generateCardDeck(suits,-vals):-brings-in-the-information:-['H',-'D'],-['6',-'Q',-'J',-'2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-the-opposite-order-of-the-suit-[]-and-the-val-[].-def-generateCardDeck(suits,-vals):-brings-in-the-information:['H'],-['2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-both-the-suit-[]-and-the-val-[].+information. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -27,8 +27,11 @@
-     of the suit-[reverse-order]+[]+in+a+reversed+order and the val
-  !!int "8": |-
-    ---
-    +++
-    @@ -47,6 +47,24 @@
-     these new attachments.+No+function+is+called+for+this+but+rather+the+two+stings+which+are+to+be+attached+are+concatenated. This goes on
-  !!int "9": |-
-    ---
-    +++
-    @@ -33,5 +33,6 @@
-     alphabetical order by-suits.+first+character. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -3,33 +3,36 @@
-     vals): """ The+term+Card+is+defined+in+relation+to+the+function+generateCardDeck+which+inputs+the data on the left-is-put-through+side+of the-defined-function-using-suits+table and-vals-and-defines+outputs the-term-Card-for-the-function-generateCardDeck-to-output data on the-right.+right+side+of+the+table. """
-  !!int "11": |-
-    ---
-    +++
-    @@ -5,15 +5,15 @@
-     For every value+starting+with+the+last+one in the first-array,-starting-from-the-last-one,+array concatenate with each@@ -21,5 +21,10 @@
-     in the second-array.+array+starting+with+the+first+one. """
-  !!int "12": |-
-    ---
-    +++
-    @@ -2,33 +2,108 @@
-     generateCardDeck(suits, vals): """-The-program-defines-Card-as-the-input-data,-Card-==-['H'],-['2'],-and-uses-the-defined-function+def generateCardDeck(suits, vals):-to-create-an-output-which-combines+brings+in+the+information:+['S',+'H',+'D'],+['1',+'2',+'A']+and+defines+Card=[],+Card+then+flips+the+order+of+suit[]+making+the+variables+print+in+the+opposite+order,+this+program+then+outputs+and+combination+of+the+suit+[]+and+val+[]+def+generateCardDeck(suits,+vals):+brings+in+the+information:+['H',+'D'],+['6',+'Q',+'J',+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+the+opposite+order+of+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information:['H'],+['2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of both-blocks-of-information.+the+suit+[]+and+the+val+[]. """
-  !!int "13": |-
-    ---
-    +++
-    @@ -18,24 +18,6 @@
-     and defines Card=[],-Card-then-reverses-the-order-of-suit[]-making-the-variables-print-in-the-opposite-order-starting-with-['D'], this program then@@ -43,12 +25,15 @@
-     and combination of+both the+reverse suit [] and+the val-[]+[]. def generateCardDeck(suits, vals):@@ -72,18 +57,16 @@
-     and combination of-the-opposite-order-of+both the suit [] and the+reverse val [].-def+ef generateCardDeck(suits, vals): brings
-  !!int "14": |-
     ---
     +++
     @@ -10,8 +10,9 @@
      The letter at+the+last index--1 of the first@@ -24,7 +25,14 @@
      of the second-dictionary.+list+and+then+the+letters+in+the+alphabet. This keeps going
+  !!int "3": |-
+    ---
+    +++
+    @@ -11,8 +11,7 @@
+     letter at the-last-index+beginning of the first
+  !!int "4": |-
+    ---
+    +++
+    @@ -8,10 +8,11 @@
+     two lists. The+last letter at the-beginning+end of the first
+  !!int "5": |-
+    ---
+    +++
+    @@ -8,12 +8,14 @@
+     two lists. The-last letter-at+that+comes+first+within the-end-of+alphabet+in the first list
+  !!int "6": |-
+    ---
+    +++
+    @@ -10,14 +10,32 @@
+     of input strings+"suits" and another series of input-strings,-and-then+strings+"vals".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it splices each string
+  !!int "7": |-
+    ---
+    +++
+    @@ -47,6 +47,24 @@
+     these new attachments.+No+function+is+called+for+this+but+rather+the+two+stings+which+are+to+be+attached+are+concatenated. This goes on
+  !!int "8": |-
+    ---
+    +++
+    @@ -65,6 +65,27 @@
+     attached are concatenated.+During+concatenation,+the+element+of+the+first+list+is+put+first+and+the+element+of+the+second+list+is+put+second. This goes on
+  !!int "9": |-
+    ---
+    +++
+    @@ -86,6 +86,24 @@
+     is put second.+The+suit+comes+first+and+then+the+val+for+every+concatenation.+And+the+suits+list+starts+from+backwards. This goes on
+  !!int "10": |-
+    ---
+    +++
+    @@ -30,5 +30,13 @@
+     in the other-list.+list,+with+letters+appearing+first+and+numbers+appearing+second. """
+  !!int "11": |-
+    ---
+    +++
+    @@ -39,4 +39,12 @@
+     numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -46,5 +46,7 @@
+     appear in alphabetical+and+numerical order. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -42,11 +42,28 @@
+     the new strings+in+the+new+list will appear in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in numerical order. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -5,15 +5,15 @@
+     For every value+starting+with+the+last+one in the first-array,-starting-from-the-last-one,+array concatenate with each@@ -21,5 +21,10 @@
+     in the second-array.+array+starting+with+the+first+one. """
   !!int "15": |-
+    ---
+    +++
+    @@ -2,14 +2,11 @@
+     generateCardDeck(suits, vals): """-For-every-value-starting+Starting with the last-one+value in the first@@ -18,13 +15,14 @@
+     with each value+starting+with+the+first+one in the second array-starting-with-the-first-one.+. """
+  !!int "16": |-
+    ---
+    +++
+    @@ -5,24 +5,24 @@
+     Starting with the-last+first value in the-first-array+second+array, concatenate+it with each value+of+the+first+array starting with-the-first-one-in-the-second-array-.+its+last+one. """
+  !!int "17": |-
     ---
     +++
     @@ -34,7 +34,31 @@
      which will be-returned.+returned+[ex,+if+the+first+element+of+the+first+list+is+F+and+an+element+of+the+second+list+is+7,+combine+them+like+F7]. Keep adding the
-  !!int "16": |-
+  !!int "18": |-
     ---
     +++
-    @@ -30,12 +30,21 @@
-     [] and the+val+[]+except+the+suit+[]+will+output+in+the reverse order of the-val-[].+input. def generateCardDeck(suits, vals):
-  !!int "17": |-
+    @@ -88,5 +88,12 @@
+     list in alphabetical-order.+order+and+numerical+order+[ex.+A1,+B2,+C3] """
+  !!int "19": |-
+    ---
+    +++
+    @@ -83,17 +83,18 @@
+     the new list.-Return+Reorder the+new list+to+make+it in alphabetical-order and numerical-order-[ex.-A1,-B2,-C3]+order,+then+return """
+  !!int "20": ""
+  !!int "21": |-
+    ---
+    +++
+    @@ -22,7 +22,7 @@
+     possible combinations of+values+and suits-and-values. """
+  !!int "22": |-
     ---
     +++
     @@ -22,7 +22,10 @@
      possible combinations of+suits+and values-and-suits+in+alphabetical+order """
-  !!int "18": |-
+  !!int "23": |-
+    ---
+    +++
+    @@ -15,17 +15,15 @@
+     as inputs. returns-a+an+ordered list of all possible combinations of+values+and suits-and-values-in-alphabetical-order """
+  !!int "24": |-
+    ---
+    +++
+    @@ -23,7 +23,7 @@
+     possible combinations of+suits+and values-and-suits """
+  !!int "25": |-
+    ---
+    +++
+    @@ -23,4 +23,31 @@
+     of these parameters.+As+an+example.+If+you+input+['H',+'D']+as+suits+and+['6',+'Q',+'J',+'2']+as+vals,+the+function+prints+['D2',+'D6',+'DJ',+'DQ',+'H2','H6',+'HJ',+'HQ'] """
+  !!int "26": |-
+    ---
+    +++
+    @@ -49,5 +49,12 @@
+     'DQ', 'H2','H6', 'HJ',-'HQ']+'HQ'].+This+function+prints+the+final+values+alphabetically. """
+  !!int "27": |-
+    ---
+    +++
+    @@ -50,11 +50,21 @@
+     'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1' """
+  !!int "28": |-
+    ---
+    +++
+    @@ -58,13 +58,11 @@
+     list is ordered-alphabetically.-'D6'-would-be-in-the-list-before-'S1'+C+then+D+then+H+then+S """
+  !!int "29": |-
+    ---
+    +++
+    @@ -22,7 +22,9 @@
+     combination of these-parameters.+parameters+sorted+alphabetically. As an example.@@ -50,19 +52,4 @@
+     'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S """
+  !!int "30": |-
+    ---
+    +++
+    @@ -38,4 +38,20 @@
+     each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string. """
+  !!int "31": |-
+    ---
+    +++
+    @@ -23,4 +23,12 @@
+     values in vals.+Results+in+vals+must+be+in+alphabetical+order. """
+  !!int "32": |-
+    ---
+    +++
+    @@ -23,9 +23,10 @@
+     values in vals.-Results+Each+card in-vals+list must be in
+  !!int "33": |-
+    ---
+    +++
+    @@ -31,5 +31,7 @@
+     be in alphabetical-order.+order+of+suits. """
+  !!int "34": |-
+    ---
+    +++
+    @@ -32,6 +32,6 @@
+     in alphabetical order-of+by suits. """
+  !!int "35": |-
+    ---
+    +++
+    @@ -33,5 +33,6 @@
+     alphabetical order by-suits.+first+character. """
+  !!int "36": |-
+    ---
+    +++
+    @@ -23,16 +23,15 @@
+     values in vals.-Each+Sort+each card in-list-must-be-in+deck+by alphabetical order-by+of first character. """
+  !!int "37": |-
+    ---
+    +++
+    @@ -32,6 +32,6 @@
+     alphabetical order of-first+suit character. """
+  !!int "38": |-
+    ---
+    +++
+    @@ -12,6 +12,9 @@
+     array with the+reverse+of+the first array multiplied
+  !!int "39": |-
+    ---
+    +++
+    @@ -7,13 +7,18 @@
+     arrays of characters.+Reverse+the+order+of+the+first+array. Print an array with the-reverse-of the first array
+  !!int "40": |-
+    ---
+    +++
+    @@ -13,7 +13,10 @@
+     the defined function-generateCardDeck+using+suits+and+vals to output data
+  !!int "41": |-
+    ---
+    +++
+    @@ -17,6 +17,15 @@
+     suits and vals+and+defines+the+term+Card+for+the+function+generateCardDeck to output data
+  !!int "42": |-
+    ---
+    +++
+    @@ -3,33 +3,36 @@
+     vals): """ The+term+Card+is+defined+in+relation+to+the+function+generateCardDeck+which+inputs+the data on the left-is-put-through+side+of the-defined-function-using-suits+table and-vals-and-defines+outputs the-term-Card-for-the-function-generateCardDeck-to-output data on the-right.+right+side+of+the+table. """
+  !!int "43": |-
+    ---
+    +++
+    @@ -3,10 +3,13 @@
+     vals): """ The-term+function+defines Card-is-defined+as+the+left+input in relation to
+  !!int "44": |-
+    ---
+    +++
+    @@ -3,39 +3,34 @@
+     vals): """ The-function+program defines Card as the-left input-in-relation+data,+['S",+'H',+'D'],+['1',+'2',+'A']+and+uses+the+defined+function+generateCardDeck(suits,+vals): to-the-function-generateCardDeck+create+an+output which-inputs-the-data-on-the-left-side+combines+both+blocks of-the-table-and-outputs-the-data-on-the-right-side-of-the-table.+information. """
+  !!int "45": |-
+    ---
+    +++
+    @@ -10,12 +10,10 @@
+     the input data,-['S",-'H',-'D'],-['1',-'2',-'A']+Card+==+['H'],+['2'], and uses the
+  !!int "46": |-
+    ---
+    +++
+    @@ -2,33 +2,108 @@
+     generateCardDeck(suits, vals): """-The-program-defines-Card-as-the-input-data,-Card-==-['H'],-['2'],-and-uses-the-defined-function+def generateCardDeck(suits, vals):-to-create-an-output-which-combines+brings+in+the+information:+['S',+'H',+'D'],+['1',+'2',+'A']+and+defines+Card=[],+Card+then+flips+the+order+of+suit[]+making+the+variables+print+in+the+opposite+order,+this+program+then+outputs+and+combination+of+the+suit+[]+and+val+[]+def+generateCardDeck(suits,+vals):+brings+in+the+information:+['H',+'D'],+['6',+'Q',+'J',+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+the+opposite+order+of+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information:['H'],+['2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of both-blocks-of-information.+the+suit+[]+and+the+val+[]. """
+  !!int "47": |-
+    ---
+    +++
+    @@ -2,108 +2,28 @@
+     generateCardDeck(suits, vals): """-def+The+program, generateCardDeck(suits,-vals):-brings-in+vals):,+defines+Card+as the-information:-['S',-'H',-'D'],-['1',-'2',-'A']+input+data,+Card+==+['H'],+['2'], and-defines-Card=[],-Card-then-flips-the-order+creates+an+output+that+combines+both+[] of-suit[]-making-the-variables-print-in-the-opposite-order,-this-program-then-outputs-and-combination-of-the-suit-[]-and-val-[]-def-generateCardDeck(suits,-vals):-brings-in-the-information:-['H',-'D'],-['6',-'Q',-'J',-'2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-the-opposite-order-of-the-suit-[]-and-the-val-[].-def-generateCardDeck(suits,-vals):-brings-in-the-information:['H'],-['2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-both-the-suit-[]-and-the-val-[].+information. """
+  !!int "48": |-
+    ---
+    +++
+    @@ -2,28 +2,31 @@
+     generateCardDeck(suits, vals): """-The-program,+def generateCardDeck(suits,-vals):,+vals):+brings+in+the+information+['H'],+['2']+and defines-Card-as+Card=[],+this+program+then+outputs+and+combination+of+both the-input-data,-Card-==-['H'],-['2'],+suit+[] and-creates-an-output-that-combines-both-[]-of-information.+the+val+[]. """
+  !!int "49": |-
+    ---
+    +++
+    @@ -8,7 +8,19 @@
+     brings in the-information+information:+['S',+'H',+'D'],+['1',+'2',+'A'];+['H',+'D'],+['6',+'Q',+'J',+'2']; ['H'], ['2'] and
+  !!int "50": |-
+    ---
+    +++
+    @@ -14,14 +14,63 @@
+     'D'], ['1', '2',-'A'];+'A']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information: ['H', 'D'], ['6', 'Q', 'J',-'2'];-['H'],+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+ef+generateCardDeck(suits,+vals):+brings+in+the+information:['H'], ['2'] and defines
+  !!int "51": |-
     ---
     +++
     @@ -18,6 +18,24 @@
@@ -99,235 +262,72 @@
      and combination of-both the suit [] and-the val-[].+[] def generateCardDeck(suits, vals):@@ -56,7 +72,10 @@
      and combination of-both+the+opposite+order+of the suit []@@ -64,7 +83,7 @@
      the val [].-ef+def generateCardDeck(suits, vals): brings
-  !!int "19": |-
+  !!int "52": |-
     ---
     +++
-    @@ -17,6 +17,15 @@
-     suits and vals+and+defines+the+term+Card+for+the+function+generateCardDeck to output data
-  !!int "20": |-
-    ---
-    +++
-    @@ -39,4 +39,12 @@
-     numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order. """
-  !!int "21": |-
-    ---
-    +++
-    @@ -10,12 +10,10 @@
-     the input data,-['S",-'H',-'D'],-['1',-'2',-'A']+Card+==+['H'],+['2'], and uses the
-  !!int "22": |-
-    ---
-    +++
-    @@ -83,17 +83,18 @@
-     the new list.-Return+Reorder the+new list+to+make+it in alphabetical-order and numerical-order-[ex.-A1,-B2,-C3]+order,+then+return """
-  !!int "23": |-
-    ---
-    +++
-    @@ -22,7 +22,7 @@
-     possible combinations of+values+and suits-and-values. """
-  !!int "24": |-
-    ---
-    +++
-    @@ -49,5 +49,12 @@
-     'DQ', 'H2','H6', 'HJ',-'HQ']+'HQ'].+This+function+prints+the+final+values+alphabetically. """
-  !!int "25": |-
-    ---
-    +++
-    @@ -8,7 +8,19 @@
-     brings in the-information+information:+['S',+'H',+'D'],+['1',+'2',+'A'];+['H',+'D'],+['6',+'Q',+'J',+'2']; ['H'], ['2'] and
-  !!int "26": |-
-    ---
-    +++
-    @@ -32,6 +32,6 @@
-     in alphabetical order-of+by suits. """
-  !!int "27": |-
+    @@ -18,24 +18,6 @@
+     and defines Card=[],-Card-then-reverses-the-order-of-suit[]-making-the-variables-print-in-the-opposite-order-starting-with-['D'], this program then@@ -43,12 +25,15 @@
+     and combination of+both the+reverse suit [] and+the val-[]+[]. def generateCardDeck(suits, vals):@@ -72,18 +57,16 @@
+     and combination of-the-opposite-order-of+both the suit [] and the+reverse val [].-def+ef generateCardDeck(suits, vals): brings
+  !!int "53": |-
     ---
     +++
     @@ -25,9 +25,11 @@
      and combination of-both the reverse+order+of+the suit [] and@@ -57,13 +59,15 @@
      and combination of-both the suit [] and the reverse+order+of+the val []. ef
-  !!int "28": |-
-    ---
-    +++
-    @@ -14,14 +14,63 @@
-     'D'], ['1', '2',-'A'];+'A']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information: ['H', 'D'], ['6', 'Q', 'J',-'2'];-['H'],+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+ef+generateCardDeck(suits,+vals):+brings+in+the+information:['H'], ['2'] and defines
-  !!int "29": |-
-    ---
-    +++
-    @@ -30,5 +30,13 @@
-     in the other-list.+list,+with+letters+appearing+first+and+numbers+appearing+second. """
-  !!int "30": |-
-    ---
-    +++
-    @@ -29,7 +29,7 @@
-     a list in-increasing+decreasing order. Increasing order
-  !!int "31": |-
-    ---
-    +++
-    @@ -15,7 +15,7 @@
-     of the first-dictionary+list adds on the
-  !!int "32": |-
-    ---
-    +++
-    @@ -18,6 +18,18 @@
-     and defines Card=[],+Card+then+flips+the+order+of+suit[]+making+the+numbers+print+reversed, this program then
-  !!int "33": |-
+  !!int "54": |-
     ---
     +++
     @@ -26,13 +26,13 @@
      combination of the+suit+[]+and+the reverse order of-the-suit-[]-and the val [].@@ -60,17 +60,17 @@
      combination of the+reverse+order+of+the suit [] and the-reverse-order-of-the val [].-ef+def generateCardDeck(suits, vals): brings
-  !!int "34": |-
+  !!int "55": |-
     ---
     +++
-    @@ -8,10 +8,11 @@
-     two lists. The+last letter at the-beginning+end of the first
-  !!int "35": |-
+    @@ -30,12 +30,21 @@
+     [] and the+val+[]+except+the+suit+[]+will+output+in+the reverse order of the-val-[].+input. def generateCardDeck(suits, vals):
+  !!int "56": |-
     ---
     +++
     @@ -27,24 +27,12 @@
      of the suit-[]+[reverse+order] and the val []-except-the-suit-[]-will-output-in-the-reverse-order-of-the-input. def generateCardDeck(suits, vals):
-  !!int "36": |-
+  !!int "57": |-
     ---
     +++
-    @@ -58,13 +58,11 @@
-     list is ordered-alphabetically.-'D6'-would-be-in-the-list-before-'S1'+C+then+D+then+H+then+S """
-  !!int "37": |-
+    @@ -27,8 +27,11 @@
+     of the suit-[reverse-order]+[]+in+a+reversed+order and the val
+  !!int "58": |-
     ---
     +++
-    @@ -3,39 +3,34 @@
-     vals): """ The-function+program defines Card as the-left input-in-relation+data,+['S",+'H',+'D'],+['1',+'2',+'A']+and+uses+the+defined+function+generateCardDeck(suits,+vals): to-the-function-generateCardDeck+create+an+output which-inputs-the-data-on-the-left-side+combines+both+blocks of-the-table-and-outputs-the-data-on-the-right-side-of-the-table.+information. """
-  !!int "38": |-
+    @@ -60,7 +60,7 @@
+     combination of the-reverse+opposite order of the
+  !!int "59": |-
     ---
     +++
-    @@ -5,24 +5,24 @@
-     Starting with the-last+first value in the-first-array+second+array, concatenate+it with each value+of+the+first+array starting with-the-first-one-in-the-second-array-.+its+last+one. """
-  !!int "39": |-
-    ---
-    +++
-    @@ -23,16 +23,15 @@
-     values in vals.-Each+Sort+each card in-list-must-be-in+deck+by alphabetical order-by+of first character. """
-  !!int "40": |-
-    ---
-    +++
-    @@ -42,11 +42,28 @@
-     the new strings+in+the+new+list will appear in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in numerical order. """
-  !!int "41": |-
-    ---
-    +++
-    @@ -10,14 +10,32 @@
-     of input strings+"suits" and another series of input-strings,-and-then+strings+"vals".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it splices each string
-  !!int "42": |-
-    ---
-    +++
-    @@ -12,6 +12,9 @@
-     array with the+reverse+of+the first array multiplied
-  !!int "43": |-
+    @@ -18,6 +18,18 @@
+     and defines Card=[],+Card+then+flips+the+order+of+suit[]+making+the+numbers+print+reversed, this program then
+  !!int "60": |-
     ---
     +++
     @@ -20,16 +20,22 @@
      Card=[], Card then-flips+reverses the order of suit[] making the-numbers+variables print-reversed,+in+the+opposite+order+starting+with+['D'], this program then@@ -40,12 +46,7 @@
      the suit []-in-a-reversed-order and-the val [] def@@ -64,6 +65,24 @@
      and defines Card=[],+Card+then+reverses+the+order+of+val[]+making+the+variables+print+in+the+opposite+order+starting+with+['2'], this program then
-  !!int "44": |-
-    ---
-    +++
-    @@ -15,17 +15,15 @@
-     as inputs. returns-a+an+ordered list of all possible combinations of+values+and suits-and-values-in-alphabetical-order """
-  !!int "45": |-
-    ---
-    +++
-    @@ -50,11 +50,21 @@
-     'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1' """
-  !!int "46": |-
-    ---
-    +++
-    @@ -31,5 +31,7 @@
-     be in alphabetical-order.+order+of+suits. """
-  !!int "47": |-
-    ---
-    +++
-    @@ -11,8 +11,7 @@
-     letter at the-last-index+beginning of the first
-  !!int "48": |-
-    ---
-    +++
-    @@ -46,5 +46,7 @@
-     appear in alphabetical+and+numerical order. """
-  !!int "49": |-
+  !!int "61": |-
     ---
     +++
     @@ -53,4 +53,14 @@
      precedence over rank.+when+you+concatenate+the+letter+should+be+before+the+number. """
-  !!int "50": |-
+  !!int "62": |-
     ---
     +++
-    @@ -60,7 +60,7 @@
-     combination of the-reverse+opposite order of the
-  !!int "51": |-
-    ---
-    +++
-    @@ -10,8 +10,8 @@
-     The letter at-the-end+index+-1 of the first
-  !!int "52": |-
-    ---
-    +++
-    @@ -86,6 +86,24 @@
-     is put second.+The+suit+comes+first+and+then+the+val+for+every+concatenation.+And+the+suits+list+starts+from+backwards. This goes on
-  !!int "53": |-
+    @@ -29,7 +29,7 @@
+     a list in-increasing+decreasing order. Increasing order
+  !!int "63": |-
     ---
     +++
     @@ -48,6 +48,16 @@
      than diamonds (D).+"J"+is+smaller+than+"Q",+which+is+smaller+than+"A". suit takes precedence
-  !!int "54": |-
-    ---
-    +++
-    @@ -3,10 +3,13 @@
-     vals): """ The-term+function+defines Card-is-defined+as+the+left+input in relation to
-  !!int "55": |-
-    ---
-    +++
-    @@ -2,28 +2,31 @@
-     generateCardDeck(suits, vals): """-The-program,+def generateCardDeck(suits,-vals):,+vals):+brings+in+the+information+['H'],+['2']+and defines-Card-as+Card=[],+this+program+then+outputs+and+combination+of+both the-input-data,-Card-==-['H'],-['2'],+suit+[] and-creates-an-output-that-combines-both-[]-of-information.+the+val+[]. """
-  !!int "56": |-
-    ---
-    +++
-    @@ -23,9 +23,10 @@
-     values in vals.-Results+Each+card in-vals+list must be in
-  !!int "57": |-
-    ---
-    +++
-    @@ -23,4 +23,12 @@
-     values in vals.+Results+in+vals+must+be+in+alphabetical+order. """
-  !!int "58": |-
-    ---
-    +++
-    @@ -88,5 +88,12 @@
-     list in alphabetical-order.+order+and+numerical+order+[ex.+A1,+B2,+C3] """
-  !!int "59": |-
-    ---
-    +++
-    @@ -13,7 +13,10 @@
-     the defined function-generateCardDeck+using+suits+and+vals to output data
-  !!int "60": |-
-    ---
-    +++
-    @@ -23,7 +23,7 @@
-     possible combinations of+suits+and values-and-suits """
-  !!int "61": |-
-    ---
-    +++
-    @@ -32,6 +32,6 @@
-     alphabetical order of-first+suit character. """
-  !!int "62": |-
-    ---
-    +++
-    @@ -65,6 +65,27 @@
-     attached are concatenated.+During+concatenation,+the+element+of+the+first+list+is+put+first+and+the+element+of+the+second+list+is+put+second. This goes on
-  !!int "63": |-
-    ---
-    +++
-    @@ -38,4 +38,20 @@
-     each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string. """
 "nodes":
   !!int "0":
     "stderr":
@@ -335,7 +335,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['S1', 'S2', 'SA', 'H1', 'H2', 'HA', 'D1', 'D2', 'DA']
@@ -344,14 +344,14 @@
     - |
       ['H2']
     "stdout_id": !!int |-
-      3
+      7
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['D1', 'D2', 'DA', 'H1', 'H2', 'HA', 'S1', 'S2', 'SA']
@@ -360,7 +360,7 @@
     - |
       ['H2']
     "stdout_id": !!int |-
-      2
+      5
   !!int "2":
     "stderr":
     - |
@@ -385,7 +385,7 @@
           deck.append(Card(suit, val))
       NameError: name 'Card' is not defined
     "stderr_id": !!int |-
-      3
+      2
     "stdout":
     - ""
     - ""
@@ -398,7 +398,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['1S', '2S', 'AS', '1H', '2H', 'AH', '1D', '2D', 'AD']
@@ -407,14 +407,14 @@
     - |
       ['2H']
     "stdout_id": !!int |-
-      7
+      4
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['D1', 'D2', 'DA', 'H1', 'H2', 'HA', 'S1', 'S2', 'SA']
@@ -423,14 +423,14 @@
     - |
       ['H2']
     "stdout_id": !!int |-
-      1
+      6
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['1S', '1H', '1D', '2S', '2H', '2D', 'AS', 'AH', 'AD']
@@ -439,14 +439,14 @@
     - |
       ['2H']
     "stdout_id": !!int |-
-      4
+      3
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['1D', '1H', '1S', '2D', '2H', '2S', 'AD', 'AH', 'AS']
@@ -455,7 +455,7 @@
     - |
       ['2H']
     "stdout_id": !!int |-
-      6
+      2
   !!int "7":
     "stderr":
     - |2
@@ -471,7 +471,7 @@
           generateCardDeck(suits, vals)
       IndentationError: expected an indented block after 'for' statement on line 6
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
@@ -484,7 +484,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       None
@@ -493,7 +493,7 @@
     - |
       None
     "stdout_id": !!int |-
-      5
+      1
   !!int "9":
     "stderr":
     - |
@@ -524,7 +524,7 @@
           return [Card(suit, val) for suit in suits for val in vals]
       NameError: name 'Card' is not defined
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - ""
     - ""

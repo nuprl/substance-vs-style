@@ -18,14 +18,14 @@
             "id": 1
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 2,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(andCount(['--&-','----','-&--','---&',]))\n  File \"/tmp/file.py\", line 14, in andCount\n    el\nNameError: name 'el' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(andCount(['&&&-','-----','--&&&','-----',]))\n  File \"/tmp/file.py\", line 14, in andCount\n    el\nNameError: name 'el' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(andCount(['----', '----', '----', '----']))\n  File \"/tmp/file.py\", line 14, in andCount\n    el\nNameError: name 'el' is not defined\n",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 1,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    elif '-' in\n               ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 14\n    elif '-' in\n               ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 14\n    elif '-' in\n               ^\nSyntaxError: invalid syntax\n",
             "color": "red",
@@ -35,7 +35,7 @@
     "adjacency": [
         [
             {
-                "diff": 3,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",
@@ -46,7 +46,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",
@@ -55,7 +55,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",
@@ -73,7 +73,7 @@
                 "key": 2
             },
             {
-                "diff": 6,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",
@@ -82,7 +82,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 6,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",
@@ -93,7 +93,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 4,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student67",

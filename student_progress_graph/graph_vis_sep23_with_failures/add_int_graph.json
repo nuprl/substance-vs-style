@@ -4,85 +4,85 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 3,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', ['list'], 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 5,
+            "stderr_id": 1,
+            "stdout_id": 1,
             "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 1, 4]\n\n[8, 56, 8, '5', '4']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    i += num\nTypeError: 'int' object is not iterable\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 4,
+            "stdout_id": 4,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 16, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 10, in add_int\n    new_lst.append(i + num)\nTypeError: can only concatenate list (not \"int\") to list\n",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 9,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list', 5], 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 8,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list'], 6, 9, 'list']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 4,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int([8, 56, 8, '5', '4'], 1))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n",
             "color": "grey",
             "id": 7
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', 6, 9]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int([8, 56, 8, '5', '4'], 1))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 0,
+            "stderr_id": 3,
+            "stdout_id": 9,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, 6, 5]\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 13, in add_int\n    new_lst.append(item + num)\nTypeError: can only concatenate list (not \"int\") to list\n",
             "color": "blue",
             "id": 10
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 4,
             "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    lst[i] = lst[i] + num\nTypeError: can only concatenate list (not \"int\") to list\n",
             "color": "grey",
             "id": 11
@@ -91,7 +91,7 @@
     "adjacency": [
         [
             {
-                "diff": 9,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student19",
@@ -102,7 +102,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student38",
@@ -113,7 +113,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student36",
@@ -124,7 +124,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 2,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student38",
@@ -135,7 +135,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student38",
@@ -147,7 +147,7 @@
         [],
         [
             {
-                "diff": 8,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student42",
@@ -169,7 +169,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 7,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -180,7 +180,7 @@
         ],
         [
             {
-                "diff": 10,
+                "diff": 8,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -191,7 +191,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 9,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -202,7 +202,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 10,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student77",

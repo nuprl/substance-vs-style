@@ -4,217 +4,217 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 17,
+            "stderr_id": 24,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += int(line.split(\"\t\")[2])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n36.5\n\n10.0\n\n0.0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 15,
+            "stderr_id": 11,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError: invalid literal for int() with base 10: '\tice cream\t3'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError: invalid literal for int() with base 10: 'y\tfrozen yogurt\t10'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError: invalid literal for int() with base 10: 'y\tfrozen yogurt\t0'\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 18,
-            "stdout_id": 6,
+            "stderr_id": 5,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += float(line[line.rfind(\"t\")+1:])\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 20,
-            "stdout_id": 6,
+            "stderr_id": 14,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    total += float(line[:i][::-1])\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 6,
+            "stderr_id": 10,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 6,
+            "stderr_id": 15,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 12, in readingIceCream\n    total += float(line[index + 1:])\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 21,
+            "stderr_id": 6,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += int(line.split('\t')[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 16,
+            "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\n34\n\n10\n\n0\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 6,
+            "stderr_id": 23,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line[line.rfind('t') + 1:])\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "grey",
             "id": 10
         },
         {
-            "stderr_id": 5,
+            "stderr_id": 21,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    sum += int(line.split('t')[-1])\nValueError: invalid literal for int() with base 10: '\tice cream\t3'\n\n\n",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 25,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += int(line.split('t')[-1])\nValueError: invalid literal for int() with base 10: '\tice cream\t3'\n\n\n",
             "color": "grey",
             "id": 12
         },
         {
-            "stderr_id": 14,
+            "stderr_id": 3,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\nValueError: could not convert string to float: 'ice cream'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\nValueError: could not convert string to float: 'frozen yogurt'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\nValueError: could not convert string to float: 'frozen yogurt'\n",
             "color": "blue",
             "id": 13
         },
         {
-            "stderr_id": 22,
-            "stdout_id": 6,
+            "stderr_id": 20,
+            "stdout_id": 2,
             "hover": "stdout:\n\n10.0\n\n0.0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    newList.append(float(line[line.rfind(\"t\")+1:]))\nValueError: could not convert string to float: '\tice cream\t3'\n\n\n",
             "color": "red",
             "id": 14
         },
         {
-            "stderr_id": 25,
+            "stderr_id": 4,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'peppermin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'sal'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'sal'\n",
             "color": "blue",
             "id": 15
         },
         {
-            "stderr_id": 4,
+            "stderr_id": 13,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    line = float(line)\nValueError: could not convert string to float: 'peppermin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    line = float(line)\nValueError: could not convert string to float: 'sal'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 11, in readingIceCream\n    line = float(line)\nValueError: could not convert string to float: 'sal'\n",
             "color": "blue",
             "id": 16
         },
         {
-            "stderr_id": 26,
+            "stderr_id": 9,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 9, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'peppermin'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 9, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'sal'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 9, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'sal'\n",
             "color": "red",
             "id": 17
         },
         {
-            "stderr_id": 23,
+            "stderr_id": 18,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'ice cream'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'frozen yogurt'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError: invalid literal for int() with base 10: 'frozen yogurt'\n",
             "color": "grey",
             "id": 18
         },
         {
-            "stderr_id": 7,
+            "stderr_id": 19,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    count += int(line.split('\t')[2])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 19
         },
         {
-            "stderr_id": 9,
+            "stderr_id": 22,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'peppermint\tice cream\t3'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'salty\tfrozen yogurt\t10'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += float(line)\nValueError: could not convert string to float: 'salty\tfrozen yogurt\t0'\n",
             "color": "grey",
             "id": 20
         },
         {
-            "stderr_id": 24,
+            "stderr_id": 26,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    total += int(line.split()[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 21
         },
         {
-            "stderr_id": 8,
+            "stderr_id": 17,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError: invalid literal for int() with base 10: 'cream\t3'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError: invalid literal for int() with base 10: 'yogurt\t10'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError: invalid literal for int() with base 10: 'yogurt\t0'\n",
             "color": "grey",
             "id": 22
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 23
         },
         {
-            "stderr_id": 11,
+            "stderr_id": 7,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError: invalid literal for int() with base 10: 'peppermint\tice'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError: invalid literal for int() with base 10: 'salty\tfrozen'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError: invalid literal for int() with base 10: 'salty\tfrozen'\n",
             "color": "red",
             "id": 24
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 2,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    count += int(line[-1])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "grey",
             "id": 25
         },
         {
-            "stderr_id": 10,
+            "stderr_id": 8,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 9, in readingIceCream\n    sum += int(line[second + 1:])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "grey",
             "id": 26
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 16,
             "stdout_id": 1,
             "hover": "stdout:\n\n10\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 12, in readingIceCream\n    sum += int(line[i+1:])\nValueError: invalid literal for int() with base 10: '2.5'\n\n\n",
             "color": "blue",
             "id": 27
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n36.5\n\n10\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 28
         },
         {
-            "stderr_id": 19,
+            "stderr_id": 12,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"peppermint\tice cream\t3\",\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\n  File \"/tmp/file.py\", line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 29
         },
         {
-            "stderr_id": 6,
+            "stderr_id": 1,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"peppermint\tice cream\t3\",\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"salty\tfrozen yogurt\t10\"]))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(readingIceCream([\"salty\tfrozen yogurt\t0\"]))\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "blue",
@@ -224,7 +224,7 @@
     "adjacency": [
         [
             {
-                "diff": 16,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -236,7 +236,7 @@
         [],
         [
             {
-                "diff": 20,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -247,7 +247,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -256,7 +256,7 @@
                 "key": 0
             },
             {
-                "diff": 18,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -265,7 +265,7 @@
                 "key": 1
             },
             {
-                "diff": 3,
+                "diff": 29,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student78",
@@ -274,7 +274,7 @@
                 "key": 2
             },
             {
-                "diff": 21,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -283,7 +283,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 16,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student49",
@@ -292,7 +292,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 19,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student62",
@@ -301,7 +301,7 @@
                 "key": 0
             },
             {
-                "diff": 19,
+                "diff": 30,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student78",
@@ -312,7 +312,7 @@
         ],
         [
             {
-                "diff": 31,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -323,7 +323,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 6,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -334,7 +334,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 7,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student29",
@@ -346,7 +346,7 @@
         [],
         [
             {
-                "diff": 13,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -357,7 +357,7 @@
         ],
         [
             {
-                "diff": 29,
+                "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -368,7 +368,7 @@
         ],
         [
             {
-                "diff": 28,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student34",
@@ -379,7 +379,7 @@
         ],
         [
             {
-                "diff": 30,
+                "diff": 11,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student34",
@@ -390,7 +390,7 @@
         ],
         [
             {
-                "diff": 25,
+                "diff": 12,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student34",
@@ -399,7 +399,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 14,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student49",
@@ -410,7 +410,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 13,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student34",
@@ -422,7 +422,7 @@
         [],
         [
             {
-                "diff": 27,
+                "diff": 15,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student49",
@@ -433,7 +433,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 17,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student49",
@@ -445,7 +445,7 @@
         [],
         [
             {
-                "diff": 17,
+                "diff": 18,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student62",
@@ -456,7 +456,7 @@
         ],
         [
             {
-                "diff": 23,
+                "diff": 20,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student62",
@@ -467,7 +467,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 21,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student66",
@@ -478,7 +478,7 @@
         ],
         [
             {
-                "diff": 26,
+                "diff": 22,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student66",
@@ -489,7 +489,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 23,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student67",
@@ -500,7 +500,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 24,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student67",
@@ -512,7 +512,7 @@
         [],
         [
             {
-                "diff": 24,
+                "diff": 25,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student68",
@@ -523,7 +523,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 26,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student70",
@@ -534,7 +534,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 27,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student70",
@@ -546,7 +546,7 @@
         [],
         [
             {
-                "diff": 7,
+                "diff": 28,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student78",
@@ -557,7 +557,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 31,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student78",

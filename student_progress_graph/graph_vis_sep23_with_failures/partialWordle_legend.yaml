@@ -3,13 +3,13 @@
   !!int "1": |-
     ---
     +++
-    @@ -12,7 +12,9 @@
-     in the list-shares+has+in+common with the string
+    @@ -37,20 +37,71 @@
+     with the hidden-words+words.+Compute+the+total+points+after+comparing+all+letters.+The+total+points+should+be+calculated+following+the+rules:+If+the+letter+is+the+same+from+the+hidden+word+but+in+a+different+position,+receives++1.+If+the+letter+is+the+same+from+the+hidden+word and-return+in+the+same+position,+receives++2.+The+function+returns a list-with+of the-number-of-how-many-similar-letters-both-strings-share.+total+points+from+each+word+in+the+list. """
   !!int "2": |-
     ---
     +++
-    @@ -6,7 +6,9 @@
-     shows how many-characters+characters,+including+"'", each string within
+    @@ -12,7 +12,9 @@
+     in the list-shares+has+in+common with the string
   !!int "3": |-
     ---
     +++
@@ -18,19 +18,19 @@
   !!int "4": |-
     ---
     +++
-    @@ -8,7 +8,7 @@
-     many characters, including-"'",+''', each string within
-  !!int "5": |-
-    ---
-    +++
     @@ -3,13 +3,13 @@
      """ The function-prints+shows how many characters each string-in+within the list has@@ -17,6 +17,9 @@
      common with the+characters+in+the string outside the
+  !!int "5": |-
+    ---
+    +++
+    @@ -6,7 +6,9 @@
+     shows how many-characters+characters,+including+"'", each string within
   !!int "6": |-
     ---
     +++
-    @@ -37,20 +37,71 @@
-     with the hidden-words+words.+Compute+the+total+points+after+comparing+all+letters.+The+total+points+should+be+calculated+following+the+rules:+If+the+letter+is+the+same+from+the+hidden+word+but+in+a+different+position,+receives++1.+If+the+letter+is+the+same+from+the+hidden+word and-return+in+the+same+position,+receives++2.+The+function+returns a list-with+of the-number-of-how-many-similar-letters-both-strings-share.+total+points+from+each+word+in+the+list. """
+    @@ -8,7 +8,7 @@
+     many characters, including-"'",+''', each string within
 "nodes":
   !!int "0":
     "stderr":
@@ -47,7 +47,7 @@
     - |
       [2, 2, 1, 1, 1]
     "stdout_id": !!int |-
-      0
+      2
   !!int "1":
     "stderr":
     - ""
@@ -63,7 +63,7 @@
     - |
       [2, 1, 1, 1, 2]
     "stdout_id": !!int |-
-      2
+      3
   !!int "2":
     "stderr":
     - |
@@ -88,13 +88,13 @@
           raise NotImplementedError()
       NotImplementedError
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "3":
     "stderr":
     - ""
@@ -110,7 +110,7 @@
     - |
       [4, 4, 2, 2, 3]
     "stdout_id": !!int |-
-      5
+      4
   !!int "4":
     "stderr":
     - |2
@@ -126,13 +126,13 @@
           print(partialWordle(["real","hill","ream","meal","curl"],
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
 "student_color":
   "student14": |-
     #d83034

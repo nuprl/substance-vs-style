@@ -4,190 +4,190 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 5,
-            "stdout_id": 3,
+            "stderr_id": 13,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    wins = nominations[i][\"Wins\"]\nKeyError: 'Wins'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    wins = nominations[i][\"Wins\"]\nKeyError: 'Wins'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    wins = nominations[i][\"Wins\"]\nKeyError: 'Wins'\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 12,
+            "stderr_id": 0,
             "stdout_id": 6,
             "hover": "stdout:\n[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}]\n\n[{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 1
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 3,
+            "stderr_id": 16,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    i[\"success\"] = i[\"wins\"] / i[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    i[\"success\"] = i[\"wins\"] / i[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    i[\"success\"] = i[\"wins\"] / i[\"nominations\"]\nKeyError: 'nominations'\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 3,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 11\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 11\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 8\n",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 3,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations\n                   ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations\n                   ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['won'], nominations[i]['name'], nominations\n                   ^\nSyntaxError: '[' was never closed\n",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 3,
+            "stderr_id": 12,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success = nominations[i]['wins']/nominations[i]['nominations']\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success = nominations[i]['wins']/nominations[i]['nominations']\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success = nominations[i]['wins']/nominations[i]['nominations']\nKeyError: 'nominations'\n",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 3,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins\n                                                                                                                                           ^\nSyntaxError: unterminated string literal (detected at line 8)\n\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins\n                                                                                                                                           ^\nSyntaxError: unterminated string literal (detected at line 8)\n\n  File \"/tmp/file.py\", line 8\n    newList.append([nominations[i]['film'], nominations[i]['year'], nominations[i]['category'], nominations[i]['nominees'], nominations[i]['wins\n                                                                                                                                           ^\nSyntaxError: unterminated string literal (detected at line 8)\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 3,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':\n                   ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 8\n    newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':\n                   ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 8\n    newList.append({'actor':nominations[i]['actor'], 'film':nominations[i]['film'], 'category':nominations[i]['category'], 'year':\n                   ^\nSyntaxError: '{' was never closed\n",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 17,
-            "stdout_id": 3,
+            "stderr_id": 19,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    success.append(nominations[i][1]/nominations[i][2])\nKeyError: 1\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\n[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}, {'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}]\n\n[{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 9
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 3,
+            "stderr_id": 14,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    sortBySuccessRate(nominations)\nNameError: name 'nominations' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    sortBySuccessRate(nominations)\nNameError: name 'nominations' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    sortBySuccessRate(nominations)\nNameError: name 'nominations' is not defined\n",
             "color": "red",
             "id": 10
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 3,
+            "stderr_id": 17,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nom[\"success\"] = nom[\"wins\"] / nom[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nom[\"success\"] = nom[\"wins\"] / nom[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nom[\"success\"] = nom[\"wins\"] / nom[\"nominations\"]\nKeyError: 'nominations'\n",
             "color": "grey",
             "id": 11
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 3,
+            "stderr_id": 18,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nominations[key][\"success\"] = nominations[key][\"wins\"] / nominations[key][\"nominations\"]\nTypeError: list indices must be integers or slices, not dict\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nominations[key][\"success\"] = nominations[key][\"wins\"] / nominations[key][\"nominations\"]\nTypeError: list indices must be integers or slices, not dict\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    nominations[key][\"success\"] = nominations[key][\"wins\"] / nominations[key][\"nominations\"]\nTypeError: list indices must be integers or slices, not dict\n",
             "color": "blue",
             "id": 12
         },
         {
-            "stderr_id": 18,
-            "stdout_id": 3,
+            "stderr_id": 11,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    losses = nominee[\"losses\"]\nKeyError: 'losses'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    losses = nominee[\"losses\"]\nKeyError: 'losses'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 7, in sortBySuccessRate\n    losses = nominee[\"losses\"]\nKeyError: 'losses'\n",
             "color": "red",
             "id": 13
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 15,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 5, in sortBySuccessRate\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\nKeyError: 'successRate'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 5, in sortBySuccessRate\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\nKeyError: 'successRate'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 5, in sortBySuccessRate\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(nominations, key=lambda x: x['successRate'], reverse=True)\nKeyError: 'successRate'\n",
             "color": "red",
             "id": 14
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'successRate': 0.35}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'successRate': 0.35443037974683544}, {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'successRate': 0.6428571428571429}]\n\n[{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 0.22448979591836735}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'successRate': 0.2682926829268293}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'successRate': 0.2894736842105263}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'successRate': 0.35443037974683544}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 0.22448979591836735}]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 15
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 8,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'successRate': 35.0}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'successRate': 35.44}, {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'successRate': 64.29}]\n\n[{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 22.45}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'successRate': 26.83}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'successRate': 28.95}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'successRate': 35.44}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'successRate': 22.45}]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 16
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64}]\n\n[{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.27}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 17
         },
         {
-            "stderr_id": 19,
-            "stdout_id": 3,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    for key, value in nominations.items():\nAttributeError: 'list' object has no attribute 'items'\n",
             "color": "grey",
             "id": 18
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n[{'nominee': 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.6428571428571429}]\n\n[{'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}, {'nominee': 'Swift', 'wins': 11, 'noms': 41, 'success': 0.2682926829268293}, {'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.2894736842105263}]\n\n[{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79, 'success': 0.35443037974683544}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22448979591836735}]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 19
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 3,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented block after 'for' statement on line 10\n\n  File \"/tmp/file.py\", line 11\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\nIndentationError: expected an indented block after 'for' statement on line 10\n\n  File \"/tmp/file.py\", line 11\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\nIndentationError: expected an indented block after 'for' statement on line 10\n",
             "color": "grey",
             "id": 20
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\n[{'nominee': 'Krauss', 'wins': 27, 'noms': 42}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79}, {'nominee': 'Jones', 'wins': 28, 'noms': 80}]\n\n[{'nominee': 'Thomas', 'wins': 11, 'noms': 38}, {'nominee': 'Swift', 'wins': 11, 'noms': 41}, {'nominee': 'Babyface', 'wins': 11, 'noms': 49}]\n\n[{'nominee': 'Babyface', 'wins': 11, 'noms': 49}, {'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79}]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 21
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 3,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 13\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    sortBySuccessRate(nominations)\nIndentationError: expected an indented block after 'for' statement on line 10\n",
             "color": "red",
             "id": 22
         },
         {
-            "stderr_id": 14,
-            "stdout_id": 3,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented block after 'for' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\nIndentationError: expected an indented block after 'for' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\nIndentationError: expected an indented block after 'for' statement on line 14\n",
             "color": "blue",
             "id": 23
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 24
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 3,
+            "stderr_id": 9,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    noms = i[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    noms = i[\"nominations\"]\nKeyError: 'nominations'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\n  File \"/tmp/file.py\", line 6, in sortBySuccessRate\n    noms = i[\"nominations\"]\nKeyError: 'nominations'\n",
             "color": "grey",
             "id": 25
         },
         {
             "stderr_id": 8,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    print(sortBySuccessRate([{'nominee': 'Jones', 'wins': 28, 'noms': 80}, \nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(sortBySuccessRate([{'nominee': 'Babyface','wins': 11, 'noms': 49},\nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(sortBySuccessRate([{'nominee': 'Beyonc\u00c3\u00a9', 'wins': 28, 'noms': 79},\nIndentationError: expected an indented block after 'for' statement on line 8\n",
             "color": "red",
             "id": 26
@@ -196,7 +196,7 @@
     "adjacency": [
         [
             {
-                "diff": 13,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -205,7 +205,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -216,7 +216,7 @@
         ],
         [
             {
-                "diff": 26,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student33",
@@ -225,7 +225,7 @@
                 "key": 0
             },
             {
-                "diff": 25,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -234,7 +234,7 @@
                 "key": 0
             },
             {
-                "diff": 19,
+                "diff": 15,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student63",
@@ -243,7 +243,7 @@
                 "key": 1
             },
             {
-                "diff": 20,
+                "diff": 17,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -252,7 +252,7 @@
                 "key": 2
             },
             {
-                "diff": 7,
+                "diff": 27,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -263,7 +263,7 @@
         ],
         [
             {
-                "diff": 27,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student33",
@@ -286,7 +286,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 5,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student35",
@@ -297,7 +297,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student35",
@@ -309,7 +309,7 @@
         [],
         [
             {
-                "diff": 5,
+                "diff": 7,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -321,7 +321,7 @@
         [],
         [
             {
-                "diff": 12,
+                "diff": 9,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student44",
@@ -332,7 +332,7 @@
         ],
         [
             {
-                "diff": 18,
+                "diff": 10,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -341,7 +341,7 @@
                 "key": 0
             },
             {
-                "diff": 14,
+                "diff": 26,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -352,7 +352,7 @@
         ],
         [
             {
-                "diff": 10,
+                "diff": 11,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -364,7 +364,7 @@
         [],
         [
             {
-                "diff": 15,
+                "diff": 12,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student59",
@@ -375,7 +375,7 @@
         ],
         [
             {
-                "diff": 28,
+                "diff": 13,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -386,7 +386,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 14,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -397,7 +397,7 @@
         ],
         [
             {
-                "diff": 21,
+                "diff": 19,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student69",
@@ -408,7 +408,7 @@
         ],
         [
             {
-                "diff": 23,
+                "diff": 16,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -419,7 +419,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 18,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student69",
@@ -430,7 +430,7 @@
         ],
         [
             {
-                "diff": 24,
+                "diff": 20,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -441,7 +441,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 21,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -452,7 +452,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 22,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -461,7 +461,7 @@
                 "key": 0
             },
             {
-                "diff": 17,
+                "diff": 25,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -472,7 +472,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 23,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -483,7 +483,7 @@
         ],
         [
             {
-                "diff": 16,
+                "diff": 24,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -494,7 +494,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 5,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -505,7 +505,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 28,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",

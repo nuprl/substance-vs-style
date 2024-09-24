@@ -4,71 +4,71 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\n[[[1, 2, 3], [10, 20, 30]], [[4, 5, 6], [40, 50, 60]], [[7, 8, 9], [70, 80, 90]]]\n\n[[[9, 8, 7], [0, 1, 2]]]\n\n[[[2, 3], [1, 1]], [[1, 1], [14, 15]], [[10, 11], [3, 2]], [[4, 5], [77, 87]]]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 8,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n[[1, 2, 3, 10, 20, 30], [4, 5, 6, 40, 50, 60], [7, 8, 9, 70, 80, 90]]\n\n[[9, 8, 7, 0, 1, 2]]\n\n[[2, 3, 1, 1], [1, 1, 14, 15], [10, 11, 3, 2], [4, 5, 77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n[[1, 2, 3, 10, 20, 30], [1, 2, 3, 40, 50, 60], [1, 2, 3, 70, 80, 90], [4, 5, 6, 10, 20, 30], [4, 5, 6, 40, 50, 60], [4, 5, 6, 70, 80, 90], [7, 8, 9, 10, 20, 30], [7, 8, 9, 40, 50, 60], [7, 8, 9, 70, 80, 90]]\n\n[[9, 8, 7, 0, 1, 2]]\n\n[[2, 3, 1, 1], [2, 3, 14, 15], [2, 3, 3, 2], [2, 3, 77, 87], [1, 1, 1, 1], [1, 1, 14, 15], [1, 1, 3, 2], [1, 1, 77, 87], [10, 11, 1, 1], [10, 11, 14, 15], [10, 11, 3, 2], [10, 11, 77, 87], [4, 5, 1, 1], [4, 5, 14, 15], [4, 5, 3, 2], [4, 5, 77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\n[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 20, 30], [40, 50, 60], [70, 80, 90]]\n\n[[9, 8, 7], [0, 1, 2]]\n\n[[2, 3], [1, 1], [10, 11], [4, 5], [1, 1], [14, 15], [3, 2], [77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n[[1, 2, 3], [10, 20, 30], [4, 5, 6], [40, 50, 60], [7, 8, 9], [70, 80, 90]]\n\n[[9, 8, 7], [0, 1, 2]]\n\n[[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], [4, 5], [77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 9,
             "hover": "stdout:\n[[[1, 2, 3]], [[4, 5, 6], [7, 8, 9]], [[10, 20, 30]], [[40, 50, 60], [70, 80, 90]]]\n\n[[], [[9, 8, 7]], [], [[0, 1, 2]]]\n\n[[[2, 3], [1, 1]], [[10, 11], [4, 5]], [[1, 1], [14, 15]], [[3, 2], [77, 87]]]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n[[1, 2, 3, 10, 20, 30], [4, 5, 6], [7, 8, 9]]\n\n[[9, 8, 7]]\n\n[[2, 3, 1, 1], [1, 1, 14, 15], [10, 11], [4, 5]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n[[1, 2, 3, 40, 50, 60]]\n\n[[2, 3, 3, 2], [1, 1, 77, 87]]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 4,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[1,2,3],[4,5,6],[7,8,9]],[[10,20,30],[40,50,60],[70,80,90]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[9,8,7]], [[0,1,2]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(combine([[2,3],[1,1],[10,11],[4, 5]],[[1, 1],[14, 15],[3, 2],[77, 87]]))\n  File \"/tmp/file.py\", line 5, in combine\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 8
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n[[1, 2, 3], [10, 20, 30], [4, 5, 6], [40, 50, 60], 7, 8, 9]\n\n[9, 8, 7]\n\n[[2, 3], [1, 1], [1, 1], [14, 15], [10, 11], [3, 2], 4, 5]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
@@ -77,7 +77,7 @@
     "adjacency": [
         [
             {
-                "diff": 9,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student19",
@@ -86,7 +86,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student42",
@@ -98,7 +98,7 @@
         [],
         [
             {
-                "diff": 11,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
@@ -109,7 +109,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
@@ -118,7 +118,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
@@ -127,7 +127,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 10,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -136,7 +136,7 @@
                 "key": 1
             },
             {
-                "diff": 3,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
@@ -145,7 +145,7 @@
                 "key": 0
             },
             {
-                "diff": 8,
+                "diff": 11,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -156,7 +156,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
@@ -167,7 +167,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 7,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student43",
@@ -178,7 +178,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student43",
@@ -190,7 +190,7 @@
         [],
         [
             {
-                "diff": 0,
+                "diff": 9,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -201,7 +201,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",

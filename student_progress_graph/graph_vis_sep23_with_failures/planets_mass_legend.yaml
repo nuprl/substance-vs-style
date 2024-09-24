@@ -1,37 +1,37 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -2,33 +2,19 @@
+     planets_mass(planets): """ if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket """
   !!int "1": |-
     ---
     +++
-    @@ -7,49 +7,19 @@
-     that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. """
+    @@ -2,19 +2,12 @@
+     planets_mass(planets): """ if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 """
   !!int "2": |-
     ---
     +++
-    @@ -5,7 +5,7 @@
-     up all the-floats+integers associated with 'Venus'
+    @@ -5,9 +5,11 @@
+     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
   !!int "3": |-
     ---
     +++
-    @@ -9,6 +9,23 @@
-     a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
-     the masses of+only the planets and
+    @@ -2,7 +2,7 @@
+     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
   !!int "4": |-
-    ---
-    +++
-    @@ -6,17 +6,11 @@
-     sum of the-integers.-If-the-integer-corresponds-to-strings+integers+unless+planet+=+'Sun'+or 'Pluto'-or-'Sun',-ignore-the-integer """
-  !!int "5": |-
     ---
     +++
     @@ -5,6 +5,7 @@
      each item in+the dictionary, add the@@ -17,10 +18,9 @@
      name is in-the-dictionary-for-planets.+a+different+dictionary. Return the sum
-  !!int "6": |-
+  !!int "5": |-
     ---
     +++
-    @@ -2,19 +2,12 @@
-     planets_mass(planets): """ if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 """
+    @@ -13,6 +13,8 @@
+     from that name+in+planets if the name@@ -20,7 +22,11 @@
+     in a different-dictionary.+dictionary+and+and+in+planets. Return the sum
+  !!int "6": ""
   !!int "7": |-
     ---
     +++
@@ -40,14 +40,13 @@
   !!int "8": |-
     ---
     +++
-    @@ -3,7 +3,32 @@
-     """ This function-returns+takes+the+input+of+a+dictionary.+If+the+key+is+a+planet,+it+takes+the+entry+and+adds+it+to+the+total+mass.+The+function+outputs the total mass@@ -11,6 +36,6 @@
-     all planets in-a-dictionary+the+dictionary. """
+    @@ -5,7 +5,7 @@
+     up all the-numbers+floats associated with 'Venus'
   !!int "9": |-
     ---
     +++
-    @@ -2,33 +2,19 @@
-     planets_mass(planets): """ if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket """
+    @@ -5,7 +5,7 @@
+     up all the-floats+integers associated with 'Venus'
   !!int "10": |-
     ---
     +++
@@ -56,70 +55,71 @@
   !!int "11": |-
     ---
     +++
-    @@ -1,16 +1,19 @@
-     def planets_mass(planets): """+If+planets+=+'Sun'+or+'Pluto',+return+0.+Else return the sum of the integers-unless-planets-=-'Sun'-or-'Pluto' """
+    @@ -1,21 +1,27 @@
+     def planets_mass(planets): """-"add+"go+through+the+0+index+of+the+planets+if+they+are+'Venus'+and+'Mercury',+add up-all the integers that are associated with-with-a-string-that-is-'Venus'-and-'Mercury'"+them" """
   !!int "12": |-
     ---
     +++
-    @@ -1,21 +1,27 @@
-     def planets_mass(planets): """-"add+"go+through+the+0+index+of+the+planets+if+they+are+'Venus'+and+'Mercury',+add up-all the integers that are associated with-with-a-string-that-is-'Venus'-and-'Mercury'"+them" """
+    @@ -7,24 +7,17 @@
+     and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
   !!int "13": |-
-    ---
-    +++
-    @@ -13,6 +13,8 @@
-     from that name+in+planets if the name@@ -20,7 +22,11 @@
-     in a different-dictionary.+dictionary+and+and+in+planets. Return the sum
-  !!int "14": |-
-    ---
-    +++
-    @@ -13,22 +13,26 @@
-     the key is+the+name+of a planet,-it-takes-the-entry-and-adds-it+its+value+is+added to the total mass.+Otherwise,+0+is+added. The function-outputs+returns the total mass
-  !!int "15": |-
     ---
     +++
     @@ -40,4 +40,16 @@
      the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -7,49 +7,19 @@
+     that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -9,6 +9,23 @@
+     a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@
+     the masses of+only the planets and
   !!int "16": |-
-    ---
-    +++
-    @@ -2,7 +2,7 @@
-     planets_mass(planets): """ if-'sun'+'Sun' is in planets,
-  !!int "17": |-
-    ---
-    +++
-    @@ -5,9 +5,11 @@
-     'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 """
-  !!int "18": |-
     ---
     +++
     @@ -40,4 +40,11 @@
      returns the total.+The+sun+and+pluto+are+not+planets. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -6,17 +6,11 @@
+     sum of the-integers.-If-the-integer-corresponds-to-strings+integers+unless+planet+=+'Sun'+or 'Pluto'-or-'Sun',-ignore-the-integer """
+  !!int "18": |-
+    ---
+    +++
+    @@ -8,7 +8,7 @@
+     the integers unless-planet+planets = 'Sun' or
   !!int "19": |-
+    ---
+    +++
+    @@ -1,16 +1,19 @@
+     def planets_mass(planets): """+If+planets+=+'Sun'+or+'Pluto',+return+0.+Else return the sum of the integers-unless-planets-=-'Sun'-or-'Pluto' """
+  !!int "20": |-
+    ---
+    +++
+    @@ -10,10 +10,11 @@
+     return 0. Else-return+add the-sum-of-the-integers+integer+to+x.+Return+x """
+  !!int "21": |-
     ---
     +++
     @@ -3,27 +3,7 @@
      """ This function-takes-a-dictionary.-If-an-entry-is-a-planet,-then-it-adds-the-key-to-the-total-mass.-The-output-is+returns the total mass@@ -31,6 +11,6 @@
      all planets in-the-dictionary.+a+dictionary """
-  !!int "20": |-
-    ---
-    +++
-    @@ -8,7 +8,7 @@
-     the integers unless-planet+planets = 'Sun' or
-  !!int "21": |-
-    ---
-    +++
-    @@ -7,24 +7,17 @@
-     and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value """
   !!int "22": |-
     ---
     +++
-    @@ -10,10 +10,11 @@
-     return 0. Else-return+add the-sum-of-the-integers+integer+to+x.+Return+x """
+    @@ -3,7 +3,32 @@
+     """ This function-returns+takes+the+input+of+a+dictionary.+If+the+key+is+a+planet,+it+takes+the+entry+and+adds+it+to+the+total+mass.+The+function+outputs the total mass@@ -11,6 +36,6 @@
+     all planets in-a-dictionary+the+dictionary. """
   !!int "23": |-
     ---
     +++
-    @@ -5,7 +5,7 @@
-     up all the-numbers+floats associated with 'Venus'
+    @@ -13,22 +13,26 @@
+     the key is+the+name+of a planet,-it-takes-the-entry-and-adds-it+its+value+is+added to the total mass.+Otherwise,+0+is+added. The function-outputs+returns the total mass
   !!int "24": |-
     ---
     +++
@@ -150,13 +150,13 @@
           if planet[1] > 16:
       TypeError: '>' not supported between instances of 'str' and 'int'
     "stderr_id": !!int |-
-      7
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "1":
     "stderr":
     - |
@@ -181,20 +181,20 @@
           mass_
       NameError: name 'mass_' is not defined. Did you mean: 'mass_16'?
     "stderr_id": !!int |-
-      1
+      11
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      13
+      0
     "stdout":
     - |
       0
@@ -203,14 +203,14 @@
     - |
       0
     "stdout_id": !!int |-
-      3
+      2
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      13
+      0
     "stdout":
     - |
       15
@@ -219,14 +219,14 @@
     - |
       0
     "stdout_id": !!int |-
-      0
+      4
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      13
+      0
     "stdout":
     - |
       115
@@ -235,7 +235,7 @@
     - |
       100
     "stdout_id": !!int |-
-      4
+      3
   !!int "5":
     "stderr":
     - |
@@ -260,13 +260,13 @@
           if planet in planet_mass:
       NameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?
     "stderr_id": !!int |-
-      3
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "6":
     "stderr":
     - |
@@ -291,13 +291,13 @@
           return planets['Mercury']['mass'] + planets['Venus']['mass']
       KeyError: 'Mercury'
     "stderr_id": !!int |-
-      16
+      12
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "7":
     "stderr":
     - |
@@ -328,7 +328,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "8":
     "stderr":
     - |
@@ -353,13 +353,13 @@
           return planets['Venus']['mass'] + planets['Mercury']['mass']
       KeyError: 'Venus'
     "stderr_id": !!int |-
-      0
+      13
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "9":
     "stderr":
     - |
@@ -384,13 +384,13 @@
           if planet['name'] == 'Venus' or planet['name'] == 'Mercury':
       TypeError: string indices must be integers
     "stderr_id": !!int |-
-      4
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "10":
     "stderr":
     - |
@@ -409,14 +409,14 @@
       TypeError: 'int' object is not subscriptable
     - ""
     "stderr_id": !!int |-
-      12
+      4
     "stdout":
     - ""
     - ""
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "11":
     "stderr":
     - |
@@ -441,13 +441,13 @@
           total += planets[planet]['mass']
       TypeError: 'int' object is not subscriptable
     "stderr_id": !!int |-
-      5
+      15
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "12":
     "stderr":
     - |
@@ -466,14 +466,14 @@
       TypeError: unsupported operand type(s) for +=: 'int' and 'str'
     - ""
     "stderr_id": !!int |-
-      17
+      9
     "stdout":
     - ""
     - ""
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "13":
     "stderr":
     - |
@@ -492,14 +492,14 @@
       NameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?
     - ""
     "stderr_id": !!int |-
-      18
+      7
     "stdout":
     - ""
     - ""
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "14":
     "stderr":
     - |
@@ -524,13 +524,13 @@
           return planets_mass_dict[planets]
       NameError: name 'planets_mass_dict' is not defined. Did you mean: 'planets_mass'?
     "stderr_id": !!int |-
-      15
+      17
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "15":
     "stderr":
     - |
@@ -555,13 +555,13 @@
           return sum(planets)
       TypeError: unsupported operand type(s) for +: 'int' and 'str'
     "stderr_id": !!int |-
-      9
+      18
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "16":
     "stderr":
     - |
@@ -592,7 +592,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "17":
     "stderr":
     - |
@@ -617,13 +617,13 @@
           if planets[key]["type"] == "planet":
       TypeError: 'int' object is not subscriptable
     "stderr_id": !!int |-
-      11
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "18":
     "stderr":
     - |
@@ -648,13 +648,13 @@
           total_mass += planets[planet]['mass']
       TypeError: 'int' object is not subscriptable
     "stderr_id": !!int |-
-      10
+      16
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "19":
     "stderr":
     - |
@@ -679,13 +679,13 @@
           total_mass += planets[key]["mass"]
       TypeError: 'int' object is not subscriptable
     "stderr_id": !!int |-
-      2
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "20":
     "stderr":
     - |
@@ -710,13 +710,13 @@
           if planet in planets_dict:
       NameError: name 'planets_dict' is not defined. Did you mean: 'planets_mass'?
     "stderr_id": !!int |-
-      6
+      10
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
 "student_color":
   "student14": |-
     #d83034

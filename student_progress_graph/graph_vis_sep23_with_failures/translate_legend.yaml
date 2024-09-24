@@ -1,58 +1,58 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -13,7 +13,7 @@
+     the English words-into.+into a different language.
   !!int "1": |-
     ---
     +++
-    @@ -21,27 +21,30 @@
-     and output french+as+input=english,+output=french def translate(lexicon,sentence): defines-{"one":"un",-"two":"deux",-"three":"trois",-"four:"quatre",-"I":"je",-"you":"tu",-"and":"et",-"cats":"chats",-"love":"aime",-"like":aime",-"my":"mes"},+{"one"="un",+"two"="deux",+"three"="trois",+"four="quatre",+"I"="je",+"you"="tu",+"and"="et",+"cats"="chats",+"love"="aime",+"like"=aime",+"my"="mes"}, this program will run the phrase-"I+input="I like my three@@ -50,8 +53,6 @@
-     def translate and-output-the-french+output={} translation """
+    @@ -41,4 +41,18 @@
+     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
   !!int "2": |-
     ---
     +++
     @@ -16,5 +16,26 @@
      of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' """
-  !!int "3": |-
-    ---
-    +++
-    @@ -12,18 +12,19 @@
-     and add each-group-of-strings+word to a list.+For+every+word+in+the+list, if the word-in-the-list matches a key
+  !!int "3": ""
   !!int "4": |-
-    ---
-    +++
-    @@ -21,29 +21,27 @@
-     and output french-as-input=output def translate(lexicon,sentence): defines-{"one"="un",-"two"="deux",-"three"="trois",-"four="quatre",-"I"="je",-"you"="tu",-"and"="et",-"cats"="chats",-"love"="aime",-"like"=aime",-"my"="mes"},+{"one":"un",+"two":"deux",+"three":"trois",+"four:"quatre",+"I":"je",+"you":"tu",+"and":"et",+"cats":"chats",+"love":"aime",+"like":aime",+"my":"mes"}, this program will run the phrase-input="I+"I like my three@@ -52,6 +50,8 @@
-     def translate and-output={}+output+the+french translation """
-  !!int "5": |-
     ---
     +++
     @@ -24,7 +24,7 @@
      The function then-prints+returns the string in@@ -42,7 +42,7 @@
      dictionary, the function-prints+returns 'UNK' for that
-  !!int "6": |-
+  !!int "5": |-
     ---
     +++
     @@ -3,7 +3,7 @@
      """ For each-word+string in sentence, find
-  !!int "7": |-
-    ---
-    +++
-    @@ -13,7 +13,7 @@
-     the English words-into.+into a different language.
-  !!int "8": |-
-    ---
-    +++
-    @@ -22,8 +22,7 @@
-     output french as-input=english,-output=french+input=output def translate(lexicon,sentence): defines
-  !!int "9": |-
-    ---
-    +++
-    @@ -41,4 +41,18 @@
-     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
-  !!int "10": |-
+  !!int "6": |-
     ---
     +++
     @@ -2,8 +2,8 @@
      translate(lexicon,sentence): """ For-each-string+every+word in sentence, find
+  !!int "7": |-
+    ---
+    +++
+    @@ -12,18 +12,19 @@
+     and add each-group-of-strings+word to a list.+For+every+word+in+the+list, if the word-in-the-list matches a key
+  !!int "8": |-
+    ---
+    +++
+    @@ -21,29 +21,27 @@
+     and output french-as-input=output def translate(lexicon,sentence): defines-{"one"="un",-"two"="deux",-"three"="trois",-"four="quatre",-"I"="je",-"you"="tu",-"and"="et",-"cats"="chats",-"love"="aime",-"like"=aime",-"my"="mes"},+{"one":"un",+"two":"deux",+"three":"trois",+"four:"quatre",+"I":"je",+"you":"tu",+"and":"et",+"cats":"chats",+"love":"aime",+"like":aime",+"my":"mes"}, this program will run the phrase-input="I+"I like my three@@ -52,6 +50,8 @@
+     def translate and-output={}+output+the+french translation """
+  !!int "9": |-
+    ---
+    +++
+    @@ -21,27 +21,30 @@
+     and output french+as+input=english,+output=french def translate(lexicon,sentence): defines-{"one":"un",-"two":"deux",-"three":"trois",-"four:"quatre",-"I":"je",-"you":"tu",-"and":"et",-"cats":"chats",-"love":"aime",-"like":aime",-"my":"mes"},+{"one"="un",+"two"="deux",+"three"="trois",+"four="quatre",+"I"="je",+"you"="tu",+"and"="et",+"cats"="chats",+"love"="aime",+"like"=aime",+"my"="mes"}, this program will run the phrase-"I+input="I like my three@@ -50,8 +53,6 @@
+     def translate and-output-the-french+output={} translation """
+  !!int "10": |-
+    ---
+    +++
+    @@ -22,8 +22,7 @@
+     output french as-input=english,-output=french+input=output def translate(lexicon,sentence): defines
 "nodes":
   !!int "0":
     "stderr":
@@ -72,20 +72,20 @@
                     ^
       SyntaxError: '{' was never closed
     "stderr_id": !!int |-
-      0
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       je aime mes trois chats
@@ -94,14 +94,14 @@
     - |
       five six seven eight
     "stdout_id": !!int |-
-      0
+      3
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       je aime mes trois chats
@@ -129,13 +129,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 10
     "stderr_id": !!int |-
-      8
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "4":
     "stderr":
     - |2
@@ -154,20 +154,20 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      7
+      8
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       ['je', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK']
@@ -176,7 +176,7 @@
     - |
       ['UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK']
     "stdout_id": !!int |-
-      3
+      1
   !!int "6":
     "stderr":
     - |2
@@ -195,13 +195,13 @@
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
     "stderr_id": !!int |-
-      2
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "7":
     "stderr":
     - |2
@@ -220,13 +220,13 @@
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
     "stderr_id": !!int |-
-      6
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "8":
     "stderr":
     - |2
@@ -251,7 +251,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "9":
     "stderr":
     - |2
@@ -270,13 +270,13 @@
           ^
       SyntaxError: unterminated string literal (detected at line 19)
     "stderr_id": !!int |-
-      5
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "10":
     "stderr":
     - |2
@@ -295,13 +295,13 @@
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
 "student_color":
   "student23": |-
     #d83034

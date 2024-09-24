@@ -4,358 +4,358 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 18,
-            "stdout_id": 16,
+            "stderr_id": 15,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 16,
+            "stderr_id": 17,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    topScores([[60, \"Fred\"], [80, \"Barney\"], [90, \"Wilma\"], [70, \"Betty\"]])\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    topScores([[60, \"Fred\"], [80, \"Barney\"], [90, \"Wilma\"], [70, \"Betty\"]])\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    topScores([[60, \"Fred\"], [80, \"Barney\"], [90, \"Wilma\"], [70, \"Betty\"]])\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "red",
             "id": 1
         },
         {
-            "stderr_id": 20,
-            "stdout_id": 16,
+            "stderr_id": 18,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    if i[1] > 76:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    if i[1] > 76:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    if i[1] > 76:\nTypeError: '>' not supported between instances of 'str' and 'int'\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 25,
+            "stderr_id": 0,
+            "stdout_id": 19,
             "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Kip', 'Sam', 'Ben', 'Alex', 'Ro', 'Ira']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 18,
+            "stderr_id": 0,
+            "stdout_id": 20,
             "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 19,
+            "stderr_id": 0,
+            "stdout_id": 10,
             "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 21,
+            "stderr_id": 0,
+            "stdout_id": 14,
             "hover": "stdout:\n['Penelope', 'Alex']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 16,
+            "stderr_id": 20,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    top = math.ceil(len(lst) / 2)\nNameError: name 'math' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    top = math.ceil(len(lst) / 2)\nNameError: name 'math' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    top = math.ceil(len(lst) / 2)\nNameError: name 'math' is not defined\n",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 16,
+            "stderr_id": 19,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    lst[i].sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    lst[i].sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    lst[i].sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 20,
+            "stderr_id": 0,
+            "stdout_id": 12,
             "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira']\n\n['Bob', 'Rachel']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 25,
             "hover": "stdout:\n[[100, 'Penelope'], [99, 'Alex'], [80, 'Rachel']]\n\n[[100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [95, 'Ira'], [92, 'Kip']]\n\n[[65, 'Bob'], [65, 'Rachel']]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 10
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 26,
+            "stderr_id": 0,
+            "stdout_id": 13,
             "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira']\n\n['Rachel', 'Bob']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 16,
+            "stderr_id": 23,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 8, in topScores\n    lst[i] = sorted(lst[i], reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 8, in topScores\n    lst[i] = sorted(lst[i], reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 8, in topScores\n    lst[i] = sorted(lst[i], reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n",
             "color": "red",
             "id": 12
         },
         {
-            "stderr_id": 24,
-            "stdout_id": 16,
+            "stderr_id": 27,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    if score >= 80:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    if score >= 80:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 6, in topScores\n    if score >= 80:\nTypeError: '>=' not supported between instances of 'str' and 'int'\n",
             "color": "grey",
             "id": 13
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 10,
+            "stderr_id": 0,
+            "stdout_id": 11,
             "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 14
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 15
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 16,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    if lst[i][1] > 80 and lst[i][1] > highestScore\n                                                  ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if lst[i][1] > 80 and lst[i][1] > highestScore\n                                                  ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if lst[i][1] > 80 and lst[i][1] > highestScore\n                                                  ^\nSyntaxError: expected ':'\n",
             "color": "red",
             "id": 16
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 26,
             "hover": "stdout:\n[[100, 'Penelope'], [99, 'Alex'], [80, 'Rachel']]\n\n[[100, 'Ben'], [99, 'Alex'], [97, 'Ro']]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 17
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 16,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 13\n    newLst[i] = str(newLst[\n                          ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 13\n    newLst[i] = str(newLst[\n                          ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 13\n    newLst[i] = str(newLst[\n                          ^\nSyntaxError: '[' was never closed\n",
             "color": "blue",
             "id": 18
         },
         {
-            "stderr_id": 14,
-            "stdout_id": 16,
+            "stderr_id": 25,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "grey",
             "id": 19
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 27,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\n['Matt', 'Rachel', 'Pete']\n\n['Matt', 'Sam', 'Hans']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 20
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 11,
+            "stderr_id": 0,
+            "stdout_id": 22,
             "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 21
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 15,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n['Alex', 'Penelope', 'Rachel']\n\n['Ben', 'Ira', 'Kip', 'Ro', 'Sam']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 22
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 22,
+            "stderr_id": 0,
+            "stdout_id": 21,
             "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 23
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 16,
+            "stderr_id": 22,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n",
             "color": "blue",
             "id": 24
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 4,
+            "stderr_id": 2,
+            "stdout_id": 3,
             "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    return new\nNameError: name 'new' is not defined\n\n",
             "color": "blue",
             "id": 25
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 4,
+            "stderr_id": 1,
+            "stdout_id": 3,
             "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    new_\nNameError: name 'new_' is not defined\n\n",
             "color": "blue",
             "id": 26
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 16,
+            "stderr_id": 26,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n",
             "color": "grey",
             "id": 27
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 24,
+            "stderr_id": 0,
+            "stdout_id": 15,
             "hover": "stdout:\n['Penelope', 'Alex']\n\n['Kip', 'Ben', 'Alex', 'Ro', 'Ira']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 28
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 13,
+            "stderr_id": 0,
+            "stdout_id": 18,
             "hover": "stdout:\n['Rachel', 'Alex', 'Penelope']\n\n['Sam', 'Kip', 'Ira', 'Ro', 'Alex', 'Ben']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 29
         },
         {
-            "stderr_id": 21,
-            "stdout_id": 16,
+            "stderr_id": 9,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    top_scores.append(lst[i][1\n                            ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    top_scores.append(lst[i][1\n                            ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    top_scores.append(lst[i][1\n                            ^\nSyntaxError: '[' was never closed\n",
             "color": "grey",
             "id": 30
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 16,
+            "stderr_id": 21,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 11, in topScores\n    if lst[i][0] - lst[i+1][0] < 10:\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 11, in topScores\n    if lst[i][0] - lst[i+1][0] < 10:\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 11, in topScores\n    if lst[i][0] - lst[i+1][0] < 10:\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 31
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 12,
+            "stderr_id": 0,
+            "stdout_id": 16,
             "hover": "stdout:\n['Pete', 'Matt', 'Rachel', 'Alex', 'Penelope']\n\n['Hans', 'Matt', 'Sam', 'Kip', 'Ira', 'Ro', 'Alex', 'Ben']\n\n['Alex', 'Bob', 'Rachel']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 32
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 23,
+            "stderr_id": 0,
+            "stdout_id": 9,
             "hover": "stdout:\n['Penelope', 'Alex', 'Rachel', 'Matt', 'Pete']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam', 'Matt', 'Hans']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 33
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 28,
             "hover": "stdout:\n[[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex']]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 34
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 16,
+            "stderr_id": 11,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    if len(l\n          ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    if len(l\n          ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    if len(l\n          ^\nSyntaxError: '(' was never closed\n",
             "color": "blue",
             "id": 35
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 16,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    return [lst[0][1], lst[1][\n                             ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 10\n    return [lst[0][1], lst[1][\n                             ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 10\n    return [lst[0][1], lst[1][\n                             ^\nSyntaxError: '[' was never closed\n",
             "color": "blue",
             "id": 36
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\nNone\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 37
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 28,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\n['Matt', 'Rachel', 'Penelope', 'Pete', 'Alex']\n\n['Kip', 'Matt', 'Sam', 'Ben', 'Alex', 'Ro', 'Hans', 'Ira']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 38
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 9,
+            "stderr_id": 0,
+            "stdout_id": 17,
             "hover": "stdout:\n['Pete', 'Matt', 'Rachel', 'Alex', 'Penelope']\n\n['Kip', 'Ira', 'Ro', 'Alex', 'Ben']\n\n['Alex', 'Bob', 'Rachel']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 39
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 16,
+            "stderr_id": 12,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    newLst.append(lst[i][1\n                        ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 14\n    newLst.append(lst[i][1\n                        ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 14\n    newLst.append(lst[i][1\n                        ^\nSyntaxError: '[' was never closed\n",
             "color": "blue",
             "id": 40
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 17,
+            "stderr_id": 0,
+            "stdout_id": 23,
             "hover": "stdout:\n[80, 50, 100, 76, 99]\n\n[80, 97, 76, 92, 95, 65, 100, 99]\n\n[65, 65, 33]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 41
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 24,
             "hover": "stdout:\n[['Penelope', 100], ['Alex', 99], ['Rachel', 80], ['Matt', 76], ['Pete', 50]]\n\n[['Ben', 100], ['Alex', 99], ['Ro', 97], ['Ira', 95], ['Kip', 92], ['Sam', 80], ['Matt', 76], ['Hans', 65]]\n\n[['Bob', 65], ['Rachel', 65], ['Alex', 33]]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 42
         },
         {
-            "stderr_id": 19,
-            "stdout_id": 16,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    if\n      ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 12\n    if\n      ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 12\n    if\n      ^\nSyntaxError: invalid syntax\n",
             "color": "blue",
             "id": 43
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 14,
+            "stderr_id": 0,
+            "stdout_id": 27,
             "hover": "stdout:\n[[50, 'Pete'], [76, 'Matt'], [80, 'Rachel'], [99, 'Alex'], [100, 'Penelope']]\n\n[[65, 'Hans'], [76, 'Matt'], [80, 'Sam'], [92, 'Kip'], [95, 'Ira'], [97, 'Ro'], [99, 'Alex'], [100, 'Ben']]\n\n[[33, 'Alex'], [65, 'Bob'], [65, 'Rachel']]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 44
         },
         {
-            "stderr_id": 26,
-            "stdout_id": 16,
+            "stderr_id": 14,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 6\n",
             "color": "grey",
             "id": 45
         },
         {
-            "stderr_id": 25,
-            "stdout_id": 16,
+            "stderr_id": 8,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'for' statement on line 11\n\n  File \"/tmp/file.py\", line 12\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 11\n",
             "color": "blue",
             "id": 46
         },
         {
-            "stderr_id": 23,
-            "stdout_id": 16,
+            "stderr_id": 16,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "blue",
             "id": 47
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 16,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 11\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 11\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'if' statement on line 10\n",
             "color": "red",
             "id": 48
         },
         {
-            "stderr_id": 27,
-            "stdout_id": 16,
+            "stderr_id": 13,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 13\n\n  File \"/tmp/file.py\", line 14\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\nIndentationError: expected an indented block after 'for' statement on line 13\n\n  File \"/tmp/file.py\", line 14\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\nIndentationError: expected an indented block after 'for' statement on line 13\n",
             "color": "blue",
             "id": 49
         },
         {
-            "stderr_id": 22,
-            "stdout_id": 16,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    for i in range(len(l\n                      ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 11\n    for i in range(len(l\n                      ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 11\n    for i in range(len(l\n                      ^\nSyntaxError: '(' was never closed\n",
             "color": "blue",
             "id": 50
@@ -364,7 +364,7 @@
     "adjacency": [
         [
             {
-                "diff": 53,
+                "diff": 0,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
@@ -373,7 +373,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
@@ -385,7 +385,7 @@
         [],
         [
             {
-                "diff": 26,
+                "diff": 2,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -396,7 +396,7 @@
         ],
         [
             {
-                "diff": 62,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -405,7 +405,7 @@
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 15,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student31",
@@ -414,7 +414,7 @@
                 "key": 1
             },
             {
-                "diff": 31,
+                "diff": 28,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -423,7 +423,7 @@
                 "key": 0
             },
             {
-                "diff": 35,
+                "diff": 38,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student55",
@@ -434,7 +434,7 @@
         ],
         [
             {
-                "diff": 34,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -443,7 +443,7 @@
                 "key": 0
             },
             {
-                "diff": 39,
+                "diff": 5,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -452,7 +452,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 16,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student31",
@@ -463,7 +463,7 @@
         ],
         [
             {
-                "diff": 28,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -472,7 +472,7 @@
                 "key": 0
             },
             {
-                "diff": 63,
+                "diff": 17,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student31",
@@ -481,7 +481,7 @@
                 "key": 0
             },
             {
-                "diff": 50,
+                "diff": 39,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student55",
@@ -492,7 +492,7 @@
         ],
         [
             {
-                "diff": 46,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -501,7 +501,7 @@
                 "key": 0
             },
             {
-                "diff": 15,
+                "diff": 37,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student55",
@@ -512,7 +512,7 @@
         ],
         [
             {
-                "diff": 43,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -523,7 +523,7 @@
         ],
         [
             {
-                "diff": 54,
+                "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -534,7 +534,7 @@
         ],
         [
             {
-                "diff": 49,
+                "diff": 10,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -543,7 +543,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 12,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -554,7 +554,7 @@
         ],
         [
             {
-                "diff": 47,
+                "diff": 11,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -565,7 +565,7 @@
         ],
         [
             {
-                "diff": 17,
+                "diff": 13,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student15",
@@ -577,7 +577,7 @@
         [],
         [
             {
-                "diff": 45,
+                "diff": 14,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student24",
@@ -589,7 +589,7 @@
         [],
         [
             {
-                "diff": 65,
+                "diff": 18,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student39",
@@ -598,7 +598,7 @@
                 "key": 0
             },
             {
-                "diff": 38,
+                "diff": 21,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -607,7 +607,7 @@
                 "key": 0
             },
             {
-                "diff": 30,
+                "diff": 22,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -616,7 +616,7 @@
                 "key": 1
             },
             {
-                "diff": 12,
+                "diff": 23,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -625,7 +625,7 @@
                 "key": 2
             },
             {
-                "diff": 32,
+                "diff": 24,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -634,7 +634,7 @@
                 "key": 3
             },
             {
-                "diff": 24,
+                "diff": 25,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -643,7 +643,7 @@
                 "key": 4
             },
             {
-                "diff": 19,
+                "diff": 41,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student65",
@@ -652,7 +652,7 @@
                 "key": 0
             },
             {
-                "diff": 25,
+                "diff": 61,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -664,7 +664,7 @@
         [],
         [
             {
-                "diff": 52,
+                "diff": 19,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -675,7 +675,7 @@
         ],
         [
             {
-                "diff": 23,
+                "diff": 20,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student45",
@@ -686,7 +686,7 @@
         ],
         [
             {
-                "diff": 44,
+                "diff": 26,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -697,7 +697,7 @@
         ],
         [
             {
-                "diff": 20,
+                "diff": 27,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -708,7 +708,7 @@
         ],
         [
             {
-                "diff": 21,
+                "diff": 29,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -719,7 +719,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 30,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -730,7 +730,7 @@
         ],
         [
             {
-                "diff": 27,
+                "diff": 31,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -741,7 +741,7 @@
         ],
         [
             {
-                "diff": 48,
+                "diff": 32,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -752,7 +752,7 @@
         ],
         [
             {
-                "diff": 57,
+                "diff": 33,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -763,7 +763,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 34,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -772,7 +772,7 @@
                 "key": 0
             },
             {
-                "diff": 42,
+                "diff": 35,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student53",
@@ -783,7 +783,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 36,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student55",
@@ -794,7 +794,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 40,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student65",
@@ -805,7 +805,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 42,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student65",
@@ -816,7 +816,7 @@
         ],
         [
             {
-                "diff": 33,
+                "diff": 43,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -827,7 +827,7 @@
         ],
         [
             {
-                "diff": 18,
+                "diff": 44,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -838,7 +838,7 @@
         ],
         [
             {
-                "diff": 66,
+                "diff": 45,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -847,7 +847,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 46,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -858,7 +858,7 @@
         ],
         [
             {
-                "diff": 16,
+                "diff": 47,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -869,7 +869,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 48,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -880,7 +880,7 @@
         ],
         [
             {
-                "diff": 36,
+                "diff": 49,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -891,7 +891,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 50,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -902,7 +902,7 @@
         ],
         [
             {
-                "diff": 29,
+                "diff": 51,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -913,7 +913,7 @@
         ],
         [
             {
-                "diff": 60,
+                "diff": 52,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -922,7 +922,7 @@
                 "key": 0
             },
             {
-                "diff": 40,
+                "diff": 55,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -931,7 +931,7 @@
                 "key": 0
             },
             {
-                "diff": 55,
+                "diff": 56,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -942,7 +942,7 @@
         ],
         [
             {
-                "diff": 61,
+                "diff": 53,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -953,7 +953,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 54,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -964,7 +964,7 @@
         ],
         [
             {
-                "diff": 37,
+                "diff": 57,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -975,7 +975,7 @@
         ],
         [
             {
-                "diff": 41,
+                "diff": 58,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -986,7 +986,7 @@
         ],
         [
             {
-                "diff": 51,
+                "diff": 59,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student7",
@@ -998,7 +998,7 @@
         [],
         [
             {
-                "diff": 64,
+                "diff": 60,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1009,7 +1009,7 @@
         ],
         [
             {
-                "diff": 58,
+                "diff": 62,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1020,7 +1020,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 63,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1029,7 +1029,7 @@
                 "key": 0
             },
             {
-                "diff": 59,
+                "diff": 65,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1040,7 +1040,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 64,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1051,7 +1051,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 48,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",
@@ -1062,7 +1062,7 @@
         ],
         [
             {
-                "diff": 56,
+                "diff": 66,
                 "color": "#00ced1",
                 "arrow_color": "#00ced1",
                 "username": "student9",

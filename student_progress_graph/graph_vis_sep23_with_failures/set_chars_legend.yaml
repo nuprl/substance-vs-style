@@ -1,86 +1,86 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -30,4 +30,20 @@
+     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
   !!int "1": |-
+    ---
+    +++
+    @@ -4,12 +4,16 @@
+     Replace letters in+input s that are located in+index l to+the+input c """
+  !!int "2": ""
+  !!int "3": |-
+    ---
+    +++
+    @@ -15,5 +15,16 @@
+     to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -23,8 +23,7 @@
+     out of range-don't-change-that-letter.+ignore+the+index. """
+  !!int "5": |-
     ---
     +++
     @@ -20,5 +20,25 @@
      contained in the-list+list.+If+the+index+is+out+of+range,+replace+the+last+character+of+the+first+string+with+the+second+string+instead """
-  !!int "2": |-
+  !!int "6": |-
     ---
     +++
     @@ -6,39 +6,36 @@
      character contained in-the-second-string+c into the character indexes of+s+using the-first-string-contained+numbers in-the-list.+l+as+indexes. If the index is-out-of-range,+greater+than+the+string+length replace the last character-of-the-first-string+in+s with-the-second-string+c instead """
-  !!int "3": |-
+  !!int "7": |-
     ---
     +++
-    @@ -19,5 +19,18 @@
-     list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
-  !!int "4": |-
+    @@ -1,7 +1,7 @@
+     def set_chars(s,c,l): """-Insert+Replace the character contained
+  !!int "8": |-
     ---
     +++
-    @@ -31,4 +31,16 @@
-     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
-  !!int "5": |-
+    @@ -1,11 +1,14 @@
+     def set_chars(s,c,l): """-Replace+Find+the+l character-l in s+and+replace with c """
+  !!int "9": |-
+    ---
+    +++
+    @@ -26,5 +26,17 @@
+     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
+  !!int "10": |-
     ---
     +++
     @@ -1,6 +1,16 @@
      def set_chars(s,c,l): """+First+convert+each+element+in+l+from+string+to+number. Loop through each
-  !!int "6": |-
+  !!int "11": |-
     ---
     +++
     @@ -11,13 +11,30 @@
      string to number.-Loop+If+the+length+of+s+is+equal+or+greater+than+the+largest+N+in+l,+then+loop through each number N in-l,+l+and replace the element@@ -34,6 +51,9 @@
      element in c.+Otherwise,+do+nothing. Return the changed
-  !!int "7": |-
-    ---
-    +++
-    @@ -20,22 +20,17 @@
-     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
-  !!int "8": |-
-    ---
-    +++
-    @@ -26,5 +26,17 @@
-     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -1,11 +1,14 @@
-     def set_chars(s,c,l): """-Replace+Find+the+l character-l in s+and+replace with c """
-  !!int "10": |-
-    ---
-    +++
-    @@ -19,5 +19,23 @@
-     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
-  !!int "11": |-
-    ---
-    +++
-    @@ -15,5 +15,16 @@
-     to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. """
   !!int "12": |-
     ---
     +++
-    @@ -1,7 +1,7 @@
-     def set_chars(s,c,l): """-Insert+Replace the character contained
+    @@ -19,5 +19,18 @@
+     list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
   !!int "13": |-
-    ---
-    +++
-    @@ -23,8 +23,7 @@
-     out of range-don't-change-that-letter.+ignore+the+index. """
-  !!int "14": |-
     ---
     +++
     @@ -20,17 +20,4 @@
      with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
+  !!int "14": |-
+    ---
+    +++
+    @@ -19,5 +19,23 @@
+     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
   !!int "15": |-
     ---
     +++
-    @@ -30,4 +30,20 @@
-     the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
+    @@ -20,22 +20,17 @@
+     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
   !!int "16": |-
     ---
     +++
-    @@ -4,12 +4,16 @@
-     Replace letters in+input s that are located in+index l to+the+input c """
+    @@ -31,4 +31,16 @@
+     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
 "nodes":
   !!int "0":
     "stderr":
@@ -88,7 +88,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       uvurybudy loves upples.
@@ -97,14 +97,14 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      3
+      6
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       uvurybudy loves upples.
@@ -113,7 +113,7 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      6
+      5
   !!int "2":
     "stderr":
     - |
@@ -132,7 +132,7 @@
       TypeError: replace() argument 1 must be str, not int
     - ""
     "stderr_id": !!int |-
-      7
+      8
     "stdout":
     - ""
     - ""
@@ -160,7 +160,7 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      5
+      3
   !!int "4":
     "stderr":
     - |
@@ -185,7 +185,7 @@
           s[-1] = c
       TypeError: 'str' object does not support item assignment
     "stderr_id": !!int |-
-      5
+      6
     "stdout":
     - ""
     - ""
@@ -210,7 +210,7 @@
       TypeError: 'str' object does not support item assignment
     - ""
     "stderr_id": !!int |-
-      6
+      5
     "stdout":
     - ""
     - ""
@@ -224,7 +224,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       uvurybudy loves upples.
@@ -258,7 +258,7 @@
           return s[:l]+c+s[l+1:]
       TypeError: slice indices must be integers or None or have an __index__ method
     "stderr_id": !!int |-
-      8
+      7
     "stdout":
     - ""
     - ""
@@ -289,7 +289,7 @@
           return s[:l] + c + s[l+1:]
       TypeError: slice indices must be integers or None or have an __index__ method
     "stderr_id": !!int |-
-      9
+      4
     "stdout":
     - ""
     - ""
@@ -314,7 +314,7 @@
       TypeError: 'str' object does not support item assignment
     - ""
     "stderr_id": !!int |-
-      3
+      9
     "stdout":
     - ""
     - ""
@@ -346,7 +346,7 @@
           if len(s) >= max(l):
       ValueError: max() arg is an empty sequence
     "stderr_id": !!int |-
-      0
+      3
     "stdout":
     - ""
     - ""
@@ -365,7 +365,7 @@
           if l[0] == 0:
       IndexError: list index out of range
     "stderr_id": !!int |-
-      4
+      1
     "stdout":
     - |
       uverybody loves apples.

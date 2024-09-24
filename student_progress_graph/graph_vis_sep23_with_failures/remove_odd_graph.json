@@ -5,7 +5,7 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 4,
             "hover": "stdout:\n[4, 2]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
@@ -26,35 +26,35 @@
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n[4.3, 4, 2]\n\n[1.1, 2.2, 3.3]\n\n[5]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 2,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(remove_odd([4.3, 4, 5, 2, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if lst[i] % 2 != 0:\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(remove_odd([1.1, 2.2, 3.3]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if lst[i] % 2 != 0:\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(remove_odd([3, 5, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if lst[i] % 2 != 0:\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 5
         },
         {
             "stderr_id": 3,
-            "stdout_id": 5,
+            "stdout_id": 1,
             "hover": "stdout:\n\n[1.1, 2.2, 3.3]\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(remove_odd([4.3, 4, 5, 2, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if type(lst[i]) != float and lst[i] % 2 != 0:\nIndexError: list index out of range\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(remove_odd([3, 5, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if type(lst[i]) != float and lst[i] % 2 != 0:\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 5,
+            "stderr_id": 1,
+            "stdout_id": 1,
             "hover": "stdout:\n\n[1.1, 2.2, 3.3]\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(remove_odd([4.3, 4, 5, 2, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if type(lst[i]) == float:\nIndexError: list index out of range\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(remove_odd([3, 5, 7]))\n  File \"/tmp/file.py\", line 6, in remove_odd\n    if type(lst[i]) == float:\nIndexError: list index out of range\n",
             "color": "red",
             "id": 7
@@ -63,7 +63,7 @@
     "adjacency": [
         [
             {
-                "diff": 34,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -72,7 +72,7 @@
                 "key": 0
             },
             {
-                "diff": 17,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -81,7 +81,7 @@
                 "key": 1
             },
             {
-                "diff": 4,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student10",
@@ -90,7 +90,7 @@
                 "key": 2
             },
             {
-                "diff": 18,
+                "diff": 6,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student10",
@@ -99,7 +99,7 @@
                 "key": 3
             },
             {
-                "diff": 0,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -108,7 +108,7 @@
                 "key": 4
             },
             {
-                "diff": 9,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -117,7 +117,7 @@
                 "key": 5
             },
             {
-                "diff": 1,
+                "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -126,7 +126,7 @@
                 "key": 6
             },
             {
-                "diff": 33,
+                "diff": 10,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -135,7 +135,7 @@
                 "key": 7
             },
             {
-                "diff": 23,
+                "diff": 11,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -144,7 +144,7 @@
                 "key": 8
             },
             {
-                "diff": 44,
+                "diff": 12,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -153,7 +153,7 @@
                 "key": 9
             },
             {
-                "diff": 12,
+                "diff": 13,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -162,7 +162,7 @@
                 "key": 10
             },
             {
-                "diff": 37,
+                "diff": 22,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -171,7 +171,7 @@
                 "key": 11
             },
             {
-                "diff": 11,
+                "diff": 23,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -180,7 +180,7 @@
                 "key": 12
             },
             {
-                "diff": 40,
+                "diff": 30,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -189,7 +189,7 @@
                 "key": 13
             },
             {
-                "diff": 43,
+                "diff": 31,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -198,7 +198,7 @@
                 "key": 14
             },
             {
-                "diff": 10,
+                "diff": 42,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student48",
@@ -207,7 +207,7 @@
                 "key": 15
             },
             {
-                "diff": 8,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -216,7 +216,7 @@
                 "key": 0
             },
             {
-                "diff": 39,
+                "diff": 14,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -225,7 +225,7 @@
                 "key": 1
             },
             {
-                "diff": 41,
+                "diff": 24,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -234,7 +234,7 @@
                 "key": 2
             },
             {
-                "diff": 22,
+                "diff": 28,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -243,7 +243,7 @@
                 "key": 3
             },
             {
-                "diff": 42,
+                "diff": 4,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -252,7 +252,7 @@
                 "key": 0
             },
             {
-                "diff": 21,
+                "diff": 18,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -261,7 +261,7 @@
                 "key": 0
             },
             {
-                "diff": 28,
+                "diff": 20,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -270,7 +270,7 @@
                 "key": 1
             },
             {
-                "diff": 32,
+                "diff": 27,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student26",
@@ -281,7 +281,7 @@
         ],
         [
             {
-                "diff": 16,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -290,7 +290,7 @@
                 "key": 0
             },
             {
-                "diff": 31,
+                "diff": 15,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -299,7 +299,7 @@
                 "key": 1
             },
             {
-                "diff": 24,
+                "diff": 29,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -308,7 +308,7 @@
                 "key": 2
             },
             {
-                "diff": 7,
+                "diff": 25,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -317,7 +317,7 @@
                 "key": 0
             },
             {
-                "diff": 25,
+                "diff": 34,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -326,7 +326,7 @@
                 "key": 1
             },
             {
-                "diff": 26,
+                "diff": 35,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -335,7 +335,7 @@
                 "key": 2
             },
             {
-                "diff": 20,
+                "diff": 36,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -344,7 +344,7 @@
                 "key": 3
             },
             {
-                "diff": 38,
+                "diff": 37,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -353,7 +353,7 @@
                 "key": 4
             },
             {
-                "diff": 2,
+                "diff": 21,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student51",
@@ -362,7 +362,7 @@
                 "key": 5
             },
             {
-                "diff": 27,
+                "diff": 43,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student51",
@@ -371,7 +371,7 @@
                 "key": 6
             },
             {
-                "diff": 35,
+                "diff": 38,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -380,7 +380,7 @@
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 44,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student51",
@@ -391,7 +391,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 17,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student18",
@@ -400,7 +400,7 @@
                 "key": 0
             },
             {
-                "diff": 29,
+                "diff": 32,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student30",
@@ -411,7 +411,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 16,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student18",
@@ -420,7 +420,7 @@
                 "key": 0
             },
             {
-                "diff": 30,
+                "diff": 19,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -429,7 +429,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 21,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -438,7 +438,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 21,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -449,7 +449,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 26,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student26",
@@ -458,7 +458,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 33,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -469,7 +469,7 @@
         ],
         [
             {
-                "diff": 36,
+                "diff": 39,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",
@@ -480,7 +480,7 @@
         ],
         [
             {
-                "diff": 19,
+                "diff": 40,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",
@@ -489,7 +489,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 41,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",

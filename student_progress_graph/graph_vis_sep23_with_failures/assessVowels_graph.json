@@ -4,57 +4,57 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 2,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n['a', 'e', 'a', 'a', 'e']\n\n['o', 'e', 'i', 'e', 'e']\n\n['e']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n['i', 'a', 'e', 'a', 'a', 'e']\n\n['a', 'o', 'e', 'i', 'e', 'e']\n\n['a', 'a', 'e']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n['I', 'a', 'e', 'a', 'a', 'e']\n\n['A', 'o', 'e', 'i', 'e', 'e']\n\n['A', 'A', 'e']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n['a', 'e']\n\n['o', 'e', 'i']\n\n['e']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('I ate an apple'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('Another string here'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels('cAbbAge'))\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 8\n    print(assessVowels(''))\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
             "stderr_id": 3,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('I ate an apple'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('Another string here'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels('cAbbAge'))\nIndentationError: expected an indented block after 'if' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(assessVowels(''))\nIndentationError: expected an indented block after 'if' statement on line 8\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 3,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 10\n    assessVowels('supercalifragilisticexpialidocious')\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "red",
             "id": 7
@@ -63,7 +63,7 @@
     "adjacency": [
         [
             {
-                "diff": 14,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student13",
@@ -81,7 +81,7 @@
                 "key": 0
             },
             {
-                "diff": 12,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student22",
@@ -90,7 +90,7 @@
                 "key": 1
             },
             {
-                "diff": 10,
+                "diff": 11,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student37",
@@ -99,7 +99,7 @@
                 "key": 2
             },
             {
-                "diff": 7,
+                "diff": 14,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student72",
@@ -108,7 +108,7 @@
                 "key": 3
             },
             {
-                "diff": 1,
+                "diff": 15,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student74",
@@ -117,7 +117,7 @@
                 "key": 4
             },
             {
-                "diff": 6,
+                "diff": 5,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",
@@ -126,7 +126,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 12,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student5",
@@ -135,7 +135,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 13,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student5",
@@ -146,7 +146,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student13",
@@ -158,7 +158,7 @@
         [],
         [
             {
-                "diff": 15,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student16",
@@ -169,7 +169,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",
@@ -178,7 +178,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",
@@ -187,7 +187,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",
@@ -198,7 +198,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",
@@ -209,7 +209,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student2",

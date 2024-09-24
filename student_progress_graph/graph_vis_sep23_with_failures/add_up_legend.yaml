@@ -1,271 +1,271 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -16,7 +16,5 @@
+     of all the-integers-and-floats.+numbers. """
   !!int "1": |-
+    ---
+    +++
+    @@ -16,5 +16,7 @@
+     of all the-numbers.+ints+and+floats. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -1,16 +1,24 @@
+     def add_up(arr): """+if+string+contains+characters+2,+3,+3.4,+or+4, add up-all-number-characters+those+numbers in the-brackets+string and output the-result+answer """
+  !!int "3": |-
+    ---
+    +++
+    @@ -2,7 +2,8 @@
+     add_up(arr): """ if-string+the+arrangement contains characters 2,@@ -20,5 +21,8 @@
+     and output the-answer+answer.+else,+return+0 """
+  !!int "4": |-
+    ---
+    +++
+    @@ -17,7 +17,7 @@
+     numbers in the-string+arrangement and output the
+  !!int "5": |-
+    ---
+    +++
+    @@ -1,28 +1,14 @@
+     def add_up(arr): """-if-the-arrangement-contains-characters-2,-3,-3.4,-or-4, add up-those-numbers+all+number+characters in-the-arrangement-and+each+arrangement. output-the-answer.-else,-return-0+total """
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,13 +1,15 @@
+     def add_up(arr): """-Adds+For+each+number+in+the+list,+adds the numbers-in-the-list-and returns the number.
+  !!int "7": |-
+    ---
+    +++
+    @@ -4,12 +4,31 @@
+     For each number+variable in the list,+if+the+variable+is+a+number, adds the-numbers+number+to+a+separate+list.+Adds+the+number+in+this+list+together+and returns the number.
+  !!int "8": |-
+    ---
+    +++
+    @@ -3,7 +3,6 @@
+     """ For each-number variable in the@@ -11,12 +10,15 @@
+     if the variable-is+can+be+casted+to a-number,+float, adds the-number+variable to a separate
+  !!int "9": ""
+  !!int "10": |-
+    ---
+    +++
+    @@ -5,20 +5,31 @@
+     items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. """
+  !!int "11": |-
+    ---
+    +++
+    @@ -5,9 +5,9 @@
+     a list with-another-internal-list.+a+list+inside. Creates a new@@ -25,7 +25,10 @@
+     item in the-internal+list+inside+the+input list to a
+  !!int "12": |-
+    ---
+    +++
+    @@ -8,6 +8,34 @@
+     a list inside.+Then,+creates+a+new+list+and+for+every+item+in+the+input+list,+takes+each+element+inside+that+item+and+adds+it+to+a+new+list+called+trueList. Creates a new@@ -24,12 +52,7 @@
+     each item in-the-list-inside-the-input-list+trueList to a float
+  !!int "13": |-
+    ---
+    +++
+    @@ -4,14 +4,31 @@
+     Takes an array.-Adds-up+For each-number+value+in+the+array,+if+it+is+a+number,+adds+it+to+the+sum.+Output+is+the+sum+of+all+the+numbers in the array.-Outputs-the-total. """
+  !!int "14": |-
+    ---
+    +++
+    @@ -4,13 +4,13 @@
+     Takes an array.-For+Reads each value in the-array,-if+array.+If it is a@@ -20,6 +20,20 @@
+     to the sum.+If+it+is+not+a+number,+skips+to+the+next+value+in+the+array. Output is the
+  !!int "15": |-
+    ---
+    +++
+    @@ -5,6 +5,9 @@
+     in an array,+removes+all+strings, outputs all integers
+  !!int "16": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     strings, outputs all-integers+numbers added together that
+  !!int "17": |-
+    ---
+    +++
+    @@ -3,6 +3,9 @@
+     """ Takes in+a+list+within an array, removes
+  !!int "18": |-
+    ---
+    +++
+    @@ -4,10 +4,15 @@
+     Takes in a+array+and+withing+that+array+list,+from+the list-within-an-array, removes all strings,
+  !!int "19": |-
+    ---
+    +++
+    @@ -7,5 +7,17 @@
+     the floats in-arr"+arr,+neglect+the+item+if+the+item+in+arr+is+not+a+float" """
+  !!int "20": |-
     ---
     +++
     @@ -2,12 +2,16 @@
      add_up(arr): """ "add-up all the floats in-arr,+arr+into+a+number+named+sum, neglect the item@@ -19,5 +23,7 @@
      is not a-float"+float,+return+sum" """
-  !!int "2": |-
+  !!int "21": |-
     ---
     +++
-    @@ -4,8 +4,23 @@
-     iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 """
-  !!int "3": |-
+    @@ -4,7 +4,7 @@
+     "add all the-floats+doubles in arr into
+  !!int "22": |-
     ---
     +++
-    @@ -4,12 +4,7 @@
-     Add together each-item-that-is-not-a-string+integer in the list.@@ -30,6 +25,6 @@
-     form, add that-item+number too. """
-  !!int "4": |-
+    @@ -23,7 +23,7 @@
+     is not a-float,+double, return sum" """
+  !!int "23": |-
+    ---
+    +++
+    @@ -9,7 +9,7 @@
+     arr into a-number+double named sum, neglect
+  !!int "24": |-
     ---
     +++
     @@ -3,17 +3,10 @@
      """ loop through-each-list-in arr and-then loop again-for-each-element and if the@@ -25,16 +18,8 @@
      float add them-to-a-new-list and return the-sum-of-that-new-list.+sum. """
-  !!int "5": |-
+  !!int "25": |-
+    ---
+    +++
+    @@ -3,10 +3,17 @@
+     """ loop through+each+list+in arr and+then loop again+for+each+elemtn and if the
+  !!int "26": |-
+    ---
+    +++
+    @@ -7,8 +7,8 @@
+     that runs through-an-array+a+list of lists. The@@ -26,7 +26,11 @@
+     sum of all-numbers.+numbers+in+the+inner+list. The function should
+  !!int "27": |-
+    ---
+    +++
+    @@ -17,6 +17,10 @@
+     get all numbers+(both+integers+or+floats) from the list
+  !!int "28": |-
+    ---
+    +++
+    @@ -5,6 +5,11 @@
+     a function that+gets+a+list.+The+function runs through a
+  !!int "29": |-
     ---
     +++
     @@ -16,30 +16,24 @@
      list of lists.+If+the+element+is+an+integer+or+float,+sum+all+the+elements+up. The function-should-get-all-numbers-(both-integers-or-floats)-from-the-list-and returns the-sum-of-all-numbers-in-the-inner-list.+sum. The function should
-  !!int "6": |-
+  !!int "30": |-
     ---
     +++
-    @@ -16,7 +16,5 @@
-     of all the-integers-and-floats.+numbers. """
-  !!int "7": |-
+    @@ -1,9 +1,12 @@
+     def add_up(arr): """-add+Return the-numbers+sum+of+the+integers in the list
+  !!int "31": |-
     ---
     +++
-    @@ -3,9 +3,6 @@
-     """ Add together-each-value-in the list. If
-  !!int "8": |-
+    @@ -1,13 +1,13 @@
+     def add_up(arr): """-Return+Add+together+and+return the-sum-of-the-integers+numbers in the-list+list. """
+  !!int "32": |-
     ---
     +++
-    @@ -3,6 +3,9 @@
-     """ Add together+each+item+in the list. If
-  !!int "9": |-
+    @@ -1,13 +1,16 @@
+     def add_up(arr): """-Add-together-and-return+Return the-numbers+sum+of+the+integers in the list.+Ignore+the+string. """
+  !!int "33": |-
     ---
     +++
-    @@ -3,19 +3,25 @@
-     """ This function-adds-all-numbers+takes+entries in an-array-together+array, and-returns+adds+them+to the-total.-Otherwise+total+if+the+entry+is+a+number.+Otherwise, it-returns+adds 0. """
-  !!int "10": |-
+    @@ -15,13 +15,60 @@
+     and integers. Function-takes+checks+each+item+in+the+list+to+check+if+it+is+an+integer+or+a+string.+If+it+is+an+integer+it+adds+it+to+a+new+list.+If+it+is+not+an+integer+it+ignores+it.+Outputs the sum of+each+ingter+in the-integers-and-outputs-it+new+list.+If+the+original+list+contains+no+integers,+return+0 """
+  !!int "34": |-
     ---
     +++
     @@ -4,16 +4,7 @@
      Input: list of-items,-that-may-be-a-combination-of-strings-and-integers.+strings. Function checks each@@ -26,16 +17,20 @@
      if it is-an-integer-or a-string.+number+character. If it is+a+number,+convert+it+to an integer+and it adds it@@ -47,7 +42,8 @@
      it is not-an+a+number integer it ignores
-  !!int "11": |-
-    ---
-    +++
-    @@ -3,7 +3,6 @@
-     """ For each-number variable in the@@ -11,12 +10,15 @@
-     if the variable-is+can+be+casted+to a-number,+float, adds the-number+variable to a separate
-  !!int "12": |-
-    ---
-    +++
-    @@ -4,10 +4,15 @@
-     Takes in a+array+and+withing+that+array+list,+from+the list-within-an-array, removes all strings,
-  !!int "13": |-
-    ---
-    +++
-    @@ -5,7 +5,7 @@
-     function takes entries-in+within an array, and
-  !!int "14": |-
-    ---
-    +++
-    @@ -13,23 +13,4 @@
-     in the list.-If-there-is-a-string,-and-the-word-inside-is-a-number-in-written-form,-add-that-number-too. """
-  !!int "15": |-
-    ---
-    +++
-    @@ -1,13 +1,15 @@
-     def add_up(arr): """-Adds+For+each+number+in+the+list,+adds the numbers-in-the-list-and returns the number.
-  !!int "16": |-
+  !!int "35": |-
     ---
     +++
     @@ -8,7 +8,7 @@
      in the first-entry+row of an array,
-  !!int "17": |-
-    ---
-    +++
-    @@ -2,7 +2,8 @@
-     add_up(arr): """ if-string+the+arrangement contains characters 2,@@ -20,5 +21,8 @@
-     and output the-answer+answer.+else,+return+0 """
-  !!int "18": |-
-    ---
-    +++
-    @@ -3,6 +3,9 @@
-     """ Takes in+a+list+within an array, removes
-  !!int "19": |-
-    ---
-    +++
-    @@ -8,6 +8,34 @@
-     a list inside.+Then,+creates+a+new+list+and+for+every+item+in+the+input+list,+takes+each+element+inside+that+item+and+adds+it+to+a+new+list+called+trueList. Creates a new@@ -24,12 +52,7 @@
-     each item in-the-list-inside-the-input-list+trueList to a float
-  !!int "20": |-
-    ---
-    +++
-    @@ -7,5 +7,17 @@
-     the floats in-arr"+arr,+neglect+the+item+if+the+item+in+arr+is+not+a+float" """
-  !!int "21": |-
-    ---
-    +++
-    @@ -5,20 +5,31 @@
-     items in the-list,-if+list+inside+the+list+add+each+item+together.+If the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return the sum of-those-integers.+the+integers+in+the+list. """
-  !!int "22": |-
-    ---
-    +++
-    @@ -3,10 +3,17 @@
-     """ loop through+each+list+in arr and+then loop again+for+each+elemtn and if the
-  !!int "23": |-
-    ---
-    +++
-    @@ -1,13 +1,18 @@
-     def add_up(arr): """+iterates+through+the+array+and sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,
-  !!int "24": |-
-    ---
-    +++
-    @@ -4,12 +4,31 @@
-     For each number+variable in the list,+if+the+variable+is+a+number, adds the-numbers+number+to+a+separate+list.+Adds+the+number+in+this+list+together+and returns the number.
-  !!int "25": |-
-    ---
-    +++
-    @@ -13,4 +13,23 @@
-     in the list.+If+there+is+a+string,+and+the+word+inside+is+a+number+in+written+form,+add+that+item+too. """
-  !!int "26": |-
-    ---
-    +++
-    @@ -4,7 +4,7 @@
-     Add together each-integer+number in the list.
-  !!int "27": |-
-    ---
-    +++
-    @@ -6,19 +6,6 @@
-     the array and-sums-the-total-of-integers-and-floats.-strings-are-ignored,-empty-spots-count-as-0+prints+i """
-  !!int "28": |-
-    ---
-    +++
-    @@ -16,5 +16,7 @@
-     of all the-numbers.+ints+and+floats. """
-  !!int "29": |-
-    ---
-    +++
-    @@ -4,14 +4,31 @@
-     Takes an array.-Adds-up+For each-number+value+in+the+array,+if+it+is+a+number,+adds+it+to+the+sum.+Output+is+the+sum+of+all+the+numbers in the array.-Outputs-the-total. """
-  !!int "30": |-
-    ---
-    +++
-    @@ -4,7 +4,7 @@
-     "add all the-floats+doubles in arr into
-  !!int "31": |-
-    ---
-    +++
-    @@ -1,16 +1,24 @@
-     def add_up(arr): """+if+string+contains+characters+2,+3,+3.4,+or+4, add up-all-number-characters+those+numbers in the-brackets+string and output the-result+answer """
-  !!int "32": |-
-    ---
-    +++
-    @@ -4,13 +4,13 @@
-     Takes an array.-For+Reads each value in the-array,-if+array.+If it is a@@ -20,6 +20,20 @@
-     to the sum.+If+it+is+not+a+number,+skips+to+the+next+value+in+the+array. Output is the
-  !!int "33": |-
-    ---
-    +++
-    @@ -23,7 +23,7 @@
-     is not a-float,+double, return sum" """
-  !!int "34": |-
-    ---
-    +++
-    @@ -17,6 +17,10 @@
-     get all numbers+(both+integers+or+floats) from the list
-  !!int "35": |-
+  !!int "36": |-
     ---
     +++
     @@ -3,29 +3,19 @@
      """ This function-takes-entries+adds+all+numbers in+an+array+together+and+returns the-first-row-of-an-array,-and-adds-them-to-the-total-if-the-entry-is-a-number.-Otherwise,+total.+Otherwise it-adds+returns 0. """
-  !!int "36": |-
-    ---
-    +++
-    @@ -7,8 +7,8 @@
-     that runs through-an-array+a+list of lists. The@@ -26,7 +26,11 @@
-     sum of all-numbers.+numbers+in+the+inner+list. The function should
   !!int "37": |-
     ---
     +++
-    @@ -9,7 +9,7 @@
-     arr into a-number+double named sum, neglect
+    @@ -3,19 +3,25 @@
+     """ This function-adds-all-numbers+takes+entries in an-array-together+array, and-returns+adds+them+to the-total.-Otherwise+total+if+the+entry+is+a+number.+Otherwise, it-returns+adds 0. """
   !!int "38": |-
     ---
     +++
-    @@ -10,7 +10,7 @@
-     strings, outputs all-integers+numbers added together that
+    @@ -5,7 +5,7 @@
+     function takes entries-in+within an array, and
   !!int "39": |-
-    ---
-    +++
-    @@ -1,28 +1,14 @@
-     def add_up(arr): """-if-the-arrangement-contains-characters-2,-3,-3.4,-or-4, add up-those-numbers+all+number+characters in-the-arrangement-and+each+arrangement. output-the-answer.-else,-return-0+total """
-  !!int "40": |-
-    ---
-    +++
-    @@ -5,6 +5,9 @@
-     in an array,+removes+all+strings, outputs all integers
-  !!int "41": |-
     ---
     +++
     @@ -1,13 +1,20 @@
      def add_up(arr): """-This+For+each+list+in+an+array,+this function takes-entries-within-an-array,+each+entry+in+the+list and adds them
-  !!int "42": |-
-    ---
-    +++
-    @@ -15,13 +15,60 @@
-     and integers. Function-takes+checks+each+item+in+the+list+to+check+if+it+is+an+integer+or+a+string.+If+it+is+an+integer+it+adds+it+to+a+new+list.+If+it+is+not+an+integer+it+ignores+it.+Outputs the sum of+each+ingter+in the-integers-and-outputs-it+new+list.+If+the+original+list+contains+no+integers,+return+0 """
-  !!int "43": |-
-    ---
-    +++
-    @@ -5,9 +5,9 @@
-     a list with-another-internal-list.+a+list+inside. Creates a new@@ -25,7 +25,10 @@
-     item in the-internal+list+inside+the+input list to a
-  !!int "44": |-
-    ---
-    +++
-    @@ -1,9 +1,12 @@
-     def add_up(arr): """-add+Return the-numbers+sum+of+the+integers in the list
-  !!int "45": |-
-    ---
-    +++
-    @@ -17,7 +17,7 @@
-     numbers in the-string+arrangement and output the
-  !!int "46": |-
-    ---
-    +++
-    @@ -5,6 +5,11 @@
-     a function that+gets+a+list.+The+function runs through a
-  !!int "47": |-
-    ---
-    +++
-    @@ -1,13 +1,16 @@
-     def add_up(arr): """-Add-together-and-return+Return the-numbers+sum+of+the+integers in the list.+Ignore+the+string. """
-  !!int "48": |-
-    ---
-    +++
-    @@ -1,13 +1,13 @@
-     def add_up(arr): """-Return+Add+together+and+return the-sum-of-the-integers+numbers in the-list+list. """
-  !!int "49": |-
+  !!int "40": |-
     ---
     +++
     @@ -1,10 +1,9 @@
      def add_up(arr): """-sums-the-total-of+adds+up+only integers and floats
-  !!int "50": |-
-    ---
-    +++
-    @@ -5,6 +5,11 @@
-     together each item+that+is+not+a+string in the list.
-  !!int "51": |-
+  !!int "41": |-
     ---
     +++
     @@ -1,9 +1,7 @@
      def add_up(arr): """-adds-up-only+sums integers and floats
+  !!int "42": |-
+    ---
+    +++
+    @@ -1,13 +1,18 @@
+     def add_up(arr): """+iterates+through+the+array+and sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,
+  !!int "43": |-
+    ---
+    +++
+    @@ -6,19 +6,6 @@
+     the array and-sums-the-total-of-integers-and-floats.-strings-are-ignored,-empty-spots-count-as-0+prints+i """
+  !!int "44": |-
+    ---
+    +++
+    @@ -4,8 +4,23 @@
+     iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0 """
+  !!int "45": |-
+    ---
+    +++
+    @@ -3,9 +3,6 @@
+     """ Add together-each-value-in the list. If
+  !!int "46": |-
+    ---
+    +++
+    @@ -3,6 +3,9 @@
+     """ Add together+each+item+in the list. If
+  !!int "47": |-
+    ---
+    +++
+    @@ -5,6 +5,11 @@
+     together each item+that+is+not+a+string in the list.
+  !!int "48": |-
+    ---
+    +++
+    @@ -13,23 +13,4 @@
+     in the list.-If-there-is-a-string,-and-the-word-inside-is-a-number-in-written-form,-add-that-number-too. """
+  !!int "49": |-
+    ---
+    +++
+    @@ -13,4 +13,23 @@
+     in the list.+If+there+is+a+string,+and+the+word+inside+is+a+number+in+written+form,+add+that+item+too. """
+  !!int "50": |-
+    ---
+    +++
+    @@ -4,12 +4,7 @@
+     Add together each-item-that-is-not-a-string+integer in the list.@@ -30,6 +25,6 @@
+     form, add that-item+number too. """
+  !!int "51": |-
+    ---
+    +++
+    @@ -4,7 +4,7 @@
+     Add together each-integer+number in the list.
 "nodes":
   !!int "0":
     "stderr":
@@ -273,7 +273,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       0
@@ -282,7 +282,7 @@
     - |
       0
     "stdout_id": !!int |-
-      6
+      3
   !!int "1":
     "stderr":
     - |
@@ -307,13 +307,13 @@
           return sum(arr)
       TypeError: unsupported operand type(s) for +: 'int' and 'list'
     "stderr_id": !!int |-
-      0
+      8
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "2":
     "stderr":
     - |
@@ -338,13 +338,13 @@
           result += i
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      11
+      9
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "3":
     "stderr":
     - |
@@ -363,14 +363,14 @@
       ValueError: invalid literal for int() with base 10: 'hello'
     - ""
     "stderr_id": !!int |-
-      10
+      3
     "stdout":
     - ""
     - ""
     - |
       0
     "stdout_id": !!int |-
-      4
+      1
   !!int "4":
     "stderr":
     - |
@@ -395,20 +395,20 @@
           return arr[0] + add_up(arr[1:])
       TypeError: can only concatenate list (not "int") to list
     "stderr_id": !!int |-
-      7
+      15
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       9
@@ -442,13 +442,13 @@
           total += float(item)
       TypeError: float() argument must be a string or a real number, not 'list'
     "stderr_id": !!int |-
-      15
+      12
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "7":
     "stderr":
     - |
@@ -473,13 +473,13 @@
           total += float(i)
       TypeError: float() argument must be a string or a real number, not 'list'
     "stderr_id": !!int |-
-      14
+      11
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "8":
     "stderr":
     - |
@@ -498,14 +498,14 @@
       ValueError: could not convert string to float: 'hello'
     - ""
     "stderr_id": !!int |-
-      1
+      4
     "stdout":
     - ""
     - ""
     - |
       0.0
     "stdout_id": !!int |-
-      0
+      2
   !!int "9":
     "stderr":
     - |
@@ -530,13 +530,13 @@
           total += i
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      4
+      13
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "10":
     "stderr":
     - |
@@ -561,20 +561,20 @@
           sum += i
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      12
+      10
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "11":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       0.0
@@ -583,14 +583,14 @@
     - |
       0.0
     "stdout_id": !!int |-
-      1
+      5
   !!int "12":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       9
@@ -599,7 +599,7 @@
     - |
       0
     "stdout_id": !!int |-
-      5
+      6
   !!int "13":
     "stderr":
     - |
@@ -624,13 +624,13 @@
           total += num
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      13
+      14
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "14":
     "stderr":
     - |
@@ -655,20 +655,20 @@
           if item.isdigit():
       AttributeError: 'list' object has no attribute 'isdigit'
     "stderr_id": !!int |-
-      8
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "15":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       0
@@ -677,7 +677,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      4
   !!int "16":
     "stderr":
     - |2
@@ -693,13 +693,13 @@
           add_up([1,2,3,4,5])
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      3
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "17":
     "stderr":
     - |
@@ -724,13 +724,13 @@
           total += i
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      2
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "18":
     "stderr":
     - |
@@ -755,13 +755,13 @@
           total += item
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      6
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "19":
     "stderr":
     - |
@@ -786,13 +786,13 @@
           sum += item
       TypeError: unsupported operand type(s) for +=: 'int' and 'list'
     "stderr_id": !!int |-
-      9
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
 "student_color":
   "student1": |-
     #d83034

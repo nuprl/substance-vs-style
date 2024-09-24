@@ -4,148 +4,148 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 7,
-            "stdout_id": 1,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet[1] > 16:\nTypeError: '>' not supported between instances of 'str' and 'int'\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 11,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 19, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 18, in planets_mass\n    mass_\nNameError: name 'mass_' is not defined. Did you mean: 'mass_16'?\n",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n0\n\n0\n\n0\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n15\n\n15\n\n0\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n115\n\n145\n\n100\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planet_mass:\nNameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planet_mass:\nNameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planet_mass:\nNameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?\n",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 1,
+            "stderr_id": 12,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Mercury']['mass'] + planets['Venus']['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Mercury']['mass'] + planets['Venus']['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Mercury']['mass'] + planets['Venus']['mass']\nKeyError: 'Mercury'\n",
             "color": "grey",
             "id": 6
         },
         {
             "stderr_id": 14,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\nKeyError: 'Venus'\n",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 13,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Venus']['mass'] + planets['Mercury']['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Venus']['mass'] + planets['Mercury']['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 5, in planets_mass\n    return planets['Venus']['mass'] + planets['Mercury']['mass']\nKeyError: 'Venus'\n",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\nTypeError: string indices must be integers\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\nTypeError: string indices must be integers\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\nTypeError: string indices must be integers\n",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    mass_list.append(planets[planet]['mass'])\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    mass_list.append(planets[planet]['mass'])\nTypeError: 'int' object is not subscriptable\n\n",
             "color": "grey",
             "id": 10
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 15,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 17,
-            "stdout_id": 2,
+            "stderr_id": 9,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 10, in planets_mass\n    total += planet\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 10, in planets_mass\n    total += planet\nTypeError: unsupported operand type(s) for +=: 'int' and 'str'\n\n",
             "color": "grey",
             "id": 12
         },
         {
-            "stderr_id": 18,
-            "stdout_id": 2,
+            "stderr_id": 7,
+            "stdout_id": 1,
             "hover": "stdout:\n\n\n0\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 9, in planets_mass\n    total += planet_mass[planet]\nNameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 9, in planets_mass\n    total += planet_mass[planet]\nNameError: name 'planet_mass' is not defined. Did you mean: 'planets_mass'?\n\n",
             "color": "blue",
             "id": 13
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 1,
+            "stderr_id": 17,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return planets_mass_dict[planets]\nNameError: name 'planets_mass_dict' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return planets_mass_dict[planets]\nNameError: name 'planets_mass_dict' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return planets_mass_dict[planets]\nNameError: name 'planets_mass_dict' is not defined. Did you mean: 'planets_mass'?\n",
             "color": "blue",
             "id": 14
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 1,
+            "stderr_id": 18,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return sum(planets)\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return sum(planets)\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    return sum(planets)\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n",
             "color": "blue",
             "id": 15
         },
         {
             "stderr_id": 8,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 9, in planets_mass\n    x += planets\nTypeError: unsupported operand type(s) for +=: 'int' and 'dict'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 9, in planets_mass\n    x += planets\nTypeError: unsupported operand type(s) for +=: 'int' and 'dict'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 9, in planets_mass\n    x += planets\nTypeError: unsupported operand type(s) for +=: 'int' and 'dict'\n",
             "color": "red",
             "id": 16
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 1,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planets[key][\"type\"] == \"planet\":\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planets[key][\"type\"] == \"planet\":\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planets[key][\"type\"] == \"planet\":\nTypeError: 'int' object is not subscriptable\n",
             "color": "grey",
             "id": 17
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 1,
+            "stderr_id": 16,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total_mass += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total_mass += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    total_mass += planets[planet]['mass']\nTypeError: 'int' object is not subscriptable\n",
             "color": "blue",
             "id": 18
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    total_mass += planets[key][\"mass\"]\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    total_mass += planets[key][\"mass\"]\nTypeError: 'int' object is not subscriptable\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 8, in planets_mass\n    total_mass += planets[key][\"mass\"]\nTypeError: 'int' object is not subscriptable\n",
             "color": "blue",
             "id": 19
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 1,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(planets_mass({'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planets_dict:\nNameError: name 'planets_dict' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(planets_mass({'Pluto': 30, 'Venus': 10, 'Mercury': 5, 'Sun': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planets_dict:\nNameError: name 'planets_dict' is not defined. Did you mean: 'planets_mass'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(planets_mass({'Pluto': 100}))\n  File \"/tmp/file.py\", line 7, in planets_mass\n    if planet in planets_dict:\nNameError: name 'planets_dict' is not defined. Did you mean: 'planets_mass'?\n",
             "color": "red",
             "id": 20
@@ -154,7 +154,7 @@
     "adjacency": [
         [
             {
-                "diff": 9,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
@@ -165,7 +165,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
@@ -176,7 +176,7 @@
         ],
         [
             {
-                "diff": 17,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
@@ -185,7 +185,7 @@
                 "key": 0
             },
             {
-                "diff": 16,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
@@ -207,7 +207,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student24",
@@ -216,7 +216,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student46",
@@ -225,7 +225,7 @@
                 "key": 0
             },
             {
-                "diff": 15,
+                "diff": 13,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
@@ -243,7 +243,7 @@
                 "key": 0
             },
             {
-                "diff": 18,
+                "diff": 16,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
@@ -252,7 +252,7 @@
                 "key": 1
             },
             {
-                "diff": 1,
+                "diff": 14,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
@@ -263,7 +263,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student24",
@@ -274,7 +274,7 @@
         ],
         [
             {
-                "diff": 23,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
@@ -285,7 +285,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
@@ -307,7 +307,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 11,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
@@ -318,7 +318,7 @@
         ],
         [
             {
-                "diff": 21,
+                "diff": 12,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student53",
@@ -329,7 +329,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 15,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
@@ -340,7 +340,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 17,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
@@ -351,7 +351,7 @@
         ],
         [
             {
-                "diff": 20,
+                "diff": 18,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
@@ -362,7 +362,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 19,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
@@ -373,7 +373,7 @@
         ],
         [
             {
-                "diff": 22,
+                "diff": 20,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
@@ -385,7 +385,7 @@
         [],
         [
             {
-                "diff": 19,
+                "diff": 21,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",
@@ -396,7 +396,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 22,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",
@@ -407,7 +407,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 23,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",

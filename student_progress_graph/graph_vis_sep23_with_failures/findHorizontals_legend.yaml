@@ -1,75 +1,75 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
-    ---
-    +++
-    @@ -13,4 +13,13 @@
-     the dictionary is+the+word+that+repeats+in+the+second+input+list. """
-  !!int "2": |-
-    ---
-    +++
-    @@ -25,6 +25,9 @@
-     the same letters+in+any+order as a string
-  !!int "3": |-
-    ---
-    +++
-    @@ -47,7 +47,10 @@
-     in the same-order.+order+or+same+length. Return a dictionary
-  !!int "4": |-
-    ---
-    +++
-    @@ -39,17 +39,21 @@
-     dictionary with the-index+count of the-string+number+of+times+it+appears+in+the+strings from puzzle-where-it-appeared as-the+its value. return the
-  !!int "5": |-
-    ---
-    +++
-    @@ -13,6 +13,9 @@
-     if the letters+(in+any+order) of each string
-  !!int "6": |-
+  !!int "0": |-
     ---
     +++
     @@ -39,6 +39,15 @@
      the wordList list.+They+don't+have+to+be+in+the+same+order. Return a dictionary
-  !!int "7": |-
+  !!int "1": |-
+    ---
+    +++
+    @@ -47,7 +47,10 @@
+     in the same-order.+order+or+same+length. Return a dictionary
+  !!int "2": |-
+    ---
+    +++
+    @@ -10,7 +10,13 @@
+     in wordList that-appears+than+can+be+made+with+the+letters in puzzle, paired
+  !!int "3": |-
     ---
     +++
     @@ -10,15 +10,28 @@
      in wordList that-than+that can be-made+found with the letters in-puzzle,+puzzle+(even+if+the+letters+in+an+element+of+puzzle+need+to+be+retordered), paired with its
-  !!int "8": |-
+  !!int "4": ""
+  !!int "5": |-
     ---
     +++
     @@ -2,7 +2,6 @@
      findHorizontals(puzzle,wordList): """ Given-a two lists labeled@@ -21,6 +20,11 @@
      letters appear in+one+of+the+strings+in puzzle, create a@@ -38,6 +42,8 @@
      the position of+the+string where the letters
-  !!int "9": |-
-    ---
-    +++
-    @@ -13,9 +13,6 @@
-     if the letters-(in-any-order) of each string
-  !!int "10": |-
+  !!int "6": |-
     ---
     +++
     @@ -1,9 +1,9 @@
      def findHorizontals(puzzle,wordList): """-check-if-any+count+how+many elements in first@@ -17,9 +17,14 @@
      second list. If-they-do,+more+than+0, add to dictionary+with+count+as+value """
-  !!int "11": |-
-    ---
-    +++
-    @@ -10,7 +10,13 @@
-     in wordList that-appears+than+can+be+made+with+the+letters in puzzle, paired
-  !!int "12": |-
-    ---
-    +++
-    @@ -22,6 +22,10 @@
-     in puzzle contain+the+same+letters+as a string from@@ -39,21 +43,17 @@
-     dictionary with the-count+index of the-number-of-times-it-appears-in-the-strings+string from puzzle+where+it+appeared as-its+the value. return the
-  !!int "13": |-
+  !!int "7": |-
     ---
     +++
     @@ -4,29 +4,29 @@
      if the letters-of-the-strings+contained in the first-array-list+string are+entirely+contained+in+a+string in the+second array-list-above+list. then create a dictionary where the-second-array-list+that string is the@@ -35,6 +35,7 @@
      the index is-the-definition.+within+that+key """
+  !!int "8": |-
+    ---
+    +++
+    @@ -13,4 +13,13 @@
+     the dictionary is+the+word+that+repeats+in+the+second+input+list. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -39,17 +39,21 @@
+     dictionary with the-index+count of the-string+number+of+times+it+appears+in+the+strings from puzzle-where-it-appeared as-the+its value. return the
+  !!int "10": |-
+    ---
+    +++
+    @@ -22,6 +22,10 @@
+     in puzzle contain+the+same+letters+as a string from@@ -39,21 +43,17 @@
+     dictionary with the-count+index of the-number-of-times-it-appears-in-the-strings+string from puzzle+where+it+appeared as-its+the value. return the
+  !!int "11": |-
+    ---
+    +++
+    @@ -25,6 +25,9 @@
+     the same letters+in+any+order as a string
+  !!int "12": |-
+    ---
+    +++
+    @@ -13,6 +13,9 @@
+     if the letters+(in+any+order) of each string
+  !!int "13": |-
+    ---
+    +++
+    @@ -13,9 +13,6 @@
+     if the letters-(in-any-order) of each string
 "nodes":
   !!int "0":
     "stderr":
@@ -86,7 +86,7 @@
     - |
       None
     "stdout_id": !!int |-
-      8
+      1
   !!int "1":
     "stderr":
     - ""
@@ -102,7 +102,7 @@
     - |
       {'it': 3}
     "stdout_id": !!int |-
-      4
+      10
   !!int "2":
     "stderr":
     - |2
@@ -121,13 +121,13 @@
                            ^
       SyntaxError: '(' was never closed
     "stderr_id": !!int |-
-      5
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "3":
     "stderr":
     - ""
@@ -143,7 +143,7 @@
     - |
       {'it': 3}
     "stdout_id": !!int |-
-      9
+      8
   !!int "4":
     "stderr":
     - ""
@@ -159,7 +159,7 @@
     - |
       {'it': (3, 0)}
     "stdout_id": !!int |-
-      10
+      6
   !!int "5":
     "stderr":
     - |
@@ -184,13 +184,13 @@
           puzzle = puzzle.split()
       AttributeError: 'list' object has no attribute 'split'
     "stderr_id": !!int |-
-      3
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "6":
     "stderr":
     - ""
@@ -206,7 +206,7 @@
     - |
       {'it': 'it'}
     "stdout_id": !!int |-
-      0
+      5
   !!int "7":
     "stderr":
     - ""
@@ -222,7 +222,7 @@
     - |
       {'it': 1}
     "stdout_id": !!int |-
-      6
+      3
   !!int "8":
     "stderr":
     - |2
@@ -241,13 +241,13 @@
                              ^
       SyntaxError: expected ':'
     "stderr_id": !!int |-
-      4
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "9":
     "stderr":
     - ""
@@ -263,7 +263,7 @@
     - |
       {'it': [3]}
     "stdout_id": !!int |-
-      1
+      9
   !!int "10":
     "stderr":
     - ""
@@ -279,7 +279,7 @@
     - |
       [{'word': 'it', 'start': [3, 0], 'end': [3, 1]}]
     "stdout_id": !!int |-
-      7
+      2
   !!int "11":
     "stderr":
     - ""
@@ -295,7 +295,7 @@
     - |
       {'it': 1}
     "stdout_id": !!int |-
-      3
+      7
   !!int "12":
     "stderr":
     - |
@@ -320,13 +320,13 @@
           if isSubstring(puzzle[i],wordList[j]):
       NameError: name 'isSubstring' is not defined
     "stderr_id": !!int |-
-      1
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "13":
     "stderr":
     - |
@@ -351,13 +351,13 @@
           if checkWord(word,puzzle[i]):
       NameError: name 'checkWord' is not defined
     "stderr_id": !!int |-
-      2
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
 "student_color":
   "student27": |-
     #d83034

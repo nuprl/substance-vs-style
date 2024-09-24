@@ -4,351 +4,351 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 20,
+            "stderr_id": 9,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst.append(alphabet[i])\nNameError: name 'alphabet' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst.append(alphabet[i])\nNameError: name 'alphabet' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst.append(alphabet[i])\nNameError: name 'alphabet' is not defined\n",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 15,
-            "stdout_id": 20,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    if i >= 0\n             ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 8\n    if i >= 0\n             ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 8\n    if i >= 0\n             ^\nSyntaxError: expected ':'\n",
             "color": "blue",
             "id": 1
         },
         {
-            "stderr_id": 9,
-            "stdout_id": 20,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    print(convert([0, 1, 2, 3]))\nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(convert([0, -1, 1, -1, 2]))\nIndentationError: expected an indented block after 'for' statement on line 8\n\n  File \"/tmp/file.py\", line 9\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\nIndentationError: expected an indented block after 'for' statement on line 8\n",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 12,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 12,
+            "stderr_id": 0,
             "stdout_id": 26,
             "hover": "stdout:\n['abcd']\n\n['a', 'b', 'c']\n\n['bbb', 'zzz', 'abc']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 22,
             "hover": "stdout:\n['ABCD']\n\n['A', 'B', 'C']\n\n['BBB', 'ZZZ', 'ABC']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 5
         },
         {
-            "stderr_id": 19,
-            "stdout_id": 20,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 10\n    alphabet = [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"\n                                                                                                     ^\nSyntaxError: unterminated string literal (detected at line 10)\n\n  File \"/tmp/file.py\", line 10\n    alphabet = [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"\n                                                                                                     ^\nSyntaxError: unterminated string literal (detected at line 10)\n\n  File \"/tmp/file.py\", line 10\n    alphabet = [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"\n                                                                                                     ^\nSyntaxError: unterminated string literal (detected at line 10)\n",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 18,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', '@', 'B', '@', 'C']\n\n['B', 'B', 'B', '@', 'Z', 'Z', 'Z', '@', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 20,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', 'B', 'C']\n\n['B', 'B', 'B', 'Z', 'Z', 'Z', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 31,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\nABCD\n\nA,B,C\n\nBBB,ZZZ,ABC\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 10,
             "hover": "stdout:\nABCD\n\nABC\n\nBZABC\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 10
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 11,
+            "stderr_id": 0,
+            "stdout_id": 9,
             "hover": "stdout:\nABCD\n\nABC\n\nBBBZZZABC\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 10,
+            "stderr_id": 0,
+            "stdout_id": 8,
             "hover": "stdout:\nABCD\n\nABC\n\nB,B,B,Z,Z,Z,A,B,C\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 12
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 13,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\nA,B,C,D\n\nA,,,B,,,C\n\nB,B,B,,,Z,Z,Z,,,A,B,C\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 13
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 30,
+            "stderr_id": 0,
+            "stdout_id": 23,
             "hover": "stdout:\n['ABCD']\n\n['A,B,C']\n\n['BBB,ZZZ,ABC']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 14
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 20,
+            "stderr_id": 18,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 6, in convert\n    lst = [''.join(g) for k, g in groupby(lst)]\nNameError: name 'groupby' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    lst = [''.join(g) for k, g in groupby(lst)]\nNameError: name 'groupby' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    lst = [''.join(g) for k, g in groupby(lst)]\nNameError: name 'groupby' is not defined\n",
             "color": "blue",
             "id": 15
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 29,
+            "stderr_id": 0,
+            "stdout_id": 21,
             "hover": "stdout:\n['A', 'B', 'C']\n\n[',', 'A', ',', 'B']\n\n['A', 'A', 'A', ',', 'Y', 'Y', 'Y', ',', 'A', 'B']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 16
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 25,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\nABC\n\nAAAB\n\nAAAAYYYAAB\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 17
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 24,
             "hover": "stdout:\n['BCD']\n\n['@B@C']\n\n['BBB@ZZZ@BC']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 18
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 18,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\nABCD\n\nA@B@C\n\nBBB@ZZZ@ABC\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 19
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 22,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\nAABC\n\nA,A,B\n\nAAA,YYY,AAB\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 20
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 16,
+            "stderr_id": 0,
+            "stdout_id": 17,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', '-', 'B', '-', 'C']\n\n['B', 'B', 'B', '-', 'Z', 'Z', 'Z', '-', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 21
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 20,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 17\n    if result[i] ==\n                   ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 17\n    if result[i] ==\n                   ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 17\n    if result[i] ==\n                   ^\nSyntaxError: invalid syntax\n",
             "color": "blue",
             "id": 22
         },
         {
-            "stderr_id": 10,
-            "stdout_id": 20,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 18\n    result.\n           ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 18\n    result.\n           ^\nSyntaxError: invalid syntax\n\n  File \"/tmp/file.py\", line 18\n    result.\n           ^\nSyntaxError: invalid syntax\n",
             "color": "blue",
             "id": 23
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 14,
+            "stderr_id": 0,
+            "stdout_id": 15,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', '', 'B', '', 'C']\n\n['B', 'B', 'B', '', 'Z', 'Z', 'Z', '', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 24
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 24,
+            "stderr_id": 0,
+            "stdout_id": 29,
             "hover": "stdout:\n['a', 'b']\n\n['bbb', 'zzz']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 25
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 23,
+            "stderr_id": 0,
+            "stdout_id": 19,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', 'B', 'B', 'C', 'C']\n\n['B', 'B', 'B', 'Z', 'Z', 'Z', 'Z', 'A', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 26
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 20,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    lst_str.append(chr(\n                      ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    lst_str.append(chr(\n                      ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    lst_str.append(chr(\n                      ^\nSyntaxError: '(' was never closed\n",
             "color": "red",
             "id": 27
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 19,
+            "stderr_id": 0,
+            "stdout_id": 28,
             "hover": "stdout:\n['A', 'B']\n\n['BBB', 'ZZZ']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 28
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 21,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\nABCD\n\nA B C\n\nBBB ZZZ ABC\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 29
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 20,
+            "stderr_id": 13,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(lst[i] + 65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(lst[i] + 65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(lst[i] + 65)\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 30
         },
         {
-            "stderr_id": 18,
-            "stdout_id": 20,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 16\n    print(convert([0, 1, 2, 3]))\nIndentationError: expected an indented block after 'if' statement on line 14\n\n  File \"/tmp/file.py\", line 16\n    print(convert([0, -1, 1, -1, 2]))\nIndentationError: expected an indented block after 'if' statement on line 14\n\n  File \"/tmp/file.py\", line 16\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\nIndentationError: expected an indented block after 'if' statement on line 14\n",
             "color": "red",
             "id": 31
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 28,
+            "stderr_id": 0,
+            "stdout_id": 13,
             "hover": "stdout:\n['@', 'A', 'B', 'C']\n\n['@', '?', 'A', '?', 'B']\n\n['A', 'A', 'A', '?', 'Y', 'Y', 'Y', '?', '@', 'A', 'B']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 32
         },
         {
-            "stderr_id": 11,
-            "stdout_id": 20,
+            "stderr_id": 14,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([alphabet[abs(int(i))] for i in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([alphabet[abs(int(i))] for i in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([alphabet[abs(int(i))] for i in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "grey",
             "id": 33
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 20,
+            "stderr_id": 15,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([d[int(num)] for num in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([d[int(num)] for num in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return ''.join([d[int(num)] for num in lst.split()])\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "red",
             "id": 34
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 27,
             "hover": "stdout:\n[0, 1, 2, 3, ',']\n\n[0, -1, 1, -1, 2, ',']\n\n[1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2, ',']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 35
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 31,
             "hover": "stdout:\nabcd\n\na`b`c\n\nbbb`zzz`abc\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 36
         },
         {
-            "stderr_id": 17,
-            "stdout_id": 20,
+            "stderr_id": 19,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 7, in convert\n    lst = [ord(i) for i in lst]\n  File \"/tmp/file.py\", line 7, in <listcomp>\n    lst = [ord(i) for i in lst]\nTypeError: ord() expected string of length 1, but int found\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 7, in convert\n    lst = [ord(i) for i in lst]\n  File \"/tmp/file.py\", line 7, in <listcomp>\n    lst = [ord(i) for i in lst]\nTypeError: ord() expected string of length 1, but int found\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 7, in convert\n    lst = [ord(i) for i in lst]\n  File \"/tmp/file.py\", line 7, in <listcomp>\n    lst = [ord(i) for i in lst]\nTypeError: ord() expected string of length 1, but int found\n",
             "color": "blue",
             "id": 37
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 12,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n0\n\n0\n\n1\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 38
         },
         {
-            "stderr_id": 14,
-            "stdout_id": 20,
+            "stderr_id": 17,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [ord(i) - 97 for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [ord(i) - 97 for i in lst]\nTypeError: ord() expected string of length 1, but int found\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [ord(i) - 97 for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [ord(i) - 97 for i in lst]\nTypeError: ord() expected string of length 1, but int found\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [ord(i) - 97 for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [ord(i) - 97 for i in lst]\nTypeError: ord() expected string of length 1, but int found\n",
             "color": "blue",
             "id": 39
         },
         {
-            "stderr_id": 13,
-            "stdout_id": 20,
+            "stderr_id": 16,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [letters[i] for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [letters[i] for i in lst]\nNameError: name 'letters' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [letters[i] for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [letters[i] for i in lst]\nNameError: name 'letters' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 7, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 6, in convert\n    return [letters[i] for i in lst]\n  File \"/tmp/file.py\", line 6, in <listcomp>\n    return [letters[i] for i in lst]\nNameError: name 'letters' is not defined\n",
             "color": "blue",
             "id": 40
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 8,
+            "stderr_id": 0,
+            "stdout_id": 16,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', ',', 'B', ',', 'C']\n\n['B', 'B', 'B', ',', 'Z', 'Z', 'Z', ',', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 41
         },
         {
-            "stderr_id": 16,
-            "stdout_id": 20,
+            "stderr_id": 8,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    lst_str[-1] += chr(lst[i]+65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    lst_str[-1] += chr(lst[i]+65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    lst_str[-1] += chr(lst[i]+65)\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 42
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 27,
+            "stderr_id": 0,
+            "stdout_id": 14,
             "hover": "stdout:\n['A', 'B', 'C', 'D']\n\n['A', ' ', 'B', ' ', 'C']\n\n['B', 'B', 'B', ' ', 'Z', 'Z', 'Z', ' ', 'A', 'B', 'C']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 43
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 15,
+            "stderr_id": 0,
+            "stdout_id": 11,
             "hover": "stdout:\nABCD\n\nA][B][C\n\nBBB][ZZZ][ABC\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 44
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 20,
+            "stderr_id": 10,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(chr(lst[i] + 97))\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(chr(lst[i] + 97))\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(chr(lst[i] + 97))\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 45
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 20,
+            "stderr_id": 11,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(i)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(i)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    new_lst[-1].append(i)\nIndexError: list index out of range\n",
             "color": "blue",
             "id": 46
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 17,
+            "stderr_id": 0,
+            "stdout_id": 30,
             "hover": "stdout:\n[['a'], ['b']]\n\n[['b', 'b', 'b'], ['z', 'z', 'z']]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 47
         },
         {
-            "stderr_id": 12,
-            "stdout_id": 9,
+            "stderr_id": 0,
+            "stdout_id": 25,
             "hover": "stdout:\n['`', 'a', 'b', 'c']\n\n['`', -1, 'a', -1, 'b']\n\n['a', 'a', 'a', -1, 'y', 'y', 'y', -1, '`', 'a', 'b']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 48
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 20,
+            "stderr_id": 12,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, 1, 2, 3]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(i + 65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([0, -1, 1, -1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(i + 65)\nIndexError: list index out of range\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 12, in <module>\n    print(convert([1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]))\n  File \"/tmp/file.py\", line 10, in convert\n    result[-1] += chr(i + 65)\nIndexError: list index out of range\n",
             "color": "grey",
             "id": 49
@@ -357,7 +357,7 @@
     "adjacency": [
         [
             {
-                "diff": 30,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -368,7 +368,7 @@
         ],
         [
             {
-                "diff": 19,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -379,7 +379,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -388,7 +388,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -399,7 +399,7 @@
         ],
         [
             {
-                "diff": 55,
+                "diff": 4,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -408,7 +408,7 @@
                 "key": 0
             },
             {
-                "diff": 39,
+                "diff": 5,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -417,7 +417,7 @@
                 "key": 1
             },
             {
-                "diff": 62,
+                "diff": 6,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -426,7 +426,7 @@
                 "key": 0
             },
             {
-                "diff": 56,
+                "diff": 25,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -435,7 +435,7 @@
                 "key": 0
             },
             {
-                "diff": 50,
+                "diff": 44,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -446,7 +446,7 @@
         ],
         [
             {
-                "diff": 48,
+                "diff": 7,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student0",
@@ -455,7 +455,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 8,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student10",
@@ -466,7 +466,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 47,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -475,7 +475,7 @@
                 "key": 0
             },
             {
-                "diff": 61,
+                "diff": 48,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -486,7 +486,7 @@
         ],
         [
             {
-                "diff": 36,
+                "diff": 9,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student10",
@@ -497,7 +497,7 @@
         ],
         [
             {
-                "diff": 43,
+                "diff": 10,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -506,7 +506,7 @@
                 "key": 0
             },
             {
-                "diff": 23,
+                "diff": 24,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -515,7 +515,7 @@
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 53,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -524,7 +524,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 60,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -535,7 +535,7 @@
         ],
         [
             {
-                "diff": 52,
+                "diff": 11,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -544,7 +544,7 @@
                 "key": 0
             },
             {
-                "diff": 38,
+                "diff": 15,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -553,7 +553,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -562,7 +562,7 @@
                 "key": 0
             },
             {
-                "diff": 7,
+                "diff": 18,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -573,7 +573,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 12,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -582,7 +582,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -591,7 +591,7 @@
                 "key": 0
             },
             {
-                "diff": 44,
+                "diff": 29,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -602,7 +602,7 @@
         ],
         [
             {
-                "diff": 28,
+                "diff": 13,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -613,7 +613,7 @@
         ],
         [
             {
-                "diff": 27,
+                "diff": 14,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -622,7 +622,7 @@
                 "key": 0
             },
             {
-                "diff": 53,
+                "diff": 19,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -631,7 +631,7 @@
                 "key": 0
             },
             {
-                "diff": 33,
+                "diff": 35,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -640,7 +640,7 @@
                 "key": 0
             },
             {
-                "diff": 34,
+                "diff": 50,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -651,7 +651,7 @@
         ],
         [
             {
-                "diff": 71,
+                "diff": 16,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -662,7 +662,7 @@
         ],
         [
             {
-                "diff": 72,
+                "diff": 20,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -673,7 +673,7 @@
         ],
         [
             {
-                "diff": 18,
+                "diff": 21,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -684,7 +684,7 @@
         ],
         [
             {
-                "diff": 49,
+                "diff": 22,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -695,7 +695,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -706,7 +706,7 @@
         ],
         [
             {
-                "diff": 58,
+                "diff": 23,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -717,7 +717,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -728,7 +728,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -737,7 +737,7 @@
                 "key": 0
             },
             {
-                "diff": 70,
+                "diff": 26,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -746,7 +746,7 @@
                 "key": 0
             },
             {
-                "diff": 26,
+                "diff": 28,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -755,7 +755,7 @@
                 "key": 0
             },
             {
-                "diff": 24,
+                "diff": 31,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -764,7 +764,7 @@
                 "key": 0
             },
             {
-                "diff": 22,
+                "diff": 63,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -775,7 +775,7 @@
         ],
         [
             {
-                "diff": 31,
+                "diff": 27,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -786,7 +786,7 @@
         ],
         [
             {
-                "diff": 20,
+                "diff": 30,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -797,7 +797,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 32,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -808,7 +808,7 @@
         ],
         [
             {
-                "diff": 40,
+                "diff": 33,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -819,7 +819,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 34,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -828,7 +828,7 @@
                 "key": 0
             },
             {
-                "diff": 45,
+                "diff": 36,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student17",
@@ -837,7 +837,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 38,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student18",
@@ -846,7 +846,7 @@
                 "key": 0
             },
             {
-                "diff": 37,
+                "diff": 42,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -857,7 +857,7 @@
         ],
         [
             {
-                "diff": 68,
+                "diff": 37,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student18",
@@ -866,7 +866,7 @@
                 "key": 0
             },
             {
-                "diff": 35,
+                "diff": 70,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",
@@ -877,7 +877,7 @@
         ],
         [
             {
-                "diff": 32,
+                "diff": 39,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student18",
@@ -889,7 +889,7 @@
         [],
         [
             {
-                "diff": 14,
+                "diff": 40,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -898,7 +898,7 @@
                 "key": 0
             },
             {
-                "diff": 16,
+                "diff": 43,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -907,7 +907,7 @@
                 "key": 0
             },
             {
-                "diff": 57,
+                "diff": 46,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -916,7 +916,7 @@
                 "key": 0
             },
             {
-                "diff": 12,
+                "diff": 71,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",
@@ -936,7 +936,7 @@
                 "key": 0
             },
             {
-                "diff": 64,
+                "diff": 51,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -945,7 +945,7 @@
                 "key": 0
             },
             {
-                "diff": 25,
+                "diff": 66,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student30",
@@ -954,7 +954,7 @@
                 "key": 0
             },
             {
-                "diff": 54,
+                "diff": 72,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student51",
@@ -965,7 +965,7 @@
         ],
         [
             {
-                "diff": 63,
+                "diff": 45,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student21",
@@ -977,7 +977,7 @@
         [],
         [
             {
-                "diff": 21,
+                "diff": 49,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student25",
@@ -988,7 +988,7 @@
         ],
         [
             {
-                "diff": 65,
+                "diff": 52,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student26",
@@ -1000,7 +1000,7 @@
         [],
         [
             {
-                "diff": 29,
+                "diff": 54,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1011,7 +1011,7 @@
         ],
         [
             {
-                "diff": 66,
+                "diff": 55,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1022,7 +1022,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 56,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1033,7 +1033,7 @@
         ],
         [
             {
-                "diff": 67,
+                "diff": 57,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1044,7 +1044,7 @@
         ],
         [
             {
-                "diff": 17,
+                "diff": 58,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1055,7 +1055,7 @@
         ],
         [
             {
-                "diff": 60,
+                "diff": 59,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1066,7 +1066,7 @@
         ],
         [
             {
-                "diff": 69,
+                "diff": 61,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1075,7 +1075,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 62,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1086,7 +1086,7 @@
         ],
         [
             {
-                "diff": 51,
+                "diff": 64,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student3",
@@ -1097,7 +1097,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student30",
@@ -1106,7 +1106,7 @@
                 "key": 0
             },
             {
-                "diff": 59,
+                "diff": 65,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student30",
@@ -1118,7 +1118,7 @@
         [],
         [
             {
-                "diff": 47,
+                "diff": 67,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -1129,7 +1129,7 @@
         ],
         [
             {
-                "diff": 46,
+                "diff": 68,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student4",
@@ -1141,7 +1141,7 @@
         [],
         [
             {
-                "diff": 42,
+                "diff": 69,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student41",
@@ -1152,7 +1152,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 17,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student51",

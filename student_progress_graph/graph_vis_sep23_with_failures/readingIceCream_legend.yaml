@@ -2,168 +2,168 @@
   !!int "0": |-
     ---
     +++
-    @@ -17,5 +17,9 @@
-     the number after-t.+t+and+returns+that+value. """
-  !!int "1": |-
-    ---
-    +++
-    @@ -19,6 +19,7 @@
-     you reach the+first "t" character. Isolate
-  !!int "2": |-
-    ---
-    +++
-    @@ -34,12 +34,12 @@
-     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
-  !!int "3": |-
-    ---
-    +++
-    @@ -11,19 +11,26 @@
-     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next find the sting that contains a-number-and-eliminate-the-'t'-in-it,+number, convert it to
-  !!int "4": |-
-    ---
-    +++
-    @@ -11,6 +11,38 @@
-     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next+find+the+sting+that+contains+a+number,+convert+it+to+a+float,+and+add+it+to+running+total. output this+total """
-  !!int "5": |-
-    ---
-    +++
-    @@ -18,11 +18,33 @@
-     type cast the-values+value to-floats+float.+Then+move+to+the+next+string+in+the+list+and+repeat.+Once+the+end+at+the+end+of+the+list and add+all+removed values together. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -10,14 +10,11 @@
-     number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
-  !!int "7": |-
-    ---
-    +++
-    @@ -9,24 +9,16 @@
-     split each string-on+by+\.+find the-'\'-character.-in-the-new-list-of-3-strings,-take-the-string-in-the-3rd-position,+sting+that+contains+a+number+and eliminate the 't'
-  !!int "8": |-
-    ---
-    +++
-    @@ -19,10 +19,8 @@
-     "\" characters. When-the-number-of-"\"+that+count is 2, isolate
-  !!int "9": |-
-    ---
-    +++
-    @@ -1,7 +1,19 @@
-     def readingIceCream(lines): """-Returns+Multiplies+the+number+of+letters+in+the+word+before+the+first+\+by the number after
-  !!int "10": |-
-    ---
-    +++
-    @@ -15,14 +15,21 @@
-     in the string,-type+and+store+in+a+new+list.+Type cast+the+new+list to-an-integer+floats and-then add-them+values together. """
-  !!int "11": |-
-    ---
-    +++
-    @@ -1,14 +1,18 @@
-     def readingIceCream(lines): """-Starting+For+each+list+entry,+start at the end of-each-list-entry,+the+corresponding+string, parse backwards until
-  !!int "12": |-
-    ---
-    +++
-    @@ -7,11 +7,8 @@
-     appears after the-"ice-cream\t"-or-"frozen-yogurt\t"+final+"t" of each object
-  !!int "13": |-
-    ---
-    +++
-    @@ -22,4 +22,12 @@
-     in the element.+the+sum+should+not+be+limited+to+integers """
-  !!int "14": |-
-    ---
-    +++
-    @@ -1,17 +1,26 @@
-     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
-  !!int "15": |-
-    ---
-    +++
-    @@ -29,17 +29,32 @@
-     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
-  !!int "16": |-
-    ---
-    +++
     @@ -47,4 +47,11 @@
      of each string.+The+value+can+be+integers+or+floats. """
-  !!int "17": |-
-    ---
-    +++
-    @@ -12,7 +12,12 @@
-     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
-  !!int "18": |-
-    ---
-    +++
-    @@ -10,14 +10,12 @@
-     the string and-keep-track-of-the-number-of+increase+count+after+each "\"-characters.+character. When that count
-  !!int "19": |-
-    ---
-    +++
-    @@ -11,38 +11,6 @@
-     string by \.-for-each-new-string,-if-it-starts-with-t,-eliminate-the-t.-next-find-the-sting-that-contains-a-number,-convert-it-to-a-float,-and-add-it-to-running-total. output this-total """
-  !!int "20": |-
+  !!int "1": |-
     ---
     +++
     @@ -9,25 +9,50 @@
      through the string-until-after+and+keep+track+of the-2nd+number+of "\"-character.+characters.+When+the+number+of+"\"+is+2,+isolate+the+rest+of+the+string. Then-return+isolate the-integer-following-the-"t"-character.+remainder+of+that+string,+starting+at+index+1.+Convert+this+string+to+a+float. Keep track of the-integer+float for each entry
-  !!int "21": |-
+  !!int "2": |-
+    ---
+    +++
+    @@ -19,10 +19,8 @@
+     "\" characters. When-the-number-of-"\"+that+count is 2, isolate
+  !!int "3": |-
+    ---
+    +++
+    @@ -10,14 +10,12 @@
+     the string and-keep-track-of-the-number-of+increase+count+after+each "\"-characters.+character. When that count
+  !!int "4": |-
     ---
     +++
     @@ -1,66 +1,53 @@
      def readingIceCream(lines): """-For+Starting+at+the+end+of each-list-entry,+string+input, parse-through+backwards+until+you+reach+the+"t"+character.+Isolate the string-and-increase-count-after-each-"\"-character.-When-that-count-is-2,-isolate+from the-rest+"t"+character+until+the+end of the-string.-Then-isolate-the-remainder-of+entry.+Convert that-string,-starting-at-index-1.-Convert-this string to a-float.-Keep-track+float,+then+add+all of the-float+floats for each entry+together and-add-them-all-together,-returning+return the-sum-for-each-list+total. """
-  !!int "22": |-
+  !!int "5": |-
     ---
     +++
-    @@ -14,22 +14,23 @@
-     t in the-string+string, type cast the value to float.-Then-move+Move to the next string in the-list+list,+if+exists and repeat. Once@@ -44,7 +45,11 @@
-     and add all-removed values+that+were+cast+to+float together. """
-  !!int "23": |-
+    @@ -7,8 +7,8 @@
+     end of each-string-input,+list+entry, parse backwards until
+  !!int "6": |-
     ---
     +++
-    @@ -7,7 +7,7 @@
-     in list, adds-number+float directly after the
-  !!int "24": |-
+    @@ -1,14 +1,18 @@
+     def readingIceCream(lines): """-Starting+For+each+list+entry,+start at the end of-each-list-entry,+the+corresponding+string, parse backwards until
+  !!int "7": |-
     ---
     +++
-    @@ -20,7 +20,7 @@
-     should be a-number+double and add it
-  !!int "25": |-
+    @@ -19,6 +19,7 @@
+     you reach the+first "t" character. Isolate
+  !!int "8": |-
     ---
     +++
-    @@ -2,12 +2,16 @@
-     readingIceCream(lines): """ Convert-what+all+that appears after the-last-t+"ice+cream\t"+or+"frozen+yogurt\t" of each object@@ -15,13 +19,20 @@
-     the list into-numbers,+a+float,+make+a+new+list+of+those+floats, and-then find the sum of-those-numbers+that+list """
-  !!int "26": |-
+    @@ -22,4 +22,12 @@
+     in the element.+the+sum+should+not+be+limited+to+integers """
+  !!int "9": |-
     ---
     +++
-    @@ -3,7 +3,7 @@
-     """ take the-integer+float at the end
-  !!int "27": |-
-    ---
-    +++
-    @@ -14,18 +14,11 @@
-     t in the-string,-and-store-in-a-new-list.-Type+string+type cast the-new-list+values to floats and
-  !!int "28": |-
+    @@ -25,9 +25,8 @@
+     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
+  !!int "10": |-
     ---
     +++
     @@ -2,9 +2,10 @@
      readingIceCream(lines): """ Convert-all+the+numbers that-appears+appear after the last@@ -16,14 +17,13 @@
      the list into-a-float,+integers, and then find the sum of-the-floats+those+integers """
-  !!int "29": |-
-    ---
-    +++
-    @@ -25,9 +25,8 @@
-     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
-  !!int "30": |-
+  !!int "11": |-
     ---
     +++
     @@ -2,10 +2,8 @@
      readingIceCream(lines): """ Convert-the-numbers-that-appear+what+appears after the last@@ -17,7 +15,7 @@
      the list into-integers,+numbers, and then find@@ -25,5 +23,5 @@
      sum of those-integers+numbers """
+  !!int "12": |-
+    ---
+    +++
+    @@ -2,12 +2,16 @@
+     readingIceCream(lines): """ Convert-what+all+that appears after the-last-t+"ice+cream\t"+or+"frozen+yogurt\t" of each object@@ -15,13 +19,20 @@
+     the list into-numbers,+a+float,+make+a+new+list+of+those+floats, and-then find the sum of-those-numbers+that+list """
+  !!int "13": |-
+    ---
+    +++
+    @@ -7,11 +7,8 @@
+     appears after the-"ice-cream\t"-or-"frozen-yogurt\t"+final+"t" of each object
+  !!int "14": |-
+    ---
+    +++
+    @@ -15,14 +15,21 @@
+     in the string,-type+and+store+in+a+new+list.+Type cast+the+new+list to-an-integer+floats and-then add-them+values together. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -14,18 +14,11 @@
+     t in the-string,-and-store-in-a-new-list.-Type+string+type cast the-new-list+values to floats and
+  !!int "16": |-
+    ---
+    +++
+    @@ -18,11 +18,33 @@
+     type cast the-values+value to-floats+float.+Then+move+to+the+next+string+in+the+list+and+repeat.+Once+the+end+at+the+end+of+the+list and add+all+removed values together. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -14,22 +14,23 @@
+     t in the-string+string, type cast the value to float.-Then-move+Move to the next string in the-list+list,+if+exists and repeat. Once@@ -44,7 +45,11 @@
+     and add all-removed values+that+were+cast+to+float together. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -12,7 +12,12 @@
+     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
+  !!int "19": |-
+    ---
+    +++
+    @@ -10,14 +10,11 @@
+     number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
+  !!int "20": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     in list, adds-number+float directly after the
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,17 +1,26 @@
+     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
+  !!int "22": |-
+    ---
+    +++
+    @@ -3,7 +3,7 @@
+     """ take the-integer+float at the end
+  !!int "23": |-
+    ---
+    +++
+    @@ -1,7 +1,19 @@
+     def readingIceCream(lines): """-Returns+Multiplies+the+number+of+letters+in+the+word+before+the+first+\+by the number after
+  !!int "24": |-
+    ---
+    +++
+    @@ -17,5 +17,9 @@
+     the number after-t.+t+and+returns+that+value. """
+  !!int "25": |-
+    ---
+    +++
+    @@ -20,7 +20,7 @@
+     should be a-number+double and add it
+  !!int "26": |-
+    ---
+    +++
+    @@ -34,12 +34,12 @@
+     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
+  !!int "27": |-
+    ---
+    +++
+    @@ -29,17 +29,32 @@
+     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
+  !!int "28": |-
+    ---
+    +++
+    @@ -9,24 +9,16 @@
+     split each string-on+by+\.+find the-'\'-character.-in-the-new-list-of-3-strings,-take-the-string-in-the-3rd-position,+sting+that+contains+a+number+and eliminate the 't'
+  !!int "29": |-
+    ---
+    +++
+    @@ -11,19 +11,26 @@
+     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next find the sting that contains a-number-and-eliminate-the-'t'-in-it,+number, convert it to
+  !!int "30": |-
+    ---
+    +++
+    @@ -11,38 +11,6 @@
+     string by \.-for-each-new-string,-if-it-starts-with-t,-eliminate-the-t.-next-find-the-sting-that-contains-a-number,-convert-it-to-a-float,-and-add-it-to-running-total. output this-total """
   !!int "31": |-
     ---
     +++
-    @@ -7,8 +7,8 @@
-     end of each-string-input,+list+entry, parse backwards until
+    @@ -11,6 +11,38 @@
+     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next+find+the+sting+that+contains+a+number,+convert+it+to+a+float,+and+add+it+to+running+total. output this+total """
 "nodes":
   !!int "0":
     "stderr":
@@ -174,7 +174,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      17
+      24
     "stdout":
     - ""
     - |
@@ -189,7 +189,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      16
+      0
     "stdout":
     - |
       36.5
@@ -198,7 +198,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      7
+      6
   !!int "2":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
@@ -214,7 +214,7 @@
       , line 11, in readingIceCream\n    total += int(line[index + 1:])\nValueError:\
       \ invalid literal for int() with base 10: 'y\tfrozen yogurt\t0'\n"
     "stderr_id": !!int |-
-      15
+      11
     "stdout":
     - ""
     - ""
@@ -227,7 +227,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      16
+      0
     "stdout":
     - |
       0
@@ -236,7 +236,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      3
   !!int "4":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
@@ -246,7 +246,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      18
+      5
     "stdout":
     - ""
     - |
@@ -254,7 +254,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "5":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
@@ -264,7 +264,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      20
+      14
     "stdout":
     - ""
     - |
@@ -272,7 +272,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "6":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
@@ -282,7 +282,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      10
     "stdout":
     - ""
     - |
@@ -290,7 +290,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "7":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n\
@@ -300,7 +300,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      13
+      15
     "stdout":
     - ""
     - |
@@ -308,7 +308,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "8":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
@@ -318,7 +318,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      21
+      6
     "stdout":
     - ""
     - |
@@ -333,7 +333,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      16
+      0
     "stdout":
     - |
       34
@@ -352,7 +352,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      12
+      23
     "stdout":
     - ""
     - |
@@ -360,7 +360,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "11":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
@@ -370,7 +370,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      21
     "stdout":
     - ""
     - |
@@ -388,7 +388,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      25
     "stdout":
     - ""
     - |
@@ -412,7 +412,7 @@
       , line 8, in readingIceCream\n    iceCream.append(float(line.split(\"\t\")[1]))\n\
       ValueError: could not convert string to float: 'frozen yogurt'\n"
     "stderr_id": !!int |-
-      14
+      3
     "stdout":
     - ""
     - ""
@@ -428,7 +428,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      22
+      20
     "stdout":
     - ""
     - |
@@ -436,7 +436,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      6
+      2
   !!int "15":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
@@ -452,7 +452,7 @@
       , line 8, in readingIceCream\n    total += float(line)\nValueError: could not\
       \ convert string to float: 'sal'\n"
     "stderr_id": !!int |-
-      25
+      4
     "stdout":
     - ""
     - ""
@@ -474,7 +474,7 @@
       , line 11, in readingIceCream\n    line = float(line)\nValueError: could not\
       \ convert string to float: 'sal'\n"
     "stderr_id": !!int |-
-      4
+      13
     "stdout":
     - ""
     - ""
@@ -496,7 +496,7 @@
       , line 9, in readingIceCream\n    total += float(line)\nValueError: could not\
       \ convert string to float: 'sal'\n"
     "stderr_id": !!int |-
-      26
+      9
     "stdout":
     - ""
     - ""
@@ -518,7 +518,7 @@
       , line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError:\
       \ invalid literal for int() with base 10: 'frozen yogurt'\n"
     "stderr_id": !!int |-
-      23
+      18
     "stdout":
     - ""
     - ""
@@ -534,7 +534,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      7
+      19
     "stdout":
     - ""
     - |
@@ -558,7 +558,7 @@
       , line 7, in readingIceCream\n    total += float(line)\nValueError: could not\
       \ convert string to float: 'salty\tfrozen yogurt\t0'\n"
     "stderr_id": !!int |-
-      9
+      22
     "stdout":
     - ""
     - ""
@@ -574,7 +574,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      24
+      26
     "stdout":
     - ""
     - |
@@ -598,7 +598,7 @@
       , line 7, in readingIceCream\n    return int(line.split(\" \")[1])\nValueError:\
       \ invalid literal for int() with base 10: 'yogurt\t0'\n"
     "stderr_id": !!int |-
-      8
+      17
     "stdout":
     - ""
     - ""
@@ -611,7 +611,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      16
+      0
     "stdout":
     - |
       None
@@ -620,7 +620,7 @@
     - |
       None
     "stdout_id": !!int |-
-      5
+      7
   !!int "24":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
@@ -636,7 +636,7 @@
       , line 10, in readingIceCream\n    return int(line[0]) * int(line[-1])\nValueError:\
       \ invalid literal for int() with base 10: 'salty\tfrozen'\n"
     "stderr_id": !!int |-
-      11
+      7
     "stdout":
     - ""
     - ""
@@ -652,7 +652,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      2
     "stdout":
     - ""
     - |
@@ -670,7 +670,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      10
+      8
     "stdout":
     - ""
     - |
@@ -688,7 +688,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      16
     "stdout":
     - ""
     - |
@@ -703,7 +703,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      16
+      0
     "stdout":
     - |
       36.5
@@ -712,7 +712,7 @@
     - |
       0
     "stdout_id": !!int |-
-      3
+      5
   !!int "29":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n\
@@ -728,7 +728,7 @@
       , line 8, in readingIceCream\n    line = line[2]\nIndexError: list index out\
       \ of range\n"
     "stderr_id": !!int |-
-      19
+      12
     "stdout":
     - ""
     - ""
@@ -747,7 +747,7 @@
       \ yogurt\t0\"]))\nIndentationError: expected an indented block after 'for' statement\
       \ on line 5\n"
     "stderr_id": !!int |-
-      6
+      1
     "stdout":
     - ""
     - ""

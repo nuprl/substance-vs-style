@@ -5,98 +5,98 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 8,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 10,
             "hover": "stdout:\n{}\n\n{}\n\n{'it': 3}\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 1
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    wordDict[word] = (i\n                     ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    wordDict[word] = (i\n                     ^\nSyntaxError: '(' was never closed\n\n  File \"/tmp/file.py\", line 14\n    wordDict[word] = (i\n                     ^\nSyntaxError: '(' was never closed\n",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 9,
+            "stdout_id": 8,
             "hover": "stdout:\n{'tea': 2}\n\n{}\n\n{'it': 3}\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 10,
+            "stdout_id": 6,
             "hover": "stdout:\n{'tea': (2, 0)}\n\n{}\n\n{'it': (3, 0)}\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 5, in findHorizontals\n    puzzle = puzzle.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 5, in findHorizontals\n    puzzle = puzzle.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(findHorizontals([\"as\", \"be\", \"sa\", \"it\"],\n  File \"/tmp/file.py\", line 5, in findHorizontals\n    puzzle = puzzle.split()\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "red",
             "id": 5
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n{'tea': 'teaz'}\n\n{}\n\n{'it': 'it'}\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 6
         },
         {
             "stderr_id": 0,
-            "stdout_id": 6,
+            "stdout_id": 3,
             "hover": "stdout:\n{'cat': 1, 'tea': 1}\n\n{}\n\n{'it': 1}\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 7
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    if word not in word\n                       ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if word not in word\n                       ^\nSyntaxError: expected ':'\n\n  File \"/tmp/file.py\", line 12\n    if word not in word\n                       ^\nSyntaxError: expected ':'\n",
             "color": "grey",
             "id": 8
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 9,
             "hover": "stdout:\n{'tea': [2]}\n\n{}\n\n{'it': [3]}\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 9
         },
         {
             "stderr_id": 0,
-            "stdout_id": 7,
+            "stdout_id": 2,
             "hover": "stdout:\n[{'word': 'tea', 'start': [2, 0], 'end': [2, 2]}]\n\n[{'word': 'it', 'start': [3, 0], 'end': [3, 1]}]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 10
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 7,
             "hover": "stdout:\n{'tea': 1}\n\n{}\n\n{'it': 1}\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 11
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if isSubstring(puzzle[i],wordList[j]):\nNameError: name 'isSubstring' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if isSubstring(puzzle[i],wordList[j]):\nNameError: name 'isSubstring' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"as\", \"be\", \"sa\", \"it\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if isSubstring(puzzle[i],wordList[j]):\nNameError: name 'isSubstring' is not defined\n",
             "color": "red",
             "id": 12
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if checkWord(word,puzzle[i]):\nNameError: name 'checkWord' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"ztac\",\"zzzz\",\"teaz\",\"part\",\"zzzz\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if checkWord(word,puzzle[i]):\nNameError: name 'checkWord' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(findHorizontals([\"as\", \"be\", \"sa\", \"it\"],\n  File \"/tmp/file.py\", line 8, in findHorizontals\n    if checkWord(word,puzzle[i]):\nNameError: name 'checkWord' is not defined\n",
             "color": "blue",
             "id": 13
@@ -105,7 +105,7 @@
     "adjacency": [
         [
             {
-                "diff": 6,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -114,7 +114,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -125,7 +125,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -134,7 +134,7 @@
                 "key": 0
             },
             {
-                "diff": 11,
+                "diff": 2,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -146,7 +146,7 @@
         [],
         [
             {
-                "diff": 7,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student32",
@@ -155,7 +155,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 9,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student70",
@@ -164,7 +164,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 11,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student70",
@@ -173,7 +173,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student78",
@@ -184,7 +184,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student49",
@@ -196,7 +196,7 @@
         [],
         [
             {
-                "diff": 10,
+                "diff": 6,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student62",
@@ -208,7 +208,7 @@
         [],
         [
             {
-                "diff": 13,
+                "diff": 7,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student66",
@@ -220,7 +220,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 8,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student67",
@@ -231,7 +231,7 @@
         ],
         [
             {
-                "diff": 12,
+                "diff": 10,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student70",
@@ -243,7 +243,7 @@
         [],
         [
             {
-                "diff": 9,
+                "diff": 13,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student78",

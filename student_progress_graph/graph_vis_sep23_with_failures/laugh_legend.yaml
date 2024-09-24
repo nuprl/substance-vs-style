@@ -1,339 +1,339 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -25,4 +25,14 @@
+     one more 'a'+and+have+another+'ha'+with+the+original+length+of+'a' """
   !!int "1": |-
     ---
     +++
-    @@ -31,5 +31,11 @@
-     for each word-after.+after+until+count+of+a+=+1. """
+    @@ -1,43 +1,32 @@
+     def laugh(size): """-The-function-will-repeat-the-word-"ha"-based+Based on the+inputted+number,+will+return+a+laugh size-inputted.-Each-time-the-word-"ha"-is-printed,+where the number of-"a"s-in+"a"'s+starts+with the-"ha"-will-start-with-its initial size, then-decrease+decreases by one for each-repetition.+additional+laugh. """
   !!int "2": |-
     ---
     +++
-    @@ -4,7 +4,7 @@
-     This function uses-size+laugh to determine the
+    @@ -11,22 +11,40 @@
+     a laugh size+repeating+the+word+"ha"+that+number+of+times.+Based+on+the+number+inputted,+the+function+will+produce+the+set+of+characters where the number of "a"'s-starts-with+following the-initial-size,-then-decreases+"h"+will+decrease by one for each-additional-laugh.+"ha". """
   !!int "3": |-
+    ---
+    +++
+    @@ -5,46 +5,41 @@
+     on the inputted-number,+size,+the+function will return a laugh-size+size, repeating the word "ha"-that-number-of-times.-Based-on-the-number-inputted,-the-function-will-produce-the-set-of-characters-where the number of-"a"'s-following+times+inputted.+The+number+of+"a"s+in the-"h"+"ha" will+start+with+its+initial+size,+then decrease by one for each-"ha".+repetition. """
+  !!int "4": |-
     ---
     +++
     @@ -6,6 +6,20 @@
      prints "ha" for-any-value+an+input+of+1.+This+function+prints+an+additional+"haa"+for+an+input+greater+than+1 """
-  !!int "4": |-
-    ---
-    +++
-    @@ -28,7 +28,7 @@
-     i in range-size+size-2 where i is@@ -69,10 +69,13 @@
-     laugh, and then+after+the+loop,+append+'ha'+and laugh is returned-after-the-loop """
   !!int "5": |-
     ---
     +++
-    @@ -15,14 +15,13 @@
-     lower amount of-'a'-until-it-reaches-only-1-'a'-after-the-'h'+'a'.+Function+also+adds+a+space+between+every+'ha' """
+    @@ -4,22 +4,48 @@
+     This function prints-"ha"-for an-input+'h'+and+adds+the+corresponding+amount of-1.-This-function+a's+as+the+value+provided.+It+then+adds+a+space+to+the+output.+It+subtracts+1+from+the+value+and prints-an-additional-"haa"-for-an-input-greater-than-1+another+h+with+less+a's+and+repeats+until+the+value+of+the+number+is+0 """
   !!int "6": |-
+    ---
+    +++
+    @@ -4,48 +4,6 @@
+     This function prints-an-'h'-and-adds-the-corresponding-amount-of-a's-as-the-value-provided.-It-then-adds-a-space-to-the-output.-It-subtracts-1-from-the-value-and-prints-another-h-with-less-a's-and-repeats-until-the-value-of-the-number-is-0+"ha"+once """
+  !!int "7": |-
+    ---
+    +++
+    @@ -4,6 +4,44 @@
+     This function prints-"ha"-once+'ha'+for+every+input+greater+than+zero.+If+the+input+is+greater+than+1+it+prints+an+h+with+an+increasing+amount+of+a's+for+every+value+from+1+until+the+input+until+it+reaches+the+value+of+the+input. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -4,44 +4,11 @@
+     This function prints-'ha'+ha for every input greater than zero.-If-the-input-is-greater-than-1-it-prints-an-h-with-an-increasing-amount-of-a's-for-every-value-from-1-until-the-input-until-it-reaches-the-value-of-the-input. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -4,7 +4,7 @@
+     This function prints-ha+"ha" for every input
+  !!int "10": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     "ha" for every-input+value greater than zero.
+  !!int "11": |-
+    ---
+    +++
+    @@ -4,11 +4,7 @@
+     This function prints-"ha"-for-every-value-greater-than-zero.+a+string+'ha' """
+  !!int "12": |-
+    ---
+    +++
+    @@ -4,7 +4,5 @@
+     This function prints-a-string-'ha'+ha """
+  !!int "13": |-
     ---
     +++
     @@ -4,5 +4,6 @@
      This function prints-ha+a+word """
-  !!int "7": |-
+  !!int "14": |-
+    ---
+    +++
+    @@ -4,6 +4,12 @@
+     This function prints-a-word+ha+times+the+input+value+with+spaces+between """
+  !!int "15": |-
+    ---
+    +++
+    @@ -5,11 +5,4 @@
+     function prints ha-times-the-input-value-with-spaces-between """
+  !!int "16": |-
+    ---
+    +++
+    @@ -4,6 +4,9 @@
+     This function prints-a-word+"ha"+times+the+value+inputted """
+  !!int "17": |-
+    ---
+    +++
+    @@ -5,7 +5,11 @@
+     function prints "ha"+the+amount+of times+as the value inputted
+  !!int "18": |-
+    ---
+    +++
+    @@ -5,12 +5,24 @@
+     function prints "ha"+for+any+input.+This+function+prints+an+h+with+increasing+amounts+of+a+if the-amount-of-times-as-the-value-inputted+input+is+larger+than+1. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -6,23 +6,31 @@
+     prints "ha" for-any-input.+a+value+of+1. This function prints-an-h-with-increasing-amounts+"haaaa+haaa+haa+ha"+for+a+value of+4.+This+function+prints+"haaa+haa+ha"+for a-if-the-input-is-larger-than-1.+value+of+3. """
+  !!int "20": |-
+    ---
+    +++
+    @@ -12,25 +12,25 @@
+     1. This function-prints-"haaaa-haaa-haa-ha"-for-a-value+uses+size+to+determine+the+amount of-4.-This-function-prints-"haaa-haa-ha"-for-a-value+times+ha+is+printed+and+the+length of-3.+a's+that+appear+after+the+h. """
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,15 +1,6 @@
+     def laugh(size): """-This-function-prints-"ha"-for-a-value-of-1. This function uses@@ -20,7 +11,7 @@
+     amount of times-ha+"ha" is printed and
+  !!int "22": |-
+    ---
+    +++
+    @@ -4,7 +4,7 @@
+     This function uses-size+laugh to determine the
+  !!int "23": ""
+  !!int "24": |-
+    ---
+    +++
+    @@ -11,7 +11,7 @@
+     amount of times-"ha"+ha is printed and
+  !!int "25": |-
+    ---
+    +++
+    @@ -4,6 +4,9 @@
+     This function uses+the+size+of laugh to determine@@ -14,14 +17,4 @@
+     ha is printed-and-the-length-of-a's-that-appear-after-the-h. """
+  !!int "26": |-
+    ---
+    +++
+    @@ -16,5 +16,35 @@
+     times ha is-printed+printed.+This+function+creates+a+loop+in+which+it+prints+an+h+with+a's+the+size+of+laugh+then+subtracts+1+from+the+size+and+prints+an+h+with+less+a's """
+  !!int "27": |-
     ---
     +++
     @@ -14,7 +14,8 @@
      amount of times-ha+an+h is printed. This@@ -30,10 +31,13 @@
      h with a's+after+it the size of-laugh+laugh.+It then subtracts 1@@ -46,5 +50,15 @@
      h with less-a's+a's.+It+does+this+until+it+reaches+a+value+of+1 """
-  !!int "8": |-
-    ---
-    +++
-    @@ -7,7 +7,8 @@
-     integer and write-'ha'+'ha+' as many times
-  !!int "9": |-
-    ---
-    +++
-    @@ -30,10 +30,17 @@
-     occurrences of "a",-etc.-Removes-the-last+etc.,+but+with " h"+removed+at+the+end+of+the+final+string. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -6,11 +6,14 @@
-     an integer and-add-that-many-'a'+write+a+decreasing+amount+of+'a's+next to-a-string+an+'h' """
-  !!int "11": |-
-    ---
-    +++
-    @@ -7,9 +7,11 @@
-     integer and write+'ha'+as+many+times+as the-string-'h'+'a'-* integer """
-  !!int "12": |-
+  !!int "28": |-
     ---
     +++
     @@ -3,19 +3,20 @@
      """ take in-a-number+an+integer and write the-word-'ha'+string+'h'+'a', but-with+add as many-'a's+'a' as the-number+integer+amount """
-  !!int "13": |-
-    ---
-    +++
-    @@ -6,23 +6,31 @@
-     prints "ha" for-any-input.+a+value+of+1. This function prints-an-h-with-increasing-amounts+"haaaa+haaa+haa+ha"+for+a+value of+4.+This+function+prints+"haaa+haa+ha"+for a-if-the-input-is-larger-than-1.+value+of+3. """
-  !!int "14": |-
-    ---
-    +++
-    @@ -19,45 +19,55 @@
-     called laugh, and-uses+then+executes a for loop-to-append+with+i+in+range+size+where+i+is+decreased+by+one+after+each+iteration,+and+the+contents+of+the+for+loop+is+that an h followed by-size+i+number+of a's and-then a-space,+space+is+appended+to+laugh, and then-an-h-followed-by-size-1-a's-and-then-a-space,-etc.-until-it-appends-an-h-followed-by-one-a-all-into laugh+is+returned+after+the+loop """
-  !!int "15": |-
-    ---
-    +++
-    @@ -5,7 +5,11 @@
-     function prints "ha"+the+amount+of times+as the value inputted
-  !!int "16": |-
-    ---
-    +++
-    @@ -1,43 +1,32 @@
-     def laugh(size): """-The-function-will-repeat-the-word-"ha"-based+Based on the+inputted+number,+will+return+a+laugh size-inputted.-Each-time-the-word-"ha"-is-printed,+where the number of-"a"s-in+"a"'s+starts+with the-"ha"-will-start-with-its initial size, then-decrease+decreases by one for each-repetition.+additional+laugh. """
-  !!int "17": |-
-    ---
-    +++
-    @@ -40,4 +40,11 @@
-     are not "ha".+Returns+""+if+input+value+is+0. """
-  !!int "18": |-
-    ---
-    +++
-    @@ -7,7 +7,7 @@
-     "ha" for every-input+value greater than zero.
-  !!int "19": |-
-    ---
-    +++
-    @@ -31,14 +31,4 @@
-     of "a", etc.-Until-the-last-two-characters-in-the-string-are-"ha" """
-  !!int "20": |-
-    ---
-    +++
-    @@ -22,14 +22,20 @@
-     occurrences of "a",-followed-by-decreasing-natural-number+plus+"+h"+plus+n-1+occurrences of-n+"a",+until+there+are+0 occurrences of "a"+left """
-  !!int "21": |-
-    ---
-    +++
-    @@ -4,11 +4,7 @@
-     This function prints-"ha"-for-every-value-greater-than-zero.+a+string+'ha' """
-  !!int "22": |-
-    ---
-    +++
-    @@ -11,7 +11,7 @@
-     amount of times-"ha"+ha is printed and
-  !!int "23": |-
-    ---
-    +++
-    @@ -31,10 +31,16 @@
-     followed by i+number a's for each-0<i<=size,+0<i<=size+starting+with+i+=+size, append a space
-  !!int "24": |-
-    ---
-    +++
-    @@ -16,5 +16,35 @@
-     times ha is-printed+printed.+This+function+creates+a+loop+in+which+it+prints+an+h+with+a's+the+size+of+laugh+then+subtracts+1+from+the+size+and+prints+an+h+with+less+a's """
-  !!int "25": |-
-    ---
-    +++
-    @@ -38,7 +38,7 @@
-     current number of-'ha's+"ha"s left to produce.@@ -50,4 +50,10 @@
-     between the ha's+but+not+at+the+very+end. """
-  !!int "26": |-
-    ---
-    +++
-    @@ -4,6 +4,9 @@
-     This function prints-a-word+"ha"+times+the+value+inputted """
-  !!int "27": |-
-    ---
-    +++
-    @@ -40,11 +40,4 @@
-     are not "ha".-Returns-""-if-input-value-is-0. """
-  !!int "28": |-
-    ---
-    +++
-    @@ -1,7 +1,18 @@
-     def laugh(size): """-The+While+the+last+two+characters+in+the+string+are+not+"ha",+the function repeats the
   !!int "29": |-
     ---
     +++
-    @@ -31,8 +31,7 @@
-     of "a", etc.-Doesn't-add+Removes the last "
+    @@ -9,14 +9,7 @@
+     write the string-'h'+'a',-but-add-as-many-'a'-as-the+'h'+'a'+* integer-amount """
   !!int "30": |-
     ---
     +++
-    @@ -5,46 +5,41 @@
-     on the inputted-number,+size,+the+function will return a laugh-size+size, repeating the word "ha"-that-number-of-times.-Based-on-the-number-inputted,-the-function-will-produce-the-set-of-characters-where the number of-"a"'s-following+times+inputted.+The+number+of+"a"s+in the-"h"+"ha" will+start+with+its+initial+size,+then decrease by one for each-"ha".+repetition. """
+    @@ -7,9 +7,11 @@
+     integer and write+'ha'+as+many+times+as the-string-'h'+'a'-* integer """
   !!int "31": |-
     ---
     +++
-    @@ -42,4 +42,12 @@
-     left to produce.+and+add+a+space+in+between+the+ha's """
+    @@ -7,7 +7,8 @@
+     integer and write-'ha'+'ha+' as many times
   !!int "32": |-
-    ---
-    +++
-    @@ -4,48 +4,6 @@
-     This function prints-an-'h'-and-adds-the-corresponding-amount-of-a's-as-the-value-provided.-It-then-adds-a-space-to-the-output.-It-subtracts-1-from-the-value-and-prints-another-h-with-less-a's-and-repeats-until-the-value-of-the-number-is-0+"ha"+once """
-  !!int "33": |-
-    ---
-    +++
-    @@ -36,5 +36,5 @@
-     when a =-1.+2. """
-  !!int "34": |-
     ---
     +++
     @@ -6,13 +6,11 @@
      an integer and-write-'ha-'-as+add+that many-times-as-the-integer+'a'+to+a+string """
-  !!int "35": |-
+  !!int "33": |-
     ---
     +++
-    @@ -4,44 +4,11 @@
-     This function prints-'ha'+ha for every input greater than zero.-If-the-input-is-greater-than-1-it-prints-an-h-with-an-increasing-amount-of-a's-for-every-value-from-1-until-the-input-until-it-reaches-the-value-of-the-input. """
-  !!int "36": |-
-    ---
-    +++
-    @@ -31,10 +31,9 @@
-     for each word-after-until-count-of+after.+Stop+when a = 1.
-  !!int "37": |-
-    ---
-    +++
-    @@ -22,25 +22,14 @@
-     occurrences of "a",-then-"-h"-plus-n-1+followed+by+decreasing+natural+number+of+n occurrences of-"a",-etc.,-but-with-"-h"-removed-at-the-end-of-the-final-string.+"a" """
-  !!int "38": |-
-    ---
-    +++
-    @@ -4,6 +4,12 @@
-     This function prints-a-word+ha+times+the+input+value+with+spaces+between """
-  !!int "39": |-
-    ---
-    +++
-    @@ -5,12 +5,24 @@
-     function prints "ha"+for+any+input.+This+function+prints+an+h+with+increasing+amounts+of+a+if the-amount-of-times-as-the-value-inputted+input+is+larger+than+1. """
-  !!int "40": |-
-    ---
-    +++
-    @@ -19,63 +19,33 @@
-     called laugh, and-then-executes+the+uses a for loop-with-i-in-range-size-2-where-i-is-decreased-by-one-after-each-iteration-and-i-starts-at-size,-and-the-contents-of-the-for-loop-is-that+to+append an h followed by i-number-of a's-and+for+each+0<i<=size,+append a space-is-appended-to-laugh,-and-then-after+before+each+h+except the-loop,-append-'ha'-and-laugh-is-returned+first+h+in+the+string """
-  !!int "41": |-
-    ---
-    +++
-    @@ -1,12 +1,6 @@
-     def laugh(size): """-The-function-repeats-the-following-process: If n is@@ -15,7 +9,10 @@
-     value, the function-returns+creates+a+string+containing "h" plus n@@ -30,12 +27,18 @@
-     occurrences of "a",+repeated until-there-are-0-occurrences+"ha"+is+the+last+part of-"a"-left+the+string.+Then+return+the+string. """
-  !!int "42": |-
-    ---
-    +++
-    @@ -5,11 +5,4 @@
-     function prints ha-times-the-input-value-with-spaces-between """
-  !!int "43": |-
-    ---
-    +++
-    @@ -17,28 +17,29 @@
-     a string with-the-ha+"ha" as many times as the input-but-also+int.+However+each+respective+"ha"+has+as+many+a's+as the+current number of-a's-is-based-on-the-number-it-is-currently-working-with+'ha's+left+to+produce. """
-  !!int "44": |-
-    ---
-    +++
-    @@ -33,8 +33,13 @@
-     word after. Stop-when-a-=-2.+after+the+last+word+in+the+string+is+ha. """
-  !!int "45": |-
-    ---
-    +++
-    @@ -30,5 +30,16 @@
-     occurrences of "a",-etc.+etc.,+and+stops+when+"ha"+is+the+last+part+of+the+string. """
-  !!int "46": |-
-    ---
-    +++
-    @@ -30,16 +30,11 @@
-     occurrences of "a",-etc.,-and-stops-when-"ha"-is+etc.+Doesn't+add the last-part-of-the-string.+"+h" """
-  !!int "47": |-
+    @@ -6,11 +6,14 @@
+     an integer and-add-that-many-'a'+write+a+decreasing+amount+of+'a's+next to-a-string+an+'h' """
+  !!int "34": |-
     ---
     +++
     @@ -12,13 +12,19 @@
      as an input,+creates+an+empty+string+called+laugh, and uses a for loop to-print+append an h followed@@ -44,11 +50,14 @@
      etc. until it-prints-a+appends+an h followed by one a+all+into+laugh """
-  !!int "48": |-
+  !!int "35": |-
+    ---
+    +++
+    @@ -19,45 +19,55 @@
+     called laugh, and-uses+then+executes a for loop-to-append+with+i+in+range+size+where+i+is+decreased+by+one+after+each+iteration,+and+the+contents+of+the+for+loop+is+that an h followed by-size+i+number+of a's and-then a-space,+space+is+appended+to+laugh, and then-an-h-followed-by-size-1-a's-and-then-a-space,-etc.-until-it-appends-an-h-followed-by-one-a-all-into laugh+is+returned+after+the+loop """
+  !!int "36": |-
+    ---
+    +++
+    @@ -37,7 +37,12 @@
+     one after each-iteration,+iteration+and+i+starts+at+size, and the contents
+  !!int "37": |-
+    ---
+    +++
+    @@ -28,7 +28,7 @@
+     i in range-size+size-2 where i is@@ -69,10 +69,13 @@
+     laugh, and then+after+the+loop,+append+'ha'+and laugh is returned-after-the-loop """
+  !!int "38": |-
+    ---
+    +++
+    @@ -19,63 +19,33 @@
+     called laugh, and-then-executes+the+uses a for loop-with-i-in-range-size-2-where-i-is-decreased-by-one-after-each-iteration-and-i-starts-at-size,-and-the-contents-of-the-for-loop-is-that+to+append an h followed by i-number-of a's-and+for+each+0<i<=size,+append a space-is-appended-to-laugh,-and-then-after+before+each+h+except the-loop,-append-'ha'-and-laugh-is-returned+first+h+in+the+string """
+  !!int "39": |-
+    ---
+    +++
+    @@ -31,10 +31,16 @@
+     followed by i+number a's for each-0<i<=size,+0<i<=size+starting+with+i+=+size, append a space
+  !!int "40": |-
+    ---
+    +++
+    @@ -17,28 +17,29 @@
+     a string with-the-ha+"ha" as many times as the input-but-also+int.+However+each+respective+"ha"+has+as+many+a's+as the+current number of-a's-is-based-on-the-number-it-is-currently-working-with+'ha's+left+to+produce. """
+  !!int "41": |-
+    ---
+    +++
+    @@ -42,4 +42,12 @@
+     left to produce.+and+add+a+space+in+between+the+ha's """
+  !!int "42": |-
+    ---
+    +++
+    @@ -38,7 +38,7 @@
+     current number of-'ha's+"ha"s left to produce.@@ -50,4 +50,10 @@
+     between the ha's+but+not+at+the+very+end. """
+  !!int "43": |-
     ---
     +++
     @@ -15,17 +15,14 @@
      lower amount of-'a'.-Function-also-adds-a-space-between-every-'ha'-except+'a'+until+it+reaches+only+1+'a'+after the-last-one+'h' """
+  !!int "44": |-
+    ---
+    +++
+    @@ -15,14 +15,13 @@
+     lower amount of-'a'-until-it-reaches-only-1-'a'-after-the-'h'+'a'.+Function+also+adds+a+space+between+every+'ha' """
+  !!int "45": |-
+    ---
+    +++
+    @@ -31,5 +31,11 @@
+     for each word-after.+after+until+count+of+a+=+1. """
+  !!int "46": |-
+    ---
+    +++
+    @@ -31,10 +31,9 @@
+     for each word-after-until-count-of+after.+Stop+when a = 1.
+  !!int "47": |-
+    ---
+    +++
+    @@ -36,5 +36,5 @@
+     when a =-1.+2. """
+  !!int "48": |-
+    ---
+    +++
+    @@ -33,8 +33,13 @@
+     word after. Stop-when-a-=-2.+after+the+last+word+in+the+string+is+ha. """
   !!int "49": |-
     ---
     +++
-    @@ -1,18 +1,7 @@
-     def laugh(size): """-While-the-last-two-characters-in-the-string-are-not-"ha",-the+The function repeats the@@ -42,4 +31,14 @@
-     of "a", etc.+Until+the+last+two+characters+in+the+string+are+"ha" """
+    @@ -7,20 +7,9 @@
+     the input value,+the+function returns-a-combination-of-n-strings,-where-each-of-the-n-strings-consists-of "h" followed by@@ -28,16 +17,23 @@
+     occurrences of "a",-and-there-is+then "-"-before-each-"h"-except+h"+followed+by+n-1+occurrences+of+"a",+until the-first-"h".+last+two+characters+in+the+string+are+"ha". """
   !!int "50": |-
     ---
     +++
-    @@ -4,7 +4,7 @@
-     This function prints-ha+"ha" for every input
+    @@ -26,7 +26,10 @@
+     occurrences of "a",-until+and+repeats+this+while the last two@@ -35,5 +38,6 @@
+     the string are+not "ha". """
   !!int "51": |-
     ---
     +++
-    @@ -12,25 +12,25 @@
-     1. This function-prints-"haaaa-haaa-haa-ha"-for-a-value+uses+size+to+determine+the+amount of-4.-This-function-prints-"haaa-haa-ha"-for-a-value+times+ha+is+printed+and+the+length of-3.+a's+that+appear+after+the+h. """
+    @@ -11,21 +11,21 @@
+     function returns "h"-followed-by+plus n occurrences of-"a",+"a"+after, then " h"-followed-by+plus n-1 occurrences of-"a",+"a"+after, and repeats this
   !!int "52": |-
     ---
     +++
-    @@ -25,4 +25,14 @@
-     one more 'a'+and+have+another+'ha'+with+the+original+length+of+'a' """
+    @@ -40,4 +40,11 @@
+     are not "ha".+Returns+""+if+input+value+is+0. """
   !!int "53": |-
     ---
     +++
-    @@ -11,22 +11,40 @@
-     a laugh size+repeating+the+word+"ha"+that+number+of+times.+Based+on+the+number+inputted,+the+function+will+produce+the+set+of+characters where the number of "a"'s-starts-with+following the-initial-size,-then-decreases+"h"+will+decrease by one for each-additional-laugh.+"ha". """
+    @@ -40,11 +40,4 @@
+     are not "ha".-Returns-""-if-input-value-is-0. """
   !!int "54": |-
-    ---
-    +++
-    @@ -1,15 +1,6 @@
-     def laugh(size): """-This-function-prints-"ha"-for-a-value-of-1. This function uses@@ -20,7 +11,7 @@
-     amount of times-ha+"ha" is printed and
-  !!int "55": |-
     ---
     +++
     @@ -1,6 +1,12 @@
      def laugh(size): """+The+function+repeats+the+following+process: If n is@@ -15,8 +21,7 @@
      n occurrences of-"a"-after,+"a", then " h"@@ -24,20 +29,6 @@
      n-1 occurrences of-"a"-after,-and-repeats-this-while-the-last-two-characters-in-the-string-are-not-"ha".+"a",+etc. """
+  !!int "55": |-
+    ---
+    +++
+    @@ -1,7 +1,18 @@
+     def laugh(size): """-The+While+the+last+two+characters+in+the+string+are+not+"ha",+the function repeats the
   !!int "56": |-
     ---
     +++
-    @@ -4,6 +4,9 @@
-     This function uses+the+size+of laugh to determine@@ -14,14 +17,4 @@
-     ha is printed-and-the-length-of-a's-that-appear-after-the-h. """
+    @@ -1,18 +1,7 @@
+     def laugh(size): """-While-the-last-two-characters-in-the-string-are-not-"ha",-the+The function repeats the@@ -42,4 +31,14 @@
+     of "a", etc.+Until+the+last+two+characters+in+the+string+are+"ha" """
   !!int "57": |-
     ---
     +++
-    @@ -37,7 +37,12 @@
-     one after each-iteration,+iteration+and+i+starts+at+size, and the contents
+    @@ -31,14 +31,4 @@
+     of "a", etc.-Until-the-last-two-characters-in-the-string-are-"ha" """
   !!int "58": |-
     ---
     +++
-    @@ -4,6 +4,44 @@
-     This function prints-"ha"-once+'ha'+for+every+input+greater+than+zero.+If+the+input+is+greater+than+1+it+prints+an+h+with+an+increasing+amount+of+a's+for+every+value+from+1+until+the+input+until+it+reaches+the+value+of+the+input. """
+    @@ -30,5 +30,16 @@
+     occurrences of "a",-etc.+etc.,+and+stops+when+"ha"+is+the+last+part+of+the+string. """
   !!int "59": |-
     ---
     +++
-    @@ -11,21 +11,21 @@
-     function returns "h"-followed-by+plus n occurrences of-"a",+"a"+after, then " h"-followed-by+plus n-1 occurrences of-"a",+"a"+after, and repeats this
+    @@ -30,16 +30,11 @@
+     occurrences of "a",-etc.,-and-stops-when-"ha"-is+etc.+Doesn't+add the last-part-of-the-string.+"+h" """
   !!int "60": |-
     ---
     +++
-    @@ -4,7 +4,5 @@
-     This function prints-a-string-'ha'+ha """
+    @@ -31,8 +31,7 @@
+     of "a", etc.-Doesn't-add+Removes the last "
   !!int "61": |-
     ---
     +++
-    @@ -26,7 +26,10 @@
-     occurrences of "a",-until+and+repeats+this+while the last two@@ -35,5 +38,6 @@
-     the string are+not "ha". """
+    @@ -30,10 +30,17 @@
+     occurrences of "a",-etc.-Removes-the-last+etc.,+but+with " h"+removed+at+the+end+of+the+final+string. """
   !!int "62": |-
     ---
     +++
-    @@ -7,20 +7,9 @@
-     the input value,+the+function returns-a-combination-of-n-strings,-where-each-of-the-n-strings-consists-of "h" followed by@@ -28,16 +17,23 @@
-     occurrences of "a",-and-there-is+then "-"-before-each-"h"-except+h"+followed+by+n-1+occurrences+of+"a",+until the-first-"h".+last+two+characters+in+the+string+are+"ha". """
+    @@ -22,25 +22,14 @@
+     occurrences of "a",-then-"-h"-plus-n-1+followed+by+decreasing+natural+number+of+n occurrences of-"a",-etc.,-but-with-"-h"-removed-at-the-end-of-the-final-string.+"a" """
   !!int "63": |-
     ---
     +++
-    @@ -9,14 +9,7 @@
-     write the string-'h'+'a',-but-add-as-many-'a'-as-the+'h'+'a'+* integer-amount """
+    @@ -22,14 +22,20 @@
+     occurrences of "a",-followed-by-decreasing-natural-number+plus+"+h"+plus+n-1+occurrences of-n+"a",+until+there+are+0 occurrences of "a"+left """
   !!int "64": |-
     ---
     +++
-    @@ -4,22 +4,48 @@
-     This function prints-"ha"-for an-input+'h'+and+adds+the+corresponding+amount of-1.-This-function+a's+as+the+value+provided.+It+then+adds+a+space+to+the+output.+It+subtracts+1+from+the+value+and prints-an-additional-"haa"-for-an-input-greater-than-1+another+h+with+less+a's+and+repeats+until+the+value+of+the+number+is+0 """
+    @@ -1,12 +1,6 @@
+     def laugh(size): """-The-function-repeats-the-following-process: If n is@@ -15,7 +9,10 @@
+     value, the function-returns+creates+a+string+containing "h" plus n@@ -30,12 +27,18 @@
+     occurrences of "a",+repeated until-there-are-0-occurrences+"ha"+is+the+last+part of-"a"-left+the+string.+Then+return+the+string. """
 "nodes":
   !!int "0":
     "stderr":
@@ -341,7 +341,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaaa
@@ -350,14 +350,14 @@
     - |
       haaaa
     "stdout_id": !!int |-
-      21
+      10
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahahahaha
@@ -366,7 +366,7 @@
     - |
       hahahahaha
     "stdout_id": !!int |-
-      14
+      23
   !!int "2":
     "stderr":
     - |2
@@ -382,20 +382,20 @@
           laugh(3)
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      8
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |2+
 
@@ -404,14 +404,14 @@
     - |2+
 
     "stdout_id": !!int |-
-      25
+      1
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahhhh
@@ -420,14 +420,14 @@
     - |
       hahhh
     "stdout_id": !!int |-
-      24
+      28
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahhhh!
@@ -436,14 +436,14 @@
     - |
       hahhh!
     "stdout_id": !!int |-
-      2
+      29
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahaha
@@ -452,7 +452,7 @@
     - |
       hahaha
     "stdout_id": !!int |-
-      29
+      16
   !!int "7":
     "stderr":
     - |2
@@ -471,13 +471,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 5
     "stderr_id": !!int |-
-      7
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "8":
     "stderr":
     - |2
@@ -493,13 +493,13 @@
           print(laugh(3))
       IndentationError: expected an indented block after 'for' statement on line 7
     "stderr_id": !!int |-
-      11
+      8
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "9":
     "stderr":
     - |
@@ -539,20 +539,20 @@
         [Previous line repeated 996 more times]
       RecursionError: maximum recursion depth exceeded
     "stderr_id": !!int |-
-      10
+      11
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "10":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       None
@@ -577,13 +577,13 @@
           laugh(3)
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      12
+      9
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "12":
     "stderr":
     - |
@@ -623,20 +623,20 @@
         [Previous line repeated 996 more times]
       RecursionError: maximum recursion depth exceeded
     "stderr_id": !!int |-
-      1
+      12
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "13":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahaha
@@ -645,7 +645,7 @@
     - |
       hahahaha
     "stdout_id": !!int |-
-      17
+      22
   !!int "14":
     "stderr":
     - |
@@ -685,13 +685,13 @@
         [Previous line repeated 996 more times]
       RecursionError: maximum recursion depth exceeded
     "stderr_id": !!int |-
-      0
+      10
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "15":
     "stderr":
     - |2
@@ -707,13 +707,13 @@
           laugh(3)
       IndentationError: expected an indented block after 'else' statement on line 8
     "stderr_id": !!int |-
-      6
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "16":
     "stderr":
     - |2
@@ -732,20 +732,20 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 5
     "stderr_id": !!int |-
-      4
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "17":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahaha!
@@ -754,7 +754,7 @@
     - |
       hahaha!
     "stdout_id": !!int |-
-      8
+      20
   !!int "18":
     "stderr":
     - |2
@@ -770,13 +770,13 @@
           print(laugh(3))
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      5
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "19":
     "stderr":
     - |2
@@ -795,13 +795,13 @@
           ^
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      2
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "20":
     "stderr":
     - |2
@@ -820,20 +820,20 @@
           ^^^^^^^^^^^^^^
       SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
     "stderr_id": !!int |-
-      9
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      18
+      0
   !!int "21":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaah
@@ -842,14 +842,14 @@
     - |
       haaah
     "stdout_id": !!int |-
-      26
+      12
   !!int "22":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahah
@@ -858,53 +858,53 @@
     - |
       hahahah
     "stdout_id": !!int |-
-      1
+      21
   !!int "23":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - "hahahaha hahaha haha ha \n"
     - "ha \n"
     - "hahaha haha ha \n"
     "stdout_id": !!int |-
-      15
+      18
   !!int "24":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - "h ha haa haaa \n"
     - "h \n"
     - "h ha haa \n"
     "stdout_id": !!int |-
-      30
+      4
   !!int "25":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - "haaaa haaa haa ha \n"
     - "ha \n"
     - "haaa haa ha \n"
     "stdout_id": !!int |-
-      4
+      7
   !!int "26":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haa ha ha
@@ -913,14 +913,14 @@
     - |
       ha ha
     "stdout_id": !!int |-
-      12
+      5
   !!int "27":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hi hii  hiii   hiiii
@@ -929,14 +929,14 @@
     - |
       hi hii  hiii
     "stdout_id": !!int |-
-      19
+      30
   !!int "28":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaa haaa haa ha
@@ -945,14 +945,14 @@
     - |
       haaa haa ha
     "stdout_id": !!int |-
-      13
+      6
   !!int "29":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |2
        ha haha hahaha !
@@ -961,14 +961,14 @@
     - |2
        ha haha !
     "stdout_id": !!int |-
-      28
+      2
   !!int "30":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaahaaahaaha
@@ -977,14 +977,14 @@
     - |
       haaahaaha
     "stdout_id": !!int |-
-      16
+      13
   !!int "31":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaa haaa haa ha h
@@ -993,14 +993,14 @@
     - |
       haaa haa ha h
     "stdout_id": !!int |-
-      27
+      8
   !!int "32":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaaa haaaa haaa haa ha
@@ -1009,14 +1009,14 @@
     - |
       haaaa haaa haa ha
     "stdout_id": !!int |-
-      0
+      11
   !!int "33":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahaha   hahahaha
@@ -1025,14 +1025,14 @@
     - |
       hahaha  hahaha
     "stdout_id": !!int |-
-      5
+      17
   !!int "34":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahahhhhh
@@ -1041,14 +1041,14 @@
     - |
       hahahahhhh
     "stdout_id": !!int |-
-      9
+      27
   !!int "35":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaahhaaahhaahhahh
@@ -1057,14 +1057,14 @@
     - |
       haaahhaahhahh
     "stdout_id": !!int |-
-      6
+      15
   !!int "36":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahahhahahahhahahahhahahhahahhahha
@@ -1073,14 +1073,14 @@
     - |
       hahahahhahahhahahhahha
     "stdout_id": !!int |-
-      22
+      26
   !!int "37":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahahahahahaha
@@ -1089,14 +1089,14 @@
     - |
       hahahahahahaha
     "stdout_id": !!int |-
-      7
+      24
   !!int "38":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaa haaa haa ha ha
@@ -1105,14 +1105,14 @@
     - |
       haaa haa ha ha
     "stdout_id": !!int |-
-      20
+      9
   !!int "39":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahahahahahahahahaha
@@ -1121,14 +1121,14 @@
     - |
       hahahahahahaha
     "stdout_id": !!int |-
-      23
+      25
   !!int "40":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       haaaahaaahaahah
@@ -1137,14 +1137,14 @@
     - |
       haaahaahah
     "stdout_id": !!int |-
-      11
+      14
   !!int "41":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      3
+      0
     "stdout":
     - |
       hahahaha hahaha haha ha ha
@@ -1153,7 +1153,7 @@
     - |
       hahaha haha ha ha
     "stdout_id": !!int |-
-      10
+      19
 "student_color":
   "student11": |-
     #d83034

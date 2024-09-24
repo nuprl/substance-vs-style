@@ -3,8 +3,8 @@
   !!int "1": |-
     ---
     +++
-    @@ -9,19 +9,38 @@
-     of dictionaries and-outputs a-list-of-values+string,+uses that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string """
+    @@ -10,12 +10,15 @@
+     the function will-return+check the+given+flights+and+find possible destinations-with+within one-layover-location.+layover. """
   !!int "2": |-
     ---
     +++
@@ -13,8 +13,8 @@
   !!int "3": |-
     ---
     +++
-    @@ -10,12 +10,15 @@
-     the function will-return+check the+given+flights+and+find possible destinations-with+within one-layover-location.+layover. """
+    @@ -9,19 +9,38 @@
+     of dictionaries and-outputs a-list-of-values+string,+uses that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string """
   !!int "4": |-
     ---
     +++
@@ -40,7 +40,7 @@
           if flights[i][0] == start:
       KeyError: 0
     "stderr_id": !!int |-
-      7
+      3
     "stdout":
     - ""
     - ""
@@ -65,7 +65,7 @@
           if i[0] == start:
       KeyError: 0
     "stderr_id": !!int |-
-      2
+      4
     "stdout":
     - ""
     - ""
@@ -90,7 +90,7 @@
           if flight.origin == start:
       AttributeError: 'dict' object has no attribute 'origin'
     "stderr_id": !!int |-
-      3
+      1
     "stdout":
     - ""
     - ""
@@ -115,7 +115,7 @@
           layover.append(flights[i][0] + start)
       KeyError: 0
     "stderr_id": !!int |-
-      0
+      7
     "stdout":
     - ""
     - ""
@@ -140,7 +140,7 @@
           if flights[i]["to"] == flights[j]["from"]:
       KeyError: 'to'
     "stderr_id": !!int |-
-      5
+      6
     "stdout":
     - ""
     - ""
@@ -153,7 +153,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - |
       None
@@ -181,7 +181,7 @@
           if flight[0] == start:
       KeyError: 0
     "stderr_id": !!int |-
-      6
+      2
     "stdout":
     - ""
     - ""
@@ -206,7 +206,7 @@
           if flights[i][1] == flights[j][0]:
       KeyError: 1
     "stderr_id": !!int |-
-      1
+      5
     "stdout":
     - ""
     - ""

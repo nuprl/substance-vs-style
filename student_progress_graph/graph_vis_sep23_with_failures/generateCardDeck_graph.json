@@ -4,70 +4,70 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 7,
             "hover": "stdout:\n['S1', 'S2', 'SA', 'H1', 'H2', 'HA', 'D1', 'D2', 'DA']\n\n['H6', 'HQ', 'HJ', 'H2', 'D6', 'DQ', 'DJ', 'D2']\n\n['H2']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n['D1', 'D2', 'DA', 'H1', 'H2', 'HA', 'S1', 'S2', 'SA']\n\n['D2', 'D6', 'DJ', 'DQ', 'H2', 'H6', 'HJ', 'HQ']\n\n['H2']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 2,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(generateCardDeck(['S', 'H', 'D'], ['1', '2', 'A']))\n  File \"/tmp/file.py\", line 8, in generateCardDeck\n    deck.append(Card(suit, val))\nNameError: name 'Card' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(generateCardDeck(['H', 'D'], ['6', 'Q', 'J', '2']))\n  File \"/tmp/file.py\", line 8, in generateCardDeck\n    deck.append(Card(suit, val))\nNameError: name 'Card' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(generateCardDeck(['H'], ['2']))\n  File \"/tmp/file.py\", line 8, in generateCardDeck\n    deck.append(Card(suit, val))\nNameError: name 'Card' is not defined\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 7,
+            "stderr_id": 0,
+            "stdout_id": 4,
             "hover": "stdout:\n['1S', '2S', 'AS', '1H', '2H', 'AH', '1D', '2D', 'AD']\n\n['6H', 'QH', 'JH', '2H', '6D', 'QD', 'JD', '2D']\n\n['2H']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n['D1', 'D2', 'DA', 'H1', 'H2', 'HA', 'S1', 'S2', 'SA']\n\n['D6', 'DQ', 'DJ', 'D2', 'H6', 'HQ', 'HJ', 'H2']\n\n['H2']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 4,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n['1S', '1H', '1D', '2S', '2H', '2D', 'AS', 'AH', 'AD']\n\n['6H', '6D', 'QH', 'QD', 'JH', 'JD', '2H', '2D']\n\n['2H']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n['1D', '1H', '1S', '2D', '2H', '2S', 'AD', 'AH', 'AS']\n\n['2D', '2H', '6D', '6H', 'JD', 'JH', 'QD', 'QH']\n\n['2H']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    generateCardDeck(suits, vals)\nIndentationError: expected an indented block after 'for' statement on line 6\n",
             "color": "grey",
             "id": 7
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 2,
+            "stderr_id": 3,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(generateCardDeck(['S', 'H', 'D'], ['1', '2', 'A']))\n  File \"/tmp/file.py\", line 5, in generateCardDeck\n    return [Card(suit, val) for suit in suits for val in vals]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [Card(suit, val) for suit in suits for val in vals]\nNameError: name 'Card' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(generateCardDeck(['H', 'D'], ['6', 'Q', 'J', '2']))\n  File \"/tmp/file.py\", line 5, in generateCardDeck\n    return [Card(suit, val) for suit in suits for val in vals]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [Card(suit, val) for suit in suits for val in vals]\nNameError: name 'Card' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(generateCardDeck(['H'], ['2']))\n  File \"/tmp/file.py\", line 5, in generateCardDeck\n    return [Card(suit, val) for suit in suits for val in vals]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [Card(suit, val) for suit in suits for val in vals]\nNameError: name 'Card' is not defined\n",
             "color": "blue",
@@ -77,7 +77,7 @@
     "adjacency": [
         [
             {
-                "diff": 31,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -86,7 +86,7 @@
                 "key": 0
             },
             {
-                "diff": 51,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -95,7 +95,7 @@
                 "key": 1
             },
             {
-                "diff": 14,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -104,7 +104,7 @@
                 "key": 2
             },
             {
-                "diff": 47,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -113,7 +113,7 @@
                 "key": 3
             },
             {
-                "diff": 34,
+                "diff": 4,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -122,7 +122,7 @@
                 "key": 4
             },
             {
-                "diff": 2,
+                "diff": 5,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -131,7 +131,7 @@
                 "key": 5
             },
             {
-                "diff": 20,
+                "diff": 11,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -140,7 +140,7 @@
                 "key": 6
             },
             {
-                "diff": 48,
+                "diff": 12,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -149,7 +149,7 @@
                 "key": 7
             },
             {
-                "diff": 58,
+                "diff": 18,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -158,7 +158,7 @@
                 "key": 8
             },
             {
-                "diff": 22,
+                "diff": 19,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -167,7 +167,7 @@
                 "key": 9
             },
             {
-                "diff": 36,
+                "diff": 28,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -176,7 +176,7 @@
                 "key": 10
             },
             {
-                "diff": 46,
+                "diff": 33,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -185,7 +185,7 @@
                 "key": 11
             },
             {
-                "diff": 26,
+                "diff": 34,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -194,7 +194,7 @@
                 "key": 12
             },
             {
-                "diff": 9,
+                "diff": 35,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -203,7 +203,7 @@
                 "key": 13
             },
             {
-                "diff": 42,
+                "diff": 38,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student69",
@@ -212,7 +212,7 @@
                 "key": 14
             },
             {
-                "diff": 27,
+                "diff": 53,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -221,7 +221,7 @@
                 "key": 15
             },
             {
-                "diff": 33,
+                "diff": 54,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -230,7 +230,7 @@
                 "key": 16
             },
             {
-                "diff": 16,
+                "diff": 55,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -239,7 +239,7 @@
                 "key": 17
             },
             {
-                "diff": 35,
+                "diff": 56,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -248,7 +248,7 @@
                 "key": 18
             },
             {
-                "diff": 7,
+                "diff": 57,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -257,7 +257,7 @@
                 "key": 19
             },
             {
-                "diff": 50,
+                "diff": 58,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -266,7 +266,7 @@
                 "key": 20
             },
             {
-                "diff": 32,
+                "diff": 59,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -275,7 +275,7 @@
                 "key": 21
             },
             {
-                "diff": 30,
+                "diff": 62,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -284,7 +284,7 @@
                 "key": 22
             },
             {
-                "diff": 53,
+                "diff": 63,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -293,7 +293,7 @@
                 "key": 23
             },
             {
-                "diff": 41,
+                "diff": 6,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student33",
@@ -302,7 +302,7 @@
                 "key": 0
             },
             {
-                "diff": 40,
+                "diff": 13,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -311,7 +311,7 @@
                 "key": 1
             },
             {
-                "diff": 0,
+                "diff": 20,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -320,7 +320,7 @@
                 "key": 2
             },
             {
-                "diff": 1,
+                "diff": 29,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -329,7 +329,7 @@
                 "key": 3
             },
             {
-                "diff": 63,
+                "diff": 30,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student63",
@@ -338,7 +338,7 @@
                 "key": 4
             },
             {
-                "diff": 24,
+                "diff": 26,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -347,7 +347,7 @@
                 "key": 0
             },
             {
-                "diff": 57,
+                "diff": 31,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -356,7 +356,7 @@
                 "key": 0
             },
             {
-                "diff": 25,
+                "diff": 49,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -365,7 +365,7 @@
                 "key": 1
             },
             {
-                "diff": 39,
+                "diff": 36,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -374,7 +374,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 39,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student69",
@@ -383,7 +383,7 @@
                 "key": 0
             },
             {
-                "diff": 18,
+                "diff": 51,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -392,7 +392,7 @@
                 "key": 1
             },
             {
-                "diff": 43,
+                "diff": 60,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -401,7 +401,7 @@
                 "key": 2
             },
             {
-                "diff": 6,
+                "diff": 47,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -413,7 +413,7 @@
         [],
         [
             {
-                "diff": 8,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student35",
@@ -422,7 +422,7 @@
                 "key": 0
             },
             {
-                "diff": 59,
+                "diff": 40,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -431,7 +431,7 @@
                 "key": 0
             },
             {
-                "diff": 21,
+                "diff": 45,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -440,7 +440,7 @@
                 "key": 1
             },
             {
-                "diff": 19,
+                "diff": 41,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -449,7 +449,7 @@
                 "key": 0
             },
             {
-                "diff": 54,
+                "diff": 43,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -458,7 +458,7 @@
                 "key": 1
             },
             {
-                "diff": 12,
+                "diff": 46,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -467,7 +467,7 @@
                 "key": 0
             },
             {
-                "diff": 55,
+                "diff": 48,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -478,7 +478,7 @@
         ],
         [
             {
-                "diff": 62,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student35",
@@ -487,7 +487,7 @@
                 "key": 0
             },
             {
-                "diff": 38,
+                "diff": 16,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student44",
@@ -496,7 +496,7 @@
                 "key": 1
             },
             {
-                "diff": 23,
+                "diff": 21,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student59",
@@ -505,7 +505,7 @@
                 "key": 2
             },
             {
-                "diff": 17,
+                "diff": 22,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student59",
@@ -514,7 +514,7 @@
                 "key": 3
             },
             {
-                "diff": 44,
+                "diff": 23,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student59",
@@ -523,7 +523,7 @@
                 "key": 4
             },
             {
-                "diff": 60,
+                "diff": 24,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student59",
@@ -532,7 +532,7 @@
                 "key": 5
             },
             {
-                "diff": 52,
+                "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student35",
@@ -541,7 +541,7 @@
                 "key": 0
             },
             {
-                "diff": 29,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student40",
@@ -550,7 +550,7 @@
                 "key": 0
             },
             {
-                "diff": 56,
+                "diff": 32,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -559,7 +559,7 @@
                 "key": 1
             },
             {
-                "diff": 28,
+                "diff": 50,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -568,7 +568,7 @@
                 "key": 2
             },
             {
-                "diff": 49,
+                "diff": 61,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student79",
@@ -577,7 +577,7 @@
                 "key": 3
             },
             {
-                "diff": 11,
+                "diff": 14,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student44",
@@ -588,7 +588,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 52,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -599,7 +599,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 15,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student44",
@@ -610,7 +610,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 17,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student50",
@@ -619,7 +619,7 @@
                 "key": 0
             },
             {
-                "diff": 61,
+                "diff": 37,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student64",
@@ -630,7 +630,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 25,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -641,7 +641,7 @@
         ],
         [
             {
-                "diff": 45,
+                "diff": 27,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student60",
@@ -652,7 +652,7 @@
         ],
         [
             {
-                "diff": 10,
+                "diff": 42,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",
@@ -661,7 +661,7 @@
                 "key": 0
             },
             {
-                "diff": 37,
+                "diff": 44,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student75",

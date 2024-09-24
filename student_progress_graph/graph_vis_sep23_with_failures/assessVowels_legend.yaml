@@ -2,19 +2,19 @@
   !!int "0": |-
     ---
     +++
-    @@ -7,8 +7,5 @@
-     a list of-all vowels-that-appear """
+    @@ -8,7 +8,13 @@
+     characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
   !!int "1": |-
-    ---
-    +++
-    @@ -10,5 +10,11 @@
-     string in a-list+list,+including+capital+and+lower+case+letters """
-  !!int "2": |-
     ---
     +++
     @@ -7,12 +7,8 @@
      of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@
      them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -13,4 +13,10 @@
+     in the input+in+the+same+order+(repetitions+ok) """
   !!int "3": |-
     ---
     +++
@@ -23,63 +23,63 @@
   !!int "4": |-
     ---
     +++
-    @@ -4,18 +4,6 @@
-     This function prints-a-list-of all-"a",-"e",-"I",-or-"u"-that-appear-in-the-input+vowels """
+    @@ -10,7 +10,7 @@
+     strings of every-value+vowel from the input
   !!int "5": |-
-    ---
-    +++
-    @@ -20,14 +20,7 @@
-     vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital
-  !!int "6": |-
     ---
     +++
     @@ -3,7 +3,7 @@
      """ This function-pints+prints a list containing
-  !!int "7": |-
-    ---
-    +++
-    @@ -5,7 +5,11 @@
-     a list of+both the+uppercase+and+lowercase vowels in the
-  !!int "8": |-
+  !!int "6": |-
     ---
     +++
     @@ -6,12 +6,16 @@
      prints a list-containing-strings of-every-vowel-from+all+"a",+"e",+"I",+or+"u"+that+appear+in the input """
-  !!int "9": |-
+  !!int "7": |-
+    ---
+    +++
+    @@ -4,18 +4,6 @@
+     This function prints-a-list-of all-"a",-"e",-"I",-or-"u"-that-appear-in-the-input+vowels """
+  !!int "8": |-
     ---
     +++
     @@ -4,6 +4,11 @@
      This function prints+a+list+of all vowels+that+appear """
+  !!int "9": |-
+    ---
+    +++
+    @@ -7,8 +7,5 @@
+     a list of-all vowels-that-appear """
   !!int "10": |-
-    ---
-    +++
-    @@ -22,6 +22,22 @@
-     in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
-  !!int "11": |-
-    ---
-    +++
-    @@ -28,4 +28,11 @@
-     were originally written.+include+both+capital+and+lower+case+letters. """
-  !!int "12": |-
     ---
     +++
     @@ -6,9 +6,22 @@
      a string and+checks+for+uppercase+and+lowercase+vowels+and returns a list of-vowels+those+uppercase+and+lowercase+vowels,+if+any """
+  !!int "11": |-
+    ---
+    +++
+    @@ -22,6 +22,22 @@
+     in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
+  !!int "12": |-
+    ---
+    +++
+    @@ -28,4 +28,11 @@
+     were originally written.+include+both+capital+and+lower+case+letters. """
   !!int "13": |-
     ---
     +++
-    @@ -10,7 +10,7 @@
-     strings of every-value+vowel from the input
+    @@ -20,14 +20,7 @@
+     vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital
   !!int "14": |-
     ---
     +++
-    @@ -8,7 +8,13 @@
-     characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
+    @@ -5,7 +5,11 @@
+     a list of+both the+uppercase+and+lowercase vowels in the
   !!int "15": |-
     ---
     +++
-    @@ -13,4 +13,10 @@
-     in the input+in+the+same+order+(repetitions+ok) """
+    @@ -10,5 +10,11 @@
+     string in a-list+list,+including+capital+and+lower+case+letters """
 "nodes":
   !!int "0":
     "stderr":
@@ -88,7 +88,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       ['a', 'e', 'a', 'a', 'e']
@@ -99,7 +99,7 @@
     - |
       []
     "stdout_id": !!int |-
-      4
+      3
   !!int "1":
     "stderr":
     - ""
@@ -107,7 +107,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       ['i', 'a', 'e', 'a', 'a', 'e']
@@ -118,7 +118,7 @@
     - |
       []
     "stdout_id": !!int |-
-      1
+      5
   !!int "2":
     "stderr":
     - ""
@@ -126,7 +126,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       ['I', 'a', 'e', 'a', 'a', 'e']
@@ -137,7 +137,7 @@
     - |
       []
     "stdout_id": !!int |-
-      0
+      2
   !!int "3":
     "stderr":
     - ""
@@ -145,7 +145,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       ['a', 'e']
@@ -156,7 +156,7 @@
     - |
       []
     "stdout_id": !!int |-
-      5
+      4
   !!int "4":
     "stderr":
     - |2
@@ -176,14 +176,14 @@
           print(assessVowels(''))
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      1
+      2
     "stdout":
     - ""
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "5":
     "stderr":
     - ""
@@ -191,7 +191,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       None
@@ -202,7 +202,7 @@
     - |
       None
     "stdout_id": !!int |-
-      2
+      1
   !!int "6":
     "stderr":
     - |2
@@ -229,7 +229,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "7":
     "stderr":
     - |2
@@ -249,14 +249,14 @@
           assessVowels('supercalifragilisticexpialidocious')
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
 "student_color":
   "student13": |-
     #d83034

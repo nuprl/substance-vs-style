@@ -1,15 +1,15 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -5,11 +5,11 @@
+     the "^" to-"_"+"-" and "^" to-"_"+"-" in strings """
   !!int "1": |-
     ---
     +++
     @@ -14,7 +14,11 @@
      as '_', then-print+return+a+copy+of the+new string """
-  !!int "2": |-
-    ---
-    +++
-    @@ -5,11 +5,11 @@
-     the "^" to-"_"+"-" and "^" to-"_"+"-" in strings """
+  !!int "2": ""
   !!int "3": |-
     ---
     +++
@@ -47,7 +47,7 @@
     - |
       |O.0|
     "stdout_id": !!int |-
-      0
+      1
   !!int "2":
     "stderr":
     - ""
@@ -79,7 +79,7 @@
     - |
       ('|O.0|', 0)
     "stdout_id": !!int |-
-      1
+      0
 "student_color":
   "student17": |-
     #d83034

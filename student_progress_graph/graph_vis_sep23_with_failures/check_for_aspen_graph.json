@@ -4,57 +4,57 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 3,
+            "stderr_id": 0,
             "stdout_id": 2,
             "hover": "stdout:\nNope\n\nNope\n\nNope\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 0,
             "stdout_id": 3,
             "hover": "stdout:\nNope\n\nYup\n\nYup\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n\n  File \"/tmp/file.py\", line 7\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 5\n",
             "color": "red",
             "id": 2
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 0,
+            "stderr_id": 3,
+            "stdout_id": 1,
             "hover": "stdout:\n\nYup\n\nYup\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Oak\": 3, \"Birch\": 5, \"Elm\": 2}))\n  File \"/tmp/file.py\", line 5, in check_for_aspen\n    if trees[\"Aspen\"] > 0:\nKeyError: 'Aspen'\n\n\n",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 8\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 8\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 8\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 6\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Oak\": 3, \"Birch\": 5, \"Elm\": 2}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree.name == 'Aspen':\nAttributeError: 'str' object has no attribute 'name'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Aspen\": 7, \"Beech\": 15}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree.name == 'Aspen':\nAttributeError: 'str' object has no attribute 'name'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Beech\": 8, \"Maple\": 2, \"Aspen\": 3}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree.name == 'Aspen':\nAttributeError: 'str' object has no attribute 'name'\n",
             "color": "grey",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Oak\": 3, \"Birch\": 5, \"Elm\": 2}))\n  File \"/tmp/file.py\", line 5, in check_for_aspen\n    if trees['name'] == 'Aspen':\nKeyError: 'name'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Aspen\": 7, \"Beech\": 15}))\n  File \"/tmp/file.py\", line 5, in check_for_aspen\n    if trees['name'] == 'Aspen':\nKeyError: 'name'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Beech\": 8, \"Maple\": 2, \"Aspen\": 3}))\n  File \"/tmp/file.py\", line 5, in check_for_aspen\n    if trees['name'] == 'Aspen':\nKeyError: 'name'\n",
             "color": "blue",
             "id": 6
         },
         {
             "stderr_id": 6,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Oak\": 3, \"Birch\": 5, \"Elm\": 2}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree[\"treename\"] == \"Aspen\" and tree[\"number\"] > 0:\nTypeError: string indices must be integers\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Aspen\": 7, \"Beech\": 15}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree[\"treename\"] == \"Aspen\" and tree[\"number\"] > 0:\nTypeError: string indices must be integers\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(check_for_aspen({\"Beech\": 8, \"Maple\": 2, \"Aspen\": 3}))\n  File \"/tmp/file.py\", line 6, in check_for_aspen\n    if tree[\"treename\"] == \"Aspen\" and tree[\"number\"] > 0:\nTypeError: string indices must be integers\n",
             "color": "grey",
             "id": 7
@@ -63,7 +63,7 @@
     "adjacency": [
         [
             {
-                "diff": 10,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -72,7 +72,7 @@
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -81,7 +81,7 @@
                 "key": 1
             },
             {
-                "diff": 5,
+                "diff": 13,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student68",
@@ -90,7 +90,7 @@
                 "key": 2
             },
             {
-                "diff": 7,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student27",
@@ -99,7 +99,7 @@
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 14,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student68",
@@ -108,7 +108,7 @@
                 "key": 1
             },
             {
-                "diff": 4,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student67",
@@ -120,7 +120,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -129,7 +129,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 8,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -138,7 +138,7 @@
                 "key": 1
             },
             {
-                "diff": 12,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -149,7 +149,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -160,7 +160,7 @@
         ],
         [
             {
-                "diff": 14,
+                "diff": 6,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -169,7 +169,7 @@
                 "key": 0
             },
             {
-                "diff": 8,
+                "diff": 7,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student34",
@@ -180,7 +180,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student67",
@@ -191,7 +191,7 @@
         ],
         [
             {
-                "diff": 2,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student67",
@@ -211,7 +211,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 12,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student68",

@@ -1,16 +1,15 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
+  !!int "0": |-
+    ---
+    +++
+    @@ -27,5 +27,9 @@
+     from grades to+update+the+values+in students. """
+  !!int "1": ""
+  !!int "2": |-
     ---
     +++
     @@ -30,4 +30,29 @@
      scores correspond to.+If+the+score+they+received+exists+in+the+second+dictionary,+use+the+letter+grade+list+from+the+second+dictionary+for+the+student+in+the+output """
-  !!int "2": |-
-    ---
-    +++
-    @@ -9,7 +9,7 @@
-     number. Then, the-numbers+students are assigned a@@ -32,5 +32,5 @@
-     students should be-ignored+ignored. """
   !!int "3": |-
     ---
     +++
@@ -24,19 +23,20 @@
   !!int "5": |-
     ---
     +++
-    @@ -15,13 +15,12 @@
-     based on that-number,+number the grades are returned-in-a-letter-format+from+the+brackets """
-  !!int "6": |-
-    ---
-    +++
-    @@ -27,5 +27,9 @@
-     from grades to+update+the+values+in students. """
-  !!int "7": |-
-    ---
-    +++
     @@ -8,8 +8,7 @@
      will take two-inputs-of+inputs: students and grades.@@ -27,12 +26,21 @@
      have a number+corresponding+to+the+students+scores and a range of letter-grades.+grades+tied+to+the+number. The function should
+  !!int "6": |-
+    ---
+    +++
+    @@ -15,13 +15,12 @@
+     based on that-number,+number the grades are returned-in-a-letter-format+from+the+brackets """
+  !!int "7": |-
+    ---
+    +++
+    @@ -9,7 +9,7 @@
+     number. Then, the-numbers+students are assigned a@@ -32,5 +32,5 @@
+     students should be-ignored+ignored. """
   !!int "8": |-
     ---
     +++
@@ -49,7 +49,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       {'Alice': 20, 'Bob': 11}
@@ -58,14 +58,14 @@
     - |
       {'Sam': 21, 'Ari': 67, 'Chris': 23}
     "stdout_id": !!int |-
-      3
+      2
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       {'Alice': [], 'Bob': []}
@@ -74,7 +74,7 @@
     - |
       {'Sam': [], 'Ari': [], 'Chris': []}
     "stdout_id": !!int |-
-      1
+      3
   !!int "2":
     "stderr":
     - |
@@ -99,13 +99,13 @@
           if grade in students[student]:
       TypeError: argument of type 'int' is not iterable
     "stderr_id": !!int |-
-      0
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "3":
     "stderr":
     - |
@@ -130,13 +130,13 @@
           if student in grade:
       TypeError: argument of type 'int' is not iterable
     "stderr_id": !!int |-
-      1
+      8
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "4":
     "stderr":
     - |2
@@ -152,13 +152,13 @@
           print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      3
+      4
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "5":
     "stderr":
     - |2
@@ -177,20 +177,20 @@
                                                            ^
       SyntaxError: expected ':'
     "stderr_id": !!int |-
-      10
+      2
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      0
     "stdout":
     - |
       None
@@ -199,7 +199,7 @@
     - |
       None
     "stdout_id": !!int |-
-      0
+      1
   !!int "7":
     "stderr":
     - |2
@@ -215,13 +215,13 @@
           students = [
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      2
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "8":
     "stderr":
     - |2
@@ -240,13 +240,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 6
     "stderr_id": !!int |-
-      7
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "9":
     "stderr":
     - |2
@@ -265,13 +265,13 @@
           ^
       IndentationError: expected an indented block after 'if' statement on line 7
     "stderr_id": !!int |-
-      8
+      6
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "10":
     "stderr":
     - |
@@ -296,13 +296,13 @@
           grades_dict[student] = grades[student]
       KeyError: 'Sam'
     "stderr_id": !!int |-
-      9
+      10
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "11":
     "stderr":
     - |2
@@ -318,13 +318,13 @@
           print(student_grades({'Sam': 21, 'Ari': 67, 'Chris': 23}, {67: [], 23: ['A'], 21: ['B','B']}))
       IndentationError: expected an indented block after 'elif' statement on line 14
     "stderr_id": !!int |-
-      4
+      3
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "12":
     "stderr":
     - |
@@ -349,13 +349,13 @@
           grades_
       NameError: name 'grades_' is not defined. Did you mean: 'grades'?
     "stderr_id": !!int |-
-      6
+      9
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
 "student_color":
   "student11": |-
     #d83034

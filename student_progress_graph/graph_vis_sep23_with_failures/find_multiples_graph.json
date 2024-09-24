@@ -12,77 +12,77 @@
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\n[20, 40, 60, 80, 100]\n\n[50]\n\n[177000]\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 6,
+            "stdout_id": 8,
             "hover": "stdout:\n[20, 40, 60, 80]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 5,
             "hover": "stdout:\n[20, 40, 60, 80, 100]\n\n[10, 15, 20, 25, 30]\n\n[1062, 1239, 1416, 1593, 1770, 1947]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 9,
             "hover": "stdout:\nrange(1, 101, 20)\n\nrange(10, 31, 5)\n\nrange(1000, 2001, 177)\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 3,
             "hover": "stdout:\n[1, 21, 41, 61, 81]\n\n[10, 15, 20, 25, 30]\n\n[1000, 1177, 1354, 1531, 1708, 1885]\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 6\n    print(find_multiples(1,100,20))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(find_multiples(10, 30, 5))\nIndentationError: expected an indented block after 'for' statement on line 5\n\n  File \"/tmp/file.py\", line 6\n    print(find_multiples(1000,2000,177))\nIndentationError: expected an indented block after 'for' statement on line 5\n",
             "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    find_multiples(start,stop,factor)\nNameError: name 'start' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    find_multiples(start,stop,factor)\nNameError: name 'start' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    find_multiples(start,stop,factor)\nNameError: name 'start' is not defined\n",
             "color": "blue",
             "id": 7
         },
         {
             "stderr_id": 0,
-            "stdout_id": 8,
+            "stdout_id": 2,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 8
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 4,
             "hover": "stdout:\n[1, 21, 41, 61, 81]\n\n[10, 15, 20, 25]\n\n[1000, 1177, 1354, 1531, 1708, 1885]\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 9
         },
         {
             "stderr_id": 1,
-            "stdout_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    closest_numbers = [last_number +\n                      ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    closest_numbers = [last_number +\n                      ^\nSyntaxError: '[' was never closed\n\n  File \"/tmp/file.py\", line 12\n    closest_numbers = [last_number +\n                      ^\nSyntaxError: '[' was never closed\n",
             "color": "blue",
             "id": 10
         },
         {
             "stderr_id": 0,
-            "stdout_id": 9,
+            "stdout_id": 1,
             "hover": "stdout:\n(81, [1, 21, 41, 61, 81])\n\n(25, [10, 15, 20, 25])\n\n(1885, [1177, 1354, 1531, 1708, 1885])\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 11
@@ -91,7 +91,7 @@
     "adjacency": [
         [
             {
-                "diff": 7,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -100,7 +100,7 @@
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -109,7 +109,7 @@
                 "key": 1
             },
             {
-                "diff": 16,
+                "diff": 4,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -118,7 +118,7 @@
                 "key": 2
             },
             {
-                "diff": 12,
+                "diff": 14,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student61",
@@ -127,7 +127,7 @@
                 "key": 3
             },
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -136,7 +136,7 @@
                 "key": 0
             },
             {
-                "diff": 2,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
@@ -145,7 +145,7 @@
                 "key": 0
             },
             {
-                "diff": 15,
+                "diff": 13,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student5",
@@ -154,7 +154,7 @@
                 "key": 1
             },
             {
-                "diff": 3,
+                "diff": 15,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student61",
@@ -163,7 +163,7 @@
                 "key": 2
             },
             {
-                "diff": 14,
+                "diff": 16,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student72",
@@ -172,7 +172,7 @@
                 "key": 3
             },
             {
-                "diff": 6,
+                "diff": 17,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student74",
@@ -181,7 +181,7 @@
                 "key": 4
             },
             {
-                "diff": 10,
+                "diff": 6,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student16",
@@ -192,7 +192,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 3,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
@@ -205,7 +205,7 @@
         [],
         [
             {
-                "diff": 11,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student16",
@@ -216,7 +216,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student16",
@@ -227,7 +227,7 @@
         ],
         [
             {
-                "diff": 13,
+                "diff": 9,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -238,7 +238,7 @@
         ],
         [
             {
-                "diff": 4,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -249,7 +249,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student2",
@@ -260,7 +260,7 @@
         ],
         [
             {
-                "diff": 17,
+                "diff": 11,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",
@@ -271,7 +271,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 8,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",
@@ -282,7 +282,7 @@
         ],
         [
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",

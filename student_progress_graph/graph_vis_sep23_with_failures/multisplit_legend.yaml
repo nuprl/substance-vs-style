@@ -2,9 +2,8 @@
   !!int "0": |-
     ---
     +++
-    @@ -42,8 +42,9 @@
-     present, we split-s,-remove+s+and+replace the character from@@ -53,8 +54,7 @@
-     index where we-split,-and-insert+split+with sep. """
+    @@ -1,18 +1,26 @@
+     def multisplit(s,chars,sep): """-removes-everything+for+every+character in the-list+list,+looks+through+the+string and+if+the+character+is+in+the+string, replaces it with-what-is-after-the-list.+sep. """
   !!int "1": |-
     ---
     +++
@@ -13,13 +12,14 @@
   !!int "2": |-
     ---
     +++
-    @@ -27,7 +27,11 @@
-     separated by a-comma+double+quotes+or+simple+quotes and remove the
+    @@ -42,8 +42,9 @@
+     present, we split-s,-remove+s+and+replace the character from@@ -53,8 +54,7 @@
+     index where we-split,-and-insert+split+with sep. """
   !!int "3": |-
     ---
     +++
-    @@ -1,18 +1,26 @@
-     def multisplit(s,chars,sep): """-removes-everything+for+every+character in the-list+list,+looks+through+the+string and+if+the+character+is+in+the+string, replaces it with-what-is-after-the-list.+sep. """
+    @@ -27,7 +27,11 @@
+     separated by a-comma+double+quotes+or+simple+quotes and remove the
 "nodes":
   !!int "0":
     "stderr":
@@ -36,7 +36,7 @@
     - |
       ['celestial teas: a guide']
     "stdout_id": !!int |-
-      3
+      0
   !!int "1":
     "stderr":
     - ""
@@ -52,7 +52,7 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - ""
@@ -68,7 +68,7 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      2
+      3
   !!int "3":
     "stderr":
     - ""
@@ -84,7 +84,7 @@
     - |
       celestial teas: a guide
     "stdout_id": !!int |-
-      0
+      1
 "student_color":
   "student15": |-
     #d83034

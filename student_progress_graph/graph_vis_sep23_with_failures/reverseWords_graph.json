@@ -4,64 +4,64 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 5,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n['eat', 'tree']\n\n['ax', 'by', 'chaz']\n\n['ax', 'by', 'chaz']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n['eert', 'tae']\n\n['xa', 'yb', 'zahc']\n\n['xa', 'yb', 'zahc']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['eat', 'tree']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['ax', 'by', 'chaz']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['by', 'chaz', 'ax']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 6,
             "hover": "stdout:\n['tree', 'eat']\n\n['ax', 'by', 'chaz']\n\n['ax', 'by', 'chaz']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 3
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\n['tae', 'eert']\n\n['xa', 'yb', 'zahc']\n\n['xa', 'yb', 'zahc']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\n['tae', 'eert']\n\n['xa', 'yb', 'zahc']\n\n['yb', 'zahc', 'xa']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n['eert', 'tae']\n\n['zahc', 'yb', 'xa']\n\n['xa', 'zahc', 'yb']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(reverseWords(['eat', 'tree']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(reverseWords(['ax', 'by', 'chaz']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(reverseWords(['by', 'chaz', 'ax']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "blue",
             "id": 7
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 2,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['eat', 'tree']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['ax', 'by', 'chaz']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['by', 'chaz', 'ax']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split()\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "red",
             "id": 8
@@ -70,7 +70,7 @@
     "adjacency": [
         [
             {
-                "diff": 10,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student1",
@@ -79,7 +79,7 @@
                 "key": 0
             },
             {
-                "diff": 3,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student1",
@@ -88,7 +88,7 @@
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
@@ -97,7 +97,7 @@
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 3,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student39",
@@ -108,7 +108,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
@@ -117,7 +117,7 @@
                 "key": 0
             },
             {
-                "diff": 12,
+                "diff": 13,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student9",
@@ -128,7 +128,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
@@ -139,7 +139,7 @@
         ],
         [
             {
-                "diff": 15,
+                "diff": 11,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student6",
@@ -150,7 +150,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 4,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student46",
@@ -161,7 +161,7 @@
         ],
         [
             {
-                "diff": 11,
+                "diff": 5,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student55",
@@ -170,7 +170,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#ffd700",
                 "arrow_color": "#ffd700",
                 "username": "student7",
@@ -179,7 +179,7 @@
                 "key": 1
             },
             {
-                "diff": 7,
+                "diff": 6,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student58",
@@ -188,7 +188,7 @@
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 7,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student58",
@@ -197,7 +197,7 @@
                 "key": 1
             },
             {
-                "diff": 1,
+                "diff": 8,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student58",
@@ -206,7 +206,7 @@
                 "key": 2
             },
             {
-                "diff": 2,
+                "diff": 9,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student6",
@@ -215,7 +215,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 15,
                 "color": "#ff4500",
                 "arrow_color": "#ff4500",
                 "username": "student9",
@@ -226,7 +226,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 10,
                 "color": "#8a2be2",
                 "arrow_color": "#8a2be2",
                 "username": "student6",

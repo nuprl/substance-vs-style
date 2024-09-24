@@ -16,6 +16,10 @@ from collections import defaultdict
 import itertools
 import json
 import gravis
+import random
+import numpy as np
+np.random.seed(42)
+random.seed(42)
 
 START_NODE_COLOR = "grey"
 STD_NODE_COLOR = "blue"
@@ -68,13 +72,22 @@ def custom_plt_legend(student_colors:dict):
     return custom_lines, labels
 
 def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
-    stderr_to_id_dict = assign_cluster_ids(clusters["stderr"])
-    stdout_to_id_dict = assign_cluster_ids(clusters["stdout"])
+    stderr = clusters["stderr"]
+    stdout = clusters["stdout"]
+    # for reproducibility
+    stdout.sort()
+    stderr.sort()
+    stderr_to_id_dict = assign_cluster_ids(stderr)
+    stdout_to_id_dict = assign_cluster_ids(stdout)
     diffs = []
+    seen = set()
     for v in trajectories.values():
-        diffs.extend(v["diff"][1:]) # ignore first trivial None diff
+        for d in v["diff"][1:]: # ignore first trivial None diff
+            if d not in seen:
+                diffs.append(d)
+                seen.add(d)        
         
-    diff_to_id_dict = assign_cluster_ids(list(set(diffs)))
+    diff_to_id_dict = assign_cluster_ids(diffs)
     stderr_to_id = (lambda x: stderr_to_id_dict["\n".join(x)])
     stdout_to_id = (lambda x: stdout_to_id_dict["\n".join(x)])
     

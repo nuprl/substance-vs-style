@@ -5,49 +5,49 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 2,
             "hover": "stdout:\n['a', 't', 'c', 'b', 'd']\n\n[1, 5, 3, 'a', 'b', 'c']\n\n['a', 'b', 'c', 't', 'r', 'e']\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n['b', 'd', None]\n\n['a', None, 'c']\n\n[None, None, None]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
-            "stderr_id": 4,
-            "stdout_id": 3,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 'c'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 5\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 5, in create_list\n    return [dt[i] for i in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [dt[i] for i in lst]\nKeyError: 'a'\n",
             "color": "grey",
             "id": 2
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 3,
+            "stderr_id": 4,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 'c'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 5\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    new_list.append(dt[i])\nKeyError: 'a'\n",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 2,
+            "stderr_id": 1,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 8, in create_list\n    return create_list(dt[lst[0]], lst[1:])\n  File \"/tmp/file.py\", line 7, in create_list\n    if lst[0] in dt:\nTypeError: 'in <string>' requires string as left operand, not int\n\n",
             "color": "grey",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({'a': 'b', 't': 'd'}, ['a', 't', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({1: 'a', 2: 'b', 3: 'c'}, [1, 5, 3]))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 14, in <module>\n    print(create_list({3 : 't', 4: 'r', 5: 'e'}, ['a', 'b', 'c']))\n  File \"/tmp/file.py\", line 7, in create_list\n    if dt.key == lst[0]:\nAttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?\n",
             "color": "grey",
             "id": 5
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 4,
             "hover": "stdout:\nb\n\na\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 6
@@ -56,7 +56,7 @@
     "adjacency": [
         [
             {
-                "diff": 6,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student20",
@@ -68,7 +68,7 @@
         [],
         [
             {
-                "diff": 2,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student36",
@@ -77,7 +77,7 @@
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student36",
@@ -88,7 +88,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 3,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student42",
@@ -99,7 +99,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 4,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student43",
@@ -110,7 +110,7 @@
         ],
         [
             {
-                "diff": 7,
+                "diff": 5,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -121,7 +121,7 @@
         ],
         [
             {
-                "diff": 1,
+                "diff": 6,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
@@ -130,7 +130,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 7,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student57",

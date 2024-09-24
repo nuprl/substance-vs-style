@@ -4,78 +4,78 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 0,
-            "stdout_id": 1,
+            "stderr_id": 5,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    lexicon = {\n              ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 14\n    lexicon = {\n              ^\nSyntaxError: '{' was never closed\n\n  File \"/tmp/file.py\", line 14\n    lexicon = {\n              ^\nSyntaxError: '{' was never closed\n",
             "color": "red",
             "id": 0
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\nje aime mes trois chats\n\nje aime mes trois marmots\n\nfive six seven eight\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 1
         },
         {
-            "stderr_id": 3,
+            "stderr_id": 0,
             "stdout_id": 2,
             "hover": "stdout:\nje aime mes trois chats\n\nje aime mes trois UNK\n\nUNK UNK UNK UNK\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         },
         {
-            "stderr_id": 8,
-            "stdout_id": 1,
+            "stderr_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n\n  File \"/tmp/file.py\", line 13\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 10\n",
             "color": "grey",
             "id": 3
         },
         {
-            "stderr_id": 7,
-            "stdout_id": 1,
+            "stderr_id": 8,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n\n  File \"/tmp/file.py\", line 9\n    else:\n    ^\nIndentationError: expected an indented block after 'if' statement on line 7\n",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 3,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n['je', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK']\n\n['je', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK']\n\n['UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK', 'UNK']\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 5
         },
         {
-            "stderr_id": 2,
-            "stdout_id": 1,
+            "stderr_id": 6,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 14\n    print translate(lexicon, \"I am a boy\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 14\n    print translate(lexicon, \"I am a boy\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 14\n    print translate(lexicon, \"I am a boy\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n",
             "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 6,
-            "stdout_id": 1,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    print translate(lexicon, \"bear eat princess\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 11\n    print translate(lexicon, \"bear eat princess\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 11\n    print translate(lexicon, \"bear eat princess\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n",
             "color": "red",
             "id": 7
         },
         {
             "stderr_id": 4,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 13\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 13\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 13\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n",
             "color": "blue",
             "id": 8
         },
         {
-            "stderr_id": 5,
-            "stdout_id": 1,
+            "stderr_id": 7,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 19\n    \"four\n    ^\nSyntaxError: unterminated string literal (detected at line 19)\n\n  File \"/tmp/file.py\", line 19\n    \"four\n    ^\nSyntaxError: unterminated string literal (detected at line 19)\n\n  File \"/tmp/file.py\", line 19\n    \"four\n    ^\nSyntaxError: unterminated string literal (detected at line 19)\n",
             "color": "blue",
             "id": 9
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 12\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 12\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n\n  File \"/tmp/file.py\", line 12\n    print translate(lexicon, \"I like my three cats\")\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?\n",
             "color": "red",
             "id": 10
@@ -84,7 +84,7 @@
     "adjacency": [
         [
             {
-                "diff": 7,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
@@ -95,7 +95,7 @@
         ],
         [
             {
-                "diff": 9,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student50",
@@ -113,7 +113,7 @@
                 "key": 1
             },
             {
-                "diff": 4,
+                "diff": 8,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student75",
@@ -125,7 +125,7 @@
         [],
         [
             {
-                "diff": 0,
+                "diff": 3,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student60",
@@ -136,7 +136,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 3,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student60",
@@ -145,7 +145,7 @@
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student60",
@@ -156,7 +156,7 @@
         ],
         [
             {
-                "diff": 6,
+                "diff": 5,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student64",
@@ -165,7 +165,7 @@
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 6,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student64",
@@ -176,7 +176,7 @@
         ],
         [
             {
-                "diff": 3,
+                "diff": 7,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student69",
@@ -188,7 +188,7 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 9,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student75",
@@ -199,7 +199,7 @@
         ],
         [
             {
-                "diff": 8,
+                "diff": 10,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student75",

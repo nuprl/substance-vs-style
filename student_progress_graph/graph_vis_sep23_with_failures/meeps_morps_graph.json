@@ -4,28 +4,28 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n(0, 0)\n\n(0, 0)\n\n(0, 0)\n\nstderr:\n_no_stderr_",
             "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n(3, 2)\n\n(2, 0)\n\n(0, 0)\n\nstderr:\n_no_stderr_",
             "color": "red",
             "id": 1
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 2,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n[3, 2]\n\n[2, 0]\n\n[0, 0]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         },
         {
-            "stderr_id": 0,
+            "stderr_id": 1,
             "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(meeps_morps(['Meep', 'Morp', 'Meep', 'Meep', 'Suitcase', 'Kind', 'Morp']))\n  File \"/tmp/file.py\", line 7, in meeps_morps\n    for key, value in items.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(meeps_morps(['Meep', 'Meep', 'Suitcase', 'Kind']))\n  File \"/tmp/file.py\", line 7, in meeps_morps\n    for key, value in items.items():\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 13, in <module>\n    print(meeps_morps(['Suitcase', 'Kind', 'Carrot', 'Meat', 'Morpling']))\n  File \"/tmp/file.py\", line 7, in meeps_morps\n    for key, value in items.items():\nAttributeError: 'list' object has no attribute 'items'\n",
             "color": "blue",
@@ -35,7 +35,7 @@
     "adjacency": [
         [
             {
-                "diff": 7,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student16",
@@ -44,7 +44,7 @@
                 "key": 0
             },
             {
-                "diff": 8,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student61",
@@ -55,7 +55,7 @@
         ],
         [
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student16",
@@ -64,7 +64,7 @@
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student22",
@@ -73,7 +73,7 @@
                 "key": 1
             },
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student5",
@@ -82,7 +82,7 @@
                 "key": 2
             },
             {
-                "diff": 4,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student22",
@@ -91,7 +91,7 @@
                 "key": 0
             },
             {
-                "diff": 3,
+                "diff": 6,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student61",
@@ -100,7 +100,7 @@
                 "key": 1
             },
             {
-                "diff": 6,
+                "diff": 7,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student61",
@@ -112,7 +112,7 @@
         [],
         [
             {
-                "diff": 2,
+                "diff": 8,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student61",

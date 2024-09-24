@@ -4,28 +4,29 @@
   <meta charset="utf-8">
 </head>
 <div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #d83034; margin-right: 5px;"></div><span>student23</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #f9e858; margin-right: 5px;"></div><span>student33</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #008dff; margin-right: 5px;"></div><span>student50</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #4ecb8d; margin-right: 5px;"></div><span>student59</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #c701ff; margin-right: 5px;"></div><span>student60</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #ffcd8e; margin-right: 5px;"></div><span>student75</span></div></div>
+<div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: green; margin-right: 5px;"></div><span>NODE is_last_success</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: red; margin-right: 5px;"></div><span>NODE is_last_failure</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: grey; margin-right: 5px;"></div><span>NODE starting</span></div></div>
 <body style="margin:0;">
   <style>
     /* Main divisions */
-    #iMx6ywmtSqIy0ZSSk-main-div {
+    #iGprQFnIiU74KKEpY-main-div {
       line-height: normal;
       box-sizing: content-box;
       padding: 3px;
       background-color: white;
     }
-    #iMx6ywmtSqIy0ZSSk-left-div {
+    #iGprQFnIiU74KKEpY-left-div {
       float: left;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-right-div {
+    #iGprQFnIiU74KKEpY-right-div {
       float: left;
       height: 100%;
       display: none;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-right-inner-div {
+    #iGprQFnIiU74KKEpY-right-inner-div {
       padding-left: 5px;
       padding-right: 2px;
       overflow-x: hidden;
@@ -36,7 +37,7 @@
     }
 
     /* Graph and details (contained in left-inner-div) */
-    #iMx6ywmtSqIy0ZSSk-graph-div {
+    #iGprQFnIiU74KKEpY-graph-div {
       overflow: hidden;
       resize: vertical;
       position: relative;
@@ -47,7 +48,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-details-div {
+    #iGprQFnIiU74KKEpY-details-div {
       overflow: auto;
       resize: vertical;
       margin-top: 5px;
@@ -58,7 +59,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-details-head {
+    #iGprQFnIiU74KKEpY-details-head {
       user-select: none;
       padding-left: 4px !important;
       padding-top: 4px !important;
@@ -68,7 +69,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-details-body {
+    #iGprQFnIiU74KKEpY-details-body {
       padding: 10px;
       padding-top: 6px;
       font-size: 10px;
@@ -78,7 +79,7 @@
     }
 
     /* Control menu (contained in right-inner-div) */
-    .iMx6ywmtSqIy0ZSSk-menu-item-head {
+    .iGprQFnIiU74KKEpY-menu-item-head {
       font-size: 11px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
@@ -94,13 +95,13 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iMx6ywmtSqIy0ZSSk-menu-item-body {
+    .iGprQFnIiU74KKEpY-menu-item-body {
       margin-left: 5px;
       margin-bottom: 10px;
       line-height: normal;
       box-sizing: content-box;
     }
-    .iMx6ywmtSqIy0ZSSk-menu-subitem-head {
+    .iGprQFnIiU74KKEpY-menu-subitem-head {
       font-size: 9px;
       font-family: "Lucida Console", Monaco, monospace;
       font-weight: 600;
@@ -110,7 +111,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iMx6ywmtSqIy0ZSSk-menu-subitem-body {
+    .iGprQFnIiU74KKEpY-menu-subitem-body {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       margin-left: 7px;
@@ -118,28 +119,28 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iMx6ywmtSqIy0ZSSk-labeled-input {
+    .iGprQFnIiU74KKEpY-labeled-input {
       all: initial;
       display: flex;
       align-items: center;
       margin-top: 1px;
       margin-bottom: 1px;
     }
-    .iMx6ywmtSqIy0ZSSk-label {
+    .iGprQFnIiU74KKEpY-label {
       all: initial;
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
       cursor: pointer;
     }
-    .iMx6ywmtSqIy0ZSSk-slider {
+    .iGprQFnIiU74KKEpY-slider {
       width: 100%;
       margin-bottom: 2px;
     }
-    .iMx6ywmtSqIy0ZSSk-slider::-moz-focus-outer {
+    .iGprQFnIiU74KKEpY-slider::-moz-focus-outer {
       border: 0;
     }
-    .iMx6ywmtSqIy0ZSSk-slider-text-left {
+    .iGprQFnIiU74KKEpY-slider-text-left {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
@@ -147,20 +148,20 @@
       float: left;
       margin-top: 2px;
     }
-    .iMx6ywmtSqIy0ZSSk-slider-text-right {
+    .iGprQFnIiU74KKEpY-slider-text-right {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
       float: right;
     }
-    .iMx6ywmtSqIy0ZSSk-checkbox {
+    .iGprQFnIiU74KKEpY-checkbox {
       margin-left: 0px !important;
       margin-right: 4px !important;
       margin-top: 2px !important;
       margin-bottom: 2px !important;
       padding: 0px !important;
     }
-    .iMx6ywmtSqIy0ZSSk-select {
+    .iGprQFnIiU74KKEpY-select {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -189,15 +190,15 @@
     }
     @-moz-document url-prefix() {
       /* Dirty hack to remove dotted border on focus */
-      .iMx6ywmtSqIy0ZSSk-select {
+      .iGprQFnIiU74KKEpY-select {
         color: transparent !important;
         text-shadow: 0 0 0 black !important;
       }
     }
-    .iMx6ywmtSqIy0ZSSk-select:after {
+    .iGprQFnIiU74KKEpY-select:after {
       cursor: pointer;
     }
-    .iMx6ywmtSqIy0ZSSk-button {
+    .iGprQFnIiU74KKEpY-button {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -214,29 +215,29 @@
       border: 1.2px solid #bbb;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
     }
-    .iMx6ywmtSqIy0ZSSk-button:hover {
+    .iGprQFnIiU74KKEpY-button:hover {
       border: 1.2px solid #999;
       background-color: #f2f2f2;
     }
-    .iMx6ywmtSqIy0ZSSk-button:active {
+    .iGprQFnIiU74KKEpY-button:active {
       background-color: #ddd;
     }
-    .iMx6ywmtSqIy0ZSSk-button::-moz-focus-inner {
+    .iGprQFnIiU74KKEpY-button::-moz-focus-inner {
       border: 0;
     }
     /* Hidden menu items */
-    #iMx6ywmtSqIy0ZSSk-graph-select-div {
+    #iGprQFnIiU74KKEpY-graph-select-div {
       display: none;
     }
-    #iMx6ywmtSqIy0ZSSk-node-size-norm-div {
+    #iGprQFnIiU74KKEpY-node-size-norm-div {
       display: none;
     }
-    #iMx6ywmtSqIy0ZSSk-edge-size-norm-div {
+    #iGprQFnIiU74KKEpY-edge-size-norm-div {
       display: none;
     }
 
     /* Graph */
-    #iMx6ywmtSqIy0ZSSk-tooltip-div {
+    #iGprQFnIiU74KKEpY-tooltip-div {
       font-size: 10px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42001;
@@ -255,7 +256,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-menu-toggle-button, #iMx6ywmtSqIy0ZSSk-details-toggle-button, #iMx6ywmtSqIy0ZSSk-progress-container {
+    #iGprQFnIiU74KKEpY-menu-toggle-button, #iGprQFnIiU74KKEpY-details-toggle-button, #iGprQFnIiU74KKEpY-progress-container {
       font-size: 14px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42000;
@@ -267,7 +268,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iMx6ywmtSqIy0ZSSk-menu-toggle-button {
+    #iGprQFnIiU74KKEpY-menu-toggle-button {
       top: 0;
       right: 0;
       padding-left: 6px;
@@ -279,7 +280,7 @@
       border-bottom: 1px solid #ccc;
       border-left: 1px solid #ccc;
     }
-    #iMx6ywmtSqIy0ZSSk-details-toggle-button {
+    #iGprQFnIiU74KKEpY-details-toggle-button {
       bottom: 0;
       left: 0;
       padding-left: 19px;
@@ -291,7 +292,7 @@
       border-bottom: 0px;
       border-left: 0px;
     }
-    #iMx6ywmtSqIy0ZSSk-progress-container {
+    #iGprQFnIiU74KKEpY-progress-container {
       font-size: 10px;
       text-align: center;
       top: 46%;
@@ -303,7 +304,7 @@
     }
 
     /* Details */
-    #iMx6ywmtSqIy0ZSSk-details-user-provided {
+    #iGprQFnIiU74KKEpY-details-user-provided {
       margin-top: 3px;
       padding-top: 3.5px;
       border-top: 0.5px dashed black;
@@ -312,578 +313,578 @@
       white-space: pre-wrap;
       word-break: break-word;
     }
-    #iMx6ywmtSqIy0ZSSk-details-user-provided ul {
+    #iGprQFnIiU74KKEpY-details-user-provided ul {
       list-style-position: inside;
       padding-left: 6px;
     }
   </style>
 
-  <div id="iMx6ywmtSqIy0ZSSk-main-div">
-    <div id="iMx6ywmtSqIy0ZSSk-tooltip-div"></div>
+  <div id="iGprQFnIiU74KKEpY-main-div">
+    <div id="iGprQFnIiU74KKEpY-tooltip-div"></div>
 
-    <div id="iMx6ywmtSqIy0ZSSk-left-div">
-      <div id="iMx6ywmtSqIy0ZSSk-left-inner-div">
-        <div id="iMx6ywmtSqIy0ZSSk-graph-div"></div>
-        <div id="iMx6ywmtSqIy0ZSSk-details-div">
-          <div id="iMx6ywmtSqIy0ZSSk-details-head">
+    <div id="iGprQFnIiU74KKEpY-left-div">
+      <div id="iGprQFnIiU74KKEpY-left-inner-div">
+        <div id="iGprQFnIiU74KKEpY-graph-div"></div>
+        <div id="iGprQFnIiU74KKEpY-details-div">
+          <div id="iGprQFnIiU74KKEpY-details-head">
             Details for selected element
           </div>
-          <div id="iMx6ywmtSqIy0ZSSk-details-body">
+          <div id="iGprQFnIiU74KKEpY-details-body">
           </div>
         </div>
       </div>
     </div>
 
-    <div id="iMx6ywmtSqIy0ZSSk-right-div">
-      <div id="iMx6ywmtSqIy0ZSSk-right-inner-div">
+    <div id="iGprQFnIiU74KKEpY-right-div">
+      <div id="iGprQFnIiU74KKEpY-right-inner-div">
         <!-- Menu: General -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-general-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-general-head">
           General
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-general-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-general-body">
           <!-- Sub-menu: State -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               App state
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-reset"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-reset"
                       type="button">Reset</button>
             </div>
           </div>
           <!-- Sub-menu: Display mode (fullscreen or not) -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Display mode
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-fullscreen-button"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-fullscreen-button"
                       type="button">Enter full screen</button>
             </div>
           </div>
           <!-- Sub-menu: Export -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Export
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-svg"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-svg"
                       type="button">SVG</button>
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-png"
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-png"
                       type="button">PNG</button>
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-jpg"
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-jpg"
                       type="button">JPG</button>
             </div>
           </div>
         </div>
         <!-- Menu: Data -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-data-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-data-head">
           Data selection
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-data-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-data-body">
           <!-- Sub-menu: Graph (only shown if multiple graphs in data) -->
-          <div id="iMx6ywmtSqIy0ZSSk-graph-select-div">
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+          <div id="iGprQFnIiU74KKEpY-graph-select-div">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Graph
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <select class="iMx6ywmtSqIy0ZSSk-select"
-                      id="iMx6ywmtSqIy0ZSSk-graph-select"></select>
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <select class="iGprQFnIiU74KKEpY-select"
+                      id="iGprQFnIiU74KKEpY-graph-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node label text -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Node label text
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <select class="iMx6ywmtSqIy0ZSSk-select"
-                      id="iMx6ywmtSqIy0ZSSk-node-label-data-source-select"></select>
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <select class="iGprQFnIiU74KKEpY-select"
+                      id="iGprQFnIiU74KKEpY-node-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Edge label text -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Edge label text
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <select class="iMx6ywmtSqIy0ZSSk-select"
-                      id="iMx6ywmtSqIy0ZSSk-edge-label-data-source-select"></select>
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <select class="iGprQFnIiU74KKEpY-select"
+                      id="iGprQFnIiU74KKEpY-edge-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node size -->
-          <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+          <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
             Node size
           </div>
-          <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
+          <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
             <div>
-              <select class="iMx6ywmtSqIy0ZSSk-select"
-                      id="iMx6ywmtSqIy0ZSSk-node-size-data-source-select"></select>
+              <select class="iGprQFnIiU74KKEpY-select"
+                      id="iGprQFnIiU74KKEpY-node-size-data-source-select"></select>
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-              <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                     id="iMx6ywmtSqIy0ZSSk-node-size-normalization-checkbox"
+            <div class="iGprQFnIiU74KKEpY-labeled-input">
+              <input class="iGprQFnIiU74KKEpY-checkbox"
+                     id="iGprQFnIiU74KKEpY-node-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iMx6ywmtSqIy0ZSSk-label"
-                     for="iMx6ywmtSqIy0ZSSk-node-size-normalization-checkbox">Normalize</label>
+              <label class="iGprQFnIiU74KKEpY-label"
+                     for="iGprQFnIiU74KKEpY-node-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iMx6ywmtSqIy0ZSSk-node-size-norm-div">
+            <div id="iGprQFnIiU74KKEpY-node-size-norm-div">
               <div>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Minimum</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-node-size-normalization-min-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-node-size-normalization-min-slider"
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Minimum</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-node-size-normalization-min-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-node-size-normalization-min-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
               <div>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Maximum</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-node-size-normalization-max-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-node-size-normalization-max-slider"
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Maximum</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-node-size-normalization-max-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-node-size-normalization-max-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Edge size -->
-          <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+          <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
             Edge size
           </div>
-          <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
+          <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
             <div>
-              <select class="iMx6ywmtSqIy0ZSSk-select"
-                      id="iMx6ywmtSqIy0ZSSk-edge-size-data-source-select"></select>
+              <select class="iGprQFnIiU74KKEpY-select"
+                      id="iGprQFnIiU74KKEpY-edge-size-data-source-select"></select>
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-              <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                     id="iMx6ywmtSqIy0ZSSk-edge-size-normalization-checkbox"
+            <div class="iGprQFnIiU74KKEpY-labeled-input">
+              <input class="iGprQFnIiU74KKEpY-checkbox"
+                     id="iGprQFnIiU74KKEpY-edge-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iMx6ywmtSqIy0ZSSk-label"
-                     for="iMx6ywmtSqIy0ZSSk-edge-size-normalization-checkbox">Normalize</label>
+              <label class="iGprQFnIiU74KKEpY-label"
+                     for="iGprQFnIiU74KKEpY-edge-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iMx6ywmtSqIy0ZSSk-edge-size-norm-div">
+            <div id="iGprQFnIiU74KKEpY-edge-size-norm-div">
               <div>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Minimum</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-edge-size-normalization-min-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-edge-size-normalization-min-slider"
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Minimum</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-edge-size-normalization-min-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-edge-size-normalization-min-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
               <div>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Maximum</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-edge-size-normalization-max-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-edge-size-normalization-max-slider"
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Maximum</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-edge-size-normalization-max-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-edge-size-normalization-max-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Nodes -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-node-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-node-head">
           Nodes
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-node-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-node-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Visibility
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-checkbox">Show nodes</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-checkbox">Show nodes</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Size
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
               <div>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Scaling factor</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-node-size-factor-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-node-size-factor-slider"
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Scaling factor</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-node-size-factor-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-node-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Position -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Position
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <button class="iMx6ywmtSqIy0ZSSk-button"
-                      id="iMx6ywmtSqIy0ZSSk-node-release-button"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <button class="iGprQFnIiU74KKEpY-button"
+                      id="iGprQFnIiU74KKEpY-node-release-button"
                       type="button">Release fixed nodes</button>
             </div>
           </div>
           <!-- Sub-menu: Drag behavior -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Drag behavior
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-drag-fix-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-drag-fix-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-drag-fix-checkbox">Fix node position</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-drag-fix-checkbox">Fix node position</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-hover-neighborhood-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-hover-neighborhood-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-hover-neighborhood-checkbox">Show neighborhood</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-hover-neighborhood-checkbox">Show neighborhood</label>
               </div>
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-hover-tooltip-checkbox"
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node images -->
-        <div id="iMx6ywmtSqIy0ZSSk-node-image-meta-control">
-          <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-               id="iMx6ywmtSqIy0ZSSk-node-image-head">
+        <div id="iGprQFnIiU74KKEpY-node-image-meta-control">
+          <div class="iGprQFnIiU74KKEpY-menu-item-head"
+               id="iGprQFnIiU74KKEpY-node-image-head">
             Node images
           </div>
-          <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-               id="iMx6ywmtSqIy0ZSSk-node-image-body">
+          <div class="iGprQFnIiU74KKEpY-menu-item-body"
+               id="iGprQFnIiU74KKEpY-node-image-body">
             <!-- Sub-menu: Visibility -->
             <div>
-              <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+              <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
                 Visibility
               </div>
-              <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-                <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                  <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                         id="iMx6ywmtSqIy0ZSSk-node-image-checkbox"
+              <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+                <div class="iGprQFnIiU74KKEpY-labeled-input">
+                  <input class="iGprQFnIiU74KKEpY-checkbox"
+                         id="iGprQFnIiU74KKEpY-node-image-checkbox"
                          type="checkbox">
-                  <label class="iMx6ywmtSqIy0ZSSk-label"
-                         for="iMx6ywmtSqIy0ZSSk-node-image-checkbox">Show node images</label>
+                  <label class="iGprQFnIiU74KKEpY-label"
+                         for="iGprQFnIiU74KKEpY-node-image-checkbox">Show node images</label>
                 </div>
               </div>
             </div>
             <!-- Sub-menu: Size -->
             <div>
-              <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+              <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
                 Size
               </div>
-              <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Scaling factor</span>
-                <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-node-image-size-factor-text"></span>
-                <input class="iMx6ywmtSqIy0ZSSk-slider"
-                       id="iMx6ywmtSqIy0ZSSk-node-image-size-factor-slider"
+              <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+                <span class="iGprQFnIiU74KKEpY-slider-text-left">Scaling factor</span>
+                <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-node-image-size-factor-text"></span>
+                <input class="iGprQFnIiU74KKEpY-slider"
+                       id="iGprQFnIiU74KKEpY-node-image-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node labels -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-node-label-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-node-label-head">
           Node labels
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-node-label-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-node-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Visibility
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-label-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-label-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-label-checkbox">Show node labels</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-label-checkbox">Show node labels</label>
               </div>
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-node-label-border-checkbox"
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-node-label-border-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-node-label-border-checkbox">Show borders</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-node-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Size
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Scaling factor</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                    id="iMx6ywmtSqIy0ZSSk-node-label-size-factor-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-node-label-size-factor-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Scaling factor</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                    id="iGprQFnIiU74KKEpY-node-label-size-factor-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-node-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iMx6ywmtSqIy0ZSSk-node-label-rotation">
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+          <div id="iGprQFnIiU74KKEpY-node-label-rotation">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Rotation
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Angle</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                    id="iMx6ywmtSqIy0ZSSk-node-label-rotation-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-node-label-rotation-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Angle</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                    id="iGprQFnIiU74KKEpY-node-label-rotation-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-node-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Edges -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-edge-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-edge-head">
           Edges
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-edge-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-edge-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Visibility
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-edge-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-edge-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-edge-checkbox">Show edges</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-edge-checkbox">Show edges</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Size
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Scaling factor</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                    id="iMx6ywmtSqIy0ZSSk-edge-size-factor-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-edge-size-factor-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Scaling factor</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                    id="iGprQFnIiU74KKEpY-edge-size-factor-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-edge-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Form -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Form
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Curvature</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                    id="iMx6ywmtSqIy0ZSSk-edge-curvature-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-edge-curvature-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Curvature</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                    id="iGprQFnIiU74KKEpY-edge-curvature-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-edge-curvature-slider"
                      type="range" min="-1.2" max="1.2" step="0.02">
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-edge-hover-tooltip-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-edge-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Edge labels -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-edge-label-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-edge-label-head">
           Edge labels
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-edge-label-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-edge-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Visibility
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-edge-label-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-edge-label-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-edge-label-checkbox">Show edge labels</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-edge-label-checkbox">Show edge labels</label>
               </div>
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-edge-label-border-checkbox"
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-edge-label-border-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-edge-label-border-checkbox">Show borders</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-edge-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Size
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Scaling factor</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                    id="iMx6ywmtSqIy0ZSSk-edge-label-size-factor-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-edge-label-size-factor-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Scaling factor</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                    id="iGprQFnIiU74KKEpY-edge-label-size-factor-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-edge-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iMx6ywmtSqIy0ZSSk-edge-label-rotation">
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+          <div id="iGprQFnIiU74KKEpY-edge-label-rotation">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Rotation
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Angle</span>
-              <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                      id="iMx6ywmtSqIy0ZSSk-edge-label-rotation-text"></span>
-              <input class="iMx6ywmtSqIy0ZSSk-slider"
-                     id="iMx6ywmtSqIy0ZSSk-edge-label-rotation-slider"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <span class="iGprQFnIiU74KKEpY-slider-text-left">Angle</span>
+              <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                      id="iGprQFnIiU74KKEpY-edge-label-rotation-text"></span>
+              <input class="iGprQFnIiU74KKEpY-slider"
+                     id="iGprQFnIiU74KKEpY-edge-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Layout algorithm -->
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-head"
-             id="iMx6ywmtSqIy0ZSSk-layout-algorithm-head">
+        <div class="iGprQFnIiU74KKEpY-menu-item-head"
+             id="iGprQFnIiU74KKEpY-layout-algorithm-head">
           Layout algorithm
         </div>
-        <div class="iMx6ywmtSqIy0ZSSk-menu-item-body"
-             id="iMx6ywmtSqIy0ZSSk-layout-algorithm-body">
+        <div class="iGprQFnIiU74KKEpY-menu-item-body"
+             id="iGprQFnIiU74KKEpY-layout-algorithm-body">
 
           <!-- Sub-menu: Simulation -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Simulation
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-simulation-active-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-simulation-active-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-simulation-active-checkbox">Active</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-simulation-active-checkbox">Active</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Many-body force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Many-body force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-many-body-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-many-body-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-many-body-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-many-body-force-checkbox">On</label>
               </div>
-              <div id="iMx6ywmtSqIy0ZSSk-many-body-force-div">
+              <div id="iGprQFnIiU74KKEpY-many-body-force-div">
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Strength</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-many-body-force-strength-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-many-body-force-strength-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Strength</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-many-body-force-strength-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-many-body-force-strength-slider"
                          type="range" min="-2000.0" max="200.0" step="0.01"
                          style="direction:rtl;">
                 </div>
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Theta</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-many-body-force-theta-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-many-body-force-theta-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Theta</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-many-body-force-theta-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-many-body-force-theta-slider"
                          type="range" min="0.01" max="2.0" step="0.001">
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                    <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                         id="iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-checkbox"
+                  <div class="iGprQFnIiU74KKEpY-labeled-input">
+                    <input class="iGprQFnIiU74KKEpY-checkbox"
+                         id="iGprQFnIiU74KKEpY-many-body-force-min-distance-checkbox"
                          type="checkbox">
-                    <label class="iMx6ywmtSqIy0ZSSk-label"
-                           for="iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-checkbox">Use minimum distance</label>
+                    <label class="iGprQFnIiU74KKEpY-label"
+                           for="iGprQFnIiU74KKEpY-many-body-force-min-distance-checkbox">Use minimum distance</label>
                   </div>
-                  <div id="iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-div">
-                    <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Min</span>
-                    <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                          id="iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-text"></span>
-                    <input class="iMx6ywmtSqIy0ZSSk-slider"
-                           id="iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-slider"
+                  <div id="iGprQFnIiU74KKEpY-many-body-force-min-distance-div">
+                    <span class="iGprQFnIiU74KKEpY-slider-text-left">Min</span>
+                    <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                          id="iGprQFnIiU74KKEpY-many-body-force-min-distance-text"></span>
+                    <input class="iGprQFnIiU74KKEpY-slider"
+                           id="iGprQFnIiU74KKEpY-many-body-force-min-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                    <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                         id="iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-checkbox"
+                  <div class="iGprQFnIiU74KKEpY-labeled-input">
+                    <input class="iGprQFnIiU74KKEpY-checkbox"
+                         id="iGprQFnIiU74KKEpY-many-body-force-max-distance-checkbox"
                          type="checkbox">
-                    <label class="iMx6ywmtSqIy0ZSSk-label"
-                           for="iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-checkbox">Use maximum distance</label>
+                    <label class="iGprQFnIiU74KKEpY-label"
+                           for="iGprQFnIiU74KKEpY-many-body-force-max-distance-checkbox">Use maximum distance</label>
                   </div>
-                  <div id="iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-div">
-                    <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Max</span>
-                    <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                          id="iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-text"></span>
-                    <input class="iMx6ywmtSqIy0ZSSk-slider"
-                           id="iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-slider"
+                  <div id="iGprQFnIiU74KKEpY-many-body-force-max-distance-div">
+                    <span class="iGprQFnIiU74KKEpY-slider-text-left">Max</span>
+                    <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                          id="iGprQFnIiU74KKEpY-many-body-force-max-distance-text"></span>
+                    <input class="iGprQFnIiU74KKEpY-slider"
+                           id="iGprQFnIiU74KKEpY-many-body-force-max-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
@@ -892,33 +893,33 @@
           </div>
           <!-- Sub-menu: Links force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Links force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-links-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-links-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-links-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-links-force-checkbox">On</label>
                 </label>
               </div>
-              <div id="iMx6ywmtSqIy0ZSSk-links-force-div">
+              <div id="iGprQFnIiU74KKEpY-links-force-div">
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Distance</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-links-force-distance-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-links-force-distance-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Distance</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-links-force-distance-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-links-force-distance-slider"
                          type="range" min="0.01" max="1000.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Strength</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-links-force-strength-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-links-force-strength-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Strength</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-links-force-strength-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-links-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -926,32 +927,32 @@
           </div>
           <!-- Sub-menu: Collision force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Collision force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-collision-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-collision-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-collision-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-collision-force-checkbox">On</label>
               </div>
-              <div id="iMx6ywmtSqIy0ZSSk-collision-force-div">
+              <div id="iGprQFnIiU74KKEpY-collision-force-div">
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Radius</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-collision-force-radius-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-collision-force-radius-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Radius</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-collision-force-radius-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-collision-force-radius-slider"
                          type="range" min="0" max="100.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Strength</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-collision-force-strength-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-collision-force-strength-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Strength</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-collision-force-strength-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-collision-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -959,24 +960,24 @@
           </div>
           <!-- Sub-menu: x-positioning force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               x-positioning force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-x-positioning-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-x-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-x-positioning-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-x-positioning-force-checkbox">On</label>
               </div>
-              <div id="iMx6ywmtSqIy0ZSSk-x-positioning-force-div">
+              <div id="iGprQFnIiU74KKEpY-x-positioning-force-div">
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Strength</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-x-positioning-force-strength-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-x-positioning-force-strength-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Strength</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-x-positioning-force-strength-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-x-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -984,24 +985,24 @@
           </div>
           <!-- Sub-menu: y-positioning force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               y-positioning force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-y-positioning-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-y-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-y-positioning-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-y-positioning-force-checkbox">On</label>
               </div>
-              <div id="iMx6ywmtSqIy0ZSSk-y-positioning-force-div">
+              <div id="iGprQFnIiU74KKEpY-y-positioning-force-div">
                 <div>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-left">Strength</span>
-                  <span class="iMx6ywmtSqIy0ZSSk-slider-text-right"
-                        id="iMx6ywmtSqIy0ZSSk-y-positioning-force-strength-text"></span>
-                  <input class="iMx6ywmtSqIy0ZSSk-slider"
-                         id="iMx6ywmtSqIy0ZSSk-y-positioning-force-strength-slider"
+                  <span class="iGprQFnIiU74KKEpY-slider-text-left">Strength</span>
+                  <span class="iGprQFnIiU74KKEpY-slider-text-right"
+                        id="iGprQFnIiU74KKEpY-y-positioning-force-strength-text"></span>
+                  <input class="iGprQFnIiU74KKEpY-slider"
+                         id="iGprQFnIiU74KKEpY-y-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -1009,16 +1010,16 @@
           </div>
           <!-- Sub-menu: Centering force -->
           <div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-head">
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-head">
               Centering force
             </div>
-            <div class="iMx6ywmtSqIy0ZSSk-menu-subitem-body">
-              <div class="iMx6ywmtSqIy0ZSSk-labeled-input">
-                <input class="iMx6ywmtSqIy0ZSSk-checkbox"
-                       id="iMx6ywmtSqIy0ZSSk-centering-force-checkbox"
+            <div class="iGprQFnIiU74KKEpY-menu-subitem-body">
+              <div class="iGprQFnIiU74KKEpY-labeled-input">
+                <input class="iGprQFnIiU74KKEpY-checkbox"
+                       id="iGprQFnIiU74KKEpY-centering-force-checkbox"
                        type="checkbox">
-                <label class="iMx6ywmtSqIy0ZSSk-label"
-                       for="iMx6ywmtSqIy0ZSSk-centering-force-checkbox">On</label>
+                <label class="iGprQFnIiU74KKEpY-label"
+                       for="iGprQFnIiU74KKEpY-centering-force-checkbox">On</label>
               </div>
             </div>
           </div>
@@ -1071,7 +1072,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
           // 1) Fetch state.rawData
           fetchRawDataFromTemplating(){
-            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 0, "stdout_id": 3, "hover": "stdout:\n10\n\n01\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 0, "stdout_id": 4, "hover": "stdout:\n10\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n11\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "red"}}, "3": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n10\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "red"}}, "4": {"metadata": {"stderr_id": 0, "stdout_id": 0, "hover": "stdout:\n11\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "red"}}, "5": {"metadata": {"stderr_id": 0, "stdout_id": 1, "hover": "stdout:\n10\n\n1\n\n10\n\n15\n\n20\n\nstderr:\n_no_stderr_", "color": "red"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 5, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -15,7 +15,7 @@\n number is greater-then+than 9. If the@@ -24,7 +24,6 @@\n negative it turns-it into a positive@@ -41,6 +40,9 @@\n zero to the+end+of+the number. Then the"}}, {"source": "1", "target": "1", "metadata": {"diff": 1, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -43,7 +43,7 @@\n end of the-number.+integar. Then the output"}}, {"source": "1", "target": "1", "metadata": {"diff": 2, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -36,14 +36,15 @@\n number it adds-a+the+number zero to the end of the-integar.+integer. Then the output"}}, {"source": "1", "target": "1", "metadata": {"diff": 8, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -37,13 +37,17 @@\n it adds the-number+integer zero to the end of the+number+and+returns+an integer. Then the"}}, {"source": "1", "target": "1", "metadata": {"diff": 3, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student60", "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -48,4 +48,10 @@\n score + 1.+This+function+always+returns+an+int \"\"\""}}, {"source": "1", "target": "1", "metadata": {"diff": 9, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student60", "hover": "username:student60\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n end of the-number+number,+casts+it+back+into+an+int and returns it.@@ -48,10 +54,4 @@\n score + 1.-This-function-always-returns-an-int \"\"\""}}, {"source": "2", "target": "1", "metadata": {"diff": 0, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student33", "hover": "username:student33\ndiff:\n--- \n+++ \n@@ -16,9 +16,12 @@\n the function returns-it-as-positive.+the+absolute+value+of+the+integer. If the integer"}}, {"source": "3", "target": "1", "metadata": {"diff": 6, "color": "#008dff", "arrow_color": "#008dff", "username": "student50", "hover": "username:student50\ndiff:\n--- \n+++ \n@@ -10,11 +10,14 @@\n the number is-negative,+below+10, make it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. \"\"\""}}, {"source": "4", "target": "1", "metadata": {"diff": 7, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student59", "hover": "username:student59\ndiff:\n--- \n+++ \n@@ -4,7 +4,33 @@\n takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@\n more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place \"\"\""}}, {"source": "5", "target": "1", "metadata": {"diff": 4, "color": "#ffcd8e", "arrow_color": "#ffcd8e", "username": "student75", "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -11,4 +11,21 @@\n its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20' \"\"\""}}], "directed": true}];
+            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 0, "stdout_id": 0, "hover": "stdout:\n10\n\n01\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "grey"}}, "1": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n10\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 0, "stdout_id": 4, "hover": "stdout:\n11\n\n10\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "grey"}}, "3": {"metadata": {"stderr_id": 0, "stdout_id": 3, "hover": "stdout:\n10\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "grey"}}, "4": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n11\n\n2\n\n11\n\n16\n\n21\n\nstderr:\n_no_stderr_", "color": "grey"}}, "5": {"metadata": {"stderr_id": 0, "stdout_id": 1, "hover": "stdout:\n10\n\n1\n\n10\n\n15\n\n20\n\nstderr:\n_no_stderr_", "color": "grey"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 0, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -15,7 +15,7 @@\n number is greater-then+than 9. If the@@ -24,7 +24,6 @@\n negative it turns-it into a positive@@ -41,6 +40,9 @@\n zero to the+end+of+the number. Then the\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater then 9. If the number is negative it turns it into a positive number. If it is a single-digit number it adds a zero to the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = \"0\" + str(score)\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n"}}, {"source": "1", "target": "1", "metadata": {"diff": 1, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -43,7 +43,7 @@\n end of the-number.+integar. Then the output\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the number. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the integar. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n"}}, {"source": "1", "target": "1", "metadata": {"diff": 2, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -36,14 +36,15 @@\n number it adds-a+the+number zero to the end of the-integar.+integer. Then the output\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds a zero to the end of the integar. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the number zero to the end of the integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n"}}, {"source": "1", "target": "1", "metadata": {"diff": 3, "color": "#d83034", "arrow_color": "#d83034", "username": "student23", "hover": "username:student23\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -37,13 +37,17 @@\n it adds the-number+integer zero to the end of the+number+and+returns+an integer. Then the\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the number zero to the end of the integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n    elif score < 0:\n        score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    This function takes in a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the integer zero to the end of the number and returns an integer. Then the output is returned with the updated number.\n    \"\"\"\n        if score > 9:\n        score += 1\n        return score\n    elif score < 0:\n        score = abs(score)\n        return score\n    else:\n        score = str(score)\n        score += '0'\n        score = int(score)\n        return score\n"}}, {"source": "1", "target": "1", "metadata": {"diff": 7, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student60", "hover": "username:student60\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -48,4 +48,10 @@\n score + 1.+This+function+always+returns+an+int \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. This function always returns an int\n    \"\"\"\n        if score < 0:\n        return -score\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n"}}, {"source": "1", "target": "1", "metadata": {"diff": 8, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student60", "hover": "username:student60\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n end of the-number+number,+casts+it+back+into+an+int and returns it.@@ -48,10 +54,4 @@\n score + 1.-This-function-always-returns-an-int \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number and returns it. Otherwise, the function just returns score + 1. This function always returns an int\n    \"\"\"\n        if score < 0:\n        return -score\n    elif score < 10:\n        return str(score) + \"0\"\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes in an int score as parameter. If the score is negative, it returns a positive number. If the score is a single digit, it adds a 0 at the end of the number, casts it back into an int and returns it. Otherwise, the function just returns score + 1. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return int(str(score) + \"0\")\n    else:\n        return score + 1\n"}}, {"source": "2", "target": "1", "metadata": {"diff": 4, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student33", "hover": "username:student33\nedge: (2->1)\ndiff:\n--- \n+++ \n@@ -16,9 +16,12 @@\n the function returns-it-as-positive.+the+absolute+value+of+the+integer. If the integer\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes an integer as input. If the integer is negative, the function returns it as positive. If the integer only has one digit, the function returns a value of 10. If the integer is positive and two or more digits, the function returns the integer plus one. \n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    if score < 10:\n        score = 10\n    else:\n        score = score + 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The function takes an integer as input. If the integer is negative, the function returns the absolute value of the integer. If the integer only has one digit, the function returns a value of 10. If the integer is positive and two or more digits, the function returns the integer plus one. \n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score < 10:\n        return 10\n    else:\n        return score + 1\n"}}, {"source": "3", "target": "1", "metadata": {"diff": 5, "color": "#008dff", "arrow_color": "#008dff", "username": "student50", "hover": "username:student50\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -10,11 +10,14 @@\n the number is-negative,+below+10, make it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    The input is an integer. If the number is negative, make it positive. Otherwise, add one.\n    \"\"\"\n        if score < 0:\n        return -score\n    else:\n        return score + 1\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    The input is an integer. If the number is below 10, make it 10. Else, add one to it.\n    \"\"\"\n        if score < 10:\n        return 10\n    else:\n        return score + 1\n"}}, {"source": "4", "target": "1", "metadata": {"diff": 6, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student59", "hover": "username:student59\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -4,7 +4,33 @@\n takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@\n more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    takes an integer and returns an integer whose one's place digit is one more than before. if the inputted integer is negative, returns the absolute value of the integer\n    \"\"\"\n        if score < 0:\n        score = abs(score)\n    score = score + 1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    takes an integer as the input. if the inputted integer is negative, returns the absolute value of the integer. if the inputted integer is positive and is greater than 9, returns an integer whose one's place digit is one more than before. for all other case, returns an integer that adds a zero in the one's place\n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score >= 9:\n        return score + 1\n    else:\n        return score * 10\n"}}, {"source": "5", "target": "1", "metadata": {"diff": 9, "color": "#ffcd8e", "arrow_color": "#ffcd8e", "username": "student75", "hover": "username:student75\nedge: (5->1)\ndiff:\n--- \n+++ \n@@ -11,4 +11,21 @@\n its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20' \"\"\"\n\nFROM completion:\ndef increaseScore(score):\n    \"\"\"\n    def increaseScore(score): takes input '-10' and outputs its positive integer\n    \"\"\"\n        if score < 0:\n        score = score * -1\n    return score\n\n\nTO completion:\ndef increaseScore(score):\n    \"\"\"\n    def increaseScore(score): takes input '-10' and outputs its positive integer\ndef increaseScore(score): inputs '1' and adds 9\ndef increaseScore(score): adds 1 to each input '10', '15', '20'\n    \"\"\"\n        if score < 0:\n        return abs(score)\n    elif score == 1:\n        return score + 9\n    else:\n        return score + 1\n"}}], "directed": true}];
             // Data selection and normalization
             state.nodeSizeDataSource = "size";
             state.useNodeSizeNormalization = false;
@@ -2001,126 +2002,126 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
         elements:{
           // Containers
-          mainContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-main-div"),
-          tooltipContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-tooltip-div"),
-          leftContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-left-div"),
-          rightContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-right-div"),
-          graphContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-graph-div"),
-          detailsContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-details-div"),
-          detailsHead: document.getElementById("iMx6ywmtSqIy0ZSSk-details-head"),
-          detailsBody: document.getElementById("iMx6ywmtSqIy0ZSSk-details-body"),
+          mainContainer: document.getElementById("iGprQFnIiU74KKEpY-main-div"),
+          tooltipContainer: document.getElementById("iGprQFnIiU74KKEpY-tooltip-div"),
+          leftContainer: document.getElementById("iGprQFnIiU74KKEpY-left-div"),
+          rightContainer: document.getElementById("iGprQFnIiU74KKEpY-right-div"),
+          graphContainer: document.getElementById("iGprQFnIiU74KKEpY-graph-div"),
+          detailsContainer: document.getElementById("iGprQFnIiU74KKEpY-details-div"),
+          detailsHead: document.getElementById("iGprQFnIiU74KKEpY-details-head"),
+          detailsBody: document.getElementById("iGprQFnIiU74KKEpY-details-body"),
           // Data sources
-          dataHead: document.getElementById("iMx6ywmtSqIy0ZSSk-data-head"),
-          dataBody: document.getElementById("iMx6ywmtSqIy0ZSSk-data-body"),
-          graphSelectionContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-graph-select-div"),
-          graphSelection: document.getElementById("iMx6ywmtSqIy0ZSSk-graph-select"),
-          nodeSizeDataSourceSelect: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-data-source-select"),
-          nodeSizeNormalizationCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-normalization-checkbox"),
-          nodeSizeNormalizationContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-norm-div"),
-          nodeSizeNormalizationMinText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-normalization-min-text"),
-          nodeSizeNormalizationMinSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-normalization-min-slider"),
-          nodeSizeNormalizationMaxText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-normalization-max-text"),
-          nodeSizeNormalizationMaxSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-normalization-max-slider"),
-          edgeSizeDataSourceSelect: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-data-source-select"),
-          edgeSizeNormalizationCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-normalization-checkbox"),
-          edgeSizeNormalizationContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-norm-div"),
-          edgeSizeNormalizationMinText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-normalization-min-text"),
-          edgeSizeNormalizationMinSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-normalization-min-slider"),
-          edgeSizeNormalizationMaxText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-normalization-max-text"),
-          edgeSizeNormalizationMaxSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-normalization-max-slider"),
+          dataHead: document.getElementById("iGprQFnIiU74KKEpY-data-head"),
+          dataBody: document.getElementById("iGprQFnIiU74KKEpY-data-body"),
+          graphSelectionContainer: document.getElementById("iGprQFnIiU74KKEpY-graph-select-div"),
+          graphSelection: document.getElementById("iGprQFnIiU74KKEpY-graph-select"),
+          nodeSizeDataSourceSelect: document.getElementById("iGprQFnIiU74KKEpY-node-size-data-source-select"),
+          nodeSizeNormalizationCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-size-normalization-checkbox"),
+          nodeSizeNormalizationContainer: document.getElementById("iGprQFnIiU74KKEpY-node-size-norm-div"),
+          nodeSizeNormalizationMinText: document.getElementById("iGprQFnIiU74KKEpY-node-size-normalization-min-text"),
+          nodeSizeNormalizationMinSlider: document.getElementById("iGprQFnIiU74KKEpY-node-size-normalization-min-slider"),
+          nodeSizeNormalizationMaxText: document.getElementById("iGprQFnIiU74KKEpY-node-size-normalization-max-text"),
+          nodeSizeNormalizationMaxSlider: document.getElementById("iGprQFnIiU74KKEpY-node-size-normalization-max-slider"),
+          edgeSizeDataSourceSelect: document.getElementById("iGprQFnIiU74KKEpY-edge-size-data-source-select"),
+          edgeSizeNormalizationCheckbox: document.getElementById("iGprQFnIiU74KKEpY-edge-size-normalization-checkbox"),
+          edgeSizeNormalizationContainer: document.getElementById("iGprQFnIiU74KKEpY-edge-size-norm-div"),
+          edgeSizeNormalizationMinText: document.getElementById("iGprQFnIiU74KKEpY-edge-size-normalization-min-text"),
+          edgeSizeNormalizationMinSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-size-normalization-min-slider"),
+          edgeSizeNormalizationMaxText: document.getElementById("iGprQFnIiU74KKEpY-edge-size-normalization-max-text"),
+          edgeSizeNormalizationMaxSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-size-normalization-max-slider"),
           // General
-          generalHead: document.getElementById("iMx6ywmtSqIy0ZSSk-general-head"),
-          generalBody: document.getElementById("iMx6ywmtSqIy0ZSSk-general-body"),
-          resetButton: document.getElementById("iMx6ywmtSqIy0ZSSk-reset"),
-          fullscreenButton: document.getElementById("iMx6ywmtSqIy0ZSSk-fullscreen-button"),
-          svgExportButton: document.getElementById("iMx6ywmtSqIy0ZSSk-svg"),
-          pngExportButton: document.getElementById("iMx6ywmtSqIy0ZSSk-png"),
-          jpgExportButton: document.getElementById("iMx6ywmtSqIy0ZSSk-jpg"),
+          generalHead: document.getElementById("iGprQFnIiU74KKEpY-general-head"),
+          generalBody: document.getElementById("iGprQFnIiU74KKEpY-general-body"),
+          resetButton: document.getElementById("iGprQFnIiU74KKEpY-reset"),
+          fullscreenButton: document.getElementById("iGprQFnIiU74KKEpY-fullscreen-button"),
+          svgExportButton: document.getElementById("iGprQFnIiU74KKEpY-svg"),
+          pngExportButton: document.getElementById("iGprQFnIiU74KKEpY-png"),
+          jpgExportButton: document.getElementById("iGprQFnIiU74KKEpY-jpg"),
           // Nodes
-          nodeHead: document.getElementById("iMx6ywmtSqIy0ZSSk-node-head"),
-          nodeBody: document.getElementById("iMx6ywmtSqIy0ZSSk-node-body"),
-          nodeCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-checkbox"),
-          nodeSizeFactorText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-factor-text"),
-          nodeSizeFactorSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-size-factor-slider"),
-          nodeDragFixCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-drag-fix-checkbox"),
-          nodeHoverNeighborhoodCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-hover-neighborhood-checkbox"),
-          nodeHoverTooltipCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-hover-tooltip-checkbox"),
-          nodeReleaseButton: document.getElementById("iMx6ywmtSqIy0ZSSk-node-release-button"),
+          nodeHead: document.getElementById("iGprQFnIiU74KKEpY-node-head"),
+          nodeBody: document.getElementById("iGprQFnIiU74KKEpY-node-body"),
+          nodeCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-checkbox"),
+          nodeSizeFactorText: document.getElementById("iGprQFnIiU74KKEpY-node-size-factor-text"),
+          nodeSizeFactorSlider: document.getElementById("iGprQFnIiU74KKEpY-node-size-factor-slider"),
+          nodeDragFixCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-drag-fix-checkbox"),
+          nodeHoverNeighborhoodCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-hover-neighborhood-checkbox"),
+          nodeHoverTooltipCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-hover-tooltip-checkbox"),
+          nodeReleaseButton: document.getElementById("iGprQFnIiU74KKEpY-node-release-button"),
           // Node images
-          nodeImageHead: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-head"),
-          nodeImageBody: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-body"),
-          nodeImageCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-checkbox"),
-          nodeImageMetaControl: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-meta-control"),
-          nodeImageSizeFactorText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-size-factor-text"),
-          nodeImageSizeFactorSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-image-size-factor-slider"),
+          nodeImageHead: document.getElementById("iGprQFnIiU74KKEpY-node-image-head"),
+          nodeImageBody: document.getElementById("iGprQFnIiU74KKEpY-node-image-body"),
+          nodeImageCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-image-checkbox"),
+          nodeImageMetaControl: document.getElementById("iGprQFnIiU74KKEpY-node-image-meta-control"),
+          nodeImageSizeFactorText: document.getElementById("iGprQFnIiU74KKEpY-node-image-size-factor-text"),
+          nodeImageSizeFactorSlider: document.getElementById("iGprQFnIiU74KKEpY-node-image-size-factor-slider"),
           // Node labels
-          nodeLabelHead: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-head"),
-          nodeLabelBody: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-body"),
-          nodeLabelCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-checkbox"),
-          nodeLabelBorderCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-border-checkbox"),
-          nodeLabelTextDataSourceSelect: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-data-source-select"),
-          nodeLabelSizeFactorText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-size-factor-text"),
-          nodeLabelSizeFactorSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-size-factor-slider"),
-          nodeLabelRotationText: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-rotation-text"),
-          nodeLabelRotationSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-node-label-rotation-slider"),
+          nodeLabelHead: document.getElementById("iGprQFnIiU74KKEpY-node-label-head"),
+          nodeLabelBody: document.getElementById("iGprQFnIiU74KKEpY-node-label-body"),
+          nodeLabelCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-label-checkbox"),
+          nodeLabelBorderCheckbox: document.getElementById("iGprQFnIiU74KKEpY-node-label-border-checkbox"),
+          nodeLabelTextDataSourceSelect: document.getElementById("iGprQFnIiU74KKEpY-node-label-data-source-select"),
+          nodeLabelSizeFactorText: document.getElementById("iGprQFnIiU74KKEpY-node-label-size-factor-text"),
+          nodeLabelSizeFactorSlider: document.getElementById("iGprQFnIiU74KKEpY-node-label-size-factor-slider"),
+          nodeLabelRotationText: document.getElementById("iGprQFnIiU74KKEpY-node-label-rotation-text"),
+          nodeLabelRotationSlider: document.getElementById("iGprQFnIiU74KKEpY-node-label-rotation-slider"),
           // Edges
-          edgeHead: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-head"),
-          edgeBody: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-body"),
-          edgeCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-checkbox"),
-          edgeSizeFactorText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-factor-text"),
-          edgeSizeFactorSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-size-factor-slider"),
-          edgeCurvatureText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-curvature-text"),
-          edgeCurvatureSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-curvature-slider"),
-          edgeHoverTooltipCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-hover-tooltip-checkbox"),
+          edgeHead: document.getElementById("iGprQFnIiU74KKEpY-edge-head"),
+          edgeBody: document.getElementById("iGprQFnIiU74KKEpY-edge-body"),
+          edgeCheckbox: document.getElementById("iGprQFnIiU74KKEpY-edge-checkbox"),
+          edgeSizeFactorText: document.getElementById("iGprQFnIiU74KKEpY-edge-size-factor-text"),
+          edgeSizeFactorSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-size-factor-slider"),
+          edgeCurvatureText: document.getElementById("iGprQFnIiU74KKEpY-edge-curvature-text"),
+          edgeCurvatureSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-curvature-slider"),
+          edgeHoverTooltipCheckbox: document.getElementById("iGprQFnIiU74KKEpY-edge-hover-tooltip-checkbox"),
           // Edge labels
-          edgeLabelHead: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-head"),
-          edgeLabelBody: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-body"),
-          edgeLabelCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-checkbox"),
-          edgeLabelBorderCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-border-checkbox"),
-          edgeLabelTextDataSourceSelect: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-data-source-select"),
-          edgeLabelSizeFactorText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-size-factor-text"),
-          edgeLabelSizeFactorSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-size-factor-slider"),
-          edgeLabelRotationText: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-rotation-text"),
-          edgeLabelRotationSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-edge-label-rotation-slider"),
+          edgeLabelHead: document.getElementById("iGprQFnIiU74KKEpY-edge-label-head"),
+          edgeLabelBody: document.getElementById("iGprQFnIiU74KKEpY-edge-label-body"),
+          edgeLabelCheckbox: document.getElementById("iGprQFnIiU74KKEpY-edge-label-checkbox"),
+          edgeLabelBorderCheckbox: document.getElementById("iGprQFnIiU74KKEpY-edge-label-border-checkbox"),
+          edgeLabelTextDataSourceSelect: document.getElementById("iGprQFnIiU74KKEpY-edge-label-data-source-select"),
+          edgeLabelSizeFactorText: document.getElementById("iGprQFnIiU74KKEpY-edge-label-size-factor-text"),
+          edgeLabelSizeFactorSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-label-size-factor-slider"),
+          edgeLabelRotationText: document.getElementById("iGprQFnIiU74KKEpY-edge-label-rotation-text"),
+          edgeLabelRotationSlider: document.getElementById("iGprQFnIiU74KKEpY-edge-label-rotation-slider"),
           // Layout algorithm
-          layoutAlgorithmHead: document.getElementById("iMx6ywmtSqIy0ZSSk-layout-algorithm-head"),
-          layoutAlgorithmBody: document.getElementById("iMx6ywmtSqIy0ZSSk-layout-algorithm-body"),
-          simulationCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-simulation-active-checkbox"),
-          manyBodyForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-checkbox"),
-          manyBodyForceContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-div"),
-          manyBodyForceStrengthText: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-strength-text"),
-          manyBodyForceStrengthSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-strength-slider"),
-          manyBodyForceThetaText: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-theta-text"),
-          manyBodyForceThetaSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-theta-slider"),
-          manyBodyForceMinDistCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-checkbox"),
-          manyBodyForceMinDistContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-div"),
-          manyBodyForceMinDistText: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-text"),
-          manyBodyForceMinDistSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-min-distance-slider"),
-          manyBodyForceMaxDistCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-checkbox"),
-          manyBodyForceMaxDistContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-div"),
-          manyBodyForceMaxDistText: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-text"),
-          manyBodyForceMaxDistSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-many-body-force-max-distance-slider"),
-          linksForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-checkbox"),
-          linksForceContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-div"),
-          linksForceDistanceText: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-distance-text"),
-          linksForceDistanceSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-distance-slider"),
-          linksForceStrengthText: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-strength-text"),
-          linksForceStrengthSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-links-force-strength-slider"),
-          collisionForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-checkbox"),
-          collisionForceContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-div"),
-          collisionForceRadiusText: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-radius-text"),
-          collisionForceRadiusSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-radius-slider"),
-          collisionForceStrengthText: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-strength-text"),
-          collisionForceStrengthSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-collision-force-strength-slider"),
-          xPositioningForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-x-positioning-force-checkbox"),
-          xPositioningForceContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-x-positioning-force-div"),
-          xPositioningForceStrengthText: document.getElementById("iMx6ywmtSqIy0ZSSk-x-positioning-force-strength-text"),
-          xPositioningForceStrengthSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-x-positioning-force-strength-slider"),
-          yPositioningForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-y-positioning-force-checkbox"),
-          yPositioningForceContainer: document.getElementById("iMx6ywmtSqIy0ZSSk-y-positioning-force-div"),
-          yPositioningForceStrengthText: document.getElementById("iMx6ywmtSqIy0ZSSk-y-positioning-force-strength-text"),
-          yPositioningForceStrengthSlider: document.getElementById("iMx6ywmtSqIy0ZSSk-y-positioning-force-strength-slider"),
-          centeringForceCheckbox: document.getElementById("iMx6ywmtSqIy0ZSSk-centering-force-checkbox"),
+          layoutAlgorithmHead: document.getElementById("iGprQFnIiU74KKEpY-layout-algorithm-head"),
+          layoutAlgorithmBody: document.getElementById("iGprQFnIiU74KKEpY-layout-algorithm-body"),
+          simulationCheckbox: document.getElementById("iGprQFnIiU74KKEpY-simulation-active-checkbox"),
+          manyBodyForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-checkbox"),
+          manyBodyForceContainer: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-div"),
+          manyBodyForceStrengthText: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-strength-text"),
+          manyBodyForceStrengthSlider: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-strength-slider"),
+          manyBodyForceThetaText: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-theta-text"),
+          manyBodyForceThetaSlider: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-theta-slider"),
+          manyBodyForceMinDistCheckbox: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-min-distance-checkbox"),
+          manyBodyForceMinDistContainer: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-min-distance-div"),
+          manyBodyForceMinDistText: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-min-distance-text"),
+          manyBodyForceMinDistSlider: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-min-distance-slider"),
+          manyBodyForceMaxDistCheckbox: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-max-distance-checkbox"),
+          manyBodyForceMaxDistContainer: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-max-distance-div"),
+          manyBodyForceMaxDistText: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-max-distance-text"),
+          manyBodyForceMaxDistSlider: document.getElementById("iGprQFnIiU74KKEpY-many-body-force-max-distance-slider"),
+          linksForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-links-force-checkbox"),
+          linksForceContainer: document.getElementById("iGprQFnIiU74KKEpY-links-force-div"),
+          linksForceDistanceText: document.getElementById("iGprQFnIiU74KKEpY-links-force-distance-text"),
+          linksForceDistanceSlider: document.getElementById("iGprQFnIiU74KKEpY-links-force-distance-slider"),
+          linksForceStrengthText: document.getElementById("iGprQFnIiU74KKEpY-links-force-strength-text"),
+          linksForceStrengthSlider: document.getElementById("iGprQFnIiU74KKEpY-links-force-strength-slider"),
+          collisionForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-collision-force-checkbox"),
+          collisionForceContainer: document.getElementById("iGprQFnIiU74KKEpY-collision-force-div"),
+          collisionForceRadiusText: document.getElementById("iGprQFnIiU74KKEpY-collision-force-radius-text"),
+          collisionForceRadiusSlider: document.getElementById("iGprQFnIiU74KKEpY-collision-force-radius-slider"),
+          collisionForceStrengthText: document.getElementById("iGprQFnIiU74KKEpY-collision-force-strength-text"),
+          collisionForceStrengthSlider: document.getElementById("iGprQFnIiU74KKEpY-collision-force-strength-slider"),
+          xPositioningForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-x-positioning-force-checkbox"),
+          xPositioningForceContainer: document.getElementById("iGprQFnIiU74KKEpY-x-positioning-force-div"),
+          xPositioningForceStrengthText: document.getElementById("iGprQFnIiU74KKEpY-x-positioning-force-strength-text"),
+          xPositioningForceStrengthSlider: document.getElementById("iGprQFnIiU74KKEpY-x-positioning-force-strength-slider"),
+          yPositioningForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-y-positioning-force-checkbox"),
+          yPositioningForceContainer: document.getElementById("iGprQFnIiU74KKEpY-y-positioning-force-div"),
+          yPositioningForceStrengthText: document.getElementById("iGprQFnIiU74KKEpY-y-positioning-force-strength-text"),
+          yPositioningForceStrengthSlider: document.getElementById("iGprQFnIiU74KKEpY-y-positioning-force-strength-slider"),
+          centeringForceCheckbox: document.getElementById("iGprQFnIiU74KKEpY-centering-force-checkbox"),
         },
 
         composites:{
@@ -2482,7 +2483,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
             create(){
               // Main container
               this.mainContainer = document.createElement("div");
-              this.mainContainer.id = "iMx6ywmtSqIy0ZSSk-progress-container";
+              this.mainContainer.id = "iGprQFnIiU74KKEpY-progress-container";
               this.mainContainer.style.backgroundColor = state.shownData.general.background_color;
               ui.elements.graphContainer.style.backgroundColor = state.shownData.general.background_color;
               // Text container
@@ -2531,7 +2532,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   menuDiv.innerText = ui.symbols.menuHidden;
                 }
-                menuDiv.id = "iMx6ywmtSqIy0ZSSk-menu-toggle-button";
+                menuDiv.id = "iGprQFnIiU74KKEpY-menu-toggle-button";
                 menuDiv.onclick = ui.composites.menu.toggle;
                 ui.elements.graphContainer.appendChild(menuDiv);
                 ui.elements.menuToggleDiv = menuDiv;
@@ -2545,27 +2546,27 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   detailsDiv.innerText = ui.symbols.detailsHidden;
                 }
-                detailsDiv.id = "iMx6ywmtSqIy0ZSSk-details-toggle-button";
+                detailsDiv.id = "iGprQFnIiU74KKEpY-details-toggle-button";
                 detailsDiv.onclick = ui.composites.details.toggle;
                 ui.elements.graphContainer.appendChild(detailsDiv);
                 ui.elements.detailsToggleDiv = detailsDiv;
               }
 
               // - Graph drawing area
-              const svg = d3.select("#iMx6ywmtSqIy0ZSSk-graph-div").append("svg");
+              const svg = d3.select("#iGprQFnIiU74KKEpY-graph-div").append("svg");
               state.currentGraphParts.svg = svg;
               svg
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight);
               // - Background rectangle
               const backgroundRect = svg.append("rect")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-background")
+                .attr("id", "iGprQFnIiU74KKEpY-background")
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight)
                 .attr("fill", state.shownData.general.background_color);
               state.currentGraphParts.backgroundRect = backgroundRect;
               // - Zoomable and draggable group as graph drawing area
-              const view = svg.append("g").attr("id", "iMx6ywmtSqIy0ZSSk-zoomable-graph-group");
+              const view = svg.append("g").attr("id", "iGprQFnIiU74KKEpY-zoomable-graph-group");
               state.currentGraphParts.view = view;
               function zoomed(event) {
                 view.attr("transform", event.transform);
@@ -2624,7 +2625,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               //       in back and which are drawn in front (there is no z-order property in SVG)
               // Edges
               state.currentGraphParts.edgeMainGroup = view.append("g")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-edge-group")
+                .attr("id", "iGprQFnIiU74KKEpY-edge-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdges));
               state.currentGraphParts.edgeGroups = state.currentGraphParts.edgeMainGroup
                 .selectAll("g")
@@ -2632,7 +2633,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 .join("g");
               // Nodes
               state.currentGraphParts.nodeMainGroup = view.append("g")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-node-group")
+                .attr("id", "iGprQFnIiU74KKEpY-node-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodes));
               state.currentGraphParts.nodeGroups = state.currentGraphParts.nodeMainGroup
                 .selectAll("g")
@@ -2644,7 +2645,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 edgeLabelData.push(i);
               }
               state.currentGraphParts.edgeLabelMainGroup = view.append("g")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-edge-label-group")
+                .attr("id", "iGprQFnIiU74KKEpY-edge-label-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdgeLabels));
               state.currentGraphParts.edgeLabelGroups = state.currentGraphParts.edgeLabelMainGroup
                 .selectAll("g")
@@ -2656,7 +2657,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 nodeLabelData.push(i);
               }
               state.currentGraphParts.nodeLabelMainGroup = view.append("g")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-node-label-group");
+                .attr("id", "iGprQFnIiU74KKEpY-node-label-group");
               state.currentGraphParts.nodeLabelGroups = state.currentGraphParts.nodeLabelMainGroup
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeLabels))
                 .selectAll("g")
@@ -2673,7 +2674,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 }
               }
               state.currentGraphParts.nodeImageMainGroup = view.append("g")
-                .attr("id", "iMx6ywmtSqIy0ZSSk-node-image-group")
+                .attr("id", "iGprQFnIiU74KKEpY-node-image-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeImages));
               state.currentGraphParts.nodeImageGroups = state.currentGraphParts.nodeImageMainGroup
                 .selectAll("g")
@@ -2904,7 +2905,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function nodeClicked(event, node){
                 let htmlText = "<div>Node: " + String(node.id) + "</div>";
                 if(typeof(node.click) !== "undefined" && node.click !== ""){
-                  htmlText += '<div id="iMx6ywmtSqIy0ZSSk-details-user-provided">' + node.click + '</div>';
+                  htmlText += '<div id="iGprQFnIiU74KKEpY-details-user-provided">' + node.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }
@@ -3157,7 +3158,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
               // 1) Remove existing elements
               ui.composites.graph.removeEdges();
-              svg.select("#iMx6ywmtSqIy0ZSSk-arrow-marker").remove();
+              svg.select("#iGprQFnIiU74KKEpY-arrow-marker").remove();
               // 2) Create new elements
               // - Paths
               state.currentGraphParts.edgePaths = edgeGroups.append("path")
@@ -3171,7 +3172,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 const arrowSizeDouble = arrowSize * 2.0,
                   arrowSizeHalf = arrowSize / 2.0;
                 const marker = svg.append("marker")
-                  .attr("id", "iMx6ywmtSqIy0ZSSk-arrow-marker")
+                  .attr("id", "iGprQFnIiU74KKEpY-arrow-marker")
                   .attr("markerUnits", "userSpaceOnUse")
                   .attr("viewBox", "0 0 " + arrowSizeDouble + " " + arrowSizeDouble)
                   .attr("refX", 0)
@@ -3184,7 +3185,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                     .attr("d", "M 0 0 L " + arrowSizeDouble + " " + arrowSizeHalf + " L 0 " + arrowSize + " z")
                     .attr("fill", state.shownData.general.arrow_color)
                 state.currentGraphParts.edgePaths
-                  .attr("marker-end", "url(#iMx6ywmtSqIy0ZSSk-arrow-marker)");
+                  .attr("marker-end", "url(#iGprQFnIiU74KKEpY-arrow-marker)");
               }
               // - Edge hover behavior
               if(state.parsedData.general.contains_edge_hover){
@@ -3218,7 +3219,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function edgeClicked(event, edge){
                 let htmlText = "<div>Edge: " + String(edge.id) + "</div>";
                 if(typeof(edge.click) !== "undefined" && edge.click !== ""){
-                  htmlText += '<div id="iMx6ywmtSqIy0ZSSk-details-user-provided">' + edge.click + '</div>';
+                  htmlText += '<div id="iGprQFnIiU74KKEpY-details-user-provided">' + edge.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }

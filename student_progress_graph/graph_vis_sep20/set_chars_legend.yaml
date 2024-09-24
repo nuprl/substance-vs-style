@@ -1,55 +1,55 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
-    ---
-    +++
-    @@ -20,22 +20,17 @@
-     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
-  !!int "2": |-
-    ---
-    +++
-    @@ -19,5 +19,18 @@
-     list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
-  !!int "3": |-
-    ---
-    +++
-    @@ -31,4 +31,16 @@
-     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -20,17 +20,4 @@
-     with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
-  !!int "5": |-
-    ---
-    +++
-    @@ -4,12 +4,16 @@
-     Replace letters in+input s that are located in+index l to+the+input c """
-  !!int "6": |-
-    ---
-    +++
-    @@ -26,5 +26,17 @@
-     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -23,8 +23,7 @@
-     out of range-don't-change-that-letter.+ignore+the+index. """
-  !!int "8": |-
+  !!int "0": |-
     ---
     +++
     @@ -30,4 +30,20 @@
      the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. """
-  !!int "9": |-
+  !!int "1": |-
     ---
     +++
-    @@ -19,5 +19,23 @@
-     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
-  !!int "10": |-
+    @@ -4,12 +4,16 @@
+     Replace letters in+input s that are located in+index l to+the+input c """
+  !!int "2": ""
+  !!int "3": |-
     ---
     +++
     @@ -15,5 +15,16 @@
      to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -23,8 +23,7 @@
+     out of range-don't-change-that-letter.+ignore+the+index. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -26,5 +26,17 @@
+     return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -19,5 +19,18 @@
+     list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end """
+  !!int "7": |-
+    ---
+    +++
+    @@ -20,17 +20,4 @@
+     with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end """
+  !!int "8": |-
+    ---
+    +++
+    @@ -19,5 +19,23 @@
+     list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well """
+  !!int "9": |-
+    ---
+    +++
+    @@ -20,22 +20,17 @@
+     with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index """
+  !!int "10": |-
+    ---
+    +++
+    @@ -31,4 +31,16 @@
+     with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. """
 "nodes":
   !!int "0":
     "stderr":
@@ -57,7 +57,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       uvurybudy loves upples.
@@ -66,14 +66,14 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      2
+      4
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       uvurybudy loves upples.
@@ -82,7 +82,7 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      0
+      3
   !!int "2":
     "stderr":
     - |
@@ -101,14 +101,14 @@
       TypeError: replace() argument 1 must be str, not int
     - ""
     "stderr_id": !!int |-
-      1
+      3
     "stdout":
     - ""
     - ""
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      4
+      0
   !!int "3":
     "stderr":
     - ""
@@ -121,7 +121,7 @@
       IndexError: list assignment index out of range
     - ""
     "stderr_id": !!int |-
-      3
+      2
     "stdout":
     - |
       uvurybudy loves upples.
@@ -129,7 +129,7 @@
     - |
       toast and jam and toast and ham
     "stdout_id": !!int |-
-      1
+      2
   !!int "4":
     "stderr":
     - ""
@@ -142,7 +142,7 @@
           if l[0] == 0:
       IndexError: list index out of range
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - |
       uverybody loves apples.
@@ -150,7 +150,7 @@
       iqe cream is the best
     - ""
     "stdout_id": !!int |-
-      3
+      1
 "student_color":
   "student19": |-
     #d83034

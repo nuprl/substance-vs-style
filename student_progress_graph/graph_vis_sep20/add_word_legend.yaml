@@ -2,24 +2,23 @@
   !!int "0": |-
     ---
     +++
-    @@ -13,7 +13,6 @@
-     with the given-line number as a@@ -22,4 +21,8 @@
-     the inputted dictionary.+Returns+the+new+dictionary. """
+    @@ -63,4 +63,8 @@
+     as a value.+Returns+an+updated+map. """
   !!int "1": |-
-    ---
-    +++
-    @@ -17,5 +17,7 @@
-     number as the-value+value.+Return+map. """
-  !!int "2": |-
-    ---
-    +++
-    @@ -32,4 +32,9 @@
-     in the dictionary.+The+function+returns+the+dictionary. """
-  !!int "3": |-
     ---
     +++
     @@ -32,5 +32,7 @@
      number to the+word.+return word """
+  !!int "2": |-
+    ---
+    +++
+    @@ -34,5 +34,5 @@
+     the word. return-word+map """
+  !!int "3": |-
+    ---
+    +++
+    @@ -32,4 +32,9 @@
+     in the dictionary.+The+function+returns+the+dictionary. """
   !!int "4": |-
     ---
     +++
@@ -28,13 +27,14 @@
   !!int "5": |-
     ---
     +++
-    @@ -63,4 +63,8 @@
-     as a value.+Returns+an+updated+map. """
+    @@ -13,7 +13,6 @@
+     with the given-line number as a@@ -22,4 +21,8 @@
+     the inputted dictionary.+Returns+the+new+dictionary. """
   !!int "6": |-
     ---
     +++
-    @@ -34,5 +34,5 @@
-     the word. return-word+map """
+    @@ -17,5 +17,7 @@
+     number as the-value+value.+Return+map. """
 "nodes":
   !!int "0":
     "stderr":
@@ -67,7 +67,7 @@
     - |
       {'i': [1, 6], 'heard': [1], 'a': [1, 4], 'asked': [6], 'laughing': [7]}
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - ""
@@ -83,7 +83,7 @@
     - |
       laughing
     "stdout_id": !!int |-
-      2
+      1
 "student_color":
   "student10": |-
     #d83034

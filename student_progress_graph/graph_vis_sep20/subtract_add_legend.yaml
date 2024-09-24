@@ -1,59 +1,59 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -8,7 +8,7 @@
+     a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@
+     is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum
   !!int "1": |-
+    ---
+    +++
+    @@ -18,7 +18,7 @@
+     correspond to an-even+odd index by -1.
+  !!int "2": |-
     ---
     +++
     @@ -15,10 +15,11 @@
      list entries that+don't correspond to an-odd+even index by -1.
-  !!int "2": |-
+  !!int "3": |-
+    ---
+    +++
+    @@ -5,7 +5,13 @@
+     a list of-integers,+strings,+type+cast+to+integers+and+then take the first
+  !!int "4": ""
+  !!int "5": |-
     ---
     +++
     @@ -1,41 +1,32 @@
      def subtract_add(lst): """-Take+Subtract the-first-two-items+second+item in the array list-and-change-them-into-integers+from+the+first+item. then-take+subtract+the+forth+item+from+the+third+item then-take-the-next-two-integers-and-subtract-them-from-each-other.-sum+add the two-values-return-the-product.+sums. if there are
-  !!int "3": |-
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,6 +1,10 @@
+     def subtract_add(lst): """+Change+them+into+integers. Subtract the second
+  !!int "7": |-
     ---
     +++
     @@ -2,9 +2,12 @@
      subtract_add(lst): """ Change-them+the+first+two+items into-integers.+integers Subtract the second@@ -17,6 +20,14 @@
      the first item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8 +49,13 @@
      two items in-the list+change+those+two+items+into+integers subtract the second
-  !!int "4": |-
-    ---
-    +++
-    @@ -1,6 +1,19 @@
-     def subtract_add(lst): """+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array
-  !!int "5": |-
+  !!int "8": |-
     ---
     +++
     @@ -13,33 +13,36 @@
      characters into integers.-Starting-from-the-front-of-the-array,-subtract+Store the first-two-numbers-and-store-that+number+in+the+array in a count variable. then-add+subtract the next number+from+the+count.+With+the+next+number,+add+it to the-count.+count+and+then alternate between subtracting
-  !!int "6": |-
-    ---
-    +++
-    @@ -8,7 +8,7 @@
-     a list of-integers.+strings. Return 0 if@@ -17,6 +17,12 @@
-     is empty. Otherwise,+convert+the+strings+into+integers,+then subtract the sum
-  !!int "7": |-
-    ---
-    +++
-    @@ -1,6 +1,10 @@
-     def subtract_add(lst): """+Change+them+into+integers. Subtract the second
-  !!int "8": |-
-    ---
-    +++
-    @@ -18,7 +18,7 @@
-     correspond to an-even+odd index by -1.
   !!int "9": |-
+    ---
+    +++
+    @@ -1,6 +1,19 @@
+     def subtract_add(lst): """+if+there+are+no+values+stored+in+the+given+array,+return+0.+Else, given an array
+  !!int "10": |-
     ---
     +++
     @@ -1,20 +1,7 @@
      def subtract_add(lst): """-if-there-are-no-values-stored-in-the-given-array,-return-0.-Else,-given+Given an array of@@ -72,5 +59,13 @@
      array. return the-count+count.+If+the+given+array+is+empty,+return+0. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -5,7 +5,13 @@
-     a list of-integers,+strings,+type+cast+to+integers+and+then take the first
 "nodes":
   !!int "0":
     "stderr":
@@ -80,7 +80,7 @@
       TypeError: unsupported operand type(s) for +=: 'int' and 'str'
     - ""
     "stderr_id": !!int |-
-      1
+      7
     "stdout":
     - ""
     - ""
@@ -88,7 +88,7 @@
     - |
       0
     "stdout_id": !!int |-
-      0
+      1
   !!int "1":
     "stderr":
     - ""
@@ -96,7 +96,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - |
       -2
@@ -107,7 +107,7 @@
     - |
       0
     "stdout_id": !!int |-
-      1
+      3
   !!int "2":
     "stderr":
     - ""
@@ -115,7 +115,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - |
       2
@@ -126,7 +126,7 @@
     - |
       0
     "stdout_id": !!int |-
-      6
+      5
   !!int "3":
     "stderr":
     - |
@@ -152,7 +152,7 @@
       TypeError: unsupported operand type(s) for -=: 'str' and 'str'
     - ""
     "stderr_id": !!int |-
-      0
+      6
     "stdout":
     - ""
     - ""
@@ -160,7 +160,7 @@
     - |
       0
     "stdout_id": !!int |-
-      0
+      1
   !!int "4":
     "stderr":
     - |2
@@ -191,7 +191,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      2
+      0
   !!int "5":
     "stderr":
     - ""
@@ -211,7 +211,7 @@
       IndexError: list index out of range
     - ""
     "stderr_id": !!int |-
-      5
+      2
     "stdout":
     - |
       -4
@@ -220,7 +220,7 @@
     - |
       0
     "stdout_id": !!int |-
-      5
+      4
   !!int "6":
     "stderr":
     - |
@@ -246,7 +246,7 @@
       TypeError: unsupported operand type(s) for -: 'str' and 'str'
     - ""
     "stderr_id": !!int |-
-      7
+      4
     "stdout":
     - ""
     - ""
@@ -254,7 +254,7 @@
     - |
       0
     "stdout_id": !!int |-
-      0
+      1
   !!int "7":
     "stderr":
     - |
@@ -280,7 +280,7 @@
       TypeError: unsupported operand type(s) for -: 'str' and 'str'
     - ""
     "stderr_id": !!int |-
-      2
+      5
     "stdout":
     - ""
     - ""
@@ -288,7 +288,7 @@
     - |
       0
     "stdout_id": !!int |-
-      0
+      1
   !!int "8":
     "stderr":
     - ""
@@ -302,7 +302,7 @@
           count = int(lst[0])
       IndexError: list index out of range
     "stderr_id": !!int |-
-      6
+      1
     "stdout":
     - |
       -2
@@ -312,7 +312,7 @@
       0
     - ""
     "stdout_id": !!int |-
-      3
+      2
   !!int "9":
     "stderr":
     - ""
@@ -320,7 +320,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      4
+      0
     "stdout":
     - |
       4
@@ -331,7 +331,7 @@
     - |
       0
     "stdout_id": !!int |-
-      4
+      6
 "student_color":
   "student27": |-
     #d83034

@@ -299,7 +299,6 @@ def main(args):
         graph.clear()
         plt.clf()
         
-        
     
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

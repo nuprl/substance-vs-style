@@ -1,10 +1,14 @@
 "edges":
-  !!int "0": ""
+  !!int "0": |-
+    ---
+    +++
+    @@ -66,5 +66,10 @@
+     added to the-"total"+"total",+truncated+to+two+decimal+places. """
   !!int "1": |-
     ---
     +++
-    @@ -6,10 +6,10 @@
-     grocery_list, multiple index-0+1 with index-1,+2, repeat for all
+    @@ -51,5 +51,13 @@
+     to give the+output.+The output+is+rounded+to+two+decimal+points. """
   !!int "2": |-
     ---
     +++
@@ -14,43 +18,39 @@
   !!int "3": |-
     ---
     +++
-    @@ -17,5 +17,19 @@
-     index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. """
+    @@ -68,6 +68,17 @@
+     and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return
   !!int "4": |-
     ---
     +++
-    @@ -66,5 +66,10 @@
-     added to the-"total"+"total",+truncated+to+two+decimal+places. """
+    @@ -17,5 +17,19 @@
+     index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. """
   !!int "5": |-
-    ---
-    +++
-    @@ -68,6 +68,17 @@
-     and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return
-  !!int "6": |-
     ---
     +++
     @@ -39,4 +39,11 @@
      items returns it.+This+function+rounds+to+2+decimal+points """
-  !!int "7": |-
+  !!int "6": |-
     ---
     +++
     @@ -42,6 +42,8 @@
      that value by+1+plus the inputted number.
-  !!int "8": |-
-    ---
-    +++
-    @@ -27,4 +27,11 @@
-     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -51,5 +51,13 @@
-     to give the+output.+The output+is+rounded+to+two+decimal+points. """
-  !!int "10": |-
+  !!int "7": |-
     ---
     +++
     @@ -48,7 +48,12 @@
      inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. """
+  !!int "8": ""
+  !!int "9": |-
+    ---
+    +++
+    @@ -6,10 +6,10 @@
+     grocery_list, multiple index-0+1 with index-1,+2, repeat for all
+  !!int "10": |-
+    ---
+    +++
+    @@ -27,4 +27,11 @@
+     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
 "nodes":
   !!int "0":
     "stderr":
@@ -67,7 +67,7 @@
     - |
       10.5
     "stdout_id": !!int |-
-      4
+      3
   !!int "1":
     "stderr":
     - ""
@@ -99,7 +99,7 @@
     - |
       10.5
     "stdout_id": !!int |-
-      3
+      4
   !!int "3":
     "stderr":
     - ""
@@ -115,7 +115,7 @@
     - |
       3.5
     "stdout_id": !!int |-
-      0
+      1
   !!int "4":
     "stderr":
     - |
@@ -146,7 +146,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
 "student_color":
   "student33": |-
     #d83034

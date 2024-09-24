@@ -4,59 +4,59 @@
     "graph": [],
     "nodes": [
         {
-            "stderr_id": 1,
-            "stdout_id": 0,
+            "stderr_id": 0,
+            "stdout_id": 5,
             "hover": "stdout:\nILV OSEDLHN WM\n\nCMUES\n\nT\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 3,
+            "stderr_id": 0,
+            "stdout_id": 6,
             "hover": "stdout:\nILV OSEDLHN WM oet e opissi.\n\nCMUESoptr\n\nT\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 1
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 7,
             "hover": "stdout:\nIlOvEtOsEeDoLpHiNsSwIm.\n\nCoMpUtErS\n\nT\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 2
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\nI love to see dolphins swim.\n\ncomputerS\n\nT\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 3
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 1,
+            "stderr_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\nI love to see dolphins swim.\n\nComputers\n\nT\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
-            "stderr_id": 1,
-            "stdout_id": 6,
+            "stderr_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\nI LoVe tO SeE DoLpHiNs sWiM.\n\nCoMpUtErS\n\nT\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 5
         },
         {
-            "stderr_id": 0,
-            "stdout_id": 5,
+            "stderr_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n\n\nT\n\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 18, in <module>\n    print(altText('I love to see dolphins swim.'))\n  File \"/tmp/file.py\", line 17, in altText\n    return new_\nNameError: name 'new_' is not defined\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 18, in <module>\n    print(altText('computers'))\n  File \"/tmp/file.py\", line 17, in altText\n    return new_\nNameError: name 'new_' is not defined\n\n",
-            "color": "red",
+            "color": "grey",
             "id": 6
         },
         {
-            "stderr_id": 1,
+            "stderr_id": 0,
             "stdout_id": 2,
             "hover": "stdout:\nI Love To See Dolphins Swim.\n\nComputers\n\nT\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 7
         }
     ],
@@ -67,65 +67,87 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -16,7 +16,13 @@\n letter as upper-case.+case,+not+including+the+lower+case+letters. If it is",
+                "hover": "username:student23\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -16,7 +16,13 @@\n letter as upper-case.+case,+not+including+the+lower+case+letters. If it is\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one letter word it is turned into an upper case letter.\n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper()\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case, not including the lower case letters. If it is just a one letter word it is turned into an upper case letter. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hey\"))\nprint(altText(\"h\"))\nprint(altText(\"hi\"))\nprint(altText(\"h e y\"))\n",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 15,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -17,7 +17,6 @@\n as upper case,-not including the lower",
+                "hover": "username:student23\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -17,7 +17,6 @@\n as upper case,-not including the lower\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case, not including the lower case letters. If it is just a one letter word it is turned into an upper case letter. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hey\"))\nprint(altText(\"h\"))\nprint(altText(\"hi\"))\nprint(altText(\"h e y\"))\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case, including the lower case letters. If it is just a one letter word it is turned into an upper case letter. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hi\"))\nprint(altText(\"h\"))\nprint(altText(\"what\"))\nprint(altText(\"is\"))\nprint(altText(\"up\"))\nprint(altText(\"dog\"))\nprint(altText(\"",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 5,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -16,12 +16,7 @@\n letter as upper-case,-including-the-lower-case-letters.+cas. If it is@@ -38,4 +33,13 @@\n upper case letter.+It+then+returns+the+whole+phrase+that+was+given. \"\"\"",
+                "hover": "username:student23\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -16,12 +16,7 @@\n letter as upper-case,-including-the-lower-case-letters.+cas. If it is@@ -38,4 +33,13 @@\n upper case letter.+It+then+returns+the+whole+phrase+that+was+given. \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case, including the lower case letters. If it is just a one letter word it is turned into an upper case letter. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hi\"))\nprint(altText(\"h\"))\nprint(altText(\"what\"))\nprint(altText(\"is\"))\nprint(altText(\"up\"))\nprint(altText(\"dog\"))\nprint(altText(\"\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given.\n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n",
                 "id": 1,
                 "key": 1
+            },
+            {
+                "diff": 7,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student35",
+                "hover": "username:student35\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -21,12 +21,15 @@\n supposed to convert-every-alternative-character+the+characters of the string+in+even+index+positions into uppercase and\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    's' is a string value provided. Starting from the first character of the string, the function is supposed to convert every alternative character of the string into uppercase and then return the string.\n    \"\"\"\n        return s[::2].upper() + s[1::2]\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase and then return the string.\n    \"\"\"\n        return s[::2].upper() + s[1::2]\n",
+                "id": 1,
+                "key": 2
+            },
+            {
+                "diff": 3,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -41,5 +41,12 @@\n phrase that was-given.+given,+including+all+characters+upper+and+lower+case. \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given.\n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[::2].upper() + s[1::2]\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        s = s.lower()\n    s = s.replace(\" \", \"\")\n    new_s = \"\"\n    for i in range(len(s)):\n        if i % 2 == 0:\n            new_s += s[i].upper()\n        else:\n            new_s += s[i]\n    return new_s\n\nprint(altText(\"hello\"))\nprint(altText(\"hello world\"))\nprint(alt",
+                "id": 2,
+                "key": 0
             },
             {
                 "diff": 8,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student35",
-                "hover": "username:student35\ndiff:\n--- \n+++ \n@@ -21,12 +21,15 @@\n supposed to convert-every-alternative-character+the+characters of the string+in+even+index+positions into uppercase and",
-                "id": 1,
-                "key": 2
-            },
-            {
-                "diff": 13,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -41,5 +41,12 @@\n phrase that was-given.+given,+including+all+characters+upper+and+lower+case. \"\"\"",
-                "id": 2,
-                "key": 0
-            },
-            {
-                "diff": 11,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student35",
-                "hover": "username:student35\ndiff:\n--- \n+++ \n@@ -31,10 +31,30 @@\n index positions into-uppercase-and-then-return+uppercase.+The+characters+of the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase. \"\"\"",
+                "hover": "username:student35\nedge: (1->5)\ndiff:\n--- \n+++ \n@@ -31,10 +31,30 @@\n index positions into-uppercase-and-then-return+uppercase.+The+characters+of the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase. \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase and then return the string.\n    \"\"\"\n        return s[::2].upper() + s[1::2]\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase. The characters of the string should be in the same order as below, only the characters in even index positions are to be turned uppercase.\n    \"\"\"\n        return \"\".join([s[i].upper() if i%2==0 else s[i] for i in range(len(s))])\n",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 14,
+                "diff": 15,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student75",
-                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -19,6 +19,15 @@\n ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling def altText(s): brings",
+                "hover": "username:student75\nedge: (1->5)\ndiff:\n--- \n+++ \n@@ -19,6 +19,15 @@\n ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling def altText(s): brings\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S'\ndef altText(s): brings in input 'T' and outputs the capitalized version\n    \"\"\"\n        return s[::2].upper() + s[1::2].lower()\n\nprint(altText('computers'))\nprint(altText('T'))\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S' and prints the lowercase letters in their original spelling \ndef altText(s): brings in input 'T' and outputs the capitalized version\n    \"\"\"\n        new_string = \"\"\n    for i in range(len(s)):\n        if i % 2 == 0:\n            new_string += s[i].upper()\n        else:\n            new_string += s[i].lower()\n    return new_string\n\nprint(altText(\"computers\"))\nprint(altText(\"T\"))\n",
                 "id": 5,
                 "key": 1
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -16,22 +16,20 @@\n letter as upper-cas.+case. If it is just a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter. It then\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        s = s.lower()\n    s = s.replace(\" \", \"\")\n    new_s = \"\"\n    for i in range(len(s)):\n        if i % 2 == 0:\n            new_s += s[i].upper()\n        else:\n            new_s += s[i]\n    return new_s\n\nprint(altText(\"hello\"))\nprint(altText(\"hello world\"))\nprint(alt\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[0] + altText(s[1:])\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 5,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student23",
+                "hover": "username:student23\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -12,7 +12,6 @@\n and outputs every-other letter as upper\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[0] + altText(s[1:])\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[0].upper() + s[1:].lower()\n",
+                "id": 4,
+                "key": 0
             }
         ],
         [
@@ -134,29 +156,7 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -16,22 +16,20 @@\n letter as upper-cas.+case. If it is just a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter. It then",
-                "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 2,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -12,7 +12,6 @@\n and outputs every-other letter as upper",
-                "id": 4,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 7,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student23",
-                "hover": "username:student23\ndiff:\n--- \n+++ \n@@ -10,12 +10,15 @@\n or sentence and-outputs+replaces every+other letter-as+with+the upper-case.+case+letter. If it is@@ -35,10 +38,8 @@\n returns the whole-phrase-that-was-given,+updated+phrase, including all characters",
+                "hover": "username:student23\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -10,12 +10,15 @@\n or sentence and-outputs+replaces every+other letter-as+with+the upper-case.+case+letter. If it is@@ -35,10 +38,8 @@\n returns the whole-phrase-that-was-given,+updated+phrase, including all characters\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and outputs every letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. \n    \"\"\"\n        if len(s) == 1:\n        return s.upper()\n    else:\n        return s[0].upper() + s[1:].lower()\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    This function takes in a word or sentence and replaces every other letter with the upper case letter. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole updated phrase, including all characters upper and lower case. \n    \"\"\"\n        new_s = \"\"\n    for i in range(len(s)):\n        if i % 2 == 0:\n            new_s += s[i].upper()\n        else:\n            new_s += s[i].lower()\n    return new_s\n\nprint(altText(\"hello\"))\nprint(altText(\"hello world\"))\nprint(altText(\"h\"))\nprint(altText(\"\"))\n",
                 "id": 5,
                 "key": 0
             }
@@ -164,29 +164,29 @@
         [],
         [
             {
-                "diff": 10,
-                "color": "#008dff",
-                "arrow_color": "#008dff",
-                "username": "student40",
-                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -23,6 +23,11 @@\n multiple characters, returns+a+new+string+that+has the same input",
-                "id": 6,
-                "key": 0
-            },
-            {
-                "diff": 4,
-                "color": "#008dff",
-                "arrow_color": "#008dff",
-                "username": "student40",
-                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -23,9 +23,7 @@\n multiple characters, returns-a-new-string+new_string that has the",
-                "id": 6,
-                "key": 1
-            },
-            {
                 "diff": 9,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student40",
-                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -22,17 +22,37 @@\n has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. \"\"\"",
+                "hover": "username:student40\nedge: (6->6)\ndiff:\n--- \n+++ \n@@ -23,6 +23,11 @@\n multiple characters, returns+a+new+string+that+has the same input\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns the same input with alternating uppercase and lowercase letters\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].upper()\n            else:\n                new_string += s[i].lower()\n        return new_\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns a new string that has the same input with alternating uppercase and lowercase letters\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_",
+                "id": 6,
+                "key": 0
+            },
+            {
+                "diff": 10,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student40",
+                "hover": "username:student40\nedge: (6->6)\ndiff:\n--- \n+++ \n@@ -23,9 +23,7 @@\n multiple characters, returns-a-new-string+new_string that has the\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns a new string that has the same input with alternating uppercase and lowercase letters\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns new_string that has the same input with alternating uppercase and lowercase letters\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_",
+                "id": 6,
+                "key": 1
+            },
+            {
+                "diff": 11,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student40",
+                "hover": "username:student40\nedge: (6->6)\ndiff:\n--- \n+++ \n@@ -22,17 +22,37 @@\n has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns new_string that has the same input with alternating uppercase and lowercase letters\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case.\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].upper()\n            else:\n                new_string += s[i].lower()\n        return new_",
                 "id": 6,
                 "key": 2
             },
@@ -195,27 +195,27 @@
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student40",
-                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -55,4 +55,6 @@\n of alternating case.+returns+new_string \"\"\"",
+                "hover": "username:student40\nedge: (6->6)\ndiff:\n--- \n+++ \n@@ -55,4 +55,6 @@\n of alternating case.+returns+new_string \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case.\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].upper()\n            else:\n                new_string += s[i].lower()\n        return new_\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case. returns new_string\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = ''\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_",
                 "id": 6,
                 "key": 3
             },
             {
-                "diff": 1,
+                "diff": 13,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student40",
-                "hover": "username:student40\ndiff:\n--- \n+++ \n@@ -22,39 +22,12 @@\n has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase. \"\"\"",
+                "hover": "username:student40\nedge: (6->5)\ndiff:\n--- \n+++ \n@@ -22,39 +22,12 @@\n has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase. \"\"\"\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case. returns new_string\n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s.lower()\n    else:\n        new_string = ''\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_string += s[i].lower()\n            else:\n                new_string += s[i].upper()\n        return new_\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, the function will make every other character uppercase. \n    \"\"\"\n        if len(s) == 1:\n        if s.islower():\n            return s.upper()\n        else:\n            return s\n    else:\n        new_s = \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n                new_s += s[i].upper()\n            else:\n                new_s += s[i].lower()\n        return new_s\n\n",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
+                "diff": 14,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student75",
-                "hover": "username:student75\ndiff:\n--- \n+++ \n@@ -1,6 +1,24 @@\n def altText(s): \"\"\"+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S' def altText(s): brings",
+                "hover": "username:student75\nedge: (7->1)\ndiff:\n--- \n+++ \n@@ -1,6 +1,24 @@\n def altText(s): \"\"\"+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S' def altText(s): brings\n\nFROM completion:\ndef altText(s):\n    \"\"\"\n    def altText(s): brings in input 'T' and outputs the capitalized version\n    \"\"\"\n        return s.title()\n\n\nTO completion:\ndef altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S'\ndef altText(s): brings in input 'T' and outputs the capitalized version\n    \"\"\"\n        return s[::2].upper() + s[1::2].lower()\n\nprint(altText('computers'))\nprint(altText('T'))\n",
                 "id": 1,
                 "key": 0
             }

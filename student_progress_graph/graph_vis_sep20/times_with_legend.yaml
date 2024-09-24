@@ -2,33 +2,33 @@
   !!int "0": |-
     ---
     +++
-    @@ -17,5 +17,5 @@
-     and output of-val1,2,3:val1+val:val1 """
-  !!int "1": |-
-    ---
-    +++
-    @@ -17,5 +17,7 @@
-     and output of-val:val1+val1:val1,+val2:val1,+val3:val1 """
-  !!int "2": |-
-    ---
-    +++
-    @@ -17,5 +17,8 @@
-     and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+"[]" """
-  !!int "3": |-
-    ---
-    +++
-    @@ -17,7 +17,5 @@
-     and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0 """
-  !!int "4": |-
-    ---
-    +++
     @@ -56,4 +56,38 @@
      added to that.+The+function+then+would+return+a+dictionary+containing+the+total+value+assigned+to+every+string.+Given+[+[30,+['Alice',+'Bob',+'Carol']]+],+the+function+would+return+{+'Alice':+30,+'Bob':+30,+'Carol':+30+} """
-  !!int "5": |-
+  !!int "1": |-
     ---
     +++
     @@ -51,4 +51,19 @@
      is a value.+if+the+name+appears+more+than+once,+add+the+new+number+to+the+previous+number """
+  !!int "2": |-
+    ---
+    +++
+    @@ -17,5 +17,5 @@
+     and output of-val1,2,3:val1+val:val1 """
+  !!int "3": |-
+    ---
+    +++
+    @@ -17,5 +17,7 @@
+     and output of-val:val1+val1:val1,+val2:val1,+val3:val1 """
+  !!int "4": |-
+    ---
+    +++
+    @@ -17,7 +17,5 @@
+     and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0 """
+  !!int "5": |-
+    ---
+    +++
+    @@ -17,5 +17,8 @@
+     and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+"[]" """
   !!int "6": |-
     ---
     +++
@@ -65,14 +65,14 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       {'Alice': 30, 'Bob': 30, 'Carol': 30}
@@ -81,14 +81,14 @@
     - |
       {'Alice': 10, 'Bob': 10, 'Carol': 5}
     "stdout_id": !!int |-
-      6
+      5
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       {'Alice': 30, 'Bob': 30, 'Carol': 30}
@@ -104,7 +104,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       [[0, ['Alice', 'Bob', 'Carol']]]
@@ -113,14 +113,14 @@
     - |
       [[1, ['Alice', 'Bob']], [0, ['Carol']]]
     "stdout_id": !!int |-
-      2
+      3
   !!int "4":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       None
@@ -129,14 +129,14 @@
     - |
       None
     "stdout_id": !!int |-
-      5
+      1
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ['30:30']
@@ -145,14 +145,14 @@
     - |
       ['10:10', '5:5']
     "stdout_id": !!int |-
-      1
+      2
   !!int "6":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       {'Alice': [30], 'Bob': [30], 'Carol': [30]}
@@ -161,7 +161,7 @@
     - |
       {'Alice': [10], 'Bob': [10], 'Carol': [5]}
     "stdout_id": !!int |-
-      0
+      6
   !!int "7":
     "stderr":
     - |2
@@ -177,13 +177,13 @@
           print(times_with([ [10, ['Alice', 'Bob']], [5, ['Carol']] ]))
       IndentationError: expected an indented block after 'for' statement on line 5
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      3
+      0
 "student_color":
   "student33": |-
     #d83034

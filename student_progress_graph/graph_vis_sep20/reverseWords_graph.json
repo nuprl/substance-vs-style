@@ -5,21 +5,21 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 1,
             "hover": "stdout:\n['eat', 'tree']\n\n['ax', 'by', 'chaz']\n\n['ax', 'by', 'chaz']\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 2,
             "hover": "stdout:\n['eert', 'tae']\n\n['xa', 'yb', 'zahc']\n\n['xa', 'yb', 'zahc']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 1,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['eat', 'tree']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['ax', 'by', 'chaz']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(reverseWords(['by', 'chaz', 'ax']))\n  File \"/tmp/file.py\", line 5, in reverseWords\n    words = words.split(\" \")\nAttributeError: 'list' object has no attribute 'split'\n",
             "color": "blue",
             "id": 2
@@ -28,14 +28,14 @@
             "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\n['tae', 'eert']\n\n['xa', 'yb', 'zahc']\n\n['xa', 'yb', 'zahc']\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 5,
             "hover": "stdout:\n['tae', 'eert']\n\n['xa', 'yb', 'zahc']\n\n['yb', 'zahc', 'xa']\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 4
         },
         {
@@ -56,73 +56,73 @@
     "adjacency": [
         [
             {
-                "diff": 3,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student1",
-                "hover": "username:student1\ndiff:\n--- \n+++ \n@@ -7,10 +7,9 @@\n of words, reverses-the-words,+them and-puts+orders them in alphabetical",
+                "hover": "username:student1\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -7,10 +7,9 @@\n of words, reverses-the-words,+them and-puts+orders them in alphabetical\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses the words, and puts them in alphabetical order.\n    \"\"\"\n        #reverse the words\n    words.reverse()\n    #sort the words\n    words.sort()\n    return words\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses them and orders them in alphabetical order.\n    \"\"\"\n        words = words[::-1]\n    words.sort()\n    return words\n",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 1,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student1",
-                "hover": "username:student1\ndiff:\n--- \n+++ \n@@ -7,11 +7,15 @@\n of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. \"\"\"",
+                "hover": "username:student1\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -7,11 +7,15 @@\n of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses them and orders them in alphabetical order.\n    \"\"\"\n        words = words[::-1]\n    words.sort()\n    return words\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses each word in the list, and alphabetically orders those new words.\n    \"\"\"\n        new_words = []\n    for word in words:\n        new_words.append(word[::-1])\n    new_words.sort()\n    return new_words\n",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
-                "hover": "username:student14\ndiff:\n",
+                "hover": "username:student14\nedge: (0->2)\ndiff:\n\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        for word in words:\n        word = word[::-1]\n    words.sort()\n    return words\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        words = words.split(\" \")\n    for i in range(len(words)):\n        words[i] = words[i][::-1]\n    words.sort()\n    return \" \".join(words)\n",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
-                "hover": "username:student14\ndiff:\n",
+                "hover": "username:student14\nedge: (1->0)\ndiff:\n\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        # reverse each word\n    for i in range(len(words)):\n        words[i] = words[i][::-1]\n    # sort the words\n    words.sort()\n    return words\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        for word in words:\n        word = word[::-1]\n    words.sort()\n    return words\n",
                 "id": 0,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student14",
-                "hover": "username:student14\ndiff:\n",
+                "hover": "username:student14\nedge: (2->1)\ndiff:\n\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        words = words.split(\" \")\n    for i in range(len(words)):\n        words[i] = words[i][::-1]\n    words.sort()\n    return \" \".join(words)\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    put each character in each word in reverse order. then put each word in alphabetical order\n    \"\"\"\n        # reverse each word\n    for i in range(len(words)):\n        words[i] = words[i][::-1]\n    # sort the words\n    words.sort()\n    return words\n",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 2,
+                "diff": 3,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student46",
-                "hover": "username:student46\ndiff:\n--- \n+++ \n@@ -8,18 +8,7 @@\n a list of-strings,-it-will-sort-the strings-alphabetically-by-the-first-character.-Then it will make@@ -30,4 +19,18 @@\n the strings reverse.+Then+it+will+sort+the+list+alphabetically+by+the+last+character+in+each+string \"\"\"",
+                "hover": "username:student46\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -8,18 +8,7 @@\n a list of-strings,-it-will-sort-the strings-alphabetically-by-the-first-character.-Then it will make@@ -30,4 +19,18 @@\n the strings reverse.+Then+it+will+sort+the+list+alphabetically+by+the+last+character+in+each+string \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    The function takes in a list of strings, it will sort the strings alphabetically by the first character. Then it will make all the character within the strings reverse. \n    \"\"\"\n        words.sort()\n    for i in range(len(words)):\n        words[i] = words[i][::-1]\n    return words\n\nprint(reverseWords([\"cat\", \"dog\", \"bird\", \"fish\"]))\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    The function takes in a list of strings it will make all the character within the strings reverse. Then it will sort the list alphabetically by the last character in each string\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i][::-1]\n    words.sort()\n    return words\n",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
-                "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -22,4 +22,21 @@\n in a list.+The+order+of+the+strings+in+the+return+statement+should+be+in+alphabetical+order+from+the+input. \"\"\"",
+                "hover": "username:student55\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -22,4 +22,21 @@\n in a list.+The+order+of+the+strings+in+the+return+statement+should+be+in+alphabetical+order+from+the+input. \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    Write a function that gets strings from a list. Reverse all the strings and returns the reversed string in a list.\n    \"\"\"\n        return [word[::-1] for word in words]\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    Write a function that gets strings from a list. Reverse all the strings and returns the reversed string in a list. The order of the strings in the return statement should be in alphabetical order from the input.\n    \"\"\"\n        return sorted(list(map(lambda x: x[::-1], words)))\n\nprint(reverseWords([\"abc\", \"def\", \"ghi\"]))\n",
                 "id": 1,
                 "key": 0
             },
@@ -131,38 +131,38 @@
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student7",
-                "hover": "username:student7\ndiff:\n--- \n+++ \n@@ -10,5 +10,12 @@\n in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order \"\"\"",
+                "hover": "username:student7\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -10,5 +10,12 @@\n in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    Sorts each item in the list in reverse alphabetical order\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i][::-1]\n    return words\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    Sorts each item in the list in reverse alphabetical order. Returns the overall list in alphabetical order\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i][::-1]\n    words.sort()\n    return words\n\nprint(reverseWords([\"abc\", \"cba\", \"bca\", \"cab\"]))\n",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 7,
+                "diff": 5,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student6",
-                "hover": "username:student6\ndiff:\n--- \n+++ \n@@ -19,5 +19,28 @@\n of the original-string+string.+The+order+of+the+strings+in+the+outputted+list+is+also+in+the+reverse+order+that+the+strings+were+in+the+inputted+list \"\"\"",
+                "hover": "username:student6\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -19,5 +19,28 @@\n of the original-string+string.+The+order+of+the+strings+in+the+outputted+list+is+also+in+the+reverse+order+that+the+strings+were+in+the+inputted+list \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string\n    \"\"\"\n        return [word[::-1] for word in words]\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string. The order of the strings in the outputted list is also in the reverse order that the strings were in the inputted list\n    \"\"\"\n        return [word[::-1] for word in words[::-1]]\n",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 1,
+                "diff": 6,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student6",
-                "hover": "username:student6\ndiff:\n--- \n+++ \n@@ -30,17 +30,6 @@\n outputted list is-also in-the-reverse-order-that-the-strings-were-in-the-inputted-list+alphabetical \"\"\"",
+                "hover": "username:student6\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -30,17 +30,6 @@\n outputted list is-also in-the-reverse-order-that-the-strings-were-in-the-inputted-list+alphabetical \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string. The order of the strings in the outputted list is also in the reverse order that the strings were in the inputted list\n    \"\"\"\n        return [word[::-1] for word in words[::-1]]\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string. The order of the strings in the outputted list is in alphabetical\n    \"\"\"\n        return sorted(words, key=lambda word: word[::-1])\n",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
+                "diff": 7,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student6",
-                "hover": "username:student6\ndiff:\n--- \n+++ \n@@ -20,16 +20,16 @@\n the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order \"\"\"",
+                "hover": "username:student6\nedge: (6->1)\ndiff:\n--- \n+++ \n@@ -20,16 +20,16 @@\n the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order \"\"\"\n\nFROM completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string. The order of the strings in the outputted list is in alphabetical\n    \"\"\"\n        return sorted(words, key=lambda word: word[::-1])\n\n\nTO completion:\ndef reverseWords(words):\n    \"\"\"\n    Input: list of strings. Output: list of strings, whose characters are in the reverse order of the original string. In the output, arrange each item in the list in alphabetical order \n    \"\"\"\n        return sorted([word[::-1] for word in words])\n\nprint(reverseWords([\"abc\", \"cba\", \"bca\"]))\n",
                 "id": 1,
                 "key": 0
             }

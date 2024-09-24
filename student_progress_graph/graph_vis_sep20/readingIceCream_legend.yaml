@@ -2,58 +2,58 @@
   !!int "0": |-
     ---
     +++
-    @@ -20,7 +20,7 @@
-     should be a-number+double and add it
-  !!int "1": |-
-    ---
-    +++
-    @@ -1,17 +1,26 @@
-     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
-  !!int "2": |-
-    ---
-    +++
     @@ -47,4 +47,11 @@
      of each string.+The+value+can+be+integers+or+floats. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -3,7 +3,7 @@
-     """ take the-integer+float at the end
-  !!int "4": |-
-    ---
-    +++
-    @@ -34,12 +34,12 @@
-     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
-  !!int "5": |-
-    ---
-    +++
-    @@ -29,17 +29,32 @@
-     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
-  !!int "6": |-
-    ---
-    +++
-    @@ -12,7 +12,12 @@
-     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
-  !!int "7": |-
-    ---
-    +++
-    @@ -25,9 +25,8 @@
-     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
-  !!int "8": |-
+  !!int "1": |-
     ---
     +++
     @@ -22,4 +22,12 @@
      in the element.+the+sum+should+not+be+limited+to+integers """
-  !!int "9": |-
+  !!int "2": |-
+    ---
+    +++
+    @@ -25,9 +25,8 @@
+     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
+  !!int "3": |-
+    ---
+    +++
+    @@ -12,7 +12,12 @@
+     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
+  !!int "4": |-
     ---
     +++
     @@ -10,14 +10,11 @@
      number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
-  !!int "10": |-
+  !!int "5": |-
     ---
     +++
     @@ -7,7 +7,7 @@
      in list, adds-number+float directly after the
+  !!int "6": |-
+    ---
+    +++
+    @@ -1,17 +1,26 @@
+     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
+  !!int "7": |-
+    ---
+    +++
+    @@ -3,7 +3,7 @@
+     """ take the-integer+float at the end
+  !!int "8": |-
+    ---
+    +++
+    @@ -20,7 +20,7 @@
+     should be a-number+double and add it
+  !!int "9": |-
+    ---
+    +++
+    @@ -34,12 +34,12 @@
+     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
+  !!int "10": |-
+    ---
+    +++
+    @@ -29,17 +29,32 @@
+     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
 "nodes":
   !!int "0":
     "stderr":
@@ -64,7 +64,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      6
+      8
     "stdout":
     - ""
     - |
@@ -72,14 +72,14 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       36.5
@@ -88,7 +88,7 @@
     - |
       0.0
     "stdout_id": !!int |-
-      0
+      5
   !!int "2":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
@@ -98,7 +98,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      0
+      2
     "stdout":
     - ""
     - |
@@ -106,14 +106,14 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "3":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       34
@@ -122,7 +122,7 @@
     - |
       0
     "stdout_id": !!int |-
-      5
+      3
   !!int "4":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
@@ -138,20 +138,20 @@
       , line 7, in readingIceCream\n    count += int(line.split('\t')[1])\nValueError:\
       \ invalid literal for int() with base 10: 'frozen yogurt'\n"
     "stderr_id": !!int |-
-      9
+      5
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       0
@@ -160,7 +160,7 @@
     - |
       0
     "stdout_id": !!int |-
-      3
+      2
   !!int "6":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
@@ -170,7 +170,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      8
+      6
     "stdout":
     - ""
     - |
@@ -178,7 +178,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "7":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
@@ -194,13 +194,13 @@
       , line 7, in readingIceCream\n    total += float(line)\nValueError: could not\
       \ convert string to float: 'salty\tfrozen yogurt\t0'\n"
     "stderr_id": !!int |-
-      3
+      7
     "stdout":
     - ""
     - ""
     - ""
     "stdout_id": !!int |-
-      1
+      0
   !!int "8":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 9, in <module>\n\
@@ -210,7 +210,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      4
+      9
     "stdout":
     - ""
     - |
@@ -218,7 +218,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "9":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n\
@@ -236,7 +236,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "10":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n\
@@ -246,7 +246,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      5
+      3
     "stdout":
     - ""
     - |
@@ -254,7 +254,7 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "11":
     "stderr":
     - "Traceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n\
@@ -264,7 +264,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      7
+      4
     "stdout":
     - ""
     - |
@@ -272,14 +272,14 @@
     - |
       0
     "stdout_id": !!int |-
-      2
+      1
   !!int "12":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      2
+      0
     "stdout":
     - |
       36.5

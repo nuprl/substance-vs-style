@@ -7,60 +7,60 @@
   !!int "1": |-
     ---
     +++
-    @@ -22,39 +22,12 @@
-     has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase. """
+    @@ -17,7 +17,6 @@
+     as upper case,-not including the lower
   !!int "2": |-
-    ---
-    +++
-    @@ -12,7 +12,6 @@
-     and outputs every-other letter as upper
-  !!int "3": |-
-    ---
-    +++
-    @@ -1,6 +1,24 @@
-     def altText(s): """+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S' def altText(s): brings
-  !!int "4": |-
-    ---
-    +++
-    @@ -23,9 +23,7 @@
-     multiple characters, returns-a-new-string+new_string that has the
-  !!int "5": |-
     ---
     +++
     @@ -16,12 +16,7 @@
      letter as upper-case,-including-the-lower-case-letters.+cas. If it is@@ -38,4 +33,13 @@
      upper case letter.+It+then+returns+the+whole+phrase+that+was+given. """
-  !!int "6": |-
+  !!int "3": |-
+    ---
+    +++
+    @@ -41,5 +41,12 @@
+     phrase that was-given.+given,+including+all+characters+upper+and+lower+case. """
+  !!int "4": |-
     ---
     +++
     @@ -16,22 +16,20 @@
      letter as upper-cas.+case. If it is just a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter. It then
-  !!int "7": |-
+  !!int "5": |-
+    ---
+    +++
+    @@ -12,7 +12,6 @@
+     and outputs every-other letter as upper
+  !!int "6": |-
     ---
     +++
     @@ -10,12 +10,15 @@
      or sentence and-outputs+replaces every+other letter-as+with+the upper-case.+case+letter. If it is@@ -35,10 +38,8 @@
      returns the whole-phrase-that-was-given,+updated+phrase, including all characters
-  !!int "8": |-
+  !!int "7": |-
     ---
     +++
     @@ -21,12 +21,15 @@
      supposed to convert-every-alternative-character+the+characters of the string+in+even+index+positions into uppercase and
-  !!int "9": |-
-    ---
-    +++
-    @@ -22,17 +22,37 @@
-     has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -23,6 +23,11 @@
-     multiple characters, returns+a+new+string+that+has the same input
-  !!int "11": |-
+  !!int "8": |-
     ---
     +++
     @@ -31,10 +31,30 @@
      index positions into-uppercase-and-then-return+uppercase.+The+characters+of the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase. """
+  !!int "9": |-
+    ---
+    +++
+    @@ -23,6 +23,11 @@
+     multiple characters, returns+a+new+string+that+has the same input
+  !!int "10": |-
+    ---
+    +++
+    @@ -23,9 +23,7 @@
+     multiple characters, returns-a-new-string+new_string that has the
+  !!int "11": |-
+    ---
+    +++
+    @@ -22,17 +22,37 @@
+     has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. """
   !!int "12": |-
     ---
     +++
@@ -69,18 +69,18 @@
   !!int "13": |-
     ---
     +++
-    @@ -41,5 +41,12 @@
-     phrase that was-given.+given,+including+all+characters+upper+and+lower+case. """
+    @@ -22,39 +22,12 @@
+     has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase. """
   !!int "14": |-
+    ---
+    +++
+    @@ -1,6 +1,24 @@
+     def altText(s): """+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S' def altText(s): brings
+  !!int "15": |-
     ---
     +++
     @@ -19,6 +19,15 @@
      ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling def altText(s): brings
-  !!int "15": |-
-    ---
-    +++
-    @@ -17,7 +17,6 @@
-     as upper case,-not including the lower
 "nodes":
   !!int "0":
     "stderr":
@@ -88,7 +88,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ILV OSEDLHN WM
@@ -97,14 +97,14 @@
     - |
       T
     "stdout_id": !!int |-
-      0
+      5
   !!int "1":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       ILV OSEDLHN WM oet e opissi.
@@ -113,14 +113,14 @@
     - |
       T
     "stdout_id": !!int |-
-      3
+      6
   !!int "2":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       IlOvEtOsEeDoLpHiNsSwIm.
@@ -136,7 +136,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       I love to see dolphins swim.
@@ -152,7 +152,7 @@
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       I love to see dolphins swim.
@@ -161,14 +161,14 @@
     - |
       T
     "stdout_id": !!int |-
-      1
+      3
   !!int "5":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       I LoVe tO SeE DoLpHiNs sWiM.
@@ -177,7 +177,7 @@
     - |
       T
     "stdout_id": !!int |-
-      6
+      1
   !!int "6":
     "stderr":
     - |
@@ -196,21 +196,21 @@
       NameError: name 'new_' is not defined
     - ""
     "stderr_id": !!int |-
-      0
+      1
     "stdout":
     - ""
     - ""
     - |
       T
     "stdout_id": !!int |-
-      5
+      0
   !!int "7":
     "stderr":
     - ""
     - ""
     - ""
     "stderr_id": !!int |-
-      1
+      0
     "stdout":
     - |
       I Love To See Dolphins Swim.

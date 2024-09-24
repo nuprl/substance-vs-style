@@ -7,33 +7,33 @@
             "stderr_id": 0,
             "stdout_id": 4,
             "hover": "stdout:\nrds the door.Turn towa\n\nthe tall sail\n\nstablishinge\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\nawot nruTrds the door.\n\nlias llat eht\n\nestablishing\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 3,
             "hover": "stdout:\nrawot nruTds the door.\n\nlias llat eht\n\nsetablishing\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 1,
             "hover": "stdout:\nawot nru\n\nlias llat eh\n\n\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
@@ -42,11 +42,11 @@
     "adjacency": [
         [
             {
-                "diff": 1,
+                "diff": 0,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student10",
-                "hover": "username:student10\ndiff:\n--- \n+++ \n@@ -11,7 +11,7 @@\n i. Function would-flip+write the first i@@ -19,20 +19,39 @@\n of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output \"\"\"",
+                "hover": "username:student10\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -11,7 +11,7 @@\n i. Function would-flip+write the first i@@ -19,20 +19,39 @@\n of string s-backwards,+backwards+and+save+that+as+string+A.+All+the+letters+which+were+not+flipped+backwards+would+be+saved+as+string+B.+Function+would+add+string+A+and+B, and then-concatenate+return+that+as the-rest-of-the-string-to-the-end-of-the-backwards-letters.+output \"\"\"\n\nFROM completion:\ndef changeSection(s,i):\n    \"\"\"\n    User inputs a string s and integer i. Function would flip the first i letters of string s backwards, and then concatenate the rest of the string to the end of the backwards letters.\n    \"\"\"\n        if i > len(s):\n        return \"Error: i is greater than the length of the string\"\n    else:\n        return s[i:len(s)] + s[0:i]\n\n\nTO completion:\ndef changeSection(s,i):\n    \"\"\"\n    User inputs a string s and integer i. Function would write the first i letters of string s backwards and save that as string A. All the letters which were not flipped backwards would be saved as string B. Function would add string A and B, and then return that as the output\n    \"\"\"\n        A = s[:i][::-1]\n    B = s[i:]\n    return A+B\n",
                 "id": 1,
                 "key": 0
             }
@@ -54,22 +54,22 @@
         [],
         [
             {
-                "diff": 2,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student25",
-                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -16,6 +16,16 @@\n the given string.+In+this+case,+indexing+starts+with+\"1\"+instead+of+\"0\". At the given",
+                "hover": "username:student25\nedge: (2->1)\ndiff:\n--- \n+++ \n@@ -16,6 +16,16 @@\n the given string.+In+this+case,+indexing+starts+with+\"1\"+instead+of+\"0\". At the given\n\nFROM completion:\ndef changeSection(s,i):\n    \"\"\"\n    \"s\" is a given string and \"i\" is the letter index of the given string. At the given index in the string, this function flips all letters before and at that position. If the given number is longer than the length of the string, the whole string will be reversed.\n    \"\"\"\n        if i < len(s):\n        return s[i::-1] + s[i+1:]\n    else:\n        return s[::-1]\n\n\nTO completion:\ndef changeSection(s,i):\n    \"\"\"\n    \"s\" is a given string and \"i\" is the letter index of the given string. In this case, indexing starts with \"1\" instead of \"0\". At the given index in the string, this function flips all letters before and at that position. If the given number is longer than the length of the string, the whole string will be reversed.\n    \"\"\"\n        if i > len(s):\n        return s[::-1]\n    else:\n        return s[:i][::-1] + s[i:]\n",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 0,
+                "diff": 2,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student26",
-                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -19,6 +19,6 @@\n and display the-new+original string \"\"\"",
+                "hover": "username:student26\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -19,6 +19,6 @@\n and display the-new+original string \"\"\"\n\nFROM completion:\ndef changeSection(s,i):\n    \"\"\"\n    Slice a string starting at 1 and ending at the given number. Reverse the slice and display the new string\n    \"\"\"\n        return s[1:i][::-1]\n\n\nTO completion:\ndef changeSection(s,i):\n    \"\"\"\n    Slice a string starting at 1 and ending at the given number. Reverse the slice and display the original string\n    \"\"\"\n        print(s[:i][::-1] + s[i:])\n",
                 "id": 4,
                 "key": 0
             }
@@ -80,7 +80,7 @@
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student26",
-                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -17,8 +17,12 @@\n the slice and-display+replace+it+in the-original+string;+return+the string \"\"\"",
+                "hover": "username:student26\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -17,8 +17,12 @@\n the slice and-display+replace+it+in the-original+string;+return+the string \"\"\"\n\nFROM completion:\ndef changeSection(s,i):\n    \"\"\"\n    Slice a string starting at 1 and ending at the given number. Reverse the slice and display the original string\n    \"\"\"\n        print(s[:i][::-1] + s[i:])\n\n\nTO completion:\ndef changeSection(s,i):\n    \"\"\"\n    Slice a string starting at 1 and ending at the given number. Reverse the slice and replace it in the string; return the string\n    \"\"\"\n        return s[:i][::-1] + s[i:]\n",
                 "id": 1,
                 "key": 0
             }

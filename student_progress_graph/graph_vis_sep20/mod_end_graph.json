@@ -5,77 +5,77 @@
     "nodes": [
         {
             "stderr_id": 0,
-            "stdout_id": 10,
+            "stdout_id": 1,
             "hover": "stdout:\nNone\n\nNone\n\nNone\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 1,
+            "stdout_id": 5,
             "hover": "stdout:\n['jumping', 'bumping', 'singing', 'picking']\n\n['dreaded', 'edited', 'heated']\n\n['nearer', 'closer']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 7,
+            "stdout_id": 6,
             "hover": "stdout:\n['jumps', 'bumps', 'sings', 'picks']\n\n['dreads', 'edits', 'heats']\n\n['nears', 'closs']\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
         },
         {
             "stderr_id": 0,
-            "stdout_id": 9,
+            "stdout_id": 4,
             "hover": "stdout:\n['jumpiing', 'bumpiing', 'siingiing', 'pickiing']\n\n['dreaded', 'edited', 'heated']\n\n['nearer', 'closer']\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 3
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 10,
             "hover": "stdout:\nings\n\neds\n\ners\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 4
         },
         {
             "stderr_id": 1,
-            "stdout_id": 3,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(mod_end(['jumping', 'bumping', 'singing', 'picking'], 'ing'))\n  File \"/tmp/file.py\", line 5, in mod_end\n    if words.endswith(ending):\nAttributeError: 'list' object has no attribute 'endswith'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(mod_end(['dreaded', 'edited', 'heated'], 'ed'))\n  File \"/tmp/file.py\", line 5, in mod_end\n    if words.endswith(ending):\nAttributeError: 'list' object has no attribute 'endswith'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 8, in <module>\n    print(mod_end(['nearer', 'closer'], 'er'))\n  File \"/tmp/file.py\", line 5, in mod_end\n    if words.endswith(ending):\nAttributeError: 'list' object has no attribute 'endswith'\n",
-            "color": "red",
+            "color": "grey",
             "id": 5
         },
         {
             "stderr_id": 0,
-            "stdout_id": 5,
+            "stdout_id": 2,
             "hover": "stdout:\n['jump', 'bump', 'sing', 'pick']\n\n['dread', 'edit', 'heat']\n\n['near', 'clos']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 6
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 9,
             "hover": "stdout:\n['jumps', 'bumps', 'sss', 'picks']\n\n['dreads', 'sits', 'heats']\n\n['nears', 'closs']\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 7
         },
         {
             "stderr_id": 0,
-            "stdout_id": 4,
+            "stdout_id": 8,
             "hover": "stdout:\n['jumps', 'bumps', 'ss', 'picks']\n\n['dreads', 's', 'heats']\n\n['nears', 'closs']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 8
         },
         {
             "stderr_id": 0,
-            "stdout_id": 8,
+            "stdout_id": 7,
             "hover": "stdout:\n['jumps', 'bumps', 'ss', 'picks']\n\n['dreads', 'its', 'heats']\n\n['nears', 'closs']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 9
         },
         {
             "stderr_id": 0,
-            "stdout_id": 6,
+            "stdout_id": 3,
             "hover": "stdout:\n['jump', 'bump', 'sss', 'pick']\n\n['dread', 'sits', 'heat']\n\n['near', 'clos']\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 10
@@ -84,63 +84,11 @@
     "adjacency": [
         [
             {
-                "diff": 11,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student20",
-                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -22,8 +22,11 @@\n last letters of+each+word+in the-word+list for the string,",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 2,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student20",
-                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -17,7 +17,7 @@\n as an input.-Search+Take the last letters",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 5,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student20",
-                "hover": "username:student20\ndiff:\n--- \n+++ \n@@ -2,37 +2,30 @@\n mod_end(words, ending): \"\"\"-Take-a-list-of-words-sharing-the-same-ending,-and-a-string-as-an-input.-Take-the-last-letters-of+For each word in the-list-for+list,+remove the-string,+last+instance+of+ending+that+can+be+found+in+the+word and-replace-it-with-'s'.+add+a+s+to+the+word \"\"\"",
-                "id": 2,
-                "key": 0
-            },
-            {
-                "diff": 10,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student36",
-                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -2,24 +2,26 @@\n mod_end(words, ending): \"\"\"-With+replace+the+characters+contained+within+the+string+outside+of+the+list+when+it+appears+in the words in the-list,-the-part-of-the-word-in-string-contained-outside-the list-replace with-'s'+\"s\" \"\"\"",
-                "id": 2,
-                "key": 1
-            }
-        ],
-        [],
-        [
-            {
                 "diff": 0,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student36",
-                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -14,13 +14,12 @@\n of the word-modifying-tense-with-the+in string contained outside the list+with+'s' \"\"\"",
-                "id": 4,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 7,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student36",
-                "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -8,7 +8,6 @@\n in the list,-replace the part of@@ -20,6 +19,7 @@\n outside the list+replace with 's' \"\"\"",
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student20",
+                "hover": "username:student20\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -22,8 +22,11 @@\n last letters of+each+word+in the-word+list for the string,\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take a list of words sharing the same ending, and a string as an input.\nSearch the last letters of the word for the string, and replace it with 's'.\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            word = word[:-len(ending)] + 's'\n            print(word)\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take a list of words sharing the same ending, and a string as an input.\nSearch the last letters of each word in the list for the string, and replace it with 's'.\n    \"\"\"\n        for word in words:\n        if word[-len(ending):] == ending:\n            word = word[:-len(ending)] + 's'\n    return words\n\n",
                 "id": 1,
                 "key": 0
             }
@@ -148,11 +96,52 @@
         [
             {
                 "diff": 1,
-                "color": "#008dff",
-                "arrow_color": "#008dff",
-                "username": "student38",
-                "hover": "username:student38\ndiff:\n--- \n+++ \n@@ -6,5 +6,8 @@\n out ending from+each+string+in words \"\"\"",
-                "id": 6,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student20",
+                "hover": "username:student20\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -17,7 +17,7 @@\n as an input.-Search+Take the last letters\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take a list of words sharing the same ending, and a string as an input.\nSearch the last letters of each word in the list for the string, and replace it with 's'.\n    \"\"\"\n        for word in words:\n        if word[-len(ending):] == ending:\n            word = word[:-len(ending)] + 's'\n    return words\n\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take a list of words sharing the same ending, and a string as an input.\nTake the last letters of each word in the list for the string, and replace it with 's'.\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            word = word[:-len(ending)] + 's'\n    return words\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 2,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student20",
+                "hover": "username:student20\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -2,37 +2,30 @@\n mod_end(words, ending): \"\"\"-Take-a-list-of-words-sharing-the-same-ending,-and-a-string-as-an-input.-Take-the-last-letters-of+For each word in the-list-for+list,+remove the-string,+last+instance+of+ending+that+can+be+found+in+the+word and-replace-it-with-'s'.+add+a+s+to+the+word \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take a list of words sharing the same ending, and a string as an input.\nTake the last letters of each word in the list for the string, and replace it with 's'.\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            word = word[:-len(ending)] + 's'\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    For each word in the list, remove the last instance of ending that can be found in the word and add a s to the word\n    \"\"\"\n        for i in range(len(words)):\n        if words[i].endswith(ending):\n            words[i] = words[i][:-len(ending)] + 's'\n    return words\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 5,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student36",
+                "hover": "username:student36\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -2,24 +2,26 @@\n mod_end(words, ending): \"\"\"-With+replace+the+characters+contained+within+the+string+outside+of+the+list+when+it+appears+in the words in the-list,-the-part-of-the-word-in-string-contained-outside-the list-replace with-'s'+\"s\" \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    With the words in the list,  the part of the word in string contained outside the list replace with 's'\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            word = word[:-len(ending)] + 's'\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    replace the characters contained within the string outside of the list when it appears in the words in the list with \"s\"\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            words[words.index(word)] = word[:-len(ending)] + \"s\"\n    return words\n",
+                "id": 2,
+                "key": 1
+            }
+        ],
+        [],
+        [
+            {
+                "diff": 3,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student36",
+                "hover": "username:student36\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -14,13 +14,12 @@\n of the word-modifying-tense-with-the+in string contained outside the list+with+'s' \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    With the words in the list, replace the part of the word modifying tense with the string contained outside the list\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].replace(words[i][-2:], ending)\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    With the words in the list, replace the part of the word in string contained outside the list with 's'\n    \"\"\"\n        for word in words:\n        ending = ending.replace(word, '')\n    return ending + 's'\n\n",
+                "id": 4,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student36",
+                "hover": "username:student36\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -8,7 +8,6 @@\n in the list,-replace the part of@@ -20,6 +19,7 @@\n outside the list+replace with 's' \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    With the words in the list, replace the part of the word in string contained outside the list with 's'\n    \"\"\"\n        for word in words:\n        ending = ending.replace(word, '')\n    return ending + 's'\n\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    With the words in the list,  the part of the word in string contained outside the list replace with 's'\n    \"\"\"\n        for word in words:\n        if word.endswith(ending):\n            word = word[:-len(ending)] + 's'\n    return words\n",
+                "id": 1,
                 "key": 0
             }
         ],
@@ -162,7 +151,18 @@
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student38",
-                "hover": "username:student38\ndiff:\n--- \n+++ \n@@ -10,4 +10,7 @@\n string in words+and+add+'s' \"\"\"",
+                "hover": "username:student38\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -6,5 +6,8 @@\n out ending from+each+string+in words \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take out ending from words\n    \"\"\"\n        if words.endswith(ending):\n        return words[:-len(ending)]\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take out ending from each string in words\n    \"\"\"\n        return [w[:-len(ending)] if w.endswith(ending) else w for w in words]\n\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student38",
+                "hover": "username:student38\nedge: (6->2)\ndiff:\n--- \n+++ \n@@ -10,4 +10,7 @@\n string in words+and+add+'s' \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take out ending from each string in words\n    \"\"\"\n        return [w[:-len(ending)] if w.endswith(ending) else w for w in words]\n\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Take out ending from each string in words and add 's'\n    \"\"\"\n        return [word[:-len(ending)] + 's' for word in words]\n",
                 "id": 2,
                 "key": 0
             }
@@ -173,7 +173,7 @@
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student54",
-                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -22,4 +22,20 @@\n replace with 's'.+If+the+string+occurs+more+than+one+time+at+the+index,+replace+it+the+last+time. \"\"\"",
+                "hover": "username:student54\nedge: (7->8)\ndiff:\n--- \n+++ \n@@ -22,4 +22,20 @@\n replace with 's'.+If+the+string+occurs+more+than+one+time+at+the+index,+replace+it+the+last+time. \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'.\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].replace(ending, 's')\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'. If the string occurs more than one time at the index, replace it the last time.\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].split(ending)[0] + 's'\n    return words\n",
                 "id": 8,
                 "key": 0
             }
@@ -184,29 +184,29 @@
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student54",
-                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -35,7 +35,15 @@\n index, replace it+with+'s' the last-time.+time,+maintaining+the+rest+of+the+string. \"\"\"",
+                "hover": "username:student54\nedge: (8->9)\ndiff:\n--- \n+++ \n@@ -35,7 +35,15 @@\n index, replace it+with+'s' the last-time.+time,+maintaining+the+rest+of+the+string. \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'. If the string occurs more than one time at the index, replace it the last time.\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].split(ending)[0] + 's'\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'. If the string occurs more than one time at the index, replace it with 's' the last time, maintaining the rest of the string.\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].split(ending)\n        words[i][-1] = words[i][-1] + 's'\n        words[i] = ''.join(words[i])\n    return words\n",
                 "id": 9,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student54",
-                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -2,6 +2,37 @@\n mod_end(words, ending): \"\"\"+If+the+string+stated+after+the+list+occurs+more+than+one+time+within+a+string+in+the+list,+replace+it+with+'s'+the+last+time,+maintaining+the+rest+of+the+string. Find the string@@ -22,28 +53,4 @@\n replace with 's'.-If-the-string-occurs-more-than-one-time-at-the-index,-replace-it-with-'s'-the-last-time,-maintaining-the-rest-of-the-string. \"\"\"",
+                "hover": "username:student54\nedge: (9->10)\ndiff:\n--- \n+++ \n@@ -2,6 +2,37 @@\n mod_end(words, ending): \"\"\"+If+the+string+stated+after+the+list+occurs+more+than+one+time+within+a+string+in+the+list,+replace+it+with+'s'+the+last+time,+maintaining+the+rest+of+the+string. Find the string@@ -22,28 +53,4 @@\n replace with 's'.-If-the-string-occurs-more-than-one-time-at-the-index,-replace-it-with-'s'-the-last-time,-maintaining-the-rest-of-the-string. \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'. If the string occurs more than one time at the index, replace it with 's' the last time, maintaining the rest of the string.\n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].split(ending)\n        words[i][-1] = words[i][-1] + 's'\n        words[i] = ''.join(words[i])\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    If the string stated after the list occurs more than one time within a string in the list, replace it with 's' the last time, maintaining the rest of the string. Find the string stated after the list within each string at each index in the list and replace with 's'. \n    \"\"\"\n        for i in range(len(words)):\n        if words[i].count(ending) > 1:\n            words[i] = words[i].replace(ending, 's')\n        else:\n            words[i] = words[i].replace(ending, '')\n    return words\n",
                 "id": 10,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
+                "diff": 11,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student54",
-                "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -2,6 +2,26 @@\n mod_end(words, ending): \"\"\"+Find+the+string+stated+after+the+list+within+each+string+at+each+index+in+the+list+and+replace+with+'s'. If the string@@ -33,24 +53,4 @@\n of the string.-Find-the-string-stated-after-the-list-within-each-string-at-each-index-in-the-list-and-replace-with-'s'. \"\"\"",
+                "hover": "username:student54\nedge: (10->2)\ndiff:\n--- \n+++ \n@@ -2,6 +2,26 @@\n mod_end(words, ending): \"\"\"+Find+the+string+stated+after+the+list+within+each+string+at+each+index+in+the+list+and+replace+with+'s'. If the string@@ -33,24 +53,4 @@\n of the string.-Find-the-string-stated-after-the-list-within-each-string-at-each-index-in-the-list-and-replace-with-'s'. \"\"\"\n\nFROM completion:\ndef mod_end(words, ending):\n    \"\"\"\n    If the string stated after the list occurs more than one time within a string in the list, replace it with 's' the last time, maintaining the rest of the string. Find the string stated after the list within each string at each index in the list and replace with 's'. \n    \"\"\"\n        for i in range(len(words)):\n        if words[i].count(ending) > 1:\n            words[i] = words[i].replace(ending, 's')\n        else:\n            words[i] = words[i].replace(ending, '')\n    return words\n\n\nTO completion:\ndef mod_end(words, ending):\n    \"\"\"\n    Find the string stated after the list within each string at each index in the list and replace with 's'. If the string stated after the list occurs more than one time within a string in the list, replace it with 's' the last time, maintaining the rest of the string. \n    \"\"\"\n        for i in range(len(words)):\n        words[i] = words[i].rsplit(ending, 1)[0] + 's'\n    return words\n",
                 "id": 2,
                 "key": 0
             }

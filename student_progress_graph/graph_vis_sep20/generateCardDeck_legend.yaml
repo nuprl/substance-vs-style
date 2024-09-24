@@ -1,30 +1,34 @@
 "edges":
-  !!int "0": ""
-  !!int "1": |-
+  !!int "0": |-
     ---
     +++
-    @@ -23,16 +23,15 @@
-     values in vals.-Each+Sort+each card in-list-must-be-in+deck+by alphabetical order-by+of first character. """
-  !!int "2": |-
+    @@ -10,14 +10,32 @@
+     of input strings+"suits" and another series of input-strings,-and-then+strings+"vals".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it splices each string
+  !!int "1": |-
     ---
     +++
     @@ -30,5 +30,13 @@
      in the other-list.+list,+with+letters+appearing+first+and+numbers+appearing+second. """
+  !!int "2": |-
+    ---
+    +++
+    @@ -39,4 +39,12 @@
+     numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order. """
   !!int "3": |-
-    ---
-    +++
-    @@ -33,5 +33,6 @@
-     alphabetical order by-suits.+first+character. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -32,6 +32,6 @@
-     alphabetical order of-first+suit character. """
-  !!int "5": |-
     ---
     +++
     @@ -46,5 +46,7 @@
      appear in alphabetical+and+numerical order. """
+  !!int "4": |-
+    ---
+    +++
+    @@ -42,11 +42,28 @@
+     the new strings+in+the+new+list will appear in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in numerical order. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -34,7 +34,31 @@
+     which will be-returned.+returned+[ex,+if+the+first+element+of+the+first+list+is+F+and+an+element+of+the+second+list+is+7,+combine+them+like+F7]. Keep adding the
   !!int "6": |-
     ---
     +++
@@ -33,79 +37,75 @@
   !!int "7": |-
     ---
     +++
-    @@ -22,7 +22,9 @@
-     combination of these-parameters.+parameters+sorted+alphabetically. As an example.@@ -50,19 +52,4 @@
-     'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S """
-  !!int "8": |-
-    ---
-    +++
-    @@ -23,4 +23,12 @@
-     values in vals.+Results+in+vals+must+be+in+alphabetical+order. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -50,11 +50,21 @@
-     'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1' """
-  !!int "10": |-
-    ---
-    +++
     @@ -83,17 +83,18 @@
      the new list.-Return+Reorder the+new list+to+make+it in alphabetical-order and numerical-order-[ex.-A1,-B2,-C3]+order,+then+return """
-  !!int "11": |-
-    ---
-    +++
-    @@ -38,4 +38,20 @@
-     each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string. """
-  !!int "12": |-
+  !!int "8": ""
+  !!int "9": |-
     ---
     +++
     @@ -23,4 +23,31 @@
      of these parameters.+As+an+example.+If+you+input+['H',+'D']+as+suits+and+['6',+'Q',+'J',+'2']+as+vals,+the+function+prints+['D2',+'D6',+'DJ',+'DQ',+'H2','H6',+'HJ',+'HQ'] """
-  !!int "13": |-
-    ---
-    +++
-    @@ -10,14 +10,32 @@
-     of input strings+"suits" and another series of input-strings,-and-then+strings+"vals".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it splices each string
-  !!int "14": |-
-    ---
-    +++
-    @@ -39,4 +39,12 @@
-     numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order. """
-  !!int "15": |-
-    ---
-    +++
-    @@ -32,6 +32,6 @@
-     in alphabetical order-of+by suits. """
-  !!int "16": |-
-    ---
-    +++
-    @@ -31,5 +31,7 @@
-     be in alphabetical-order.+order+of+suits. """
-  !!int "17": |-
+  !!int "10": |-
     ---
     +++
     @@ -49,5 +49,12 @@
      'DQ', 'H2','H6', 'HJ',-'HQ']+'HQ'].+This+function+prints+the+final+values+alphabetically. """
-  !!int "18": |-
+  !!int "11": |-
+    ---
+    +++
+    @@ -50,11 +50,21 @@
+     'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1' """
+  !!int "12": |-
     ---
     +++
     @@ -58,13 +58,11 @@
      list is ordered-alphabetically.-'D6'-would-be-in-the-list-before-'S1'+C+then+D+then+H+then+S """
-  !!int "19": |-
+  !!int "13": |-
     ---
     +++
-    @@ -34,7 +34,31 @@
-     which will be-returned.+returned+[ex,+if+the+first+element+of+the+first+list+is+F+and+an+element+of+the+second+list+is+7,+combine+them+like+F7]. Keep adding the
-  !!int "20": |-
+    @@ -22,7 +22,9 @@
+     combination of these-parameters.+parameters+sorted+alphabetically. As an example.@@ -50,19 +52,4 @@
+     'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S """
+  !!int "14": |-
     ---
     +++
-    @@ -42,11 +42,28 @@
-     the new strings+in+the+new+list will appear in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in numerical order. """
-  !!int "21": |-
+    @@ -38,4 +38,20 @@
+     each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -23,4 +23,12 @@
+     values in vals.+Results+in+vals+must+be+in+alphabetical+order. """
+  !!int "16": |-
     ---
     +++
     @@ -23,9 +23,10 @@
      values in vals.-Results+Each+card in-vals+list must be in
+  !!int "17": |-
+    ---
+    +++
+    @@ -31,5 +31,7 @@
+     be in alphabetical-order.+order+of+suits. """
+  !!int "18": |-
+    ---
+    +++
+    @@ -32,6 +32,6 @@
+     in alphabetical order-of+by suits. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -33,5 +33,6 @@
+     alphabetical order by-suits.+first+character. """
+  !!int "20": |-
+    ---
+    +++
+    @@ -23,16 +23,15 @@
+     values in vals.-Each+Sort+each card in-list-must-be-in+deck+by alphabetical order-by+of first character. """
+  !!int "21": |-
+    ---
+    +++
+    @@ -32,6 +32,6 @@
+     alphabetical order of-first+suit character. """
 "nodes":
   !!int "0":
     "stderr":
@@ -122,7 +122,7 @@
     - |
       ['H2']
     "stdout_id": !!int |-
-      1
+      5
   !!int "1":
     "stderr":
     - ""
@@ -138,7 +138,7 @@
     - |
       ['H2']
     "stdout_id": !!int |-
-      2
+      4
   !!int "2":
     "stderr":
     - ""
@@ -154,7 +154,7 @@
     - |
       ['2H']
     "stdout_id": !!int |-
-      0
+      3
   !!int "3":
     "stderr":
     - ""
@@ -170,7 +170,7 @@
     - |
       ['2H']
     "stdout_id": !!int |-
-      3
+      2
   !!int "4":
     "stderr":
     - |2
@@ -192,7 +192,7 @@
     - ""
     - ""
     "stdout_id": !!int |-
-      4
+      0
   !!int "5":
     "stderr":
     - ""
@@ -208,7 +208,7 @@
     - |
       None
     "stdout_id": !!int |-
-      5
+      1
 "student_color":
   "student33": |-
     #d83034

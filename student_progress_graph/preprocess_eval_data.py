@@ -233,7 +233,7 @@ def main(args):
     #   - ignore entried where the first attempt was also last (no progression)
     ds = ds.filter(lambda x: not (x["first_attempt"] and x["last_attempt"]), 
                    num_proc=cpu_count(), desc="Filtering out non-progressions")
-    if args.include_fails is None:
+    if not args.include_fails:
         successful = ds.filter(lambda x: x["last_attempt"] and x["is_success"], 
                         num_proc=cpu_count(), desc="Filter by successful last")
         candidates = set(list(zip(successful["problem"], successful["username"])))

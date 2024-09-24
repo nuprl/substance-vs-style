@@ -2,9 +2,8 @@
   !!int "0": |-
     ---
     +++
-    @@ -10,6 +10,7 @@
-     five strings. Each+nested list should equal@@ -17,12 +18,20 @@
-     and output true.+The+whole+list+can+be+any+length. Any+nested list less or more-then+than five should output
+    @@ -8,20 +8,14 @@
+     of lists and-returns-a-boleean-based-on+checks+to+see if-the-number-of-elements-in-the+each list-are+is the same+length """
   !!int "1": |-
     ---
     +++
@@ -13,8 +12,9 @@
   !!int "2": |-
     ---
     +++
-    @@ -8,20 +8,14 @@
-     of lists and-returns-a-boleean-based-on+checks+to+see if-the-number-of-elements-in-the+each list-are+is the same+length """
+    @@ -10,6 +10,7 @@
+     five strings. Each+nested list should equal@@ -17,12 +18,20 @@
+     and output true.+The+whole+list+can+be+any+length. Any+nested list less or more-then+than five should output
 "nodes":
   !!int "0":
     "stderr":
@@ -31,7 +31,7 @@
     - |
       False
     "stdout_id": !!int |-
-      2
+      1
   !!int "1":
     "stderr":
     - ""
@@ -47,7 +47,7 @@
     - |
       True
     "stdout_id": !!int |-
-      1
+      2
   !!int "2":
     "stderr":
     - |

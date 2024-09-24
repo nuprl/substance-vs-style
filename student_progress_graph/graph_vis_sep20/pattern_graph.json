@@ -5,14 +5,14 @@
     "nodes": [
         {
             "stderr_id": 1,
-            "stdout_id": 1,
+            "stdout_id": 0,
             "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n\n  File \"/tmp/file.py\", line 11\n    pattern(5)\nIndentationError: expected an indented block after 'for' statement on line 6\n",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 3,
+            "stdout_id": 1,
             "hover": "stdout:\n112233\n\n11223344\n\n1122\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
@@ -26,7 +26,7 @@
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 3,
             "hover": "stdout:\n[[1, 2, 3], [1, 2, 3], [1, 2, 3]]\n\n[[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]\n\n[[1, 2], [1, 2]]\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 3
@@ -35,7 +35,7 @@
             "stderr_id": 0,
             "stdout_id": 5,
             "hover": "stdout:\n[[1], [1, 2], [1, 2, 3]]\n\n[[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]\n\n[[1], [1, 2]]\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 4
         },
         {
@@ -53,7 +53,7 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student17",
-                "hover": "username:student17\ndiff:\n",
+                "hover": "username:student17\nedge: (0->1)\ndiff:\n\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    count to the letter of the input\n    \"\"\"\n        for i in range(1, value + 1):\n        for j in range(1, i + 1):\n            print(j, end=\" \")\n        print(\"\\r\")\n\n\npattern(5)\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    count to the letter of the input\n    \"\"\"\n        if value == 0:\n        return \"\"\n    else:\n        return pattern(value - 1) + str(value) + str(value)\n\nprint(pattern(3))\n",
                 "id": 1,
                 "key": 0
             }
@@ -64,18 +64,18 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student17",
-                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -1,11 +1,13 @@\n def pattern(value): \"\"\"-count-to-the-letter-of-the-input+if+given+2+output+two+lists+1,2+and+1,2 \"\"\"",
+                "hover": "username:student17\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -1,11 +1,13 @@\n def pattern(value): \"\"\"-count-to-the-letter-of-the-input+if+given+2+output+two+lists+1,2+and+1,2 \"\"\"\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    count to the letter of the input\n    \"\"\"\n        if value == 0:\n        return \"\"\n    else:\n        return pattern(value - 1) + str(value) + str(value)\n\nprint(pattern(3))\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    if given 2 output two lists 1,2 and 1,2\n    \"\"\"\n        if value == 2:\n        return [[1,2],[1,2]]\n    else:\n        return [[1,2,3],[1,2,3]]\n",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
+                "diff": 2,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student17",
-                "hover": "username:student17\ndiff:\n--- \n+++ \n@@ -10,4 +10,16 @@\n 1,2 and 1,2+if+given+3+out+put+3+lists+1,2,3+and+1,2,3+and+1,2,3 \"\"\"",
+                "hover": "username:student17\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -10,4 +10,16 @@\n 1,2 and 1,2+if+given+3+out+put+3+lists+1,2,3+and+1,2,3+and+1,2,3 \"\"\"\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    if given 2 output two lists 1,2 and 1,2\n    \"\"\"\n        if value == 2:\n        return [[1,2],[1,2]]\n    else:\n        return [[1,2,3],[1,2,3]]\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    if given 2 output two lists 1,2 and 1,2\nif given 3 out put 3 lists 1,2,3 and 1,2,3 and 1,2,3\n    \"\"\"\n        return [[i for i in range(1, value + 1)] for j in range(1, value + 1)]\n\n\nprint(pattern(2))\nprint(pattern(3))\n\n",
                 "id": 3,
                 "key": 0
             }
@@ -83,11 +83,11 @@
         [],
         [
             {
-                "diff": 7,
+                "diff": 3,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student25",
-                "hover": "username:student25\ndiff:\n--- \n+++ \n@@ -9,9 +9,10 @@\n integer and creates-a+one list-with+including+the numbers 1 to@@ -26,9 +27,7 @@\n for the given-value-and-returns,+value, appending each list",
+                "hover": "username:student25\nedge: (4->3)\ndiff:\n--- \n+++ \n@@ -9,9 +9,10 @@\n integer and creates-a+one list-with+including+the numbers 1 to@@ -26,9 +27,7 @@\n for the given-value-and-returns,+value, appending each list\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    This function takes a given integer and creates a list with numbers 1 to that given value. It creates this list repeated for the given value and returns, appending each list to one list. It returns the list of lists.\n    \"\"\"\n        list_of_lists = []\n    for i in range(1, value+1):\n        list_of_lists.append([j for j in range(1, i+1)])\n    return list_of_lists\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    This function takes a given integer and creates one list including the numbers 1 to that given value. It creates this list repeated for the given value, appending each list to one list. It returns the list of lists.\n    \"\"\"\n        pattern_list = []\n    for i in range(value):\n        pattern_list.append(list(range(1, value + 1)))\n    return pattern_list\n",
                 "id": 3,
                 "key": 0
             },
@@ -96,36 +96,36 @@
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student4",
-                "hover": "username:student4\ndiff:\n--- \n+++ \n@@ -1,18 +1,9 @@\n def pattern(value): \"\"\"-uses-the-given-number-to-produce+creates a-given-number-of-lists,-each+list containing elements counting@@ -22,5 +13,17 @@\n given number from-one+1,+duplicates+this+list+by+the+given+number+into+a+list+of+lists \"\"\"",
+                "hover": "username:student4\nedge: (4->3)\ndiff:\n--- \n+++ \n@@ -1,18 +1,9 @@\n def pattern(value): \"\"\"-uses-the-given-number-to-produce+creates a-given-number-of-lists,-each+list containing elements counting@@ -22,5 +13,17 @@\n given number from-one+1,+duplicates+this+list+by+the+given+number+into+a+list+of+lists \"\"\"\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    uses the given number to produce a given number of lists, each containing elements counting up to the given number from one\n    \"\"\"\n        if value == 0:\n        return []\n    else:\n        return pattern(value-1) + [[i for i in range(1, value+1)]]\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    creates a list containing elements counting up to the given number from 1, duplicates this list by the given number into a list of lists\n    \"\"\"\n        return [[i for i in range(1, value + 1)] for j in range(value)]\n",
                 "id": 3,
                 "key": 1
             },
             {
-                "diff": 2,
+                "diff": 5,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student41",
-                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -20,8 +20,10 @@\n to the value.-Each-list+All+of+the+lists within the output",
+                "hover": "username:student41\nedge: (4->4)\ndiff:\n--- \n+++ \n@@ -20,8 +20,10 @@\n to the value.-Each-list+All+of+the+lists within the output\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. Each list within the output list should have each integer greater than zero up to, and including, the value inputted.\n    \"\"\"\n        output = []\n    for i in range(value):\n        output.append(list(range(1, i+2)))\n    return output\n\nprint(pattern(5))\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. All of the lists within the output list should have each integer greater than zero up to, and including, the value inputted.\n    \"\"\"\n        return [[x for x in range(1,y+1)] for y in range(1,value+1)]\n\nprint(pattern(3))",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 3,
+                "diff": 6,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student41",
-                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -30,16 +30,12 @@\n list should have-each+every integer-greater-than+between zero-up-to, and-including, the-value-inputted.+inputted+value. \"\"\"",
+                "hover": "username:student41\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -30,16 +30,12 @@\n list should have-each+every integer-greater-than+between zero-up-to, and-including, the-value-inputted.+inputted+value. \"\"\"\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. All of the lists within the output list should have each integer greater than zero up to, and including, the value inputted.\n    \"\"\"\n        return [[x for x in range(1,y+1)] for y in range(1,value+1)]\n\nprint(pattern(3))\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. All of the lists within the output list should have every integer between zero and the inputted value.\n    \"\"\"\n        return [[i for i in range(value)] for j in range(value)]\n",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
+                "diff": 7,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student41",
-                "hover": "username:student41\ndiff:\n--- \n+++ \n@@ -33,8 +33,11 @@\n every integer between-zero+one and+one+more+than the inputted value.",
+                "hover": "username:student41\nedge: (5->3)\ndiff:\n--- \n+++ \n@@ -33,8 +33,11 @@\n every integer between-zero+one and+one+more+than the inputted value.\n\nFROM completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. All of the lists within the output list should have every integer between zero and the inputted value.\n    \"\"\"\n        return [[i for i in range(value)] for j in range(value)]\n\n\nTO completion:\ndef pattern(value):\n    \"\"\"\n    Returns a list of lists. The number of lists in the output list should be equal to the value. All of the lists within the output list should have every integer between one and one more than the inputted value.\n    \"\"\"\n        return [[i for i in range(1, value + 1)] for i in range(value)]\n",
                 "id": 3,
                 "key": 0
             }

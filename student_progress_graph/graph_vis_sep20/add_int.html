@@ -4,28 +4,29 @@
   <meta charset="utf-8">
 </head>
 <div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #d83034; margin-right: 5px;"></div><span>student19</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #f9e858; margin-right: 5px;"></div><span>student36</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #008dff; margin-right: 5px;"></div><span>student42</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #4ecb8d; margin-right: 5px;"></div><span>student54</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #c701ff; margin-right: 5px;"></div><span>student77</span></div></div>
+<div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: green; margin-right: 5px;"></div><span>NODE is_last_success</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: red; margin-right: 5px;"></div><span>NODE is_last_failure</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: grey; margin-right: 5px;"></div><span>NODE starting</span></div></div>
 <body style="margin:0;">
   <style>
     /* Main divisions */
-    #iBtdOjLcswO5BRoh5-main-div {
+    #iOhbVrpoiVgRV5IfL-main-div {
       line-height: normal;
       box-sizing: content-box;
       padding: 3px;
       background-color: white;
     }
-    #iBtdOjLcswO5BRoh5-left-div {
+    #iOhbVrpoiVgRV5IfL-left-div {
       float: left;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-right-div {
+    #iOhbVrpoiVgRV5IfL-right-div {
       float: left;
       height: 100%;
       display: none;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-right-inner-div {
+    #iOhbVrpoiVgRV5IfL-right-inner-div {
       padding-left: 5px;
       padding-right: 2px;
       overflow-x: hidden;
@@ -36,7 +37,7 @@
     }
 
     /* Graph and details (contained in left-inner-div) */
-    #iBtdOjLcswO5BRoh5-graph-div {
+    #iOhbVrpoiVgRV5IfL-graph-div {
       overflow: hidden;
       resize: vertical;
       position: relative;
@@ -47,7 +48,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-details-div {
+    #iOhbVrpoiVgRV5IfL-details-div {
       overflow: auto;
       resize: vertical;
       margin-top: 5px;
@@ -58,7 +59,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-details-head {
+    #iOhbVrpoiVgRV5IfL-details-head {
       user-select: none;
       padding-left: 4px !important;
       padding-top: 4px !important;
@@ -68,7 +69,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-details-body {
+    #iOhbVrpoiVgRV5IfL-details-body {
       padding: 10px;
       padding-top: 6px;
       font-size: 10px;
@@ -78,7 +79,7 @@
     }
 
     /* Control menu (contained in right-inner-div) */
-    .iBtdOjLcswO5BRoh5-menu-item-head {
+    .iOhbVrpoiVgRV5IfL-menu-item-head {
       font-size: 11px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
@@ -94,13 +95,13 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iBtdOjLcswO5BRoh5-menu-item-body {
+    .iOhbVrpoiVgRV5IfL-menu-item-body {
       margin-left: 5px;
       margin-bottom: 10px;
       line-height: normal;
       box-sizing: content-box;
     }
-    .iBtdOjLcswO5BRoh5-menu-subitem-head {
+    .iOhbVrpoiVgRV5IfL-menu-subitem-head {
       font-size: 9px;
       font-family: "Lucida Console", Monaco, monospace;
       font-weight: 600;
@@ -110,7 +111,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iBtdOjLcswO5BRoh5-menu-subitem-body {
+    .iOhbVrpoiVgRV5IfL-menu-subitem-body {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       margin-left: 7px;
@@ -118,28 +119,28 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iBtdOjLcswO5BRoh5-labeled-input {
+    .iOhbVrpoiVgRV5IfL-labeled-input {
       all: initial;
       display: flex;
       align-items: center;
       margin-top: 1px;
       margin-bottom: 1px;
     }
-    .iBtdOjLcswO5BRoh5-label {
+    .iOhbVrpoiVgRV5IfL-label {
       all: initial;
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
       cursor: pointer;
     }
-    .iBtdOjLcswO5BRoh5-slider {
+    .iOhbVrpoiVgRV5IfL-slider {
       width: 100%;
       margin-bottom: 2px;
     }
-    .iBtdOjLcswO5BRoh5-slider::-moz-focus-outer {
+    .iOhbVrpoiVgRV5IfL-slider::-moz-focus-outer {
       border: 0;
     }
-    .iBtdOjLcswO5BRoh5-slider-text-left {
+    .iOhbVrpoiVgRV5IfL-slider-text-left {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
@@ -147,20 +148,20 @@
       float: left;
       margin-top: 2px;
     }
-    .iBtdOjLcswO5BRoh5-slider-text-right {
+    .iOhbVrpoiVgRV5IfL-slider-text-right {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
       float: right;
     }
-    .iBtdOjLcswO5BRoh5-checkbox {
+    .iOhbVrpoiVgRV5IfL-checkbox {
       margin-left: 0px !important;
       margin-right: 4px !important;
       margin-top: 2px !important;
       margin-bottom: 2px !important;
       padding: 0px !important;
     }
-    .iBtdOjLcswO5BRoh5-select {
+    .iOhbVrpoiVgRV5IfL-select {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -189,15 +190,15 @@
     }
     @-moz-document url-prefix() {
       /* Dirty hack to remove dotted border on focus */
-      .iBtdOjLcswO5BRoh5-select {
+      .iOhbVrpoiVgRV5IfL-select {
         color: transparent !important;
         text-shadow: 0 0 0 black !important;
       }
     }
-    .iBtdOjLcswO5BRoh5-select:after {
+    .iOhbVrpoiVgRV5IfL-select:after {
       cursor: pointer;
     }
-    .iBtdOjLcswO5BRoh5-button {
+    .iOhbVrpoiVgRV5IfL-button {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -214,29 +215,29 @@
       border: 1.2px solid #bbb;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
     }
-    .iBtdOjLcswO5BRoh5-button:hover {
+    .iOhbVrpoiVgRV5IfL-button:hover {
       border: 1.2px solid #999;
       background-color: #f2f2f2;
     }
-    .iBtdOjLcswO5BRoh5-button:active {
+    .iOhbVrpoiVgRV5IfL-button:active {
       background-color: #ddd;
     }
-    .iBtdOjLcswO5BRoh5-button::-moz-focus-inner {
+    .iOhbVrpoiVgRV5IfL-button::-moz-focus-inner {
       border: 0;
     }
     /* Hidden menu items */
-    #iBtdOjLcswO5BRoh5-graph-select-div {
+    #iOhbVrpoiVgRV5IfL-graph-select-div {
       display: none;
     }
-    #iBtdOjLcswO5BRoh5-node-size-norm-div {
+    #iOhbVrpoiVgRV5IfL-node-size-norm-div {
       display: none;
     }
-    #iBtdOjLcswO5BRoh5-edge-size-norm-div {
+    #iOhbVrpoiVgRV5IfL-edge-size-norm-div {
       display: none;
     }
 
     /* Graph */
-    #iBtdOjLcswO5BRoh5-tooltip-div {
+    #iOhbVrpoiVgRV5IfL-tooltip-div {
       font-size: 10px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42001;
@@ -255,7 +256,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-menu-toggle-button, #iBtdOjLcswO5BRoh5-details-toggle-button, #iBtdOjLcswO5BRoh5-progress-container {
+    #iOhbVrpoiVgRV5IfL-menu-toggle-button, #iOhbVrpoiVgRV5IfL-details-toggle-button, #iOhbVrpoiVgRV5IfL-progress-container {
       font-size: 14px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42000;
@@ -267,7 +268,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iBtdOjLcswO5BRoh5-menu-toggle-button {
+    #iOhbVrpoiVgRV5IfL-menu-toggle-button {
       top: 0;
       right: 0;
       padding-left: 6px;
@@ -279,7 +280,7 @@
       border-bottom: 1px solid #ccc;
       border-left: 1px solid #ccc;
     }
-    #iBtdOjLcswO5BRoh5-details-toggle-button {
+    #iOhbVrpoiVgRV5IfL-details-toggle-button {
       bottom: 0;
       left: 0;
       padding-left: 19px;
@@ -291,7 +292,7 @@
       border-bottom: 0px;
       border-left: 0px;
     }
-    #iBtdOjLcswO5BRoh5-progress-container {
+    #iOhbVrpoiVgRV5IfL-progress-container {
       font-size: 10px;
       text-align: center;
       top: 46%;
@@ -303,7 +304,7 @@
     }
 
     /* Details */
-    #iBtdOjLcswO5BRoh5-details-user-provided {
+    #iOhbVrpoiVgRV5IfL-details-user-provided {
       margin-top: 3px;
       padding-top: 3.5px;
       border-top: 0.5px dashed black;
@@ -312,578 +313,578 @@
       white-space: pre-wrap;
       word-break: break-word;
     }
-    #iBtdOjLcswO5BRoh5-details-user-provided ul {
+    #iOhbVrpoiVgRV5IfL-details-user-provided ul {
       list-style-position: inside;
       padding-left: 6px;
     }
   </style>
 
-  <div id="iBtdOjLcswO5BRoh5-main-div">
-    <div id="iBtdOjLcswO5BRoh5-tooltip-div"></div>
+  <div id="iOhbVrpoiVgRV5IfL-main-div">
+    <div id="iOhbVrpoiVgRV5IfL-tooltip-div"></div>
 
-    <div id="iBtdOjLcswO5BRoh5-left-div">
-      <div id="iBtdOjLcswO5BRoh5-left-inner-div">
-        <div id="iBtdOjLcswO5BRoh5-graph-div"></div>
-        <div id="iBtdOjLcswO5BRoh5-details-div">
-          <div id="iBtdOjLcswO5BRoh5-details-head">
+    <div id="iOhbVrpoiVgRV5IfL-left-div">
+      <div id="iOhbVrpoiVgRV5IfL-left-inner-div">
+        <div id="iOhbVrpoiVgRV5IfL-graph-div"></div>
+        <div id="iOhbVrpoiVgRV5IfL-details-div">
+          <div id="iOhbVrpoiVgRV5IfL-details-head">
             Details for selected element
           </div>
-          <div id="iBtdOjLcswO5BRoh5-details-body">
+          <div id="iOhbVrpoiVgRV5IfL-details-body">
           </div>
         </div>
       </div>
     </div>
 
-    <div id="iBtdOjLcswO5BRoh5-right-div">
-      <div id="iBtdOjLcswO5BRoh5-right-inner-div">
+    <div id="iOhbVrpoiVgRV5IfL-right-div">
+      <div id="iOhbVrpoiVgRV5IfL-right-inner-div">
         <!-- Menu: General -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-general-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-general-head">
           General
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-general-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-general-body">
           <!-- Sub-menu: State -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               App state
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-reset"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-reset"
                       type="button">Reset</button>
             </div>
           </div>
           <!-- Sub-menu: Display mode (fullscreen or not) -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Display mode
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-fullscreen-button"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-fullscreen-button"
                       type="button">Enter full screen</button>
             </div>
           </div>
           <!-- Sub-menu: Export -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Export
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-svg"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-svg"
                       type="button">SVG</button>
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-png"
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-png"
                       type="button">PNG</button>
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-jpg"
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-jpg"
                       type="button">JPG</button>
             </div>
           </div>
         </div>
         <!-- Menu: Data -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-data-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-data-head">
           Data selection
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-data-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-data-body">
           <!-- Sub-menu: Graph (only shown if multiple graphs in data) -->
-          <div id="iBtdOjLcswO5BRoh5-graph-select-div">
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+          <div id="iOhbVrpoiVgRV5IfL-graph-select-div">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Graph
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <select class="iBtdOjLcswO5BRoh5-select"
-                      id="iBtdOjLcswO5BRoh5-graph-select"></select>
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <select class="iOhbVrpoiVgRV5IfL-select"
+                      id="iOhbVrpoiVgRV5IfL-graph-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node label text -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Node label text
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <select class="iBtdOjLcswO5BRoh5-select"
-                      id="iBtdOjLcswO5BRoh5-node-label-data-source-select"></select>
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <select class="iOhbVrpoiVgRV5IfL-select"
+                      id="iOhbVrpoiVgRV5IfL-node-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Edge label text -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Edge label text
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <select class="iBtdOjLcswO5BRoh5-select"
-                      id="iBtdOjLcswO5BRoh5-edge-label-data-source-select"></select>
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <select class="iOhbVrpoiVgRV5IfL-select"
+                      id="iOhbVrpoiVgRV5IfL-edge-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node size -->
-          <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+          <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
             Node size
           </div>
-          <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
+          <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
             <div>
-              <select class="iBtdOjLcswO5BRoh5-select"
-                      id="iBtdOjLcswO5BRoh5-node-size-data-source-select"></select>
+              <select class="iOhbVrpoiVgRV5IfL-select"
+                      id="iOhbVrpoiVgRV5IfL-node-size-data-source-select"></select>
             </div>
-            <div class="iBtdOjLcswO5BRoh5-labeled-input">
-              <input class="iBtdOjLcswO5BRoh5-checkbox"
-                     id="iBtdOjLcswO5BRoh5-node-size-normalization-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+              <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                     id="iOhbVrpoiVgRV5IfL-node-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iBtdOjLcswO5BRoh5-label"
-                     for="iBtdOjLcswO5BRoh5-node-size-normalization-checkbox">Normalize</label>
+              <label class="iOhbVrpoiVgRV5IfL-label"
+                     for="iOhbVrpoiVgRV5IfL-node-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iBtdOjLcswO5BRoh5-node-size-norm-div">
+            <div id="iOhbVrpoiVgRV5IfL-node-size-norm-div">
               <div>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Minimum</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-node-size-normalization-min-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-node-size-normalization-min-slider"
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Minimum</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-node-size-normalization-min-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-node-size-normalization-min-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
               <div>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Maximum</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-node-size-normalization-max-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-node-size-normalization-max-slider"
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Maximum</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-node-size-normalization-max-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-node-size-normalization-max-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Edge size -->
-          <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+          <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
             Edge size
           </div>
-          <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
+          <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
             <div>
-              <select class="iBtdOjLcswO5BRoh5-select"
-                      id="iBtdOjLcswO5BRoh5-edge-size-data-source-select"></select>
+              <select class="iOhbVrpoiVgRV5IfL-select"
+                      id="iOhbVrpoiVgRV5IfL-edge-size-data-source-select"></select>
             </div>
-            <div class="iBtdOjLcswO5BRoh5-labeled-input">
-              <input class="iBtdOjLcswO5BRoh5-checkbox"
-                     id="iBtdOjLcswO5BRoh5-edge-size-normalization-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+              <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                     id="iOhbVrpoiVgRV5IfL-edge-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iBtdOjLcswO5BRoh5-label"
-                     for="iBtdOjLcswO5BRoh5-edge-size-normalization-checkbox">Normalize</label>
+              <label class="iOhbVrpoiVgRV5IfL-label"
+                     for="iOhbVrpoiVgRV5IfL-edge-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iBtdOjLcswO5BRoh5-edge-size-norm-div">
+            <div id="iOhbVrpoiVgRV5IfL-edge-size-norm-div">
               <div>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Minimum</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-edge-size-normalization-min-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-edge-size-normalization-min-slider"
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Minimum</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-edge-size-normalization-min-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-edge-size-normalization-min-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
               <div>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Maximum</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-edge-size-normalization-max-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-edge-size-normalization-max-slider"
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Maximum</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-edge-size-normalization-max-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-edge-size-normalization-max-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Nodes -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-node-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-node-head">
           Nodes
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-node-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-node-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Visibility
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-checkbox">Show nodes</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-checkbox">Show nodes</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Size
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
               <div>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Scaling factor</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-node-size-factor-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-node-size-factor-slider"
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Scaling factor</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-node-size-factor-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-node-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Position -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Position
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <button class="iBtdOjLcswO5BRoh5-button"
-                      id="iBtdOjLcswO5BRoh5-node-release-button"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <button class="iOhbVrpoiVgRV5IfL-button"
+                      id="iOhbVrpoiVgRV5IfL-node-release-button"
                       type="button">Release fixed nodes</button>
             </div>
           </div>
           <!-- Sub-menu: Drag behavior -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Drag behavior
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-drag-fix-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-drag-fix-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-drag-fix-checkbox">Fix node position</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-drag-fix-checkbox">Fix node position</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-hover-neighborhood-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-hover-neighborhood-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-hover-neighborhood-checkbox">Show neighborhood</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-hover-neighborhood-checkbox">Show neighborhood</label>
               </div>
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-hover-tooltip-checkbox"
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node images -->
-        <div id="iBtdOjLcswO5BRoh5-node-image-meta-control">
-          <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-               id="iBtdOjLcswO5BRoh5-node-image-head">
+        <div id="iOhbVrpoiVgRV5IfL-node-image-meta-control">
+          <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+               id="iOhbVrpoiVgRV5IfL-node-image-head">
             Node images
           </div>
-          <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-               id="iBtdOjLcswO5BRoh5-node-image-body">
+          <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+               id="iOhbVrpoiVgRV5IfL-node-image-body">
             <!-- Sub-menu: Visibility -->
             <div>
-              <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+              <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
                 Visibility
               </div>
-              <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-                <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                  <input class="iBtdOjLcswO5BRoh5-checkbox"
-                         id="iBtdOjLcswO5BRoh5-node-image-checkbox"
+              <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+                <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                  <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                         id="iOhbVrpoiVgRV5IfL-node-image-checkbox"
                          type="checkbox">
-                  <label class="iBtdOjLcswO5BRoh5-label"
-                         for="iBtdOjLcswO5BRoh5-node-image-checkbox">Show node images</label>
+                  <label class="iOhbVrpoiVgRV5IfL-label"
+                         for="iOhbVrpoiVgRV5IfL-node-image-checkbox">Show node images</label>
                 </div>
               </div>
             </div>
             <!-- Sub-menu: Size -->
             <div>
-              <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+              <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
                 Size
               </div>
-              <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-                <span class="iBtdOjLcswO5BRoh5-slider-text-left">Scaling factor</span>
-                <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-node-image-size-factor-text"></span>
-                <input class="iBtdOjLcswO5BRoh5-slider"
-                       id="iBtdOjLcswO5BRoh5-node-image-size-factor-slider"
+              <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Scaling factor</span>
+                <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-node-image-size-factor-text"></span>
+                <input class="iOhbVrpoiVgRV5IfL-slider"
+                       id="iOhbVrpoiVgRV5IfL-node-image-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node labels -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-node-label-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-node-label-head">
           Node labels
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-node-label-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-node-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Visibility
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-label-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-label-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-label-checkbox">Show node labels</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-label-checkbox">Show node labels</label>
               </div>
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-node-label-border-checkbox"
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-node-label-border-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-node-label-border-checkbox">Show borders</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-node-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Size
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Scaling factor</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                    id="iBtdOjLcswO5BRoh5-node-label-size-factor-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-node-label-size-factor-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Scaling factor</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                    id="iOhbVrpoiVgRV5IfL-node-label-size-factor-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-node-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iBtdOjLcswO5BRoh5-node-label-rotation">
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+          <div id="iOhbVrpoiVgRV5IfL-node-label-rotation">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Rotation
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Angle</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                    id="iBtdOjLcswO5BRoh5-node-label-rotation-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-node-label-rotation-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Angle</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                    id="iOhbVrpoiVgRV5IfL-node-label-rotation-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-node-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Edges -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-edge-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-edge-head">
           Edges
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-edge-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-edge-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Visibility
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-edge-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-edge-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-edge-checkbox">Show edges</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-edge-checkbox">Show edges</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Size
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Scaling factor</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                    id="iBtdOjLcswO5BRoh5-edge-size-factor-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-edge-size-factor-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Scaling factor</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                    id="iOhbVrpoiVgRV5IfL-edge-size-factor-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-edge-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Form -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Form
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Curvature</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                    id="iBtdOjLcswO5BRoh5-edge-curvature-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-edge-curvature-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Curvature</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                    id="iOhbVrpoiVgRV5IfL-edge-curvature-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-edge-curvature-slider"
                      type="range" min="-1.2" max="1.2" step="0.02">
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-edge-hover-tooltip-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-edge-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Edge labels -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-edge-label-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-edge-label-head">
           Edge labels
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-edge-label-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-edge-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Visibility
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-edge-label-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-edge-label-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-edge-label-checkbox">Show edge labels</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-edge-label-checkbox">Show edge labels</label>
               </div>
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-edge-label-border-checkbox"
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-edge-label-border-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-edge-label-border-checkbox">Show borders</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-edge-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Size
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Scaling factor</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                    id="iBtdOjLcswO5BRoh5-edge-label-size-factor-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-edge-label-size-factor-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Scaling factor</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                    id="iOhbVrpoiVgRV5IfL-edge-label-size-factor-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-edge-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iBtdOjLcswO5BRoh5-edge-label-rotation">
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+          <div id="iOhbVrpoiVgRV5IfL-edge-label-rotation">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Rotation
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <span class="iBtdOjLcswO5BRoh5-slider-text-left">Angle</span>
-              <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                      id="iBtdOjLcswO5BRoh5-edge-label-rotation-text"></span>
-              <input class="iBtdOjLcswO5BRoh5-slider"
-                     id="iBtdOjLcswO5BRoh5-edge-label-rotation-slider"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Angle</span>
+              <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                      id="iOhbVrpoiVgRV5IfL-edge-label-rotation-text"></span>
+              <input class="iOhbVrpoiVgRV5IfL-slider"
+                     id="iOhbVrpoiVgRV5IfL-edge-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Layout algorithm -->
-        <div class="iBtdOjLcswO5BRoh5-menu-item-head"
-             id="iBtdOjLcswO5BRoh5-layout-algorithm-head">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-head"
+             id="iOhbVrpoiVgRV5IfL-layout-algorithm-head">
           Layout algorithm
         </div>
-        <div class="iBtdOjLcswO5BRoh5-menu-item-body"
-             id="iBtdOjLcswO5BRoh5-layout-algorithm-body">
+        <div class="iOhbVrpoiVgRV5IfL-menu-item-body"
+             id="iOhbVrpoiVgRV5IfL-layout-algorithm-body">
 
           <!-- Sub-menu: Simulation -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Simulation
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-simulation-active-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-simulation-active-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-simulation-active-checkbox">Active</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-simulation-active-checkbox">Active</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Many-body force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Many-body force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-many-body-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-many-body-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-many-body-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-many-body-force-checkbox">On</label>
               </div>
-              <div id="iBtdOjLcswO5BRoh5-many-body-force-div">
+              <div id="iOhbVrpoiVgRV5IfL-many-body-force-div">
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Strength</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-many-body-force-strength-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-many-body-force-strength-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Strength</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-many-body-force-strength-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-many-body-force-strength-slider"
                          type="range" min="-2000.0" max="200.0" step="0.01"
                          style="direction:rtl;">
                 </div>
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Theta</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-many-body-force-theta-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-many-body-force-theta-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Theta</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-many-body-force-theta-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-many-body-force-theta-slider"
                          type="range" min="0.01" max="2.0" step="0.001">
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                    <input class="iBtdOjLcswO5BRoh5-checkbox"
-                         id="iBtdOjLcswO5BRoh5-many-body-force-min-distance-checkbox"
+                  <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                    <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                         id="iOhbVrpoiVgRV5IfL-many-body-force-min-distance-checkbox"
                          type="checkbox">
-                    <label class="iBtdOjLcswO5BRoh5-label"
-                           for="iBtdOjLcswO5BRoh5-many-body-force-min-distance-checkbox">Use minimum distance</label>
+                    <label class="iOhbVrpoiVgRV5IfL-label"
+                           for="iOhbVrpoiVgRV5IfL-many-body-force-min-distance-checkbox">Use minimum distance</label>
                   </div>
-                  <div id="iBtdOjLcswO5BRoh5-many-body-force-min-distance-div">
-                    <span class="iBtdOjLcswO5BRoh5-slider-text-left">Min</span>
-                    <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                          id="iBtdOjLcswO5BRoh5-many-body-force-min-distance-text"></span>
-                    <input class="iBtdOjLcswO5BRoh5-slider"
-                           id="iBtdOjLcswO5BRoh5-many-body-force-min-distance-slider"
+                  <div id="iOhbVrpoiVgRV5IfL-many-body-force-min-distance-div">
+                    <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Min</span>
+                    <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                          id="iOhbVrpoiVgRV5IfL-many-body-force-min-distance-text"></span>
+                    <input class="iOhbVrpoiVgRV5IfL-slider"
+                           id="iOhbVrpoiVgRV5IfL-many-body-force-min-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                    <input class="iBtdOjLcswO5BRoh5-checkbox"
-                         id="iBtdOjLcswO5BRoh5-many-body-force-max-distance-checkbox"
+                  <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                    <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                         id="iOhbVrpoiVgRV5IfL-many-body-force-max-distance-checkbox"
                          type="checkbox">
-                    <label class="iBtdOjLcswO5BRoh5-label"
-                           for="iBtdOjLcswO5BRoh5-many-body-force-max-distance-checkbox">Use maximum distance</label>
+                    <label class="iOhbVrpoiVgRV5IfL-label"
+                           for="iOhbVrpoiVgRV5IfL-many-body-force-max-distance-checkbox">Use maximum distance</label>
                   </div>
-                  <div id="iBtdOjLcswO5BRoh5-many-body-force-max-distance-div">
-                    <span class="iBtdOjLcswO5BRoh5-slider-text-left">Max</span>
-                    <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                          id="iBtdOjLcswO5BRoh5-many-body-force-max-distance-text"></span>
-                    <input class="iBtdOjLcswO5BRoh5-slider"
-                           id="iBtdOjLcswO5BRoh5-many-body-force-max-distance-slider"
+                  <div id="iOhbVrpoiVgRV5IfL-many-body-force-max-distance-div">
+                    <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Max</span>
+                    <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                          id="iOhbVrpoiVgRV5IfL-many-body-force-max-distance-text"></span>
+                    <input class="iOhbVrpoiVgRV5IfL-slider"
+                           id="iOhbVrpoiVgRV5IfL-many-body-force-max-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
@@ -892,33 +893,33 @@
           </div>
           <!-- Sub-menu: Links force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Links force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-links-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-links-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-links-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-links-force-checkbox">On</label>
                 </label>
               </div>
-              <div id="iBtdOjLcswO5BRoh5-links-force-div">
+              <div id="iOhbVrpoiVgRV5IfL-links-force-div">
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Distance</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-links-force-distance-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-links-force-distance-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Distance</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-links-force-distance-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-links-force-distance-slider"
                          type="range" min="0.01" max="1000.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Strength</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-links-force-strength-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-links-force-strength-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Strength</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-links-force-strength-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-links-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -926,32 +927,32 @@
           </div>
           <!-- Sub-menu: Collision force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Collision force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-collision-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-collision-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-collision-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-collision-force-checkbox">On</label>
               </div>
-              <div id="iBtdOjLcswO5BRoh5-collision-force-div">
+              <div id="iOhbVrpoiVgRV5IfL-collision-force-div">
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Radius</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-collision-force-radius-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-collision-force-radius-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Radius</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-collision-force-radius-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-collision-force-radius-slider"
                          type="range" min="0" max="100.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Strength</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-collision-force-strength-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-collision-force-strength-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Strength</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-collision-force-strength-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-collision-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -959,24 +960,24 @@
           </div>
           <!-- Sub-menu: x-positioning force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               x-positioning force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-x-positioning-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-x-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-x-positioning-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-x-positioning-force-checkbox">On</label>
               </div>
-              <div id="iBtdOjLcswO5BRoh5-x-positioning-force-div">
+              <div id="iOhbVrpoiVgRV5IfL-x-positioning-force-div">
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Strength</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-x-positioning-force-strength-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-x-positioning-force-strength-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Strength</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-x-positioning-force-strength-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-x-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -984,24 +985,24 @@
           </div>
           <!-- Sub-menu: y-positioning force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               y-positioning force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-y-positioning-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-y-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-y-positioning-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-y-positioning-force-checkbox">On</label>
               </div>
-              <div id="iBtdOjLcswO5BRoh5-y-positioning-force-div">
+              <div id="iOhbVrpoiVgRV5IfL-y-positioning-force-div">
                 <div>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-left">Strength</span>
-                  <span class="iBtdOjLcswO5BRoh5-slider-text-right"
-                        id="iBtdOjLcswO5BRoh5-y-positioning-force-strength-text"></span>
-                  <input class="iBtdOjLcswO5BRoh5-slider"
-                         id="iBtdOjLcswO5BRoh5-y-positioning-force-strength-slider"
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-left">Strength</span>
+                  <span class="iOhbVrpoiVgRV5IfL-slider-text-right"
+                        id="iOhbVrpoiVgRV5IfL-y-positioning-force-strength-text"></span>
+                  <input class="iOhbVrpoiVgRV5IfL-slider"
+                         id="iOhbVrpoiVgRV5IfL-y-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -1009,16 +1010,16 @@
           </div>
           <!-- Sub-menu: Centering force -->
           <div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-head">
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-head">
               Centering force
             </div>
-            <div class="iBtdOjLcswO5BRoh5-menu-subitem-body">
-              <div class="iBtdOjLcswO5BRoh5-labeled-input">
-                <input class="iBtdOjLcswO5BRoh5-checkbox"
-                       id="iBtdOjLcswO5BRoh5-centering-force-checkbox"
+            <div class="iOhbVrpoiVgRV5IfL-menu-subitem-body">
+              <div class="iOhbVrpoiVgRV5IfL-labeled-input">
+                <input class="iOhbVrpoiVgRV5IfL-checkbox"
+                       id="iOhbVrpoiVgRV5IfL-centering-force-checkbox"
                        type="checkbox">
-                <label class="iBtdOjLcswO5BRoh5-label"
-                       for="iBtdOjLcswO5BRoh5-centering-force-checkbox">On</label>
+                <label class="iOhbVrpoiVgRV5IfL-label"
+                       for="iOhbVrpoiVgRV5IfL-centering-force-checkbox">On</label>
               </div>
             </div>
           </div>
@@ -1071,7 +1072,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
           // 1) Fetch state.rawData
           fetchRawDataFromTemplating(){
-            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 1, "stdout_id": 2, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', ['list'], 6, 9]\n\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 1, "stdout_id": 0, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 2, "stdout_id": 5, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 1, 4]\n\n[8, 56, 8, '5', '4']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    i += num\nTypeError: 'int' object is not iterable\n", "color": "red"}}, "3": {"metadata": {"stderr_id": 1, "stdout_id": 4, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', 6, 9]\n\nstderr:\n_no_stderr_", "color": "red"}}, "4": {"metadata": {"stderr_id": 3, "stdout_id": 3, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int([8, 56, 8, '5', '4'], 1))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n", "color": "red"}}, "5": {"metadata": {"stderr_id": 1, "stdout_id": 7, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', 6, 9]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "6": {"metadata": {"stderr_id": 4, "stdout_id": 3, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int([8, 56, 8, '5', '4'], 1))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n", "color": "blue"}}, "7": {"metadata": {"stderr_id": 0, "stdout_id": 6, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, 6, 5]\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 13, in add_int\n    new_lst.append(item + num)\nTypeError: can only concatenate list (not \"int\") to list\n", "color": "blue"}}, "8": {"metadata": {"stderr_id": 5, "stdout_id": 1, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    lst[i] = lst[i] + num\nTypeError: can only concatenate list (not \"int\") to list\n", "color": "red"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 3, "color": "#d83034", "arrow_color": "#d83034", "username": "student19", "hover": "username:student19\ndiff:\n--- \n+++ \n@@ -6,25 +6,39 @@\n an input list-(which-can-have-both-strings-and-integers) and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers in the+list,+the input-list.+integer+is+added+to+that+number. \"\"\""}}, {"source": "2", "target": "1", "metadata": {"diff": 6, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -18,7 +18,10 @@\n outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@\n of the list+to+the+number \"\"\""}}, {"source": "3", "target": "1", "metadata": {"diff": 5, "color": "#008dff", "arrow_color": "#008dff", "username": "student42", "hover": "username:student42\ndiff:\n--- \n+++ \n@@ -60,5 +60,25 @@\n they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless \"\"\""}}, {"source": "4", "target": "5", "metadata": {"diff": 0, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -17,4 +17,20 @@\n the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. \"\"\""}}, {"source": "5", "target": "6", "metadata": {"diff": 1, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -22,15 +22,26 @@\n is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. \"\"\""}}, {"source": "6", "target": "7", "metadata": {"diff": 2, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -22,11 +22,16 @@\n is a string,-add-it+append+the+integer+on to the end+of+the+string to create a"}}, {"source": "7", "target": "1", "metadata": {"diff": 4, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\ndiff:\n--- \n+++ \n@@ -42,11 +42,5 @@\n is an integer,-or-a-string-containing-an-integer, concatenate. \"\"\""}}, {"source": "8", "target": "1", "metadata": {"diff": 7, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -6,7 +6,8 @@\n a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@\n in the list,-and add the number@@ -32,5 +32,14 @@\n numbers in the+list,+and+do+nothing+to+the+lists+in+the list. \"\"\""}}], "directed": true}];
+            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 0, "stdout_id": 3, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', ['list'], 6, 9]\n\nstderr:\n_no_stderr_", "color": "grey"}}, "1": {"metadata": {"stderr_id": 0, "stdout_id": 6, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 1, "stdout_id": 1, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 1, 4]\n\n[8, 56, 8, '5', '4']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    i += num\nTypeError: 'int' object is not iterable\n", "color": "grey"}}, "3": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n['hello5', 'aaa5', 'bbb5', 6, 9]\n\nstderr:\n_no_stderr_", "color": "grey"}}, "4": {"metadata": {"stderr_id": 5, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int([8, 56, 8, '5', '4'], 1))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 5, in add_int\n    return [x + num for x in lst]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x + num for x in lst]\nTypeError: can only concatenate str (not \"int\") to str\n", "color": "grey"}}, "5": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n['hello', 'aaa', 'bbb', 'ccc', 6, 9]\n\n[9, 57, 9, '5', '4']\n\n['hello', 'aaa', 'bbb', 6, 9]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "6": {"metadata": {"stderr_id": 4, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int([8, 56, 8, '5', '4'], 1))\nIndentationError: expected an indented block after 'else' statement on line 14\n\n  File \"/tmp/file.py\", line 15\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\nIndentationError: expected an indented block after 'else' statement on line 14\n", "color": "blue"}}, "7": {"metadata": {"stderr_id": 3, "stdout_id": 7, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, 6, 5]\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 13, in add_int\n    new_lst.append(item + num)\nTypeError: can only concatenate list (not \"int\") to list\n", "color": "blue"}}, "8": {"metadata": {"stderr_id": 2, "stdout_id": 4, "hover": "stdout:\n['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]\n\n[9, 57, 9, '51', '41']\n\n\nstderr:\n\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 11, in <module>\n    print(add_int(['hello', 'aaa', 'bbb', ['list'], 1, 4], 5))\n  File \"/tmp/file.py\", line 9, in add_int\n    lst[i] = lst[i] + num\nTypeError: can only concatenate list (not \"int\") to list\n", "color": "grey"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 0, "color": "#d83034", "arrow_color": "#d83034", "username": "student19", "hover": "username:student19\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -6,25 +6,39 @@\n an input list-(which-can-have-both-strings-and-integers) and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers in the+list,+the input-list.+integer+is+added+to+that+number. \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Takes an input list (which can have both strings and integers) and an integer. Adds the input integer to each item in the input list. \n    \"\"\"\n        new_lst = []\n    for item in lst:\n        if type(item) == int:\n            new_lst.append(item + num)\n        else:\n            new_lst.append(item)\n    return new_lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Takes an input list and an input integer. For all strings in the list, the input integer is concatenated after the end of the string. For all numbers in the list, the input integer is added to that number.\n    \"\"\"\n        for i in range(len(lst)):\n        if type(lst[i]) == str:\n            lst[i] = lst[i] + str(num)\n        elif type(lst[i]) == int:\n            lst[i] = lst[i] + num\n    return lst\n"}}, {"source": "2", "target": "1", "metadata": {"diff": 1, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\nedge: (2->1)\ndiff:\n--- \n+++ \n@@ -18,7 +18,10 @@\n outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@\n of the list+to+the+number \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Go through the list, if the input is a string concatenate the number outside of the list, if the input is a number add the number outside of the list\n    \"\"\"\n        for i in lst:\n        if type(i) == str:\n            i += str(num)\n        else:\n            i += num\n    return lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Go through the list, if the input is a string concatenate the number outside of the list to the string, if the input is a number add the number outside of the list to the number\n    \"\"\"\n        for i in range(len(lst)):\n        if type(lst[i]) == str:\n            lst[i] += str(num)\n        elif type(lst[i]) == int:\n            lst[i] += num\n    return lst\n"}}, {"source": "3", "target": "1", "metadata": {"diff": 2, "color": "#008dff", "arrow_color": "#008dff", "username": "student42", "hover": "username:student42\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -60,5 +60,25 @@\n they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    given an inputed list, return a new list where each element of the new list is an element of the initial list but with the number added to it. if the initial list element is a string, they should concatenate with a string of the number inputted. if the initial list element is a number, they should add normally\n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if type(i) == int:\n            new_lst.append(i + num)\n        elif type(i) == str:\n            new_lst.append(i + str(num))\n    return new_lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    given an inputed list, return a new list where each element of the new list is an element of the initial list but with the number added to it. if the initial list element is a string, they should concatenate with a string of the number inputted. if the initial list element is a number, they should add normally. if an element of the initial list is neither, leave it alone and add it to the outputted list regardless\n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if type(i) == str:\n            new_lst.append(i + str(num))\n        elif type(i) == int:\n            new_lst.append(i + num)\n        else:\n            new_lst.append(i)\n    return new_lst\n"}}, {"source": "4", "target": "5", "metadata": {"diff": 3, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -17,4 +17,20 @@\n the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list.\n    \"\"\"\n        return [x + num for x in lst]\n\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, append it to the end. If it is an integer, concatenate.\n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if type(i) == int:\n            new_lst.append(i + num)\n        elif type(i) == str:\n            new_lst.append(i)\n    return new_lst\n"}}, {"source": "5", "target": "6", "metadata": {"diff": 4, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -22,15 +22,26 @@\n is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, append it to the end. If it is an integer, concatenate.\n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if type(i) == int:\n            new_lst.append(i + num)\n        elif type(i) == str:\n            new_lst.append(i)\n    return new_lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, add it to the end to create a new string. If it is an integer, or a string containing an integer, concatenate.\n    \"\"\"\n        if type(lst) == list:\n        return [add_int(x, num) for x in lst]\n    elif type(lst) == str:\n        if lst.isdigit():\n            return str(int(lst) + num)\n        else:\n            return lst + str(num)\n    elif type(lst) == int:\n        return lst + num\n    else:"}}, {"source": "6", "target": "7", "metadata": {"diff": 5, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\nedge: (6->7)\ndiff:\n--- \n+++ \n@@ -22,11 +22,16 @@\n is a string,-add-it+append+the+integer+on to the end+of+the+string to create a\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, add it to the end to create a new string. If it is an integer, or a string containing an integer, concatenate.\n    \"\"\"\n        if type(lst) == list:\n        return [add_int(x, num) for x in lst]\n    elif type(lst) == str:\n        if lst.isdigit():\n            return str(int(lst) + num)\n        else:\n            return lst + str(num)\n    elif type(lst) == int:\n        return lst + num\n    else:\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, append the integer on to the end of the string to create a new string. If it is an integer, or a string containing an integer, concatenate.\n    \"\"\"\n        new_lst = []\n    for item in lst:\n        if type(item) == str:\n            if item.isdigit():\n                new_lst.append(int(item) + num)\n            else:\n                new_lst.append(item + str(num))\n        else:\n            new_lst.append(item + num)\n    return new_lst\n"}}, {"source": "7", "target": "1", "metadata": {"diff": 6, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student54", "hover": "username:student54\nedge: (7->1)\ndiff:\n--- \n+++ \n@@ -42,11 +42,5 @@\n is an integer,-or-a-string-containing-an-integer, concatenate. \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, append the integer on to the end of the string to create a new string. If it is an integer, or a string containing an integer, concatenate.\n    \"\"\"\n        new_lst = []\n    for item in lst:\n        if type(item) == str:\n            if item.isdigit():\n                new_lst.append(int(item) + num)\n            else:\n                new_lst.append(item + str(num))\n        else:\n            new_lst.append(item + num)\n    return new_lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer added at each index of the old list. If it is a string, append the integer on to the end of the string to create a new string. If it is an integer, concatenate.\n    \"\"\"\n        new_lst = []\n    for item in lst:\n        if type(item) == str:\n            new_lst.append(item + str(num))\n        elif type(item) == int:\n            new_lst.append(item + num)\n        else:\n            new_lst.append(item)\n    return new_lst\n"}}, {"source": "8", "target": "1", "metadata": {"diff": 7, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student77", "hover": "username:student77\nedge: (8->1)\ndiff:\n--- \n+++ \n@@ -6,7 +6,8 @@\n a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@\n in the list,-and add the number@@ -32,5 +32,14 @@\n numbers in the+list,+and+do+nothing+to+the+lists+in+the list. \"\"\"\n\nFROM completion:\ndef add_int(lst, num):\n    \"\"\"\n    Given a list of numbers and strings as well as a number, append the number to the strings in the list, and add the number to the numbers in the list.\n    \"\"\"\n        for i in range(len(lst)):\n        if type(lst[i]) == str:\n            lst[i] = lst[i] + str(num)\n        else:\n            lst[i] = lst[i] + num\n    return lst\n\n\nTO completion:\ndef add_int(lst, num):\n    \"\"\"\n    Given a list of numbers, lists, and strings as well as a number, append the number to the strings in the list, add the number to the numbers in the list, and do nothing to the lists in the list.\n    \"\"\"\n        for i in range(len(lst)):\n        if type(lst[i]) == str:\n            lst[i] += str(num)\n        elif type(lst[i]) == int:\n            lst[i] += num\n    return lst\n"}}], "directed": true}];
             // Data selection and normalization
             state.nodeSizeDataSource = "size";
             state.useNodeSizeNormalization = false;
@@ -2001,126 +2002,126 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
         elements:{
           // Containers
-          mainContainer: document.getElementById("iBtdOjLcswO5BRoh5-main-div"),
-          tooltipContainer: document.getElementById("iBtdOjLcswO5BRoh5-tooltip-div"),
-          leftContainer: document.getElementById("iBtdOjLcswO5BRoh5-left-div"),
-          rightContainer: document.getElementById("iBtdOjLcswO5BRoh5-right-div"),
-          graphContainer: document.getElementById("iBtdOjLcswO5BRoh5-graph-div"),
-          detailsContainer: document.getElementById("iBtdOjLcswO5BRoh5-details-div"),
-          detailsHead: document.getElementById("iBtdOjLcswO5BRoh5-details-head"),
-          detailsBody: document.getElementById("iBtdOjLcswO5BRoh5-details-body"),
+          mainContainer: document.getElementById("iOhbVrpoiVgRV5IfL-main-div"),
+          tooltipContainer: document.getElementById("iOhbVrpoiVgRV5IfL-tooltip-div"),
+          leftContainer: document.getElementById("iOhbVrpoiVgRV5IfL-left-div"),
+          rightContainer: document.getElementById("iOhbVrpoiVgRV5IfL-right-div"),
+          graphContainer: document.getElementById("iOhbVrpoiVgRV5IfL-graph-div"),
+          detailsContainer: document.getElementById("iOhbVrpoiVgRV5IfL-details-div"),
+          detailsHead: document.getElementById("iOhbVrpoiVgRV5IfL-details-head"),
+          detailsBody: document.getElementById("iOhbVrpoiVgRV5IfL-details-body"),
           // Data sources
-          dataHead: document.getElementById("iBtdOjLcswO5BRoh5-data-head"),
-          dataBody: document.getElementById("iBtdOjLcswO5BRoh5-data-body"),
-          graphSelectionContainer: document.getElementById("iBtdOjLcswO5BRoh5-graph-select-div"),
-          graphSelection: document.getElementById("iBtdOjLcswO5BRoh5-graph-select"),
-          nodeSizeDataSourceSelect: document.getElementById("iBtdOjLcswO5BRoh5-node-size-data-source-select"),
-          nodeSizeNormalizationCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-size-normalization-checkbox"),
-          nodeSizeNormalizationContainer: document.getElementById("iBtdOjLcswO5BRoh5-node-size-norm-div"),
-          nodeSizeNormalizationMinText: document.getElementById("iBtdOjLcswO5BRoh5-node-size-normalization-min-text"),
-          nodeSizeNormalizationMinSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-size-normalization-min-slider"),
-          nodeSizeNormalizationMaxText: document.getElementById("iBtdOjLcswO5BRoh5-node-size-normalization-max-text"),
-          nodeSizeNormalizationMaxSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-size-normalization-max-slider"),
-          edgeSizeDataSourceSelect: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-data-source-select"),
-          edgeSizeNormalizationCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-normalization-checkbox"),
-          edgeSizeNormalizationContainer: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-norm-div"),
-          edgeSizeNormalizationMinText: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-normalization-min-text"),
-          edgeSizeNormalizationMinSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-normalization-min-slider"),
-          edgeSizeNormalizationMaxText: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-normalization-max-text"),
-          edgeSizeNormalizationMaxSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-normalization-max-slider"),
+          dataHead: document.getElementById("iOhbVrpoiVgRV5IfL-data-head"),
+          dataBody: document.getElementById("iOhbVrpoiVgRV5IfL-data-body"),
+          graphSelectionContainer: document.getElementById("iOhbVrpoiVgRV5IfL-graph-select-div"),
+          graphSelection: document.getElementById("iOhbVrpoiVgRV5IfL-graph-select"),
+          nodeSizeDataSourceSelect: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-data-source-select"),
+          nodeSizeNormalizationCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-normalization-checkbox"),
+          nodeSizeNormalizationContainer: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-norm-div"),
+          nodeSizeNormalizationMinText: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-normalization-min-text"),
+          nodeSizeNormalizationMinSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-normalization-min-slider"),
+          nodeSizeNormalizationMaxText: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-normalization-max-text"),
+          nodeSizeNormalizationMaxSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-normalization-max-slider"),
+          edgeSizeDataSourceSelect: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-data-source-select"),
+          edgeSizeNormalizationCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-normalization-checkbox"),
+          edgeSizeNormalizationContainer: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-norm-div"),
+          edgeSizeNormalizationMinText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-normalization-min-text"),
+          edgeSizeNormalizationMinSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-normalization-min-slider"),
+          edgeSizeNormalizationMaxText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-normalization-max-text"),
+          edgeSizeNormalizationMaxSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-normalization-max-slider"),
           // General
-          generalHead: document.getElementById("iBtdOjLcswO5BRoh5-general-head"),
-          generalBody: document.getElementById("iBtdOjLcswO5BRoh5-general-body"),
-          resetButton: document.getElementById("iBtdOjLcswO5BRoh5-reset"),
-          fullscreenButton: document.getElementById("iBtdOjLcswO5BRoh5-fullscreen-button"),
-          svgExportButton: document.getElementById("iBtdOjLcswO5BRoh5-svg"),
-          pngExportButton: document.getElementById("iBtdOjLcswO5BRoh5-png"),
-          jpgExportButton: document.getElementById("iBtdOjLcswO5BRoh5-jpg"),
+          generalHead: document.getElementById("iOhbVrpoiVgRV5IfL-general-head"),
+          generalBody: document.getElementById("iOhbVrpoiVgRV5IfL-general-body"),
+          resetButton: document.getElementById("iOhbVrpoiVgRV5IfL-reset"),
+          fullscreenButton: document.getElementById("iOhbVrpoiVgRV5IfL-fullscreen-button"),
+          svgExportButton: document.getElementById("iOhbVrpoiVgRV5IfL-svg"),
+          pngExportButton: document.getElementById("iOhbVrpoiVgRV5IfL-png"),
+          jpgExportButton: document.getElementById("iOhbVrpoiVgRV5IfL-jpg"),
           // Nodes
-          nodeHead: document.getElementById("iBtdOjLcswO5BRoh5-node-head"),
-          nodeBody: document.getElementById("iBtdOjLcswO5BRoh5-node-body"),
-          nodeCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-checkbox"),
-          nodeSizeFactorText: document.getElementById("iBtdOjLcswO5BRoh5-node-size-factor-text"),
-          nodeSizeFactorSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-size-factor-slider"),
-          nodeDragFixCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-drag-fix-checkbox"),
-          nodeHoverNeighborhoodCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-hover-neighborhood-checkbox"),
-          nodeHoverTooltipCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-hover-tooltip-checkbox"),
-          nodeReleaseButton: document.getElementById("iBtdOjLcswO5BRoh5-node-release-button"),
+          nodeHead: document.getElementById("iOhbVrpoiVgRV5IfL-node-head"),
+          nodeBody: document.getElementById("iOhbVrpoiVgRV5IfL-node-body"),
+          nodeCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-checkbox"),
+          nodeSizeFactorText: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-factor-text"),
+          nodeSizeFactorSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-size-factor-slider"),
+          nodeDragFixCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-drag-fix-checkbox"),
+          nodeHoverNeighborhoodCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-hover-neighborhood-checkbox"),
+          nodeHoverTooltipCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-hover-tooltip-checkbox"),
+          nodeReleaseButton: document.getElementById("iOhbVrpoiVgRV5IfL-node-release-button"),
           // Node images
-          nodeImageHead: document.getElementById("iBtdOjLcswO5BRoh5-node-image-head"),
-          nodeImageBody: document.getElementById("iBtdOjLcswO5BRoh5-node-image-body"),
-          nodeImageCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-image-checkbox"),
-          nodeImageMetaControl: document.getElementById("iBtdOjLcswO5BRoh5-node-image-meta-control"),
-          nodeImageSizeFactorText: document.getElementById("iBtdOjLcswO5BRoh5-node-image-size-factor-text"),
-          nodeImageSizeFactorSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-image-size-factor-slider"),
+          nodeImageHead: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-head"),
+          nodeImageBody: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-body"),
+          nodeImageCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-checkbox"),
+          nodeImageMetaControl: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-meta-control"),
+          nodeImageSizeFactorText: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-size-factor-text"),
+          nodeImageSizeFactorSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-image-size-factor-slider"),
           // Node labels
-          nodeLabelHead: document.getElementById("iBtdOjLcswO5BRoh5-node-label-head"),
-          nodeLabelBody: document.getElementById("iBtdOjLcswO5BRoh5-node-label-body"),
-          nodeLabelCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-label-checkbox"),
-          nodeLabelBorderCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-node-label-border-checkbox"),
-          nodeLabelTextDataSourceSelect: document.getElementById("iBtdOjLcswO5BRoh5-node-label-data-source-select"),
-          nodeLabelSizeFactorText: document.getElementById("iBtdOjLcswO5BRoh5-node-label-size-factor-text"),
-          nodeLabelSizeFactorSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-label-size-factor-slider"),
-          nodeLabelRotationText: document.getElementById("iBtdOjLcswO5BRoh5-node-label-rotation-text"),
-          nodeLabelRotationSlider: document.getElementById("iBtdOjLcswO5BRoh5-node-label-rotation-slider"),
+          nodeLabelHead: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-head"),
+          nodeLabelBody: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-body"),
+          nodeLabelCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-checkbox"),
+          nodeLabelBorderCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-border-checkbox"),
+          nodeLabelTextDataSourceSelect: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-data-source-select"),
+          nodeLabelSizeFactorText: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-size-factor-text"),
+          nodeLabelSizeFactorSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-size-factor-slider"),
+          nodeLabelRotationText: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-rotation-text"),
+          nodeLabelRotationSlider: document.getElementById("iOhbVrpoiVgRV5IfL-node-label-rotation-slider"),
           // Edges
-          edgeHead: document.getElementById("iBtdOjLcswO5BRoh5-edge-head"),
-          edgeBody: document.getElementById("iBtdOjLcswO5BRoh5-edge-body"),
-          edgeCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-edge-checkbox"),
-          edgeSizeFactorText: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-factor-text"),
-          edgeSizeFactorSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-size-factor-slider"),
-          edgeCurvatureText: document.getElementById("iBtdOjLcswO5BRoh5-edge-curvature-text"),
-          edgeCurvatureSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-curvature-slider"),
-          edgeHoverTooltipCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-edge-hover-tooltip-checkbox"),
+          edgeHead: document.getElementById("iOhbVrpoiVgRV5IfL-edge-head"),
+          edgeBody: document.getElementById("iOhbVrpoiVgRV5IfL-edge-body"),
+          edgeCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-edge-checkbox"),
+          edgeSizeFactorText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-factor-text"),
+          edgeSizeFactorSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-size-factor-slider"),
+          edgeCurvatureText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-curvature-text"),
+          edgeCurvatureSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-curvature-slider"),
+          edgeHoverTooltipCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-edge-hover-tooltip-checkbox"),
           // Edge labels
-          edgeLabelHead: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-head"),
-          edgeLabelBody: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-body"),
-          edgeLabelCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-checkbox"),
-          edgeLabelBorderCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-border-checkbox"),
-          edgeLabelTextDataSourceSelect: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-data-source-select"),
-          edgeLabelSizeFactorText: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-size-factor-text"),
-          edgeLabelSizeFactorSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-size-factor-slider"),
-          edgeLabelRotationText: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-rotation-text"),
-          edgeLabelRotationSlider: document.getElementById("iBtdOjLcswO5BRoh5-edge-label-rotation-slider"),
+          edgeLabelHead: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-head"),
+          edgeLabelBody: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-body"),
+          edgeLabelCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-checkbox"),
+          edgeLabelBorderCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-border-checkbox"),
+          edgeLabelTextDataSourceSelect: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-data-source-select"),
+          edgeLabelSizeFactorText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-size-factor-text"),
+          edgeLabelSizeFactorSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-size-factor-slider"),
+          edgeLabelRotationText: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-rotation-text"),
+          edgeLabelRotationSlider: document.getElementById("iOhbVrpoiVgRV5IfL-edge-label-rotation-slider"),
           // Layout algorithm
-          layoutAlgorithmHead: document.getElementById("iBtdOjLcswO5BRoh5-layout-algorithm-head"),
-          layoutAlgorithmBody: document.getElementById("iBtdOjLcswO5BRoh5-layout-algorithm-body"),
-          simulationCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-simulation-active-checkbox"),
-          manyBodyForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-checkbox"),
-          manyBodyForceContainer: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-div"),
-          manyBodyForceStrengthText: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-strength-text"),
-          manyBodyForceStrengthSlider: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-strength-slider"),
-          manyBodyForceThetaText: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-theta-text"),
-          manyBodyForceThetaSlider: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-theta-slider"),
-          manyBodyForceMinDistCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-min-distance-checkbox"),
-          manyBodyForceMinDistContainer: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-min-distance-div"),
-          manyBodyForceMinDistText: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-min-distance-text"),
-          manyBodyForceMinDistSlider: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-min-distance-slider"),
-          manyBodyForceMaxDistCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-max-distance-checkbox"),
-          manyBodyForceMaxDistContainer: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-max-distance-div"),
-          manyBodyForceMaxDistText: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-max-distance-text"),
-          manyBodyForceMaxDistSlider: document.getElementById("iBtdOjLcswO5BRoh5-many-body-force-max-distance-slider"),
-          linksForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-links-force-checkbox"),
-          linksForceContainer: document.getElementById("iBtdOjLcswO5BRoh5-links-force-div"),
-          linksForceDistanceText: document.getElementById("iBtdOjLcswO5BRoh5-links-force-distance-text"),
-          linksForceDistanceSlider: document.getElementById("iBtdOjLcswO5BRoh5-links-force-distance-slider"),
-          linksForceStrengthText: document.getElementById("iBtdOjLcswO5BRoh5-links-force-strength-text"),
-          linksForceStrengthSlider: document.getElementById("iBtdOjLcswO5BRoh5-links-force-strength-slider"),
-          collisionForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-checkbox"),
-          collisionForceContainer: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-div"),
-          collisionForceRadiusText: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-radius-text"),
-          collisionForceRadiusSlider: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-radius-slider"),
-          collisionForceStrengthText: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-strength-text"),
-          collisionForceStrengthSlider: document.getElementById("iBtdOjLcswO5BRoh5-collision-force-strength-slider"),
-          xPositioningForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-x-positioning-force-checkbox"),
-          xPositioningForceContainer: document.getElementById("iBtdOjLcswO5BRoh5-x-positioning-force-div"),
-          xPositioningForceStrengthText: document.getElementById("iBtdOjLcswO5BRoh5-x-positioning-force-strength-text"),
-          xPositioningForceStrengthSlider: document.getElementById("iBtdOjLcswO5BRoh5-x-positioning-force-strength-slider"),
-          yPositioningForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-y-positioning-force-checkbox"),
-          yPositioningForceContainer: document.getElementById("iBtdOjLcswO5BRoh5-y-positioning-force-div"),
-          yPositioningForceStrengthText: document.getElementById("iBtdOjLcswO5BRoh5-y-positioning-force-strength-text"),
-          yPositioningForceStrengthSlider: document.getElementById("iBtdOjLcswO5BRoh5-y-positioning-force-strength-slider"),
-          centeringForceCheckbox: document.getElementById("iBtdOjLcswO5BRoh5-centering-force-checkbox"),
+          layoutAlgorithmHead: document.getElementById("iOhbVrpoiVgRV5IfL-layout-algorithm-head"),
+          layoutAlgorithmBody: document.getElementById("iOhbVrpoiVgRV5IfL-layout-algorithm-body"),
+          simulationCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-simulation-active-checkbox"),
+          manyBodyForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-checkbox"),
+          manyBodyForceContainer: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-div"),
+          manyBodyForceStrengthText: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-strength-text"),
+          manyBodyForceStrengthSlider: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-strength-slider"),
+          manyBodyForceThetaText: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-theta-text"),
+          manyBodyForceThetaSlider: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-theta-slider"),
+          manyBodyForceMinDistCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-min-distance-checkbox"),
+          manyBodyForceMinDistContainer: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-min-distance-div"),
+          manyBodyForceMinDistText: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-min-distance-text"),
+          manyBodyForceMinDistSlider: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-min-distance-slider"),
+          manyBodyForceMaxDistCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-max-distance-checkbox"),
+          manyBodyForceMaxDistContainer: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-max-distance-div"),
+          manyBodyForceMaxDistText: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-max-distance-text"),
+          manyBodyForceMaxDistSlider: document.getElementById("iOhbVrpoiVgRV5IfL-many-body-force-max-distance-slider"),
+          linksForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-checkbox"),
+          linksForceContainer: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-div"),
+          linksForceDistanceText: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-distance-text"),
+          linksForceDistanceSlider: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-distance-slider"),
+          linksForceStrengthText: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-strength-text"),
+          linksForceStrengthSlider: document.getElementById("iOhbVrpoiVgRV5IfL-links-force-strength-slider"),
+          collisionForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-checkbox"),
+          collisionForceContainer: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-div"),
+          collisionForceRadiusText: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-radius-text"),
+          collisionForceRadiusSlider: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-radius-slider"),
+          collisionForceStrengthText: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-strength-text"),
+          collisionForceStrengthSlider: document.getElementById("iOhbVrpoiVgRV5IfL-collision-force-strength-slider"),
+          xPositioningForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-x-positioning-force-checkbox"),
+          xPositioningForceContainer: document.getElementById("iOhbVrpoiVgRV5IfL-x-positioning-force-div"),
+          xPositioningForceStrengthText: document.getElementById("iOhbVrpoiVgRV5IfL-x-positioning-force-strength-text"),
+          xPositioningForceStrengthSlider: document.getElementById("iOhbVrpoiVgRV5IfL-x-positioning-force-strength-slider"),
+          yPositioningForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-y-positioning-force-checkbox"),
+          yPositioningForceContainer: document.getElementById("iOhbVrpoiVgRV5IfL-y-positioning-force-div"),
+          yPositioningForceStrengthText: document.getElementById("iOhbVrpoiVgRV5IfL-y-positioning-force-strength-text"),
+          yPositioningForceStrengthSlider: document.getElementById("iOhbVrpoiVgRV5IfL-y-positioning-force-strength-slider"),
+          centeringForceCheckbox: document.getElementById("iOhbVrpoiVgRV5IfL-centering-force-checkbox"),
         },
 
         composites:{
@@ -2482,7 +2483,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
             create(){
               // Main container
               this.mainContainer = document.createElement("div");
-              this.mainContainer.id = "iBtdOjLcswO5BRoh5-progress-container";
+              this.mainContainer.id = "iOhbVrpoiVgRV5IfL-progress-container";
               this.mainContainer.style.backgroundColor = state.shownData.general.background_color;
               ui.elements.graphContainer.style.backgroundColor = state.shownData.general.background_color;
               // Text container
@@ -2531,7 +2532,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   menuDiv.innerText = ui.symbols.menuHidden;
                 }
-                menuDiv.id = "iBtdOjLcswO5BRoh5-menu-toggle-button";
+                menuDiv.id = "iOhbVrpoiVgRV5IfL-menu-toggle-button";
                 menuDiv.onclick = ui.composites.menu.toggle;
                 ui.elements.graphContainer.appendChild(menuDiv);
                 ui.elements.menuToggleDiv = menuDiv;
@@ -2545,27 +2546,27 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   detailsDiv.innerText = ui.symbols.detailsHidden;
                 }
-                detailsDiv.id = "iBtdOjLcswO5BRoh5-details-toggle-button";
+                detailsDiv.id = "iOhbVrpoiVgRV5IfL-details-toggle-button";
                 detailsDiv.onclick = ui.composites.details.toggle;
                 ui.elements.graphContainer.appendChild(detailsDiv);
                 ui.elements.detailsToggleDiv = detailsDiv;
               }
 
               // - Graph drawing area
-              const svg = d3.select("#iBtdOjLcswO5BRoh5-graph-div").append("svg");
+              const svg = d3.select("#iOhbVrpoiVgRV5IfL-graph-div").append("svg");
               state.currentGraphParts.svg = svg;
               svg
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight);
               // - Background rectangle
               const backgroundRect = svg.append("rect")
-                .attr("id", "iBtdOjLcswO5BRoh5-background")
+                .attr("id", "iOhbVrpoiVgRV5IfL-background")
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight)
                 .attr("fill", state.shownData.general.background_color);
               state.currentGraphParts.backgroundRect = backgroundRect;
               // - Zoomable and draggable group as graph drawing area
-              const view = svg.append("g").attr("id", "iBtdOjLcswO5BRoh5-zoomable-graph-group");
+              const view = svg.append("g").attr("id", "iOhbVrpoiVgRV5IfL-zoomable-graph-group");
               state.currentGraphParts.view = view;
               function zoomed(event) {
                 view.attr("transform", event.transform);
@@ -2624,7 +2625,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               //       in back and which are drawn in front (there is no z-order property in SVG)
               // Edges
               state.currentGraphParts.edgeMainGroup = view.append("g")
-                .attr("id", "iBtdOjLcswO5BRoh5-edge-group")
+                .attr("id", "iOhbVrpoiVgRV5IfL-edge-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdges));
               state.currentGraphParts.edgeGroups = state.currentGraphParts.edgeMainGroup
                 .selectAll("g")
@@ -2632,7 +2633,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 .join("g");
               // Nodes
               state.currentGraphParts.nodeMainGroup = view.append("g")
-                .attr("id", "iBtdOjLcswO5BRoh5-node-group")
+                .attr("id", "iOhbVrpoiVgRV5IfL-node-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodes));
               state.currentGraphParts.nodeGroups = state.currentGraphParts.nodeMainGroup
                 .selectAll("g")
@@ -2644,7 +2645,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 edgeLabelData.push(i);
               }
               state.currentGraphParts.edgeLabelMainGroup = view.append("g")
-                .attr("id", "iBtdOjLcswO5BRoh5-edge-label-group")
+                .attr("id", "iOhbVrpoiVgRV5IfL-edge-label-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdgeLabels));
               state.currentGraphParts.edgeLabelGroups = state.currentGraphParts.edgeLabelMainGroup
                 .selectAll("g")
@@ -2656,7 +2657,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 nodeLabelData.push(i);
               }
               state.currentGraphParts.nodeLabelMainGroup = view.append("g")
-                .attr("id", "iBtdOjLcswO5BRoh5-node-label-group");
+                .attr("id", "iOhbVrpoiVgRV5IfL-node-label-group");
               state.currentGraphParts.nodeLabelGroups = state.currentGraphParts.nodeLabelMainGroup
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeLabels))
                 .selectAll("g")
@@ -2673,7 +2674,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 }
               }
               state.currentGraphParts.nodeImageMainGroup = view.append("g")
-                .attr("id", "iBtdOjLcswO5BRoh5-node-image-group")
+                .attr("id", "iOhbVrpoiVgRV5IfL-node-image-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeImages));
               state.currentGraphParts.nodeImageGroups = state.currentGraphParts.nodeImageMainGroup
                 .selectAll("g")
@@ -2904,7 +2905,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function nodeClicked(event, node){
                 let htmlText = "<div>Node: " + String(node.id) + "</div>";
                 if(typeof(node.click) !== "undefined" && node.click !== ""){
-                  htmlText += '<div id="iBtdOjLcswO5BRoh5-details-user-provided">' + node.click + '</div>';
+                  htmlText += '<div id="iOhbVrpoiVgRV5IfL-details-user-provided">' + node.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }
@@ -3157,7 +3158,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
               // 1) Remove existing elements
               ui.composites.graph.removeEdges();
-              svg.select("#iBtdOjLcswO5BRoh5-arrow-marker").remove();
+              svg.select("#iOhbVrpoiVgRV5IfL-arrow-marker").remove();
               // 2) Create new elements
               // - Paths
               state.currentGraphParts.edgePaths = edgeGroups.append("path")
@@ -3171,7 +3172,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 const arrowSizeDouble = arrowSize * 2.0,
                   arrowSizeHalf = arrowSize / 2.0;
                 const marker = svg.append("marker")
-                  .attr("id", "iBtdOjLcswO5BRoh5-arrow-marker")
+                  .attr("id", "iOhbVrpoiVgRV5IfL-arrow-marker")
                   .attr("markerUnits", "userSpaceOnUse")
                   .attr("viewBox", "0 0 " + arrowSizeDouble + " " + arrowSizeDouble)
                   .attr("refX", 0)
@@ -3184,7 +3185,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                     .attr("d", "M 0 0 L " + arrowSizeDouble + " " + arrowSizeHalf + " L 0 " + arrowSize + " z")
                     .attr("fill", state.shownData.general.arrow_color)
                 state.currentGraphParts.edgePaths
-                  .attr("marker-end", "url(#iBtdOjLcswO5BRoh5-arrow-marker)");
+                  .attr("marker-end", "url(#iOhbVrpoiVgRV5IfL-arrow-marker)");
               }
               // - Edge hover behavior
               if(state.parsedData.general.contains_edge_hover){
@@ -3218,7 +3219,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function edgeClicked(event, edge){
                 let htmlText = "<div>Edge: " + String(edge.id) + "</div>";
                 if(typeof(edge.click) !== "undefined" && edge.click !== ""){
-                  htmlText += '<div id="iBtdOjLcswO5BRoh5-details-user-provided">' + edge.click + '</div>';
+                  htmlText += '<div id="iOhbVrpoiVgRV5IfL-details-user-provided">' + edge.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }

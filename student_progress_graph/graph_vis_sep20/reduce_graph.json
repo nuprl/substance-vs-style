@@ -7,19 +7,19 @@
             "stderr_id": 0,
             "stdout_id": 1,
             "hover": "stdout:\n4\n\n2\n\n0\n\nstderr:\n_no_stderr_",
-            "color": "red",
+            "color": "grey",
             "id": 0
         },
         {
             "stderr_id": 0,
-            "stdout_id": 2,
+            "stdout_id": 0,
             "hover": "stdout:\n('__1-1__', 4)\n\n('~_--_~', 2)\n\n('|O.0|', 0)\n\nstderr:\n_no_stderr_",
             "color": "blue",
             "id": 1
         },
         {
             "stderr_id": 0,
-            "stdout_id": 0,
+            "stdout_id": 2,
             "hover": "stdout:\n__1-1__\n\n~_--_~\n\n|O.0|\n\nstderr:\n_no_stderr_",
             "color": "green",
             "id": 2
@@ -32,7 +32,7 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student26",
-                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -14,7 +14,11 @@\n as '_', then-print+return+a+copy+of the+new string \"\"\"",
+                "hover": "username:student26\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -14,7 +14,11 @@\n as '_', then-print+return+a+copy+of the+new string \"\"\"\n\nFROM completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then print the string\n    \"\"\"\n        count = 0\n    for i in val:\n        if i == '^':\n            val = val.replace(i, '_')\n            count += 1\n    print(val)\n    return count\n\n\nTO completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then return a copy of the new string\n    \"\"\"\n        count = 0\n    for i in val:\n        if i == '^':\n            count += 1\n    val = val.replace('^', '_')\n    return val, count\n",
                 "id": 1,
                 "key": 0
             }
@@ -43,7 +43,7 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student26",
-                "hover": "username:student26\ndiff:\n",
+                "hover": "username:student26\nedge: (1->1)\ndiff:\n\n\nFROM completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then return a copy of the new string\n    \"\"\"\n        count = 0\n    for i in val:\n        if i == '^':\n            count += 1\n    val = val.replace('^', '_')\n    return val, count\n\n\nTO completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then return a copy of the new string\n    \"\"\"\n        count = 0\n    for i in val:\n        if i == '^':\n            count += 1\n    val = val.replace('^', '_')\n    return val, count\n\n",
                 "id": 1,
                 "key": 0
             },
@@ -52,7 +52,7 @@
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student26",
-                "hover": "username:student26\ndiff:\n--- \n+++ \n@@ -20,5 +20,10 @@\n of the new-string+string.+Do+not+display+the+count \"\"\"",
+                "hover": "username:student26\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -20,5 +20,10 @@\n of the new-string+string.+Do+not+display+the+count \"\"\"\n\nFROM completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then return a copy of the new string\n    \"\"\"\n        count = 0\n    for i in val:\n        if i == '^':\n            count += 1\n    val = val.replace('^', '_')\n    return val, count\n\n\n\nTO completion:\ndef reduce(val):\n    \"\"\"\n    Count the characters in a string and replace all '^' as '_', then return a copy of the new string. Do not display the count\n    \"\"\"\n        count = 0\n    new_str = ''\n    for i in val:\n        if i == '^':\n            new_str += '_'\n        else:\n            new_str += i\n        count += 1\n    return new_str\n",
                 "id": 2,
                 "key": 0
             }

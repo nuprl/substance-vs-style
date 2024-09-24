@@ -2,23 +2,23 @@
   !!int "0": |-
     ---
     +++
-    @@ -10,6 +10,7 @@
-     and output a+tuple count of how
-  !!int "1": |-
-    ---
-    +++
-    @@ -10,7 +10,7 @@
-     and output a-tuple+list count of how
-  !!int "2": |-
-    ---
-    +++
     @@ -5,9 +5,9 @@
      the number of-'meep'+'Meep' and-'morp'+'Morp' in a list
-  !!int "3": |-
+  !!int "1": |-
     ---
     +++
     @@ -11,4 +11,7 @@
      in a list+as+a+list """
+  !!int "2": |-
+    ---
+    +++
+    @@ -10,6 +10,7 @@
+     and output a+tuple count of how
+  !!int "3": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     and output a-tuple+list count of how
   !!int "4": |-
     ---
     +++
@@ -41,7 +41,7 @@
     - |
       (0, 0)
     "stdout_id": !!int |-
-      2
+      0
   !!int "1":
     "stderr":
     - ""
@@ -57,7 +57,7 @@
     - |
       (0, 0)
     "stdout_id": !!int |-
-      0
+      1
   !!int "2":
     "stderr":
     - ""
@@ -73,7 +73,7 @@
     - |
       [0, 0]
     "stdout_id": !!int |-
-      1
+      2
 "student_color":
   "student16": |-
     #d83034

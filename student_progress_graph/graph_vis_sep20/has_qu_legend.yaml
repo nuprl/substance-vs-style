@@ -2,24 +2,24 @@
   !!int "0": |-
     ---
     +++
-    @@ -12,10 +12,11 @@
-     the list has-a-Q+the+letter+"Q" or-U+"U" or both, and
+    @@ -8,7 +8,8 @@
+     list contains the-letter+uppercase+letters Q or U,
   !!int "1": |-
+    ---
+    +++
+    @@ -7,7 +7,9 @@
+     in lst has-"Q",+"Q"+or+"U", return True. If
+  !!int "2": |-
     ---
     +++
     @@ -7,7 +7,7 @@
      of letters, return-True+"True" if the list@@ -15,9 +15,11 @@
      a Q or-U,+U+or+both, and-False+"False" if the list
-  !!int "2": |-
-    ---
-    +++
-    @@ -7,7 +7,9 @@
-     in lst has-"Q",+"Q"+or+"U", return True. If
   !!int "3": |-
     ---
     +++
-    @@ -8,7 +8,8 @@
-     list contains the-letter+uppercase+letters Q or U,
+    @@ -12,10 +12,11 @@
+     the list has-a-Q+the+letter+"Q" or-U+"U" or both, and
 "nodes":
   !!int "0":
     "stderr":
@@ -39,7 +39,7 @@
     - |
       False
     "stdout_id": !!int |-
-      1
+      0
   !!int "1":
     "stderr":
     - ""
@@ -58,7 +58,7 @@
     - |
       True
     "stdout_id": !!int |-
-      0
+      2
   !!int "2":
     "stderr":
     - ""
@@ -77,7 +77,7 @@
     - |
       True
     "stdout_id": !!int |-
-      2
+      1
 "student_color":
   "student12": |-
     #d83034

@@ -4,28 +4,29 @@
   <meta charset="utf-8">
 </head>
 <div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #d83034; margin-right: 5px;"></div><span>student12</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #f9e858; margin-right: 5px;"></div><span>student36</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #008dff; margin-right: 5px;"></div><span>student77</span></div></div>
+<div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: green; margin-right: 5px;"></div><span>NODE is_last_success</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: red; margin-right: 5px;"></div><span>NODE is_last_failure</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: grey; margin-right: 5px;"></div><span>NODE starting</span></div></div>
 <body style="margin:0;">
   <style>
     /* Main divisions */
-    #i6FjDCoh1vOS7l8aH-main-div {
+    #i84S5jIc1xLJjBict-main-div {
       line-height: normal;
       box-sizing: content-box;
       padding: 3px;
       background-color: white;
     }
-    #i6FjDCoh1vOS7l8aH-left-div {
+    #i84S5jIc1xLJjBict-left-div {
       float: left;
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-right-div {
+    #i84S5jIc1xLJjBict-right-div {
       float: left;
       height: 100%;
       display: none;
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-right-inner-div {
+    #i84S5jIc1xLJjBict-right-inner-div {
       padding-left: 5px;
       padding-right: 2px;
       overflow-x: hidden;
@@ -36,7 +37,7 @@
     }
 
     /* Graph and details (contained in left-inner-div) */
-    #i6FjDCoh1vOS7l8aH-graph-div {
+    #i84S5jIc1xLJjBict-graph-div {
       overflow: hidden;
       resize: vertical;
       position: relative;
@@ -47,7 +48,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-details-div {
+    #i84S5jIc1xLJjBict-details-div {
       overflow: auto;
       resize: vertical;
       margin-top: 5px;
@@ -58,7 +59,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-details-head {
+    #i84S5jIc1xLJjBict-details-head {
       user-select: none;
       padding-left: 4px !important;
       padding-top: 4px !important;
@@ -68,7 +69,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-details-body {
+    #i84S5jIc1xLJjBict-details-body {
       padding: 10px;
       padding-top: 6px;
       font-size: 10px;
@@ -78,7 +79,7 @@
     }
 
     /* Control menu (contained in right-inner-div) */
-    .i6FjDCoh1vOS7l8aH-menu-item-head {
+    .i84S5jIc1xLJjBict-menu-item-head {
       font-size: 11px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
@@ -94,13 +95,13 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .i6FjDCoh1vOS7l8aH-menu-item-body {
+    .i84S5jIc1xLJjBict-menu-item-body {
       margin-left: 5px;
       margin-bottom: 10px;
       line-height: normal;
       box-sizing: content-box;
     }
-    .i6FjDCoh1vOS7l8aH-menu-subitem-head {
+    .i84S5jIc1xLJjBict-menu-subitem-head {
       font-size: 9px;
       font-family: "Lucida Console", Monaco, monospace;
       font-weight: 600;
@@ -110,7 +111,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .i6FjDCoh1vOS7l8aH-menu-subitem-body {
+    .i84S5jIc1xLJjBict-menu-subitem-body {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       margin-left: 7px;
@@ -118,28 +119,28 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .i6FjDCoh1vOS7l8aH-labeled-input {
+    .i84S5jIc1xLJjBict-labeled-input {
       all: initial;
       display: flex;
       align-items: center;
       margin-top: 1px;
       margin-bottom: 1px;
     }
-    .i6FjDCoh1vOS7l8aH-label {
+    .i84S5jIc1xLJjBict-label {
       all: initial;
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
       cursor: pointer;
     }
-    .i6FjDCoh1vOS7l8aH-slider {
+    .i84S5jIc1xLJjBict-slider {
       width: 100%;
       margin-bottom: 2px;
     }
-    .i6FjDCoh1vOS7l8aH-slider::-moz-focus-outer {
+    .i84S5jIc1xLJjBict-slider::-moz-focus-outer {
       border: 0;
     }
-    .i6FjDCoh1vOS7l8aH-slider-text-left {
+    .i84S5jIc1xLJjBict-slider-text-left {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
@@ -147,20 +148,20 @@
       float: left;
       margin-top: 2px;
     }
-    .i6FjDCoh1vOS7l8aH-slider-text-right {
+    .i84S5jIc1xLJjBict-slider-text-right {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
       float: right;
     }
-    .i6FjDCoh1vOS7l8aH-checkbox {
+    .i84S5jIc1xLJjBict-checkbox {
       margin-left: 0px !important;
       margin-right: 4px !important;
       margin-top: 2px !important;
       margin-bottom: 2px !important;
       padding: 0px !important;
     }
-    .i6FjDCoh1vOS7l8aH-select {
+    .i84S5jIc1xLJjBict-select {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -189,15 +190,15 @@
     }
     @-moz-document url-prefix() {
       /* Dirty hack to remove dotted border on focus */
-      .i6FjDCoh1vOS7l8aH-select {
+      .i84S5jIc1xLJjBict-select {
         color: transparent !important;
         text-shadow: 0 0 0 black !important;
       }
     }
-    .i6FjDCoh1vOS7l8aH-select:after {
+    .i84S5jIc1xLJjBict-select:after {
       cursor: pointer;
     }
-    .i6FjDCoh1vOS7l8aH-button {
+    .i84S5jIc1xLJjBict-button {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -214,29 +215,29 @@
       border: 1.2px solid #bbb;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
     }
-    .i6FjDCoh1vOS7l8aH-button:hover {
+    .i84S5jIc1xLJjBict-button:hover {
       border: 1.2px solid #999;
       background-color: #f2f2f2;
     }
-    .i6FjDCoh1vOS7l8aH-button:active {
+    .i84S5jIc1xLJjBict-button:active {
       background-color: #ddd;
     }
-    .i6FjDCoh1vOS7l8aH-button::-moz-focus-inner {
+    .i84S5jIc1xLJjBict-button::-moz-focus-inner {
       border: 0;
     }
     /* Hidden menu items */
-    #i6FjDCoh1vOS7l8aH-graph-select-div {
+    #i84S5jIc1xLJjBict-graph-select-div {
       display: none;
     }
-    #i6FjDCoh1vOS7l8aH-node-size-norm-div {
+    #i84S5jIc1xLJjBict-node-size-norm-div {
       display: none;
     }
-    #i6FjDCoh1vOS7l8aH-edge-size-norm-div {
+    #i84S5jIc1xLJjBict-edge-size-norm-div {
       display: none;
     }
 
     /* Graph */
-    #i6FjDCoh1vOS7l8aH-tooltip-div {
+    #i84S5jIc1xLJjBict-tooltip-div {
       font-size: 10px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42001;
@@ -255,7 +256,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-menu-toggle-button, #i6FjDCoh1vOS7l8aH-details-toggle-button, #i6FjDCoh1vOS7l8aH-progress-container {
+    #i84S5jIc1xLJjBict-menu-toggle-button, #i84S5jIc1xLJjBict-details-toggle-button, #i84S5jIc1xLJjBict-progress-container {
       font-size: 14px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42000;
@@ -267,7 +268,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #i6FjDCoh1vOS7l8aH-menu-toggle-button {
+    #i84S5jIc1xLJjBict-menu-toggle-button {
       top: 0;
       right: 0;
       padding-left: 6px;
@@ -279,7 +280,7 @@
       border-bottom: 1px solid #ccc;
       border-left: 1px solid #ccc;
     }
-    #i6FjDCoh1vOS7l8aH-details-toggle-button {
+    #i84S5jIc1xLJjBict-details-toggle-button {
       bottom: 0;
       left: 0;
       padding-left: 19px;
@@ -291,7 +292,7 @@
       border-bottom: 0px;
       border-left: 0px;
     }
-    #i6FjDCoh1vOS7l8aH-progress-container {
+    #i84S5jIc1xLJjBict-progress-container {
       font-size: 10px;
       text-align: center;
       top: 46%;
@@ -303,7 +304,7 @@
     }
 
     /* Details */
-    #i6FjDCoh1vOS7l8aH-details-user-provided {
+    #i84S5jIc1xLJjBict-details-user-provided {
       margin-top: 3px;
       padding-top: 3.5px;
       border-top: 0.5px dashed black;
@@ -312,578 +313,578 @@
       white-space: pre-wrap;
       word-break: break-word;
     }
-    #i6FjDCoh1vOS7l8aH-details-user-provided ul {
+    #i84S5jIc1xLJjBict-details-user-provided ul {
       list-style-position: inside;
       padding-left: 6px;
     }
   </style>
 
-  <div id="i6FjDCoh1vOS7l8aH-main-div">
-    <div id="i6FjDCoh1vOS7l8aH-tooltip-div"></div>
+  <div id="i84S5jIc1xLJjBict-main-div">
+    <div id="i84S5jIc1xLJjBict-tooltip-div"></div>
 
-    <div id="i6FjDCoh1vOS7l8aH-left-div">
-      <div id="i6FjDCoh1vOS7l8aH-left-inner-div">
-        <div id="i6FjDCoh1vOS7l8aH-graph-div"></div>
-        <div id="i6FjDCoh1vOS7l8aH-details-div">
-          <div id="i6FjDCoh1vOS7l8aH-details-head">
+    <div id="i84S5jIc1xLJjBict-left-div">
+      <div id="i84S5jIc1xLJjBict-left-inner-div">
+        <div id="i84S5jIc1xLJjBict-graph-div"></div>
+        <div id="i84S5jIc1xLJjBict-details-div">
+          <div id="i84S5jIc1xLJjBict-details-head">
             Details for selected element
           </div>
-          <div id="i6FjDCoh1vOS7l8aH-details-body">
+          <div id="i84S5jIc1xLJjBict-details-body">
           </div>
         </div>
       </div>
     </div>
 
-    <div id="i6FjDCoh1vOS7l8aH-right-div">
-      <div id="i6FjDCoh1vOS7l8aH-right-inner-div">
+    <div id="i84S5jIc1xLJjBict-right-div">
+      <div id="i84S5jIc1xLJjBict-right-inner-div">
         <!-- Menu: General -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-general-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-general-head">
           General
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-general-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-general-body">
           <!-- Sub-menu: State -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               App state
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-reset"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-reset"
                       type="button">Reset</button>
             </div>
           </div>
           <!-- Sub-menu: Display mode (fullscreen or not) -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Display mode
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-fullscreen-button"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-fullscreen-button"
                       type="button">Enter full screen</button>
             </div>
           </div>
           <!-- Sub-menu: Export -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Export
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-svg"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-svg"
                       type="button">SVG</button>
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-png"
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-png"
                       type="button">PNG</button>
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-jpg"
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-jpg"
                       type="button">JPG</button>
             </div>
           </div>
         </div>
         <!-- Menu: Data -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-data-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-data-head">
           Data selection
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-data-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-data-body">
           <!-- Sub-menu: Graph (only shown if multiple graphs in data) -->
-          <div id="i6FjDCoh1vOS7l8aH-graph-select-div">
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+          <div id="i84S5jIc1xLJjBict-graph-select-div">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Graph
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <select class="i6FjDCoh1vOS7l8aH-select"
-                      id="i6FjDCoh1vOS7l8aH-graph-select"></select>
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <select class="i84S5jIc1xLJjBict-select"
+                      id="i84S5jIc1xLJjBict-graph-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node label text -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Node label text
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <select class="i6FjDCoh1vOS7l8aH-select"
-                      id="i6FjDCoh1vOS7l8aH-node-label-data-source-select"></select>
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <select class="i84S5jIc1xLJjBict-select"
+                      id="i84S5jIc1xLJjBict-node-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Edge label text -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Edge label text
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <select class="i6FjDCoh1vOS7l8aH-select"
-                      id="i6FjDCoh1vOS7l8aH-edge-label-data-source-select"></select>
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <select class="i84S5jIc1xLJjBict-select"
+                      id="i84S5jIc1xLJjBict-edge-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node size -->
-          <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+          <div class="i84S5jIc1xLJjBict-menu-subitem-head">
             Node size
           </div>
-          <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
+          <div class="i84S5jIc1xLJjBict-menu-subitem-body">
             <div>
-              <select class="i6FjDCoh1vOS7l8aH-select"
-                      id="i6FjDCoh1vOS7l8aH-node-size-data-source-select"></select>
+              <select class="i84S5jIc1xLJjBict-select"
+                      id="i84S5jIc1xLJjBict-node-size-data-source-select"></select>
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-              <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                     id="i6FjDCoh1vOS7l8aH-node-size-normalization-checkbox"
+            <div class="i84S5jIc1xLJjBict-labeled-input">
+              <input class="i84S5jIc1xLJjBict-checkbox"
+                     id="i84S5jIc1xLJjBict-node-size-normalization-checkbox"
                      type="checkbox">
-              <label class="i6FjDCoh1vOS7l8aH-label"
-                     for="i6FjDCoh1vOS7l8aH-node-size-normalization-checkbox">Normalize</label>
+              <label class="i84S5jIc1xLJjBict-label"
+                     for="i84S5jIc1xLJjBict-node-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="i6FjDCoh1vOS7l8aH-node-size-norm-div">
+            <div id="i84S5jIc1xLJjBict-node-size-norm-div">
               <div>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Minimum</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-node-size-normalization-min-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-node-size-normalization-min-slider"
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Minimum</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-node-size-normalization-min-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-node-size-normalization-min-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
               <div>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Maximum</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-node-size-normalization-max-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-node-size-normalization-max-slider"
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Maximum</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-node-size-normalization-max-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-node-size-normalization-max-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Edge size -->
-          <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+          <div class="i84S5jIc1xLJjBict-menu-subitem-head">
             Edge size
           </div>
-          <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
+          <div class="i84S5jIc1xLJjBict-menu-subitem-body">
             <div>
-              <select class="i6FjDCoh1vOS7l8aH-select"
-                      id="i6FjDCoh1vOS7l8aH-edge-size-data-source-select"></select>
+              <select class="i84S5jIc1xLJjBict-select"
+                      id="i84S5jIc1xLJjBict-edge-size-data-source-select"></select>
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-              <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                     id="i6FjDCoh1vOS7l8aH-edge-size-normalization-checkbox"
+            <div class="i84S5jIc1xLJjBict-labeled-input">
+              <input class="i84S5jIc1xLJjBict-checkbox"
+                     id="i84S5jIc1xLJjBict-edge-size-normalization-checkbox"
                      type="checkbox">
-              <label class="i6FjDCoh1vOS7l8aH-label"
-                     for="i6FjDCoh1vOS7l8aH-edge-size-normalization-checkbox">Normalize</label>
+              <label class="i84S5jIc1xLJjBict-label"
+                     for="i84S5jIc1xLJjBict-edge-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="i6FjDCoh1vOS7l8aH-edge-size-norm-div">
+            <div id="i84S5jIc1xLJjBict-edge-size-norm-div">
               <div>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Minimum</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-edge-size-normalization-min-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-edge-size-normalization-min-slider"
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Minimum</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-edge-size-normalization-min-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-edge-size-normalization-min-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
               <div>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Maximum</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-edge-size-normalization-max-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-edge-size-normalization-max-slider"
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Maximum</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-edge-size-normalization-max-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-edge-size-normalization-max-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Nodes -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-node-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-node-head">
           Nodes
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-node-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-node-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Visibility
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-checkbox">Show nodes</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-checkbox">Show nodes</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Size
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
               <div>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Scaling factor</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-node-size-factor-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-node-size-factor-slider"
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Scaling factor</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-node-size-factor-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-node-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Position -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Position
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <button class="i6FjDCoh1vOS7l8aH-button"
-                      id="i6FjDCoh1vOS7l8aH-node-release-button"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <button class="i84S5jIc1xLJjBict-button"
+                      id="i84S5jIc1xLJjBict-node-release-button"
                       type="button">Release fixed nodes</button>
             </div>
           </div>
           <!-- Sub-menu: Drag behavior -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Drag behavior
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-drag-fix-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-drag-fix-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-drag-fix-checkbox">Fix node position</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-drag-fix-checkbox">Fix node position</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-hover-neighborhood-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-hover-neighborhood-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-hover-neighborhood-checkbox">Show neighborhood</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-hover-neighborhood-checkbox">Show neighborhood</label>
               </div>
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-hover-tooltip-checkbox"
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node images -->
-        <div id="i6FjDCoh1vOS7l8aH-node-image-meta-control">
-          <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-               id="i6FjDCoh1vOS7l8aH-node-image-head">
+        <div id="i84S5jIc1xLJjBict-node-image-meta-control">
+          <div class="i84S5jIc1xLJjBict-menu-item-head"
+               id="i84S5jIc1xLJjBict-node-image-head">
             Node images
           </div>
-          <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-               id="i6FjDCoh1vOS7l8aH-node-image-body">
+          <div class="i84S5jIc1xLJjBict-menu-item-body"
+               id="i84S5jIc1xLJjBict-node-image-body">
             <!-- Sub-menu: Visibility -->
             <div>
-              <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+              <div class="i84S5jIc1xLJjBict-menu-subitem-head">
                 Visibility
               </div>
-              <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-                <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                  <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                         id="i6FjDCoh1vOS7l8aH-node-image-checkbox"
+              <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+                <div class="i84S5jIc1xLJjBict-labeled-input">
+                  <input class="i84S5jIc1xLJjBict-checkbox"
+                         id="i84S5jIc1xLJjBict-node-image-checkbox"
                          type="checkbox">
-                  <label class="i6FjDCoh1vOS7l8aH-label"
-                         for="i6FjDCoh1vOS7l8aH-node-image-checkbox">Show node images</label>
+                  <label class="i84S5jIc1xLJjBict-label"
+                         for="i84S5jIc1xLJjBict-node-image-checkbox">Show node images</label>
                 </div>
               </div>
             </div>
             <!-- Sub-menu: Size -->
             <div>
-              <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+              <div class="i84S5jIc1xLJjBict-menu-subitem-head">
                 Size
               </div>
-              <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Scaling factor</span>
-                <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-node-image-size-factor-text"></span>
-                <input class="i6FjDCoh1vOS7l8aH-slider"
-                       id="i6FjDCoh1vOS7l8aH-node-image-size-factor-slider"
+              <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+                <span class="i84S5jIc1xLJjBict-slider-text-left">Scaling factor</span>
+                <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-node-image-size-factor-text"></span>
+                <input class="i84S5jIc1xLJjBict-slider"
+                       id="i84S5jIc1xLJjBict-node-image-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node labels -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-node-label-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-node-label-head">
           Node labels
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-node-label-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-node-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Visibility
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-label-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-label-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-label-checkbox">Show node labels</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-label-checkbox">Show node labels</label>
               </div>
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-node-label-border-checkbox"
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-node-label-border-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-node-label-border-checkbox">Show borders</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-node-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Size
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Scaling factor</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                    id="i6FjDCoh1vOS7l8aH-node-label-size-factor-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-node-label-size-factor-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Scaling factor</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                    id="i84S5jIc1xLJjBict-node-label-size-factor-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-node-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="i6FjDCoh1vOS7l8aH-node-label-rotation">
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+          <div id="i84S5jIc1xLJjBict-node-label-rotation">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Rotation
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Angle</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                    id="i6FjDCoh1vOS7l8aH-node-label-rotation-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-node-label-rotation-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Angle</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                    id="i84S5jIc1xLJjBict-node-label-rotation-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-node-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Edges -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-edge-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-edge-head">
           Edges
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-edge-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-edge-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Visibility
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-edge-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-edge-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-edge-checkbox">Show edges</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-edge-checkbox">Show edges</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Size
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Scaling factor</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                    id="i6FjDCoh1vOS7l8aH-edge-size-factor-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-edge-size-factor-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Scaling factor</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                    id="i84S5jIc1xLJjBict-edge-size-factor-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-edge-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Form -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Form
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Curvature</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                    id="i6FjDCoh1vOS7l8aH-edge-curvature-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-edge-curvature-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Curvature</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                    id="i84S5jIc1xLJjBict-edge-curvature-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-edge-curvature-slider"
                      type="range" min="-1.2" max="1.2" step="0.02">
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-edge-hover-tooltip-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-edge-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Edge labels -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-edge-label-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-edge-label-head">
           Edge labels
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-edge-label-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-edge-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Visibility
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-edge-label-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-edge-label-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-edge-label-checkbox">Show edge labels</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-edge-label-checkbox">Show edge labels</label>
               </div>
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-edge-label-border-checkbox"
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-edge-label-border-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-edge-label-border-checkbox">Show borders</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-edge-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Size
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Scaling factor</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                    id="i6FjDCoh1vOS7l8aH-edge-label-size-factor-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-edge-label-size-factor-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Scaling factor</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                    id="i84S5jIc1xLJjBict-edge-label-size-factor-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-edge-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="i6FjDCoh1vOS7l8aH-edge-label-rotation">
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+          <div id="i84S5jIc1xLJjBict-edge-label-rotation">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Rotation
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Angle</span>
-              <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                      id="i6FjDCoh1vOS7l8aH-edge-label-rotation-text"></span>
-              <input class="i6FjDCoh1vOS7l8aH-slider"
-                     id="i6FjDCoh1vOS7l8aH-edge-label-rotation-slider"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <span class="i84S5jIc1xLJjBict-slider-text-left">Angle</span>
+              <span class="i84S5jIc1xLJjBict-slider-text-right"
+                      id="i84S5jIc1xLJjBict-edge-label-rotation-text"></span>
+              <input class="i84S5jIc1xLJjBict-slider"
+                     id="i84S5jIc1xLJjBict-edge-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Layout algorithm -->
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-head"
-             id="i6FjDCoh1vOS7l8aH-layout-algorithm-head">
+        <div class="i84S5jIc1xLJjBict-menu-item-head"
+             id="i84S5jIc1xLJjBict-layout-algorithm-head">
           Layout algorithm
         </div>
-        <div class="i6FjDCoh1vOS7l8aH-menu-item-body"
-             id="i6FjDCoh1vOS7l8aH-layout-algorithm-body">
+        <div class="i84S5jIc1xLJjBict-menu-item-body"
+             id="i84S5jIc1xLJjBict-layout-algorithm-body">
 
           <!-- Sub-menu: Simulation -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Simulation
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-simulation-active-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-simulation-active-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-simulation-active-checkbox">Active</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-simulation-active-checkbox">Active</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Many-body force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Many-body force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-many-body-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-many-body-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-many-body-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-many-body-force-checkbox">On</label>
               </div>
-              <div id="i6FjDCoh1vOS7l8aH-many-body-force-div">
+              <div id="i84S5jIc1xLJjBict-many-body-force-div">
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Strength</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-many-body-force-strength-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-many-body-force-strength-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Strength</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-many-body-force-strength-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-many-body-force-strength-slider"
                          type="range" min="-2000.0" max="200.0" step="0.01"
                          style="direction:rtl;">
                 </div>
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Theta</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-many-body-force-theta-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-many-body-force-theta-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Theta</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-many-body-force-theta-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-many-body-force-theta-slider"
                          type="range" min="0.01" max="2.0" step="0.001">
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                    <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                         id="i6FjDCoh1vOS7l8aH-many-body-force-min-distance-checkbox"
+                  <div class="i84S5jIc1xLJjBict-labeled-input">
+                    <input class="i84S5jIc1xLJjBict-checkbox"
+                         id="i84S5jIc1xLJjBict-many-body-force-min-distance-checkbox"
                          type="checkbox">
-                    <label class="i6FjDCoh1vOS7l8aH-label"
-                           for="i6FjDCoh1vOS7l8aH-many-body-force-min-distance-checkbox">Use minimum distance</label>
+                    <label class="i84S5jIc1xLJjBict-label"
+                           for="i84S5jIc1xLJjBict-many-body-force-min-distance-checkbox">Use minimum distance</label>
                   </div>
-                  <div id="i6FjDCoh1vOS7l8aH-many-body-force-min-distance-div">
-                    <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Min</span>
-                    <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                          id="i6FjDCoh1vOS7l8aH-many-body-force-min-distance-text"></span>
-                    <input class="i6FjDCoh1vOS7l8aH-slider"
-                           id="i6FjDCoh1vOS7l8aH-many-body-force-min-distance-slider"
+                  <div id="i84S5jIc1xLJjBict-many-body-force-min-distance-div">
+                    <span class="i84S5jIc1xLJjBict-slider-text-left">Min</span>
+                    <span class="i84S5jIc1xLJjBict-slider-text-right"
+                          id="i84S5jIc1xLJjBict-many-body-force-min-distance-text"></span>
+                    <input class="i84S5jIc1xLJjBict-slider"
+                           id="i84S5jIc1xLJjBict-many-body-force-min-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                    <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                         id="i6FjDCoh1vOS7l8aH-many-body-force-max-distance-checkbox"
+                  <div class="i84S5jIc1xLJjBict-labeled-input">
+                    <input class="i84S5jIc1xLJjBict-checkbox"
+                         id="i84S5jIc1xLJjBict-many-body-force-max-distance-checkbox"
                          type="checkbox">
-                    <label class="i6FjDCoh1vOS7l8aH-label"
-                           for="i6FjDCoh1vOS7l8aH-many-body-force-max-distance-checkbox">Use maximum distance</label>
+                    <label class="i84S5jIc1xLJjBict-label"
+                           for="i84S5jIc1xLJjBict-many-body-force-max-distance-checkbox">Use maximum distance</label>
                   </div>
-                  <div id="i6FjDCoh1vOS7l8aH-many-body-force-max-distance-div">
-                    <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Max</span>
-                    <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                          id="i6FjDCoh1vOS7l8aH-many-body-force-max-distance-text"></span>
-                    <input class="i6FjDCoh1vOS7l8aH-slider"
-                           id="i6FjDCoh1vOS7l8aH-many-body-force-max-distance-slider"
+                  <div id="i84S5jIc1xLJjBict-many-body-force-max-distance-div">
+                    <span class="i84S5jIc1xLJjBict-slider-text-left">Max</span>
+                    <span class="i84S5jIc1xLJjBict-slider-text-right"
+                          id="i84S5jIc1xLJjBict-many-body-force-max-distance-text"></span>
+                    <input class="i84S5jIc1xLJjBict-slider"
+                           id="i84S5jIc1xLJjBict-many-body-force-max-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
@@ -892,33 +893,33 @@
           </div>
           <!-- Sub-menu: Links force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Links force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-links-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-links-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-links-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-links-force-checkbox">On</label>
                 </label>
               </div>
-              <div id="i6FjDCoh1vOS7l8aH-links-force-div">
+              <div id="i84S5jIc1xLJjBict-links-force-div">
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Distance</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-links-force-distance-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-links-force-distance-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Distance</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-links-force-distance-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-links-force-distance-slider"
                          type="range" min="0.01" max="1000.0" step="0.01">
                 </div>
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Strength</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-links-force-strength-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-links-force-strength-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Strength</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-links-force-strength-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-links-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -926,32 +927,32 @@
           </div>
           <!-- Sub-menu: Collision force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Collision force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-collision-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-collision-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-collision-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-collision-force-checkbox">On</label>
               </div>
-              <div id="i6FjDCoh1vOS7l8aH-collision-force-div">
+              <div id="i84S5jIc1xLJjBict-collision-force-div">
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Radius</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-collision-force-radius-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-collision-force-radius-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Radius</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-collision-force-radius-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-collision-force-radius-slider"
                          type="range" min="0" max="100.0" step="0.01">
                 </div>
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Strength</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-collision-force-strength-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-collision-force-strength-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Strength</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-collision-force-strength-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-collision-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -959,24 +960,24 @@
           </div>
           <!-- Sub-menu: x-positioning force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               x-positioning force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-x-positioning-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-x-positioning-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-x-positioning-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-x-positioning-force-checkbox">On</label>
               </div>
-              <div id="i6FjDCoh1vOS7l8aH-x-positioning-force-div">
+              <div id="i84S5jIc1xLJjBict-x-positioning-force-div">
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Strength</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-x-positioning-force-strength-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-x-positioning-force-strength-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Strength</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-x-positioning-force-strength-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-x-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -984,24 +985,24 @@
           </div>
           <!-- Sub-menu: y-positioning force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               y-positioning force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-y-positioning-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-y-positioning-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-y-positioning-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-y-positioning-force-checkbox">On</label>
               </div>
-              <div id="i6FjDCoh1vOS7l8aH-y-positioning-force-div">
+              <div id="i84S5jIc1xLJjBict-y-positioning-force-div">
                 <div>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-left">Strength</span>
-                  <span class="i6FjDCoh1vOS7l8aH-slider-text-right"
-                        id="i6FjDCoh1vOS7l8aH-y-positioning-force-strength-text"></span>
-                  <input class="i6FjDCoh1vOS7l8aH-slider"
-                         id="i6FjDCoh1vOS7l8aH-y-positioning-force-strength-slider"
+                  <span class="i84S5jIc1xLJjBict-slider-text-left">Strength</span>
+                  <span class="i84S5jIc1xLJjBict-slider-text-right"
+                        id="i84S5jIc1xLJjBict-y-positioning-force-strength-text"></span>
+                  <input class="i84S5jIc1xLJjBict-slider"
+                         id="i84S5jIc1xLJjBict-y-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -1009,16 +1010,16 @@
           </div>
           <!-- Sub-menu: Centering force -->
           <div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-head">
+            <div class="i84S5jIc1xLJjBict-menu-subitem-head">
               Centering force
             </div>
-            <div class="i6FjDCoh1vOS7l8aH-menu-subitem-body">
-              <div class="i6FjDCoh1vOS7l8aH-labeled-input">
-                <input class="i6FjDCoh1vOS7l8aH-checkbox"
-                       id="i6FjDCoh1vOS7l8aH-centering-force-checkbox"
+            <div class="i84S5jIc1xLJjBict-menu-subitem-body">
+              <div class="i84S5jIc1xLJjBict-labeled-input">
+                <input class="i84S5jIc1xLJjBict-checkbox"
+                       id="i84S5jIc1xLJjBict-centering-force-checkbox"
                        type="checkbox">
-                <label class="i6FjDCoh1vOS7l8aH-label"
-                       for="i6FjDCoh1vOS7l8aH-centering-force-checkbox">On</label>
+                <label class="i84S5jIc1xLJjBict-label"
+                       for="i84S5jIc1xLJjBict-centering-force-checkbox">On</label>
               </div>
             </div>
           </div>
@@ -1071,7 +1072,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
           // 1) Fetch state.rawData
           fetchRawDataFromTemplating(){
-            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 1, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 1, "stdout_id": 3, "hover": "stdout:\n['Peiris', 'Ghez', 'Strickland']\n\n['Peiris', 'Ghez', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Youyou\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Taylor\",59,\"Computer Science\"],[\"Tu\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n", "color": "red"}}, "3": {"metadata": {"stderr_id": 1, "stdout_id": 5, "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics'], ['Youyou', 91, 'Chemistry']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics'], ['Taylor', 59, 'Computer Science'], ['Tu', 91, 'Chemistry']]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "4": {"metadata": {"stderr_id": 1, "stdout_id": 1, "hover": "stdout:\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_", "color": "red"}}, "5": {"metadata": {"stderr_id": 1, "stdout_id": 4, "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics']]\n\nstderr:\n_no_stderr_", "color": "blue"}}}, "edges": [{"source": "0", "target": "0", "metadata": {"diff": 4, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -40,4 +40,8 @@\n the big list.+Return+this+sorted+list \"\"\""}}, {"source": "0", "target": "0", "metadata": {"diff": 10, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -8,8 +8,7 @@\n the 0th element-in-the+each list within the@@ -34,7 +33,7 @@\n 1st value in-the+each list within the@@ -43,5 +42,5 @@\n Return this sorted-list+list. \"\"\""}}, {"source": "0", "target": "1", "metadata": {"diff": 5, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\ndiff:\n--- \n+++ \n@@ -1,7 +1,7 @@\n def sort_physicists(scientists): \"\"\"-Create+Return a list of@@ -10,9 +10,8 @@\n element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@\n says \"Physics\". Sort-the+this list from least@@ -37,7 +36,7 @@\n list within the-big+scientists list. Return this"}}, {"source": "2", "target": "3", "metadata": {"diff": 6, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -1,20 +1,29 @@\n def sort_physicists(scientists): \"\"\"+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is \"Physics\" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to"}}, {"source": "3", "target": "4", "metadata": {"diff": 3, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -16,10 +16,12 @@\n is \"Physics\" return+just the names-based-on+in+order+of what year they"}}, {"source": "4", "target": "1", "metadata": {"diff": 0, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\ndiff:\n--- \n+++ \n@@ -18,7 +18,7 @@\n return just the-names+names, in order of"}}, {"source": "4", "target": "1", "metadata": {"diff": 2, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -29,23 +29,45 @@\n Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. \"\"\""}}, {"source": "4", "target": "4", "metadata": {"diff": 1, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -26,4 +26,11 @@\n in a list.+Then+sort+the+list+into+alphabetical+order. \"\"\""}}, {"source": "4", "target": "4", "metadata": {"diff": 8, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n based on the-number,+number+given+in+the+set+of+lists, but don't return"}}, {"source": "4", "target": "5", "metadata": {"diff": 7, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -31,6 +31,10 @@\n the list into-alphabetical-order.+ascending+order+based+on+the+number. \"\"\""}}, {"source": "5", "target": "4", "metadata": {"diff": 9, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\ndiff:\n--- \n+++ \n@@ -36,5 +36,10 @@\n based on the+number,+but+don't+return+the number. \"\"\""}}], "directed": true}];
+            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n_no_stdout_\nstderr:\n_no_stderr_", "color": "grey"}}, "1": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n['Peiris', 'Ghez', 'Strickland']\n\n['Peiris', 'Ghez', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 1, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Youyou\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Ghez\",56,\"Physics\"],[\"Peiris\",48,\"Physics\"],[\"Strickland\",62,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sort_physicists([[\"Taylor\",59,\"Computer Science\"],[\"Tu\",91,\"Chemistry\"],[\"Ghez\",56,\"Physics\"]]))\n  File \"/tmp/file.py\", line 5, in sort_physicists\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(scientists, key=lambda x: int(x.split()[-1]))\nAttributeError: 'list' object has no attribute 'split'\n", "color": "grey"}}, "3": {"metadata": {"stderr_id": 0, "stdout_id": 3, "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics'], ['Youyou', 91, 'Chemistry']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics'], ['Taylor', 59, 'Computer Science'], ['Tu', 91, 'Chemistry']]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "4": {"metadata": {"stderr_id": 0, "stdout_id": 1, "hover": "stdout:\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez', 'Peiris', 'Strickland']\n\n['Ghez']\n\nstderr:\n_no_stderr_", "color": "grey"}}, "5": {"metadata": {"stderr_id": 0, "stdout_id": 4, "hover": "stdout:\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Peiris', 48, 'Physics'], ['Ghez', 56, 'Physics'], ['Strickland', 62, 'Physics']]\n\n[['Ghez', 56, 'Physics']]\n\nstderr:\n_no_stderr_", "color": "blue"}}}, "edges": [{"source": "0", "target": "0", "metadata": {"diff": 0, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -40,4 +40,8 @@\n the big list.+Return+this+sorted+list \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Create a list of the 0th element in the list within the list if the 2nd element says \"Physics\". Sort the list from least to greatest by looking at the 1st value in the list within the big list.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Create a list of the 0th element in the list within the list if the 2nd element says \"Physics\". Sort the list from least to greatest by looking at the 1st value in the list within the big list. Return this sorted list\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort(key=lambda x: x[1])\n    return physicists\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 1, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -8,8 +8,7 @@\n the 0th element-in-the+each list within the@@ -34,7 +33,7 @@\n 1st value in-the+each list within the@@ -43,5 +42,5 @@\n Return this sorted-list+list. \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Create a list of the 0th element in the list within the list if the 2nd element says \"Physics\". Sort the list from least to greatest by looking at the 1st value in the list within the big list. Return this sorted list\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort(key=lambda x: x[1])\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Create a list of the 0th element each list within the list if the 2nd element says \"Physics\". Sort the list from least to greatest by looking at the 1st value in each list within the big list. Return this sorted list.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 2, "color": "#d83034", "arrow_color": "#d83034", "username": "student12", "hover": "username:student12\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -1,7 +1,7 @@\n def sort_physicists(scientists): \"\"\"-Create+Return a list of@@ -10,9 +10,8 @@\n element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@\n says \"Physics\". Sort-the+this list from least@@ -37,7 +36,7 @@\n list within the-big+scientists list. Return this\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Create a list of the 0th element each list within the list if the 2nd element says \"Physics\". Sort the list from least to greatest by looking at the 1st value in each list within the big list. Return this sorted list.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Return a list of the 0th element each list of scientists if the 2nd element says \"Physics\". Sort this list from least to greatest by looking at the 1st value in each list within the scientists list. Return this sorted list.\n    \"\"\"\n        return sorted([i[0] for i in scientists if i[2] == \"Physics\"], key=lambda x: x[1])\n"}}, {"source": "2", "target": "3", "metadata": {"diff": 3, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -1,20 +1,29 @@\n def sort_physicists(scientists): \"\"\"+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is \"Physics\" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    If the list contains \"Physics\" return the first string in order of the numbers from lowest to highest\n    \"\"\"\n        return sorted(scientists, key=lambda x: int(x.split()[-1]))\n\nprint(sort_physicists(scientists))\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    The internal lists contain name, year graduated and subject. If the subject is \"Physics\" return the names based on what year they graduated from lowest to highest\n    \"\"\"\n        return sorted(scientists, key=lambda x: x[1])\n\n"}}, {"source": "3", "target": "4", "metadata": {"diff": 4, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -16,10 +16,12 @@\n is \"Physics\" return+just the names-based-on+in+order+of what year they\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    The internal lists contain name, year graduated and subject. If the subject is \"Physics\" return the names based on what year they graduated from lowest to highest\n    \"\"\"\n        return sorted(scientists, key=lambda x: x[1])\n\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    The internal lists contain name, year graduated and subject. If the subject is \"Physics\" return just the names in order of what year they graduated from lowest to highest\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n"}}, {"source": "4", "target": "1", "metadata": {"diff": 5, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student36", "hover": "username:student36\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -18,7 +18,7 @@\n return just the-names+names, in order of\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    The internal lists contain name, year graduated and subject. If the subject is \"Physics\" return just the names in order of what year they graduated from lowest to highest\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    The internal lists contain name, year graduated and subject. If the subject is \"Physics\" return just the names, in order of what year they graduated from lowest to highest\n    \"\"\"\n        return [name for name, year, subject in sorted(scientists, key=lambda x: x[1]) if subject == \"Physics\"]\n\n"}}, {"source": "4", "target": "1", "metadata": {"diff": 10, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\nedge: (4->1)\ndiff:\n--- \n+++ \n@@ -29,23 +29,45 @@\n Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number given in the set of lists, but don't return the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the scientists based on the numbers given in the set of lists from smallest to largest. For example, if the scientist has the smallest number attached to them in the set of lists, they should be placed first in the output list.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort(key=lambda x: x[1])\n    return physicists\n"}}, {"source": "4", "target": "4", "metadata": {"diff": 6, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\nedge: (4->4)\ndiff:\n--- \n+++ \n@@ -26,4 +26,11 @@\n in a list.+Then+sort+the+list+into+alphabetical+order. \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list.\n    \"\"\"\n        return [scientist for scientist, number, subject in scientists if subject == \"Physics\"]\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into alphabetical order.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n"}}, {"source": "4", "target": "4", "metadata": {"diff": 9, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\nedge: (4->4)\ndiff:\n--- \n+++ \n@@ -36,7 +36,13 @@\n based on the-number,+number+given+in+the+set+of+lists, but don't return\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number, but don't return the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number given in the set of lists, but don't return the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n"}}, {"source": "4", "target": "5", "metadata": {"diff": 7, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -31,6 +31,10 @@\n the list into-alphabetical-order.+ascending+order+based+on+the+number. \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into alphabetical order.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist)\n    physicists.sort(key=lambda x: x[1])\n    return physicists\n"}}, {"source": "5", "target": "4", "metadata": {"diff": 8, "color": "#008dff", "arrow_color": "#008dff", "username": "student77", "hover": "username:student77\nedge: (5->4)\ndiff:\n--- \n+++ \n@@ -36,5 +36,10 @@\n based on the+number,+but+don't+return+the number. \"\"\"\n\nFROM completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist)\n    physicists.sort(key=lambda x: x[1])\n    return physicists\n\n\nTO completion:\ndef sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists with a scientist, number, and a subject, respectively, only return the scientist if the subject is \"Physics\" in a list. Then sort the list into ascending order based on the number, but don't return the number.\n    \"\"\"\n        physicists = []\n    for scientist in scientists:\n        if scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n    physicists.sort()\n    return physicists\n"}}], "directed": true}];
             // Data selection and normalization
             state.nodeSizeDataSource = "size";
             state.useNodeSizeNormalization = false;
@@ -2001,126 +2002,126 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
         elements:{
           // Containers
-          mainContainer: document.getElementById("i6FjDCoh1vOS7l8aH-main-div"),
-          tooltipContainer: document.getElementById("i6FjDCoh1vOS7l8aH-tooltip-div"),
-          leftContainer: document.getElementById("i6FjDCoh1vOS7l8aH-left-div"),
-          rightContainer: document.getElementById("i6FjDCoh1vOS7l8aH-right-div"),
-          graphContainer: document.getElementById("i6FjDCoh1vOS7l8aH-graph-div"),
-          detailsContainer: document.getElementById("i6FjDCoh1vOS7l8aH-details-div"),
-          detailsHead: document.getElementById("i6FjDCoh1vOS7l8aH-details-head"),
-          detailsBody: document.getElementById("i6FjDCoh1vOS7l8aH-details-body"),
+          mainContainer: document.getElementById("i84S5jIc1xLJjBict-main-div"),
+          tooltipContainer: document.getElementById("i84S5jIc1xLJjBict-tooltip-div"),
+          leftContainer: document.getElementById("i84S5jIc1xLJjBict-left-div"),
+          rightContainer: document.getElementById("i84S5jIc1xLJjBict-right-div"),
+          graphContainer: document.getElementById("i84S5jIc1xLJjBict-graph-div"),
+          detailsContainer: document.getElementById("i84S5jIc1xLJjBict-details-div"),
+          detailsHead: document.getElementById("i84S5jIc1xLJjBict-details-head"),
+          detailsBody: document.getElementById("i84S5jIc1xLJjBict-details-body"),
           // Data sources
-          dataHead: document.getElementById("i6FjDCoh1vOS7l8aH-data-head"),
-          dataBody: document.getElementById("i6FjDCoh1vOS7l8aH-data-body"),
-          graphSelectionContainer: document.getElementById("i6FjDCoh1vOS7l8aH-graph-select-div"),
-          graphSelection: document.getElementById("i6FjDCoh1vOS7l8aH-graph-select"),
-          nodeSizeDataSourceSelect: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-data-source-select"),
-          nodeSizeNormalizationCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-normalization-checkbox"),
-          nodeSizeNormalizationContainer: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-norm-div"),
-          nodeSizeNormalizationMinText: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-normalization-min-text"),
-          nodeSizeNormalizationMinSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-normalization-min-slider"),
-          nodeSizeNormalizationMaxText: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-normalization-max-text"),
-          nodeSizeNormalizationMaxSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-normalization-max-slider"),
-          edgeSizeDataSourceSelect: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-data-source-select"),
-          edgeSizeNormalizationCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-normalization-checkbox"),
-          edgeSizeNormalizationContainer: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-norm-div"),
-          edgeSizeNormalizationMinText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-normalization-min-text"),
-          edgeSizeNormalizationMinSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-normalization-min-slider"),
-          edgeSizeNormalizationMaxText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-normalization-max-text"),
-          edgeSizeNormalizationMaxSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-normalization-max-slider"),
+          dataHead: document.getElementById("i84S5jIc1xLJjBict-data-head"),
+          dataBody: document.getElementById("i84S5jIc1xLJjBict-data-body"),
+          graphSelectionContainer: document.getElementById("i84S5jIc1xLJjBict-graph-select-div"),
+          graphSelection: document.getElementById("i84S5jIc1xLJjBict-graph-select"),
+          nodeSizeDataSourceSelect: document.getElementById("i84S5jIc1xLJjBict-node-size-data-source-select"),
+          nodeSizeNormalizationCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-size-normalization-checkbox"),
+          nodeSizeNormalizationContainer: document.getElementById("i84S5jIc1xLJjBict-node-size-norm-div"),
+          nodeSizeNormalizationMinText: document.getElementById("i84S5jIc1xLJjBict-node-size-normalization-min-text"),
+          nodeSizeNormalizationMinSlider: document.getElementById("i84S5jIc1xLJjBict-node-size-normalization-min-slider"),
+          nodeSizeNormalizationMaxText: document.getElementById("i84S5jIc1xLJjBict-node-size-normalization-max-text"),
+          nodeSizeNormalizationMaxSlider: document.getElementById("i84S5jIc1xLJjBict-node-size-normalization-max-slider"),
+          edgeSizeDataSourceSelect: document.getElementById("i84S5jIc1xLJjBict-edge-size-data-source-select"),
+          edgeSizeNormalizationCheckbox: document.getElementById("i84S5jIc1xLJjBict-edge-size-normalization-checkbox"),
+          edgeSizeNormalizationContainer: document.getElementById("i84S5jIc1xLJjBict-edge-size-norm-div"),
+          edgeSizeNormalizationMinText: document.getElementById("i84S5jIc1xLJjBict-edge-size-normalization-min-text"),
+          edgeSizeNormalizationMinSlider: document.getElementById("i84S5jIc1xLJjBict-edge-size-normalization-min-slider"),
+          edgeSizeNormalizationMaxText: document.getElementById("i84S5jIc1xLJjBict-edge-size-normalization-max-text"),
+          edgeSizeNormalizationMaxSlider: document.getElementById("i84S5jIc1xLJjBict-edge-size-normalization-max-slider"),
           // General
-          generalHead: document.getElementById("i6FjDCoh1vOS7l8aH-general-head"),
-          generalBody: document.getElementById("i6FjDCoh1vOS7l8aH-general-body"),
-          resetButton: document.getElementById("i6FjDCoh1vOS7l8aH-reset"),
-          fullscreenButton: document.getElementById("i6FjDCoh1vOS7l8aH-fullscreen-button"),
-          svgExportButton: document.getElementById("i6FjDCoh1vOS7l8aH-svg"),
-          pngExportButton: document.getElementById("i6FjDCoh1vOS7l8aH-png"),
-          jpgExportButton: document.getElementById("i6FjDCoh1vOS7l8aH-jpg"),
+          generalHead: document.getElementById("i84S5jIc1xLJjBict-general-head"),
+          generalBody: document.getElementById("i84S5jIc1xLJjBict-general-body"),
+          resetButton: document.getElementById("i84S5jIc1xLJjBict-reset"),
+          fullscreenButton: document.getElementById("i84S5jIc1xLJjBict-fullscreen-button"),
+          svgExportButton: document.getElementById("i84S5jIc1xLJjBict-svg"),
+          pngExportButton: document.getElementById("i84S5jIc1xLJjBict-png"),
+          jpgExportButton: document.getElementById("i84S5jIc1xLJjBict-jpg"),
           // Nodes
-          nodeHead: document.getElementById("i6FjDCoh1vOS7l8aH-node-head"),
-          nodeBody: document.getElementById("i6FjDCoh1vOS7l8aH-node-body"),
-          nodeCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-checkbox"),
-          nodeSizeFactorText: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-factor-text"),
-          nodeSizeFactorSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-size-factor-slider"),
-          nodeDragFixCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-drag-fix-checkbox"),
-          nodeHoverNeighborhoodCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-hover-neighborhood-checkbox"),
-          nodeHoverTooltipCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-hover-tooltip-checkbox"),
-          nodeReleaseButton: document.getElementById("i6FjDCoh1vOS7l8aH-node-release-button"),
+          nodeHead: document.getElementById("i84S5jIc1xLJjBict-node-head"),
+          nodeBody: document.getElementById("i84S5jIc1xLJjBict-node-body"),
+          nodeCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-checkbox"),
+          nodeSizeFactorText: document.getElementById("i84S5jIc1xLJjBict-node-size-factor-text"),
+          nodeSizeFactorSlider: document.getElementById("i84S5jIc1xLJjBict-node-size-factor-slider"),
+          nodeDragFixCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-drag-fix-checkbox"),
+          nodeHoverNeighborhoodCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-hover-neighborhood-checkbox"),
+          nodeHoverTooltipCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-hover-tooltip-checkbox"),
+          nodeReleaseButton: document.getElementById("i84S5jIc1xLJjBict-node-release-button"),
           // Node images
-          nodeImageHead: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-head"),
-          nodeImageBody: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-body"),
-          nodeImageCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-checkbox"),
-          nodeImageMetaControl: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-meta-control"),
-          nodeImageSizeFactorText: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-size-factor-text"),
-          nodeImageSizeFactorSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-image-size-factor-slider"),
+          nodeImageHead: document.getElementById("i84S5jIc1xLJjBict-node-image-head"),
+          nodeImageBody: document.getElementById("i84S5jIc1xLJjBict-node-image-body"),
+          nodeImageCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-image-checkbox"),
+          nodeImageMetaControl: document.getElementById("i84S5jIc1xLJjBict-node-image-meta-control"),
+          nodeImageSizeFactorText: document.getElementById("i84S5jIc1xLJjBict-node-image-size-factor-text"),
+          nodeImageSizeFactorSlider: document.getElementById("i84S5jIc1xLJjBict-node-image-size-factor-slider"),
           // Node labels
-          nodeLabelHead: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-head"),
-          nodeLabelBody: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-body"),
-          nodeLabelCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-checkbox"),
-          nodeLabelBorderCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-border-checkbox"),
-          nodeLabelTextDataSourceSelect: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-data-source-select"),
-          nodeLabelSizeFactorText: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-size-factor-text"),
-          nodeLabelSizeFactorSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-size-factor-slider"),
-          nodeLabelRotationText: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-rotation-text"),
-          nodeLabelRotationSlider: document.getElementById("i6FjDCoh1vOS7l8aH-node-label-rotation-slider"),
+          nodeLabelHead: document.getElementById("i84S5jIc1xLJjBict-node-label-head"),
+          nodeLabelBody: document.getElementById("i84S5jIc1xLJjBict-node-label-body"),
+          nodeLabelCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-label-checkbox"),
+          nodeLabelBorderCheckbox: document.getElementById("i84S5jIc1xLJjBict-node-label-border-checkbox"),
+          nodeLabelTextDataSourceSelect: document.getElementById("i84S5jIc1xLJjBict-node-label-data-source-select"),
+          nodeLabelSizeFactorText: document.getElementById("i84S5jIc1xLJjBict-node-label-size-factor-text"),
+          nodeLabelSizeFactorSlider: document.getElementById("i84S5jIc1xLJjBict-node-label-size-factor-slider"),
+          nodeLabelRotationText: document.getElementById("i84S5jIc1xLJjBict-node-label-rotation-text"),
+          nodeLabelRotationSlider: document.getElementById("i84S5jIc1xLJjBict-node-label-rotation-slider"),
           // Edges
-          edgeHead: document.getElementById("i6FjDCoh1vOS7l8aH-edge-head"),
-          edgeBody: document.getElementById("i6FjDCoh1vOS7l8aH-edge-body"),
-          edgeCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-edge-checkbox"),
-          edgeSizeFactorText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-factor-text"),
-          edgeSizeFactorSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-size-factor-slider"),
-          edgeCurvatureText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-curvature-text"),
-          edgeCurvatureSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-curvature-slider"),
-          edgeHoverTooltipCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-edge-hover-tooltip-checkbox"),
+          edgeHead: document.getElementById("i84S5jIc1xLJjBict-edge-head"),
+          edgeBody: document.getElementById("i84S5jIc1xLJjBict-edge-body"),
+          edgeCheckbox: document.getElementById("i84S5jIc1xLJjBict-edge-checkbox"),
+          edgeSizeFactorText: document.getElementById("i84S5jIc1xLJjBict-edge-size-factor-text"),
+          edgeSizeFactorSlider: document.getElementById("i84S5jIc1xLJjBict-edge-size-factor-slider"),
+          edgeCurvatureText: document.getElementById("i84S5jIc1xLJjBict-edge-curvature-text"),
+          edgeCurvatureSlider: document.getElementById("i84S5jIc1xLJjBict-edge-curvature-slider"),
+          edgeHoverTooltipCheckbox: document.getElementById("i84S5jIc1xLJjBict-edge-hover-tooltip-checkbox"),
           // Edge labels
-          edgeLabelHead: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-head"),
-          edgeLabelBody: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-body"),
-          edgeLabelCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-checkbox"),
-          edgeLabelBorderCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-border-checkbox"),
-          edgeLabelTextDataSourceSelect: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-data-source-select"),
-          edgeLabelSizeFactorText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-size-factor-text"),
-          edgeLabelSizeFactorSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-size-factor-slider"),
-          edgeLabelRotationText: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-rotation-text"),
-          edgeLabelRotationSlider: document.getElementById("i6FjDCoh1vOS7l8aH-edge-label-rotation-slider"),
+          edgeLabelHead: document.getElementById("i84S5jIc1xLJjBict-edge-label-head"),
+          edgeLabelBody: document.getElementById("i84S5jIc1xLJjBict-edge-label-body"),
+          edgeLabelCheckbox: document.getElementById("i84S5jIc1xLJjBict-edge-label-checkbox"),
+          edgeLabelBorderCheckbox: document.getElementById("i84S5jIc1xLJjBict-edge-label-border-checkbox"),
+          edgeLabelTextDataSourceSelect: document.getElementById("i84S5jIc1xLJjBict-edge-label-data-source-select"),
+          edgeLabelSizeFactorText: document.getElementById("i84S5jIc1xLJjBict-edge-label-size-factor-text"),
+          edgeLabelSizeFactorSlider: document.getElementById("i84S5jIc1xLJjBict-edge-label-size-factor-slider"),
+          edgeLabelRotationText: document.getElementById("i84S5jIc1xLJjBict-edge-label-rotation-text"),
+          edgeLabelRotationSlider: document.getElementById("i84S5jIc1xLJjBict-edge-label-rotation-slider"),
           // Layout algorithm
-          layoutAlgorithmHead: document.getElementById("i6FjDCoh1vOS7l8aH-layout-algorithm-head"),
-          layoutAlgorithmBody: document.getElementById("i6FjDCoh1vOS7l8aH-layout-algorithm-body"),
-          simulationCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-simulation-active-checkbox"),
-          manyBodyForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-checkbox"),
-          manyBodyForceContainer: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-div"),
-          manyBodyForceStrengthText: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-strength-text"),
-          manyBodyForceStrengthSlider: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-strength-slider"),
-          manyBodyForceThetaText: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-theta-text"),
-          manyBodyForceThetaSlider: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-theta-slider"),
-          manyBodyForceMinDistCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-min-distance-checkbox"),
-          manyBodyForceMinDistContainer: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-min-distance-div"),
-          manyBodyForceMinDistText: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-min-distance-text"),
-          manyBodyForceMinDistSlider: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-min-distance-slider"),
-          manyBodyForceMaxDistCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-max-distance-checkbox"),
-          manyBodyForceMaxDistContainer: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-max-distance-div"),
-          manyBodyForceMaxDistText: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-max-distance-text"),
-          manyBodyForceMaxDistSlider: document.getElementById("i6FjDCoh1vOS7l8aH-many-body-force-max-distance-slider"),
-          linksForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-checkbox"),
-          linksForceContainer: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-div"),
-          linksForceDistanceText: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-distance-text"),
-          linksForceDistanceSlider: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-distance-slider"),
-          linksForceStrengthText: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-strength-text"),
-          linksForceStrengthSlider: document.getElementById("i6FjDCoh1vOS7l8aH-links-force-strength-slider"),
-          collisionForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-checkbox"),
-          collisionForceContainer: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-div"),
-          collisionForceRadiusText: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-radius-text"),
-          collisionForceRadiusSlider: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-radius-slider"),
-          collisionForceStrengthText: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-strength-text"),
-          collisionForceStrengthSlider: document.getElementById("i6FjDCoh1vOS7l8aH-collision-force-strength-slider"),
-          xPositioningForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-x-positioning-force-checkbox"),
-          xPositioningForceContainer: document.getElementById("i6FjDCoh1vOS7l8aH-x-positioning-force-div"),
-          xPositioningForceStrengthText: document.getElementById("i6FjDCoh1vOS7l8aH-x-positioning-force-strength-text"),
-          xPositioningForceStrengthSlider: document.getElementById("i6FjDCoh1vOS7l8aH-x-positioning-force-strength-slider"),
-          yPositioningForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-y-positioning-force-checkbox"),
-          yPositioningForceContainer: document.getElementById("i6FjDCoh1vOS7l8aH-y-positioning-force-div"),
-          yPositioningForceStrengthText: document.getElementById("i6FjDCoh1vOS7l8aH-y-positioning-force-strength-text"),
-          yPositioningForceStrengthSlider: document.getElementById("i6FjDCoh1vOS7l8aH-y-positioning-force-strength-slider"),
-          centeringForceCheckbox: document.getElementById("i6FjDCoh1vOS7l8aH-centering-force-checkbox"),
+          layoutAlgorithmHead: document.getElementById("i84S5jIc1xLJjBict-layout-algorithm-head"),
+          layoutAlgorithmBody: document.getElementById("i84S5jIc1xLJjBict-layout-algorithm-body"),
+          simulationCheckbox: document.getElementById("i84S5jIc1xLJjBict-simulation-active-checkbox"),
+          manyBodyForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-many-body-force-checkbox"),
+          manyBodyForceContainer: document.getElementById("i84S5jIc1xLJjBict-many-body-force-div"),
+          manyBodyForceStrengthText: document.getElementById("i84S5jIc1xLJjBict-many-body-force-strength-text"),
+          manyBodyForceStrengthSlider: document.getElementById("i84S5jIc1xLJjBict-many-body-force-strength-slider"),
+          manyBodyForceThetaText: document.getElementById("i84S5jIc1xLJjBict-many-body-force-theta-text"),
+          manyBodyForceThetaSlider: document.getElementById("i84S5jIc1xLJjBict-many-body-force-theta-slider"),
+          manyBodyForceMinDistCheckbox: document.getElementById("i84S5jIc1xLJjBict-many-body-force-min-distance-checkbox"),
+          manyBodyForceMinDistContainer: document.getElementById("i84S5jIc1xLJjBict-many-body-force-min-distance-div"),
+          manyBodyForceMinDistText: document.getElementById("i84S5jIc1xLJjBict-many-body-force-min-distance-text"),
+          manyBodyForceMinDistSlider: document.getElementById("i84S5jIc1xLJjBict-many-body-force-min-distance-slider"),
+          manyBodyForceMaxDistCheckbox: document.getElementById("i84S5jIc1xLJjBict-many-body-force-max-distance-checkbox"),
+          manyBodyForceMaxDistContainer: document.getElementById("i84S5jIc1xLJjBict-many-body-force-max-distance-div"),
+          manyBodyForceMaxDistText: document.getElementById("i84S5jIc1xLJjBict-many-body-force-max-distance-text"),
+          manyBodyForceMaxDistSlider: document.getElementById("i84S5jIc1xLJjBict-many-body-force-max-distance-slider"),
+          linksForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-links-force-checkbox"),
+          linksForceContainer: document.getElementById("i84S5jIc1xLJjBict-links-force-div"),
+          linksForceDistanceText: document.getElementById("i84S5jIc1xLJjBict-links-force-distance-text"),
+          linksForceDistanceSlider: document.getElementById("i84S5jIc1xLJjBict-links-force-distance-slider"),
+          linksForceStrengthText: document.getElementById("i84S5jIc1xLJjBict-links-force-strength-text"),
+          linksForceStrengthSlider: document.getElementById("i84S5jIc1xLJjBict-links-force-strength-slider"),
+          collisionForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-collision-force-checkbox"),
+          collisionForceContainer: document.getElementById("i84S5jIc1xLJjBict-collision-force-div"),
+          collisionForceRadiusText: document.getElementById("i84S5jIc1xLJjBict-collision-force-radius-text"),
+          collisionForceRadiusSlider: document.getElementById("i84S5jIc1xLJjBict-collision-force-radius-slider"),
+          collisionForceStrengthText: document.getElementById("i84S5jIc1xLJjBict-collision-force-strength-text"),
+          collisionForceStrengthSlider: document.getElementById("i84S5jIc1xLJjBict-collision-force-strength-slider"),
+          xPositioningForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-x-positioning-force-checkbox"),
+          xPositioningForceContainer: document.getElementById("i84S5jIc1xLJjBict-x-positioning-force-div"),
+          xPositioningForceStrengthText: document.getElementById("i84S5jIc1xLJjBict-x-positioning-force-strength-text"),
+          xPositioningForceStrengthSlider: document.getElementById("i84S5jIc1xLJjBict-x-positioning-force-strength-slider"),
+          yPositioningForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-y-positioning-force-checkbox"),
+          yPositioningForceContainer: document.getElementById("i84S5jIc1xLJjBict-y-positioning-force-div"),
+          yPositioningForceStrengthText: document.getElementById("i84S5jIc1xLJjBict-y-positioning-force-strength-text"),
+          yPositioningForceStrengthSlider: document.getElementById("i84S5jIc1xLJjBict-y-positioning-force-strength-slider"),
+          centeringForceCheckbox: document.getElementById("i84S5jIc1xLJjBict-centering-force-checkbox"),
         },
 
         composites:{
@@ -2482,7 +2483,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
             create(){
               // Main container
               this.mainContainer = document.createElement("div");
-              this.mainContainer.id = "i6FjDCoh1vOS7l8aH-progress-container";
+              this.mainContainer.id = "i84S5jIc1xLJjBict-progress-container";
               this.mainContainer.style.backgroundColor = state.shownData.general.background_color;
               ui.elements.graphContainer.style.backgroundColor = state.shownData.general.background_color;
               // Text container
@@ -2531,7 +2532,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   menuDiv.innerText = ui.symbols.menuHidden;
                 }
-                menuDiv.id = "i6FjDCoh1vOS7l8aH-menu-toggle-button";
+                menuDiv.id = "i84S5jIc1xLJjBict-menu-toggle-button";
                 menuDiv.onclick = ui.composites.menu.toggle;
                 ui.elements.graphContainer.appendChild(menuDiv);
                 ui.elements.menuToggleDiv = menuDiv;
@@ -2545,27 +2546,27 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   detailsDiv.innerText = ui.symbols.detailsHidden;
                 }
-                detailsDiv.id = "i6FjDCoh1vOS7l8aH-details-toggle-button";
+                detailsDiv.id = "i84S5jIc1xLJjBict-details-toggle-button";
                 detailsDiv.onclick = ui.composites.details.toggle;
                 ui.elements.graphContainer.appendChild(detailsDiv);
                 ui.elements.detailsToggleDiv = detailsDiv;
               }
 
               // - Graph drawing area
-              const svg = d3.select("#i6FjDCoh1vOS7l8aH-graph-div").append("svg");
+              const svg = d3.select("#i84S5jIc1xLJjBict-graph-div").append("svg");
               state.currentGraphParts.svg = svg;
               svg
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight);
               // - Background rectangle
               const backgroundRect = svg.append("rect")
-                .attr("id", "i6FjDCoh1vOS7l8aH-background")
+                .attr("id", "i84S5jIc1xLJjBict-background")
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight)
                 .attr("fill", state.shownData.general.background_color);
               state.currentGraphParts.backgroundRect = backgroundRect;
               // - Zoomable and draggable group as graph drawing area
-              const view = svg.append("g").attr("id", "i6FjDCoh1vOS7l8aH-zoomable-graph-group");
+              const view = svg.append("g").attr("id", "i84S5jIc1xLJjBict-zoomable-graph-group");
               state.currentGraphParts.view = view;
               function zoomed(event) {
                 view.attr("transform", event.transform);
@@ -2624,7 +2625,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               //       in back and which are drawn in front (there is no z-order property in SVG)
               // Edges
               state.currentGraphParts.edgeMainGroup = view.append("g")
-                .attr("id", "i6FjDCoh1vOS7l8aH-edge-group")
+                .attr("id", "i84S5jIc1xLJjBict-edge-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdges));
               state.currentGraphParts.edgeGroups = state.currentGraphParts.edgeMainGroup
                 .selectAll("g")
@@ -2632,7 +2633,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 .join("g");
               // Nodes
               state.currentGraphParts.nodeMainGroup = view.append("g")
-                .attr("id", "i6FjDCoh1vOS7l8aH-node-group")
+                .attr("id", "i84S5jIc1xLJjBict-node-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodes));
               state.currentGraphParts.nodeGroups = state.currentGraphParts.nodeMainGroup
                 .selectAll("g")
@@ -2644,7 +2645,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 edgeLabelData.push(i);
               }
               state.currentGraphParts.edgeLabelMainGroup = view.append("g")
-                .attr("id", "i6FjDCoh1vOS7l8aH-edge-label-group")
+                .attr("id", "i84S5jIc1xLJjBict-edge-label-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdgeLabels));
               state.currentGraphParts.edgeLabelGroups = state.currentGraphParts.edgeLabelMainGroup
                 .selectAll("g")
@@ -2656,7 +2657,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 nodeLabelData.push(i);
               }
               state.currentGraphParts.nodeLabelMainGroup = view.append("g")
-                .attr("id", "i6FjDCoh1vOS7l8aH-node-label-group");
+                .attr("id", "i84S5jIc1xLJjBict-node-label-group");
               state.currentGraphParts.nodeLabelGroups = state.currentGraphParts.nodeLabelMainGroup
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeLabels))
                 .selectAll("g")
@@ -2673,7 +2674,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 }
               }
               state.currentGraphParts.nodeImageMainGroup = view.append("g")
-                .attr("id", "i6FjDCoh1vOS7l8aH-node-image-group")
+                .attr("id", "i84S5jIc1xLJjBict-node-image-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeImages));
               state.currentGraphParts.nodeImageGroups = state.currentGraphParts.nodeImageMainGroup
                 .selectAll("g")
@@ -2904,7 +2905,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function nodeClicked(event, node){
                 let htmlText = "<div>Node: " + String(node.id) + "</div>";
                 if(typeof(node.click) !== "undefined" && node.click !== ""){
-                  htmlText += '<div id="i6FjDCoh1vOS7l8aH-details-user-provided">' + node.click + '</div>';
+                  htmlText += '<div id="i84S5jIc1xLJjBict-details-user-provided">' + node.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }
@@ -3157,7 +3158,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
               // 1) Remove existing elements
               ui.composites.graph.removeEdges();
-              svg.select("#i6FjDCoh1vOS7l8aH-arrow-marker").remove();
+              svg.select("#i84S5jIc1xLJjBict-arrow-marker").remove();
               // 2) Create new elements
               // - Paths
               state.currentGraphParts.edgePaths = edgeGroups.append("path")
@@ -3171,7 +3172,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 const arrowSizeDouble = arrowSize * 2.0,
                   arrowSizeHalf = arrowSize / 2.0;
                 const marker = svg.append("marker")
-                  .attr("id", "i6FjDCoh1vOS7l8aH-arrow-marker")
+                  .attr("id", "i84S5jIc1xLJjBict-arrow-marker")
                   .attr("markerUnits", "userSpaceOnUse")
                   .attr("viewBox", "0 0 " + arrowSizeDouble + " " + arrowSizeDouble)
                   .attr("refX", 0)
@@ -3184,7 +3185,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                     .attr("d", "M 0 0 L " + arrowSizeDouble + " " + arrowSizeHalf + " L 0 " + arrowSize + " z")
                     .attr("fill", state.shownData.general.arrow_color)
                 state.currentGraphParts.edgePaths
-                  .attr("marker-end", "url(#i6FjDCoh1vOS7l8aH-arrow-marker)");
+                  .attr("marker-end", "url(#i84S5jIc1xLJjBict-arrow-marker)");
               }
               // - Edge hover behavior
               if(state.parsedData.general.contains_edge_hover){
@@ -3218,7 +3219,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function edgeClicked(event, edge){
                 let htmlText = "<div>Edge: " + String(edge.id) + "</div>";
                 if(typeof(edge.click) !== "undefined" && edge.click !== ""){
-                  htmlText += '<div id="i6FjDCoh1vOS7l8aH-details-user-provided">' + edge.click + '</div>';
+                  htmlText += '<div id="i84S5jIc1xLJjBict-details-user-provided">' + edge.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }

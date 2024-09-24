@@ -4,28 +4,29 @@
   <meta charset="utf-8">
 </head>
 <div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #d83034; margin-right: 5px;"></div><span>student31</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #f9e858; margin-right: 5px;"></div><span>student53</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: #008dff; margin-right: 5px;"></div><span>student55</span></div></div>
+<div style="font-family: Arial, sans-serif;"><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: green; margin-right: 5px;"></div><span>NODE is_last_success</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: red; margin-right: 5px;"></div><span>NODE is_last_failure</span></div><div style="display: flex; align-items: center; margin-bottom: 5px;"><div style="width: 20px; height: 10px; background-color: grey; margin-right: 5px;"></div><span>NODE starting</span></div></div>
 <body style="margin:0;">
   <style>
     /* Main divisions */
-    #iLTDnXe0nmeQyMU2q-main-div {
+    #iYSgy3c2Eom06Dwt0-main-div {
       line-height: normal;
       box-sizing: content-box;
       padding: 3px;
       background-color: white;
     }
-    #iLTDnXe0nmeQyMU2q-left-div {
+    #iYSgy3c2Eom06Dwt0-left-div {
       float: left;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-right-div {
+    #iYSgy3c2Eom06Dwt0-right-div {
       float: left;
       height: 100%;
       display: none;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-right-inner-div {
+    #iYSgy3c2Eom06Dwt0-right-inner-div {
       padding-left: 5px;
       padding-right: 2px;
       overflow-x: hidden;
@@ -36,7 +37,7 @@
     }
 
     /* Graph and details (contained in left-inner-div) */
-    #iLTDnXe0nmeQyMU2q-graph-div {
+    #iYSgy3c2Eom06Dwt0-graph-div {
       overflow: hidden;
       resize: vertical;
       position: relative;
@@ -47,7 +48,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-details-div {
+    #iYSgy3c2Eom06Dwt0-details-div {
       overflow: auto;
       resize: vertical;
       margin-top: 5px;
@@ -58,7 +59,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-details-head {
+    #iYSgy3c2Eom06Dwt0-details-head {
       user-select: none;
       padding-left: 4px !important;
       padding-top: 4px !important;
@@ -68,7 +69,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-details-body {
+    #iYSgy3c2Eom06Dwt0-details-body {
       padding: 10px;
       padding-top: 6px;
       font-size: 10px;
@@ -78,7 +79,7 @@
     }
 
     /* Control menu (contained in right-inner-div) */
-    .iLTDnXe0nmeQyMU2q-menu-item-head {
+    .iYSgy3c2Eom06Dwt0-menu-item-head {
       font-size: 11px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
@@ -94,13 +95,13 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iLTDnXe0nmeQyMU2q-menu-item-body {
+    .iYSgy3c2Eom06Dwt0-menu-item-body {
       margin-left: 5px;
       margin-bottom: 10px;
       line-height: normal;
       box-sizing: content-box;
     }
-    .iLTDnXe0nmeQyMU2q-menu-subitem-head {
+    .iYSgy3c2Eom06Dwt0-menu-subitem-head {
       font-size: 9px;
       font-family: "Lucida Console", Monaco, monospace;
       font-weight: 600;
@@ -110,7 +111,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iLTDnXe0nmeQyMU2q-menu-subitem-body {
+    .iYSgy3c2Eom06Dwt0-menu-subitem-body {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       margin-left: 7px;
@@ -118,28 +119,28 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iLTDnXe0nmeQyMU2q-labeled-input {
+    .iYSgy3c2Eom06Dwt0-labeled-input {
       all: initial;
       display: flex;
       align-items: center;
       margin-top: 1px;
       margin-bottom: 1px;
     }
-    .iLTDnXe0nmeQyMU2q-label {
+    .iYSgy3c2Eom06Dwt0-label {
       all: initial;
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
       cursor: pointer;
     }
-    .iLTDnXe0nmeQyMU2q-slider {
+    .iYSgy3c2Eom06Dwt0-slider {
       width: 100%;
       margin-bottom: 2px;
     }
-    .iLTDnXe0nmeQyMU2q-slider::-moz-focus-outer {
+    .iYSgy3c2Eom06Dwt0-slider::-moz-focus-outer {
       border: 0;
     }
-    .iLTDnXe0nmeQyMU2q-slider-text-left {
+    .iYSgy3c2Eom06Dwt0-slider-text-left {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
@@ -147,20 +148,20 @@
       float: left;
       margin-top: 2px;
     }
-    .iLTDnXe0nmeQyMU2q-slider-text-right {
+    .iYSgy3c2Eom06Dwt0-slider-text-right {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
       float: right;
     }
-    .iLTDnXe0nmeQyMU2q-checkbox {
+    .iYSgy3c2Eom06Dwt0-checkbox {
       margin-left: 0px !important;
       margin-right: 4px !important;
       margin-top: 2px !important;
       margin-bottom: 2px !important;
       padding: 0px !important;
     }
-    .iLTDnXe0nmeQyMU2q-select {
+    .iYSgy3c2Eom06Dwt0-select {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -189,15 +190,15 @@
     }
     @-moz-document url-prefix() {
       /* Dirty hack to remove dotted border on focus */
-      .iLTDnXe0nmeQyMU2q-select {
+      .iYSgy3c2Eom06Dwt0-select {
         color: transparent !important;
         text-shadow: 0 0 0 black !important;
       }
     }
-    .iLTDnXe0nmeQyMU2q-select:after {
+    .iYSgy3c2Eom06Dwt0-select:after {
       cursor: pointer;
     }
-    .iLTDnXe0nmeQyMU2q-button {
+    .iYSgy3c2Eom06Dwt0-button {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -214,29 +215,29 @@
       border: 1.2px solid #bbb;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
     }
-    .iLTDnXe0nmeQyMU2q-button:hover {
+    .iYSgy3c2Eom06Dwt0-button:hover {
       border: 1.2px solid #999;
       background-color: #f2f2f2;
     }
-    .iLTDnXe0nmeQyMU2q-button:active {
+    .iYSgy3c2Eom06Dwt0-button:active {
       background-color: #ddd;
     }
-    .iLTDnXe0nmeQyMU2q-button::-moz-focus-inner {
+    .iYSgy3c2Eom06Dwt0-button::-moz-focus-inner {
       border: 0;
     }
     /* Hidden menu items */
-    #iLTDnXe0nmeQyMU2q-graph-select-div {
+    #iYSgy3c2Eom06Dwt0-graph-select-div {
       display: none;
     }
-    #iLTDnXe0nmeQyMU2q-node-size-norm-div {
+    #iYSgy3c2Eom06Dwt0-node-size-norm-div {
       display: none;
     }
-    #iLTDnXe0nmeQyMU2q-edge-size-norm-div {
+    #iYSgy3c2Eom06Dwt0-edge-size-norm-div {
       display: none;
     }
 
     /* Graph */
-    #iLTDnXe0nmeQyMU2q-tooltip-div {
+    #iYSgy3c2Eom06Dwt0-tooltip-div {
       font-size: 10px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42001;
@@ -255,7 +256,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-menu-toggle-button, #iLTDnXe0nmeQyMU2q-details-toggle-button, #iLTDnXe0nmeQyMU2q-progress-container {
+    #iYSgy3c2Eom06Dwt0-menu-toggle-button, #iYSgy3c2Eom06Dwt0-details-toggle-button, #iYSgy3c2Eom06Dwt0-progress-container {
       font-size: 14px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42000;
@@ -267,7 +268,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iLTDnXe0nmeQyMU2q-menu-toggle-button {
+    #iYSgy3c2Eom06Dwt0-menu-toggle-button {
       top: 0;
       right: 0;
       padding-left: 6px;
@@ -279,7 +280,7 @@
       border-bottom: 1px solid #ccc;
       border-left: 1px solid #ccc;
     }
-    #iLTDnXe0nmeQyMU2q-details-toggle-button {
+    #iYSgy3c2Eom06Dwt0-details-toggle-button {
       bottom: 0;
       left: 0;
       padding-left: 19px;
@@ -291,7 +292,7 @@
       border-bottom: 0px;
       border-left: 0px;
     }
-    #iLTDnXe0nmeQyMU2q-progress-container {
+    #iYSgy3c2Eom06Dwt0-progress-container {
       font-size: 10px;
       text-align: center;
       top: 46%;
@@ -303,7 +304,7 @@
     }
 
     /* Details */
-    #iLTDnXe0nmeQyMU2q-details-user-provided {
+    #iYSgy3c2Eom06Dwt0-details-user-provided {
       margin-top: 3px;
       padding-top: 3.5px;
       border-top: 0.5px dashed black;
@@ -312,578 +313,578 @@
       white-space: pre-wrap;
       word-break: break-word;
     }
-    #iLTDnXe0nmeQyMU2q-details-user-provided ul {
+    #iYSgy3c2Eom06Dwt0-details-user-provided ul {
       list-style-position: inside;
       padding-left: 6px;
     }
   </style>
 
-  <div id="iLTDnXe0nmeQyMU2q-main-div">
-    <div id="iLTDnXe0nmeQyMU2q-tooltip-div"></div>
+  <div id="iYSgy3c2Eom06Dwt0-main-div">
+    <div id="iYSgy3c2Eom06Dwt0-tooltip-div"></div>
 
-    <div id="iLTDnXe0nmeQyMU2q-left-div">
-      <div id="iLTDnXe0nmeQyMU2q-left-inner-div">
-        <div id="iLTDnXe0nmeQyMU2q-graph-div"></div>
-        <div id="iLTDnXe0nmeQyMU2q-details-div">
-          <div id="iLTDnXe0nmeQyMU2q-details-head">
+    <div id="iYSgy3c2Eom06Dwt0-left-div">
+      <div id="iYSgy3c2Eom06Dwt0-left-inner-div">
+        <div id="iYSgy3c2Eom06Dwt0-graph-div"></div>
+        <div id="iYSgy3c2Eom06Dwt0-details-div">
+          <div id="iYSgy3c2Eom06Dwt0-details-head">
             Details for selected element
           </div>
-          <div id="iLTDnXe0nmeQyMU2q-details-body">
+          <div id="iYSgy3c2Eom06Dwt0-details-body">
           </div>
         </div>
       </div>
     </div>
 
-    <div id="iLTDnXe0nmeQyMU2q-right-div">
-      <div id="iLTDnXe0nmeQyMU2q-right-inner-div">
+    <div id="iYSgy3c2Eom06Dwt0-right-div">
+      <div id="iYSgy3c2Eom06Dwt0-right-inner-div">
         <!-- Menu: General -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-general-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-general-head">
           General
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-general-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-general-body">
           <!-- Sub-menu: State -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               App state
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-reset"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-reset"
                       type="button">Reset</button>
             </div>
           </div>
           <!-- Sub-menu: Display mode (fullscreen or not) -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Display mode
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-fullscreen-button"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-fullscreen-button"
                       type="button">Enter full screen</button>
             </div>
           </div>
           <!-- Sub-menu: Export -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Export
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-svg"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-svg"
                       type="button">SVG</button>
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-png"
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-png"
                       type="button">PNG</button>
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-jpg"
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-jpg"
                       type="button">JPG</button>
             </div>
           </div>
         </div>
         <!-- Menu: Data -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-data-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-data-head">
           Data selection
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-data-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-data-body">
           <!-- Sub-menu: Graph (only shown if multiple graphs in data) -->
-          <div id="iLTDnXe0nmeQyMU2q-graph-select-div">
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+          <div id="iYSgy3c2Eom06Dwt0-graph-select-div">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Graph
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <select class="iLTDnXe0nmeQyMU2q-select"
-                      id="iLTDnXe0nmeQyMU2q-graph-select"></select>
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <select class="iYSgy3c2Eom06Dwt0-select"
+                      id="iYSgy3c2Eom06Dwt0-graph-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node label text -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Node label text
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <select class="iLTDnXe0nmeQyMU2q-select"
-                      id="iLTDnXe0nmeQyMU2q-node-label-data-source-select"></select>
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <select class="iYSgy3c2Eom06Dwt0-select"
+                      id="iYSgy3c2Eom06Dwt0-node-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Edge label text -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Edge label text
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <select class="iLTDnXe0nmeQyMU2q-select"
-                      id="iLTDnXe0nmeQyMU2q-edge-label-data-source-select"></select>
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <select class="iYSgy3c2Eom06Dwt0-select"
+                      id="iYSgy3c2Eom06Dwt0-edge-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node size -->
-          <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+          <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
             Node size
           </div>
-          <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
+          <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
             <div>
-              <select class="iLTDnXe0nmeQyMU2q-select"
-                      id="iLTDnXe0nmeQyMU2q-node-size-data-source-select"></select>
+              <select class="iYSgy3c2Eom06Dwt0-select"
+                      id="iYSgy3c2Eom06Dwt0-node-size-data-source-select"></select>
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-              <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                     id="iLTDnXe0nmeQyMU2q-node-size-normalization-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+              <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                     id="iYSgy3c2Eom06Dwt0-node-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iLTDnXe0nmeQyMU2q-label"
-                     for="iLTDnXe0nmeQyMU2q-node-size-normalization-checkbox">Normalize</label>
+              <label class="iYSgy3c2Eom06Dwt0-label"
+                     for="iYSgy3c2Eom06Dwt0-node-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iLTDnXe0nmeQyMU2q-node-size-norm-div">
+            <div id="iYSgy3c2Eom06Dwt0-node-size-norm-div">
               <div>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Minimum</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-node-size-normalization-min-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-node-size-normalization-min-slider"
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Minimum</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-node-size-normalization-min-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-node-size-normalization-min-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
               <div>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Maximum</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-node-size-normalization-max-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-node-size-normalization-max-slider"
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Maximum</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-node-size-normalization-max-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-node-size-normalization-max-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Edge size -->
-          <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+          <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
             Edge size
           </div>
-          <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
+          <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
             <div>
-              <select class="iLTDnXe0nmeQyMU2q-select"
-                      id="iLTDnXe0nmeQyMU2q-edge-size-data-source-select"></select>
+              <select class="iYSgy3c2Eom06Dwt0-select"
+                      id="iYSgy3c2Eom06Dwt0-edge-size-data-source-select"></select>
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-              <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                     id="iLTDnXe0nmeQyMU2q-edge-size-normalization-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+              <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                     id="iYSgy3c2Eom06Dwt0-edge-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iLTDnXe0nmeQyMU2q-label"
-                     for="iLTDnXe0nmeQyMU2q-edge-size-normalization-checkbox">Normalize</label>
+              <label class="iYSgy3c2Eom06Dwt0-label"
+                     for="iYSgy3c2Eom06Dwt0-edge-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iLTDnXe0nmeQyMU2q-edge-size-norm-div">
+            <div id="iYSgy3c2Eom06Dwt0-edge-size-norm-div">
               <div>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Minimum</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-edge-size-normalization-min-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-edge-size-normalization-min-slider"
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Minimum</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-edge-size-normalization-min-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-edge-size-normalization-min-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
               <div>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Maximum</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-edge-size-normalization-max-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-edge-size-normalization-max-slider"
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Maximum</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-edge-size-normalization-max-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-edge-size-normalization-max-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Nodes -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-node-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-node-head">
           Nodes
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-node-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-node-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Visibility
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-checkbox">Show nodes</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-checkbox">Show nodes</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Size
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
               <div>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Scaling factor</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-node-size-factor-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-node-size-factor-slider"
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Scaling factor</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-node-size-factor-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-node-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Position -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Position
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <button class="iLTDnXe0nmeQyMU2q-button"
-                      id="iLTDnXe0nmeQyMU2q-node-release-button"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <button class="iYSgy3c2Eom06Dwt0-button"
+                      id="iYSgy3c2Eom06Dwt0-node-release-button"
                       type="button">Release fixed nodes</button>
             </div>
           </div>
           <!-- Sub-menu: Drag behavior -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Drag behavior
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-drag-fix-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-drag-fix-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-drag-fix-checkbox">Fix node position</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-drag-fix-checkbox">Fix node position</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-hover-neighborhood-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-hover-neighborhood-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-hover-neighborhood-checkbox">Show neighborhood</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-hover-neighborhood-checkbox">Show neighborhood</label>
               </div>
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-hover-tooltip-checkbox"
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node images -->
-        <div id="iLTDnXe0nmeQyMU2q-node-image-meta-control">
-          <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-               id="iLTDnXe0nmeQyMU2q-node-image-head">
+        <div id="iYSgy3c2Eom06Dwt0-node-image-meta-control">
+          <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+               id="iYSgy3c2Eom06Dwt0-node-image-head">
             Node images
           </div>
-          <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-               id="iLTDnXe0nmeQyMU2q-node-image-body">
+          <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+               id="iYSgy3c2Eom06Dwt0-node-image-body">
             <!-- Sub-menu: Visibility -->
             <div>
-              <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+              <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
                 Visibility
               </div>
-              <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-                <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                  <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                         id="iLTDnXe0nmeQyMU2q-node-image-checkbox"
+              <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+                <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                  <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                         id="iYSgy3c2Eom06Dwt0-node-image-checkbox"
                          type="checkbox">
-                  <label class="iLTDnXe0nmeQyMU2q-label"
-                         for="iLTDnXe0nmeQyMU2q-node-image-checkbox">Show node images</label>
+                  <label class="iYSgy3c2Eom06Dwt0-label"
+                         for="iYSgy3c2Eom06Dwt0-node-image-checkbox">Show node images</label>
                 </div>
               </div>
             </div>
             <!-- Sub-menu: Size -->
             <div>
-              <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+              <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
                 Size
               </div>
-              <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Scaling factor</span>
-                <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-node-image-size-factor-text"></span>
-                <input class="iLTDnXe0nmeQyMU2q-slider"
-                       id="iLTDnXe0nmeQyMU2q-node-image-size-factor-slider"
+              <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Scaling factor</span>
+                <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-node-image-size-factor-text"></span>
+                <input class="iYSgy3c2Eom06Dwt0-slider"
+                       id="iYSgy3c2Eom06Dwt0-node-image-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node labels -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-node-label-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-node-label-head">
           Node labels
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-node-label-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-node-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Visibility
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-label-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-label-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-label-checkbox">Show node labels</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-label-checkbox">Show node labels</label>
               </div>
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-node-label-border-checkbox"
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-node-label-border-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-node-label-border-checkbox">Show borders</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-node-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Size
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Scaling factor</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                    id="iLTDnXe0nmeQyMU2q-node-label-size-factor-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-node-label-size-factor-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Scaling factor</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                    id="iYSgy3c2Eom06Dwt0-node-label-size-factor-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-node-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iLTDnXe0nmeQyMU2q-node-label-rotation">
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+          <div id="iYSgy3c2Eom06Dwt0-node-label-rotation">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Rotation
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Angle</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                    id="iLTDnXe0nmeQyMU2q-node-label-rotation-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-node-label-rotation-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Angle</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                    id="iYSgy3c2Eom06Dwt0-node-label-rotation-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-node-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Edges -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-edge-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-edge-head">
           Edges
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-edge-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-edge-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Visibility
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-edge-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-edge-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-edge-checkbox">Show edges</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-edge-checkbox">Show edges</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Size
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Scaling factor</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                    id="iLTDnXe0nmeQyMU2q-edge-size-factor-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-edge-size-factor-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Scaling factor</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                    id="iYSgy3c2Eom06Dwt0-edge-size-factor-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-edge-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Form -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Form
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Curvature</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                    id="iLTDnXe0nmeQyMU2q-edge-curvature-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-edge-curvature-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Curvature</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                    id="iYSgy3c2Eom06Dwt0-edge-curvature-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-edge-curvature-slider"
                      type="range" min="-1.2" max="1.2" step="0.02">
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-edge-hover-tooltip-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-edge-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Edge labels -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-edge-label-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-edge-label-head">
           Edge labels
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-edge-label-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-edge-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Visibility
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-edge-label-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-edge-label-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-edge-label-checkbox">Show edge labels</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-edge-label-checkbox">Show edge labels</label>
               </div>
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-edge-label-border-checkbox"
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-edge-label-border-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-edge-label-border-checkbox">Show borders</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-edge-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Size
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Scaling factor</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                    id="iLTDnXe0nmeQyMU2q-edge-label-size-factor-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-edge-label-size-factor-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Scaling factor</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                    id="iYSgy3c2Eom06Dwt0-edge-label-size-factor-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-edge-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iLTDnXe0nmeQyMU2q-edge-label-rotation">
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+          <div id="iYSgy3c2Eom06Dwt0-edge-label-rotation">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Rotation
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Angle</span>
-              <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                      id="iLTDnXe0nmeQyMU2q-edge-label-rotation-text"></span>
-              <input class="iLTDnXe0nmeQyMU2q-slider"
-                     id="iLTDnXe0nmeQyMU2q-edge-label-rotation-slider"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Angle</span>
+              <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                      id="iYSgy3c2Eom06Dwt0-edge-label-rotation-text"></span>
+              <input class="iYSgy3c2Eom06Dwt0-slider"
+                     id="iYSgy3c2Eom06Dwt0-edge-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Layout algorithm -->
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-head"
-             id="iLTDnXe0nmeQyMU2q-layout-algorithm-head">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-head"
+             id="iYSgy3c2Eom06Dwt0-layout-algorithm-head">
           Layout algorithm
         </div>
-        <div class="iLTDnXe0nmeQyMU2q-menu-item-body"
-             id="iLTDnXe0nmeQyMU2q-layout-algorithm-body">
+        <div class="iYSgy3c2Eom06Dwt0-menu-item-body"
+             id="iYSgy3c2Eom06Dwt0-layout-algorithm-body">
 
           <!-- Sub-menu: Simulation -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Simulation
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-simulation-active-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-simulation-active-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-simulation-active-checkbox">Active</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-simulation-active-checkbox">Active</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Many-body force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Many-body force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-many-body-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-many-body-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-many-body-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-many-body-force-checkbox">On</label>
               </div>
-              <div id="iLTDnXe0nmeQyMU2q-many-body-force-div">
+              <div id="iYSgy3c2Eom06Dwt0-many-body-force-div">
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Strength</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-many-body-force-strength-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-many-body-force-strength-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Strength</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-many-body-force-strength-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-many-body-force-strength-slider"
                          type="range" min="-2000.0" max="200.0" step="0.01"
                          style="direction:rtl;">
                 </div>
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Theta</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-many-body-force-theta-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-many-body-force-theta-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Theta</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-many-body-force-theta-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-many-body-force-theta-slider"
                          type="range" min="0.01" max="2.0" step="0.001">
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                    <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                         id="iLTDnXe0nmeQyMU2q-many-body-force-min-distance-checkbox"
+                  <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                    <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                         id="iYSgy3c2Eom06Dwt0-many-body-force-min-distance-checkbox"
                          type="checkbox">
-                    <label class="iLTDnXe0nmeQyMU2q-label"
-                           for="iLTDnXe0nmeQyMU2q-many-body-force-min-distance-checkbox">Use minimum distance</label>
+                    <label class="iYSgy3c2Eom06Dwt0-label"
+                           for="iYSgy3c2Eom06Dwt0-many-body-force-min-distance-checkbox">Use minimum distance</label>
                   </div>
-                  <div id="iLTDnXe0nmeQyMU2q-many-body-force-min-distance-div">
-                    <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Min</span>
-                    <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                          id="iLTDnXe0nmeQyMU2q-many-body-force-min-distance-text"></span>
-                    <input class="iLTDnXe0nmeQyMU2q-slider"
-                           id="iLTDnXe0nmeQyMU2q-many-body-force-min-distance-slider"
+                  <div id="iYSgy3c2Eom06Dwt0-many-body-force-min-distance-div">
+                    <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Min</span>
+                    <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                          id="iYSgy3c2Eom06Dwt0-many-body-force-min-distance-text"></span>
+                    <input class="iYSgy3c2Eom06Dwt0-slider"
+                           id="iYSgy3c2Eom06Dwt0-many-body-force-min-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                    <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                         id="iLTDnXe0nmeQyMU2q-many-body-force-max-distance-checkbox"
+                  <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                    <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                         id="iYSgy3c2Eom06Dwt0-many-body-force-max-distance-checkbox"
                          type="checkbox">
-                    <label class="iLTDnXe0nmeQyMU2q-label"
-                           for="iLTDnXe0nmeQyMU2q-many-body-force-max-distance-checkbox">Use maximum distance</label>
+                    <label class="iYSgy3c2Eom06Dwt0-label"
+                           for="iYSgy3c2Eom06Dwt0-many-body-force-max-distance-checkbox">Use maximum distance</label>
                   </div>
-                  <div id="iLTDnXe0nmeQyMU2q-many-body-force-max-distance-div">
-                    <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Max</span>
-                    <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                          id="iLTDnXe0nmeQyMU2q-many-body-force-max-distance-text"></span>
-                    <input class="iLTDnXe0nmeQyMU2q-slider"
-                           id="iLTDnXe0nmeQyMU2q-many-body-force-max-distance-slider"
+                  <div id="iYSgy3c2Eom06Dwt0-many-body-force-max-distance-div">
+                    <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Max</span>
+                    <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                          id="iYSgy3c2Eom06Dwt0-many-body-force-max-distance-text"></span>
+                    <input class="iYSgy3c2Eom06Dwt0-slider"
+                           id="iYSgy3c2Eom06Dwt0-many-body-force-max-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
@@ -892,33 +893,33 @@
           </div>
           <!-- Sub-menu: Links force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Links force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-links-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-links-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-links-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-links-force-checkbox">On</label>
                 </label>
               </div>
-              <div id="iLTDnXe0nmeQyMU2q-links-force-div">
+              <div id="iYSgy3c2Eom06Dwt0-links-force-div">
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Distance</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-links-force-distance-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-links-force-distance-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Distance</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-links-force-distance-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-links-force-distance-slider"
                          type="range" min="0.01" max="1000.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Strength</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-links-force-strength-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-links-force-strength-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Strength</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-links-force-strength-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-links-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -926,32 +927,32 @@
           </div>
           <!-- Sub-menu: Collision force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Collision force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-collision-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-collision-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-collision-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-collision-force-checkbox">On</label>
               </div>
-              <div id="iLTDnXe0nmeQyMU2q-collision-force-div">
+              <div id="iYSgy3c2Eom06Dwt0-collision-force-div">
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Radius</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-collision-force-radius-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-collision-force-radius-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Radius</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-collision-force-radius-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-collision-force-radius-slider"
                          type="range" min="0" max="100.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Strength</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-collision-force-strength-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-collision-force-strength-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Strength</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-collision-force-strength-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-collision-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -959,24 +960,24 @@
           </div>
           <!-- Sub-menu: x-positioning force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               x-positioning force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-x-positioning-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-x-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-x-positioning-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-x-positioning-force-checkbox">On</label>
               </div>
-              <div id="iLTDnXe0nmeQyMU2q-x-positioning-force-div">
+              <div id="iYSgy3c2Eom06Dwt0-x-positioning-force-div">
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Strength</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-x-positioning-force-strength-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-x-positioning-force-strength-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Strength</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-x-positioning-force-strength-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-x-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -984,24 +985,24 @@
           </div>
           <!-- Sub-menu: y-positioning force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               y-positioning force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-y-positioning-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-y-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-y-positioning-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-y-positioning-force-checkbox">On</label>
               </div>
-              <div id="iLTDnXe0nmeQyMU2q-y-positioning-force-div">
+              <div id="iYSgy3c2Eom06Dwt0-y-positioning-force-div">
                 <div>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-left">Strength</span>
-                  <span class="iLTDnXe0nmeQyMU2q-slider-text-right"
-                        id="iLTDnXe0nmeQyMU2q-y-positioning-force-strength-text"></span>
-                  <input class="iLTDnXe0nmeQyMU2q-slider"
-                         id="iLTDnXe0nmeQyMU2q-y-positioning-force-strength-slider"
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-left">Strength</span>
+                  <span class="iYSgy3c2Eom06Dwt0-slider-text-right"
+                        id="iYSgy3c2Eom06Dwt0-y-positioning-force-strength-text"></span>
+                  <input class="iYSgy3c2Eom06Dwt0-slider"
+                         id="iYSgy3c2Eom06Dwt0-y-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -1009,16 +1010,16 @@
           </div>
           <!-- Sub-menu: Centering force -->
           <div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-head">
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-head">
               Centering force
             </div>
-            <div class="iLTDnXe0nmeQyMU2q-menu-subitem-body">
-              <div class="iLTDnXe0nmeQyMU2q-labeled-input">
-                <input class="iLTDnXe0nmeQyMU2q-checkbox"
-                       id="iLTDnXe0nmeQyMU2q-centering-force-checkbox"
+            <div class="iYSgy3c2Eom06Dwt0-menu-subitem-body">
+              <div class="iYSgy3c2Eom06Dwt0-labeled-input">
+                <input class="iYSgy3c2Eom06Dwt0-checkbox"
+                       id="iYSgy3c2Eom06Dwt0-centering-force-checkbox"
                        type="checkbox">
-                <label class="iLTDnXe0nmeQyMU2q-label"
-                       for="iLTDnXe0nmeQyMU2q-centering-force-checkbox">On</label>
+                <label class="iYSgy3c2Eom06Dwt0-label"
+                       for="iYSgy3c2Eom06Dwt0-centering-force-checkbox">On</label>
               </div>
             </div>
           </div>
@@ -1071,7 +1072,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
           // 1) Fetch state.rawData
           fetchRawDataFromTemplating(){
-            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 1, "stdout_id": 2, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Kip', 'Sam', 'Ben', 'Alex', 'Ro', 'Ira']\n\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 1, "stdout_id": 10, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben', 'Alex']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "2": {"metadata": {"stderr_id": 1, "stdout_id": 0, "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "3": {"metadata": {"stderr_id": 1, "stdout_id": 7, "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_", "color": "green"}}, "4": {"metadata": {"stderr_id": 5, "stdout_id": 5, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n", "color": "red"}}, "5": {"metadata": {"stderr_id": 1, "stdout_id": 8, "hover": "stdout:\n['Matt', 'Rachel', 'Pete']\n\n['Matt', 'Sam', 'Hans']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "6": {"metadata": {"stderr_id": 1, "stdout_id": 9, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "7": {"metadata": {"stderr_id": 1, "stdout_id": 3, "hover": "stdout:\n['Alex', 'Penelope', 'Rachel']\n\n['Ben', 'Ira', 'Kip', 'Ro', 'Sam']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "8": {"metadata": {"stderr_id": 1, "stdout_id": 1, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "9": {"metadata": {"stderr_id": 2, "stdout_id": 5, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n", "color": "blue"}}, "10": {"metadata": {"stderr_id": 3, "stdout_id": 6, "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    return new\nNameError: name 'new' is not defined\n\n", "color": "blue"}}, "11": {"metadata": {"stderr_id": 4, "stdout_id": 6, "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    new_\nNameError: name 'new_' is not defined\n\n", "color": "blue"}}, "12": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n", "color": "red"}}, "13": {"metadata": {"stderr_id": 1, "stdout_id": 4, "hover": "stdout:\n['Penelope', 'Alex']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_", "color": "blue"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 5, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -39,5 +39,12 @@\n a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. \"\"\""}}, {"source": "0", "target": "6", "metadata": {"diff": 2, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -30,4 +30,30 @@\n this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index. \"\"\""}}, {"source": "0", "target": "2", "metadata": {"diff": 11, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -33,23 +33,31 @@\n This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. \"\"\""}}, {"source": "1", "target": "2", "metadata": {"diff": 13, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -22,7 +22,17 @@\n a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns a list of@@ -32,19 +42,8 @@\n corresponding scores were-the-highest,-and-were a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. \"\"\""}}, {"source": "2", "target": "3", "metadata": {"diff": 6, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\ndiff:\n--- \n+++ \n@@ -45,5 +45,12 @@\n a minimum of-80.+80,+with+a+maximum+list+length+of+5. \"\"\""}}, {"source": "2", "target": "3", "metadata": {"diff": 10, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -33,11 +33,10 @@\n This function returns-all the-name+names of-the+5 students with grades"}}, {"source": "4", "target": "5", "metadata": {"diff": 7, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,15 +3,31 @@\n \"\"\" taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 \"\"\""}}, {"source": "5", "target": "0", "metadata": {"diff": 15, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n zeroth index is-less+more than or equal"}}, {"source": "6", "target": "7", "metadata": {"diff": 3, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -30,26 +30,29 @@\n this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the"}}, {"source": "7", "target": "8", "metadata": {"diff": 4, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,10 +3,15 @@\n \"\"\" taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth"}}, {"source": "8", "target": "9", "metadata": {"diff": 8, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -3,15 +3,25 @@\n \"\"\" taken lst,+loop+through+each+list+and sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list if the zeroth"}}, {"source": "9", "target": "10", "metadata": {"diff": 16, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -1,60 +1,59 @@\n def topScores(lst): \"\"\"-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the"}}, {"source": "10", "target": "11", "metadata": {"diff": 12, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -53,7 +53,6 @@\n and return this-new list. If the@@ -62,15 +61,17 @@\n larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. \"\"\""}}, {"source": "11", "target": "11", "metadata": {"diff": 0, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -20,7 +20,9 @@\n equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@\n index into a+another+defined new list and"}}, {"source": "11", "target": "3", "metadata": {"diff": 14, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\ndiff:\n--- \n+++ \n@@ -1,81 +1,44 @@\n def topScores(lst): \"\"\"-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. \"\"\""}}, {"source": "12", "target": "13", "metadata": {"diff": 1, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -5,18 +5,33 @@\n a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name"}}, {"source": "13", "target": "0", "metadata": {"diff": 9, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\ndiff:\n--- \n+++ \n@@ -48,6 +48,8 @@\n grades are higher+or+equal than 80. \"\"\""}}], "directed": true}];
+            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 0, "stdout_id": 7, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Kip', 'Sam', 'Ben', 'Alex', 'Ro', 'Ira']\n\nstderr:\n_no_stderr_", "color": "grey"}}, "1": {"metadata": {"stderr_id": 0, "stdout_id": 8, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben', 'Alex']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "2": {"metadata": {"stderr_id": 0, "stdout_id": 4, "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip', 'Sam']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "3": {"metadata": {"stderr_id": 0, "stdout_id": 5, "hover": "stdout:\n['Penelope', 'Alex', 'Rachel']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_", "color": "green"}}, "4": {"metadata": {"stderr_id": 4, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x for x in lst if int(x.split()[1]) > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x for x in lst if int(x.split()[1]) > 80]\nAttributeError: 'list' object has no attribute 'split'\n", "color": "grey"}}, "5": {"metadata": {"stderr_id": 0, "stdout_id": 3, "hover": "stdout:\n['Matt', 'Rachel', 'Pete']\n\n['Matt', 'Sam', 'Hans']\n\n['Bob', 'Rachel', 'Alex']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "6": {"metadata": {"stderr_id": 0, "stdout_id": 10, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "7": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n['Alex', 'Penelope', 'Rachel']\n\n['Ben', 'Ira', 'Kip', 'Ro', 'Sam']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "8": {"metadata": {"stderr_id": 0, "stdout_id": 9, "hover": "stdout:\n['Rachel', 'Penelope', 'Alex']\n\n['Sam', 'Ro', 'Kip', 'Ira', 'Ben']\n\nstderr:\n_no_stderr_", "color": "blue"}}, "9": {"metadata": {"stderr_id": 3, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 7, in topScores\n    i.sort(reverse=True)\nTypeError: '<' not supported between instances of 'int' and 'str'\n", "color": "blue"}}, "10": {"metadata": {"stderr_id": 2, "stdout_id": 1, "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    return new\nNameError: name 'new' is not defined\n\n", "color": "blue"}}, "11": {"metadata": {"stderr_id": 1, "stdout_id": 1, "hover": "stdout:\nNone\n\n\nNone\n\nstderr:\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 14, in topScores\n    new_\nNameError: name 'new_' is not defined\n\n", "color": "blue"}}, "12": {"metadata": {"stderr_id": 5, "stdout_id": 0, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[76, 'Matt'], [80, 'Rachel'], [100, 'Penelope'], [50, 'Pete'], [99, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[92, 'Kip'], [76, 'Matt'], [80, 'Sam'], [100, 'Ben'], [99, 'Alex'], [97, 'Ro'], [65, 'Hans'], [95, 'Ira']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(topScores([[65, 'Bob'], [65, 'Rachel'], [33, 'Alex']]))\n  File \"/tmp/file.py\", line 5, in topScores\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\nTypeError: '>' not supported between instances of 'str' and 'int'\n", "color": "grey"}}, "13": {"metadata": {"stderr_id": 0, "stdout_id": 6, "hover": "stdout:\n['Penelope', 'Alex']\n\n['Ben', 'Alex', 'Ro', 'Ira', 'Kip']\n\nstderr:\n_no_stderr_", "color": "blue"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 0, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -39,5 +39,12 @@\n a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Returns a list of the names whose corresponding scores were the highest, and were a minimum of 80.\n    \"\"\"\n        topScores = []\n    for i in lst:\n        if i[0] >= 80:\n            topScores.append(i[1])\n    return topScores\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Returns a list of the names whose corresponding scores were the highest, and were a minimum of 80, sorted from highest corresponding score to lowest.\n    \"\"\"\n        # Create a list of the names whose corresponding scores were the highest, and were a minimum of 80\n    top_scores = [i[1] for i in lst if i[0] >= 80]\n    # Sort the list from highest corresponding score to lowest\n    top_scores.sort(key=lambda x: x[0], reverse=True)\n    return top_scores\n"}}, {"source": "0", "target": "6", "metadata": {"diff": 5, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (0->6)\ndiff:\n--- \n+++ \n@@ -30,4 +30,30 @@\n this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"John\"], [90, \"Sam\"], [70, \"Jane\"], [60, \"Joe\"]]))\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list in the order of the highest zeroth index. If the list is larger than 4 items, then return only 4 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 4:\n        return new_lst[:4]\n    else:\n        return new_lst\n"}}, {"source": "0", "target": "2", "metadata": {"diff": 15, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\nedge: (0->2)\ndiff:\n--- \n+++ \n@@ -33,23 +33,31 @@\n This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns the name from the highest grade to the lowest, if only the grades are higher or equal than 80.\n    \"\"\"\n        # your code here\n    return [i[1] for i in lst if i[0] >= 80]\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns all the name of the students with grades higher or equal to 80. The order of the return is from the highest grade to the lowest one.\n    \"\"\"\n        # your code here\n    return [name for grade, name in sorted(lst, key=lambda x: x[0], reverse=True) if grade >= 80]\n"}}, {"source": "1", "target": "2", "metadata": {"diff": 1, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -22,7 +22,17 @@\n a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns a list of@@ -32,19 +42,8 @@\n corresponding scores were-the-highest,-and-were a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Returns a list of the names whose corresponding scores were the highest, and were a minimum of 80, sorted from highest corresponding score to lowest.\n    \"\"\"\n        # Create a list of the names whose corresponding scores were the highest, and were a minimum of 80\n    top_scores = [i[1] for i in lst if i[0] >= 80]\n    # Sort the list from highest corresponding score to lowest\n    top_scores.sort(key=lambda x: x[0], reverse=True)\n    return top_scores\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Sorts this list from highest integer score to lowest, and returns a list of the names whose corresponding scores were a minimum of 80.\n    \"\"\"\n        lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for x in lst if x[0] >= 80]\n"}}, {"source": "2", "target": "3", "metadata": {"diff": 2, "color": "#d83034", "arrow_color": "#d83034", "username": "student31", "hover": "username:student31\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -45,5 +45,12 @@\n a minimum of-80.+80,+with+a+maximum+list+length+of+5. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Sorts this list from highest integer score to lowest, and returns a list of the names whose corresponding scores were a minimum of 80.\n    \"\"\"\n        lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for x in lst if x[0] >= 80]\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Takes a list containing multiple internal lists, with each internal list containing two items: an integer score and a string name. Sorts this list from highest integer score to lowest, and returns a list of the names whose corresponding scores were a minimum of 80, with a maximum list length of 5.\n    \"\"\"\n        lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for x in lst if x[0] >= 80][:5]\n"}}, {"source": "2", "target": "3", "metadata": {"diff": 16, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -33,11 +33,10 @@\n This function returns-all the-name+names of-the+5 students with grades\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns all the name of the students with grades higher or equal to 80. The order of the return is from the highest grade to the lowest one.\n    \"\"\"\n        # your code here\n    return [name for grade, name in sorted(lst, key=lambda x: x[0], reverse=True) if grade >= 80]\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns the names of 5 students with grades higher or equal to 80. The order of the return is from the highest grade to the lowest one.\n    \"\"\"\n        return [name for grade, name in sorted(lst, reverse=True) if grade >= 80][:5]\n"}}, {"source": "4", "target": "5", "metadata": {"diff": 3, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -3,15 +3,31 @@\n \"\"\" taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and return-the+this+new list-of-strings-whose-integer-is-greater-than-80 \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, return the list of strings whose integer is greater than 80\n    \"\"\"\n        return [x for x in lst if int(x.split()[1]) > 80]\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is less than or equal to 80, add the 1st index into a list and return this new list \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] <= 80:\n            new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"bob\"], [90, \"sally\"], [100, \"joe\"], [70, \"jane\"]]))\n"}}, {"source": "5", "target": "0", "metadata": {"diff": 4, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (5->0)\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n zeroth index is-less+more than or equal\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is less than or equal to 80, add the 1st index into a list and return this new list \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] <= 80:\n            new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"bob\"], [90, \"sally\"], [100, \"joe\"], [70, \"jane\"]]))\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"John\"], [90, \"Sam\"], [70, \"Jane\"], [60, \"Joe\"]]))\n"}}, {"source": "6", "target": "7", "metadata": {"diff": 6, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (6->7)\ndiff:\n--- \n+++ \n@@ -30,26 +30,29 @@\n this new list-in+by+sorting+from the-order+highest+0th+index of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items, then return only-4+5 items with the\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list in the order of the highest zeroth index. If the list is larger than 4 items, then return only 4 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 4:\n        return new_lst[:4]\n    else:\n        return new_lst\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort()\n    if len(new_lst) > 5:\n        return new_lst[-5:]\n    else:\n        return new_lst\n"}}, {"source": "7", "target": "8", "metadata": {"diff": 7, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (7->8)\ndiff:\n--- \n+++ \n@@ -3,10 +3,15 @@\n \"\"\" taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then if the zeroth\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort()\n    if len(new_lst) > 5:\n        return new_lst[-5:]\n    else:\n        return new_lst\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, sort the list be the highest 0th index then if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        lst.sort(reverse=True)\n    new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return new_lst\n"}}, {"source": "8", "target": "9", "metadata": {"diff": 8, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (8->9)\ndiff:\n--- \n+++ \n@@ -3,15 +3,25 @@\n \"\"\" taken lst,+loop+through+each+list+and sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list if the zeroth\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, sort the list be the highest 0th index then if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        lst.sort(reverse=True)\n    new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return new_lst\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop through each list and sort the list in the order of the highest 0th index. Given new list if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        i.sort(reverse=True)\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return new_lst\n\nprint("}}, {"source": "9", "target": "10", "metadata": {"diff": 9, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (9->10)\ndiff:\n--- \n+++ \n@@ -1,60 +1,59 @@\n def topScores(lst): \"\"\"-taken-lst,-loop+Loop through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original list. If the\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    taken lst, loop through each list and sort the list in the order of the highest 0th index. Given new list if the zeroth index is more than or equal to 80, add the 1st index into a list and return this new list by sorting from the highest 0th index of the original list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        i.sort(reverse=True)\n        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return new_lst\n\nprint(\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a new list and return this new list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse=True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        return new"}}, {"source": "10", "target": "11", "metadata": {"diff": 10, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (10->11)\ndiff:\n--- \n+++ \n@@ -53,7 +53,6 @@\n and return this-new list. If the@@ -62,15 +61,17 @@\n larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make 5-items-with-the-highest-zeroth-index.+total+items. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a new list and return this new list. If the list is larger than 5 items, then return only 5 items with the highest zeroth index. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse=True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        return new\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a new list and return this list. If the list is larger than 5 items then take then eliminate the last elements to make 5 total items. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        new_"}}, {"source": "11", "target": "11", "metadata": {"diff": 11, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (11->11)\ndiff:\n--- \n+++ \n@@ -20,7 +20,9 @@\n equal to 80.-Append+Define+and+append to a new@@ -48,6 +50,8 @@\n index into a+another+defined new list and\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a new list and return this list. If the list is larger than 5 items then take then eliminate the last elements to make 5 total items. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        new_\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Define and append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a another defined new list and return this list. If the list is larger than 5 items then take then eliminate the last elements to make 5 total items. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        new_"}}, {"source": "11", "target": "3", "metadata": {"diff": 12, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student53", "hover": "username:student53\nedge: (11->3)\ndiff:\n--- \n+++ \n@@ -1,81 +1,44 @@\n def topScores(lst): \"\"\"-Loop-through-each-lst-and-take+if+0th+index+of the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total items. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Loop through each lst and take the nested list with a 0th index larger than or equal to 80. Define and append to a new list and sort the new list in the order of the largest 0th index in the nested list. Add the 1st index into a another defined new list and return this list. If the list is larger than 5 items then take then eliminate the last elements to make 5 total items. \n    \"\"\"\n        new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n            new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) > 5:\n        new_\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    if 0th index of the nested list of lst is greater than or equal to 80, return a list of the 1st index in the order from the largest 0th index integer. Return up to a list of 5 items. \n    \"\"\"\n        return [x[1] for x in sorted(lst, key=lambda x: x[0], reverse=True) if x[0] >= 80][:5]\n"}}, {"source": "12", "target": "13", "metadata": {"diff": 13, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\nedge: (12->13)\ndiff:\n--- \n+++ \n@@ -5,18 +5,33 @@\n a function that-gets+runs+through a list of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name of-grades-and-names-of-students,-and+the+student.+This+function returns the name\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that gets a list of lists of grades and names of students, and returns the name from the highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\"\n        return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True) if x[1] > 80]\n\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns the name from the highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\"\n        # create a list of tuples\n    lst = [(x[0], x[1]) for x in lst]\n    # sort the list of tuples\n    lst.sort(reverse=True)\n    # create a list of names\n    lst = [x[1] for x in lst if x[0] > 80]\n    # return the list\n    return lst\n"}}, {"source": "13", "target": "0", "metadata": {"diff": 14, "color": "#008dff", "arrow_color": "#008dff", "username": "student55", "hover": "username:student55\nedge: (13->0)\ndiff:\n--- \n+++ \n@@ -48,6 +48,8 @@\n grades are higher+or+equal than 80. \"\"\"\n\nFROM completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns the name from the highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\"\n        # create a list of tuples\n    lst = [(x[0], x[1]) for x in lst]\n    # sort the list of tuples\n    lst.sort(reverse=True)\n    # create a list of names\n    lst = [x[1] for x in lst if x[0] > 80]\n    # return the list\n    return lst\n\n\nTO completion:\ndef topScores(lst):\n    \"\"\"\n    Write a function that runs through a list of lists with 2 elements. The first element is the grade and the second element is the name of the student. This function returns the name from the highest grade to the lowest, if only the grades are higher or equal than 80.\n    \"\"\"\n        # your code here\n    return [i[1] for i in lst if i[0] >= 80]\n"}}], "directed": true}];
             // Data selection and normalization
             state.nodeSizeDataSource = "size";
             state.useNodeSizeNormalization = false;
@@ -2001,126 +2002,126 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
         elements:{
           // Containers
-          mainContainer: document.getElementById("iLTDnXe0nmeQyMU2q-main-div"),
-          tooltipContainer: document.getElementById("iLTDnXe0nmeQyMU2q-tooltip-div"),
-          leftContainer: document.getElementById("iLTDnXe0nmeQyMU2q-left-div"),
-          rightContainer: document.getElementById("iLTDnXe0nmeQyMU2q-right-div"),
-          graphContainer: document.getElementById("iLTDnXe0nmeQyMU2q-graph-div"),
-          detailsContainer: document.getElementById("iLTDnXe0nmeQyMU2q-details-div"),
-          detailsHead: document.getElementById("iLTDnXe0nmeQyMU2q-details-head"),
-          detailsBody: document.getElementById("iLTDnXe0nmeQyMU2q-details-body"),
+          mainContainer: document.getElementById("iYSgy3c2Eom06Dwt0-main-div"),
+          tooltipContainer: document.getElementById("iYSgy3c2Eom06Dwt0-tooltip-div"),
+          leftContainer: document.getElementById("iYSgy3c2Eom06Dwt0-left-div"),
+          rightContainer: document.getElementById("iYSgy3c2Eom06Dwt0-right-div"),
+          graphContainer: document.getElementById("iYSgy3c2Eom06Dwt0-graph-div"),
+          detailsContainer: document.getElementById("iYSgy3c2Eom06Dwt0-details-div"),
+          detailsHead: document.getElementById("iYSgy3c2Eom06Dwt0-details-head"),
+          detailsBody: document.getElementById("iYSgy3c2Eom06Dwt0-details-body"),
           // Data sources
-          dataHead: document.getElementById("iLTDnXe0nmeQyMU2q-data-head"),
-          dataBody: document.getElementById("iLTDnXe0nmeQyMU2q-data-body"),
-          graphSelectionContainer: document.getElementById("iLTDnXe0nmeQyMU2q-graph-select-div"),
-          graphSelection: document.getElementById("iLTDnXe0nmeQyMU2q-graph-select"),
-          nodeSizeDataSourceSelect: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-data-source-select"),
-          nodeSizeNormalizationCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-normalization-checkbox"),
-          nodeSizeNormalizationContainer: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-norm-div"),
-          nodeSizeNormalizationMinText: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-normalization-min-text"),
-          nodeSizeNormalizationMinSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-normalization-min-slider"),
-          nodeSizeNormalizationMaxText: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-normalization-max-text"),
-          nodeSizeNormalizationMaxSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-normalization-max-slider"),
-          edgeSizeDataSourceSelect: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-data-source-select"),
-          edgeSizeNormalizationCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-normalization-checkbox"),
-          edgeSizeNormalizationContainer: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-norm-div"),
-          edgeSizeNormalizationMinText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-normalization-min-text"),
-          edgeSizeNormalizationMinSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-normalization-min-slider"),
-          edgeSizeNormalizationMaxText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-normalization-max-text"),
-          edgeSizeNormalizationMaxSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-normalization-max-slider"),
+          dataHead: document.getElementById("iYSgy3c2Eom06Dwt0-data-head"),
+          dataBody: document.getElementById("iYSgy3c2Eom06Dwt0-data-body"),
+          graphSelectionContainer: document.getElementById("iYSgy3c2Eom06Dwt0-graph-select-div"),
+          graphSelection: document.getElementById("iYSgy3c2Eom06Dwt0-graph-select"),
+          nodeSizeDataSourceSelect: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-data-source-select"),
+          nodeSizeNormalizationCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-normalization-checkbox"),
+          nodeSizeNormalizationContainer: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-norm-div"),
+          nodeSizeNormalizationMinText: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-normalization-min-text"),
+          nodeSizeNormalizationMinSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-normalization-min-slider"),
+          nodeSizeNormalizationMaxText: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-normalization-max-text"),
+          nodeSizeNormalizationMaxSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-normalization-max-slider"),
+          edgeSizeDataSourceSelect: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-data-source-select"),
+          edgeSizeNormalizationCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-normalization-checkbox"),
+          edgeSizeNormalizationContainer: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-norm-div"),
+          edgeSizeNormalizationMinText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-normalization-min-text"),
+          edgeSizeNormalizationMinSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-normalization-min-slider"),
+          edgeSizeNormalizationMaxText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-normalization-max-text"),
+          edgeSizeNormalizationMaxSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-normalization-max-slider"),
           // General
-          generalHead: document.getElementById("iLTDnXe0nmeQyMU2q-general-head"),
-          generalBody: document.getElementById("iLTDnXe0nmeQyMU2q-general-body"),
-          resetButton: document.getElementById("iLTDnXe0nmeQyMU2q-reset"),
-          fullscreenButton: document.getElementById("iLTDnXe0nmeQyMU2q-fullscreen-button"),
-          svgExportButton: document.getElementById("iLTDnXe0nmeQyMU2q-svg"),
-          pngExportButton: document.getElementById("iLTDnXe0nmeQyMU2q-png"),
-          jpgExportButton: document.getElementById("iLTDnXe0nmeQyMU2q-jpg"),
+          generalHead: document.getElementById("iYSgy3c2Eom06Dwt0-general-head"),
+          generalBody: document.getElementById("iYSgy3c2Eom06Dwt0-general-body"),
+          resetButton: document.getElementById("iYSgy3c2Eom06Dwt0-reset"),
+          fullscreenButton: document.getElementById("iYSgy3c2Eom06Dwt0-fullscreen-button"),
+          svgExportButton: document.getElementById("iYSgy3c2Eom06Dwt0-svg"),
+          pngExportButton: document.getElementById("iYSgy3c2Eom06Dwt0-png"),
+          jpgExportButton: document.getElementById("iYSgy3c2Eom06Dwt0-jpg"),
           // Nodes
-          nodeHead: document.getElementById("iLTDnXe0nmeQyMU2q-node-head"),
-          nodeBody: document.getElementById("iLTDnXe0nmeQyMU2q-node-body"),
-          nodeCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-checkbox"),
-          nodeSizeFactorText: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-factor-text"),
-          nodeSizeFactorSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-size-factor-slider"),
-          nodeDragFixCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-drag-fix-checkbox"),
-          nodeHoverNeighborhoodCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-hover-neighborhood-checkbox"),
-          nodeHoverTooltipCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-hover-tooltip-checkbox"),
-          nodeReleaseButton: document.getElementById("iLTDnXe0nmeQyMU2q-node-release-button"),
+          nodeHead: document.getElementById("iYSgy3c2Eom06Dwt0-node-head"),
+          nodeBody: document.getElementById("iYSgy3c2Eom06Dwt0-node-body"),
+          nodeCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-checkbox"),
+          nodeSizeFactorText: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-factor-text"),
+          nodeSizeFactorSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-size-factor-slider"),
+          nodeDragFixCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-drag-fix-checkbox"),
+          nodeHoverNeighborhoodCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-hover-neighborhood-checkbox"),
+          nodeHoverTooltipCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-hover-tooltip-checkbox"),
+          nodeReleaseButton: document.getElementById("iYSgy3c2Eom06Dwt0-node-release-button"),
           // Node images
-          nodeImageHead: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-head"),
-          nodeImageBody: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-body"),
-          nodeImageCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-checkbox"),
-          nodeImageMetaControl: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-meta-control"),
-          nodeImageSizeFactorText: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-size-factor-text"),
-          nodeImageSizeFactorSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-image-size-factor-slider"),
+          nodeImageHead: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-head"),
+          nodeImageBody: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-body"),
+          nodeImageCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-checkbox"),
+          nodeImageMetaControl: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-meta-control"),
+          nodeImageSizeFactorText: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-size-factor-text"),
+          nodeImageSizeFactorSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-image-size-factor-slider"),
           // Node labels
-          nodeLabelHead: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-head"),
-          nodeLabelBody: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-body"),
-          nodeLabelCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-checkbox"),
-          nodeLabelBorderCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-border-checkbox"),
-          nodeLabelTextDataSourceSelect: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-data-source-select"),
-          nodeLabelSizeFactorText: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-size-factor-text"),
-          nodeLabelSizeFactorSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-size-factor-slider"),
-          nodeLabelRotationText: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-rotation-text"),
-          nodeLabelRotationSlider: document.getElementById("iLTDnXe0nmeQyMU2q-node-label-rotation-slider"),
+          nodeLabelHead: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-head"),
+          nodeLabelBody: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-body"),
+          nodeLabelCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-checkbox"),
+          nodeLabelBorderCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-border-checkbox"),
+          nodeLabelTextDataSourceSelect: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-data-source-select"),
+          nodeLabelSizeFactorText: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-size-factor-text"),
+          nodeLabelSizeFactorSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-size-factor-slider"),
+          nodeLabelRotationText: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-rotation-text"),
+          nodeLabelRotationSlider: document.getElementById("iYSgy3c2Eom06Dwt0-node-label-rotation-slider"),
           // Edges
-          edgeHead: document.getElementById("iLTDnXe0nmeQyMU2q-edge-head"),
-          edgeBody: document.getElementById("iLTDnXe0nmeQyMU2q-edge-body"),
-          edgeCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-edge-checkbox"),
-          edgeSizeFactorText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-factor-text"),
-          edgeSizeFactorSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-size-factor-slider"),
-          edgeCurvatureText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-curvature-text"),
-          edgeCurvatureSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-curvature-slider"),
-          edgeHoverTooltipCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-edge-hover-tooltip-checkbox"),
+          edgeHead: document.getElementById("iYSgy3c2Eom06Dwt0-edge-head"),
+          edgeBody: document.getElementById("iYSgy3c2Eom06Dwt0-edge-body"),
+          edgeCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-edge-checkbox"),
+          edgeSizeFactorText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-factor-text"),
+          edgeSizeFactorSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-size-factor-slider"),
+          edgeCurvatureText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-curvature-text"),
+          edgeCurvatureSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-curvature-slider"),
+          edgeHoverTooltipCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-edge-hover-tooltip-checkbox"),
           // Edge labels
-          edgeLabelHead: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-head"),
-          edgeLabelBody: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-body"),
-          edgeLabelCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-checkbox"),
-          edgeLabelBorderCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-border-checkbox"),
-          edgeLabelTextDataSourceSelect: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-data-source-select"),
-          edgeLabelSizeFactorText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-size-factor-text"),
-          edgeLabelSizeFactorSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-size-factor-slider"),
-          edgeLabelRotationText: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-rotation-text"),
-          edgeLabelRotationSlider: document.getElementById("iLTDnXe0nmeQyMU2q-edge-label-rotation-slider"),
+          edgeLabelHead: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-head"),
+          edgeLabelBody: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-body"),
+          edgeLabelCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-checkbox"),
+          edgeLabelBorderCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-border-checkbox"),
+          edgeLabelTextDataSourceSelect: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-data-source-select"),
+          edgeLabelSizeFactorText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-size-factor-text"),
+          edgeLabelSizeFactorSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-size-factor-slider"),
+          edgeLabelRotationText: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-rotation-text"),
+          edgeLabelRotationSlider: document.getElementById("iYSgy3c2Eom06Dwt0-edge-label-rotation-slider"),
           // Layout algorithm
-          layoutAlgorithmHead: document.getElementById("iLTDnXe0nmeQyMU2q-layout-algorithm-head"),
-          layoutAlgorithmBody: document.getElementById("iLTDnXe0nmeQyMU2q-layout-algorithm-body"),
-          simulationCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-simulation-active-checkbox"),
-          manyBodyForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-checkbox"),
-          manyBodyForceContainer: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-div"),
-          manyBodyForceStrengthText: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-strength-text"),
-          manyBodyForceStrengthSlider: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-strength-slider"),
-          manyBodyForceThetaText: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-theta-text"),
-          manyBodyForceThetaSlider: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-theta-slider"),
-          manyBodyForceMinDistCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-min-distance-checkbox"),
-          manyBodyForceMinDistContainer: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-min-distance-div"),
-          manyBodyForceMinDistText: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-min-distance-text"),
-          manyBodyForceMinDistSlider: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-min-distance-slider"),
-          manyBodyForceMaxDistCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-max-distance-checkbox"),
-          manyBodyForceMaxDistContainer: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-max-distance-div"),
-          manyBodyForceMaxDistText: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-max-distance-text"),
-          manyBodyForceMaxDistSlider: document.getElementById("iLTDnXe0nmeQyMU2q-many-body-force-max-distance-slider"),
-          linksForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-checkbox"),
-          linksForceContainer: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-div"),
-          linksForceDistanceText: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-distance-text"),
-          linksForceDistanceSlider: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-distance-slider"),
-          linksForceStrengthText: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-strength-text"),
-          linksForceStrengthSlider: document.getElementById("iLTDnXe0nmeQyMU2q-links-force-strength-slider"),
-          collisionForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-checkbox"),
-          collisionForceContainer: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-div"),
-          collisionForceRadiusText: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-radius-text"),
-          collisionForceRadiusSlider: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-radius-slider"),
-          collisionForceStrengthText: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-strength-text"),
-          collisionForceStrengthSlider: document.getElementById("iLTDnXe0nmeQyMU2q-collision-force-strength-slider"),
-          xPositioningForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-x-positioning-force-checkbox"),
-          xPositioningForceContainer: document.getElementById("iLTDnXe0nmeQyMU2q-x-positioning-force-div"),
-          xPositioningForceStrengthText: document.getElementById("iLTDnXe0nmeQyMU2q-x-positioning-force-strength-text"),
-          xPositioningForceStrengthSlider: document.getElementById("iLTDnXe0nmeQyMU2q-x-positioning-force-strength-slider"),
-          yPositioningForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-y-positioning-force-checkbox"),
-          yPositioningForceContainer: document.getElementById("iLTDnXe0nmeQyMU2q-y-positioning-force-div"),
-          yPositioningForceStrengthText: document.getElementById("iLTDnXe0nmeQyMU2q-y-positioning-force-strength-text"),
-          yPositioningForceStrengthSlider: document.getElementById("iLTDnXe0nmeQyMU2q-y-positioning-force-strength-slider"),
-          centeringForceCheckbox: document.getElementById("iLTDnXe0nmeQyMU2q-centering-force-checkbox"),
+          layoutAlgorithmHead: document.getElementById("iYSgy3c2Eom06Dwt0-layout-algorithm-head"),
+          layoutAlgorithmBody: document.getElementById("iYSgy3c2Eom06Dwt0-layout-algorithm-body"),
+          simulationCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-simulation-active-checkbox"),
+          manyBodyForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-checkbox"),
+          manyBodyForceContainer: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-div"),
+          manyBodyForceStrengthText: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-strength-text"),
+          manyBodyForceStrengthSlider: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-strength-slider"),
+          manyBodyForceThetaText: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-theta-text"),
+          manyBodyForceThetaSlider: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-theta-slider"),
+          manyBodyForceMinDistCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-min-distance-checkbox"),
+          manyBodyForceMinDistContainer: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-min-distance-div"),
+          manyBodyForceMinDistText: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-min-distance-text"),
+          manyBodyForceMinDistSlider: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-min-distance-slider"),
+          manyBodyForceMaxDistCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-max-distance-checkbox"),
+          manyBodyForceMaxDistContainer: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-max-distance-div"),
+          manyBodyForceMaxDistText: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-max-distance-text"),
+          manyBodyForceMaxDistSlider: document.getElementById("iYSgy3c2Eom06Dwt0-many-body-force-max-distance-slider"),
+          linksForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-checkbox"),
+          linksForceContainer: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-div"),
+          linksForceDistanceText: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-distance-text"),
+          linksForceDistanceSlider: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-distance-slider"),
+          linksForceStrengthText: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-strength-text"),
+          linksForceStrengthSlider: document.getElementById("iYSgy3c2Eom06Dwt0-links-force-strength-slider"),
+          collisionForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-checkbox"),
+          collisionForceContainer: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-div"),
+          collisionForceRadiusText: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-radius-text"),
+          collisionForceRadiusSlider: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-radius-slider"),
+          collisionForceStrengthText: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-strength-text"),
+          collisionForceStrengthSlider: document.getElementById("iYSgy3c2Eom06Dwt0-collision-force-strength-slider"),
+          xPositioningForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-x-positioning-force-checkbox"),
+          xPositioningForceContainer: document.getElementById("iYSgy3c2Eom06Dwt0-x-positioning-force-div"),
+          xPositioningForceStrengthText: document.getElementById("iYSgy3c2Eom06Dwt0-x-positioning-force-strength-text"),
+          xPositioningForceStrengthSlider: document.getElementById("iYSgy3c2Eom06Dwt0-x-positioning-force-strength-slider"),
+          yPositioningForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-y-positioning-force-checkbox"),
+          yPositioningForceContainer: document.getElementById("iYSgy3c2Eom06Dwt0-y-positioning-force-div"),
+          yPositioningForceStrengthText: document.getElementById("iYSgy3c2Eom06Dwt0-y-positioning-force-strength-text"),
+          yPositioningForceStrengthSlider: document.getElementById("iYSgy3c2Eom06Dwt0-y-positioning-force-strength-slider"),
+          centeringForceCheckbox: document.getElementById("iYSgy3c2Eom06Dwt0-centering-force-checkbox"),
         },
 
         composites:{
@@ -2482,7 +2483,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
             create(){
               // Main container
               this.mainContainer = document.createElement("div");
-              this.mainContainer.id = "iLTDnXe0nmeQyMU2q-progress-container";
+              this.mainContainer.id = "iYSgy3c2Eom06Dwt0-progress-container";
               this.mainContainer.style.backgroundColor = state.shownData.general.background_color;
               ui.elements.graphContainer.style.backgroundColor = state.shownData.general.background_color;
               // Text container
@@ -2531,7 +2532,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   menuDiv.innerText = ui.symbols.menuHidden;
                 }
-                menuDiv.id = "iLTDnXe0nmeQyMU2q-menu-toggle-button";
+                menuDiv.id = "iYSgy3c2Eom06Dwt0-menu-toggle-button";
                 menuDiv.onclick = ui.composites.menu.toggle;
                 ui.elements.graphContainer.appendChild(menuDiv);
                 ui.elements.menuToggleDiv = menuDiv;
@@ -2545,27 +2546,27 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   detailsDiv.innerText = ui.symbols.detailsHidden;
                 }
-                detailsDiv.id = "iLTDnXe0nmeQyMU2q-details-toggle-button";
+                detailsDiv.id = "iYSgy3c2Eom06Dwt0-details-toggle-button";
                 detailsDiv.onclick = ui.composites.details.toggle;
                 ui.elements.graphContainer.appendChild(detailsDiv);
                 ui.elements.detailsToggleDiv = detailsDiv;
               }
 
               // - Graph drawing area
-              const svg = d3.select("#iLTDnXe0nmeQyMU2q-graph-div").append("svg");
+              const svg = d3.select("#iYSgy3c2Eom06Dwt0-graph-div").append("svg");
               state.currentGraphParts.svg = svg;
               svg
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight);
               // - Background rectangle
               const backgroundRect = svg.append("rect")
-                .attr("id", "iLTDnXe0nmeQyMU2q-background")
+                .attr("id", "iYSgy3c2Eom06Dwt0-background")
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight)
                 .attr("fill", state.shownData.general.background_color);
               state.currentGraphParts.backgroundRect = backgroundRect;
               // - Zoomable and draggable group as graph drawing area
-              const view = svg.append("g").attr("id", "iLTDnXe0nmeQyMU2q-zoomable-graph-group");
+              const view = svg.append("g").attr("id", "iYSgy3c2Eom06Dwt0-zoomable-graph-group");
               state.currentGraphParts.view = view;
               function zoomed(event) {
                 view.attr("transform", event.transform);
@@ -2624,7 +2625,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               //       in back and which are drawn in front (there is no z-order property in SVG)
               // Edges
               state.currentGraphParts.edgeMainGroup = view.append("g")
-                .attr("id", "iLTDnXe0nmeQyMU2q-edge-group")
+                .attr("id", "iYSgy3c2Eom06Dwt0-edge-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdges));
               state.currentGraphParts.edgeGroups = state.currentGraphParts.edgeMainGroup
                 .selectAll("g")
@@ -2632,7 +2633,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 .join("g");
               // Nodes
               state.currentGraphParts.nodeMainGroup = view.append("g")
-                .attr("id", "iLTDnXe0nmeQyMU2q-node-group")
+                .attr("id", "iYSgy3c2Eom06Dwt0-node-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodes));
               state.currentGraphParts.nodeGroups = state.currentGraphParts.nodeMainGroup
                 .selectAll("g")
@@ -2644,7 +2645,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 edgeLabelData.push(i);
               }
               state.currentGraphParts.edgeLabelMainGroup = view.append("g")
-                .attr("id", "iLTDnXe0nmeQyMU2q-edge-label-group")
+                .attr("id", "iYSgy3c2Eom06Dwt0-edge-label-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdgeLabels));
               state.currentGraphParts.edgeLabelGroups = state.currentGraphParts.edgeLabelMainGroup
                 .selectAll("g")
@@ -2656,7 +2657,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 nodeLabelData.push(i);
               }
               state.currentGraphParts.nodeLabelMainGroup = view.append("g")
-                .attr("id", "iLTDnXe0nmeQyMU2q-node-label-group");
+                .attr("id", "iYSgy3c2Eom06Dwt0-node-label-group");
               state.currentGraphParts.nodeLabelGroups = state.currentGraphParts.nodeLabelMainGroup
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeLabels))
                 .selectAll("g")
@@ -2673,7 +2674,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 }
               }
               state.currentGraphParts.nodeImageMainGroup = view.append("g")
-                .attr("id", "iLTDnXe0nmeQyMU2q-node-image-group")
+                .attr("id", "iYSgy3c2Eom06Dwt0-node-image-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeImages));
               state.currentGraphParts.nodeImageGroups = state.currentGraphParts.nodeImageMainGroup
                 .selectAll("g")
@@ -2904,7 +2905,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function nodeClicked(event, node){
                 let htmlText = "<div>Node: " + String(node.id) + "</div>";
                 if(typeof(node.click) !== "undefined" && node.click !== ""){
-                  htmlText += '<div id="iLTDnXe0nmeQyMU2q-details-user-provided">' + node.click + '</div>';
+                  htmlText += '<div id="iYSgy3c2Eom06Dwt0-details-user-provided">' + node.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }
@@ -3157,7 +3158,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
               // 1) Remove existing elements
               ui.composites.graph.removeEdges();
-              svg.select("#iLTDnXe0nmeQyMU2q-arrow-marker").remove();
+              svg.select("#iYSgy3c2Eom06Dwt0-arrow-marker").remove();
               // 2) Create new elements
               // - Paths
               state.currentGraphParts.edgePaths = edgeGroups.append("path")
@@ -3171,7 +3172,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 const arrowSizeDouble = arrowSize * 2.0,
                   arrowSizeHalf = arrowSize / 2.0;
                 const marker = svg.append("marker")
-                  .attr("id", "iLTDnXe0nmeQyMU2q-arrow-marker")
+                  .attr("id", "iYSgy3c2Eom06Dwt0-arrow-marker")
                   .attr("markerUnits", "userSpaceOnUse")
                   .attr("viewBox", "0 0 " + arrowSizeDouble + " " + arrowSizeDouble)
                   .attr("refX", 0)
@@ -3184,7 +3185,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                     .attr("d", "M 0 0 L " + arrowSizeDouble + " " + arrowSizeHalf + " L 0 " + arrowSize + " z")
                     .attr("fill", state.shownData.general.arrow_color)
                 state.currentGraphParts.edgePaths
-                  .attr("marker-end", "url(#iLTDnXe0nmeQyMU2q-arrow-marker)");
+                  .attr("marker-end", "url(#iYSgy3c2Eom06Dwt0-arrow-marker)");
               }
               // - Edge hover behavior
               if(state.parsedData.general.contains_edge_hover){
@@ -3218,7 +3219,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function edgeClicked(event, edge){
                 let htmlText = "<div>Edge: " + String(edge.id) + "</div>";
                 if(typeof(edge.click) !== "undefined" && edge.click !== ""){
-                  htmlText += '<div id="iLTDnXe0nmeQyMU2q-details-user-provided">' + edge.click + '</div>';
+                  htmlText += '<div id="iYSgy3c2Eom06Dwt0-details-user-provided">' + edge.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }

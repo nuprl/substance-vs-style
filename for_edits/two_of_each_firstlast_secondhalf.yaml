@@ -11,7 +11,7 @@
   prompt: |-
     def add_up(arr):
         """
-        For each $list:list$ in an $list:array$, this function $takes:takes$ each $key:entry$ in the $list:list$ and $inserts:adds$ them to the total if the $key:entry$ is a number. Otherwise, it $inserts:adds$ 0.
+        For each $list:list$ in an $list:array$, this function takes each entry in the $list:list$ and adds them to the total if the entry is a number. Otherwise, it adds 0.
         """
         
   subset: last_failure
@@ -29,7 +29,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        given a $list:list$, $typecast:convert$ each $key:item$ in the $list:list$ to an $integer:integer$. subract the second $integer:integer$ from the first and then with that total, $insert:add$ the next $integer:integer$. with that total subtract the next $integer:integer$. repeat this until all $integers:integers$ in the $list:list$ have been either $inserted:added$ or subtracted and $return:output$ the final total. if the $list:list$ is blank, $return:output$ 0.
+        given a $list:list$, $typecast:convert$ each item in the $list:list$ to an $integer:integer$. subract the second $integer:integer$ from the first and then with that total, add the next $integer:integer$. with that total subtract the next $integer:integer$. repeat this until all $integers:integers$ in the $list:list$ have been either added or subtracted and $return:output$ the final total. if the $list:list$ is blank, $return:output$ 0.
         """
         
   subset: first_success
@@ -46,7 +46,7 @@
   prompt: |-
     def convert(lst):
         """
-        If there is "0" in lst, then put "A" into new $list:list$; If there is "1" in lst, then put "B" into new $list:list$; If there is "2" in lst, then put "C" into new $list:list$; If there is "4" in lst, then put "D" into new $list:list$. $Return:Return$ new $list:list$.
+        If there is "0" in lst, then $insert:put$ "A" into new $list:list$; If there is "1" in lst, then $insert:put$ "B" into new $list:list$; If there is "2" in lst, then $insert:put$ "C" into new $list:list$; If there is "4" in lst, then $insert:put$ "D" into new $list:list$. $Return:Return$ new $list:list$.
         """
         
   subset: first_failure
@@ -63,7 +63,7 @@
   prompt: |-
     def order_strings(lst):
         """
-        For each $key:item$ in lst, if the $key:item$ bigger than the last one, then move it as the first $key:item$ of lst. $Return:Return$ lst.
+        For each item in lst, if the item bigger than the last one, then move it as the first item of lst. $Return:Return$ lst.
         """
         
   subset: first_failure
@@ -80,7 +80,7 @@
   prompt: |-
     def add_int(lst, num):
         """
-        Given a $list:list$ of numbers, $lists:lists$, and $strings:strings$ as well as a number, $insert:append$ the number to the $strings:strings$ in the $list:list$, $insert:add$ the number to the numbers in the $list:list$, and do nothing to the $lists:lists$ in the $list:list$.
+        Given a $list:list$ of numbers, $lists:lists$, and $strings:strings$ as well as a number, $concatenate:append$ the number to the $strings:strings$ in the $list:list$, add the number to the numbers in the $list:list$, and do nothing to the $lists:lists$ in the $list:list$.
         """
         
   subset: last_success
@@ -98,7 +98,7 @@
   prompt: |-
     def check_prime(num):
         """
-        given a sting, $typecast:convert$ it to an $integer:int$. divide the number by each number counting up starting at 2. if the $return:output$ is another $integer:int$ and is not the same number as the original $integer:int$, $return:output$ False. If the $return:output$ is the same as the original $integer:int$ $return:output$ True.
+        given a $string:sting$, $typecast:convert$ it to an $integer:int$. divide the number by each number counting up starting at 2. if the output is another $integer:int$ and is not the same number as the original $integer:int$, $return:output$ False. If the output is the same as the original $integer:int$ $return:output$ True.
         """
         
   subset: first_success
@@ -115,7 +115,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        If each $key:item$ in lst can be divided by 2 wihtout remainder, then keep it. If the $key:item$ in lst cannot be divided by 2 without remainder, then cut it off from lst. $Return:Return$ lst.
+        If each item in lst can be divided by 2 wihtout remainder, then keep it. If the item in lst cannot be divided by 2 without remainder, then cut it off from lst. $Return:Return$ lst.
         """
         
   subset: first_failure
@@ -167,7 +167,7 @@
   prompt: |-
     def planets_mass(planets):
         """
-        This function $takes:takes$ the $input:input$ of a $dictionary:dictionary$. If the $key:key$ is the name of a planet, its value is $inserted:added$ to the total mass. Otherwise, 0 is $inserted:added$. The function $returns:returns$ the total mass of all planets in the $dictionary:dictionary$.
+        This function $takes:takes$ the $parameter:input$ of a $dictionary:dictionary$. If the $key:key$ is the name of a planet, its value is added to the total mass. Otherwise, 0 is added. The function $returns:returns$ the total mass of all planets in the $dictionary:dictionary$.
         """
         
   subset: last_failure
@@ -203,7 +203,7 @@
   prompt: |-
     def times_with(meetings):
         """
-        you are going to have a nested $list:list$ as an $input:input$. the inner most $lists:lists$ are going to have $strings:strings$. next to them in an outer $list:list$ they will have an $integer:integer$. your goal is to create a $dictionary:dictionary$ with the $keys:keys$ of names in the inner most $lists:lists$ and with the corresponding number and $return:return$.
+        you are going to have a nested $list:list$ as an $parameter:input$. the inner most $lists:lists$ are going to have $strings:strings$. next to them in an outer $list:list$ they will have an $integer:integer$. your goal is to create a $dictionary:dictionary$ with the $keys:keys$ of names in the inner most $lists:lists$ and with the corresponding number and $return:return$.
         """
         
   subset: last_failure
@@ -257,7 +257,7 @@
   prompt: |-
     def mod_end(words, ending):
         """
-        Given a $list:list$ of $strings:words$ and a $string:string$ that specifies an ending, $skip:remove$ the ending from the $strings:words$ inside the $list:list$, and instead $insert:append$ 's' to the new $strings:words$ with their original endings having been $skipped:removed$.
+        Given a $list:list$ of $strings:words$ and a $string:string$ that specifies an ending, remove the ending from the $strings:words$ inside the $list:list$, and instead $concatenate:append$ 's' to the new $strings:words$ with their original endings having been removed.
         """
         
   subset: first_success
@@ -276,7 +276,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        if you $take:get$ an $input:input$ of -10 $return:return$ 10, if you $take:get$ an $input:input$ of 1 $return:return$ a 10, if you $take:get$ a 10 $return:return$ 11 if you $take:get$ 15 $return:return$ 16 if you $take:get$ 20 $return:return$ 21
+        if you $take:get$ an $parameter:input$ of -10 $return:return$ 10, if you $take:get$ an $parameter:input$ of 1 $return:return$ a 10, if you $take:get$ a 10 $return:return$ 11 if you $take:get$ 15 $return:return$ 16 if you $take:get$ 20 $return:return$ 21
         """
         
   subset: first_success
@@ -294,7 +294,7 @@
   prompt: |-
     def getSeason(month):
         """
-        This function $inputs:inputs$ a $string:string$ of the name of a month and $returns:returns$ the name of the season it is in (in the northern hemisphere). The $input:input$ should be capitalized, the $return:output$ should not.
+        This function $takes:inputs$ a $string:string$ of the name of a month and $returns:returns$ the name of the season it is in (in the northern hemisphere). The $parameter:input$ should be capitalized, the output should not.
         """
         
   subset: last_failure
@@ -344,7 +344,7 @@
   prompt: |-
     def hasHorizontalWin(board, letter):
         """
-        you will have a $list:list$ of $lists:lists$ consisting of X and O as $strings:strings$. if in a single $list:list$ all the $keys:elements$ are X you $return:return$ true, else you $return:return$ false.
+        you will have a $list:list$ of $lists:lists$ consisting of X and O as $strings:strings$. if in a single $list:list$ all the elements are X you $return:return$ true, else you $return:return$ false.
         """
         
   subset: first_success
@@ -364,7 +364,7 @@
   prompt: |-
     def readingIceCream(lines):
         """
-        given a $list:list$ of $strings:strings$, split each $string:string$ by \. for each new $string:string$, if it starts with t, eliminate the t. next find the sting that contains a number, $typecast:convert$ it to a float, and $insert:add$ it to running total. $return:output$ this total
+        given a $list:list$ of $strings:strings$, split each $string:string$ by \. for each new $string:string$, if it starts with t, eliminate the t. next find the $string:sting$ that contains a number, $typecast:convert$ it to a float, and add it to running total. $return:output$ this total
         """
         
   subset: last_failure
@@ -384,7 +384,7 @@
   prompt: |-
     def findHorizontals(puzzle,wordList):
         """
-        given that puzzle is a $list:list$ of $strings:strings$, check if the letters of each $string:string$ in wordList is contained in any of the $strings:strings$ in puzzle. if the $string:string$ in wordList is in any of the $strings:strings$ in puzzle, $insert:add$ it to a $dictionary:dictionary$ with the $key:key$ as the sting in wordList and the $return:output$ as the position of the $string:string$ in puzzle
+        given that puzzle is a $list:list$ of $strings:strings$, check if the letters of each $string:string$ in wordList is contained in any of the $strings:strings$ in puzzle. if the $string:string$ in wordList is in any of the $strings:strings$ in puzzle, $insert:add$ it to a $dictionary:dictionary$ with the $key:key$ as the $string:sting$ in wordList and the output as the position of the $string:string$ in puzzle
         """
         
   subset: last_failure
@@ -404,7 +404,7 @@
   prompt: |-
     def partialWordle(guessList,hiddenWord):
         """
-        For each $string:word$ in guessList, this function $returns:returns$ a $list:list$ of scores compared to the hiddenWord. For every letter in the right place it $inserts:adds$ 2 points, and for every letter which is in hiddenWord but not in the right place it $inserts:adds$ 1 point.
+        For each $string:word$ in guessList, this function $returns:returns$ a $list:list$ of scores compared to the hiddenWord. For every letter in the right place it adds 2 points, and for every letter which is in hiddenWord but not in the right place it adds 1 point.
         """
         
   subset: first_success
@@ -421,7 +421,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        given a $list:list$ of $strings:strings$, $concatenate:concatenate$ the $strings:strings$ into one long $string:string$. read through the long $string:string$ and count the number of '&' found. $return:output$ that number.
+        given a $list:list$ of $strings:strings$, $concatenate:concatenate$ the $strings:strings$ into one long $string:string$. $loop:read through$ the long $string:string$ and count the number of '&' found. $return:output$ that number.
         """
         
   subset: first_success
@@ -438,7 +438,7 @@
   prompt: |-
     def set_chars(s,c,l):
         """
-        Given a $string:string$, a letter, and locations specified in a $list:list$, $skip:remove$ the letters in the $string:string$ in the locations specified in the $list:list$, and replace them with the letter. If the location is outside the range of the $list:list$, do nothing.
+        Given a $string:string$, a letter, and locations specified in a $list:list$, remove the letters in the $string:string$ in the locations specified in the $list:list$, and replace them with the letter. If the location is outside the range of the $list:list$, do nothing.
         """
         
   subset: last_success
@@ -455,7 +455,7 @@
   prompt: |-
     def altText(s):
         """
-        for this function, you $take:get$ an $input:input$ of a $string:string$. For every $string:character$ that is not a space, you start by capitalizing and then alternate with not capitalizing.
+        for this function, you $take:get$ an $parameter:input$ of a $string:string$. For every character that is not a space, you start by capitalizing and then alternate with not capitalizing.
         """
         
   subset: first_success
@@ -472,7 +472,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        flip the position of the $strings:characters$ in the $string:string$ up to the specified index
+        flip the position of the characters in the $string:string$ up to the specified index
         """
         
   subset: last_failure
@@ -489,7 +489,7 @@
   prompt: |-
     def edit_col(mat,i,n):
         """
-        if mat is a $list:list$ of $lists:lists$, $input:input$ n in the i position of each $list:list$. $return:output$ the modified $list:list$ of $lists:lists$
+        if mat is a $list:list$ of $lists:lists$, $insert:input$ n in the i position of each $list:list$. $return:output$ the modified $list:list$ of $lists:lists$
         """
         
   subset: first_success
@@ -506,7 +506,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        Given two $lists:sets$ of $lists:lists$, $concatenate:combine$ the respective places of each $list:list$ into one larger $list:list$, then $concatenate:combine$ those $concatenated:combined$ $lists:lists$ into another $list:set$. For example, the first $list:list$ of the first $list:set$ should be $concatenated:combined$ with the first of the second, etc.
+        Given two sets of $lists:lists$, $concatenate:combine$ the respective places of each $list:list$ into one larger $list:list$, then $concatenate:combine$ those combined $lists:lists$ into another set. For example, the first $list:list$ of the first set should be $concatenated:combined$ with the first of the second, etc.
         """
         
   subset: first_success
@@ -540,7 +540,7 @@
   prompt: |-
     def reduce(val):
         """
-        Test if the $key:item$ in val is "^", then $typecast:change$ to "_", $return:return$ new val. If there is no "^" in val, then $return:return$ val.
+        Test if the item in val is "^", then change to "_", $return:return$ new val. If there is no "^" in val, then $return:return$ val.
         """
         
   subset: first_success
@@ -558,7 +558,7 @@
   prompt: |-
     def fib(n):
         """
-        if the number is [1, 13, 21] the $return:output$ should be True, but if it is any other number, the $return:output$ is false
+        if the number is [1, 13, 21] the output should be True, but if it is any other number, the output is false
         """
         
   subset: first_success
@@ -573,9 +573,9 @@
   submitted_text: |-
     Add word as one of the key of map, add line_number as the value of key into map. Return map.
   prompt: |-
-    def add_word(word, line_number, $dictionary:map$):
+    def add_word(word, line_number, map):
         """
-        $Insert:Add$ $string:word$ as one of the $key:key$ of $dictionary:map$, $insert:add$ line_number as the value of $key:key$ into $dictionary:map$. $Return:Return$ $dictionary:map$.
+        $Insert:Add$ $string:word$ as one of the $key:key$ of map, add line_number as the value of $key:key$ into map. $Return:Return$ map.
         """
         
   subset: first_success
@@ -609,7 +609,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        For each $key:element$ of the $string:string$ s, if the $key:element$ is in the $list:list$ chars, replace that $key:element$ with sep
+        For each element of the $string:string$ s, if the element is in the $list:list$ chars, replace that element with sep
         """
         
   subset: first_success
@@ -635,7 +635,7 @@
   prompt: |-
     def sortedBooks(books, writer):
         """
-        if books is a $list:list$ of $dictionaries:dictionaries$, $return:output$ a $list:list$ of $dictionaries:dictionaries$ where the associated data to the $key:key$ 'author' is equal to the $input:input$ writer
+        if books is a $list:list$ of $dictionaries:dictionaries$, $return:output$ a $list:list$ of $dictionaries:dictionaries$ where the associated data to the $key:key$ 'author' is equal to the $parameter:input$ writer
         """
         
   subset: last_failure
@@ -665,7 +665,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success. use two decimal places for the success and put each $dictionary:dictionary$ on a separate line.
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. as an output you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success. use two decimal places for the success and put each $dictionary:dictionary$ on a separate line.
         """
         
   subset: last_failure
@@ -690,7 +690,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Write a function which $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ and a $string:string$ and finds the $dictionaries:dictionaries$ in the $input:input$ $list:list$ which have the $string:string$ mapped to 'origin', and then finds the $dictionaries:dictionaries$ where 'origin' is mapped to 
+        Write a function which $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ and a $string:string$ and finds the $dictionaries:dictionaries$ in the input $list:list$ which have the $string:string$ mapped to 'origin', and then finds the $dictionaries:dictionaries$ where 'origin' is mapped to 
         """
         
   subset: first_failure
@@ -707,7 +707,7 @@
   prompt: |-
     def sort_physicists(scientists):
         """
-        Given a $list:set$ of $lists:lists$ with a scientist, number, and a subject, respectively, only $return:return$ the scientist if the subject is "Physics" in a $list:list$. Then sort the scientists based on the numbers given in the $list:set$ of $lists:lists$ from smallest to largest. For example, if the scientist has the smallest number $inserted:attached$ to them in the $list:set$ of $lists:lists$, they should be placed first in the $return:output$ $list:list$.
+        Given a $list:set$ of $lists:lists$ with a scientist, number, and a subject, respectively, only $return:return$ the scientist if the subject is "Physics" in a $list:list$. Then sort the scientists based on the numbers given in the $list:set$ of $lists:lists$ from smallest to largest. For example, if the scientist has the smallest number attached to them in the $list:set$ of $lists:lists$, they should be placed first in the output $list:list$.
         """
         
   subset: last_success
@@ -725,7 +725,7 @@
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        the code should increase the amount of a number by the factor given. Where to start and end are also given as $inputs:inputs$. The end $input:input$ should also be included 
+        the code should increase the amount of a number by the factor given. Where to start and end are also given as $parameters:inputs$. The end $parameter:input$ should also be included 
         """
         
   subset: last_success
@@ -744,7 +744,7 @@
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        you will have two $inputs:inputs$ a $list:list$ of $lists:lists$ and the tax rate. for every $list:list$ in the $list:list$ of $lists:lists$ multiply the second and third $key:item$ and $insert:add$ all of them and then multiply that by the sales tax plus 1. if the resulting number has more than two decimal places shorten it to two decimal places.
+        you will have two $parameters:inputs$ a $list:list$ of $lists:lists$ and the tax rate. for every $list:list$ in the $list:list$ of $lists:lists$ multiply the second and third item and add all of them and then multiply that by the sales tax plus 1. if the resulting number has more than two decimal places shorten it to two decimal places.
         """
         
   subset: last_success
@@ -768,7 +768,7 @@
   prompt: |-
     def translate(lexicon,sentence):
         """
-        for the function above, you use a $dictionary:dictionary$ and a sentence. for each $string:word$ in the sentence you $take:get$ the corresponding value from the $dictionary:dictionary$ and $concatenate:concatenate$. if the $string:word$ is not in the $dictionary:dictionary$ you $concatenate:concatenate$ the $string:word$ UNK.
+        for the function above, you use a $dictionary:dictionary$ and a sentence. for each word in the sentence you get the corresponding value from the $dictionary:dictionary$ and $concatenate:concatenate$. if the word is not in the $dictionary:dictionary$ you $concatenate:concatenate$ the $string:word$ UNK.
         """
         
   subset: first_success
@@ -785,7 +785,7 @@
   prompt: |-
     def topScores(lst):
         """
-        This function has a $list:list$ of $lists:lists$ of length 2 as $inputs:inputs$. First, sort the $lists:lists$ by the first $key:entry$ in descending order. If the first $key:entry$ in the $list:list$ (the score) is greater than or equal to 80, $insert:add$ the second $key:entry$ in the $list:list$ (the name) to a $list:list$ to be $return:output$ at the end. 
+        This function has a $list:list$ of $lists:lists$ of length 2 as $parameters:inputs$. First, sort the $lists:lists$ by the first entry in descending order. If the first entry in the $list:list$ (the score) is greater than or equal to 80, $insert:add$ the second entry in the $list:list$ (the name) to a $list:list$ to be $returned:output$ at the end. 
         """
         
   subset: last_failure
@@ -802,7 +802,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        there are two $lists:lists$, both with $strings:strings$. you should use a nested for loop to $concatenate:concatenate$ the two $strings:strings$ and then $insert:add$ them to a $list:list$ in decreasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). "J" is smaller than "Q", which is smaller than "A". suit $takes:takes$ precedence over rank. when you $concatenate:concatenate$ the letter should be before the number. 
+        there are two $lists:lists$, both with $strings:strings$. you should use a nested for loop to $concatenate:concatenate$ the two $strings:strings$ and then $insert:add$ them to a $list:list$ in decreasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). "J" is smaller than "Q", which is smaller than "A". suit takes precedence over rank. when you $concatenate:concatenate$ the letter should be before the number. 
 
         """
         
@@ -820,7 +820,7 @@
   prompt: |-
     def reverseWords(words):
         """
-        This function reverses the order of every $string:string$ in $strings:words$, then alphabetizes the resulting $list:list$. 
+        This function reverses the order of every $string:string$ in words, then alphabetizes the resulting $list:list$. 
         """
         
   subset: first_success
@@ -837,7 +837,7 @@
   prompt: |-
     def percentWin(guess,answers):
         """
-        $Insert:Add$ the $keys:items$ in guess and answers together, find out which value different than others and $take:get$ its counts. Divid the sum number of $keys:items$ in guess and answers by the number of the different value. $Return:Return$ the value in percent after divided. If the different $keys:items$ same as other $keys:items$ in both guess and answers, then $return:return$ "100%"
+        Add the items in guess and answers together, find out which value different than others and get its counts. Divid the sum number of items in guess and answers by the number of the different value. $Return:Return$ the value in percent after divided. If the different items same as other items in both guess and answers, then $return:return$ "100%"
         """
         
   subset: first_failure
@@ -872,7 +872,7 @@
   prompt: |-
     def exp(lst, val):
         """
-        For each $key:element$ in lst, this function raises the $key:element$ to the power of val and $returns:returns$ the resulting $list:list$
+        For each element in lst, this function raises the element to the power of val and $returns:returns$ the resulting $list:list$
         """
         
   subset: last_success

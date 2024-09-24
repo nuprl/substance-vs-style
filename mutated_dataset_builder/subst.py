@@ -122,7 +122,9 @@ def substitute_prompt(prompt: str, category: str, value: str):
     category_variations = CATEGORIES_V[category]
 
     # Regex pattern to match $CATEGORY:ORIGINAL$
-    pattern = re.compile(r"\$(\w+):([\w\s]+)\$")
+    # pattern = re.compile(r"\$(\w+):([\w\s]+)\$")
+    pattern = re.compile(r"\$([\w\s]+):([\w\s]+)\$")
+
     
     changed = False
     # Iterate over all matches in the example string
@@ -162,8 +164,8 @@ def main_with_args(original_dataset: str, output_path: Path,category: str, value
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--original_dataset", type=str, default="nuprl-staging/studenteval_tagged_prompts")
-    parser.add_argument("--output_path", type=Path, default=Path("subst_prompts_concatenate_append.jsonl"))
-    parser.add_argument("--category", type=str, default="concatenate")
+    parser.add_argument("--output_path", type=Path, default=Path("subst_prompts_insert_append.jsonl"))
+    parser.add_argument("--category", type=str, default="insert")
     parser.add_argument("--value", type=str, default="append")
     args = parser.parse_args()
     main_with_args(args.original_dataset, args.output_path, args.category, args.value)

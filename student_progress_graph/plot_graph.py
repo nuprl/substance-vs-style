@@ -4,6 +4,7 @@ for each problem
 """
 from re import M
 from tqdm import tqdm
+from functools import partial
 from typing import Union
 import argparse
 import yaml
@@ -18,6 +19,7 @@ import json
 import gravis
 import random
 import numpy as np
+import re
 np.random.seed(42)
 random.seed(42)
 
@@ -122,7 +124,7 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
             stdout_text = "_no_stdout_"
         G.add_node(i, 
                    stderr_id=stderr_id, 
-                   stdout_id=stdout_id, 
+                   stdout_id=stdout_id,
                    hover=f"stdout:\n{stdout_text}\nstderr:\n{stderr_text}",
                    color=STD_NODE_COLOR,)
         legend["nodes"][i] = {
@@ -158,11 +160,12 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
                 color=color,
                 arrow_color=color,
                 username=student_name,
-                hover=f"username:{student_name}\nedge: ({node_from}->{node_to})\ndiff:" + 
-                        f"\n{diff}\n\nFROM completion:\n{student_data['prompt'][i]}"+
-                        f"    {student_data['completion'][i]}" + 
+                hover=f"username:{student_name}\nedge: ({node_from}->{node_to})\n" +
+                        f"attempt_num:{student_data['attempt_id'][i+1]}/{max(student_data['attempt_id'])}"+
+                        f"\ndiff:\n{diff}\n\nFROM completion:\n{student_data['prompt'][i]}"+
+                        f"{student_data['completion'][i]}" + 
                         f"\n\nTO completion:\n{student_data['prompt'][i+1]}"+
-                        f"    {student_data['completion'][i+1]}")
+                        f"{student_data['completion'][i+1]}")
             legend["edges"][edge_label] = diff
             
             if i == len(student_data["edges"]) - 1:
@@ -245,8 +248,32 @@ def draw_multidigraph(G, legend, save_to):
         bbox={"alpha": 0},
         ax=ax,
     )
-    gravis_fmt = gravis.convert.networkx_to_gjgf(G)
-    fig = gravis.d3(data=gravis_fmt,edge_curvature=0.4,
+    
+    # data selection
+    
+    edge_colors = nx.get_edge_attributes(G, "color")
+    node_attributes = nx.get_edge_attributes(G, "color")
+    def has_color(u, v, i, color=None, edge_colors=None):
+        return edge_colors[(u,v,i)] == color
+    
+    def has_status(node, status = [], node_attributes=None):
+        or_conds = []
+        for stat in status:
+            or_conds.append(node_attributes[node] == stat)
+        return any(or_conds)
+    
+    student_graphs = []
+    for student, color in legend["student_color"].items():
+        subgraph = nx.subgraph_view(G, filter_edge= partial(has_color, 
+                                                     color=color,
+                                                     edge_colors=edge_colors))
+        subgraph = nx.MultiDiGraph(subgraph, label=student)
+        student_graphs.append(
+            subgraph
+        )
+        
+    graphs = [G, *student_graphs]
+    fig = gravis.d3(data=graphs,edge_curvature=0.4,
             node_hover_tooltip=True,
             edge_hover_tooltip=True,
             graph_height=700, zoom_factor=2.5,
@@ -275,6 +302,38 @@ def to_yaml_fmt(legend):
 
     return legend
 
+def crop_stderr(stderr):
+    assert isinstance(stderr, str), stderr
+    if "Error" in stderr:
+        stderr_err = stderr.strip().split("\n")[-1].split("Error:")[0].strip()
+        return stderr_err + stderr.split(stderr_err)[-1]
+    else:
+        return stderr
+    
+def apply_crop_stderr(stderr):
+    if isinstance(stderr, list):
+        return list(map(crop_stderr, stderr))
+    elif isinstance(stderr, str):
+        return crop_stderr(stderr)
+    else:
+        raise ValueError(f"Found type {type(stderr)}")
+    
+def cluster_by_error(data):
+    for prob_k, prob_v in data.items():
+        if "stderr" in prob_v.keys():
+            for i, item in enumerate(prob_v["stderr"]):
+                data[prob_k]["stderr"][i] = apply_crop_stderr(item)
+        else:
+            for student_name, student_data in prob_v.items():
+                for i, item in enumerate(student_data["stderr"]):
+                    data[prob_k][student_name]["stderr"][i] = apply_crop_stderr(item)
+                for i,edge in enumerate(student_data["edges"]):
+                    data[prob_k][student_name]["edges"][i][0] = [edge[0][0], 
+                                                                 apply_crop_stderr(edge[0][1])]
+                    data[prob_k][student_name]["edges"][i][1] = [edge[1][0], 
+                                                                 apply_crop_stderr(edge[1][1])]
+    return data
+
 def main(args):
     with open(args.clusters_yaml,"r") as fp:
         clusters = yaml.safe_load(fp)
@@ -283,10 +342,14 @@ def main(args):
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
     
+    if args.cluster_errors:
+        clusters = cluster_by_error(clusters)
+        trajectories = cluster_by_error(trajectories)
+    
     for problem in tqdm(clusters.keys(), desc="Plotting problem"):
         if args.problems and not problem in args.problems:
             continue
-        graph = nx.MultiDiGraph()
+        graph = nx.MultiDiGraph(label=problem)
         graph, legend = problem_graph(graph, clusters[problem], trajectories[problem])
         with open(f"{args.outdir}/{problem}_legend.yaml", "w") as fp:
             yaml_legend = to_yaml_fmt(legend)
@@ -306,5 +369,6 @@ if __name__=="__main__":
     parser.add_argument("trajectories_yaml")
     parser.add_argument("outdir")
     parser.add_argument("--problems",nargs="+", default=None)
+    parser.add_argument("--cluster-errors", action="store_true")
     args = parser.parse_args()
     main(args)

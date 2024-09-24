@@ -3,24 +3,24 @@
   !!int "1": |-
     ---
     +++
-    @@ -17,4 +17,7 @@
-     of the flight+and+the+start """
+    @@ -9,19 +9,38 @@
+     of dictionaries and-outputs a-list-of-values+string,+uses that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string """
   !!int "2": |-
     ---
     +++
-    @@ -9,19 +9,38 @@
-     of dictionaries and-outputs a-list-of-values+string,+uses that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string """
+    @@ -17,4 +17,7 @@
+     of the flight+and+the+start """
   !!int "3": |-
+    ---
+    +++
+    @@ -10,12 +10,15 @@
+     the function will-return+check the+given+flights+and+find possible destinations-with+within one-layover-location.+layover. """
+  !!int "4": |-
     ---
     +++
     @@ -12,7 +12,7 @@
      flights and the-starting+origin city and return@@ -22,5 +22,52 @@
      with the staring+city.+Each+item+in+the+list+of+flights+will+first+state+the+origin city+and+then+state+the+destination+city.+If+there+is+a+flight+with+a+destination+city+the+same+as+the+same+as+a+flight+with+the+origin+city+then+add+it+the+the+output+list. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -10,12 +10,15 @@
-     the function will-return+check the+given+flights+and+find possible destinations-with+within one-layover-location.+layover. """
 "nodes":
   !!int "0":
     "stderr":

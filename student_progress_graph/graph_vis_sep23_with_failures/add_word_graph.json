@@ -28,29 +28,29 @@
     "adjacency": [
         [
             {
-                "diff": 7,
+                "diff": 6,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student10",
-                "hover": "username:student10\n\ndiff:\n--- \n+++ \n@@ -63,4 +63,8 @@\n as a value.+Returns+an+updated+map. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Function would check if the string word is a key in the dictionary map. If word is in map, add line_number to the list in the value side of the dictionary. If the word is not in the dictionary, add it as a new key, and add the line_number as the first item of a new list as a value.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Function would check if the string word is a key in the dictionary map. If word is in map, add line_number to the list in the value side of the dictionary. If the word is not in the dictionary, add it as a new key, and add the line_number as the first item of a new list as a value. Returns an updated map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
+                "hover": "username:student10\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -63,4 +63,8 @@\n as a value.+Returns+an+updated+map. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Function would check if the string word is a key in the dictionary map. If word is in map, add line_number to the list in the value side of the dictionary. If the word is not in the dictionary, add it as a new key, and add the line_number as the first item of a new list as a value.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Function would check if the string word is a key in the dictionary map. If word is in map, add line_number to the list in the value side of the dictionary. If the word is not in the dictionary, add it as a new key, and add the line_number as the first item of a new list as a value. Returns an updated map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 9,
+                "diff": 2,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student25",
-                "hover": "username:student25\n\ndiff:\n--- \n+++ \n@@ -32,4 +32,9 @@\n in the dictionary.+The+function+returns+the+dictionary. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    This function adds the input \"word\" and \"line_number to the dictionary \"map\". \"word\" is the key and \"line_number\" is the value. \"line_number\" will be a list in the dictionary.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    This function adds the input \"word\" and \"line_number to the dictionary \"map\". \"word\" is the key and \"line_number\" is the value. \"line_number\" will be a list in the dictionary. The function returns the dictionary.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
+                "hover": "username:student25\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -32,4 +32,9 @@\n in the dictionary.+The+function+returns+the+dictionary. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    This function adds the input \"word\" and \"line_number to the dictionary \"map\". \"word\" is the key and \"line_number\" is the value. \"line_number\" will be a list in the dictionary.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    This function adds the input \"word\" and \"line_number to the dictionary \"map\". \"word\" is the key and \"line_number\" is the value. \"line_number\" will be a list in the dictionary. The function returns the dictionary.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 8,
+                "diff": 9,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student4",
-                "hover": "username:student4\n\ndiff:\n--- \n+++ \n@@ -22,5 +22,9 @@\n line_number as the-value+value,+returns+the+appended+dictionary \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    adds the word and line number to a dictionary, with the word as the key and line_number as the value \n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    adds the word and line number to a dictionary, with the word as the key and line_number as the value, returns the appended dictionary\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
+                "hover": "username:student4\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -22,5 +22,9 @@\n line_number as the-value+value,+returns+the+appended+dictionary \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    adds the word and line number to a dictionary, with the word as the key and line_number as the value \n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    adds the word and line number to a dictionary, with the word as the key and line_number as the value, returns the appended dictionary\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n",
                 "id": 1,
                 "key": 2
             },
@@ -59,16 +59,16 @@
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student41",
-                "hover": "username:student41\n\ndiff:\n--- \n+++ \n@@ -13,7 +13,6 @@\n with the given-line number as a@@ -22,4 +21,8 @@\n the inputted dictionary.+Returns+the+new+dictionary. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Adds the given word as a key with the given line number as a value to the inputted dictionary.\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Adds the given word as a key with the given number as a value to the inputted dictionary. Returns the new dictionary.\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return map\n",
+                "hover": "username:student41\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -13,7 +13,6 @@\n with the given-line number as a@@ -22,4 +21,8 @@\n the inputted dictionary.+Returns+the+new+dictionary. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Adds the given word as a key with the given line number as a value to the inputted dictionary.\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Adds the given word as a key with the given number as a value to the inputted dictionary. Returns the new dictionary.\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return map\n",
                 "id": 1,
                 "key": 3
             },
             {
-                "diff": 2,
+                "diff": 7,
                 "color": "#7fff00",
                 "arrow_color": "#7fff00",
                 "username": "student51",
-                "hover": "username:student51\n\ndiff:\n--- \n+++ \n@@ -17,5 +17,7 @@\n number as the-value+value.+Return+map. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add to the dictionary with word as the key and line number as the value\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add to the dictionary with word as the key and line number as the value. Return map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n\n",
+                "hover": "username:student51\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -17,5 +17,7 @@\n number as the-value+value.+Return+map. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add to the dictionary with word as the key and line number as the value\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add to the dictionary with word as the key and line number as the value. Return map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n    return map\n\n",
                 "id": 1,
                 "key": 4
             },
@@ -77,16 +77,16 @@
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student17",
-                "hover": "username:student17\n\ndiff:\n\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    input: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    input: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n",
+                "hover": "username:student17\nedge: (0->0)\ndiff:\n\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    input: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    input: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n",
                 "id": 0,
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 10,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student3",
-                "hover": "username:student3\n\ndiff:\n--- \n+++ \n@@ -15,24 +15,18 @@\n and map (dict).-In-map-dictionary add new-element-of-dictionary-with key-are+name word-which-given-the+and+its corresponding list of-line-number+line_number+into+the+map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). In map dictionary add new element of dictionary with key are word which given the corresponding list of line number\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). add new key name word and its corresponding list of line_number into the map\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n",
+                "hover": "username:student3\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -15,24 +15,18 @@\n and map (dict).-In-map-dictionary add new-element-of-dictionary-with key-are+name word-which-given-the+and+its corresponding list of-line-number+line_number+into+the+map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). In map dictionary add new element of dictionary with key are word which given the corresponding list of line number\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). add new key name word and its corresponding list of line_number into the map\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n",
                 "id": 0,
                 "key": 1
             },
@@ -95,25 +95,25 @@
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student3",
-                "hover": "username:student3\n\ndiff:\n--- \n+++ \n@@ -15,18 +15,11 @@\n and map (dict).-add+In+map+dictionary+create new key-name word-and-its-corresponding-list-of-line_number-into-the-map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). add new key name word and its corresponding list of line_number into the map\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). In map dictionary create new key word\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n",
+                "hover": "username:student3\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -15,18 +15,11 @@\n and map (dict).-add+In+map+dictionary+create new key-name word-and-its-corresponding-list-of-line_number-into-the-map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). add new key name word and its corresponding list of line_number into the map\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    create a function with 3 input word(string), line_number (int) and map (dict). In map dictionary create new key word\n    \"\"\"\n        if word not in map:\n        map[word] = []\n    map[word].append(line_number)\n",
                 "id": 0,
                 "key": 2
             },
             {
-                "diff": 5,
+                "diff": 4,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student30",
-                "hover": "username:student30\n\ndiff:\n--- \n+++ \n@@ -3,11 +3,38 @@\n line_number, map): \"\"\"-Add+If word-and-line-number+is+already+present+in+map,+add+line_number to+the+array+corresponding+to+the+\"word\"+key+in map.+Otherwise,+add+line_number+as+a+new+value+to+map,+with+word+as+its+corresponding+key. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add word and line number to map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    If word is already present in map, add line_number to the array corresponding to the \"word\" key in map. \n\nOtherwise, add line_number as a new value to map, with word as its corresponding key.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n",
+                "hover": "username:student30\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -3,11 +3,38 @@\n line_number, map): \"\"\"-Add+If word-and-line-number+is+already+present+in+map,+add+line_number to+the+array+corresponding+to+the+\"word\"+key+in map.+Otherwise,+add+line_number+as+a+new+value+to+map,+with+word+as+its+corresponding+key. \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    Add word and line number to map.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    If word is already present in map, add line_number to the array corresponding to the \"word\" key in map. \n\nOtherwise, add line_number as a new value to map, with word as its corresponding key.\n    \"\"\"\n        if word in map:\n        map[word].append(line_number)\n    else:\n        map[word] = [line_number]\n",
                 "id": 0,
                 "key": 3
             },
             {
-                "diff": 4,
+                "diff": 5,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student21",
-                "hover": "username:student21\n\ndiff:\n--- \n+++ \n@@ -32,5 +32,7 @@\n number to the+word.+return word \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word \n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return word\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return word\n",
+                "hover": "username:student21\nedge: (0->2)\ndiff:\n--- \n+++ \n@@ -32,5 +32,7 @@\n number to the+word.+return word \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word \n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return word\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return word\n",
                 "id": 2,
                 "key": 0
             }
@@ -121,11 +121,11 @@
         [],
         [
             {
-                "diff": 10,
+                "diff": 8,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student21",
-                "hover": "username:student21\n\ndiff:\n--- \n+++ \n@@ -34,5 +34,5 @@\n the word. return-word+map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return word\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return word\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return map\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return map\n",
+                "hover": "username:student21\nedge: (2->1)\ndiff:\n--- \n+++ \n@@ -34,5 +34,5 @@\n the word. return-word+map \"\"\"\n\nFROM completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return word\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return word\n\n\nTO completion:\ndef add_word(word, line_number, map):\n    \"\"\"\n    if word isn't in map, add the word and number to map, following the format in map. if the word is in map already, add the number to the word. return map\n    \"\"\"\n        if word not in map:\n        map[word] = [line_number]\n    else:\n        map[word].append(line_number)\n    return map\n",
                 "id": 1,
                 "key": 0
             }

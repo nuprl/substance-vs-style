@@ -2,39 +2,39 @@
   !!int "0": |-
     ---
     +++
-    @@ -20,14 +20,7 @@
-     vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital
+    @@ -7,8 +7,5 @@
+     a list of-all vowels-that-appear """
   !!int "1": |-
     ---
     +++
-    @@ -7,8 +7,5 @@
-     a list of-all vowels-that-appear """
+    @@ -10,5 +10,11 @@
+     string in a-list+list,+including+capital+and+lower+case+letters """
   !!int "2": |-
-    ---
-    +++
-    @@ -28,4 +28,11 @@
-     were originally written.+include+both+capital+and+lower+case+letters. """
-  !!int "3": |-
-    ---
-    +++
-    @@ -22,6 +22,22 @@
-     in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
-  !!int "4": |-
     ---
     +++
     @@ -7,12 +7,8 @@
      of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@
      them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. """
+  !!int "3": |-
+    ---
+    +++
+    @@ -17,6 +17,8 @@
+     the same order+including+capitalizations (repetitions ok) """
+  !!int "4": |-
+    ---
+    +++
+    @@ -4,18 +4,6 @@
+     This function prints-a-list-of all-"a",-"e",-"I",-or-"u"-that-appear-in-the-input+vowels """
   !!int "5": |-
     ---
     +++
-    @@ -13,4 +13,10 @@
-     in the input+in+the+same+order+(repetitions+ok) """
+    @@ -20,14 +20,7 @@
+     vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital
   !!int "6": |-
     ---
     +++
-    @@ -4,6 +4,11 @@
-     This function prints+a+list+of all vowels+that+appear """
+    @@ -3,7 +3,7 @@
+     """ This function-pints+prints a list containing
   !!int "7": |-
     ---
     +++
@@ -43,43 +43,43 @@
   !!int "8": |-
     ---
     +++
-    @@ -17,6 +17,8 @@
-     the same order+including+capitalizations (repetitions ok) """
+    @@ -6,12 +6,16 @@
+     prints a list-containing-strings of-every-vowel-from+all+"a",+"e",+"I",+or+"u"+that+appear+in the input """
   !!int "9": |-
     ---
     +++
-    @@ -3,7 +3,7 @@
-     """ This function-pints+prints a list containing
+    @@ -4,6 +4,11 @@
+     This function prints+a+list+of all vowels+that+appear """
   !!int "10": |-
     ---
     +++
-    @@ -6,12 +6,16 @@
-     prints a list-containing-strings of-every-vowel-from+all+"a",+"e",+"I",+or+"u"+that+appear+in the input """
+    @@ -22,6 +22,22 @@
+     in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
   !!int "11": |-
     ---
     +++
-    @@ -4,18 +4,6 @@
-     This function prints-a-list-of all-"a",-"e",-"I",-or-"u"-that-appear-in-the-input+vowels """
+    @@ -28,4 +28,11 @@
+     were originally written.+include+both+capital+and+lower+case+letters. """
   !!int "12": |-
-    ---
-    +++
-    @@ -10,7 +10,7 @@
-     strings of every-value+vowel from the input
-  !!int "13": |-
-    ---
-    +++
-    @@ -10,5 +10,11 @@
-     string in a-list+list,+including+capital+and+lower+case+letters """
-  !!int "14": |-
     ---
     +++
     @@ -6,9 +6,22 @@
      a string and+checks+for+uppercase+and+lowercase+vowels+and returns a list of-vowels+those+uppercase+and+lowercase+vowels,+if+any """
-  !!int "15": |-
+  !!int "13": |-
+    ---
+    +++
+    @@ -10,7 +10,7 @@
+     strings of every-value+vowel from the input
+  !!int "14": |-
     ---
     +++
     @@ -8,7 +8,13 @@
      characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
+  !!int "15": |-
+    ---
+    +++
+    @@ -13,4 +13,10 @@
+     in the input+in+the+same+order+(repetitions+ok) """
 "nodes":
   !!int "0":
     "stderr":

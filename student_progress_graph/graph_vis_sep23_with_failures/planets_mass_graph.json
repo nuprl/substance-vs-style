@@ -154,64 +154,64 @@
     "adjacency": [
         [
             {
-                "diff": 22,
+                "diff": 9,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
-                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -2,33 +2,19 @@\n planets_mass(planets): \"\"\" if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if the number attached to each planet name is greater than 16, get rid of it. Add up the remaining numbers attached to each planet that are less than 16\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet[1] > 16:\n            continue\n        total += planet[1]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if planet mass is less than 16, add up the total planet mass in each bracket\n    \"\"\"\n        mass_16 = 0\n    mass_32 = 0\n    mass_64 = 0\n    mass_128 = 0\n    mass_256 = 0\n    mass_512 = 0\n    mass_1024 = 0\n    mass_2048 = 0\n    mass_4096 = 0\n    mass_8192 = 0\n    mass_16384 = 0\n    mass_32768 = 0\n    mass_65536 = 0\n    mass_",
+                "hover": "username:student14\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -2,33 +2,19 @@\n planets_mass(planets): \"\"\" if-the-number-attached-to-each planet-name+mass is-greater+less than 16,-get-rid-of-it.-Add+add up the-remaining-numbers-attached-to+total+planet+mass+in each-planet-that-are-less-than-16+bracket \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if the number attached to each planet name is greater than 16, get rid of it. Add up the remaining numbers attached to each planet that are less than 16\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet[1] > 16:\n            continue\n        total += planet[1]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if planet mass is less than 16, add up the total planet mass in each bracket\n    \"\"\"\n        mass_16 = 0\n    mass_32 = 0\n    mass_64 = 0\n    mass_128 = 0\n    mass_256 = 0\n    mass_512 = 0\n    mass_1024 = 0\n    mass_2048 = 0\n    mass_4096 = 0\n    mass_8192 = 0\n    mass_16384 = 0\n    mass_32768 = 0\n    mass_65536 = 0\n    mass_",
                 "id": 1,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 11,
+                "diff": 6,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student14",
-                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -2,19 +2,12 @@\n planets_mass(planets): \"\"\" if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if planet mass is less than 16, add up the total planet mass in each bracket\n    \"\"\"\n        mass_16 = 0\n    mass_32 = 0\n    mass_64 = 0\n    mass_128 = 0\n    mass_256 = 0\n    mass_512 = 0\n    mass_1024 = 0\n    mass_2048 = 0\n    mass_4096 = 0\n    mass_8192 = 0\n    mass_16384 = 0\n    mass_32768 = 0\n    mass_65536 = 0\n    mass_\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in the string, output is 15\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n",
+                "hover": "username:student14\nedge: (1->2)\ndiff:\n--- \n+++ \n@@ -2,19 +2,12 @@\n planets_mass(planets): \"\"\" if-planet-mass+'sun' is-less-than-16,-add-up+in the-total-planet-mass-in-each-bracket+string,+output+is+15 \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if planet mass is less than 16, add up the total planet mass in each bracket\n    \"\"\"\n        mass_16 = 0\n    mass_32 = 0\n    mass_64 = 0\n    mass_128 = 0\n    mass_256 = 0\n    mass_512 = 0\n    mass_1024 = 0\n    mass_2048 = 0\n    mass_4096 = 0\n    mass_8192 = 0\n    mass_16384 = 0\n    mass_32768 = 0\n    mass_65536 = 0\n    mass_\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in the string, output is 15\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n",
                 "id": 2,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student14",
-                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -5,9 +5,11 @@\n 'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in the string, output is 15\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n",
-                "id": 2,
-                "key": 0
-            },
-            {
-                "diff": 7,
-                "color": "#d83034",
-                "arrow_color": "#d83034",
-                "username": "student14",
-                "hover": "username:student14\n\ndiff:\n--- \n+++ \n@@ -2,7 +2,7 @@\n planets_mass(planets): \"\"\" if-'sun'+'Sun' is in planets,\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'Sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'Sun' in planets:\n        return 15\n    else:\n        return 0\n",
-                "id": 3,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 17,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student14",
+                "hover": "username:student14\nedge: (2->2)\ndiff:\n--- \n+++ \n@@ -5,9 +5,11 @@\n 'sun' is in-the-string,+planets, output is-15+15.+else,+output+0 \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in the string, output is 15\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n",
+                "id": 2,
+                "key": 0
+            },
+            {
+                "diff": 16,
+                "color": "#d83034",
+                "arrow_color": "#d83034",
+                "username": "student14",
+                "hover": "username:student14\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -2,7 +2,7 @@\n planets_mass(planets): \"\"\" if-'sun'+'Sun' is in planets,\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'sun' in planets:\n        return 15\n    else:\n        return 0\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    if 'Sun' is in planets, output is 15. else, output 0\n    \"\"\"\n        if 'Sun' in planets:\n        return 15\n    else:\n        return 0\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 24,
                 "color": "#ff7f50",
                 "arrow_color": "#ff7f50",
                 "username": "student9",
-                "hover": "username:student9\n\ndiff:\n--- \n+++ \n@@ -16,10 +16,4 @@\n is a planet.-'Sun'-and-'Pluto'-are-not-planets. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function add together each number that corresponds with a string that is a planet. 'Sun' and 'Pluto' are not planets.\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total_mass += planets[planet]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function add together each number that corresponds with a string that is a planet.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n\n",
+                "hover": "username:student9\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -16,10 +16,4 @@\n is a planet.-'Sun'-and-'Pluto'-are-not-planets. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function add together each number that corresponds with a string that is a planet. 'Sun' and 'Pluto' are not planets.\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total_mass += planets[planet]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function add together each number that corresponds with a string that is a planet.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n\n",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 3,
+                "diff": 5,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student24",
-                "hover": "username:student24\n\ndiff:\n--- \n+++ \n@@ -5,6 +5,7 @@\n each item in+the dictionary, add the@@ -17,10 +18,9 @@\n name is in-the-dictionary-for-planets.+a+different+dictionary. Return the sum\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in dictionary, add the values from that name if the name is in the dictionary for planets. Return the sum of those values.\n    \"\"\"\n        total_mass = 0\n    for name in planets:\n        if name in planets:\n            total_mass += planets[name]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name if the name is in a different dictionary. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet in planet_mass:\n            mass += planet_mass[planet]\n    return mass\n",
+                "hover": "username:student24\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -5,6 +5,7 @@\n each item in+the dictionary, add the@@ -17,10 +18,9 @@\n name is in-the-dictionary-for-planets.+a+different+dictionary. Return the sum\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in dictionary, add the values from that name if the name is in the dictionary for planets. Return the sum of those values.\n    \"\"\"\n        total_mass = 0\n    for name in planets:\n        if name in planets:\n            total_mass += planets[name]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name if the name is in a different dictionary. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet in planet_mass:\n            mass += planet_mass[planet]\n    return mass\n",
                 "id": 5,
                 "key": 0
             },
@@ -220,164 +220,164 @@
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student46",
-                "hover": "username:student46\n\ndiff:\n\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        # remove all keys that are not planets\n    for key in planets.keys():\n        if key[0] != key[0].upper():\n            del planets[key]\n    # add all the values together\n    total = 0\n    for value in planets.values():\n        total += value\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        for key in planets:\n        if key[0].isupper() == False:\n            del planets[key]\n    mass = 0\n    for key in planets:\n        mass += planets[key]\n    return mass\n",
+                "hover": "username:student46\nedge: (4->4)\ndiff:\n\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        # remove all keys that are not planets\n    for key in planets.keys():\n        if key[0] != key[0].upper():\n            del planets[key]\n    # add all the values together\n    total = 0\n    for value in planets.values():\n        total += value\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        for key in planets:\n        if key[0].isupper() == False:\n            del planets[key]\n    mass = 0\n    for key in planets:\n        mass += planets[key]\n    return mass\n",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 19,
+                "diff": 15,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
-                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -40,4 +40,16 @@\n the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses.\n    \"\"\"\n        return sum(planets.values())\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses. The sun and pluto are not planets, so they cannot be added.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet != \"sun\" and planet != \"pluto\":\n            mass += planets[planet]\n    return mass\n",
+                "hover": "username:student55\nedge: (4->4)\ndiff:\n--- \n+++ \n@@ -40,4 +40,16 @@\n the planets' masses.+The+sun+and+pluto+are+not+planets,+so+they+cannot+be+added. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses.\n    \"\"\"\n        return sum(planets.values())\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses. The sun and pluto are not planets, so they cannot be added.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet != \"sun\" and planet != \"pluto\":\n            mass += planets[planet]\n    return mass\n",
                 "id": 4,
                 "key": 1
             },
             {
-                "diff": 2,
+                "diff": 7,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student46",
-                "hover": "username:student46\n\ndiff:\n--- \n+++ \n@@ -12,12 +12,7 @@\n the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        for key in planets:\n        if key[0].isupper() == False:\n            del planets[key]\n    mass = 0\n    for key in planets:\n        mass += planets[key]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == \"Mercury\" or planet == \"Venus\" or planet == \"Earth\" or planet == \"Mars\" or planet == \"Jupiter\" or planet == \"Saturn\" or planet == \"Uranus\" or planet == \"Neptune\":\n            total += planets[planet]\n    return total\n",
+                "hover": "username:student46\nedge: (4->3)\ndiff:\n--- \n+++ \n@@ -12,12 +12,7 @@\n the keys are-strings,-with-the-first-letter-capitalized,+strings and integers are\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings, with the first letter capitalized, and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        for key in planets:\n        if key[0].isupper() == False:\n            del planets[key]\n    mass = 0\n    for key in planets:\n        mass += planets[key]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    The function will take in a dictionary where the keys are strings and integers are stored inside them. It will remove any strings that are not associated with planets, then it will take all the integers stored inside and add them together and output that.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == \"Mercury\" or planet == \"Venus\" or planet == \"Earth\" or planet == \"Mars\" or planet == \"Jupiter\" or planet == \"Saturn\" or planet == \"Uranus\" or planet == \"Neptune\":\n            total += planets[planet]\n    return total\n",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 4,
+                "diff": 18,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
-                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -40,4 +40,11 @@\n returns the total.+The+sun+and+pluto+are+not+planets. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total. The sun and pluto are not planets.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet != \"Sun\" and planet != \"Pluto\":\n            total += planets[planet]\n    return total\n",
+                "hover": "username:student55\nedge: (4->3)\ndiff:\n--- \n+++ \n@@ -40,4 +40,11 @@\n returns the total.+The+sun+and+pluto+are+not+planets. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total. The sun and pluto are not planets.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet != \"Sun\" and planet != \"Pluto\":\n            total += planets[planet]\n    return total\n",
                 "id": 3,
                 "key": 1
             },
             {
-                "diff": 14,
+                "diff": 1,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
-                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -7,49 +7,19 @@\n that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses. The sun and pluto are not planets, so they cannot be added.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet != \"sun\" and planet != \"pluto\":\n            mass += planets[planet]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The function should sum up the masses of the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]['mass']\n    return total\n\n",
+                "hover": "username:student55\nedge: (4->11)\ndiff:\n--- \n+++ \n@@ -7,49 +7,19 @@\n that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary. The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary of planets and their masses. All the planets masses in a dictionary using the name of the planet as the key. The function should return the sum of all the planets' masses. The sun and pluto are not planets, so they cannot be added.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet != \"sun\" and planet != \"pluto\":\n            mass += planets[planet]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The function should sum up the masses of the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]['mass']\n    return total\n\n",
                 "id": 11,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 10,
+                "diff": 13,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student24",
-                "hover": "username:student24\n\ndiff:\n--- \n+++ \n@@ -13,6 +13,8 @@\n from that name+in+planets if the name@@ -20,7 +22,11 @@\n in a different-dictionary.+dictionary+and+and+in+planets. Return the sum\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name if the name is in a different dictionary. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet in planet_mass:\n            mass += planet_mass[planet]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name in planets if the name is in a different dictionary and and in planets. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for name in planets:\n        if name in planets:\n            mass += planets[name]\n    return mass\n",
+                "hover": "username:student24\nedge: (5->4)\ndiff:\n--- \n+++ \n@@ -13,6 +13,8 @@\n from that name+in+planets if the name@@ -20,7 +22,11 @@\n in a different-dictionary.+dictionary+and+and+in+planets. Return the sum\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name if the name is in a different dictionary. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet in planet_mass:\n            mass += planet_mass[planet]\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary, add the values from that name in planets if the name is in a different dictionary and and in planets. Return the sum of those values.\n    \"\"\"\n        mass = 0\n    for name in planets:\n        if name in planets:\n            mass += planets[name]\n    return mass\n",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 8,
+                "diff": 23,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
-                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n up all the-numbers+floats associated with 'Venus'\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the numbers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Mercury']['mass'] + planets['Venus']['mass']\n\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the floats associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\n",
+                "hover": "username:student47\nedge: (6->7)\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n up all the-numbers+floats associated with 'Venus'\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the numbers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Mercury']['mass'] + planets['Venus']['mass']\n\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the floats associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\n",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 9,
+                "diff": 2,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
-                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n up all the-floats+integers associated with 'Venus'\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the floats associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Venus']['mass'] + planets['Mercury']['mass']\n",
+                "hover": "username:student47\nedge: (7->8)\ndiff:\n--- \n+++ \n@@ -5,7 +5,7 @@\n up all the-floats+integers associated with 'Venus'\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the floats associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return sum(planets['Venus']['mass']) + sum(planets['Mercury']['mass'])\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Venus']['mass'] + planets['Mercury']['mass']\n",
                 "id": 8,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 6,
+                "diff": 10,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
-                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -6,8 +6,15 @@\n all the integers+that+are associated with+with+a+string+that+is 'Venus' and 'Mercury'\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Venus']['mass'] + planets['Mercury']['mass']\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers that are associated with with a string that is 'Venus' and 'Mercury'\"\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\n            mass += planet['mass']\n    return mass\n",
+                "hover": "username:student47\nedge: (8->9)\ndiff:\n--- \n+++ \n@@ -6,8 +6,15 @@\n all the integers+that+are associated with+with+a+string+that+is 'Venus' and 'Mercury'\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n        return planets['Venus']['mass'] + planets['Mercury']['mass']\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers that are associated with with a string that is 'Venus' and 'Mercury'\"\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\n            mass += planet['mass']\n    return mass\n",
                 "id": 9,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 13,
+                "diff": 12,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student47",
-                "hover": "username:student47\n\ndiff:\n--- \n+++ \n@@ -1,21 +1,27 @@\n def planets_mass(planets): \"\"\"-\"add+\"go+through+the+0+index+of+the+planets+if+they+are+'Venus'+and+'Mercury',+add up-all the integers that are associated with-with-a-string-that-is-'Venus'-and-'Mercury'\"+them\" \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers that are associated with with a string that is 'Venus' and 'Mercury'\"\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\n            mass += planet['mass']\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"go through the 0 index of the planets if they are 'Venus' and 'Mercury', add up the integers that are associated with them\"\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet[0] == 'Venus' or planet[0] == 'Mercury':\n            total += planet[1]\n    return total\n",
+                "hover": "username:student47\nedge: (9->2)\ndiff:\n--- \n+++ \n@@ -1,21 +1,27 @@\n def planets_mass(planets): \"\"\"-\"add+\"go+through+the+0+index+of+the+planets+if+they+are+'Venus'+and+'Mercury',+add up-all the integers that are associated with-with-a-string-that-is-'Venus'-and-'Mercury'\"+them\" \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"add up all the integers that are associated with with a string that is 'Venus' and 'Mercury'\"\n    \"\"\"\n        mass = 0\n    for planet in planets:\n        if planet['name'] == 'Venus' or planet['name'] == 'Mercury':\n            mass += planet['mass']\n    return mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    \"go through the 0 index of the planets if they are 'Venus' and 'Mercury', add up the integers that are associated with them\"\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet[0] == 'Venus' or planet[0] == 'Mercury':\n            total += planet[1]\n    return total\n",
                 "id": 2,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 16,
+                "diff": 21,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student53",
-                "hover": "username:student53\n\ndiff:\n--- \n+++ \n@@ -7,24 +7,17 @@\n and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    loop through planets and if the element is == 'Venus' or 'Mercury' add value to a new list and return the sum of the new list. \n    \"\"\"\n        mass_list = []\n    for planet in planets:\n        if planet == 'Venus' or planet == 'Mercury':\n            mass_list.append(planets[planet]['mass'])\n    return sum(mass_list)\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    loop through planets and if the key == 'Venus' or 'Mercury' add the values together and return this value\n    \"\"\"\n        total_mass = 0\n    for key, value in planets.items():\n        if key == 'Venus' or key == 'Mercury':\n            total_mass += value\n    return total_mass\n",
+                "hover": "username:student53\nedge: (10->3)\ndiff:\n--- \n+++ \n@@ -7,24 +7,17 @@\n and if the-element-is+key == 'Venus' or 'Mercury' add-value-to-a-new-list+the+values+together and return-the-sum-of-the-new-list.+this+value \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    loop through planets and if the element is == 'Venus' or 'Mercury' add value to a new list and return the sum of the new list. \n    \"\"\"\n        mass_list = []\n    for planet in planets:\n        if planet == 'Venus' or planet == 'Mercury':\n            mass_list.append(planets[planet]['mass'])\n    return sum(mass_list)\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    loop through planets and if the key == 'Venus' or 'Mercury' add the values together and return this value\n    \"\"\"\n        total_mass = 0\n    for key, value in planets.items():\n        if key == 'Venus' or key == 'Mercury':\n            total_mass += value\n    return total_mass\n",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 21,
+                "diff": 3,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student55",
-                "hover": "username:student55\n\ndiff:\n--- \n+++ \n@@ -9,6 +9,23 @@\n a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@\n the masses of+only the planets and\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The function should sum up the masses of the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]['mass']\n    return total\n\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n",
+                "hover": "username:student55\nedge: (11->4)\ndiff:\n--- \n+++ \n@@ -9,6 +9,23 @@\n a dictionary. The+key+of+the+dictionary+is+the+name+of+the+planet+and+the+value+is+the+mass.+The function should sum@@ -16,6 +33,7 @@\n the masses of+only the planets and\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The function should sum up the masses of the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]['mass']\n    return total\n\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    Write a function that gets a dictionary. The key of the dictionary is the name of the planet and the value is the mass. The function should sum up the masses of only the planets and returns the total.\n    \"\"\"\n        total = 0\n    for planet in planets:\n        total += planets[planet]\n    return total\n",
                 "id": 4,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 15,
+                "diff": 4,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
-                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -6,17 +6,11 @@\n sum of the-integers.-If-the-integer-corresponds-to-strings+integers+unless+planet+=+'Sun'+or 'Pluto'-or-'Sun',-ignore-the-integer \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers. If the integer corresponds to strings 'Pluto' or 'Sun', ignore the integer\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Pluto' or planet == 'Sun':\n            continue\n        else:\n            total += planet\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planet = 'Sun' or 'Pluto'\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total += planet_mass[planet]\n    return total\n",
+                "hover": "username:student58\nedge: (12->13)\ndiff:\n--- \n+++ \n@@ -6,17 +6,11 @@\n sum of the-integers.-If-the-integer-corresponds-to-strings+integers+unless+planet+=+'Sun'+or 'Pluto'-or-'Sun',-ignore-the-integer \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers. If the integer corresponds to strings 'Pluto' or 'Sun', ignore the integer\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Pluto' or planet == 'Sun':\n            continue\n        else:\n            total += planet\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planet = 'Sun' or 'Pluto'\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total += planet_mass[planet]\n    return total\n",
                 "id": 13,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 18,
+                "diff": 20,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
-                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -8,7 +8,7 @@\n the integers unless-planet+planets = 'Sun' or\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planet = 'Sun' or 'Pluto'\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total += planet_mass[planet]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planets = 'Sun' or 'Pluto'\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return planets_mass_dict[planets]\n",
+                "hover": "username:student58\nedge: (13->14)\ndiff:\n--- \n+++ \n@@ -8,7 +8,7 @@\n the integers unless-planet+planets = 'Sun' or\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planet = 'Sun' or 'Pluto'\n    \"\"\"\n        total = 0\n    for planet in planets:\n        if planet == 'Sun' or planet == 'Pluto':\n            continue\n        total += planet_mass[planet]\n    return total\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planets = 'Sun' or 'Pluto'\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return planets_mass_dict[planets]\n",
                 "id": 14,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 12,
+                "diff": 11,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
-                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -1,16 +1,19 @@\n def planets_mass(planets): \"\"\"+If+planets+=+'Sun'+or+'Pluto',+return+0.+Else return the sum of the integers-unless-planets-=-'Sun'-or-'Pluto' \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planets = 'Sun' or 'Pluto'\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return planets_mass_dict[planets]\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else return the sum of the integers\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return sum(planets)\n",
+                "hover": "username:student58\nedge: (14->15)\ndiff:\n--- \n+++ \n@@ -1,16 +1,19 @@\n def planets_mass(planets): \"\"\"+If+planets+=+'Sun'+or+'Pluto',+return+0.+Else return the sum of the integers-unless-planets-=-'Sun'-or-'Pluto' \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    return the sum of the integers unless planets = 'Sun' or 'Pluto'\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return planets_mass_dict[planets]\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else return the sum of the integers\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return sum(planets)\n",
                 "id": 15,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 24,
+                "diff": 22,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student58",
-                "hover": "username:student58\n\ndiff:\n--- \n+++ \n@@ -10,10 +10,11 @@\n return 0. Else-return+add the-sum-of-the-integers+integer+to+x.+Return+x \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else return the sum of the integers\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return sum(planets)\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else add the integer to x. Return x\n    \"\"\"\n        x = 0\n    if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        x += planets\n        return x\n",
+                "hover": "username:student58\nedge: (15->16)\ndiff:\n--- \n+++ \n@@ -10,10 +10,11 @@\n return 0. Else-return+add the-sum-of-the-integers+integer+to+x.+Return+x \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else return the sum of the integers\n    \"\"\"\n        if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        return sum(planets)\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    If planets = 'Sun' or 'Pluto', return 0. Else add the integer to x. Return x\n    \"\"\"\n        x = 0\n    if planets == 'Sun' or planets == 'Pluto':\n        return 0\n    else:\n        x += planets\n        return x\n",
                 "id": 16,
                 "key": 0
             }
@@ -385,33 +385,33 @@
         [],
         [
             {
-                "diff": 1,
+                "diff": 19,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",
-                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -3,27 +3,7 @@\n \"\"\" This function-takes-a-dictionary.-If-an-entry-is-a-planet,-then-it-adds-the-key-to-the-total-mass.-The-output-is+returns the total mass@@ -31,6 +11,6 @@\n all planets in-the-dictionary.+a+dictionary \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes a dictionary. If an entry is a planet, then it adds the key to the total mass. The output is the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if planets[key][\"type\"] == \"planet\":\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function returns the total mass of all planets in a dictionary\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        total_mass += planets[planet]['mass']\n    return total_mass\n",
+                "hover": "username:student65\nedge: (17->18)\ndiff:\n--- \n+++ \n@@ -3,27 +3,7 @@\n \"\"\" This function-takes-a-dictionary.-If-an-entry-is-a-planet,-then-it-adds-the-key-to-the-total-mass.-The-output-is+returns the total mass@@ -31,6 +11,6 @@\n all planets in-the-dictionary.+a+dictionary \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes a dictionary. If an entry is a planet, then it adds the key to the total mass. The output is the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if planets[key][\"type\"] == \"planet\":\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function returns the total mass of all planets in a dictionary\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        total_mass += planets[planet]['mass']\n    return total_mass\n",
                 "id": 18,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 20,
+                "diff": 8,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",
-                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -3,7 +3,32 @@\n \"\"\" This function-returns+takes+the+input+of+a+dictionary.+If+the+key+is+a+planet,+it+takes+the+entry+and+adds+it+to+the+total+mass.+The+function+outputs the total mass@@ -11,6 +36,6 @@\n all planets in-a-dictionary+the+dictionary. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function returns the total mass of all planets in a dictionary\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        total_mass += planets[planet]['mass']\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is a planet, it takes the entry and adds it to the total mass. The function outputs the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if key in planets:\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n",
+                "hover": "username:student65\nedge: (18->19)\ndiff:\n--- \n+++ \n@@ -3,7 +3,32 @@\n \"\"\" This function-returns+takes+the+input+of+a+dictionary.+If+the+key+is+a+planet,+it+takes+the+entry+and+adds+it+to+the+total+mass.+The+function+outputs the total mass@@ -11,6 +36,6 @@\n all planets in-a-dictionary+the+dictionary. \"\"\"\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function returns the total mass of all planets in a dictionary\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        total_mass += planets[planet]['mass']\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is a planet, it takes the entry and adds it to the total mass. The function outputs the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if key in planets:\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n",
                 "id": 19,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 23,
+                "diff": 14,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student65",
-                "hover": "username:student65\n\ndiff:\n--- \n+++ \n@@ -13,22 +13,26 @@\n the key is+the+name+of a planet,-it-takes-the-entry-and-adds-it+its+value+is+added to the total mass.+Otherwise,+0+is+added. The function-outputs+returns the total mass\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is a planet, it takes the entry and adds it to the total mass. The function outputs the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if key in planets:\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is the name of a planet, its value is added to the total mass. Otherwise, 0 is added. The function returns the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        if planet in planets_dict:\n            total_mass += planets[planet]\n        else:\n            total_mass += 0\n    return total_mass\n",
+                "hover": "username:student65\nedge: (19->20)\ndiff:\n--- \n+++ \n@@ -13,22 +13,26 @@\n the key is+the+name+of a planet,-it-takes-the-entry-and-adds-it+its+value+is+added to the total mass.+Otherwise,+0+is+added. The function-outputs+returns the total mass\n\nFROM completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is a planet, it takes the entry and adds it to the total mass. The function outputs the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for key in planets:\n        if key in planets:\n            total_mass += planets[key][\"mass\"]\n    return total_mass\n\n\nTO completion:\ndef planets_mass(planets):\n    \"\"\"\n    This function takes the input of a dictionary. If the key is the name of a planet, its value is added to the total mass. Otherwise, 0 is added. The function returns the total mass of all planets in the dictionary.\n    \"\"\"\n        total_mass = 0\n    for planet in planets:\n        if planet in planets_dict:\n            total_mass += planets[planet]\n        else:\n            total_mass += 0\n    return total_mass\n",
                 "id": 20,
                 "key": 0
             }

@@ -3,48 +3,45 @@
   !!int "1": |-
     ---
     +++
-    @@ -1,9 +1,9 @@
-     def findHorizontals(puzzle,wordList): """-check-if-any+count+how+many elements in first@@ -17,9 +17,14 @@
-     second list. If-they-do,+more+than+0, add to dictionary+with+count+as+value """
+    @@ -13,4 +13,13 @@
+     the dictionary is+the+word+that+repeats+in+the+second+input+list. """
   !!int "2": |-
     ---
     +++
-    @@ -4,29 +4,29 @@
-     if the letters-of-the-strings+contained in the first-array-list+string are+entirely+contained+in+a+string in the+second array-list-above+list. then create a dictionary where the-second-array-list+that string is the@@ -35,6 +35,7 @@
-     the index is-the-definition.+within+that+key """
+    @@ -25,6 +25,9 @@
+     the same letters+in+any+order as a string
   !!int "3": |-
     ---
     +++
-    @@ -22,6 +22,10 @@
-     in puzzle contain+the+same+letters+as a string from@@ -39,21 +43,17 @@
-     dictionary with the-count+index of the-number-of-times-it-appears-in-the-strings+string from puzzle+where+it+appeared as-its+the value. return the
+    @@ -47,7 +47,10 @@
+     in the same-order.+order+or+same+length. Return a dictionary
   !!int "4": |-
+    ---
+    +++
+    @@ -39,17 +39,21 @@
+     dictionary with the-index+count of the-string+number+of+times+it+appears+in+the+strings from puzzle-where-it-appeared as-the+its value. return the
+  !!int "5": |-
     ---
     +++
     @@ -13,6 +13,9 @@
      if the letters+(in+any+order) of each string
-  !!int "5": |-
+  !!int "6": |-
+    ---
+    +++
+    @@ -39,6 +39,15 @@
+     the wordList list.+They+don't+have+to+be+in+the+same+order. Return a dictionary
+  !!int "7": |-
+    ---
+    +++
+    @@ -10,15 +10,28 @@
+     in wordList that-than+that can be-made+found with the letters in-puzzle,+puzzle+(even+if+the+letters+in+an+element+of+puzzle+need+to+be+retordered), paired with its
+  !!int "8": |-
     ---
     +++
     @@ -2,7 +2,6 @@
      findHorizontals(puzzle,wordList): """ Given-a two lists labeled@@ -21,6 +20,11 @@
      letters appear in+one+of+the+strings+in puzzle, create a@@ -38,6 +42,8 @@
      the position of+the+string where the letters
-  !!int "6": |-
-    ---
-    +++
-    @@ -13,4 +13,13 @@
-     the dictionary is+the+word+that+repeats+in+the+second+input+list. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -39,17 +39,21 @@
-     dictionary with the-index+count of the-string+number+of+times+it+appears+in+the+strings from puzzle-where-it-appeared as-the+its value. return the
-  !!int "8": |-
-    ---
-    +++
-    @@ -25,6 +25,9 @@
-     the same letters+in+any+order as a string
   !!int "9": |-
     ---
     +++
@@ -53,23 +50,26 @@
   !!int "10": |-
     ---
     +++
-    @@ -39,6 +39,15 @@
-     the wordList list.+They+don't+have+to+be+in+the+same+order. Return a dictionary
+    @@ -1,9 +1,9 @@
+     def findHorizontals(puzzle,wordList): """-check-if-any+count+how+many elements in first@@ -17,9 +17,14 @@
+     second list. If-they-do,+more+than+0, add to dictionary+with+count+as+value """
   !!int "11": |-
-    ---
-    +++
-    @@ -10,15 +10,28 @@
-     in wordList that-than+that can be-made+found with the letters in-puzzle,+puzzle+(even+if+the+letters+in+an+element+of+puzzle+need+to+be+retordered), paired with its
-  !!int "12": |-
-    ---
-    +++
-    @@ -47,7 +47,10 @@
-     in the same-order.+order+or+same+length. Return a dictionary
-  !!int "13": |-
     ---
     +++
     @@ -10,7 +10,13 @@
      in wordList that-appears+than+can+be+made+with+the+letters in puzzle, paired
+  !!int "12": |-
+    ---
+    +++
+    @@ -22,6 +22,10 @@
+     in puzzle contain+the+same+letters+as a string from@@ -39,21 +43,17 @@
+     dictionary with the-count+index of the-number-of-times-it-appears-in-the-strings+string from puzzle+where+it+appeared as-its+the value. return the
+  !!int "13": |-
+    ---
+    +++
+    @@ -4,29 +4,29 @@
+     if the letters-of-the-strings+contained in the first-array-list+string are+entirely+contained+in+a+string in the+second array-list-above+list. then create a dictionary where the-second-array-list+that string is the@@ -35,6 +35,7 @@
+     the index is-the-definition.+within+that+key """
 "nodes":
   !!int "0":
     "stderr":

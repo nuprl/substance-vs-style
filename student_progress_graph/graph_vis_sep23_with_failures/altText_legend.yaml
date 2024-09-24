@@ -2,135 +2,135 @@
   !!int "0": |-
     ---
     +++
-    @@ -3,11 +3,14 @@
-     """ takes a-string-and+string. capitalizes random letters in-it+each+word+of+that+string. """
+    @@ -17,7 +17,6 @@
+     as upper case,-not including the lower
   !!int "1": |-
     ---
     +++
-    @@ -31,10 +31,30 @@
-     index positions into-uppercase-and-then-return+uppercase.+The+characters+of the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase. """
+    @@ -7,7 +7,6 @@
+     a string as-a parameter. This function@@ -20,16 +19,4 @@
+     letter is capitalized.-This-functions-starts-by-capitalizing-the-first-letter.-This-function-ignores-spaces. """
   !!int "2": |-
     ---
     +++
-    @@ -16,7 +16,13 @@
-     letter as upper-case.+case,+not+including+the+lower+case+letters. If it is
+    @@ -3,11 +3,14 @@
+     """ takes a-string-and+string. capitalizes random letters in-it+each+word+of+that+string. """
   !!int "3": |-
+    ---
+    +++
+    @@ -15,7 +15,11 @@
+     is not a+white space+or+a+punctuation capitalized starting with
+  !!int "4": |-
+    ---
+    +++
+    @@ -23,6 +23,11 @@
+     multiple characters, returns+a+new+string+that+has the same input
+  !!int "5": |-
+    ---
+    +++
+    @@ -55,4 +55,6 @@
+     of alternating case.+returns+new_string """
+  !!int "6": |-
     ---
     +++
     @@ -10,12 +10,15 @@
      or sentence and-outputs+replaces every+other letter-as+with+the upper-case.+case+letter. If it is@@ -35,10 +38,8 @@
      returns the whole-phrase-that-was-given,+updated+phrase, including all characters
-  !!int "4": |-
-    ---
-    +++
-    @@ -23,4 +23,14 @@
-     being a capital.+It+outputs+the+same+string+but+with+the+capitalization+adjusted. """
-  !!int "5": |-
-    ---
-    +++
-    @@ -1,29 +1,69 @@
-     def altText(s): """-Print+Go+through+every+character+in the-string+string.+If+the+character+is+a+letter+and that+character is-input-with-every-other+the+first character+in+the+string,+print+it+capitalized.+If+the+character+is+a+letter that is not-a-white-space-or-a-punctuation-capitalized-starting-with-a-capital-letter.+the+first+in+the+string,+print+in+lowercase+if+the+previous+letter+that+was+printed+was+in+capital.+If+the+last+letter+was+printed+in+uppercase,+print+it+in+lowercase. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -8,13 +8,17 @@
-     a string and-capitalizes+outputs+the+same+string+but+with every other letter-in-the-string,+being+capitalized, starting with the@@ -23,14 +27,4 @@
-     being a capital.-It-outputs-the-same-string-but-with-the-capitalization-adjusted. """
   !!int "7": |-
+    ---
+    +++
+    @@ -7,6 +7,7 @@
+     a string as+a parameter. This function@@ -19,4 +20,12 @@
+     letter is capitalized.+This+functions+starts+by+capitalizing+the+first+letter. """
+  !!int "8": |-
     ---
     +++
     @@ -16,12 +16,7 @@
      letter as upper-case,-including-the-lower-case-letters.+cas. If it is@@ -38,4 +33,13 @@
      upper case letter.+It+then+returns+the+whole+phrase+that+was+given. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -21,12 +21,15 @@
-     supposed to convert-every-alternative-character+the+characters of the string+in+even+index+positions into uppercase and
   !!int "9": |-
-    ---
-    +++
-    @@ -12,5 +12,19 @@
-     word of that-string.+string+and+adds+the+new+words+to+a+list.+returns+this+new+list+of+words """
-  !!int "10": |-
-    ---
-    +++
-    @@ -23,9 +23,7 @@
-     multiple characters, returns-a-new-string+new_string that has the
-  !!int "11": |-
-    ---
-    +++
-    @@ -55,4 +55,6 @@
-     of alternating case.+returns+new_string """
-  !!int "12": |-
-    ---
-    +++
-    @@ -15,7 +15,11 @@
-     is not a+white space+or+a+punctuation capitalized starting with
-  !!int "13": |-
     ---
     +++
     @@ -22,39 +22,12 @@
      has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase. """
-  !!int "14": |-
+  !!int "10": |-
     ---
     +++
-    @@ -17,7 +17,6 @@
-     as upper case,-not including the lower
-  !!int "15": |-
-    ---
-    +++
-    @@ -19,6 +19,15 @@
-     ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling def altText(s): brings
-  !!int "16": |-
-    ---
-    +++
-    @@ -23,6 +23,11 @@
-     multiple characters, returns+a+new+string+that+has the same input
-  !!int "17": |-
-    ---
-    +++
-    @@ -41,5 +41,12 @@
-     phrase that was-given.+given,+including+all+characters+upper+and+lower+case. """
-  !!int "18": |-
+    @@ -8,13 +8,17 @@
+     a string and-capitalizes+outputs+the+same+string+but+with every other letter-in-the-string,+being+capitalized, starting with the@@ -23,14 +27,4 @@
+     being a capital.-It-outputs-the-same-string-but-with-the-capitalization-adjusted. """
+  !!int "11": |-
     ---
     +++
     @@ -21,9 +21,9 @@
      the first character-in+of the-string,+input, print it capitalized.@@ -38,13 +38,11 @@
      not the first+one in the-string,-print-in-lowercase-if+input+and the previous letter@@ -53,10 +51,13 @@
      printed was in-capital.+uppercase,+print+in+lowercase. If the-last+previous letter was printed
-  !!int "19": |-
+  !!int "12": |-
+    ---
+    +++
+    @@ -12,5 +12,19 @@
+     word of that-string.+string+and+adds+the+new+words+to+a+list.+returns+this+new+list+of+words """
+  !!int "13": |-
+    ---
+    +++
+    @@ -19,6 +19,15 @@
+     ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling def altText(s): brings
+  !!int "14": |-
     ---
     +++
     @@ -1,6 +1,24 @@
      def altText(s): """+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S' def altText(s): brings
-  !!int "20": |-
+  !!int "15": |-
     ---
     +++
-    @@ -22,17 +22,37 @@
-     has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. """
-  !!int "21": |-
-    ---
-    +++
-    @@ -16,22 +16,20 @@
-     letter as upper-cas.+case. If it is just a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter. It then
-  !!int "22": |-
-    ---
-    +++
-    @@ -7,7 +7,6 @@
-     a string as-a parameter. This function@@ -20,16 +19,4 @@
-     letter is capitalized.-This-functions-starts-by-capitalizing-the-first-letter.-This-function-ignores-spaces. """
-  !!int "23": |-
-    ---
-    +++
-    @@ -7,6 +7,7 @@
-     a string as+a parameter. This function@@ -19,4 +20,12 @@
-     letter is capitalized.+This+functions+starts+by+capitalizing+the+first+letter. """
-  !!int "24": |-
+    @@ -41,5 +41,12 @@
+     phrase that was-given.+given,+including+all+characters+upper+and+lower+case. """
+  !!int "16": |-
     ---
     +++
     @@ -12,7 +12,6 @@
      and outputs every-other letter as upper
+  !!int "17": |-
+    ---
+    +++
+    @@ -23,9 +23,7 @@
+     multiple characters, returns-a-new-string+new_string that has the
+  !!int "18": |-
+    ---
+    +++
+    @@ -22,17 +22,37 @@
+     has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have letters+of+alternating+case. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -31,10 +31,30 @@
+     index positions into-uppercase-and-then-return+uppercase.+The+characters+of the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase. """
+  !!int "20": |-
+    ---
+    +++
+    @@ -16,7 +16,13 @@
+     letter as upper-case.+case,+not+including+the+lower+case+letters. If it is
+  !!int "21": |-
+    ---
+    +++
+    @@ -21,12 +21,15 @@
+     supposed to convert-every-alternative-character+the+characters of the string+in+even+index+positions into uppercase and
+  !!int "22": |-
+    ---
+    +++
+    @@ -16,22 +16,20 @@
+     letter as upper-cas.+case. If it is just a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter. It then
+  !!int "23": |-
+    ---
+    +++
+    @@ -1,29 +1,69 @@
+     def altText(s): """-Print+Go+through+every+character+in the-string+string.+If+the+character+is+a+letter+and that+character is-input-with-every-other+the+first character+in+the+string,+print+it+capitalized.+If+the+character+is+a+letter that is not-a-white-space-or-a-punctuation-capitalized-starting-with-a-capital-letter.+the+first+in+the+string,+print+in+lowercase+if+the+previous+letter+that+was+printed+was+in+capital.+If+the+last+letter+was+printed+in+uppercase,+print+it+in+lowercase. """
+  !!int "24": |-
+    ---
+    +++
+    @@ -23,4 +23,14 @@
+     being a capital.+It+outputs+the+same+string+but+with+the+capitalization+adjusted. """
 "nodes":
   !!int "0":
     "stderr":

@@ -3,8 +3,8 @@
   !!int "1": |-
     ---
     +++
-    @@ -7,10 +7,9 @@
-     of words, reverses-the-words,+them and-puts+orders them in alphabetical
+    @@ -2,6 +2,9 @@
+     reverseWords(words): """ Reverse+the+characters+in each string in
   !!int "2": |-
     ---
     +++
@@ -13,69 +13,69 @@
   !!int "3": |-
     ---
     +++
-    @@ -1,15 +1,13 @@
-     def reverseWords(words): """-take+Reverse each-item+string in the+list.+return+the list-and-return-it-in-reverse """
+    @@ -7,11 +7,15 @@
+     of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. """
   !!int "4": |-
+    ---
+    +++
+    @@ -9,4 +9,12 @@
+     in each string.+It+then+places+the+strings+in+alphabetical+order. """
+  !!int "5": |-
+    ---
+    +++
+    @@ -10,5 +10,12 @@
+     in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order """
+  !!int "6": |-
     ---
     +++
     @@ -8,18 +8,7 @@
      a list of-strings,-it-will-sort-the strings-alphabetically-by-the-first-character.-Then it will make@@ -30,4 +19,18 @@
      the strings reverse.+Then+it+will+sort+the+list+alphabetically+by+the+last+character+in+each+string """
-  !!int "5": |-
-    ---
-    +++
-    @@ -30,17 +30,6 @@
-     outputted list is-also in-the-reverse-order-that-the-strings-were-in-the-inputted-list+alphabetical """
-  !!int "6": |-
-    ---
-    +++
-    @@ -10,5 +10,12 @@
-     in reverse alphabetical+order.+Returns+the+overall+list+in+alphabetical order """
   !!int "7": |-
-    ---
-    +++
-    @@ -5,19 +5,13 @@
-     function reverses the-letters-in+positions+of each-string.-It-then-places+string+and+reverses the-strings-in-the-list-in-alphabetical-order.+string+itself. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -22,4 +22,21 @@
-     in a list.+The+order+of+the+strings+in+the+return+statement+should+be+in+alphabetical+order+from+the+input. """
-  !!int "9": |-
-    ---
-    +++
-    @@ -5,13 +5,8 @@
-     function reverses the-positions-of+letters+in each-string-and-reverses-the-string-itself.+string. """
-  !!int "10": |-
-    ---
-    +++
-    @@ -9,4 +9,12 @@
-     in each string.+It+then+places+the+strings+in+alphabetical+order. """
-  !!int "11": |-
-    ---
-    +++
-    @@ -20,16 +20,16 @@
-     the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order """
-  !!int "12": |-
-    ---
-    +++
-    @@ -2,6 +2,9 @@
-     reverseWords(words): """ Reverse+the+characters+in each string in
-  !!int "13": |-
-    ---
-    +++
-    @@ -7,11 +7,15 @@
-     of words, reverses-them+each+word+in+the+list, and+alphabetically orders-them-in-alphabetical-order.+those+new+words. """
-  !!int "14": |-
     ---
     +++
     @@ -1,12 +1,15 @@
      def reverseWords(words): """-Return+take each-string+item in the list+and+return+it in reverse """
-  !!int "15": |-
+  !!int "8": |-
+    ---
+    +++
+    @@ -30,17 +30,6 @@
+     outputted list is-also in-the-reverse-order-that-the-strings-were-in-the-inputted-list+alphabetical """
+  !!int "9": |-
     ---
     +++
     @@ -23,5 +23,9 @@
      strings in alphabetical-order.+order+in+their+reversed+forms. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -7,10 +7,9 @@
+     of words, reverses-the-words,+them and-puts+orders them in alphabetical
+  !!int "11": |-
+    ---
+    +++
+    @@ -22,4 +22,21 @@
+     in a list.+The+order+of+the+strings+in+the+return+statement+should+be+in+alphabetical+order+from+the+input. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -5,19 +5,13 @@
+     function reverses the-letters-in+positions+of each-string.-It-then-places+string+and+reverses the-strings-in-the-list-in-alphabetical-order.+string+itself. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -1,15 +1,13 @@
+     def reverseWords(words): """-take+Reverse each-item+string in the+list.+return+the list-and-return-it-in-reverse """
+  !!int "14": |-
+    ---
+    +++
+    @@ -5,13 +5,8 @@
+     function reverses the-positions-of+letters+in each-string-and-reverses-the-string-itself.+string. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -20,16 +20,16 @@
+     the original string.-The-order-of+In the-strings+output,+arrange+each+item in the-outputted list-is in alphabetical+order """
 "nodes":
   !!int "0":
     "stderr":

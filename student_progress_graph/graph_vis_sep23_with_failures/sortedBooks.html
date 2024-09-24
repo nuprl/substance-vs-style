@@ -8,25 +8,25 @@
 <body style="margin:0;">
   <style>
     /* Main divisions */
-    #iN5JAZmLfy4E4QjcO-main-div {
+    #i7vs72nc0i1uj4P1A-main-div {
       line-height: normal;
       box-sizing: content-box;
       padding: 3px;
       background-color: white;
     }
-    #iN5JAZmLfy4E4QjcO-left-div {
+    #i7vs72nc0i1uj4P1A-left-div {
       float: left;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-right-div {
+    #i7vs72nc0i1uj4P1A-right-div {
       float: left;
       height: 100%;
       display: none;
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-right-inner-div {
+    #i7vs72nc0i1uj4P1A-right-inner-div {
       padding-left: 5px;
       padding-right: 2px;
       overflow-x: hidden;
@@ -37,7 +37,7 @@
     }
 
     /* Graph and details (contained in left-inner-div) */
-    #iN5JAZmLfy4E4QjcO-graph-div {
+    #i7vs72nc0i1uj4P1A-graph-div {
       overflow: hidden;
       resize: vertical;
       position: relative;
@@ -48,7 +48,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-details-div {
+    #i7vs72nc0i1uj4P1A-details-div {
       overflow: auto;
       resize: vertical;
       margin-top: 5px;
@@ -59,7 +59,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-details-head {
+    #i7vs72nc0i1uj4P1A-details-head {
       user-select: none;
       padding-left: 4px !important;
       padding-top: 4px !important;
@@ -69,7 +69,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-details-body {
+    #i7vs72nc0i1uj4P1A-details-body {
       padding: 10px;
       padding-top: 6px;
       font-size: 10px;
@@ -79,7 +79,7 @@
     }
 
     /* Control menu (contained in right-inner-div) */
-    .iN5JAZmLfy4E4QjcO-menu-item-head {
+    .i7vs72nc0i1uj4P1A-menu-item-head {
       font-size: 11px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
@@ -95,13 +95,13 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iN5JAZmLfy4E4QjcO-menu-item-body {
+    .i7vs72nc0i1uj4P1A-menu-item-body {
       margin-left: 5px;
       margin-bottom: 10px;
       line-height: normal;
       box-sizing: content-box;
     }
-    .iN5JAZmLfy4E4QjcO-menu-subitem-head {
+    .i7vs72nc0i1uj4P1A-menu-subitem-head {
       font-size: 9px;
       font-family: "Lucida Console", Monaco, monospace;
       font-weight: 600;
@@ -111,7 +111,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iN5JAZmLfy4E4QjcO-menu-subitem-body {
+    .i7vs72nc0i1uj4P1A-menu-subitem-body {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       margin-left: 7px;
@@ -119,28 +119,28 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    .iN5JAZmLfy4E4QjcO-labeled-input {
+    .i7vs72nc0i1uj4P1A-labeled-input {
       all: initial;
       display: flex;
       align-items: center;
       margin-top: 1px;
       margin-bottom: 1px;
     }
-    .iN5JAZmLfy4E4QjcO-label {
+    .i7vs72nc0i1uj4P1A-label {
       all: initial;
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
       cursor: pointer;
     }
-    .iN5JAZmLfy4E4QjcO-slider {
+    .i7vs72nc0i1uj4P1A-slider {
       width: 100%;
       margin-bottom: 2px;
     }
-    .iN5JAZmLfy4E4QjcO-slider::-moz-focus-outer {
+    .i7vs72nc0i1uj4P1A-slider::-moz-focus-outer {
       border: 0;
     }
-    .iN5JAZmLfy4E4QjcO-slider-text-left {
+    .i7vs72nc0i1uj4P1A-slider-text-left {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       font-style: italic;
@@ -148,20 +148,20 @@
       float: left;
       margin-top: 2px;
     }
-    .iN5JAZmLfy4E4QjcO-slider-text-right {
+    .i7vs72nc0i1uj4P1A-slider-text-right {
       font-size: 8px;
       font-family: "Lucida Console", Monaco, monospace;
       color: black;
       float: right;
     }
-    .iN5JAZmLfy4E4QjcO-checkbox {
+    .i7vs72nc0i1uj4P1A-checkbox {
       margin-left: 0px !important;
       margin-right: 4px !important;
       margin-top: 2px !important;
       margin-bottom: 2px !important;
       padding: 0px !important;
     }
-    .iN5JAZmLfy4E4QjcO-select {
+    .i7vs72nc0i1uj4P1A-select {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -190,15 +190,15 @@
     }
     @-moz-document url-prefix() {
       /* Dirty hack to remove dotted border on focus */
-      .iN5JAZmLfy4E4QjcO-select {
+      .i7vs72nc0i1uj4P1A-select {
         color: transparent !important;
         text-shadow: 0 0 0 black !important;
       }
     }
-    .iN5JAZmLfy4E4QjcO-select:after {
+    .i7vs72nc0i1uj4P1A-select:after {
       cursor: pointer;
     }
-    .iN5JAZmLfy4E4QjcO-button {
+    .i7vs72nc0i1uj4P1A-button {
       cursor: pointer;
       outline: none;
       font-size: 8px;
@@ -215,29 +215,29 @@
       border: 1.2px solid #bbb;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
     }
-    .iN5JAZmLfy4E4QjcO-button:hover {
+    .i7vs72nc0i1uj4P1A-button:hover {
       border: 1.2px solid #999;
       background-color: #f2f2f2;
     }
-    .iN5JAZmLfy4E4QjcO-button:active {
+    .i7vs72nc0i1uj4P1A-button:active {
       background-color: #ddd;
     }
-    .iN5JAZmLfy4E4QjcO-button::-moz-focus-inner {
+    .i7vs72nc0i1uj4P1A-button::-moz-focus-inner {
       border: 0;
     }
     /* Hidden menu items */
-    #iN5JAZmLfy4E4QjcO-graph-select-div {
+    #i7vs72nc0i1uj4P1A-graph-select-div {
       display: none;
     }
-    #iN5JAZmLfy4E4QjcO-node-size-norm-div {
+    #i7vs72nc0i1uj4P1A-node-size-norm-div {
       display: none;
     }
-    #iN5JAZmLfy4E4QjcO-edge-size-norm-div {
+    #i7vs72nc0i1uj4P1A-edge-size-norm-div {
       display: none;
     }
 
     /* Graph */
-    #iN5JAZmLfy4E4QjcO-tooltip-div {
+    #i7vs72nc0i1uj4P1A-tooltip-div {
       font-size: 10px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42001;
@@ -256,7 +256,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-menu-toggle-button, #iN5JAZmLfy4E4QjcO-details-toggle-button, #iN5JAZmLfy4E4QjcO-progress-container {
+    #i7vs72nc0i1uj4P1A-menu-toggle-button, #i7vs72nc0i1uj4P1A-details-toggle-button, #i7vs72nc0i1uj4P1A-progress-container {
       font-size: 14px;
       font-family: "Lucida Console", Monaco, monospace;
       z-index: 42000;
@@ -268,7 +268,7 @@
       line-height: normal;
       box-sizing: content-box;
     }
-    #iN5JAZmLfy4E4QjcO-menu-toggle-button {
+    #i7vs72nc0i1uj4P1A-menu-toggle-button {
       top: 0;
       right: 0;
       padding-left: 6px;
@@ -280,7 +280,7 @@
       border-bottom: 1px solid #ccc;
       border-left: 1px solid #ccc;
     }
-    #iN5JAZmLfy4E4QjcO-details-toggle-button {
+    #i7vs72nc0i1uj4P1A-details-toggle-button {
       bottom: 0;
       left: 0;
       padding-left: 19px;
@@ -292,7 +292,7 @@
       border-bottom: 0px;
       border-left: 0px;
     }
-    #iN5JAZmLfy4E4QjcO-progress-container {
+    #i7vs72nc0i1uj4P1A-progress-container {
       font-size: 10px;
       text-align: center;
       top: 46%;
@@ -304,7 +304,7 @@
     }
 
     /* Details */
-    #iN5JAZmLfy4E4QjcO-details-user-provided {
+    #i7vs72nc0i1uj4P1A-details-user-provided {
       margin-top: 3px;
       padding-top: 3.5px;
       border-top: 0.5px dashed black;
@@ -313,578 +313,578 @@
       white-space: pre-wrap;
       word-break: break-word;
     }
-    #iN5JAZmLfy4E4QjcO-details-user-provided ul {
+    #i7vs72nc0i1uj4P1A-details-user-provided ul {
       list-style-position: inside;
       padding-left: 6px;
     }
   </style>
 
-  <div id="iN5JAZmLfy4E4QjcO-main-div">
-    <div id="iN5JAZmLfy4E4QjcO-tooltip-div"></div>
+  <div id="i7vs72nc0i1uj4P1A-main-div">
+    <div id="i7vs72nc0i1uj4P1A-tooltip-div"></div>
 
-    <div id="iN5JAZmLfy4E4QjcO-left-div">
-      <div id="iN5JAZmLfy4E4QjcO-left-inner-div">
-        <div id="iN5JAZmLfy4E4QjcO-graph-div"></div>
-        <div id="iN5JAZmLfy4E4QjcO-details-div">
-          <div id="iN5JAZmLfy4E4QjcO-details-head">
+    <div id="i7vs72nc0i1uj4P1A-left-div">
+      <div id="i7vs72nc0i1uj4P1A-left-inner-div">
+        <div id="i7vs72nc0i1uj4P1A-graph-div"></div>
+        <div id="i7vs72nc0i1uj4P1A-details-div">
+          <div id="i7vs72nc0i1uj4P1A-details-head">
             Details for selected element
           </div>
-          <div id="iN5JAZmLfy4E4QjcO-details-body">
+          <div id="i7vs72nc0i1uj4P1A-details-body">
           </div>
         </div>
       </div>
     </div>
 
-    <div id="iN5JAZmLfy4E4QjcO-right-div">
-      <div id="iN5JAZmLfy4E4QjcO-right-inner-div">
+    <div id="i7vs72nc0i1uj4P1A-right-div">
+      <div id="i7vs72nc0i1uj4P1A-right-inner-div">
         <!-- Menu: General -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-general-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-general-head">
           General
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-general-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-general-body">
           <!-- Sub-menu: State -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               App state
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-reset"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-reset"
                       type="button">Reset</button>
             </div>
           </div>
           <!-- Sub-menu: Display mode (fullscreen or not) -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Display mode
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-fullscreen-button"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-fullscreen-button"
                       type="button">Enter full screen</button>
             </div>
           </div>
           <!-- Sub-menu: Export -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Export
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-svg"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-svg"
                       type="button">SVG</button>
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-png"
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-png"
                       type="button">PNG</button>
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-jpg"
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-jpg"
                       type="button">JPG</button>
             </div>
           </div>
         </div>
         <!-- Menu: Data -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-data-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-data-head">
           Data selection
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-data-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-data-body">
           <!-- Sub-menu: Graph (only shown if multiple graphs in data) -->
-          <div id="iN5JAZmLfy4E4QjcO-graph-select-div">
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+          <div id="i7vs72nc0i1uj4P1A-graph-select-div">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Graph
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <select class="iN5JAZmLfy4E4QjcO-select"
-                      id="iN5JAZmLfy4E4QjcO-graph-select"></select>
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <select class="i7vs72nc0i1uj4P1A-select"
+                      id="i7vs72nc0i1uj4P1A-graph-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node label text -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Node label text
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <select class="iN5JAZmLfy4E4QjcO-select"
-                      id="iN5JAZmLfy4E4QjcO-node-label-data-source-select"></select>
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <select class="i7vs72nc0i1uj4P1A-select"
+                      id="i7vs72nc0i1uj4P1A-node-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Edge label text -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Edge label text
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <select class="iN5JAZmLfy4E4QjcO-select"
-                      id="iN5JAZmLfy4E4QjcO-edge-label-data-source-select"></select>
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <select class="i7vs72nc0i1uj4P1A-select"
+                      id="i7vs72nc0i1uj4P1A-edge-label-data-source-select"></select>
             </div>
           </div>
           <!-- Sub-menu: Node size -->
-          <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+          <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
             Node size
           </div>
-          <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
+          <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
             <div>
-              <select class="iN5JAZmLfy4E4QjcO-select"
-                      id="iN5JAZmLfy4E4QjcO-node-size-data-source-select"></select>
+              <select class="i7vs72nc0i1uj4P1A-select"
+                      id="i7vs72nc0i1uj4P1A-node-size-data-source-select"></select>
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-              <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                     id="iN5JAZmLfy4E4QjcO-node-size-normalization-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-labeled-input">
+              <input class="i7vs72nc0i1uj4P1A-checkbox"
+                     id="i7vs72nc0i1uj4P1A-node-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iN5JAZmLfy4E4QjcO-label"
-                     for="iN5JAZmLfy4E4QjcO-node-size-normalization-checkbox">Normalize</label>
+              <label class="i7vs72nc0i1uj4P1A-label"
+                     for="i7vs72nc0i1uj4P1A-node-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iN5JAZmLfy4E4QjcO-node-size-norm-div">
+            <div id="i7vs72nc0i1uj4P1A-node-size-norm-div">
               <div>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Minimum</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-node-size-normalization-min-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-node-size-normalization-min-slider"
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Minimum</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-node-size-normalization-min-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-node-size-normalization-min-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
               <div>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Maximum</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-node-size-normalization-max-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-node-size-normalization-max-slider"
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Maximum</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-node-size-normalization-max-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-node-size-normalization-max-slider"
                        type="range" min="0.01" max="300.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Edge size -->
-          <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+          <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
             Edge size
           </div>
-          <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
+          <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
             <div>
-              <select class="iN5JAZmLfy4E4QjcO-select"
-                      id="iN5JAZmLfy4E4QjcO-edge-size-data-source-select"></select>
+              <select class="i7vs72nc0i1uj4P1A-select"
+                      id="i7vs72nc0i1uj4P1A-edge-size-data-source-select"></select>
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-              <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                     id="iN5JAZmLfy4E4QjcO-edge-size-normalization-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-labeled-input">
+              <input class="i7vs72nc0i1uj4P1A-checkbox"
+                     id="i7vs72nc0i1uj4P1A-edge-size-normalization-checkbox"
                      type="checkbox">
-              <label class="iN5JAZmLfy4E4QjcO-label"
-                     for="iN5JAZmLfy4E4QjcO-edge-size-normalization-checkbox">Normalize</label>
+              <label class="i7vs72nc0i1uj4P1A-label"
+                     for="i7vs72nc0i1uj4P1A-edge-size-normalization-checkbox">Normalize</label>
             </div>
-            <div id="iN5JAZmLfy4E4QjcO-edge-size-norm-div">
+            <div id="i7vs72nc0i1uj4P1A-edge-size-norm-div">
               <div>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Minimum</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-edge-size-normalization-min-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-edge-size-normalization-min-slider"
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Minimum</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-edge-size-normalization-min-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-edge-size-normalization-min-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
               <div>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Maximum</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-edge-size-normalization-max-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-edge-size-normalization-max-slider"
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Maximum</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-edge-size-normalization-max-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-edge-size-normalization-max-slider"
                        type="range" min="0.01" max="50.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Nodes -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-node-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-node-head">
           Nodes
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-node-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-node-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Visibility
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-checkbox">Show nodes</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-checkbox">Show nodes</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Size
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
               <div>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Scaling factor</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-node-size-factor-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-node-size-factor-slider"
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Scaling factor</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-node-size-factor-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-node-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
           <!-- Sub-menu: Position -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Position
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <button class="iN5JAZmLfy4E4QjcO-button"
-                      id="iN5JAZmLfy4E4QjcO-node-release-button"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <button class="i7vs72nc0i1uj4P1A-button"
+                      id="i7vs72nc0i1uj4P1A-node-release-button"
                       type="button">Release fixed nodes</button>
             </div>
           </div>
           <!-- Sub-menu: Drag behavior -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Drag behavior
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-drag-fix-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-drag-fix-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-drag-fix-checkbox">Fix node position</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-drag-fix-checkbox">Fix node position</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-hover-neighborhood-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-hover-neighborhood-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-hover-neighborhood-checkbox">Show neighborhood</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-hover-neighborhood-checkbox">Show neighborhood</label>
               </div>
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-hover-tooltip-checkbox"
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node images -->
-        <div id="iN5JAZmLfy4E4QjcO-node-image-meta-control">
-          <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-               id="iN5JAZmLfy4E4QjcO-node-image-head">
+        <div id="i7vs72nc0i1uj4P1A-node-image-meta-control">
+          <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+               id="i7vs72nc0i1uj4P1A-node-image-head">
             Node images
           </div>
-          <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-               id="iN5JAZmLfy4E4QjcO-node-image-body">
+          <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+               id="i7vs72nc0i1uj4P1A-node-image-body">
             <!-- Sub-menu: Visibility -->
             <div>
-              <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+              <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
                 Visibility
               </div>
-              <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-                <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                  <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                         id="iN5JAZmLfy4E4QjcO-node-image-checkbox"
+              <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+                <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                  <input class="i7vs72nc0i1uj4P1A-checkbox"
+                         id="i7vs72nc0i1uj4P1A-node-image-checkbox"
                          type="checkbox">
-                  <label class="iN5JAZmLfy4E4QjcO-label"
-                         for="iN5JAZmLfy4E4QjcO-node-image-checkbox">Show node images</label>
+                  <label class="i7vs72nc0i1uj4P1A-label"
+                         for="i7vs72nc0i1uj4P1A-node-image-checkbox">Show node images</label>
                 </div>
               </div>
             </div>
             <!-- Sub-menu: Size -->
             <div>
-              <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+              <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
                 Size
               </div>
-              <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Scaling factor</span>
-                <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-node-image-size-factor-text"></span>
-                <input class="iN5JAZmLfy4E4QjcO-slider"
-                       id="iN5JAZmLfy4E4QjcO-node-image-size-factor-slider"
+              <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+                <span class="i7vs72nc0i1uj4P1A-slider-text-left">Scaling factor</span>
+                <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-node-image-size-factor-text"></span>
+                <input class="i7vs72nc0i1uj4P1A-slider"
+                       id="i7vs72nc0i1uj4P1A-node-image-size-factor-slider"
                        type="range" min="0.01" max="5.0" step="0.01">
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Node labels -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-node-label-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-node-label-head">
           Node labels
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-node-label-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-node-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Visibility
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-label-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-label-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-label-checkbox">Show node labels</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-label-checkbox">Show node labels</label>
               </div>
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-node-label-border-checkbox"
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-node-label-border-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-node-label-border-checkbox">Show borders</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-node-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Size
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Scaling factor</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                    id="iN5JAZmLfy4E4QjcO-node-label-size-factor-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-node-label-size-factor-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Scaling factor</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                    id="i7vs72nc0i1uj4P1A-node-label-size-factor-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-node-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iN5JAZmLfy4E4QjcO-node-label-rotation">
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+          <div id="i7vs72nc0i1uj4P1A-node-label-rotation">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Rotation
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Angle</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                    id="iN5JAZmLfy4E4QjcO-node-label-rotation-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-node-label-rotation-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Angle</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                    id="i7vs72nc0i1uj4P1A-node-label-rotation-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-node-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Edges -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-edge-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-edge-head">
           Edges
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-edge-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-edge-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Visibility
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-edge-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-edge-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-edge-checkbox">Show edges</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-edge-checkbox">Show edges</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Size
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Scaling factor</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                    id="iN5JAZmLfy4E4QjcO-edge-size-factor-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-edge-size-factor-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Scaling factor</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                    id="i7vs72nc0i1uj4P1A-edge-size-factor-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-edge-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Form -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Form
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Curvature</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                    id="iN5JAZmLfy4E4QjcO-edge-curvature-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-edge-curvature-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Curvature</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                    id="i7vs72nc0i1uj4P1A-edge-curvature-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-edge-curvature-slider"
                      type="range" min="-1.2" max="1.2" step="0.02">
             </div>
           </div>
           <!-- Sub-menu: Hover behavior -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Hover behavior
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-edge-hover-tooltip-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-edge-hover-tooltip-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-edge-hover-tooltip-checkbox">Show tooltips (if provided)</label>
               </div>
             </div>
           </div>
         </div>
         <!-- Menu: Edge labels -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-edge-label-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-edge-label-head">
           Edge labels
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-edge-label-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-edge-label-body">
           <!-- Sub-menu: Visibility -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Visibility
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-edge-label-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-edge-label-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-edge-label-checkbox">Show edge labels</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-edge-label-checkbox">Show edge labels</label>
               </div>
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-edge-label-border-checkbox"
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-edge-label-border-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-edge-label-border-checkbox">Show borders</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-edge-label-border-checkbox">Show borders</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Size -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Size
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Scaling factor</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                    id="iN5JAZmLfy4E4QjcO-edge-label-size-factor-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-edge-label-size-factor-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Scaling factor</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                    id="i7vs72nc0i1uj4P1A-edge-label-size-factor-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-edge-label-size-factor-slider"
                      type="range" min="0.01" max="5.0" step="0.01">
             </div>
           </div>
           <!-- Sub-menu: Rotation -->
-          <div id="iN5JAZmLfy4E4QjcO-edge-label-rotation">
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+          <div id="i7vs72nc0i1uj4P1A-edge-label-rotation">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Rotation
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Angle</span>
-              <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                      id="iN5JAZmLfy4E4QjcO-edge-label-rotation-text"></span>
-              <input class="iN5JAZmLfy4E4QjcO-slider"
-                     id="iN5JAZmLfy4E4QjcO-edge-label-rotation-slider"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <span class="i7vs72nc0i1uj4P1A-slider-text-left">Angle</span>
+              <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                      id="i7vs72nc0i1uj4P1A-edge-label-rotation-text"></span>
+              <input class="i7vs72nc0i1uj4P1A-slider"
+                     id="i7vs72nc0i1uj4P1A-edge-label-rotation-slider"
                      type="range" min="0.0" max="359.0" step="1.0">
             </div>
           </div>
         </div>
         <!-- Menu: Layout algorithm -->
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-head"
-             id="iN5JAZmLfy4E4QjcO-layout-algorithm-head">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-head"
+             id="i7vs72nc0i1uj4P1A-layout-algorithm-head">
           Layout algorithm
         </div>
-        <div class="iN5JAZmLfy4E4QjcO-menu-item-body"
-             id="iN5JAZmLfy4E4QjcO-layout-algorithm-body">
+        <div class="i7vs72nc0i1uj4P1A-menu-item-body"
+             id="i7vs72nc0i1uj4P1A-layout-algorithm-body">
 
           <!-- Sub-menu: Simulation -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Simulation
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-simulation-active-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-simulation-active-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-simulation-active-checkbox">Active</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-simulation-active-checkbox">Active</label>
               </div>
             </div>
           </div>
           <!-- Sub-menu: Many-body force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Many-body force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-many-body-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-many-body-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-many-body-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-many-body-force-checkbox">On</label>
               </div>
-              <div id="iN5JAZmLfy4E4QjcO-many-body-force-div">
+              <div id="i7vs72nc0i1uj4P1A-many-body-force-div">
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Strength</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-many-body-force-strength-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-many-body-force-strength-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Strength</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-many-body-force-strength-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-many-body-force-strength-slider"
                          type="range" min="-2000.0" max="200.0" step="0.01"
                          style="direction:rtl;">
                 </div>
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Theta</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-many-body-force-theta-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-many-body-force-theta-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Theta</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-many-body-force-theta-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-many-body-force-theta-slider"
                          type="range" min="0.01" max="2.0" step="0.001">
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                    <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                         id="iN5JAZmLfy4E4QjcO-many-body-force-min-distance-checkbox"
+                  <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                    <input class="i7vs72nc0i1uj4P1A-checkbox"
+                         id="i7vs72nc0i1uj4P1A-many-body-force-min-distance-checkbox"
                          type="checkbox">
-                    <label class="iN5JAZmLfy4E4QjcO-label"
-                           for="iN5JAZmLfy4E4QjcO-many-body-force-min-distance-checkbox">Use minimum distance</label>
+                    <label class="i7vs72nc0i1uj4P1A-label"
+                           for="i7vs72nc0i1uj4P1A-many-body-force-min-distance-checkbox">Use minimum distance</label>
                   </div>
-                  <div id="iN5JAZmLfy4E4QjcO-many-body-force-min-distance-div">
-                    <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Min</span>
-                    <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                          id="iN5JAZmLfy4E4QjcO-many-body-force-min-distance-text"></span>
-                    <input class="iN5JAZmLfy4E4QjcO-slider"
-                           id="iN5JAZmLfy4E4QjcO-many-body-force-min-distance-slider"
+                  <div id="i7vs72nc0i1uj4P1A-many-body-force-min-distance-div">
+                    <span class="i7vs72nc0i1uj4P1A-slider-text-left">Min</span>
+                    <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                          id="i7vs72nc0i1uj4P1A-many-body-force-min-distance-text"></span>
+                    <input class="i7vs72nc0i1uj4P1A-slider"
+                           id="i7vs72nc0i1uj4P1A-many-body-force-min-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
                 <div style="margin-top: 6px;">
-                  <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                    <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                         id="iN5JAZmLfy4E4QjcO-many-body-force-max-distance-checkbox"
+                  <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                    <input class="i7vs72nc0i1uj4P1A-checkbox"
+                         id="i7vs72nc0i1uj4P1A-many-body-force-max-distance-checkbox"
                          type="checkbox">
-                    <label class="iN5JAZmLfy4E4QjcO-label"
-                           for="iN5JAZmLfy4E4QjcO-many-body-force-max-distance-checkbox">Use maximum distance</label>
+                    <label class="i7vs72nc0i1uj4P1A-label"
+                           for="i7vs72nc0i1uj4P1A-many-body-force-max-distance-checkbox">Use maximum distance</label>
                   </div>
-                  <div id="iN5JAZmLfy4E4QjcO-many-body-force-max-distance-div">
-                    <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Max</span>
-                    <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                          id="iN5JAZmLfy4E4QjcO-many-body-force-max-distance-text"></span>
-                    <input class="iN5JAZmLfy4E4QjcO-slider"
-                           id="iN5JAZmLfy4E4QjcO-many-body-force-max-distance-slider"
+                  <div id="i7vs72nc0i1uj4P1A-many-body-force-max-distance-div">
+                    <span class="i7vs72nc0i1uj4P1A-slider-text-left">Max</span>
+                    <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                          id="i7vs72nc0i1uj4P1A-many-body-force-max-distance-text"></span>
+                    <input class="i7vs72nc0i1uj4P1A-slider"
+                           id="i7vs72nc0i1uj4P1A-many-body-force-max-distance-slider"
                            type="range" min="0.01" max="10000.0" step="0.01">
                   </div>
                 </div>
@@ -893,33 +893,33 @@
           </div>
           <!-- Sub-menu: Links force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Links force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-links-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-links-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-links-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-links-force-checkbox">On</label>
                 </label>
               </div>
-              <div id="iN5JAZmLfy4E4QjcO-links-force-div">
+              <div id="i7vs72nc0i1uj4P1A-links-force-div">
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Distance</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-links-force-distance-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-links-force-distance-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Distance</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-links-force-distance-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-links-force-distance-slider"
                          type="range" min="0.01" max="1000.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Strength</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-links-force-strength-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-links-force-strength-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Strength</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-links-force-strength-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-links-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -927,32 +927,32 @@
           </div>
           <!-- Sub-menu: Collision force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Collision force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-collision-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-collision-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-collision-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-collision-force-checkbox">On</label>
               </div>
-              <div id="iN5JAZmLfy4E4QjcO-collision-force-div">
+              <div id="i7vs72nc0i1uj4P1A-collision-force-div">
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Radius</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-collision-force-radius-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-collision-force-radius-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Radius</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-collision-force-radius-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-collision-force-radius-slider"
                          type="range" min="0" max="100.0" step="0.01">
                 </div>
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Strength</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-collision-force-strength-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-collision-force-strength-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Strength</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-collision-force-strength-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-collision-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -960,24 +960,24 @@
           </div>
           <!-- Sub-menu: x-positioning force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               x-positioning force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-x-positioning-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-x-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-x-positioning-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-x-positioning-force-checkbox">On</label>
               </div>
-              <div id="iN5JAZmLfy4E4QjcO-x-positioning-force-div">
+              <div id="i7vs72nc0i1uj4P1A-x-positioning-force-div">
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Strength</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-x-positioning-force-strength-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-x-positioning-force-strength-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Strength</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-x-positioning-force-strength-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-x-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -985,24 +985,24 @@
           </div>
           <!-- Sub-menu: y-positioning force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               y-positioning force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-y-positioning-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-y-positioning-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-y-positioning-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-y-positioning-force-checkbox">On</label>
               </div>
-              <div id="iN5JAZmLfy4E4QjcO-y-positioning-force-div">
+              <div id="i7vs72nc0i1uj4P1A-y-positioning-force-div">
                 <div>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-left">Strength</span>
-                  <span class="iN5JAZmLfy4E4QjcO-slider-text-right"
-                        id="iN5JAZmLfy4E4QjcO-y-positioning-force-strength-text"></span>
-                  <input class="iN5JAZmLfy4E4QjcO-slider"
-                         id="iN5JAZmLfy4E4QjcO-y-positioning-force-strength-slider"
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-left">Strength</span>
+                  <span class="i7vs72nc0i1uj4P1A-slider-text-right"
+                        id="i7vs72nc0i1uj4P1A-y-positioning-force-strength-text"></span>
+                  <input class="i7vs72nc0i1uj4P1A-slider"
+                         id="i7vs72nc0i1uj4P1A-y-positioning-force-strength-slider"
                          type="range" min="0.01" max="1.0" step="0.001">
                 </div>
               </div>
@@ -1010,16 +1010,16 @@
           </div>
           <!-- Sub-menu: Centering force -->
           <div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-head">
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-head">
               Centering force
             </div>
-            <div class="iN5JAZmLfy4E4QjcO-menu-subitem-body">
-              <div class="iN5JAZmLfy4E4QjcO-labeled-input">
-                <input class="iN5JAZmLfy4E4QjcO-checkbox"
-                       id="iN5JAZmLfy4E4QjcO-centering-force-checkbox"
+            <div class="i7vs72nc0i1uj4P1A-menu-subitem-body">
+              <div class="i7vs72nc0i1uj4P1A-labeled-input">
+                <input class="i7vs72nc0i1uj4P1A-checkbox"
+                       id="i7vs72nc0i1uj4P1A-centering-force-checkbox"
                        type="checkbox">
-                <label class="iN5JAZmLfy4E4QjcO-label"
-                       for="iN5JAZmLfy4E4QjcO-centering-force-checkbox">On</label>
+                <label class="i7vs72nc0i1uj4P1A-label"
+                       for="i7vs72nc0i1uj4P1A-centering-force-checkbox">On</label>
               </div>
             </div>
           </div>
@@ -1072,7 +1072,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
           // 1) Fetch state.rawData
           fetchRawDataFromTemplating(){
-            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 5, "stdout_id": 6, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 5, "stdout_id": 3, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 11, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\nIndentationError: expected an indented block after 'if' statement on line 6\n", "color": "blue"}}, "3": {"metadata": {"stderr_id": 12, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n", "color": "blue"}}, "4": {"metadata": {"stderr_id": 6, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n", "color": "blue"}}, "5": {"metadata": {"stderr_id": 5, "stdout_id": 5, "hover": "stdout:\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "grey"}}, "6": {"metadata": {"stderr_id": 5, "stdout_id": 1, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\nstderr:\n_no_stderr_", "color": "red"}}, "7": {"metadata": {"stderr_id": 5, "stdout_id": 0, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "8": {"metadata": {"stderr_id": 1, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n", "color": "grey"}}, "9": {"metadata": {"stderr_id": 8, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 12, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n", "color": "grey"}}, "10": {"metadata": {"stderr_id": 7, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n", "color": "red"}}, "11": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Woolf'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n", "color": "grey"}}, "12": {"metadata": {"stderr_id": 10, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n", "color": "blue"}}, "13": {"metadata": {"stderr_id": 3, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n", "color": "red"}}, "14": {"metadata": {"stderr_id": 2, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n", "color": "blue"}}, "15": {"metadata": {"stderr_id": 9, "stdout_id": 4, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\n", "color": "grey"}}, "16": {"metadata": {"stderr_id": 4, "stdout_id": 4, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\n", "color": "red"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 10, "color": "#d83034", "arrow_color": "#d83034", "username": "student27", "hover": "username:student27\n\ndiff:\n--- \n+++ \n@@ -25,6 +25,15 @@\n match the string.+Sort+the+dictionaries+by+\"year\"+in+an+ascending+order. Return the updated\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Return the updated list.\n    \"\"\"\n        newList = []\n    for book in books:\n        if book[\"author\"] == writer:\n            newList.append(book)\n    return newList\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Sort the dictionaries by \"year\" in an ascending order. Return the updated list.\n    \"\"\"\n        # Write your code here\n    new_list = []\n    for book in books:\n        if book[\"author\"] == writer:\n            new_list.append(book)\n    new_list.sort(key=lambda x: x[\"year\"])\n    return new_list\n\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 12, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -31,12 +31,12 @@\n to that parameter,-with-each-input-entry-on-a-new-line+sorted+in+order+according+to+the+year+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, sorted in order according to the year value\n    \"\"\"\n        sortedList = []\n    for book in books:\n        if book['author'] == writer:\n            sortedList.append(book)\n    sortedList.sort(key=lambda x: x['year'])\n    return sortedList\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 6, "color": "#Ff73b6", "arrow_color": "#Ff73b6", "username": "student68", "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -22,7 +22,16 @@\n input string in-a-dictionary-list+the+order+from+lowest+to+highest+value+of+their+'year'+key+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in the order from lowest to highest value of their 'year' key value \n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 22, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -23,4 +23,12 @@\n the input writer.+Sort+the+entries+in+order+of+increasing+year. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer. Sort the entries in order of increasing year.\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n"}}, {"source": "0", "target": "2", "metadata": {"diff": 0, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -27,5 +27,12 @@\n corresponds to that-parameter+parameter,+with+a+line+break+between+each+entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n"}}, {"source": "0", "target": "7", "metadata": {"diff": 5, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student49", "hover": "username:student49\n\ndiff:\n--- \n+++ \n@@ -26,4 +26,18 @@\n the author key.+Order+each+dictionary+in+the+list+by+ascending+the+values+in+the+year+key. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key.\n    \"\"\"\n        return [book for book in books if book[\"author\"] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 2, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student62", "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -2,12 +2,18 @@\n sortedBooks(books, writer): \"\"\"+iterate+through+each+element+in+list, remove-any element from list-that+if+it does not have\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    iterate through each element in list, remove element from list if it does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 4, "color": "#Ff73b6", "arrow_color": "#Ff73b6", "username": "student68", "hover": "username:student68\n\ndiff:\n--- \n+++ \n@@ -21,4 +21,8 @@\n the input string+in+a+dictionary+list \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string \n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 1, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\n\ndiff:\n\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n"}}, {"source": "0", "target": "14", "metadata": {"diff": 19, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -9,6 +9,7 @@\n in the dictionary+books where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n"}}, {"source": "2", "target": "3", "metadata": {"diff": 13, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -28,11 +28,9 @@\n to that parameter,-with+separated+by a line break-between-each-entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n"}}, {"source": "3", "target": "4", "metadata": {"diff": 18, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -28,9 +28,12 @@\n to that parameter,-separated-by+with+each+sub-dictionary+starting+on a+new line-break \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n"}}, {"source": "4", "target": "0", "metadata": {"diff": 9, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\n\ndiff:\n--- \n+++ \n@@ -17,6 +17,9 @@\n name. Then return+a+list+with all input entries@@ -30,8 +33,8 @@\n parameter, with each-sub-dictionary-starting+input+entry on a new\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"}}, {"source": "5", "target": "6", "metadata": {"diff": 17, "color": "#008dff", "arrow_color": "#008dff", "username": "student32", "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -16,9 +16,9 @@\n its dictionary, from-highest+lowest to-lowest.+highest. Then removes the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from highest to lowest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'], reverse=True)\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n"}}, {"source": "6", "target": "6", "metadata": {"diff": 3, "color": "#008dff", "arrow_color": "#008dff", "username": "student32", "hover": "username:student32\n\ndiff:\n--- \n+++ \n@@ -2,6 +2,12 @@\n sortedBooks(books, writer): \"\"\"+Returns+the+list+with+the+a Sort the elements\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the list with the a\n\nSort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    books.pop()\n    return books\n"}}, {"source": "7", "target": "1", "metadata": {"diff": 20, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student49", "hover": "username:student49\n\ndiff:\n--- \n+++ \n@@ -25,13 +25,15 @@\n of the author-key.-Order+key+and each dictionary in the list+is+sorted by ascending the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key and each dictionary in the list is sorted by ascending the values in the year key.\n    \"\"\"\n        return sorted([book for book in books if book[\"author\"] == writer], key=lambda x: x[\"year\"])\n\n"}}, {"source": "8", "target": "0", "metadata": {"diff": 15, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student62", "hover": "username:student62\n\ndiff:\n--- \n+++ \n@@ -2,14 +2,22 @@\n sortedBooks(books, writer): \"\"\"-If+remove+any+element+from+list+that+does+not+have the-author-is-equal-to+same+'author'+as the-second-element,-dictionary+string+provided+by+user \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    If the author is equal to the second element, dictionary\n    \"\"\"\n        return sorted(books, key=lambda x: x[1] == writer)\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n"}}, {"source": "9", "target": "10", "metadata": {"diff": 14, "color": "#ffcd8e", "arrow_color": "#ffcd8e", "username": "student66", "hover": "username:student66\n\ndiff:\n--- \n+++ \n@@ -7,11 +7,17 @@\n array list by+the+key year with+smallest+number+first+in the-oldest-book+array+list first remove the@@ -32,5 +38,5 @@\n remove the other-dictionary+dictionary. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by year with the oldest book first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    if len(books) > 1:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n        else:\n            books.pop(1)\n    else:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by the key year with smallest number first in the array list first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary.\n    \"\"\"\n        for book in books:\n        if book['title'] == 'The Voyage Out':\n            books.remove(book)\n    books.sort(key=lambda x: x['year'])\n    return books\n"}}, {"source": "11", "target": "12", "metadata": {"diff": 21, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -3,9 +3,7 @@\n writer): \"\"\" Returns-a-list-of+the dictionaries of the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns a list of dictionaries of the specified author.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n"}}, {"source": "11", "target": "13", "metadata": {"diff": 16, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n \"\"\" Returns the-dictionaries+information of the specified\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the information of the specified writer.\n    \"\"\"\n        writerBooks = []\n    for book in books:\n        if book['writer'] == writer:\n            writerBooks.append(book)\n    return writerBooks\n\n"}}, {"source": "12", "target": "11", "metadata": {"diff": 23, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\n\ndiff:\n--- \n+++ \n@@ -8,5 +8,5 @@\n of the specified-author.+writer. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n"}}, {"source": "14", "target": "0", "metadata": {"diff": 11, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\n\ndiff:\n--- \n+++ \n@@ -8,8 +8,8 @@\n entries in the-dictionary-books+input+list where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n"}}, {"source": "15", "target": "15", "metadata": {"diff": 7, "color": "#7fff00", "arrow_color": "#7fff00", "username": "student78", "hover": "username:student78\n\ndiff:\n--- \n+++ \n@@ -14,12 +14,10 @@\n list of dictionaries-where+thats+authors+match the input writer-matches-the-key-author \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the input writer matches the key author\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n"}}, {"source": "15", "target": "16", "metadata": {"diff": 8, "color": "#7fff00", "arrow_color": "#7fff00", "username": "student78", "hover": "username:student78\n\ndiff:\n--- \n+++ \n@@ -14,9 +14,17 @@\n list of dictionaries-thats-authors-match+where+the+associated+data+to+the+key+'author'+is+equal+to the input writer\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the associated data to the key 'author' is equal to the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n"}}], "directed": true}];
+            state.rawData = [{"nodes": {"0": {"metadata": {"stderr_id": 5, "stdout_id": 6, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "red"}}, "1": {"metadata": {"stderr_id": 5, "stdout_id": 3, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "green"}}, "2": {"metadata": {"stderr_id": 11, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 7\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\nIndentationError: expected an indented block after 'if' statement on line 6\n", "color": "blue"}}, "3": {"metadata": {"stderr_id": 12, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\n  File \"/tmp/file.py\", line 5, in <listcomp>\n    return '\n'.join([book for book in books if book.split(' - ')[1] == writer])\nAttributeError: 'dict' object has no attribute 'split'\n", "color": "blue"}}, "4": {"metadata": {"stderr_id": 6, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n\n  File \"/tmp/file.py\", line 9\n    sortedBooks(books, 'J. R. R. Tolkien')\nIndentationError: expected an indented block after 'if' statement on line 6\n", "color": "blue"}}, "5": {"metadata": {"stderr_id": 5, "stdout_id": 5, "hover": "stdout:\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "grey"}}, "6": {"metadata": {"stderr_id": 5, "stdout_id": 1, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}]\n\nstderr:\n_no_stderr_", "color": "red"}}, "7": {"metadata": {"stderr_id": 5, "stdout_id": 0, "hover": "stdout:\n[{'author': 'Austen', 'book': 'Pride and Prejudice', 'year': 1813}, {'author': 'Austen', 'book': 'Emma', 'year': 1815}, {'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Austen', 'book': 'Persuasion', 'year': 1818}, {'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\n[{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}]\n\nstderr:\n_no_stderr_", "color": "blue"}}, "8": {"metadata": {"stderr_id": 1, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda x: x[1] == writer)\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda x: x[1] == writer)\nKeyError: 1\n", "color": "grey"}}, "9": {"metadata": {"stderr_id": 8, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 15, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 12, in sortedBooks\n    if books[0]['title'] == 'The Voyage Out':\nKeyError: 'title'\n", "color": "grey"}}, "10": {"metadata": {"stderr_id": 7, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 6, in sortedBooks\n    if book['title'] == 'The Voyage Out':\nKeyError: 'title'\n", "color": "red"}}, "11": {"metadata": {"stderr_id": 0, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Woolf'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books, key=lambda book: book[writer])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted(books, key=lambda book: book[writer])\nKeyError: 'Austen'\n", "color": "grey"}}, "12": {"metadata": {"stderr_id": 10, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted(books[writer], key=lambda book: book['title'])\nTypeError: list indices must be integers or slices, not str\n", "color": "blue"}}, "13": {"metadata": {"stderr_id": 3, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 10, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 7, in sortedBooks\n    if book['writer'] == writer:\nKeyError: 'writer'\n", "color": "red"}}, "14": {"metadata": {"stderr_id": 2, "stdout_id": 2, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915}],\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return {k: v for k, v in books.items() if v['author'] == writer}\nAttributeError: 'list' object has no attribute 'items'\n", "color": "blue"}}, "15": {"metadata": {"stderr_id": 9, "stdout_id": 4, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\nKeyError: 'title'\n\n", "color": "grey"}}, "16": {"metadata": {"stderr_id": 4, "stdout_id": 4, "hover": "stdout:\n_no_stdout_\nstderr:\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Austen', 'book': 'Emma', 'year': 1815},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\nTraceback (most recent call last):\n  File \"/tmp/file.py\", line 6, in <module>\n    print(sortedBooks([{'author': 'Woolf', 'book': 'The Voyage Out', 'year': 1915},\n  File \"/tmp/file.py\", line 5, in sortedBooks\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n  File \"/tmp/file.py\", line 5, in <lambda>\n    return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\nKeyError: 'title'\n\n", "color": "red"}}}, "edges": [{"source": "0", "target": "1", "metadata": {"diff": 17, "color": "#d83034", "arrow_color": "#d83034", "username": "student27", "hover": "username:student27\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -25,6 +25,15 @@\n match the string.+Sort+the+dictionaries+by+\"year\"+in+an+ascending+order. Return the updated\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Return the updated list.\n    \"\"\"\n        newList = []\n    for book in books:\n        if book[\"author\"] == writer:\n            newList.append(book)\n    return newList\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    The input will be a list of dictionaries and a string. Remove all dictionaries where the key \"author\" does not match the string. Sort the dictionaries by \"year\" in an ascending order. Return the updated list.\n    \"\"\"\n        # Write your code here\n    new_list = []\n    for book in books:\n        if book[\"author\"] == writer:\n            new_list.append(book)\n    new_list.sort(key=lambda x: x[\"year\"])\n    return new_list\n\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 23, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -31,12 +31,12 @@\n to that parameter,-with-each-input-entry-on-a-new-line+sorted+in+order+according+to+the+year+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, sorted in order according to the year value\n    \"\"\"\n        sortedList = []\n    for book in books:\n        if book['author'] == writer:\n            sortedList.append(book)\n    sortedList.sort(key=lambda x: x['year'])\n    return sortedList\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 20, "color": "#Ff73b6", "arrow_color": "#Ff73b6", "username": "student68", "hover": "username:student68\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -22,7 +22,16 @@\n input string in-a-dictionary-list+the+order+from+lowest+to+highest+value+of+their+'year'+key+value \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in the order from lowest to highest value of their 'year' key value \n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n"}}, {"source": "0", "target": "1", "metadata": {"diff": 13, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -23,4 +23,12 @@\n the input writer.+Sort+the+entries+in+order+of+increasing+year. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer. Sort the entries in order of increasing year.\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['year'])\n"}}, {"source": "0", "target": "2", "metadata": {"diff": 14, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\nedge: (0->2)\ndiff:\n--- \n+++ \n@@ -27,5 +27,12 @@\n corresponds to that-parameter+parameter,+with+a+line+break+between+each+entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n"}}, {"source": "0", "target": "7", "metadata": {"diff": 11, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student49", "hover": "username:student49\nedge: (0->7)\ndiff:\n--- \n+++ \n@@ -26,4 +26,18 @@\n the author key.+Order+each+dictionary+in+the+list+by+ascending+the+values+in+the+year+key. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key.\n    \"\"\"\n        return [book for book in books if book[\"author\"] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 19, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student62", "hover": "username:student62\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -2,12 +2,18 @@\n sortedBooks(books, writer): \"\"\"+iterate+through+each+element+in+list, remove-any element from list-that+if+it does not have\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    iterate through each element in list, remove element from list if it does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 2, "color": "#Ff73b6", "arrow_color": "#Ff73b6", "username": "student68", "hover": "username:student68\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -21,4 +21,8 @@\n the input string+in+a+dictionary+list \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string \n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary list and a string, return all the dictionaries whose 'author' key value equals the input string in a dictionary list \n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book['author'] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"}}, {"source": "0", "target": "0", "metadata": {"diff": 0, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\nedge: (0->0)\ndiff:\n\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n"}}, {"source": "0", "target": "14", "metadata": {"diff": 21, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\nedge: (0->14)\ndiff:\n--- \n+++ \n@@ -9,6 +9,7 @@\n in the dictionary+books where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\nprint(sortedBooks(books, 'George R. R. Martin'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n"}}, {"source": "2", "target": "3", "metadata": {"diff": 4, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -28,11 +28,9 @@\n to that parameter,-with+separated+by a line break-between-each-entry \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with a line break between each entry\n    \"\"\"\n        for book in books:\n        if book[\"author\"] == writer:\n            print(book)\n            print(\"\\n\")\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n"}}, {"source": "3", "target": "4", "metadata": {"diff": 5, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -28,9 +28,12 @@\n to that parameter,-separated-by+with+each+sub-dictionary+starting+on a+new line-break \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, separated by a line break\n    \"\"\"\n        return '\\n'.join([book for book in books if book.split(' - ')[1] == writer])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n"}}, {"source": "4", "target": "0", "metadata": {"diff": 12, "color": "#f9e858", "arrow_color": "#f9e858", "username": "student29", "hover": "username:student29\nedge: (4->0)\ndiff:\n--- \n+++ \n@@ -17,6 +17,9 @@\n name. Then return+a+list+with all input entries@@ -30,8 +33,8 @@\n parameter, with each-sub-dictionary-starting+input+entry on a new\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return all input entries where the author value corresponds to that parameter, with each sub-dictionary starting on a new line\n    \"\"\"\n        for book in books:\n        if book['author'] == writer:\n            print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Check the second parameter of the input for the string of author name. Then return a list with all input entries where the author value corresponds to that parameter, with each input entry on a new line\n    \"\"\"\n        sortedBooks = []\n    for book in books:\n        if book[\"author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"}}, {"source": "5", "target": "6", "metadata": {"diff": 7, "color": "#008dff", "arrow_color": "#008dff", "username": "student32", "hover": "username:student32\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -16,9 +16,9 @@\n its dictionary, from-highest+lowest to-lowest.+highest. Then removes the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from highest to lowest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'], reverse=True)\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n"}}, {"source": "6", "target": "6", "metadata": {"diff": 1, "color": "#008dff", "arrow_color": "#008dff", "username": "student32", "hover": "username:student32\nedge: (6->6)\ndiff:\n--- \n+++ \n@@ -2,6 +2,12 @@\n sortedBooks(books, writer): \"\"\"+Returns+the+list+with+the+a Sort the elements\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the list with the a\n\nSort the elements of the array by the year value in its dictionary, from lowest to highest. Then removes the last element in the array and returns the rest\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    books.pop()\n    return books\n"}}, {"source": "7", "target": "1", "metadata": {"diff": 6, "color": "#4ecb8d", "arrow_color": "#4ecb8d", "username": "student49", "hover": "username:student49\nedge: (7->1)\ndiff:\n--- \n+++ \n@@ -25,13 +25,15 @@\n of the author-key.-Order+key+and each dictionary in the list+is+sorted by ascending the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key. Order each dictionary in the list by ascending the values in the year key.\n    \"\"\"\n        return sorted(books, key=lambda x: x['year'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Given a list of dictionaries and a string, return a list of the dictionaries where the string is the value of the author key and each dictionary in the list is sorted by ascending the values in the year key.\n    \"\"\"\n        return sorted([book for book in books if book[\"author\"] == writer], key=lambda x: x[\"year\"])\n\n"}}, {"source": "8", "target": "0", "metadata": {"diff": 22, "color": "#c701ff", "arrow_color": "#c701ff", "username": "student62", "hover": "username:student62\nedge: (8->0)\ndiff:\n--- \n+++ \n@@ -2,14 +2,22 @@\n sortedBooks(books, writer): \"\"\"-If+remove+any+element+from+list+that+does+not+have the-author-is-equal-to+same+'author'+as the-second-element,-dictionary+string+provided+by+user \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    If the author is equal to the second element, dictionary\n    \"\"\"\n        return sorted(books, key=lambda x: x[1] == writer)\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    remove any element from list that does not have the same 'author' as the string provided by user\n    \"\"\"\n        for book in books:\n        if book['author'] != writer:\n            books.remove(book)\n    return books\n\n"}}, {"source": "9", "target": "10", "metadata": {"diff": 18, "color": "#ffcd8e", "arrow_color": "#ffcd8e", "username": "student66", "hover": "username:student66\nedge: (9->10)\ndiff:\n--- \n+++ \n@@ -7,11 +7,17 @@\n array list by+the+key year with+smallest+number+first+in the-oldest-book+array+list first remove the@@ -32,5 +38,5 @@\n remove the other-dictionary+dictionary. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by year with the oldest book first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary\n    \"\"\"\n        books.sort(key=lambda x: x['year'])\n    if len(books) > 1:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n        else:\n            books.pop(1)\n    else:\n        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n    return books\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list by the key year with smallest number first in the array list first remove the book 'The Voyage Out' unless there are two dictionaries within the array list then remove the other dictionary.\n    \"\"\"\n        for book in books:\n        if book['title'] == 'The Voyage Out':\n            books.remove(book)\n    books.sort(key=lambda x: x['year'])\n    return books\n"}}, {"source": "11", "target": "12", "metadata": {"diff": 8, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\nedge: (11->12)\ndiff:\n--- \n+++ \n@@ -3,9 +3,7 @@\n writer): \"\"\" Returns-a-list-of+the dictionaries of the\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns a list of dictionaries of the specified author.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n"}}, {"source": "11", "target": "13", "metadata": {"diff": 16, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\nedge: (11->13)\ndiff:\n--- \n+++ \n@@ -4,7 +4,7 @@\n \"\"\" Returns the-dictionaries+information of the specified\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the information of the specified writer.\n    \"\"\"\n        writerBooks = []\n    for book in books:\n        if book['writer'] == writer:\n            writerBooks.append(book)\n    return writerBooks\n\n"}}, {"source": "12", "target": "11", "metadata": {"diff": 10, "color": "#003a7d", "arrow_color": "#003a7d", "username": "student67", "hover": "username:student67\nedge: (12->11)\ndiff:\n--- \n+++ \n@@ -8,5 +8,5 @@\n of the specified-author.+writer. \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified author.\n    \"\"\"\n        return sorted(books[writer], key=lambda book: book['title'])\n\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries of the specified writer.\n    \"\"\"\n        return sorted(books, key=lambda book: book[writer])\n"}}, {"source": "14", "target": "0", "metadata": {"diff": 3, "color": "#ff7f50", "arrow_color": "#ff7f50", "username": "student70", "hover": "username:student70\nedge: (14->0)\ndiff:\n--- \n+++ \n@@ -8,8 +8,8 @@\n entries in the-dictionary-books+input+list where the value\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the dictionary books where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return {k: v for k, v in books.items() if v['author'] == writer}\n\nprint(sortedBooks(books, 'J. R. R. Tolkien'))\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    return all the entries in the input list where the value for the 'author' key is equal to the input writer.\n    \"\"\"\n        return [book for book in books if book['author'] == writer]\n"}}, {"source": "15", "target": "15", "metadata": {"diff": 15, "color": "#7fff00", "arrow_color": "#7fff00", "username": "student78", "hover": "username:student78\nedge: (15->15)\ndiff:\n--- \n+++ \n@@ -14,12 +14,10 @@\n list of dictionaries-where+thats+authors+match the input writer-matches-the-key-author \"\"\"\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the input writer matches the key author\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n"}}, {"source": "15", "target": "16", "metadata": {"diff": 9, "color": "#7fff00", "arrow_color": "#7fff00", "username": "student78", "hover": "username:student78\nedge: (15->16)\ndiff:\n--- \n+++ \n@@ -14,9 +14,17 @@\n list of dictionaries-thats-authors-match+where+the+associated+data+to+the+key+'author'+is+equal+to the input writer\n\nFROM completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries thats authors match the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda x: x['title'])\n\n\nTO completion:\ndef sortedBooks(books, writer):\n    \"\"\"\n    if books is a list of dictionaries, output a list of dictionaries where the associated data to the key 'author' is equal to the input writer\n    \"\"\"\n        return sorted([book for book in books if book['author'] == writer], key=lambda book: book['title'])\n"}}], "directed": true}];
             // Data selection and normalization
             state.nodeSizeDataSource = "size";
             state.useNodeSizeNormalization = false;
@@ -2002,126 +2002,126 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
         elements:{
           // Containers
-          mainContainer: document.getElementById("iN5JAZmLfy4E4QjcO-main-div"),
-          tooltipContainer: document.getElementById("iN5JAZmLfy4E4QjcO-tooltip-div"),
-          leftContainer: document.getElementById("iN5JAZmLfy4E4QjcO-left-div"),
-          rightContainer: document.getElementById("iN5JAZmLfy4E4QjcO-right-div"),
-          graphContainer: document.getElementById("iN5JAZmLfy4E4QjcO-graph-div"),
-          detailsContainer: document.getElementById("iN5JAZmLfy4E4QjcO-details-div"),
-          detailsHead: document.getElementById("iN5JAZmLfy4E4QjcO-details-head"),
-          detailsBody: document.getElementById("iN5JAZmLfy4E4QjcO-details-body"),
+          mainContainer: document.getElementById("i7vs72nc0i1uj4P1A-main-div"),
+          tooltipContainer: document.getElementById("i7vs72nc0i1uj4P1A-tooltip-div"),
+          leftContainer: document.getElementById("i7vs72nc0i1uj4P1A-left-div"),
+          rightContainer: document.getElementById("i7vs72nc0i1uj4P1A-right-div"),
+          graphContainer: document.getElementById("i7vs72nc0i1uj4P1A-graph-div"),
+          detailsContainer: document.getElementById("i7vs72nc0i1uj4P1A-details-div"),
+          detailsHead: document.getElementById("i7vs72nc0i1uj4P1A-details-head"),
+          detailsBody: document.getElementById("i7vs72nc0i1uj4P1A-details-body"),
           // Data sources
-          dataHead: document.getElementById("iN5JAZmLfy4E4QjcO-data-head"),
-          dataBody: document.getElementById("iN5JAZmLfy4E4QjcO-data-body"),
-          graphSelectionContainer: document.getElementById("iN5JAZmLfy4E4QjcO-graph-select-div"),
-          graphSelection: document.getElementById("iN5JAZmLfy4E4QjcO-graph-select"),
-          nodeSizeDataSourceSelect: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-data-source-select"),
-          nodeSizeNormalizationCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-normalization-checkbox"),
-          nodeSizeNormalizationContainer: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-norm-div"),
-          nodeSizeNormalizationMinText: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-normalization-min-text"),
-          nodeSizeNormalizationMinSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-normalization-min-slider"),
-          nodeSizeNormalizationMaxText: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-normalization-max-text"),
-          nodeSizeNormalizationMaxSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-normalization-max-slider"),
-          edgeSizeDataSourceSelect: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-data-source-select"),
-          edgeSizeNormalizationCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-normalization-checkbox"),
-          edgeSizeNormalizationContainer: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-norm-div"),
-          edgeSizeNormalizationMinText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-normalization-min-text"),
-          edgeSizeNormalizationMinSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-normalization-min-slider"),
-          edgeSizeNormalizationMaxText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-normalization-max-text"),
-          edgeSizeNormalizationMaxSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-normalization-max-slider"),
+          dataHead: document.getElementById("i7vs72nc0i1uj4P1A-data-head"),
+          dataBody: document.getElementById("i7vs72nc0i1uj4P1A-data-body"),
+          graphSelectionContainer: document.getElementById("i7vs72nc0i1uj4P1A-graph-select-div"),
+          graphSelection: document.getElementById("i7vs72nc0i1uj4P1A-graph-select"),
+          nodeSizeDataSourceSelect: document.getElementById("i7vs72nc0i1uj4P1A-node-size-data-source-select"),
+          nodeSizeNormalizationCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-size-normalization-checkbox"),
+          nodeSizeNormalizationContainer: document.getElementById("i7vs72nc0i1uj4P1A-node-size-norm-div"),
+          nodeSizeNormalizationMinText: document.getElementById("i7vs72nc0i1uj4P1A-node-size-normalization-min-text"),
+          nodeSizeNormalizationMinSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-size-normalization-min-slider"),
+          nodeSizeNormalizationMaxText: document.getElementById("i7vs72nc0i1uj4P1A-node-size-normalization-max-text"),
+          nodeSizeNormalizationMaxSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-size-normalization-max-slider"),
+          edgeSizeDataSourceSelect: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-data-source-select"),
+          edgeSizeNormalizationCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-normalization-checkbox"),
+          edgeSizeNormalizationContainer: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-norm-div"),
+          edgeSizeNormalizationMinText: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-normalization-min-text"),
+          edgeSizeNormalizationMinSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-normalization-min-slider"),
+          edgeSizeNormalizationMaxText: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-normalization-max-text"),
+          edgeSizeNormalizationMaxSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-normalization-max-slider"),
           // General
-          generalHead: document.getElementById("iN5JAZmLfy4E4QjcO-general-head"),
-          generalBody: document.getElementById("iN5JAZmLfy4E4QjcO-general-body"),
-          resetButton: document.getElementById("iN5JAZmLfy4E4QjcO-reset"),
-          fullscreenButton: document.getElementById("iN5JAZmLfy4E4QjcO-fullscreen-button"),
-          svgExportButton: document.getElementById("iN5JAZmLfy4E4QjcO-svg"),
-          pngExportButton: document.getElementById("iN5JAZmLfy4E4QjcO-png"),
-          jpgExportButton: document.getElementById("iN5JAZmLfy4E4QjcO-jpg"),
+          generalHead: document.getElementById("i7vs72nc0i1uj4P1A-general-head"),
+          generalBody: document.getElementById("i7vs72nc0i1uj4P1A-general-body"),
+          resetButton: document.getElementById("i7vs72nc0i1uj4P1A-reset"),
+          fullscreenButton: document.getElementById("i7vs72nc0i1uj4P1A-fullscreen-button"),
+          svgExportButton: document.getElementById("i7vs72nc0i1uj4P1A-svg"),
+          pngExportButton: document.getElementById("i7vs72nc0i1uj4P1A-png"),
+          jpgExportButton: document.getElementById("i7vs72nc0i1uj4P1A-jpg"),
           // Nodes
-          nodeHead: document.getElementById("iN5JAZmLfy4E4QjcO-node-head"),
-          nodeBody: document.getElementById("iN5JAZmLfy4E4QjcO-node-body"),
-          nodeCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-checkbox"),
-          nodeSizeFactorText: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-factor-text"),
-          nodeSizeFactorSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-size-factor-slider"),
-          nodeDragFixCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-drag-fix-checkbox"),
-          nodeHoverNeighborhoodCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-hover-neighborhood-checkbox"),
-          nodeHoverTooltipCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-hover-tooltip-checkbox"),
-          nodeReleaseButton: document.getElementById("iN5JAZmLfy4E4QjcO-node-release-button"),
+          nodeHead: document.getElementById("i7vs72nc0i1uj4P1A-node-head"),
+          nodeBody: document.getElementById("i7vs72nc0i1uj4P1A-node-body"),
+          nodeCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-checkbox"),
+          nodeSizeFactorText: document.getElementById("i7vs72nc0i1uj4P1A-node-size-factor-text"),
+          nodeSizeFactorSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-size-factor-slider"),
+          nodeDragFixCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-drag-fix-checkbox"),
+          nodeHoverNeighborhoodCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-hover-neighborhood-checkbox"),
+          nodeHoverTooltipCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-hover-tooltip-checkbox"),
+          nodeReleaseButton: document.getElementById("i7vs72nc0i1uj4P1A-node-release-button"),
           // Node images
-          nodeImageHead: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-head"),
-          nodeImageBody: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-body"),
-          nodeImageCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-checkbox"),
-          nodeImageMetaControl: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-meta-control"),
-          nodeImageSizeFactorText: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-size-factor-text"),
-          nodeImageSizeFactorSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-image-size-factor-slider"),
+          nodeImageHead: document.getElementById("i7vs72nc0i1uj4P1A-node-image-head"),
+          nodeImageBody: document.getElementById("i7vs72nc0i1uj4P1A-node-image-body"),
+          nodeImageCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-image-checkbox"),
+          nodeImageMetaControl: document.getElementById("i7vs72nc0i1uj4P1A-node-image-meta-control"),
+          nodeImageSizeFactorText: document.getElementById("i7vs72nc0i1uj4P1A-node-image-size-factor-text"),
+          nodeImageSizeFactorSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-image-size-factor-slider"),
           // Node labels
-          nodeLabelHead: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-head"),
-          nodeLabelBody: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-body"),
-          nodeLabelCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-checkbox"),
-          nodeLabelBorderCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-border-checkbox"),
-          nodeLabelTextDataSourceSelect: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-data-source-select"),
-          nodeLabelSizeFactorText: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-size-factor-text"),
-          nodeLabelSizeFactorSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-size-factor-slider"),
-          nodeLabelRotationText: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-rotation-text"),
-          nodeLabelRotationSlider: document.getElementById("iN5JAZmLfy4E4QjcO-node-label-rotation-slider"),
+          nodeLabelHead: document.getElementById("i7vs72nc0i1uj4P1A-node-label-head"),
+          nodeLabelBody: document.getElementById("i7vs72nc0i1uj4P1A-node-label-body"),
+          nodeLabelCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-label-checkbox"),
+          nodeLabelBorderCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-node-label-border-checkbox"),
+          nodeLabelTextDataSourceSelect: document.getElementById("i7vs72nc0i1uj4P1A-node-label-data-source-select"),
+          nodeLabelSizeFactorText: document.getElementById("i7vs72nc0i1uj4P1A-node-label-size-factor-text"),
+          nodeLabelSizeFactorSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-label-size-factor-slider"),
+          nodeLabelRotationText: document.getElementById("i7vs72nc0i1uj4P1A-node-label-rotation-text"),
+          nodeLabelRotationSlider: document.getElementById("i7vs72nc0i1uj4P1A-node-label-rotation-slider"),
           // Edges
-          edgeHead: document.getElementById("iN5JAZmLfy4E4QjcO-edge-head"),
-          edgeBody: document.getElementById("iN5JAZmLfy4E4QjcO-edge-body"),
-          edgeCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-edge-checkbox"),
-          edgeSizeFactorText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-factor-text"),
-          edgeSizeFactorSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-size-factor-slider"),
-          edgeCurvatureText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-curvature-text"),
-          edgeCurvatureSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-curvature-slider"),
-          edgeHoverTooltipCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-edge-hover-tooltip-checkbox"),
+          edgeHead: document.getElementById("i7vs72nc0i1uj4P1A-edge-head"),
+          edgeBody: document.getElementById("i7vs72nc0i1uj4P1A-edge-body"),
+          edgeCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-edge-checkbox"),
+          edgeSizeFactorText: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-factor-text"),
+          edgeSizeFactorSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-size-factor-slider"),
+          edgeCurvatureText: document.getElementById("i7vs72nc0i1uj4P1A-edge-curvature-text"),
+          edgeCurvatureSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-curvature-slider"),
+          edgeHoverTooltipCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-edge-hover-tooltip-checkbox"),
           // Edge labels
-          edgeLabelHead: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-head"),
-          edgeLabelBody: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-body"),
-          edgeLabelCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-checkbox"),
-          edgeLabelBorderCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-border-checkbox"),
-          edgeLabelTextDataSourceSelect: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-data-source-select"),
-          edgeLabelSizeFactorText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-size-factor-text"),
-          edgeLabelSizeFactorSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-size-factor-slider"),
-          edgeLabelRotationText: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-rotation-text"),
-          edgeLabelRotationSlider: document.getElementById("iN5JAZmLfy4E4QjcO-edge-label-rotation-slider"),
+          edgeLabelHead: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-head"),
+          edgeLabelBody: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-body"),
+          edgeLabelCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-checkbox"),
+          edgeLabelBorderCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-border-checkbox"),
+          edgeLabelTextDataSourceSelect: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-data-source-select"),
+          edgeLabelSizeFactorText: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-size-factor-text"),
+          edgeLabelSizeFactorSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-size-factor-slider"),
+          edgeLabelRotationText: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-rotation-text"),
+          edgeLabelRotationSlider: document.getElementById("i7vs72nc0i1uj4P1A-edge-label-rotation-slider"),
           // Layout algorithm
-          layoutAlgorithmHead: document.getElementById("iN5JAZmLfy4E4QjcO-layout-algorithm-head"),
-          layoutAlgorithmBody: document.getElementById("iN5JAZmLfy4E4QjcO-layout-algorithm-body"),
-          simulationCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-simulation-active-checkbox"),
-          manyBodyForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-checkbox"),
-          manyBodyForceContainer: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-div"),
-          manyBodyForceStrengthText: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-strength-text"),
-          manyBodyForceStrengthSlider: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-strength-slider"),
-          manyBodyForceThetaText: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-theta-text"),
-          manyBodyForceThetaSlider: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-theta-slider"),
-          manyBodyForceMinDistCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-min-distance-checkbox"),
-          manyBodyForceMinDistContainer: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-min-distance-div"),
-          manyBodyForceMinDistText: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-min-distance-text"),
-          manyBodyForceMinDistSlider: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-min-distance-slider"),
-          manyBodyForceMaxDistCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-max-distance-checkbox"),
-          manyBodyForceMaxDistContainer: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-max-distance-div"),
-          manyBodyForceMaxDistText: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-max-distance-text"),
-          manyBodyForceMaxDistSlider: document.getElementById("iN5JAZmLfy4E4QjcO-many-body-force-max-distance-slider"),
-          linksForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-checkbox"),
-          linksForceContainer: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-div"),
-          linksForceDistanceText: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-distance-text"),
-          linksForceDistanceSlider: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-distance-slider"),
-          linksForceStrengthText: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-strength-text"),
-          linksForceStrengthSlider: document.getElementById("iN5JAZmLfy4E4QjcO-links-force-strength-slider"),
-          collisionForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-checkbox"),
-          collisionForceContainer: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-div"),
-          collisionForceRadiusText: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-radius-text"),
-          collisionForceRadiusSlider: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-radius-slider"),
-          collisionForceStrengthText: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-strength-text"),
-          collisionForceStrengthSlider: document.getElementById("iN5JAZmLfy4E4QjcO-collision-force-strength-slider"),
-          xPositioningForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-x-positioning-force-checkbox"),
-          xPositioningForceContainer: document.getElementById("iN5JAZmLfy4E4QjcO-x-positioning-force-div"),
-          xPositioningForceStrengthText: document.getElementById("iN5JAZmLfy4E4QjcO-x-positioning-force-strength-text"),
-          xPositioningForceStrengthSlider: document.getElementById("iN5JAZmLfy4E4QjcO-x-positioning-force-strength-slider"),
-          yPositioningForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-y-positioning-force-checkbox"),
-          yPositioningForceContainer: document.getElementById("iN5JAZmLfy4E4QjcO-y-positioning-force-div"),
-          yPositioningForceStrengthText: document.getElementById("iN5JAZmLfy4E4QjcO-y-positioning-force-strength-text"),
-          yPositioningForceStrengthSlider: document.getElementById("iN5JAZmLfy4E4QjcO-y-positioning-force-strength-slider"),
-          centeringForceCheckbox: document.getElementById("iN5JAZmLfy4E4QjcO-centering-force-checkbox"),
+          layoutAlgorithmHead: document.getElementById("i7vs72nc0i1uj4P1A-layout-algorithm-head"),
+          layoutAlgorithmBody: document.getElementById("i7vs72nc0i1uj4P1A-layout-algorithm-body"),
+          simulationCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-simulation-active-checkbox"),
+          manyBodyForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-checkbox"),
+          manyBodyForceContainer: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-div"),
+          manyBodyForceStrengthText: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-strength-text"),
+          manyBodyForceStrengthSlider: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-strength-slider"),
+          manyBodyForceThetaText: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-theta-text"),
+          manyBodyForceThetaSlider: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-theta-slider"),
+          manyBodyForceMinDistCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-min-distance-checkbox"),
+          manyBodyForceMinDistContainer: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-min-distance-div"),
+          manyBodyForceMinDistText: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-min-distance-text"),
+          manyBodyForceMinDistSlider: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-min-distance-slider"),
+          manyBodyForceMaxDistCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-max-distance-checkbox"),
+          manyBodyForceMaxDistContainer: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-max-distance-div"),
+          manyBodyForceMaxDistText: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-max-distance-text"),
+          manyBodyForceMaxDistSlider: document.getElementById("i7vs72nc0i1uj4P1A-many-body-force-max-distance-slider"),
+          linksForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-links-force-checkbox"),
+          linksForceContainer: document.getElementById("i7vs72nc0i1uj4P1A-links-force-div"),
+          linksForceDistanceText: document.getElementById("i7vs72nc0i1uj4P1A-links-force-distance-text"),
+          linksForceDistanceSlider: document.getElementById("i7vs72nc0i1uj4P1A-links-force-distance-slider"),
+          linksForceStrengthText: document.getElementById("i7vs72nc0i1uj4P1A-links-force-strength-text"),
+          linksForceStrengthSlider: document.getElementById("i7vs72nc0i1uj4P1A-links-force-strength-slider"),
+          collisionForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-checkbox"),
+          collisionForceContainer: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-div"),
+          collisionForceRadiusText: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-radius-text"),
+          collisionForceRadiusSlider: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-radius-slider"),
+          collisionForceStrengthText: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-strength-text"),
+          collisionForceStrengthSlider: document.getElementById("i7vs72nc0i1uj4P1A-collision-force-strength-slider"),
+          xPositioningForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-x-positioning-force-checkbox"),
+          xPositioningForceContainer: document.getElementById("i7vs72nc0i1uj4P1A-x-positioning-force-div"),
+          xPositioningForceStrengthText: document.getElementById("i7vs72nc0i1uj4P1A-x-positioning-force-strength-text"),
+          xPositioningForceStrengthSlider: document.getElementById("i7vs72nc0i1uj4P1A-x-positioning-force-strength-slider"),
+          yPositioningForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-y-positioning-force-checkbox"),
+          yPositioningForceContainer: document.getElementById("i7vs72nc0i1uj4P1A-y-positioning-force-div"),
+          yPositioningForceStrengthText: document.getElementById("i7vs72nc0i1uj4P1A-y-positioning-force-strength-text"),
+          yPositioningForceStrengthSlider: document.getElementById("i7vs72nc0i1uj4P1A-y-positioning-force-strength-slider"),
+          centeringForceCheckbox: document.getElementById("i7vs72nc0i1uj4P1A-centering-force-checkbox"),
         },
 
         composites:{
@@ -2483,7 +2483,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
             create(){
               // Main container
               this.mainContainer = document.createElement("div");
-              this.mainContainer.id = "iN5JAZmLfy4E4QjcO-progress-container";
+              this.mainContainer.id = "i7vs72nc0i1uj4P1A-progress-container";
               this.mainContainer.style.backgroundColor = state.shownData.general.background_color;
               ui.elements.graphContainer.style.backgroundColor = state.shownData.general.background_color;
               // Text container
@@ -2532,7 +2532,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   menuDiv.innerText = ui.symbols.menuHidden;
                 }
-                menuDiv.id = "iN5JAZmLfy4E4QjcO-menu-toggle-button";
+                menuDiv.id = "i7vs72nc0i1uj4P1A-menu-toggle-button";
                 menuDiv.onclick = ui.composites.menu.toggle;
                 ui.elements.graphContainer.appendChild(menuDiv);
                 ui.elements.menuToggleDiv = menuDiv;
@@ -2546,27 +2546,27 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 } else {
                   detailsDiv.innerText = ui.symbols.detailsHidden;
                 }
-                detailsDiv.id = "iN5JAZmLfy4E4QjcO-details-toggle-button";
+                detailsDiv.id = "i7vs72nc0i1uj4P1A-details-toggle-button";
                 detailsDiv.onclick = ui.composites.details.toggle;
                 ui.elements.graphContainer.appendChild(detailsDiv);
                 ui.elements.detailsToggleDiv = detailsDiv;
               }
 
               // - Graph drawing area
-              const svg = d3.select("#iN5JAZmLfy4E4QjcO-graph-div").append("svg");
+              const svg = d3.select("#i7vs72nc0i1uj4P1A-graph-div").append("svg");
               state.currentGraphParts.svg = svg;
               svg
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight);
               // - Background rectangle
               const backgroundRect = svg.append("rect")
-                .attr("id", "iN5JAZmLfy4E4QjcO-background")
+                .attr("id", "i7vs72nc0i1uj4P1A-background")
                 .attr("width", state.graphContainerWidth)
                 .attr("height", state.graphContainerHeight)
                 .attr("fill", state.shownData.general.background_color);
               state.currentGraphParts.backgroundRect = backgroundRect;
               // - Zoomable and draggable group as graph drawing area
-              const view = svg.append("g").attr("id", "iN5JAZmLfy4E4QjcO-zoomable-graph-group");
+              const view = svg.append("g").attr("id", "i7vs72nc0i1uj4P1A-zoomable-graph-group");
               state.currentGraphParts.view = view;
               function zoomed(event) {
                 view.attr("transform", event.transform);
@@ -2625,7 +2625,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               //       in back and which are drawn in front (there is no z-order property in SVG)
               // Edges
               state.currentGraphParts.edgeMainGroup = view.append("g")
-                .attr("id", "iN5JAZmLfy4E4QjcO-edge-group")
+                .attr("id", "i7vs72nc0i1uj4P1A-edge-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdges));
               state.currentGraphParts.edgeGroups = state.currentGraphParts.edgeMainGroup
                 .selectAll("g")
@@ -2633,7 +2633,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 .join("g");
               // Nodes
               state.currentGraphParts.nodeMainGroup = view.append("g")
-                .attr("id", "iN5JAZmLfy4E4QjcO-node-group")
+                .attr("id", "i7vs72nc0i1uj4P1A-node-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodes));
               state.currentGraphParts.nodeGroups = state.currentGraphParts.nodeMainGroup
                 .selectAll("g")
@@ -2645,7 +2645,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 edgeLabelData.push(i);
               }
               state.currentGraphParts.edgeLabelMainGroup = view.append("g")
-                .attr("id", "iN5JAZmLfy4E4QjcO-edge-label-group")
+                .attr("id", "i7vs72nc0i1uj4P1A-edge-label-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showEdgeLabels));
               state.currentGraphParts.edgeLabelGroups = state.currentGraphParts.edgeLabelMainGroup
                 .selectAll("g")
@@ -2657,7 +2657,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 nodeLabelData.push(i);
               }
               state.currentGraphParts.nodeLabelMainGroup = view.append("g")
-                .attr("id", "iN5JAZmLfy4E4QjcO-node-label-group");
+                .attr("id", "i7vs72nc0i1uj4P1A-node-label-group");
               state.currentGraphParts.nodeLabelGroups = state.currentGraphParts.nodeLabelMainGroup
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeLabels))
                 .selectAll("g")
@@ -2674,7 +2674,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 }
               }
               state.currentGraphParts.nodeImageMainGroup = view.append("g")
-                .attr("id", "iN5JAZmLfy4E4QjcO-node-image-group")
+                .attr("id", "i7vs72nc0i1uj4P1A-node-image-group")
                 .style("display", ui.convert.boolToDisplayStyle(state.showNodeImages));
               state.currentGraphParts.nodeImageGroups = state.currentGraphParts.nodeImageMainGroup
                 .selectAll("g")
@@ -2905,7 +2905,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function nodeClicked(event, node){
                 let htmlText = "<div>Node: " + String(node.id) + "</div>";
                 if(typeof(node.click) !== "undefined" && node.click !== ""){
-                  htmlText += '<div id="iN5JAZmLfy4E4QjcO-details-user-provided">' + node.click + '</div>';
+                  htmlText += '<div id="i7vs72nc0i1uj4P1A-details-user-provided">' + node.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }
@@ -3158,7 +3158,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
 
               // 1) Remove existing elements
               ui.composites.graph.removeEdges();
-              svg.select("#iN5JAZmLfy4E4QjcO-arrow-marker").remove();
+              svg.select("#i7vs72nc0i1uj4P1A-arrow-marker").remove();
               // 2) Create new elements
               // - Paths
               state.currentGraphParts.edgePaths = edgeGroups.append("path")
@@ -3172,7 +3172,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                 const arrowSizeDouble = arrowSize * 2.0,
                   arrowSizeHalf = arrowSize / 2.0;
                 const marker = svg.append("marker")
-                  .attr("id", "iN5JAZmLfy4E4QjcO-arrow-marker")
+                  .attr("id", "i7vs72nc0i1uj4P1A-arrow-marker")
                   .attr("markerUnits", "userSpaceOnUse")
                   .attr("viewBox", "0 0 " + arrowSizeDouble + " " + arrowSizeDouble)
                   .attr("refX", 0)
@@ -3185,7 +3185,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
                     .attr("d", "M 0 0 L " + arrowSizeDouble + " " + arrowSizeHalf + " L 0 " + arrowSize + " z")
                     .attr("fill", state.shownData.general.arrow_color)
                 state.currentGraphParts.edgePaths
-                  .attr("marker-end", "url(#iN5JAZmLfy4E4QjcO-arrow-marker)");
+                  .attr("marker-end", "url(#i7vs72nc0i1uj4P1A-arrow-marker)");
               }
               // - Edge hover behavior
               if(state.parsedData.general.contains_edge_hover){
@@ -3219,7 +3219,7 @@ function(t){"use strict";function n(t,n){return null==t||null==n?NaN:t<n?-1:t>n?
               function edgeClicked(event, edge){
                 let htmlText = "<div>Edge: " + String(edge.id) + "</div>";
                 if(typeof(edge.click) !== "undefined" && edge.click !== ""){
-                  htmlText += '<div id="iN5JAZmLfy4E4QjcO-details-user-provided">' + edge.click + '</div>';
+                  htmlText += '<div id="i7vs72nc0i1uj4P1A-details-user-provided">' + edge.click + '</div>';
                 }
                 ui.elements.detailsBody.innerHTML = htmlText;
               }

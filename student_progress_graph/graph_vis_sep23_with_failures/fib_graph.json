@@ -77,11 +77,11 @@
     "adjacency": [
         [
             {
-                "diff": 16,
+                "diff": 10,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student11",
-                "hover": "username:student11\n\ndiff:\n--- \n+++ \n@@ -7,7 +7,7 @@\n if n==1 or-13+n==13 or-21+n==21 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    a function check if n==1 or 13 or 21\n    \"\"\"\n        if n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    elif n == 13:\n        print('Hello')\n    elif n == 21:\n        print('Hello')\n    elif n == 34:\n        print('Hello World')\n    else:\n        return fib(n-1) + fib(n-2)\n\nprint(fib(7))\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    a function check if n==1 or n==13 or n==21\n    \"\"\"\n        if n == 1 or n == 13 or n == 21:\n        return True\n    else:\n        return False\n\n",
+                "hover": "username:student11\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -7,7 +7,7 @@\n if n==1 or-13+n==13 or-21+n==21 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    a function check if n==1 or 13 or 21\n    \"\"\"\n        if n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    elif n == 13:\n        print('Hello')\n    elif n == 21:\n        print('Hello')\n    elif n == 34:\n        print('Hello World')\n    else:\n        return fib(n-1) + fib(n-2)\n\nprint(fib(7))\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    a function check if n==1 or n==13 or n==21\n    \"\"\"\n        if n == 1 or n == 13 or n == 21:\n        return True\n    else:\n        return False\n\n",
                 "id": 1,
                 "key": 0
             }
@@ -89,59 +89,70 @@
         [],
         [
             {
-                "diff": 13,
+                "diff": 16,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -1,16 +1,25 @@\n def fib(n): \"\"\"-If+Check inputted number+against+the+set+of+Fibonacci+numbers.+If+the+number is-a-Fibonacci-number,+in+the+set, return-true,-otherwise+True,+otherwise, return-false.+False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    If inputted number is a Fibonacci number, return true, otherwise return false.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check inputted number against the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n        a, b = b, a + b\n    return n in fib_set\n",
+                "hover": "username:student13\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -1,16 +1,25 @@\n def fib(n): \"\"\"-If+Check inputted number+against+the+set+of+Fibonacci+numbers.+If+the+number is-a-Fibonacci-number,+in+the+set, return-true,-otherwise+True,+otherwise, return-false.+False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    If inputted number is a Fibonacci number, return true, otherwise return false.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check inputted number against the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n        a, b = b, a + b\n    return n in fib_set\n",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
+                "hover": "username:student13\nedge: (2->5)\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
+                "hover": "username:student13\nedge: (2->5)\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
                 "id": 5,
                 "key": 1
             },
             {
-                "diff": 3,
+                "diff": 12,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -1,14 +1,23 @@\n def fib(n): \"\"\"+Put+all+possible+Fibonacci+numbers+in+a+set. Check if+the inputted number is-a-Fibonacci-number.+in+that+set. If it is,@@ -18,9 +27,9 @@\n it is not-a-Fibonacci-number,+in+the+set, return False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in a set. Check if the inputted number is in that set. If it is, return True. If it is not in the set, return False.\n    \"\"\"\n        fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n    return n in fib_set\n",
+                "hover": "username:student13\nedge: (2->6)\ndiff:\n--- \n+++ \n@@ -1,14 +1,23 @@\n def fib(n): \"\"\"+Put+all+possible+Fibonacci+numbers+in+a+set. Check if+the inputted number is-a-Fibonacci-number.+in+that+set. If it is,@@ -18,9 +27,9 @@\n it is not-a-Fibonacci-number,+in+the+set, return False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in a set. Check if the inputted number is in that set. If it is, return True. If it is not in the set, return False.\n    \"\"\"\n        fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n    return n in fib_set\n",
                 "id": 6,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 7,
+                "diff": 9,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -2,9 +2,11 @@\n fib(n): \"\"\" Check+if inputted number-against+is+in the set of\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check inputted number against the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n        a, b = b, a + b\n    return n in fib_set\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is in the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        if n in fib_set:\n        return True\n    else:\n        return False\n",
+                "hover": "username:student13\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -2,9 +2,11 @@\n fib(n): \"\"\" Check+if inputted number-against+is+in the set of\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check inputted number against the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n        a, b = b, a + b\n    return n in fib_set\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is in the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        if n in fib_set:\n        return True\n    else:\n        return False\n",
                 "id": 4,
                 "key": 0
             },
             {
-                "diff": 12,
+                "diff": 2,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student22",
-                "hover": "username:student22\n\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n of the list-['1','13','21']+[1,13,21] and return a\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list ['1','13','21'] and return a boolean value \n    \"\"\"\n        if n in ['1','13','21']:\n        return True\n    else:\n        return False\n\nfib(13)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list [1,13,21] and return a boolean value \n    \"\"\"\n        if n in [1,13,21]:\n        return True\n    else:\n        return False\n\nfib(1)\n",
+                "hover": "username:student22\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -12,7 +12,7 @@\n of the list-['1','13','21']+[1,13,21] and return a\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list ['1','13','21'] and return a boolean value \n    \"\"\"\n        if n in ['1','13','21']:\n        return True\n    else:\n        return False\n\nfib(13)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list [1,13,21] and return a boolean value \n    \"\"\"\n        if n in [1,13,21]:\n        return True\n    else:\n        return False\n\nfib(1)\n",
                 "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 0,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student13",
+                "hover": "username:student13\nedge: (4->2)\ndiff:\n--- \n+++ \n@@ -6,19 +6,12 @@\n inputted number is-in-the-set-of+a Fibonacci-numbers.+number. If-the-number-is-in-the-set,+it+is, return True, otherwise,\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is in the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        if n in fib_set:\n        return True\n    else:\n        return False\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
+                "id": 2,
                 "key": 0
             }
         ],
@@ -151,132 +162,34 @@
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -6,19 +6,12 @@\n inputted number is-in-the-set-of+a Fibonacci-numbers.+number. If-the-number-is-in-the-set,+it+is, return True, otherwise,\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is in the set of Fibonacci numbers. If the number is in the set, return True, otherwise, return False.\n    \"\"\"\n        if n in fib_set:\n        return True\n    else:\n        return False\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
-                "id": 2,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 17,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -13,8 +13,14 @@\n it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number, return False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
+                "hover": "username:student13\nedge: (5->2)\ndiff:\n--- \n+++ \n@@ -13,8 +13,14 @@\n it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number, return False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True, otherwise, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
                 "id": 2,
                 "key": 0
             },
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0 or n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
+                "hover": "username:student13\nedge: (5->2)\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0 or n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return True\n    elif n ==",
                 "id": 2,
                 "key": 1
             },
             {
-                "diff": 0,
+                "diff": 1,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student13",
-                "hover": "username:student13\n\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0 or n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
+                "hover": "username:student13\nedge: (5->5)\ndiff:\n\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci number. If it is, return True. If it is not a Fibonacci number, return False.\n    \"\"\"\n        if n == 0 or n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
                 "id": 5,
                 "key": 0
             },
             {
-                "diff": 10,
+                "diff": 18,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student8",
-                "hover": "username:student8\n\ndiff:\n--- \n+++ \n@@ -1,16 +1,18 @@\n def fib(n): \"\"\"-Returns-True+Checks if the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci number, or False otherwise.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Checks if the input value is the sum of any two consecutive Fibonacci numbers\n    \"\"\"\n        a, b = 0, 1\n    while a <= n:\n        if a == n:\n            return True\n        a, b = b, a + b\n    return False\n",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 8,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student13",
-                "hover": "username:student13\n\ndiff:\n--- \n+++ \n@@ -1,35 +1,25 @@\n def fib(n): \"\"\"-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns True.-If+Else, it-is-not-in-the-set,-return+returns False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in a set. Check if the inputted number is in that set. If it is, return True. If it is not in the set, return False.\n    \"\"\"\n        fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n    return n in fib_set\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    The function checks if the inputted number is a Fibonacci number and if it is, returns True. Else, it returns False.\n    \"\"\"\n        if n == 0:\n        return False\n    elif n == 1:\n        return True\n    else:\n        a = 0\n        b = 1\n        while b < n:\n            a, b = b, a + b\n        return b == n\n",
-                "id": 1,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "#008dff",
-                "arrow_color": "#008dff",
-                "username": "student16",
-                "hover": "username:student16\n\ndiff:\n--- \n+++ \n@@ -7,5 +7,9 @@\n number doesn't have-9+9,+return+true+or+false \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    check if a number doesn't have 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check if a number doesn't have 9, return true or false\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
-                "id": 7,
-                "key": 0
-            },
-            {
-                "diff": 9,
-                "color": "#4ecb8d",
-                "arrow_color": "#4ecb8d",
-                "username": "student2",
-                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -10,5 +10,16 @@\n value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a 9 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
-                "id": 7,
-                "key": 1
-            },
-            {
-                "diff": 18,
-                "color": "#4ecb8d",
-                "arrow_color": "#4ecb8d",
-                "username": "student2",
-                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -3,6 +3,12 @@\n \"\"\" this function+returns+only+true+or+false.+It returns false if\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
-                "id": 7,
-                "key": 2
-            },
-            {
-                "diff": 1,
-                "color": "#003a7d",
-                "arrow_color": "#003a7d",
-                "username": "student5",
-                "hover": "username:student5\n\ndiff:\n--- \n+++ \n@@ -7,17 +7,17 @@\n should take an-int-as-a input and return a Boolean+(true+or+false) expression declaring-wither+wether the input only\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an int as a input and return a Boolean expression declaring wither the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return a Boolean (true or false) expression declaring wether the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
-                "id": 7,
-                "key": 3
-            },
-            {
-                "diff": 4,
-                "color": "#003a7d",
-                "arrow_color": "#003a7d",
-                "username": "student5",
-                "hover": "username:student5\n\ndiff:\n--- \n+++ \n@@ -10,14 +10,8 @@\n input and return-a-Boolean-(true-or-false)-expression-declaring-wether+true+if the input only@@ -26,4 +20,12 @@\n 2, or 3+and+false+if+the+input+contains+other+numbers \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return a Boolean (true or false) expression declaring wether the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return true if the input only contains 1, 2, or 3 and false if the input contains other numbers\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
-                "id": 7,
-                "key": 4
-            },
-            {
-                "diff": 11,
-                "color": "#4ecb8d",
-                "arrow_color": "#4ecb8d",
-                "username": "student2",
-                "hover": "username:student2\n\ndiff:\n--- \n+++ \n@@ -14,18 +14,15 @@\n if the value-contains-a-'9'+is+19 but returns true if the value-does+is not-contain-a-9+19 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value is 19 but returns true if the value is not 19\n    \"\"\"\n        if n == 19:\n        return False\n    else:\n        return True\n\nprint(fib(19))\n",
-                "id": 1,
-                "key": 0
-            },
-            {
-                "diff": 2,
-                "color": "#c701ff",
-                "arrow_color": "#c701ff",
-                "username": "student22",
-                "hover": "username:student22\n\ndiff:\n--- \n+++ \n@@ -1,20 +1,21 @@\n def fib(n): \"\"\"-write-a-function-that-checks+check to see if-a+the number is part of the-fibonacci-sequence+list+['1','13','21']+and+return+a+boolean+value \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    write a function that checks to see if a number is part of the fibonacci sequence \n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list ['1','13','21'] and return a boolean value \n    \"\"\"\n        if n in ['1','13','21']:\n        return True\n    else:\n        return False\n\nfib(13)\n",
-                "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 15,
-                "color": "#ffcd8e",
-                "arrow_color": "#ffcd8e",
-                "username": "student37",
-                "hover": "username:student37\n\ndiff:\n--- \n+++ \n@@ -9,26 +9,45 @@\n an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return False-if-it-is-not \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Write a function which takes an integer and returns True if the integer is contained on the list of numbers in the fibonacci sequence and False if it is not\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2)\n\nfib(10)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Write a function which takes an integer and then uses a for loop to produce numbers in the fibonacci sequence stored in the variable x. At the end of each loop, if x equals the input integer, return True, if x is greater than the input integer, return False\n    \"\"\"\n        x = 0\n    y = 1\n    for i in range(n):\n        x, y = y, x + y\n        if x == n:\n            return True\n        elif x > n:\n            return False\n\nprint(fib(7))\n",
+                "hover": "username:student8\nedge: (5->1)\ndiff:\n--- \n+++ \n@@ -1,16 +1,18 @@\n def fib(n): \"\"\"-Returns-True+Checks if the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci number, or False otherwise.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Checks if the input value is the sum of any two consecutive Fibonacci numbers\n    \"\"\"\n        a, b = 0, 1\n    while a <= n:\n        if a == n:\n            return True\n        a, b = b, a + b\n    return False\n",
                 "id": 1,
                 "key": 0
             }
@@ -284,10 +197,97 @@
         [
             {
                 "diff": 6,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student13",
+                "hover": "username:student13\nedge: (6->1)\ndiff:\n--- \n+++ \n@@ -1,35 +1,25 @@\n def fib(n): \"\"\"-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns True.-If+Else, it-is-not-in-the-set,-return+returns False. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in a set. Check if the inputted number is in that set. If it is, return True. If it is not in the set, return False.\n    \"\"\"\n        fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n    return n in fib_set\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    The function checks if the inputted number is a Fibonacci number and if it is, returns True. Else, it returns False.\n    \"\"\"\n        if n == 0:\n        return False\n    elif n == 1:\n        return True\n    else:\n        a = 0\n        b = 1\n        while b < n:\n            a, b = b, a + b\n        return b == n\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 17,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student16",
+                "hover": "username:student16\nedge: (7->7)\ndiff:\n--- \n+++ \n@@ -7,5 +7,9 @@\n number doesn't have-9+9,+return+true+or+false \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    check if a number doesn't have 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check if a number doesn't have 9, return true or false\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
+                "id": 7,
+                "key": 0
+            },
+            {
+                "diff": 11,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student2",
+                "hover": "username:student2\nedge: (7->7)\ndiff:\n--- \n+++ \n@@ -10,5 +10,16 @@\n value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a 9 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
+                "id": 7,
+                "key": 1
+            },
+            {
+                "diff": 4,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student2",
+                "hover": "username:student2\nedge: (7->7)\ndiff:\n--- \n+++ \n@@ -3,6 +3,12 @@\n \"\"\" this function+returns+only+true+or+false.+It returns false if\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
+                "id": 7,
+                "key": 2
+            },
+            {
+                "diff": 3,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student5",
+                "hover": "username:student5\nedge: (7->7)\ndiff:\n--- \n+++ \n@@ -7,17 +7,17 @@\n should take an-int-as-a input and return a Boolean+(true+or+false) expression declaring-wither+wether the input only\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an int as a input and return a Boolean expression declaring wither the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return a Boolean (true or false) expression declaring wether the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
+                "id": 7,
+                "key": 3
+            },
+            {
+                "diff": 7,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student5",
+                "hover": "username:student5\nedge: (7->7)\ndiff:\n--- \n+++ \n@@ -10,14 +10,8 @@\n input and return-a-Boolean-(true-or-false)-expression-declaring-wether+true+if the input only@@ -26,4 +20,12 @@\n 2, or 3+and+false+if+the+input+contains+other+numbers \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return a Boolean (true or false) expression declaring wether the input only contains 1, 2, or 3\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    the function fib(n) should take an input and return true if the input only contains 1, 2, or 3 and false if the input contains other numbers\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n",
+                "id": 7,
+                "key": 4
+            },
+            {
+                "diff": 8,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student2",
+                "hover": "username:student2\nedge: (7->1)\ndiff:\n--- \n+++ \n@@ -14,18 +14,15 @@\n if the value-contains-a-'9'+is+19 but returns true if the value-does+is not-contain-a-9+19 \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    this function returns only true or false. It returns false if the value is 19 but returns true if the value is not 19\n    \"\"\"\n        if n == 19:\n        return False\n    else:\n        return True\n\nprint(fib(19))\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 5,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student22",
+                "hover": "username:student22\nedge: (7->3)\ndiff:\n--- \n+++ \n@@ -1,20 +1,21 @@\n def fib(n): \"\"\"-write-a-function-that-checks+check to see if-a+the number is part of the-fibonacci-sequence+list+['1','13','21']+and+return+a+boolean+value \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    write a function that checks to see if a number is part of the fibonacci sequence \n    \"\"\"\n        if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    check to see if the number is part of the list ['1','13','21'] and return a boolean value \n    \"\"\"\n        if n in ['1','13','21']:\n        return True\n    else:\n        return False\n\nfib(13)\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 13,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student37",
+                "hover": "username:student37\nedge: (8->1)\ndiff:\n--- \n+++ \n@@ -9,26 +9,45 @@\n an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return False-if-it-is-not \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Write a function which takes an integer and returns True if the integer is contained on the list of numbers in the fibonacci sequence and False if it is not\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2)\n\nfib(10)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Write a function which takes an integer and then uses a for loop to produce numbers in the fibonacci sequence stored in the variable x. At the end of each loop, if x equals the input integer, return True, if x is greater than the input integer, return False\n    \"\"\"\n        x = 0\n    y = 1\n    for i in range(n):\n        x, y = y, x + y\n        if x == n:\n            return True\n        elif x > n:\n            return False\n\nprint(fib(7))\n",
+                "id": 1,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 15,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student8",
-                "hover": "username:student8\n\ndiff:\n--- \n+++ \n@@ -2,13 +2,15 @@\n fib(n): \"\"\" Returns-whether-or-not-a+True+if+the number is a Fibonacci-number+number,+or+False+otherwise. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Returns whether or not a number is a Fibonacci number\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) or fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci number, or False otherwise.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
+                "hover": "username:student8\nedge: (9->5)\ndiff:\n--- \n+++ \n@@ -2,13 +2,15 @@\n fib(n): \"\"\" Returns-whether-or-not-a+True+if+the number is a Fibonacci-number+number,+or+False+otherwise. \"\"\"\n\nFROM completion:\ndef fib(n):\n    \"\"\"\n    Returns whether or not a number is a Fibonacci number\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) or fib(n-2)\n\n\nTO completion:\ndef fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci number, or False otherwise.\n    \"\"\"\n        if n == 0:\n        return True\n    elif n == 1:\n        return True\n    else:\n        return fib(n-1) + fib(n-2) == n\n",
                 "id": 5,
                 "key": 0
             }

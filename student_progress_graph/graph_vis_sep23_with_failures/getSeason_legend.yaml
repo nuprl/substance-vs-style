@@ -3,192 +3,192 @@
   !!int "1": |-
     ---
     +++
-    @@ -26,5 +26,11 @@
-     class of the-input"+input,+produce+an+all+lower+case+string" """
+    @@ -28,4 +28,14 @@
+     the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. """
   !!int "2": |-
     ---
     +++
-    @@ -41,4 +41,7 @@
-     output is fall.+No+else+statement. """
+    @@ -16,6 +16,15 @@
+     is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three
   !!int "3": |-
-    ---
-    +++
-    @@ -4,8 +4,11 @@
-     This function inputs+a+string+of the-string+name of a month@@ -22,5 +25,14 @@
-     (in the northern-hemisphere)+hemisphere).+The+input+should+be+capitalized,+the+output+should+not. """
-  !!int "4": |-
-    ---
-    +++
-    @@ -19,4 +19,10 @@
-     the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. """
-  !!int "5": |-
-    ---
-    +++
-    @@ -38,4 +38,15 @@
-     be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -9,7 +9,15 @@
-     string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the
-  !!int "7": |-
-    ---
-    +++
-    @@ -19,6 +19,18 @@
-     in a year.+There+are+seasons+associated+with+each+month.+Winter,+spring,+summer,+and+fall. The code should
-  !!int "8": |-
-    ---
-    +++
-    @@ -54,5 +54,7 @@
-     are all in-fall.+the+season+"fall". """
-  !!int "9": |-
-    ---
-    +++
-    @@ -4,6 +4,9 @@
-     Function takes in+the+name+of an inputted month
-  !!int "10": |-
-    ---
-    +++
-    @@ -29,5 +29,16 @@
-     the correct outputted-season+season,+with+a+return+statement+after+each+if,+else+or+elif+statement """
-  !!int "11": |-
-    ---
-    +++
-    @@ -3,6 +3,9 @@
-     """ Takes the+name+of+a month and returns
-  !!int "12": |-
-    ---
-    +++
-    @@ -19,12 +19,16 @@
-     the output lowercase.-It-uses+If the string-"fall"-instead-of-"autumn".+is+'September',+'October',+or+'November',+the+output+is+'fall'. """
-  !!int "13": |-
-    ---
-    +++
-    @@ -19,16 +19,4 @@
-     the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. """
-  !!int "14": |-
-    ---
-    +++
-    @@ -7,6 +7,11 @@
-     one parameter, month.+Month+is+a+string+and Month represents the
-  !!int "15": |-
-    ---
-    +++
-    @@ -19,4 +19,12 @@
-     the output lowercase.+It+uses+the+string+"fall"+instead+of+"autumn". """
-  !!int "16": |-
-    ---
-    +++
-    @@ -18,5 +18,8 @@
-     associated with that-month.+month,+in+lower+case. """
-  !!int "17": |-
-    ---
-    +++
-    @@ -21,5 +21,10 @@
-     that month is-in.+in:+'summer',+'winter',+'spring',+or+'fall'. """
-  !!int "18": |-
-    ---
-    +++
-    @@ -47,9 +47,19 @@
-     the inputted month-=-value,+is+in+the+list+of+values, returns the-key.+key+that+is+matched+with+that+value. """
-  !!int "19": |-
     ---
     +++
     @@ -22,29 +22,20 @@
      If month is-"December", "January",-or-"February", season is 'winter'. If month is-"March", "April",-or-"May", season is 'spring'. If month is-"June",-"July",-or "August", season is@@ -52,10 +43,7 @@
      If month is-"September", "October",-or-"November", season is 'fall'.
-  !!int "20": |-
+  !!int "4": |-
     ---
     +++
-    @@ -20,31 +20,27 @@
-     February, and March-are-considered-to-be-winter;+will+return+"winter"; April, May, and June-are-considered-to-be-spring;+will+return+"spring"; July, August, and September-are-considered-summer;+will+return+"summer"; and the rest-are-considered-fall.+will+return+"fall". """
-  !!int "21": |-
+    @@ -19,6 +19,18 @@
+     in a year.+There+are+seasons+associated+with+each+month.+Winter,+spring,+summer,+and+fall. The code should
+  !!int "5": |-
     ---
     +++
-    @@ -1,6 +1,30 @@
-     def getSeason(month): """+Has+a+list+of+all+months+in+order,+with+index+0+=+0+and+the+rest+of+the+indexes+corresponding+to+the+correct+month. Has a dictionary
-  !!int "22": |-
+    @@ -19,16 +19,4 @@
+     the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'. """
+  !!int "6": |-
     ---
     +++
-    @@ -10,4 +10,13 @@
-     string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. """
-  !!int "23": |-
+    @@ -19,12 +19,16 @@
+     the output lowercase.-It-uses+If the string-"fall"-instead-of-"autumn".+is+'September',+'October',+or+'November',+the+output+is+'fall'. """
+  !!int "7": |-
     ---
     +++
-    @@ -44,9 +44,18 @@
-     during the year.-For-example-January-=-1.+The+input+should+be+converted+to+a+numerical+value+before+giving+returning+the+season. """
-  !!int "24": |-
-    ---
-    +++
-    @@ -8,12 +8,14 @@
-     all months in-order,-with-index+order.+Index 0-=-0+of+the+list+is+'0', and the rest
-  !!int "25": |-
-    ---
-    +++
-    @@ -28,4 +28,14 @@
-     the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase. """
-  !!int "26": |-
+    @@ -9,7 +9,15 @@
+     string, representing a-month,+month+in+with+the+first+letter+being+upper+case, then outputs the
+  !!int "8": |-
     ---
     +++
     @@ -48,4 +48,17 @@
      of that month.+The+months+of+December,+January,+and+February+should+be+winter,+and+so+on. """
-  !!int "27": |-
+  !!int "9": |-
     ---
     +++
-    @@ -2,42 +2,42 @@
-     getSeason(month): """ if-input-is-December,-January,+month+==+12,+1, or-February,+2, output is winter. If-input-is-March,-April,+month+==+3,+4, or-May,+5, output is spring. If-input-is-June,-July,+month+==+6,+7, or-August,+8, output is summer. If-input-is-September,-October,+month+==+9,+10, or-November,+11, output is fall.
-  !!int "28": |-
+    @@ -58,5 +58,5 @@
+     "November", season is-"fall".+'fall'. """
+  !!int "10": |-
     ---
     +++
-    @@ -12,6 +12,10 @@
-     provided with a+number+corresponding+to+a month of the@@ -21,6 +25,7 @@
-     what season that+month belongs to. """
-  !!int "29": |-
+    @@ -4,6 +4,9 @@
+     Function takes in+the+name+of an inputted month
+  !!int "11": |-
+    ---
+    +++
+    @@ -47,9 +47,19 @@
+     the inputted month-=-value,+is+in+the+list+of+values, returns the-key.+key+that+is+matched+with+that+value. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -19,4 +19,10 @@
+     the output lowercase.+Instead+of+returning+'autumn',+return+'fall'. """
+  !!int "13": |-
+    ---
+    +++
+    @@ -19,4 +19,12 @@
+     the output lowercase.+It+uses+the+string+"fall"+instead+of+"autumn". """
+  !!int "14": |-
+    ---
+    +++
+    @@ -21,5 +21,10 @@
+     that month is-in.+in:+'summer',+'winter',+'spring',+or+'fall'. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -16,48 +16,34 @@
+     is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.
+  !!int "16": |-
+    ---
+    +++
+    @@ -20,31 +20,27 @@
+     February, and March-are-considered-to-be-winter;+will+return+"winter"; April, May, and June-are-considered-to-be-spring;+will+return+"spring"; July, August, and September-are-considered-summer;+will+return+"summer"; and the rest-are-considered-fall.+will+return+"fall". """
+  !!int "17": |-
+    ---
+    +++
+    @@ -1,16 +1,20 @@
+     def getSeason(month): """-For+If the-given-month,+number+of+a+month+is+in+the+list, return the season-that-occurs-during+for that month """
+  !!int "18": |-
     ---
     +++
     @@ -10,11 +10,6 @@
      is when provided-with-a-number-corresponding-to a month of@@ -28,4 +23,30 @@
      month belongs to.+The+month+of+the+year+will+correspond+with+a+numerical+value+based+on+the+order+of+the+month+during+the+year.+For+example+January+=+1. """
-  !!int "30": |-
+  !!int "19": |-
     ---
     +++
-    @@ -1,16 +1,20 @@
-     def getSeason(month): """-For+If the-given-month,+number+of+a+month+is+in+the+list, return the season-that-occurs-during+for that month """
-  !!int "31": |-
+    @@ -1,6 +1,30 @@
+     def getSeason(month): """+Has+a+list+of+all+months+in+order,+with+index+0+=+0+and+the+rest+of+the+indexes+corresponding+to+the+correct+month. Has a dictionary
+  !!int "20": |-
     ---
     +++
-    @@ -36,15 +36,20 @@
-     to a month.-If+for+each+key,+value+in+the+dictionary,+if the inputted month-is-in+=+value,+returns the-season,-returns-that-season.+key. """
-  !!int "32": |-
-    ---
-    +++
-    @@ -16,6 +16,15 @@
-     is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively. The first three
-  !!int "33": |-
-    ---
-    +++
-    @@ -21,5 +21,13 @@
-     the month is-in+in.+It+returns+and+prints+the+correct+outputted+season """
-  !!int "34": |-
-    ---
-    +++
-    @@ -16,48 +16,34 @@
-     is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September are considered-summer,+summer; and the-last-three-months+rest are considered fall.
-  !!int "35": |-
+    @@ -3,6 +3,9 @@
+     """ Takes the+name+of+a month and returns
+  !!int "21": |-
     ---
     +++
     @@ -22,9 +22,37 @@
      month is in:-'summer',-'winter',-'spring',-or-'fall'.+December,+January,+and+February+are+all+in+winter,+March,+April,+and+May+are+all+in+spring,+June,+July,+and+August+are+all+in+summer,+and+October,+September,+and+November+are+all+in+fall. """
-  !!int "36": |-
+  !!int "22": |-
     ---
     +++
-    @@ -58,5 +58,5 @@
-     "November", season is-"fall".+'fall'. """
-  !!int "37": |-
+    @@ -21,5 +21,13 @@
+     the month is-in+in.+It+returns+and+prints+the+correct+outputted+season """
+  !!int "23": |-
+    ---
+    +++
+    @@ -36,15 +36,20 @@
+     to a month.-If+for+each+key,+value+in+the+dictionary,+if the inputted month-is-in+=+value,+returns the-season,-returns-that-season.+key. """
+  !!int "24": |-
+    ---
+    +++
+    @@ -26,5 +26,11 @@
+     class of the-input"+input,+produce+an+all+lower+case+string" """
+  !!int "25": |-
+    ---
+    +++
+    @@ -29,5 +29,16 @@
+     the correct outputted-season+season,+with+a+return+statement+after+each+if,+else+or+elif+statement """
+  !!int "26": |-
+    ---
+    +++
+    @@ -7,6 +7,11 @@
+     one parameter, month.+Month+is+a+string+and Month represents the
+  !!int "27": |-
+    ---
+    +++
+    @@ -41,4 +41,7 @@
+     output is fall.+No+else+statement. """
+  !!int "28": |-
+    ---
+    +++
+    @@ -2,42 +2,42 @@
+     getSeason(month): """ if-input-is-December,-January,+month+==+12,+1, or-February,+2, output is winter. If-input-is-March,-April,+month+==+3,+4, or-May,+5, output is spring. If-input-is-June,-July,+month+==+6,+7, or-August,+8, output is summer. If-input-is-September,-October,+month+==+9,+10, or-November,+11, output is fall.
+  !!int "29": |-
+    ---
+    +++
+    @@ -38,4 +38,15 @@
+     be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'. """
+  !!int "30": |-
+    ---
+    +++
+    @@ -4,8 +4,11 @@
+     This function inputs+a+string+of the-string+name of a month@@ -22,5 +25,14 @@
+     (in the northern-hemisphere)+hemisphere).+The+input+should+be+capitalized,+the+output+should+not. """
+  !!int "31": |-
     ---
     +++
     @@ -44,4 +44,10 @@
      No else statement.+12+==+December,+1+==+January """
+  !!int "32": |-
+    ---
+    +++
+    @@ -44,9 +44,18 @@
+     during the year.-For-example-January-=-1.+The+input+should+be+converted+to+a+numerical+value+before+giving+returning+the+season. """
+  !!int "33": |-
+    ---
+    +++
+    @@ -8,12 +8,14 @@
+     all months in-order,-with-index+order.+Index 0-=-0+of+the+list+is+'0', and the rest
+  !!int "34": |-
+    ---
+    +++
+    @@ -12,6 +12,10 @@
+     provided with a+number+corresponding+to+a month of the@@ -21,6 +25,7 @@
+     what season that+month belongs to. """
+  !!int "35": |-
+    ---
+    +++
+    @@ -10,4 +10,13 @@
+     string belongs to.+It+makes+the+first+letter+of+the+output+lowercase. """
+  !!int "36": |-
+    ---
+    +++
+    @@ -18,5 +18,8 @@
+     associated with that-month.+month,+in+lower+case. """
+  !!int "37": |-
+    ---
+    +++
+    @@ -54,5 +54,7 @@
+     are all in-fall.+the+season+"fall". """
 "nodes":
   !!int "0":
     "stderr":

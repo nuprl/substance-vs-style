@@ -3,56 +3,56 @@
   !!int "1": |-
     ---
     +++
-    @@ -42,11 +42,5 @@
-     is an integer,-or-a-string-containing-an-integer, concatenate. """
+    @@ -22,6 +22,9 @@
+     num to integer.+Else,+return+position. Return the new
   !!int "2": |-
+    ---
+    +++
+    @@ -22,15 +22,26 @@
+     is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. """
+  !!int "3": |-
     ---
     +++
     @@ -6,7 +6,8 @@
      a list of-numbers+numbers,+lists, and strings as@@ -23,7 +24,6 @@
      in the list,-and add the number@@ -32,5 +32,14 @@
      numbers in the+list,+and+do+nothing+to+the+lists+in+the list. """
-  !!int "3": |-
+  !!int "4": |-
+    ---
+    +++
+    @@ -42,11 +42,5 @@
+     is an integer,-or-a-string-containing-an-integer, concatenate. """
+  !!int "5": |-
     ---
     +++
     @@ -22,9 +22,16 @@
      num to integer.-Else,-return-position.+If+position+in+lst+is+list,+add+list+to+lst. Return the new
-  !!int "4": |-
+  !!int "6": |-
+    ---
+    +++
+    @@ -17,4 +17,20 @@
+     the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. """
+  !!int "7": |-
     ---
     +++
     @@ -18,7 +18,10 @@
      outside of the-list,+list+to+the+string, if the input@@ -32,4 +35,7 @@
      of the list+to+the+number """
-  !!int "5": |-
-    ---
-    +++
-    @@ -17,4 +17,20 @@
-     the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate. """
-  !!int "6": |-
+  !!int "8": |-
     ---
     +++
     @@ -60,5 +60,25 @@
      they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless """
-  !!int "7": |-
-    ---
-    +++
-    @@ -22,15 +22,26 @@
-     is a string,-append+add it to the-end.+end+to+create+a+new+string. If it is an integer,+or+a+string+containing+an+integer, concatenate. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -22,6 +22,9 @@
-     num to integer.+Else,+return+position. Return the new
   !!int "9": |-
-    ---
-    +++
-    @@ -22,11 +22,16 @@
-     is a string,-add-it+append+the+integer+on to the end+of+the+string to create a
-  !!int "10": |-
     ---
     +++
     @@ -6,25 +6,39 @@
      an input list-(which-can-have-both-strings-and-integers) and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers in the+list,+the input-list.+integer+is+added+to+that+number. """
+  !!int "10": |-
+    ---
+    +++
+    @@ -22,11 +22,16 @@
+     is a string,-add-it+append+the+integer+on to the end+of+the+string to create a
 "nodes":
   !!int "0":
     "stderr":

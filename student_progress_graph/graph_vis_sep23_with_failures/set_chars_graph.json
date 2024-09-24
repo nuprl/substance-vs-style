@@ -91,12 +91,39 @@
     "adjacency": [
         [
             {
-                "diff": 8,
+                "diff": 15,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student19",
-                "hover": "username:student19\n\ndiff:\n--- \n+++ \n@@ -30,4 +30,20 @@\n the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Takes an input string, single character, and list of index numbers. Every character in the input string at one of these input indexes is replaced with the input character.\n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Takes an input string, single character, and list of index numbers. Every character in the input string at one of these input indexes is replaced with the input character. If an index is greater than the length of the string - 1, it is ignored.\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n    return s\n",
+                "hover": "username:student19\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -30,4 +30,20 @@\n the input character.+If+an+index+is+greater+than+the+length+of+the+string+-+1,+it+is+ignored. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Takes an input string, single character, and list of index numbers. Every character in the input string at one of these input indexes is replaced with the input character.\n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Takes an input string, single character, and list of index numbers. Every character in the input string at one of these input indexes is replaced with the input character. If an index is greater than the length of the string - 1, it is ignored.\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n    return s\n",
                 "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 7,
+                "color": "#003a7d",
+                "arrow_color": "#003a7d",
+                "username": "student57",
+                "hover": "username:student57\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -20,22 +20,17 @@\n with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character and also if given index is 1+ the length of the string, add character at end as well\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n        else:\n            s = s + c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character if given index is not in the length of the string, ignore index\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n    return s\n",
+                "id": 1,
+                "key": 1
+            },
+            {
+                "diff": 1,
+                "color": "#008dff",
+                "arrow_color": "#008dff",
+                "username": "student36",
+                "hover": "username:student36\nedge: (0->4)\ndiff:\n--- \n+++ \n@@ -20,5 +20,25 @@\n contained in the-list+list.+If+the+index+is+out+of+range,+replace+the+last+character+of+the+first+string+with+the+second+string+instead \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list\n    \"\"\"\n        for i in range(len(l)):\n        s = s[:l[i]] + c + s[l[i]+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list. If the index is out of range, replace the last character of the first string with the second string instead\n    \"\"\"\n        for i in range(len(s)):\n        if i < len(l):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 6,
+                "color": "#ffcd8e",
+                "arrow_color": "#ffcd8e",
+                "username": "student43",
+                "hover": "username:student43\nedge: (0->10)\ndiff:\n--- \n+++ \n@@ -11,13 +11,30 @@\n string to number.-Loop+If+the+length+of+s+is+equal+or+greater+than+the+largest+N+in+l,+then+loop through each number N in-l,+l+and replace the element@@ -34,6 +51,9 @@\n element in c.+Otherwise,+do+nothing. Return the changed\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. If the length of s is equal or greater than the largest N in l, then loop through each number N in l and replace the element in s that has the index order N with the element in c. Otherwise, do nothing. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    if len(s) >= max(l):\n        for i in l:\n            s[i] = c\n    return s\n",
+                "id": 10,
                 "key": 0
             },
             {
@@ -104,54 +131,27 @@
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student57",
-                "hover": "username:student57\n\ndiff:\n--- \n+++ \n@@ -20,22 +20,17 @@\n with given character-and-also if given index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character and also if given index is 1+ the length of the string, add character at end as well\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n        else:\n            s = s + c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character if given index is not in the length of the string, ignore index\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n    return s\n",
-                "id": 1,
-                "key": 1
-            },
-            {
-                "diff": 11,
-                "color": "#008dff",
-                "arrow_color": "#008dff",
-                "username": "student36",
-                "hover": "username:student36\n\ndiff:\n--- \n+++ \n@@ -20,5 +20,25 @@\n contained in the-list+list.+If+the+index+is+out+of+range,+replace+the+last+character+of+the+first+string+with+the+second+string+instead \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list\n    \"\"\"\n        for i in range(len(l)):\n        s = s[:l[i]] + c + s[l[i]+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list. If the index is out of range, replace the last character of the first string with the second string instead\n    \"\"\"\n        for i in range(len(s)):\n        if i < len(l):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n",
-                "id": 4,
-                "key": 0
-            },
-            {
-                "diff": 2,
-                "color": "#ffcd8e",
-                "arrow_color": "#ffcd8e",
-                "username": "student43",
-                "hover": "username:student43\n\ndiff:\n--- \n+++ \n@@ -11,13 +11,30 @@\n string to number.-Loop+If+the+length+of+s+is+equal+or+greater+than+the+largest+N+in+l,+then+loop through each number N in-l,+l+and replace the element@@ -34,6 +51,9 @@\n element in c.+Otherwise,+do+nothing. Return the changed\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. If the length of s is equal or greater than the largest N in l, then loop through each number N in l and replace the element in s that has the index order N with the element in c. Otherwise, do nothing. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    if len(s) >= max(l):\n        for i in l:\n            s[i] = c\n    return s\n",
-                "id": 10,
-                "key": 0
-            },
-            {
-                "diff": 1,
-                "color": "#003a7d",
-                "arrow_color": "#003a7d",
-                "username": "student57",
-                "hover": "username:student57\n\ndiff:\n--- \n+++ \n@@ -19,5 +19,18 @@\n list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character\n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. if given index is 1+ the length of string, add character at end\n    \"\"\"\n        if l[0] == 0:\n        s = c + s[l[0]+1:]\n    elif l[0] == len(s)-1:\n        s = s[:l[0]] + c\n    else:\n        s = s[:l[0]] + c + s[l[0]+1:]\n    return s\n",
+                "hover": "username:student57\nedge: (0->11)\ndiff:\n--- \n+++ \n@@ -19,5 +19,18 @@\n list with given+character.+if+given+index+is+1++the+length+of+string,+add character+at+end \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character\n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. if given index is 1+ the length of string, add character at end\n    \"\"\"\n        if l[0] == 0:\n        s = c + s[l[0]+1:]\n    elif l[0] == len(s)-1:\n        s = s[:l[0]] + c\n    else:\n        s = s[:l[0]] + c + s[l[0]+1:]\n    return s\n",
                 "id": 11,
                 "key": 0
             },
             {
-                "diff": 6,
+                "diff": 10,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student57",
-                "hover": "username:student57\n\ndiff:\n--- \n+++ \n@@ -19,5 +19,23 @@\n list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. \n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character and also if given index is 1+ the length of the string, add character at end as well\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n        else:\n            s = s + c\n    return s\n",
+                "hover": "username:student57\nedge: (0->0)\ndiff:\n--- \n+++ \n@@ -19,5 +19,23 @@\n list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. \n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character and also if given index is 1+ the length of the string, add character at end as well\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s = s[:i] + c + s[i+1:]\n        else:\n            s = s + c\n    return s\n",
                 "id": 0,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 4,
+                "diff": 13,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -23,8 +23,7 @@\n out of range-don't-change-that-letter.+ignore+the+index. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range don't change that letter.\n    \"\"\"\n        s = list(s)\n    for i in range(len(l)):\n        if l[i] < len(s):\n            s[l[i]] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range ignore the index.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        if i < len(s):\n            s[i] = c\n    return ''.join(s)\n",
+                "hover": "username:student20\nedge: (1->1)\ndiff:\n--- \n+++ \n@@ -23,8 +23,7 @@\n out of range-don't-change-that-letter.+ignore+the+index. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range don't change that letter.\n    \"\"\"\n        s = list(s)\n    for i in range(len(l)):\n        if l[i] < len(s):\n            s[l[i]] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range ignore the index.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        if i < len(s):\n            s[i] = c\n    return ''.join(s)\n",
                 "id": 1,
                 "key": 0
             }
@@ -162,7 +162,7 @@
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -4,12 +4,16 @@\n Replace letters in+input s that are located in+index l to+the+input c \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in s that are located in l to c\n    \"\"\"\n        for i in l:\n        s = s.replace(i,c)\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n",
+                "hover": "username:student20\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -4,12 +4,16 @@\n Replace letters in+input s that are located in+index l to+the+input c \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in s that are located in l to c\n    \"\"\"\n        for i in l:\n        s = s.replace(i,c)\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n",
                 "id": 3,
                 "key": 0
             }
@@ -173,56 +173,56 @@
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
-                "hover": "username:student20\n\ndiff:\n\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n",
+                "hover": "username:student20\nedge: (3->3)\ndiff:\n\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n",
                 "id": 3,
                 "key": 0
             },
             {
-                "diff": 7,
+                "diff": 11,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -15,5 +15,16 @@\n to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range don't change that letter.\n    \"\"\"\n        s = list(s)\n    for i in range(len(l)):\n        if l[i] < len(s):\n            s[l[i]] = c\n    return ''.join(s)\n",
+                "hover": "username:student20\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -15,5 +15,16 @@\n to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s that are located in index l to the input c.\nIf index l is out of range don't change that letter.\n    \"\"\"\n        s = list(s)\n    for i in range(len(l)):\n        if l[i] < len(s):\n            s[l[i]] = c\n    return ''.join(s)\n",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 13,
+                "diff": 8,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student42",
-                "hover": "username:student42\n\ndiff:\n--- \n+++ \n@@ -26,5 +26,17 @@\n return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string, a character, and a list of indexes, replace the listed indexes in the string with the given character and return the new string \n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string, a character, and a list of indexes, replace the listed indexes in the string with the given character and return the new string. if an index is outside the range of the list, ignore it.  \n    \"\"\"\n        for i in l:\n        if i < len(s) and i >= 0:\n            s = s[:i] + c + s[i+1:]\n    return s\n",
+                "hover": "username:student42\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -26,5 +26,17 @@\n return the new-string+string.+if+an+index+is+outside+the+range+of+the+list,+ignore+it. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string, a character, and a list of indexes, replace the listed indexes in the string with the given character and return the new string \n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string, a character, and a list of indexes, replace the listed indexes in the string with the given character and return the new string. if an index is outside the range of the list, ignore it.  \n    \"\"\"\n        for i in l:\n        if i < len(s) and i >= 0:\n            s = s[:i] + c + s[i+1:]\n    return s\n",
                 "id": 1,
                 "key": 1
             },
             {
-                "diff": 10,
+                "diff": 4,
                 "color": "#Ff73b6",
                 "arrow_color": "#Ff73b6",
                 "username": "student77",
-                "hover": "username:student77\n\ndiff:\n--- \n+++ \n@@ -31,4 +31,16 @@\n with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Given a string, a letter, and locations specified in a list, remove the letters in the string in the locations specified in the list, and replace them with the letter.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Given a string, a letter, and locations specified in a list, remove the letters in the string in the locations specified in the list, and replace them with the letter. If the location is outside the range of the list, do nothing.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        if i < len(s):\n            s[i] = c\n    return \"\".join(s)\n",
+                "hover": "username:student77\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -31,4 +31,16 @@\n with the letter.+If+the+location+is+outside+the+range+of+the+list,+do+nothing. \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Given a string, a letter, and locations specified in a list, remove the letters in the string in the locations specified in the list, and replace them with the letter.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Given a string, a letter, and locations specified in a list, remove the letters in the string in the locations specified in the list, and replace them with the letter. If the location is outside the range of the list, do nothing.\n    \"\"\"\n        s = list(s)\n    for i in l:\n        if i < len(s):\n            s[i] = c\n    return \"\".join(s)\n",
                 "id": 1,
                 "key": 2
             }
         ],
         [
             {
-                "diff": 14,
+                "diff": 2,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student36",
-                "hover": "username:student36\n\ndiff:\n--- \n+++ \n@@ -6,39 +6,36 @@\n character contained in-the-second-string+c into the character indexes of+s+using the-first-string-contained+numbers in-the-list.+l+as+indexes. If the index is-out-of-range,+greater+than+the+string+length replace the last character-of-the-first-string+in+s with-the-second-string+c instead \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list. If the index is out of range, replace the last character of the first string with the second string instead\n    \"\"\"\n        for i in range(len(s)):\n        if i < len(l):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n",
+                "hover": "username:student36\nedge: (4->5)\ndiff:\n--- \n+++ \n@@ -6,39 +6,36 @@\n character contained in-the-second-string+c into the character indexes of+s+using the-first-string-contained+numbers in-the-list.+l+as+indexes. If the index is-out-of-range,+greater+than+the+string+length replace the last character-of-the-first-string+in+s with-the-second-string+c instead \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in the second string into the character indexes of the first string contained in the list. If the index is out of range, replace the last character of the first string with the second string instead\n    \"\"\"\n        for i in range(len(s)):\n        if i < len(l):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n",
                 "id": 5,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 5,
+                "diff": 12,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student36",
-                "hover": "username:student36\n\ndiff:\n--- \n+++ \n@@ -1,7 +1,7 @@\n def set_chars(s,c,l): \"\"\"-Insert+Replace the character contained\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in range(len(l)):\n        if l[i] >= len(s):\n            s = s[:len(s)-1] + c\n        else:\n            s = s[:l[i]] + c + s[l[i]+1:]\n    return s\n",
+                "hover": "username:student36\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -1,7 +1,7 @@\n def set_chars(s,c,l): \"\"\"-Insert+Replace the character contained\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Insert the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in l:\n        if i < len(s):\n            s[i] = c\n        else:\n            s[-1] = c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace the character contained in c into the character indexes of s using the numbers in l as indexes. If the index is greater than the string length replace the last character in s with c instead\n    \"\"\"\n        for i in range(len(l)):\n        if l[i] >= len(s):\n            s = s[:len(s)-1] + c\n        else:\n            s = s[:l[i]] + c + s[l[i]+1:]\n    return s\n",
                 "id": 6,
                 "key": 0
             }
@@ -234,7 +234,7 @@
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student38",
-                "hover": "username:student38\n\ndiff:\n--- \n+++ \n@@ -1,11 +1,14 @@\n def set_chars(s,c,l): \"\"\"-Replace+Find+the+l character-l in s+and+replace with c \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace character l in s with c\n    \"\"\"\n        return s[:l]+c+s[l+1:]\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c\n    \"\"\"\n        if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n",
+                "hover": "username:student38\nedge: (7->8)\ndiff:\n--- \n+++ \n@@ -1,11 +1,14 @@\n def set_chars(s,c,l): \"\"\"-Replace+Find+the+l character-l in s+and+replace with c \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Replace character l in s with c\n    \"\"\"\n        return s[:l]+c+s[l+1:]\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c\n    \"\"\"\n        if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n",
                 "id": 8,
                 "key": 0
             }
@@ -245,18 +245,18 @@
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student38",
-                "hover": "username:student38\n\ndiff:\n\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c\n    \"\"\"\n        if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c \n    \"\"\"\n        return s[:l]+c+s[l+1:]\n",
+                "hover": "username:student38\nedge: (8->7)\ndiff:\n\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c\n    \"\"\"\n        if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and replace with c \n    \"\"\"\n        return s[:l]+c+s[l+1:]\n",
                 "id": 7,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 12,
+                "diff": 5,
                 "color": "#ffcd8e",
                 "arrow_color": "#ffcd8e",
                 "username": "student43",
-                "hover": "username:student43\n\ndiff:\n--- \n+++ \n@@ -1,6 +1,16 @@\n def set_chars(s,c,l): \"\"\"+First+convert+each+element+in+l+from+string+to+number. Loop through each\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        for i in l:\n        s[i]=c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n",
+                "hover": "username:student43\nedge: (9->0)\ndiff:\n--- \n+++ \n@@ -1,6 +1,16 @@\n def set_chars(s,c,l): \"\"\"+First+convert+each+element+in+l+from+string+to+number. Loop through each\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        for i in l:\n        s[i]=c\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    First convert each element in l from string to number. Loop through each number N in l, replace the element in s that has the index order  N with the element in c. Return the changed s.\n    \"\"\"\n        l = [int(i) for i in l]\n    for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n",
                 "id": 0,
                 "key": 0
             }
@@ -264,11 +264,11 @@
         [],
         [
             {
-                "diff": 15,
+                "diff": 14,
                 "color": "#003a7d",
                 "arrow_color": "#003a7d",
                 "username": "student57",
-                "hover": "username:student57\n\ndiff:\n--- \n+++ \n@@ -20,17 +20,4 @@\n with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. if given index is 1+ the length of string, add character at end\n    \"\"\"\n        if l[0] == 0:\n        s = c + s[l[0]+1:]\n    elif l[0] == len(s)-1:\n        s = s[:l[0]] + c\n    else:\n        s = s[:l[0]] + c + s[l[0]+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. \n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n",
+                "hover": "username:student57\nedge: (11->0)\ndiff:\n--- \n+++ \n@@ -20,17 +20,4 @@\n with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end \"\"\"\n\nFROM completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. if given index is 1+ the length of string, add character at end\n    \"\"\"\n        if l[0] == 0:\n        s = c + s[l[0]+1:]\n    elif l[0] == len(s)-1:\n        s = s[:l[0]] + c\n    else:\n        s = s[:l[0]] + c + s[l[0]+1:]\n    return s\n\n\nTO completion:\ndef set_chars(s,c,l):\n    \"\"\"\n    given a string and a character and a list, replace string at specified index in list with given character. \n    \"\"\"\n        for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n",
                 "id": 0,
                 "key": 0
             }

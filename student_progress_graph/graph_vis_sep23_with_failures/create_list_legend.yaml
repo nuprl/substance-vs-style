@@ -2,33 +2,33 @@
   !!int "0": |-
     ---
     +++
-    @@ -15,10 +15,18 @@
-     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
+    @@ -32,4 +32,28 @@
+     in the dictionary.+if+an+element+of+the+list+doesnt+appear+as+a+key+in+the+dictionary,+it+should+show+up+in+the+output+list+as+None """
   !!int "1": |-
     ---
     +++
-    @@ -15,5 +15,15 @@
-     the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
+    @@ -15,10 +15,18 @@
+     value of that-key.+key+in+a+new+list. If not found, return-None.+None+in+the+new+list. """
   !!int "2": |-
+    ---
+    +++
+    @@ -2,15 +2,18 @@
+     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
+  !!int "3": |-
     ---
     +++
     @@ -2,33 +2,27 @@
      create_list(dt, lst): """-Return+Loop+through+each+element+in+lst+and+return the value stored in-the-key+it in-dt-corresponding-to-the-keys-in-lst.+dt. If you-can+can't find-it,-then-return the value,-if-not,-then return None. """
-  !!int "3": |-
+  !!int "4": |-
     ---
     +++
-    @@ -32,4 +32,28 @@
-     in the dictionary.+if+an+element+of+the+list+doesnt+appear+as+a+key+in+the+dictionary,+it+should+show+up+in+the+output+list+as+None """
-  !!int "4": |-
+    @@ -15,5 +15,15 @@
+     the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none """
+  !!int "5": |-
     ---
     +++
     @@ -14,20 +14,17 @@
      in dictionary, return-all values-in+as+well+as+None+(if key-value-pair+does+not+exist) in a list.-if-key-does-not-exist,-return-None """
-  !!int "5": |-
-    ---
-    +++
-    @@ -4,7 +4,7 @@
-     """ Find the-key+keys in the list.
   !!int "6": |-
     ---
     +++
@@ -37,8 +37,8 @@
   !!int "7": |-
     ---
     +++
-    @@ -2,15 +2,18 @@
-     create_list(dt, lst): """-Using+using+dt+as+a+reference,+return+the+associated+objects+of the objects in-dt,-return-their-associated-keys-in-dt+lst """
+    @@ -4,7 +4,7 @@
+     """ Find the-key+keys in the list.
 "nodes":
   !!int "0":
     "stderr":

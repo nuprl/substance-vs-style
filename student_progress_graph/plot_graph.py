@@ -145,7 +145,8 @@ def problem_graph(G, clusters, trajectories) -> Union[nx.DiGraph, dict]:
                 color=color,
                 arrow_color=color,
                 username=student_name,
-                hover=f"username:{student_name}\n\ndiff:\n{diff}\n\nFROM completion:\n{student_data['prompt'][i]}"+
+                hover=f"username:{student_name}\nedge: ({node_from}->{node_to})\ndiff:" + 
+                        f"\n{diff}\n\nFROM completion:\n{student_data['prompt'][i]}"+
                         f"    {student_data['completion'][i]}" + 
                         f"\n\nTO completion:\n{student_data['prompt'][i+1]}"+
                         f"    {student_data['completion'][i+1]}")

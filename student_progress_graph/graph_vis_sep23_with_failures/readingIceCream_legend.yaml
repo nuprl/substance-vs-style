@@ -12,9 +12,8 @@
   !!int "2": |-
     ---
     +++
-    @@ -14,22 +14,23 @@
-     t in the-string+string, type cast the value to float.-Then-move+Move to the next string in the-list+list,+if+exists and repeat. Once@@ -44,7 +45,11 @@
-     and add all-removed values+that+were+cast+to+float together. """
+    @@ -34,12 +34,12 @@
+     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
   !!int "3": |-
     ---
     +++
@@ -23,33 +22,33 @@
   !!int "4": |-
     ---
     +++
-    @@ -12,7 +12,12 @@
-     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
+    @@ -11,6 +11,38 @@
+     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next+find+the+sting+that+contains+a+number,+convert+it+to+a+float,+and+add+it+to+running+total. output this+total """
   !!int "5": |-
+    ---
+    +++
+    @@ -18,11 +18,33 @@
+     type cast the-values+value to-floats+float.+Then+move+to+the+next+string+in+the+list+and+repeat.+Once+the+end+at+the+end+of+the+list and add+all+removed values together. """
+  !!int "6": |-
+    ---
+    +++
+    @@ -10,14 +10,11 @@
+     number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
+  !!int "7": |-
     ---
     +++
     @@ -9,24 +9,16 @@
      split each string-on+by+\.+find the-'\'-character.-in-the-new-list-of-3-strings,-take-the-string-in-the-3rd-position,+sting+that+contains+a+number+and eliminate the 't'
-  !!int "6": |-
-    ---
-    +++
-    @@ -11,6 +11,38 @@
-     string by \.+for+each+new+string,+if+it+starts+with+t,+eliminate+the+t.+next+find+the+sting+that+contains+a+number,+convert+it+to+a+float,+and+add+it+to+running+total. output this+total """
-  !!int "7": |-
-    ---
-    +++
-    @@ -9,25 +9,50 @@
-     through the string-until-after+and+keep+track+of the-2nd+number+of "\"-character.+characters.+When+the+number+of+"\"+is+2,+isolate+the+rest+of+the+string. Then-return+isolate the-integer-following-the-"t"-character.+remainder+of+that+string,+starting+at+index+1.+Convert+this+string+to+a+float. Keep track of the-integer+float for each entry
   !!int "8": |-
     ---
     +++
-    @@ -11,38 +11,6 @@
-     string by \.-for-each-new-string,-if-it-starts-with-t,-eliminate-the-t.-next-find-the-sting-that-contains-a-number,-convert-it-to-a-float,-and-add-it-to-running-total. output this-total """
+    @@ -19,10 +19,8 @@
+     "\" characters. When-the-number-of-"\"+that+count is 2, isolate
   !!int "9": |-
     ---
     +++
-    @@ -25,9 +25,8 @@
-     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
+    @@ -1,7 +1,19 @@
+     def readingIceCream(lines): """-Returns+Multiplies+the+number+of+letters+in+the+word+before+the+first+\+by the number after
   !!int "10": |-
     ---
     +++
@@ -58,112 +57,113 @@
   !!int "11": |-
     ---
     +++
-    @@ -34,12 +34,12 @@
-     convert it into-an-integer,+a+number, then add that-integer+number to the sum.
+    @@ -1,14 +1,18 @@
+     def readingIceCream(lines): """-Starting+For+each+list+entry,+start at the end of-each-list-entry,+the+corresponding+string, parse backwards until
   !!int "12": |-
+    ---
+    +++
+    @@ -7,11 +7,8 @@
+     appears after the-"ice-cream\t"-or-"frozen-yogurt\t"+final+"t" of each object
+  !!int "13": |-
+    ---
+    +++
+    @@ -22,4 +22,12 @@
+     in the element.+the+sum+should+not+be+limited+to+integers """
+  !!int "14": |-
+    ---
+    +++
+    @@ -1,17 +1,26 @@
+     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
+  !!int "15": |-
+    ---
+    +++
+    @@ -29,17 +29,32 @@
+     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
+  !!int "16": |-
+    ---
+    +++
+    @@ -47,4 +47,11 @@
+     of each string.+The+value+can+be+integers+or+floats. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -12,7 +12,12 @@
+     after '\t' to-count,+count+if+it+is+an+integer, returns sum """
+  !!int "18": |-
+    ---
+    +++
+    @@ -10,14 +10,12 @@
+     the string and-keep-track-of-the-number-of+increase+count+after+each "\"-characters.+character. When that count
+  !!int "19": |-
+    ---
+    +++
+    @@ -11,38 +11,6 @@
+     string by \.-for-each-new-string,-if-it-starts-with-t,-eliminate-the-t.-next-find-the-sting-that-contains-a-number,-convert-it-to-a-float,-and-add-it-to-running-total. output this-total """
+  !!int "20": |-
+    ---
+    +++
+    @@ -9,25 +9,50 @@
+     through the string-until-after+and+keep+track+of the-2nd+number+of "\"-character.+characters.+When+the+number+of+"\"+is+2,+isolate+the+rest+of+the+string. Then-return+isolate the-integer-following-the-"t"-character.+remainder+of+that+string,+starting+at+index+1.+Convert+this+string+to+a+float. Keep track of the-integer+float for each entry
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,66 +1,53 @@
+     def readingIceCream(lines): """-For+Starting+at+the+end+of each-list-entry,+string+input, parse-through+backwards+until+you+reach+the+"t"+character.+Isolate the string-and-increase-count-after-each-"\"-character.-When-that-count-is-2,-isolate+from the-rest+"t"+character+until+the+end of the-string.-Then-isolate-the-remainder-of+entry.+Convert that-string,-starting-at-index-1.-Convert-this string to a-float.-Keep-track+float,+then+add+all of the-float+floats for each entry+together and-add-them-all-together,-returning+return the-sum-for-each-list+total. """
+  !!int "22": |-
+    ---
+    +++
+    @@ -14,22 +14,23 @@
+     t in the-string+string, type cast the value to float.-Then-move+Move to the next string in the-list+list,+if+exists and repeat. Once@@ -44,7 +45,11 @@
+     and add all-removed values+that+were+cast+to+float together. """
+  !!int "23": |-
+    ---
+    +++
+    @@ -7,7 +7,7 @@
+     in list, adds-number+float directly after the
+  !!int "24": |-
     ---
     +++
     @@ -20,7 +20,7 @@
      should be a-number+double and add it
-  !!int "13": |-
+  !!int "25": |-
     ---
     +++
     @@ -2,12 +2,16 @@
      readingIceCream(lines): """ Convert-what+all+that appears after the-last-t+"ice+cream\t"+or+"frozen+yogurt\t" of each object@@ -15,13 +19,20 @@
      the list into-numbers,+a+float,+make+a+new+list+of+those+floats, and-then find the sum of-those-numbers+that+list """
-  !!int "14": |-
+  !!int "26": |-
     ---
     +++
-    @@ -1,66 +1,53 @@
-     def readingIceCream(lines): """-For+Starting+at+the+end+of each-list-entry,+string+input, parse-through+backwards+until+you+reach+the+"t"+character.+Isolate the string-and-increase-count-after-each-"\"-character.-When-that-count-is-2,-isolate+from the-rest+"t"+character+until+the+end of the-string.-Then-isolate-the-remainder-of+entry.+Convert that-string,-starting-at-index-1.-Convert-this string to a-float.-Keep-track+float,+then+add+all of the-float+floats for each entry+together and-add-them-all-together,-returning+return the-sum-for-each-list+total. """
-  !!int "15": |-
+    @@ -3,7 +3,7 @@
+     """ take the-integer+float at the end
+  !!int "27": |-
     ---
     +++
-    @@ -1,14 +1,18 @@
-     def readingIceCream(lines): """-Starting+For+each+list+entry,+start at the end of-each-list-entry,+the+corresponding+string, parse backwards until
-  !!int "16": |-
+    @@ -14,18 +14,11 @@
+     t in the-string,-and-store-in-a-new-list.-Type+string+type cast the-new-list+values to floats and
+  !!int "28": |-
     ---
     +++
-    @@ -1,7 +1,19 @@
-     def readingIceCream(lines): """-Returns+Multiplies+the+number+of+letters+in+the+word+before+the+first+\+by the number after
-  !!int "17": |-
+    @@ -2,9 +2,10 @@
+     readingIceCream(lines): """ Convert-all+the+numbers that-appears+appear after the last@@ -16,14 +17,13 @@
+     the list into-a-float,+integers, and then find the sum of-the-floats+those+integers """
+  !!int "29": |-
     ---
     +++
-    @@ -1,17 +1,26 @@
-     def readingIceCream(lines): """-return+take the-sum+integer+at+the+end of-the-float-in each item in the array list+and+sum+all+of+the+values+return+the+sum """
-  !!int "18": |-
-    ---
-    +++
-    @@ -47,4 +47,11 @@
-     of each string.+The+value+can+be+integers+or+floats. """
-  !!int "19": |-
-    ---
-    +++
-    @@ -7,8 +7,8 @@
-     end of each-string-input,+list+entry, parse backwards until
-  !!int "20": |-
-    ---
-    +++
-    @@ -22,4 +22,12 @@
-     in the element.+the+sum+should+not+be+limited+to+integers """
-  !!int "21": |-
+    @@ -25,9 +25,8 @@
+     the sum should-not-be-limited-to-integers+include+numbers+with+decimals """
+  !!int "30": |-
     ---
     +++
     @@ -2,10 +2,8 @@
      readingIceCream(lines): """ Convert-the-numbers-that-appear+what+appears after the last@@ -17,7 +15,7 @@
      the list into-integers,+numbers, and then find@@ -25,5 +23,5 @@
      sum of those-integers+numbers """
-  !!int "22": |-
-    ---
-    +++
-    @@ -10,14 +10,12 @@
-     the string and-keep-track-of-the-number-of+increase+count+after+each "\"-characters.+character. When that count
-  !!int "23": |-
-    ---
-    +++
-    @@ -10,14 +10,11 @@
-     number directly after+the+second '\t' to-count-if-it-is-an-integer,+count, returns sum """
-  !!int "24": |-
-    ---
-    +++
-    @@ -14,18 +14,11 @@
-     t in the-string,-and-store-in-a-new-list.-Type+string+type cast the-new-list+values to floats and
-  !!int "25": |-
-    ---
-    +++
-    @@ -2,9 +2,10 @@
-     readingIceCream(lines): """ Convert-all+the+numbers that-appears+appear after the last@@ -16,14 +17,13 @@
-     the list into-a-float,+integers, and then find the sum of-the-floats+those+integers """
-  !!int "26": |-
-    ---
-    +++
-    @@ -7,11 +7,8 @@
-     appears after the-"ice-cream\t"-or-"frozen-yogurt\t"+final+"t" of each object
-  !!int "27": |-
-    ---
-    +++
-    @@ -19,10 +19,8 @@
-     "\" characters. When-the-number-of-"\"+that+count is 2, isolate
-  !!int "28": |-
-    ---
-    +++
-    @@ -18,11 +18,33 @@
-     type cast the-values+value to-floats+float.+Then+move+to+the+next+string+in+the+list+and+repeat.+Once+the+end+at+the+end+of+the+list and add+all+removed values together. """
-  !!int "29": |-
-    ---
-    +++
-    @@ -3,7 +3,7 @@
-     """ take the-integer+float at the end
-  !!int "30": |-
-    ---
-    +++
-    @@ -29,17 +29,32 @@
-     rest of the+string.+If+this+remaining+portion+of+the string-and+contains+".", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer to the sum.
   !!int "31": |-
     ---
     +++
-    @@ -7,7 +7,7 @@
-     in list, adds-number+float directly after the
+    @@ -7,8 +7,8 @@
+     end of each-string-input,+list+entry, parse backwards until
 "nodes":
   !!int "0":
     "stderr":

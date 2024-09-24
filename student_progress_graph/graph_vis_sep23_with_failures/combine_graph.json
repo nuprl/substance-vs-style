@@ -77,20 +77,20 @@
     "adjacency": [
         [
             {
-                "diff": 2,
+                "diff": 9,
                 "color": "#d83034",
                 "arrow_color": "#d83034",
                 "username": "student19",
-                "hover": "username:student19\n\ndiff:\n--- \n+++ \n@@ -7,43 +7,48 @@\n of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Takes an input of two lists, each with the same number of items. Combines the first item in each list into a new list, does this for every item in both lists, then compiles these lists into one last list, and outputs the last list.\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append([l1[i],l2[i]])\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Takes an input of two lists, l1 and l2, each of which also contains lists. It combines the first list in l1 with the first one in l2, then continues for all items in l1 and l2. It outputs this final list which is a combination of l1 and l2.\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append(l1[i]+l2[i])\n    return l3\n",
+                "hover": "username:student19\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -7,43 +7,48 @@\n of two lists,+l1+and+l2, each+of+which+also+contains+lists.+It+combines+the+first+list+in+l1 with the-same-number+first+one+in+l2,+then+continues+for+all+items+in+l1+and+l2.+It+outputs+this+final+list+which+is+a+combination of-items.-Combines-the-first-item-in-each-list-into-a-new-list,-does-this-for-every-item-in-both-lists,-then-compiles-these-lists-into-one-last-list,+l1 and-outputs-the-last-list.+l2. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Takes an input of two lists, each with the same number of items. Combines the first item in each list into a new list, does this for every item in both lists, then compiles these lists into one last list, and outputs the last list.\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append([l1[i],l2[i]])\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Takes an input of two lists, l1 and l2, each of which also contains lists. It combines the first list in l1 with the first one in l2, then continues for all items in l1 and l2. It outputs this final list which is a combination of l1 and l2.\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append(l1[i]+l2[i])\n    return l3\n",
                 "id": 1,
                 "key": 0
             },
             {
-                "diff": 1,
+                "diff": 10,
                 "color": "#008dff",
                 "arrow_color": "#008dff",
                 "username": "student42",
-                "hover": "username:student42\n\ndiff:\n--- \n+++ \n@@ -61,4 +61,34 @@\n and so forth.+since+the+elements+of+l1+and+l2+are+lists,+assemble+a+new+list+from+the+elements+of+those+lists,+instead+of+simply+trying+to+append+one+element+onto+the+other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    given two lists of lists, l1 and l2, return a list l3 where each element of l3 is a list that is the combination of the respective elements of l1 and l2, so the first element of l3 would be a list containing the elements of the first element of l1 and the first elements of l2, and so forth. \n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append([l1[i],l2[i]])\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    given two lists of lists, l1 and l2, return a list l3 where each element of l3 is a list that is the combination of the respective elements of l1 and l2, so the first element of l3 would be a list containing the elements of the first element of l1 and the first elements of l2, and so forth. since the elements of l1 and l2 are lists, assemble a new list from the elements of those lists, instead of simply trying to append one element onto the other\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append(l1[i] + l2[i])\n    return l3\n",
+                "hover": "username:student42\nedge: (0->1)\ndiff:\n--- \n+++ \n@@ -61,4 +61,34 @@\n and so forth.+since+the+elements+of+l1+and+l2+are+lists,+assemble+a+new+list+from+the+elements+of+those+lists,+instead+of+simply+trying+to+append+one+element+onto+the+other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    given two lists of lists, l1 and l2, return a list l3 where each element of l3 is a list that is the combination of the respective elements of l1 and l2, so the first element of l3 would be a list containing the elements of the first element of l1 and the first elements of l2, and so forth. \n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append([l1[i],l2[i]])\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    given two lists of lists, l1 and l2, return a list l3 where each element of l3 is a list that is the combination of the respective elements of l1 and l2, so the first element of l3 would be a list containing the elements of the first element of l1 and the first elements of l2, and so forth. since the elements of l1 and l2 are lists, assemble a new list from the elements of those lists, instead of simply trying to append one element onto the other\n    \"\"\"\n        l3 = []\n    for i in range(len(l1)):\n        l3.append(l1[i] + l2[i])\n    return l3\n",
                 "id": 1,
                 "key": 1
             }
@@ -98,91 +98,91 @@
         [],
         [
             {
-                "diff": 4,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -1,10 +1,10 @@\n def combine(l1,l2): \"\"\"-Combine-all-elements-within+Take two lists+and+combine+them \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements within two lists\n    \"\"\"\n        l3 = []\n    for i in l1:\n        for j in l2:\n            l3.append(i+j)\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Take two lists and combine them\n    \"\"\"\n        return l1 + l2\n",
-                "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 5,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -1,10 +1,18 @@\n def combine(l1,l2): \"\"\"-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Take two lists and combine them\n    \"\"\"\n        return l1 + l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Use zip to loop through the two lists and append them to each other\n    \"\"\"\n        return [x for pair in zip(l1,l2) for x in pair]\n",
-                "id": 4,
-                "key": 0
-            },
-            {
-                "diff": 3,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -2,6 +2,9 @@\n combine(l1,l2): \"\"\" Combine+all+elements+in two lists \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine two lists\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements in two lists\n    \"\"\"\n        return l1+l2\n",
-                "id": 3,
-                "key": 0
-            },
-            {
-                "diff": 7,
-                "color": "#c701ff",
-                "arrow_color": "#c701ff",
-                "username": "student54",
-                "hover": "username:student54\n\ndiff:\n--- \n+++ \n@@ -4,5 +4,9 @@\n Combine the two-lists.+lists+into+one+single+list. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists.\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists into one single list.\n    \"\"\"\n        return l1+l2\n",
-                "id": 3,
-                "key": 1
-            },
-            {
-                "diff": 0,
-                "color": "#f9e858",
-                "arrow_color": "#f9e858",
-                "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -2,8 +2,11 @@\n combine(l1,l2): \"\"\" Combine-all elements+sharing+the+same+index in two lists\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements in two lists\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine elements sharing the same index in two lists\n    \"\"\"\n        return [x+y for x,y in zip(l1,l2)]\n",
-                "id": 1,
-                "key": 0
-            },
-            {
                 "diff": 11,
-                "color": "#c701ff",
-                "arrow_color": "#c701ff",
-                "username": "student54",
-                "hover": "username:student54\n\ndiff:\n--- \n+++ \n@@ -1,11 +1,17 @@\n def combine(l1,l2): \"\"\"-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists into one single list.\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Alternatively combine inner lists of the outer list until you have one single list.\n    \"\"\"\n        if len(l1) == 1:\n        return l1[0]\n    else:\n        return [l1[0],l2[0]] + combine(l1[1:],l2[1:])\n",
-                "id": 9,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 9,
                 "color": "#f9e858",
                 "arrow_color": "#f9e858",
                 "username": "student20",
-                "hover": "username:student20\n\ndiff:\n--- \n+++ \n@@ -1,18 +1,7 @@\n def combine(l1,l2): \"\"\"-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Use zip to loop through the two lists and append them to each other\n    \"\"\"\n        return [x for pair in zip(l1,l2) for x in pair]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine two lists\n    \"\"\"\n        return l1+l2\n",
+                "hover": "username:student20\nedge: (2->3)\ndiff:\n--- \n+++ \n@@ -1,10 +1,10 @@\n def combine(l1,l2): \"\"\"-Combine-all-elements-within+Take two lists+and+combine+them \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements within two lists\n    \"\"\"\n        l3 = []\n    for i in l1:\n        for j in l2:\n            l3.append(i+j)\n    return l3\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Take two lists and combine them\n    \"\"\"\n        return l1 + l2\n",
                 "id": 3,
-                "key": 0
-            }
-        ],
-        [
-            {
-                "diff": 10,
-                "color": "#4ecb8d",
-                "arrow_color": "#4ecb8d",
-                "username": "student43",
-                "hover": "username:student43\n\ndiff:\n--- \n+++ \n@@ -1,70 +1,79 @@\n def combine(l1,l2): \"\"\"-Split+Count the-n number of-inputted-lists-into-two-parts,-part-a-and-part-b,-according-to-their-position+elements in the-input.-Combine+inputted+list,+store+this+number+as+n.+Divide+n+by+2+store+it+as+m,+then+combine the 1st+element+in+the list-in-part-a with the-first-list+1+m+th+element in-part-b,+the+list,+return+it+as+a+single+element.+Then combine the 2nd+element+in+the list-in-part-a with the-second-list+2+m+th+element in-part-b.-More-generally,-combine the-ith-list+list,+return+it+as+a+single+element.+Loop+through+every+first+mth+element in-part-a-with the-ith-list-in-part-b.+list. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Split the n number of inputted lists into two parts, part a and part b, according to their position in the input. Combine the 1st list in part a with the first list in part b, combine the 2nd list in part a with the second list in part b. More generally, combine the ith list in part a with the ith list in part b. \n    \"\"\"\n        a = l1[:len(l1)//2]\n    b = l1[len(l1)//2:]\n    c = l2[:len(l2)//2]\n    d = l2[len(l2)//2:]\n    return [a,b,c,d]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every first mth element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    for i in range(m):\n        l1[i] = l1[i] + l2[i]\n    return l1\n",
-                "id": 6,
                 "key": 0
             }
         ],
         [
             {
                 "diff": 12,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student20",
+                "hover": "username:student20\nedge: (3->4)\ndiff:\n--- \n+++ \n@@ -1,10 +1,18 @@\n def combine(l1,l2): \"\"\"-Take+Use+zip+to+loop+through+the two lists and-combine+append them+to+each+other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Take two lists and combine them\n    \"\"\"\n        return l1 + l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Use zip to loop through the two lists and append them to each other\n    \"\"\"\n        return [x for pair in zip(l1,l2) for x in pair]\n",
+                "id": 4,
+                "key": 0
+            },
+            {
+                "diff": 1,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student20",
+                "hover": "username:student20\nedge: (3->3)\ndiff:\n--- \n+++ \n@@ -2,6 +2,9 @@\n combine(l1,l2): \"\"\" Combine+all+elements+in two lists \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine two lists\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements in two lists\n    \"\"\"\n        return l1+l2\n",
+                "id": 3,
+                "key": 0
+            },
+            {
+                "diff": 6,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student54",
+                "hover": "username:student54\nedge: (3->3)\ndiff:\n--- \n+++ \n@@ -4,5 +4,9 @@\n Combine the two-lists.+lists+into+one+single+list. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists.\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists into one single list.\n    \"\"\"\n        return l1+l2\n",
+                "id": 3,
+                "key": 1
+            },
+            {
+                "diff": 3,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student20",
+                "hover": "username:student20\nedge: (3->1)\ndiff:\n--- \n+++ \n@@ -2,8 +2,11 @@\n combine(l1,l2): \"\"\" Combine-all elements+sharing+the+same+index in two lists\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine all elements in two lists\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine elements sharing the same index in two lists\n    \"\"\"\n        return [x+y for x,y in zip(l1,l2)]\n",
+                "id": 1,
+                "key": 0
+            },
+            {
+                "diff": 8,
+                "color": "#c701ff",
+                "arrow_color": "#c701ff",
+                "username": "student54",
+                "hover": "username:student54\nedge: (3->9)\ndiff:\n--- \n+++ \n@@ -1,11 +1,17 @@\n def combine(l1,l2): \"\"\"-Combine+Alternatively+combine+inner+lists+of the-two-lists-into+outer+list+until+you+have one single list.\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists into one single list.\n    \"\"\"\n        return l1+l2\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Alternatively combine inner lists of the outer list until you have one single list.\n    \"\"\"\n        if len(l1) == 1:\n        return l1[0]\n    else:\n        return [l1[0],l2[0]] + combine(l1[1:],l2[1:])\n",
+                "id": 9,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 2,
+                "color": "#f9e858",
+                "arrow_color": "#f9e858",
+                "username": "student20",
+                "hover": "username:student20\nedge: (4->3)\ndiff:\n--- \n+++ \n@@ -1,18 +1,7 @@\n def combine(l1,l2): \"\"\"-Use-zip-to-loop-through-the+Combine two lists-and-append-them-to-each-other \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Use zip to loop through the two lists and append them to each other\n    \"\"\"\n        return [x for pair in zip(l1,l2) for x in pair]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine two lists\n    \"\"\"\n        return l1+l2\n",
+                "id": 3,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 4,
                 "color": "#4ecb8d",
                 "arrow_color": "#4ecb8d",
                 "username": "student43",
-                "hover": "username:student43\n\ndiff:\n--- \n+++ \n@@ -70,8 +70,6 @@\n Loop through every-first-mth element in the\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every first mth element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    for i in range(m):\n        l1[i] = l1[i] + l2[i]\n    return l1\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every  element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    l3 = []\n    for i in range(m):\n        l3.append(l1[i]+l2[i+m])\n    return l3\n",
+                "hover": "username:student43\nedge: (5->6)\ndiff:\n--- \n+++ \n@@ -1,70 +1,79 @@\n def combine(l1,l2): \"\"\"-Split+Count the-n number of-inputted-lists-into-two-parts,-part-a-and-part-b,-according-to-their-position+elements in the-input.-Combine+inputted+list,+store+this+number+as+n.+Divide+n+by+2+store+it+as+m,+then+combine the 1st+element+in+the list-in-part-a with the-first-list+1+m+th+element in-part-b,+the+list,+return+it+as+a+single+element.+Then combine the 2nd+element+in+the list-in-part-a with the-second-list+2+m+th+element in-part-b.-More-generally,-combine the-ith-list+list,+return+it+as+a+single+element.+Loop+through+every+first+mth+element in-part-a-with the-ith-list-in-part-b.+list. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Split the n number of inputted lists into two parts, part a and part b, according to their position in the input. Combine the 1st list in part a with the first list in part b, combine the 2nd list in part a with the second list in part b. More generally, combine the ith list in part a with the ith list in part b. \n    \"\"\"\n        a = l1[:len(l1)//2]\n    b = l1[len(l1)//2:]\n    c = l2[:len(l2)//2]\n    d = l2[len(l2)//2:]\n    return [a,b,c,d]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every first mth element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    for i in range(m):\n        l1[i] = l1[i] + l2[i]\n    return l1\n",
+                "id": 6,
+                "key": 0
+            }
+        ],
+        [
+            {
+                "diff": 7,
+                "color": "#4ecb8d",
+                "arrow_color": "#4ecb8d",
+                "username": "student43",
+                "hover": "username:student43\nedge: (6->7)\ndiff:\n--- \n+++ \n@@ -70,8 +70,6 @@\n Loop through every-first-mth element in the\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every first mth element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    for i in range(m):\n        l1[i] = l1[i] + l2[i]\n    return l1\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Count the number of elements in the inputted list, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the list with the 1+m th element in the list, return it as a single element. Then combine the 2nd element in the list with the 2+m th element in the list, return it as a single element. Loop through every  element in the list.\n    \"\"\"\n        n = len(l1)\n    m = n//2\n    l3 = []\n    for i in range(m):\n        l3.append(l1[i]+l2[i+m])\n    return l3\n",
                 "id": 7,
                 "key": 0
             }
@@ -190,22 +190,22 @@
         [],
         [
             {
-                "diff": 6,
+                "diff": 0,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
-                "hover": "username:student54\n\ndiff:\n--- \n+++ \n@@ -4,9 +4,5 @@\n Combine the two-lists,-alternating-the-lists-inside.+lists. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists, alternating the lists inside.\n    \"\"\"\n        return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists.\n    \"\"\"\n        return l1+l2\n",
+                "hover": "username:student54\nedge: (8->3)\ndiff:\n--- \n+++ \n@@ -4,9 +4,5 @@\n Combine the two-lists,-alternating-the-lists-inside.+lists. \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists, alternating the lists inside.\n    \"\"\"\n        return [l1[i] if i%2==0 else l2[i] for i in range(len(l1)+len(l2))]\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine the two lists.\n    \"\"\"\n        return l1+l2\n",
                 "id": 3,
                 "key": 0
             }
         ],
         [
             {
-                "diff": 8,
+                "diff": 5,
                 "color": "#c701ff",
                 "arrow_color": "#c701ff",
                 "username": "student54",
-                "hover": "username:student54\n\ndiff:\n--- \n+++ \n@@ -1,18 +1,23 @@\n def combine(l1,l2): \"\"\"-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Alternatively combine inner lists of the outer list until you have one single list.\n    \"\"\"\n        if len(l1) == 1:\n        return l1[0]\n    else:\n        return [l1[0],l2[0]] + combine(l1[1:],l2[1:])\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine l1 and l2, if l1 length is greater than 1, loop through each index to combine the two\n    \"\"\"\n        if len(l1) > 1:\n        for i in range(len(l1)):\n            l1[i] = l1[i] + l2[i]\n    else:\n        l1[0] = l1[0] + l2[0]\n    return l1\n",
+                "hover": "username:student54\nedge: (9->1)\ndiff:\n--- \n+++ \n@@ -1,18 +1,23 @@\n def combine(l1,l2): \"\"\"-Alternatively+Combine+l1+and+l2,+if+l1+length+is+greater+than+1,+loop+through+each+index+to combine-inner-lists-of the-outer-list-until-you-have-one-single-list.+two \"\"\"\n\nFROM completion:\ndef combine(l1,l2):\n    \"\"\"\n    Alternatively combine inner lists of the outer list until you have one single list.\n    \"\"\"\n        if len(l1) == 1:\n        return l1[0]\n    else:\n        return [l1[0],l2[0]] + combine(l1[1:],l2[1:])\n\n\nTO completion:\ndef combine(l1,l2):\n    \"\"\"\n    Combine l1 and l2, if l1 length is greater than 1, loop through each index to combine the two\n    \"\"\"\n        if len(l1) > 1:\n        for i in range(len(l1)):\n            l1[i] = l1[i] + l2[i]\n    else:\n        l1[0] = l1[0] + l2[0]\n    return l1\n",
                 "id": 1,
                 "key": 0
             }

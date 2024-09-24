@@ -3,13 +3,14 @@
   !!int "1": |-
     ---
     +++
-    @@ -41,4 +41,18 @@
-     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
+    @@ -21,27 +21,30 @@
+     and output french+as+input=english,+output=french def translate(lexicon,sentence): defines-{"one":"un",-"two":"deux",-"three":"trois",-"four:"quatre",-"I":"je",-"you":"tu",-"and":"et",-"cats":"chats",-"love":"aime",-"like":aime",-"my":"mes"},+{"one"="un",+"two"="deux",+"three"="trois",+"four="quatre",+"I"="je",+"you"="tu",+"and"="et",+"cats"="chats",+"love"="aime",+"like"=aime",+"my"="mes"}, this program will run the phrase-"I+input="I like my three@@ -50,8 +53,6 @@
+     def translate and-output-the-french+output={} translation """
   !!int "2": |-
     ---
     +++
-    @@ -3,7 +3,7 @@
-     """ For each-word+string in sentence, find
+    @@ -16,5 +16,26 @@
+     of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' """
   !!int "3": |-
     ---
     +++
@@ -18,41 +19,40 @@
   !!int "4": |-
     ---
     +++
-    @@ -2,8 +2,8 @@
-     translate(lexicon,sentence): """ For-each-string+every+word in sentence, find
-  !!int "5": |-
-    ---
-    +++
     @@ -21,29 +21,27 @@
      and output french-as-input=output def translate(lexicon,sentence): defines-{"one"="un",-"two"="deux",-"three"="trois",-"four="quatre",-"I"="je",-"you"="tu",-"and"="et",-"cats"="chats",-"love"="aime",-"like"=aime",-"my"="mes"},+{"one":"un",+"two":"deux",+"three":"trois",+"four:"quatre",+"I":"je",+"you":"tu",+"and":"et",+"cats":"chats",+"love":"aime",+"like":aime",+"my":"mes"}, this program will run the phrase-input="I+"I like my three@@ -52,6 +50,8 @@
      def translate and-output={}+output+the+french translation """
-  !!int "6": |-
-    ---
-    +++
-    @@ -22,8 +22,7 @@
-     output french as-input=english,-output=french+input=output def translate(lexicon,sentence): defines
-  !!int "7": |-
+  !!int "5": |-
     ---
     +++
     @@ -24,7 +24,7 @@
      The function then-prints+returns the string in@@ -42,7 +42,7 @@
      dictionary, the function-prints+returns 'UNK' for that
-  !!int "8": |-
+  !!int "6": |-
     ---
     +++
-    @@ -21,27 +21,30 @@
-     and output french+as+input=english,+output=french def translate(lexicon,sentence): defines-{"one":"un",-"two":"deux",-"three":"trois",-"four:"quatre",-"I":"je",-"you":"tu",-"and":"et",-"cats":"chats",-"love":"aime",-"like":aime",-"my":"mes"},+{"one"="un",+"two"="deux",+"three"="trois",+"four="quatre",+"I"="je",+"you"="tu",+"and"="et",+"cats"="chats",+"love"="aime",+"like"=aime",+"my"="mes"}, this program will run the phrase-"I+input="I like my three@@ -50,8 +53,6 @@
-     def translate and-output-the-french+output={} translation """
-  !!int "9": |-
-    ---
-    +++
-    @@ -16,5 +16,26 @@
-     of the inputted+string.+if+a+word+in+the+inputted string+is+not+in+the+inputted+dictionary,+the+translated+version+of+that+word+is+'UNK' """
-  !!int "10": |-
+    @@ -3,7 +3,7 @@
+     """ For each-word+string in sentence, find
+  !!int "7": |-
     ---
     +++
     @@ -13,7 +13,7 @@
      the English words-into.+into a different language.
+  !!int "8": |-
+    ---
+    +++
+    @@ -22,8 +22,7 @@
+     output french as-input=english,-output=french+input=output def translate(lexicon,sentence): defines
+  !!int "9": |-
+    ---
+    +++
+    @@ -41,4 +41,18 @@
+     in the sentence.+If+the+english+word+is+not+present+in+the+dictionary,+replace+it+with+"UNK" """
+  !!int "10": |-
+    ---
+    +++
+    @@ -2,8 +2,8 @@
+     translate(lexicon,sentence): """ For-each-string+every+word in sentence, find
 "nodes":
   !!int "0":
     "stderr":

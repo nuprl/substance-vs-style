@@ -2,13 +2,14 @@
   !!int "0": |-
     ---
     +++
-    @@ -6,5 +6,8 @@
-     out ending from+each+string+in words """
+    @@ -2,24 +2,26 @@
+     mod_end(words, ending): """-With+replace+the+characters+contained+within+the+string+outside+of+the+list+when+it+appears+in the words in the-list,-the-part-of-the-word-in-string-contained-outside-the list-replace with-'s'+"s" """
   !!int "1": |-
     ---
     +++
-    @@ -22,8 +22,11 @@
-     last letters of+each+word+in the-word+list for the string,
+    @@ -8,7 +8,6 @@
+     in the list,-replace the part of@@ -20,6 +19,7 @@
+     outside the list+replace with 's' """
   !!int "2": |-
     ---
     +++
@@ -17,14 +18,13 @@
   !!int "3": |-
     ---
     +++
-    @@ -22,4 +22,20 @@
-     replace with 's'.+If+the+string+occurs+more+than+one+time+at+the+index,+replace+it+the+last+time. """
+    @@ -17,7 +17,7 @@
+     as an input.-Search+Take the last letters
   !!int "4": |-
     ---
     +++
-    @@ -2,6 +2,26 @@
-     mod_end(words, ending): """+Find+the+string+stated+after+the+list+within+each+string+at+each+index+in+the+list+and+replace+with+'s'. If the string@@ -33,24 +53,4 @@
-     of the string.-Find-the-string-stated-after-the-list-within-each-string-at-each-index-in-the-list-and-replace-with-'s'. """
+    @@ -22,8 +22,11 @@
+     last letters of+each+word+in the-word+list for the string,
   !!int "5": |-
     ---
     +++
@@ -33,35 +33,35 @@
   !!int "6": |-
     ---
     +++
-    @@ -2,6 +2,37 @@
-     mod_end(words, ending): """+If+the+string+stated+after+the+list+occurs+more+than+one+time+within+a+string+in+the+list,+replace+it+with+'s'+the+last+time,+maintaining+the+rest+of+the+string. Find the string@@ -22,28 +53,4 @@
-     replace with 's'.-If-the-string-occurs-more-than-one-time-at-the-index,-replace-it-with-'s'-the-last-time,-maintaining-the-rest-of-the-string. """
-  !!int "7": |-
-    ---
-    +++
     @@ -35,7 +35,15 @@
      index, replace it+with+'s' the last-time.+time,+maintaining+the+rest+of+the+string. """
-  !!int "8": |-
+  !!int "7": |-
     ---
     +++
     @@ -14,13 +14,12 @@
      of the word-modifying-tense-with-the+in string contained outside the list+with+'s' """
+  !!int "8": |-
+    ---
+    +++
+    @@ -6,5 +6,8 @@
+     out ending from+each+string+in words """
   !!int "9": |-
     ---
     +++
-    @@ -8,7 +8,6 @@
-     in the list,-replace the part of@@ -20,6 +19,7 @@
-     outside the list+replace with 's' """
+    @@ -2,6 +2,37 @@
+     mod_end(words, ending): """+If+the+string+stated+after+the+list+occurs+more+than+one+time+within+a+string+in+the+list,+replace+it+with+'s'+the+last+time,+maintaining+the+rest+of+the+string. Find the string@@ -22,28 +53,4 @@
+     replace with 's'.-If-the-string-occurs-more-than-one-time-at-the-index,-replace-it-with-'s'-the-last-time,-maintaining-the-rest-of-the-string. """
   !!int "10": |-
     ---
     +++
-    @@ -17,7 +17,7 @@
-     as an input.-Search+Take the last letters
+    @@ -22,4 +22,20 @@
+     replace with 's'.+If+the+string+occurs+more+than+one+time+at+the+index,+replace+it+the+last+time. """
   !!int "11": |-
     ---
     +++
-    @@ -2,24 +2,26 @@
-     mod_end(words, ending): """-With+replace+the+characters+contained+within+the+string+outside+of+the+list+when+it+appears+in the words in the-list,-the-part-of-the-word-in-string-contained-outside-the list-replace with-'s'+"s" """
+    @@ -2,6 +2,26 @@
+     mod_end(words, ending): """+Find+the+string+stated+after+the+list+within+each+string+at+each+index+in+the+list+and+replace+with+'s'. If the string@@ -33,24 +53,4 @@
+     of the string.-Find-the-string-stated-after-the-list-within-each-string-at-each-index-in-the-list-and-replace-with-'s'. """
 "nodes":
   !!int "0":
     "stderr":

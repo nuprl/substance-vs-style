@@ -7,53 +7,56 @@
   !!int "1": |-
     ---
     +++
-    @@ -29,23 +29,45 @@
-     Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. """
+    @@ -35,14 +35,37 @@
+     false, do nothing.+Now+reorder+each+element+in+A,+according+to+each+element's+corresponding+list+in+scientists's+second+entry+value,+the+order+should+be+from+smallest+numerical+value+to+the+largest+numerical+value. Return list-A-if-all-lists-in-scientists-are-checked+A. """
   !!int "2": |-
     ---
     +++
-    @@ -56,11 +56,58 @@
-     smaller list is-appended+added to an output list.+The+corresponding+number+is+also+recorded.+If+the+number+for+an+item+which+is+being+added+is+less+than+the+corresponding+number+for+the+first+item+in+the+output+list,+it+is+added+to+the+beginning+of+the+output+list.+Otherwise,+it+is+added+to+the+end. After all small
+    @@ -29,23 +29,45 @@
+     Then sort the-list-into-ascending-order+scientists based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list. """
   !!int "3": |-
     ---
     +++
-    @@ -31,6 +31,10 @@
-     the list into-alphabetical-order.+ascending+order+based+on+the+number. """
+    @@ -6,41 +6,20 @@
+     list in scientists,-if-"Physics"-is+check+index+1+for+the+integer,+which+you+will+store in-the-list,-take-the-first-string-and-add-it-to a-new-list.-Then-sort-the-list-in-order-of-magnitude-of-the-integer-in-the-first-index-of-each-list-in-scientists.+variable+'age'.+Return+'age'. """
   !!int "4": |-
-    ---
-    +++
-    @@ -36,5 +36,10 @@
-     based on the+number,+but+don't+return+the number. """
-  !!int "5": |-
     ---
     +++
     @@ -36,7 +36,13 @@
      based on the-number,+number+given+in+the+set+of+lists, but don't return
+  !!int "5": |-
+    ---
+    +++
+    @@ -7,18 +7,24 @@
+     inner list contains+the+string "Physics" at index 2. If so,-return+append the string at index-0.+0+to+a+new+list. Sort these into
   !!int "6": |-
     ---
     +++
-    @@ -23,4 +23,24 @@
-     a new list.+Then+sort+the+list+in+order+of+magnitude+of+the+integer+in+the+first+index+of+each+list+in+scientists. """
+    @@ -31,6 +31,10 @@
+     the list into-alphabetical-order.+ascending+order+based+on+the+number. """
   !!int "7": |-
     ---
     +++
-    @@ -16,10 +16,12 @@
-     is "Physics" return+just the names-based-on+in+order+of what year they
+    @@ -1,19 +1,26 @@
+     def sort_physicists(scientists): """-Return-a+For+each list-of+in+scientists,+if+"Physics"+is+in+the+list,+take the first string-in-the-list-of-lists-that-contain-'Physics'+and+add+it+to+a+new+list. """
   !!int "8": |-
     ---
     +++
-    @@ -26,4 +26,11 @@
-     in a list.+Then+sort+the+list+into+alphabetical+order. """
+    @@ -1,25 +1,19 @@
+     def sort_physicists(scientists): """-For+Sort+the+lists+in+scientists+by+the+magnitude+of+the+first+index+in each-list-in-scientists,-check-index-1-for-the-integer,-which-you-will-store-in-a-variable-'age'.-Return-'age'.+list. """
   !!int "9": |-
     ---
     +++
-    @@ -35,14 +35,37 @@
-     false, do nothing.+Now+reorder+each+element+in+A,+according+to+each+element's+corresponding+list+in+scientists's+second+entry+value,+the+order+should+be+from+smallest+numerical+value+to+the+largest+numerical+value. Return list-A-if-all-lists-in-scientists-are-checked+A. """
+    @@ -1,7 +1,7 @@
+     def sort_physicists(scientists): """-Create+Return a list of@@ -10,9 +10,8 @@
+     element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@
+     says "Physics". Sort-the+this list from least@@ -37,7 +36,7 @@
+     list within the-big+scientists list. Return this
   !!int "10": |-
     ---
     +++
-    @@ -1,20 +1,29 @@
-     def sort_physicists(scientists): """+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is "Physics" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to
+    @@ -36,5 +36,10 @@
+     based on the+number,+but+don't+return+the number. """
   !!int "11": |-
     ---
     +++
@@ -62,67 +65,64 @@
   !!int "12": |-
     ---
     +++
-    @@ -2,7 +2,6 @@
-     sort_physicists(scientists): """ If-first position in list@@ -18,6 +17,8 @@
-     If position in+list+in scientists has "Ghez",@@ -29,6 +30,8 @@
-     If position in+list+in scientists has "Strickland",
-  !!int "13": |-
-    ---
-    +++
     @@ -40,4 +40,8 @@
      the big list.+Return+this+sorted+list """
-  !!int "14": |-
-    ---
-    +++
-    @@ -1,7 +1,7 @@
-     def sort_physicists(scientists): """-Create+Return a list of@@ -10,9 +10,8 @@
-     element each list-within-the-list+of+scientists if the 2nd@@ -20,7 +19,7 @@
-     says "Physics". Sort-the+this list from least@@ -37,7 +36,7 @@
-     list within the-big+scientists list. Return this
-  !!int "15": |-
-    ---
-    +++
-    @@ -1,11 +1,18 @@
-     def sort_physicists(scientists): """-If+Check+that the+inner list contains-"Physics",+"Physics"+at+index+2.+If+so, return the string@@ -19,7 +26,7 @@
-     new list based-off+on the integer at
-  !!int "16": |-
+  !!int "13": |-
     ---
     +++
     @@ -8,8 +8,7 @@
      the 0th element-in-the+each list within the@@ -34,7 +33,7 @@
      1st value in-the+each list within the@@ -43,5 +42,5 @@
      Return this sorted-list+list. """
-  !!int "17": |-
+  !!int "14": |-
     ---
     +++
-    @@ -7,18 +7,24 @@
-     inner list contains+the+string "Physics" at index 2. If so,-return+append the string at index-0.+0+to+a+new+list. Sort these into
-  !!int "18": |-
-    ---
-    +++
-    @@ -6,41 +6,20 @@
-     list in scientists,-if-"Physics"-is+check+index+1+for+the+integer,+which+you+will+store in-the-list,-take-the-first-string-and-add-it-to a-new-list.-Then-sort-the-list-in-order-of-magnitude-of-the-integer-in-the-first-index-of-each-list-in-scientists.+variable+'age'.+Return+'age'. """
-  !!int "19": |-
-    ---
-    +++
-    @@ -1,25 +1,19 @@
-     def sort_physicists(scientists): """-For+Sort+the+lists+in+scientists+by+the+magnitude+of+the+first+index+in each-list-in-scientists,-check-index-1-for-the-integer,-which-you-will-store-in-a-variable-'age'.-Return-'age'.+list. """
-  !!int "20": |-
-    ---
-    +++
-    @@ -1,19 +1,26 @@
-     def sort_physicists(scientists): """-Return-a+For+each list-of+in+scientists,+if+"Physics"+is+in+the+list,+take the first string-in-the-list-of-lists-that-contain-'Physics'+and+add+it+to+a+new+list. """
-  !!int "21": |-
+    @@ -1,20 +1,29 @@
+     def sort_physicists(scientists): """+The+internal+lists+contain+name,+year+graduated+and+subject. If the-list-contains+subject+is "Physics" return the-first-string-in-order-of-the-numbers+names+based+on+what+year+they+graduated from lowest to
+  !!int "15": |-
     ---
     +++
     @@ -1,6 +1,11 @@
      def sort_physicists(scientists): """+Create+an+empty+list+A. Loop through each@@ -19,15 +24,25 @@
      Physics. If true,-return+append the 1st element-in-the-list.+to+list+A. If false, do nothing.+Return+list+A+if+all+lists+in+scientists+are+checked """
-  !!int "22": |-
+  !!int "16": |-
+    ---
+    +++
+    @@ -26,4 +26,11 @@
+     in a list.+Then+sort+the+list+into+alphabetical+order. """
+  !!int "17": |-
+    ---
+    +++
+    @@ -23,4 +23,24 @@
+     a new list.+Then+sort+the+list+in+order+of+magnitude+of+the+integer+in+the+first+index+of+each+list+in+scientists. """
+  !!int "18": |-
     ---
     +++
     @@ -30,4 +30,26 @@
      a new list+where+if+multiple+values+are+to+be+added,+list+in+order+of+ascending+order+of+the+second+value+in+list+of+lists. """
+  !!int "19": |-
+    ---
+    +++
+    @@ -16,10 +16,12 @@
+     is "Physics" return+just the names-based-on+in+order+of what year they
+  !!int "20": |-
+    ---
+    +++
+    @@ -56,11 +56,58 @@
+     smaller list is-appended+added to an output list.+The+corresponding+number+is+also+recorded.+If+the+number+for+an+item+which+is+being+added+is+less+than+the+corresponding+number+for+the+first+item+in+the+output+list,+it+is+added+to+the+beginning+of+the+output+list.+Otherwise,+it+is+added+to+the+end. After all small
+  !!int "21": |-
+    ---
+    +++
+    @@ -1,11 +1,18 @@
+     def sort_physicists(scientists): """-If+Check+that the+inner list contains-"Physics",+"Physics"+at+index+2.+If+so, return the string@@ -19,7 +26,7 @@
+     new list based-off+on the integer at
+  !!int "22": |-
+    ---
+    +++
+    @@ -2,7 +2,6 @@
+     sort_physicists(scientists): """ If-first position in list@@ -18,6 +17,8 @@
+     If position in+list+in scientists has "Ghez",@@ -29,6 +30,8 @@
+     If position in+list+in scientists has "Strickland",
 "nodes":
   !!int "0":
     "stderr":

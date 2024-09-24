@@ -3,80 +3,80 @@
   !!int "1": |-
     ---
     +++
-    @@ -28,6 +28,9 @@
-     the 0th index,+for+every+list multiply the integers
+    @@ -37,7 +37,7 @@
+     order. returns an-integer+float that is the
   !!int "2": |-
-    ---
-    +++
-    @@ -62,4 +62,9 @@
-     the sales tax.+Round+to+the+nearest+hundredth """
-  !!int "3": |-
-    ---
-    +++
-    @@ -26,7 +26,7 @@
-     the prices and-tax+taxes within the lists
-  !!int "4": |-
-    ---
-    +++
-    @@ -27,4 +27,11 @@
-     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
-  !!int "5": |-
-    ---
-    +++
-    @@ -51,5 +51,13 @@
-     to give the+output.+The output+is+rounded+to+two+decimal+points. """
-  !!int "6": |-
-    ---
-    +++
-    @@ -48,7 +48,12 @@
-     inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. """
-  !!int "7": |-
-    ---
-    +++
-    @@ -66,5 +66,10 @@
-     added to the-"total"+"total",+truncated+to+two+decimal+places. """
-  !!int "8": |-
-    ---
-    +++
-    @@ -16,8 +16,21 @@
-     within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@
-     of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. """
-  !!int "9": |-
     ---
     +++
     @@ -13,35 +13,36 @@
      item purchased, the-price,+amount+of the-tax,+item+purchased,+the+price+for+each+item, and the overall sales tax.-All-of+The+amount+purchased+is+multiplied+with the-prices-and-tax-within-the-lists,-which-is-the-last-two-components-of-the-list-are-added-together.+price+for+each+item,+creating+a+total+amount. The sales tax@@ -53,8 +54,8 @@
      outcome of the-added-prices,+total+amount, and then the
-  !!int "10": |-
+  !!int "3": |-
     ---
     +++
-    @@ -44,7 +44,6 @@
-     sales tax times-100 times the sum
-  !!int "11": |-
-    ---
-    +++
-    @@ -26,10 +26,19 @@
-     the prices and-taxes+tax within the-lists+lists,+which+is+the+last+two+components+of+the+list are added together.
-  !!int "12": |-
-    ---
-    +++
-    @@ -21,34 +21,13 @@
-     is an integer.+for every-element-in-the list-of-lists-is-a-list-with-a-string in the 0th index,-integer-in-the-1st-index-and-integer-in-the-second-index. multiply the integers
-  !!int "13": |-
+    @@ -39,4 +39,11 @@
+     items returns it.+This+function+rounds+to+2+decimal+points """
+  !!int "4": |-
     ---
     +++
     @@ -6,10 +6,10 @@
      grocery_list, multiple index-0+1 with index-1,+2, repeat for all
-  !!int "14": |-
+  !!int "5": |-
     ---
     +++
-    @@ -37,7 +37,7 @@
-     order. returns an-integer+float that is the
-  !!int "15": |-
+    @@ -17,5 +17,19 @@
+     index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. """
+  !!int "6": |-
     ---
     +++
     @@ -68,6 +68,17 @@
      and 'tax'. the+value+of+total_cost+will+be+rounded+to+two+decimal+places.+the function will return
+  !!int "7": |-
+    ---
+    +++
+    @@ -27,4 +27,11 @@
+     sale_tax to result.+Round+to+the+nearest+2+decimal+places. """
+  !!int "8": |-
+    ---
+    +++
+    @@ -28,6 +28,9 @@
+     the 0th index,+for+every+list multiply the integers
+  !!int "9": |-
+    ---
+    +++
+    @@ -26,7 +26,7 @@
+     the prices and-tax+taxes within the lists
+  !!int "10": |-
+    ---
+    +++
+    @@ -62,4 +62,9 @@
+     the sales tax.+Round+to+the+nearest+hundredth """
+  !!int "11": |-
+    ---
+    +++
+    @@ -16,8 +16,21 @@
+     within the list.-this-value+these+numbers+will+all+be+added+together+and+stored+in+variable+'cost'.+the+variable+'cost' will then be@@ -29,15 +42,39 @@
+     of the list.-these-two-numbers+the+product will be-added-to-each-other+stored+in+a+new+variable,+'tax'.+a+new+variable,+'total_cost',+will+contain+the+sum+of+the+values+of+'cost' and-returned+'tax'.+the+function+will+return+the+value+of+the+variable+'total_cost'. """
+  !!int "12": |-
+    ---
+    +++
+    @@ -26,10 +26,19 @@
+     the prices and-taxes+tax within the-lists+lists,+which+is+the+last+two+components+of+the+list are added together.
+  !!int "13": |-
+    ---
+    +++
+    @@ -42,6 +42,8 @@
+     that value by+1+plus the inputted number.
+  !!int "14": |-
+    ---
+    +++
+    @@ -51,5 +51,13 @@
+     to give the+output.+The output+is+rounded+to+two+decimal+points. """
+  !!int "15": |-
+    ---
+    +++
+    @@ -43,5 +43,21 @@
+     sales tax plus-1+1.+if+the+resulting+number+has+more+than+two+decimal+places+shorten+it+to+two+decimal+places. """
   !!int "16": |-
     ---
     +++
@@ -85,28 +85,28 @@
   !!int "17": |-
     ---
     +++
-    @@ -17,5 +17,19 @@
-     index 1 and-2.+2+and+round+to+the+nearest+hundredths+if+there+are+more+than+2+decimal+places. """
+    @@ -48,7 +48,12 @@
+     inputted number. That-result+result,+rounded+to+two+decimal+places, is outputted. """
   !!int "18": |-
     ---
     +++
-    @@ -43,5 +43,21 @@
-     sales tax plus-1+1.+if+the+resulting+number+has+more+than+two+decimal+places+shorten+it+to+two+decimal+places. """
+    @@ -66,5 +66,10 @@
+     added to the-"total"+"total",+truncated+to+two+decimal+places. """
   !!int "19": |-
     ---
     +++
-    @@ -42,6 +42,8 @@
-     that value by+1+plus the inputted number.
+    @@ -21,34 +21,13 @@
+     is an integer.+for every-element-in-the list-of-lists-is-a-list-with-a-string in the 0th index,-integer-in-the-1st-index-and-integer-in-the-second-index. multiply the integers
   !!int "20": |-
-    ---
-    +++
-    @@ -39,4 +39,11 @@
-     items returns it.+This+function+rounds+to+2+decimal+points """
-  !!int "21": |-
     ---
     +++
     @@ -44,4 +44,7 @@
      outputs the sum+with+four+digits """
+  !!int "21": |-
+    ---
+    +++
+    @@ -44,7 +44,6 @@
+     sales tax times-100 times the sum
 "nodes":
   !!int "0":
     "stderr":

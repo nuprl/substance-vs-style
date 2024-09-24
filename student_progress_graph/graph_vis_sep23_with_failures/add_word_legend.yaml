@@ -8,8 +8,8 @@
   !!int "2": |-
     ---
     +++
-    @@ -17,5 +17,7 @@
-     number as the-value+value.+Return+map. """
+    @@ -32,4 +32,9 @@
+     in the dictionary.+The+function+returns+the+dictionary. """
   !!int "3": |-
     ---
     +++
@@ -19,38 +19,38 @@
   !!int "4": |-
     ---
     +++
-    @@ -32,5 +32,7 @@
-     number to the+word.+return word """
+    @@ -3,11 +3,38 @@
+     line_number, map): """-Add+If word-and-line-number+is+already+present+in+map,+add+line_number to+the+array+corresponding+to+the+"word"+key+in map.+Otherwise,+add+line_number+as+a+new+value+to+map,+with+word+as+its+corresponding+key. """
   !!int "5": |-
     ---
     +++
-    @@ -3,11 +3,38 @@
-     line_number, map): """-Add+If word-and-line-number+is+already+present+in+map,+add+line_number to+the+array+corresponding+to+the+"word"+key+in map.+Otherwise,+add+line_number+as+a+new+value+to+map,+with+word+as+its+corresponding+key. """
+    @@ -32,5 +32,7 @@
+     number to the+word.+return word """
   !!int "6": |-
-    ---
-    +++
-    @@ -15,24 +15,18 @@
-     and map (dict).-In-map-dictionary add new-element-of-dictionary-with key-are+name word-which-given-the+and+its corresponding list of-line-number+line_number+into+the+map """
-  !!int "7": |-
     ---
     +++
     @@ -63,4 +63,8 @@
      as a value.+Returns+an+updated+map. """
+  !!int "7": |-
+    ---
+    +++
+    @@ -17,5 +17,7 @@
+     number as the-value+value.+Return+map. """
   !!int "8": |-
-    ---
-    +++
-    @@ -22,5 +22,9 @@
-     line_number as the-value+value,+returns+the+appended+dictionary """
-  !!int "9": |-
-    ---
-    +++
-    @@ -32,4 +32,9 @@
-     in the dictionary.+The+function+returns+the+dictionary. """
-  !!int "10": |-
     ---
     +++
     @@ -34,5 +34,5 @@
      the word. return-word+map """
+  !!int "9": |-
+    ---
+    +++
+    @@ -22,5 +22,9 @@
+     line_number as the-value+value,+returns+the+appended+dictionary """
+  !!int "10": |-
+    ---
+    +++
+    @@ -15,24 +15,18 @@
+     and map (dict).-In-map-dictionary add new-element-of-dictionary-with key-are+name word-which-given-the+and+its corresponding list of-line-number+line_number+into+the+map """
 "nodes":
   !!int "0":
     "stderr":

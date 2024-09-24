@@ -23,6 +23,9 @@ string	characters
 NOTE: do not tag when a "letter" Refers to the concept of a letter in English. 
 NOTE: take a "C style" mindset here, in that a single character is not a string 
 NOTE: pay attention for multisplit
+NOTE: do not tag "Proper Strings", such as English words, or sentences that are meaningful 
+NOTE: do not tag substring because replacement doesn't work
+NOTE: when a subphrase like "word" has the grammatical meaning, do not tag as the string substitution breaks 
 
 list	brackets
 list	set of brackets
@@ -64,7 +67,7 @@ insert	add
 insert	insert
 insert	append
 insert	attach
-NOTE: applies when the types are NOT the same (e.g. adding a number to a list)
+NOTE: applies to lists when the types are NOT the same and applies to dictionaries generally
 NOTE: common add issue is a tag of add that is the mathematical operation and not the list/string operation 
 
 concatenate	combine
@@ -72,6 +75,7 @@ concatenate	splice
 concatenate	concatenate
 concatenate	put together
 NOTE: the rule is that these tags only apply if the types that are being concatenated are the same 
+NOTE: this only applies to lists and strings 
 
 loop	go through
 loop	run through

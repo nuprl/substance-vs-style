@@ -1,0 +1,177 @@
+from dataclasses import dataclass
+from typing import List, Literal, Union
+from pathlib import Path
+import yaml
+import networkx as nx
+
+State = Literal['success','fail','neutral']
+
+class Node(yaml.YAMLObject):
+    """
+    Represents a possible completion output (stderr/stdout)
+    """
+    yaml_tag = u'!Node'
+    
+    def __init__(self, id: int, stdout: List[str], stderr: List[str]):
+        self.id = id
+        self.stdout = stdout
+        self.stderr = stderr
+    
+    def __repr__(self):
+        return "%s(id=%r, stdout=%r, stderr=%r)" % (
+        self.id, self.stdout, self.stderr)
+        
+    def __eq__(self, other):
+        return (self.id == other.id and self.stdout == other.stdout
+                and self.stderr == other.stderr)
+    
+    def __hash__(self):
+        stdout = "\n".join(self.stdout)
+        stderr = "\n".join(self.stderr)
+        return hash(str(self.id) + stdout + "\n" + stderr)
+        
+@dataclass
+class Edge(yaml.YAMLObject):
+    """
+    Represents a student edit
+    """
+    yaml_tag = u'!Edge'
+    node_from: Node
+    node_to: Node
+    username: str
+    prompt_from: str
+    prompt_to: str
+    completion_from: str
+    completion_to: str
+    diff: str
+    attempt_id: int
+    total_attempts: int
+    state: State
+    
+    def __repr__(self):
+        return "%s(node_from=%r, node_to=%r, username=%r" + \
+        " prompt_from=%r prompt_to=%r completion_from=%r completion_to=%r" + \
+        " diff=%r attempt_id=%r total_attempts=%r state=%r)" % (
+        self.node_from, self.node_to, self.username, self.prompt_from,
+        self.prompt_to, self.completion_from, self.completion_to, self.diff,
+        self.attempt_id, self.total_attempts, self.state)
+
+class Graph(yaml.YAMLObject):
+    """
+    Represents a Problem
+    """
+    yaml_tag = u'!Graph'
+    SUCCESS_NODE_COLOR = "green"
+    BASE_NODE_COLOR="grey"
+    COLORS = [
+        '#d83034', # red
+        '#f9e858', # yellow
+        '#008dff', # med blue
+        '#4ecb8d', # green
+        '#c701ff', # purple
+        '#ffcd8e', # light orange
+        '#003a7d', # dark blue
+        '#Ff73b6', # pink
+        '#ff7f50', # coral
+        '#7fff00', # chartreuse
+        '#8a2be2', # blue violet
+        '#ffd700', # gold
+        '#ff4500', # orange red
+        '#00ced1', # dark turquoise
+        '#ff1493', # deep pink
+        '#9400d3', # dark violet
+    ]
+    student_colors: dict = {}
+    
+    def __init__(self, problem:str, nodes: List[Node],edges: List[Edge]):
+        self.problem=problem
+        self.nodes=nodes
+        self.edges=edges
+    
+    def __repr__(self):
+        return "%s(problem=%r, nodes=%r, edges=%r)" % (
+        self.problem, self.nodes, self.edges)
+        
+    def __eq__(self, other):
+        return (self.nodes == other.nodes and
+                self.edges == other.edges and
+                self.problem == other.problem)
+        
+    def to_networkx(self) -> nx.MultiDiGraph:
+        G = nx.MultiDiGraph(label=self.problem)
+        
+        # add nodes
+        for node in self.nodes:
+            stdout_text = "\n".join(node.stdout)
+            stderr_text = "\n".join(node.stderr)
+            G.add_node(node.id, 
+                       stderr=node.stderr,
+                       stdout=node.stdout,
+                       color=self.BASE_NODE_COLOR,
+                       hover=f"stdout:\n{stdout_text}\nstderr:\n{stderr_text}")
+        
+        # add edges
+        success_nodes = []
+        for edge in self.edges:
+            if edge.state == "success":
+                success_nodes.append(edge.node_to.id)
+                
+            hover_text = (f"username:{edge.username}\nedge: ({edge.node_from.id}->{edge.node_to.id})\n" +
+                        f"state:{edge.state}\n" +
+                        f"attempt_num:{edge.attempt_id}/{edge.total_attempts}\n"+
+                        f"diff:\n{edge.diff}\n\n"+
+                        f"FROM completion:\n{edge.prompt_from}\n    {edge.completion_from}\n\n"+
+                        f"TO completion:\n{edge.prompt_to}\n    {edge.completion_to}")
+            
+            if edge.username in self.student_colors.keys():
+                color = self.student_colors[edge.username]
+            else:
+                color = self.COLORS.pop()
+                self.student_colors[edge.username] = color
+                
+            G.add_edge(
+                edge.node_from.id, edge.node_to.id,
+                prompt_from=edge.prompt_from, prompt_to=edge.prompt_to,
+                completion_from=edge.completion_from, completion_to=edge.completion_to,
+                total_attempts=edge.total_attempts, attempt_id=edge.attempt_id,
+                diff=edge.diff, username=edge.username, state=edge.state,
+                hover = hover_text,
+                color= color
+            )
+        
+        # color success nodes in green
+        for i,node in enumerate(G.nodes()):
+            if node in success_nodes:
+                G.nodes[i]["color"] = self.SUCCESS_NODE_COLOR
+
+        return G
+
+    def get_legend(self):
+        return self.student_colors
+        
+def graph_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Graph(**fields)
+
+def node_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Node(**fields)
+
+def edge_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Edge(**fields)
+
+def compute_state(is_success:bool, last_attempt: bool) -> State:
+    if is_success:
+        return "success"
+    else:
+        if last_attempt:
+            return "fail"
+        else:
+            return "neutral"
+
+def find_node(stdout: List[str], stderr: List[str], nodes: List[Node]) -> Union[Node, None]:
+    for node in nodes:
+        if node.stderr == stderr and node.stdout == stdout:
+            return node
+    return None

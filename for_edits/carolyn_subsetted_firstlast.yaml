@@ -1595,7 +1595,7 @@
   prompt: |-
     def check_prime(num):
         """
-        $Typecast:Convert$ the $input:input$ to an $integer:integer$. Then check if the $integer:integer$ is a prime number and $return:return$ "True" if it is prime and "False" if it's not
+        $Typecast:Convert$ the $parameter:input$ to an $integer:integer$. Then check if the $integer:integer$ is a prime number and $return:return$ "True" if it is prime and "False" if it's not
         """
         
   subset: last_success
@@ -1738,7 +1738,7 @@
   prompt: |-
     def check_prime(num):
         """
-        $typecast:change$ $input:input$ to $integer:integer$. if prime number, $return:return$ True, if not a prime number, $return:return$ False
+        $typecast:change$ $parameter:input$ to $integer:integer$. if prime number, $return:return$ True, if not a prime number, $return:return$ False
         """
         
   subset: first_success
@@ -3509,7 +3509,7 @@
   prompt: |-
     def times_with(meetings):
         """
-        the $input:input$ will consist of a $list:list$ of $lists:lists$. an empty $dictionary:dictionary$ will be made. each $string:string$ within the $list:list$ will be a  $key:key$. the numbers outside of each $list:list$ will be the value for each $key:key$. if a $key:key$ appears twice, then the values will be added and will correspond to only one $key:key$.
+        the $parameter:input$ will consist of a $list:list$ of $lists:lists$. an empty $dictionary:dictionary$ will be made. each $string:string$ within the $list:list$ will be a  $key:key$. the numbers outside of each $list:list$ will be the value for each $key:key$. if a $key:key$ appears twice, then the values will be added and will correspond to only one $key:key$.
         """
         
   subset: last_failure
@@ -5553,7 +5553,7 @@
   prompt: |-
     def assessVowels(s):
         """
-        the function assessVowels will $take:take$ $input:input$ of a $string:string$ and $return:return$ a $list:list$ of all the vowels in that $string:string$. include both capital and lower case letters. 
+        the function assessVowels will $take:take$ $parameter:input$ of a $string:string$ and $return:return$ a $list:list$ of all the vowels in that $string:string$. include both capital and lower case letters. 
         """
         
   subset: last_failure
@@ -5783,7 +5783,7 @@
   prompt: |-
     def assessVowels(s):
         """
-        $Return:Return$ a $list:list$ of both the uppercase and lowercase vowels in the $input:input$.
+        $Return:Return$ a $list:list$ of both the uppercase and lowercase vowels in the $parameter:input$.
         """
         
   subset: last_success
@@ -7175,7 +7175,7 @@
   prompt: |-
     def partialWordle(guessList,hiddenWord):
         """
-        if $input:input$ has any part of hidden word, $return:output$ how many characters they have in similar
+        if $parameter:input$ has any part of hidden word, $return:output$ how many characters they have in similar
         """
         
   subset: first_failure
@@ -8225,7 +8225,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        User $inputs:inputs$ a $string:string$ s and $integer:integer$ i. Function would flip the first i letters of $string:string$ s backwards, and then $concatenate:concatenate$ the rest of the $string:string$ to the end of the backwards letters.
+        User $provides:inputs$ a $string:string$ s and $integer:integer$ i. Function would flip the first i letters of $string:string$ s backwards, and then $concatenate:concatenate$ the rest of the $string:string$ to the end of the backwards letters.
         """
         
   subset: first_failure
@@ -8242,7 +8242,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        User $inputs:inputs$ a $string:string$ s and $integer:integer$ i. Function would write the first i letters of $string:string$ s backwards and save that as $string:string$ A. All the letters which were not flipped backwards would be saved as $string:string$ B. Function would $concatenate:add$ $string:string$ A and B, and then $return:return$ that as the $return:output$
+        User $provides:inputs$ a $string:string$ s and $integer:integer$ i. Function would write the first i letters of $string:string$ s backwards and save that as $string:string$ A. All the letters which were not flipped backwards would be saved as $string:string$ B. Function would $concatenate:add$ $string:string$ A and B, and then $return:return$ that as the $return:output$
         """
         
   subset: last_success
@@ -8551,7 +8551,7 @@
   prompt: |-
     def edit_col(mat,i,n):
         """
-        If the $input:input$ i is 0, then I is set 
+        If the $parameter:input$ i is 0, then I is set 
     First, it multiplies the first element of each $list:array$ in mat with the the $parameter:input$ i. Then it replaces the second element of each $list:array$ in mat with the $parameter:input$ n.
         """
         
@@ -10679,7 +10679,7 @@
   prompt: |-
     def sortedBooks(books, writer):
         """
-        The $input:input$ will be a $list:list$ of $dictionaries:dictionaries$ and a $string:string$. $Skip:Remove$ all $dictionaries:dictionaries$ where the $key:key$ "author" does not match the $string:string$. Sort the $dictionaries:dictionaries$ by "year" in an ascending order. $Return:Return$ the updated $list:list$.
+        The $parameters:input$ will be a $list:list$ of $dictionaries:dictionaries$ and a $string:string$. $Skip:Remove$ all $dictionaries:dictionaries$ where the $key:key$ "author" does not match the $string:string$. Sort the $dictionaries:dictionaries$ by "year" in an ascending order. $Return:Return$ the updated $list:list$.
         """
         
   subset: last_success

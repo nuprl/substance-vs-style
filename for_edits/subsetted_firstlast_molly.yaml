@@ -484,7 +484,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        The $input:input$ will be a $list:list$ of $strings:strings$. $Return:Return$ 0 if the $list:list$ is empty. Otherwise, $typecast:convert$ the $strings:strings$ into $integers:integers$, then subtract the sum of all the $integers:integers$ with odd positions from the sum of all the $integers:integers$ with even positions. 
+        The $parameter:input$ will be a $list:list$ of $strings:strings$. $Return:Return$ 0 if the $list:list$ is empty. Otherwise, $typecast:convert$ the $strings:strings$ into $integers:integers$, then subtract the sum of all the $integers:integers$ with odd positions from the sum of all the $integers:integers$ with even positions. 
         """
         
   subset: last_success
@@ -502,7 +502,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        For each $list:list$ $key:entry$, $typecast:convert$ the $input:input$ to an $integer:integer$. Multiply $list:list$ $keys:entries$ that correspond to an even index by -1. Then $insert:add$ all of the $list:list$ $keys:entries$ together and $return:return$ their sum. If the $list:list$ is empty, $return:return$ 0.
+        For each $list:list$ entry, $typecast:convert$ the input to an $integer:integer$. Multiply $list:list$ entries that correspond to an even index by -1. Then add all of the $list:list$ entries together and $return:return$ their sum. If the $list:list$ is empty, $return:return$ 0.
         """
         
   subset: first_failure
@@ -520,7 +520,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        For each $list:list$ $key:entry$, $typecast:convert$ the $input:input$ to an $integer:integer$. Multiply $list:list$ $keys:entries$ that don't correspond to an even index by -1. Then $insert:add$ all of the $list:list$ $keys:entries$ together and $return:return$ their sum. If the $list:list$ is empty, $return:return$ 0.
+        For each $list:list$ entry, $typecast:convert$ the input to an $integer:integer$. Multiply $list:list$ entries that don't correspond to an even index by -1. Then add all of the $list:list$ entries together and $return:return$ their sum. If the $list:list$ is empty, $return:return$ 0.
         """
         
   subset: last_success
@@ -538,7 +538,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        subtracts the last $key:element$ in the $list:list$ from the sum of all the other $keys:elements$ in the $list:list$.
+        subtracts the last element in the $list:list$ from the sum of all the other elements in the $list:list$.
         """
         
   subset: first_failure
@@ -558,7 +558,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        $Typecasts:Turns$ all the $keys:elements$ in lst into $integers:integers$, then finds the sum of all the $keys:elements$ in the $list:list$ excluding the last one. Then it subtracts the last $key:element$ from the sum.
+        $Typecasts:Turns$ all the elements in lst into $integers:integers$, then finds the sum of all the elements in the $list:list$ excluding the last one. Then it subtracts the last element from the sum.
 
     If the $list:list$ is empty, it $returns:returns$ 0
         """
@@ -578,7 +578,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Find the sum of the $keys:items$ in the $list:list$ with positions that $return:produce$ an $integer:integer$ when divided by two, then find the sum of the $keys:items$ in the $list:list$ with positions that do not $return:produce$ an $integer:integer$ when divided by two. Then $take:take$ the first sum and subtract the second sum from it. If there are no $keys:items$ in the $list:list$ $return:output$ 0
+        Find the sum of the items in the $list:list$ with positions that produce an $integer:integer$ when divided by two, then find the sum of the items in the $list:list$ with positions that do not produce an $integer:integer$ when divided by two. Then take the first sum and subtract the second sum from it. If there are no items in the $list:list$ $return:output$ 0
         """
         
   subset: first_failure
@@ -596,7 +596,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Given a $list:list$ of $integers:integers$, $take:take$ the first number in the $list:list$ and alternate between subtracting and $inserting:adding$ the next numbers in the $list:list$. If the $list:list$ is empty $return:return$ 0. Otherwise $return:return$ the expected $return:output$
+        Given a $list:list$ of $integers:integers$, take the first number in the $list:list$ and alternate between subtracting and adding the next numbers in the $list:list$. If the $list:list$ is empty $return:return$ 0. Otherwise $return:return$ the expected output
         """
         
   subset: first_failure
@@ -614,7 +614,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Given a $list:list$ of $strings:strings$, $typecast:type cast$ to $integers:integers$ and then $take:take$ the first number in the $list:list$ and alternate between subtracting and $inserting:adding$ the next numbers in the $list:list$. If the $list:list$ is empty $return:return$ 0. Otherwise $return:return$ the expected $return:output$
+        Given a $list:list$ of $strings:strings$, $typecast:type cast$ to $integers:integers$ and then take the first number in the $list:list$ and alternate between subtracting and adding the next numbers in the $list:list$. If the $list:list$ is empty $return:return$ 0. Otherwise $return:return$ the expected output
         """
         
   subset: last_success
@@ -632,7 +632,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        alternate between subtracting and $inserting:adding$ each $key:element$ in $list:list$, $return:return$ total
+        alternate between subtracting and adding each element in $list:list$, $return:return$ total
         """
         
   subset: first_failure
@@ -650,7 +650,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        $typecast:turn$ each $key:element$ into $integer:int$, $insert:add$ first $key:element$ to count. if index of $key:element$ is odd when $integer:int$, subtract from count. if index of $key:element$ is even when $integer:int$, $insert:add$ to count.
+        $typecast:turn$ each element into $integer:int$, add first element to count. if index of element is odd when $integer:int$, subtract from count. if index of element is even when $integer:int$, add to count.
         """
         
   subset: last_failure
@@ -672,7 +672,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        $Typecast:Change$ the first two $keys:items$ into $integers:integers$ Subtract the second $key:item$ in the $list:array$ $list:list$ from the first $key:item$. $typecast:change$ the third and forth $keys:items$ into $integers:integers$ then subtract the forth $key:item$ from the third $key:item$ then $insert:add$ the two sums. if there are just two $keys:items$ in $list:list$ $typecast:change$ those two $keys:items$ into $integers:integers$ subtract the second one from the first one and $return:return$ the product. if there are no $keys:items$ then $return:return$ zero
+        $Typecast:Change$ the first two items into $integers:integers$ Subtract the second items in the $list:array list$ from the first items. $typecast:change$ the third and forth items into $integers:integers$ then subtract the forth items from the third items then add the two sums. if there are just two items in $list:list$ $typecast:change$ those two items into $integers:integers$ subtract the second one from the first one and $return:return$ the product. if there are no items then $return:return$ zero
         """
         
   subset: last_success
@@ -690,7 +690,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Subtracts the second number from the first one, stores that value. Then $inserts:adds$ that value to the next number, etc.
+        Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc.
         """
         
   subset: first_failure
@@ -708,7 +708,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        $Typecasts:Converts$ all $keys:items$ to $integer:integer$. Subtracts the second number from the first one, stores that value. Then $inserts:adds$ that value to the next number, etc. $Returns:Returns$ the final value.
+        $Typecasts:Converts$ all items to $integer:integer$. Subtracts the second number from the first one, stores that value. Then adds that value to the next number, etc. $Returns:Returns$ the final value.
         """
         
   subset: last_failure
@@ -726,7 +726,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        given an $list:array$ of $strings:characters$ containing $integers:integers$, $typecast:convert$ the $strings:characters$ into $integers:integers$. Starting from the front of the $list:array$, subtract the first two numbers and store that in a count $key:variable$. then $insert:add$ the next number to the count. alternate between subtracting and $inserting:adding$ until you $take:get$ to the end of the $list:array$. $return:return$ the count
+        given an $list:array$ of characters containing $integers:integers$, $typecast:convert$ the characters into $integers:integers$. Starting from the front of the $list:array$, subtract the first two numbers and store that in a count variable. then add the next number to the count. alternate between subtracting and adding until you get to the end of the $list:array$. $return:return$ the count
 
         """
         
@@ -745,7 +745,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Given an $list:array$ of $strings:characters$ containing $integers:integers$, $typecast:convert$ the $strings:characters$ into $integers:integers$. Store the first number in the $list:array$ in a count $key:variable$. then subtract the next number from the count. With the next number, $insert:add$ it to the count and then alternate between subtracting and $inserting:adding$ until you $take:get$ to the end of the $list:array$. $return:return$ the count. If the given $list:array$ is empty, $return:return$ 0. 
+        Given an $list:array$ of characters containing $integers:integers$, $typecast:convert$ the characters into $integers:integers$. Store the first number in the $list:array$ in a count variable. then subtract the next number from the count. With the next number, add it to the count and then alternate between subtracting and adding until you get to the end of the $list:array$. $return:return$ the count. If the given $list:array$ is empty, $return:return$ 0. 
 
         """
         
@@ -764,7 +764,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Iterates through the $inputted:inputted$ $list:list$. For the first two $keys:elements$, subtract the second from the first and save that result. For the next $key:element$, $insert:add$ it to the result. Continue to alternate $inserting:adding$ and subtracting until the end of the $list:list$ is reached.
+        $Loop:Iterates through$ the inputted $list:list$. For the first two elements, subtract the second from the first and save that result. For the next element, add it to the result. Continue to alternate adding and subtracting until the end of the $list:list$ is reached.
         """
         
   subset: first_failure
@@ -782,7 +782,7 @@
   prompt: |-
     def subtract_add(lst):
         """
-        Create a $key:variable$ for the result. $Typecast:Treat$ all $keys:elements$ as $integers:integers$. If the $list:list$ contains 0 $keys:elements$, $return:return$ 0. If the $list:list$ contains 1 $key:element$, $return:return$ that $key:element$. If the $list:list$ contains 2 or more $keys:elements$: subtract the second $key:element$ from the first and save the result, then $insert:add$ the third $key:element$ to that result, and continue on alternating subtraction and addition until the end of the $list:list$.
+        Create a variable for the result. $Typecast:Treat$ all elements as $integers:integers$. If the $list:list$ contains 0 elements, $return:return$ 0. If the $list:list$ contains 1 element, $return:return$ that element. If the $list:list$ contains 2 or more elements: subtract the second element from the first and save the result, then add the third element to that result, and continue on alternating subtraction and addition until the end of the $list:list$.
         """
         
   subset: last_failure
@@ -2574,7 +2574,7 @@
   prompt: |-
     def has_qu(lst):
         """
-        $Takes:Takes$ an $input:input$ $list:list$ of single, capitalized letters. If any $key:item$ in the $list:list$ is either Q or U, it $returns:returns$ True. Otherwise, it $returns:returns$ False. 
+        $Takes:Takes$ an input $list:list$ of single, capitalized letters. If any item in the $list:list$ is either Q or U, it $returns:returns$ True. Otherwise, it $returns:returns$ False. 
         """
         
   subset: first_success
@@ -2717,7 +2717,7 @@
   prompt: |-
     def has_qu(lst):
         """
-        $return:return$ true if $list:list$ contains either $string:character$ "Q" or "U". otherwise $return:return$ false 
+        $return:return$ true if $list:list$ contains either character "Q" or "U". otherwise $return:return$ false 
         """
         
   subset: first_success
@@ -3823,7 +3823,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        The function meeps_morps will $take:take$ a $list:list$ as an $input:input$ and $return:return$ the number of times "Meep" appears and the number that "Morp" appears in a $list:list$
+        The function meeps_morps will $take:take$ a $list:list$ as an $parameter:input$ and $return:return$ the number of times "Meep" appears and the number that "Morp" appears in a $list:list$
         """
         
   subset: first_failure
@@ -3840,7 +3840,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        The function meeps_morps will $take:take$ a $list:list$ as an $input:input$ and $return:return$ a $list:list$ with the number of times "Meep" appears and the number that "Morp" appears.
+        The function meeps_morps will $take:take$ a $list:list$ as an $parameter:input$ and $return:return$ a $list:list$ with the number of times "Meep" appears and the number that "Morp" appears.
         """
         
   subset: last_success
@@ -3858,7 +3858,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        $Returns:Returns$ a $list:list$ where the first $key:entry$ contains the number of times "Meep" appears in the given $list:array$ and the second $key:entry$ contains the number of times "Morp" appears in the given $list:array$.
+        $Returns:Returns$ a $list:list$ where the first entry contains the number of times "Meep" appears in the given $list:array$ and the second entry contains the number of times "Morp" appears in the given $list:array$.
         """
         
   subset: first_success
@@ -3892,7 +3892,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        Based on the $list:list$ of $strings:strings$ $inputted:inputted$, the function will identify the number of $strings:strings$ that say 'Meep' and 'Morp' and $return:return$ a $list:list$ of the number of 'Meep' and the number of 'Morp' $strings:strings$.
+        Based on the $list:list$ of $strings:strings$ inputted, the function will identify the number of $strings:strings$ that say 'Meep' and 'Morp' and $return:return$ a $list:list$ of the number of 'Meep' and the number of 'Morp' $strings:strings$.
         """
         
   subset: first_success
@@ -3941,7 +3941,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        $take:take$ in a $list:list$ of $strings:strings$ and $return:output$ a count of how many times the $string:word$ 'Meep' and 'Morp' occur
+        $take:take in$ a $list:list$ of $strings:strings$ and $return:output$ a count of how many times the $string:word$ 'Meep' and 'Morp' occur
         """
         
   subset: first_failure
@@ -3958,7 +3958,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        $take:take$ in a $list:list$ of $strings:strings$ and $return:output$ a $list:list$ count of how many times the $string:word$ 'Meep' and 'Morp' occur
+        $take:take in$ a $list:list$ of $strings:strings$ and $return:output$ a $list:list$ count of how many times the $string:word$ 'Meep' and 'Morp' occur
         """
         
   subset: last_success
@@ -3975,7 +3975,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        Write a function which $takes:takes$ a $list:list$ of $strings:strings$ as an $input:input$, creates a $list:list$ of 0's of length 2 called counter, then $loops through:iterates through$ the $input:input$ $list:list$ and for each instance of 'Meep' in the $input:input$ $list:list$, $inserts:adds$ +1 to counter[0], and for each instance of 'Morp', $inserts:adds$ +1 to counter[1].
+        Write a function which $takes:takes$ a $list:list$ of $strings:strings$ as an $parameter:input$, creates a $list:list$ of 0's of length 2 called counter, then $loops through:iterates through$ the input $list:list$ and for each instance of 'Meep' in the input $list:list$, adds +1 to counter[0], and for each instance of 'Morp', adds +1 to counter[1].
         """
         
   subset: first_success
@@ -3992,7 +3992,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        function counts amount of times that 'meeps' and 'morps' appear in $input:input$
+        function counts amount of times that 'meeps' and 'morps' appear in $parameter:input$
         """
         
   subset: first_failure
@@ -4026,7 +4026,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        Count the number of times 'Meep' is $returned:displayed$ in the $list:list$. Then count the number of times 'Morp' is $returned:displayed$.
+        Count the number of times 'Meep' is displayed in the $list:list$. Then count the number of times 'Morp' is displayed.
         """
         
   subset: first_failure
@@ -4043,7 +4043,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        read through the $list:list$ and count all $keys:items$ that are the same. put the total amount of each $key:item$ in a 2 $key:item$ $list:list$. The $list:list$ should be sorted from most to least. If there is only one $key:item$ that repeats, the $return:output$ should count that and also have a zero in as a placeholder for the second $key:item$ in the $return:output$ $list:list$. If there are no $keys:items$ that are the same, then the $return:output$ should have zeros as placeholders for both $keys:items$ in the $return:output$ $list:list$. 
+        $loop:read through$ the $list:list$ and count all items that are the same. put the total amount of each item in a 2 item $list:list$. The $list:list$ should be sorted from most to least. If there is only one item that repeats, the output should count that and also have a zero in as a placeholder for the second item in the output $list:list$. If there are no items that are the same, then the output should have zeros as placeholders for both items in the output $list:list$. 
         """
         
   subset: first_failure

@@ -11156,7 +11156,7 @@
         """
         if books is a $list:list$ of $dictionaries:dictionaries$, $return:output$ a $list:list$ of $dictionaries:dictionaries$ where the $parameter:input$ writer matches the $key:key$ author
         """
-STOPPED HERE!!!
+
   subset: first_failure
 - __index_level_0__: 1180
   problem: sortBySuccessRate
@@ -11181,7 +11181,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ that have the $keys:keys$:  nominee, the wins, and noms. A new $key:attribute$ is given to each $dictionary:dictionary$ which is the success $key:attribute$. It is calculated by dividing wins by noms and creates a float. The $lists:lists$ are then sorted by the highest success within each $dictionary:dictionary$.
+        This function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ that have the $keys:keys$:  nominee, the wins, and noms. A new $key:attribute$ is given to each $dictionary:dictionary$ which is the success $key:attribute$. It is calculated by dividing wins by noms and creates a float. The $lists:lists$ are then sorted by the highest success within each $dictionary:dictionary$.
         """
         
   subset: last_failure
@@ -11208,7 +11208,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the $integer:integer$ in the third place in the $dictionary:dictionary$ by the $integer:integer$ in the fourth place in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the $return:output$ value. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest. 
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the $integer:integer$ in the third place in the $dictionary:dictionary$ by the $integer:integer$ in the fourth place in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest. 
         """
         
   subset: first_failure
@@ -11235,7 +11235,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the $return:output$ value truncated to two decimal places. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest, $returning:returning$ the $dictionaries:dictionaries$ each on a separate line. 
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value truncated to two decimal places. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest, $returning:returning$ the $dictionaries:dictionaries$ each on a separate line. 
         """
         
   subset: last_failure
@@ -11262,7 +11262,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the $input:input$ $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
+        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
         """
         
   subset: first_failure
@@ -11289,7 +11289,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards using a for loop. A new $key:variable$ 'success' is created which computes (wins/noms) (noms is the $key:key$ in the $dictionary:dictionary$) during each loop run for every $dictionary:dictionary$. A new $list:list$ is made. As the $input:input$ $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
+        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards using a for loop. A new $key:variable$ 'success' is created which computes (wins/noms) (noms is the $key:key$ in the $dictionary:dictionary$) during each loop run for every $dictionary:dictionary$. A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
         """
         
   subset: last_failure
@@ -11317,7 +11317,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        the function will divide the number of wins by the number of noms. this will be defined by the new $key:variable$ 'success'. the function will then $return:return$ a $list:list$ that orders the $input:input$ in increasing order of success values
+        the function will divide the number of wins by the number of noms. this will be defined by the new $key:variable$ 'success'. the function will then $return:return$ a $list:list$ that orders the $parameter:input$ in increasing order of success values
         """
         
   subset: first_failure
@@ -11344,7 +11344,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        the $input:input$ is a $list:list$ of $dictionaries:dictionaries$. the function will divide the value within $key:key$ 'wins' by the value within $key:key$ 'noms'. this number will be rounded to two decimal values. the new number will be stores as a new $key:key$, 'success'. the function will then $return:return$ a $list:list$ that reorders the $dictionaries:dictionaries$ within the original $list:list$, in order of highest success value to lowest success value.
+        the $parameter:input$ is a $list:list$ of $dictionaries:dictionaries$. the function will divide the value within $key:key$ 'wins' by the value within $key:key$ 'noms'. this number will be rounded to two decimal values. the new number will be stores as a new $key:key$, 'success'. the function will then $return:return$ a $list:list$ that reorders the $dictionaries:dictionaries$ within the original $list:list$, in order of highest success value to lowest success value.
         """
         
   subset: last_success
@@ -11434,7 +11434,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $Insert:Add$ a new $key:part$ to each $key:element$ in the $list:list$ of $dictionaries:dictionaries$ called "success". Calculate success by dividing wins by noms. $Return:Return$ in reverse alphabetical order.
+        $Insert:Add$ a new $key:part$ to each element in the $list:list$ of $dictionaries:dictionaries$ called "success". Calculate success by dividing wins by noms. $Return:Return$ in reverse alphabetical order.
         """
         
   subset: first_failure
@@ -11489,7 +11489,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. $returns:returns$ an ordered $list:list$ of the $dictionaries:dictionaries$ in the $input:input$
+        $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. $returns:returns$ an ordered $list:list$ of the $dictionaries:dictionaries$ in the $parameter:input$
         """
         
   subset: first_failure
@@ -11516,7 +11516,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. 
+        This function $takes:takes in$ a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an added $key:parameter$ of an average of wins to nominations. 
         """
         
   subset: first_failure
@@ -11548,7 +11548,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions $return:output$ is a single 2d $list:list$.
+        This function $takes:takes in$ a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an added $key:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions output is a single 2d $list:list$.
 
     As an example. Given  [{'nominee': 'Beyoncé', 'wins': 28, 'noms': 79},
      {'nominee': 'Babyface','wins': 11, 'noms': 49}] as a $parameter:parameter$ this function $returns:outputs$ [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29},
@@ -11580,7 +11580,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms'. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms'. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.
         """
         
   subset: first_failure
@@ -11607,7 +11607,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms', rounded to the second decimal place. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.  
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms', rounded to the second decimal place. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.  
         """
         
   subset: last_success
@@ -11773,11 +11773,11 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        def sortBySuccessRate(nominations): $takes:takes$ $input:input$ 
+        def sortBySuccessRate(nominations): $takes:takes$ $parameter:input$ 
     [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, 
     {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, 
     {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]
-    and $returns:prints$ $return:output$ in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', indent after each {}
+    and $returns:prints$ output in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', indent after each {}
         """
         
   subset: first_failure
@@ -11808,11 +11808,11 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        def sortBySuccessRate(nominations): $takes:takes$ $input:input$ 
+        def sortBySuccessRate(nominations): $takes:takes$ $parameter:input$ 
     [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, 
     {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, 
     {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]
-    and $returns:prints$ $return:output$ in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', 
+    and $returns:prints$ output in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', 
         """
         
   subset: last_failure
@@ -11840,7 +11840,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $takes:takes$ the information in the $dictionary:dictionary$ and positions the different $lists:lists$ based on a new $key:variable$ called 'success' which is $inputted:inputted$ at the end and is the number of 'wins' divided by the number of 'noms'
+        $takes:takes$ the information in the $dictionary:dictionary$ and positions the different $lists:lists$ based on a new $key:variable$ called 'success' which is $inserted:inputted$ at the end and is the number of 'wins' divided by the number of 'noms'
         """
         
   subset: first_failure
@@ -11869,7 +11869,7 @@ STOPPED HERE!!!
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. as an output you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
         """
         
   subset: first_failure
@@ -11897,7 +11897,7 @@ STOPPED HERE!!!
   prompt: |-
     def layoverTrips(flights, start):
         """
-        this function will $take:take$ a $list:list$ of flights and the origin city and $return:return$ the possible layovers with the staring city. Each $key:item$ in the $list:list$ of flights will first state the origin city and then state the destination city. If there is a flight with a destination city the same as the same as a flight with the origin city then $insert:add$ it the the $return:output$ $list:list$. 
+        this function will $take:take$ a $list:list$ of flights and the origin city and $return:return$ the possible layovers with the staring city. Each item in the $list:list$ of flights will first state the origin city and then state the destination city. If there is a flight with a destination city the same as the same as a flight with the origin city then $insert:add$ it the the output $list:list$. 
         """
         
   subset: last_failure
@@ -11951,7 +11951,7 @@ STOPPED HERE!!!
   prompt: |-
     def layoverTrips(flights, start):
         """
-        this function will find the start from a $key:key$ called 'origin' from $input:input$ $list:list$ of $dictionary:dictionary$ named flights. After find this it will find the value from $key:key$ named 'dest' from same $dictionary:dictionary$, and save this by create an $return:output$ call x. Then find x in flight to see if it's in one of the $dictionary:dictionary$'s $key:key$ 'origin'
+        this function will find the start from a $key:key$ called 'origin' from input $list:list$ of $dictionary:dictionary$ named flights. After find this it will find the value from $key:key$ named 'dest' from same $dictionary:dictionary$, and save this by create an output call x. Then find x in flight to see if it's in one of the $dictionary:dictionary$'s $key:key$ 'origin'
         """
         
   subset: first_failure
@@ -11976,7 +11976,7 @@ STOPPED HERE!!!
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Based on the $inputted:inputted$ origin, the function will $return:return$ the possible destinations with one layover location. 
+        Based on the inputted origin, the function will $return:return$ the possible destinations with one layover location. 
         """
         
   subset: first_failure
@@ -12001,7 +12001,7 @@ STOPPED HERE!!!
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Based on the $inputted:inputted$ origin, the function will check the given flights and find possible destinations within one layover.
+        Based on the inputted origin, the function will check the given flights and find possible destinations within one layover.
         """
         
   subset: last_failure
@@ -12120,7 +12120,7 @@ STOPPED HERE!!!
   prompt: |-
     def sort_physicists(scientists):
         """
-        $Return:Return$ a $list:list$ of the 0th $key:element$ each $list:list$ of scientists if the 2nd $key:element$ says "Physics". Sort this $list:list$ from least to greatest by looking at the 1st value in each $list:list$ within the scientists $list:list$. $Return:Return$ this sorted $list:list$.
+        $Return:Return$ a $list:list$ of the 0th element each $list:list$ of scientists if the 2nd element says "Physics". Sort this $list:list$ from least to greatest by looking at the 1st value in each $list:list$ within the scientists $list:list$. $Return:Return$ this sorted $list:list$.
         """
         
   subset: last_success
@@ -12137,7 +12137,7 @@ STOPPED HERE!!!
   prompt: |-
     def sort_physicists(scientists):
         """
-        $Takes:Takes$ an $input:input$ $list:list$, which is comprised of smaller $lists:lists$. Each of these smaller $lists:lists$ has three values: the first is a $string:string$, the second one is a number, and the third is a $string:string$. If the third $key:item$ in any smaller $list:list$ is equal to 'Physics', the first $key:item$ in that smaller $list:list$ is $inserted:appended$ to an $return:output$ $list:list$. After all small $lists:lists$ have been checked, it $returns:outputs$ the $return:output$ $list:list$.
+        $Takes:Takes$ an input $list:list$, which is comprised of smaller $lists:lists$. Each of these smaller $lists:lists$ has three values: the first is a $string:string$, the second one is a number, and the third is a $string:string$. If the third item in any smaller $list:list$ is equal to 'Physics', the first item in that smaller $list:list$ is $inserted:appended$ to an output $list:list$. After all small $lists:lists$ have been checked, it $returns:outputs$ the output $list:list$.
         """
         
   subset: first_failure
@@ -12154,7 +12154,7 @@ STOPPED HERE!!!
   prompt: |-
     def sort_physicists(scientists):
         """
-        $Takes:Takes$ an $input:input$ $list:list$, which is comprised of smaller $lists:lists$. Each of these smaller $lists:lists$ has three values: the first is a $string:string$, the second one is a number, and the third is a $string:string$. If the third $key:item$ in any smaller $list:list$ is equal to 'Physics', the first $key:item$ in that smaller $list:list$ is $inserted:added$ to an $return:output$ $list:list$. The corresponding number is also recorded. If the number for an $key:item$ which is being $inserted:added$ is less than the corresponding number for the first $key:item$ in the $return:output$ $list:list$, it is $inserted:added$ to the beginning of the $return:output$ $list:list$. Otherwise, it is $inserted:added$ to the end. After all small $lists:lists$ have been checked, it $returns:outputs$ the $return:output$ $list:list$.
+        $Takes:Takes$ an input $list:list$, which is comprised of smaller $lists:lists$. Each of these smaller $lists:lists$ has three values: the first is a $string:string$, the second one is a number, and the third is a $string:string$. If the third item in any smaller $list:list$ is equal to 'Physics', the first item in that smaller $list:list$ is $inserted:added$ to an $return:output$ $list:list$. The corresponding number is also recorded. If the number for an item which is being $inserted:added$ is less than the corresponding number for the first item in the $return:output$ $list:list$, it is $inserted:added$ to the beginning of the $return:output$ $list:list$. Otherwise, it is $inserted:added$ to the end. After all small $lists:lists$ have been checked, it $returns:outputs$ the $return:output$ $list:list$.
         """
         
   subset: last_failure
@@ -12256,7 +12256,7 @@ STOPPED HERE!!!
   prompt: |-
     def sort_physicists(scientists):
         """
-        Loop through each $list:list$ in scientists: check if the third $key:element$ in the $list:list$ is Physics. If true, $return:return$ the 1st $key:element$ in the $list:list$. If false, do nothing.
+        $Loop through:Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $return:return$ the 1st element in the $list:list$. If false, do nothing.
         """
         
   subset: first_failure
@@ -12273,7 +12273,7 @@ STOPPED HERE!!!
   prompt: |-
     def sort_physicists(scientists):
         """
-        Create an empty $list:list$ A. Loop through each $list:list$ in scientists: check if the third $key:element$ in the $list:list$ is Physics. If true, $insert:append$ the 1st $key:element$ to $list:list$ A. If false, do nothing. Now reorder each $key:element$ in A, according to each $key:element$'s corresponding $list:list$ in scientists's second $key:entry$ value, the order should be from smallest numerical value to the largest numerical value.  $Return:Return$ $list:list$ A.
+        Create an empty $list:list$ A. $Loop through:Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $insert:append$ the 1st element to $list:list$ A. If false, do nothing. Now reorder each element in A, according to each element's corresponding $list:list$ in scientists's second entry value, the order should be from smallest numerical value to the largest numerical value.  $Return:Return$ $list:list$ A.
         """
         
   subset: last_failure
@@ -12375,7 +12375,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        This function $returns:prints$ the start value and $inserts:adds$ the value factor until it reaches the stop value
+        This function $returns:prints$ the start value and adds the value factor until it reaches the stop value
         """
         
   subset: last_failure
@@ -12392,7 +12392,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        the function find_multiples will $take:take$ the $input:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number. 
+        the function find_multiples will $take:take$ the $parameter:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number. 
         """
         
   subset: first_failure
@@ -12409,7 +12409,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        the function find_multiples will $take:take$ the $input:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number but including it in the $list:list$. 
+        the function find_multiples will $take:take$ the $parameter:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number but including it in the $list:list$. 
         """
         
   subset: last_success
@@ -12443,7 +12443,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        a function ask for start, stop, factor and by $inserting:adding$ up start*factor and getting sum of those all the way until we $take:get$ the stop. Then create a $list:list$ to hold those values
+        a function ask for start, stop, factor and by adding up start*factor and getting sum of those all the way until we get the stop. Then create a $list:list$ to hold those values
         """
         
   subset: first_failure
@@ -12460,7 +12460,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        a function ask for three $inputs:inputs$:start, stop, factor. By $inserting:adding$ up start*factor and records all the sum of those all the way until we $take:get$ the sum==stop. Then create a $list:list$ to hold those values.
+        a function ask for three $parameters:inputs$:start, stop, factor. By adding up start*factor and records all the sum of those all the way until we get the sum==stop. Then create a $list:list$ to hold those values.
         """
         
   subset: last_failure
@@ -12511,7 +12511,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        from the start number $inputted:inputted$, count by the factor until the stop number
+        from the start number inputted, count by the factor until the stop number
         """
         
   subset: first_failure
@@ -12528,7 +12528,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        from the start number $inputted:inputted$, count by the factor until the stop number, including the stop number and $return:return$ as $list:list$
+        from the start number inputted, count by the factor until the stop number, including the stop number and $return:return$ as $list:list$
         """
         
   subset: last_failure
@@ -12545,7 +12545,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        $take:take$ in a $list:list$ of $integers:integers$ [start number, final number, step size] and $return:output$ a $list:list$ based on those $parameters:parameters$
+        $take:take in$ a $list:list$ of $integers:integers$ [start number, final number, step size] and $return:output$ a $list:list$ based on those $parameters:parameters$
         """
         
   subset: first_failure
@@ -12562,7 +12562,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        $take:take$ in a $list:list$ of $integers:integers$ [start, stop, factor] and $return:output$ a $list:list$ starting at the closest even number to the start, and including the stop number
+        $take:take in$ a $list:list$ of $integers:integers$ [start, stop, factor] and $return:output$ a $list:list$ starting at the closest even number to the start, and including the stop number
         """
         
   subset: last_success
@@ -12596,7 +12596,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        Function $returns:returns$ multiples between first two $keys:items$ in the $input:input$ in multiples of the third $key:item$
+        Function $returns:returns$ multiples between first two items in the $parameters:input$ in multiples of the third item
         """
         
   subset: first_failure
@@ -12613,7 +12613,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        Function $returns:returns$ multiples from the first $key:item$ to the second $key:item$ (including the second $key:item$) in the $input:input$ in multiples of the third $key:item$
+        Function $returns:returns$ multiples from the first item to the second item (including the second item) in the $parameters:input$ in multiples of the third item
         """
         
   subset: last_success
@@ -12630,7 +12630,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        $Return:Produce$ a $list:list$ of multiples with the given $input:input$. The first and second number of the $input:input$ are the bounds and the last number is the multiple.
+        $Return:Produce$ a $list:list$ of multiples with the given $parameters:input$. The first and second number of the $parameters:input$ are the bounds and the last number is the multiple.
         """
         
   subset: first_failure
@@ -12647,7 +12647,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        $Return:Produce$ a $list:list$ of multiples with the given $input:input$. The first number of the $input:input$ is the starting bound and the second number is the the ending bound, but is included in the $list:list$ of multiples if applicable. The last number is the multiple.
+        $Return:Produce$ a $list:list$ of multiples with the given $parameters:input$. The first number of the $parameters:input$ is the starting bound and the second number is the the ending bound, but is included in the $list:list$ of multiples if applicable. The last number is the multiple.
         """
         
   subset: last_success
@@ -12664,7 +12664,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        The start $integer:integer$ is the first given $input:input$, the stop $integer:integer$ is the second $input:input$, and the factor is the number that is continuously $inserted:added$ to the start $integer:integer$ until the $integer:integer$ either equals the stop $integer:integer$ or is close to the stop $integer:integer$ without going over. Each time the factor is $inserted:added$ give the $key:item$ in a $list:list$. 
+        The start $integer:integer$ is the first given $parameter:input$, the stop $integer:integer$ is the second $parameter:input$, and the factor is the number that is continuously added to the start $integer:integer$ until the $integer:integer$ either equals the stop $integer:integer$ or is close to the stop $integer:integer$ without going over. Each time the factor is added $insert:give$ the item in a $list:list$. 
         """
         
   subset: first_failure
@@ -12681,7 +12681,7 @@ STOPPED HERE!!!
   prompt: |-
     def find_multiples(start,stop,factor):
         """
-        the code should increase the amount of a number by the factor given. Where to start and end are also given as $inputs:inputs$
+        the code should increase the amount of a number by the factor given. Where to start and end are also given as $parameters:inputs$
         """
         
   subset: first_failure
@@ -12698,7 +12698,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        This function $takes:takes$ in a $list:list$ of the $key:item$ purchased, the amount of the $key:item$ purchased, the price for each $key:item$, and the overall sales tax. The amount purchased is multiplied with the price for each $key:item$, creating a total amount. The sales tax is then multiplied by the outcome of the total amount, and then the result of the multiplication is $inserted:added$ onto the total price. The total price is then $returned:returned$ as the $return:output$.
+        This function $takes:takes in$ a $list:list$ of the item purchased, the amount of the item purchased, the price for each item, and the overall sales tax. The amount purchased is multiplied with the price for each item, creating a total amount. The sales tax is then multiplied by the outcome of the total amount, and then the result of the multiplication is added onto the total price. The total price is then $returned:returned$ as the output.
         """
         
   subset: last_failure
@@ -12715,7 +12715,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function $takes:takes$ in some number of $lists:lists$ consisting of a $string:string$, an $integer:integer$, and a number, as well as one additional number "sales tax". The function multiplies the $integer:integer$ and the number in each $list:list$ and $inserts:adds$ them together for all the $lists:lists$, giving a "total". Then the function multiplies the "total" by the "sales tax" and $returns:outputs$ that value $inserted:added$ to the "total"
+        The function $takes:takes in$ some number of $lists:lists$ consisting of a $string:string$, an $integer:integer$, and a number, as well as one additional number "sales tax". The function multiplies the $integer:integer$ and the number in each $list:list$ and adds them together for all the $lists:lists$, giving a "total". Then the function multiplies the "total" by the "sales tax" and $returns:outputs$ that value added to the "total"
         """
         
   subset: first_failure
@@ -12732,7 +12732,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function $takes:takes$ in some number of $lists:lists$ consisting of a $string:string$, an $integer:integer$, and a number, as well as one additional number "sales tax". The function multiplies the $integer:integer$ and the number in each $list:list$ and $inserts:adds$ them together for all the $lists:lists$, giving a "total". Then the function multiplies the "total" by the "sales tax" and $returns:outputs$ that value $inserted:added$ to the "total", truncated to two decimal places.
+        The function $takes:takes in$ some number of $lists:lists$ consisting of a $string:string$, an $integer:integer$, and a number, as well as one additional number "sales tax". The function multiplies the $integer:integer$ and the number in each $list:list$ and adds them together for all the $lists:lists$, giving a "total". Then the function multiplies the "total" by the "sales tax" and $returns:outputs$ that value added to the "total", truncated to two decimal places.
         """
         
   subset: last_success
@@ -12749,7 +12749,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it looks into each individual $list:list$ and multiplies the numbers $provided:provided$ in each $list:list$. Then, it $inserts:adds$ all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the $return:output$
+        The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it $loops through:looks into$ each individual $list:list$ and multiplies the numbers provided in each $list:list$. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output
         """
         
   subset: first_failure
@@ -12766,7 +12766,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it looks into each individual $list:list$ and multiplies the numbers $provided:provided$ in each $list:list$. Then, it $inserts:adds$ all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the $return:output$. The $return:output$ is rounded to two decimal points.
+        The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it $loops through:looks into$ each individual $list:list$ and multiplies the numbers provided in each $list:list$. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output. The output is rounded to two decimal points.
         """
         
   subset: last_success
@@ -12784,7 +12784,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        the function will multiply the last two values in each $list:list$ within the $list:list$. this value will then be multiplied by the value outside of the $list:list$. these two numbers will be $inserted:added$ to each other and $returned:returned$
+        the function will multiply the last two values in each $list:list$ within the $list:list$. this value will then be multiplied by the value outside of the $list:list$. these two numbers will be added to each other and $returned:returned$
         """
         
   subset: first_failure
@@ -12801,7 +12801,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        the function will multiply the last two values in each $list:list$ within the $list:list$. these numbers will all be $inserted:added$ together and stored in $key:variable$ 'cost'. the $key:variable$ 'cost' will then be multiplied by the value outside of the $list:list$. the product will be stored in a new $key:variable$, 'tax'. a new $key:variable$, 'total_cost', will contain the sum of the values of 'cost' and 'tax'. the value of total_cost will be rounded to two decimal places. the function will $return:return$ the value of the $key:variable$ 'total_cost'.
+        the function will multiply the last two values in each $list:list$ within the $list:list$. these numbers will all be added together and stored in variable 'cost'. the variable 'cost' will then be multiplied by the value outside of the $list:list$. the product will be stored in a new variable, 'tax'. a new variable, 'total_cost', will contain the sum of the values of 'cost' and 'tax'. the value of total_cost will be rounded to two decimal places. the function will $return:return$ the value of the variable 'total_cost'.
         """
         
   subset: last_success
@@ -12818,7 +12818,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Insert:Add$ up the values of the product of the values stored in index 1 and 2. 
+        Add up the values of the product of the values stored in index 1 and 2. 
         """
         
   subset: first_failure
@@ -12835,7 +12835,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Insert:Add$ up the values of the product of the values stored in index 1 and 2 and round to the nearest hundredths if there are more than 2 decimal places. 
+        Add up the values of the product of the values stored in index 1 and 2 and round to the nearest hundredths if there are more than 2 decimal places. 
         """
         
   subset: last_success
@@ -12852,7 +12852,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Take:Receive$ a $list:list$ containing $keys:items$ in a grocery $list:list$. Each $key:element$ in the $list:list$ contains the name of the $key:item$, the quantity purchased, and the price of the $key:item$. Calculate the total price of each $key:element$ in the $list:list$ by multiplying the price by the quantity for each $key:element$. $Insert:Add$ them up, and multiply the total by the sales tax.
+        $Take:Receive$ a $list:list$ containing items in a grocery $list:list$. Each element in the $list:list$ contains the name of the item, the quantity purchased, and the price of the item. Calculate the total price of each element in the $list:list$ by multiplying the price by the quantity for each element. Add them up, and multiply the total by the sales tax.
         """
         
   subset: first_failure
@@ -12869,7 +12869,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Take:Receive$ a $list:list$ containing $keys:items$ in a grocery $list:list$. Each $key:element$ in the $list:list$ contains the name of the $key:item$, the quantity purchased, and the price of the $key:item$. Calculate the total price of each $key:element$ in the $list:list$ by multiplying the price by the quantity for each $key:element$. $Insert:Add$ them up, and multiply the total by the sales tax. Round to the nearest hundredth
+        $Take:Receive$ a $list:list$ containing items in a grocery $list:list$. Each element in the $list:list$ contains the name of the item, the quantity purchased, and the price of the item. Calculate the total price of each element in the $list:list$ by multiplying the price by the quantity for each element. Add them up, and multiply the total by the sales tax. Round to the nearest hundredth
         """
         
   subset: last_success
@@ -12886,7 +12886,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $takes:takes$ a $list:list$ of groceries and a value for sales tax. the $list:list$ of groceries contains a $list:list$ for every $key:item$. each $key:item$'s $list:list$ contains its name, quantity, and price, in that order. $returns:returns$ an $integer:integer$ that is the sales tax times the sum of all goods' quantity*price
+        $takes:takes$ a $list:list$ of groceries and a value for sales tax. the $list:list$ of groceries contains a $list:list$ for every item. each item's $list:list$ contains its name, quantity, and price, in that order. $returns:returns$ an $integer:integer$ that is the sales tax times the sum of all goods' quantity*price
         """
         
   subset: first_failure
@@ -12903,7 +12903,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $takes:takes$ a $list:list$ of groceries and a value for sales tax. the $list:list$ of groceries contains a $list:list$ for every $key:item$. each $key:item$'s $list:list$ contains its name, quantity, and price, in that order. $returns:returns$ an float that is the sales tax times times the sum of all goods' quantity*price
+        $takes:takes$ a $list:list$ of groceries and a value for sales tax. the $list:list$ of groceries contains a $list:list$ for every item. each item's $list:list$ contains its name, quantity, and price, in that order. $returns:returns$ an float that is the sales tax times times the sum of all goods' quantity*price
         """
         
   subset: last_failure
@@ -12920,7 +12920,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        This function $takes:takes$ in a 2d $list:list$ and a double as its $parameters:parameters$. The 2d $list:list$ is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the $keys:items$ $returns:returns$ it. 
+        This function $takes:takes in$ a 2d $list:list$ and a double as its $parameters:parameters$. The 2d $list:list$ is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the items $returns:returns$ it. 
         """
         
   subset: first_failure
@@ -12937,7 +12937,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        This function $takes:takes$ in a 2d $list:list$ and a double as its $parameters:parameters$. The 2d $list:list$ is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the $keys:items$ $returns:returns$ it. This function rounds to 2 decimal points
+        This function $takes:takes in$ a 2d $list:list$ and a double as its $parameters:parameters$. The 2d $list:list$ is given like [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]]. This function then calculates the sales_tax of the items $returns:returns$ it. This function rounds to 2 decimal points
         """
         
   subset: last_success
@@ -12954,7 +12954,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function $takes:takes$ in a $list:list$ of $lists:lists$ and a number. For every $list:list$ in the $list:list$, the function multiplies the second value by the third value, sums all of the products of each $list:list$, and multiplies that value by the $inputted:inputted$ number. That result is $returned:outputted$.
+        The function $takes:takes in$ a $list:list$ of $lists:lists$ and a number. For every $list:list$ in the $list:list$, the function multiplies the second value by the third value, sums all of the products of each $list:list$, and multiplies that value by the inputted number. That result is $returned:outputted$.
         """
         
   subset: first_failure
@@ -12971,7 +12971,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        The function $takes:takes$ in a $list:list$ of $lists:lists$ and a number. For every $list:list$ in the $list:list$, the function multiplies the second value by the third value, sums all of the products of each $list:list$, and multiplies that value by 1 plus the $inputted:inputted$ number. That result, rounded to two decimal places, is $returned:outputted$.
+        The function $takes:takes in$ a $list:list$ of $lists:lists$ and a number. For every $list:list$ in the $list:list$, the function multiplies the second value by the third value, sums all of the products of each $list:list$, and multiplies that value by 1 plus the inputted number. That result, rounded to two decimal places, is $returned:outputted$.
         """
         
   subset: last_success
@@ -12988,7 +12988,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        In grocery_list, multiple index 0 with index 1, repeat for all $lists:lists$ in grocery_list and $insert:add$ them together. Then, multiple 100% + sale_tax to result.
+        In grocery_list, multiple index 0 with index 1, repeat for all $lists:lists$ in grocery_list and add them together. Then, multiple 100% + sale_tax to result.
         """
         
   subset: first_failure
@@ -13005,7 +13005,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        In grocery_list, multiple index 1 with index 2, repeat for all $lists:lists$ in grocery_list and $insert:add$ them together. Then, multiple 100% + sale_tax to result. Round to the nearest 2 decimal places.
+        In grocery_list, multiple index 1 with index 2, repeat for all $lists:lists$ in grocery_list and add them together. Then, multiple 100% + sale_tax to result. Round to the nearest 2 decimal places.
         """
         
   subset: last_success
@@ -13022,7 +13022,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ and the 1st index is an $integer:integer$. every $key:element$ in the $list:list$ of $lists:lists$ is a $list:list$ with a $string:string$ in the 0th index, $integer:integer$ in the 1st index and $integer:integer$ in the second index. multiply the $integers:integers$ in the first and second indexes of each $list:list$ in the $list:list$ of $lists:lists$. $Insert:Add$ each product of each $list:list$. Then, multiply by 1 plus the $integer:integer$ in the first index of the $input:input$ $list:list$
+        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ and the 1st index is an $integer:integer$. every element in the $list:list$ of $lists:lists$ is a $list:list$ with a $string:string$ in the 0th index, $integer:integer$ in the 1st index and $integer:integer$ in the second index. multiply the $integers:integers$ in the first and second indexes of each $list:list$ in the $list:list$ of $lists:lists$. Add each product of each $list:list$. Then, multiply by 1 plus the $integer:integer$ in the first index of the input $list:list$
         """
         
   subset: first_failure
@@ -13039,7 +13039,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ and the 1st index is an $integer:integer$. for every $list:list$ in the 0th index, for every $list:list$ multiply the $integers:integers$ in the first and second indexes of each $list:list$ in the $list:list$ of $lists:lists$. $Insert:Add$ each product of each $list:list$. Then, multiply by 1 plus the $integer:integer$ in the first index of the $input:input$ $list:list$
+        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ and the 1st index is an $integer:integer$. for every $list:list$ in the 0th index, for every $list:list$ multiply the $integers:integers$ in the first and second indexes of each $list:list$ in the $list:list$ of $lists:lists$. Add each product of each $list:list$. Then, multiply by 1 plus the $integer:integer$ in the first index of the input $list:list$
         """
         
   subset: last_failure
@@ -13056,7 +13056,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        Go through each $list:list$ and access last 2 values of each $list:list$. Multiply the last 2 values of every $list:list$. All resulting values must be $inserted:added$. This value should then be multiplied to 100* sales_tax
+        Go through each $list:list$ and access last 2 values of each $list:list$. Multiply the last 2 values of every $list:list$. All resulting values must be added. This value should then be multiplied to 100* sales_tax
         """
         
   subset: first_failure
@@ -13075,9 +13075,9 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        def total_bill(grocery_list, sales_tax): $takes:takes$ $input:input$ 
+        def total_bill(grocery_list, sales_tax): $takes:takes$ $parameters:input$ 
     [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07
-    and $inserts:adds$ val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are $inserted:added$ to val 9 and it $returns:outputs$ the sum
+    and adds val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are added to val 9 and it $returns:outputs$ the sum
 
         """
         
@@ -13097,9 +13097,9 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        def total_bill(grocery_list, sales_tax): $takes:takes$ $input:input$ 
+        def total_bill(grocery_list, sales_tax): $takes:takes$ $parameters:input$ 
     [['apples', 6, 0.99],['milk', 1, 1.49],['bread', 2, 3.50]], 0.07
-    and $inserts:adds$ val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are $inserted:added$ to val 9 and it $returns:outputs$ the sum with four digits
+    and adds val 1 and 2 together, then 4 and 5, then 7 and 8, the three new vals are added to val 9 and it $returns:outputs$ the sum with four digits
 
         """
         
@@ -13119,7 +13119,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        Looks through a $list:list$ to extract the number of products purchased in position 1 and multiply it by the unit price in position 2. Then it sums each product and multiplies the sum by what ever number is outside the $lists:brackets$ plus 1
+        $Loops through:Looks through$ a $list:list$ to extract the number of products purchased in position 1 and multiply it by the unit price in position 2. Then it sums each product and multiplies the sum by what ever number is outside the $lists:brackets$ plus 1
         """
         
   subset: first_failure
@@ -13137,7 +13137,7 @@ STOPPED HERE!!!
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        you will have two $inputs:inputs$ a $list:list$ of $lists:lists$ and the tax rate. for every $list:list$ in the $list:list$ of $lists:lists$ multiply the second and third $key:item$ and $insert:add$ all of them and then multiply that by the sales tax plus 1
+        you will have two $parameters:inputs$ a $list:list$ of $lists:lists$ and the tax rate. for every $list:list$ in the $list:list$ of $lists:lists$ multiply the second and third item and add all of them and then multiply that by the sales tax plus 1
         """
         
   subset: first_failure
@@ -13161,7 +13161,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        This function $takes:takes$ in a $dictionary:dictionary$ of $strings:words$, translating the English $strings:words$ into a different language. THe function then $takes:takes$ in a sentence and uses the $dictionary:dictionary$ to replace the English $strings:words$ with the translated $string:word$ from a different language. 
+        This function $takes:takes in$ a $dictionary:dictionary$ of $strings:words$, translating the English words into a different language. THe function then $takes:takes in$ a sentence and uses the $dictionary:dictionary$ to replace the English words with the translated word from a different language. 
         """
         
   subset: last_failure
@@ -13185,7 +13185,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        The function $takes:takes$ an $input:input$ of a $dictionary:dictionary$ and a $string:string$ of text. For each $string:word$ in the $string:string$, the function finds the $string:word$ in the $dictionary:dictionary$ and replaces it with the corresponding $dictionary:dictionary$ $key:entry$. If the $string:word$ is not found in the $dictionary:dictionary$, it is replaced with "UNK."
+        The function $takes:takes$ an $parameter:input$ of a $dictionary:dictionary$ and a $string:string of text$. For each word in the $string:string$, the function finds the word in the $dictionary:dictionary$ and replaces it with the corresponding $dictionary:dictionary$ entry. If the word is not found in the $dictionary:dictionary$, it is replaced with "UNK."
         """
         
   subset: first_success
@@ -13209,7 +13209,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        lexicon is a $dictionary:dictionary$ in which $keys:keys$ are English $strings:words$ and their corresponding values are the translations to some other language. The function is supposed to $typecast:convert$ the sentence $provided:provided$ to the other language. For this, the function is supposed to compare each $string:word$ of the sentence with the $dictionary:dictionary$ $keys:keys$ and find the value of that $key:key$. If a $string:word$ does not match with any $key:key$, the value 'UNK' is assigned. After all the values are derived, a new $string:string$ is made with those values.
+        lexicon is a $dictionary:dictionary$ in which $keys:keys$ are English words and their corresponding values are the translations to some other language. The function is supposed to convert the sentence provided to the other language. For this, the function is supposed to compare each word of the sentence with the $dictionary:dictionary$ $keys:keys$ and find the value of that $key:key$. If a word does not match with any $key:key$, the value 'UNK' is assigned. After all the values are derived, a new $string:string$ is made with those values.
         """
         
   subset: first_success
@@ -13233,7 +13233,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        the function will use the $dictionary:dictionary$ $provided:provided$. the $string:string$ $provided:provided$ will correspond to the $keys:keys$ of the $dictionary:dictionary$. the function will $return:return$ a new $string:string$ that contains values that correspond to the $keys:keys$. if a $key:key$ is not in the $string:string$, then the $return:return$ value will be 'UNK'
+        the function will use the $dictionary:dictionary$ provided. the $string:string$ provided will correspond to the $keys:keys$ of the $dictionary:dictionary$. the function will $return:return$ a new $string:string$ that contains values that correspond to the $keys:keys$. if a $key:key$ is not in the $string:string$, then the return value will be 'UNK'
         """
         
   subset: first_success
@@ -13257,7 +13257,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        Separate the $string:string$ in the second $parameter:argument$ between the white spaces and for each smaller $string:string$, search if there's a $key:key$ that matches in the $dictionary:dictionary$ in the first $parameter:argument$. If there is a matching $key:key$, $return:output$ its value. If there is no $key:key$ found, $return:output$ UNK. For each $return:output$, separate by a white space. 
+        Separate the $string:string$ in the second $parameter:argument$ between the white spaces and for each smaller $string:string$, search if there's a $key:key$ that matches in the $dictionary:dictionary$ in the first $parameter:argument$. If there is a matching $key:key$, $return:output$ its value. If there is no $key:key$ found, $return:output$ UNK. For each output, separate by a white space. 
         """
         
   subset: first_success
@@ -13283,7 +13283,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        A $dictionary:dictionary$ contains english $strings:words$ and $strings:words$ of another language will be $inputted:inputted$. Another $input:input$ is a sentence that will be translated into the other language. Replace the english $strings:words$ with the $strings:words$ of the other language in the sentence.
+        A $dictionary:dictionary$ contains english words and words of another language will be inputted. Another $parameter:input$ is a sentence that will be translated into the other language. Replace the english words with the words of the other language in the sentence.
         """
         
   subset: first_failure
@@ -13307,7 +13307,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        A $dictionary:dictionary$ contains english $strings:words$ and $strings:words$ of another language will be $inputted:inputted$. Another $input:input$ is a sentence that will be translated into the other language. Replace the english $strings:words$ with the $strings:words$ of the other language in the sentence. If the english $string:word$ is not present in the $dictionary:dictionary$, replace it with "UNK"
+        A $dictionary:dictionary$ contains english words and words of another language will be inputted. Another $parameter:input$ is a sentence that will be translated into the other language. Replace the english words with the words of the other language in the sentence. If the english word is not present in the $dictionary:dictionary$, replace it with "UNK"
         """
         
   subset: last_success
@@ -13331,7 +13331,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $takes:takes$ a $dictionary:dictionary$ and a $string:string$ as $inputs:inputs$. $returns:returns$ a translated version of the $inputted:inputted$ $string:string$
+        $takes:takes$ a $dictionary:dictionary$ and a $string:string$ as $parameters:inputs$. $returns:returns$ a translated version of the inputted $string:string$
         """
         
   subset: first_failure
@@ -13355,7 +13355,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $takes:takes$ a $dictionary:dictionary$ and a $string:string$ as $inputs:inputs$. $returns:returns$ a translated version of the $inputted:inputted$ $string:string$. if a $string:word$ in the $inputted:inputted$ $string:string$ is not in the $inputted:inputted$ $dictionary:dictionary$, the translated version of that $string:word$ is 'UNK'
+        $takes:takes$ a $dictionary:dictionary$ and a $string:string$ as $parameters:inputs$. $returns:returns$ a translated version of the inputted $string:string$. if a word in the inputted $string:string$ is not in the inputted $dictionary:dictionary$, the translated version of that word is 'UNK'
         """
         
   subset: last_success
@@ -13379,7 +13379,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        This function $takes:takes$ in a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english $strings:words$. The function then $returns:prints$ the $string:string$ in french. If a $string:word$ in the function is not in the $dictionary:dictionary$, the function $returns:prints$ 'UNK' for that $string:word$. 
+        This function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english words. The function then $returns:prints$ the $string:string$ in french. If a word in the function is not in the $dictionary:dictionary$, the function $returns:prints$ 'UNK' for that word. 
         """
         
   subset: first_failure
@@ -13403,7 +13403,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        This function $takes:takes$ in a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english $strings:words$. The function then $returns:returns$ the $string:string$ in french. If a $string:word$ in the function is not in the $dictionary:dictionary$, the function $returns:returns$ 'UNK' for that $string:word$. 
+        This function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english words. The function then $returns:returns$ the $string:string$ in french. If a word in the function is not in the $dictionary:dictionary$, the function $returns:returns$ 'UNK' for that word. 
         """
         
   subset: last_success
@@ -13427,7 +13427,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        The function $takes:takes$ in a $dictionary:dictionary$ and a $string:string$ for which each $string:word$ in the $string:string$ is a $key:key$ in the $dictionary:dictionary$. It $returns:outputs$ a $string:string$ that substitutes the original $string:word$ for the $dictionary:dictionary$ value associated with that $key:key$. If a $string:word$ in the original $string:string$ is not found in the $dictionary:dictionary$, the substituted $string:word$ will be 'UNK'.
+        The function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ for which each word in the $string:string$ is a $key:key$ in the $dictionary:dictionary$. It $returns:outputs$ a $string:string$ that substitutes the original word for the $dictionary:dictionary$ value associated with that $key:key$. If a word in the original $string:string$ is not found in the $dictionary:dictionary$, the substituted word will be 'UNK'.
         """
         
   subset: first_failure
@@ -13451,7 +13451,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        For each $string:word$ in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $insert:append$ 'UNK' to new $string:string$.
+        For each word in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the word is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
         """
         
   subset: first_failure
@@ -13475,7 +13475,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        For every $string:word$ in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $insert:append$ 'UNK' to new $string:string$.
+        For every word in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the word is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
         """
         
   subset: last_failure
@@ -13499,7 +13499,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each group of $strings:strings$ to a $list:list$. if the $string:word$ in the $list:list$ matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
+        $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each group of $strings:strings$ to a $list:list$. if the word in the $list:list$ matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
         """
         
   subset: first_failure
@@ -13523,7 +13523,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each $string:word$ to a $list:list$. For every $string:word$ in the $list:list$, if the $string:word$ matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
+        $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each word to a $list:list$. For every word in the $list:list$, if the word matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
         """
         
   subset: last_failure
@@ -13548,7 +13548,7 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $Takes:Takes$ in a given $dictionary:dictionary$ in which $keys:keys$ are English $strings:words$ and values are French translations and English sentence. $Return:Output$ is the French translation of the English sentence. 
+        $Takes:Takes in$ a given $dictionary:dictionary$ in which $keys:keys$ are English words and values are French translations and English sentence. Output is the French translation of the English sentence. 
         """
         
   subset: first_failure
@@ -13573,8 +13573,8 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        def translate(lexicon,sentence): pairs an english $string:word$ with its french translation to create the ability to $input:input$ english and $return:output$ french as $input:input$=$return:output$
-    def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ input="I like my three cats" through def translate and output={} translation
+        def translate(lexicon,sentence): pairs an english word with its french translation to create the ability to $provide:input$ english and $return:output$ french as input=output
+    def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ $parameter:input$="I like my three cats" through def translate and $return:output$={} translation
         """
         
   subset: first_failure
@@ -13599,8 +13599,8 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        def translate(lexicon,sentence): pairs an english $string:word$ with its french translation to create the ability to $input:input$ english and $return:output$ french as $input:input$=$return:output$
-    def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ input="I like my three cats" through def translate and output={} translation
+        def translate(lexicon,sentence): pairs an english word with its french translation to create the ability to $provide:input$ english and $return:output$ french as input=output
+    def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ $parameter:input$="I like my three cats" through def translate and $return:output$={} translation
         """
         
   subset: last_failure
@@ -13625,9 +13625,9 @@ STOPPED HERE!!!
   prompt: |-
     def translate(lexicon,sentence):
         """
-        $loops through:looks through$ a $dictionary:dictionary$ for english $strings:words$ and their translations and $returns:returns$ the translations if they are present in the $dictionary:dictionary$. If they are not present it $returns:returns$ 'UNK'
+        $loops through:looks through$ a $dictionary:dictionary$ for english words and their translations and $returns:returns$ the translations if they are present in the $dictionary:dictionary$. If they are not present it $returns:returns$ 'UNK'
         """
-        
+
   subset: first_success
 - __index_level_0__: 1374
   problem: topScores
@@ -13644,7 +13644,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        $Input:Input$ of a nested $list:list$. Inner $lists:lists$ contain a $string:string$ 'Name' and an $integer:integer$. Outer is a $list:list$ of all inner $lists:lists$. $Returns:Outputs$ a $list:list$ containing each 'Name' in an order based on the number associated with each name in the inner $list:list$
+        $Parameter:Input$ of a nested $list:list$. Inner $lists:lists$ contain a $string:string$ 'Name' and an $integer:integer$. Outer is a $list:list$ of all inner $lists:lists$. $Returns:Outputs$ a $list:list$ containing each 'Name' in an order based on the number associated with each name in the inner $list:list$
         """
         
   subset: first_failure
@@ -13661,7 +13661,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        Iterates through a $list:list$ of $lists:lists$, with each $list:list$ housing the age and name of a person respectively. $Returns:Returns$ a $list:list$ of the names of people in from oldest to youngest, as long as there is less than a 10-year gap between the two. 
+        $Loops through:Iterates through$ a $list:list$ of $lists:lists$, with each $list:list$ housing the age and name of a person respectively. $Returns:Returns$ a $list:list$ of the names of people in from oldest to youngest, as long as there is less than a 10-year gap between the two. 
 
         """
         
@@ -13697,7 +13697,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        The function reads the numbers in the $list:list$. The numbers that are greater than 76 are ordered from highest to lowest. The $strings:strings$ are then $returned:printed$ in the order of their corresponding numbers.
+        The function $loops through:reads$ the numbers in the $list:list$. The numbers that are greater than 76 are ordered from highest to lowest. The $strings:strings$ are then $returned:printed$ in the order of their corresponding numbers.
         """
         
   subset: last_failure
@@ -13730,7 +13730,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        if the first $key:item$ in the $string:string$ is equal to or greater than 80, $return:print$ the second $key:item$ in the $string:string$
+        if the first item in the $list:string$ is equal to or greater than 80, $return:print$ the second item in the $list:string$
         """
         
   subset: last_failure
@@ -13834,7 +13834,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        $Takes:Takes$ a $list:list$ containing multiple internal $lists:lists$, with each internal $list:list$ containing two $keys:items$: an $integer:integer$ score and a $string:string$ name. $Returns:Returns$ a $list:list$ of the names whose corresponding scores were the highest, and were a minimum of 80.
+        $Takes:Takes$ a $list:list$ containing multiple internal $lists:lists$, with each internal $list:list$ containing two items: an $integer:integer$ score and a $string:string$ name. $Returns:Returns$ a $list:list$ of the names whose corresponding scores were the highest, and were a minimum of 80.
         """
         
   subset: first_failure
@@ -13851,7 +13851,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        $Takes:Takes$ a $list:list$ containing multiple internal $lists:lists$, with each internal $list:list$ containing two $keys:items$: an $integer:integer$ score and a $string:string$ name. Sorts this $list:list$ from highest $integer:integer$ score to lowest, and $returns:returns$ a $list:list$ of the names whose corresponding scores were a minimum of 80, with a maximum $list:list$ length of 5.
+        $Takes:Takes$ a $list:list$ containing multiple internal $lists:lists$, with each internal $list:list$ containing two items: an $integer:integer$ score and a $string:string$ name. Sorts this $list:list$ from highest $integer:integer$ score to lowest, and $returns:returns$ a $list:list$ of the names whose corresponding scores were a minimum of 80, with a maximum $list:list$ length of 5.
         """
         
   subset: last_success
@@ -13869,7 +13869,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        The goal for the function topScores is when $provided:provided$ a $list:list$ including a numerical scores and names is to $return:return$ the names of those who have the highest scores 
+        The goal for the function topScores is when provided a $list:list$ including a numerical scores and names is to $return:return$ the names of those who have the highest scores 
         """
         
   subset: first_failure
@@ -13887,7 +13887,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        The goal for the function topScores is when $provided:provided$ a $list:list$ including a numerical scores and names is to $return:return$ the names of those who have the highest scores above 80
+        The goal for the function topScores is when provided a $list:list$ including a numerical scores and names is to $return:return$ the names of those who have the highest scores above 80
         """
         
   subset: last_failure
@@ -13904,7 +13904,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst and $skip:remove$ all but the three $lists:lists$ with the highest values at index 0.
+        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst and remove all but the three $lists:lists$ with the highest values at index 0.
         """
         
   subset: first_failure
@@ -13921,7 +13921,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ at index 1 to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst from highest to lowest. If there are more than five $lists:lists$ in newLst, $skip:remove$ any $lists:lists$ after the five $lists:lists$ with the highest values at index 0. Then make a new $list:list$ called finalLst. For each $list:list$ in newLst, $insert:add$ the value at index 1 to finalLst. $Return:Output$ finalLst.
+        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ at index 1 to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst from highest to lowest. If there are more than five $lists:lists$ in newLst, remove any $lists:lists$ after the five $lists:lists$ with the highest values at index 0. Then make a new $list:list$ called finalLst. For each $list:list$ in newLst, $insert:add$ the value at index 1 to finalLst. $Return:Output$ finalLst.
         """
         
   subset: last_failure
@@ -13938,7 +13938,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        The function $takes:takes$ in a $list:list$ of two $key:item$ $lists:lists$, where the first $key:item$ is an $integer:integer$ and the second is a $string:string$. Eliminate any $lists:lists$ that $integers:integers$ are below 80, then order up to the largest five $integers:integers$ and $return:output$ the $strings:strings$ associated with them.
+        The function $takes:takes in$ a $list:list$ of two item $lists:lists$, where the first item is an $integer:integer$ and the second is a $string:string$. Eliminate any $lists:lists$ that $integers:integers$ are below 80, then order up to the largest five $integers:integers$ and $return:output$ the $strings:strings$ associated with them.
         """
         
   subset: first_success
@@ -13989,7 +13989,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        if 0th index of the nested $list:list$ of lst is greater than or equal to 80, $return:return$ a $list:list$ of the 1st index in the order from the largest 0th index $integer:integer$. $Return:Return$ up to a $list:list$ of 5 $keys:items$. 
+        if 0th index of the nested $list:list$ of lst is greater than or equal to 80, $return:return$ a $list:list$ of the 1st index in the order from the largest 0th index $integer:integer$. $Return:Return$ up to a $list:list$ of 5 items. 
         """
         
   subset: last_success
@@ -14025,7 +14025,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        Write a function that $loops through:runs through$ a $list:list$ of $lists:lists$ with 2 $keys:elements$. The first $key:element$ is the grade and the second $key:element$ is the name of the student. This function $returns:returns$ the names of 5 students with grades higher or equal to 80. The order of the $return:return$ is from the highest grade to the lowest one.
+        Write a function that $loops through:runs through$ a $list:list$ of $lists:lists$ with 2 elements. The first element is the grade and the second element is the name of the student. This function $returns:returns$ the names of 5 students with grades higher or equal to 80. The order of the $return:return$ is from the highest grade to the lowest one.
         """
         
   subset: last_success
@@ -14042,7 +14042,7 @@ STOPPED HERE!!!
   prompt: |-
     def topScores(lst):
         """
-        This function has a $list:list$ of $lists:lists$ of length 2 as $inputs:inputs$. If the first $key:entry$ in the $list:list$ (the score) is greater than 80, $insert:add$ the second $key:entry$ in the $list:list$ (the name) to a $list:list$ to be $return:output$ at the end.
+        This function has a $list:list$ of $lists:lists$ of length 2 as $parameters:inputs$. If the first entry in the $list:list$ (the score) is greater than 80, $insert:add$ the second entry in the $list:list$ (the name) to a $list:list$ to be $returned:output$ at the end.
         """
         
   subset: first_failure
@@ -14061,7 +14061,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        This function $inputs:inputs$ two $lists:lists$. The letter that comes first within the alphabet in the first $list:list$ $inserts:adds$ on the lowest number of the second $list:list$ and then the letters in the alphabet. This keeps going and forms a new $list:list$ with all the $concatenated:combined$ letters and numbers. 
+        This function $takes:inputs$ two $lists:lists$. The letter that comes first within the alphabet in the first $list:list$ $concatenates:adds$ on the lowest number of the second $list:list$ and then the letters in the alphabet. This keeps going and forms a new $list:list$ with all the $concatenated:combined$ letters and numbers. 
         """
         
   subset: last_failure
@@ -14078,7 +14078,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes$ a series of $input:input$ $strings:strings$ and another series of $input:input$ $strings:strings$, and then $concatenates:splices$ each $string:string$ from the first series with each $string:string$ from the second series
+        The function $takes:takes$ a $list:series$ of input $strings:strings$ and another $list:series$ of input $strings:strings$, and then $concatenates:splices$ each $string:string$ from the first $list:series$ with each $string:string$ from the second $list:series$
         """
         
   subset: first_failure
@@ -14097,7 +14097,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes$ a series of $input:input$ $strings:strings$ "suits" and another series of $input:input$ $strings:strings$ "vals". It sorts each series first into alphabetical order followed by in order of increasing numerical value. Then it $concatenates:splices$ each $string:string$ from the first series with each $string:string$ from the second series
+        The function $takes:takes$ a $list:series$ of input $strings:strings$ "suits" and another $list:series$ of input $strings:strings$ "vals". It sorts each $list:series$ first into alphabetical order followed by in order of increasing numerical value. Then it $concatenates:splices$ each $string:string$ from the first $list:series$ with each $string:string$ from the second $list:series$
         """
         
   subset: last_success
@@ -14114,7 +14114,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        From the first $list:list$ of $parameters:parameters$, the function $takes:takes$ the last $key:element$ first and goes backwards towards the first $key:element$. It $inserts:attaches$ these $keys:elements$ with the $inputs:inputs$ given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. This goes on until the $keys:elements$ of the first $list:list$ are exhausted.
+        From the first $list:list$ of $parameters:parameters$, the function $takes:takes$ the last element first and goes backwards towards the first element. It $concatenates:attaches$ these elements with the inputs given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. This goes on until the elements of the first $list:list$ are exhausted.
         """
         
   subset: first_failure
@@ -14131,7 +14131,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        From the first $list:list$ of $parameters:parameters$, the function $takes:takes$ the last $key:element$ first and goes backwards towards the first $key:element$. It $inserts:attaches$ these $keys:elements$ with the $inputs:inputs$ given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. No function is called for this but rather the two stings which are to be $inserted:attached$ are $concatenated:concatenated$. During concatenation, the $key:element$ of the first $list:list$ is put first and the $key:element$ of the second $list:list$ is put second. The suit comes first and then the val for every concatenation. And the suits $list:list$ starts from backwards. This goes on until the $keys:elements$ of the first $list:list$ are exhausted.
+        From the first $list:list$ of $parameters:parameters$, the function $takes:takes$ the last element first and goes backwards towards the first element. It $concatenates:attaches$ these elements with the inputs given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. No function is called for this but rather the two $strings:stings$ which are to be attached are $concatenated:concatenated$. During concatenation, the element of the first $list:list$ is put first and the element of the second $list:list$ is put second. The suit comes first and then the val for every concatenation. And the suits $list:list$ starts from backwards. This goes on until the elements of the first $list:list$ are exhausted.
         """
         
   subset: last_failure
@@ -14220,7 +14220,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first $key:element$ with the first $list:list$ with the first $key:element$ in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$. Keep $inserting:adding$ the first $key:element$ of the first $list:list$ to each $key:element$ of the second $list:list$ and $insert:add$ each addition to the new $list:list$. $Return:Return$ the $list:list$ in alphabetical order.
+        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first element with the first $list:list$ with the first element in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$. Keep $concatenating:adding$ the first element of the first $list:list$ to each element of the second $list:list$ and $insert:add$ each addition to the new $list:list$. $Return:Return$ the $list:list$ in alphabetical order.
         """
         
   subset: first_failure
@@ -14237,7 +14237,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first $key:element$ with the first $list:list$ with the first $key:element$ in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$ [ex, if the first $key:element$ of the first $list:list$ is F and an $key:element$ of the second $list:list$ is 7, $concatenate:combine$ them like F7]. Keep $inserting:adding$ the first $key:element$ of the first $list:list$ to each $key:element$ of the second $list:list$ and $insert:add$ each addition to the new $list:list$. Reorder the new $list:list$ to make it in alphabetical and numerical order, then $return:return$
+        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first element with the first $list:list$ with the first element in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$ [ex, if the first element of the first $list:list$ is F and an element of the second $list:list$ is 7, $concatenate:combine$ them like F7]. Keep $concatenating:adding$ the first element of the first $list:list$ to each element of the second $list:list$ and $insert:add$ each addition to the new $list:list$. Reorder the new $list:list$ to make it in alphabetical and numerical order, then $return:return$
         """
         
   subset: last_success
@@ -14254,7 +14254,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        $takes:takes$ a $list:list$ of suits and a $list:list$ of values as $inputs:inputs$. $returns:returns$ a $list:list$ of all possible combinations of suits and values.
+        $takes:takes$ a $list:list$ of suits and a $list:list$ of values as $parameters:inputs$. $returns:returns$ a $list:list$ of all possible combinations of suits and values.
         """
         
   subset: first_failure
@@ -14271,7 +14271,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        $takes:takes$ a $list:list$ of suits and a $list:list$ of values as $inputs:inputs$. $returns:returns$ an ordered $list:list$ of all possible combinations of suits and values
+        $takes:takes$ a $list:list$ of suits and a $list:list$ of values as $parameters:inputs$. $returns:returns$ an ordered $list:list$ of all possible combinations of suits and values
         """
         
   subset: last_failure
@@ -14288,7 +14288,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        This function $inputs:inputs$ suits and vals as a $list:list$ as its $parameters:parameters$. This function $returns:prints$ out every combination of these $parameters:parameters$. 
+        This function $takes:inputs$ suits and vals as a $list:list$ as its $parameters:parameters$. This function $returns:prints$ out every combination of these $parameters:parameters$. 
         """
         
   subset: first_failure
@@ -14306,7 +14306,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        This function $inputs:inputs$ suits and vals as a $list:list$ as its $parameters:parameters$. This function $returns:prints$ out every combination of these $parameters:parameters$ sorted alphabetically. As an example. If you $input:input$ ['H', 'D'] as suits and ['6', 'Q', 'J', '2'] as vals, the function $returns:prints$
+        This function $takes:inputs$ suits and vals as a $list:list$ as its $parameters:parameters$. This function $returns:prints$ out every combination of these $parameters:parameters$ sorted alphabetically. As an example. If you $provide:input$ ['H', 'D'] as suits and ['6', 'Q', 'J', '2'] as vals, the function $returns:prints$
     ['D2', 'D6', 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. 
         """
         
@@ -14325,7 +14325,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes$ in multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the $keys:entries$ are two $strings:characters$ $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. 
+        The function $takes:takes in$ multiple $lists:lists$ made up of single characters and $returns:outputs$ one $list:list$ in which all the entries are two characters $strings:strings$ made up of the combination of each character from each original $list:list$. 
         """
         
   subset: first_failure
@@ -14344,7 +14344,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes$ in multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the $keys:entries$ are two $strings:characters$ $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. The resulting $list:list$ will be arranged in alphabetical order based on the letters of each $string:string$.
+        The function $takes:takes in$ multiple $lists:lists$ made up of single characters and $returns:outputs$ one $list:list$ in which all the entries are two characters $strings:strings$ made up of the combination of each character from each original $list:list$. The resulting $list:list$ will be arranged in alphabetical order based on the letters of each $string:string$.
         """
         
   subset: last_success
@@ -14361,7 +14361,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        For each $string:character$ in suits, create a $list:list$ that $inserts:appends$ each of the suits with each of the values in vals.
+        For each character in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals.
         """
         
   subset: first_failure
@@ -14378,7 +14378,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        For each $string:character$ in suits, create a $list:list$ that $inserts:appends$ each of the suits with each of the values in vals. Sort each card in deck by alphabetical order of suit $string:character$.
+        For each character in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals. Sort each card in deck by alphabetical order of suit character.
         """
         
   subset: last_success
@@ -14429,7 +14429,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        Sorts out each $list:list$ by numerical or alphabetical order then $concatenates:combines$ each $key:element$ of $list:list$ A to $list:list$ B, iterating through each $list:list$ by numerical and alphabetical order. 
+        Sorts out each $list:list$ by numerical or alphabetical order then $concatenates:combines$ each $key:element$ of $list:list$ A to $list:list$ B, $looping through:iterating through$ each $list:list$ by numerical and alphabetical order. 
         """
         
   subset: first_failure
@@ -14465,8 +14465,8 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        def generateCardDeck(suits, vals): $takes:brings in$ the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines Card=[], Card then reverses the order of suit[] making the $keys:variables$ $return:print$ in the opposite order starting with ['D'], this program then $returns:outputs$ and combination of the suit [] and val []
-    def generateCardDeck(suits, vals): $takes:brings in$ the information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], Card then reverses the order of val[] making the $keys:variables$ $return:print$ in the opposite order starting with ['2'], this program then $returns:outputs$ and combination of the opposite order of the suit [] and the val [].
+        def generateCardDeck(suits, vals): $takes:brings in$ the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines Card=[], Card then reverses the order of suit[] making the variables $return:print$ in the opposite order starting with ['D'], this program then $returns:outputs$ and combination of the suit [] and val []
+    def generateCardDeck(suits, vals): $takes:brings in$ the information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], Card then reverses the order of val[] making the variables $return:print$ in the opposite order starting with ['2'], this program then $returns:outputs$ and combination of the opposite order of the suit [] and the val [].
     def generateCardDeck(suits, vals): $takes:brings in$ the information:['H'], ['2'] and defines Card=[], this program then $returns:outputs$ and combination of both the suit [] and the val [].
         """
         
@@ -14485,7 +14485,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        Going from last to first in the first $list:set$ of $lists:brackets$ $inserts:adds$ each of the $inputs:inputs$ in the second $lists:brackets$ to the end of the $input:input$ from the first bracket one time and does so for all $inputs:inputs$ in the first $lists:brackets$
+        Going from last to first in the first $list:set of brackets$ $concatenates:adds$ each of the inputs in the second $lists:brackets$ to the end of the input from the first $list:bracket$ one time and does so for all inputs in the first $lists:brackets$
         """
         
   subset: first_failure
@@ -14502,7 +14502,7 @@ STOPPED HERE!!!
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        there are two $lists:lists$, both with $strings:strings$. you should use a nested for loop to $concatenate:concatenate$ the two $strings:strings$ and then $insert:add$ them to a $list:list$ in increasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). suit $takes:takes$ precedence over rank.
+        there are two $lists:lists$, both with $strings:strings$. you should use a nested for loop to $concatenate:concatenate$ the two $strings:strings$ and then $insert:add$ them to a $list:list$ in increasing order. Increasing order means spades (S) are greater than hearts (H), and hearts are greater than diamonds (D). suit takes precedence over rank.
 
         """
         
@@ -14537,7 +14537,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        $Input:Input$: $list:list$ of $strings:strings$. $Return:Output$: $list:list$ of $strings:strings$, whose $strings:characters$ are in the reverse order of the original $string:string$
+        $Parameter:Input$: $list:list$ of $strings:strings$. $Return:Output$: $list:list$ of $strings:strings$, whose characters are in the reverse order of the original $string:string$
         """
         
   subset: first_failure
@@ -14554,7 +14554,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        $Input:Input$: $list:list$ of $strings:strings$. $Return:Output$: $list:list$ of $strings:strings$, whose $strings:characters$ are in the reverse order of the original $string:string$. In the $return:output$, arrange each $key:item$ in the $list:list$ in alphabetical order 
+        $Parameter:Input$: $list:list$ of $strings:strings$. $Return:Output$: $list:list$ of $strings:strings$, whose characters are in the reverse order of the original $string:string$. In the output, arrange each item in the $list:list$ in alphabetical order 
         """
         
   subset: last_success
@@ -14570,7 +14570,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        Sorts each $key:item$ in the $list:list$ in reverse alphabetical order
+        Sorts each item in the $list:list$ in reverse alphabetical order
         """
         
   subset: first_failure
@@ -14587,7 +14587,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        Sorts each $key:item$ in the $list:list$ in reverse alphabetical order. $Returns:Returns$ the overall $list:list$ in alphabetical order
+        Sorts each item in the $list:list$ in reverse alphabetical order. $Returns:Returns$ the overall $list:list$ in alphabetical order
         """
         
   subset: last_success
@@ -14638,7 +14638,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        put each $string:character$ in each $string:word$ in reverse order. then put each $string:word$ in alphabetical order
+        put each character in each $string:word$ in reverse order. then put each $string:word$ in alphabetical order
         """
         
   subset: first_success
@@ -14655,7 +14655,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        put each $string:character$ in each $string:word$ in reverse order. then put each $string:word$ in alphabetical order
+        put each character in each $string:word$ in reverse order. then put each $string:word$ in alphabetical order
         """
         
   subset: last_success
@@ -14706,7 +14706,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        $Takes:Takes$ a $list:list$ of $strings:strings$, and then individually reverses the order of the $strings:characters$ in each $string:string$. Then, sorts the $list:list$ alphabetically. Then, $returns:returns$ this modified $list:list$. 
+        $Takes:Takes$ a $list:list$ of $strings:strings$, and then individually reverses the order of the characters in each $string:string$. Then, sorts the $list:list$ alphabetically. Then, $returns:returns$ this modified $list:list$. 
         """
         
   subset: first_success
@@ -14741,7 +14741,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        $Takes:Takes$ a $list:list$ of $strings:strings$, which we will call $strings:words$. Make a new $list:list$ of $strings:strings$, which we will call reverse. For each $string:string$ in $strings:words$, $insert:add$ a $string:string$ to reverse that contains the same $strings:characters$ in backwards order. Then sort reverse. $Return:Output$ is reverse.
+        $Takes:Takes$ a $list:list$ of $strings:strings$, which we will call words. Make a new $list:list$ of $strings:strings$, which we will call reverse. For each $string:string$ in words, $insert:add$ a $string:string$ to reverse that contains the same characters in backwards order. Then sort reverse. Output is reverse.
         """
         
   subset: last_success
@@ -14759,7 +14759,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        The function $takes:takes$ in a $list:list$ of $strings:strings$ it will make all the $string:character$ within the $strings:strings$ reverse. Then it will sort the $list:list$ alphabetically by the last $string:character$ in each $string:string$
+        The function $takes:takes in$ a $list:list$ of $strings:strings$ it will make all the character within the $strings:strings$ reverse. Then it will sort the $list:list$ alphabetically by the last character in each $string:string$
         """
         
   subset: last_success
@@ -14794,7 +14794,7 @@ STOPPED HERE!!!
   prompt: |-
     def reverseWords(words):
         """
-        Write a function that $takes:gets$ $strings:strings$ from a $list:list$. Reverse all the $strings:strings$ and $returns:returns$ the reversed $string:string$ in a $list:list$. The order of the $strings:strings$ in the $return:return$ statement should be in alphabetical order from the $input:input$.
+        Write a function that $takes:gets$ $strings:strings$ from a $list:list$. Reverse all the $strings:strings$ and $returns:returns$ the reversed $string:string$ in a $list:list$. The order of the $strings:strings$ in the return statement should be in alphabetical order from the $parameter:input$.
         """
         
   subset: last_success
@@ -14827,7 +14827,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        $takes:takes$ in two $lists:lists$. If the $lists:lists$ have the same value at the same index, $insert:add$ one to a num $key:variable$. $return:return$ the $string:string$ of $integer:integer$ of num times 100 divided by the length of the first $list:list$ and $concatenate:concatenate$ a percent sign.
+        $takes:takes in$ two $lists:lists$. If the $lists:lists$ have the same value at the same index, $insert:add$ one to a num variable. $return:return$ the $string:string$ of $integer:integer$ of num times 100 divided by the length of the first $list:list$ and $concatenate:concatenate$ a percent sign.
         """
         
   subset: last_success
@@ -14844,7 +14844,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        create a function with 2 $inputs:inputs$: guess ($list:list$) and answers(list). find the number of the $key:element$ match in guess and answers
+        create a function with 2 $parameters:inputs$: guess ($list:list$) and answers($list:list$). find the number of the element match in guess and answers
         """
         
   subset: first_failure
@@ -14861,7 +14861,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        create a function with 2 $inputs:inputs$: guess ($list:list$) and answers(list). find the number of the $key:element$ match in guess and answers then divide with the number of $key:element$ of answers. then times the results 100 times and round up the to $integer:integer$. $insert:add$ percentage sign after the results
+        create a function with 2 $parameters:inputs$: guess ($list:list$) and answers($list:list$). find the number of the element match in guess and answers then divide with the number of element of answers. then times the results 100 times and round up the to $integer:integer$. $concatenate:add$ percentage sign after the results
         """
         
   subset: last_success
@@ -14878,7 +14878,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        determines the percent of $keys:items$ in $list:list$ 1 that are identical to the $keys:items$ in $list:list$ 2
+        determines the percent of items in $list:list$ 1 that are identical to the items in $list:list$ 2
         """
         
   subset: first_failure
@@ -14895,7 +14895,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        determines the percent of $keys:items$ in $list:list$ 1 that are identical to the $keys:items$ in $list:list$ 2, $returns:returns$ number rounded to the nearest $integers:whole numbers$ including percent sign
+        determines the percent of items in $list:list$ 1 that are identical to the items in $list:list$ 2, $returns:returns$ number rounded to the nearest $integers:whole numbers$ including percent sign
         """
         
   subset: last_success
@@ -14912,7 +14912,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        User $inputs:inputs$ two $lists:lists$ of equal length. Program would compare each $key:item$ against second $list:list$'s corresponding $key:item$, and would $return:return$ the percentage of times the two $keys:items$ match.
+        User $provides:inputs$ two $lists:lists$ of equal length. Program would compare each item against second $list:list$'s corresponding item, and would $return:return$ the percentage of times the two items match.
         """
         
   subset: first_failure
@@ -14929,7 +14929,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        User $inputs:inputs$ two $lists:lists$ of equal length. Program would compare each $key:item$ against second $list:list$'s corresponding $key:item$, and would $return:return$ the percentage of times the two $keys:items$ match, as an $integer:integer$ with no decimal spaces with a % sign at the end.
+        User $provides:inputs$ two $lists:lists$ of equal length. Program would compare each item against second $list:list$'s corresponding item, and would $return:return$ the percentage of times the two items match, as an $integer:integer$ with no decimal spaces with a % sign at the end.
         """
         
   subset: last_failure
@@ -14946,7 +14946,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        matches the numbers and letters of the two given $strings:strings$ and calculates the similarity in percents
+        matches the numbers and letters of the two given $lists:strings$ and calculates the similarity in percents
         """
         
   subset: first_failure
@@ -14963,7 +14963,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        matches the numbers and letters of the two given $strings:strings$ and calculates the similarity, lastly $typecast:turn$ the answer into a percent number with the percent symbol, rounding to the nearest $integer:whole number$
+        matches the numbers and letters of the two given $lists:strings$ and calculates the similarity, lastly turn the answer into a percent number with the percent symbol, rounding to the nearest $integer:whole number$
         """
         
   subset: last_success
@@ -14997,7 +14997,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        Compare the $string:string$ in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value while rounding up to the nearest $integer:integer$ and $insert:add$ '%' at the end. 
+        Compare the $string:string$ in guess and answers by each index and calculate the percentage of the match between guess and answers. Then, multiply 100 to the value while rounding up to the nearest $integer:integer$ and $concatenate:add$ '%' at the end. 
         """
         
   subset: last_success
@@ -15065,7 +15065,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        This function compares how similar 2 $lists:lists$ are and $returns:returns$ the percent of the guess $list:list$ that matches the answer $list:list$. The percentage is multiplied by 100, rounded to have no decimal, and "%" is $inserted:added$ to the final result.
+        This function compares how similar 2 $lists:lists$ are and $returns:returns$ the percent of the guess $list:list$ that matches the answer $list:list$. The percentage is multiplied by 100, rounded to have no decimal, and "%" is $concatenated:added$ to the final result.
         """
         
   subset: last_success
@@ -15082,7 +15082,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        Count how many $strings:characters$ in a range of numbers match those in another range of numbers and $return:display$ the difference as a percentage
+        Count how many characters in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference as a percentage
         """
         
   subset: first_failure
@@ -15100,7 +15100,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        Count how many $strings:characters$ in a range of numbers match those in another range of numbers and $return:display$ the difference rounded to the nearest $integer:whole number$. Multiply the difference by 100 and $return:display$ followed by '%'
+        Count how many characters in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference rounded to the nearest $integer:whole number$. Multiply the difference by 100 and $return:display$ followed by '%'
         """
         
   subset: last_failure
@@ -15117,7 +15117,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        $Take:Take$ in $list:array$ A. Iterate through $list:array$ A, and record the proportion of numbers in it versus letters.
+        $Take:Take in$ $list:array$ A. $Loop through:Iterate through$ $list:array$ A, and record the proportion of numbers in it versus letters.
         """
         
   subset: first_failure
@@ -15134,7 +15134,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        $Take:Take$ in $list:array$ A. Create $key:variable$ X equal to 0. Iterate through $list:array$ A. When a $string:character$ is present in $List:Array$ A, $insert:add$ 1 to Y. $Return:Return$ Y divided by the size of the $list:array$, rounded to the nearest percent.
+        $Take:Take in$ $list:array$ A. Create variable X equal to 0. $Loop through:Iterate through$ $list:array$ A. When a character is present in $List:Array$ A, add 1 to Y. $Return:Return$ Y divided by the size of the $list:array$, rounded to the nearest percent.
         """
         
   subset: last_failure
@@ -15151,7 +15151,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        Given two $lists:lists$, compares each $key:item$ in the second $list:list$ to each $key:item$ in the first $list:list$. For each $key:item$ in the second $list:list$ that does not match the first $list:list$, it subtracts from one, one divided by the total length of the $list:list$. Then it $returns:prints$ the proportion of correct responses as a percentage.
+        Given two $lists:lists$, compares each item in the second $list:list$ to each item in the first $list:list$. For each item in the second $list:list$ that does not match the first $list:list$, it subtracts from one, one divided by the total length of the $list:list$. Then it $returns:prints$ the proportion of correct responses as a percentage.
         """
         
   subset: first_failure
@@ -15168,7 +15168,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        Given two $lists:lists$, compares each $key:item$ in the second $list:list$ to each $key:item$ in the first $list:list$. Every time an $key:item$ in the second $list:list$ does not match the first $list:list$, it subtracts from one, one divided by the total length of the $list:list$. Then it $returns:prints$ the proportion of correct responses multiplied by 100 and followed by a percent sign.
+        Given two $lists:lists$, compares each item in the second $list:list$ to each item in the first $list:list$. Every time an item in the second $list:list$ does not match the first $list:list$, it subtracts from one, one divided by the total length of the $list:list$. Then it $returns:prints$ the proportion of correct responses multiplied by 100 and followed by a percent sign.
         """
         
   subset: last_failure
@@ -15201,7 +15201,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        check both $lists:lists$ for equality and $return:return$ the percent of matching $keys:items$
+        check both $lists:lists$ for equality and $return:return$ the percent of matching items
         """
         
   subset: first_failure
@@ -15218,7 +15218,7 @@ STOPPED HERE!!!
   prompt: |-
     def percentWin(guess,answers):
         """
-        check both $lists:lists$ for equality and $return:return$ the percent of matching $keys:items$ as a $string:string$ rounded to the nearest $integer:whole number$ with a %
+        check both $lists:lists$ for equality and $return:return$ the percent of matching items as a $string:string$ rounded to the nearest $integer:whole number$ with a %
         """
         
   subset: last_success
@@ -15236,7 +15236,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        the function correctNumberofPlayers will $take:take$ the $input:input$ teams and $return:return$ true if all teams listed have five players and false if they do not. teams is a $list:list$ with names of players. 
+        the function correctNumberofPlayers will $take:take$ the $parameter:input$ teams and $return:return$ true if all teams listed have five players and false if they do not. teams is a $list:list$ with names of players. 
         """
         
   subset: first_success
@@ -15269,7 +15269,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        this function will see if all the inside $list:list$ from the $input:input$ $list:list$ of $list:list$ have 5 values, if yes then True no then False
+        this function will see if all the inside $list:list$ from the input $list:list$ of $list:list$ have 5 values, if yes then True no then False
         """
         
   subset: first_success
@@ -15286,7 +15286,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        Based on the $inputted:inputted$ 2D $list:list$ of players on each team, the function will check if there are 5 players in each sublist. If there are the correct number of players in each sublist, it will $return:return$ True. Otherwise, the function will $return:return$ False.
+        Based on the inputted 2D $list:list$ of players on each team, the function will check if there are 5 players in each sublist. If there are the correct number of players in each sublist, it will $return:return$ True. Otherwise, the function will $return:return$ False.
         """
         
   subset: first_success
@@ -15302,7 +15302,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        if the $lists:lists$ $inputted:inputted$ all have 5 players
+        if the $lists:lists$ inputted all have 5 players
         """
         
   subset: first_success
@@ -15319,7 +15319,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        $takes:takes$ in a $list:list$ of $lists:lists$ and $returns:returns$ a boleean based on if the number of $keys:elements$ in the $list:list$ are the same 
+        $takes:takes in$ a $list:list$ of $lists:lists$ and $returns:returns$ a boleean based on if the number of elements in the $list:list$ are the same 
         """
         
   subset: first_failure
@@ -15336,7 +15336,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        $takes:takes$ in a $list:list$ of $lists:lists$ and checks to see if each $list:list$ is the same length
+        $takes:takes in$ a $list:list$ of $lists:lists$ and checks to see if each $list:list$ is the same length
         """
         
   subset: last_success
@@ -15371,7 +15371,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        function will $return:return$ True if the $lists:lists$ have the same count of $keys:items$ and will $return:return$ False if the $lists:lists$ do not have the same count of $keys:items$
+        function will $return:return$ True if the $lists:lists$ have the same count of items and will $return:return$ False if the $lists:lists$ do not have the same count of items
         """
         
   subset: first_failure
@@ -15422,7 +15422,7 @@ STOPPED HERE!!!
   prompt: |-
     def correctNumberofPlayers(teams):
         """
-        given the each $list:list$ within the $list:list$ of $lists:lists$, there should be five $keys:items$ within each sub $list:list$. if the $list:list$ doesn't have five $keys:items$, then the $return:output$ is false. if each $list:list$ has five $keys:items$, then the $return:output$ is true.
+        given the each $list:list$ within the $list:list$ of $lists:lists$, there should be five items within each sub $list:list$. if the $list:list$ doesn't have five items, then the $return:output$ is false. if each $list:list$ has five items, then the $return:output$ is true.
         """
         
   subset: first_success
@@ -15456,7 +15456,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        $Input:Input$ of a $list:list$ of $integers:integers$, and another $integer:integer$. $Returns:Outputs$ the $list:list$ of $integers:integers$ expatiated by the second $inputted:inputted$ $integer:integer$
+        $Parameters:Input$ of a $list:list$ of $integers:integers$, and another $integer:integer$. $Returns:Outputs$ the $list:list$ of $integers:integers$ expatiated by the second inputted $integer:integer$
         """
         
   subset: first_success
@@ -15472,7 +15472,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        $Takes:Takes$ the $list:list$ and raises each $key:item$ to the power of the given value
+        $Takes:Takes$ the $list:list$ and raises each item to the power of the given value
         """
         
   subset: first_success
@@ -15490,7 +15490,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        check what number is outside each $list:set$ of $lists:brackets$. then raise numbers in $lists:brackets$ to the power of each number outside of the corresponding $lists:brackets$. $Return:Return$ finished equation
+        check what number is outside each $list:set of brackets$. then raise numbers in $lists:brackets$ to the power of each number outside of the corresponding $lists:brackets$. $Return:Return$ finished equation
         """
         
   subset: first_failure
@@ -15574,7 +15574,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        Write a code that $takes:takes$ in two $parameters:parameters$, The first $parameter:parameter$ is 1st is a $list:list$ of $integers:integers$. And the second $parameter:parameter$ is val which is a value that represents a power. For each $integer:integer$ in 1st val will $take:take$ the power of that value.
+        Write a code that $takes:takes in$ two $parameters:parameters$, The first $parameter:parameter$ is 1st is a $list:list$ of $integers:integers$. And the second $parameter:parameter$ is val which is a value that represents a power. For each $integer:integer$ in 1st val will take the power of that value.
         """
         
   subset: first_success
@@ -15608,7 +15608,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        For this function, exp(1st, val) the goal is to raise each number within the $provided:provided$ $list:list$ (1st) to the number given in val and then $return:return$ a $list:list$ of the products of the original $list:list$.
+        For this function, exp(1st, val) the goal is to raise each number within the provided $list:list$ (1st) to the number given in val and then $return:return$ a $list:list$ of the products of the original $list:list$.
         """
         
   subset: last_success
@@ -15642,7 +15642,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        A function that $takes:takes$ in a $list:list$ of multiple $integers:integers$ and one other $integer:integer$ on the outside, then has all the $integers:integers$ within the $list:list$ be put to the power of whatever number was outside the $list:list$.
+        A function that $takes:takes in$ a $list:list$ of multiple $integers:integers$ and one other $integer:integer$ on the outside, then has all the $integers:integers$ within the $list:list$ be put to the power of whatever number was outside the $list:list$.
         """
         
   subset: first_success
@@ -15677,7 +15677,7 @@ STOPPED HERE!!!
     def exp(lst, val):
         """
         Write a function that $takes:gets$ a $list:list$ of numbers and an $integer:integer$ separated by a comma.
-    The $list:list$ of numbers should be the base and the $integer:integer$ should the the exponent. Compute all the $keys:elements$ from the $list:list$ and $returns:returns$ the $lists:lists$ of the results.
+    The $list:list$ of numbers should be the base and the $integer:integer$ should the the exponent. Compute all the elements from the $list:list$ and $returns:returns$ the $lists:lists$ of the results.
         """
         
   subset: first_success
@@ -15693,7 +15693,7 @@ STOPPED HERE!!!
   prompt: |-
     def exp(lst, val):
         """
-        $Return:Return$ each $key:item$ in the $list:list$ and multiply it by the following number.
+        $Return:Return$ each item in the $list:list$ and multiply it by the following number.
         """
         
   subset: first_success
@@ -15729,7 +15729,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        the function laugh will $take:take$ the $input:input$ of an $integer:int$ and should $return:output$ a $string:string$ with the ha as many times as the $input:input$ but also the number of a's is based on the number it is currently working with
+        the function laugh will $take:take$ the $parameter:input$ of an $integer:int$ and should $return:output$ a $string:string$ with the ha as many times as the $parameter:input$ but also the number of a's is based on the number it is currently working with
 
         """
         
@@ -15748,7 +15748,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        the function laugh will $take:take$ the $input:input$ of an $integer:int$ and should $return:output$ a $string:string$ with "ha" as many times as the $input:input$ $integer:int$. However each respective "ha" has as many a's as the current number of "ha"s left to $return:produce$. and $insert:add$ a space in between the ha's but not at the very end. 
+        the function laugh will $take:take$ the $parameter:input$ of an $integer:int$ and should $return:output$ a $string:string$ with "ha" as many times as the $parameter:input$ $integer:int$. However each respective "ha" has as many a's as the current number of "ha"s left to produce. and $concatenate:add$ a space in between the ha's but not at the very end. 
 
 
         """
@@ -15767,7 +15767,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        If n is the $input:input$ value, $returns:returns$ a combination of n $strings:strings$, where each of the n $strings:strings$ consists of "h" followed by n occurrences of "a", and there is " " before each "h" except the first "h". 
+        If n is the $parameter:input value$, $returns:returns$ a combination of n $strings:strings$, where each of the n $strings:strings$ consists of "h" followed by n occurrences of "a", and there is " " before each "h" except the first "h". 
         """
         
   subset: first_failure
@@ -15784,7 +15784,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        If n is the $input:input$ value, the function creates a $string:string$ containing "h" plus n occurrences of "a", plus " h" plus n-1 occurrences of "a", repeated until "ha" is the last $key:part$ of the $string:string$. Then $return:return$ the $string:string$.
+        If n is the $parameter:input value$, the function creates a $string:string$ containing "h" plus n occurrences of "a", plus " h" plus n-1 occurrences of "a", repeated until "ha" is the last part of the $string:string$. Then $return:return$ the $string:string$.
         """
         
   subset: last_failure
@@ -15801,7 +15801,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        a function have initial $input:input$ as 'ha' when  $input:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a'
+        a function have initial $parameter:input$ as 'ha' when  $parameter:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a'
         """
         
   subset: first_failure
@@ -15818,7 +15818,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        a function have initial $input:input$ as 'ha' when  $input:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a' and have another 'ha' with the original length of 'a'
+        a function have initial $parameter:input$ as 'ha' when  $parameter:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a' and have another 'ha' with the original length of 'a'
         """
         
   subset: last_failure
@@ -15835,7 +15835,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        The function will repeat the $string:word$ "ha" based on the size $inputted:inputted$. Each time the $string:word$ "ha" is $returned:printed$, the number of "a"s in the "ha" will start with its initial size, then decrease by one for each repetition.
+        The function will repeat the $string:word$ "ha" based on the size inputted. Each time the $string:word$ "ha" is $returned:printed$, the number of "a"s in the "ha" will start with its initial size, then decrease by one for each repetition.
         """
         
   subset: first_failure
@@ -15852,7 +15852,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        Based on the $inputted:inputted$ size, the function will $return:return$ a laugh size, repeating the $string:word$ "ha" the number of times $inputted:inputted$. The number of "a"s in the "ha" will start with its initial size, then decrease by one for each repetition.
+        Based on the inputted size, the function will $return:return$ a laugh size, repeating the $string:word$ "ha" the number of times inputted. The number of "a"s in the "ha" will start with its initial size, then decrease by one for each repetition.
         """
         
   subset: last_failure
@@ -15868,7 +15868,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        count the number of $strings:words$ in a $string:string$ separated by a space
+        count the number of words in a $string:string$ separated by a space
         """
         
   subset: first_failure
@@ -15885,7 +15885,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        $take:take$ in a number and write the $string:word$ 'ha' but with as many 'a's as the number
+        $take:take in$ a number and write the word 'ha' but with as many 'a's as the number
         """
         
   subset: first_failure
@@ -15902,7 +15902,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        $take:take$ in an $integer:integer$ and write a decreasing amount of 'a's next to an 'h'
+        $take:take in$ an $integer:integer$ and write a decreasing amount of 'a's next to an 'h'
         """
         
   subset: last_failure
@@ -15919,7 +15919,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        Write a function which $takes:takes$ an $integer:integer$ size as an $input:input$, and uses a for loop to $return:print$ an h followed by size a's and then a space, and then an h followed by size-1 a's and then a space, etc. until it $returns:prints$ a h followed by one a
+        Write a function which $takes:takes$ an $integer:integer$ size as an $parameter:input$, and uses a for loop to $return:print$ an h followed by size a's and then a space, and then an h followed by size-1 a's and then a space, etc. until it $returns:prints$ a h followed by one a
         """
         
   subset: first_failure
@@ -15936,7 +15936,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        Write a function which $takes:takes$ an $integer:integer$ size as an $input:input$, creates an empty $string:string$ called laugh, and the uses a for loop to $insert:append$ an h followed by i number a's for each 0<i<=size starting with i = size, $insert:append$ a space before each h except the first h in the $string:string$
+        Write a function which $takes:takes$ an $integer:integer$ size as an $parameter:input$, creates an empty $string:string$ called laugh, and the uses a for loop to $concatenate:append$ an h followed by i number a's for each 0<i<=size starting with i = size, $concatenate:append$ a space before each h except the first h in the $string:string$
         """
         
   subset: last_success
@@ -15953,7 +15953,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        function $inserts:adds$ 'a' to every 'h' based on $input:input$ and will lower amount of 'a'. Function also $inserts:adds$ a space between every 'ha' except the last one
+        function $concatenates:adds$ 'a' to every 'h' based on $parameter:input$ and will lower amount of 'a'. Function also $concatenates:adds$ a space between every 'ha' except the last one
         """
         
   subset: first_success
@@ -15970,7 +15970,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        function $inserts:adds$ 'a' to every 'h' based on $input:input$ and will lower amount of 'a'. Function also $inserts:adds$ a space between every 'ha'
+        function $concatenates:adds$ 'a' to every 'h' based on $parameter:input$ and will lower amount of 'a'. Function also $concatenates:adds$ a space between every 'ha'
         """
         
   subset: last_failure
@@ -15987,7 +15987,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        $Return:Produce$ a $string:string$, with each $string:word$ starting with h and then however many a's the $input:input$ says. Decrease the count of a's by one following the h for each $string:word$ after.
+        $Return:Produce$ a $string:string$, with each word starting with h and then however many a's the $parameter:input$ says. Decrease the count of a's by one following the h for each word after.
         """
         
   subset: first_failure
@@ -16004,7 +16004,7 @@ STOPPED HERE!!!
   prompt: |-
     def laugh(size):
         """
-        $Return:Produce$ a $string:string$, with each $string:word$ starting with h and then however many a's the $input:input$ says. Decrease the count of a's by one following the h for each $string:word$ after. Stop after the last $string:word$ in the $string:string$ is ha.
+        $Return:Produce$ a $string:string$, with each word starting with h and then however many a's the $parameter:input$ says. Decrease the count of a's by one following the h for each word after. Stop after the last word in the $string:string$ is ha.
         """
         
   subset: last_failure

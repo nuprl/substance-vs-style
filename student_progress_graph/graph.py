@@ -174,6 +174,12 @@ class Graph(yaml.YAMLObject):
     
     def get_students(self):
         return sorted(list(set([e.username for e in self.edges])))
+    
+    def get_start_node_id(self, username: str):
+        for e in self.edges:
+            if e.username == username and e.attempt_id == 1:
+                return e.node_from.id
+        raise ValueError(f"Start node not found {username}, {self.problem}")
         
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:

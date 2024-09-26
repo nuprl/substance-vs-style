@@ -110,19 +110,20 @@ def gravis_plot(graph:Graph, filepath:str):
             # show_menu=True
             )
     
-    def format_node_tags(username, tags):
+    def format_node_tags(username, tags, start_node_id):
         if username not in tags.keys():
-            return username
+            return f"{username} : {start_node_id}"
         else:
             tags = tags[username]
             if len(username) == len("student0"):
                 username = username+"  "
-            return f"{username} : {tags}"
+            return f"{username} : {start_node_id} : {tags}"
             
     color_legend = graph.get_legend()
     start_node_tags = graph.get_start_node_states()
-    legend = {format_node_tags(k, start_node_tags):v for k,v in color_legend.items()}
+    legend = {format_node_tags(k, start_node_tags, graph.get_start_node_id(k)):v for k,v in color_legend.items()}
     html_legend= generate_legend_html(legend)
+    html_legend = f"<span>color, username, start node id, start node tags</span></div>{html_legend}"
     with open(filepath, "w") as fp:
         fp.write(fig.to_html().replace(HTML_HEADER, HTML_HEADER + "\n" + html_legend))
 

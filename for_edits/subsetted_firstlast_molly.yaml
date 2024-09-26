@@ -799,7 +799,7 @@
   prompt: |-
     def convert(lst):
         """
-        $takes:takes$ a $list:list$ of numbers. Create a ABC $list:list$ with the capital letters in the alphabet and create an answer $string:string$. Iterate through the $input:input$ $list:list$, if there is "-1" then $insert:add$ ' ' to the answer $string:string$, or otherwise, $insert:add$ the letter with the corresponding index of the answer $string:string$. Split the answer $string:string$ at ' '. $return:return$ the answer $string:string$.
+        $takes:takes$ a $list:list$ of numbers. Create a ABC $list:list$ with the capital letters in the alphabet and create an answer $string:string$. $Loop:Iterate through$ the input $list:list$, if there is "-1" then $concatenate:add$ ' ' to the answer $string:string$, or otherwise, $concatenate:add$ the letter with the corresponding index of the answer $string:string$. Split the answer $string:string$ at ' '. $return:return$ the answer $string:string$.
         """
         
   subset: last_success
@@ -817,7 +817,7 @@
   prompt: |-
     def convert(lst):
         """
-        $typecast:convert$ the $list:list$ of index number into $list:list$ of letters of corresponding index 
+        convert the $list:list$ of index number into $list:list$ of letters of corresponding index 
     numbers of alphabetical table
 
         """
@@ -836,7 +836,7 @@
   prompt: |-
     def convert(lst):
         """
-        $typecast:convert$ the $list:list$ of index number into $string:string$ of capital letters of corresponding index numbers of alphabetical table and then $insert:insert$ into a $list:list$ 
+        convert the $list:list$ of index number into $string:string$ of capital letters of corresponding index numbers of alphabetical table and then $insert:insert$ into a $list:list$ 
         """
         
   subset: last_failure
@@ -853,7 +853,7 @@
   prompt: |-
     def convert(lst):
         """
-        $typecasts:converts$ a $list:list$ of numbers into a $list:list$ of letters, letter values are assigned consecutively beginning at the index 0, creating a new $key:item$ in new $list:list$ when -1 is in the $inputted:inputted$ $list:list$
+        converts a $list:list$ of numbers into a $list:list$ of letters, letter values are assigned consecutively beginning at the index 0, creating a new item in new $list:list$ when -1 is in the inputted $list:list$
         """
         
   subset: first_failure
@@ -870,7 +870,7 @@
   prompt: |-
     def convert(lst):
         """
-        create a new $list:list$ with stings of letters, $inputted:inputted$ numbers correspond to the index in the alphabet beginning at zero, begins a new $key:item$ in the new $list:list$ when '-1' is passed
+        create a new $list:list$ with $strings:stings$ of letters, inputted numbers correspond to the index in the alphabet beginning at zero, begins a new item in the new $list:list$ when '-1' is passed
         """
         
   subset: last_failure
@@ -887,7 +887,7 @@
   prompt: |-
     def convert(lst):
         """
-        User $inputs:inputs$ a $list:list$ of $integers:integers$ from 0-25. Function $typecasts:converts$ $integers:integers$ into letters by matching the number with the corresponding letter of the alphabet. Function would $return:return$ a $list:list$ of letters. When the user $inputs:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. 
+        User $provides:inputs$ a $list:list$ of $integers:integers$ from 0-25. Function converts $integers:integers$ into letters by matching the number with the corresponding letter of the alphabet. Function would $return:return$ a $list:list$ of letters. When the user $provides:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. 
         """
         
   subset: first_failure
@@ -904,7 +904,7 @@
   prompt: |-
     def convert(lst):
         """
-        User $inputs:inputs$ a $list:list$ of numbers ranging from -1 to 25, and function $returns:outputs$ a $list:list$ of the corresponding letters and line breaks. Function $typecasts:converts$ the $integers:integers$ from 0-25 into letters by matching the number with the corresponding letter of the alphabet. When the user $inputs:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. Function should $return:return$ a $list:list$ of the letters.
+        User $provides:inputs$ a $list:list$ of numbers ranging from -1 to 25, and function $returns:outputs$ a $list:list$ of the corresponding letters and line breaks. Function converts the $integers:integers$ from 0-25 into letters by matching the number with the corresponding letter of the alphabet. When the user $provides:inputs$ -1, function should end current $string:string$ in $list:list$ and start a new $string:string$. Function should $return:return$ a $list:list$ of the letters.
         """
         
   subset: last_failure
@@ -921,7 +921,7 @@
   prompt: |-
     def convert(lst):
         """
-        $typecast:change$ numbers to letters matching the order of the alphabet starting at 0 as A
+        changes numbers to letters matching the order of the alphabet starting at 0 as A
         """
         
   subset: first_failure
@@ -938,7 +938,7 @@
   prompt: |-
     def convert(lst):
         """
-        $typecast:change$ numbers to letters matching the order of the alphabet starting at 0 as A, and grouping the $return:output$ as one $string:string$ in a $list:list$, using -1 as places to slice. 
+        change numbers to letters matching the order of the alphabet starting at 0 as A, and grouping the $return:output$ as one $string:string$ in a $list:list$, using -1 as places to slice. 
         """
         
   subset: last_success
@@ -989,7 +989,7 @@
   prompt: |-
     def convert(lst):
         """
-        each number in the $input:input$ $list:set$ corresponds to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being B, etc. the code will $return:produce$ a $list:list$ of $strings:strings$ that correspond to the given numbers in the $input:input$ $list:set$, creating a new $string:string$ only when there is a -1 in the $input:input$.
+        each number in the input $list:set$ corresponds to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being B, etc. the code will $return:produce$ a $list:list$ of $strings:strings$ that correspond to the given numbers in the input $list:set$, creating a new $string:string$ only when there is a -1 in the $parameter:input$.
         """
         
   subset: first_failure
@@ -1006,7 +1006,7 @@
   prompt: |-
     def convert(lst):
         """
-        each number in the $input:input$ $list:set$ corresponds to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being B, etc. the code will $return:return$ a $list:list$ of $Strings:Strings$ parsed from the given numbers, with each -1 in the $input:input$ signifying a separate $string:string$. 
+        each number in the input $list:set$ corresponds to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being B, etc. the code will $return:return$ a $list:list$ of $Strings:Strings$ parsed from the given numbers, with each -1 in the $parameter:input$ signifying a separate $string:string$. 
         """
         
   subset: last_failure
@@ -1023,7 +1023,7 @@
   prompt: |-
     def convert(lst):
         """
-        This function $typecasts:converts$ $integers:integers$ to its corresponding letter in the alphabet.
+        This function converts $integers:integers$ to its corresponding letter in the alphabet.
         """
         
   subset: first_failure
@@ -1041,7 +1041,7 @@
   prompt: |-
     def convert(lst):
         """
-        Letters A-Z correspond with numbers 0-25. This function creates a $string:string$ by replacing the given number with its corresponding number. $Input:Input$ "-1" starts a new $return:output$.
+        Letters A-Z correspond with numbers 0-25. This function creates a $string:string$ by replacing the given number with its corresponding number. Input "-1" starts a new output.
         """
         
   subset: last_failure
@@ -1059,7 +1059,7 @@
   prompt: |-
     def convert(lst):
         """
-        The absolute values from 0 to 25 correspond to the letters of the alphabet. $Take:Take$ the numbers in a given $string:string$ and replace them with the letters of the alphabet.
+        The absolute values from 0 to 25 correspond to the letters of the alphabet. Take the numbers in a given $string:string$ and replace them with the letters of the alphabet.
         """
         
   subset: first_failure
@@ -1094,7 +1094,7 @@
   prompt: |-
     def convert(lst):
         """
-        $Typecast:Convert$ numbers to letters. 0 = A, 1 = B, 2 = C, and so on. -1 = a space.
+        Convert numbers to letters. 0 = A, 1 = B, 2 = C, and so on. -1 = a space.
         """
         
   subset: first_failure
@@ -1115,7 +1115,7 @@
         """
         $Typecast:Convert$ numbers to letters. 0 = A, 1 = B, 2 = C, and so on. 
 
-    $Return:Return$ $strings:strings$ of letters with no spaces. A -1 in lst indicates the start of a new $string:string$. Separate $strings:strings$ with commas. Enclose the new $list:list$ with $lists:brackets$.
+    $Return:Return$ $strings:strings$ of letters with no spaces. A -1 in lst indicates the start of a new $string:string$. Separate $strings:strings$ with commas. Enclose the new $list:list$ with brackets.
         """
         
   subset: last_failure
@@ -1132,7 +1132,7 @@
   prompt: |-
     def convert(lst):
         """
-        Given a $list:list$, $returns:returns$ a $list:list$ with the letter corresponding to each number in the $inputted:inputted$ $list:list$. If there is a negative one, the corresponding letters should be $returned:printed$ as a separate $key:item$ in the $list:list$. Otherwise, the corresponding letters should be $concatenated:combined$ as one $string:string$ in the $list:list$.
+        Given a $list:list$, $returns:returns$ a $list:list$ with the letter corresponding to each number in the inputted $list:list$. If there is a negative one, the corresponding letters should be $returned:printed$ as a separate item in the $list:list$. Otherwise, the corresponding letters should be $concatenated:combined$ as one $string:string$ in the $list:list$.
         """
         
   subset: first_failure
@@ -1149,7 +1149,7 @@
   prompt: |-
     def convert(lst):
         """
-        Given a $list:list$, $returns:returns$ a $list:list$ with letters from the alphabet that correspond to the index in the $inputted:inputted$ $list:list$, starting from zero. Letters in the $returned:returned$ $list:list$ should be capitalized. Until a negative one is in the $list:list$, letters should be $concatenated:combined$ as one $string:string$. When a negative one is reached this combination of letters can be $inserted:inserted$ into the $list:list$. A negative one indicates a new $key:item$ in the $list:list$.
+        Given a $list:list$, $returns:returns$ a $list:list$ with letters from the alphabet that correspond to the index in the inputted $list:list$, starting from zero. Letters in the returned $list:list$ should be capitalized. Until a negative one is in the $list:list$, letters should be $concatenated:combined$ as one $string:string$. When a negative one is reached this combination of letters can be $inserted:inserted$ into the $list:list$. A negative one indicates a new item in the $list:list$.
         """
         
   subset: last_failure
@@ -1183,7 +1183,7 @@
   prompt: |-
     def convert(lst):
         """
-        Each $string:character$ in the alphabet is assigned an index value starting with A =0. $Take:Take$ each $key:item$ in the $list:list$ and $insert:add$ the corresponding $string:character$ to a $string:string$. If -1, start the next $string:character$ with a new $string:string$.
+        Each character in the alphabet is assigned an index value starting with A =0. Take each item in the $list:list$ and $concatenate:add$ the corresponding character to a $string:string$. If -1, start the next character with a new $string:string$.
         """
         
   subset: first_failure
@@ -1202,7 +1202,7 @@
   prompt: |-
     def convert(lst):
         """
-        Each $string:character$ in the alphabet is assigned an index value starting with A =0. $Take:Take$ each $key:item$ in the $list:list$ and $insert:add$ the corresponding $string:character$ to a $string:string$. When -1 appears make a new $string:string$ and $insert:add$ the following $strings:characters$ to it. $return:return$ a $list:list$ of $strings:strings$.
+        Each character in the alphabet is assigned an index value starting with A =0. Take each item in the $list:list$ and $concatenate:add$ the corresponding character to a $string:string$. When -1 appears make a new $string:string$ and $concatenate:add$ the following characters to it. $return:return$ a $list:list$ of $strings:strings$.
         """
         
   subset: last_success
@@ -1896,7 +1896,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $takes:takes$ in a $list:list$ of numbers. create a ODD $list:list$ of odd numbers 1 through 10. $returns:returns$ the $list:list$ of numbers with numbers in ODD $skipped:removed$.
+        $takes:takes in$ a $list:list$ of numbers. create a ODD $list:list$ of odd numbers 1 through 10. $returns:returns$ the $list:list$ of numbers with numbers in ODD removed.
         """
         
   subset: last_success
@@ -1913,7 +1913,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ odd interger number
+        remove odd $integer:interger$ number
 
         """
         
@@ -1930,7 +1930,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ $integer:int$ $key:element$ which are odd
+        remove $integer:int$ element which are odd
         """
         
   subset: last_failure
@@ -1963,7 +1963,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        for values with the $integer:int$ type in the given $list:list$, deletes $integers:ints$ that are odd from the $list:list$, $returns:returns$ the $inserted:appended$ $list:list$
+        for values with the $integer:int$ type in the given $list:list$, deletes $integers:ints$ that are odd from the $list:list$, $returns:returns$ the appended $list:list$
         """
         
   subset: last_failure
@@ -1980,7 +1980,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        Function $skips:removes$ all odd $integers:integers$ from $list:list$. Function would keep all values if they have decimal points. $Returns:Returns$ $list:list$.
+        Function removes all odd $integers:integers$ from $list:list$. Function would keep all values if they have decimal points. $Returns:Returns$ $list:list$.
         """
         
   subset: first_failure
@@ -1996,7 +1996,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        Function $skips:removes$ all odd $integers:integers$ from $list:list$ . $Returns:Returns$ $list:list$.
+        Function removes all odd $integers:integers$ from $list:list$ . $Returns:Returns$ $list:list$.
         """
         
   subset: last_failure
@@ -2033,7 +2033,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ the odd numbers in the $list:list$ of numbers
+        remove the odd numbers in the $list:list$ of numbers
         """
         
   subset: last_failure
@@ -2050,7 +2050,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $Skip:Remove$ numbers that are not an even number or a float from the lst. 
+        Remove numbers that are not an even number or a float from the lst. 
         """
         
   subset: first_failure
@@ -2083,7 +2083,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ only the odd $integers:integers$ from given $list:list$ 
+        remove only the odd $integers:integers$ from given $list:list$ 
         """
         
   subset: first_failure
@@ -2100,7 +2100,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        if the value in the $list:list$ is an $integer:integer$, evaluate if it is odd and $skip:remove$ from the $list:list$ if it is odd.
+        if the value in the $list:list$ is an $integer:integer$, evaluate if it is odd and remove from the $list:list$ if it is odd.
         """
         
   subset: last_failure
@@ -2116,7 +2116,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        This function $skips:removes$ odd $integers:integers$ from the given $list:list$.
+        This function removes odd $integers:integers$ from the given $list:list$.
         """
         
   subset: first_failure
@@ -2134,7 +2134,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        This function $skips:removes$ odd $integers:integers$ from the $input:input$ "lst" and $returns:returns$ a $list:list$ including all of the original numbers except for the odd $integers:integers$. All floats in the given $list:list$ remain in the $list:list$.
+        This function removes odd $integers:integers$ from the $parameter:input$ "lst" and $returns:returns$ a $list:list$ including all of the original numbers except for the odd $integers:integers$. All floats in the given $list:list$ remain in the $list:list$.
         """
         
   subset: last_failure
@@ -2150,7 +2150,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $Skip:Remove$ odd numbers in a $list:list$ and $return:print$ the new $list:list$
+        Remove odd numbers in a $list:list$ and $return:print$ the new $list:list$
         """
         
   subset: first_failure
@@ -2166,7 +2166,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $Skip:Remove$ odd numbers in a $list:list$ $skipping:ignoring$ decimals and $return:print$ the $list:list$
+        Remove odd numbers in a $list:list$ $skipping:ignoring$ decimals and $return:print$ the $list:list$
         """
         
   subset: last_failure
@@ -2183,7 +2183,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $Skips:Removes$ numbers from lst if the number % 1 = 0 and the number % 2 = 1.
+        Removes numbers from lst if the number % 1 = 0 and the number % 2 = 1.
         """
         
   subset: first_success
@@ -2199,7 +2199,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $Skips:Removes$ odd $integers:integers$ from lst.
+        Removes odd $integers:integers$ from lst.
         """
         
   subset: last_failure
@@ -2216,7 +2216,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        For every $integer:whole number$ in the $inputted:inputted$ $list:list$, if that $key:item$ is not divisible by two it is $skipped:removed$ from the $list:list$. It $returns:returns$ the $list:list$ with the remaining values.
+        For every $integer:whole number$ in the inputted $list:list$, if that item is not divisible by two it is removed from the $list:list$. It $returns:returns$ the $list:list$ with the remaining values.
         """
         
   subset: first_failure
@@ -2233,7 +2233,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        For every $key:item$ in the $inputted:inputted$ $list:list$, if that $key:item$ is a float it is kept in the $list:list$. Otherwise, if that $key:item$ is then not divisible by two, it is $skipped:removed$ from the $list:list$. It $returns:returns$ the $list:list$ with the remaining values.
+        For every item in the inputted $list:list$, if that item is a float it is kept in the $list:list$. Otherwise, if that item is then not divisible by two, it is removed from the $list:list$. It $returns:returns$ the $list:list$ with the remaining values.
         """
         
   subset: last_failure
@@ -2249,7 +2249,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ odd numbers from the $list:list$
+        remove odd numbers from the $list:list$
         """
         
   subset: first_failure
@@ -2265,7 +2265,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        $skip:remove$ odd $integers:whole numbers$ from the $list:list$
+        remove odd $integers:whole numbers$ from the $list:list$
         """
         
   subset: last_failure
@@ -2282,7 +2282,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        For each object in the $list:list$, $skip:remove$ it if it is an odd $integer:integer$. $Return:Return$ the $list:list$.
+        For each object in the $list:list$, remove it if it is an odd $integer:integer$. $Return:Return$ the $list:list$.
         """
         
   subset: first_failure
@@ -2299,7 +2299,7 @@
   prompt: |-
     def remove_odd(lst):
         """
-        For each object in the $list:list$, if it is and $integer:integer$ then check if it is odd and if it is odd then $skip:remove$ it. $Return:Return$ the $list:list$.
+        For each object in the $list:list$, if it is and $integer:integer$ then check if it is odd and if it is odd then remove it. $Return:Return$ the $list:list$.
         """
         
   subset: last_failure

@@ -105,17 +105,28 @@ def gravis_plot(graph:Graph, filepath:str):
             show_node_label=True,
             show_edge_label=True,
             edge_label_data_source="tags",
-            node_label_data_source="label_with_tags",
+            use_links_force= False
+            # node_label_data_source="label_with_tags",
             # show_menu=True
             )
     
-    html_legend= generate_legend_html(graph.get_legend())
+    def format_node_tags(username, tags):
+        if username not in tags.keys():
+            return username
+        else:
+            tags = tags[username]
+            if len(username) == len("student0"):
+                username = username+"  "
+            return f"{username} : {tags}"
+            
+    color_legend = graph.get_legend()
+    start_node_tags = graph.get_start_node_states()
+    legend = {format_node_tags(k, start_node_tags):v for k,v in color_legend.items()}
+    html_legend= generate_legend_html(legend)
     with open(filepath, "w") as fp:
         fp.write(fig.to_html().replace(HTML_HEADER, HTML_HEADER + "\n" + html_legend))
 
 def main(args):
-    KNOWN_ISSUES = ["exp"]
-    
     graph : Graph = load_graph(args.graph_yaml)
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)

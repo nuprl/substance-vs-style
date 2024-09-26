@@ -84,13 +84,18 @@ class Graph(yaml.YAMLObject):
         '#00ced1', # dark turquoise
         '#ff1493', # deep pink
         '#9400d3', # dark violet
+        '#00bfff', # deep sky blue
+        '#ff8c00', # dark orange
     ]
     student_colors: dict = {}
+    student_start_node_tags: dict = {}
     
-    def __init__(self, problem:str, nodes: List[Node],edges: List[Edge]):
+    def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], 
+                 student_start_node_tags: dict = {}):
         self.problem=problem
         self.nodes=nodes
         self.edges=edges
+        self.student_start_node_tags=student_start_node_tags
     
     def __repr__(self):
         return "%s(problem=%r, nodes=%r, edges=%r)" % (
@@ -109,7 +114,7 @@ class Graph(yaml.YAMLObject):
             stdout_text = "\n".join(node.stdout)
             stderr_text = "\n".join(node.stderr)
             if node._node_tags:
-                tags = f"tags:{str([list(t.keys())[0] for t in node._node_tags])}\n"
+                tags = f"tags:{str(list(node._node_tags))}\n"
             else:
                 tags = ""
             G.add_node(node.id, 
@@ -127,7 +132,7 @@ class Graph(yaml.YAMLObject):
                 success_nodes.append(edge.node_to.id)
             
             if edge._edge_tags:
-                tags = str([list(t.keys())[0] for t in edge._edge_tags])
+                tags = str(list(edge._edge_tags))
             else:
                 tags = []
             hover_text = (f"username:{edge.username}\nedge: ({edge.node_from.id}->{edge.node_to.id})\n" +
@@ -163,6 +168,12 @@ class Graph(yaml.YAMLObject):
 
     def get_legend(self):
         return self.student_colors
+    
+    def get_start_node_states(self):
+        return self.student_start_node_tags
+    
+    def get_students(self):
+        return sorted(list(set([e.username for e in self.edges])))
         
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:

@@ -134,7 +134,6 @@ def main(args):
         problem_graph = parse_graph(problem_ds, problem)
         
         with open(f"{args.outputdir}/{problem}.yaml", "w") as fp:
-            # yaml.Dumper.ignore_aliases = lambda *args : True
             yaml.dump(problem_graph, fp, default_style="|")
         
         # sanity check

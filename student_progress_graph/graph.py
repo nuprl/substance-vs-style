@@ -85,7 +85,6 @@ class Graph(yaml.YAMLObject):
         '#ff1493', # deep pink
         '#9400d3', # dark violet
         '#00bfff', # deep sky blue
-        '#ff8c00', # dark orange
     ]
     student_colors: dict = {}
     student_start_node_tags: dict = {}

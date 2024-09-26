@@ -20,7 +20,7 @@ but both are needed
 '''
 def inspect_multi_edges(graph:Graph)->dict:
     """
-    Write diffs into a format easy to analyse for point 0,1
+    Write diffs into a format easy to analyse
     """
     edge_to_diffs = {}
     for edge in graph.edges:
@@ -31,7 +31,7 @@ def inspect_multi_edges(graph:Graph)->dict:
             edge_to_diffs[key].append(edge.diff.replace(" \n", "\n"))
     return {k:v for k,v in edge_to_diffs.items() if len(v) > 1}
 
-def _compute_new_state(prev_state, changes):
+def _compute_next_state(prev_state, changes):
     if prev_state is None:
         prev_state = []
     prev_state = set(prev_state)
@@ -68,7 +68,7 @@ def progress_summary(graph: Graph)->dict:
             else:
                 prev_state = attempt_final_states[-1][-1]
                 changes = attempt[2]
-                attempt.append(_compute_new_state(prev_state, changes))
+                attempt.append(_compute_next_state(prev_state, changes))
                 attempt_final_states.append(attempt)
     
         student_to_attempt_tags[student] = attempt_final_states
@@ -76,7 +76,7 @@ def progress_summary(graph: Graph)->dict:
 
 def get_clusters(problem_summary):
     """
-    For each each, collect the state reached (diff clusters)
+    For each edge, collect the state reached (diff clusters)
     """
     edge_to_state = {}
     for student,attempts in problem_summary.items():
@@ -93,7 +93,7 @@ def get_clusters(problem_summary):
 
 def get_paths(problem_summary):
     """
-    For each each, collect the state reached (diff clusters)
+    For each student, collect path
     """
     student_to_trace = {}
     for student,attempts in problem_summary.items():

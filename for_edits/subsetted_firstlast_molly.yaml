@@ -4568,7 +4568,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        This function $takes:takes$ in a number and $inserts:adds$ one if the number is greater than 9. If the number is negative it $typecasts:turns$ into a positive number. If it is a single-digit number it $inserts:adds$ the $integer:integer$ zero to the end of the number and $returns:returns$ an $integer:integer$. Then the $return:output$ is $returned:returned$ with the updated number.
+        This function $takes:takes in$ a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the $integer:integer$ zero to the end of the number and $returns:returns$ an $integer:integer$. Then the output is $returned:returned$ with the updated number.
         """
         
   subset: last_success
@@ -4587,7 +4587,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The function $takes:takes$ an $integer:integer$ as $input:input$. If the $integer:integer$ is negative, the function $returns:returns$ it as positive. If the $integer:integer$ only has one digit, the function $returns:returns$ a value of 10. If the $integer:integer$ is positive and two or more digits, the function $returns:returns$ the $integer:integer$ plus one. 
+        The function $takes:takes$ an $integer:integer$ as $parameter:input$. If the $integer:integer$ is negative, the function $returns:returns$ it as positive. If the $integer:integer$ only has one digit, the function $returns:returns$ a value of 10. If the $integer:integer$ is positive and two or more digits, the function $returns:returns$ the $integer:integer$ plus one. 
         """
         
   subset: first_failure
@@ -4606,7 +4606,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The function $takes:takes$ an $integer:integer$ as $input:input$. If the $integer:integer$ is negative, the function $returns:returns$ the absolute value of the $integer:integer$. If the $integer:integer$ only has one digit, the function $returns:returns$ a value of 10. If the $integer:integer$ is positive and two or more digits, the function $returns:returns$ the $integer:integer$ plus one. 
+        The function $takes:takes$ an $integer:integer$ as $parameter:input$. If the $integer:integer$ is negative, the function $returns:returns$ the absolute value of the $integer:integer$. If the $integer:integer$ only has one digit, the function $returns:returns$ a value of 10. If the $integer:integer$ is positive and two or more digits, the function $returns:returns$ the $integer:integer$ plus one. 
         """
         
   subset: last_success
@@ -4625,7 +4625,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The purpose of the function is to $typecast:convert$ the $input:input$ score into a number that is greater than or equal to 10. If a negative number is $provided:provided$, it is to be $typecasted:converted$ into a positive number and if its value is less than 10, it should become 10. If a positive single digit is $provided:provided$, it should be $typecasted:converted$ into 10. If a positive double-digit number is $provided:provided$, its value is to be increased by 1.
+        The purpose of the function is to convert the $parameter:input$ score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number is provided, its value is to be increased by 1.
         """
         
   subset: first_failure
@@ -4644,7 +4644,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The purpose of the function is to $typecast:convert$ the $input:input$ score into a number that is greater than or equal to 10. If a negative number is $provided:provided$, it is to be $typecasted:converted$ into a positive number and if its value is less than 10, it should become 10. If a positive single digit is $provided:provided$, it should be $typecasted:converted$ into 10. If a positive double-digit number (including 10) is given as initial $input:input$, its value is to be increased by 1.
+        The purpose of the function is to convert the $parameter:input$ score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number (including 10) is given as initial $parameter:input$, its value is to be increased by 1.
         """
         
   subset: last_failure
@@ -4663,7 +4663,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        if the $input:input$ is less than 10, the function will $return:return$ 10. if the $input:input$ is greater than or equal to 10, the function will $insert:add$ 1 to the $input:input$.
+        if the $parameter:input$ is less than 10, the function will $return:return$ 10. if the $parameter:input$ is greater than or equal to 10, the function will add 1 to the $parameter:input$.
         """
         
   subset: first_success
@@ -4684,9 +4684,9 @@
   prompt: |-
     def increaseScore(score):
         """
-        If the $input:input$ is a negative number, $return:return$ the absolute value. 
-    If the $input:input$ is less than 10, $return:return$ 10. 
-    If the $input:input$ is greater than or equal to 10, increase the value by 1. 
+        If the $parameter:input$ is a negative number, $return:return$ the absolute value. 
+    If the $parameter:input$ is less than 10, $return:return$ 10. 
+    If the $parameter:input$ is greater than or equal to 10, increase the value by 1. 
         """
         
   subset: first_success
@@ -4705,7 +4705,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The $input:input$ is an $integer:integer$. If the number is negative, make it positive. Otherwise, $insert:add$ one.
+        The $parameter:input$ is an $integer:integer$. If the number is negative, make it positive. Otherwise, add one.
         """
         
   subset: first_failure
@@ -4724,7 +4724,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The $input:input$ is an $integer:integer$. If the number is below 10, make it 10. Else, $insert:add$ one to it.
+        The $parameter:input$ is an $integer:integer$. If the number is below 10, make it 10. Else, add one to it.
         """
         
   subset: last_success
@@ -4743,7 +4743,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        $takes:takes$ an $integer:integer$ and $returns:returns$ an $integer:integer$ whose one's place digit is one more than before. if the $inputted:inputted$ $integer:integer$ is negative, $returns:returns$ the absolute value of the $integer:integer$
+        $takes:takes$ an $integer:integer$ and $returns:returns$ an $integer:integer$ whose one's place digit is one more than before. if the inputted $integer:integer$ is negative, $returns:returns$ the absolute value of the $integer:integer$
         """
         
   subset: first_failure
@@ -4762,7 +4762,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        $takes:takes$ an $integer:integer$ as the $input:input$. if the $inputted:inputted$ $integer:integer$ is negative, $returns:returns$ the absolute value of the $integer:integer$. if the $inputted:inputted$ $integer:integer$ is positive and is greater than 9, $returns:returns$ an $integer:integer$ whose one's place digit is one more than before. for all other case, $returns:returns$ an $integer:integer$ that $inserts:adds$ a zero in the one's place
+        $takes:takes$ an $integer:integer$ as the $parameter:input$. if the inputted $integer:integer$ is negative, $returns:returns$ the absolute value of the $integer:integer$. if the inputted $integer:integer$ is positive and is greater than 9, $returns:returns$ an $integer:integer$ whose one's place digit is one more than before. for all other case, $returns:returns$ an $integer:integer$ that adds a zero in the one's place
         """
         
   subset: last_success
@@ -4781,7 +4781,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The function $takes:takes$ in an $integer:int$ score as $parameter:parameter$. If the score is negative, it $returns:returns$ a positive number. If the score is a single digit, it $inserts:adds$ a 0 at the end of the number and $returns:returns$ it. Otherwise, the function just $returns:returns$ score + 1. 
+        The function $takes:takes in$ an $integer:int$ score as $parameter:parameter$. If the score is negative, it $returns:returns$ a positive number. If the score is a single digit, it adds a 0 at the end of the number and $returns:returns$ it. Otherwise, the function just $returns:returns$ score + 1. 
         """
         
   subset: first_failure
@@ -4800,7 +4800,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The function $takes:takes$ in an $integer:int$ score as $parameter:parameter$. If the score is negative, it $returns:returns$ a positive number. If the score is a single digit, it $inserts:adds$ a 0 at the end of the number, $typecasts:casts$ it back into an $integer:int$ and $returns:returns$ it. Otherwise, the function just $returns:returns$ score + 1. 
+        The function $takes:takes in$ an $integer:int$ score as $parameter:parameter$. If the score is negative, it $returns:returns$ a positive number. If the score is a single digit, it $concatenates:adds$ a 0 at the end of the number, $typecasts:casts$ it back into an $integer:int$ and $returns:returns$ it. Otherwise, the function just $returns:returns$ score + 1. 
         """
         
   subset: last_success
@@ -4819,7 +4819,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        This function $takes:takes$ in a number and $returns:outputs$ a new one, if the number is less than 10, the new number will simply be 10, and if it is 10 or greater, the new number will be the original number plus 1. The new number is $returned:outputted$. 
+        This function $takes:takes in$ a number and $returns:outputs$ a new one, if the number is less than 10, the new number will simply be 10, and if it is 10 or greater, the new number will be the original number plus 1. The new number is $returned:outputted$. 
         """
         
   subset: first_success
@@ -4876,7 +4876,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        $Provide:Enter$ an $integer:integer$. if the $integer:integer$ is negative, multiply the $integer:integer$ by -1. if the $integer:integer$ is greater than 9, $insert:add$ 1. if the $integer:integer$ is less than 10, multiply bny 10.
+        $Provide:Enter$ an $integer:integer$. if the $integer:integer$ is negative, multiply the $integer:integer$ by -1. if the $integer:integer$ is greater than 9, add 1. if the $integer:integer$ is less than 10, multiply bny 10.
 
         """
         
@@ -4896,7 +4896,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        $Inserts:Adds$ one to positive numbers, $typecasts:turns$ negative numbers into its absolute value
+        Adds one to positive numbers, turns negative numbers into its absolute value
         """
         
   subset: first_failure
@@ -4915,7 +4915,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        def increaseScore(score): $takes:takes$ $input:input$ '-10' and $returns:outputs$ its positive $integer:integer$
+        def increaseScore(score): $takes:takes$ $parameter:input$ '-10' and $returns:outputs$ its positive $integer:integer$
         """
         
   subset: first_failure
@@ -4936,9 +4936,9 @@
   prompt: |-
     def increaseScore(score):
         """
-        def increaseScore(score): $takes:takes$ $input:input$ '-10' and $returns:outputs$ its positive $integer:integer$
-    def increaseScore(score): $inputs:inputs$ '1' and $inserts:adds$ 9
-    def increaseScore(score): $inserts:adds$ 1 to each $input:input$ '10', '15', '20'
+        def increaseScore(score): $takes:takes$ $parameter:input$ '-10' and $returns:outputs$ its positive $integer:integer$
+    def increaseScore(score): $takes:inputs$ '1' and adds 9
+    def increaseScore(score): adds 1 to each $parameter:input$ '10', '15', '20'
         """
         
   subset: last_success
@@ -4957,7 +4957,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        $Takes:Takes$ the absolute value of an $integer:integer$ if it is negative, multiplies an $integer:integer$ by 10 if it is positive and less than 10 and $inserts:adds$ 1 to an $integer:integer$ if it is equal to 10 or greater than 10
+        $Takes:Takes$ the absolute value of an $integer:integer$ if it is negative, multiplies an $integer:integer$ by 10 if it is positive and less than 10 and adds 1 to an $integer:integer$ if it is equal to 10 or greater than 10
         """
         
   subset: first_success
@@ -5158,7 +5158,7 @@
     def getSeason(month):
         """
         Has a $list:list$ of all months in order. Index 0 of the $list:list$ is '0', and the rest of the indexes corresponding to the correct month. Has a $dictionary:dictionary$ matching a season to a month. 
-    for each $key:key$, value in the $dictionary:dictionary$, if the $inputted:inputted$ month is in the $list:list$ of values, $returns:returns$ the $key:key$ that is matched with that value.
+    for each $key:key$, value in the $dictionary:dictionary$, if the inputted month is in the $list:list$ of values, $returns:returns$ the $key:key$ that is matched with that value.
         """
         
   subset: last_failure
@@ -5212,7 +5212,7 @@
   prompt: |-
     def getSeason(month):
         """
-        This function $takes:takes$ one $parameter:parameter$, month. Month represents the months in a year. The code should $take:take$ seasons associated with that month and $return:print$ the associated season of that month. 
+        This function $takes:takes$ one $parameter:parameter$, month. Month represents the months in a year. The code should take seasons associated with that month and $return:print$ the associated season of that month. 
         """
         
   subset: first_failure
@@ -5284,7 +5284,7 @@
   prompt: |-
     def getSeason(month):
         """
-        The goal for this function, getSeason is when $provided:provided$ with a month of the year to $return:return$ what season that belongs to. 
+        The goal for this function, getSeason is when provided with a month of the year to $return:return$ what season that belongs to. 
         """
         
   subset: first_failure
@@ -5302,7 +5302,7 @@
   prompt: |-
     def getSeason(month):
         """
-        The goal for this function, getSeason is when $provided:provided$ a month of the year to $return:return$ what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. The $input:input$ should be $typecasted:converted$ to a numerical value before giving $returning:returning$ the season.
+        The goal for this function, getSeason is when provided a month of the year to $return:return$ what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. The $parameter:input$ should be converted to a numerical value before giving $returning:returning$ the season.
         """
         
   subset: last_failure
@@ -5356,7 +5356,7 @@
   prompt: |-
     def getSeason(month):
         """
-        The functions $take:take$ in a $string:string$, representing a month, then $returns:outputs$ the season commonly associated with that month.
+        The functions $take:take in$ a $string:string$, representing a month, then $returns:outputs$ the season commonly associated with that month.
         """
         
   subset: first_failure
@@ -5374,7 +5374,7 @@
   prompt: |-
     def getSeason(month):
         """
-        The functions $take:take$ in a $string:string$, representing a month in with the first letter being upper case, then $returns:outputs$ the season commonly associated with that month, in lower case.
+        The functions $take:take in$ a $string:string$, representing a month in with the first letter being upper case, then $returns:outputs$ the season commonly associated with that month, in lower case.
         """
         
   subset: last_success
@@ -5392,7 +5392,7 @@
   prompt: |-
     def getSeason(month):
         """
-        "January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the $input:input$"
+        "January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the $parameter:input$"
         """
         
   subset: first_failure
@@ -5410,7 +5410,7 @@
   prompt: |-
     def getSeason(month):
         """
-        "January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the $input:input$, $return:produce$ an all lower case $string:string$"
+        "January, February, March is winter, April, May, June is spring, July, August, September is summer, October, November, December is fall, determine the class of the $parameter:input$, $return:produce$ an all lower case $string:string$"
         """
         
   subset: last_success
@@ -5464,7 +5464,7 @@
   prompt: |-
     def getSeason(month):
         """
-        Write a function that $takes:gets$ the name of the month and $returns:returns$ the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, $provide:provide$ the $return:return$ statement as 'fall'.
+        Write a function that $takes:gets$ the name of the month and $returns:returns$ the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, $return:provide$ the return statement as 'fall'.
         """
         
   subset: last_success
@@ -5500,7 +5500,7 @@
   prompt: |-
     def getSeason(month):
         """
-        This function $inputs:inputs$ the $string:string$ of a month and $returns:returns$ the name of the season it is in (in the northern hemisphere)
+        This function $takes:inputs$ the $string:string$ of a month and $returns:returns$ the name of the season it is in (in the northern hemisphere)
         """
         
   subset: first_failure

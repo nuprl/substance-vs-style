@@ -102,6 +102,10 @@ def gravis_plot(graph:Graph, filepath:str):
             node_hover_tooltip=True,
             edge_hover_tooltip=True,
             graph_height=700, zoom_factor=2.5,
+            show_node_label=True,
+            show_edge_label=True,
+            edge_label_data_source="tags",
+            node_label_data_source="label_with_tags",
             # show_menu=True
             )
     

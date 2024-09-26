@@ -7,7 +7,7 @@ from datasets import Dataset, disable_caching
 from datasets.utils.logging import disable_progress_bar
 from multiprocessing import cpu_count
 from .graph_utils import anonimize_filename, get_diff, extract_error_message, load_graph
-from .graph import Graph, Node, Edge, find_node, compute_state, node_constructor, edge_constructor, graph_constructor
+from .graph import Graph, Node, Edge, find_node, compute_state
 from typing import List
 from tqdm import tqdm
 import os
@@ -134,11 +134,12 @@ def main(args):
         problem_graph = parse_graph(problem_ds, problem)
         
         with open(f"{args.outputdir}/{problem}.yaml", "w") as fp:
-            yaml.dump(problem_graph, fp)
+            # yaml.Dumper.ignore_aliases = lambda *args : True
+            yaml.dump(problem_graph, fp, default_style="|")
         
         # sanity check
         new_problem = load_graph(f"{args.outputdir}/{problem}.yaml")
-            
+        
         assert new_problem == problem_graph
         
 if __name__=="__main__":

@@ -1,8 +1,8 @@
-from dataclasses import dataclass
 from typing import List, Literal, Union
 from pathlib import Path
 import yaml
 import networkx as nx
+from dataclasses import dataclass
 
 State = Literal['success','fail','neutral']
 
@@ -12,14 +12,16 @@ class Node(yaml.YAMLObject):
     """
     yaml_tag = u'!Node'
     
-    def __init__(self, id: int, stdout: List[str], stderr: List[str]):
+    def __init__(self, id: int, stdout: List[str], stderr: List[str], 
+                _node_tags: Union[None, List[str]] = None):
         self.id = id
         self.stdout = stdout
         self.stderr = stderr
+        self._node_tags = _node_tags
     
     def __repr__(self):
-        return "%s(id=%r, stdout=%r, stderr=%r)" % (
-        self.id, self.stdout, self.stderr)
+        return "%s(id=%r, stdout=%r, stderr=%r, _node_tags=%r)" % (
+        self.id, self.stdout, self.stderr, self._node_tags)
         
     def __eq__(self, other):
         return (self.id == other.id and self.stdout == other.stdout
@@ -29,8 +31,8 @@ class Node(yaml.YAMLObject):
         stdout = "\n".join(self.stdout)
         stderr = "\n".join(self.stderr)
         return hash(str(self.id) + stdout + "\n" + stderr)
-        
-@dataclass
+
+@dataclass  
 class Edge(yaml.YAMLObject):
     """
     Represents a student edit
@@ -47,14 +49,16 @@ class Edge(yaml.YAMLObject):
     attempt_id: int
     total_attempts: int
     state: State
+    _edge_tags: Union[None, List[str]] = None
     
     def __repr__(self):
-        return "%s(node_from=%r, node_to=%r, username=%r" + \
+        return "%s(_edge_tags=%r node_from=%r, node_to=%r, username=%r" + \
         " prompt_from=%r prompt_to=%r completion_from=%r completion_to=%r" + \
         " diff=%r attempt_id=%r total_attempts=%r state=%r)" % (
-        self.node_from, self.node_to, self.username, self.prompt_from,
+        self._edge_tags, self.node_from, self.node_to, self.username, self.prompt_from,
         self.prompt_to, self.completion_from, self.completion_to, self.diff,
         self.attempt_id, self.total_attempts, self.state)
+        
 
 class Graph(yaml.YAMLObject):
     """
@@ -104,18 +108,28 @@ class Graph(yaml.YAMLObject):
         for node in self.nodes:
             stdout_text = "\n".join(node.stdout)
             stderr_text = "\n".join(node.stderr)
+            if node._node_tags:
+                tags = f"tags:{str([list(t.keys())[0] for t in node._node_tags])}\n"
+            else:
+                tags = ""
             G.add_node(node.id, 
                        stderr=node.stderr,
                        stdout=node.stdout,
                        color=self.BASE_NODE_COLOR,
-                       hover=f"stdout:\n{stdout_text}\nstderr:\n{stderr_text}")
+                       label_with_tags=f"{node.id}:{tags.replace('tags:','')}",
+                       tags=tags,
+                       hover=f"{tags}stdout:\n{stdout_text}\nstderr:\n{stderr_text}")
         
         # add edges
         success_nodes = []
         for edge in self.edges:
             if edge.state == "success":
                 success_nodes.append(edge.node_to.id)
-                
+            
+            if edge._edge_tags:
+                tags = str([list(t.keys())[0] for t in edge._edge_tags])
+            else:
+                tags = []
             hover_text = (f"username:{edge.username}\nedge: ({edge.node_from.id}->{edge.node_to.id})\n" +
                         f"state:{edge.state}\n" +
                         f"attempt_num:{edge.attempt_id}/{edge.total_attempts}\n"+
@@ -136,6 +150,7 @@ class Graph(yaml.YAMLObject):
                 total_attempts=edge.total_attempts, attempt_id=edge.attempt_id,
                 diff=edge.diff, username=edge.username, state=edge.state,
                 hover = hover_text,
+                tags= tags,
                 color= color
             )
         
@@ -149,18 +164,6 @@ class Graph(yaml.YAMLObject):
     def get_legend(self):
         return self.student_colors
         
-def graph_constructor(loader, node) :
-    fields = loader.construct_mapping(node)
-    return Graph(**fields)
-
-def node_constructor(loader, node) :
-    fields = loader.construct_mapping(node)
-    return Node(**fields)
-
-def edge_constructor(loader, node) :
-    fields = loader.construct_mapping(node)
-    return Edge(**fields)
-
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:
         return "success"

@@ -5,7 +5,7 @@ import re
 from typing import Union
 import difflib
 import yaml
-from .graph import graph_constructor, edge_constructor, node_constructor, Graph
+from .graph import Graph, Node, Edge
 
 def anonimize_filename(stderr: str)->str:
     return re.sub("/tmp/.*?\.py", "/tmp/file.py", stderr)
@@ -20,6 +20,19 @@ def get_diff(prev:str, new:str) -> str:
     # ndiff shows full prompt, unified_diff shows localized change
     diff = difflib.unified_diff(prev.split(),new.split())
     return ''.join(diff)
+
+def graph_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Graph(**fields)
+
+def node_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Node(**fields)
+
+def edge_constructor(loader, node) :
+    fields = loader.construct_mapping(node)
+    return Edge(**fields)
+
 
 def load_graph(filepath:str) -> Graph:
     yaml.SafeLoader.add_constructor('!Graph', graph_constructor)

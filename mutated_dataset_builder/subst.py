@@ -5,7 +5,6 @@ This would replace all words in the “return” category with variations of “
 """
 import datasets
 from pathlib import Path
-import spacy
 import json
 import argparse
 import re

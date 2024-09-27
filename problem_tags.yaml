@@ -1,0 +1,119 @@
+# modifiers can be L,M,D,A
+# A: added this clue
+# D: deleted this clue
+# L: rewrote this clue with less detail [can be wrong]
+# M: rewrote this clue with more detail [detail can be wrong]
+# 0: no diff or trivial rewrite # semantically equivalent rewrite, adds no clues
+add_int:
+  tests:
+    - input: |
+        ['hello', 'aaa', 'bbb', 'ccc', 1, 4], 5
+      output: |
+        ['hello5', 'aaa5', 'bbb5', 'ccc5', 6, 9]
+    - input: |
+        [8, 56, 8, '5', '4'], 1
+      output: |
+        [9, 57, 9, '51', '41']
+    - input: |
+        ['hello', 'aaa', 'bbb', ['list'], 1, 4], 5
+      output: |
+        ['hello5', 'aaa5', 'bbb5', ['list'], 6, 9]
+  working_description: |
+    Given a list lst of strings and integers and integer num, concatenates num to the end of strings in lst and adds it to integers in lst.
+  signature: 'def add_int(lst, num):'
+  tags:
+    # do nothing to list, can have list of lists
+    - 1: edge case of list in list
+    # this is the variable num
+    - 2: concatenate num to strings
+    - 3: add num to integers
+    - 4: return list
+add_up:
+  tests:
+    - input: |
+        [ [ 'one', 2, 3, 4 ] ]
+      output: |
+        9
+    - input: |
+        [ [ 3, 'hello', 3.4 ] ]
+      output: |
+        6.4
+    - input: |
+        [ [ ] ]
+      output: |
+        0
+  #NOTE(arjun): This is a gotcha question, since isinstance(True, int) is True!
+  working_description: |
+    Add up all the elements in 2D array only if they are integer or float
+  signature: 'def add_up(arr):'
+  tags:
+  # using "number" counts as 2 and 3, but not "number character"
+    - 1: 2D array
+    - 2: sum integer
+    - 3: sum float
+    - 4: return the sum of all elements
+    - 5: mention 0 base case
+    - 6: misdirection - add number within string
+altText:
+  tests:
+    - input: |
+        'I love to see dolphins swim.'
+      output: |
+        'I LoVe tO SeE DoLpHiNs sWiM.'
+    - input: |
+        'computers'
+      output: |
+        'CoMpUtErS'
+    - input: |
+        't'
+      output: |
+        'T'
+  working_description: Makes every other letter in s uppercase
+  signature: |
+    def altText(s):
+  tags:
+    - -1
+assessVowels:
+  tests:
+    - input: |
+        'I ate an apple'
+      output: |
+        ['I', 'a', 'e', 'a', 'a', 'e']
+    - input: |
+        'Another string here'
+      output: |
+        ['A', 'o', 'e', 'i', 'e', 'e']
+    - input: |
+        'cAbbAge'
+      output: |
+        ['A', 'A', 'e']
+    - input: |
+        ''
+      output: |
+        []
+  working_description: |
+    Takes string as a parameter. The function should then create a list, and add all uppercase or lowercase vowels that appear in the string to the list (the vowels can repeat in the list). It should then return the list.
+  signature: |
+    def assessVowels(s):
+  tags:
+    - -1
+changeSection:
+  tests:
+    - input: |
+        'Turn towards the door.', 9
+      output: |
+        'awot nruTrds the door.'
+    - input: |
+        'the tall sail', 13
+      output: |
+        'lias llat eht'
+    - input: |
+        'establishing', 1
+      output: |
+        'establishing'
+  working_description: |
+    Write a function that reverses everything in the string s up to (but not including) index i.
+  signature: |
+    def changeSection(s,i):
+  tags:
+    - -1

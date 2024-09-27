@@ -1,0 +1,176 @@
+!Graph
+problem: edit_col
+nodes:
+- &id004 !Node
+  id: 0
+  stdout:
+  - '[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    '
+  - '[[1, 1, 1, 1, 1], [9, 1, 1, 1, 1]]
+
+    '
+  - '[[2, 3]]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 1
+  stdout:
+  - '[[1, 2, 3], [7, 5, 6], [7, 8, 9]]
+
+    '
+  - '[[9, 1, 1, 1, 1], [9, 1, 1, 1, 1]]
+
+    '
+  - ''
+  stderr:
+  - ''
+  - ''
+  - 'IndexError: list index out of range'
+  _node_tags: null
+- &id003 !Node
+  id: 2
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: list indices must be integers or slices, not tuple'
+  - 'TypeError: list indices must be integers or slices, not tuple'
+  - 'TypeError: list indices must be integers or slices, not tuple'
+  _node_tags: null
+- !Node
+  id: 3
+  stdout:
+  - '[[1, 6, 3], [4, 6, 6], [7, 6, 9]]
+
+    '
+  - '[[1, 9, 1, 1, 1], [1, 9, 1, 1, 1]]
+
+    '
+  - '[[2, 1]]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 4
+  stdout:
+  - '[[1, 6, 3], [4, 6, 6], [7, 6, 9]]
+
+    '
+  - '[[9, 1, 1, 1, 1], [9, 1, 1, 1, 1]]
+
+    '
+  - '[[2, 1]]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 5
+  stdout:
+  - '[2, 6, 8]
+
+    '
+  - '[9, 1]
+
+    '
+  - '[3]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student29
+  prompt_from: "def edit_col(mat,i,n):\n    \"\"\"\n    For each entry, replace the\
+    \ integer corresponding to the 2nd parameter index with the third parameter integer.\
+    \ return a list with all the altered entries\n    \"\"\"\n    "
+  prompt_to: "def edit_col(mat,i,n):\n    \"\"\"\n    For each entry take in the second\
+    \ parameter as an index. Then go through each entry of the first parameter and\
+    \ replace the value corresponding to that index with the third input parameter\n\
+    \    \"\"\"\n    "
+  completion_from: 'return [mat[j][i] if j!=i else n for j in range(len(mat))]
+
+    '
+  completion_to: "for j in range(len(mat)):\n        mat[j][i] = n\n    return mat\n"
+  diff: "--- \n+++ \n@@ -3,27 +3,35 @@\n \"\"\" For each-entry,+entry+take+in+the+second+parameter+as+an+index.+Then+go+through+each+entry+of+the+first+parameter+and\
+    \ replace the-integer+value corresponding to-the-2nd-parameter+that index with\
+    \ the third+input parameter-integer.-return-a-list-with-all-the-altered-entries\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student67
+  prompt_from: "def edit_col(mat,i,n):\n    \"\"\"\n    Adds 1 and subtracts 2.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def edit_col(mat,i,n):\n    \"\"\"\n    Replaces the first item of the\
+    \ last list with the sum of i and n.\n    \"\"\"\n    "
+  completion_from: "mat[i,:] += 1\n    mat[i,:] -= 2\n    return mat\n"
+  completion_to: "mat[-1][0] = i + n\n    return mat\n"
+  diff: "--- \n+++ \n@@ -1,9 +1,19 @@\n def edit_col(mat,i,n): \"\"\"-Adds-1+Replaces+the+first+item+of+the+last+list+with+the+sum+of+i\
+    \ and-subtracts-2.+n. \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student67
+  prompt_from: "def edit_col(mat,i,n):\n    \"\"\"\n    Replaces the first item of\
+    \ the last list with the sum of i and n.\n    \"\"\"\n    "
+  prompt_to: "def edit_col(mat,i,n):\n    \"\"\"\n    Replaces the first item of the\
+    \ last list with the sum of i and n. If all the numbers in both of the lists are\
+    \ 1, then replaces the first item of the first list with the sum of i and n as\
+    \ well.\n    \"\"\"\n    "
+  completion_from: "mat[-1][0] = i + n\n    return mat\n"
+  completion_to: "if mat[0][0] == 1 and mat[1][0] == 1:\n        mat[0][0] = i + n\n\
+    \    mat[1][0] = i + n\n    return mat\n"
+  diff: "--- \n+++ \n@@ -16,4 +16,33 @@\n i and n.+If+all+the+numbers+in+both+of+the+lists+are+1,+then+replaces+the+first+item+of+the+first+list+with+the+sum+of+i+and+n+as+well.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id005
+  node_to: *id004
+  username: student67
+  prompt_from: "def edit_col(mat,i,n):\n    \"\"\"\n    Replaces the first item of\
+    \ the last list with the sum of i and n. If all the numbers in both of the lists\
+    \ are 1, then replaces the first item of the first list with the sum of i and\
+    \ n as well.\n    \"\"\"\n    "
+  prompt_to: "def edit_col(mat,i,n):\n    \"\"\"\n    Replaces the first item of the\
+    \ last list with the sum of i and n. \n    \"\"\"\n    "
+  completion_from: "if mat[0][0] == 1 and mat[1][0] == 1:\n        mat[0][0] = i +\
+    \ n\n    mat[1][0] = i + n\n    return mat\n"
+  completion_to: "mat[-1][0] = i + n\n    return mat\n"
+  diff: "--- \n+++ \n@@ -16,33 +16,4 @@\n i and n.-If-all-the-numbers-in-both-of-the-lists-are-1,-then-replaces-the-first-item-of-the-first-list-with-the-sum-of-i-and-n-as-well.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

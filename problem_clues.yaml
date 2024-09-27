@@ -1,0 +1,491 @@
+# modifiers can be L,M,D,A
+# A: added this clue
+# D: deleted this clue
+# L: rewrote this clue with less detail [can be wrong]
+# M: rewrote this clue with more detail [detail can be wrong]
+# 0: no diff or trivial rewrite # semantically equivalent rewrite, adds no clues
+add_int:
+  signature: 'def add_int(lst, num):'
+  tags:
+    # do nothing to list, can have list of lists
+  - 1: edge case of list in list
+  # this is the variable num
+  - 2: concatenate num to strings
+  - 3: add num to integers
+  - 4: return list
+  tests:
+  - input: '[''hello'', ''aaa'', ''bbb'', ''ccc'', 1, 4], 5'
+    output: '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]'
+  - input: '[8, 56, 8, ''5'', ''4''], 1'
+    output: '[9, 57, 9, ''51'', ''41'']'
+  - input: '[''hello'', ''aaa'', ''bbb'', [''list''], 1, 4], 5'
+    output: '[''hello5'', ''aaa5'', ''bbb5'', [''list''], 6, 9]'
+  working_description: Given a list lst of strings and integers and integer num, concatenates
+    num to the end of strings in lst and adds it to integers in lst.
+add_up:
+  signature: 'def add_up(arr):'
+  tags:
+  # using "number" counts as 2 and 3, but not "number character"
+  - 1: 2D array
+  - 2: sum integer
+  - 3: sum float
+  - 4: return the sum of all elements
+  - 5: mention 0 base case
+  - 6: misdirection - add number within string
+  tests:
+  - input: '[ [ ''one'', 2, 3, 4 ] ]'
+    output: '9'
+  - input: '[ [ 3, ''hello'', 3.4 ] ]'
+    output: '6.4'
+  - input: '[ [ ] ]'
+    output: '0'
+  working_description: Add up all the elements in 2D array only if they are integer
+    or float
+altText:
+  signature: 'def altText(s):'
+  tags:
+  - 1: input string
+  - 2: alternate
+  - 3: uppercase
+  tests:
+  - input: '''I love to see dolphins swim.'''
+    output: '''I LoVe tO SeE DoLpHiNs sWiM.'''
+  - input: '''computers'''
+    output: '''CoMpUtErS'''
+  - input: '''t'''
+    output: '''T'''
+  working_description: Makes every other letter in s uppercase
+assessVowels:
+  signature: 'def assessVowels(s):'
+  tags:
+  - 1: input string
+  - 2: output list
+  - 3: filter vowels
+  - 4: uppercase or lowercase
+  tests:
+  - input: '''I ate an apple'''
+    output: '[''I'', ''a'', ''e'', ''a'', ''a'', ''e'']'
+  - input: '''Another string here'''
+    output: '[''A'', ''o'', ''e'', ''i'', ''e'', ''e'']'
+  - input: '''cAbbAge'''
+    output: '[''A'', ''A'', ''e'']'
+  - input: ''''''
+    output: '[]'
+  working_description: Takes string as a parameter. The function should then create
+    a list, and add all uppercase or lowercase vowels that appear in the string to
+    the list (the vowels can repeat in the list). It should then return the list.
+changeSection:
+  signature: 'def changeSection(s,i):'
+  tags:
+  - 1: input/output string
+  - 2: reverse
+  - 3: excluding index i
+  tests:
+  - input: '''Turn towards the door.'', 9'
+    output: '''awot nruTrds the door.'''
+  - input: '''the tall sail'', 13'
+    output: '''lias llat eht'''
+  - input: '''establishing'', 1'
+    output: '''establishing'''
+  working_description: Write a function that reverses everything in the string s up
+    to (but not including) index i.
+check_prime:
+  signature: 'def check_prime(num):'
+  tags:
+  - 1: convert input string to int
+  - 2: output bool
+  - 3: compute prime
+  - 4: misdirection - wrong description of a prime number
+  tests:
+  - input: '''2'''
+    output: 'True'
+  - input: '''8'''
+    output: 'False'
+  - input: '''9'''
+    output: 'False'
+  - input: '''11'''
+    output: 'True'
+  working_description: Convert string argument to an int, then return True if it is
+    prime.
+combine:
+  signature: 'def combine(l1,l2):'
+  tags:
+  - 1: input/output 2d array
+  - 2: row correspondance
+  tests:
+  - input: '[[1,2,3],[4,5,6],[7,8,9]],[[10,20,30],[40,50,60],[70,80,90]]'
+    output: '[[1,2,3,10,20,30],[4,5,6,40,50,60],[7,8,9,70,80,90]]'
+  - input: '[[9,8,7]], [[0,1,2]]'
+    output: '[[9,8,7,0,1,2]]'
+  - input: '[[2,3],[1,1],[10,11],[4, 5]],[[1, 1],[14, 15],[3, 2],[77, 87]]'
+    output: '[[2,3,1,1],[1,1,14,15],[10,11,3,2],[4,5,77,87]]'
+  working_description: Given a 2d array, joins corresponding nested lists.
+convert:
+  signature: 'def convert(lst):'
+  tags:
+  - 1: input numbers
+  - 2: alphabetize
+  - 3: output string
+  - 4: split on space
+  - 5: -1 corresponds to space
+  tests:
+  - input: '[0, 1, 2, 3]'
+    output: '[''ABCD'']'
+  - input: '[0, -1, 1, -1, 2]'
+    output: '[''A'', ''B'', ''C'']'
+  - input: '[1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2]'
+    output: '[''BBB'', ''ZZZ'', ''ABC'']'
+  working_description: lst is a list of numbers, where 0 -> A, 1 -> B, ..., and Z
+    -> 25. Moreover, -1 -> ' '. Build a string, then return a list of strings by splitting
+    on ' '.
+create_list:
+  signature: 'def create_list(dt, lst):'
+  tags: ''
+  tests:
+  - input: '{''a'': ''b'', ''t'': ''d''}, [''a'', ''t'', ''c'']'
+    output: '[''b'', ''d'', None]'
+  - input: '{1: ''a'', 2: ''b'', 3: ''c''}, [1, 5, 3]'
+    output: '[''a'', None, ''c'']'
+  - input: '{3 : ''t'', 4: ''r'', 5: ''e''}, [''a'', ''b'', ''c'']'
+    output: '[None, None, None]'
+  working_description: Given a dict dt and list lst, iterates through lst and appends
+    values in dt to the result. If value is not a key in dt, appends None.
+fib:
+  signature: 'def fib(n):'
+  tags: ''
+  tests:
+  - input: '1'
+    output: 'True'
+  - input: '13'
+    output: 'True'
+  - input: '21'
+    output: 'True'
+  - input: '19'
+    output: 'False'
+  working_description: Return True if n is in the Fibonacci sequence, False otherwise.
+findHorizontals:
+  signature: 'def findHorizontals(puzzle,wordList):'
+  tags: ''
+  tests:
+  - input: '["ztac","zzzz","teaz","part","zzzz"], ["cat","dog","tea","party"]'
+    output: '{"cat":0, "tea":2}'
+  - input: '["ztac","zzzz","teaz","part","zzzz"], ["to","apple","ape","party"]'
+    output: '{}'
+  - input: '["as", "be", "sa", "it"], ["it"]'
+    output: '{''it'': 3}'
+  working_description: Given a list puzzle of rows, and a list wordList of words,
+    returns a dictionary where the keys are found words (backwards and forwards) and
+    the values are the row in puzzle where they're found.
+find_multiples:
+  signature: 'def find_multiples(start,stop,factor):'
+  tags: ''
+  tests:
+  - input: 1,100,20
+    output: '[20, 40, 60, 80, 100]'
+  - input: 10, 30, 5
+    output: '[10, 15, 20, 25, 30]'
+  - input: 1000,2000,177
+    output: '[1062, 1239, 1416, 1593, 1770, 1947]'
+  working_description: Write a function called find_multiples, which returns a list
+    of all the multiples of a given factor  between the given start and stop numbers,
+    inclusive.
+generateCardDeck:
+  signature: 'def generateCardDeck(suits, vals):'
+  tags: ''
+  tests:
+  - input: '[''S'', ''H'', ''D''], [''1'', ''2'', ''A'']'
+    output: '[''D1'', ''D2'', ''DA'', ''H1'', ''H2'', ''HA'',  ''S1'', ''S2'', ''SA'']'
+  - input: '[''H'', ''D''], [''6'', ''Q'', ''J'', ''2'']'
+    output: '[''D2'', ''D6'', ''DJ'', ''DQ'', ''H2'',''H6'', ''HJ'', ''HQ'']'
+  - input: '[''H''], [''2'']'
+    output: '[''H2'']'
+  working_description: Given a set of suits and values, make a deck by combining each
+    suit with each value as a string. Return a list of  all combinations in sorted
+    order.
+getSeason:
+  signature: 'def getSeason(month):'
+  tags: ''
+  tests:
+  - input: '''January'''
+    output: '''winter'''
+  - input: '''April'''
+    output: '''spring'''
+  - input: '''August'''
+    output: '''summer'''
+  - input: '''October'''
+    output: '''fall'''
+  working_description: Takes in a string argument, month, and returns the season that
+    the month is in. December to February are winter, March to May are spring, and
+    so on. The returned season should be in lowercase.
+increaseScore:
+  signature: 'def increaseScore(score):'
+  tags: ''
+  tests:
+  - input: '-10'
+    output: '10'
+  - input: '1'
+    output: '10'
+  - input: '10'
+    output: '11'
+  - input: '15'
+    output: '16'
+  - input: '20'
+    output: '21'
+  working_description: For values less than 10, returns 10. Otherwise, return score
+    + 1.
+laugh:
+  signature: 'def laugh(size):'
+  tags: ''
+  tests:
+  - input: '4'
+    output: '"haaaa haaa haa ha"'
+  - input: '1'
+    output: '"ha"'
+  - input: '3'
+    output: '"haaa haa ha"'
+  working_description: '- Build a list of of "a"s of length "size" to length "1".
+    - Prefix "h" to all items. - Join the list with spaces.'
+pattern:
+  signature: 'def pattern(value):'
+  tags: ''
+  tests:
+  - input: '3'
+    output: '[[1,2,3],[1,2,3],[1,2,3]]'
+  - input: '4'
+    output: '[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]'
+  - input: '2'
+    output: '[[1,2],[1,2]]'
+  working_description: Unknown, need to generate
+percentWin:
+  signature: 'def percentWin(guess,answers):'
+  tags: ''
+  tests:
+  - input: '[''1'', ''1'', ''X'', ''2''], [''1'', ''1'', ''1'', ''2'']'
+    output: '''75%'''
+  - input: '[''2'', ''X'', ''X''], [''2'', ''2'', ''2'']'
+    output: '''33%'''
+  - input: '[''2'', ''1'', ''2'', ''1'', ''2''], [''2'', ''1'', ''2'', ''1'', ''2'']'
+    output: '''100%'''
+  working_description: Returns percentage of values in guess that match values in
+    answers as a string with %, rounded to the nearest whole percent
+planets_mass:
+  signature: 'def planets_mass(planets):'
+  tags: ''
+  tests:
+  - input: '{''Venus'': 10, ''Mercury'': 5, ''Sun'': 100}'
+    output: '15'
+  - input: '{''Pluto'': 30, ''Venus'': 10, ''Mercury'': 5, ''Sun'': 100}'
+    output: '15'
+  - input: '{''Pluto'': 100}'
+    output: '0'
+  working_description: Given a dictionary of planets and their mass, remove keys 'Pluto'
+    and 'Sun' if they are in planets and return the sum of the planets' masses.
+print_time:
+  signature: 'def print_time(day,hour):'
+  tags: ''
+  tests:
+  - input: '''Sat'', 12'
+    output: '''weekend'''
+  - input: '''Sun'', 12'
+    output: '''weekend'''
+  - input: '''Mon'', 9'
+    output: '''weekday'''
+  - input: '''Tue'', 23'
+    output: '''weekday'''
+  - input: '''Wed'', 0'
+    output: '''sleeping'''
+  - input: '''Thu'', 8'
+    output: '''sleeping'''
+  working_description: 'Given a weekday and time, returns a string: 1. ''weekend''
+    for ''Sat'' or ''Sun'' 2. ''weekday'' for times between 9 and 23 inclusive 3.
+    ''sleeping'' otherwise'
+readingIceCream:
+  signature: 'def readingIceCream(lines):'
+  tags: ''
+  tests:
+  - input: '["peppermint\tice cream\t3", "lemon\tfrozen yogurt\t10", "pumpkin\tice
+      cream\t2.5", "monster\tice cream\t21"]'
+    output: '36.5'
+  - input: '["salty\tfrozen yogurt\t10"]'
+    output: '10'
+  - input: '["salty\tfrozen yogurt\t0"]'
+    output: '0'
+  working_description: Write a function called readingIceCream to read in a TSV files
+    containing  information about Trulys ice cream flavors. The first field is the
+    flavor name, the second field is the ice cream type, and the third field records  how
+    many servings the store has left (a float). Your function should take a list of
+    strings representing rows from a 3-field tsv file. It should the total number
+    of servings of ice cream that Trulys currently has in stock.
+remove_odd:
+  signature: 'def remove_odd(lst):'
+  tags: ''
+  tests:
+  - input: '[4.3, 4, 5, 2, 7]'
+    output: '[4.3, 4, 2]'
+  - input: '[1.1, 2.2, 3.3]'
+    output: '[1.1, 2.2, 3.3]'
+  - input: '[3, 5, 7]'
+    output: '[]'
+  working_description: remove all elements that are int and odd from given list
+reverseWords:
+  signature: 'def reverseWords(words):'
+  tags: ''
+  tests:
+  - input: '[''eat'', ''tree'']'
+    output: '[''eert'', ''tae'']'
+  - input: '[''ax'', ''by'', ''chaz'']'
+    output: '[''xa'', ''yb'', ''zahc'']'
+  - input: '[''by'', ''chaz'', ''ax'']'
+    output: '[''xa'', ''yb'', ''zahc'']'
+  working_description: Reverses each string in words, then returns a sorted list.
+set_chars:
+  signature: 'def set_chars(s,c,l):'
+  tags: ''
+  tests:
+  - input: '''Everybody loves apples.'', "u", [0,2,6,16]'
+    output: '''uvurybudy loves upples.'''
+  - input: '''ice cream is the best'', ''q'', [1,21]'
+    output: '''iqe cream is the best'''
+  - input: '''toast and jam and toast and ham'', ''t'', []'
+    output: '''toast and jam and toast and ham'''
+  working_description: Write a function set_chars that returns a string where all
+    the indices in list l in string s are set to character c.
+sortBySuccessRate:
+  signature: 'def sortBySuccessRate(nominations):'
+  tags: ''
+  tests:
+  - input: "[{'nominee': 'Jones', 'wins': 28, 'noms': 80},  {'nominee': 'Beyonc\xE9\
+      ',  'wins': 28, 'noms': 79},  {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]"
+    output: "[{'nominee': 'Krauss', 'wins': 27, 'noms': 42, 'success': 0.64},  {'nominee':\
+      \ 'Jones', 'wins': 28, 'noms': 80, 'success': 0.35},  {'nominee': 'Beyonc\xE9\
+      ', 'wins': 28, 'noms': 79, 'success': 0.35}]"
+  - input: '[{''nominee'': ''Babyface'',''wins'': 11, ''noms'': 49}, {''nominee'':
+      ''Swift'', ''wins'': 11, ''noms'': 41},  {''nominee'': ''Thomas'', ''wins'':
+      11, ''noms'': 38}]'
+    output: '[{''nominee'': ''Thomas'', ''wins'': 11, ''noms'': 38, ''success'': 0.29},
+      {''nominee'': ''Swift'', ''wins'': 11, ''noms'': 41, ''success'': 0.27}, {''nominee'':
+      ''Babyface'', ''wins'': 11, ''noms'': 49, ''success'': 0.22}]'
+  - input: "[{'nominee': 'Beyonc\xE9', 'wins': 28, 'noms': 79},  {'nominee': 'Babyface','wins':\
+      \ 11, 'noms': 49}]"
+    output: "[{'nominee': 'Beyonc\xE9', 'wins': 28, 'noms': 79, 'success': 0.35},\
+      \  {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]"
+  working_description: For each nomination in nominations, add a key 'success' whose
+    value is 'wins'/'noms' rounded to 2 decimal places. Return a list of dictionaries
+    sorted descending by success.
+sort_physicists:
+  signature: 'def sort_physicists(scientists):'
+  tags: ''
+  tests:
+  - input: '[["Youyou",91,"Chemistry"],["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]'
+    output: '[''Peiris'', ''Ghez'', ''Strickland'']'
+  - input: '[["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]'
+    output: '[''Peiris'', ''Ghez'', ''Strickland'']'
+  - input: '[["Taylor",59,"Computer Science"],["Tu",91,"Chemistry"],["Ghez",56,"Physics"]]'
+    output: '[''Ghez'']'
+  working_description: Given a list of scientists, remove the lists that don't have
+    'Physics' as the third value. Sort the first value of the remaining lists by their
+    second value.
+sortedBooks:
+  signature: 'def sortedBooks(books, writer):'
+  tags: ''
+  tests:
+  - input: '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+      ''Austen'', ''book'': ''Persuasion'', ''year'': 1818},  {''author'': ''Woolf'',
+      ''book'': ''The Voyage Out'', ''year'': 1915},  {''author'': ''Austen'', ''book'':
+      ''Pride and Prejudice'', ''year'': 1813}],  ''Austen'''
+    output: '[{''author'': ''Austen'', ''book'': ''Pride and Prejudice'', ''year'':
+      1813}, {''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815},  {''author'':
+      ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]'
+  - input: '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915},   {''author'':
+      ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}],    ''Woolf'''
+    output: '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]'
+  - input: '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}],   ''Austen'''
+    output: '[]'
+  working_description: Remove all the dictionaries that don't have 'writer' value
+    of author. Sort the list by 'year' value.
+student_grades:
+  signature: 'def student_grades(students, grades):'
+  tags: ''
+  tests:
+  - input: '{''Alice'': 20, ''Bob'': 11}, {20: [''A'',''A''], 11: [''A'',''B''], 21:
+      [''B'']}'
+    output: '{''Alice'': [''A'',''A''], ''Bob'': [''A'',''B'']}'
+  - input: '{''Alice'': 20}, {20: [], 11: [''A'',''B''], 21: [''A-'']}'
+    output: '{''Alice'': []}'
+  - input: '{''Sam'': 21, ''Ari'': 67, ''Chris'': 23}, {67: [], 23: [''A''], 21: [''B'',''B'']}'
+    output: '{''Sam'': [''B'', ''B''], ''Ari'':[], ''Chris'':[''A''] }'
+  working_description: Given a dictionary students mapping names to id numbers and
+    a dictionary grades mapping id numbers to lists of grades, returns a dictionary
+    mapping names to grades using matching id numbers.
+subtract_add:
+  signature: 'def subtract_add(lst):'
+  tags: ''
+  tests:
+  - input: '[''1'', ''2'', ''3'', ''4'']'
+    output: '-2'
+  - input: '[''0'', ''2'']'
+    output: '-2'
+  - input: '[''0'', ''0'']'
+    output: '0'
+  - input: '[ ]'
+    output: '0'
+  working_description: Given a list of strings, convert to a list of integers. Return
+    a result that adds the even indices and subtracts the odd indices.
+times_with:
+  signature: 'def times_with(meetings):'
+  tags: ''
+  tests:
+  - input: '[ [30, [''Alice'', ''Bob'', ''Carol'']] ]'
+    output: '{ ''Alice'': 30, ''Bob'': 30, ''Carol'': 30 }'
+  - input: '[ [30, [''Alice'', ''Bob'', ''Carol'']], [20, [''Alice'', ''Bob'']] ]'
+    output: '{ ''Alice'': 50, ''Bob'': 50, ''Carol'': 30 }'
+  - input: '[ [10, [''Alice'', ''Bob'']], [5, [''Carol'']] ]'
+    output: '{''Alice'': 10, ''Bob'': 10, ''Carol'': 5}'
+  working_description: Given a list of meetings, where each meeting is a list containing
+    a duration and a list of attendees, return the time with each person as a dictionary.
+topScores:
+  signature: 'def topScores(lst):'
+  tags: ''
+  tests:
+  - input: '[[76, ''Matt''], [80, ''Rachel''], [100, ''Penelope''], [50, ''Pete''],
+      [99, ''Alex'']]'
+    output: '[''Penelope'', ''Alex'', ''Rachel'']'
+  - input: '[[92, ''Kip''], [76, ''Matt''], [80, ''Sam''], [100, ''Ben''], [99, ''Alex''],
+      [97, ''Ro''], [65, ''Hans''], [95, ''Ira'']]'
+    output: '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'']'
+  - input: '[[65, ''Bob''], [65, ''Rachel''], [33, ''Alex'']]'
+    output: '[]'
+  working_description: Lst is a list of students, where the first value is their grade
+    and the second value is their name.  Remove all the students whose grade is less
+    than 80, and return a list of names sorted by grades. Remove all except the first
+    5.
+total_bill:
+  signature: 'def total_bill(grocery_list, sales_tax):'
+  tags: ''
+  tests:
+  - input: '[[''apples'', 6, 0.99],[''milk'', 1, 1.49],[''bread'', 2, 3.50]], 0.07'
+    output: '15.44'
+  - input: '[[''apples'', 6, 0.99],[''milk'', 1, 1.49],[''bread'', 2, 3.50]], 0.0'
+    output: '14.43'
+  - input: '[[''bread'', 2, 3.50]], 0.5'
+    output: '10.5'
+  working_description: Returns the sum of multiplying the second and third indices
+    of each list in grocery_list, multiplied by 1 + sales_tax. Round to 2 digits.
+translate:
+  signature: 'def translate(lexicon,sentence):'
+  tags: ''
+  tests:
+  - input: '{"one":"un", "two":"deux", "three":"trois", "four":"quatre",   "I":"je",
+      "you":"tu", "and":"et", "cats":"chats", "love":"aime",   "like":"aime", "my":"mes"},    "I
+      like my three cats"'
+    output: '''je aime mes trois chats'''
+  - input: '{"one":"un", "two":"deux", "three":"trois", "four":"quatre",   "I":"je",
+      "you":"tu", "and":"et", "cats":"chats", "love":"aime",   "like":"aime", "my":"mes"},    "I
+      like my three marmots"'
+    output: '''je aime mes trois UNK'''
+  - input: '{"one":"ett", "two":"tva", "three":"tre", "four":"fyra"}, "five six seven
+      eight"'
+    output: '''UNK UNK UNK UNK'''
+  working_description: Split sentence on space. For each word in sentence, concatenates
+    its value in lexicon to the result. Concatenate UNK for words not in lexicon.
+    Return a string.

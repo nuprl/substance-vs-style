@@ -1,0 +1,113 @@
+!Graph
+problem: correctNumberofPlayers
+nodes:
+- &id003 !Node
+  id: 0
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''players'' is not defined'
+  - 'NameError: name ''players'' is not defined'
+  - 'NameError: name ''players'' is not defined'
+  _node_tags: null
+- &id002 !Node
+  id: 1
+  stdout:
+  - 'True
+
+    '
+  - 'False
+
+    '
+  - 'True
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 2
+  stdout:
+  - 'False
+
+    '
+  - 'False
+
+    '
+  - 'False
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student22
+  prompt_from: "def correctNumberofPlayers(teams):\n    \"\"\"\n    takes in a list\
+    \ of lists and returns a boleean based on if the number of elements in the list\
+    \ are the same \n    \"\"\"\n    "
+  prompt_to: "def correctNumberofPlayers(teams):\n    \"\"\"\n    takes in a list\
+    \ of lists and checks to see if each list is the same length\n    \"\"\"\n    "
+  completion_from: "if len(teams) == len(teams[0]):\n        return True\n    else:\n\
+    \        return False\n"
+  completion_to: "for team in teams:\n        if len(team) != len(teams[0]):\n   \
+    \         return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -8,20 +8,14 @@\n of lists and-returns-a-boleean-based-on+checks+to+see\
+    \ if-the-number-of-elements-in-the+each list-are+is the same+length \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student61
+  prompt_from: "def correctNumberofPlayers(teams):\n    \"\"\"\n    function will\
+    \ return True if the lists have the same count of items and will return False\
+    \ if the lists do not have the same count of items\n    \"\"\"\n    "
+  prompt_to: "def correctNumberofPlayers(teams):\n    \"\"\"\n    function will return\
+    \ True if the counts are the same and will return False if the counts are not\
+    \ the same\n    \"\"\"\n    "
+  completion_from: "if len(teams) == len(players):\n        return True\n    else:\n\
+    \        return False\n"
+  completion_to: "count = 0\n    for team in teams:\n        if count == 0:\n    \
+    \        count = len(team)\n        else:\n            if count != len(team):\n\
+    \                return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -7,26 +7,19 @@\n True if the-lists-have+counts+are the same-count-of-items\
+    \ and will return False if the-lists-do+counts+are not-have the same-count-of-items\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student74
+  prompt_from: "def correctNumberofPlayers(teams):\n    \"\"\"\n    the code should\
+    \ store up to five strings. Each list should equal five and output true. Any list\
+    \ less or more then five should output false \n    \"\"\"\n    "
+  prompt_to: "def correctNumberofPlayers(teams):\n    \"\"\"\n    the code should\
+    \ store up to five strings. Each nested list should equal five and output true.\
+    \ The whole list can be any length. Any nested list less or more than five should\
+    \ output false \n    \"\"\"\n    "
+  completion_from: "if len(teams) == 5:\n        return True\n    else:\n        return\
+    \ False\n"
+  completion_to: "for team in teams:\n        if len(team) != 5:\n            return\
+    \ False\n    return True\n"
+  diff: "--- \n+++ \n@@ -10,6 +10,7 @@\n five strings. Each+nested list should equal@@\
+    \ -17,12 +18,20 @@\n and output true.+The+whole+list+can+be+any+length. Any+nested\
+    \ list less or more-then+than five should output"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+student_start_node_tags: {}

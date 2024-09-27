@@ -1,0 +1,171 @@
+!Graph
+problem: multisplit
+nodes:
+- &id004 !Node
+  id: 0
+  stdout:
+  - 'a man~ wow~ the dog
+
+    '
+  - 'celestial!teas!!a!guide
+
+    '
+  - 'celestial teas: a guide
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 1
+  stdout:
+  - '[''a man'', '' wow'', '' the dog'', '' much hat'', '' much hair'', '''']
+
+    '
+  - '[''celestial'', ''teas'', '''', ''a'', ''guide'']
+
+    '
+  - '[''celestial teas: a guide'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 2
+  stdout:
+  - 'a man~ wow~ the dog~ much hat~ much hair~
+
+    '
+  - 'celestial!teas!!a!guide
+
+    '
+  - 'celestial teas: a guide
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 3
+  stdout:
+  - 'a man~! wow~- the dog~, much hat~! much hair~!
+
+    '
+  - 'celestial! teas!:! a! guide
+
+    '
+  - 'celestial teas: a guide
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student15
+  prompt_from: "def multisplit(s,chars,sep):\n    \"\"\"\n    removes everything in\
+    \ the list and replaces it with what is after the list.\n    \"\"\"\n    "
+  prompt_to: "def multisplit(s,chars,sep):\n    \"\"\"\n    for every character in\
+    \ the list, looks through the string and if the character is in the string, replaces\
+    \ it with sep.\n    \"\"\"\n    "
+  completion_from: "for c in chars:\n        s = s.replace(c,sep)\n    return s.split(sep)\n"
+  completion_to: "for char in chars:\n        s = s.replace(char,sep)\n    return\
+    \ s\n"
+  diff: "--- \n+++ \n@@ -1,18 +1,26 @@\n def multisplit(s,chars,sep): \"\"\"-removes-everything+for+every+character\
+    \ in the-list+list,+looks+through+the+string and+if+the+character+is+in+the+string,\
+    \ replaces it with-what-is-after-the-list.+sep. \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student45
+  prompt_from: "def multisplit(s,chars,sep):\n    \"\"\"\n    Takes three inputs:\
+    \ a string which we will call s, a list of strings which we will call chars, and\
+    \ another string which we will call sep. At each point in s where a string from\
+    \ chars is present, we split s and insert sep.\n    \"\"\"\n    "
+  prompt_to: "def multisplit(s,chars,sep):\n    \"\"\"\n    Takes three inputs: a\
+    \ string which we will call s, a list of strings which we will call chars, and\
+    \ another string which we will call sep. At each point in s where a string from\
+    \ chars is present, we split s, remove the character from s at the index where\
+    \ we split, and insert sep.\n    \"\"\"\n    "
+  completion_from: "for c in chars:\n        s = s.replace(c,sep+c)\n    return s\n"
+  completion_to: "for char in chars:\n        s = s.replace(char,sep+char)\n    return\
+    \ s\n"
+  diff: "--- \n+++ \n@@ -42,7 +42,18 @@\n present, we split+s,+remove+the+character+from\
+    \ s+at+the+index+where+we+split, and insert sep."
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student45
+  prompt_from: "def multisplit(s,chars,sep):\n    \"\"\"\n    Takes three inputs:\
+    \ a string which we will call s, a list of strings which we will call chars, and\
+    \ another string which we will call sep. At each point in s where a string from\
+    \ chars is present, we split s, remove the character from s at the index where\
+    \ we split, and insert sep.\n    \"\"\"\n    "
+  prompt_to: "def multisplit(s,chars,sep):\n    \"\"\"\n    Takes three inputs: a\
+    \ string which we will call s, a list of strings which we will call chars, and\
+    \ another string which we will call sep. At each point in s where a string from\
+    \ chars is present, we split s and replace the character from s at the index where\
+    \ we split with sep.\n    \"\"\"\n    "
+  completion_from: "for char in chars:\n        s = s.replace(char,sep+char)\n   \
+    \ return s\n"
+  completion_to: "for char in chars:\n        s = s.replace(char,sep)\n    return\
+    \ s\n"
+  diff: "--- \n+++ \n@@ -42,8 +42,9 @@\n present, we split-s,-remove+s+and+replace\
+    \ the character from@@ -53,8 +54,7 @@\n index where we-split,-and-insert+split+with\
+    \ sep. \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id004
+  node_to: *id002
+  username: student55
+  prompt_from: "def multisplit(s,chars,sep):\n    \"\"\"\n    Write a function that\
+    \ gets a string, a collection of characthers, and a separator element. The function\
+    \ should get only the first string separated by a comma and remove the rest of\
+    \ the input. After that, the string's quotes should be replaced by a simple quote.\
+    \ Moreover, the function should run through the string and replace every character\
+    \ from the second parameter of the function and replace by the third parameter\
+    \ from the function (separator element). If the second parameter is empty, just\
+    \ return the string.\n    \"\"\"\n    "
+  prompt_to: "def multisplit(s,chars,sep):\n    \"\"\"\n    Write a function that\
+    \ gets a string, a collection of characthers, and a separator element. The function\
+    \ should get only the first string separated by a double quotes or simple quotes\
+    \ and remove the rest of the input. After that, the string's quotes should be\
+    \ replaced by a simple quote. Moreover, the function should run through the string\
+    \ and replace every character from the second parameter of the function and replace\
+    \ by the third parameter from the function (separator element). If the second\
+    \ parameter is empty, just return the string.\n    \"\"\"\n    "
+  completion_from: "if chars == []:\n        return s\n    else:\n        s = s.split(',')[0]\n\
+    \        s = s.replace('\"', \"'\")\n        for char in chars:\n            s\
+    \ = s.replace(char, sep)\n        return s\n"
+  completion_to: "if not chars:\n        return s\n    s = s.split(sep=sep)[0]\n \
+    \   s = s.replace('\"', \"'\")\n    for char in chars:\n        s = s.replace(char,\
+    \ sep)\n    return s\n"
+  diff: "--- \n+++ \n@@ -27,7 +27,11 @@\n separated by a-comma+double+quotes+or+simple+quotes\
+    \ and remove the"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+student_start_node_tags: {}

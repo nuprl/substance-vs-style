@@ -1,0 +1,485 @@
+!Graph
+problem: add_int
+nodes:
+- &id007 !Node
+  id: 0
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''51'', ''41'']
+
+    '
+  - '[''hello5'', ''aaa5'', ''bbb5'', 6, 9]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 1
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''51'', ''41'']
+
+    '
+  - '[''hello5'', ''aaa5'', ''bbb5'', [''list''], 6, 9]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id006 !Node
+  id: 2
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''51'', ''41'']
+
+    '
+  - '[''hello5'', ''aaa5'', ''bbb5'', [''list''], 6, 9, ''list'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id008 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: can only concatenate str (not "int") to str'
+  - 'TypeError: can only concatenate str (not "int") to str'
+  - 'TypeError: can only concatenate str (not "int") to str'
+  _node_tags: null
+- &id005 !Node
+  id: 4
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''51'', ''41'']
+
+    '
+  - '[''hello5'', ''aaa5'', ''bbb5'', [''list'', 5], 6, 9]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id011 !Node
+  id: 5
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, 6, 5]
+
+    '
+  - ''
+  stderr:
+  - ''
+  - ''
+  - 'TypeError: can only concatenate list (not "int") to list'
+  _node_tags: null
+- &id004 !Node
+  id: 6
+  stdout:
+  - '[''hello5'', ''aaa5'', ''bbb5'', ''ccc5'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''51'', ''41'']
+
+    '
+  - ''
+  stderr:
+  - ''
+  - ''
+  - 'TypeError: can only concatenate list (not "int") to list'
+  _node_tags: null
+- &id009 !Node
+  id: 7
+  stdout:
+  - '[''hello'', ''aaa'', ''bbb'', ''ccc'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''5'', ''4'']
+
+    '
+  - '[''hello'', ''aaa'', ''bbb'', 6, 9]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 8
+  stdout:
+  - '[''hello'', ''aaa'', ''bbb'', ''ccc'', 6, 9]
+
+    '
+  - '[9, 57, 9, ''5'', ''4'']
+
+    '
+  - '[''hello'', ''aaa'', ''bbb'', [''list''], 6, 9]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id010 !Node
+  id: 9
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''else'' statement on line
+    14'
+  - 'IndentationError: expected an indented block after ''else'' statement on line
+    14'
+  - 'IndentationError: expected an indented block after ''else'' statement on line
+    14'
+  _node_tags: null
+- &id003 !Node
+  id: 10
+  stdout:
+  - '[''hello'', ''aaa'', ''bbb'', ''ccc'', 1, 4]
+
+    '
+  - '[8, 56, 8, ''5'', ''4'']
+
+    '
+  - ''
+  stderr:
+  - ''
+  - ''
+  - 'TypeError: ''int'' object is not iterable'
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student19
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Takes an input list (which\
+    \ can have both strings and integers) and an integer. Adds the input integer to\
+    \ each item in the input list. \n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Takes an input list and an input\
+    \ integer. For all strings in the list, the input integer is concatenated after\
+    \ the end of the string. For all numbers in the list, the input integer is added\
+    \ to that number.\n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for item in lst:\n        if type(item) == int:\n\
+    \            new_lst.append(item + num)\n        else:\n            new_lst.append(item)\n\
+    \    return new_lst\n"
+  completion_to: "for i in range(len(lst)):\n        if type(lst[i]) == str:\n   \
+    \         lst[i] = lst[i] + str(num)\n        elif type(lst[i]) == int:\n    \
+    \        lst[i] = lst[i] + num\n    return lst\n"
+  diff: "--- \n+++ \n@@ -6,25 +6,39 @@\n an input list-(which-can-have-both-strings-and-integers)\
+    \ and an+input integer.-Adds+For+all+strings+in+the+list, the input integer-to-each-item+is+concatenated+after+the+end+of+the+string.+For+all+numbers\
+    \ in the+list,+the input-list.+integer+is+added+to+that+number. \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - a2
+  - m3
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student36
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Go through the list, if the\
+    \ input is a string concatenate the number outside of the list, if the input is\
+    \ a number add the number outside of the list\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Go through the list, if the\
+    \ input is a string concatenate the number outside of the list to the string,\
+    \ if the input is a number add the number outside of the list to the number\n\
+    \    \"\"\"\n    "
+  completion_from: "for i in lst:\n        if type(i) == str:\n            i += str(num)\n\
+    \        else:\n            i += num\n    return lst\n"
+  completion_to: "for i in range(len(lst)):\n        if type(lst[i]) == str:\n   \
+    \         lst[i] += str(num)\n        elif type(lst[i]) == int:\n            lst[i]\
+    \ += num\n    return lst\n"
+  diff: "--- \n+++ \n@@ -18,7 +18,10 @@\n outside of the-list,+list+to+the+string,\
+    \ if the input@@ -32,4 +35,7 @@\n of the list+to+the+number \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - m2
+  - m3
+- !Edge
+  node_from: *id004
+  node_to: *id002
+  username: student38
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. Return\
+    \ the new lst. \n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. Else,\
+    \ return position. Return the new lst. \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if type(i) == str:\n\
+    \            new_lst.append(i + str(num))\n        else:\n            new_lst.append(i\
+    \ + num)\n    return new_lst\n\nprint(add_int([1, 2, 3], 4))\nprint(add_int([\"\
+    a\", \"b\", \"c\"], 4))\nprint"
+  completion_to: "new_lst = []\n    for i in lst:\n        if type(i) == str:\n  \
+    \          new_lst.append(i + str(num))\n        elif type(i) == int:\n      \
+    \      new_lst.append(i + num)\n        else:\n            new_lst.append(i)\n\
+    \    return new_lst\n\nprint(add_int(['a', 'b',"
+  diff: "--- \n+++ \n@@ -22,6 +22,9 @@\n num to integer.+Else,+return+position. Return\
+    \ the new"
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+  - a1
+- !Edge
+  node_from: *id002
+  node_to: *id005
+  username: student38
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. Else,\
+    \ return position. Return the new lst. \n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. If\
+    \ position in lst is list, add list to lst. Return the new lst. \n    \"\"\"\n\
+    \    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if type(i) == str:\n\
+    \            new_lst.append(i + str(num))\n        elif type(i) == int:\n    \
+    \        new_lst.append(i + num)\n        else:\n            new_lst.append(i)\n\
+    \    return new_lst\n\nprint(add_int(['a', 'b',"
+  completion_to: "new_lst = []\n    for item in lst:\n        if type(item) == str:\n\
+    \            new_lst.append(item + str(num))\n        elif type(item) == int:\n\
+    \            new_lst.append(item + num)\n        elif type(item) == list:\n  \
+    \          new_lst.append(item + [num])\n    return new_lst\n"
+  diff: "--- \n+++ \n@@ -22,9 +22,16 @@\n num to integer.-Else,-return-position.+If+position+in+lst+is+list,+add+list+to+lst.\
+    \ Return the new"
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+  - m1
+- !Edge
+  node_from: *id005
+  node_to: *id006
+  username: student38
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. If\
+    \ position in lst is list, add list to lst. Return the new lst. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    If position in lst is string,\
+    \ append num to string. If position in lst is integer, add num to integer. If\
+    \ position in lst is list, add list to lst. Return the new lst. \n    \"\"\"\n\
+    \    "
+  completion_from: "new_lst = []\n    for item in lst:\n        if type(item) == str:\n\
+    \            new_lst.append(item + str(num))\n        elif type(item) == int:\n\
+    \            new_lst.append(item + num)\n        elif type(item) == list:\n  \
+    \          new_lst.append(item + [num])\n    return new_lst\n"
+  completion_to: "for i in range(len(lst)):\n        if type(lst[i]) == str:\n   \
+    \         lst[i] += str(num)\n        elif type(lst[i]) == int:\n            lst[i]\
+    \ += num\n        elif type(lst[i]) == list:\n            lst += lst[i]\n    return\
+    \ lst\n"
+  diff: ''
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+  - 0
+- !Edge
+  node_from: *id007
+  node_to: *id002
+  username: student42
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    given an inputed list, return\
+    \ a new list where each element of the new list is an element of the initial list\
+    \ but with the number added to it. if the initial list element is a string, they\
+    \ should concatenate with a string of the number inputted. if the initial list\
+    \ element is a number, they should add normally\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    given an inputed list, return\
+    \ a new list where each element of the new list is an element of the initial list\
+    \ but with the number added to it. if the initial list element is a string, they\
+    \ should concatenate with a string of the number inputted. if the initial list\
+    \ element is a number, they should add normally. if an element of the initial\
+    \ list is neither, leave it alone and add it to the outputted list regardless\n\
+    \    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if type(i) == int:\n\
+    \            new_lst.append(i + num)\n        elif type(i) == str:\n         \
+    \   new_lst.append(i + str(num))\n    return new_lst\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if type(i) == str:\n  \
+    \          new_lst.append(i + str(num))\n        elif type(i) == int:\n      \
+    \      new_lst.append(i + num)\n        else:\n            new_lst.append(i)\n\
+    \    return new_lst\n"
+  diff: "--- \n+++ \n@@ -60,5 +60,25 @@\n they should add-normally+normally.+if+an+element+of+the+initial+list+is+neither,+leave+it+alone+and+add+it+to+the+outputted+list+regardless\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - a1
+- !Edge
+  node_from: *id008
+  node_to: *id009
+  username: student54
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the\
+    \ integer added at each index of the old list.\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer\
+    \ added at each index of the old list. If it is a string, append it to the end.\
+    \ If it is an integer, concatenate.\n    \"\"\"\n    "
+  completion_from: 'return [x + num for x in lst]
+
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if type(i) == int:\n  \
+    \          new_lst.append(i + num)\n        elif type(i) == str:\n           \
+    \ new_lst.append(i)\n    return new_lst\n"
+  diff: "--- \n+++ \n@@ -17,4 +17,20 @@\n the old list.+If+it+is+a+string,+append+it+to+the+end.+If+it+is+an+integer,+concatenate.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+  - a2
+  - m3
+- !Edge
+  node_from: *id009
+  node_to: *id010
+  username: student54
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the\
+    \ integer added at each index of the old list. If it is a string, append it to\
+    \ the end. If it is an integer, concatenate.\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer\
+    \ added at each index of the old list. If it is a string, add it to the end to\
+    \ create a new string. If it is an integer, or a string containing an integer,\
+    \ concatenate.\n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if type(i) == int:\n\
+    \            new_lst.append(i + num)\n        elif type(i) == str:\n         \
+    \   new_lst.append(i)\n    return new_lst\n"
+  completion_to: "if type(lst) == list:\n        return [add_int(x, num) for x in\
+    \ lst]\n    elif type(lst) == str:\n        if lst.isdigit():\n            return\
+    \ str(int(lst) + num)\n        else:\n            return lst + str(num)\n    elif\
+    \ type(lst) == int:\n        return lst + num\n    else:"
+  diff: "--- \n+++ \n@@ -22,15 +22,26 @@\n is a string,-append+add it to the-end.+end+to+create+a+new+string.\
+    \ If it is an integer,+or+a+string+containing+an+integer, concatenate. \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+  - m2
+  - m3
+- !Edge
+  node_from: *id010
+  node_to: *id011
+  username: student54
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the\
+    \ integer added at each index of the old list. If it is a string, add it to the\
+    \ end to create a new string. If it is an integer, or a string containing an integer,\
+    \ concatenate.\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer\
+    \ added at each index of the old list. If it is a string, append the integer on\
+    \ to the end of the string to create a new string. If it is an integer, or a string\
+    \ containing an integer, concatenate.\n    \"\"\"\n    "
+  completion_from: "if type(lst) == list:\n        return [add_int(x, num) for x in\
+    \ lst]\n    elif type(lst) == str:\n        if lst.isdigit():\n            return\
+    \ str(int(lst) + num)\n        else:\n            return lst + str(num)\n    elif\
+    \ type(lst) == int:\n        return lst + num\n    else:"
+  completion_to: "new_lst = []\n    for item in lst:\n        if type(item) == str:\n\
+    \            if item.isdigit():\n                new_lst.append(int(item) + num)\n\
+    \            else:\n                new_lst.append(item + str(num))\n        else:\n\
+    \            new_lst.append(item + num)\n    return new_lst\n"
+  diff: "--- \n+++ \n@@ -22,11 +22,16 @@\n is a string,-add-it+append+the+integer+on\
+    \ to the end+of+the+string to create a"
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+  - m2
+- !Edge
+  node_from: *id011
+  node_to: *id002
+  username: student54
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the\
+    \ integer added at each index of the old list. If it is a string, append the integer\
+    \ on to the end of the string to create a new string. If it is an integer, or\
+    \ a string containing an integer, concatenate.\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Return a new list with the integer\
+    \ added at each index of the old list. If it is a string, append the integer on\
+    \ to the end of the string to create a new string. If it is an integer, concatenate.\n\
+    \    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for item in lst:\n        if type(item) == str:\n\
+    \            if item.isdigit():\n                new_lst.append(int(item) + num)\n\
+    \            else:\n                new_lst.append(item + str(num))\n        else:\n\
+    \            new_lst.append(item + num)\n    return new_lst\n"
+  completion_to: "new_lst = []\n    for item in lst:\n        if type(item) == str:\n\
+    \            new_lst.append(item + str(num))\n        elif type(item) == int:\n\
+    \            new_lst.append(item + num)\n        else:\n            new_lst.append(item)\n\
+    \    return new_lst\n"
+  diff: "--- \n+++ \n@@ -42,11 +42,5 @@\n is an integer,-or-a-string-containing-an-integer,\
+    \ concatenate. \"\"\""
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+  - l3
+- !Edge
+  node_from: *id004
+  node_to: *id002
+  username: student77
+  prompt_from: "def add_int(lst, num):\n    \"\"\"\n    Given a list of numbers and\
+    \ strings as well as a number, append the number to the strings in the list, and\
+    \ add the number to the numbers in the list.\n    \"\"\"\n    "
+  prompt_to: "def add_int(lst, num):\n    \"\"\"\n    Given a list of numbers, lists,\
+    \ and strings as well as a number, append the number to the strings in the list,\
+    \ add the number to the numbers in the list, and do nothing to the lists in the\
+    \ list.\n    \"\"\"\n    "
+  completion_from: "for i in range(len(lst)):\n        if type(lst[i]) == str:\n \
+    \           lst[i] = lst[i] + str(num)\n        else:\n            lst[i] = lst[i]\
+    \ + num\n    return lst\n"
+  completion_to: "for i in range(len(lst)):\n        if type(lst[i]) == str:\n   \
+    \         lst[i] += str(num)\n        elif type(lst[i]) == int:\n            lst[i]\
+    \ += num\n    return lst\n"
+  diff: "--- \n+++ \n@@ -6,7 +6,8 @@\n a list of-numbers+numbers,+lists, and strings\
+    \ as@@ -23,7 +24,6 @@\n in the list,-and add the number@@ -32,5 +32,14 @@\n numbers\
+    \ in the+list,+and+do+nothing+to+the+lists+in+the list. \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - a1
+student_start_node_tags:
+  student19:
+  - 3
+  - 4
+  student36:
+  - 2
+  - 3
+  - 4
+  student38:
+  - 2
+  - 3
+  - 4
+  student42:
+  - 2
+  - 3
+  - 4
+  student54:
+  - 3
+  - 4
+  student77:
+  - 2
+  - 3
+  - 4

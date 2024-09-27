@@ -248,8 +248,8 @@ no prefix because it represents a noop:
 
 ## Examples of tagging
 
-I have completed the problem clues and done all the tagging for `parsed_tag_graph/add_up.yaml` 
-and `parsed_tag_graph/add_int.yaml`. Refer to these as examples.
+I have completed the problem clues and done all the tagging for `tagging_graphs_sep27/add_up.yaml` 
+and `tagging_graphs_sep27/add_int.yaml`. Refer to these as examples.
 
 ## Tagging nodes
 
@@ -339,7 +339,9 @@ start verifying some things.
 ```
 
 totals: 33 problems, 314 start nodes, 951 edges
+
 avg num nodes to tag per problem: 23
+
 avg num edges to tag per problem: 56
 
 ## Hypotheses/ Claims for paper

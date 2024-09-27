@@ -1,0 +1,231 @@
+!Graph
+problem: layoverTrips
+nodes:
+- &id001 !Node
+  id: 0
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'KeyError: 0'
+  - 'KeyError: 0'
+  - 'KeyError: 0'
+  _node_tags: null
+- !Node
+  id: 1
+  stdout:
+  - 'ORD
+
+    '
+  - 'SEA
+
+    '
+  - 'JFK
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 2
+  stdout:
+  - '[{''origin'': ''BOS'', ''dest'': ''ORD'', ''hrs'': 2.0}, {''origin'': ''BOS'',
+    ''dest'': ''JFK'', ''hrs'': 1.0}]
+
+    '
+  - '[{''origin'': ''ORD'', ''dest'': ''SEA'', ''hrs'': 1.0}]
+
+    '
+  - '[{''origin'': ''LAX'', ''dest'': ''SEA'', ''hrs'': 1.0}]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'KeyError: 1'
+  - 'KeyError: 1'
+  - 'KeyError: 1'
+  _node_tags: null
+- &id004 !Node
+  id: 4
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 5
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'KeyError: ''to'''
+  - 'KeyError: ''to'''
+  - 'KeyError: ''to'''
+  _node_tags: null
+- &id002 !Node
+  id: 6
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'AttributeError: ''dict'' object has no attribute ''origin'''
+  - 'AttributeError: ''dict'' object has no attribute ''origin'''
+  - 'AttributeError: ''dict'' object has no attribute ''origin'''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student13
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted\
+    \ origin, the function will return the possible destinations with one layover\
+    \ location. \n    \"\"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted\
+    \ origin, the function will return the possible destinations with one layover\
+    \ location. \n    \"\"\"\n    "
+  completion_from: "layover = []\n    for i in range(len(flights)):\n        if flights[i][0]\
+    \ == start:\n            layover.append(flights[i][1])\n    return layover\n"
+  completion_to: "layover = {}\n    for i in flights:\n        if i[0] == start:\n\
+    \            layover[i[1]] = i[2]\n    return layover\n"
+  diff: ''
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student13
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted\
+    \ origin, the function will return the possible destinations with one layover\
+    \ location. \n    \"\"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    Based on the inputted\
+    \ origin, the function will check the given flights and find possible destinations\
+    \ within one layover.\n    \"\"\"\n    "
+  completion_from: "layover = {}\n    for i in flights:\n        if i[0] == start:\n\
+    \            layover[i[1]] = i[2]\n    return layover\n"
+  completion_to: "layover = []\n    for flight in flights:\n        if flight.origin\
+    \ == start:\n            layover.append(flight.destination)\n    return layover\n"
+  diff: "--- \n+++ \n@@ -10,12 +10,15 @@\n the function will-return+check the+given+flights+and+find\
+    \ possible destinations-with+within one-layover-location.+layover. \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student16
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    give the location\
+    \ of layover based on the origin, destination, and length of the flight\n    \"\
+    \"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    give the location\
+    \ of layover based on the origin, destination, and length of the flight and the\
+    \ start\n    \"\"\"\n    "
+  completion_from: "layover = []\n    for i in range(len(flights)):\n        if flights[i][0]\
+    \ == start:\n            layover.append(flights[i][1])\n    return layover\n"
+  completion_to: "layover = []\n    for i in range(len(flights)):\n        layover.append(flights[i][0]\
+    \ + start)\n    return layover\n"
+  diff: "--- \n+++ \n@@ -17,4 +17,7 @@\n of the flight+and+the+start \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student22
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    takes in a list\
+    \ of dictionaries and outputs a list of values that can be made with two key value\
+    \ pair matches\n    \"\"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    takes in a list of\
+    \ dictionaries and a string, uses that string as the value for 'origin', finds\
+    \ a corresponding 'dest' and does that twice. if it can do it twice, output the\
+    \ corresponding 'dest', if not output an empty string\n\n    \"\"\"\n    "
+  completion_from: "layover = []\n    for i in range(len(flights)):\n        for j\
+    \ in range(len(flights)):\n            if i != j:\n                if flights[i][\"\
+    to\"] == flights[j][\"from\"]:\n                    layover.append([flights[i][\"\
+    from\"], flights[i][\"to\"], flights[j][\"to\"]])\n    return layover\n"
+  completion_to: "#print(flights)\n    #print(start)\n    #print(flights[0]['origin'])\n\
+    \    #print(flights[0]['dest'])\n    #print(flights[1]['origin'])\n    #print(flights[1]['dest'])\n\
+    \    #print(flights[2]['origin'])\n    #print(flights[2]['dest'])\n   "
+  diff: "--- \n+++ \n@@ -9,19 +9,38 @@\n of dictionaries and-outputs a-list-of-values+string,+uses\
+    \ that+string+as+the+value+for+'origin',+finds+a+corresponding+'dest'+and+does+that+twice.+if+it\
+    \ can-be-made-with-two-key-value-pair-matches+do+it+twice,+output+the+corresponding+'dest',+if+not+output+an+empty+string\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student5
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    this function will\
+    \ take a list of flights and the starting city and return the possible layovers\
+    \ with the staring city\n    \"\"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    this function will\
+    \ take a list of flights and the starting city and return the possible layovers\
+    \ with the staring city\n    \"\"\"\n    "
+  completion_from: "layovers = []\n    for flight in flights:\n        if flight[0]\
+    \ == start:\n            layovers.append(flight[1])\n    return layovers\n"
+  completion_to: "layovers = []\n    for flight in flights:\n        if flight[0]\
+    \ == start:\n            layovers.append(flight)\n    return layovers\n"
+  diff: ''
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id005
+  username: student5
+  prompt_from: "def layoverTrips(flights, start):\n    \"\"\"\n    this function will\
+    \ take a list of flights and the starting city and return the possible layovers\
+    \ with the staring city\n    \"\"\"\n    "
+  prompt_to: "def layoverTrips(flights, start):\n    \"\"\"\n    this function will\
+    \ take a list of flights and the origin city and return the possible layovers\
+    \ with the staring city. Each item in the list of flights will first state the\
+    \ origin city and then state the destination city. If there is a flight with a\
+    \ destination city the same as the same as a flight with the origin city then\
+    \ add it the the output list. \n    \"\"\"\n    "
+  completion_from: "layovers = []\n    for flight in flights:\n        if flight[0]\
+    \ == start:\n            layovers.append(flight)\n    return layovers\n"
+  completion_to: "layover = []\n    for i in range(len(flights)):\n        for j in\
+    \ range(len(flights)):\n            if flights[i][1] == flights[j][0]:\n     \
+    \           layover.append([flights[i][0], flights[i][1], flights[j][1]])\n  \
+    \  return layover\n"
+  diff: "--- \n+++ \n@@ -12,7 +12,7 @@\n flights and the-starting+origin city and\
+    \ return@@ -22,5 +22,52 @@\n with the staring+city.+Each+item+in+the+list+of+flights+will+first+state+the+origin\
+    \ city+and+then+state+the+destination+city.+If+there+is+a+flight+with+a+destination+city+the+same+as+the+same+as+a+flight+with+the+origin+city+then+add+it+the+the+output+list.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

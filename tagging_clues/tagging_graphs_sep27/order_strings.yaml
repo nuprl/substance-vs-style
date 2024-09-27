@@ -1,0 +1,377 @@
+!Graph
+problem: order_strings
+nodes:
+- &id002 !Node
+  id: 0
+  stdout:
+  - '[''b'', ''c'', ''d'', ''a'']
+
+    '
+  - ''
+  - '[''aaa'', ''hello'', ''ccc'', ''bbb'']
+
+    '
+  stderr:
+  - ''
+  - 'TypeError: ''int'' object is not subscriptable'
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 1
+  stdout:
+  - '[''d'', ''a'', ''b'', ''c'']
+
+    '
+  - '[6, 5, 4, 3, 2, 1]
+
+    '
+  - '[''ccc'', ''bbb'', ''aaa'', ''hello'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id008 !Node
+  id: 2
+  stdout:
+  - '[''d'', ''c'', ''a'', ''b'']
+
+    '
+  - '[6, 2, 4, 5, 3, 1]
+
+    '
+  - '[''hello'', ''aaa'', ''ccc'', ''bbb'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 3
+  stdout:
+  - '[''b'', ''a'', ''d'', ''c'']
+
+    '
+  - '[2, 3, 4, 5, 6, 1]
+
+    '
+  - '[''aaa'', ''bbb'', ''ccc'', ''hello'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id006 !Node
+  id: 4
+  stdout:
+  - '[''a'', ''d'', ''c'', ''b'']
+
+    '
+  - '[4, 5, 6, 1, 2, 3]
+
+    '
+  - '[''bbb'', ''ccc'', ''hello'', ''aaa'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 5
+  stdout:
+  - '[''c'', ''b'', ''a'', ''d'']
+
+    '
+  - ''
+  - '[''olleh'', ''aaa'', ''bbb'', ''ccc'']
+
+    '
+  stderr:
+  - ''
+  - 'TypeError: ''int'' object is not subscriptable'
+  - ''
+  _node_tags: null
+- &id007 !Node
+  id: 6
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''random'' is not defined'
+  - 'NameError: name ''random'' is not defined'
+  - 'NameError: name ''random'' is not defined'
+  _node_tags: null
+- &id001 !Node
+  id: 7
+  stdout:
+  - '[''b'', ''c'', ''d'', ''a'']
+
+    '
+  - '[3, 2, 1, 6, 5, 4]
+
+    '
+  - '[''aaa'', ''hello'', ''ccc'', ''bbb'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 8
+  stdout:
+  - '[''d'', ''a'', ''b'', ''c'']
+
+    '
+  - ''
+  - '[''ccc'', ''bbb'', ''aaa'', ''hello'']
+
+    '
+  stderr:
+  - ''
+  - 'AttributeError: ''int'' object has no attribute ''isdigit'''
+  - ''
+  _node_tags: null
+- &id004 !Node
+  id: 9
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 10
+  stdout:
+  - '[''a'', ''b'', ''c'', ''d'']
+
+    '
+  - '[3, 2, 1, 4, 5, 6]
+
+    '
+  - '[''bbb'', ''aaa'', ''hello'', ''ccc'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 11
+  stdout:
+  - '[''c'', ''b'', ''a'', ''d'']
+
+    '
+  - '[1, 2, 3, 4, 5, 6]
+
+    '
+  - '[''hello'', ''aaa'', ''bbb'', ''ccc'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    reversing the order of the\
+    \ first of the list and revering the order of the second half of the list\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reversing\
+    \ the order of the first of the list and revering the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  completion_from: 'return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]
+
+    '
+  completion_to: "for i in range(len(lst)):\n        if lst[i][0].isdigit():\n   \
+    \         lst[i] = lst[i][::-1]\n    return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]\n"
+  diff: "--- \n+++ \n@@ -1,6 +1,10 @@\n def order_strings(lst): \"\"\"+when+there+are+numbers,\
+    \ reversing the order"
+  attempt_id: 1
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id003
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reversing\
+    \ the order of the first of the list and revering the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse\
+    \ the order of the first of the list and reversing the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  completion_from: "for i in range(len(lst)):\n        if lst[i][0].isdigit():\n \
+    \           lst[i] = lst[i][::-1]\n    return lst[:len(lst)//2][::-1] + lst[len(lst)//2:][::-1]\n"
+  completion_to: "for i in range(len(lst)):\n        if lst[i].isdigit():\n      \
+    \      lst[:i] = lst[:i][::-1]\n            lst[i:] = lst[i:][::-1]\n        \
+    \    return lst\n    return lst[::-1]\n"
+  diff: "--- \n+++ \n@@ -5,7 +5,7 @@\n there are numbers,-reversing+reverse the order\
+    \ of@@ -15,7 +15,7 @@\n the list and-revering+reversing the order of"
+  attempt_id: 2
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse\
+    \ the order of the first of the list and reversing the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse\
+    \ the order of the first of the list and reverse the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  completion_from: "for i in range(len(lst)):\n        if lst[i].isdigit():\n    \
+    \        lst[:i] = lst[:i][::-1]\n            lst[i:] = lst[i:][::-1]\n      \
+    \      return lst\n    return lst[::-1]\n"
+  completion_to: "# if the list is empty, return an empty list\n    if len(lst) ==\
+    \ 0:\n        return []\n    # if the list is of length 1, return the list\n \
+    \   if len(lst) == 1:\n        return lst\n    # if the list is of length 2, return\
+    \ the list in reverse order\n    if len(lst) == 2:\n        return [lst[1], lst[0]]\n"
+  diff: "--- \n+++ \n@@ -15,7 +15,7 @@\n the list and-reversing+reverse the order\
+    \ of"
+  attempt_id: 3
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    when there are numbers, reverse\
+    \ the order of the first of the list and reverse the order of the second half\
+    \ of the list\n    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the first\
+    \ of the list and reverse the order of the second half of the list\n    \"\"\"\
+    \n    "
+  completion_from: "# if the list is empty, return an empty list\n    if len(lst)\
+    \ == 0:\n        return []\n    # if the list is of length 1, return the list\n\
+    \    if len(lst) == 1:\n        return lst\n    # if the list is of length 2,\
+    \ return the list in reverse order\n    if len(lst) == 2:\n        return [lst[1],\
+    \ lst[0]]\n"
+  completion_to: 'return lst[::-1]
+
+    '
+  diff: "--- \n+++ \n@@ -1,10 +1,6 @@\n def order_strings(lst): \"\"\"-when-there-are-numbers,\
+    \ reverse the order"
+  attempt_id: 4
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id005
+  node_to: *id006
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the\
+    \ first of the list and reverse the order of the second half of the list\n   \
+    \ \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the first\
+    \ of the list and reverse the order of the second half of the list\n    \"\"\"\
+    \n    "
+  completion_from: 'return lst[::-1]
+
+    '
+  completion_to: "n = len(lst)\n    if n % 2 == 0:\n        return lst[n//2:] + lst[:n//2]\n\
+    \    else:\n        return lst[n//2+1:] + lst[:n//2+1]\n"
+  diff: ''
+  attempt_id: 5
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id006
+  node_to: *id001
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the\
+    \ first of the list and reverse the order of the second half of the list\n   \
+    \ \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the first\
+    \ half of the list and reverse the order of the second half of the list\n    \"\
+    \"\"\n    "
+  completion_from: "n = len(lst)\n    if n % 2 == 0:\n        return lst[n//2:] +\
+    \ lst[:n//2]\n    else:\n        return lst[n//2+1:] + lst[:n//2+1]\n"
+  completion_to: "lst[:len(lst)//2] = lst[:len(lst)//2][::-1]\n    lst[len(lst)//2:]\
+    \ = lst[len(lst)//2:][::-1]\n    return lst\n"
+  diff: "--- \n+++ \n@@ -7,6 +7,7 @@\n of the first+half of the list"
+  attempt_id: 6
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id005
+  username: student17
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the\
+    \ first half of the list and reverse the order of the second half of the list\n\
+    \    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    reverse the order of the first\
+    \ half of the list and reverse the order of the second half of the list.\n\n \
+    \   \"\"\"\n    "
+  completion_from: "lst[:len(lst)//2] = lst[:len(lst)//2][::-1]\n    lst[len(lst)//2:]\
+    \ = lst[len(lst)//2:][::-1]\n    return lst\n"
+  completion_to: 'return lst[::-1]
+
+    '
+  diff: "--- \n+++ \n@@ -21,5 +21,5 @@\n half of the-list+list. \"\"\""
+  attempt_id: 7
+  total_attempts: 8
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id007
+  node_to: *id008
+  username: student25
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    This function randomly changes\
+    \ the order of the given list.\n    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    This function imports random\
+    \ and randomly changes the order of the given list.\n    \"\"\"\n    "
+  completion_from: "random.shuffle(lst)\n    return lst\n"
+  completion_to: "import random\n    random.shuffle(lst)\n    return lst\n\n"
+  diff: "--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" This function+imports+random+and randomly\
+    \ changes the"
+  attempt_id: 1
+  total_attempts: 2
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id007
+  node_to: *id007
+  username: student30
+  prompt_from: "def order_strings(lst):\n    \"\"\"\n    Initialize the Python random\
+    \ module. Return elements of lst in randomized order.\n\n    \"\"\"\n    "
+  prompt_to: "def order_strings(lst):\n    \"\"\"\n    Use Python random module to\
+    \ return elements of lst in randomized order.\n\n    \"\"\"\n    "
+  completion_from: "random.seed(0)\n    random.shuffle(lst)\n    return lst\n"
+  completion_to: "random.shuffle(lst)\n    return lst\n\n"
+  diff: "--- \n+++ \n@@ -1,12 +1,12 @@\n def order_strings(lst): \"\"\"-Initialize-the+Use\
+    \ Python random-module.-Return+module+to+return elements of lst"
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

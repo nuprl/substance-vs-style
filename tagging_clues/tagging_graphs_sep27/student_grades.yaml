@@ -1,0 +1,422 @@
+!Graph
+problem: student_grades
+nodes:
+- !Node
+  id: 0
+  stdout:
+  - '{''Alice'': [''A'', ''A''], ''Bob'': [''A'', ''B'']}
+
+    '
+  - '{''Alice'': []}
+
+    '
+  - '{''Sam'': [''B'', ''B''], ''Ari'': [], ''Chris'': [''A'']}
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 1
+  stdout:
+  - '{''Alice'': [], ''Bob'': []}
+
+    '
+  - '{''Alice'': []}
+
+    '
+  - '{''Sam'': [], ''Ari'': [], ''Chris'': []}
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 2
+  stdout:
+  - '{}
+
+    '
+  - '{}
+
+    '
+  - '{}
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id009 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'KeyError: ''Alice'''
+  - 'KeyError: ''Alice'''
+  - 'KeyError: ''Sam'''
+  _node_tags: null
+- &id010 !Node
+  id: 4
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    14'
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    14'
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    14'
+  _node_tags: null
+- &id011 !Node
+  id: 5
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''grades_'' is not defined. Did you mean: ''grades''?'
+  - 'NameError: name ''grades_'' is not defined. Did you mean: ''grades''?'
+  - 'NameError: name ''grades_'' is not defined. Did you mean: ''grades''?'
+  _node_tags: null
+- &id004 !Node
+  id: 6
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    5'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    5'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    5'
+  _node_tags: null
+- &id001 !Node
+  id: 7
+  stdout:
+  - '{''Alice'': 20, ''Bob'': 11}
+
+    '
+  - '{''Alice'': 20}
+
+    '
+  - '{''Sam'': 21, ''Ari'': 67, ''Chris'': 23}
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 8
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: expected '':'''
+  - 'SyntaxError: expected '':'''
+  - 'SyntaxError: expected '':'''
+  _node_tags: null
+- &id008 !Node
+  id: 9
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  _node_tags: null
+- &id006 !Node
+  id: 10
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 11
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: argument of type ''int'' is not iterable'
+  - 'TypeError: argument of type ''int'' is not iterable'
+  - 'TypeError: argument of type ''int'' is not iterable'
+  _node_tags: null
+- &id007 !Node
+  id: 12
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student11
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+    \ two dictionaries: students and grades. If the values from students equals to\
+    \ the keys from grades, then sign the values from grades to students.\n    \"\"\
+    \"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+    \ two dictionaries: students and grades. If the values from students equals to\
+    \ the keys from grades, then sign the values from grades to update the values\
+    \ in students.\n    \"\"\"\n    "
+  completion_from: "for student in students:\n        for grade in grades:\n     \
+    \       if student == grade:\n                students[student] = grades[grade]\n\
+    \    return students\n\nprint(student_grades(students, grades))"
+  completion_to: "for student in students:\n        for grade in grades:\n       \
+    \     if student == grade:\n                students[student] = grades[grade]\n\
+    \    return students\n\nprint(student_grades(students, grades))"
+  diff: "--- \n+++ \n@@ -27,5 +27,9 @@\n from grades to+update+the+values+in students.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student11
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+    \ two dictionaries: students and grades. If the values from students equals to\
+    \ the keys from grades, then sign the values from grades to update the values\
+    \ in students.\n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+    \ two dictionaries: students and grades. If the values from students equals to\
+    \ the keys from grades, then sign the values from grades to update the values\
+    \ in students.\n    \"\"\"\n    "
+  completion_from: "for student in students:\n        for grade in grades:\n     \
+    \       if student == grade:\n                students[student] = grades[grade]\n\
+    \    return students\n\nprint(student_grades(students, grades))"
+  completion_to: "for student in students:\n        for grade in grades:\n       \
+    \     if student == grade:\n                students[student] = grades[grade]\n\
+    \    return students\n\nprint(student_grades(students, grades))\n"
+  diff: ''
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id003
+  username: student16
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    return the\
+    \ grades a student receives in form of a dictionary based on the dictionary of\
+    \ scores they each received, and the letter grades the scores correspond to.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    return the grades\
+    \ a student receives in form of a dictionary based on the dictionary of scores\
+    \ they each received, and the letter grades the scores correspond to. If the score\
+    \ they received exists in the second dictionary, use the letter grade list from\
+    \ the second dictionary for the student in the output\n    \"\"\"\n    "
+  completion_from: "student_grades = {}\n    for student in students:\n        student_grades[student]\
+    \ = []\n        for grade in grades:\n            if student in grades[grade]:\n\
+    \                student_grades[student].append(grade)\n    return student_grades\n"
+  completion_to: "student_grades = {}\n    for student in students:\n        student_grades[student]\
+    \ = []\n        for grade in grades:\n            if grade in students[student]:\n\
+    \                student_grades[student].append(grades[grade])\n    return student_grades\n\
+    \nprint(student_grades(students, grades))"
+  diff: "--- \n+++ \n@@ -30,4 +30,29 @@\n scores correspond to.+If+the+score+they+received+exists+in+the+second+dictionary,+use+the+letter+grade+list+from+the+second+dictionary+for+the+student+in+the+output\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student2
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    This function\
+    \ prints a new dictionary containing the strings that appear in the first dictionary\
+    \ the lists of stings that appear in the second dictionary\n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    This function\
+    \ prints an output containing all the strings that appear\n    \"\"\"\n    "
+  completion_from: "new_dict = {}\n    for student in students:\n        new_dict[student]\
+    \ = []\n        for grade in grades:\n            if student in grade:\n     \
+    \           new_dict[student].append(grade)\n    return new_dict\n\nprint(student_grades(students,\
+    \ grades))"
+  completion_to: "for i in range(len(students)):\n        print(students[i], \":\"\
+    , grades[i])\n\n"
+  diff: "--- \n+++ \n@@ -5,26 +5,12 @@\n This function prints-a-new-dictionary+an+output\
+    \ containing+all the strings that appear-in-the-first-dictionary-the-lists-of-stings-that-appear-in-the-second-dictionary\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id005
+  node_to: *id006
+  username: student5
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    the function\
+    \ student_grades will take the input of students and grades. Students will have\
+    \ a name and then a score. Grades will have a number and a range of letter grades.\
+    \ The function should return the name of a student with the range of letter grade\
+    \ they got based on their score. \n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    the function\
+    \ student_grades will take two inputs of students and grades. Students will have\
+    \ a name and then a score. Grades will have a number and a range of letter grades.\
+    \ The function should return the name of a student with the range of letter grade\
+    \ they got based on their score. \n    \"\"\"\n    "
+  completion_from: "# create an empty dictionary to store the student name and score\n\
+    \    student_grades = {}\n    # create a for loop to go through the students list\n\
+    \    for student in students:\n        # create a for loop to go through the grades\
+    \ list\n        for grade in grades:\n            # create an if statement to\
+    \ check if the student score is within the range of the letter grade\n       \
+    \     if student[1] >= grade[1] and student[1] <= grade"
+  completion_to: "# Create a dictionary with the students and their grades\n    student_grades\
+    \ = dict(zip(students, grades))\n    # Create a dictionary with the grades and\
+    \ their letter grades\n    grade_letter = {\n        'A': [90, 100],\n       \
+    \ 'B': [80, 90],\n        'C': [70, 80],\n        'D': [60, 70],\n        'F':\
+    \ [0, 60]\n    }\n"
+  diff: "--- \n+++ \n@@ -7,8 +7,8 @@\n student_grades will take-the-input+two+inputs\
+    \ of students and"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id006
+  node_to: *id007
+  username: student5
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    the function\
+    \ student_grades will take two inputs of students and grades. Students will have\
+    \ a name and then a score. Grades will have a number and a range of letter grades.\
+    \ The function should return the name of a student with the range of letter grade\
+    \ they got based on their score. \n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    the function\
+    \ student_grades will take two inputs: students and grades. Students will have\
+    \ a name and then a score. Grades will have a number corresponding to the students\
+    \ scores and a range of letter grades tied to the number. The function should\
+    \ return the name of a student with the range of letter grade they got based on\
+    \ their score. \n    \"\"\"\n    "
+  completion_from: "# Create a dictionary with the students and their grades\n   \
+    \ student_grades = dict(zip(students, grades))\n    # Create a dictionary with\
+    \ the grades and their letter grades\n    grade_letter = {\n        'A': [90,\
+    \ 100],\n        'B': [80, 90],\n        'C': [70, 80],\n        'D': [60, 70],\n\
+    \        'F': [0, 60]\n    }\n"
+  completion_to: "for student in students:\n        for grade in grades:\n       \
+    \     if student[1] == grade[0]:\n                print(f\"{student[0]} got a\
+    \ {grade[1]}\")\n\nstudents = [\n    (\"John\", \"A\"),\n    (\"Bob\", \"C\"),\n\
+    \    (\"Sally\", \"B\")\n]\n\ngrades = [\n    (90, \"A\"),\n    (80, \"B\"),\n\
+    \   "
+  diff: "--- \n+++ \n@@ -8,8 +8,7 @@\n will take two-inputs-of+inputs: students and\
+    \ grades.@@ -27,12 +26,21 @@\n have a number+corresponding+to+the+students+scores\
+    \ and a range of letter-grades.+grades+tied+to+the+number. The function should"
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id008
+  node_to: *id007
+  username: student61
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    Function takes\
+    \ in names of students with a number and based on that number, the grades are\
+    \ returned in a letter format\n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    Function takes\
+    \ in names of students with a number and based on that number the grades are returned\
+    \ from the brackets\n    \"\"\"\n    "
+  completion_from: "for i in range(len(students)):\n        if grades[i] >= 90:\n\
+    \            print(students[i], \"got an A\")\n        elif grades[i] >= 80:\n\
+    \            print(students[i], \"got a B\")\n        elif grades[i] >= 70:\n\
+    \            print(students[i], \"got a C\")\n        elif grades[i] >= 60:\n\
+    \            print"
+  completion_to: "for name in students:\n        grade = grades[name]\n        if\
+    \ grade >= 90:\n            print(name, \"got an A\")\n        elif grade >= 80:\n\
+    \            print(name, \"got a B\")\n        elif grade >= 70:\n           \
+    \ print(name, \"got a C\")\n        elif grade >= 60:\n            print(name,\
+    \ \"got a D\")\n        else:\n            print(name, \""
+  diff: "--- \n+++ \n@@ -15,13 +15,12 @@\n based on that-number,+number the grades\
+    \ are returned-in-a-letter-format+from+the+brackets \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id009
+  node_to: *id010
+  username: student74
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    Assigns students\
+    \ to a number. Then, the numbers are assigned a letter grade. The code should\
+    \ keep track of the letter grade for each student. Any unassigned students should\
+    \ be ignored \n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    Assigns students\
+    \ to a number. Then, the students are assigned a letter grade. The code should\
+    \ keep track of the letter grade for each student. Any unassigned students should\
+    \ be ignored.\n    \"\"\"\n    "
+  completion_from: "grades_dict = {}\n    for student in students:\n        grades_dict[student]\
+    \ = grades[student]\n    return grades_dict\n"
+  completion_to: "student_grades = {}\n    for student in students:\n        if student\
+    \ in grades:\n            if grades[student] >= 90:\n                student_grades[student]\
+    \ = 'A'\n            elif grades[student] >= 80:\n                student_grades[student]\
+    \ = 'B'\n            elif grades[student] >= 70:\n                student_grades[student]\
+    \ = 'C'\n            elif grades[student] >= 60:\n"
+  diff: "--- \n+++ \n@@ -9,7 +9,7 @@\n number. Then, the-numbers+students are assigned\
+    \ a@@ -32,5 +32,5 @@\n students should be-ignored+ignored. \"\"\""
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id010
+  node_to: *id011
+  username: student74
+  prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    Assigns students\
+    \ to a number. Then, the students are assigned a letter grade. The code should\
+    \ keep track of the letter grade for each student. Any unassigned students should\
+    \ be ignored.\n    \"\"\"\n    "
+  prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    students correspond\
+    \ to a number. Then, the students are assigned a letter grade. The code should\
+    \ keep track of the letter grade for each student. Any unassigned students should\
+    \ be ignored.\n    \"\"\"\n    "
+  completion_from: "student_grades = {}\n    for student in students:\n        if\
+    \ student in grades:\n            if grades[student] >= 90:\n                student_grades[student]\
+    \ = 'A'\n            elif grades[student] >= 80:\n                student_grades[student]\
+    \ = 'B'\n            elif grades[student] >= 70:\n                student_grades[student]\
+    \ = 'C'\n            elif grades[student] >= 60:\n"
+  completion_to: "# create a dictionary to store the grades\n    grades_dict = {}\n\
+    \    # loop through the students\n    for student in students:\n        # check\
+    \ if the student is in the grades dictionary\n        if student in grades_dict:\n\
+    \            # if so, add the grade to the list of grades\n            grades_dict[student].append(grades[student])\n\
+    \        else:\n            # if not, create a new list with the grade\n     \
+    \       grades_"
+  diff: "--- \n+++ \n@@ -2,8 +2,8 @@\n student_grades(students, grades): \"\"\"-Assigns\
+    \ students+correspond to a number."
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

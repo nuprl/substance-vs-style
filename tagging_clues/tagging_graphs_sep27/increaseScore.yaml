@@ -1,0 +1,525 @@
+!Graph
+problem: increaseScore
+nodes:
+- &id002 !Node
+  id: 0
+  stdout:
+  - '10
+
+    '
+  - '10
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 1
+  stdout:
+  - '10
+
+    '
+  - '01
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id006 !Node
+  id: 2
+  stdout:
+  - '11
+
+    '
+  - '2
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id008 !Node
+  id: 3
+  stdout:
+  - '10
+
+    '
+  - '1
+
+    '
+  - '10
+
+    '
+  - '15
+
+    '
+  - '20
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 4
+  stdout:
+  - '10
+
+    '
+  - '2
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 5
+  stdout:
+  - '11
+
+    '
+  - '10
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id007 !Node
+  id: 6
+  stdout:
+  - '10
+
+    '
+  - '1
+
+    '
+  - '11
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id004 !Node
+  id: 7
+  stdout:
+  - '10
+
+    '
+  - '10
+
+    '
+  - '10
+
+    '
+  - '16
+
+    '
+  - '21
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student23
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    This function takes in\
+    \ a number and adds one if the number is greater then 9. If the number is negative\
+    \ it turns it into a positive number. If it is a single-digit number it adds a\
+    \ zero to the number. Then the output is returned with the updated number.\n \
+    \   \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    This function takes in a\
+    \ number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds a zero\
+    \ to the end of the number. Then the output is returned with the updated number.\n\
+    \    \"\"\"\n    "
+  completion_from: "if score > 9:\n        score += 1\n    elif score < 0:\n     \
+    \   score = abs(score)\n    else:\n        score = \"0\" + str(score)\n    return\
+    \ score\n"
+  completion_to: "if score > 9:\n        score += 1\n    elif score < 0:\n       \
+    \ score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  diff: "--- \n+++ \n@@ -15,7 +15,7 @@\n number is greater-then+than 9. If the@@ -24,7\
+    \ +24,6 @@\n negative it turns-it into a positive@@ -41,6 +40,9 @@\n zero to the+end+of+the\
+    \ number. Then the"
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student23
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    This function takes in\
+    \ a number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds a zero\
+    \ to the end of the number. Then the output is returned with the updated number.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    This function takes in a\
+    \ number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds a zero\
+    \ to the end of the integar. Then the output is returned with the updated number.\n\
+    \    \"\"\"\n    "
+  completion_from: "if score > 9:\n        score += 1\n    elif score < 0:\n     \
+    \   score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  completion_to: "if score > 9:\n        score += 1\n    elif score < 0:\n       \
+    \ score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  diff: "--- \n+++ \n@@ -43,7 +43,7 @@\n end of the-number.+integar. Then the output"
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student23
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    This function takes in\
+    \ a number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds a zero\
+    \ to the end of the integar. Then the output is returned with the updated number.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    This function takes in a\
+    \ number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds the\
+    \ number zero to the end of the integer. Then the output is returned with the\
+    \ updated number.\n    \"\"\"\n    "
+  completion_from: "if score > 9:\n        score += 1\n    elif score < 0:\n     \
+    \   score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  completion_to: "if score > 9:\n        score += 1\n    elif score < 0:\n       \
+    \ score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  diff: "--- \n+++ \n@@ -36,14 +36,15 @@\n number it adds-a+the+number zero to the\
+    \ end of the-integar.+integer. Then the output"
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student23
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    This function takes in\
+    \ a number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds the\
+    \ number zero to the end of the integer. Then the output is returned with the\
+    \ updated number.\n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    This function takes in a\
+    \ number and adds one if the number is greater than 9. If the number is negative\
+    \ it turns into a positive number. If it is a single-digit number it adds the\
+    \ integer zero to the end of the number and returns an integer. Then the output\
+    \ is returned with the updated number.\n    \"\"\"\n    "
+  completion_from: "if score > 9:\n        score += 1\n    elif score < 0:\n     \
+    \   score = abs(score)\n    else:\n        score = str(score) + \"0\"\n    return\
+    \ score\n"
+  completion_to: "if score > 9:\n        score += 1\n        return score\n    elif\
+    \ score < 0:\n        score = abs(score)\n        return score\n    else:\n  \
+    \      score = str(score)\n        score += '0'\n        score = int(score)\n\
+    \        return score\n"
+  diff: "--- \n+++ \n@@ -37,13 +37,17 @@\n it adds the-number+integer zero to the\
+    \ end of the+number+and+returns+an integer. Then the"
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student33
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The function takes an integer\
+    \ as input. If the integer is negative, the function returns it as positive. If\
+    \ the integer only has one digit, the function returns a value of 10. If the integer\
+    \ is positive and two or more digits, the function returns the integer plus one.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The function takes an integer\
+    \ as input. If the integer is negative, the function returns the absolute value\
+    \ of the integer. If the integer only has one digit, the function returns a value\
+    \ of 10. If the integer is positive and two or more digits, the function returns\
+    \ the integer plus one. \n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        score = abs(score)\n    if score < 10:\n\
+    \        score = 10\n    else:\n        score = score + 1\n    return score\n"
+  completion_to: "if score < 0:\n        return abs(score)\n    elif score < 10:\n\
+    \        return 10\n    else:\n        return score + 1\n"
+  diff: "--- \n+++ \n@@ -16,9 +16,12 @@\n the function returns-it-as-positive.+the+absolute+value+of+the+integer.\
+    \ If the integer"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id004
+  node_to: *id003
+  username: student35
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+    \ is to convert the input score into a number that is greater than or equal to\
+    \ 10. If a negative number is provided, it is to be converted into a positive\
+    \ number and if its value is less than 10, it should become 10. If a positive\
+    \ single digit is provided, it should be converted into 10. If a positive double-digit\
+    \ number is provided, its value is to be increased by 1.\n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+    \ is to convert the input score into a number that is greater than or equal to\
+    \ 10. If a negative number is provided, it is to be converted into a positive\
+    \ number and if its value is less than 10, it should become 10. If a positive\
+    \ single digit is provided, it should be converted into 10. If a positive double-digit\
+    \ number (including 10) is provided, its value is to be increased by 1.\n    \"\
+    \"\"\n    "
+  completion_from: "if score < 0:\n        score = abs(score)\n    if score < 10:\n\
+    \        score = 10\n    if score > 10:\n        score = score + 1\n    return\
+    \ score\n"
+  completion_to: "if score < 0:\n        score = abs(score)\n        if score < 10:\n\
+    \            score = 10\n        else:\n            score += 1\n    else:\n  \
+    \      if score < 10:\n            score = 10\n        else:\n            score\
+    \ += 1\n    return score\n"
+  diff: "--- \n+++ \n@@ -68,6 +68,8 @@\n positive double-digit number+(including+10)\
+    \ is provided, its"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student35
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+    \ is to convert the input score into a number that is greater than or equal to\
+    \ 10. If a negative number is provided, it is to be converted into a positive\
+    \ number and if its value is less than 10, it should become 10. If a positive\
+    \ single digit is provided, it should be converted into 10. If a positive double-digit\
+    \ number (including 10) is provided, its value is to be increased by 1.\n    \"\
+    \"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+    \ is to convert the input score into a number that is greater than or equal to\
+    \ 10. If a negative number is provided, it is to be converted into a positive\
+    \ number and if its value is less than 10, it should become 10. If a positive\
+    \ single digit is provided, it should be converted into 10. If a positive double-digit\
+    \ number (including 10) is given as initial input, its value is to be increased\
+    \ by 1.\n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        score = abs(score)\n        if score <\
+    \ 10:\n            score = 10\n        else:\n            score += 1\n    else:\n\
+    \        if score < 10:\n            score = 10\n        else:\n            score\
+    \ += 1\n    return score\n"
+  completion_to: "if score < 0:\n        score = abs(score)\n    if score < 10:\n\
+    \        score = 10\n    else:\n        score += 1\n    return score\n"
+  diff: "--- \n+++ \n@@ -71,7 +71,10 @@\n (including 10) is-provided,+given+as+initial+input,\
+    \ its value is"
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id005
+  node_to: *id002
+  username: student50
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The input is an integer.\
+    \ If the number is negative, make it positive. Otherwise, add one.\n    \"\"\"\
+    \n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The input is an integer.\
+    \ If the number is below 10, make it 10. Else, add one to it.\n    \"\"\"\n  \
+    \  "
+  completion_from: "if score < 0:\n        return -score\n    else:\n        return\
+    \ score + 1\n"
+  completion_to: "if score < 10:\n        return 10\n    else:\n        return score\
+    \ + 1\n"
+  diff: "--- \n+++ \n@@ -10,11 +10,14 @@\n the number is-negative,+below+10, make\
+    \ it-positive.-Otherwise,+10.+Else, add-one.+one+to+it. \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id006
+  node_to: *id002
+  username: student59
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    takes an integer and returns\
+    \ an integer whose one's place digit is one more than before. if the inputted\
+    \ integer is negative, returns the absolute value of the integer\n    \"\"\"\n\
+    \    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    takes an integer as the input.\
+    \ if the inputted integer is negative, returns the absolute value of the integer.\
+    \ if the inputted integer is positive and is greater than 9, returns an integer\
+    \ whose one's place digit is one more than before. for all other case, returns\
+    \ an integer that adds a zero in the one's place\n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        score = abs(score)\n    score = score +\
+    \ 1\n    return score\n"
+  completion_to: "if score < 0:\n        return abs(score)\n    elif score >= 9:\n\
+    \        return score + 1\n    else:\n        return score * 10\n"
+  diff: "--- \n+++ \n@@ -4,7 +4,33 @@\n takes an integer+as+the+input.+if+the+inputted+integer+is+negative,+returns+the+absolute+value+of+the+integer.+if+the+inputted+integer+is+positive\
+    \ and+is+greater+than+9, returns an integer@@ -17,17 +43,19 @@\n more than before.-if+for+all+other+case,+returns+an+integer+that+adds+a+zero+in\
+    \ the-inputted-integer-is-negative,-returns-the-absolute-value-of-the-integer+one's+place\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student60
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The function takes in an\
+    \ int score as parameter. If the score is negative, it returns a positive number.\
+    \ If the score is a single digit, it adds a 0 at the end of the number and returns\
+    \ it. Otherwise, the function just returns score + 1. \n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The function takes in an\
+    \ int score as parameter. If the score is negative, it returns a positive number.\
+    \ If the score is a single digit, it adds a 0 at the end of the number and returns\
+    \ it. Otherwise, the function just returns score + 1. This function always returns\
+    \ an int\n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        return abs(score)\n    elif score < 10:\n\
+    \        return str(score) + \"0\"\n    else:\n        return score + 1\n"
+  completion_to: "if score < 0:\n        return -score\n    elif score < 10:\n   \
+    \     return str(score) + \"0\"\n    else:\n        return score + 1\n"
+  diff: "--- \n+++ \n@@ -48,4 +48,10 @@\n score + 1.+This+function+always+returns+an+int\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student60
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    The function takes in an\
+    \ int score as parameter. If the score is negative, it returns a positive number.\
+    \ If the score is a single digit, it adds a 0 at the end of the number and returns\
+    \ it. Otherwise, the function just returns score + 1. This function always returns\
+    \ an int\n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    The function takes in an\
+    \ int score as parameter. If the score is negative, it returns a positive number.\
+    \ If the score is a single digit, it adds a 0 at the end of the number, casts\
+    \ it back into an int and returns it. Otherwise, the function just returns score\
+    \ + 1. \n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        return -score\n    elif score < 10:\n \
+    \       return str(score) + \"0\"\n    else:\n        return score + 1\n"
+  completion_to: "if score < 0:\n        return abs(score)\n    elif score < 10:\n\
+    \        return int(str(score) + \"0\")\n    else:\n        return score + 1\n"
+  diff: "--- \n+++ \n@@ -36,7 +36,13 @@\n end of the-number+number,+casts+it+back+into+an+int\
+    \ and returns it.@@ -48,10 +54,4 @@\n score + 1.-This-function-always-returns-an-int\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id007
+  username: student64
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    Returns score plus one.\
+    \ If score is less than 10 but greater than zero, returns score multiplied by\
+    \ 10. If score is negative, returns absolute value of score.\n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    Returns score plus one. If\
+    \ score is less than 10 but greater than zero, returns score multiplied by 1.\
+    \ If score is negative, returns absolute value of score.\n    \"\"\"\n    "
+  completion_from: "if score < 10 and score > 0:\n        return score * 10\n    elif\
+    \ score < 0:\n        return abs(score)\n    else:\n        return score + 1\n"
+  completion_to: "if score < 10 and score > 0:\n        return score * 1\n    elif\
+    \ score < 0:\n        return abs(score)\n    else:\n        return score + 1\n"
+  diff: "--- \n+++ \n@@ -19,7 +19,7 @@\n score multiplied by-10.+1. If score is"
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id008
+  node_to: *id002
+  username: student75
+  prompt_from: "def increaseScore(score):\n    \"\"\"\n    def increaseScore(score):\
+    \ takes input '-10' and outputs its positive integer\n    \"\"\"\n    "
+  prompt_to: "def increaseScore(score):\n    \"\"\"\n    def increaseScore(score):\
+    \ takes input '-10' and outputs its positive integer\ndef increaseScore(score):\
+    \ inputs '1' and adds 9\ndef increaseScore(score): adds 1 to each input '10',\
+    \ '15', '20'\n    \"\"\"\n    "
+  completion_from: "if score < 0:\n        score = score * -1\n    return score\n"
+  completion_to: "if score < 0:\n        return abs(score)\n    elif score == 1:\n\
+    \        return score + 9\n    else:\n        return score + 1\n"
+  diff: "--- \n+++ \n@@ -11,4 +11,21 @@\n its positive integer+def+increaseScore(score):+inputs+'1'+and+adds+9+def+increaseScore(score):+adds+1+to+each+input+'10',+'15',+'20'\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+student_start_node_tags: {}

@@ -1,0 +1,138 @@
+!Graph
+problem: exp
+nodes:
+- &id004 !Node
+  id: 0
+  stdout:
+  - '[1, 2, 3]
+
+    '
+  - '[6, 6, 6]
+
+    '
+  - '[4]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 1
+  stdout:
+  - '[1, 2, 3]
+
+    '
+  - '[8, 8, 8]
+
+    '
+  - '2
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 2
+  stdout:
+  - '[1, 2, 3]
+
+    '
+  - '[8, 8, 8]
+
+    '
+  - '[4]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 3
+  stdout:
+  - '[1, 2, 3]
+
+    '
+  - '[2, 2, 2]
+
+    '
+  - '[2]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student14
+  prompt_from: "def exp(lst, val):\n    \"\"\"\n    check what number is outside each\
+    \ set of brackets. then raise numbers in brackets to the power of each number\
+    \ outside of the corresponding brackets. Return finished equation\n    \"\"\"\n\
+    \    "
+  prompt_to: "def exp(lst, val):\n    \"\"\"\n    multiply numbers in brackets by\
+    \ number outside of brackets. Return finished equation\n    \"\"\"\n    "
+  completion_from: "if len(lst) == 1:\n        return lst[0]\n    else:\n        for\
+    \ i in range(len(lst)):\n            if type(lst[i]) == list:\n              \
+    \  lst[i] = exp(lst[i], val)\n            else:\n                lst[i] = lst[i]\
+    \ ** val\n        return lst\n\n"
+  completion_to: "for i in range(len(lst)):\n        if lst[i] == '^':\n         \
+    \   lst[i-1] = lst[i-1] ** lst[i+1]\n            lst.pop(i)\n            lst.pop(i)\n\
+    \            return exp(lst, val)\n    return lst\n\n"
+  diff: "--- \n+++ \n@@ -2,30 +2,14 @@\n exp(lst, val): \"\"\"-check-what-number-is-outside-each-set-of-brackets.-then-raise+multiply\
+    \ numbers in brackets-to-the-power-of-each+by number outside of-the-corresponding\
+    \ brackets. Return finished"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student14
+  prompt_from: "def exp(lst, val):\n    \"\"\"\n    multiply numbers in brackets by\
+    \ number outside of brackets. Return finished equation\n    \"\"\"\n    "
+  prompt_to: "def exp(lst, val):\n    \"\"\"\n    raise numbers in brackets to the\
+    \ power of the number outside of brackets. Return finished equation\n    \"\"\"\
+    \n    "
+  completion_from: "for i in range(len(lst)):\n        if lst[i] == '^':\n       \
+    \     lst[i-1] = lst[i-1] ** lst[i+1]\n            lst.pop(i)\n            lst.pop(i)\n\
+    \            return exp(lst, val)\n    return lst\n\n"
+  completion_to: "for i in range(len(lst)):\n        if lst[i] == '^':\n         \
+    \   lst[i - 1] = lst[i - 1] ** lst[i + 1]\n            lst[i] = ''\n         \
+    \   lst[i + 1] = ''\n    return lst\n\n"
+  diff: "--- \n+++ \n@@ -2,11 +2,15 @@\n exp(lst, val): \"\"\"-multiply+raise numbers\
+    \ in brackets-by+to+the+power+of+the number outside of"
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student15
+  prompt_from: "def exp(lst, val):\n    \"\"\"\n    raises each number in lst to the\
+    \ power of the val, returns a list of the new values\n    \"\"\"\n    "
+  prompt_to: "def exp(lst, val):\n    \"\"\"\n    multiplies each number in lst by\
+    \ val, returns a list of the new values\n    \"\"\"\n    "
+  completion_from: 'return [x**val for x in lst]
+
+    '
+  completion_to: 'return [x * val for x in lst]
+
+    '
+  diff: "--- \n+++ \n@@ -2,16 +2,12 @@\n exp(lst, val): \"\"\"-raises+multiplies each\
+    \ number in lst-to-the-power-of-the+by val, returns a"
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

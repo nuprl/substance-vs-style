@@ -213,7 +213,8 @@ edges:
   attempt_id: 1
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -235,7 +236,8 @@ edges:
   attempt_id: 2
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id002
@@ -257,7 +259,8 @@ edges:
   attempt_id: 3
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id002
   node_to: *id003
@@ -278,7 +281,8 @@ edges:
   attempt_id: 4
   total_attempts: 5
   state: fail
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -297,7 +301,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id004
@@ -318,7 +323,8 @@ edges:
   attempt_id: 2
   total_attempts: 3
   state: success
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id001
   node_to: *id005
@@ -338,7 +344,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id005
   node_to: *id006
@@ -360,7 +367,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id006
   node_to: *id006
@@ -381,7 +389,8 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: fail
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id007
   node_to: *id008
@@ -399,7 +408,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id008
   node_to: *id009
@@ -418,7 +428,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id009
   node_to: *id009
@@ -437,7 +448,8 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: fail
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id010
   node_to: *id011
@@ -462,7 +474,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id011
   node_to: *id012
@@ -489,7 +502,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id012
   node_to: *id004
@@ -515,7 +529,8 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: success
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id004
@@ -540,7 +555,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -562,7 +578,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags: 
+  - 0
 - !Edge
   node_from: *id001
   node_to: *id004
@@ -583,7 +600,8 @@ edges:
   attempt_id: 2
   total_attempts: 3
   state: success
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id001
   node_to: *id004
@@ -607,7 +625,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags: 
+  - a2
 - !Edge
   node_from: *id001
   node_to: *id004
@@ -628,5 +647,19 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
-student_start_node_tags: {}
+  _edge_tags: 
+  - a2
+student_start_node_tags:
+  student11:
+  student13:
+  - 1
+  student16:
+  student2:
+  student22:
+  student5:
+  student61:
+  - 1
+  student72:
+  - 1
+  student74:
+#Find_multiples is a clear case of how student did not get what the function is doing but the model can guess the results out by the function signature. Specifically a lot of students think “count up by the factor” due to the first assertion test. They never mention multiple, but model gets it by looking at the function signature.

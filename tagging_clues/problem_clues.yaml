@@ -108,8 +108,9 @@ check_prime:
 combine:
   signature: 'def combine(l1,l2):'
   tags:
-  - 1: input/output 2d array
+  - 1: input 2 lists
   - 2: row correspondance
+  - 3: output 1 2d array
   tests:
   - input: '[[1,2,3],[4,5,6],[7,8,9]],[[10,20,30],[40,50,60],[70,80,90]]'
     output: '[[1,2,3,10,20,30],[4,5,6,40,50,60],[7,8,9,70,80,90]]'
@@ -176,7 +177,9 @@ findHorizontals:
     the values are the row in puzzle where they're found.
 find_multiples:
   signature: 'def find_multiples(start,stop,factor):'
-  tags: ''
+  tags: 
+  - 1: return multiples
+  - 2: inclusive start and stop
   tests:
   - input: 1,100,20
     output: '[20, 40, 60, 80, 100]'
@@ -185,7 +188,7 @@ find_multiples:
   - input: 1000,2000,177
     output: '[1062, 1239, 1416, 1593, 1770, 1947]'
   working_description: Write a function called find_multiples, which returns a list
-    of all the multiples of a given factor  between the given start and stop numbers,
+    of all the multiples of a given factor between the given start and stop numbers,
     inclusive.
 generateCardDeck:
   signature: 'def generateCardDeck(suits, vals):'
@@ -372,7 +375,12 @@ sortBySuccessRate:
     sorted descending by success.
 sort_physicists:
   signature: 'def sort_physicists(scientists):'
-  tags: ''
+  tags:
+  - 1: Input is a list of lists
+  - 2: specify inner list structure #person_name, number, subject
+  - 3: filter list with the right key #element at index 2
+  - 4: sort list with the right key #sort by element at index 1
+  - 5: specify return #return the list with only element at index 0
   tests:
   - input: '[["Youyou",91,"Chemistry"],["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]'
     output: '[''Peiris'', ''Ghez'', ''Strickland'']'

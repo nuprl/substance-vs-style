@@ -588,7 +588,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: fail
-  _edge_tags: null
+  _edge_tags:
+  - 0
 - !Edge
   node_from: *id003
   node_to: *id004
@@ -611,7 +612,9 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+  - d1
+  - 
 - !Edge
   node_from: *id004
   node_to: *id005

@@ -21,7 +21,7 @@ class Node(yaml.YAMLObject):
     
     def __repr__(self):
         return "%s(id=%r, stdout=%r, stderr=%r, _node_tags=%r)" % (
-        self.id, self.stdout, self.stderr, self._node_tags)
+        self.__class__.__name__,self.id, self.stdout, self.stderr, self._node_tags)
         
     def __eq__(self, other):
         return (self.id == other.id and self.stdout == other.stdout
@@ -52,12 +52,13 @@ class Edge(yaml.YAMLObject):
     _edge_tags: Union[None, List[str]] = None
     
     def __repr__(self):
-        return "%s(_edge_tags=%r node_from=%r, node_to=%r, username=%r" + \
-        " prompt_from=%r prompt_to=%r completion_from=%r completion_to=%r" + \
-        " diff=%r attempt_id=%r total_attempts=%r state=%r)" % (
-        self._edge_tags, self.node_from, self.node_to, self.username, self.prompt_from,
-        self.prompt_to, self.completion_from, self.completion_to, self.diff,
-        self.attempt_id, self.total_attempts, self.state)
+        # return f"%r" % self.state
+        return """%s(_edge_tags=%r,node_from=%r,node_to=%r,username=%r,
+prompt_from=%r,prompt_to=%r,completion_from=%r,completion_to=%r,diff=%r,
+attempt_id=%r,total_attempts=%r,state=%r""" % (self.__class__.__name__,
+        self._edge_tags, self.node_from, self.node_to, self.username,
+        self.prompt_from, self.prompt_to, self.completion_from,self.completion_to, 
+        self.diff, self.attempt_id, self.total_attempts, self.state)
         
 
 class Graph(yaml.YAMLObject):
@@ -98,7 +99,7 @@ class Graph(yaml.YAMLObject):
     
     def __repr__(self):
         return "%s(problem=%r, nodes=%r, edges=%r)" % (
-        self.problem, self.nodes, self.edges)
+        self.__class__.__name__, self.problem, self.nodes, self.edges)
         
     def __eq__(self, other):
         return (self.nodes == other.nodes and

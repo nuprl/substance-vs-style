@@ -39,76 +39,115 @@ def _compute_next_state(prev_state, changes):
         if c == 0: #no change
             continue
         elif c[0] == "d": #delete
-            if int(c[1]) in prev_state:
-                prev_state.remove(int(c[1]))
+            # if int(c[1]) in prev_state:
+            prev_state.remove(int(c[1]))
         elif c[0] == "a": #add
             prev_state.add(int(c[1]))
     return list(prev_state)
 
 def progress_summary(graph: Graph)->dict:
     """
-    student attempt_0 ... attempt_n
+    Will produce following summary:
+    student1:
+        [
+            {
+                "attempt_id":0,
+                "node_id_from-node_id_to":_,
+                "clues":_,
+                "state":_,
+            },
+            ...
+            {
+                "attempt_id":n,
+                "node_id_from-node_id_to":_,
+                "clues":_,
+                "state":_,
+            },
+        ]
     """
     student_to_attempt_tags = {}
     for e in graph.edges:
         if e.attempt_id == 1:
-            student_to_attempt_tags[e.username] = [[0, (e.node_from.id, e.node_to.id), 
-                                                    graph.get_start_node_states()[e.username], "start"]]
-        student_to_attempt_tags[e.username].append([e.attempt_id, (e.node_from.id, e.node_to.id),
-                                                    e._edge_tags, e.state])
+            student_to_attempt_tags[e.username] = [{
+                "attempt_id": 0,
+                "node_id_from-node_id_to": (None, e.node_from.id),
+                "clues": graph.get_start_node_states()[e.username],
+                "_edge_tag": None,
+                "state": "start"
+            }]
+        student_to_attempt_tags[e.username].append({
+                "attempt_id": e.attempt_id,
+                "node_id_from-node_id_to": (e.node_from.id, e.node_to.id),
+                "clues": None,
+                "_edge_tag": e._edge_tags,
+                "state": e.state
+            })
         
     # compute intermediate node sets
     for student, attempts in student_to_attempt_tags.items():
-        sorted_attempts = sorted(attempts, key=lambda x: x[0])
-        attempt_final_states = []
+        sorted_attempts = sorted(attempts, key=lambda x: x["attempt_id"])
+        clues_tracker = []
         for attempt in sorted_attempts:
-            if attempt[0] == 0:
-                attempt.append(attempt[2])
-                attempt_final_states.append(attempt)
+            if attempt["attempt_id"] == 0:
+                clues_tracker.append(attempt)
             else:
-                prev_state = attempt_final_states[-1][-1]
-                changes = attempt[2]
-                attempt.append(_compute_next_state(prev_state, changes))
-                attempt_final_states.append(attempt)
-    
-        student_to_attempt_tags[student] = attempt_final_states
+                prev_state = clues_tracker[-1]["clues"]
+                changes = attempt["_edge_tag"]
+                attempt["clues"] = _compute_next_state(prev_state, changes)
+                clues_tracker.append(attempt)
+        student_to_attempt_tags[student] = clues_tracker
     return student_to_attempt_tags
 
 def get_clusters(problem_summary):
     """
     For each edge, collect the state reached (diff clusters)
+    
+    (u,v):
+        [
+            {
+                "_edge_tag": []
+                "state": _
+            }
+        ]
     """
     edge_to_state = {}
     for student,attempts in problem_summary.items():
-        for tup in attempts:
-            edge = str(tup[1])
-            state = tup[-1]
-            change = str(tup[2])
+        for dikt in attempts:
+            edge = str(dikt["node_id_from-node_id_to"])
+            state = dikt["state"]
+            change = str(dikt["_edge_tag"])
             if edge not in edge_to_state.keys():
-                edge_to_state[edge] = [[change,state]]
+                edge_to_state[edge] = [{"_edge_tag":change,"state":state}]
             else:
-                edge_to_state[edge].append([change,state])
+                edge_to_state[edge].append({"_edge_tag":change,"state":state})
     
     return edge_to_state
 
 def get_paths(problem_summary):
     """
     For each student, collect path
+    
+    student0: [
+        {
+            "attempt_id":_,
+            "curr_node":_,
+            "_edge_tag":_,
+            "clue_set":_,
+            
+        }
+    ]
     """
     student_to_trace = {}
     for student,attempts in problem_summary.items():
         if student not in student_to_trace.keys():
             student_to_trace[student] = []
-        for tup in attempts:
-            student_to_trace[student].append(str(tup[2]))
-            if tup[0] == len(attempts)-1:
-                final_node = "n:" + str(tup[1][1])
-                if tup[-2] == "success":
-                    final_node += ":success"
-                student_to_trace[student].append(final_node)
-            else:
-                student_to_trace[student].append("n:" + str(tup[1][1]))
-    
+        attempts = sorted(attempts, key= lambda x: x["attempt_id"])
+        for dikt in attempts:
+            student_to_trace[student].append({"attempt_id": dikt["attempt_id"],
+                                            "curr_node": dikt["node_id_from-node_id_to"][1],
+                                              "_edge_tag": dikt["_edge_tag"], 
+                                              "clue_set": dikt["clues"],
+                                              "state": dikt["state"]})
     return student_to_trace
 
 def filter_graphs(graphs):
@@ -148,7 +187,8 @@ def main(args):
             prob_summary = progress_summary(g)
             clusters = get_clusters(prob_summary)
             paths =get_paths(prob_summary)
-            problem[g.problem] = {"summary":prob_summary, "clusters": clusters, "paths": paths}
+            problem[g.problem] = {"student_path":prob_summary, "edge_to_tags": clusters, 
+                                  "student_path_condensed": paths}
         with open(f"{args.outdir}/progress_summary.json","w") as fp:
             json.dump(problem, fp, indent=3)
     elif args.task == "filter_graphs":

@@ -18,6 +18,37 @@ but both are needed
 5. the most efficient paths progressively add clues
 6. adding clues at the start or end of a prompt is significant
 '''
+def check_final_states(problem_summary):
+    """
+    Check that all successful students end with full set of clues,
+    and unsuccessful students do not.
+    If this is not the case, return a summary
+    """
+    student_to_final = {}
+    keys = ["clues","state", "attempt_id"]
+    for student,attempts in problem_summary.items():
+        attempts = sorted(attempts, key=lambda x: x["attempt_id"])
+        student_to_final[student] = {k:v for k,v in attempts[-1].items() if k in keys}
+        
+    success = [tuple(v["clues"]) for k,v in student_to_final.items() if v["state"] == "success"]
+    fail = [tuple(v["clues"]) for k,v in student_to_final.items() if v["state"] != "success"]
+    
+    # num success vs fail
+    print(f"Success: {len(success)} / {len(student_to_final.keys())}")
+    
+    # only 1 success set
+    if len(set(success)) != 1:
+        success_len = max([len(s) for s in success])
+        temp = {k:v for k,v in student_to_final.items() if v["state"] == "success" and len(v["clues"]) < success_len}
+        print("FALSE SUCCESS:", len(temp), temp)
+    
+    # a failure cannot include success set
+    if len(set(fail).intersection(set(success))) != 0:
+        temp = {k:v for k,v in student_to_final.items() if v["state"] != "success" and tuple(v["clues"]) in success}
+        print("FALSE FAIL:", len(temp), temp)
+    
+    return student_to_final
+    
 def inspect_multi_edges(graph:Graph)->dict:
     """
     Write diffs into a format easy to analyse
@@ -167,47 +198,47 @@ def filter_graphs(graphs):
 
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)
-    graphs = []
-    assert os.path.exists(args.graph_yaml_dir)
-    for graph_yaml in glob.glob(f"{args.graph_yaml_dir}/*.yaml"):
-        graph = load_graph(graph_yaml)
-        if args.debug_problems and not graph.problem in args.debug_problems:
-            continue
-        graphs.append(graph)
-    
+    graph = load_graph(args.graph_yaml)
+        
     if args.task == "inspect_multi_edges":
         problem = {}
-        for g in graphs:
-            problem[g.problem] = inspect_multi_edges(g)
+        problem[graph.problem] = inspect_multi_edges(graph)
         with open(f"{args.outdir}/inspect_multi_edges.yaml","w") as fp:
             yaml.dump(problem, fp, default_style="|")
     elif args.task == "progress_summary":
         problem = {}
-        for g in graphs:
-            prob_summary = progress_summary(g)
-            clusters = get_clusters(prob_summary)
-            paths =get_paths(prob_summary)
-            problem[g.problem] = {"student_path":prob_summary, "edge_to_tags": clusters, 
-                                  "student_path_condensed": paths}
+        prob_summary = progress_summary(graph)
+        clusters = get_clusters(prob_summary)
+        paths =get_paths(prob_summary)
+        problem[graph] = {"student_path":prob_summary, "edge_to_tags": clusters, 
+                                "student_path_condensed": paths}
         with open(f"{args.outdir}/progress_summary.json","w") as fp:
             json.dump(problem, fp, indent=3)
-    elif args.task == "filter_graphs":
-        graph_subset = filter_graphs(graphs)
-        tot_nodes, tot_edges = 0,0
-        for g in graph_subset:
-            tot_nodes += len(g.get_students())
-            tot_edges += len(g.edges)
-            print(f"{len(g.nodes)},", f"{len(g.edges)},", g.problem)
+    elif args.task == "check_final_states":
+        problem = {}
+        prob_summary = progress_summary(graph)
+        out = check_final_states(prob_summary)
+        if out != {}:
+            problem[graph.problem] = out
+        with open(f"{args.outdir}/final_states.json","w") as fp:
+            json.dump(problem, fp, indent=3)
+    # elif args.task == "filter_graphs":
+    #     graph_subset = filter_graphs(graphs)
+    #     tot_nodes, tot_edges = 0,0
+    #     for g in graph_subset:
+    #         tot_nodes += len(g.get_students())
+    #         tot_edges += len(g.edges)
+    #         print(f"{len(g.nodes)},", f"{len(g.edges)},", g.problem)
         
-        print(tot_nodes, tot_edges, len(graph_subset))
+        # print(tot_nodes, tot_edges, len(graph_subset))
     else:
         raise NotImplementedError()
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("graph_yaml_dir")
+    parser.add_argument("graph_yaml")
     parser.add_argument("outdir")
-    parser.add_argument("task", choices=["all", "inspect_multi_edges", "progress_summary", "filter_graphs"])
-    parser.add_argument("--debug-problems", nargs="+", default=None)
+    parser.add_argument("task", choices=["all", "inspect_multi_edges", "progress_summary", 
+                                        "check_final_states"])
     args = parser.parse_args()
     main(args)

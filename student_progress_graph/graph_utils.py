@@ -1,6 +1,7 @@
 '''
 Some utility and modifier functions for data that goes into plots
 '''
+from copy import deepcopy
 import re
 from typing import Union
 import difflib
@@ -33,6 +34,10 @@ def edge_constructor(loader, node) :
     fields = loader.construct_mapping(node)
     return Edge(**fields)
 
+def get_student_subgraph(graph:Graph, student: str) -> Graph:
+    new_graph = deepcopy(graph)
+    new_graph.edges = [e for e in new_graph.edges if e.username == student]
+    return new_graph
 
 def load_graph(filepath:str) -> Graph:
     yaml.SafeLoader.add_constructor('!Graph', graph_constructor)

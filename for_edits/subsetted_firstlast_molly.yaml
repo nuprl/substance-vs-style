@@ -3144,7 +3144,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        This function $returns:prints$ an $return:output$ containing all the $strings:strings$ that appear
+        This function $returns:prints$ an output containing all the $strings:strings$ that appear
         """
         
   subset: last_failure
@@ -3163,7 +3163,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        the function student_grades will $take:take$ the $input:input$ of students and grades. Students will have a name and then a score. Grades will have a number and a range of letter grades. The function should $return:return$ the name of a student with the range of letter grade they got based on their score. 
+        the function student_grades will $take:take$ the $parameters:input$ of students and grades. Students will have a name and then a score. Grades will have a number and a range of letter grades. The function should $return:return$ the name of a student with the range of letter grade they got based on their score. 
         """
         
   subset: first_failure
@@ -3180,7 +3180,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        the function student_grades will $take:take$ two $inputs:inputs$: students and grades. Students will have a name and then a score. Grades will have a number corresponding to the students scores and a range of letter grades tied to the number. The function should $return:return$ the name of a student with the range of letter grade they got based on their score. 
+        the function student_grades will $take:take$ two $parameters:inputs$: students and grades. Students will have a name and then a score. Grades will have a number corresponding to the students scores and a range of letter grades tied to the number. The function should $return:return$ the name of a student with the range of letter grade they got based on their score. 
         """
         
   subset: last_failure
@@ -3266,7 +3266,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        $return:return$ the grades a student $takes:receives$ in form of a $dictionary:dictionary$ based on the $dictionary:dictionary$ of scores they each received, and the letter grades the scores correspond to.
+        $return:return$ the grades a student receives in form of a $dictionary:dictionary$ based on the $dictionary:dictionary$ of scores they each received, and the letter grades the scores correspond to.
         """
         
   subset: first_failure
@@ -3283,7 +3283,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        $return:return$ the grades a student $takes:receives$ in form of a $dictionary:dictionary$ based on the $dictionary:dictionary$ of scores they each received, and the letter grades the scores correspond to. If the score they received exists in the second $dictionary:dictionary$, use the letter grade $list:list$ from the second $dictionary:dictionary$ for the student in the $return:output$
+        $return:return$ the grades a student receives in form of a $dictionary:dictionary$ based on the $dictionary:dictionary$ of scores they each received, and the letter grades the scores correspond to. If the score they received exists in the second $dictionary:dictionary$, use the letter grade $list:list$ from the second $dictionary:dictionary$ for the student in the $return:output$
         """
         
   subset: last_failure
@@ -3300,7 +3300,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        $takes:takes$ in 2 $dictionaries:dictionaries$ and uses the first one's values for the second one's $key:key$, and $returns:outputs$ a $dictionary:dictionary$ matching those up
+        $takes:takes in$ 2 $dictionaries:dictionaries$ and uses the first one's values for the second one's $key:key$, and $returns:outputs$ a $dictionary:dictionary$ matching those up
         """
         
   subset: first_success
@@ -3320,7 +3320,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        Write a function which $takes:takes$ a $dictionary:dictionary$ of $integers:integers$ mapped to $strings:strings$ and a second $dictionary:dictionary$ of $integers:integers$ mapped to $lists:lists$ (size 2) of $strings:strings$ and $dictionaries:maps$ $takes:takes$ the $integers:integers$ from the first $list:list$ and constructs a new $dictionary:dictionary$ where the $string:string$ mapped to each $integer:integer$ in the first $list:list$ is mapped to the $list:list$ the $integer:integer$ is mapped to in the second $dictionary:dictionary$
+        Write a function which $takes:takes$ a $dictionary:dictionary$ of $integers:integers$ mapped to $strings:strings$ and a second $dictionary:dictionary$ of $integers:integers$ mapped to $lists:lists$ (size 2) of $strings:strings$ and maps takes the $integers:integers$ from the first $list:list$ and constructs a new $dictionary:dictionary$ where the $string:string$ mapped to each $integer:integer$ in the first $list:list$ is mapped to the $list:list$ the $integer:integer$ is mapped to in the second $dictionary:dictionary$
         """
         
   subset: first_failure
@@ -3337,7 +3337,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        Function $takes:takes$ in names of students with a number and based on that number, the grades are $returned:returned$ in a letter format
+        Function $takes:takes in$ names of students with a number and based on that number, the grades are $returned:returned$ in a letter format
         """
         
   subset: first_failure
@@ -3354,7 +3354,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        Function $takes:takes$ in names of students with a number and based on that number the grades are $returned:returned$ from the $lists:brackets$
+        Function $takes:takes in$ names of students with a number and based on that number the grades are $returned:returned$ from the $lists:brackets$
         """
         
   subset: last_failure
@@ -3373,7 +3373,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        $Return:Return$ a $dictionary:dictionary$ with the $key:key$ being the $string:string$ from the first $dictionary:dictionary$ in the $input:input$. Go through the next $dictionary:dictionary$ in the $input:input$ and find what the $integer:integer$ in the first $dictionary:dictionary$ in the $input:input$ corresopnds to. $Return:Return$ that as what corresponds to the $string:string$ in the ouput.
+        $Return:Return$ a $dictionary:dictionary$ with the $key:key$ being the $string:string$ from the first $dictionary:dictionary$ in the $parameters:input$. $Loop through:Go through$ the next $dictionary:dictionary$ in the $parameters:input$ and find what the $integer:integer$ in the first $dictionary:dictionary$ in the $parameters:input$ corresopnds to. $Return:Return$ that as what corresponds to the $string:string$ in the ouput.
         """
         
   subset: first_failure
@@ -3390,7 +3390,7 @@
   prompt: |-
     def student_grades(students, grades):
         """
-        The values of the first $dictionary:dictionary$ become the $keys:keys$ of the second $dictionary:dictionary$. the $return:output$ is a $dictionary:dictionary$ that $inserts:adds$ the $key:key$ of the first $dictionary:dictionary$ with the corresponding value of the second $dictionary:dictionary$. if the second $dictionary:dictionary$ has $key:key$ value pairs that don't correspond with the first $dictionary:dictionary$, do not $insert:add$ them to the $return:output$ $dictionary:dictionary$. 
+        The values of the first $dictionary:dictionary$ become the $keys:keys$ of the second $dictionary:dictionary$. the output is a $dictionary:dictionary$ that $inserts:adds$ the $key:key$ of the first $dictionary:dictionary$ with the corresponding value of the second $dictionary:dictionary$. if the second $dictionary:dictionary$ has $key:key$ value pairs that don't correspond with the first $dictionary:dictionary$, do not $insert:add$ them to the output $dictionary:dictionary$. 
         """
         
   subset: first_failure
@@ -7332,7 +7332,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        For each $key:entry$ in the $list:list$, $loop through:loop through$ each $string:character$ in the $string:string$ and count how many "&" are in each $key:entry$. Then $insert:add$ up the number of "&" in each $key:entry$ and $return:return$ the total number of "&" in the $list:list$
+        For each entry in the $list:list$, $loop through:loop through$ each character in the $string:string$ and count how many "&" are in each entry. Then add up the number of "&" in each entry and $return:return$ the total number of "&" in the $list:list$
         """
         
   subset: first_success
@@ -7349,7 +7349,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        $Returns:Returns$ the sum of the number of times '&' is found within each $string:string$ of each $key:element$ of the $list:array$
+        $Returns:Returns$ the sum of the number of times '&' is found within each $string:string$ of each element of the $list:array$
         """
         
   subset: first_success
@@ -7366,7 +7366,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        Count how many times "&" appears in each $key:item$ and make a new $list:list$ where you the $keys:items$ correspond with each $integer:integer$. Then find the sum of the new $list:list$. 
+        Count how many times "&" appears in each item and make a new $list:list$ where you the items correspond with each $integer:integer$. Then find the sum of the new $list:list$. 
         """
         
   subset: first_success
@@ -7417,7 +7417,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        for each $key:element$ in $list:list$, counts number of '&', $returns:returns$ sum.
+        for each element in $list:list$, counts number of '&', $returns:returns$ sum.
         """
         
   subset: first_success
@@ -7434,7 +7434,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        count the number of and symbols in the $list:array$ $lists:lists$ $return:return$ the total
+        count the number of and symbols in the $list:array lists$ $return:return$ the total
 
         """
         
@@ -7452,7 +7452,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        Reads $list:list$, and if $list:list$ has '&' and majority '-', $returns:returns$ the lowest number of dashes in an $key:item$ times 3. If the majority of the $input:input$ in an $key:item$ is '&', $returns:returns$ the highest number of & times 2. $Returns:Returns$ 0 if there aren't both & and -.
+        Reads $list:list$, and if $list:list$ has '&' and majority '-', $returns:returns$ the lowest number of dashes in an item times 3. If the majority of the input in an item is '&', $returns:returns$ the highest number of & times 2. $Returns:Returns$ 0 if there aren't both & and -.
         """
         
   subset: first_failure
@@ -7469,7 +7469,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        If '&' and '-' is in an $key:item$ of the $list:list$, and if there are more '-' than '&', $returns:returns$ number of '-' times 3. Otherwise $returns:returns$ the number of '&' times 2. 
+        If '&' and '-' is in an item of the $list:list$, and if there are more '-' than '&', $returns:returns$ number of '-' times 3. Otherwise $returns:returns$ the number of '&' times 2. 
         """
         
   subset: last_failure
@@ -7486,7 +7486,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        given an $list:array$ of $strings:strings$, the function will $return:return$ the number of times the $string:character$ '&' appears in the $list:array$ of $strings:strings$
+        given an $list:array$ of $strings:strings$, the function will $return:return$ the number of times the character '&' appears in the $list:array$ of $strings:strings$
         """
         
   subset: first_success
@@ -7503,7 +7503,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        Iterate through each $string:string$ in the $input:input$ $list:list$. If a $string:character$ in the current $string:string$ is "&", $insert:add$ 1 to the count. $Return:Return$ the count at the end of the $list:list$.
+        $Loop through:Iterate through$ each $string:string$ in the input $list:list$. If a $string:character$ in the current $string:string$ is "&", add 1 to the count. $Return:Return$ the count at the end of the $list:list$.
         """
         
   subset: first_success
@@ -8175,7 +8175,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        create a function with 2 $inputs:inputs$ $string:string$ (s) and index number (i). $Take:Take$ i first letters of the $string:string$ and then reverse the order of those letters
+        create a function with 2 $parameters:inputs$ $string:string$ (s) and index number (i). Take i first letters of the $string:string$ and then reverse the order of those letters
         """
         
   subset: last_failure
@@ -8191,7 +8191,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        creates the inverse of the $inputted:inputted$ $string:string$
+        creates the inverse of the inputted $string:string$
         """
         
   subset: first_failure
@@ -8208,7 +8208,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $takes:takes$ the $inputted:inputted$ $string:string$ (s) and $takes:takes$ the number of $strings:characters$ (i) and flips them around in the $returned:outputted$ $string:string$
+        $takes:takes$ the inputted $string:string$ (s) and $takes:takes$ the number of $strings:characters$ (i) and flips them around in the outputted $string:string$
         """
         
   subset: last_failure
@@ -8225,7 +8225,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        User $inputs:inputs$ a $string:string$ s and $integer:integer$ i. Function would flip the first i letters of $string:string$ s backwards, and then $concatenate:concatenate$ the rest of the $string:string$ to the end of the backwards letters.
+        User $provides:inputs$ a $string:string$ s and $integer:integer$ i. Function would flip the first i letters of $string:string$ s backwards, and then $concatenate:concatenate$ the rest of the $string:string$ to the end of the backwards letters.
         """
         
   subset: first_failure
@@ -8242,7 +8242,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        User $inputs:inputs$ a $string:string$ s and $integer:integer$ i. Function would write the first i letters of $string:string$ s backwards and save that as $string:string$ A. All the letters which were not flipped backwards would be saved as $string:string$ B. Function would $insert:add$ $string:string$ A and B, and then $return:return$ that as the $return:output$
+        User $provides:inputs$ a $string:string$ s and $integer:integer$ i. Function would write the first i letters of $string:string$ s backwards and save that as $string:string$ A. All the letters which were not flipped backwards would be saved as $string:string$ B. Function would $concatenate:add$ $string:string$ A and B, and then $return:return$ that as the output
         """
         
   subset: last_success
@@ -8293,7 +8293,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        Go through each letter in the s from index 0 to i-1. $Insert:Append$ the letter to the index of i-1-index. Then, put the rest of the letters in the s from index i to the ((length of the s)-1) at the end. 
+        $Loop through:Go through$ each letter in the s from index 0 to i-1. $Concatenate:Append$ the letter to the index of i-1-index. Then, put the rest of the letters in the s from index i to the ((length of the s)-1) at the end. 
         """
         
   subset: last_failure
@@ -8327,7 +8327,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        create a new $string:string$ up to the given index and after. reverse the new $String:String$ up to this index and $insert:add$ the $string:string$ after the index.
+        create a new $string:string$ up to the given index and after. reverse the new $String:String$ up to this index and $concatenate:add$ the $string:string$ after the index.
         """
         
   subset: last_failure
@@ -8412,7 +8412,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $Takes:Takes$ in $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. $Skips:Removes$ the first i $keys:elements$ in the $string:string$, reverses their order, and $inserts:inserts$ them before the remaining $strings:characters$.
+        $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them before the remaining $string:characters$.
         """
         
   subset: first_failure
@@ -8429,7 +8429,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $Takes:Takes$ in $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. $Skips:Removes$ the first i $keys:elements$ in the $string:string$, reverses their order, and $inserts:inserts$ them at the front of the $string:string$.
+        $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them at the front of the $string:string$.
         """
         
   subset: last_failure
@@ -8447,7 +8447,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        Segments the $inputted:inputted$ $string:string$ up to the given $integer:integer$. Then $returns:prints$ the letters in the segmented $string:string$ in reverse order. Then $returns:prints$ the segment of the $string:string$ after the given $integer:integer$.
+        Segments the inputted $string:string$ up to the given $integer:integer$. Then $returns:prints$ the letters in the segmented $string:string$ in reverse order. Then $returns:prints$ the segment of the $string:string$ after the given $integer:integer$.
         """
         
   subset: first_failure

@@ -1,0 +1,68 @@
+- role: system
+  content: |
+    I will show you a pair of prompts written by a student, where is second is a
+    revision of the first. I want you to label the concepts that were added,
+    removed, or reworded in the second prompt. These are the concepts:
+
+    - 1: prefix h
+    - 2: reverse order
+    - 3: number of a-s is based on size
+    - 4: space separation
+    - 5: down to 1
+
+    Respond with an analysis of the changes and then summarize the changes by
+    how each concept is changed followed by the concept number.
+
+
+    - a: student *added* this clue from previous node
+    - d: student *deleted* this clue from previous node
+    - l: student rewrote this clue with *less* detail [can be wrong detail]
+    - m: student rewrote this clue with *more* detail [detail can be wrong detail]
+
+    There is also a special tag:
+
+    - 0: no difference or trivial rewrite (semantically equivalent rewrite, adds no new clues)
+- role: user
+  content: |
+    The student started with this prompt:
+    
+    ```
+    def laugh(size):
+        """
+        a function have initial input as 'ha' when  input of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a'
+        """
+        
+    ```
+    
+    And turned it into the following prompt:
+    
+    ```
+    def laugh(size):
+        """
+        a function have initial input as 'ha' when  input of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a' and have another 'ha' with the original length of 'a'
+        """
+    ```
+- role: assistant
+  content: |
+    Added concepts:
+    
+    	•	4: space separation — In the second prompt, the phrase “and have another ‘ha’ with the original length of ‘a’” suggests adding a second “ha,” which implies separating multiple instances, likely by a space.
+    
+    Reworded concepts:
+    
+    	•	None
+    
+    Removed concepts:
+    
+    	•	None
+    
+    Unchanged concepts:
+    
+    	•	1: prefix h — The “ha” structure remains unchanged in both versions.
+    	•	3: number of a-s is based on size — Both prompts maintain the idea that the number of “a”s in “ha” increases based on the input size.
+    
+    Summary:
+    
+    ```
+    - a4
+    ```

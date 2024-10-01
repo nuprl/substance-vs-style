@@ -121,12 +121,7 @@ combine:
   working_description: Given a 2d array, joins corresponding nested lists.
 convert:
   signature: 'def convert(lst):'
-  tags:
-  - 1: input numbers
-  - 2: alphabetize
-  - 3: output string
-  - 4: split on space
-  - 5: -1 corresponds to space
+  tags: ''
   tests:
   - input: '[0, 1, 2, 3]'
     output: '[''ABCD'']'
@@ -205,7 +200,9 @@ generateCardDeck:
     order.
 getSeason:
   signature: 'def getSeason(month):'
-  tags: ''
+  tags:
+  - 1: month to season
+  - 2: lowercase
   tests:
   - input: '''January'''
     output: '''winter'''
@@ -456,7 +453,13 @@ times_with:
     a duration and a list of attendees, return the time with each person as a dictionary.
 topScores:
   signature: 'def topScores(lst):'
-  tags: ''
+  tags:
+  - 1: nested list with items in format [grade, name]
+  - 2: return only names with grade >80
+  - 3: return list of names
+  - 4: sort by grades descending
+  - 5: only top 5 scoring names
+  - 6: equal 80 edge case
   tests:
   - input: '[[76, ''Matt''], [80, ''Rachel''], [100, ''Penelope''], [50, ''Pete''],
       [99, ''Alex'']]'

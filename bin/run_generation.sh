@@ -10,7 +10,7 @@ CATEGORY=$1
 TARGET=$2
     
 DATASET_STR="jsonl:${EXPERIMENT_REPO}/subst_experiments/experiment_full_${CATEGORY// /_}_${TARGET// /_}.jsonl"
-EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/${CATEGORY// /_}_${TARGET// /_}"
+EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/generations_full_${CATEGORY// /_}_${TARGET// /_}"
 
 mkdir $EXPERIMENT_DIR
     

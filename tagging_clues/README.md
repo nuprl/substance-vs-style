@@ -346,12 +346,12 @@ avg num edges to tag per problem: 56
 
 ## Hypotheses/ Claims for paper
 
-1. student prompts either add, delete or modify a clue. These edits and resampling
+0. student prompts either add, delete or modify a clue. These edits and resampling
 is what determines state transition.
 
 We can just assert this by doing the tagging.
 
-2. if a clue is missing, student will not get correct answer (even with resampling)
+1. if a clue is missing, student will not get correct answer
 
 We can easily check this. I have some code that computes the final set of clues
 for each student given the start clues + the edge tags. We can compare
@@ -365,12 +365,20 @@ can be wrong. I've also seen that some student will continue prompting after rea
 a success. I'm running each assertion test independently, plus hand verifying
 the functions, so not sure why this is.
 
-3. students fall into loops/cycles when they are missing a clue or just doing trivial re-writes
+Some other exceptions so far:
+- topScores student45: student with all clues gets fail because of LLM runs out of tokens
+- add_up student24: incomplete clues is successful because they use python try-except (mention error in prompt)
+- add_up student65: all clues is fail because model interprets "number" as int
+- add_int student38: mislabeled as fail, actually succeeds in earlier attempts
+
+2. students fall into loops/cycles when they are missing a clue or just doing trivial re-writes
 
 There's good proof of this already. This means that we could provide students with a
 warning that they've fallen into a loop, and encourage them to think of what's missing.
 
-We can check if students are more likely to give up when they perceive that they are
+3. Student are more likely to give up when they engage in loops
+
+We can check if students are **more likely to give up** when they perceive that they are
 stuck in a loop and getting nowhere. (Does length of loop correlate with success rate)
 
 4. rewrites do not help very much

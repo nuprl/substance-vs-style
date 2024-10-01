@@ -1,5 +1,6 @@
 from typing import List, Literal, Union
 from pathlib import Path
+from networkx.readwrite.json_graph import adjacency
 import yaml
 import networkx as nx
 from dataclasses import dataclass
@@ -26,7 +27,7 @@ class Node(yaml.YAMLObject):
     def __eq__(self, other):
         return (self.id == other.id and self.stdout == other.stdout
                 and self.stderr == other.stderr)
-    
+        
     def __hash__(self):
         stdout = "\n".join(self.stdout)
         stderr = "\n".join(self.stderr)
@@ -50,17 +51,34 @@ class Edge(yaml.YAMLObject):
     total_attempts: int
     state: State
     _edge_tags: Union[None, List[str]] = None
+    clues: Union[None, List[str]] = None
     
     def __repr__(self):
         # return f"%r" % self.state
         return """%s(_edge_tags=%r,node_from=%r,node_to=%r,username=%r,
 prompt_from=%r,prompt_to=%r,completion_from=%r,completion_to=%r,diff=%r,
-attempt_id=%r,total_attempts=%r,state=%r""" % (self.__class__.__name__,
+attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__,
         self._edge_tags, self.node_from, self.node_to, self.username,
         self.prompt_from, self.prompt_to, self.completion_from,self.completion_to, 
-        self.diff, self.attempt_id, self.total_attempts, self.state)
+        self.diff, self.attempt_id, self.total_attempts, self.state, self.clues)
         
-
+    def to_dict(self, verbose=True) -> dict:
+        dikt = {}
+        for k,v in self.__dict__.items():
+            if isinstance(v, Node):
+                dikt[k] = v.__dict__
+                
+        if not verbose:
+            for k in dikt.keys():
+                if k.startswith("node_"):
+                    dikt[k] = dikt[k]["id"]
+            dikt = {k:v for k,v in dikt.items() if not (
+                k.startswith("completion_") or
+                k.startswith("prompt_") or
+                k == "diff"
+            )}
+        return dikt
+    
 class Graph(yaml.YAMLObject):
     """
     Represents a Problem
@@ -89,6 +107,8 @@ class Graph(yaml.YAMLObject):
     ]
     student_colors: dict = {}
     student_start_node_tags: dict = {}
+    student_clues_tracker : dict = {}
+    problem_clues: dict = {}
     
     def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], 
                  student_start_node_tags: dict = {}):
@@ -180,7 +200,20 @@ class Graph(yaml.YAMLObject):
             if e.username == username and e.attempt_id == 1:
                 return e.node_from.id
         raise ValueError(f"Start node not found {username}, {self.problem}")
-        
+    
+    def adjacency(self):
+        adjacency = {n.id:[] for n in self.nodes}
+        for e in self.edges:
+            adjacency[e.node_from.id].append(e.node_to.id)
+        return adjacency
+    
+    def get_successful_students(self):
+        successful = []
+        for e in self.edges:
+            if e.state == "success":
+                successful.append(e.username)
+        return successful
+    
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:
         return "success"

@@ -278,8 +278,9 @@ planets_mass:
     - 1: takes a dictionary
     - 2: skip Pluto
     - 3: skip Sun
-    - 4: sum masses
-    - 5: return
+    - 4: look up in dictionary
+    - 5: sum masses
+    - 6: return
   tests:
   - input: '{''Venus'': 10, ''Mercury'': 5, ''Sun'': 100}'
     output: '15'

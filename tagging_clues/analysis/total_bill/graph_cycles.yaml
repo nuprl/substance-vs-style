@@ -1,0 +1,239 @@
+breakout_edges:
+  student23: "attempt_id: 3\ndiff: \"--- \\n+++ \\n@@ -13,35 +13,36 @@\\n item purchased,\
+    \ the-price,+amount+of the-tax,+item+purchased,+the+price+for+each+item,\\\n \
+    \ \\ and the overall sales tax.-All-of+The+amount+purchased+is+multiplied+with\
+    \ the-prices-and-tax-within-the-lists,-which-is-the-last-two-components-of-the-list-are-added-together.+price+for+each+item,+creating+a+total+amount.\\\
+    \n  \\ The sales tax@@ -53,8 +54,8 @@\\n outcome of the-added-prices,+total+amount,\
+    \ and\\\n  \\ then the\"\n"
+  student33: null
+  student35: null
+  student40: null
+  student44: null
+  student50: null
+  student59: null
+  student60: null
+  student63: null
+  student64: "attempt_id: 2\ndiff: \"--- \\n+++ \\n@@ -6,10 +6,10 @@\\n grocery_list,\
+    \ multiple index-0+1 with index-1,+2,\\\n  \\ repeat for all\"\n"
+  student69: null
+  student75: null
+  student79: null
+cycle_summary:
+  student23:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 8
+    completion_from: "total_price = 0\n    for item in grocery_list:\n        total_price\
+      \ += item[1]\n    total_price = total_price + (total_price * sales_tax)\n  \
+      \  return total_price\n"
+    completion_to: "total_price = 0\n    for i in range(len(grocery_list)):\n    \
+      \    total_price += grocery_list[i][1]\n    for i in range(len(sales_tax)):\n\
+      \        total_price += sales_tax[i]\n    return total_price\n"
+    diff: "--- \n+++ \n@@ -26,7 +26,7 @@\n the prices and-tax+taxes within the lists"
+    node_from: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '9.63
+
+        '
+      - '9.0
+
+        '
+      - '3.0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - 'TypeError: object of type ''float'' has no len()'
+      - 'TypeError: object of type ''float'' has no len()'
+      - 'TypeError: object of type ''float'' has no len()'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function\
+      \ takes in a list of the item purchased, the price, the tax, and the overall\
+      \ sales tax. All of the prices and tax within the lists are added together.\
+      \ The sales tax is then multiplied by the outcome of the added prices, and then\
+      \ the result of the multiplication is added onto the total price. The total\
+      \ price is then returned as the output.\n    \"\"\"\n    "
+    prompt_to: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    This function\
+      \ takes in a list of the item purchased, the price, the tax, and the overall\
+      \ sales tax. All of the prices and taxes within the lists are added together.\
+      \ The sales tax is then multiplied by the outcome of the added prices, and then\
+      \ the result of the multiplication is added onto the total price. The total\
+      \ price is then returned as the output.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student23
+  student33: []
+  student35: []
+  student40: []
+  student44: []
+  student50: []
+  student59:
+  - !Edge
+    _edge_tags:
+    - m6
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    completion_from: "total = 0\n    for item in grocery_list:\n        total += item[1]\
+      \ * item[2]\n    return total * sales_tax\n"
+    completion_to: "total = 0\n    for item in grocery_list:\n        total += item[1]\
+      \ * item[2]\n    return total * sales_tax * 100\n"
+    diff: "--- \n+++ \n@@ -44,6 +44,8 @@\n sales tax times+100+times the sum of"
+    node_from: !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '1.0101
+
+        '
+      - '0.0
+
+        '
+      - '3.5
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '101.01
+
+        '
+      - '0.0
+
+        '
+      - '350.0
+
+        '
+    prompt_from: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes\
+      \ a list of groceries and a value for sales tax. the list of groceries contains\
+      \ a list for every item. each item's list contains its name, quantity, and price,\
+      \ in that order. returns an float that is the sales tax times the sum of all\
+      \ goods' quantity*price\n    \"\"\"\n    "
+    prompt_to: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    takes a\
+      \ list of groceries and a value for sales tax. the list of groceries contains\
+      \ a list for every item. each item's list contains its name, quantity, and price,\
+      \ in that order. returns an float that is the sales tax times 100 times the\
+      \ sum of all goods' quantity*price\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student59
+  student60: []
+  student63: []
+  student64:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "total = 0\n    for item in grocery_list:\n        total += item[0]\
+      \ * item[1]\n    total = total * (1 + sales_tax)\n    return total\n"
+    completion_to: "total = 0\n    for item in grocery_list:\n        total += item[0]\
+      \ * item[1]\n    total *= 1 + sales_tax\n    return total\n"
+    diff: ''
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 9
+      stderr:
+      - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''str'''
+      - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''str'''
+      - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''str'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id001
+    prompt_from: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list,\
+      \ multiple index 0 with index 1, repeat for all lists in grocery_list and add\
+      \ them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n    "
+    prompt_to: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    In grocery_list,\
+      \ multiple index 0 with index 1, repeat for all lists in grocery_list and add\
+      \ them together. Then, multiple 100% + sale_tax to result.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student64
+  student69:
+  - !Edge
+    _edge_tags:
+    - l2
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "total = 0\n    for item in grocery_list[0]:\n        total +=\
+      \ item[1] * item[2]\n    return total * (1 + sales_tax)\n"
+    completion_to: "total = 0\n    for item in grocery_list[0]:\n        total +=\
+      \ item[1] * item[2]\n    return total * (1 + sales_tax)\n"
+    diff: "--- \n+++ \n@@ -21,34 +21,13 @@\n is an integer.+for every-element-in-the\
+      \ list-of-lists-is-a-list-with-a-string in the 0th index,-integer-in-the-1st-index-and-integer-in-the-second-index.\
+      \ multiply the integers"
+    node_from: &id002 !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - 'TypeError: can''t multiply sequence by non-int of type ''str'''
+      - 'TypeError: can''t multiply sequence by non-int of type ''str'''
+      - 'TypeError: can''t multiply sequence by non-int of type ''str'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id002
+    prompt_from: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter\
+      \ a list where the 0th index is a list of lists and the 1st index is an integer.\
+      \ every element in the list of lists is a list with a string in the 0th index,\
+      \ integer in the 1st index and integer in the second index. multiply the integers\
+      \ in the first and second indexes of each list in the list of lists. Add each\
+      \ product of each list. Then, multiply by 1 plus the integer in the first index\
+      \ of the input list\n    \"\"\"\n    "
+    prompt_to: "def total_bill(grocery_list, sales_tax):\n    \"\"\"\n    Enter a\
+      \ list where the 0th index is a list of lists and the 1st index is an integer.\
+      \ for every list in the 0th index, multiply the integers in the first and second\
+      \ indexes of each list in the list of lists. Add each product of each list.\
+      \ Then, multiply by 1 plus the integer in the first index of the input list\n\
+      \    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student69
+  student75: []
+  student79: []

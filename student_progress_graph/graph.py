@@ -67,6 +67,8 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
         for k,v in self.__dict__.items():
             if isinstance(v, Node):
                 dikt[k] = v.__dict__
+            else:
+                dikt[k] = v
                 
         if not verbose:
             for k in dikt.keys():

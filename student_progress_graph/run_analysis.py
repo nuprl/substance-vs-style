@@ -13,6 +13,7 @@ from typing import List, Dict
 import networkx as nx
 from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS
 import itertools as it
+from scipy import stats
 '''
 Analyzing common patterns in graphs
 1. for each edge, compute clues
@@ -21,12 +22,11 @@ Analyzing common patterns in graphs
         These are edge cases we can talk about in paper
 3. checks that cycles/loops correspond to missing clues and trivial rewrites
 4. correlate length of loop to success
-5. find the "breakout edge" if student broke out of cycle
 '''
 
 def is_known_exception(e: Edge, problem, verbose=False) -> bool:
     try:
-        reason = KNOWN_EXCEPTIONS[problem][e.state][e.username][str(e.attempt_id)]
+        reason = KNOWN_EXCEPTIONS[problem][e.state][e.username][e.attempt_id]
         if verbose:
             print(f"Known exception {e.username}, attempt {e.attempt_id}:\n\t{reason}")
         return True
@@ -47,13 +47,13 @@ def _compute_next_state(prev_state, changes):
             prev_state.add(int(c[1]))
     return list(prev_state)
 
-def check_state_clues(graph: Graph) -> bool:
+def check_state_clues(graph: Graph, verbose=True) -> bool:
     """
     Checks that only success states end with success clues,
     otherwise prints exception edge
     """
     for e in graph.edges:
-        e_dict = json.dumps({**e.to_dict(), "problem_clues": graph.problem_clues}, indent=4)
+        e_dict = json.dumps({**e.to_dict(verbose=verbose), "problem_clues": graph.problem_clues}, indent=4)
         if is_known_exception(e, graph.problem):
             continue
         elif e.state == "success" and e.clues != SUCCESS_CLUES[graph.problem]:
@@ -163,6 +163,16 @@ def main(args):
             
     df = likelihood_fail_given_loop(cycle_summary, graph)
     print(df)
+    # print(df.corr())
+    # corr = stats.pearsonr(df["loop_len"], df["is_success"])
+    # print(f"statistic: {corr[0]}, pvalue: {corr[1]}")
+    # how many fails have loops, how many success, tot_num
+    succ = df[df["is_success"]]
+    fail = df[df["is_success"] == False]
+    fail_loop = fail[fail["loop_len"] > 0]
+    succ_loop = succ[succ["loop_len"] > 0]
+    print(f"Num fail: {len(fail)}, num has loop: {len(fail_loop)}, {100 * len(fail_loop)/len(fail)} %")
+    print(f"Num success: {len(succ)}, num has loop: {len(succ_loop)}, {100 * len(succ_loop)/len(succ)} %")
         
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

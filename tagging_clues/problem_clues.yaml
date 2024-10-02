@@ -482,7 +482,15 @@ topScores:
     5.
 total_bill:
   signature: 'def total_bill(grocery_list, sales_tax):'
-  tags: ''
+  tags: 
+    - 1: input is a list
+    - 2: list structure explained
+    - 3: input is sales tax 
+    - 4: multiply item by its quantity
+    - 5: sum items
+    - 6: apply sales tax
+    - 7: round
+    - 8: return total
   tests:
   - input: '[[''apples'', 6, 0.99],[''milk'', 1, 1.49],[''bread'', 2, 3.50]], 0.07'
     output: '15.44'

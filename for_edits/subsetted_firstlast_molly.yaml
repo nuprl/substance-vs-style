@@ -10361,7 +10361,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Three total $inputs:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $input:input$
+        Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $input:input$
         """
         
   subset: first_success
@@ -10378,7 +10378,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $Takes:Takes$ a $string:string$ and a $list:list$ of $strings:characters$ within that $string:string$. $Strings:Characters$ found within the $string:string$ are replaced with the wanted separating $string:character$ 
+        $Takes:Takes$ a $string:string$ and a $list:list$ of characters within that $string:string$. Characters found within the $string:string$ are replaced with the wanted separating $string:character$ 
         """
         
   subset: first_success
@@ -10395,7 +10395,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        The function replaces every $key:item$ in the $list:list$ that appears in the first $string:string$ with the second $string:string$.
+        The function replaces every item in the $list:list$ that appears in the first $string:string$ with the second $string:string$.
         """
         
   subset: first_success
@@ -10412,7 +10412,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        for each $string:character$ in a space between $strings:words$, replace it with a !
+        for each character in a space between $strings:words$, replace it with a !
         """
         
   subset: first_success
@@ -10429,7 +10429,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $skips:removes$ everything in the $list:list$ and replaces it with what is after the $list:list$.
+        removes everything in the $list:list$ and replaces it with what is after the $list:list$.
         """
         
   subset: first_failure
@@ -10446,7 +10446,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        for every $string:character$ in the $list:list$, $loops through:looks through$ the $string:string$ and if the $string:character$ is in the $string:string$, replaces it with sep.
+        for every $string:character$ in the $list:list$, $loops through:looks through$ the $string:string$ and if the character is in the $string:string$, replaces it with sep.
         """
         
   subset: last_success
@@ -10463,7 +10463,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        if the chars are in the $string:string$, replace those $strings:characters$ with sep
+        if the chars are in the $string:string$, replace those characters with sep
         """
         
   subset: first_success
@@ -10482,7 +10482,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a code that $takes:takes$ three $parameters:parameters$. The first $parameter:parameter$ is a $string:string$ s. The second $parameter:parameter$ are a $list:list$ of $strings:characters$ included in the $string:string$. And the third $parameter:parameter$ is a single $string:character$. The code should replace the $strings:characters$ in the $string:string$ with the last $parameter:parameter$ of the single $string:character$.
+        Write a code that $takes:takes$ three $parameters:parameters$. The first $parameter:parameter$ is a $string:string$ s. The second $parameter:parameter$ are a $list:list$ of characters included in the $string:string$. And the third $parameter:parameter$ is a single $string:character$. The code should replace the characters in the $string:string$ with the last $parameter:parameter$ of the single $string:character$.
         """
         
   subset: first_success
@@ -10516,7 +10516,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        The goal for function multisplit(s,chars,sep) is to substitute the grammatical markers or $keys:items$ given to you in a $list:list$ (chars) and substitute the $keys:items$ in this given $list:list$ with the $string:string$ given to you in sep.
+        The goal for function multisplit(s,chars,sep) is to substitute the grammatical markers or items given to you in a $list:list$ (chars) and substitute the items in this given $list:list$ with the $string:string$ given to you in sep.
         """
         
   subset: first_success
@@ -10533,7 +10533,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $Takes:Takes$ three $inputs:inputs$: a $string:string$ which we will call s, a $list:list$ of $strings:strings$ which we will call chars, and another $string:string$ which we will call sep. At each point in s where a $string:string$ from chars is present, we split s and $insert:insert$ sep.
+        $Takes:Takes$ three $parameters:inputs$: a $string:string$ which we will call s, a $list:list$ of $strings:strings$ which we will call chars, and another $string:string$ which we will call sep. At each point in s where a $string:string$ from chars is present, we split s and $insert:insert$ sep.
         """
         
   subset: first_failure
@@ -10550,7 +10550,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $Takes:Takes$ three $inputs:inputs$: a $string:string$ which we will call s, a $list:list$ of $strings:strings$ which we will call chars, and another $string:string$ which we will call sep. At each point in s where a $string:string$ from chars is present, we split s and replace the $string:character$ from s at the index where we split with sep.
+        $Takes:Takes$ three $parameters:inputs$: a $string:string$ which we will call s, a $list:list$ of $strings:strings$ which we will call chars, and another $string:string$ which we will call sep. At each point in s where a $string:string$ from chars is present, we split s and replace the character from s at the index where we split with sep.
         """
         
   subset: last_success
@@ -10567,7 +10567,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        The function $takes:takes$ in first a $string:string$, second a $list:list$ of $strings:characters$ and third a single $string:character$. It then replaces all instances of the $strings:characters$ within $list:list$ of $strings:characters$, with the single $string:character$ in the $string:string$.
+        The function $takes:takes in$ first a $string:string$, second a $list:list$ of characters and third a single character. It then replaces all instances of the characters within $list:list$ of characters, with the single character in the $string:string$.
         """
         
   subset: first_success
@@ -10584,7 +10584,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        "replace the $strings:characters$ in the second $key:item$ that appears in the first $key:item$ with the $strings:characters$ from the third $key:item$"
+        "replace the $strings:characters$ in the second item that appears in the first item with the $strings:characters$ from the third item"
         """
         
   subset: first_success
@@ -10601,7 +10601,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $loop through:loop through$ s and if s is == to any $key:element$ in chars, replace the s with sep
+        $loop through:loop through$ s and if s is == to any element in chars, replace the s with sep
         """
         
   subset: first_success
@@ -10618,7 +10618,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a function that $takes:gets$ a $string:string$, a collection of characthers, and a separator $key:element$. The function should $take:get$ only the first $string:string$ separated by a comma and $skip:remove$ the rest of the $input:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator $key:element$). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
+        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a comma and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
         """
         
   subset: first_failure
@@ -10635,7 +10635,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a function that $takes:gets$ a $string:string$, a collection of characthers, and a separator $key:element$. The function should $take:get$ only the first $string:string$ separated by a double quotes or simple quotes and $skip:remove$ the rest of the $input:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator $key:element$). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
+        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a double quotes or simple quotes and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
         """
         
   subset: last_success
@@ -11180,7 +11180,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ that have the $keys:keys$:  nominee, the wins, and noms. A new $key:attribute$ is given to each $dictionary:dictionary$ which is the success $key:attribute$. It is calculated by dividing wins by noms and creates a float. The $lists:lists$ are then sorted by the highest success within each $dictionary:dictionary$.
+        This function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ that have the $keys:keys$:  nominee, the wins, and noms. A new $key:attribute$ is given to each $dictionary:dictionary$ which is the success $key:attribute$. It is calculated by dividing wins by noms and creates a float. The $lists:lists$ are then sorted by the highest success within each $dictionary:dictionary$.
         """
         
   subset: last_failure
@@ -11207,7 +11207,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the $integer:integer$ in the third place in the $dictionary:dictionary$ by the $integer:integer$ in the fourth place in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the $return:output$ value. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest. 
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the $integer:integer$ in the third place in the $dictionary:dictionary$ by the $integer:integer$ in the fourth place in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value. It then sorts the $dictionary:dictionary$ entries by the value in "success," highest to lowest. 
         """
         
   subset: first_failure
@@ -11234,7 +11234,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the $return:output$ value truncated to two decimal places. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest, $returning:returning$ the $dictionaries:dictionaries$ each on a separate line. 
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value truncated to two decimal places. It then sorts the $dictionary:dictionary$ entries by the value in "success," highest to lowest, $returning:returning$ the $dictionaries:dictionaries$ each on a separate line. 
         """
         
   subset: last_failure
@@ -11261,7 +11261,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the $input:input$ $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
+        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the input $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
         """
         
   subset: first_failure
@@ -11288,7 +11288,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the dictioanries backwards using a for loop. A new $key:variable$ 'success' is created which computes (wins/noms) (noms is the $key:key$ in the $dictionary:dictionary$) during each loop run for every $dictionary:dictionary$. A new $list:list$ is made. As the $input:input$ $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
+        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards using a for loop. A new $key:variable$ 'success' is created which computes (wins/noms) (noms is the $key:key$ in the $dictionary:dictionary$) during each loop run for every $dictionary:dictionary$. A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
         """
         
   subset: last_failure
@@ -11316,7 +11316,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        the function will divide the number of wins by the number of noms. this will be defined by the new $key:variable$ 'success'. the function will then $return:return$ a $list:list$ that orders the $input:input$ in increasing order of success values
+        the function will divide the number of wins by the number of noms. this will be defined by the new $key:variable$ 'success'. the function will then $return:return$ a $list:list$ that orders the $parameter:input$ in increasing order of success values
         """
         
   subset: first_failure
@@ -11343,7 +11343,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        the $input:input$ is a $list:list$ of $dictionaries:dictionaries$. the function will divide the value within $key:key$ 'wins' by the value within $key:key$ 'noms'. this number will be rounded to two decimal values. the new number will be stores as a new $key:key$, 'success'. the function will then $return:return$ a $list:list$ that reorders the $dictionaries:dictionaries$ within the original $list:list$, in order of highest success value to lowest success value.
+        the $parameter:input$ is a $list:list$ of $dictionaries:dictionaries$. the function will divide the value within $key:key$ 'wins' by the value within $key:key$ 'noms'. this number will be rounded to two decimal values. the new number will be stores as a new $key:key$, 'success'. the function will then $return:return$ a $list:list$ that reorders the $dictionaries:dictionaries$ within the original $list:list$, in order of highest success value to lowest success value.
         """
         
   subset: last_success
@@ -11433,7 +11433,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $Insert:Add$ a new $key:part$ to each $key:element$ in the $list:list$ of $dictionaries:dictionaries$ called "success". Calculate success by dividing wins by noms. $Return:Return$ in reverse alphabetical order.
+        $Insert:Add$ a new $key:part$ to each element in the $list:list$ of $dictionaries:dictionaries$ called "success". Calculate success by dividing wins by noms. $Return:Return$ in reverse alphabetical order.
         """
         
   subset: first_failure
@@ -11488,7 +11488,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. $returns:returns$ an ordered $list:list$ of the $dictionaries:dictionaries$ in the $input:input$
+        $takes:takes$ a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. $returns:returns$ an ordered $list:list$ of the $dictionaries:dictionaries$ in the $parameter:input$
         """
         
   subset: first_failure
@@ -11515,7 +11515,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. 
+        This function $takes:takes in$ a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $key:parameter$ of an average of wins to nominations. 
         """
         
   subset: first_failure
@@ -11547,7 +11547,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions $return:output$ is a single 2d $list:list$.
+        This function $takes:takes in$ a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $key:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions output is a single 2d $list:list$.
 
     As an example. Given  [{'nominee': 'Beyoncé', 'wins': 28, 'noms': 79},
      {'nominee': 'Babyface','wins': 11, 'noms': 49}] as a $parameter:parameter$ this function $returns:outputs$ [{'nominee': 'Thomas', 'wins': 11, 'noms': 38, 'success': 0.29},
@@ -11579,7 +11579,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms'. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms'. The outputted $list:list$ will also be arranged in descending order based on the value of 'success'.
         """
         
   subset: first_failure
@@ -11606,7 +11606,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms', rounded to the second decimal place. The $returned:outputted$ $list:list$ will also be arranged in descending order based on the value of 'success'.  
+        The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms', rounded to the second decimal place. The outputted $list:list$ will also be arranged in descending order based on the value of 'success'.  
         """
         
   subset: last_success
@@ -11772,11 +11772,11 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        def sortBySuccessRate(nominations): $takes:takes$ $input:input$ 
+        def sortBySuccessRate(nominations): $takes:takes$ $parameter:input$ 
     [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, 
     {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, 
     {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]
-    and $returns:prints$ $return:output$ in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', indent after each {}
+    and $returns:prints$ output in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', indent after each {}
         """
         
   subset: first_failure
@@ -11807,11 +11807,11 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        def sortBySuccessRate(nominations): $takes:takes$ $input:input$ 
+        def sortBySuccessRate(nominations): $takes:takes$ $parametre:input$ 
     [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, 
     {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, 
     {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]
-    and $returns:prints$ $return:output$ in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', 
+    and $returns:prints$ output in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', 
         """
         
   subset: last_failure
@@ -11839,7 +11839,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        $takes:takes$ the information in the $dictionary:dictionary$ and positions the different $lists:lists$ based on a new $key:variable$ called 'success' which is $inputted:inputted$ at the end and is the number of 'wins' divided by the number of 'noms'
+        $takes:takes$ the information in the $dictionary:dictionary$ and positions the different $lists:lists$ based on a new $key:variable$ called 'success' which is $inserted:inputted$ at the end and is the number of 'wins' divided by the number of 'noms'
         """
         
   subset: first_failure
@@ -11868,7 +11868,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. as an output you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
         """
         
   subset: first_failure
@@ -11896,7 +11896,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        this function will $take:take$ a $list:list$ of flights and the origin city and $return:return$ the possible layovers with the staring city. Each $key:item$ in the $list:list$ of flights will first state the origin city and then state the destination city. If there is a flight with a destination city the same as the same as a flight with the origin city then $insert:add$ it the the $return:output$ $list:list$. 
+        this function will $take:take$ a $list:list$ of flights and the origin city and $return:return$ the possible layovers with the staring city. Each item in the $list:list$ of flights will first state the origin city and then state the destination city. If there is a flight with a destination city the same as the same as a flight with the origin city then $insert:add$ it the the output $list:list$. 
         """
         
   subset: last_failure
@@ -11923,7 +11923,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Finds a $dictionary:dictionary$ in the given $list:list$ with a $key:key$ of "origin" that has the same given $string:string$ as its value, then $takes:takes$ that $dictionary:dictionary$ and saves the value stored in 
+        Finds a $dictionary:dictionary$ in the given $list:list$ with a $key:key$ of "origin" that has the same given $string:string$ as its value, then takes that $dictionary:dictionary$ and saves the value stored in 
 
     $Returns:Returns$ a $list:list$ that 
         """
@@ -11950,7 +11950,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        this function will find the start from a $key:key$ called 'origin' from $input:input$ $list:list$ of $dictionary:dictionary$ named flights. After find this it will find the value from $key:key$ named 'dest' from same $dictionary:dictionary$, and save this by create an $return:output$ call x. Then find x in flight to see if it's in one of the $dictionary:dictionary$'s $key:key$ 'origin'
+        this function will find the start from a $key:key$ called 'origin' from input $list:list$ of $dictionary:dictionary$ named flights. After find this it will find the value from $key:key$ named 'dest' from same $dictionary:dictionary$, and save this by create an output call x. Then find x in flight to see if it's in one of the $dictionary:dictionary$'s $key:key$ 'origin'
         """
         
   subset: first_failure
@@ -11975,7 +11975,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Based on the $inputted:inputted$ origin, the function will $return:return$ the possible destinations with one layover location. 
+        Based on the inputted origin, the function will $return:return$ the possible destinations with one layover location. 
         """
         
   subset: first_failure
@@ -12000,7 +12000,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        Based on the $inputted:inputted$ origin, the function will check the given flights and find possible destinations within one layover.
+        Based on the inputted origin, the function will check the given flights and find possible destinations within one layover.
         """
         
   subset: last_failure
@@ -12075,7 +12075,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ a $list:list$ of values that can be made with two $key:key$ value pair matches
+        $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ a $list:list$ of values that can be made with two $key:key$ value pair matches
         """
         
   subset: first_failure
@@ -12100,7 +12100,7 @@
   prompt: |-
     def layoverTrips(flights, start):
         """
-        $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$ and a $string:string$, uses that $string:string$ as the value for 'origin', finds a corresponding 'dest' and does that twice. if it can do it twice, $return:output$ the corresponding 'dest', if not $return:output$ an empty $string:string$
+        $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and a $string:string$, uses that $string:string$ as the value for 'origin', finds a corresponding 'dest' and does that twice. if it can do it twice, $return:output$ the corresponding 'dest', if not $return:output$ an empty $string:string$
 
         """
         

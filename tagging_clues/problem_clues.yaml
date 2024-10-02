@@ -57,9 +57,10 @@ altText:
 assessVowels:
   signature: 'def assessVowels(s):'
   tags:
-  - 1: input string
-  - 2: output list
-  - 3: filter vowels
+  - 1: argument s is a string
+  - 2: result is a list of strings
+  - 3: result is the vowels present in the argument
+  - 4: result has both upper and lower case vowels
   tests:
   - input: '''I ate an apple'''
     output: '[''I'', ''a'', ''e'', ''a'', ''a'', ''e'']'

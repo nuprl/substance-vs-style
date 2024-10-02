@@ -8,7 +8,7 @@ Value of root[1]['prompt'] changed from "def add_up(arr):
     """
     ".
 
-DECISION:
+DECISION: $Parameter:Input$ keep; untag take at the end 
 
 Value of root[2]['prompt'] changed from "def add_up(arr):
     """
@@ -19,7 +19,7 @@ Value of root[2]['prompt'] changed from "def add_up(arr):
     $Parameter:Input$: $list:list$ of $strings:strings$. Function checks each item in the $list:list$ to check if it is a number character. If it is a number, $typecast:convert$ it to an $integer:integer$ and it $inserts:adds$ it to a new $list:list$. If it is not a number integer it $skips:ignores$ it. $Returns:Outputs$ the sum of each $integer:ingter$ in the new $list:list$. If the original $list:list$ contains no $integers:integers$, $return:return$ 0
     """
     ".
-DECISION:
+DECISION: $Parameter:Input$ keep; $integer: number integer$ tag add 
 
 Value of root[5]['prompt'] changed from "def add_up(arr):
     """
@@ -30,7 +30,7 @@ Value of root[5]['prompt'] changed from "def add_up(arr):
     add up all number characters in the $lists:brackets$ and $return:output$ the result
     """
     ".
-DECISION: 
+DECISION: remove characters tag
 
 Value of root[6]['prompt'] changed from "def add_up(arr):
     """
@@ -41,7 +41,7 @@ Value of root[6]['prompt'] changed from "def add_up(arr):
     add up all number characters in each $list:arrangement$. $return:output$ total
     """
     ".
-DECISION: 
+DECISION: remove characters tag; keep "arrangement" as a idio tag  
 
 Value of root[8]['prompt'] changed from "def add_up(arr):
     """
@@ -52,7 +52,7 @@ Value of root[8]['prompt'] changed from "def add_up(arr):
     For each variable in the $list:list$, if the variable can be $typecasted:casted$ to a float, adds the variable to a separate $list:list$. Adds the number in this $list:list$ together and $returns:returns$ the number. If there are no numbers, $returns:returns$ 0.
     """
     ".
-    DECISION:
+    DECISION: $inserts:add$ is correct. 
 
 Value of root[10]['prompt'] changed from "def add_up(arr):
     """
@@ -63,7 +63,7 @@ Value of root[10]['prompt'] changed from "def add_up(arr):
     For items in the $list:list$ inside the $list:list$ add each item together. If the item is not an $integer:integer$, $skip:ignore$ any errors. $Return:Return$ the sum of the $integers:integers$ in the $list:list$.
     """
     ".
-    DECISION: 
+    DECISION: $skip:ignore$ keep
 
 Value of root[11]['prompt'] changed from "def add_up(arr):
     """
@@ -74,7 +74,7 @@ Value of root[11]['prompt'] changed from "def add_up(arr):
     This function $takes:takes$ one $paramater:parameter$, arr. arr can consist of a $string:string$ and $integers:integers$ or it can be empty. The code adds up all the $integers:integers$ in arr. And it only $returns:returns$ the sum of all the $integers:integers$ in arr.
     """
     ".
-DECISION:
+DECISION: AGREE 
 
 Value of root[18]['prompt'] changed from "def add_up(arr):
     """
@@ -85,7 +85,7 @@ Value of root[18]['prompt'] changed from "def add_up(arr):
     $Takes:Takes in$ a $list:array$ and withing that $list:array list$, from the $list:list$ removes all $strings:strings$, $returns:outputs$ all numbers added together that are in the $list:array$.
     """
     ".
-DECISION:
+DECISION: add $Takes: Takes in$ tag; remove $skips:removes$ tag 
 
 Value of root[21]['prompt'] changed from "def add_up(arr):
     """
@@ -96,7 +96,7 @@ Value of root[21]['prompt'] changed from "def add_up(arr):
     $loop through:loop through$ each $list:list$ in arr and then loop again for each element and if the element is an $integer:integer$ or float add them to a new $list:list$ and $return:return$ the sum of that new $list:list$.  
     """
     ".
-DECISION:
+DECISION: add $loop through:loop$ tag
 
 Value of root[22]['prompt'] changed from "def add_up(arr):
     """
@@ -107,7 +107,7 @@ Value of root[22]['prompt'] changed from "def add_up(arr):
     $loop through:loop through$ each $list:list$ in arr and then loop again for each elemtn and if the element is an $integer:integer$ or float add them and $return:return$ the sum. 
     """
     ".
-DECISION:
+DECISION: add $loop through:loop$ tag; remove $key:element$ tag; remove $insert:add$ tagg
 
 Value of root[37]['prompt'] changed from "def subtract_add(lst):
     """
@@ -118,7 +118,7 @@ Value of root[37]['prompt'] changed from "def subtract_add(lst):
     $typecast:turn$ each element into $integer:int$, add first element to count. if index of element is odd when $integer:int$, subtract from count. if index of element is even when $integer:int$, add to count.
     """
     ".
-DECISION:
+DECISION: remove $insert:add$ tag 
 
 Value of root[38]['prompt'] changed from "def subtract_add(lst):
     """
@@ -128,7 +128,7 @@ Value of root[38]['prompt'] changed from "def subtract_add(lst):
     $Typecast:Change$ the first two items into $integers:integers$ Subtract the second items in the $list:array list$ from the first items. $typecast:change$ the third and forth items into $integers:integers$ then subtract the forth items from the third items then add the two sums. if there are just two items in $list:list$ $typecast:change$ those two items into $integers:integers$ subtract the second one from the first one and $return:return$ the product. if there are no items then $return:return$ zero
     """
     ".
-DECISION:
+DECISION: RECONCILE item plurality throughout (restore original item spelling) - us introduced error 
 
 Value of root[41]['prompt'] changed from "def subtract_add(lst):
     """
@@ -141,7 +141,7 @@ Value of root[41]['prompt'] changed from "def subtract_add(lst):
 
     """
     ".
-DECISION:
+DECISION: add in the $strings:characters$ tag back in for all instances of characters 
 
 Value of root[42]['prompt'] changed from "def subtract_add(lst):
     """
@@ -154,7 +154,7 @@ Value of root[42]['prompt'] changed from "def subtract_add(lst):
 
     """
     ".
-DECISION:
+DECISION:  add in the $strings:characters$ tag back in for all instances of characters 
 
 Value of root[43]['prompt'] changed from "def subtract_add(lst):
     """
@@ -165,7 +165,7 @@ Value of root[43]['prompt'] changed from "def subtract_add(lst):
     $Loop:Iterates through$ the inputted $list:list$. For the first two elements, subtract the second from the first and save that result. For the next element, add it to the result. Continue to alternate adding and subtracting until the end of the $list:list$ is reached.
     """
     ".
-DECISION:
+DECISION: $Loops through:Iterates through$ is the correct tag; 
 
 Value of root[45]['prompt'] changed from "def convert(lst):
     """
@@ -176,7 +176,7 @@ Value of root[45]['prompt'] changed from "def convert(lst):
     $takes:takes$ a $list:list$ of numbers. Create a ABC $list:list$ with the capital letters in the alphabet and create an answer $string:string$. $Loop:Iterate through$ the input $list:list$, if there is "-1" then $concatenate:add$ ' ' to the answer $string:string$, or otherwise, $concatenate:add$ the letter with the corresponding index of the answer $string:string$. Split the answer $string:string$ at ' '. $return:return$ the answer $string:string$.
     """
     ".
-DECISION:
+DECISION: $Loop through:Iterate through$ tag is correct; 
 
 Value of root[52]['prompt'] changed from "def convert(lst):
     """
@@ -187,7 +187,7 @@ Value of root[52]['prompt'] changed from "def convert(lst):
     changes numbers to letters matching the order of the alphabet starting at 0 as A
     """
     ".
-DECISION: ??unclear
+DECISION: RESTORE original text  - tag removal error 
 
 Value of root[53]['prompt'] changed from "def convert(lst):
     """
@@ -198,7 +198,7 @@ Value of root[53]['prompt'] changed from "def convert(lst):
     change numbers to letters matching the order of the alphabet starting at 0 as A, and grouping the $return:output$ as one $string:string$ in a $list:list$, using -1 as places to slice. 
     """
     ".
-DECISION: agree, not a verb for output 
+DECISION: agree, not a verb for output (remove $return:output$)
 
 Value of root[59]['prompt'] changed from "def convert(lst):
     """
@@ -209,7 +209,7 @@ Value of root[59]['prompt'] changed from "def convert(lst):
     Letters A-Z correspond with numbers 0-25. This function creates a $string:string$ by replacing the given number with its corresponding number. Input "-1" starts a new output.
     """
     ".
-DECISION: 
+DECISION: remove $Parameter:Input$ tag
 
 Value of root[63]['prompt'] changed from "def convert(lst):
     """
@@ -224,7 +224,7 @@ $Return:Return$ $strings:strings$ of letters with no spaces. A -1 in lst indicat
 $Return:Return$ $strings:strings$ of letters with no spaces. A -1 in lst indicates the start of a new $string:string$. Separate $strings:strings$ with commas. Enclose the new $list:list$ with brackets.
     """
     ".
-DECISION:
+DECISION: Remove $Typecast:Convert$ tag 
 
 Value of root[73]['prompt'] changed from "def order_strings(lst):
     """
@@ -235,7 +235,7 @@ Value of root[73]['prompt'] changed from "def order_strings(lst):
     Reverse the order of every other item in a $string:string$
     """
     ".
-DECISION:
+DECISION: keep $list:string$ tag 
 
 Value of root[76]['prompt'] changed from "def add_int(lst, num):
     """
@@ -246,7 +246,7 @@ Value of root[76]['prompt'] changed from "def add_int(lst, num):
     $Takes:Takes$ an input $list:list$ (which can have both $strings:strings$ and $integers:integers$) and an $integer:integer$. $Inserts:Adds$ the input $integer:integer$ to each item in the input $list:list$. 
     """
     ".
-DECISION:
+DECISION: remove $Inserts:Adds$ tag 
 
 Value of root[79]['prompt'] changed from "def add_int(lst, num):
     """
@@ -257,7 +257,7 @@ Value of root[79]['prompt'] changed from "def add_int(lst, num):
     $Loop through:Go through$ the $list:list$, if the input is a $string:string$ $concatenate:concatenate$ the number outside of the $list:list$, if the input is a number add the number outside of the $list:list$
     """
     ".
-DECISION:
+DECISION: remove $parameter:input$ as a tag (x2) 
 
 Value of root[80]['prompt'] changed from "def add_int(lst, num):
     """
@@ -268,7 +268,7 @@ Value of root[80]['prompt'] changed from "def add_int(lst, num):
     $Loop through:Go through$ the $list:list$, if the input is a $string:string$ $concatenate:concatenate$ the number outside of the $list:list$ to the $string:string$, if the iniput is a number add the number outside of the $list:list$ to the number
     """
     ".
-DECISION:
+DECISION: remove $parameter:input$ as a tag (x2); molly added typo for input (iniput)
 
 Value of root[82]['prompt'] changed from "def add_int(lst, num):
     """
@@ -279,7 +279,7 @@ Value of root[82]['prompt'] changed from "def add_int(lst, num):
     If position in lst is $string:string$, $concatenate:append$ num to $string:string$. If position in lst is $integer:integer$, add num to $integer:integer$. If position in lst is $list:list$, $insert:add$ $list:list$ to lst. $Return:Return$ the new lst. 
     """
     ".
-DECISION:
+DECISION: $insert:add$ tag, not concatenate 
 
 Value of root[87]['prompt'] changed from "def add_int(lst, num):
     """
@@ -290,7 +290,7 @@ Value of root[87]['prompt'] changed from "def add_int(lst, num):
     $Return:Return$ a new $list:list$ with the $integer:integer$ $inserted:added$ at each index of the old $list:list$. If it is a $string:string$, $concatenate:append$ the $integer:integer$ on to the end of the $string:string$ to create a new $string:string$. If it is an $integer:integer$, $concatenate:concatenate$.
     """
     ".
-DECISION:
+DECISION: remove $inserted:added$ tag 
 
 Value of root[89]['prompt'] changed from "def add_int(lst, num):
     """
@@ -312,7 +312,7 @@ Value of root[108]['prompt'] changed from "def remove_odd(lst):
     $takes:takes in$ a $list:list$ of numbers. create a ODD $list:list$ of odd numbers 1 through 10. $returns:returns$ the $list:list$ of numbers with numbers in ODD removed.
     """
     ".
-DECISION:
+DECISION: remove $skipped:removed$ tag 
 
 Value of root[109]['prompt'] changed from "def remove_odd(lst):
     """
@@ -325,7 +325,7 @@ Value of root[109]['prompt'] changed from "def remove_odd(lst):
 
     """
     ".
-DECISION: agree with folding in number
+DECISION: agree with folding in number, add it in
 
 Value of root[132]['prompt'] changed from "def remove_odd(lst):
     """
@@ -335,7 +335,7 @@ Value of root[132]['prompt'] changed from "def remove_odd(lst):
     For each object in the $list:list$, if it is and $integer:integer$ then check if it is odd and if it is odd then remove it. $Return:Return$ the $list:list$.
     """
     ".
-DECISION: 
+DECISION: FINE AS IS 
 
 Value of root[133]['prompt'] changed from "def create_list(dt, lst):
     """
@@ -357,7 +357,7 @@ Value of root[135]['prompt'] changed from "def create_list(dt, lst):
     $Take:Take$ the values that can be accessed in dt using the $keys:keys$ in the lst, and create a new $list:list$ with the values. If the $key:key$ in lst does not exist in dt, $insert:add$ None to the $list:list$.
     """
     ".
-DECISION:
+DECISION: remove $Take:Take$ tag 
 
 Value of root[158]['prompt'] changed from "def planets_mass(planets):
     """
@@ -368,7 +368,7 @@ Value of root[158]['prompt'] changed from "def planets_mass(planets):
     $Parameter:Input$: $dictionary:dictionary$ with names of planets a corresponding numerical $key:key$. Output adds the $keys:keys$ of "Venus" and Mercury" together. If Venus and/or Mercury are not in the $dictionary:dictionary$, $return:return$ 0 as the output 
     """
     ".
-DECISION:
+DECISION: $Parameter:Input$ tag; remove "numerical $key:key$ tag (x2)
 
 Value of root[160]['prompt'] changed from "def planets_mass(planets):
     """
@@ -379,7 +379,7 @@ Value of root[160]['prompt'] changed from "def planets_mass(planets):
     The function adds together each number that corresponds with a $string:string$ that is a planet. 'Sun' and 'Pluto' are not planets.
     """
     ".
-DECISION: ??unclear
+DECISION: TYPO INTRODUCED: add versus adds, replace with original text 
 
 Value of root[162]['prompt'] changed from "def planets_mass(planets):
     """
@@ -390,7 +390,7 @@ Value of root[162]['prompt'] changed from "def planets_mass(planets):
     if the number attached to each planet name is greater than 16, get rid of it. Add up the remaining numbers attached to each planet that are less than 16
     """
     ".
-DECISION:
+DECISION: remove $skip:get rid of$ tag
 
 Value of root[168]['prompt'] changed from "def planets_mass(planets):
     """
@@ -401,7 +401,7 @@ Value of root[168]['prompt'] changed from "def planets_mass(planets):
     $Takes:Takes$ a $dictionary:dictionary$ where the $keys:keys$ are $strings:strings$, and the entries are $integers:integers$. then, sums all of the entries whose $strings:strings$ are names of planets, and $returns:returns$ this sum. 
     """
     ".
-DECISION:
+DECISION: change tag to $keys:strings$ 
 
 Value of root[170]['prompt'] changed from "def planets_mass(planets):
     """
@@ -412,7 +412,7 @@ Value of root[170]['prompt'] changed from "def planets_mass(planets):
     The function will $take:take in$ a $dictionary:dictionary$ where the $keys:keys$ are $strings:strings$, with the first letter capitalized, and $integers:integers$ are stored inside them. It will remove any $strings:strings$ that are not associated with planets, then it will $take:take$ all the $integers:integers$ stored inside and add them together and $return:output$ that.
     """
     ".
-DECISION:
+DECISION: remove $skip:remove$ tag; remove $take:take$ tag 
 
 Value of root[171]['prompt'] changed from "def planets_mass(planets):
     """
@@ -423,7 +423,7 @@ Value of root[171]['prompt'] changed from "def planets_mass(planets):
     The function will $take:take in$ a $dictionary:dictionary$ where the $keys:keys$ are $strings:strings$ and $integers:integers$ are stored inside them. It will remove any $strings:strings$ that are not associated with planets, then it will take all the $integers:integers$ stored inside and add them together and $return:output$ that.
     """
     ".
-DECISION:
+DECISION: remove $skip:remove$ tag; retag $strings:strings$ that are not associated with planets as $keys:strings$ 
 
 Value of root[180]['prompt'] changed from "def planets_mass(planets):
     """
@@ -434,7 +434,7 @@ Value of root[180]['prompt'] changed from "def planets_mass(planets):
     This function $takes:takes$ a $dictionary:dictionary$. If an $key:entry$ is a planet, then it adds the $key:key$ to the total mass. The output is the total mass of all planets in the $dictionary:dictionary$.
     """
     ".
-DECISION:
+DECISION: SEEMS FINE 
 
 Value of root[189]['prompt'] changed from "def student_grades(students, grades):
     """
@@ -456,7 +456,7 @@ Value of root[190]['prompt'] changed from "def student_grades(students, grades):
     $takes:takes in$ 2 $dictionaries:dictionaries$ and uses the first one's values for the second one's $key:key$, and $returns:outputs$ a $dictionary:dictionary$ matching those up
     """
     ".
-DECISION: missing $takes$ in tag. 
+DECISION: keep $takes:takes in$ tag. 
 
 Value of root[193]['prompt'] changed from "def student_grades(students, grades):
     """
@@ -467,7 +467,7 @@ Value of root[193]['prompt'] changed from "def student_grades(students, grades):
     Function $takes:takes in$ names of students with a number and based on that number the grades are $returned:returned$ from the $lists:brackets$
     """
     ".
-DECISION:
+DECISION: keep $dictionary:brackets$ tag 
 
 Value of root[194]['prompt'] changed from "def student_grades(students, grades):
     """
@@ -478,7 +478,7 @@ Value of root[194]['prompt'] changed from "def student_grades(students, grades):
     $Return:Return$ a $dictionary:dictionary$ with the $key:key$ being the $string:string$ from the first $dictionary:dictionary$ in the $parameters:input$. $Loop through:Go through$ the next $dictionary:dictionary$ in the $parameters:input$ and find what the $integer:integer$ in the first $dictionary:dictionary$ in the $parameters:input$ corresopnds to. $Return:Return$ that as what corresponds to the $string:string$ in the ouput.
     """
     ".
-DECISION:
+DECISION: keep $parameters:input$ tag (x3)
 
 Value of root[198]['prompt'] changed from "def times_with(meetings):
     """
@@ -489,7 +489,7 @@ Value of root[198]['prompt'] changed from "def times_with(meetings):
     The function $takes:takes in$ some number of $lists:lists$ that each consist of an $integer:integer$ and another $list:list$ of $strings:strings$ "names". For each $list:list$, the function creates a $dictionary:dictionary$ entry with each $string:string$ in "names" and the $integer:integer$ in that $list:list$. The function $returns:returns$ the $dictionary:dictionary$. 
     """
     ".
-DECISION:
+DECISION: remove $key:entry$ tag 
 
 Value of root[204]['prompt'] changed from "def times_with(meetings):
     """
@@ -500,7 +500,7 @@ Value of root[204]['prompt'] changed from "def times_with(meetings):
     $Parameter:Input$ is an $list:array$ containing a number and names. $Return:Return$ a $dictionary:dictionary$ with a name corresponding to the number. If a name in the $list:list$ of names appears next to more than one number, add the two numbers together when $returning:returning$ a number.
     """
     ".
-DECISION: 
+DECISION: keep $Parameter:Input$ tag 
 
 Value of root[205]['prompt'] changed from "def times_with(meetings):
     """
@@ -511,7 +511,7 @@ Value of root[205]['prompt'] changed from "def times_with(meetings):
     $Parameter:Input$ contains $lists:lists$ of names with numbers besides them. $Return:Return$ each name in the $list:list$ of names with the number as a $dictionary:dictionary$. If a name appears in more than one $list:list$ of names, add the number besides the $list:list$ together and $return:return$ that number in the $dictionary:dictionary$.
     """
     ".
-DECISION:
+DECISION: keep $Parameter:Input$ tag 
 
 Value of root[206]['prompt'] changed from "def times_with(meetings):
     """
@@ -533,7 +533,7 @@ Value of root[217]['prompt'] changed from "def times_with(meetings):
     def times_with(meetings): $takes:takes$ the $parameter:input$ [ [30, ['Alice', 'Bob', 'Carol']] ] and $returns:produces$ and output of val1:val0, increase val1 + 1
     """
     ".
-DECISION:
+DECISION: remove $return:output$ tag 
 
 Value of root[218]['prompt'] changed from "def times_with(meetings):
     """
@@ -544,7 +544,7 @@ Value of root[218]['prompt'] changed from "def times_with(meetings):
     takes the number before the bracket of $strings:strings$ and $inserts:adds$ that value to a $dictionary:dictionary$. if the name is mentioned more than once with multiple numbers it sums them and adds them to the $dictionary:dictionary$ output
     """
     ".
-DECISION:
+DECISION: remove $takes:takes$ tag; add $list:bracket$ tag; add the $inserts:adds$ tag 
 
 Value of root[227]['prompt'] changed from "def meeps_morps(items):
     """
@@ -555,7 +555,7 @@ Value of root[227]['prompt'] changed from "def meeps_morps(items):
     $take:take in$ a $list:list$ of $strings:strings$ and $return:output$ a count of how many times the $string:word$ 'Meep' and 'Morp' occur
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tag 
 
 Value of root[228]['prompt'] changed from "def meeps_morps(items):
     """
@@ -566,7 +566,7 @@ Value of root[228]['prompt'] changed from "def meeps_morps(items):
     $take:take in$ a $list:list$ of $strings:strings$ and $return:output$ a $list:list$ count of how many times the $string:word$ 'Meep' and 'Morp' occur
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tag
 
 Value of root[233]['prompt'] changed from "def meeps_morps(items):
     """
@@ -577,7 +577,7 @@ Value of root[233]['prompt'] changed from "def meeps_morps(items):
     $loop:read through$ the $list:list$ and count all items that are the same. put the total amount of each item in a 2 item $list:list$. The $list:list$ should be sorted from most to least. If there is only one item that repeats, the output should count that and also have a zero in as a placeholder for the second item in the output $list:list$. If there are no items that are the same, then the output should have zeros as placeholders for both items in the output $list:list$. 
     """
     ".
-DECISION:
+DECISION: $loop through:read through$ is teh correct tag 
 
 Value of root[250]['prompt'] changed from "def mod_end(words, ending):
     """
@@ -590,7 +590,7 @@ Search the last letters of the word for the $string:string$, and replace it with
 Search the last letters of the word for the $string:string$, and replace it with 's'.
     """
     ".
-DECISION:
+DECISION: keep $parameter:input$ tag 
 
 Value of root[251]['prompt'] changed from "def mod_end(words, ending):
     """
@@ -601,7 +601,7 @@ Value of root[251]['prompt'] changed from "def mod_end(words, ending):
     For each $string:word$ in the $list:list$, remove the last instance of ending that can be found in the $string:word$ and $concatenate:add$ a s to the $string:word$
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tag (x3)
 
 Value of root[257]['prompt'] changed from "def mod_end(words, ending):
     """
@@ -612,7 +612,7 @@ Value of root[257]['prompt'] changed from "def mod_end(words, ending):
     Replaces all part in the inputted first $parameter:component$, which is a $list:list$'s $strings:strings$ that is specified as the inputted second $parameter:component$ with s.
     """
     ".
-DECISION:
+DECISION: keep $parameter:component$ tag (x2)
 
 Value of root[261]['prompt'] changed from "def increaseScore(score):
     """
@@ -622,7 +622,7 @@ Value of root[261]['prompt'] changed from "def increaseScore(score):
     This function $takes:takes in$ a number and adds one if the number is greater than 9. If the number is negative it turns into a positive number. If it is a single-digit number it adds the $integer:integer$ zero to the end of the number and $returns:returns$ an $integer:integer$. Then the output is $returned:returned$ with the updated number.
     """
     ".
-DECISION:
+DECISION: SEEMS FINE 
 
 Value of root[264]['prompt'] changed from "def increaseScore(score):
     """
@@ -633,7 +633,7 @@ Value of root[264]['prompt'] changed from "def increaseScore(score):
     The purpose of the function is to convert the $parameter:input$ score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number is provided, its value is to be increased by 1.
     """
     ".
-DECISION:
+DECISION: remove $provided:provided$ tag (x3)
 
 Value of root[265]['prompt'] changed from "def increaseScore(score):
     """
@@ -644,7 +644,7 @@ Value of root[265]['prompt'] changed from "def increaseScore(score):
     The purpose of the function is to convert the $parameter:input$ score into a number that is greater than or equal to 10. If a negative number is provided, it is to be converted into a positive number and if its value is less than 10, it should become 10. If a positive single digit is provided, it should be converted into 10. If a positive double-digit number (including 10) is given as initial $parameter:input$, its value is to be increased by 1.
     """
     ".
-DECISION:
+DECISION: remove $provided:provided$ tag (x2)
 
 Value of root[280]['prompt'] changed from "def increaseScore(score):
     """
@@ -659,7 +659,7 @@ def increaseScore(score): $takes:inputs$ '1' and adds 9
 def increaseScore(score): adds 1 to each $parameter:input$ '10', '15', '20'
     """
     ".
-DECISION:
+DECISION: keep $takes:inputs$ tag in second example; 
 
 Value of root[284]['prompt'] changed from "def getSeason(month):
     """
@@ -670,7 +670,7 @@ Value of root[284]['prompt'] changed from "def getSeason(month):
     Function $takes:takes in$ the name of an inputted month of the year and $returns:outputs$ the season that the month is in. It $returns:returns and prints$ the correct outputted season, with a return statement after each if, else or elif statement
     """
     ".
-DECISION:
+DECISION: keep $returns:returns and prints$ tag; remove $return:return$ statement tag 
 
 Value of root[285]['prompt'] changed from "def getSeason(month):
     """
@@ -683,7 +683,7 @@ Value of root[285]['prompt'] changed from "def getSeason(month):
 
     """
     ".
-DECISION:
+DECISION: remove $inputted:inputted$ month tag; 
 
 Value of root[295]['prompt'] changed from "def getSeason(month):
     """
@@ -694,7 +694,7 @@ Value of root[295]['prompt'] changed from "def getSeason(month):
     This function $takes:takes$ one $parameter:parameter$, month. Month represents the months in a year. The code should take seasons associated with that month and $return:print$ the associated season of that month. 
     """
     ".
-DECISION:
+DECISION: remove $take:take$ tag 
 
 Value of root[296]['prompt'] changed from "def getSeason(month):
     """
@@ -705,7 +705,7 @@ Value of root[296]['prompt'] changed from "def getSeason(month):
     This function $takes:takes$ one $parameter:parameter$, month. Month is a $string:string$ and Month represents the months in a year. There are seasons associated with each month. Winter, spring, summer, and fall. The code should $take:take$ seasons associated with that month and $return:print$ the associated season of that month. The months of December, January, and February should be winter, and so on. 
     """
     ".
-DECISION:
+DECISION: remove $take:take$ tag 
 
 Value of root[300]['prompt'] changed from "def getSeason(month):
     """
@@ -716,7 +716,7 @@ Value of root[300]['prompt'] changed from "def getSeason(month):
     The goal for this function, getSeason is when provided a month of the year to $return:return$ what season that month belongs to. The month of the year will correspond with a numerical value based on the order of the month during the year. The $parameter:input$ should be converted to a numerical value before giving $returning:returning$ the season.
     """
     ".
-DECISION:
+DECISION: remove $typecasted:converted$ tag; 
 
 Value of root[308]['prompt'] changed from "def getSeason(month):
     """
@@ -727,7 +727,7 @@ Value of root[308]['prompt'] changed from "def getSeason(month):
     Write a function that $takes:gets$ the name of the month and $returns:returns$ the season that the majority of the month is represented by in the north hemisphere.
     """
     ".
-DECISION:
+DECISION: keep $takes:gets$ tag 
 
 Value of root[309]['prompt'] changed from "def getSeason(month):
     """
@@ -738,7 +738,7 @@ Value of root[309]['prompt'] changed from "def getSeason(month):
     Write a function that $takes:gets$ the name of the month and $returns:returns$ the season that the majority of the month is represented by in the north hemisphere. The first letter of the season should be in lowercase. For the case of autumn, $return:provide$ the return statement as 'fall'.
     """
     ".
-DECISION:
+DECISION: keep $return:provide$ tag 
 
 Value of root[313]['prompt'] changed from "def assessVowels(s):
     """
@@ -749,7 +749,7 @@ Value of root[313]['prompt'] changed from "def assessVowels(s):
     the function assessVowels will $take:take input of$ a $string:string$ and $return:return$ a $list:list$ of all the vowels in that $string:string$ in the case they were originally written. 
     """
     ".
-DECISION:
+DECISION: keep $take:take input of$ tag; 
 
 Value of root[314]['prompt'] changed from "def assessVowels(s):
     """
@@ -760,7 +760,7 @@ Value of root[314]['prompt'] changed from "def assessVowels(s):
     the function assessVowels will $take:take input of$ a $string:string$ and $return:return$ a $list:list$ of all the vowels in that $string:string$. include both capital and lower case letters. 
     """
     ".
-DECISION:
+DECISION: keep $take:take input of$ tag;
 
 Value of root[324]['prompt'] changed from "def assessVowels(s):
     """
@@ -771,7 +771,7 @@ Value of root[324]['prompt'] changed from "def assessVowels(s):
     Write a function which $takes:takes$ a $string:string$ as an $parameter:input$ and $returns:returns$ a $list:list$ of each vowel present in the $string:string$, where capitalized vowels are present in the return $list:list$ as capitalized and lower case vowels as lower case
     """
     ".
-DECISION:
+DECISION: remove $return:return$ tag 
 
 Value of root[337]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -782,7 +782,7 @@ Value of root[337]['prompt'] changed from "def hasHorizontalWin(board, letter):
     $Loop:Iterate through$ a 2D $list:array$. If a row or column of an $list:array$ contain all the same element, $return:return$ true. For example, if the row length is 5, check all 5 elements in the $list:list$. Else, $return:return$ false.
     """
     ".
-DECISION:
+DECISION: $Loop through:Iterate through$ is correct tag (neither given)
 
 Value of root[338]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -793,7 +793,7 @@ Value of root[338]['prompt'] changed from "def hasHorizontalWin(board, letter):
     $takes:takes$ a $list:list$ of $lists:lists$ and a $string:string$ as $parameter:inputs$. if the $string:string$ appears in the same index in each $list:list$ or appears for every value in a $list:list$, $returns:returns$ True. for all other cases, $returns:returns$ False
     """
     ".
-DECISION:
+DECISION: keep $parameters:input$ tag 
 
 Value of root[341]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -804,7 +804,7 @@ Value of root[341]['prompt'] changed from "def hasHorizontalWin(board, letter):
     In $list:list$ of $lists:lists$, if every $string:character$ in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
     """
     ".
-DECISION:
+DECISION: keep $string:character$ tag 
 
 Value of root[342]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -815,7 +815,7 @@ Value of root[342]['prompt'] changed from "def hasHorizontalWin(board, letter):
     In $list:list$ of $lists:lists$, if each $string:character$ in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
     """
     ".
-DECISION:
+DECISION: keep $string:character$ tag 
 
 Value of root[344]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -826,7 +826,7 @@ Value of root[344]['prompt'] changed from "def hasHorizontalWin(board, letter):
     $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ of $strings:strings$, and the 1st index is a $string:character$. if any $list:list$ in the 0th index has five consecutive values of the $string:character$ $provided:entered$ in the 1st index, $return:return$ true. else $return:return$ false
     """
     ".
-DECISION:
+DECISION: keep $string:character$ tags 
 
 Value of root[345]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -836,8 +836,8 @@ Value of root[345]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
     $Loop:Iterate through$ each row and check if all spaces have been filled by 1 same letter. If all spaces have been filled by 1 same letter, then output is true.
     """
-    ".
-DECISION:
+    ". 
+DECISION: keep $Loop through:Iterate through$ tag; remove $remove:output$ tag 
 
 Value of root[347]['prompt'] changed from "def hasHorizontalWin(board, letter):
     """
@@ -848,7 +848,7 @@ Value of root[347]['prompt'] changed from "def hasHorizontalWin(board, letter):
     $Loops through:Looks through$ a $list:list$ of $lists:lists$ and if one $list:list$ contains only 'X' it $returns:returns$ True if not it $returns:returns$ False
     """
     ".
-DECISION:
+DECISION: keep $Loops through:Loops through$ tag; 
 
 Value of root[365]['prompt'] changed from "def readingIceCream(lines):
     """
@@ -859,7 +859,7 @@ Value of root[365]['prompt'] changed from "def readingIceCream(lines):
     Create a variable for the sum. $Loop through:Go through$ each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$ and $typecast:convert$ it into an $integer:integer$, then add that $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
     """
     ".
-DECISION:
+DECISION: keep $Loop through:Go through$ tag; 
 
 Value of root[366]['prompt'] changed from "def readingIceCream(lines):
     """
@@ -870,7 +870,7 @@ Value of root[366]['prompt'] changed from "def readingIceCream(lines):
     Create a variable for the sum. $Loop through:Go through$ each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$. If this remaining portion of the $string:string$ contains ".", $typecast:convert$ it into a float. Otherwise, $typecast:convert$ it into an $integer:integer$. Add this float or $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
     """
     ".
-DECISION:
+DECISION: keep $Loop through:Go through$ tag;
 
 Value of root[368]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -881,7 +881,7 @@ Value of root[368]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     The $parameters:input$ will be a "puzzle" $list:list$ and a "wordList" $list:list$. They consist of $strings:strings$ and have equal length. Check if the $string:string$ in the puzzle $list:list$ contains all the $strings:characters$ of the $string:string$ in the wordList $list:list$. They don't have to be in the same order or same length. $Return:Return$ a $dictionary:dictionary$ with the $string:string$ as the $key:key$ and the position of the $string:string$ as the value.
     """
     ".
-DECISION:
+DECISION: keep $parameters:input$ tag; remove $strings:characters$ tag; 
 
 Value of root[369]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -892,7 +892,7 @@ Value of root[369]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     For each $string:string$ within the $list:list$, parse the $string:string$ until the previous letters make up a complete word. $Return:Return$ that word as the $key:key$ and its index as its value in a $dictionary:dictionary$. Else, $return:return$ an empty $dictionary:dictionary$
     """
     ".
-DECISION:
+DECISION: keep $loop through:parse$ tag; 
 
 Value of root[373]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -903,7 +903,7 @@ Value of root[373]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     Given a two $lists:lists$ labeled puzzle and wordList, for each $string:word$ in the wordList, if the same letters appear in puzzle, create a $dictionary:dictionary$ with the corresponding $string:word$ in WordList as the $key:key$ and the position of where the letters show up in puzzle as the value. 
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tags (x2)
 
 Value of root[374]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -916,7 +916,7 @@ $returns:returns$ $dictionary:dictionary$ with $keys:keys$ as the second $list:l
 $returns:returns$ $dictionary:dictionary$ with $keys:keys$ as the second $list:list$, and values as the counts
     """
     ".
-DECISION:
+DECISION: remove $returns:returns$ tag 
 
 Value of root[378]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -927,7 +927,7 @@ Value of root[378]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     given two $lists:arrays$ of $strings:strings$, for each $string:word$ in the second $list:array$, count how many $strings:strings$ in the first $list:array$ contain all the characters in the $string:word$ in the second $list:array$. 
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tags (x2)
 
 Value of root[381]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     """
@@ -938,7 +938,7 @@ Value of root[381]['prompt'] changed from "def findHorizontals(puzzle,wordList):
     given that puzzle is a $list:list$ of $strings:strings$, check if the letters of each $string:string$ in wordList is contained in any of the $strings:strings$ in puzzle. if the $string:string$ in wordList is in any of the $strings:strings$ in puzzle, $insert:add$ it to a $dictionary:dictionary$ with the $key:key$ as the $string:sting$ in wordList and the output as the position of the $string:string$ in puzzle
     """
     ".
-DECISION:
+DECISION: keep $string:sting$ tag; remove $return:output$ tag
 
 Value of root[384]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -949,7 +949,7 @@ Value of root[384]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     For each $string:word$ in the guessList, if it has a letter in the hiddenWord and the letter is in the correct spot, add 2. If it has a letter in the hiddenWord and the letter is not in the correct spot, add 1. $Return:Return$ a $list:list$ of the total point scores for each $string:word$ in guessList.
     """
     ".
-DECISION:
+DECISION: 
 
 Value of root[385]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -960,7 +960,7 @@ Value of root[385]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     For each $string:word$ in guessList, if the $string:character$ of the hiddenWord[i] matches the same position and are the same $string:word$, add 2. If the $string:word$ in guessList and the hiddenWord have the same characters but not in the same position, add 1. $Return:Return$ a $list:list$ with the score for each $string:word$ in a $list:list$. 
     """
     ".
-DECISION:
+DECISION: remove $string:character$ tag; keep $string:word$ tags (x4)
 
 Value of root[387]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -971,7 +971,7 @@ Value of root[387]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     $Takes:Takes$ two $parameters:parameters$: a $list:list$ of $strings:strings$ which we will call guessList and a $string:string$ which we will call hiddenWord. Makes a new $list:list$ called scores. For each $string:string$ in guessList, we will compare each character to the characters in hiddenWord. Make a variable called score. If the letter at each index in the $string:string$ is the same as the letter at that index in hiddenWord, add 2 to score. If the letter is the same as a letter at a different index in hiddenWord, add 1 to score. Add score to scores. $Return:Return$ scores. 
     """
     ".
-DECISION:
+DECISION: keep $Insert:Add$ tag 
 
 Value of root[388]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -982,7 +982,7 @@ Value of root[388]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     $loop through:nested loop through$ the guessList and if the $string:string$ exists in hiddenWord in the the same index add 2, elseif it exists and not in the same index add 1. 
     """
     ".
-DECISION:
+DECISION: remove $loop through:nested loop through$ tag; 
 
 Value of root[389]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -993,7 +993,7 @@ Value of root[389]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     Write a function that $takes:gets$ a $list:list$ of $strings:strings$ and the hidden word (a $string:string$ separated by a comma). From the $list:list$ of $strings:strings$, compare each letter from the $strings:strings$ in the $list:list$ with the hidden word. Compute the total points after comparing all letters. The total points should be calculated following the rules: If the letter is the same from the hidden word but in a different position, receives +1. If the letter is the same from the hidden word and in the same position, receives +2. The function $returns:returns$ a $list:list$ of the total points from each $string:word$ in the $list:list$.
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tag; 
 
 Value of root[401]['prompt'] changed from "def andCount(andGrid):
     """
@@ -1004,7 +1004,7 @@ Value of root[401]['prompt'] changed from "def andCount(andGrid):
     $Loop through:Iterate through$ each $string:string$ in the input $list:list$. If a $string:character$ in the current $string:string$ is "&", add 1 to the count. $Return:Return$ the count at the end of the $list:list$.
     """
     ".
-DECISION:
+DECISION: keep $Loop through:Iterate through$ tag; remove $string:character$ tag; 
 
 Value of root[402]['prompt'] changed from "def set_chars(s,c,l):
     """
@@ -1015,7 +1015,7 @@ Value of root[402]['prompt'] changed from "def set_chars(s,c,l):
     $Takes:Takes$ an input $string:string$, single character, and $list:list$ of index numbers. Every character in the input $string:string$ at one of these input indexes is replaced with the input character.
     """
     ".
-DECISION:
+DECISION: remove $string:character$ tag; 
 
 Value of root[419]['prompt'] changed from "def altText(s):
     """
@@ -1037,7 +1037,7 @@ Value of root[420]['prompt'] changed from "def altText(s):
     's' is a $string:string$ $parameter:value provided$. Starting from the first character of the $string:string$, the function is supposed to convert every alternative character of the $string:string$ into uppercase and then $return:return$ the $string:string$.
     """
     ".
-DECISION:
+DECISION: remove $string:character$ tag 
 
 Value of root[421]['prompt'] changed from "def altText(s):
     """
@@ -1048,7 +1048,7 @@ Value of root[421]['prompt'] changed from "def altText(s):
     's' is a $string:string$ $parameter:value provided$. Starting from the first character of the $string:string$, the function is supposed to convert the character of the $string:string$ in even index positions into uppercase. The characters of the $string:string$ should be in the same order as below, only the characters in even index positions are to be turned uppercase.
     """
     ".
-DECISION:
+DECISION: remove $string:characters$ tag
 
 Value of root[425]['prompt'] changed from "def altText(s):
     """
@@ -1065,7 +1065,7 @@ If the character is a letter that is not the first one in the $parameter:input$ 
 If the previous letter was $returned:printed$ in uppercase, $return:print$ it in lowercase. 
     """
     ".
-DECISION:
+DECISION: keep $Loop through:Go through$ tag; 
 
 Value of root[428]['prompt'] changed from "def altText(s):
     """
@@ -1076,7 +1076,7 @@ Value of root[428]['prompt'] changed from "def altText(s):
     $takes:takes$ a $string:string$. capitalizes random letters in each word of that $string:string$ and $inserts:adds$ the new $strings:words$ to a $list:list$. $returns:returns$ this new $list:list$ of $strings:words$
     """
     ".
-DECISION:
+DECISION: remove $strings:words$ tags (x2)
 
 Value of root[438]['prompt'] changed from "def altText(s):
     """
@@ -1086,7 +1086,7 @@ Value of root[438]['prompt'] changed from "def altText(s):
     $Takes:Takes$ every odd character in a $string:string$ and capitalizes
     """
     ".
-DECISION:
+DECISION: SEEMS FINE 
 
 Value of root[442]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1097,7 +1097,7 @@ Value of root[442]['prompt'] changed from "def changeSection(s,i):
     $takes:takes$ the inputted $string:string$ (s) and $takes:takes$ the number of $strings:characters$ (i) and flips them around in the outputted $string:string$
     """
     ".
-DECISION:
+DECISION: remove $returned:outputted$ string 
 
 Value of root[444]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1108,7 +1108,7 @@ Value of root[444]['prompt'] changed from "def changeSection(s,i):
     User $provides:inputs$ a $string:string$ s and $integer:integer$ i. Function would write the first i letters of $string:string$ s backwards and save that as $string:string$ A. All the letters which were not flipped backwards would be saved as $string:string$ B. Function would $concatenate:add$ $string:string$ A and B, and then $return:return$ that as the output
     """
     ".
-DECISION:
+DECISION: remove $return:output$ tag  
 
 Value of root[448]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1118,7 +1118,7 @@ Value of root[448]['prompt'] changed from "def changeSection(s,i):
     given a $string:string$ and a number within $string:string$ length, $return:produce$ a $string:string$ that reverses the order of the $strings:characters$ up to the given number index $concatenated:concatenated$ with the rest of the original $string:string$
     """
     ".
-DECISION:
+DECISION: remove $strings:characters$ tag 
 
 Value of root[454]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1129,7 +1129,7 @@ Value of root[454]['prompt'] changed from "def changeSection(s,i):
     $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them before the remaining $string:characters$.
     """
     ".
-DECISION:
+DECISION: remove $string:characters$ tag
 
 Value of root[455]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1140,7 +1140,7 @@ Value of root[455]['prompt'] changed from "def changeSection(s,i):
     $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them at the front of the $string:string$.
     """
     ".
-DECISION:
+DECISION: missing $Takes:Takes$ in tag; 
 
 Value of root[459]['prompt'] changed from "def changeSection(s,i):
     """
@@ -1151,7 +1151,7 @@ Value of root[459]['prompt'] changed from "def changeSection(s,i):
     flip the position of the $strings:characters$ in the $string:string$ up to the specified index -1
     """
     ".
-DECISION:
+DECISION: remove $strings:characters$ tag 
 
 Value of root[461]['prompt'] changed from "def edit_col(mat,i,n):
     """
@@ -1162,7 +1162,7 @@ Value of root[461]['prompt'] changed from "def edit_col(mat,i,n):
     For each entry take in the second $parameter:parameter$ as an index. Then $loop through:go through$ each entry of the first $parameter:parameter$ and replace the value corresponding to that index with the third input $parameter:parameter$
     """
     ".
-DECISION:
+DECISION: remove $take:take in$ tag; keep $parameter:input parameter$ tag  
 
 Value of root[465]['prompt'] changed from "def edit_col(mat,i,n):
     """
@@ -1175,7 +1175,7 @@ $loops through:iterates through$ a $list:list$ of $lists:lists$ and at the posit
 $loops through:iterates through$ a $list:list$ of $lists:lists$ and at the position inputed as i, an $integer:integer$ is replaced with the $inputted:inputed value$ of n
     """
     ".
-DECISION:
+DECISION: remove $inputted:inputed value$ tag 
 
 Value of root[472]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1186,7 +1186,7 @@ Value of root[472]['prompt'] changed from "def combine(l1,l2):
     $Takes:Takes$ an $parameters:input$ of two $lists:lists$, each with the same number of items. Combines the first item in each $list:list$ into a new $list:list$, does this for every item in both $lists:lists$, then compiles these $lists:lists$ into one last $list:list$, and $returns:outputs$ the last $list:list$.
     """
     ".
-DECISION:
+DECISION: remove $Concatenates:Combines$ tag; 
 
 Value of root[473]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1197,7 +1197,7 @@ Value of root[473]['prompt'] changed from "def combine(l1,l2):
     $Takes:Takes$ an $parameters:input$ of two $lists:lists$, l1 and l2, each of which also contains $lists:lists$. It $concatenates:combines$ the first $list:list$ in l1 with the first one in l2, then continues for all items in l1 and l2. It $returns:outputs$ this final $list:list$ which is a combination of l1 and l2.
     """
     ".
-DECISION:
+DECISION: keep $parameter:input$ tag; 
 
 Value of root[477]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1208,7 +1208,7 @@ Value of root[477]['prompt'] changed from "def combine(l1,l2):
     Combine $lists:lists$ from 11 to $lists:lists$ from 12
     """
     ".
-DECISION:
+DECISION: remove $Concatenate:Combine$ tag 
 
 Value of root[478]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1219,7 +1219,7 @@ Value of root[478]['prompt'] changed from "def combine(l1,l2):
     given two $lists:lists$ of $lists:lists$, l1 and l2, $return:return$ a $list:list$ l3 where each element of l3 is a $list:list$ that is the $concatenation:combination$ of the respective elements of l1 and l2, so the first element of l3 would be a $list:list$ containing the elements of the first element of l1 and the first elements of l2, and so forth. 
     """
     ".
-DECISION:
+DECISION: remove $concatenation:combination$ tag; 
 
 Value of root[479]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1230,7 +1230,7 @@ Value of root[479]['prompt'] changed from "def combine(l1,l2):
     given two $lists:lists$ of $lists:lists$, l1 and l2, $return:return$ a $list:list$ l3 where each element of l3 is a $list:list$ that is the combination of the respective elements of l1 and l2, so the first element of l3 would be a $list:list$ containing the elements of the first element of l1 and the first elements of l2, and so forth. since the elements of l1 and l2 are $lists:lists$, assemble a new $list:list$ from the elements of those $lists:lists$, instead of simply trying to $insert:append$ one element onto the other
     """
     ".
-DECISION:
+DECISION: keep $insert:append$ tag; 
 
 Value of root[480]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1241,7 +1241,7 @@ Value of root[480]['prompt'] changed from "def combine(l1,l2):
     Split the n number of inputted $lists:lists$ into two parts, part a and part b, according to their position in the $parameter:input$. Combine the 1st $list:list$ in part a with the first $list:list$ in part b, combine the 2nd $list:list$ in part a with the second $list:list$ in part b. More generally, combine the ith $list:list$ in part a with the ith $list:list$ in part b. 
     """
     ".
-DECISION:
+DECISION: remove :Concatenate:Combine$ tag (x3)
 
 Value of root[481]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1252,7 +1252,7 @@ Value of root[481]['prompt'] changed from "def combine(l1,l2):
     Count the number of elements in the inputted $list:list$, store this number as n. Divide n by 2 store it as m, then combine the 1st element in the $list:list$ with the 1+m th element in the $list:list$, $return:return$ it as a single element. Then combine the 2nd element in the $list:list$ with the 2+m th element in the $list:list$, $return:return$ it as a single element. $Loop through:Loop through$ every  element in the $list:list$.
     """
     ".
-DECISION:
+DECISION: remove :Concatenate:Combine$ tag (x3); keep $Loop through:Loop through$ tag 
 
 Value of root[483]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1263,7 +1263,7 @@ Value of root[483]['prompt'] changed from "def combine(l1,l2):
     Combine l1 and l2, if l1 length is greater than 1, $loop through:loop through$ each index to combine the two
     """
     ".
-DECISION:
+DECISION: remove $concatenate:combine$ tag 
 
 Value of root[484]['prompt'] changed from "def combine(l1,l2):
     """
@@ -1274,7 +1274,7 @@ Value of root[484]['prompt'] changed from "def combine(l1,l2):
     when given two $list:list$ of $lists:lists$, combine $lists:lists$ in $list:list$ by their index, creating one $list:list$ of $lists:lists$
     """
     ".
-DECISION:
+DECISION: remove $concatenate:combine$ 
 
 Value of root[486]['prompt'] changed from "def pattern(value):
     """
@@ -1285,7 +1285,7 @@ Value of root[486]['prompt'] changed from "def pattern(value):
     create function which $take:take$ 1 $parameter:input$ (value). create $list:list$ of ascending numbers of value start from 1. insert
     """
     ".
-DECISION:
+DECISION: keep $insert:insert$ tag 
 
 Value of root[491]['prompt'] changed from "def pattern(value):
     """
@@ -1298,7 +1298,7 @@ if given 3 out put 3 $lists:lists$ 1,2,3 and 1,2,3 and 1,2,3
 if given 3 $return:out put$ 3 $lists:lists$ 1,2,3 and 1,2,3 and 1,2,3
     """
     ".
-DECISION:
+DECISION: keep $return: out put$ tag  
 
 Value of root[494]['prompt'] changed from "def pattern(value):
     """
@@ -1309,7 +1309,7 @@ Value of root[494]['prompt'] changed from "def pattern(value):
     This function $takes:takes$ a given $integer:integer$ and creates a $list:list$ with numbers 1 to that given value. It creates this $list:list$ repeated for the given value and returns, $inserting:appending$ each $list:list$ to one $list:list$. It $returns:returns$ the $list:list$ of $lists:lists$.
     """
     ".
-DECISION:
+DECISION: keep $returns: returns$ tag 
 
 Value of root[499]['prompt'] changed from "def pattern(value):
     """
@@ -1319,7 +1319,7 @@ Value of root[499]['prompt'] changed from "def pattern(value):
     """
     $Returns:Returns$ a $list:list$ of $lists:lists$. The number of $lists:lists$ in the output $list:list$ should be equal to the value. Each $list:list$ within the output $list:list$ should have each $integer:integer$ greater than zero up to, and including, the $parameter:value inputted$.
     """".
-DECISION:
+DECISION: keep $parameter: value inputted$ tag 
 
 Value of root[512]['prompt'] changed from "def reduce(val):
     """
@@ -1330,7 +1330,7 @@ Value of root[512]['prompt'] changed from "def reduce(val):
     Count the characters in a $string:string$ and replace all '^' as '_', then $return:return$ a copy of the new $string:string$. Do not $return:display$ the count
     """
     ".
-DECISION:
+DECISION: keep $return:display$ tag 
 
 Value of root[521]['prompt'] changed from "def fib(n):
     """
@@ -1341,7 +1341,7 @@ Value of root[521]['prompt'] changed from "def fib(n):
     Checks if the $parameter:input value$ is the sum of any two consecutive Fibonacci numbers
     """
     ".
-DECISION:
+DECISION: keep $parameter:input value$ tag 
 
 Value of root[536]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1352,7 +1352,7 @@ Value of root[536]['prompt'] changed from "def add_word(word, line_number, map):
     $inserts:adds$ the word and line number to a $dictionary:dictionary$, with the word as the $key:key$ and line_number as the value, $returns:returns$ the appended $dictionary:dictionary$
     """
     ".
-DECISION:
+DECISION: remove $inserted:appeneded$ tag 
 
 Value of root[538]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1363,7 +1363,7 @@ Value of root[538]['prompt'] changed from "def add_word(word, line_number, map):
     Function would check if the $string:string$ word is a $key:key$ in the $dictionary:dictionary$ map. If word is in map, $insert:add$ line_number to the $list:list$ in the value side of the $dictionary:dictionary$. If the word is not in the $dictionary:dictionary$, $insert:add$ it as a new $key:key$, and $insert:add$ the line_number as the first item of a new $list:list$ as a value. $Returns:Returns$ an updated map.
     """
     ".
-DECISION:
+DECISION: remove $string:word$ tag 
 
 Value of root[539]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1374,7 +1374,7 @@ Value of root[539]['prompt'] changed from "def add_word(word, line_number, map):
     $parameters:input$: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}
     """
     ".
-DECISION:
+DECISION: remove $return:output$ tag 
 
 Value of root[540]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1385,7 +1385,7 @@ Value of root[540]['prompt'] changed from "def add_word(word, line_number, map):
     $parameters:input$: 'bright', 1, {'twas': [1]} output: {'twas': [1], 'bright': [1]}
     """
     ".
-DECISION:
+DECISION: remove $return:output$ tag
 
 Value of root[541]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1396,7 +1396,7 @@ Value of root[541]['prompt'] changed from "def add_word(word, line_number, map):
     If the word already exist in the map, $insert:add$ the line_number at the very end of the $list:list$ for the word in the map. If word does not exist in the map, create the word as a category at the end of the map and $insert:add$ line_number in the $list:list$ for the word. 
     """
     ".
-DECISION:
+DECISION: keep $key:category$ tag; 
 
 Value of root[542]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1407,7 +1407,7 @@ Value of root[542]['prompt'] changed from "def add_word(word, line_number, map):
     if word isn't in map, $insert:add$ the word and number to map, following the format in map. if the word is in map already, $insert:add$ the number to the word 
     """
     ".
-DECISION:
+DECISION: rogue $ in map$ - error on untagging 
 
 Value of root[544]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1418,7 +1418,7 @@ Value of root[544]['prompt'] changed from "def add_word(word, line_number, map):
     This function $inserts:adds$ the $parameter:input$ "word" and "line_number to the $dictionary:dictionary$ "$map". "$word" is the $key:key$ and "line_number" is the value. "line_number" will be a $list:list$ in the $dictionary:dictionary$.
     """
     ".
-DECISION:
+DECISION: rogue $ in "$word" - error on untagging 
 
 Value of root[545]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1429,7 +1429,7 @@ Value of root[545]['prompt'] changed from "def add_word(word, line_number, map):
     This function $inserts:adds$ the $parameter:input$ "word" and "line_number to the $dictionary:dictionary$ "map". "$word" is the $key:key$ and "line_number" is the value. "line_number" will be a $list:list$ in the $dictionary:dictionary$. The function $returns:returns$ the $dictionary:dictionary$.
     """
     ".
-DECISION:
+DECISION: rogue $ in "$word" - error on untagging 
 
 Value of root[546]['prompt'] changed from "def add_word(word, line_number, map):
     """
@@ -1440,7 +1440,7 @@ Value of root[546]['prompt'] changed from "def add_word(word, line_number, map):
     Count the number of unique $strings:strings$ in a $list:set$ and $return:return$ the $list:set$
     """
     ".
-DECISION:
+DECISION: remove all set tags 
 
 Value of root[554]['prompt'] changed from "def check_for_aspen(trees):
     """
@@ -1451,7 +1451,7 @@ Value of root[554]['prompt'] changed from "def check_for_aspen(trees):
     A $dictionary:dict$ object contains $keys:keys$ and values. Check if "Aspen" is one of the $keys:keys$ in a $dictionary:dict$. $Return:Return$ "Yup" if it is a $key:key$, "Nope" if it is not a $key:key$.
     """
     ".
-DECISION:
+DECISION: keep $dictionary:dict$ tag (x2) 
 
 Value of root[565]['prompt'] changed from "def check_for_aspen(trees):
     """
@@ -1462,7 +1462,7 @@ Value of root[565]['prompt'] changed from "def check_for_aspen(trees):
     given an $list:array$ formatted so that there is a $String:String$ treename key and a number associated with that key, check if there is value that has a treename "Aspen" whose number is greater than 0. $return:return$ "Yup" if it passes the check and "Nope" if it doesn't 
     """
     ".
-DECISION:
+DECISION: re-tag $list:array$ as $dictionary:array$ as they refer to a dictionary; then keep $key:key$ tags (x2) 
 
 Value of root[568]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1473,7 +1473,8 @@ Value of root[568]['prompt'] changed from "def multisplit(s,chars,sep):
     Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $parameter:input$
     """
     ".
-DECISION:
+DECISION: remove all $strings:characters$ tags 
+
 
 Value of root[569]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1484,7 +1485,7 @@ Value of root[569]['prompt'] changed from "def multisplit(s,chars,sep):
     $Takes:Takes$ a $string:string$ and a $list:list$ of characters within that $string:string$. Characters found within the $string:string$ are replaced with the wanted separating $string:character$ 
     """
     ".
-DECISION:
+DECISION: keep $string:character$ tag; 
 
 Value of root[571]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1495,7 +1496,7 @@ Value of root[571]['prompt'] changed from "def multisplit(s,chars,sep):
     for each character in a space between $strings:words$, replace it with a !
     """
     ".
-DECISION:
+DECISION: remove $strings:words$ tag; 
 
 Value of root[573]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1506,7 +1507,7 @@ Value of root[573]['prompt'] changed from "def multisplit(s,chars,sep):
     for every $string:character$ in the $list:list$, $loops through:looks through$ the $string:string$ and if the character is in the $string:string$, replaces it with sep.
     """
     ".
-DECISION:
+DECISION: remove $string:character$ tag; 
 
 Value of root[575]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1517,7 +1518,7 @@ Value of root[575]['prompt'] changed from "def multisplit(s,chars,sep):
     Write a code that $takes:takes$ three $parameters:parameters$. The first $parameter:parameter$ is a $string:string$ s. The second $parameter:parameter$ are a $list:list$ of characters included in the $string:string$. And the third $parameter:parameter$ is a single $string:character$. The code should replace the characters in the $string:string$ with the last $parameter:parameter$ of the single $string:character$.
     """
     ".
-DECISION:
+DECISION: remove $string:character$ tag (x2)
 
 Value of root[578]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1528,7 +1529,7 @@ Value of root[578]['prompt'] changed from "def multisplit(s,chars,sep):
     $Takes:Takes$ three $parameters:inputs$: a $string:string$ which we will call s, a $list:list$ of $strings:strings$ which we will call chars, and another $string:string$ which we will call sep. At each point in s where a $string:string$ from chars is present, we split s and $insert:insert$ sep.
     """
     ".
-DECISION:
+DECISION: keep $concatenate:insert$ tag 
 
 Value of root[581]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1539,7 +1540,7 @@ Value of root[581]['prompt'] changed from "def multisplit(s,chars,sep):
     "replace the $strings:characters$ in the second item that appears in the first item with the $strings:characters$ from the third item"
     """
     ".
-DECISION:
+DECISION: keep $parameter:item$ tag (x3); 
 
 Value of root[583]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1550,7 +1551,7 @@ Value of root[583]['prompt'] changed from "def multisplit(s,chars,sep):
     Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a comma and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
     """
     ".
-DECISION:
+DECISION: keep $list:collection$ tag; keep $parameters:input$ tag 
 
 Value of root[584]['prompt'] changed from "def multisplit(s,chars,sep):
     """
@@ -1561,7 +1562,7 @@ Value of root[584]['prompt'] changed from "def multisplit(s,chars,sep):
     Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a double quotes or simple quotes and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
     """
     ".
-DECISION:
+DECISION: keep $list:collection$ tag; keep $parameters:input$ tag 
 
 Value of root[586]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1572,7 +1573,7 @@ Value of root[586]['prompt'] changed from "def sortedBooks(books, writer):
     The $parameters:input$ will be a $list:list$ of $dictionaries:dictionaries$ and a $string:string$. Remove all $dictionaries:dictionaries$ where the $key:key$ "author" does not match the $string:string$. Sort the $dictionaries:dictionaries$ by "year" in an ascending order. $Return:Return$ the updated $list:list$.
     """
     ".
-DECISION:
+DECISION: remove $Skip:Remove$ tag; 
 
 Value of root[587]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1583,7 +1584,7 @@ Value of root[587]['prompt'] changed from "def sortedBooks(books, writer):
     Check the second $parameter:parameter$ of the input for the $string:string$ of author name. Then $return:return$ all input entries where the author value corresponds to that $parameter:parameter$
     """
     ".
-DECISION:
+DECISION: keep $parameter:parameter of the input$ tag
 
 Value of root[588]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1594,7 +1595,7 @@ Value of root[588]['prompt'] changed from "def sortedBooks(books, writer):
     Check the second $parameter:parameter$ of the input for the $string:string$ of author name. Then $return:return$ a $list:list$ with all input entries where the author value corresponds to that $parameter:parameter$, sorted in order according to the year value
     """
     ".
-DECISION:
+DECISION: keep $parameter:parameter of the input$ tag; remove $keys:entries$ tag 
 
 Value of root[589]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1605,7 +1606,7 @@ Value of root[589]['prompt'] changed from "def sortedBooks(books, writer):
     Sort the elements of the $list:array$ by the year value in its $dictionary:dictionary$, from highest to lowest. Then removes the last element in the $list:array$ and $returns:returns$ the rest
     """
     ".
-DECISION:
+DECISION: remove $skips:removes$ tag 
 
 Value of root[591]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1616,7 +1617,7 @@ Value of root[591]['prompt'] changed from "def sortedBooks(books, writer):
     if writer is the same as the value for 'author' for an object in books, $insert:add$ the definition to a new $list:list$. Order the new $list:list$ in ascending order based on the value of 'year'
     """
     ".
-DECISION:
+DECISION: keep $dictionary:object$ tag
 
 Value of root[595]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1627,7 +1628,7 @@ Value of root[595]['prompt'] changed from "def sortedBooks(books, writer):
     If the author is equal to the second element, $dictionary:dictionary$
     """
     ".
-DECISION:
+DECISION: keep $parameter:element$ tag 
 
 Value of root[600]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1638,7 +1639,7 @@ Value of root[600]['prompt'] changed from "def sortedBooks(books, writer):
     given a $dictionary:dictionary$ $list:list$ and a $string:string$, $return:return$ all the $dictionaries:dictionaries$ whose 'author' $key:key$ value equals the input $string:string$ 
     """
     ".
-    DECISION: 
+    DECISION: remove $parameter:input$ string 
     
 Value of root[601]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1649,7 +1650,7 @@ Value of root[601]['prompt'] changed from "def sortedBooks(books, writer):
     given a $dictionary:dictionary$ $list:list$ and a $string:string$, $return:return$ all the $dictionaries:dictionaries$ whose 'author' $key:key$ value equals the input $string:string$ in the order from lowest to highest value of their 'year' $key:key$ value 
     """
     ".
-    DECISION: 
+    DECISION: remove $parameter:input$ string 
 
 Value of root[602]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1660,7 +1661,7 @@ Value of root[602]['prompt'] changed from "def sortedBooks(books, writer):
     $return:return$ all the $keys:entries$ in the $dictionary:dictionary$ where the value for the 'author' $key:key$ is equal to the $parameter:input$ writer.
     """
     ".
-    DECISION: agree, remove $keys:entries$ tag 
+    DECISION: remove $keys:entries$ tag 
 
 Value of root[603]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1671,7 +1672,7 @@ Value of root[603]['prompt'] changed from "def sortedBooks(books, writer):
     $return:return$ all the entries in the input $list:list$ where the value for the 'author' $key:key$ is equal to the $parameter:input$ writer. Sort the entries in order of increasing year.
     """
     ".
-    DECISION: 
+    DECISION: remove $parameter:input$ tag 
 
 Value of root[604]['prompt'] changed from "def sortedBooks(books, writer):
     """
@@ -1681,7 +1682,7 @@ Value of root[604]['prompt'] changed from "def sortedBooks(books, writer):
     if books is a $list:list$ of $dictionaries:dictionaries$, $return:output$ a $list:list$ of $dictionaries:dictionaries$ where the $parameter:input$ writer matches the $key:key$ author
     """
     ".
-    DECISION: ??unclear
+    DECISION: LOOKS FINE 
 
 Value of root[606]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1692,7 +1693,7 @@ Value of root[606]['prompt'] changed from "def sortBySuccessRate(nominations):
     The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the $integer:integer$ in the third place in the $dictionary:dictionary$ by the $integer:integer$ in the fourth place in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value. It then sorts the $dictionary:dictionary$ entries by the value in "success," highest to lowest. 
     """
     ".
-    DECISION: 
+    DECISION: remove $keys:entries$ tag 
 
 Value of root[607]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1703,7 +1704,7 @@ Value of root[607]['prompt'] changed from "def sortBySuccessRate(nominations):
     The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value truncated to two decimal places. It then sorts the $dictionary:dictionary$ entries by the value in "success," highest to lowest, $returning:returning$ the $dictionaries:dictionaries$ each on a separate line. 
     """
     ".
-    DECISION: 
+    DECISION: remove $keys:entries$ tag
 
 Value of root[608]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1714,7 +1715,7 @@ Value of root[608]['prompt'] changed from "def sortBySuccessRate(nominations):
     The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
     """
     ".
-    DECISION: missing typo tag, keep
+    DECISION: keep dictionaries:dictioanries$ tag
 
 Value of root[609]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1725,7 +1726,7 @@ Value of root[609]['prompt'] changed from "def sortBySuccessRate(nominations):
     The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards using a for loop. A new $key:variable$ 'success' is created which computes (wins/noms) (noms is the $key:key$ in the $dictionary:dictionary$) during each loop run for every $dictionary:dictionary$. A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
     """
     ".
-    DECISION: missing typo tag;keep 
+    DECISION: keep dictionaries:dictioanries$ tag
 
 Value of root[617]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1736,7 +1737,7 @@ Value of root[617]['prompt'] changed from "def sortBySuccessRate(nominations):
     This function $takes:takes in$ a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $key:parameter$ of an average of wins to nominations. 
     """
     ".
-    DECISION: probably agree remove $added$ tag
+    DECISION: remove $inserted:added$ tag 
 
 Value of root[618]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1757,7 +1758,7 @@ As an example. Given  [{'nominee': 'Beyoncé', 'wins': 28, 'noms': 79},
 {'nominee': 'Babyface', 'wins': 11, 'noms': 49, 'success': 0.22}]
     """
     ".
-    DECISION: 
+    DECISION: remove $inserted:added$ tag 
 
 Value of root[619]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1768,7 +1769,7 @@ Value of root[619]['prompt'] changed from "def sortBySuccessRate(nominations):
     The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms'. The outputted $list:list$ will also be arranged in descending order based on the value of 'success'.
     """
     ".
-    DECISION: 
+    DECISION: remove $returned:outputted$ tag 
 
 Value of root[620]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1779,7 +1780,7 @@ Value of root[620]['prompt'] changed from "def sortBySuccessRate(nominations):
     The function $takes:takes in$ a $list:list$ of $dictionaries:dictionaries$ and $returns:outputs$ the same $list:list$ of $dictionaries:dictionaries$ with an additional $key:key$ for each $dictionary:dictionary$ called 'success', for which the value is the result of dividing the value of the $key:key$ 'wins' and the value of the $key:key$ 'noms', rounded to the second decimal place. The outputted $list:list$ will also be arranged in descending order based on the value of 'success'.  
     """
     ".
-    DECISION: 
+    DECISION: remove $returned:outputted$ tag
 
 Value of root[627]['prompt'] changed from "def sortBySuccessRate(nominations):
     """
@@ -1798,7 +1799,7 @@ and $returns:prints$ output in order of least amount of 'wins', if the same $ret
 and $returns:prints$ output in order of least amount of 'wins', if the same $returns:prints$ based on least amount of 'noms', 
     """
     ".
-    DECISION: 
+    DECISION: typo in $parametre:input$ tag
 
 Value of root[631]['prompt'] changed from "def layoverTrips(flights, start):
     """
@@ -1813,7 +1814,7 @@ $Returns:Returns$ a $list:list$ that
 $Returns:Returns$ a $list:list$ that 
     """
     ".
-    DECISION: 
+    DECISION: remove $takes:takes$ tag 
 
 Value of root[637]['prompt'] changed from "def layoverTrips(flights, start):
     """
@@ -1848,7 +1849,7 @@ Value of root[641]['prompt'] changed from "def sort_physicists(scientists):
     $Takes:Takes$ an input $list:list$, which is comprised of smaller $lists:lists$. Each of these smaller $lists:lists$ has three values: the first is a $string:string$, the second one is a number, and the third is a $string:string$. If the third item in any smaller $list:list$ is equal to 'Physics', the first item in that smaller $list:list$ is $inserted:added$ to an output $list:list$. The corresponding number is also recorded. If the number for an item which is being $inserted:added$ is less than the corresponding number for the first item in the output $list:list$, it is $inserted:added$ to the beginning of the output $list:list$. Otherwise, it is $inserted:added$ to the end. After all small $lists:lists$ have been checked, it $returns:outputs$ the output $list:list$.
     """
     ".
-    DECISION: 
+    DECISION: remove  $return:output$ tag (x4)
 
 Value of root[646]['prompt'] changed from "def sort_physicists(scientists):
     """
@@ -1859,7 +1860,7 @@ Value of root[646]['prompt'] changed from "def sort_physicists(scientists):
     given a $list:list$ of $lists:lists$, where each sublist is the name of a scientist, their age, and their field indexed in that order, $return:return$ a $list:list$ that contains only the names of scientists whose field is "Physics", such that the scientist's name who has the smallest age appears first in the output $list:list$. 
     """
     ".
-    DECISION: 
+    DECISION: remove $return:output$ tag 
 
 Value of root[652]['prompt'] changed from "def sort_physicists(scientists):
     """
@@ -1870,7 +1871,7 @@ Value of root[652]['prompt'] changed from "def sort_physicists(scientists):
     when given a $list:list$ of $lists:lists$, if last index of $list:list$ in $lists:lists$ is equal to "Physics", $return:return$ the first value in $list:list$ of $lists:lists$ in a new $list:list$. however, if multiple values are to be $inserted:added$ to the new $list:list$, list in order of ascending order of the second value in $list:list$ of $lists:lists$.
     """
     ".
-    DECISION: 
+    DECISION: remove $list:list$ tag when list is a verb 
 
 Value of root[655]['prompt'] changed from "def find_multiples(start,stop,factor):
     """
@@ -1881,7 +1882,7 @@ Value of root[655]['prompt'] changed from "def find_multiples(start,stop,factor)
     the function find_multiples will $take:take$ the $parameters:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number. 
     """
     ".
-    DECISION: ??unclear
+    DECISION: keep $parameters:input$ tag
 
 Value of root[656]['prompt'] changed from "def find_multiples(start,stop,factor):
     """
@@ -1892,7 +1893,7 @@ Value of root[656]['prompt'] changed from "def find_multiples(start,stop,factor)
     the function find_multiples will $take:take$ the $parameters:input$ of a starting number, a stopping number, and a factor. The function will start counting at the starting number and count up by the factor, stopping at the stopping number but including it in the $list:list$. 
     """
     ".
-    DECISION: ??unclear
+    DECISION: keep $parameters:input$ tag 
 
 Value of root[659]['prompt'] changed from "def find_multiples(start,stop,factor):
     """
@@ -1903,7 +1904,7 @@ Value of root[659]['prompt'] changed from "def find_multiples(start,stop,factor)
     a function ask for three $parameters:inputs$:start, stop, factor. By adding up start*factor and records all the sum of those all the way until we $take:get$ the sum==stop. Then create a $list:list$ to hold those values.
     """
     ".
-    DECISION: agree, wrong $take:get$ tag
+    DECISION: remove $take:get$ tag
 
 Value of root[674]['prompt'] changed from "def total_bill(grocery_list, sales_tax):
     """
@@ -1914,7 +1915,7 @@ Value of root[674]['prompt'] changed from "def total_bill(grocery_list, sales_ta
     The function $takes:takes in$ some number of $lists:lists$ consisting of a $string:string$, an $integer:integer$, and a number, as well as one additional number "sales tax". The function multiplies the $integer:integer$ and the number in each $list:list$ and adds them together for all the $lists:lists$, giving a "total". Then the function multiplies the "total" by the "sales tax" and outputs that value added to the "total"
     """
     ".
-    DECISION: agree, missing $returns:outputs$ tag 
+    DECISION: keep $returns:outputs$ tag 
 
 Value of root[676]['prompt'] changed from "def total_bill(grocery_list, sales_tax):
     """
@@ -1925,7 +1926,7 @@ Value of root[676]['prompt'] changed from "def total_bill(grocery_list, sales_ta
     The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it looks into each individual $list:list$ and multiplies the numbers provided in each $list:list$. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output
     """
     ".
-    DECISION: 
+    DECISION: keep $loop through:looks into$ tag 
 
 Value of root[677]['prompt'] changed from "def total_bill(grocery_list, sales_tax):
     """
@@ -1936,7 +1937,7 @@ Value of root[677]['prompt'] changed from "def total_bill(grocery_list, sales_ta
     The function is supposed to calculate the total billing amount. From the grocery_list ($list:list$ of $lists:lists$), it looks into each individual $list:list$ and multiplies the numbers provided in each $list:list$. Then, it adds all those numbers. After that, it multiplies that sum with (sales_tax + 1) to give the output. The output is rounded to two decimal points.
     """
     ".
-    DECISION: 
+    DECISION: keep  $loops through:looks into$  tag 
 
 Value of root[694]['prompt'] changed from "def total_bill(grocery_list, sales_tax):
     """
@@ -1947,7 +1948,7 @@ Value of root[694]['prompt'] changed from "def total_bill(grocery_list, sales_ta
     $Loop through:Go through$ each $list:list$ and access last 2 values of each $list:list$. Multiply the last 2 values of every $list:list$. All resulting values must be added. This value should then be multiplied to 100* sales_tax
     """
     ".
-    DECISION: 
+    DECISION: keep $Loop through:Go through$ tag
 
 Value of root[699]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -1958,7 +1959,7 @@ Value of root[699]['prompt'] changed from "def translate(lexicon,sentence):
     This function $takes:takes in$ a $dictionary:dictionary$ of $strings:words$, translating the English word into a different language. THe function then $takes:takes in$ a sentence and uses the $dictionary:dictionary$ to replace the English words with the translated word from a different language. 
     """
     ".
-    DECISION: 
+    DECISION: TYPO "English words/word" -> insert from original prompt 
 
 Value of root[700]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -1969,7 +1970,7 @@ Value of root[700]['prompt'] changed from "def translate(lexicon,sentence):
     The function $takes:takes$ an $parameters:input$ of a $dictionary:dictionary$ and a $string:string$ of text. For each $string:word$ in the $string:string$, the function finds the $string:word$ in the $dictionary:dictionary$ and replaces it with the corresponding $dictionary:dictionary$ entry. If the $string:word$ is not found in the $dictionary:dictionary$, it is replaced with "UNK."
     """
     ".
-    DECISION: 
+    DECISION: keep $parameter:input$ tag; keep $string:string of text$ tag; remove $string:word$ tags (x3)
 
 Value of root[701]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -1980,7 +1981,7 @@ Value of root[701]['prompt'] changed from "def translate(lexicon,sentence):
     lexicon is a $dictionary:dictionary$ in which $keys:keys$ are English words and their corresponding values are the translations to some other language. The function is supposed to convert the sentence provided to the other language. For this, the function is supposed to compare each $string:word$ of the sentence with the $dictionary:dictionary$ $keys:keys$ and find the value of that $key:key$. If a $string:word$ does not match with any $key:key$, the value 'UNK' is assigned. After all the values are derived, a new $string:string$ is made with those values.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2)
 
 Value of root[702]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -1991,7 +1992,7 @@ Value of root[702]['prompt'] changed from "def translate(lexicon,sentence):
     the function will use the $dictionary:dictionary$ provided. the $string:string$ provided will correspond to the $keys:keys$ of the $dictionary:dictionary$. the function will $return:return$ a new $string:string$ that contains values that correspond to the $keys:keys$. if a $key:key$ is not in the $string:string$, then the $return:return$ value will be 'UNK'
     """
     ".
-    DECISION: 
+    DECISION: remove $return:return$ tag 
 
 Value of root[707]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2002,7 +2003,7 @@ Value of root[707]['prompt'] changed from "def translate(lexicon,sentence):
     $takes:takes$ a $dictionary:dictionary$ and a $string:string$ as $parameters:inputs$. $returns:returns$ a translated version of the inputted $string:string$. if a $string:word$ in the inputted $string:string$ is not in the inputted $dictionary:dictionary$, the translated version of that $string:word$ is 'UNK'
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2)
 
 Value of root[708]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2013,7 +2014,7 @@ Value of root[708]['prompt'] changed from "def translate(lexicon,sentence):
     This function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english words. The function then $returns:prints$ the $string:string$ in french. If a $string:word$ in the function is not in the $dictionary:dictionary$, the function $returns:prints$ 'UNK' for that $string:word$. 
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2)
 
 Value of root[709]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2024,7 +2025,7 @@ Value of root[709]['prompt'] changed from "def translate(lexicon,sentence):
     This function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ as $parameters:parameters$. The $dictionary:dictionary$ contains the translation of given english words. The function then $returns:returns$ the $string:string$ in french. If a $string:word$ in the function is not in the $dictionary:dictionary$, the function $returns:returns$ 'UNK' for that $string:word$. 
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2)
 
 Value of root[710]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2035,7 +2036,7 @@ Value of root[710]['prompt'] changed from "def translate(lexicon,sentence):
     The function $takes:takes in$ a $dictionary:dictionary$ and a $string:string$ for which each $string:word$ in the $string:string$ is a $key:key$ in the $dictionary:dictionary$. It $returns:outputs$ a $string:string$ that substitutes the original $string:word$ for the $dictionary:dictionary$ value associated with that $key:key$. If a $string:word$ in the original $string:string$ is not found in the $dictionary:dictionary$, the substituted $string:word$ will be 'UNK'.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x3)
 
 Value of root[711]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2046,7 +2047,7 @@ Value of root[711]['prompt'] changed from "def translate(lexicon,sentence):
     For each $string:word$ in sentence, find $key:key value$ in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2); keep $key:key value$ tag 
 
 Value of root[712]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2057,7 +2058,7 @@ Value of root[712]['prompt'] changed from "def translate(lexicon,sentence):
     For every $string:word$ in sentence, find $key:key value$ in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x2); keep $key:key value$ tag 
 
 Value of root[713]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2068,7 +2069,7 @@ Value of root[713]['prompt'] changed from "def translate(lexicon,sentence):
     $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each group of $strings:strings$ to a $list:list$. if the $string:word$ in the $list:list$ matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag
 
 Value of root[714]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2079,7 +2080,7 @@ Value of root[714]['prompt'] changed from "def translate(lexicon,sentence):
     $Provide:Enter$ a $string:string$. Separate the $string:string$ on spaces and $insert:add$ each $string:word$ to a $list:list$. For every $string:word$ in the $list:list$, if the $string:word$ matches a $key:key$ in the $dictionary:dictionary$, $return:print$ the value of that $key:key$.
     """
     ".
-    DECISION: 
+    DECISION: remove $string:word$ tag (x3)
 
 Value of root[716]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2092,7 +2093,7 @@ def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="tro
 def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ $parameter:input$="I like my three cats" through def translate and output={} translation
     """
     ".
-    DECISION: 
+    DECISION: keep $provide:input$ tag; keep $parameter:input$ tag; remove $return:output$ tag 
 
 Value of root[717]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2105,7 +2106,7 @@ def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="tro
 def translate(lexicon,sentence): defines {"one"="un", "two"="deux", "three"="trois", "four="quatre", "I"="je", "you"="tu", "and"="et", "cats"="chats", "love"="aime", "like"=aime", "my"="mes"}, this program will run the $string:phrase$ $parameter:input$="I like my three cats" through def translate and output={} translation
     """
     ".
-    DECISION: 
+    DECISION: type in molly ("toinput"); keep $provide:input$ tag; keep $parameter:input$ tag; remove $return:output$ tag
 
 Value of root[718]['prompt'] changed from "def translate(lexicon,sentence):
     """
@@ -2115,7 +2116,7 @@ Value of root[718]['prompt'] changed from "def translate(lexicon,sentence):
     $loops through:looks through$ a $dictionary:dictionary$ for english words and their translations and $returns:returns$ the translations if they are present in the $dictionary:dictionary$. If they are not present it $returns:returns$ 'UNK'
     """
     ".
-    DECISION: ???unclear
+    DECISION: SEEMS FINE 
 
 Value of root[722]['prompt'] changed from "def topScores(lst):
     """
@@ -2126,7 +2127,7 @@ Value of root[722]['prompt'] changed from "def topScores(lst):
     The function reads the numbers in the $list:list$. The numbers that are greater than 76 are ordered from highest to lowest. The $strings:strings$ are then $returned:printed$ in the order of their corresponding numbers.
     """
     ".
-    DECISION: 
+    DECISION: keep $loops through:reads$ tag; 
 
 Value of root[724]['prompt'] changed from "def topScores(lst):
     """
@@ -2137,7 +2138,7 @@ Value of root[724]['prompt'] changed from "def topScores(lst):
     if the first item in the $string:string$ is equal to or greater than 80, $return:print$ the second item in the $string:string$
     """
     ".
-    DECISION: 
+    DECISION: keep $list:string$ tags (x2) 
 
 Value of root[735]['prompt'] changed from "def topScores(lst):
     """
@@ -2148,7 +2149,7 @@ Value of root[735]['prompt'] changed from "def topScores(lst):
     $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ at index 1 to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst from highest to lowest. If there are more than five $lists:lists$ in newLst, remove any $lists:lists$ after the five $lists:lists$ with the highest values at index 0. Then make a new $list:list$ called finalLst. For each $list:list$ in newLst, add the value at index 1 to finalLst. $Return:Output$ finalLst.
     """
     ".
-    DECISION: agree, incorrect remove of $insert:add$ tag. 
+    DECISION: keep $insert:add$ tag. 
 
 Value of root[742]['prompt'] changed from "def topScores(lst):
     """
@@ -2159,7 +2160,7 @@ Value of root[742]['prompt'] changed from "def topScores(lst):
     This function has a $list:list$ of $lists:lists$ of length 2 as $parameters:inputs$. If the first entry in the $list:list$ (the score) is greater than 80, $insert:add$ the second entry in the $list:list$ (the name) to a $list:list$ to be $return:output$ at the end.
     """
     ".
-    DECISION: agree, case of return tag. 
+    DECISION: keep $returned:output$ tag
 
 Value of root[744]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2170,7 +2171,7 @@ Value of root[744]['prompt'] changed from "def generateCardDeck(suits, vals):
     The function $takes:takes$ a $list:series$ of input $strings:strings$ and another $list:series$ of input $strings:strings$, and then $concatenates:splices$ each $string:string$ from the first series with each $string:string$ from the second series
     """
     ".
-    DECISION: agree missing series tag (x3)
+    DECISION: keep $list:series$ tag at the end 
     
 Value of root[745]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2181,7 +2182,7 @@ Value of root[745]['prompt'] changed from "def generateCardDeck(suits, vals):
     The function $takes:takes$ a $list:series$ of input $strings:strings$ "suits" and another $list:series$ of input $strings:strings$ "vals". It sorts each series first into alphabetical order followed by in order of increasing numerical value. Then it $concatenates:splices$ each $string:string$ from the first series with each $string:string$ from the second series
     """
     ".
-    DECISION: agree missing series tag (x3)
+    DECISION: keep $list:series$ tags at the end and also "each series" should be tagged 
 
 Value of root[746]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2192,7 +2193,7 @@ Value of root[746]['prompt'] changed from "def generateCardDeck(suits, vals):
     From the first $list:list$ of $parameters:parameters$, the function takes the last element first and goes backwards towards the first element. It $concatenates:attaches$ these elements with the inputs given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. This goes on until the element of the first $list:list$ are exhausted.
     """
     ".
-    DECISION: 
+    DECISION: remove $takes:takes$ tag 
 
 Value of root[747]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2203,7 +2204,7 @@ Value of root[747]['prompt'] changed from "def generateCardDeck(suits, vals):
     From the first $list:list$ of $parameters:parameters$, the function takes the last element first and goes backwards towards the first element. It $concatenates:attaches$ these elements with the inputs given in the second $list:list$. A new $list:list$ is made which is $inserted:appended$ continuously with these new attachments. No function is called for this but rather the two $strings:stings$ which are to be $concatenated:attached$ are $concatenated:concatenated$. During concatenation, the element of the first $list:list$ is put first and the element of the second $list:list$ is put second. The suit comes first and then the val for every concatenation. And the suits $list:list$ starts from backwards. This goes on until the elements of the first $list:list$ are exhausted.
     """
     ".
-    DECISION: 
+    DECISION: remove $takes:takes$ tag; remove  $concatenated:attached$ tag 
 
 Value of root[757]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2216,7 +2217,7 @@ Value of root[757]['prompt'] changed from "def generateCardDeck(suits, vals):
 ['D2', 'D6', 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. 
     """
     ".
-    DECISION: could be convinced provide as "you input" - discuss.  
+    DECISION: keep $provide:input$ tag 
 
 Value of root[758]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2227,7 +2228,7 @@ Value of root[758]['prompt'] changed from "def generateCardDeck(suits, vals):
     The function $takes:takes in$ multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. 
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS
 
 Value of root[759]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2238,7 +2239,7 @@ Value of root[759]['prompt'] changed from "def generateCardDeck(suits, vals):
     The function $takes:takes in$ multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. The resulting $list:list$ will be arranged in alphabetical order based on the letters of each $string:string$.
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS
 
 Value of root[760]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2249,7 +2250,7 @@ Value of root[760]['prompt'] changed from "def generateCardDeck(suits, vals):
     For each $string:character$ in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals.
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS
 
 Value of root[761]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2260,7 +2261,7 @@ Value of root[761]['prompt'] changed from "def generateCardDeck(suits, vals):
     For each $string:character$ in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals. Sort each card in deck by alphabetical order of suit $string:character$.
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS
 
 Value of root[764]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2271,7 +2272,7 @@ Value of root[764]['prompt'] changed from "def generateCardDeck(suits, vals):
     Sorts out each $list:list$ by numerical or alphabetical order then $concatenates:combines$ each element of $list:list$ A to $list:list$ B, $looping through:iterating through$ each $list:list$ by numerical and alphabetical order. 
     """
     ".
-    DECISION: missed remove of $key:element$ tag?
+    DECISION: remove $key:element$ tag
 
 Value of root[766]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2286,7 +2287,7 @@ def generateCardDeck(suits, vals): $takes:brings in$ the information: ['H', 'D']
 def generateCardDeck(suits, vals): $takes:brings in$ the information:['H'], ['2'] and defines Card=[], this program then $returns:outputs$ and combination of both the suit [] and the val [].
     """
     ".
-    DECISION: ???unclear
+    DECISION: variable/variables in the second example unclear -> copy from original 
 
 Value of root[767]['prompt'] changed from "def generateCardDeck(suits, vals):
     """
@@ -2297,7 +2298,7 @@ Value of root[767]['prompt'] changed from "def generateCardDeck(suits, vals):
     Going from last to first in the first $list:set of brackets$ $inserts:adds$ each of the inputs in the second $lists:brackets$ to the end of the input from the first bracket one time and does so for all inputs in the first $lists:brackets$
     """
     ".
-    DECISION: agree concatenate not inserts tag 
+    DECISION: keep $concatenates:adds$ tag  
 
 Value of root[769]['prompt'] changed from "def reverseWords(words):
     """
@@ -2308,7 +2309,7 @@ Value of root[769]['prompt'] changed from "def reverseWords(words):
     $takes:takes$ a $list:list$ of words, reverses each $string:word$ in the $list:list$, and alphabetically orders those new words.
     """
     ".
-    DECISION: 
+    DECISION: remove first $strings:words$ tag, keep second one 
 
 Value of root[770]['prompt'] changed from "def reverseWords(words):
     """
@@ -2319,7 +2320,7 @@ Value of root[770]['prompt'] changed from "def reverseWords(words):
     $Parameter:Input$: $list:list$ of $strings:strings$. Output: $list:list$ of $strings:strings$, whose characters are in the reverse order of the original $string:string$
     """
     ".
-    DECISION: 
+    DECISION: remove $Return:Output$ tag 
 
 Value of root[771]['prompt'] changed from "def reverseWords(words):
     """
@@ -2330,7 +2331,7 @@ Value of root[771]['prompt'] changed from "def reverseWords(words):
     $Parameter:Input$: $list:list$ of $strings:strings$. Output: $list:list$ of $strings:strings$, whose characters are in the reverse order of the original $string:string$. In the output, arrange each item in the $list:list$ in alphabetical order 
     """
     ".
-    DECISION: 
+    DECISION: remove $Return:Output$ tag
 
 Value of root[778]['prompt'] changed from "def reverseWords(words):
     """
@@ -2341,7 +2342,7 @@ Value of root[778]['prompt'] changed from "def reverseWords(words):
     For each $string:word$ in the $list:list$, reverses the order of the letters. $Returns:Returns$ a $list:list$ of the new words in alphabetical order.
     """
     ".
-    DECISION: 
+    DECISION: keep new $strings:words$ tag 
 
 Value of root[783]['prompt'] changed from "def reverseWords(words):
     """
@@ -2352,7 +2353,7 @@ Value of root[783]['prompt'] changed from "def reverseWords(words):
     The function $takes:takes in$ a $list:list$ of $strings:strings$ it will make all the characters within the $strings:strings$ reverse. Then it will sort the $list:list$ alphabetically by the last character in each $string:string$
     """
     ".
-    DECISION: ??cannot identify 
+    DECISION: characters/character difference -> replace with original prompt 
 
 Value of root[785]['prompt'] changed from "def reverseWords(words):
     """
@@ -2363,7 +2364,7 @@ Value of root[785]['prompt'] changed from "def reverseWords(words):
     Write a function that $takes:gets$ $strings:strings$ from a $list:list$. Reverse all the $strings:strings$ and $returns:returns$ the reversed $string:string$ in a $list:list$. The order of the $strings:strings$ in the $return:return$ statement should be in alphabetical order from the $parameter:input$.
     """
     ".
-    DECISION: yes, remove $return$ tag. 
+    DECISION: remove $return$ tag. 
 
 Value of root[788]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2374,7 +2375,7 @@ Value of root[788]['prompt'] changed from "def percentWin(guess,answers):
     create a function with 2 $parameters:inputs$: guess ($list:list$) and answers(list). find the number of the element match in guess and answers
     """
     ".
-    DECISION: yes tag list for answers($list:list$)
+    DECISION: keep answers($list:list$) tag
 
 Value of root[789]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2385,7 +2386,7 @@ Value of root[789]['prompt'] changed from "def percentWin(guess,answers):
     create a function with 2 $parameters:inputs$: guess ($list:list$) and answers(list). find the number of the element match in guess and answers then divide with the number of element of answers. then times the results 100 times and round up the to $integer:integer$. $concatenate:add$ percentage sign after the results
     """
     ".
-    DECISION: yes, tag list for answers($list:list$)
+    DECISION: keep answers($list:list$) tag
 
 Value of root[794]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2396,7 +2397,7 @@ Value of root[794]['prompt'] changed from "def percentWin(guess,answers):
     matches the numbers and letters of the two given $strings:strings$ and calculates the similarity in percents
     """
     ".
-    DECISION: 
+    DECISION: keep $lists:strings$ tag 
 
 Value of root[795]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2407,7 +2408,7 @@ Value of root[795]['prompt'] changed from "def percentWin(guess,answers):
     matches the numbers and letters of the two given $strings:strings$ and calculates the similarity, lastly turn the answer into a percent number with the percent symbol, rounding to the nearest $integer:whole number$
     """
     ".
-    DECISION: 
+    DECISION: keep $lists:strings$ tag 
 
 Value of root[802]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2418,7 +2419,7 @@ Value of root[802]['prompt'] changed from "def percentWin(guess,answers):
     Count how many $strings:characters$ in a range of numbers match those in another range of numbers and $return:display$ the difference as a percentage
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS; keep $list:range$ tag 
 
 Value of root[803]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2429,7 +2430,7 @@ Value of root[803]['prompt'] changed from "def percentWin(guess,answers):
     Count how many $strings:characters$ in a range of numbers match those in another range of numbers and $return:display$ the difference rounded to the nearest $integer:whole number$. Multiply the difference by 100 and $return:display$ followed by '%'
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS; keep $list:range$ tag 
 
 Value of root[805]['prompt'] changed from "def percentWin(guess,answers):
     """
@@ -2440,7 +2441,7 @@ Value of root[805]['prompt'] changed from "def percentWin(guess,answers):
     $Take:Take in$ $list:array$ A. Create variable X equal to 0. $Loop through:Iterate through$ $list:array$ A. When a $string:character$ is present in $List:Array$ A, add 1 to Y. $Return:Return$ Y divided by the size of the $list:array$, rounded to the nearest percent.
     """
     ".
-    DECISION: 
+    DECISION: ONLY CHARS 
     
 Value of root[813]['prompt'] changed from "def correctNumberofPlayers(teams):
     """
@@ -2451,7 +2452,7 @@ Value of root[813]['prompt'] changed from "def correctNumberofPlayers(teams):
     this function will see if all the inside $list:list$ from the $parameter:input$ $list:list$ of $list:list$ have 5 values, if yes then True no then False
     """
     ".
-    DECISION: 
+    DECISION: remove $parameter:input$ tag 
 
 Value of root[822]['prompt'] changed from "def correctNumberofPlayers(teams):
     """
@@ -2462,7 +2463,7 @@ Value of root[822]['prompt'] changed from "def correctNumberofPlayers(teams):
     given the each $list:list$ within the $list:list$ of $lists:lists$, there should be five items within each sub $list:list$. if the $list:list$ doesn't have five items, then the output is false. if each $list:list$ has five items, then the output is true.
     """
     ".
-DECISION: 
+DECISION: remove $return:output$ tag (x)
 
 Value of root[841]['prompt'] changed from "def laugh(size):
     """
@@ -2477,7 +2478,7 @@ Value of root[841]['prompt'] changed from "def laugh(size):
 
     """
     ".
-DECISION: 
+DECISION: remove $parameter:input$ tag 
 
 Value of root[844]['prompt'] changed from "def laugh(size):
     """
@@ -2488,7 +2489,7 @@ Value of root[844]['prompt'] changed from "def laugh(size):
     a function have initial input as 'ha' when  $parameter:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a'
     """
     ".
-DECISION:
+DECISION: remove $parameter:input$ tag for 'ha'; add TOTALLY NEW tag $integer:int$ in parens 
 
 Value of root[845]['prompt'] changed from "def laugh(size):
     """
@@ -2499,7 +2500,7 @@ Value of root[845]['prompt'] changed from "def laugh(size):
     a function have initial input as 'ha' when  $parameter:input$ of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a' and have another 'ha' with the original length of 'a'
     """
     ".
-DECISION:
+DECISION: remove $parameter:input$ tag for 'ha'; TOTALLY NEW tag $integer:int$ in parens 
 
 Value of root[848]['prompt'] changed from "def laugh(size):
     """
@@ -2510,7 +2511,7 @@ Value of root[848]['prompt'] changed from "def laugh(size):
     count the number of $strings:words$ in a $string:string$ separated by a space
     """
     ".
-DECISION:
+DECISION: remove $strings:words$ tag 
 
 Value of root[849]['prompt'] changed from "def laugh(size):
     """
@@ -2521,7 +2522,7 @@ Value of root[849]['prompt'] changed from "def laugh(size):
     $take:take in$ a number and write the $string:word$ 'ha' but with as many 'a's as the number
     """
     ".
-DECISION:
+DECISION: keep $string:word$ tag
 
 Value of root[855]['prompt'] changed from "def laugh(size):
     """
@@ -2532,7 +2533,8 @@ Value of root[855]['prompt'] changed from "def laugh(size):
     $Return:Produce$ a $string:string$, with each $string:word$ starting with h and then however many a's the $parameter:input$ says. Decrease the count of a's by one following the h for each $string:word$ after.
     """
     ".
-DECISION: 
+DECISION: remove $string:word$ tag (x2) 
+
 Value of root[856]['prompt'] changed from "def laugh(size):
     """
     $Return:Produce$ a $string:string$, with each word starting with h and then however many a's the $parameter:input$ says. Decrease the count of a's by one following the h for each word after. Stop after the last word in the $string:string$ is ha.
@@ -2542,4 +2544,4 @@ Value of root[856]['prompt'] changed from "def laugh(size):
     $Return:Produce$ a $string:string$, with each $string:word$ starting with h and then however many a's the $parameter:input$ says. Decrease the count of a's by one following the h for each $string:word$ after. Stop after the last $string:word$ in the $string:string$ is ha.
     """
     ".
-DECISION:
+DECISION: remove $string:word$ tag (x2) 

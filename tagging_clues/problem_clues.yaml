@@ -274,7 +274,12 @@ percentWin:
     answers as a string with %, rounded to the nearest whole percent
 planets_mass:
   signature: 'def planets_mass(planets):'
-  tags: ''
+  tags:
+    - 1: takes a dictionary
+    - 2: skip Pluto
+    - 3: skip Sun
+    - 4: sum masses
+    - 5: return
   tests:
   - input: '{''Venus'': 10, ''Mercury'': 5, ''Sun'': 100}'
     output: '15'
@@ -488,7 +493,14 @@ total_bill:
     of each list in grocery_list, multiplied by 1 + sales_tax. Round to 2 digits.
 translate:
   signature: 'def translate(lexicon,sentence):'
-  tags: ''
+  tags: 
+    - 1: input 1 is a dictionary
+    - 2: input 2 is a string
+    - 3: extract words from string
+    - 4: look up words in dictionary
+    - 5: use UNK for words that are not in dictionary
+    - 6: function returns
+    - 7: join string
   tests:
   - input: '{"one":"un", "two":"deux", "three":"trois", "four":"quatre",   "I":"je",
       "you":"tu", "and":"et", "cats":"chats", "love":"aime",   "like":"aime", "my":"mes"},    "I

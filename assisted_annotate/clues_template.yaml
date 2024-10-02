@@ -1,0 +1,32 @@
+- role: system  
+  content: |
+     You are helping me understand the common features of several prompts written by students.
+- role: user  
+  content: |
+    The following prompts all describe the same function. List the concepts that are common to all the docstrings in the prompts listed below.
+    ```
+    def laugh(size):
+        """
+        Write a function which takes an integer size as an input, creates an empty string called laugh, and the uses a for loop to append an h followed by i number a's for each 0<i<=size starting with i = size, append a space before each h except the first h in the string
+        """
+    ```
+
+    ```
+    def laugh(size):
+        """
+        function adds 'a' to every 'h' based on input and will lower amount of 'a'. Function also adds a space between every 'ha' except the last one
+        """
+    ```
+- role: assistant
+  content: |
+      1. *repetition*: the function returns a string with a repeating pattern or uses a loop
+      2. *space separation*: the returned string uses spaces to separate each word
+      3. *prefix h*: the returned string has an 'h' in front of every word
+      4. *size-dependent a's*: in every returned word, the 'h' is followed by repeated letter 'a', with the number of 'a's dependent on the position of the word
+      5. *reverse order*: the first word has 'size' repeated 'a's, and this goes down by 1 with each word
+      6. *down to 1:* the final word has 1 letter 'a'  
+- role: user  
+  content: |
+    The following prompts all describe the same function. List the concepts that are common to all the docstrings in the prompts listed below.
+      
+    $prompts  

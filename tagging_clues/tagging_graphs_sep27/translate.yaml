@@ -160,7 +160,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id002
   node_to: *id003
@@ -187,7 +188,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id002
   node_to: *id003
@@ -211,7 +213,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id004
   node_to: *id005
@@ -238,7 +241,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id005
   node_to: *id005
@@ -263,7 +267,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id005
   node_to: *id003
@@ -289,7 +294,8 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a6
 - !Edge
   node_from: *id006
   node_to: *id006
@@ -310,7 +316,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - m4
 - !Edge
   node_from: *id006
   node_to: *id006
@@ -333,7 +340,8 @@ edges:
   attempt_id: 2
   total_attempts: 3
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - m4
 - !Edge
   node_from: *id007
   node_to: *id007
@@ -358,7 +366,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - m4
 - !Edge
   node_from: *id002
   node_to: *id007
@@ -396,7 +405,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id007
   node_to: *id008
@@ -437,7 +447,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id008
   node_to: *id007
@@ -471,5 +482,35 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: fail
-  _edge_tags: null
-student_start_node_tags: {}
+  _edge_tags:
+    - 0
+student_start_node_tags:
+  student23:
+    - 1
+    - 2
+    - 4
+  student50:
+    - 1
+    - 2
+    - 4
+  student59:
+    - 1
+    - 2
+    - 4
+    - 6
+  student60:
+    - 1
+    - 2
+    - 4
+    - 5
+  student64:
+    - 4
+    - 5
+  student69:
+    - 2
+    - 3
+    - 4
+  student75:
+    - 2
+    - 4
+    - 6

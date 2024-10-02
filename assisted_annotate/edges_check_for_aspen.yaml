@@ -1,0 +1,371 @@
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        Check if "aspen" is one of the keys in a dict. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        Check if "aspen" is a key in a dictionary. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  attempt_id: 1
+  username: student27
+  _response: |-
+    There are no significant semantic changes between the two prompts; the only difference is the phrasing from "a dict" to "a dictionary," which is a trivial rewrite.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        Check if "aspen" is a key in a dictionary. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        A dict object contains keys and values. Check if "aspen" is one of the keys in a dict. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  attempt_id: 2
+  username: student27
+  _response: |-
+    The revised prompt adds the clarification that a dictionary object contains keys and values; however, the primary concepts remain the same. 
+
+    Summary:
+
+    ```yaml
+    - m1
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        A dict object contains keys and values. Check if "aspen" is one of the keys in a dict. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        A dict object contains keys and values. Check if "Aspen" is one of the keys in a dict. Return "Yup" if it is a key, "Nope" if it is not a key.
+        """
+        
+  attempt_id: 3
+  username: student27
+  _response: |-
+    In the revised prompt, the key being checked is changed from "aspen" to "Aspen". This is a trivial rewrite with no change in overall concept but differs due to capitalization.
+
+    Summary:
+
+    ```yaml
+    - m3
+    ```
+  _status: modified
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If "Aspen" appears as an item in the dictionary, output the string "Yup", and if it does not appear output the string "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If "Aspen" appears as a definition in the dictionary, output the string "Yup", and if it does not appear output the string "Nope"
+        """
+        
+  attempt_id: 1
+  username: student34
+  _response: |-
+    In the revised prompt, the concept of checking if "Aspen" is an item (key) in the dictionary was changed to checking if "Aspen" is a definition (value) in the dictionary.
+
+    Summary:
+
+    ```yaml
+    - l2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If "Aspen" appears as a definition in the dictionary, output the string "Yup", and if it does not appear output the string "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If "Aspen" corresponds to an integer greater than 0, output the string "Yup", and if it does not appear output the string "Nope"
+        """
+        
+  attempt_id: 2
+  username: student34
+  _response: |
+    In the revised prompt, the condition for checking "Aspen" changes from being defined in the dictionary to being an integer greater than 0. However, the prompt still implies checking the presence of "Aspen" but now with a different condition (checking the value instead of just the key). The output remains the same.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If "Aspen" corresponds to an integer greater than 0, output the string "Yup", and if it does not appear output the string "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' corresponds to an integer greater than 0, print the string "Yup", and if 'Aspen' does not appear in the dictionary put print the string "Nope"
+        """
+        
+  attempt_id: 3
+  username: student34
+  _response: |-
+    The second prompt adds more detail by specifying that "Aspen" is a key in the dictionary, making it clear that the input is a dictionary and that the check for "Aspen" is a key check.
+
+    Summary:
+
+    ```yaml
+    - a1
+    - m2
+    ```
+  _status: modified
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' corresponds to an integer greater than 0, print the string "Yup", and if 'Aspen' does not appear in the dictionary put print the string "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' corresponds to an integer greater than 0, output "Yup", and if 'Aspen' does not exist in the dictionary output "Nope"
+        """
+        
+  attempt_id: 4
+  username: student34
+  _response: |-
+    The revised prompt replaces "print the string" with "output". Apart from this change, the concepts remain the same.
+
+    Summary:
+
+    ```yaml
+    - m3
+    ```
+  _status: modified
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' corresponds to an integer greater than 0, output "Yup", and if 'Aspen' does not exist in the dictionary output "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' appears in the dictionary output "Yup" and if it is not in the dictionary output "Nope"
+        """
+        
+  attempt_id: 5
+  username: student34
+  _response: |-
+    The revised prompt removes the condition that 'Aspen' must correspond to an integer greater than 0 and simplifies the output logic based solely on the presence of 'Aspen' in the dictionary. 
+
+    Summary:
+
+    ```yaml
+    - d2
+    - m3
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' appears in the dictionary output "Yup" and if it is not in the dictionary output "Nope"
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If it is true that 'Aspen' appears in the dictionary, output "Yup" and if it is false output "Nope"
+        """
+        
+  attempt_id: 6
+  username: student34
+  _response: |-
+    The revised prompt rewords the condition for checking the presence of 'Aspen' and outputs based on that check. It changes "If 'Aspen' appears in the dictionary" to "If it is true that 'Aspen' appears in the dictionary" and "if it is not in the dictionary" to "if it is false." The primary concept remains the same, but the wording is slightly altered to include a more explicit boolean condition.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If the name is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If the name is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  attempt_id: 1
+  username: student67
+  _response: |-
+    There is no change between the first and second prompt since they are identical.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If the name is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If the name of the dictionary is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  attempt_id: 2
+  username: student67
+  _response: |-
+    In the revised prompt, the concept that the input is a dictionary is added. 
+    However, the key check mechanism and output criteria have remained mostly unchanged.
+
+    Summary:
+
+    ```yaml
+    - a1
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If the name of the dictionary is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If the name of the dictionary is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  attempt_id: 3
+  username: student67
+  _response: |-
+    The two prompts are identical. There are no changes in the concepts or the wording.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        If the name of the dictionary is 'Aspen', returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        If 'Aspen' is in the dictionary, returns 'Yup'. Otherwise returns 'Nope'.
+        """
+        
+  attempt_id: 4
+  username: student67
+  _response: |-
+    In the revised prompt, the concept of checking if the name of the dictionary itself is 'Aspen' is reworded to checking if 'Aspen' is a key in the dictionary. The inputs and the output conditions remain the same.
+
+    Summary:
+
+    ```yaml
+    - a2
+    ```
+  _status: modified
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        given an array formatted so that there is a String treename key and a number associated with that key, check if there is value that has a treename "Aspen" whose number is greater than 0. return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        given an array formatted so that there is a String key and a number associated with that key, check if there is value that has a key, "Aspen",  whose number is greater than 0. return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  attempt_id: 1
+  username: student68
+  _response: |-
+    The revised prompt simplifies the description slightly but retains the same concepts. There is no meaningful change to any of the listed concepts.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        given an array formatted so that there is a String key and a number associated with that key, check if there is value that has a key, "Aspen",  whose number is greater than 0. return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        given a dictionary check if there is a value that has a key, "Aspen". return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  attempt_id: 2
+  username: student68
+  _response: |-
+    In the revised prompt, the concept of checking if the value associated with the key "Aspen" is greater than 0 is removed. Additionally, the input type is changed from "an array formatted so that there is a String key and a number associated with that key" to a simpler "dictionary".
+
+    Summary:
+
+    ```yaml
+    - a1
+    ```
+  _status: modified
+- prompt_from: |-
+    def check_for_aspen(trees):
+        """
+        given a dictionary check if there is a value that has a key, "Aspen". return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  prompt_to: |-
+    def check_for_aspen(trees):
+        """
+        given a dictionary check if there is a key, "Aspen". return "Yup" if it passes the check and "Nope" if it doesn't 
+        """
+        
+  attempt_id: 3
+  username: student68
+  _response: |
+    In the revised prompt, the specific mention of checking a value with the key "Aspen" has been simplified to just checking if there is a key "Aspen". The core functionality and output conditions remain the same, but the explanation is made clearer by removing the unnecessary mention of value checking.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: modified

@@ -14,9 +14,6 @@ class Message(TypedDict):
 Conversation = List[Message]
 
 
-
-
-
 def subst_prompt_template(prompt_template: Conversation, data: dict) -> Conversation:
     """
     Substitute the keys in the prompt template with the values in the data. This

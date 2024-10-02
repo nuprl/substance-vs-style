@@ -141,8 +141,8 @@ def substitute_prompt(prompt: str, category: str, value: str):
             prompt = prompt.replace(match.group(0), original)
     return prompt, changed
 
-def main_with_args(original_dataset: str, output_path: Path,category: str, value: str):
-    original_dataset = datasets.load_dataset(original_dataset, split="test")
+def main_with_args(original_dataset: str, split:str, output_path: Path,category: str, value: str):
+    original_dataset = datasets.load_dataset(original_dataset, split=split)
     results = [ ]
     for item in original_dataset:
         prompt = item['prompt']
@@ -163,11 +163,12 @@ def main_with_args(original_dataset: str, output_path: Path,category: str, value
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--original_dataset", type=str, default="nuprl-staging/studenteval_tagged_prompts")
+    parser.add_argument("--split", type=str,required=True)
     parser.add_argument("--output_path", type=Path, default=Path("subst_prompts_insert_append.jsonl"))
     parser.add_argument("--category", type=str, default="insert")
     parser.add_argument("--value", type=str, default="append")
     args = parser.parse_args()
-    main_with_args(args.original_dataset, args.output_path, args.category, args.value)
+    main_with_args(args.original_dataset,args.split, args.output_path, args.category, args.value)
 
 if __name__ == "__main__":
     main()

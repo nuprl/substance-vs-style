@@ -1,0 +1,171 @@
+- role: system
+  content: |
+    I will show you a pair of prompts written by a student, where is second is a
+    revision of the first. I will also give you a numbered list of concepts. I
+    want you to label the concepts that were added, removed, or reworded in the
+    second prompt.
+
+    Respond with an analysis of the changes and then summarize the changes by
+    how each concept is changed followed by the concept number.
+
+    - a: the concept is not in the first prompt, but is added in the second prompt
+    - d: the concept is in the first prompt, but is removed in the second prompt
+    - l:  the concept is in both prompts, but is rewritten with less detail in the second prompt
+    - m: the concept is in both prompts, but is rewritten with more detail in the second prompt
+
+    There is also a special tag that should only be used when none of the
+    other tags apply.
+
+    - 0: no difference or trivial rewrite (semantically equivalent rewrite, with no change to the concepts)
+
+    Conclude the analysis with a summary that looks like this
+
+    Summary:
+
+    ```yaml
+    - a1
+    - d2
+    - l3
+    - m4
+    ```
+- role: user
+  content: |
+    The student started with this prompt:
+
+    ```
+    def laugh(size):
+      """
+      a function have initial input as 'ha' when  input of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a'
+      """
+    ```
+
+    And turned it into the following prompt:
+    
+    ```
+    def laugh(size):
+        """
+        a function have initial input as 'ha' when  input of size(int) is 1, when size+= 1 from 1, 'ha' will gain one more 'a' and have another 'ha' with the original length of 'a'
+        """
+    ```
+
+    These are the concepts:
+
+    - 1: prefix h
+    - 2: reverse order
+    - 3: number of a-s is based on size
+    - 4: space separation
+    - 5: down to 1
+    - 6: repetition
+- role: assistant
+  content: |
+    The second prompt adds the text "and have another 'ha' with the original length of 'a'". This introduces the idea that there is repetition in the result, which is not clear in the first prompt.
+
+    Summary:
+
+    ```yaml
+    - a6
+    ```
+- role: user
+  content: |
+    The student started with this prompt:
+
+    ```
+    def laugh(size):
+      """
+      The function will repeat the word "ha" based on the size inputted. Each time the word "ha" is printed, the number of "a"s in the "ha" will start with its initial size, then decrease by one for each repetition.
+      """
+
+    ```
+
+    And turned it into the following prompt:
+    
+    ```
+    def laugh(size):
+        """
+        Based on the inputted number, will return a laugh size where the number of "a"'s starts with the initial size, then decreases by one for each additional laugh.
+        """
+
+    ```
+
+    These are the concepts:
+
+    - 1: prefix h
+    - 2: reverse order
+    - 3: number of a-s is based on size
+    - 4: space separation
+    - 5: down to 1 (must be explicit)
+    - 6: repetition    
+- role: assistant
+  content: |
+    The second prompt is complete different:
+    
+    1. prefix h: the first prompt mentions "ha" but this is missing in the second prompt
+    2. reverse order: reworded with the same level of detail
+    3. number of a-s based on size: reworded with the same level of detail
+    4. space separation: not clear in either prompt
+    5. not mentioned in either prompt
+    6. repetition: reworded with the same level of detail
+
+    Summary:
+
+    ```yaml
+    - d1
+    ```
+- role: user
+  content: |
+    The student started with this prompt:
+  
+    ```
+    def laugh(size):
+        """
+        This function prints ha 
+        """
+    ```
+  
+    And turned it into the following prompt:
+  
+    ```   
+    def laugh(size):
+        """
+        This function prints a word
+        """
+    ```
+
+    These are the concepts:
+
+    - 1: prefix h
+    - 2: reverse order
+    - 3: number of a-s is based on size
+    - 4: space separation
+    - 5: down to 1 (must be explicit)
+    - 6: repetition
+- role: assistant
+  content: |   
+    In the revised prompt, the concept of printing "ha" is replaced by the more
+    generic phrase "prints a word".
+
+    Summary:
+
+    ```yaml
+    - d1
+    ```  
+- role: user
+  content: |
+    The student started with this prompt:
+    
+    ```
+    $prompt_from
+    ```
+    
+    And turned it into the following prompt:
+    
+    ```
+    $prompt_to
+    ```
+
+    These are the concepts:
+
+    - 1: **Add to map**: The function adds `word` to `map` as a key with `line_number` as the value
+    - 2: **List of line numbers**: `map` maps words to a list of line numbers
+    - 3: **Check existence:**: if `word` is already a key, add `line_number` to the existing list of line numbers
+    - 4: **Return new map**: return the updated `map`

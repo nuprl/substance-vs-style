@@ -239,6 +239,7 @@ laugh:
   - 3: number of a-s is based on size
   - 4: space separation
   - 5: down to 1
+  - 6: repetition
   tests:
   - input: '4'
     output: '"haaaa haaa haa ha"'
@@ -273,7 +274,13 @@ percentWin:
     answers as a string with %, rounded to the nearest whole percent
 planets_mass:
   signature: 'def planets_mass(planets):'
-  tags: ''
+  tags:
+    - 1: takes a dictionary
+    - 2: skip Pluto
+    - 3: skip Sun
+    - 4: look up in dictionary
+    - 5: sum masses
+    - 6: return
   tests:
   - input: '{''Venus'': 10, ''Mercury'': 5, ''Sun'': 100}'
     output: '15'
@@ -475,7 +482,15 @@ topScores:
     5.
 total_bill:
   signature: 'def total_bill(grocery_list, sales_tax):'
-  tags: ''
+  tags: 
+    - 1: input is a list
+    - 2: list structure explained
+    - 3: input is sales tax 
+    - 4: multiply item by its quantity
+    - 5: sum items
+    - 6: apply sales tax
+    - 7: round
+    - 8: return total
   tests:
   - input: '[[''apples'', 6, 0.99],[''milk'', 1, 1.49],[''bread'', 2, 3.50]], 0.07'
     output: '15.44'
@@ -487,7 +502,14 @@ total_bill:
     of each list in grocery_list, multiplied by 1 + sales_tax. Round to 2 digits.
 translate:
   signature: 'def translate(lexicon,sentence):'
-  tags: ''
+  tags: 
+    - 1: input 1 is a dictionary
+    - 2: input 2 is a string
+    - 3: extract words from string
+    - 4: look up words in dictionary
+    - 5: use UNK for words that are not in dictionary
+    - 6: function returns
+    - 7: join string
   tests:
   - input: '{"one":"un", "two":"deux", "three":"trois", "four":"quatre",   "I":"je",
       "you":"tu", "and":"et", "cats":"chats", "love":"aime",   "like":"aime", "my":"mes"},    "I

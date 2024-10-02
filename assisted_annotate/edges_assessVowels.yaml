@@ -1,0 +1,413 @@
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function extracts the vowels in the string and returns them in a list.
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. 
+        """
+        
+  attempt_id: 1
+  username: student13
+  _response: |-
+    The second prompt adds the step of making all characters lowercase before extracting the vowels. This alters the original concept of preserving the case of vowels.
+
+    Summary:
+
+    ```yaml
+    - m4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the functions should then extract the vowels in the string and returns them in a list, making sure to account for both uppercase and lowercase versions of the vowels. 
+        """
+        
+  attempt_id: 2
+  username: student13
+  _response: |
+    In the revised prompt:
+
+    1. The concept of making all characters lowercase is removed.
+    2. The concept of ensuring that both uppercase and lowercase versions of vowels are accounted for is added.
+
+    The specific changes are as follows:
+
+    - The first prompt mentions "make all characters lowercase", which is removed in the second prompt. This relates to the list containing uppercase vowels as well.
+    - The second prompt specifically states, "making sure to account for both uppercase and lowercase versions of the vowels," which adds the concept of including both cases for vowels.
+
+    Summary:
+
+    ```yaml
+    - m4
+    ```
+  _status: modified
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order (repetitions ok)
+        """
+        
+  attempt_id: 1
+  username: student16
+  _response: |-
+    The second prompt adds the concept that the vowels in the result should be in the same order as they appear in the input and allows repetitions.
+
+    Summary:
+
+    ```yaml
+    - m3
+    ```
+  _status: modified
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order (repetitions ok)
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order including capitalizations (repetitions ok)
+        """
+        
+  attempt_id: 2
+  username: student16
+  _response: |-
+    The revised prompt adds the detail about including capitalizations in the result, which introduces the idea that the result contains both upper and lower case vowels.
+
+    Summary:
+
+    ```yaml
+    - a4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every value from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every vowel from the input
+        """
+        
+  attempt_id: 1
+  username: student2
+  _response: |
+    In the revised prompt, the concept of extracting values from the input is changed to specifically extracting vowels, which adds more specificity.
+
+    1. argument s is a string: This is implied and present in both prompts but with no explicit mention in either.
+    2. result is a list of strings: The mention of a list containing strings remains unaltered in level of detail.
+    3. result is the vowels present in the argument: This concept is added in the second prompt, specifying that it targets vowels.
+    4. result has both upper and lower case vowels: Not mentioned in either prompt.
+
+    Summary:
+
+    ```yaml
+    - a3
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every vowel from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list containing strings of every vowel from the input
+        """
+        
+  attempt_id: 2
+  username: student2
+  _response: |-
+    In the revised prompt, the word "pints" is corrected to "prints". Aside from this trivial correction, the concepts remain the same between the two prompts.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list containing strings of every vowel from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all "a", "e", "I", or "u" that appear in the input
+        """
+        
+  attempt_id: 3
+  username: student2
+  _response: |-
+    In the revised prompt, there are a few changes:
+
+    1. The clarification of specific vowels ("a", "e", "I", or "u") is added, which provides more detail than just "every vowel" in the first prompt.
+    2. The inclusion of "I" introduces the concept of both upper case vowels (incomplete list).
+    3. The original prompt does not specify upper or lower case, while the revised prompt mentions upper cases explicitly.
+
+    Summary:
+
+    ```yaml
+    - m3
+    - a4
+    ```
+  _status: modified
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all "a", "e", "I", or "u" that appear in the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints all vowels
+        """
+        
+  attempt_id: 4
+  username: student2
+  _response: |-
+    In the revised prompt:
+
+    1. argument s is a string: This is implicit in both prompts due to the context of the function, no explicit mention or change.
+    2. result is a list of strings: Removed in the second prompt.
+    3. result is the vowels present in the argument: Reworded with less detail in the second prompt.
+    4. result has both upper and lower case vowels: The specific vowels "a", "e", "I", or "u" from the original prompt are replaced with a generic reference to "vowels" in the revised prompt, losing the detail about specific vowel cases.
+
+    Summary:
+
+    ```yaml
+    - l3
+    - d4
+    ```
+  _status: generated
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints all vowels
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all vowels that appear
+        """
+        
+  attempt_id: 5
+  username: student2
+  _response: |-
+    In the revised prompt, the concept of the result being a list is added.
+
+    Summary:
+
+    ```yaml
+    - m3
+    ```
+  _status: modified
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all vowels that appear
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of vowels 
+        """
+        
+  attempt_id: 6
+  username: student2
+  _response: |
+    1. argument s is a string: Implicit in both prompts but not mentioned 
+    2. result is a list of strings: Both prompts describe the result as a list
+    3. result is the vowels present in the argument: "that appear" in the first prompt is omitted in the second prompt, which removes the specification that the list contains vowels that appear in the input.
+    4. result has both upper and lower case vowels: Not mentioned in either prompt
+
+    Summary:
+
+    ```yaml
+    - l3
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        takes in a string and returns a list of vowels 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        takes in a string and checks for uppercase and lowercase vowels and returns a list of those uppercase and lowercase vowels, if any
+        """
+        
+  attempt_id: 1
+  username: student22
+  _response: |-
+    The second prompt expands on the details provided in the first prompt:
+
+    1. argument s is a string: present and unchanged in both prompts.
+    2. result is a list of strings: present and unchanged in both prompts.
+    3. result is the vowels present in the argument: present in the first prompt, but more detail is added in the second.
+    4. result has both upper and lower case vowels: this detail is added in the second prompt.
+
+    Summary:
+
+    ```yaml
+    - m3
+    - a4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        Write a function which takes a string as an input and returns a list of each vowel present in the string, case sensitive
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Write a function which takes a string as an input and returns a list of each vowel present in the string, where capitalized vowels are present in the return list as capitalized and lower case vowels as lower case
+        """
+        
+  attempt_id: 1
+  username: student37
+  _response: |
+    In the revision:
+
+    1. Argument s is a string: This remains the same in both prompts without detailed changes.
+    2. Result is a list of strings: This remains the same in both prompts without detailed changes.
+    3. Result is the vowels present in the argument: This is the same in both prompts, without changes.
+    4. Result has both upper and lower case vowels: The second prompt rephrases the detail about case sensitivity and clarifies that capitalized vowels remain capitalized and lowercase vowels remain lowercase in the result list. 
+
+    Summary:
+
+    ```yaml
+    - m4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. 
+        """
+        
+  attempt_id: 1
+  username: student5
+  _response: |-
+    In the second prompt, additional information is added to specify that the function should consider both capital and lowercase letters, although this is partially implied in the first prompt by mentioning "in the case they were originally written." This added detail emphasizes the inclusion of both cases.
+
+    Analysis of changes for each concept:
+
+    1. argument s is a string: no difference in detail (0)
+    2. result is a list of strings: no difference in detail (0)
+    3. result is the vowels present in the argument: no difference in detail (0)
+    4. result has both upper and lower case vowels: there is a clarification added explicitly about including both capital and lowercase letters, although it's partially implied in the original (m)
+
+    Summary:
+
+    ```yaml
+    - m4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string. include both capital and lower case letters. 
+        """
+        
+  attempt_id: 2
+  username: student5
+  _response: |-
+    In the revised prompt, the specific detail about returning the vowels "in the case they were originally written" has been removed.
+
+    Summary:
+
+    ```yaml
+    - m4
+    ```
+  _status: accepted
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        Return a list of the vowels in the input.
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Return a list of both the uppercase and lowercase vowels in the input.
+        """
+        
+  attempt_id: 1
+  username: student72
+  _response: |
+    In the revised prompt, the student added the detail that both uppercase and lowercase vowels in the input are considered.
+
+    Summary:
+
+    ```yaml
+    - a4
+    ```
+  _status: modified
+- prompt_from: |-
+    def assessVowels(s):
+        """
+        puts all the vowels of a string in a list
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        puts all the vowels of a string in a list, including capital and lower case letters
+        """
+        
+  attempt_id: 1
+  username: student74
+  _response: |-
+    In the revised prompt, the concept of including both capital and lower case letters is added. The other concepts remain the same.
+
+    Summary:
+
+    ```yaml
+    - a4
+    ```
+  _status: accepted

@@ -51,9 +51,7 @@ def patchback(graph_path: Path, first_attempts_path: Path):
         for username, data in first_attempts.items()
     }
 
-    # Save the updated graph
-    with graph_path.open('w') as f:
-        yaml.dump(graph, f, default_flow_style=False)
+    prl_ml.yaml.save_yaml(graph_path, graph)
 
 
 

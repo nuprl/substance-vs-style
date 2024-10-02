@@ -8,9 +8,10 @@ GENERATION_REPO="/work/arjunguha-research-group/zi.wu/prl_ml"
 MODEL="bigcode/starcoder2-15b"
 CATEGORY=$1
 TARGET=$2
+SPLIT=$3
     
-DATASET_STR="jsonl:${EXPERIMENT_REPO}/subst_experiments/experiment_full_${CATEGORY// /_}_${TARGET// /_}.jsonl"
-EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/generations_full_${CATEGORY// /_}_${TARGET// /_}"
+DATASET_STR="jsonl:${EXPERIMENT_REPO}/subst_experiments/experiment_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}.jsonl"
+EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/generations_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}"
 
 mkdir $EXPERIMENT_DIR
     
@@ -25,8 +26,7 @@ python3 -m prl_ml.batched_lm_generation.vllm_base \
     --temperature 0.2 \
     --completion-limit 20 \
     --num-gpus 1 \
-    --stop '["def", "assert", "print", "class"]' \
+    --stop '["\ndef", "\nassert", "\nprint", "\nclass"]' \
     --batch-size 1000 \
     --extra-columns __index_level_0__,problem,entrypoint,assertions,username,submitted_text,prompt,subset
 
-python3 -m prl_ml.batched_lm_generation.hf_format $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/hf_completions

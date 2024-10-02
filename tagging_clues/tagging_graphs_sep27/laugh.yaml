@@ -105,7 +105,6 @@ edges:
   total_attempts: 4
   username: student13
 - _edge_tags:
-  - m1
   - m2
   - m3
   - a5
@@ -191,9 +190,7 @@ edges:
   total_attempts: 4
   username: student13
 - _edge_tags:
-  - a3
-  - m5
-  - m6
+  - 0
   attempt_id: 1
   completion_from: 'return "ha" * size
 
@@ -246,8 +243,11 @@ edges:
   username: student2
 - _edge_tags:
   - a3
+  - a1
   - a4
   - a5
+  - a6
+  - a2
   attempt_id: 2
   completion_from: "if size == 1:\n        print(\"ha\")\n    else:\n        print(\"\
     ha\" * size)\n\nlaugh(3)\n"
@@ -284,6 +284,7 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
+  - d1
   - d2
   - d3
   - d4
@@ -327,7 +328,6 @@ edges:
   - a3
   - a5
   - a6
-  - a2
   attempt_id: 4
   completion_from: 'print("ha" * size)
 
@@ -367,8 +367,9 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
-  - d2
+  - d1
   - d3
+  - d5
   - d6
   attempt_id: 5
   completion_from: "if size > 0:\n        print(\"ha\", end=\"\")\n        laugh(size-1)\n\
@@ -471,7 +472,7 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
-  - d1
+  - 0
   attempt_id: 10
   completion_from: 'print("ha" * size)
 
@@ -512,9 +513,8 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
-  - a1
+  - a3
   - a4
-  - a6
   attempt_id: 11
   completion_from: 'return "ha" + "ha" * size
 
@@ -537,7 +537,6 @@ edges:
 - _edge_tags:
   - d3
   - d4
-  - d6
   attempt_id: 12
   completion_from: "ha = \"ha\"\n    print(ha * size, end=\" \")\n    return\n\nlaugh(3)\n"
   completion_to: 'print("ha" * size)
@@ -558,7 +557,7 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
-  - d1
+  - 0
   attempt_id: 13
   completion_from: 'print("ha" * size)
 
@@ -585,7 +584,6 @@ edges:
 - _edge_tags:
   - a1
   - a3
-  - a6
   attempt_id: 14
   completion_from: 'print("ha" * size + "!")
 
@@ -637,9 +635,9 @@ edges:
   total_attempts: 26
   username: student2
 - _edge_tags:
-  - a3
+  - m3
   - a5
-  - m6
+  - a6
   attempt_id: 16
   completion_from: 'print("ha" * size)
 
@@ -677,7 +675,7 @@ edges:
 - _edge_tags:
   - a2
   - m3
-  - m4
+  - a4
   - m5
   - m6
   attempt_id: 17
@@ -829,6 +827,7 @@ edges:
   username: student2
 - _edge_tags:
   - d3
+  - d1
   attempt_id: 23
   completion_from: 'return "ha" + "ha" * (size - 1) + "!"
 
@@ -852,9 +851,9 @@ edges:
   username: student2
 - _edge_tags:
   - a1
-  - m2
-  - m3
   - m6
+  - a3
+  - a2
   attempt_id: 24
   completion_from: "ha = \"ha\"\n    return ha * size\n\nprint(laugh(3))\n"
   completion_to: "for i in range(size):\n        print(\"ha\", end=\"\")\n    print(\"\
@@ -1007,7 +1006,6 @@ edges:
   total_attempts: 7
   username: student22
 - _edge_tags:
-  - d1
   - d4
   attempt_id: 5
   completion_from: "ha = \"ha\"\n    print(ha * size)\n\nlaugh(3)\n"
@@ -1030,7 +1028,7 @@ edges:
   username: student22
 - _edge_tags:
   - a1
-  - m2
+  - a2
   attempt_id: 6
   completion_from: 'return "ha" * size + "!"
 
@@ -1068,7 +1066,7 @@ edges:
   total_attempts: 7
   username: student22
 - _edge_tags:
-  - 0
+  - m1
   attempt_id: 1
   completion_from: "for i in range(size,0,-1):\n        print(\"h\"+\"a\"*i+\" \"\
     )\n    print(\"h\")\n\nlaugh(3)\n"
@@ -1104,6 +1102,7 @@ edges:
 - _edge_tags:
   - m3
   - m6
+  - d5
   attempt_id: 2
   completion_from: "laugh = \"\"\n    for i in range(size):\n        laugh += \"ha\"\
     *(size-i) + \" \"\n    return laugh\n"
@@ -1141,7 +1140,7 @@ edges:
   total_attempts: 7
   username: student37
 - _edge_tags:
-  - m5
+  - m3
   attempt_id: 3
   completion_from: "laugh = \"\"\n    for i in range(size):\n        laugh += \"h\"\
     \ + \"a\"*i + \" \"\n    return laugh\n\nprint(laugh(3))\n"
@@ -1220,7 +1219,7 @@ edges:
   total_attempts: 7
   username: student37
 - _edge_tags:
-  - l2
+  - d2
   - m4
   attempt_id: 5
   completion_from: "laugh = ''\n    for i in range(size-2, 0, -1):\n        laugh\
@@ -1407,7 +1406,7 @@ edges:
   username: student5
 - _edge_tags:
   - d4
-  - m5
+  - a5
   attempt_id: 1
   completion_from: "if size == 1:\n        return 'ha'\n    else:\n        return\
     \ 'ha' + 'a' * (size - 1) + ' ' + laugh(size - 1)\n\nprint(laugh(3))"
@@ -1448,7 +1447,7 @@ edges:
   total_attempts: 3
   username: student61
 - _edge_tags:
-  - m5
+  - a5
   attempt_id: 1
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"h\" + \"a\"*size + \" \" + laugh(size-1)\n\nprint(laugh(3))\n"
@@ -1485,7 +1484,7 @@ edges:
   total_attempts: 5
   username: student72
 - _edge_tags:
-  - m5
+  - 0
   attempt_id: 2
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"ha\" + laugh(size - 1)\n"
@@ -1522,7 +1521,7 @@ edges:
   total_attempts: 5
   username: student72
 - _edge_tags:
-  - l5
+  - d5
   attempt_id: 3
   completion_from: "if size == 0:\n        return \"ha\"\n    else:\n        return\
     \ \"ha\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
@@ -1542,7 +1541,7 @@ edges:
   total_attempts: 5
   username: student72
 - _edge_tags:
-  - m5
+  - a5
   attempt_id: 4
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"ha\" + laugh(size - 1)\n"
@@ -1564,9 +1563,9 @@ edges:
   total_attempts: 5
   username: student72
 - _edge_tags:
-  - m2
+  - a2
   - m4
-  - m5
+  - a5
   - m6
   attempt_id: 1
   completion_from: 'return "ha"*size + " "*(size-1) + "ha"*size
@@ -1627,7 +1626,7 @@ edges:
   total_attempts: 18
   username: student8
 - _edge_tags:
-  - l5
+  - m5
   attempt_id: 2
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"ha\" + laugh(size-1) + \"h\"\n\nprint(laugh(3))\n"
@@ -1813,7 +1812,7 @@ edges:
   total_attempts: 18
   username: student8
 - _edge_tags:
-  - m5
+  - a5
   attempt_id: 8
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"h\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(4))\n"
@@ -1910,7 +1909,7 @@ edges:
   total_attempts: 18
   username: student8
 - _edge_tags:
-  - m5
+  - a5
   attempt_id: 11
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"h\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
@@ -1998,6 +1997,7 @@ edges:
   username: student8
 - _edge_tags:
   - d5
+  - d4
   attempt_id: 15
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
     \ \"ha\" + laugh(size-1) + \"h\"\n\nprint(laugh(3))\n"
@@ -2038,7 +2038,7 @@ edges:
 - _edge_tags:
   - m2
   - a4
-  - m5
+  - a5
   - m6
   attempt_id: 16
   completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
@@ -2145,6 +2145,7 @@ student_start_node_tags:
   - 3
   student13:
   - 1
+  - 2
   - 3
   - 6
   student2:
@@ -2174,4 +2175,5 @@ student_start_node_tags:
   - 6
   student8:
   - 1
+  - 4
   - 6

@@ -23,6 +23,9 @@ Analyzing common patterns in graphs
 3. checks that cycles/loops correspond to missing clues and trivial rewrites
 4. correlate length of loop to success
 '''
+class ContinuityError(Exception):
+    pass
+
 
 def is_known_exception(e: Edge, problem, verbose=False) -> bool:
     try:
@@ -42,9 +45,19 @@ def _compute_next_state(prev_state, changes):
             continue
         elif c[0] == "d": #delete
             # if int(c[1]) in prev_state:
-            prev_state.remove(int(c[1]))
+            try:
+                prev_state.remove(int(c[1]))
+            except KeyError:
+                raise ContinuityError("Remove error")
         elif c[0] == "a": #add
-            prev_state.add(int(c[1]))
+            if int(c[1]) not in prev_state:
+                prev_state.add(int(c[1]))
+            else:
+                raise ContinuityError("Add error")
+        elif c[0] == "l" or c[0] == "m":
+            # check continuity errors
+            if int(c[1]) not in prev_state:
+                raise ContinuityError("Modifier error")
     return list(prev_state)
 
 def _edge_dict(e: Edge, verbose: bool) -> dict:
@@ -111,15 +124,34 @@ def populate_clues(graph: Graph) -> Graph:
     """
     Augment graph edges with clue sets
     """
+    FOUND_ERRORS_STUDENTS = []
     student_clues_tracker = {student: [start_state] for student,start_state 
                              in graph.get_start_node_states().items()}
     for i,e in enumerate(graph.edges):
         prev_state = student_clues_tracker[e.username][-1]
-        next_state = _compute_next_state(prev_state, e._edge_tags)
+        try:
+            next_state = _compute_next_state(prev_state, e._edge_tags)
+        except ContinuityError as err:
+            print(f"#### CONTINUITY ERROR: {err} #####")
+            # print(_edge_dict(e, False))
+            e_dict = {k:v for k,v in _edge_dict(e, False).items() if k in [
+                "node_from", "node_to", "username","attempt_id"
+            ]}
+            print(f"problem: {graph.problem}")
+            print(f"edge: {e_dict}")
+            print(f"failed to apply edit: {e._edge_tags} on previous clues {prev_state}\n")
+            # raise ContinuityError(err)
+            FOUND_ERRORS_STUDENTS.append(e.username)
+            continue
+        
         student_clues_tracker[e.username].append(
             next_state
         )
         graph.edges[i].clues = next_state
+    
+    if len(FOUND_ERRORS_STUDENTS) > 0:
+        print(f"Problem clues: {json.dumps(graph.problem_clues, indent=4)}")
+        raise ContinuityError(f"Found continuity errors in students:\n{set(FOUND_ERRORS_STUDENTS)}")
     
     graph.student_clues_tracker = student_clues_tracker
     return graph
@@ -163,17 +195,30 @@ def main(args):
     graph = load_graph(args.graph_yaml)
     graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
     graph = populate_clues(graph)
+    # check success clues
     check_state_clues(graph)
+    # save graph
+    with open(f"{args.outdir}/graph_with_clues.yaml","w") as fp:
+        yaml.dump(graph, fp)
+        
+    # check cycles
     cycle_summary = check_loops(graph)
-    for k,edges in cycle_summary.items():
+    
+    breakout_edges = {}
+    for student,edges in cycle_summary.items():
         # last edge is breakout edge
         e_list = [[e.node_from.id, e.node_to.id, e.clues, e._edge_tags] 
                   for e in edges]
-        print(f"{k}:{e_list}")
+        print(f"{student}:{e_list}")
         breakout_edge = display_breakout_edge(edges)
+        breakout_edges[student] = breakout_edge
         if breakout_edge:
-            print(f"breakoutedge {k}")
+            print(f"breakoutedge {student}")
             
+    # save cycle info
+    with open(f"{args.outdir}/graph_cycles.yaml","w") as fp:
+        yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
+
     df = likelihood_fail_given_loop(cycle_summary, graph)
     print(df)
     # print(df.corr())
@@ -186,6 +231,13 @@ def main(args):
     succ_loop = succ[succ["loop_len"] > 0]
     print(f"Num fail: {len(fail)}, num has loop: {len(fail_loop)}, {100 * len(fail_loop)/len(fail)} %")
     print(f"Num success: {len(succ)}, num has loop: {len(succ_loop)}, {100 * len(succ_loop)/len(succ)} %")
+    
+    # save looping likelihood df
+    df.to_csv(f"{args.outdir}/looping_behavior.csv")
+    
+    # save exceptions
+    with open(f"{args.outdir}/exceptions.json", "w") as fp:
+        json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
         
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

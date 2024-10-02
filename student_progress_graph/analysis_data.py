@@ -1,8 +1,26 @@
+"""
+[X] add_up
+[X] add_int
+[X] topScores
+- total_bill
+- laugh
+- translate
+- planets_mass
+- altText
+- add_word
+- assessVowels
+- changeSection
+"""
+
 SUCCESS_CLUES = {
     "add_up": [1,2,3,4,5],
     "add_int": [1,2,3,4],
     "topScores": [1,2,3,4,5,6],
-    "total_bill": [1,2,3,4,5,6,7,8]
+    "total_bill": [1,2,3,4,5,6,7,8],
+    "laugh": [1,2,3,4,5,6],
+    "translate": [1,2,3,4,5,6,7],
+    "planets_mass": [1,2,3,4,5,6],
+    "altText": [1,2]
 }
 KNOWN_EXCEPTIONS = {
     # fran
@@ -75,6 +93,14 @@ KNOWN_EXCEPTIONS = {
             },
             "student64": {
                 3: "missing clue 1,3,8. 1,3,8 could be implicit."
+            }
+        }
+    },
+    # Arjun
+    "laugh": {
+        "neutral": {
+            "student37": {
+                1: "Student has all clues, but model still misinterpreting."
             }
         }
     }

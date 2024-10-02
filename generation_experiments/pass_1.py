@@ -92,7 +92,7 @@ def main():
     orig_results = [r for r in orig_results if r is not None]
     
     if not args.suppress_header:
-        print("Dataset,Original_Pass@1,Updated_Pass@1,Estimate,NumProblems")
+        print("Dataset,Original_Pass@1,Updated_Pass@1,NumProblems")
     for d in args.dirs:
         results = [for_file(p) for p in itertools.chain(
             Path(d).glob("*.results.json"), Path(d).glob("*.results.json.gz"))]

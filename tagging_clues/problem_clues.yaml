@@ -76,9 +76,10 @@ assessVowels:
 changeSection:
   signature: 'def changeSection(s,i):'
   tags:
-  - 1: input/output string
-  - 2: reverse
-  - 3: excluding index i
+  - 1: result is a string
+  - 2: result reverses a part of the argument 's'
+  - 3: the result reverses the first 'i' characters of the argument
+  - 4: the result also includes the remaining characters of 's', but not reversed
   tests:
   - input: '''Turn towards the door.'', 9'
     output: '''awot nruTrds the door.'''

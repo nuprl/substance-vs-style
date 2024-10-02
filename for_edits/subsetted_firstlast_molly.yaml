@@ -5765,7 +5765,7 @@
   prompt: |-
     def assessVowels(s):
         """
-        $Return:Return$ a $list:list$ of the vowels in the $input:input$.
+        $Return:Return$ a $list:list$ of the vowels in the $parameter:input$.
         """
         
   subset: first_failure
@@ -6808,7 +6808,7 @@
   prompt: |-
     def readingIceCream(lines):
         """
-        Create a variable for the sum. Go through each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$ and $typecast:convert$ it into an $integer:integer$, then add that $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
+        Create a variable for the sum. $Loop through:Go through$ each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$ and $typecast:convert$ it into an $integer:integer$, then add that $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
         """
         
   subset: first_failure
@@ -6828,7 +6828,7 @@
   prompt: |-
     def readingIceCream(lines):
         """
-        Create a variable for the sum. Go through each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$. If this remaining portion of the $string:string$ contains ".", $typecast:convert$ it into a float. Otherwise, $typecast:convert$ it into an $integer:integer$. Add this float or $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
+        Create a variable for the sum. $Loop through:Go through$ each $string:string$ in the input $list:list$. After the second time "\t" appears in the $string:string$, save the rest of the $string:string$. If this remaining portion of the $string:string$ contains ".", $typecast:convert$ it into a float. Otherwise, $typecast:convert$ it into an $integer:integer$. Add this float or $integer:integer$ to the sum. $Return:Return$ the sum at the end of the $list:list$.
         """
         
   subset: last_success
@@ -9550,7 +9550,7 @@
   prompt: |-
     def fib(n):
         """
-        Checks if the $parameter:input$ value is the sum of any two consecutive Fibonacci numbers
+        Checks if the $parameter:input value$ is the sum of any two consecutive Fibonacci numbers
         """
         
   subset: last_success
@@ -10361,7 +10361,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $input:input$
+        Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $parameter:input$
         """
         
   subset: first_success
@@ -11261,7 +11261,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the input $list:list$ is iterated through, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
+        The nominations is a $list:list$ of $dictionaries:dictionaries$. The function $loops through:iterates through$ the $dictionaries:dictioanries$ backwards. A new $key:variable$ 'success' is created which computes (wins/noms). A new $list:list$ is made. As the input $list:list$ is $looped through:iterated through$, the new $list:list$ is $inserted:appended$ with the contents of the $dictionary:dictionary$ along with the corresponding success rate.
         """
         
   subset: first_failure
@@ -12255,7 +12255,7 @@
   prompt: |-
     def sort_physicists(scientists):
         """
-        $Loop through: Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $return:return$ the 1st element in the $list:list$. If false, do nothing.
+        $Loop through:Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $return:return$ the 1st element in the $list:list$. If false, do nothing.
         """
         
   subset: first_failure
@@ -12272,7 +12272,7 @@
   prompt: |-
     def sort_physicists(scientists):
         """
-        Create an empty $list:list$ A. $Loop through: Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $insert:append$ the 1st element to $list:list$ A. If false, do nothing. Now reorder each element in A, according to each element's corresponding $list:list$ in scientists's second entry value, the order should be from smallest numerical value to the largest numerical value.  $Return:Return$ $list:list$ A.
+        Create an empty $list:list$ A. $Loop through:Loop through$ each $list:list$ in scientists: check if the third element in the $list:list$ is Physics. If true, $insert:append$ the 1st element to $list:list$ A. If false, do nothing. Now reorder each element in A, according to each element's corresponding $list:list$ in scientists's second entry value, the order should be from smallest numerical value to the largest numerical value.  $Return:Return$ $list:list$ A.
         """
         
   subset: last_failure
@@ -13118,7 +13118,7 @@
   prompt: |-
     def total_bill(grocery_list, sales_tax):
         """
-        Looks through a $list:list$ to extract the number of products purchased in position 1 and multiply it by the unit price in position 2. Then it sums each product and multiplies the sum by what ever number is outside the $lists:brackets$ plus 1
+        $Loops through:Looks through$ a $list:list$ to extract the number of products purchased in position 1 and multiply it by the unit price in position 2. Then it sums each product and multiplies the sum by what ever number is outside the $lists:brackets$ plus 1
         """
         
   subset: first_failure
@@ -13450,7 +13450,7 @@
   prompt: |-
     def translate(lexicon,sentence):
         """
-        For each $string:word$ in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
+        For each $string:word$ in sentence, find $key:key value$ in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
         """
         
   subset: first_failure
@@ -13474,7 +13474,7 @@
   prompt: |-
     def translate(lexicon,sentence):
         """
-        For every $string:word$ in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
+        For every $string:word$ in sentence, find $key:key value$ in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
         """
         
   subset: last_failure
@@ -15116,7 +15116,7 @@
   prompt: |-
     def percentWin(guess,answers):
         """
-        $Take:Take in$ $list:array$ A. Iterate through $list:array$ A, and record the proportion of numbers in it versus letters.
+        $Take:Take in$ $list:array$ A. $Loop through:Iterate through$ $list:array$ A, and record the proportion of numbers in it versus letters.
         """
         
   subset: first_failure

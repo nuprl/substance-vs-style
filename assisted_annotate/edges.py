@@ -87,14 +87,14 @@ def main():
     
     extract_parser = subparsers.add_parser('extract')
     extract_parser.add_argument("--graph", type=Path, required=True)
-    extract_parser.add_argument("--edges", type=Path, required=True)
+    extract_parser.add_argument("--annotations", type=Path, required=True)
     
     args = parser.parse_args()
     
     if args.command == 'patchback':
         patchback(args.graph, args.annotations)
     elif args.command == 'extract':
-        extract_edges(args.graph, args.edges)
+        extract_edges(args.graph, args.annotations)
     else:
         raise ValueError(f"Unknown command: {args.command}")
 if __name__ == "__main__":

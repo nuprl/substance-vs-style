@@ -467,14 +467,11 @@
         """
     ```
   _response: |
-    1. **Check for Specific Letters**: All prompts specify checking for the presence of the letters 'Q' and 'U'.
-    2. **Input Type**: The function takes a list as input.
-    3. **Letter Case**: The letters 'Q' and 'U' are mentioned as uppercase.
-    4. **Boolean Return Value**: The function returns a boolean value: `True` if either 'Q' or 'U' is found in the list, and `False` otherwise.
-    5. **Conditional Logic**: The function contains logic to differentiate the presence or absence of 'Q' or 'U' in the list.
-    6. **Single Letters in List**: Although not explicitly stated in all, the prompts imply that the list consists of single characters (implied by examples specifying capitalized letters). 
-    7. **Search Through List**: The function examines each element in the provided list to check for the specified characters.
-  _status: generated
+    1. **Input Type**: The argument is a list (implied by the name lst)
+    2. **Check for Specific Letters**: check for the presence of the letters 'Q' and 'U'.
+    3. **Letter Case**: The letters 'Q' and 'U' must be uppercase.
+    4. **Boolean Return Value**: returns a boolean `True` if either 'Q' or 'U' is found in the list, and `False` otherwise.
+  _status: modified
 - problem_name: planets_mass
   prompts: |-
     ```
@@ -1662,23 +1659,10 @@
   _response: |-
     The following concepts are common to all the docstrings:
 
-    1. **Function Purpose**: The function processes a string and alters its capitalization.
-
-    2. **Input Type**: The function takes a single parameter, a string.
-
-    3. **Alternate Capitalization**: 
-       - The emphasis is on alternating the capitalization of letters.
-       - Starting with the first letter being uppercased is a recurring theme, with alternating characters being either uppercase or lowercase.
-
-    4. **Handling Single Characters**: The function has provisions for processing single-character strings, typically by converting them to uppercase.
-
-    5. **Ignoring Spaces**: Some docstrings mention ignoring spaces while alternating capitalization (implicitly in cases where spaces are not mentioned).
-
-    6. **Character Position**:
-       - Depending on the implementation, some describe alternate capitalization by character index: Mention capitalizing characters at even or odd index positions.
-       
-    Commonly described aspects include processing alternation starting at either the first or second position, the overall targeted transformation being an alternation of case, and handling single-character input appropriately.
-  _status: generated
+    1. The function processes a string and makes some letters upper case
+    2. The first letter is upper case
+    3. Every other letter is upper cased
+  _status: modified
 - problem_name: changeSection
   prompts: |-
     ```
@@ -2249,22 +2233,11 @@
         """
     ```
   _response: |-
-    The common concepts present in all the docstrings for the `add_word` function are:
-
-    1. **Parameters**: The function takes three parameters: a string (`word`), an integer (`line_number`), and a dictionary (`map`).
-
-    2. **Addition to Dictionary**: The function adds `word` to `map` as a key and `line_number` as the corresponding value.
-
-    3. **Key-Value Relationship**: The `word` parameter is used as a key in the dictionary, and `line_number` is associated with this key.
-
-    4. **Return Value**: The function returns the updated dictionary.
-
-    ---
-
-    Some slightly recurring but less consistent concepts:
-    1. **List as Value**: In some descriptions, the `line_number` is added as a list element (if already existing, an existing list is appended).
-    2. **Check Existence**: Some descriptions mention checking if `word` already exists as a key in the dictionary and updating the value accordingly.
-  _status: generated
+    1. **Add to map**: The function adds `word` to `map` as a key with `line_number` as the value
+    2. **List of line numbers**: `map` maps words to a list of line numbers
+    3. **Check existence:**: if `word` is already a key, add `line_number` to the existing list of line numbers
+    4. **Return new map**: return the updated `map`
+  _status: modified
 - problem_name: check_for_aspen
   prompts: |-
     ```

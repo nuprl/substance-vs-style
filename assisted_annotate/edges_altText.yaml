@@ -1,0 +1,608 @@
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one letter word it is turned into an upper case letter.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case, not including the lower case letters. If it is just a one letter word it is turned into an upper case letter. 
+        """
+        
+  attempt_id: 1
+  username: student23
+  _response: |-
+    In the revised prompt, the phrase "not including the lower case letters" is added, which seems to be ambiguous. However, there is no significant change to the main concepts provided.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ``` 
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case, not including the lower case letters. If it is just a one letter word it is turned into an upper case letter. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case, including the lower case letters. If it is just a one letter word it is turned into an upper case letter. 
+        """
+        
+  attempt_id: 2
+  username: student23
+  _response: |-
+    The revision changes "not including the lower case letters" to "including the lower case letters," which changes the condition related to alternating uppercase letters.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case, including the lower case letters. If it is just a one letter word it is turned into an upper case letter. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given.
+        """
+        
+  attempt_id: 3
+  username: student23
+  _response: |-
+    The revised prompt has reworded the description of the function and added a new detail (returns the whole phrase that was given).
+
+    Analysis:
+
+    1. input string: No change.
+    2. alternating uppercase: Rewritten with less detail.
+    3. returns the whole phrase: Added in the second prompt.
+    4. converting single-letter words to uppercase: No change.
+
+    Summary:
+
+    ```yaml
+    - l2
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  attempt_id: 4
+  username: student23
+  _response: |-
+    In the revision, an additional detail was added at the end stating that the returned phrase includes all characters in both upper and lower case. This detail wasn't explicitly stated in the original prompt.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper cas. If it is just a one letter word it is turned into an upper case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  attempt_id: 5
+  username: student23
+  _response: |-
+    The revised prompt contains only minor, semantic changes, such as correcting "upper cas" to "upper case" and "one letter word" to "one-letter word". These changes do not affect the core concepts.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every other letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  attempt_id: 6
+  username: student23
+  _response: |-
+    The second prompt changes "every other letter as upper case" to "every letter as upper case", which removes the concept of alternating uppercase.
+
+    Summary:
+
+    ```yaml
+    - d2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and outputs every letter as upper case. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole phrase that was given, including all characters upper and lower case. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function takes in a word or sentence and replaces every other letter with the upper case letter. If it is just a one-letter word it is turned into an upper-case letter. It then returns the whole updated phrase, including all characters upper and lower case. 
+        """
+        
+  attempt_id: 7
+  username: student23
+  _response: |-
+    In the revised prompt, the concept of converting every letter to uppercase is changed to converting every other letter to uppercase.
+
+    Summary:
+
+    ```yaml
+    - a2
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        's' is a string value provided. Starting from the first character of the string, the function is supposed to convert every alternative character of the string into uppercase and then return the string.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase and then return the string.
+        """
+        
+  attempt_id: 1
+  username: student35
+  _response: |-
+    The revised prompt rewords the concept of alternating uppercase characters. The original prompt mentions "every alternative character," whereas the revised prompt specifies "characters of the string in even index positions." These changes provide more clarity without altering the fundamental concept.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase and then return the string.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        's' is a string value provided. Starting from the first character of the string, the function is supposed to convert the characters of the string in even index positions into uppercase. The characters of the string should be in the same order as below, only the characters in even index positions are to be turned uppercase.
+        """
+        
+  attempt_id: 2
+  username: student35
+  _response: |-
+    The second prompt maintains the original concepts but adds more detail to the explanation. Specifically, it emphasizes maintaining the order of characters and reiterates the alteration of even-indexed characters.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: generated
+- prompt_from: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns the same input with alternating uppercase and lowercase letters
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns a new string that has the same input with alternating uppercase and lowercase letters
+        """
+        
+  attempt_id: 1
+  username: student40
+  _response: |-
+    The second prompt rephrases the part about multiple characters, but the core concepts remain the same.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns a new string that has the same input with alternating uppercase and lowercase letters
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns new_string that has the same input with alternating uppercase and lowercase letters
+        """
+        
+  attempt_id: 2
+  username: student40
+  _response: |-
+    The only change is a trivial rewrite of "a new string" to "new_string". Both prompts convey the same concepts with no substantial differences in detail.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, returns new_string that has the same input with alternating uppercase and lowercase letters
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case.
+        """
+        
+  attempt_id: 3
+  username: student40
+  _response: |
+    The second prompt adds a more detailed explanation of the process involved in handling strings with multiple characters, specifying the creation of a variable called 'new_string' and how it processes the string.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case. returns new_string
+        """
+        
+  attempt_id: 4
+  username: student40
+  _response: |-
+    The only change between the first and second prompt is the addition of the statement "returns new_string". This explicitly states what the function will return, which was implied but not stated in the first prompt.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, creates a variable called 'new_string', which will take the original string passed through the function and return the same string but with letters of alternating case. new_string will have letters of alternating case. returns new_string
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        if the string has one character, returns a capital letter when given a lowercase letter. if the string has multiple characters, the function will make every other character uppercase. 
+        """
+        
+  attempt_id: 5
+  username: student40
+  _response: |-
+    The second prompt simplifies the explanation and removes the details about creating a variable called 'new_string' and its functionality, while retaining the core concept of alternating uppercase for strings with multiple characters.
+
+    Summary:
+
+    ```yaml
+    - l2
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        Print the string that is input with every other character that is not a space capitalized starting with a capital letter. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        Print the string that is input with every other character that is not a white space or a punctuation capitalized starting with a capital letter. 
+        """
+        
+  attempt_id: 1
+  username: student44
+  _response: |-
+    The second prompt adds the concept of not capitalizing punctuation along with spaces.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        Print the string that is input with every other character that is not a white space or a punctuation capitalized starting with a capital letter. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        Go through every character in the string. 
+    If the character is a letter and that character is the first character in the string, print it capitalized. 
+    If the character is a letter that is not the first in the string, print in lowercase if the previous  letter that was printed was in capital. If the last letter was printed in uppercase, print it in lowercase. 
+        """
+        
+  attempt_id: 2
+  username: student44
+  _response: |-
+    In the second prompt, the concepts are reworded with more detail and some adjustments:
+
+    1. The input string concept is retained but described in more procedural terms.
+    2. The alternating uppercase concept is elaborated with specific conditions regarding capitalization based on previous letters.
+
+    Summary:
+
+    ```yaml
+    - m1
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        Go through every character in the string. 
+    If the character is a letter and that character is the first character in the string, print it capitalized. 
+    If the character is a letter that is not the first in the string, print in lowercase if the previous  letter that was printed was in capital. If the last letter was printed in uppercase, print it in lowercase. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        Go through every character in the string. 
+    If the character is a letter and that character is the first character of the input, print it capitalized. 
+    If the character is a letter that is not the first one in the input and the previous letter that was printed was in uppercase, print in lowercase. 
+    If the previous letter was printed in uppercase, print it in lowercase. 
+        """
+        
+  attempt_id: 3
+  username: student44
+  _response: |-
+    The second prompt makes minor adjustments in wording, but the core concepts remain the same. 
+
+    - The phrase "the string" is amended to "the input" to be more specific.
+    - There's a duplicate explanation in the first prompt: "If the last letter was printed in uppercase, print it in lowercase" which is refined to only state this condition once in the second prompt.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        takes a string and capitalizes random letters in it
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        takes a string. capitalizes random letters in each word of that string. 
+        """
+        
+  attempt_id: 1
+  username: student59
+  _response: |-
+    Let's analyze the changes in the concepts between the two prompts.
+
+    - **Input string (1)**: Both prompts refer to taking a string as input, but the wording is slightly changed with no significant difference in meaning.
+    - **Alternating uppercase (2)**: The original prompt says "capitalizes random letters in it," whereas the revised prompt specifies "capitalizes random letters in each word of that string." This revision adds additional detail.
+
+    Summary:
+
+    ```yaml
+    - 0
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        takes a string. capitalizes random letters in each word of that string. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        takes a string. capitalizes random letters in each word of that string and adds the new words to a list. returns this new list of words
+        """
+        
+  attempt_id: 2
+  username: student59
+  _response: |-
+    The second prompt adds the step of adding the new words to a list and then returning this new list of words, which was not present in the first prompt.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: generated
+- prompt_from: |-
+    def altText(s):
+        """
+        This function inputs a string as a parameter. This function returns that string except every other letter is capitalized. This functions starts by capitalizing the first letter. This function ignores spaces. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function inputs a string as parameter. This function returns that string except every other letter is capitalized. 
+        """
+        
+  attempt_id: 1
+  username: student60
+  _response: |
+    The second prompt removes the details about capitalizing the first letter and ignoring spaces.
+
+    Summary:
+
+    ```yaml
+    - l1
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        This function inputs a string as parameter. This function returns that string except every other letter is capitalized. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        This function inputs a string as a parameter. This function returns that string except every other letter is capitalized. This functions starts by capitalizing the first letter. 
+        """
+        
+  attempt_id: 2
+  username: student60
+  _response: |-
+    The second prompt adds the detail that the function starts by capitalizing the first letter.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted
+- prompt_from: |-
+    def altText(s):
+        """
+        The function takes in a string and capitalizes every other letter in the string, starting with the first letter being a capital.
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        The function takes in a string and capitalizes every other letter in the string, starting with the first letter being a capital. It outputs the same string but with the capitalization adjusted. 
+        """
+        
+  attempt_id: 1
+  username: student63
+  _response: |-
+    The second prompt adds the concept of outputting the same string but with adjusted capitalization.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        The function takes in a string and capitalizes every other letter in the string, starting with the first letter being a capital. It outputs the same string but with the capitalization adjusted. 
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        The function takes in a string and outputs the same string but with every other letter being capitalized, starting with the first letter being a capital.  
+        """
+        
+  attempt_id: 2
+  username: student63
+  _response: |-
+    In the second prompt, the detailed explanation about capitalizing every other letter and the position of starting with the first letter being uppercase is retained, but phrased more concisely. The concepts remain the same but reworded.
+
+    Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        def altText(s): brings in input 'T' and outputs the capitalized version
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        
+    def altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S'
+    def altText(s): brings in input 'T' and outputs the capitalized version
+        """
+        
+  attempt_id: 1
+  username: student75
+  _response: |-
+    In the revised prompt additional functionality is described, especially with regards to alternating uppercase letters:
+     
+    - 1: 'input string' is there but more detailed.
+    - 2: the concept of 'alternating uppercase' is added that in a way covers capitalization.
+
+    Summary:
+
+     ```yaml
+    - m2
+     ```
+  _status: modified
+- prompt_from: |-
+    def altText(s):
+        """
+        
+    def altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S'
+    def altText(s): brings in input 'T' and outputs the capitalized version
+        """
+        
+  prompt_to: |-
+    def altText(s):
+        """
+        
+    def altText(s): brings in input 'computers' and capitalizes every other letter starting at 'C' and ending at 'S' and prints the lowercase letters in their original spelling 
+    def altText(s): brings in input 'T' and outputs the capitalized version
+        """
+        
+  attempt_id: 2
+  username: student75
+  _response: |-
+    The second prompt adds the detail "and prints the lowercase letters in their original spelling."
+
+    ### Summary:
+
+    ```yaml
+    - m2
+    ```
+  _status: accepted

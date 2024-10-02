@@ -47,13 +47,26 @@ def _compute_next_state(prev_state, changes):
             prev_state.add(int(c[1]))
     return list(prev_state)
 
+def _edge_dict(e: Edge, verbose: bool) -> dict:
+    dikt = e.to_dict()
+    if not verbose:
+        for k in dikt.keys():
+            if k.startswith("node_"):
+                dikt[k] = dikt[k]["id"]
+        dikt = {k:v for k,v in dikt.items() if not (
+            k.startswith("completion_") or
+            k.startswith("prompt_") or
+            k == "diff"
+        )}
+    return dikt
+
 def check_state_clues(graph: Graph, verbose=True) -> bool:
     """
     Checks that only success states end with success clues,
     otherwise prints exception edge
     """
     for e in graph.edges:
-        e_dict = json.dumps({**e.to_dict(verbose=verbose), "problem_clues": graph.problem_clues}, indent=4)
+        e_dict = json.dumps({**_edge_dict(e, verbose), "problem_clues": graph.problem_clues}, indent=4)
         if is_known_exception(e, graph.problem):
             continue
         elif e.state == "success" and e.clues != SUCCESS_CLUES[graph.problem]:

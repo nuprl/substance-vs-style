@@ -32,6 +32,10 @@ class Node(yaml.YAMLObject):
         stdout = "\n".join(self.stdout)
         stderr = "\n".join(self.stderr)
         return hash(str(self.id) + stdout + "\n" + stderr)
+    
+    @classmethod
+    def from_dict(cls, node:dict) -> "Node":
+        return cls(**node)
 
 @dataclass  
 class Edge(yaml.YAMLObject):
@@ -62,24 +66,20 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
         self.prompt_from, self.prompt_to, self.completion_from,self.completion_to, 
         self.diff, self.attempt_id, self.total_attempts, self.state, self.clues)
         
-    def to_dict(self, verbose=True) -> dict:
+    def to_dict(self) -> dict:
         dikt = {}
         for k,v in self.__dict__.items():
             if isinstance(v, Node):
                 dikt[k] = v.__dict__
             else:
                 dikt[k] = v
-                
-        if not verbose:
-            for k in dikt.keys():
-                if k.startswith("node_"):
-                    dikt[k] = dikt[k]["id"]
-            dikt = {k:v for k,v in dikt.items() if not (
-                k.startswith("completion_") or
-                k.startswith("prompt_") or
-                k == "diff"
-            )}
         return dikt
+    
+    @classmethod
+    def from_dict(cls, edge:dict) -> "Edge":
+        edge["node_from"] = Node(**edge["node_from"])
+        edge["node_to"] = Node(**edge["node_to"])
+        return cls(**edge)
     
 class Graph(yaml.YAMLObject):
     """
@@ -215,6 +215,17 @@ class Graph(yaml.YAMLObject):
             if e.state == "success":
                 successful.append(e.username)
         return successful
+    
+    @classmethod
+    def from_dict(cls, graph: dict) -> "Graph":
+        nodes = [Node.from_dict(n) for n in graph["nodes"]]
+        edges = [Edge.from_dict(e) for e in graph["edges"]]
+        return cls(
+            problem= graph["problem"],
+            nodes=nodes,
+            edges=edges,
+            student_start_node_tags=graph["student_start_node_tags"]
+        )
     
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:

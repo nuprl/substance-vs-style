@@ -46,4 +46,7 @@ def load_graph(filepath:str) -> Graph:
     
     with open(filepath, "r") as fp:
         graph = yaml.safe_load(fp)
+    
+    if isinstance(graph, dict):
+        graph = Graph.from_dict(graph)
     return graph

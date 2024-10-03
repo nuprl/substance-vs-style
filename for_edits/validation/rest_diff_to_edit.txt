@@ -949,7 +949,7 @@ Value of root[384]['prompt'] changed from "def partialWordle(guessList,hiddenWor
     For each $string:word$ in the guessList, if it has a letter in the hiddenWord and the letter is in the correct spot, add 2. If it has a letter in the hiddenWord and the letter is not in the correct spot, add 1. $Return:Return$ a $list:list$ of the total point scores for each $string:word$ in guessList.
     """
     ".
-DECISION: 
+DECISION: keep $string:word$ tag [DONE]
 
 Value of root[385]['prompt'] changed from "def partialWordle(guessList,hiddenWord):
     """
@@ -1026,7 +1026,7 @@ Value of root[419]['prompt'] changed from "def altText(s):
     The function $takes:takes$ a $string:string$ of text as an $parameter:input$. For words in the $string:string$ with an odd number of letters, every other letter is capitalized starting with the first letter. For words in the $string:string$ with an even number of letters, every other letter is capitalized starting with the second letter. 
     """
     ".
-DECISION:
+DECISION: keep $string:string of text$ tag [DONE]
 
 Value of root[420]['prompt'] changed from "def altText(s):
     """

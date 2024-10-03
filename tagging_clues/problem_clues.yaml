@@ -423,7 +423,11 @@ sortedBooks:
     of author. Sort the list by 'year' value.
 student_grades:
   signature: 'def student_grades(students, grades):'
-  tags: ''
+  tags:
+    - 1: input is two dictionaries
+    - 2: match keys to values between dictionaries
+    - 3: create a new dictionary with lists of grades
+    - 4: return
   tests:
   - input: '{''Alice'': 20, ''Bob'': 11}, {20: [''A'',''A''], 11: [''A'',''B''], 21:
       [''B'']}'

@@ -4,16 +4,16 @@
    We will eventually have a "final" YAML file. But, some preliminary ones
    are already on the Hub with the split name filename.commithash. Example:
 
-   https://huggingface.co/datasets/nuprl-staging/studenteval_tagged_prompts/viewer/default/two.of.each.firstlast.firsthalf.475cc88
+   https://huggingface.co/datasets/nuprl-staging/studenteval_tagged_prompts/viewer/default/two.of.each.firstlast.all.39b90b2
 
 
 2. Use the substitution script to build a variation of a subset of StudentEval:
 
    Run bash script bin/prepare_subst.sh on the validated dataset to get various splits of substituted data base on target word and replacement value. 
-   `./bin/prepare_subst.sh CATEGORY ORIGINAL`
+   `./bin/prepare_subst.sh CATEGORY ORIGINAL SPLIT`
    The first argument is the category, the second argument is the replacement value.
 
-   eg. `./bin/prepare_subst.sh "return" "output"`
+   eg. `./bin/prepare_subst.sh "return" "output" two.of.each.firstlast.all.39b90b2`
    replaces all occurrance of words tagged with category 'return' with the correct word variation of 'output'.(i.e. returns-outputs, returning-outputting.)
 
 3. Run generations on Discovery:
@@ -21,10 +21,10 @@
    ```bash
    source ...
    module load cuda/12.1
-   ./bin/prepare_subst.sh CATEGORY ORIGINAL
+   sbatch ./bin/prepare_subst.sh CATEGORY ORIGINAL SPLIT
    ```
       
-   eg. `./bin/run_generation.sh "return" "output"`
+   eg. `sbatch ./bin/run_generation.sh return output two.of.each.firstlast.all.39b90b2`
    This will create a dir splitname_return_output, with a sub dir completions_jsons storing all the json.gz files.
 
 4. Convert generations to MultiPL-E format:
@@ -42,8 +42,9 @@
 
 6. Compute the original and updated Pass@1 of the substituted prompts.
    Run this from the generation_experiments dir. 
+   
    ```bash
-   python3 pass_1.py --orig_dir generations_studenteval/multiple generations_two.of.each.firstlast.firsthalf.475cc88_return_output/multiple 
+   python3 pass_1.py --orig_dir generations_studenteval/multiple generations_two.of.each.firstlast.all.39b90b2_concatenate_concatenate/multiple 
    ```
 
 

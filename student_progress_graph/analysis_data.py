@@ -56,7 +56,7 @@ KNOWN_EXCEPTIONS = {
         "fail":{
             "student65": {5: "has all clues, but still fails because model interprets 'number' as int"}
         },
-        "loop": {
+        "cycles": {
             "student65": {
                 2: "not an issue, since first edge in loop"
             }
@@ -94,7 +94,7 @@ KNOWN_EXCEPTIONS = {
         "fail": {
             "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
         },
-        "loop": {
+        "cycles": {
             "student45": {
                 3: "student with all clues gets fail because of LLM runs out of tokens",
                 4: "same as previous attempt"

@@ -1,4 +1,4 @@
-from typing import List, Literal, Union
+from typing import List, Literal, Union, Any
 from pathlib import Path
 from networkx.readwrite.json_graph import adjacency
 import yaml
@@ -36,11 +36,6 @@ class Node(yaml.YAMLObject):
     @classmethod
     def from_dict(cls, node:dict) -> "Node":
         return cls(**node)
-    
-    def add_tag(self, tag):
-        if self._node_tags is None:
-            self._node_tags = []
-        self._node_tags.append(tag)
 
 @dataclass  
 class Edge(yaml.YAMLObject):
@@ -60,7 +55,7 @@ class Edge(yaml.YAMLObject):
     total_attempts: int
     state: State
     _edge_tags: Union[None, List[str]] = None
-    clues: Union[None, List[str]] = None
+    clues: Union[None, List[int]] = None
     
     def __repr__(self):
         # return f"%r" % self.state
@@ -79,6 +74,9 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
             else:
                 dikt[k] = v
         return dikt
+    
+    def add_clues(self, clues: List[int]):
+        self.clues = clues
     
     @classmethod
     def from_dict(cls, edge:dict) -> "Edge":
@@ -142,7 +140,7 @@ class Graph(yaml.YAMLObject):
             stdout_text = "\n".join(node.stdout)
             stderr_text = "\n".join(node.stderr)
             if node._node_tags:
-                tags = f"tags:{str(list(node._node_tags))}\n"
+                tags = f"tags:{node._node_tags}\n"
             else:
                 tags = ""
             G.add_node(node.id, 
@@ -160,9 +158,9 @@ class Graph(yaml.YAMLObject):
                 success_nodes.append(edge.node_to.id)
             
             if edge._edge_tags:
-                tags = str(list(edge._edge_tags))
+                tags = str(edge._edge_tags)
             else:
-                tags = []
+                tags = ""
             hover_text = (f"username:{edge.username}\nedge: ({edge.node_from.id}->{edge.node_to.id})\n" +
                         f"state:{edge.state}\n" +
                         f"attempt_num:{edge.attempt_id}/{edge.total_attempts}\n"+
@@ -233,20 +231,25 @@ class Graph(yaml.YAMLObject):
             student_start_node_tags=graph["student_start_node_tags"]
         )
     
-    def tag_node(self, node_id: int, tag):     
+    def tag_node(self, node_id: int, tag: Any, overwrite:bool=False):  
+        
+        def _add_tag(node, t):
+            if overwrite:
+                n._node_tags = tag
+            elif node._node_tags == None:
+               node._node_tags = [t]
+            else:
+                node._node_tags.append(t)    
+                
         for n in self.nodes:
             if n.id == node_id:
-                n.add_tag(tag)
+                _add_tag(n, tag)
                 
         for e in self.edges:
             if e.node_from.id == node_id:
-                e.node_from.add_tag(tag)
+                _add_tag(e.node_from, tag)
             if e.node_to.id == node_id:
-                e.node_to.add_tag(tag)
-                
-    def clear_node_tags(self):
-        for n in self.nodes:
-            n._node_tags = None
+                _add_tag(e.node_to, tag)
               
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:

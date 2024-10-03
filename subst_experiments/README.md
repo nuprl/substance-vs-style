@@ -43,7 +43,7 @@
 6. Compute the original and updated Pass@1 of the substituted prompts.
    Run this from the generation_experiments dir. 
    ```bash
-   python3 pass_1.py generations_two.of.each.firstlast.firsthalf.475cc88_return_output/multiple
+   python3 pass_1.py --orig_dir generations_studenteval/multiple generations_two.of.each.firstlast.firsthalf.475cc88_return_output/multiple 
    ```
-   
+
 

@@ -83,12 +83,13 @@ def main():
                         action="store_true", help="Suppress the header")
     parser.add_argument("-k", type=int, default=1, help="The value of k")
     parser.add_argument(
+        "--orig_dir", type=str,  help="Directory with full results of orig studenteval", default="generations_studenteval/multiple")
+    parser.add_argument(
         "dirs", type=str,  help="Directories with results. ", nargs="+")
     args = parser.parse_args()
     
-    full_results_path = "generations_studenteval/multiple"
     orig_results = [for_file(p) for p in itertools.chain(
-            Path(full_results_path).glob("*.results.json"), Path(full_results_path).glob("*.results.json.gz"))]
+            Path(args.orig_dir).glob("*.results.json"), Path(args.orig_dir).glob("*.results.json.gz"))]
     orig_results = [r for r in orig_results if r is not None]
     
     if not args.suppress_header:

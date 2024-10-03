@@ -145,8 +145,6 @@ TAGS = {
     "looks through": "loops through",
     "execute a for loop with": "loop through",
     "executes a for loop with": "loops through",
-    "loop over": "loop through",
-    "loops over": "loops through",
     #skip
     "skip": "skip",
     "skips": "skips",

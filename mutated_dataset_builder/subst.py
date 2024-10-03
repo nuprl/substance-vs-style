@@ -23,7 +23,7 @@ WORDS_V = {
     "set":["set","sets"],
     "list":["list","lists"],
     "array":["array","arrays"],
-    "sequence":["sequence","sequences"],
+    "array list":["array list","array lists"],
     "map":["map","maps"],
     "dictionary":["dictionary","dictionaries"],
     "integer":["integer","integers"],
@@ -37,12 +37,11 @@ WORDS_V = {
     "parameter":["parameter","parameters"],
     "argument":["argument","arguments"],
     "value provided":["value provided","values provided"],
-    "input":["input","inputs","inputed","inputted"],
+    "input":["input","inputs","inputted"],
     "take":["take","takes"],
     "bring in":["bring in","brings in"],
     "accept":["accept","accepts"],
     "get":["get","gets"],
-    "receive":["receive","receives"],
     "provide":["provide","provides","provided"],
     "enter":["enter","enters","entered"],
     "combine":["combine","combines","combined","combining"],
@@ -65,11 +64,10 @@ WORDS_V = {
     "ignore":["ignore","ignores","ignored","ignoring"],
     "remove":["remove","removes","removed","removing"],
     "convert":["convert","converts","converted","converting"],
-    "cast":["cast","casts","casted","casting"],
     "change":["change","changes","changed","changing"],
-    "turn":["turn","turns","turned","turning"],
     "typecast":["typecast","typecasts","typecasted","typecasting"],
-    "treat":["treat","treats","treated","treating"],
+    "type cast":["type cast","type casts","type casted","type casting"],
+    "cast":["cast","casts","casted","casting"],
     "key":["key","keys"],
     "item":["item","items"],
     "entry":["entry","entries"],
@@ -86,7 +84,6 @@ CATEGORIES_V = {
     "dictionary": ["dictionary", "dictionaries"],
     "integer": ["integer", "integers"],
     "return": ["return", "returns", "returned", "returning"],
-    "input": ["input", "inputs","inputted"],
     "parameter": ["parameter", "parameters"],
     "take": ["take", "takes"],
     "provide": ["provide", "provides", "provided"],
@@ -99,14 +96,18 @@ CATEGORIES_V = {
 }
 
 
-
 def get_word_variation(word: str, category: str):
     word_variations = WORDS_V[word]
     replace = ""
     for key, value in TAGS.items():
-        if value == category.lower() and key in word_variations:
-            replace = key
-            break
+        if isinstance(value, list):
+            if category.lower() in value and key in word_variations:
+                replace = key
+                break
+        elif isinstance(value, str):
+            if value == category.lower() and key in word_variations:
+                replace = key
+                break
     #if original category:original is capitalized, capitalize the replacement
     if category.istitle():
         replace=replace.capitalize()

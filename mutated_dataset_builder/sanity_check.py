@@ -8,12 +8,11 @@ import json
 import argparse
 
 #Category, possible substitution words, in their original form
-# 15 categories, 63 experiments to run
 subst_to_run = {
     #string:
     "string": ["word","phrase","string","character","set of characters"],
     #list:
-    "list":["brackets","set of brackets","set","list","array","sequence"],
+    "list":["brackets","set of brackets","set","list","array list","array"],
     #dictionary:
     "dictionary":["map","dictionary"],
     #integer:
@@ -21,15 +20,13 @@ subst_to_run = {
     #return
     "return": ["return","output","print","produce","display"],
     #parameter
-    "parameter": ["parameter","argument","value provided"],
-    #input
-    "input": ["input"],
+    "parameter": ["parameter","argument","value provided","input"],
     #take
-    "take": ["take","bring in","accept","get","receive"],
+    "take": ["take","bring in","accept","get","input"],
     #provide
-    "provide": ["provide","enter"],
+    "provide": ["provide","enter","input"],
     #concatenate
-    "concatenate": ["concatenate","combine","splice"],
+    "concatenate": ["concatenate","combine","splice","add"],
     #insert
     "insert": ["insert","add","append","attach"],
     #loop
@@ -37,23 +34,54 @@ subst_to_run = {
     #skip
     "skip": ["skip","avoid","neglect","ignore","remove"],
     #typecast
-    "typecast": ["typecast","convert","change","turn","treat"],
+    "typecast": ["typecast","type cast","cast","convert","change"],
     #key
     "key": ["key","item","entry","attribute","part","element","variable"],
 }
+
+
+
+def get_word_variation(word: str, category: str):
+    word_variations = WORDS_V[word]
+    replace = ""
+    for key, value in TAGS.items():
+        if isinstance(value, list):
+            if category.lower() in value and key in word_variations:
+                replace = key
+                break
+        elif isinstance(value, str):
+            if value == category.lower() and key in word_variations:
+                replace = key
+                break
+    #if original category:original is capitalized, capitalize the replacement
+    if category.istitle():
+        replace=replace.capitalize()
+    if replace == "":
+        raise ValueError(f"Could not find a word variation for '{word}' in category '{category}'")
+    return replace
 
 
 def check_pair_exist(category: str,word: str):
     category_variations = CATEGORIES_V[category]
     word_variations = WORDS_V[word]
     for category_variation in category_variations:
+        # print("replace category_variation",category_variation,"with",get_word_variation(word,category_variation))
+        assert get_word_variation(word,category_variation)!=None
         for word_variation in word_variations:
-            #TAGS have the format (key=word_variation, value=category_variations)
-            if word_variation in TAGS and TAGS[word_variation] in category_variations:
-                return True
-            else:
+            #skip special case of input
+            if word_variation == 'inputted' and category_variation in ['parameter','parameters','take','takes']:
+                continue
+            if word_variation not in TAGS:
+                raise ValueError(f"Could not find the word {word_variation} in TAGS.")
+            possible_tags = TAGS[word_variation] if isinstance(TAGS[word_variation], list) else [TAGS[word_variation]]
+            # print("Possible tags: ", possible_tags)
+            exist = False
+            for tag in possible_tags:
+                if tag in category_variations:
+                    exist = True
+            if exist == False:
                 raise ValueError(f"Could not find the pair ({word_variation}, {category_variation}) in TAGS.")
-            
+
 def check_tagged_category(prompt):
     # Regex pattern to match $CATEGORY:ORIGINAL$
     pattern = re.compile(r"\$([\w\s]+):([\w\s]+)\$")
@@ -67,10 +95,15 @@ def check_tagged_category(prompt):
                 found = True
         if found == False:
             raise ValueError(f"Category '{category}' not found in CATEGORIES_V.")
+        
     return
 
 
 def main_with_args(tagged_dataset: str):
+    for category, words in subst_to_run.items():
+        for word in words:
+            check_pair_exist(category,word)
+    print("All subsitution pairs exist.")
     yaml = YAML()
     with open(tagged_dataset, 'r') as yaml_file:
         yaml_data = yaml.load(yaml_file)
@@ -79,12 +112,7 @@ def main_with_args(tagged_dataset: str):
         prompt = item["prompt"]
         check_tagged_category(prompt)
     print("All tagged categories are valid.")
-
-    for category, words in subst_to_run.items():
-        for word in words:
-            check_pair_exist(category,word)
-    print("All subsitution pairs exist.")
-    
+    print("All word variation pairs exist.")
 
 def main():
     parser = argparse.ArgumentParser()

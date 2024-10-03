@@ -4053,7 +4053,7 @@
   prompt: |-
     def meeps_morps(items):
         """
-        function counts amount of times that 'Meep' and 'Morp' appear in $input:input$ of $strings:strings$
+        function counts amount of times that 'Meep' and 'Morp' appear in $parameter:input$ of $strings:strings$
         """
         
   subset: middle_failure
@@ -4268,7 +4268,7 @@
   prompt: |-
     def mod_end(words, ending):
         """
-        $Take:Take$ a $list:list$ of $strings:words$ sharing the same ending, and a $string:string$ as an $input:input$.
+        $Take:Take$ a $list:list$ of $strings:words$ sharing the same ending, and a $string:string$ as an $parameter:input$.
     Search the last letters of each $string:word$ in the $list:list$ for the $string:string$, and replace it with 's'.
         """
         
@@ -4471,7 +4471,7 @@
   prompt: |-
     def increaseScore(score):
         """
-        The purpose of the function is to $typecast:convert$ the $input:input$ score into a number that is greater than or equal to 10. If a negative number is $provided:provided$, it is to be $typecasted:converted$ into a positive number and if its value is less than 10, it should become 10. If a positive single digit is $provided:provided$, it should be $typecasted:converted$ into 10. If a positive double-digit number (including 10) is $provided:provided$, its value is to be increased by 1.
+        The purpose of the function is to $typecast:convert$ the $parameter:input$ score into a number that is greater than or equal to 10. If a negative number is $provided:provided$, it is to be $typecasted:converted$ into a positive number and if its value is less than 10, it should become 10. If a positive single digit is $provided:provided$, it should be $typecasted:converted$ into 10. If a positive double-digit number (including 10) is $provided:provided$, its value is to be increased by 1.
         """
         
   subset: middle_failure
@@ -5020,7 +5020,7 @@
   prompt: |-
     def assessVowels(s):
         """
-        This function $returns:prints$ a $list:list$ containing $strings:strings$ of every vowel from the $input:input$
+        This function $returns:prints$ a $list:list$ containing $strings:strings$ of every vowel from the $parameter:input$
         """
         
   subset: middle_failure
@@ -6015,7 +6015,7 @@
   prompt: |-
     def findHorizontals(puzzle,wordList):
         """
-        create an empty $dictionary:dictionary$. $loop through:iterate through$ each $string:string$ of the $input:input$ $list:list$ puzzle. if any of the $strings:strings$ in puzzle contain the same letters as a $string:string$ from wordList, $insert:add$ that $string:string$ from wordList as a $key:key$ to the $dictionary:dictionary$ with the index of the $string:string$ from puzzle where it appeared as the value. $return:return$ the $dictionary:dictionary$.
+        create an empty $dictionary:dictionary$. $loop through:iterate through$ each $string:string$ of the $parameter:input$ $list:list$ puzzle. if any of the $strings:strings$ in puzzle contain the same letters as a $string:string$ from wordList, $insert:add$ that $string:string$ from wordList as a $key:key$ to the $dictionary:dictionary$ with the index of the $string:string$ from puzzle where it appeared as the value. $return:return$ the $dictionary:dictionary$.
         """
         
   subset: middle_failure
@@ -6817,7 +6817,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        flips the $inputted:inputted$ $string:string$ around
+        flips the $parameter:inputted$ $string:string$ around
         """
         
   subset: middle_failure
@@ -7001,7 +7001,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        Go through each letters from index 0 to i-1 in the $string:string$ s. $Insert:Append$ the letter to the index of i-1-index. 
+        $Loop:Go through$ each letters from index 0 to i-1 in the $string:string$ s. $Concatenate:Append$ the letter to the index of i-1-index. 
         """
         
   subset: middle_failure
@@ -7018,7 +7018,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        Go through each letter in the s from index 0 to i-1. $Insert:Append$ the letter to the index of i-1-index. 
+        Go through each letter in the s from index 0 to i-1. $Concatenate:Append$ the letter to the index of i-1-index. 
         """
         
   subset: middle_failure
@@ -7181,7 +7181,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $Returns:Prints$ in reverse the length of the $string:string$ equal to the number that is $inputted:inputted$, then $returns:prints$ the rest of the $string:string$.
+        $Returns:Prints$ in reverse the length of the $string:string$ equal to the number that is inputted, then $returns:prints$ the rest of the $string:string$.
         """
         
   subset: middle_failure
@@ -7230,7 +7230,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        $Take:Take$ two $lists:lists$ and $concatenate:combine$ them
+        $Take:Take$ two $lists:lists$ and combine them
         """
         
   subset: middle_failure
@@ -7262,7 +7262,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        $Concatenate:Combine$ two $lists:lists$
+        Combine two $lists:lists$
         """
         
   subset: middle_failure
@@ -7278,7 +7278,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        $Concatenate:Combine$ all $keys:elements$ in two $lists:lists$
+        Combine all $keys:elements$ in two $lists:lists$
         """
         
   subset: middle_failure
@@ -7295,7 +7295,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        Count the number of $keys:elements$ in the $inputted:inputted$ $list:list$, store this number as n. Divide n by 2 store it as m, then $concatenate:combine$ the 1st $key:element$ in the $list:list$ with the 1+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Then $concatenate:combine$ the 2nd $key:element$ in the $list:list$ with the 2+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Loop through every first mth $key:element$ in the $list:list$.
+        Count the number of elements in the $parameter:inputted$ $list:list$, store this number as n. Divide n by 2 store it as m, then $concatenate:combine$ the 1st $key:element$ in the $list:list$ with the 1+m th $key:element$ in the $list:list$, $return:return$ it as a single $key:element$. Then $concatenate:combine$ the 2nd $key:element$ in the $list:list$ with the 2+m th element in the $list:list$, $return:return$ it as a single $key:element$. $Loop:Loop through$ every first mth $key:element$ in the $list:list$.
         """
         
   subset: middle_failure
@@ -7311,7 +7311,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        $Concatenate:Combine$ the two $lists:lists$.
+        Combine the two $lists:lists$.
         """
         
   subset: middle_failure
@@ -7327,7 +7327,7 @@
   prompt: |-
     def combine(l1,l2):
         """
-        $Concatenate:Combine$ the two $lists:lists$ into one single $list:list$.
+        Combine the two $lists:lists$ into one single $list:list$.
         """
         
   subset: middle_failure
@@ -7462,7 +7462,7 @@
   prompt: |-
     def pattern(value):
         """
-        $Returns:Returns$ a $list:list$ of $lists:lists$. The number of $lists:lists$ in the $return:output$ $list:list$ should be equal to the value. All of the $lists:lists$ within the $return:output$ $list:list$ should have each $integer:integer$ greater than zero up to, and including, the value $inputted:inputted$.
+        $Returns:Returns$ a $list:list$ of $lists:lists$. The number of $lists:lists$ in the output $list:list$ should be equal to the value. All of the $lists:lists$ within the output $list:list$ should have each $integer:integer$ greater than zero up to, and including, the $parameter:value inputted$.
         """
         
   subset: middle_failure
@@ -7480,7 +7480,7 @@
   prompt: |-
     def pattern(value):
         """
-        $Returns:Returns$ a $list:list$ of $lists:lists$. The number of $lists:lists$ in the $return:output$ $list:list$ should be equal to the value. All of the $lists:lists$ within the $return:output$ $list:list$ should have every $integer:integer$ between zero and the $inputted:inputted$ value.
+        $Returns:Returns$ a $list:list$ of $lists:lists$. The number of $lists:lists$ in the output $list:list$ should be equal to the value. All of the $lists:lists$ within the output $list:list$ should have every $integer:integer$ between zero and the $parameter:inputted value$.
         """
         
   subset: middle_failure
@@ -8462,7 +8462,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the $return:output$ value. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest. 
+        The function $takes:takes$ in a $list:list$ of $dictionaries:dictionaries$. The function divides the value for "wins" in the $dictionary:dictionary$ by the value for "noms" in the $dictionary:dictionary$, $inserting:adding$ a new $key:entry$ to that $dictionary:dictionary$ called "success" with the output value. It then sorts the $dictionary:dictionary$ $keys:entries$ by the value in "success," highest to lowest. 
         """
         
   subset: middle_failure
@@ -8624,7 +8624,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions $return:output$ is a single 2d $list:list$. 
+        This function $takes:takes$ in a 2d $list:list$ containing $dictionaries:dictionaries$ at its $parameter:parameter$. In each $dictionary:dictionary$ is the nominee, the number of wins they have and the amount of nominations they have. As an example, [{'nominee': 'Jones', 'wins': 28, 'noms': 80}, {'nominee': 'Beyoncé',  'wins': 28, 'noms': 79}, {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]. This function then $returns:returns$ this $dictionary:dictionary$ with an $inserted:added$ $parameter:parameter$ of an average of wins to nominations. This function rounds every decimal to 2 decimal places. This functions output is a single 2d $list:list$. 
         """
         
   subset: middle_failure
@@ -8911,7 +8911,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an output you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success.
         """
         
   subset: middle_failure
@@ -8941,7 +8941,7 @@
   prompt: |-
     def sortBySuccessRate(nominations):
         """
-        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $input:input$. as an $return:output$ you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success. use two decimal places for the success rate and use different lines to put each $dictionary:dictionary$
+        you are going to have a $list:list$ of $dictionaries:dictionaries$ as an $parameter:input$. as an output you are going to $insert:add$ another $key:variable$ called success to each $dictionary:dictionary$ which is the wins divided by the value of noms. you are then going to sort the $dictionary:dictionary$ according to decreasing success. use two decimal places for the success rate and use different lines to put each $dictionary:dictionary$
         """
         
   subset: middle_failure
@@ -9681,7 +9681,7 @@
   prompt: |-
     def translate(lexicon,sentence):
         """
-        For each $string:string$ in sentence, find $key:key$ value in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $insert:append$ 'UNK' to new $string:string$.
+        For each $string:string$ in sentence, find $key:key value$ in lexicon and create new $string:string$ with its value pair. If the $string:word$ is not in lexicon, $concatenate:append$ 'UNK' to new $string:string$.
         """
         
   subset: middle_failure
@@ -9707,7 +9707,7 @@
   prompt: |-
     def translate(lexicon,sentence):
         """
-        def translate(lexicon,sentence): pairs an english $string:word$ with its french translation to create the ability to $input:input$ english and $return:output$ french
+        def translate(lexicon,sentence): pairs an english $string:word$ with its french translation to create the ability to $takes:input$ english and $return:output$ french
     def translate(lexicon,sentence): defines {"one":"un", "two":"deux", "three":"trois", "four:"quatre", "I":"je", "you":"tu", "and":"et", "cats":"chats", "love":"aime", "like":aime", "my":"mes"}, this program will run the $string:phrase$ "I like
     my three cats" through def translate and $return:output$ the french translation
         """
@@ -10488,7 +10488,7 @@
   prompt: |-
     def topScores(lst):
         """
-        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ at index 1 to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst from highest to lowest. If there are more than five $lists:lists$ in newLst, $skip:remove$ any $lists:lists$ after the five $lists:lists$ with the highest values at index 0. Then make a new $list:list$ called finalLst. For each $list:list$ in newLst, $insert:add$ the value at index 1 to finalLst. The $return:output$ should be finalLst.
+        $Takes:Takes$ a $list:list$ of $lists:lists$, which we will call lst. For each $list:list$ in lst, if the value at index 0 is greater than or equal to 80, $insert:add$ the $list:list$ at index 1 to a new $list:list$ of $lists:lists$ called newLst. Then sort newLst from highest to lowest. If there are more than five $lists:lists$ in newLst, $skip:remove$ any $lists:lists$ after the five $lists:lists$ with the highest values at index 0. Then make a new $list:list$ called finalLst. For each $list:list$ in newLst, $insert:add$ the value at index 1 to finalLst. The output should be finalLst.
         """
         
   subset: middle_failure
@@ -10505,7 +10505,7 @@
   prompt: |-
     def topScores(lst):
         """
-        taken lst, loop each $list:list$ and if the zeroth index is less than or equal to 80, $insert:add$ the 1st index into a $list:list$ and $return:return$ this new $list:list$ 
+        taken lst, $loop:loop each$ $list:list$ and if the zeroth index is less than or equal to 80, $insert:add$ the 1st index into a $list:list$ and $return:return$ this new $list:list$ 
         """
         
   subset: middle_failure
@@ -10590,7 +10590,7 @@
   prompt: |-
     def topScores(lst):
         """
-        taken lst, $loop through:loop through$ each $list:list$ and sort the $list:list$ in the order of the highest 0th index. Given new $list:list$ if the zeroth index is more than or equal to 80, $insert:add$ the 1st index into a $list:list$ and $return:return$ this new $list:list$ by sorting from the highest 0th index of the original $list:list$. If the $list:list$ is larger than 5 $keys:items$, then $return:return$ only 5 $keys:items$ with the highest zeroth index. 
+        taken lst, $loop through:loop through$ each $list:list$ and sort the $list:list$ in the order of the highest 0th index. Given new $list:list$ if the zeroth index is more than or equal to 80, $insert:add$ the 1st index into a $list:list$ and $return:return$ this new $list:list$ by sorting from the highest 0th index of the original $list:list$. If the $list:list$ is larger than 5 items, then $return:return$ only 5 items with the highest zeroth index. 
         """
         
   subset: middle_failure
@@ -10607,7 +10607,7 @@
   prompt: |-
     def topScores(lst):
         """
-        Loop through each lst and $take:take$ the nested $list:list$ with a 0th index larger than or equal to 80. $Insert:Append$ to a new $list:list$ and sort the new $list:list$ in the order of the largest 0th index in the nested $list:list$. $Insert:Add$ the 1st index into a new $list:list$ and $return:return$ this new $list:list$. If the $list:list$ is larger than 5 $keys:items$, then $return:return$ only 5 $keys:items$ with the highest zeroth index. 
+        Loop through each lst and take the nested $list:list$ with a 0th index larger than or equal to 80. $Insert:Append$ to a new $list:list$ and sort the new $list:list$ in the order of the largest 0th index in the nested $list:list$. $Insert:Add$ the 1st index into a new $list:list$ and $return:return$ this new $list:list$. If the $list:list$ is larger than 5 items, then $return:return$ only 5 items with the highest zeroth index. 
         """
         
   subset: middle_failure
@@ -10967,7 +10967,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first $key:element$ with the first $list:list$ with the first $key:element$ in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$ [ex, if the first $key:element$ of the first $list:list$ is F and an $key:element$ of the second $list:list$ is 7, $concatenate:combine$ them like F7]. Keep $inserting:adding$ the first $key:element$ of the first $list:list$ to each $key:element$ of the second $list:list$ and $insert:add$ each addition to the new $list:list$. $Return:Return$ the $list:list$ in alphabetical order.
+        There are two $lists:lists$ of $strings:strings$. $Concatenate:Combine$ the first element with the first $list:list$ with the first element in the second $list:list$ and $insert:add$ that to a new $list:list$, which will be $returned:returned$ [ex, if the first element of the first $list:list$ is F and an element of the second $list:list$ is 7, $concatenate:combine$ them like F7]. Keep $concatenating:adding$ the first element of the first $list:list$ to each element of the second $list:list$ and $insert:add$ each addition to the new $list:list$. $Return:Return$ the $list:list$ in alphabetical order.
         """
         
   subset: middle_failure

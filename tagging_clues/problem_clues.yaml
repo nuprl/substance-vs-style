@@ -314,7 +314,14 @@ print_time:
     ''sleeping'' otherwise'
 readingIceCream:
   signature: 'def readingIceCream(lines):'
-  tags: ''
+  tags:
+    - 1: input is a list of strings
+    - 2: go through all strings
+    - 3: split on \t
+    - 4: extract last item from each string
+    - 5: convert to float
+    - 6: sum numbers
+    - 7: return total
   tests:
   - input: '["peppermint\tice cream\t3", "lemon\tfrozen yogurt\t10", "pumpkin\tice
       cream\t2.5", "monster\tice cream\t21"]'

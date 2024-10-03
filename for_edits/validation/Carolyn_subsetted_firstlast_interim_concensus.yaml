@@ -1844,7 +1844,7 @@
   prompt: |-
     def check_prime(num):
         """
-        given a $string:character$, $typecast:convert$ the $string:character$ into a number. $return:return$ true if that number is a prime number. if not, $return:return$ false. 
+        given a character, $typecast:convert$ the character into a number. $return:return$ true if that number is a prime number. if not, $return:return$ false. 
         """
         
   subset: last_failure
@@ -6202,7 +6202,7 @@
   prompt: |-
     def hasHorizontalWin(board, letter):
         """
-        In $list:list$ of $lists:lists$, if every $string:character$ in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
+        In $list:list$ of $lists:lists$, if every character in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
         """
         
   subset: first_failure
@@ -6234,7 +6234,7 @@
   prompt: |-
     def hasHorizontalWin(board, letter):
         """
-        In $list:list$ of $lists:lists$, if each $string:character$ in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
+        In $list:list$ of $lists:lists$, if each character in $list:list$ is equal to letter, $return:return$ true. Otherwise, $return:return$ false.
         """
         
   subset: last_failure
@@ -6298,7 +6298,7 @@
   prompt: |-
     def hasHorizontalWin(board, letter):
         """
-        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ of $strings:strings$, and the 1st index is a $string:character$. if any $list:list$ in the 0th index has five consecutive values of the $string:character$ $provided:entered$ in the 1st index, $return:return$ true. else $return:return$ false
+        $Provide:Enter$ a $list:list$ where the 0th index is a $list:list$ of $lists:lists$ of $strings:strings$, and the 1st index is a character. if any $list:list$ in the 0th index has five consecutive values of the character $provided:entered$ in the 1st index, $return:return$ true. else $return:return$ false
         """
         
   subset: last_success
@@ -6871,7 +6871,7 @@
   prompt: |-
     def findHorizontals(puzzle,wordList):
         """
-        The $parameters:input$ will be a "puzzle" $list:list$ and a "wordList" $list:list$. They consist of $strings:strings$ and have equal length. Check if the $string:string$ in the puzzle $list:list$ contains all the $strings:characters$ of the $string:string$ in the wordList $list:list$. They don't have to be in the same order or same length. $Return:Return$ a $dictionary:dictionary$ with the $string:string$ as the $key:key$ and the position of the $string:string$ as the value.
+        The $parameters:input$ will be a "puzzle" $list:list$ and a "wordList" $list:list$. They consist of $strings:strings$ and have equal length. Check if the $string:string$ in the puzzle $list:list$ contains all the characters of the $string:string$ in the wordList $list:list$. They don't have to be in the same order or same length. $Return:Return$ a $dictionary:dictionary$ with the $string:string$ as the $key:key$ and the position of the $string:string$ as the value.
         """
         
   subset: last_failure
@@ -7215,7 +7215,7 @@
   prompt: |-
     def partialWordle(guessList,hiddenWord):
         """
-        For each $string:word$ in guessList, if the $string:character$ of the hiddenWord[i] matches the same position and are the same $string:word$, add 2. If the $string:word$ in guessList and the hiddenWord have the same characters but not in the same position, add 1. $Return:Return$ a $list:list$ with the score for each $string:word$ in a $list:list$. 
+        For each $string:word$ in guessList, if the character of the hiddenWord[i] matches the same position and are the same $string:word$, add 2. If the $string:word$ in guessList and the hiddenWord have the same characters but not in the same position, add 1. $Return:Return$ a $list:list$ with the score for each $string:word$ in a $list:list$. 
         """
         
   subset: first_success
@@ -7503,7 +7503,7 @@
   prompt: |-
     def andCount(andGrid):
         """
-        $Loop through:Iterate through$ each $string:string$ in the input $list:list$. If a $string:character$ in the current $string:string$ is "&", add 1 to the count. $Return:Return$ the count at the end of the $list:list$.
+        $Loop through:Iterate through$ each $string:string$ in the input $list:list$. If a character in the current $string:string$ is "&", add 1 to the count. $Return:Return$ the count at the end of the $list:list$.
         """
         
   subset: first_success
@@ -8208,7 +8208,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $takes:takes$ the inputted $string:string$ (s) and $takes:takes$ the number of $strings:characters$ (i) and flips them around in the outputted $string:string$
+        $takes:takes$ the inputted $string:string$ (s) and $takes:takes$ the number of characters (i) and flips them around in the outputted $string:string$
         """
         
   subset: last_failure
@@ -8310,7 +8310,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        given a $string:string$ and a number within $string:string$ length, $return:produce$ a $string:string$ that reverses the order of the $strings:characters$ up to the given number index $concatenated:concatenated$ with the rest of the original $string:string$
+        given a $string:string$ and a number within $string:string$ length, $return:produce$ a $string:string$ that reverses the order of the characters up to the given number index $concatenated:concatenated$ with the rest of the original $string:string$
         """
         
   subset: first_failure
@@ -8412,7 +8412,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them before the remaining $string:characters$.
+        $Takes:Takes in$ $parameters:parameters$ (s, i), where s is a $string:string$ and i is an $integer:integer$. Removes the first i elements in the $string:string$, reverses their order, and $concatenates:inserts$ them before the remaining characters.
         """
         
   subset: first_failure
@@ -8498,7 +8498,7 @@
   prompt: |-
     def changeSection(s,i):
         """
-        flip the position of the $strings:characters$ in the $string:string$ up to the specified index -1
+        flip the position of the characters in the $string:string$ up to the specified index -1
         """
         
   subset: first_success
@@ -10361,7 +10361,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation $strings:characters$, and another punctuation $string:character$ that was not in the first $list:list$. Function checks if each of the $strings:characters$ in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any $strings:characters$ that were in the $list:list$ are replaces with the $string:character$ in the third $parameter:input$
+        Three total $parameters:inputs$: a $string:string$, a $list:list$ of punctuation characters, and another punctuation character that was not in the first $list:list$. Function checks if each of the characters in the $list:list$ is contained in the $string:string$. Creates a new $string:string$ where any characters that were in the $list:list$ are replaces with the character in the third $parameter:input$
         """
         
   subset: first_success
@@ -10378,7 +10378,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        $Takes:Takes$ a $string:string$ and a $list:list$ of characters within that $string:string$. Characters found within the $string:string$ are replaced with the wanted separating $string:character$ 
+        $Takes:Takes$ a $string:string$ and a $list:list$ of characters within that $string:string$. Characters found within the $string:string$ are replaced with the wanted separating character
         """
         
   subset: first_success
@@ -10446,7 +10446,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        for every $string:character$ in the $list:list$, $loops through:looks through$ the $string:string$ and if the character is in the $string:string$, replaces it with sep.
+        for every character in the $list:list$, $loops through:looks through$ the $string:string$ and if the character is in the $string:string$, replaces it with sep.
         """
         
   subset: last_success
@@ -10482,7 +10482,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a code that $takes:takes$ three $parameters:parameters$. The first $parameter:parameter$ is a $string:string$ s. The second $parameter:parameter$ are a $list:list$ of characters included in the $string:string$. And the third $parameter:parameter$ is a single $string:character$. The code should replace the characters in the $string:string$ with the last $parameter:parameter$ of the single $string:character$.
+        Write a code that $takes:takes$ three $parameters:parameters$. The first $parameter:parameter$ is a $string:string$ s. The second $parameter:parameter$ are a $list:list$ of characters included in the $string:string$. And the third $parameter:parameter$ is a single character. The code should replace the characters in the $string:string$ with the last $parameter:parameter$ of the single character.
         """
         
   subset: first_success
@@ -10584,7 +10584,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        "replace the $strings:characters$ in the second $parameter:item$ that appears in the first $parameter:item$ with the $strings:characters$ from the third $parameter:item$"
+        "replace the characters in the second $parameter:item$ that appears in the first $parameter:item$ with the characters from the third $parameter:item$"
         """
         
   subset: first_success
@@ -10618,7 +10618,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a comma and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
+        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a comma and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every character from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
         """
         
   subset: first_failure
@@ -10635,7 +10635,7 @@
   prompt: |-
     def multisplit(s,chars,sep):
         """
-        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a double quotes or simple quotes and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every $string:character$ from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
+        Write a function that $takes:gets$ a $string:string$, a $list:collection$ of characthers, and a separator element. The function should get only the first $string:string$ separated by a double quotes or simple quotes and remove the rest of the $parameters:input$. After that, the $string:string$'s quotes should be replaced by a simple quote. Moreover, the function should $loop through:run through$ the $string:string$ and replace every character from the second $parameter:parameter$ of the function and replace by the third $parameter:parameter$ from the function (separator element). If the second $parameter:parameter$ is empty, just $return:return$ the $string:string$.
         """
         
   subset: last_success
@@ -14324,7 +14324,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes in$ multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. 
+        The function $takes:takes in$ multiple $lists:lists$ made up of single characters and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each character from each original $list:list$. 
         """
         
   subset: first_failure
@@ -14343,7 +14343,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        The function $takes:takes in$ multiple $lists:lists$ made up of single $strings:characters$ and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each $string:character$ from each original $list:list$. The resulting $list:list$ will be arranged in alphabetical order based on the letters of each $string:string$.
+        The function $takes:takes in$ multiple $lists:lists$ made up of single characters and $returns:outputs$ one $list:list$ in which all the entries are two character $strings:strings$ made up of the combination of each character from each original $list:list$. The resulting $list:list$ will be arranged in alphabetical order based on the letters of each $string:string$.
         """
         
   subset: last_success
@@ -14360,7 +14360,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        For each $string:character$ in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals.
+        For each character in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals.
         """
         
   subset: first_failure
@@ -14377,7 +14377,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        For each $string:character$ in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals. Sort each card in deck by alphabetical order of suit $string:character$.
+        For each character in suits, create a $list:list$ that $concatenates:appends$ each of the suits with each of the values in vals. Sort each card in deck by alphabetical order of suit character.
         """
         
   subset: last_success
@@ -14394,7 +14394,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        $Provide:Enter$ two $lists:arrays$ of $strings:characters$. $Return:Print$ an $list:array$ with the first $list:array$ multiplied by the second $list:array$.
+        $Provide:Enter$ two $lists:arrays$ of characters. $Return:Print$ an $list:array$ with the first $list:array$ multiplied by the second $list:array$.
         """
         
   subset: first_failure
@@ -14411,7 +14411,7 @@
   prompt: |-
     def generateCardDeck(suits, vals):
         """
-        $Provide:Enter$ two $lists:arrays$ of $strings:characters$. Reverse the order of the first $list:array$. $Return:Print$ an $list:array$ with the the first $list:array$ multiplied by the second $list:array$.
+        $Provide:Enter$ two $lists:arrays$ of characters. Reverse the order of the first $list:array$. $Return:Print$ an $list:array$ with the the first $list:array$ multiplied by the second $list:array$.
         """
         
   subset: last_failure
@@ -15081,7 +15081,7 @@
   prompt: |-
     def percentWin(guess,answers):
         """
-        Count how many $strings:characters$ in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference as a percentage
+        Count how many characters in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference as a percentage
         """
         
   subset: first_failure
@@ -15099,7 +15099,7 @@
   prompt: |-
     def percentWin(guess,answers):
         """
-        Count how many $strings:characters$ in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference rounded to the nearest $integer:whole number$. Multiply the difference by 100 and $return:display$ followed by '%'
+        Count how many characters in a $list:range$ of numbers match those in another $list:range$ of numbers and $return:display$ the difference rounded to the nearest $integer:whole number$. Multiply the difference by 100 and $return:display$ followed by '%'
         """
         
   subset: last_failure
@@ -15133,7 +15133,7 @@
   prompt: |-
     def percentWin(guess,answers):
         """
-        $Take:Take in$ $list:array$ A. Create variable X equal to 0. $Loop through:Iterate through$ $list:array$ A. When a $string:character$ is present in $List:Array$ A, add 1 to Y. $Return:Return$ Y divided by the size of the $list:array$, rounded to the nearest percent.
+        $Take:Take in$ $list:array$ A. Create variable X equal to 0. $Loop through:Iterate through$ $list:array$ A. When a character is present in $List:Array$ A, add 1 to Y. $Return:Return$ Y divided by the size of the $list:array$, rounded to the nearest percent.
         """
         
   subset: last_failure

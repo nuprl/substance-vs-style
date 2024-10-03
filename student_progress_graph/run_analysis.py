@@ -14,6 +14,7 @@ import networkx as nx
 from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS
 import itertools as it
 from scipy import stats
+from collections import Counter
 '''
 Analyzing common patterns in graphs
 1. for each edge, compute clues
@@ -27,9 +28,11 @@ class ContinuityError(Exception):
     pass
 
 
-def is_known_exception(e: Edge, problem, verbose=False) -> bool:
+def is_known_exception(e: Edge, problem, key=None, verbose=False) -> bool:
     try:
-        reason = KNOWN_EXCEPTIONS[problem][e.state][e.username][e.attempt_id]
+        if key is None:
+            key = e.state
+        reason = KNOWN_EXCEPTIONS[problem][key][e.username][e.attempt_id]
         if verbose:
             print(f"Known exception {e.username}, attempt {e.attempt_id}:\n\t{reason}")
         return True
@@ -109,7 +112,7 @@ def check_loops(graph: Graph) -> Dict[str, List[Edge]]:
             is_self_loop = (e.node_from.id == e.node_to.id)
             if ([e.node_from.id, e.node_to.id] in cycle or 
                 (is_self_loop and [e.node_from.id] in cycle)):
-                if is_known_exception(e, graph.problem):
+                if is_known_exception(e, graph.problem, key="loop"):
                     continue 
                 elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]):
                     raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
@@ -125,10 +128,10 @@ def populate_clues(graph: Graph) -> Graph:
     Augment graph edges with clue sets
     """
     FOUND_ERRORS_STUDENTS = []
-    student_clues_tracker = {student: [start_state] for student,start_state 
+    student_clues_tracker = {student: [(0,start_state)] for student,start_state 
                              in graph.get_start_node_states().items()}
     for i,e in enumerate(graph.edges):
-        prev_state = student_clues_tracker[e.username][-1]
+        prev_state = student_clues_tracker[e.username][-1][-1]
         try:
             next_state = _compute_next_state(prev_state, e._edge_tags)
         except ContinuityError as err:
@@ -145,7 +148,7 @@ def populate_clues(graph: Graph) -> Graph:
             continue
         
         student_clues_tracker[e.username].append(
-            next_state
+            (e.attempt_id, next_state)
         )
         graph.edges[i].clues = next_state
     
@@ -165,7 +168,15 @@ def load_problem_clues(filepath, problem):
         problem_clues_dict[k] = v
     return problem_clues_dict
 
-def display_breakout_edge(cycle_edges: List[Edge]):
+def load_problem_answers(filepath, problem):
+    with open(filepath, "r") as fp:
+        problem_answers = []
+        for item in yaml.safe_load(fp)[problem]["tests"]:
+            if "output" in item.keys():
+                problem_answers.append(str(yaml.safe_load(item["output"])))
+    return problem_answers
+
+def get_breakout_edge(cycle_edges: List[Edge]):
     if len(cycle_edges) < 2:
         return None
     last_edge = cycle_edges.pop()
@@ -176,7 +187,7 @@ def display_breakout_edge(cycle_edges: List[Edge]):
     if last_edge.node_to.id in nodes:
         return None
     else:
-        return yaml.dump({k:getattr(last_edge, k) for k in ["attempt_id", "diff"]})
+        return last_edge
 
 def likelihood_fail_given_loop(cycle_summary, graph):
     successful_students = graph.get_successful_students()
@@ -190,18 +201,123 @@ def likelihood_fail_given_loop(cycle_summary, graph):
     df = pd.DataFrame(results)
     return df
 
+def check_breakout_edges(breakout_edges, problem):
+    """
+    Given a dict of student usernames to breakout edges.
+    Checks that clues added to breakout are substantial
+    """
+    for student,bedge in breakout_edges.items():
+        if bedge != None:
+            added_clues = [str(i)[0] for i in bedge._edge_tags]
+            if not ("a" in added_clues or "d" in added_clues) and \
+                not is_known_exception(bedge, problem, key="breakout"):
+                raise ValueError(f"Breakout edge is trivial: {student}, {_edge_dict(bedge, False)}")
+
+def compute_node_clusters(graph: Graph)-> dict:
+    node_to_clues = {}
+    for student,clues in graph.get_start_node_states().items():
+        start_node = graph.get_start_node_id(student)
+        node_to_clues[start_node] = set([tuple(clues)])
+        
+    for e in graph.edges:
+        if e.node_to.id not in node_to_clues.keys():
+            node_to_clues[e.node_to.id] = set()
+        node_to_clues[e.node_to.id].add(tuple(e.clues))
+    
+    return {k:list(v) for k,v in node_to_clues.items()}
+
+def get_path_summary(g: Graph) -> dict:
+    student_paths = {}
+    start_states = g.get_start_node_states()
+    for e in g.edges:
+        if not e.username in student_paths.keys():
+            student_paths[e.username] = [(0,start_states[e.username])]
+        student_paths[e.username].append((e.attempt_id, e.clues))
+    
+    for k,v in student_paths.items():
+        path = sorted(v, key=lambda x: x[0])
+        student_paths[k] = [i[1] for i in path]
+    
+    return student_paths
+
+def score_nodes_by_tests_passed(g: Graph, problem_answers) -> Graph:
+    for i,n in enumerate(g.nodes):
+        node_id = n.id
+        num_correct_print = sum([int(n.stdout[i].rsplit("\n",1)[0] == problem_answers[i])
+                                 for i in range(len(problem_answers))])
+        num_error = sum([int("error:" in stderr.lower()) for stderr in n.stderr])
+        score = num_correct_print # - num_error
+        g.tag_node(node_id, score)
+    return g
+
+def score_nodes_by_target_dist(g: Graph, target_node_id: int) -> Graph:
+    """
+    NOTE: this is incorrect. Networkx shortest path is not directed
+    """
+    G = g.to_networkx()
+    for n in g.nodes:
+        node_id = n.id
+        if node_id == target_node_id:
+            g.tag_node(node_id, 0)
+        else:
+            try:
+                shortest_path = nx.shortest_path(G, source=node_id, target=target_node_id)
+                shortest_len = len(shortest_path) - 1
+            except nx.NetworkXNoPath:
+                shortest_len = -1
+            g.tag_node(node_id, shortest_len)
+    
+    for n in g.nodes:
+        n._node_tags = list(set(n._node_tags))
+        assert len(n._node_tags) == 1
+    return g
+
+def check_rewrites_impact(graph: Graph):
+    """
+    For each edge, check if rewrites advance the clues.
+    NOTE: does not seem to be a trend
+    """
+    for e in graph.edges:
+        # if all([str(t)[0] in ['m','l','0'] for t in e._edge_tags]):
+            prev_clue = None
+            for attempt_id, clues in  graph.student_clues_tracker[e.username]:
+                if attempt_id == (e.attempt_id - 1):
+                    prev_clue = clues
+                    break
+            diff = set(e.clues).difference(prev_clue)
+            score_before = e.node_from._node_tags[0] 
+            score_after = e.node_to._node_tags[0] 
+            if score_after > score_before: #or len(diff) > 0:
+                print(f"{e._edge_tags}: {prev_clue} -> {e.clues}= {diff}, {score_before}>{score_after}")
+
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)
     graph = load_graph(args.graph_yaml)
     graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
     graph = populate_clues(graph)
+    problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
+    graph = score_nodes_by_tests_passed(graph, problem_answers)
+    success_node = [n for n in graph.nodes if n._node_tags[0] == len(problem_answers)]
+    # check only one success node
+    assert len(success_node) == 1, f"Can only be 1 success node: {len(success_node)}"
+    success_node = success_node[0]
+    
+    # graph.clear_node_tags()
+    # graph = score_nodes_by_target_dist(graph, success_node.id)
+
+    ## RQ1: Cycles
+    
     # check success clues
     check_state_clues(graph)
     # save graph
     with open(f"{args.outdir}/graph_with_clues.yaml","w") as fp:
         yaml.dump(graph, fp)
-        
-    # check cycles
+    # summary
+    with open(f"{args.outdir}/path_summary.json","w") as fp:
+        path_summary = get_path_summary(graph)
+        json.dump(path_summary, fp, indent=1)
+    
+    # check cycles have trivial or missing clues
     cycle_summary = check_loops(graph)
     
     breakout_edges = {}
@@ -210,7 +326,7 @@ def main(args):
         e_list = [[e.node_from.id, e.node_to.id, e.clues, e._edge_tags] 
                   for e in edges]
         print(f"{student}:{e_list}")
-        breakout_edge = display_breakout_edge(edges)
+        breakout_edge = get_breakout_edge(edges)
         breakout_edges[student] = breakout_edge
         if breakout_edge:
             print(f"breakoutedge {student}")
@@ -219,6 +335,7 @@ def main(args):
     with open(f"{args.outdir}/graph_cycles.yaml","w") as fp:
         yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
 
+    check_breakout_edges(breakout_edges, graph.problem)
     df = likelihood_fail_given_loop(cycle_summary, graph)
     print(df)
     # print(df.corr())
@@ -232,12 +349,27 @@ def main(args):
     print(f"Num fail: {len(fail)}, num has loop: {len(fail_loop)}, {100 * len(fail_loop)/len(fail)} %")
     print(f"Num success: {len(succ)}, num has loop: {len(succ_loop)}, {100 * len(succ_loop)/len(succ)} %")
     
+    if len(fail_loop) > 0:
+        ratio_succ_fail = (len(succ_loop)/len(succ)) / (len(fail_loop)/len(fail))
+        assert ratio_succ_fail <= 0.54, ratio_succ_fail
+        # topScores is highest with 0.5333
+    
     # save looping likelihood df
     df.to_csv(f"{args.outdir}/looping_behavior.csv")
     
     # save exceptions
     with open(f"{args.outdir}/exceptions.json", "w") as fp:
         json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
+        
+    # node_clusters = compute_node_clusters(graph)
+    # print(json.dumps(node_clusters))
+    
+    ## RQ2: Rewrites
+    
+    print(f"Success node {success_node.id}")
+    check_rewrites_impact(graph)
+    
+    
         
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

@@ -36,6 +36,11 @@ class Node(yaml.YAMLObject):
     @classmethod
     def from_dict(cls, node:dict) -> "Node":
         return cls(**node)
+    
+    def add_tag(self, tag):
+        if self._node_tags is None:
+            self._node_tags = []
+        self._node_tags.append(tag)
 
 @dataclass  
 class Edge(yaml.YAMLObject):
@@ -112,12 +117,13 @@ class Graph(yaml.YAMLObject):
     student_clues_tracker : dict = {}
     problem_clues: dict = {}
     
-    def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], 
-                 student_start_node_tags: dict = {}):
+    def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], **kwargs):
         self.problem=problem
         self.nodes=nodes
         self.edges=edges
-        self.student_start_node_tags=student_start_node_tags
+        
+        self.student_start_node_tags = kwargs.pop("student_start_node_tags", {})
+        self.problem_clues = kwargs.pop("problem_clues", {})
     
     def __repr__(self):
         return "%s(problem=%r, nodes=%r, edges=%r)" % (
@@ -227,6 +233,21 @@ class Graph(yaml.YAMLObject):
             student_start_node_tags=graph["student_start_node_tags"]
         )
     
+    def tag_node(self, node_id: int, tag):     
+        for n in self.nodes:
+            if n.id == node_id:
+                n.add_tag(tag)
+                
+        for e in self.edges:
+            if e.node_from.id == node_id:
+                e.node_from.add_tag(tag)
+            if e.node_to.id == node_id:
+                e.node_to.add_tag(tag)
+                
+    def clear_node_tags(self):
+        for n in self.nodes:
+            n._node_tags = None
+              
 def compute_state(is_success:bool, last_attempt: bool) -> State:
     if is_success:
         return "success"

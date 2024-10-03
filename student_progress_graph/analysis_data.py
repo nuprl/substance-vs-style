@@ -55,6 +55,22 @@ KNOWN_EXCEPTIONS = {
         },
         "fail":{
             "student65": {5: "has all clues, but still fails because model interprets 'number' as int"}
+        },
+        "loop": {
+            "student65": {
+                2: "not an issue, since first edge in loop"
+            }
+        },
+        "breakout": {
+            "student31":{
+                2: "student only has 2 attempts; incomplete data"
+            },
+            "student47":{
+                5: "breakout edge leads into another cycle"
+            },
+            "student65": {
+                5: "breakout edge leads to final node; could be another cycle"
+            }
         }
     },
     "topScores": {
@@ -77,6 +93,20 @@ KNOWN_EXCEPTIONS = {
         },
         "fail": {
             "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
+        },
+        "loop": {
+            "student45": {
+                3: "student with all clues gets fail because of LLM runs out of tokens",
+                4: "same as previous attempt"
+            },
+        },
+        "breakout": {
+            "student15": {
+                10: "Student breaks out into another cycle",
+            },
+            "student53": {
+                10: "LLM runs out of tokens error in node_from. Should have been a success from attempt 7"
+            }
         }
     },
     # Carolyn
@@ -94,6 +124,11 @@ KNOWN_EXCEPTIONS = {
             "student64": {
                 3: "missing clue 1,3,8. 1,3,8 could be implicit."
             }
+        },
+        "breakout": {
+            "student64": {
+                2: "breakout edge tagged as m4 but should be a4"
+            }
         }
     },
     # Arjun
@@ -102,6 +137,12 @@ KNOWN_EXCEPTIONS = {
             "student37": {
                 1: "Student has all clues, but model still misinterpreting."
             }
+        },
+        "breakout": {
+            "student8": {
+                17: "Could argue that breakout edge is just loop cut short because student gives up"
+            }
         }
     }
+    
 }

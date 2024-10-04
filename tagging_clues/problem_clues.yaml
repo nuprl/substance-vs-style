@@ -219,7 +219,13 @@ getSeason:
     so on. The returned season should be in lowercase.
 increaseScore:
   signature: 'def increaseScore(score):'
-  tags: ''
+  tags: 
+    - 1: input integer
+    - 2: if less than 10, make 10
+    - 3: if 10 or more, add 1
+    - 4: if negative, turn positive
+    - 5: if single digit, add 0
+    - 6: return
   tests:
   - input: '-10'
     output: '10'

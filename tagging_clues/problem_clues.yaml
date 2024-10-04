@@ -451,7 +451,13 @@ sort_physicists:
     second value.
 sortedBooks:
   signature: 'def sortedBooks(books, writer):'
-  tags: ''
+  tags: 
+    - 1: takes a list of dictionaries 
+    - 2: takes an author
+    - 3: removes books not by that author
+    - 4: sorts list
+    - 5: sorts list by year
+    - 6: returns list
   tests:
   - input: '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
       ''Austen'', ''book'': ''Persuasion'', ''year'': 1818},  {''author'': ''Woolf'',

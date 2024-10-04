@@ -462,7 +462,12 @@ subtract_add:
     a result that adds the even indices and subtracts the odd indices.
 times_with:
   signature: 'def times_with(meetings):'
-  tags: ''
+  tags:
+    - 1: input is nested list
+    - 2: describe nested list structure
+    - 3: make dictionary where keys are people and values are numbers
+    - 4: sum times
+    - 5: return dictionary
   tests:
   - input: '[ [30, [''Alice'', ''Bob'', ''Carol'']] ]'
     output: '{ ''Alice'': 30, ''Bob'': 30, ''Carol'': 30 }'

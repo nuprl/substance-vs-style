@@ -163,7 +163,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id003
   node_to: *id004
@@ -179,7 +180,8 @@ edges:
   attempt_id: 1
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id004
   node_to: *id004
@@ -194,7 +196,8 @@ edges:
   attempt_id: 2
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id004
   node_to: *id002
@@ -212,7 +215,8 @@ edges:
   attempt_id: 3
   total_attempts: 5
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id002
   node_to: *id002
@@ -232,7 +236,8 @@ edges:
   attempt_id: 4
   total_attempts: 5
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - m5
 - !Edge
   node_from: *id001
   node_to: *id005
@@ -253,7 +258,8 @@ edges:
   attempt_id: 1
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id005
   node_to: *id006
@@ -277,7 +283,8 @@ edges:
   attempt_id: 2
   total_attempts: 4
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id006
   node_to: *id007
@@ -300,7 +307,8 @@ edges:
   attempt_id: 3
   total_attempts: 4
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - m2
 - !Edge
   node_from: *id008
   node_to: *id008
@@ -319,7 +327,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - m2
 - !Edge
   node_from: *id008
   node_to: *id008
@@ -337,7 +346,8 @@ edges:
   attempt_id: 2
   total_attempts: 3
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id004
   node_to: *id002
@@ -357,7 +367,8 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id006
   node_to: *id001
@@ -377,7 +388,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - m2
 - !Edge
   node_from: *id001
   node_to: *id009
@@ -401,7 +413,8 @@ edges:
   attempt_id: 2
   total_attempts: 3
   state: fail
-  _edge_tags: null
+  _edge_tags:
+    - m3
 - !Edge
   node_from: *id001
   node_to: *id010
@@ -422,7 +435,8 @@ edges:
   attempt_id: 1
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id010
   node_to: *id001
@@ -443,7 +457,8 @@ edges:
   attempt_id: 2
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - d5
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -463,7 +478,8 @@ edges:
   attempt_id: 3
   total_attempts: 5
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - a5
 - !Edge
   node_from: *id001
   node_to: *id002
@@ -486,7 +502,8 @@ edges:
   attempt_id: 4
   total_attempts: 5
   state: success
-  _edge_tags: null
+  _edge_tags:
+    - m5
 - !Edge
   node_from: *id004
   node_to: *id002
@@ -506,5 +523,35 @@ edges:
   attempt_id: 1
   total_attempts: 2
   state: success
-  _edge_tags: null
-student_start_node_tags: {}
+  _edge_tags:
+    - a5
+student_start_node_tags: 
+  student19:
+    - 1
+    - 2
+    - 3
+  student20:
+    - 2
+    - 3
+  student36:
+    - 2
+    - 3
+  student38:
+    - 2
+  student42:
+    - 1
+    - 2
+    - 3
+    - 4
+  student43:
+    - 2
+    - 3
+    - 4
+  student57:
+    - 1
+    - 2
+    - 3
+  student77:
+    - 1
+    - 2
+    - 3

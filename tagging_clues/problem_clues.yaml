@@ -148,7 +148,13 @@ create_list:
     values in dt to the result. If value is not a key in dt, appends None.
 fib:
   signature: 'def fib(n):'
-  tags: ''
+  tags: 
+    - 1: check if a Fib number
+    - 2: returns a Boolean
+    - 3: explanation of Fib
+    - 4: construct set of Fib numbers
+    - 5: hardcodes numbers 
+    - 6: bound set
   tests:
   - input: '1'
     output: 'True'
@@ -203,8 +209,10 @@ generateCardDeck:
 getSeason:
   signature: 'def getSeason(month):'
   tags:
-  - 1: month to season
-  - 2: lowercase
+  - 1: input is string
+  - 2: month to season
+  - 3: return lowercase
+  - 4: explain which are which
   tests:
   - input: '''January'''
     output: '''winter'''
@@ -312,7 +320,11 @@ planets_mass:
     and 'Sun' if they are in planets and return the sum of the planets' masses.
 print_time:
   signature: 'def print_time(day,hour):'
-  tags: ''
+  tags: 
+    - 1: input is a string and an int
+    - 2: how to distinguish sleeping
+    - 3: how to distinguish weekday versus weekend
+    - 4: short form of day
   tests:
   - input: '''Sat'', 12'
     output: '''weekend'''
@@ -382,7 +394,12 @@ reverseWords:
   working_description: Reverses each string in words, then returns a sorted list.
 set_chars:
   signature: 'def set_chars(s,c,l):'
-  tags: ''
+  tags: 
+    - 1: input is described correctly
+    - 2: second argument is used to replace certain characters
+    - 3: third argument contains list of indices to replace
+    - 4: return string
+    - 5: handle indices outside string length
   tests:
   - input: '''Everybody loves apples.'', "u", [0,2,6,16]'
     output: '''uvurybudy loves upples.'''
@@ -434,7 +451,13 @@ sort_physicists:
     second value.
 sortedBooks:
   signature: 'def sortedBooks(books, writer):'
-  tags: ''
+  tags: 
+    - 1: takes a list of dictionaries 
+    - 2: takes an author
+    - 3: removes books not by that author
+    - 4: sorts list
+    - 5: sorts list by year
+    - 6: returns list
   tests:
   - input: '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
       ''Austen'', ''book'': ''Persuasion'', ''year'': 1818},  {''author'': ''Woolf'',

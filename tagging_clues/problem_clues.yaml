@@ -355,7 +355,12 @@ remove_odd:
   working_description: remove all elements that are int and odd from given list
 reverseWords:
   signature: 'def reverseWords(words):'
-  tags: ''
+  tags: 
+    - 1: takes a list of strings
+    - 2: reverses each word in list
+    - 3: sorts list
+    - 4: reverse before sort
+    - 5: returns list
   tests:
   - input: '[''eat'', ''tree'']'
     output: '[''eert'', ''tae'']'

@@ -209,8 +209,10 @@ generateCardDeck:
 getSeason:
   signature: 'def getSeason(month):'
   tags:
-  - 1: month to season
-  - 2: lowercase
+  - 1: input is string
+  - 2: month to season
+  - 3: return lowercase
+  - 4: explain which are which
   tests:
   - input: '''January'''
     output: '''winter'''

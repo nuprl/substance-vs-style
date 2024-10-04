@@ -320,7 +320,11 @@ planets_mass:
     and 'Sun' if they are in planets and return the sum of the planets' masses.
 print_time:
   signature: 'def print_time(day,hour):'
-  tags: ''
+  tags: 
+    - 1: input is a string and an int
+    - 2: how to distinguish sleeping
+    - 3: how to distinguish weekday versus weekend
+    - 4: short form of day
   tests:
   - input: '''Sat'', 12'
     output: '''weekend'''

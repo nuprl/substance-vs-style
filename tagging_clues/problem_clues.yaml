@@ -260,7 +260,12 @@ laugh:
     - Prefix "h" to all items. - Join the list with spaces.'
 pattern:
   signature: 'def pattern(value):'
-  tags: ''
+  tags: 
+    - 1: takes an int
+    - 2: produces a nested list
+    - 3: there are value n of inner lists
+    - 4: each inner list is from 1 to value
+    - 5: returns
   tests:
   - input: '3'
     output: '[[1,2,3],[1,2,3],[1,2,3]]'

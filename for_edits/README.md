@@ -5,8 +5,8 @@ This is for data labeling _only_ and does not contain any final projects.
 
 ## for_edits/
 Contains the final result .yaml files for three different passes on the data:
-1) the 96 problem subset for validating (two each from each problem)
-2) the remaining problems from the firstlast/successfail subset of prompts _without_ the strings tags
+1) the 96 problem subset for validating (two each from each problem) - this did not chang with the relabel, so it is the same 
+2) the remaining problems from the firstlast/successfail subset of prompts _without valid_ the strings tags
 3) the remaining problems from the firstlast/successfail subset of prompts _with_ the strings tags
 4) the .yaml comparison script used to create the decision text files to diff the two annotators
 

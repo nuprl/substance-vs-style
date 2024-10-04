@@ -448,7 +448,12 @@ student_grades:
     mapping names to grades using matching id numbers.
 subtract_add:
   signature: 'def subtract_add(lst):'
-  tags: ''
+  tags:
+    - 1: input is list
+    - 2: convert items to integers
+    - 3: alternate add and subtract
+    - 4: add is even indices and subtract is odd indices
+    - 5: return result
   tests:
   - input: '[''1'', ''2'', ''3'', ''4'']'
     output: '-2'

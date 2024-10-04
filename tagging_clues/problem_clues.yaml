@@ -148,7 +148,13 @@ create_list:
     values in dt to the result. If value is not a key in dt, appends None.
 fib:
   signature: 'def fib(n):'
-  tags: ''
+  tags: 
+    - 1: check if a Fib number
+    - 2: returns a Boolean
+    - 3: explanation of Fib
+    - 4: construct set of Fib numbers
+    - 5: hardcodes numbers 
+    - 6: bound set
   tests:
   - input: '1'
     output: 'True'

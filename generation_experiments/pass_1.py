@@ -127,8 +127,9 @@ def main():
         filtered_orig_results_changed = [r for r in orig_results if r["__index_level_0__"] in changed_indices]
         num_problems_changed = len(changed_results)
         assert len(filtered_orig_results_changed) == num_problems_changed
-        pass_1_original_changed = np.mean([r["pass@1"] for r in filtered_orig_results_changed])
-        pass_1_updated_changed = np.mean([r["pass@1"] for r in changed_results])
+        pass_1_original_changed = np.mean([r["pass@1"] for r in filtered_orig_results_changed]) if filtered_orig_results_changed else float('nan')
+        pass_1_updated_changed = np.mean([r["pass@1"] for r in changed_results]) if changed_results else float('nan')
+
         delta_changed = pass_1_updated_changed - pass_1_original_changed
         print(
             f"{name},{pass_1_original_changed:.4f},{pass_1_updated_changed:.4f},{num_problems_changed},{delta_changed:.4f}")

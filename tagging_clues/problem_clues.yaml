@@ -390,7 +390,12 @@ reverseWords:
   working_description: Reverses each string in words, then returns a sorted list.
 set_chars:
   signature: 'def set_chars(s,c,l):'
-  tags: ''
+  tags: 
+    - 1: input is described correctly
+    - 2: second argument is used to replace certain characters
+    - 3: third argument contains list of indices to replace
+    - 4: return string
+    - 5: handle indices outside string length
   tests:
   - input: '''Everybody loves apples.'', "u", [0,2,6,16]'
     output: '''uvurybudy loves upples.'''

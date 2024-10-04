@@ -265,7 +265,13 @@ pattern:
   working_description: Unknown, need to generate
 percentWin:
   signature: 'def percentWin(guess,answers):'
-  tags: ''
+  tags: 
+    - 1: takes two lists
+    - 2: compares items from both lists and counts matches
+    - 3: computes percent match
+    - 4: rounds to whole percent
+    - 5: convert to string and add "%" sign
+    - 6: returns
   tests:
   - input: '[''1'', ''1'', ''X'', ''2''], [''1'', ''1'', ''1'', ''2'']'
     output: '''75%'''

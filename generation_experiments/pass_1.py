@@ -65,7 +65,7 @@ def check_changed(data):
     match = re.search(r'"""\s*(.*?)\s*"""', prompt, re.DOTALL)
     if match:
         content = match.group(1)
-        return content == submitted_text
+        return content != submitted_text
     else:
         raise ValueError("No content found between triple quotes.")
 

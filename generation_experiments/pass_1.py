@@ -58,17 +58,31 @@ def estimator(n: int, c: int, k: int) -> float:
         return 1.0
     return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
 
+import re
+def check_changed(data):
+    submitted_text = data['submitted_text']
+    prompt = data['prompt']
+    match = re.search(r'"""\s*(.*?)\s*"""', prompt, re.DOTALL)
+    if match:
+        content = match.group(1)
+        return content == submitted_text
+    else:
+        raise ValueError("No content found between triple quotes.")
 
 def for_file(path):
     data = gunzip_json(path)
     if data is None:
         return None
+
+    changed = check_changed(data)
+        
     n = len(data["results"])
     c = len([True for r in data["results"] if r["status"]
             == "OK" and r["exit_code"] == 0])
     __index_level_0__ = data["__index_level_0__"]
     return {
         "__index_level_0__":__index_level_0__,
+        "changed":changed,
         "pass@1": estimator(n, c, 1),
         "pass@10": estimator(n, c, 10),
         "pass@100": estimator(n, c, 100),
@@ -93,22 +107,31 @@ def main():
     orig_results = [r for r in orig_results if r is not None]
     
     if not args.suppress_header:
-        print("Dataset,Original_Pass@1,Updated_Pass@1,NumProblems")
+        print("Dataset,Original_Pass@1,Updated_Pass@1,Original_Pass@1_Changed,Updated_Pass@1_Changed,NumProblems_Changed,Delta_Pass@1_Changed")
     for d in args.dirs:
+        name = d.split("/")[-2] if d.split("/")[-1] != "" else d.split("/")[-3]
         results = [for_file(p) for p in itertools.chain(
             Path(d).glob("*.results.json"), Path(d).glob("*.results.json.gz"))]
-        # results = [r for r in results if r is not None]
         results = {r["__index_level_0__"]: r for r in results if r is not None}
         results = list(results.values())
         indices = [r["__index_level_0__"] for r in results]
-        name = d.split("/")[-2] if d.split("/")[-1] != "" else d.split("/")[-3]
-        num_problems = len(results)
         filtered_orig_results = [r for r in orig_results if r["__index_level_0__"] in indices]
+        num_problems = len(results)
         assert len(filtered_orig_results) == num_problems
         pass_1_original = np.mean([r["pass@1"] for r in filtered_orig_results])
         pass_1_updated = np.mean([r["pass@1"] for r in results])
+
+        changed_results = {r["__index_level_0__"]:r for r in results if r["changed"]}
+        changed_results = list(changed_results.values())
+        changed_indices = [r["__index_level_0__"] for r in changed_results]
+        filtered_orig_results_changed = [r for r in orig_results if r["__index_level_0__"] in changed_indices]
+        num_problems_changed = len(changed_results)
+        assert len(filtered_orig_results_changed) == num_problems_changed
+        pass_1_original_changed = np.mean([r["pass@1"] for r in filtered_orig_results_changed])
+        pass_1_updated_changed = np.mean([r["pass@1"] for r in changed_results])
+        delta_changed = pass_1_updated_changed - pass_1_original_changed
         print(
-            f"{name},{pass_1_original},{pass_1_updated},{num_problems}")
+            f"{name},{pass_1_original:.4f},{pass_1_updated:.4f},{num_problems},{pass_1_original_changed:.4f},{pass_1_updated_changed:.4f},{num_problems_changed},{delta_changed:.4f}")
 
 if __name__ == "__main__":
     main()

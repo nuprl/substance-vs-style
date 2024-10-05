@@ -234,6 +234,41 @@ KNOWN_EXCEPTIONS = {
             }
         }
     },
+    "subtract_add": {
+        "start_node": {
+            "student68": {
+                0: "Model misinterprets odd and even indexing. 0 indexing issue."
+            }
+        },
+        "neutral": {
+            "student29": {
+                1: "Model ignored instruction of odd/even. 0 indexing issue"
+            },
+            "student66": {
+                3: "Hardcoded"
+            },
+            "student68": {
+                1: "Wrong base case of [], student did not consider.",
+                2: "Model adds an additional store operation for first element, which is wrong"
+            },
+            "student70": {
+                2: "Model out of tokens"
+            }
+        },
+        "fail": {
+            "student70": {
+                4: "Clue 2 is worded ambiguously. Treat all elements as integers could mean list of integers."
+            }
+        },
+        "cycles": {
+            "student29": {
+                1: "Model ignored instruction of odd/even. 0 indexing issue"
+            },
+            "student66": {
+                3: "Hardcoded, student wrong."
+            }
+        }
+    },
     # Arjun
     "laugh": {
         "neutral": {

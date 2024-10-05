@@ -1,9 +1,11 @@
 from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, IGNORE_SUCCESS
-from .graph_utils import load_graph, Graph, Edge, get_student_subgraph
+from .graph_utils import load_graph, Graph, Edge, get_student_subgraph, Node
 import itertools as it
 from typing import List, Union, Dict
 import json
 import pandas as pd
+import yaml
+import networkx as nx
 
 class ContinuityError(Exception):
     pass
@@ -19,7 +21,7 @@ def is_known_exception(e: Edge, problem: str, key: str) -> Union[bool, ValueErro
     """
     Check if this edge/problem is a known exception
     """
-    exception_keys = ["cycles","breakout","success","fail","neutral"]
+    exception_keys = ["cycles","breakout","success","fail","neutral", "start_node"]
     if key not in exception_keys:
         raise ValueError(f"Received key {key}, expected one of known keys: {exception_keys}")
     try:
@@ -83,6 +85,15 @@ def check_clues(graph: Graph, verbose:bool=True) -> Union[ValueError,bool]:
     Checks that only successful edges end with success clues,
     otherwise raises ValueError.
     """
+    for student,start_clues in graph.get_start_node_states().items():
+        dummy_edge = Edge.dummy_edge()
+        dummy_edge.username = student
+        dummy_edge.attempt_id = 0
+        if is_known_exception(dummy_edge,problem=graph.problem,key="start_node"):
+            continue
+        elif start_clues == SUCCESS_CLUES[graph.problem]:
+            raise ValueError(f"False start fail: {student}: {start_clues}")
+        
     for e in graph.edges:
         e_dict = json.dumps({**_edge_to_dict(e, verbose), "problem_clues": graph.problem_clues}, indent=4)
         if is_known_exception(e, graph.problem, key=e.state):

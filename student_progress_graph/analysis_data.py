@@ -1,16 +1,3 @@
-"""
-[X] add_up
-[X] add_int
-[X] topScores
-- total_bill
-- laugh
-- translate
-- planets_mass
-- altText
-- add_word
-- assessVowels
-- changeSection
-"""
 
 SUCCESS_CLUES = {
     "add_up": [1,2,3,4,5],
@@ -20,7 +7,7 @@ SUCCESS_CLUES = {
     "laugh": [1,2,3,4,5,6],
     # "translate": [1,2,3,4,5,6,7],
     "planets_mass": [1,2,3,4,5,6],
-    # "altText": [1,2],
+    "altText": [1,2,3,4],
     # "readingIceCream": [1,2,3,4,5,6,7]
     
 }
@@ -49,19 +36,8 @@ KNOWN_EXCEPTIONS = {
             "student24": {1: """incomplete clues is successful due to use of python try-except
                           (student mentions 'error' in prompt)"""}
         },
-        "neutral": {
-            "student65": {1: "has all clues, but still fails because model interprets 'number' as int",
-                          2: "same as previous attempt",
-                          3: "same as previous attempt",
-                          4: "same as previous attempt"}
-        },
         "fail":{
             "student65": {5: "has all clues, but still fails because model interprets 'number' as int"}
-        },
-        "cycles": {
-            "student65": {
-                2: "not an issue, since first edge in loop"
-            }
         },
         "breakout": {
             "student31":{
@@ -220,6 +196,13 @@ KNOWN_EXCEPTIONS = {
                 2: "Interesting case where planets the veriable and planets the concept is conflated by model.",
             }
         },
+        "start_node":{
+            "student46": {
+                0: "This student is an interesting example where by providing LESS words, model predicts correct. \
+                    This is because originally, model is conflating instructions. Student breaks out of loop by removing \
+                        instructions."
+            },
+        }
     },
     # Arjun
     "laugh": {
@@ -233,14 +216,61 @@ KNOWN_EXCEPTIONS = {
                 17: "Could argue that breakout edge is just loop cut short because student gives up"
             }
         }
+    },
+    "altText": {
+        "success": {
+            "student75": {
+                2: "Student is trivially correct because test cases not exhaustive."
+            }
+        },
+        "neutral": {
+            "student23": {
+                3: "Interesting case where student has all clues, but model misinterprets student in \
+                    'technically' correct way, but a way a human would never do--order of output.",
+                4: "same as previous attempt",
+                5: "same as previous attempt"
+            },
+            "student35": {
+                1: "Same model misinterpretation issue as 23. Model does not consider order of output."
+            },
+            "student40": {
+                1: "Model runs out of tokens but would be correct.",
+                2: "same as previous attempt",
+                3: "same as previous attempt",
+                4: "same as previous attempt"
+            },
+            "student63": {
+                1: "hallucination",
+            }
+        },
+        "fail": {
+            "student60": {
+                2: "Model includes space in alternating letters"
+            },
+            "student63": {
+                2: "Same model misinterpretation as 23."
+            }
+        },
+        "start_node": {
+            "student35": {
+                0: "Same model misinterpretation issue as 23."
+            },
+            "student40": {
+                0: "Model runs out of tokens"
+            },
+            "student63": {
+                0: "Same misinterpretation as 23."
+            }
+            
+        }
     }
     
 }
 
 IGNORE_SUCCESS = {
-    "planets_mass": [
-        "student14", # student is trivially successful due to lacking test coverage
-    ]
+    # student is trivially successful due to lacking test coverage
+    "planet_mass" : ["student14"],
+    "altText": ["student75"]
 }
 
 

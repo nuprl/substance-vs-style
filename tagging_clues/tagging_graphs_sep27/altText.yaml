@@ -118,6 +118,7 @@ edges:
   username: student23
 - _edge_tags:
   - l2
+  - a3
   attempt_id: 3
   completion_from: |-
     if len(s) == 1:
@@ -1004,6 +1005,8 @@ edges:
   username: student59
 - _edge_tags:
   - l1
+  - a2
+  - d4
   attempt_id: 1
   completion_from: |
     result = ""
@@ -1061,6 +1064,7 @@ edges:
   username: student60
 - _edge_tags:
   - m2
+  - a4
   attempt_id: 2
   completion_from: |
     newString = ""
@@ -1345,23 +1349,34 @@ student_start_node_tags:
   student23:
     - 1
     - 2
+    - 4
   student35:
     - 1
     - 2
+    - 3
+    - 4
   student40:
     - 1
     - 2
+    - 3
+    - 4
   student44:
     - 1
     - 2
+    - 4
   student59:
     - 1
+    - 3
   student60:
     - 1
-    - 2
+    - 3
+    - 4
   student63:
     - 1
     - 2
+    - 3
+    - 4
   student75:
     - 1
     - 2
+    - 3

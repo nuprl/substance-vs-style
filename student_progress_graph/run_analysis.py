@@ -14,7 +14,7 @@ from .analysis_utils import *
 from scipy import stats
 from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
-import sys
+import yaml
 import contextlib
 '''
 Analyzing common patterns in graphs
@@ -66,8 +66,14 @@ def run_RQ1(graph: Graph, outdir:str):
     print("## Cycle success rate summary:")
     df = df_cycle_summary(cycle_summary, graph)
     
-    df["is_success"] = df.apply(lambda x: False if x["student"] in IGNORE_SUCCESS[graph.problem] else x["is_success"],
-                                axis=1)
+    def _check_success(item):
+        if graph.problem in IGNORE_SUCCESS.keys() and \
+            item["student"] in IGNORE_SUCCESS[graph.problem]:
+                return False
+        else:
+            return item["is_success"]
+        
+    df["is_success"] = df.apply(_check_success,axis=1)
     print(df)
      
     tot_succ = df[df["is_success"]]
@@ -89,8 +95,9 @@ def run_RQ1(graph: Graph, outdir:str):
         # num_fail_cycle / tot_cycle
         likelihood_fail_no_cycle = len(fail_no_cycle) / len(tot_no_cycle)
         likelihood_fail_cycle = len(fail_cycle) / len(tot_cycle)
-        print(f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}")
-        assert likelihood_fail_cycle > likelihood_fail_no_cycle, "Found that cycle is not more likely to fail."
+        likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
+        print(likelihood_msg)
+        assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
 
         # check that more students that fail have cycles, than students that succeed have cycles
         THRESHHOLD = 0.54

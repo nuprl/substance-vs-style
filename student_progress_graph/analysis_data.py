@@ -12,8 +12,9 @@ SUCCESS_CLUES = {
     "altText": [1,2,3,4],
     "readingIceCream": [1,2,3,4,5,6,7],
     "changeSection": [1,2,3,4],
-    "subtract_add": [1,2,3,4,5]
-    # 14 more to go
+    "subtract_add": [1,2,3,4,5],
+    "increaseScore": [1,2,3,4,6]
+    # 13 more to go
 }
 
 KNOWN_EXCEPTIONS = {
@@ -282,6 +283,31 @@ KNOWN_EXCEPTIONS = {
             }
         }
     },
+    "increaseScore": {
+        "start_node": {
+            "student33": {
+                0: "Model uses if instead of elif, thus answer is wrong though prompt correct."
+            }
+        },
+        "success": {
+            "student23": {
+                4: "sub clue 3 for clue 5. [1,2,3,4,6] and [1,3,4,5,6] both correct + \
+                    student reaches success by attempt 1"
+            },
+            "student50": {
+                1: "6 implicit. 4 missing, but tests pass because of coverage."
+            },
+            "student59": {
+                1: "[1,3,4,5,6] ok"
+            },
+            "student60": {
+                2: "[1,3,4,5,6] ok"
+            },
+            "student75": {
+                1: "hardcoded"
+            }
+        }
+    },
     # Arjun
     "laugh": {
         "neutral": {
@@ -457,6 +483,7 @@ IGNORE_SUCCESS = {
     "planet_mass" : ["student14"],
     "altText": ["student75"],
     "fib": ["student11", "student2","student22"],
+    "increaseScore": ["student75"]
 }
 
 

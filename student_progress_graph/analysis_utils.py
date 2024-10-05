@@ -1,7 +1,7 @@
 from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, IGNORE_SUCCESS
 from .graph_utils import load_graph, Graph, Edge, get_student_subgraph, Node
 import itertools as it
-from typing import List, Union, Dict
+from typing import List, Union, Dict, Tuple
 import json
 import pandas as pd
 import yaml
@@ -10,7 +10,19 @@ import networkx as nx
 class ContinuityError(Exception):
     pass
 
-
+def conditional_prob(var_a: str, var_b: str, df: pd.DataFrame) -> Tuple[float]:
+    """
+    probability of A|B
+    
+    P(A|B) = P(AnB)/P(B)
+    
+    """
+    prob_a = df[var_a].mean()
+    prob_b = df[var_b].mean()
+    prob_anb = (df[var_a] & df[var_b]).mean()
+    prob_a_given_b = prob_anb / prob_b
+    return prob_a, prob_b, prob_anb, prob_a_given_b
+    
 def is_tag_kind(edge_tag: List[Union[str, int]], tag_kinds:List[str]) -> bool:
     """
     Checks if an edge tag is a modifier: l or m

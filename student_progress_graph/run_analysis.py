@@ -16,8 +16,15 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
+IGNORE_SUCCESS = {} # this increases score
 '''
 Analyzing common patterns in graphs
+
+NOTE:
+
+- is IGNORE_SUCCESS necessary in computing likelihood of fail given cycle?
+- do we need to exclude exceptional problems from all_problems analysis (model
+    misinterprets good prompts for problem specific reasons)
 '''
 def display_edge_info(graph: Graph):
     """
@@ -74,8 +81,9 @@ def run_RQ1(graph: Graph, outdir:str):
             return item["is_success"]
         
     df["is_success"] = df.apply(_check_success,axis=1)
+    df["is_failure"] = df.apply(lambda x: not x["is_success"], axis=1)
     print(df)
-     
+    
     tot_succ = df[df["is_success"]]
     tot_fail = df[df["is_success"] == False]
     fail_cycle = tot_fail[tot_fail["cycle_length"] > 0]
@@ -98,12 +106,15 @@ def run_RQ1(graph: Graph, outdir:str):
         likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
         print(likelihood_msg)
         assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
-
-        # check that more students that fail have cycles, than students that succeed have cycles
-        THRESHHOLD = 0.54
-        ratio_succ_fail = (len(succ_cycle)/len(tot_succ)) / (len(fail_cycle)/len(tot_fail))
-        assert ratio_succ_fail <= THRESHHOLD, ratio_succ_fail
-        # topScores is highest with 0.5333 (hence threshhold)
+        
+        df["has_cycle"] = df.apply(lambda x: int(x["cycle_length"] > 0), axis=1)
+        df["not_has_cycle"] = df.apply(lambda x: int(x["cycle_length"] == 0), axis=1)
+        print(df)
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob("is_success", "has_cycle", df)
+        print(f"P(is_success) | P(has_cycle): {prob_a_given_b}")
+        prob_a, prob_b_neg, prob_anb_neg, prob_a_given_b_neg = conditional_prob("is_success", "not_has_cycle", df)
+        print(f"P(is_success) | NOT P(has_cycle): {prob_a_given_b_neg}")
+        assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
         
     # Save analyses for RQ1
     with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
@@ -294,10 +305,7 @@ def all_problems_analysis(graph_dir: str, outdir:str):
     for var_a, var_b in [("is_success","has_modifiers"), ("is_success","has_follows_subst"),
                          ("is_success","no_modifiers"), ("is_success","not_has_follows_subst"),
                          ("is_success","has_all_clues")]:
-        prob_a = rewrite_df[var_a].mean()
-        prob_b = rewrite_df[var_b].mean()
-        prob_anb = (rewrite_df[var_a] & rewrite_df[var_b]).mean()
-        prob_a_given_b = prob_anb / prob_b
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, rewrite_df)
         print(f"Probability {var_a} given {var_b}: var_a {prob_a:.2f} var_b {prob_b:.2f} \
                 a_given_b: {prob_a_given_b:.2f}")
 

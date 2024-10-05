@@ -288,6 +288,8 @@ def all_problems_analysis(graph_dir: str, outdir:str):
     Keep in mind this will not be high because we still need 
     all the clues
     
+    NOTE: P(A|B) will be higher if we compute SUCCESS over all students?
+    think maybe its the same.
     """
     for var_a, var_b in [("is_success","has_modifiers"), ("is_success","has_follows_subst"),
                          ("is_success","no_modifiers"), ("is_success","not_has_follows_subst"),

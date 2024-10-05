@@ -6,11 +6,14 @@ SUCCESS_CLUES = {
     "total_bill": [1,2,3,4,5,6,7,8],
     "laugh": [1,2,3,4,5,6],
     # "translate": [1,2,3,4,5,6,7],
+    # "combine": [1,2,3],
+    "fib": [1,2,3],
     "assessVowels": [1,2,3,4],
     "planets_mass": [1,2,3,4,5,6],
     "altText": [1,2,3,4],
     "readingIceCream": [1,2,3,4,5,6,7],
     "changeSection": [1,2,3,4],
+    "subtract_add": [1,2,3,4,5]
     
 }
 KNOWN_EXCEPTIONS = {
@@ -206,6 +209,31 @@ KNOWN_EXCEPTIONS = {
             },
         }
     },
+    "fib": {
+        "success": {
+            "student11": {
+                1: "Ignore because hardcoded numbers",
+            },
+            "student13": {
+                10: "No need for clue 3 explanation of fib. It's a problem seen by models."
+            },
+            "student2": {
+                3: "Hardcoded"
+            },
+            "student22": {
+                2: "Hardcoded"
+            },
+            "student37": {
+                1: "No need for clue 3 explanation of fib. It's a problem seen by models."
+            }
+        },
+        "breakout": {
+            "student2": {
+                3: "Interesting case where model ignores wrong hardcoded instruction in favor of writing \
+                a fib function (not is_fib as required). Only on 3rd attempt does model follow hardcoded"
+            }
+        }
+    },
     # Arjun
     "laugh": {
         "neutral": {
@@ -321,13 +349,55 @@ KNOWN_EXCEPTIONS = {
               0: "model misinterprets instruction, backwards as reverse over of splits, not reverse letters"
             },
             "student21": {
-                0: "same as student10; language ambiguity"
+                0: "same as student10; language ambiguity- 'concatenated' means append to end, model confised"
             },
             "student26": {
                 0: "1-index instead of 0-index"
             },
             "student30": {
                 0: "Model misinterprets before as after"
+            }
+        },
+        "success": {
+            "student25": {
+                1: "Interesting case where model manages to successfully interpret ambiguous language of student."
+            }
+        },
+        "fail": {
+            "student18":{
+                3: "Model does wrong recursion order",
+            },
+            "student21": {
+                5: "same error as previous attempt",
+            },
+            "student30": {
+                4: "same as previous attempt"
+            }
+        },
+        "neutral":{
+            "student26": {
+                1: "display instead of return makes model misinterpret print instead of return"
+            },
+            "student21": {
+                1: "same error as previous attempt",
+                2: "same error as previous attempt",
+                3: "same error as previous attempt",
+                4: "same error as previous attempt",
+            },
+            "student30": {
+                # note student 30 has a success at attempt 1, not recorded correctly
+                2: "model misinterpretation same as student10",
+                3: "model misinterprets order",
+            }
+        },
+        "cycles": {
+            "student30": {
+                3: "model misinterpretation, same as previous",
+            }
+        },
+        "breakout": {
+            "student21": {
+                2: "breakout goes into another cycle"
             }
         }
     }
@@ -337,7 +407,8 @@ KNOWN_EXCEPTIONS = {
 IGNORE_SUCCESS = {
     # student is trivially successful due to lacking test coverage
     "planet_mass" : ["student14"],
-    "altText": ["student75"]
+    "altText": ["student75"],
+    "fib": ["student11", "student2","student22"]
 }
 
 

@@ -1,7 +1,7 @@
 problems=("topScores" "total_bill" "add_up" "add_int" "laugh" "readingIceCream" \
         "assessVowels" \
         # EXCEPTIONS
-         "planets_mass" "altText" "changeSection")
+         "planets_mass" "altText" "changeSection" "fib")
 
 echo ${problems[@]}
 

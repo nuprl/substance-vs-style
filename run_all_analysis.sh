@@ -1,7 +1,8 @@
 problems=("topScores" "total_bill" "add_up" "add_int" "laugh" "readingIceCream" \
         "assessVowels" \
-         "planets_mass" "altText")
-# planet mass, alt text fail cycles check
+        # EXCEPTIONS
+         "planets_mass" "altText" "changeSection")
+
 echo ${problems[@]}
 
 for prob in ${problems[@]};

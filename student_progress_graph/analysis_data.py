@@ -5,8 +5,7 @@ SUCCESS_CLUES = {
     "topScores": [1,2,3,4,5,6],
     "total_bill": [1,2,3,4,5,6,7,8],
     "laugh": [1,2,3,4,5,6],
-    # "translate": [1,2,3,4,5,6,7],
-    # "combine": [1,2,3],
+    "translate": [1,2,3,4,5,6,7],
     "fib": [1,2,3],
     "assessVowels": [1,2,3,4],
     "planets_mass": [1,2,3,4,5,6],
@@ -14,8 +13,9 @@ SUCCESS_CLUES = {
     "readingIceCream": [1,2,3,4,5,6,7],
     "changeSection": [1,2,3,4],
     "subtract_add": [1,2,3,4,5]
-    
+    # 14 more to go
 }
+
 KNOWN_EXCEPTIONS = {
     # fran
     "add_int": {
@@ -269,6 +269,19 @@ KNOWN_EXCEPTIONS = {
             }
         }
     },
+    "translate": {
+        "success": {
+            "student50": {
+                1: "missing clues 3,6,7 are implicit"
+            },
+            "student59": {
+                1: "missing clue 3,7 are implicit"
+            },
+            "student60": {
+                3: "missing clue 3,7 are implicit"
+            }
+        }
+    },
     # Arjun
     "laugh": {
         "neutral": {
@@ -443,7 +456,7 @@ IGNORE_SUCCESS = {
     # student is trivially successful due to lacking test coverage
     "planet_mass" : ["student14"],
     "altText": ["student75"],
-    "fib": ["student11", "student2","student22"]
+    "fib": ["student11", "student2","student22"],
 }
 
 
@@ -555,7 +568,7 @@ if __name__ == "__main__":
     for each problem check that the student exceptions
     are indeed exceptions, i.e not majority
     """
-    PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_STRICT
+    PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_FULL
     THRESHOLD = 0.4
     failing_problems = []
     for prob in SUCCESS_CLUES.keys():

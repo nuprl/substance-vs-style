@@ -1,5 +1,5 @@
 problems=("topScores" "total_bill" "add_up" "add_int" "laugh" "readingIceCream" \
-        "assessVowels" \
+        "assessVowels" "translate"\
         # EXCEPTIONS
          "planets_mass" "altText" "changeSection" "fib" "subtract_add")
 

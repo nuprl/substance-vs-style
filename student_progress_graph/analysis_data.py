@@ -8,7 +8,7 @@ SUCCESS_CLUES = {
     # "translate": [1,2,3,4,5,6,7],
     "planets_mass": [1,2,3,4,5,6],
     "altText": [1,2,3,4],
-    # "readingIceCream": [1,2,3,4,5,6,7]
+    "readingIceCream": [1,2,3,4,5,6,7]
     
 }
 KNOWN_EXCEPTIONS = {
@@ -262,6 +262,26 @@ KNOWN_EXCEPTIONS = {
                 0: "Same misinterpretation as 23."
             }
             
+        },
+        "cycles": {
+            "student23": {
+                3: "Interesting case where student has all clues, but model misinterprets student in \
+                    'technically' correct way, but a way a human would never do--order of output. Thus, keeps cycling.",
+            },
+            "student35": {
+                1: "Same model misinterpretation issue as 23."
+            },
+            "student40": {
+                3: "Model runs out of tokens error."
+            }
+        },
+        "breakout": {
+            "student23": {
+                4: "Same model order misinterpretation issue"
+            },
+            "student40": {
+                5: "Breaksout because model manages to fit within token limit"
+            }
         }
     }
     

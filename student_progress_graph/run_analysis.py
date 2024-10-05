@@ -118,17 +118,6 @@ def run_RQ1(graph: Graph, outdir:str):
     except:
         pass
     
-def run_RQ2(graph: Graph, outdir:str):
-    os.makedirs(f"{outdir}/RQ2", exist_ok=True)
-    
-    ## correlate length of path for student with success
-    student_paths = get_path_clues(graph)
-    student_success = graph.get_successful_students()
-    
-    # rewriting is how students debug, but not often helps
-    # how often does final rewrite lead to success?
-    
-    
     
 def single_problem_analysis(graph_yaml: str, outdir:str, experiments_to_run: List[int]):
     # load tagged graph and problem info
@@ -151,12 +140,8 @@ def single_problem_analysis(graph_yaml: str, outdir:str, experiments_to_run: Lis
     print(f"Success node {success_node.id}")
     
     ## RQ1: cycle behavior
-    if 1 in experiments_to_run:
-        run_RQ1(graph, outdir)
+    run_RQ1(graph, outdir)
     
-    ## RQ2: Order
-    if 2 in experiments_to_run:
-        run_RQ2(graph, outdir)
 
 def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
     results = ""
@@ -256,20 +241,27 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     rewrite_data = []
     for problem,student_edits in problem_edit_history.items():
         succ_students = prob_to_graph[problem].get_successful_students()
+        
         for student, edits in student_edits.items():
             count_follows_subst = 0
             count_modifiers = 0
             for (e1, e2) in zip(edits, edits[1:]):
-                if is_tag_kind(e1, ["l","m"]):
+                if is_tag_kind(e1, ["l","m","0"]):
                     count_modifiers += 1
-                    if is_tag_kind(e2, ["a","d"]):
+                    if is_tag_kind(e2, ["a"]):
                         count_follows_subst += 1
+
+            final_clue = prob_to_graph[problem].student_clues_tracker[student][-1][-1]
             rewrite_data.append({"student":student,
                                  "problem":problem,
                                 "edits": edits,
+                                "has_all_clues": len(final_clue) == len(SUCCESS_CLUES[problem]),
                                 "edits_len": len(edits),
                                 "has_modifiers": count_modifiers>0,
+                                "no_modifiers": count_modifiers == 0,
                                 "count_modifiers": count_modifiers,
+                                "has_follows_subst": count_follows_subst > 0,
+                                "not_has_follows_subst": count_follows_subst == 0,
                                 "count_follows_subst": count_follows_subst,
                                 "is_success": student in succ_students})
     
@@ -277,6 +269,30 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     rewrite_df = pd.DataFrame(rewrite_data)
     rewrite_df["frequency_follows_subst"] = rewrite_df["count_follows_subst"] / rewrite_df["count_modifiers"]
     print(display_pearsonr_results(rewrite_df, [("has_modifiers","is_success")]))
+    
+    # how often has_follow_subst + is_success
+    """
+    probability of A|B
+    A: is_success
+    B: has_follows_subst
+    
+    P(A|B) = P(AnB)/P(B)
+    
+    Keep in mind this will not be high because we still need 
+    all the clues
+    
+    """
+    for var_a, var_b in [("is_success","has_modifiers"), ("is_success","has_follows_subst"),
+                         ("is_success","no_modifiers"), ("is_success","not_has_follows_subst"),
+                         ("is_success","has_all_clues")]:
+        prob_a = rewrite_df[var_a].mean()
+        prob_b = rewrite_df[var_b].mean()
+        prob_anb = (rewrite_df[var_a] & rewrite_df[var_b]).mean()
+        prob_a_given_b = prob_anb / prob_b
+        print(f"Probability {var_a} given {var_b}: var_a {prob_a:.2f} var_b {prob_b:.2f} \
+                a_given_b: {prob_a_given_b:.2f}")
+
+    # correlation over filtered df
     rewrite_df = rewrite_df[rewrite_df["has_modifiers"]]
     assert not rewrite_df.isna().any().any()
     print(rewrite_df)
@@ -284,9 +300,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     print(rewrite_df[["frequency_follows_subst","is_success"]].corr())
     variables = [("frequency_follows_subst","is_success"), ("count_modifiers","is_success")]
     print(display_pearsonr_results(rewrite_df, variables))
-    rewrite_df.to_csv("rewrites_data.csv")
-    
-            
+    rewrite_df.to_csv("rewrites_data.csv")     
     
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)
@@ -311,6 +325,5 @@ if __name__=="__main__":
     parser.add_argument("graph_yaml_or_dir")
     parser.add_argument("outdir")
     parser.add_argument("problem_clues_yaml")
-    parser.add_argument("--rq", nargs="+", default= [1,2], type=int)
     args = parser.parse_args()
     main(args)

@@ -60,11 +60,11 @@ def estimator(n: int, c: int, k: int) -> float:
 
 import re
 def check_changed(data):
-    submitted_text = data['submitted_text']
+    submitted_text = data['submitted_text'].strip().lstrip()
     prompt = data['prompt']
     match = re.search(r'"""\s*(.*?)\s*"""', prompt, re.DOTALL)
     if match:
-        content = match.group(1)
+        content = match.group(1).strip().lstrip()
         return content != submitted_text
     else:
         raise ValueError("No content found between triple quotes.")
@@ -105,7 +105,6 @@ def main():
     orig_results = [for_file(p) for p in itertools.chain(
             Path(args.orig_dir).glob("*.results.json"), Path(args.orig_dir).glob("*.results.json.gz"))]
     orig_results = [r for r in orig_results if r is not None]
-    
     if not args.suppress_header:
         print("Dataset,Original_Pass@1,Updated_Pass@1,NumProblems,Delta_Pass@1")
     for d in args.dirs:

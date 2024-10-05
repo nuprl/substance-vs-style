@@ -35,7 +35,8 @@ def gunzip_json(path: Path) -> Optional[dict]:
     """
     try:
         with gzip.open(path, "rt") as f:
-            return json.load(f)
+            data = json.load(f)
+            return data
     except Exception as e:
         return None
 
@@ -69,20 +70,47 @@ def check_changed(data):
     else:
         raise ValueError("No content found between triple quotes.")
 
+def check_success(data):
+    subset = data['subset']
+    success = 'success' in subset
+    return success
+    
+    
 def for_file(path):
     data = gunzip_json(path)
     if data is None:
         return None
-
     changed = check_changed(data)
+    success = check_success(data)
         
+    n = len(data["results"])
+    c = len([True for r in data["results"] if r["status"]
+            == "OK" and r["exit_code"] == 0])
+    __index_level_0__ = data["__index_level_0__"]
+
+    return {
+        "__index_level_0__":__index_level_0__,
+        "changed":changed,
+        "success":success,
+        "pass@1": estimator(n, c, 1),
+        "pass@10": estimator(n, c, 10),
+        "pass@100": estimator(n, c, 100),
+        "n": n,
+        "c": c,
+        "temperature": data["temperature"] if "temperature" in data else 0.2
+    }
+
+    
+def for_file_orig(path):
+    data = gunzip_json(path)
+    if data is None:
+        return None
     n = len(data["results"])
     c = len([True for r in data["results"] if r["status"]
             == "OK" and r["exit_code"] == 0])
     __index_level_0__ = data["__index_level_0__"]
     return {
         "__index_level_0__":__index_level_0__,
-        "changed":changed,
         "pass@1": estimator(n, c, 1),
         "pass@10": estimator(n, c, 10),
         "pass@100": estimator(n, c, 100),
@@ -102,7 +130,7 @@ def main():
         "dirs", type=str,  help="Directories with results. ", nargs="+")
     args = parser.parse_args()
     
-    orig_results = [for_file(p) for p in itertools.chain(
+    orig_results = [for_file_orig(p) for p in itertools.chain(
             Path(args.orig_dir).glob("*.results.json"), Path(args.orig_dir).glob("*.results.json.gz"))]
     orig_results = [r for r in orig_results if r is not None]
     if not args.suppress_header:
@@ -120,7 +148,7 @@ def main():
         # pass_1_original = np.mean([r["pass@1"] for r in filtered_orig_results])
         # pass_1_updated = np.mean([r["pass@1"] for r in results])
 
-        changed_results = {r["__index_level_0__"]:r for r in results if r["changed"]}
+        changed_results = {r["__index_level_0__"]:r for r in results if r["changed"] and r["success"]}
         changed_results = list(changed_results.values())
         changed_indices = [r["__index_level_0__"] for r in changed_results]
         filtered_orig_results_changed = [r for r in orig_results if r["__index_level_0__"] in changed_indices]

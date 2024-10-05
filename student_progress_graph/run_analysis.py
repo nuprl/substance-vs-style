@@ -119,7 +119,7 @@ def run_RQ1(graph: Graph, outdir:str):
         pass
     
     
-def single_problem_analysis(graph_yaml: str, outdir:str, experiments_to_run: List[int]):
+def single_problem_analysis(graph_yaml: str, outdir:str):
     # load tagged graph and problem info
     graph = load_graph(graph_yaml)
     assert graph.edges[0]._edge_tags != None, "Must tag graph first!"
@@ -151,7 +151,7 @@ def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> 
         results += "\n" + res
     return results
         
-def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[int]):
+def all_problems_analysis(graph_dir: str, outdir:str):
     graphs = []
     prob_to_graph = {}
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):
@@ -310,10 +310,10 @@ def main(args):
         with contextlib.redirect_stdout(log_fp), contextlib.redirect_stderr(log_fp):
             if os.path.isdir(Path(args.graph_yaml_or_dir)):
                 print("# Analyzing all problems that have been reviewed")
-                all_problems_analysis(args.graph_yaml_or_dir, args.outdir, args.rq)
+                all_problems_analysis(args.graph_yaml_or_dir, args.outdir)
             else:
                 print(f"# Analyzing single problem {os.path.basename(args.graph_yaml_or_dir)}")
-                single_problem_analysis(args.graph_yaml_or_dir, args.outdir, args.rq)
+                single_problem_analysis(args.graph_yaml_or_dir, args.outdir)
     
     # print logfile at end
     with open(logfile, 'r') as log_fp:

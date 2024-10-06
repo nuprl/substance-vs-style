@@ -5,7 +5,8 @@ import yaml
 import networkx as nx
 from dataclasses import dataclass
 
-State = Literal['success','fail','neutral']
+State = Literal['success','fail','neutral',
+                '_dummy_']
 
 class Node(yaml.YAMLObject):
     """
@@ -36,6 +37,10 @@ class Node(yaml.YAMLObject):
     @classmethod
     def from_dict(cls, node:dict) -> "Node":
         return cls(**node)
+    
+    @classmethod
+    def dummy_node(cls) -> "Node":
+        return cls(-1, ["_stdout_"],["_stderr_"])
 
 @dataclass  
 class Edge(yaml.YAMLObject):
@@ -83,6 +88,22 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
         edge["node_from"] = Node(**edge["node_from"])
         edge["node_to"] = Node(**edge["node_to"])
         return cls(**edge)
+    
+    @classmethod
+    def dummy_edge(cls) -> "Edge":
+        return cls(
+            node_from = Node.dummy_node(),
+            node_to = Node.dummy_node(),
+            completion_from= "_completion_from_",
+            completion_to="_compeltion_to_",
+            prompt_from="_prompt_from_",
+            prompt_to="_prompt_to_",
+            attempt_id=-1,
+            diff="_diff_",
+            total_attempts=-1,
+            username="_username_",
+            state="_dummy_"
+        )
     
 class Graph(yaml.YAMLObject):
     """

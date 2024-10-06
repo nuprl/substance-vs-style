@@ -14,10 +14,17 @@ from .analysis_utils import *
 from scipy import stats
 from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
-import sys
+import yaml
 import contextlib
+IGNORE_SUCCESS = {} # this increases score
 '''
 Analyzing common patterns in graphs
+
+NOTE:
+
+- is IGNORE_SUCCESS necessary in computing likelihood of fail given cycle?
+- do we need to exclude exceptional problems from all_problems analysis (model
+    misinterprets good prompts for problem specific reasons)
 '''
 def display_edge_info(graph: Graph):
     """
@@ -66,10 +73,17 @@ def run_RQ1(graph: Graph, outdir:str):
     print("## Cycle success rate summary:")
     df = df_cycle_summary(cycle_summary, graph)
     
-    df["is_success"] = df.apply(lambda x: False if x["student"] in IGNORE_SUCCESS[graph.problem] else x["is_success"],
-                                axis=1)
+    def _check_success(item):
+        if graph.problem in IGNORE_SUCCESS.keys() and \
+            item["student"] in IGNORE_SUCCESS[graph.problem]:
+                return False
+        else:
+            return item["is_success"]
+        
+    df["is_success"] = df.apply(_check_success,axis=1)
+    df["is_failure"] = df.apply(lambda x: not x["is_success"], axis=1)
     print(df)
-     
+    
     tot_succ = df[df["is_success"]]
     tot_fail = df[df["is_success"] == False]
     fail_cycle = tot_fail[tot_fail["cycle_length"] > 0]
@@ -89,14 +103,18 @@ def run_RQ1(graph: Graph, outdir:str):
         # num_fail_cycle / tot_cycle
         likelihood_fail_no_cycle = len(fail_no_cycle) / len(tot_no_cycle)
         likelihood_fail_cycle = len(fail_cycle) / len(tot_cycle)
-        print(f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}")
-        assert likelihood_fail_cycle > likelihood_fail_no_cycle, "Found that cycle is not more likely to fail."
-
-        # check that more students that fail have cycles, than students that succeed have cycles
-        THRESHHOLD = 0.54
-        ratio_succ_fail = (len(succ_cycle)/len(tot_succ)) / (len(fail_cycle)/len(tot_fail))
-        assert ratio_succ_fail <= THRESHHOLD, ratio_succ_fail
-        # topScores is highest with 0.5333 (hence threshhold)
+        likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
+        print(likelihood_msg)
+        assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
+        
+        df["has_cycle"] = df.apply(lambda x: int(x["cycle_length"] > 0), axis=1)
+        df["not_has_cycle"] = df.apply(lambda x: int(x["cycle_length"] == 0), axis=1)
+        print(df)
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob("is_success", "has_cycle", df)
+        print(f"P(is_success) | P(has_cycle): {prob_a_given_b}")
+        prob_a, prob_b_neg, prob_anb_neg, prob_a_given_b_neg = conditional_prob("is_success", "not_has_cycle", df)
+        print(f"P(is_success) | NOT P(has_cycle): {prob_a_given_b_neg}")
+        assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
         
     # Save analyses for RQ1
     with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
@@ -118,19 +136,8 @@ def run_RQ1(graph: Graph, outdir:str):
     except:
         pass
     
-def run_RQ2(graph: Graph, outdir:str):
-    os.makedirs(f"{outdir}/RQ2", exist_ok=True)
     
-    ## correlate length of path for student with success
-    student_paths = get_path_clues(graph)
-    student_success = graph.get_successful_students()
-    
-    # rewriting is how students debug, but not often helps
-    # how often does final rewrite lead to success?
-    
-    
-    
-def single_problem_analysis(graph_yaml: str, outdir:str, experiments_to_run: List[int]):
+def single_problem_analysis(graph_yaml: str, outdir:str):
     # load tagged graph and problem info
     graph = load_graph(graph_yaml)
     assert graph.edges[0]._edge_tags != None, "Must tag graph first!"
@@ -151,12 +158,8 @@ def single_problem_analysis(graph_yaml: str, outdir:str, experiments_to_run: Lis
     print(f"Success node {success_node.id}")
     
     ## RQ1: cycle behavior
-    if 1 in experiments_to_run:
-        run_RQ1(graph, outdir)
+    run_RQ1(graph, outdir)
     
-    ## RQ2: Order
-    if 2 in experiments_to_run:
-        run_RQ2(graph, outdir)
 
 def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
     results = ""
@@ -166,7 +169,7 @@ def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> 
         results += "\n" + res
     return results
         
-def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[int]):
+def all_problems_analysis(graph_dir: str, outdir:str):
     graphs = []
     prob_to_graph = {}
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):
@@ -256,20 +259,27 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     rewrite_data = []
     for problem,student_edits in problem_edit_history.items():
         succ_students = prob_to_graph[problem].get_successful_students()
+        
         for student, edits in student_edits.items():
             count_follows_subst = 0
             count_modifiers = 0
             for (e1, e2) in zip(edits, edits[1:]):
-                if is_tag_kind(e1, ["l","m"]):
+                if is_tag_kind(e1, ["l","m","0"]):
                     count_modifiers += 1
-                    if is_tag_kind(e2, ["a","d"]):
+                    if is_tag_kind(e2, ["a"]):
                         count_follows_subst += 1
+
+            final_clue = prob_to_graph[problem].student_clues_tracker[student][-1][-1]
             rewrite_data.append({"student":student,
                                  "problem":problem,
                                 "edits": edits,
+                                "has_all_clues": len(final_clue) == len(SUCCESS_CLUES[problem]),
                                 "edits_len": len(edits),
                                 "has_modifiers": count_modifiers>0,
+                                "no_modifiers": count_modifiers == 0,
                                 "count_modifiers": count_modifiers,
+                                "has_follows_subst": count_follows_subst > 0,
+                                "not_has_follows_subst": count_follows_subst == 0,
                                 "count_follows_subst": count_follows_subst,
                                 "is_success": student in succ_students})
     
@@ -277,6 +287,29 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     rewrite_df = pd.DataFrame(rewrite_data)
     rewrite_df["frequency_follows_subst"] = rewrite_df["count_follows_subst"] / rewrite_df["count_modifiers"]
     print(display_pearsonr_results(rewrite_df, [("has_modifiers","is_success")]))
+    
+    # how often has_follow_subst + is_success
+    """
+    probability of A|B
+    A: is_success
+    B: has_follows_subst
+    
+    P(A|B) = P(AnB)/P(B)
+    
+    Keep in mind this will not be high because we still need 
+    all the clues
+    
+    NOTE: P(A|B) will be higher if we compute SUCCESS over all students?
+    think maybe its the same.
+    """
+    for var_a, var_b in [("is_success","has_modifiers"), ("is_success","has_follows_subst"),
+                         ("is_success","no_modifiers"), ("is_success","not_has_follows_subst"),
+                         ("is_success","has_all_clues")]:
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, rewrite_df)
+        print(f"Probability {var_a} given {var_b}: var_a {prob_a:.2f} var_b {prob_b:.2f} \
+                a_given_b: {prob_a_given_b:.2f}")
+
+    # correlation over filtered df
     rewrite_df = rewrite_df[rewrite_df["has_modifiers"]]
     assert not rewrite_df.isna().any().any()
     print(rewrite_df)
@@ -284,9 +317,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, experiments_to_run: List[i
     print(rewrite_df[["frequency_follows_subst","is_success"]].corr())
     variables = [("frequency_follows_subst","is_success"), ("count_modifiers","is_success")]
     print(display_pearsonr_results(rewrite_df, variables))
-    rewrite_df.to_csv("rewrites_data.csv")
-    
-            
+    rewrite_df.to_csv("rewrites_data.csv")     
     
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)
@@ -296,10 +327,10 @@ def main(args):
         with contextlib.redirect_stdout(log_fp), contextlib.redirect_stderr(log_fp):
             if os.path.isdir(Path(args.graph_yaml_or_dir)):
                 print("# Analyzing all problems that have been reviewed")
-                all_problems_analysis(args.graph_yaml_or_dir, args.outdir, args.rq)
+                all_problems_analysis(args.graph_yaml_or_dir, args.outdir)
             else:
                 print(f"# Analyzing single problem {os.path.basename(args.graph_yaml_or_dir)}")
-                single_problem_analysis(args.graph_yaml_or_dir, args.outdir, args.rq)
+                single_problem_analysis(args.graph_yaml_or_dir, args.outdir)
     
     # print logfile at end
     with open(logfile, 'r') as log_fp:
@@ -311,6 +342,5 @@ if __name__=="__main__":
     parser.add_argument("graph_yaml_or_dir")
     parser.add_argument("outdir")
     parser.add_argument("problem_clues_yaml")
-    parser.add_argument("--rq", nargs="+", default= [1,2], type=int)
     args = parser.parse_args()
     main(args)

@@ -993,7 +993,7 @@ edges:
   total_attempts: 5
   state: neutral
   _edge_tags:
-    - l2
+    - d2
 - !Edge
   node_from: *id001
   node_to: *id020
@@ -1025,7 +1025,7 @@ edges:
   total_attempts: 5
   state: fail
   _edge_tags:
-    - m2
+    - a2
 student_start_node_tags:
   student27:
     - 1
@@ -1036,7 +1036,7 @@ student_start_node_tags:
     - 1
     - 2
     - 3
-    - 6
+    - 5
   student32:
     - 1
   student49:

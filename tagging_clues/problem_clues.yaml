@@ -125,7 +125,12 @@ combine:
   working_description: Given a 2d array, joins corresponding nested lists.
 convert:
   signature: 'def convert(lst):'
-  tags: ''
+  tags: 
+    - 1: takes a list of numbers
+    - 2: maps numbers to letters
+    - 3: joins letters
+    - 4: -1 means split
+    - 5: return list of strings
   tests:
   - input: '[0, 1, 2, 3]'
     output: '[''ABCD'']'

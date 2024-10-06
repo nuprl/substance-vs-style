@@ -1,5 +1,5 @@
 problems=("topScores" "total_bill" "add_up" "add_int" "laugh" "readingIceCream" \
-        "assessVowels" "translate"\
+        "assessVowels" "translate" "percentWin"\
         # EXCEPTIONS: Model misinterprets
          "planets_mass" "altText" "changeSection" "fib"  "subtract_add" 
         # CYCLE EXCEPTIONS (cycles over success node - remove IGNORE_SUCCESS to pass test)

@@ -13,7 +13,8 @@ SUCCESS_CLUES = {
     "readingIceCream": [1,2,3,4,5,6,7],
     "changeSection": [1,2,3,4],
     "subtract_add": [1,2,3,4,5],
-    "increaseScore": [1,2,3,4,6]
+    "increaseScore": [1,2,3,4,6],
+    "percentWin": [1,2,3,4,5,6]
     # 13 more to go
 }
 
@@ -308,6 +309,54 @@ KNOWN_EXCEPTIONS = {
             }
         }
     },
+    "percentWin": {
+        "fail": {
+            "student10": {
+                3: "model ignores clue 4"
+            }
+        },
+        "success": {
+            "student17": {
+                5: "missing clue 6 is implied. Clue 1 is wrong, but thanks to python polymorphism passes"
+            },
+            "student18": {
+                3: "same as student 17, string input instead of list input, but passes"
+            },
+            "student21": {
+                2: "passes due to test coverage"
+            },
+            "student3": {
+                2: "clue 6 return is implied"
+            },
+            "student30": {
+                1: "clues 1,2,3 are included, though student gives step by step instructions."
+            },
+            "student4": {
+                3: "clue 1 implied"
+            },
+            "student51": {
+                3: "clue 1 implied"
+            }
+        },
+        "neutral": {
+            "student25": {
+                2: "model rounds to 2 decimals instead of whole number"
+            }
+        },
+        "cycles": {
+            "student10": {
+                3: "model ignores integer in prompt"
+            }
+        },
+        "breakout": {
+            "student26": {
+                3: "next edge is breakout. Model ignores instruction to add %, until student specifies '%' (string)"
+            },
+            "student4": {
+                3: "model ignores instruction to turn to integer, instead prefers next word of rounding"
+            }
+        }
+    },
     # Arjun
     "laugh": {
         "neutral": {
@@ -483,7 +532,8 @@ IGNORE_SUCCESS = {
     "planet_mass" : ["student14"],
     "altText": ["student75"],
     "fib": ["student11", "student2","student22"],
-    "increaseScore": ["student75"]
+    "increaseScore": ["student75"],
+    "percentWin": ["student21"]
 }
 
 

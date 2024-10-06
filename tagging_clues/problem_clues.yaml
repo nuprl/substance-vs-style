@@ -197,7 +197,12 @@ find_multiples:
     inclusive.
 generateCardDeck:
   signature: 'def generateCardDeck(suits, vals):'
-  tags: ''
+  tags:
+    - 1: takes two lists
+    - 2: creates all pairs from the lists
+    - 3: sort alphabetically
+    - 4: first list item comes before second list item in pairs
+    - 5: return list
   tests:
   - input: '[''S'', ''H'', ''D''], [''1'', ''2'', ''A'']'
     output: '[''D1'', ''D2'', ''DA'', ''H1'', ''H2'', ''HA'',  ''S1'', ''S2'', ''SA'']'

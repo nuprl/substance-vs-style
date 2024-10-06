@@ -138,7 +138,12 @@ convert:
     on ' '.
 create_list:
   signature: 'def create_list(dt, lst):'
-  tags: ''
+  tags: 
+    - 1: takes a dict and a list
+    - 2: looks up list items in dict
+    - 3: construct list with matching values
+    - 4: use None for items that aren't in dict
+    - 5: return list
   tests:
   - input: '{''a'': ''b'', ''t'': ''d''}, [''a'', ''t'', ''c'']'
     output: '[''b'', ''d'', None]'

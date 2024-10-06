@@ -367,7 +367,11 @@ readingIceCream:
     of servings of ice cream that Trulys currently has in stock.
 remove_odd:
   signature: 'def remove_odd(lst):'
-  tags: ''
+  tags: 
+    - 1: takes a (potentially mixed) list of numbers
+    - 2: removes only odd numbers
+    - 3: removes only integers
+    - 4: returns list
   tests:
   - input: '[4.3, 4, 5, 2, 7]'
     output: '[4.3, 4, 2]'

@@ -422,7 +422,13 @@ set_chars:
     the indices in list l in string s are set to character c.
 sortBySuccessRate:
   signature: 'def sortBySuccessRate(nominations):'
-  tags: ''
+  tags: 
+    - 1: input is list of dictionaries
+    - 2: add a key success
+    - 3: success is wins/noms
+    - 4: round success
+    - 5: sort by success
+    - 6: return
   tests:
   - input: "[{'nominee': 'Jones', 'wins': 28, 'noms': 80},  {'nominee': 'Beyonc\xE9\
       ',  'wins': 28, 'noms': 79},  {'nominee': 'Krauss',  'wins': 27, 'noms': 42}]"

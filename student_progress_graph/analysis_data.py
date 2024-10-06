@@ -14,8 +14,10 @@ SUCCESS_CLUES = {
     "changeSection": [1,2,3,4],
     "subtract_add": [1,2,3,4,5],
     "increaseScore": [1,2,3,4,6],
-    "percentWin": [1,2,3,4,5,6]
-    # 13 more to go
+    "percentWin": [1,2,3,4,5,6],
+    # remaining:
+    "pattern": [1,2,3,4,5],
+    
 }
 
 KNOWN_EXCEPTIONS = {

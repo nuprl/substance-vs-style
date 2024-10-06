@@ -10,7 +10,7 @@ cd "$PARENT_DIR"
 DIR_ARGS=()
 
 # Loop through each subdirectory and process paths
-for dir in */; do
+for dir in generations*/; do
     # Remove trailing slash and construct the path
     trimmed_dir=$(echo "$dir" | sed 's:/$::')
     
@@ -22,4 +22,4 @@ for dir in */; do
 done
 
 
-python3 pass_1.py --orig_dir generations_studenteval/multiple "${DIR_ARGS[@]}"
+python3 pass_1.py --orig_dir 70b_generations_studenteval/multiple "${DIR_ARGS[@]}"

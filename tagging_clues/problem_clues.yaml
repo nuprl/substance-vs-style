@@ -174,7 +174,13 @@ fib:
   working_description: Return True if n is in the Fibonacci sequence, False otherwise.
 findHorizontals:
   signature: 'def findHorizontals(puzzle,wordList):'
-  tags: ''
+  tags: 
+    - 1: input is two lists
+    - 2: find words in second list within strings in first list
+    - 3: return dictionary
+    - 4: keys are words
+    - 5: values are indices of strings where words are found
+    - 6: words can be backwards or forwards
   tests:
   - input: '["ztac","zzzz","teaz","part","zzzz"], ["cat","dog","tea","party"]'
     output: '{"cat":0, "tea":2}'

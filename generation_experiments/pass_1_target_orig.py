@@ -141,23 +141,25 @@ def estimator(n: int, c: int, k: int) -> float:
 
 import re
 #this checks change by directly comparing the prompt before and after the substitution
-def check_changed(data):
-    submitted_text = data['submitted_text'].strip().lstrip()
-    prompt = data['prompt']
-    match = re.search(r'"""\s*(.*?)\s*"""', prompt, re.DOTALL)
-    if match:
-        content = match.group(1).strip().lstrip()
-        return content != submitted_text
-    else:
-        raise ValueError("No content found between triple quotes.")
+# def check_changed(data):
+#     submitted_text = data['submitted_text'].strip().lstrip()
+#     prompt = data['prompt']
+#     match = re.search(r'"""\s*(.*?)\s*"""', prompt, re.DOTALL)
+#     if match:
+#         content = match.group(1).strip().lstrip()
+#         return content != submitted_text
+#     else:
+#         raise ValueError("No content found between triple quotes.")
 
-#if we want to know about the specific original words
-def check_original_word(data,all_tagged_prompts,category,target_original):
+#if we want to know if a substitution between a specific original word and a specific replacement value happened and changed the prompt
+def check_subst_pair(data,all_tagged_prompts,category,target_original,replacement):
+    if target_original == replacement:
+        return False
     tagged_prompt = [item for item in all_tagged_prompts if item['__index_level_0__'] == data['__index_level_0__']]
     assert len(tagged_prompt)==1
     tagged_prompt = tagged_prompt[0]
     pattern = re.compile(r"\$([\w\s]+):([\w\s]+)\$")
-    is_orig_target = False
+    is_subst_changed = False
     for match in pattern.finditer(tagged_prompt['prompt']):
         # Extract CATEGORY
         this_category = match.group(1)
@@ -165,8 +167,8 @@ def check_original_word(data,all_tagged_prompts,category,target_original):
         if this_category in CATEGORIES_V[category]:
             if this_original in WORDS_V[target_original]:
                 # print("found original word tagged in",tagged_prompt['prompt'])
-                is_orig_target = True
-    return is_orig_target  
+                is_subst_changed = True
+    return is_subst_changed  
         
 
 def check_success(data):
@@ -175,12 +177,11 @@ def check_success(data):
     return success
     
     
-def for_file(path,all_tagged_prompts,category,target_original):
+def for_file(path,all_tagged_prompts,category,target_original,replacement):
     data = gunzip_json(path)
     if data is None:
         return None
-    origword = check_original_word(data,all_tagged_prompts,category,target_original)
-    changed = check_changed(data)
+    is_subst_changed = check_subst_pair(data,all_tagged_prompts,category,target_original,replacement)
     success = check_success(data)
         
     n = len(data["results"])
@@ -190,9 +191,8 @@ def for_file(path,all_tagged_prompts,category,target_original):
 
     return {
         "__index_level_0__":__index_level_0__,
-        "changed":changed,
+        "is_subst_changed":is_subst_changed,
         "success":success,
-        "origword":origword,
         "pass@1": estimator(n, c, 1),
         "pass@10": estimator(n, c, 10),
         "pass@100": estimator(n, c, 100),
@@ -243,13 +243,16 @@ def main():
         suffix = name.split(".")[-1]
         if "loop_through" in suffix:
             category = "loop through"
+            replacement = suffix.split("loop_through_")[-1].replace("_", " ").strip().lstrip()
         else:
             category = suffix.split("_")[1]
+            replacement= suffix.split(category,1)[-1].replace("_", " ").strip().lstrip()
+        # print(category,replacement)
         all_target_original = subst_to_run[category]
         for target_original in all_target_original:
-            results = [for_file(p,all_tagged_prompts,category,target_original) for p in itertools.chain(
+            results = [for_file(p,all_tagged_prompts,category,target_original,replacement) for p in itertools.chain(
                 Path(d).glob("*.results.json"), Path(d).glob("*.results.json.gz"))]
-            changed_results = {r["__index_level_0__"]:r for r in results if r["changed"] and r["success"] and r['origword']}
+            changed_results = {r["__index_level_0__"]:r for r in results if r["is_subst_changed"] and r["success"]}
             changed_results = list(changed_results.values())
             changed_indices = [r["__index_level_0__"] for r in changed_results]
             filtered_orig_results_changed = [r for r in orig_results if r["__index_level_0__"] in changed_indices]

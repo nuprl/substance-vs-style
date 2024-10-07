@@ -27,7 +27,38 @@ import json
 import gzip
 from typing import Optional
 import sys
+from datasets import load_dataset
 
+# def get_all_firstlast_indices():
+#     ds = load_dataset("wellesley-easel/StudentEval",split="only_subsets")
+#     first_last_indices=[]
+#     for data in ds:
+#         if data["first_attempt"]==True or data["last_attempt"]==True:
+#             first_last_indices.append(data["__index_level_0__"])
+#     assert len(first_last_indices)==953
+#     return first_last_indices
+
+def get_subset_indices():
+    ds = load_dataset("wellesley-easel/StudentEval",split="only_subsets")
+    first_last_indices=[]
+    first_success_indices=[]
+    first_failure_indices=[]
+    last_success_indices=[]
+    last_failure_indices=[]
+    for data in ds:
+        if data["first_attempt"]==True or data["last_attempt"]==True:
+            first_last_indices.append(data["__index_level_0__"])
+        if data["is_first_success"]==True:
+            first_success_indices.append(data["__index_level_0__"])
+        elif data["is_first_failure"]==True:
+            first_failure_indices.append(data["__index_level_0__"])
+        elif data["is_last_success"]==True:
+            last_success_indices.append(data["__index_level_0__"])
+        elif data["is_last_failure"]==True:
+            last_failure_indices.append(data["__index_level_0__"])
+            
+    assert len(first_success_indices)+len(first_failure_indices)+len(last_success_indices)+len(last_failure_indices)==len(first_last_indices)
+    return first_last_indices,first_success_indices,first_failure_indices,last_success_indices,last_failure_indices
 
 def gunzip_json(path: Path) -> Optional[dict]:
     """
@@ -58,7 +89,7 @@ def estimator(n: int, c: int, k: int) -> float:
     if n - c < k:
         return 1.0
     return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
-    
+
 
 def for_file_orig(path):
     data = gunzip_json(path)
@@ -89,14 +120,25 @@ def main():
     name = args.orig_dir
     orig_results = [for_file_orig(p) for p in itertools.chain(
             Path(args.orig_dir).glob("*.results.json"), Path(args.orig_dir).glob("*.results.json.gz"))]
-    orig_results = [r for r in orig_results if r is not None]
-    num_problems = len(orig_results)
+    first_last_indices,first_success_indices,first_failure_indices,last_success_indices,last_failure_indices = get_subset_indices()
+    orig_results_firstlast = [r for r in orig_results if r["__index_level_0__"] in first_last_indices]
+    num_problems = len(orig_results_firstlast)
+    orig_results_first_success=[r for r in orig_results if r["__index_level_0__"] in first_success_indices]
+    orig_results_first_failure=[r for r in orig_results if r["__index_level_0__"] in first_failure_indices]
+    orig_results_last_success=[r for r in orig_results if r["__index_level_0__"] in last_success_indices]
+    orig_results_last_failure=[r for r in orig_results if r["__index_level_0__"] in last_failure_indices]
+    
+    
     if not args.suppress_header:
-        print("Dataset,Original_Pass@1,NumProblems")
-    pass_1_original = np.mean([r["pass@1"] for r in orig_results])
+        print("Dataset,Original_Pass@1,NumProblems,first_failure,last_failure,first_success,last_success")
+    pass_1_original_firstlast = np.mean([r["pass@1"] for r in orig_results_firstlast])
+    pass_1_original_first_failure = np.mean([r["pass@1"] for r in orig_results_first_failure])
+    pass_1_original_last_failure = np.mean([r["pass@1"] for r in orig_results_last_failure])
+    pass_1_original_first_success = np.mean([r["pass@1"] for r in orig_results_first_success])
+    pass_1_original_last_success = np.mean([r["pass@1"] for r in orig_results_last_success])
        
     print(
-        f"{name},{pass_1_original:.4f},{num_problems}")
+        f"{name},{pass_1_original_firstlast:.4f},{num_problems},{pass_1_original_first_failure:.4f},{pass_1_original_last_failure:.4f},{pass_1_original_first_success:.4f},{pass_1_original_last_success:.4f}")
 
 if __name__ == "__main__":
     main()

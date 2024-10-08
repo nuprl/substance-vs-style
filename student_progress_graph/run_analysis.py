@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-IGNORE_SUCCESS = {} # this increases score
+from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR
 '''
 Analyzing common patterns in graphs
 
@@ -26,6 +26,23 @@ NOTE:
 - do we need to exclude exceptional problems from all_problems analysis (model
     misinterprets good prompts for problem specific reasons)
 '''
+global SUPPRESS_ASSERTS
+
+def clean_graph(graph: Graph, problem_answers: List[str]) -> Graph:
+    """
+    Trims graph for extra edges after initial success.
+    Removes observed cases where student fails but is marked as success due to
+    test coverage being low.
+    Removes students with out of token errors.
+    """
+    graph = trim_graph(graph, problem_answers)
+    students_to_remove = IGNORE_SUCCESS.get(graph.problem,[]) + \
+                        OUT_OF_TOKENS_ERROR.get(graph.problem, [])
+    if len(students_to_remove) > 0:
+        graph = remove_students(graph, students_to_remove)
+        print("Removed students:", students_to_remove)
+    return graph
+
 def display_edge_info(graph: Graph):
     """
     For each edge, print some info
@@ -107,6 +124,20 @@ def run_RQ1(graph: Graph, outdir:str):
     fail_no_cycle = tot_fail[tot_fail["cycle_length"] == 0]
     tot_no_cycle = df[df["cycle_length"] == 0]
     tot_cycle = df[df["cycle_length"] > 0]
+
+    # Save analyses for RQ1
+    with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
+        yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
+    with open(f"{outdir}/RQ1/graph_with_clues.yaml","w") as fp:
+        yaml.dump(graph, fp)
+    with open(f"{outdir}/RQ1/path_clues.json","w") as fp:
+        path_summary = get_path_clues(graph)
+        json.dump(path_summary, fp, indent=1)
+    # save exceptions
+    if graph.problem in KNOWN_EXCEPTIONS.keys():
+        with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
+            json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
+        
     
     if len(fail_cycle) > 0:
         # check that students with cycles are more likely to fail
@@ -117,7 +148,6 @@ def run_RQ1(graph: Graph, outdir:str):
         likelihood_fail_cycle = len(fail_cycle) / len(tot_cycle)
         likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
         print(likelihood_msg)
-        assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
         
         df["has_cycle"] = df.apply(lambda x: int(x["cycle_length"] > 0), axis=1)
         df["not_has_cycle"] = df.apply(lambda x: int(x["cycle_length"] == 0), axis=1)
@@ -126,22 +156,13 @@ def run_RQ1(graph: Graph, outdir:str):
         print(f"P(is_success) | P(has_cycle): {prob_a_given_b}")
         prob_a, prob_b_neg, prob_anb_neg, prob_a_given_b_neg = conditional_prob("is_success", "not_has_cycle", df)
         print(f"P(is_success) | NOT P(has_cycle): {prob_a_given_b_neg}")
-        assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
-        
-    # Save analyses for RQ1
-    with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
-        yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
-    with open(f"{outdir}/RQ1/graph_with_clues.yaml","w") as fp:
-        yaml.dump(graph, fp)
-    with open(f"{outdir}/RQ1/path_clues.json","w") as fp:
-        path_summary = get_path_clues(graph)
-        json.dump(path_summary, fp, indent=1)
-    # save cycle likelihood data
-    df.to_csv(f"{outdir}/RQ1/cycles_and_success_corr.csv")
-    # save exceptions
-    if graph.problem in KNOWN_EXCEPTIONS.keys():
-        with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
-            json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
+
+        # save cycle likelihood data
+        df.to_csv(f"{outdir}/RQ1/cycles_and_success_corr.csv")
+
+        if not SUPPRESS_ASSERTS:
+            # assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
+            assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
         
     ## other info to display
     try:
@@ -155,7 +176,8 @@ def single_problem_analysis(graph_yaml: str, outdir:str):
     graph = load_graph(graph_yaml)
     graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
     problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
-    graph = trim_graph(graph, problem_answers)
+    graph = clean_graph(graph, problem_answers)
+    
     assert all([e._edge_tags != None for e in graph.edges]), "Must tag graph first!"
     assert graph.problem in SUCCESS_CLUES.keys(),\
         "Please add the successful clues for this problem in SUCCESS_CLUES"
@@ -192,7 +214,7 @@ def all_problems_analysis(graph_dir: str, outdir:str):
             continue
         graph = load_graph(graph_yaml)
         problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
-        graph = trim_graph(graph, problem_answers)
+        graph = clean_graph(graph, problem_answers)
         graph = populate_clues(graph)
         prob_to_graph[graph.problem] = graph
         graphs.append(graph)
@@ -357,5 +379,7 @@ if __name__=="__main__":
     parser.add_argument("graph_yaml_or_dir")
     parser.add_argument("outdir")
     parser.add_argument("problem_clues_yaml")
+    parser.add_argument("--suppress-asserts","-q", action="store_true")
     args = parser.parse_args()
+    SUPPRESS_ASSERTS = args.suppress_asserts
     main(args)

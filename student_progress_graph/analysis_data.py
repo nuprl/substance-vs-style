@@ -988,11 +988,11 @@ KNOWN_EXCEPTIONS = {
         }
     },
     "altText": {
-        "success": {
-            "student75": {
-                2: "Student is trivially correct because test cases not exhaustive."
-            }
-        },
+        # "success": {
+        #     "student75": {
+        #         2: "Student is trivially correct because test cases not exhaustive."
+        #     }
+        # },
         "neutral": {
             "student23": {
                 3: "Interesting case where student has all clues, but model misinterprets student in \
@@ -1003,12 +1003,12 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 1: "Same model misinterpretation issue as 23. Model does not consider order of output."
             },
-            "student40": {
-                1: "Model runs out of tokens but would be correct.",
-                2: "same as previous attempt",
-                3: "same as previous attempt",
-                4: "same as previous attempt"
-            },
+            # "student40": {
+            #     1: "Model runs out of tokens but would be correct.",
+            #     2: "same as previous attempt",
+            #     3: "same as previous attempt",
+            #     4: "same as previous attempt"
+            # },
             "student63": {
                 1: "hallucination",
             }
@@ -1025,9 +1025,9 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 0: "Same model misinterpretation issue as 23."
             },
-            "student40": {
-                0: "Model runs out of tokens"
-            },
+            # "student40": {
+            #     0: "Model runs out of tokens"
+            # },
             "student63": {
                 0: "Same misinterpretation as 23."
             }
@@ -1041,17 +1041,17 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 1: "Same model misinterpretation issue as 23."
             },
-            "student40": {
-                3: "Model runs out of tokens error."
-            }
+            # "student40": {
+            #     3: "Model runs out of tokens error."
+            # }
         },
         "breakout": {
             "student23": {
                 4: "Same model order misinterpretation issue"
             },
-            "student40": {
-                5: "Breaksout because model manages to fit within token limit"
-            }
+            # "student40": {
+            #     5: "Breaksout because model manages to fit within token limit"
+            # }
         }
     },
     "changeSection": {
@@ -1081,9 +1081,9 @@ KNOWN_EXCEPTIONS = {
             "student21": {
                 5: "same error as previous attempt",
             },
-            "student30": {
-                4: "same as previous attempt"
-            }
+            # "student30": {
+            #     4: "same as previous attempt"
+            # }
         },
         "neutral":{
             "student26": {
@@ -1095,22 +1095,22 @@ KNOWN_EXCEPTIONS = {
                 3: "same error as previous attempt",
                 4: "same error as previous attempt",
             },
-            "student30": {
-                # note student 30 has a success at attempt 1, not recorded correctly
-                2: "model misinterpretation same as student10",
-                3: "model misinterprets order",
-            }
-        },
-        "cycles": {
-            "student30": {
-                3: "model misinterpretation, same as previous",
-            }
-        },
-        "breakout": {
-            # "student21": {
-            #     2: "breakout goes into another cycle"
+            # "student30": {
+            #     # note student 30 has a success at attempt 1, not recorded correctly
+            #     2: "model misinterpretation same as student10",
+            #     3: "model misinterprets order",
             # }
-        }
+        },
+        # "cycles": {
+        #     "student30": {
+        #         3: "model misinterpretation, same as previous",
+        #     }
+        # },
+        # "breakout": {
+        #     "student21": {
+        #         2: "breakout goes into another cycle"
+        #     }
+        # }
     }
     
 }
@@ -1123,6 +1123,9 @@ IGNORE_SUCCESS = {
     "increaseScore": ["student75"],
     "percentWin": ["student21"],
     "sort_physicists": ["student77","student12","student57"]
+}
+OUT_OF_TOKENS_ERROR = {
+    "altText": ["student40"]
 }
 
 

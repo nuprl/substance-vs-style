@@ -6,9 +6,27 @@ import json
 import pandas as pd
 import yaml
 import networkx as nx
+from copy import deepcopy
 
 class ContinuityError(Exception):
     pass
+
+def remove_students(graph: Graph, students: List[str]) -> Graph:
+    """
+    Removes students and associated edges/data
+    """
+    def try_pop(obj, key):
+        if obj:
+            obj.pop(key)
+
+    new_graph = deepcopy(graph)
+    for student in students:
+        try_pop(getattr(new_graph,"student_colors"), student)
+        try_pop(getattr(new_graph,"student_start_node_tags"), student)
+        try_pop(getattr(new_graph,"student_clues_tracker"), student)
+    new_graph.edges = [e for e in new_graph.edges if not e.username in set(students)]
+    return new_graph
+
 
 def trim_graph(graph:Graph, problem_answers: List[str]) -> Graph:
     """

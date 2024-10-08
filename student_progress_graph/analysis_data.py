@@ -27,7 +27,8 @@ SUCCESS_CLUES = {
     "print_time": [1,2,3,4,5],
     "getSeason": [1,2,3,4],
     "generateCardDeck": [1,2,3,4,5],
-    "find_multiples": [1,2]
+    "find_multiples": [1,2],
+    "findHorizontals": [1,2,3,4,5,6]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -171,6 +172,13 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "findHorizontals": {
+        "breakout": {
+            "student70": {
+                3: "student fails, could be cont cycle"
+            }
+        }
+    },
     "generateCardDeck": {
         "success": {
             "student33": {

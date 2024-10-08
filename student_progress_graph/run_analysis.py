@@ -67,7 +67,7 @@ def run_RQ1(graph: Graph, outdir:str):
             print(f"breakoutedge {student}")
             
     # check that breakout edges are significant
-    check_breakout_edges(breakout_edges, graph.problem)
+    check_breakout_edges(breakout_edges, graph)
     
     # Print some info about success rate with cycles
     print("## Cycle success rate summary:")

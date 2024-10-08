@@ -1,4 +1,3 @@
-
 SUCCESS_CLUES = {
     "add_up": [1,2,3,4,5],
     "add_int": [1,2,3,4],
@@ -1108,9 +1107,9 @@ KNOWN_EXCEPTIONS = {
             }
         },
         "breakout": {
-            "student21": {
-                2: "breakout goes into another cycle"
-            }
+            # "student21": {
+            #     2: "breakout goes into another cycle"
+            # }
         }
     }
     
@@ -1189,16 +1188,12 @@ PROBLEM_TO_NUM_STUDENTS_STRICT = {
    "increaseScore": 8,
    "reduce": 2,
    "subtract_add": 9,
-   "check_for_aspen": 4,
    "add_word": 9,
    "sortedBooks": 10,
    "create_list": 6,
    "combine": 5,
    "hasHorizontalWin": 6,
    "total_bill": 13,
-   "layoverTrips": 4,
-   "has_qu": 3,
-   "order_strings": 3,
    "remove_odd": 13,
    "changeSection": 11,
    "getSeason": 15,
@@ -1207,27 +1202,19 @@ PROBLEM_TO_NUM_STUDENTS_STRICT = {
    "generateCardDeck": 13,
    "fib": 8,
    "print_time": 8,
-   "correctNumberofPlayers": 3,
-   "exp": 2,
    "percentWin": 12,
-   "meeps_morps": 4,
    "sort_physicists": 9,
    "assessVowels": 8,
    "add_int": 6,
    "readingIceCream": 11,
    "laugh": 9,
-   "andCount": 1,
-   "partialWordle": 2,
    "set_chars": 8,
-   "mod_end": 4,
    "add_up": 15,
    "findHorizontals": 8,
-   "multisplit": 3,
    "altText": 8,
    "reverseWords": 9,
    "check_prime": 8,
    "find_multiples": 9,
-   "edit_col": 2
 }
 
 if __name__ == "__main__":
@@ -1238,6 +1225,9 @@ if __name__ == "__main__":
     PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_FULL
     THRESHOLD = 0.4
     failing_problems = []
+
+    counter = 0
+    tot = 0
     for prob in SUCCESS_CLUES.keys():
         if prob not in KNOWN_EXCEPTIONS.keys():
             continue
@@ -1247,11 +1237,16 @@ if __name__ == "__main__":
             student_exceptions.update(set(list(v.keys())))
         if len(student_exceptions) > (THRESHOLD * PROBLEM_TO_NUM_STUDENTS[prob]):
             failing_problems.append((prob, len(student_exceptions), PROBLEM_TO_NUM_STUDENTS[prob]))
+        counter += len(student_exceptions)
+        tot += PROBLEM_TO_NUM_STUDENTS[prob]
     
     EXCEPTIONS = [
         "readingIceCream" # some of these exceptions are tagging errors
     ]
     failing_problems = [f for f in failing_problems if not f[0] in EXCEPTIONS]
     message = f"failing problems {failing_problems}, THRESHOLD: {THRESHOLD}"
+
+    print(f"{counter} / {tot} = {counter / tot}")
+
     assert len(failing_problems) == 0, message
     print(message)

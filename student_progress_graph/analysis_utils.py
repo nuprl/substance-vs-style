@@ -253,7 +253,7 @@ def df_cycle_summary(
 
 def check_breakout_edges(
     breakout_edges: Dict[str, List[Edge]],
-    problem: str
+    graph: Graph
 ) -> Union[ValueError, None]:
     """
     Given a dict of student usernames to breakout edges.
@@ -261,8 +261,10 @@ def check_breakout_edges(
     a student breaks out of a loop only by adding new clues.
     Raises a ValueError if this is not the case.
     """
+    problem = graph.problem
+    succ_students = graph.get_successful_students()
     for student,bedge in breakout_edges.items():
-        if bedge != None:
+        if bedge != None and student in succ_students:
             added_clues = [str(i)[0] for i in bedge._edge_tags]
             if not ("a" in added_clues or "d" in added_clues) and \
                 not is_known_exception(bedge, problem, key="breakout"):

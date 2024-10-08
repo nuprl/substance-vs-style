@@ -472,6 +472,7 @@ sort_physicists:
   - 3: filter list with the right key #element at index 2
   - 4: sort list with the right key #sort by element at index 1
   - 5: specify return #return the list with only element at index 0
+  - 6: sort #can be incorrect order
   tests:
   - input: '[["Youyou",91,"Chemistry"],["Ghez",56,"Physics"],["Peiris",48,"Physics"],["Strickland",62,"Physics"]]'
     output: '[''Peiris'', ''Ghez'', ''Strickland'']'

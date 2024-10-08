@@ -18,10 +18,56 @@ SUCCESS_CLUES = {
     "pattern": [1,2,3,4,5],
     "times_with": [1,2,3,4,5],
     "student_grades": [1,2,3,4],
-    "sortedBooks": [1,2,3,4,5,6]
+    "sortedBooks": [1,2,3,4,5,6],
+    "sort_physicists": [1,2,3,4,5,6]
 }
 
 KNOWN_EXCEPTIONS = {
+    #arya
+    # student12, 77 special cases. "2nd index": indexing ambiguity + trivial success
+    "sort_physicists": {
+        "success": {
+            "student12": {
+                3: "student should be awarded clue 2 in start clues"
+            }
+        },
+        "fail": {
+            "student19": {
+                1: "Model runs out of tokens"
+            }
+        },
+        "neutral": {
+            "student20": {
+                2: "first index versus index 1: zero-indexing ambiguity"
+            },
+            "student36": {
+                1: "model ignores filter by physics",
+                2: "model ignores sort by key1, does sort because inability to lookback and get key1 after filtering"
+            },
+            "student77": {
+                2: "model ignores instruction to only return the scientist. model should understand it means name",
+                3: "model lookback error, same as student36.2",
+                4: "same as previous attempt"
+            }
+        },
+        "cycles": {
+            "student77": {
+                2: "these are two cycles, technically this is a breakout edge",
+                4: "this is a trivial edit; lookback error is the problem here" 
+            }
+        },
+        "breakout": {
+            "student12": {
+                3: "student is technically incorrect, but due to lacking test coverage, passes"
+            },
+            "student57": {
+                2: "same as student12"
+            },
+            "student77": {
+                5: "same as student12"
+            }
+        }
+    },
     # fran
     "add_int": {
         # false success, does not have all clues but is success
@@ -616,7 +662,8 @@ IGNORE_SUCCESS = {
     "altText": ["student75"],
     "fib": ["student11", "student2","student22"],
     "increaseScore": ["student75"],
-    "percentWin": ["student21"]
+    "percentWin": ["student21"],
+    "sort_physicists": ["student77","student12","student57"]
 }
 
 

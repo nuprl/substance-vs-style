@@ -10,6 +10,27 @@ import networkx as nx
 class ContinuityError(Exception):
     pass
 
+def trim_graph(graph:Graph, problem_answers: List[str]) -> Graph:
+    """
+    Sometimes,students are successful before their last attempt, but keep
+    playing with the model. Prune these extra interactions
+    """
+    student_edges = graph.get_student_edges()
+    edges_to_delete = []
+    for student, sorted_attempts in student_edges.items():
+        for i, attempt in enumerate(sorted_attempts):
+            if i == 0 and score_node(attempt.node_from, problem_answers) == len(problem_answers):
+                # first attempt was correct
+                edges_to_delete += sorted_attempts[i+1:]
+                break
+            elif score_node(attempt.node_to, problem_answers) == len(problem_answers):
+                # first correct attempt
+                edges_to_delete += sorted_attempts[i+1:]
+                break
+
+    graph.edges = [e for e in graph.edges if e not in set(edges_to_delete)]
+    return graph
+
 def conditional_prob(var_a: str, var_b: str, df: pd.DataFrame) -> Tuple[float]:
     """
     probability of A|B
@@ -310,17 +331,20 @@ def get_path_clues(g: Graph) -> Union[dict, ValueError]:
     
     return student_paths
 
+def score_node(node:Node, problem_answers: List[str]) -> Node:
+    num_correct_print = sum([int(node.stdout[i].rstrip() == problem_answers[i])
+                                for i in range(len(problem_answers))])
+    num_error = sum([int("error:" in stderr.lower()) for stderr in node.stderr])
+    score = num_correct_print - num_error
+    return score
+
 def score_nodes_by_tests_passed(g: Graph, problem_answers: List[str], overwrite:bool=True) -> Graph:
     """
     Tags nodes with a score which is (num tests passed = num errors)
     """
     for _,n in enumerate(g.nodes):
-        node_id = n.id
-        num_correct_print = sum([int(n.stdout[i].rstrip() == problem_answers[i])
-                                 for i in range(len(problem_answers))])
-        num_error = sum([int("error:" in stderr.lower()) for stderr in n.stderr])
-        score = num_correct_print - num_error
-        g.tag_node(node_id, score, overwrite=overwrite)
+        score = score_node(n, problem_answers)
+        g.tag_node(n.id, score, overwrite=overwrite)
     return g
 
 def score_nodes_by_target_dist(

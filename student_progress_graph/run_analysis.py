@@ -152,12 +152,13 @@ def run_RQ1(graph: Graph, outdir:str):
 def single_problem_analysis(graph_yaml: str, outdir:str):
     # load tagged graph and problem info
     graph = load_graph(graph_yaml)
+    graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
+    problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
+    graph = trim_graph(graph, problem_answers)
     assert all([e._edge_tags != None for e in graph.edges]), "Must tag graph first!"
     assert graph.problem in SUCCESS_CLUES.keys(),\
         "Please add the successful clues for this problem in SUCCESS_CLUES"
     
-    graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
-    problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
     # augment graph with clue, node info, get success node
     graph = populate_clues(graph)
     graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
@@ -189,6 +190,8 @@ def all_problems_analysis(graph_dir: str, outdir:str):
         if not graph_name in SUCCESS_CLUES.keys():
             continue
         graph = load_graph(graph_yaml)
+        problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
+        graph = trim_graph(graph, problem_answers)
         graph = populate_clues(graph)
         prob_to_graph[graph.problem] = graph
         graphs.append(graph)

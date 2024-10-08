@@ -32,6 +32,7 @@ SUCCESS_CLUES = {
     "create_list": [1,2,3,4,5],
     "convert": [1,2,3,4,5],
     "combine": [1,2,3],
+    "check_prime": [1,2,3,4]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -198,6 +199,43 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "check_prime": {
+        # due to memorization, mdoel commits error of casting
+        "success": {
+            "student29": {
+                2: "no need to describe prime, model knows"
+            },
+            "student32": {
+                2: "no need to describe prime"
+            },
+            "student49": {
+                2: "no need to describe prime"
+            },
+            "student66": {
+                5: "no need to describe prime"
+            },
+            "student67": {
+                1: "no need to describe prime"
+            },
+            "student70": {
+                4: "bool implicit; no need to describve prime"
+            }
+        },
+        "breakout": {
+            "student29": {
+                2: "loop exists because model ignored instruction to cast num to int. possibly because of name num"
+            },
+            "student49": {
+                2: "same error as student29; ignore type cast instruction"
+            },
+            "student66": {
+                5: "same error as student29"
+            },
+            "student70": {
+                4: "same error as student29"
+            }
+        }
+    },
     "convert": {
         "start_node": {
             "student18": {

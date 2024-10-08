@@ -17,7 +17,7 @@ SUCCESS_CLUES = {
     "percentWin": [1,2,3,4,5,6],
     "pattern": [1,2,3,4,5],
     "times_with": [1,2,3,4,5],
-    
+    "student_grades": [1,2,3,4],
 }
 
 KNOWN_EXCEPTIONS = {

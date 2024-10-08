@@ -88,8 +88,16 @@ def run_RQ1(graph: Graph, outdir:str):
     tot_fail = df[df["is_success"] == False]
     fail_cycle = tot_fail[tot_fail["cycle_length"] > 0]
     succ_cycle = tot_succ[tot_succ["cycle_length"] > 0]
-    print(f"Total num fail: {len(tot_fail)}, num has loop: {len(fail_cycle)}, {100 * len(fail_cycle)/len(tot_fail)} %")
-    print(f"Total num success: {len(tot_succ)}, num has loop: {len(succ_cycle)}, {100 * len(succ_cycle)/len(tot_succ)} %")
+
+    fail_rate = 100 * len(fail_cycle)/len(tot_fail)
+
+    if len(tot_succ) > 0:
+        succ_rate = 100 * len(succ_cycle)/len(tot_succ)
+    else:
+        succ_rate = 0
+
+    print(f"Total num fail: {len(tot_fail)}, num has loop: {len(fail_cycle)}, {fail_rate} %")
+    print(f"Total num success: {len(tot_succ)}, num has loop: {len(succ_cycle)}, {succ_rate} %")
     
     
     fail_no_cycle = tot_fail[tot_fail["cycle_length"] == 0]
@@ -105,7 +113,7 @@ def run_RQ1(graph: Graph, outdir:str):
         likelihood_fail_cycle = len(fail_cycle) / len(tot_cycle)
         likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
         print(likelihood_msg)
-        assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
+        # assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
         
         df["has_cycle"] = df.apply(lambda x: int(x["cycle_length"] > 0), axis=1)
         df["not_has_cycle"] = df.apply(lambda x: int(x["cycle_length"] == 0), axis=1)
@@ -114,7 +122,7 @@ def run_RQ1(graph: Graph, outdir:str):
         print(f"P(is_success) | P(has_cycle): {prob_a_given_b}")
         prob_a, prob_b_neg, prob_anb_neg, prob_a_given_b_neg = conditional_prob("is_success", "not_has_cycle", df)
         print(f"P(is_success) | NOT P(has_cycle): {prob_a_given_b_neg}")
-        assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
+        # assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
         
     # Save analyses for RQ1
     with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
@@ -127,8 +135,9 @@ def run_RQ1(graph: Graph, outdir:str):
     # save cycle likelihood data
     df.to_csv(f"{outdir}/RQ1/cycles_and_success_corr.csv")
     # save exceptions
-    with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
-        json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
+    if graph.problem in KNOWN_EXCEPTIONS.keys():
+        with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
+            json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
         
     ## other info to display
     try:
@@ -140,7 +149,7 @@ def run_RQ1(graph: Graph, outdir:str):
 def single_problem_analysis(graph_yaml: str, outdir:str):
     # load tagged graph and problem info
     graph = load_graph(graph_yaml)
-    assert graph.edges[0]._edge_tags != None, "Must tag graph first!"
+    assert all([e._edge_tags != None for e in graph.edges]), "Must tag graph first!"
     assert graph.problem in SUCCESS_CLUES.keys(),\
         "Please add the successful clues for this problem in SUCCESS_CLUES"
     

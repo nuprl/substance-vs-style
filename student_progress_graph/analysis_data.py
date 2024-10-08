@@ -23,7 +23,8 @@ SUCCESS_CLUES = {
     "sortBySuccessRate": [1,2,3,4,5,6],
     "set_chars": [1,2,3,4,5],
     "reverseWords": [1,2,3,4,5],
-    "remove_odd": [1,2,3,4]
+    "remove_odd": [1,2,3,4],
+    "print_time": [1,2,3,4,5]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -148,6 +149,46 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "print_time": {
+        "start_node": {
+            "student57": {
+                0: "model out of tokens"
+            },
+            "student77": {
+                0: "first attempt correct"
+            }
+        },
+        "success": {
+            "student12": {
+                3: "missing clue 1 is implicit"
+            },
+            "student36": {
+                2: "missing clue 1 is implicit"
+            },
+            "student38": {
+                1: "missing clue 1 is implicit"
+            },
+            "student42": {
+                2: "missing clue 1 is implicit"
+            },
+            "student43": {
+                1: "missing clue 1 is implicit"
+            },
+            "student54": {
+                4: "missing clue 1 implicit"
+            }
+        },
+        "fail": {
+            "student57": {
+                1: "model runs out of token"
+            }
+        },
+        "neutral": {
+            "student77": {
+                1: "first attempt was correct"
+            }
+        }
+    },
     "remove_odd": {
         "start_node": {
             "student0": {

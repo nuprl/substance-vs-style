@@ -15,8 +15,8 @@ SUCCESS_CLUES = {
     "subtract_add": [1,2,3,4,5],
     "increaseScore": [1,2,3,4,6],
     "percentWin": [1,2,3,4,5,6],
-    # remaining:
     "pattern": [1,2,3,4,5],
+    "times_with": [1,2,3,4,5],
     
 }
 
@@ -97,6 +97,38 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "times_with": {
+        "start_node": {
+            "student35": {
+                0: "Model makes pyhton error: unhashable list because of meeting[1:] instead of meeting[1]. Model requires more info on nested list structure \
+                I would argue this student does not get clue 2"
+            },
+            "student63": {
+                0: "Model requires more info on nested list structure. Less ambiguous than student35, but still could be misinterpreted"
+            }
+        },
+        "fail": {
+            "student63": {
+                1: "studenteval original is_success is wrong, this completion is successful"
+            }
+        },
+        "success": {
+            "student69": {
+                1: "clue 1 return dictionary is implicit"
+            },
+            "student75": {
+                5: "student hardcoded answer, somehow model got correct completion, even though prompt was wrong"
+            }
+        },
+        "breakout": {
+            "student50": {
+                2: "Student goes on to make same mistake as loop"
+            },
+            "student59": {
+                2: "I would argue this is an a4 not m4, structure of nested list"
+            }
+        }
+    },
     "total_bill": {
         "success": {
             "student40": {

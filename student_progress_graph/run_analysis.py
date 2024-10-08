@@ -33,7 +33,8 @@ def display_edge_info(graph: Graph):
     for e in graph.edges:
         # if all([str(t)[0] in ['m','l','0'] for t in e._edge_tags]):
             prev_clue = None
-            for attempt_id, clues in  graph.student_clues_tracker[e.username]:
+            for item in  graph.student_clues_tracker[e.username]:
+                attempt_id, clues = item["attempt_id"], item["clues"]
                 if attempt_id == (e.attempt_id - 1):
                     prev_clue = clues
                     break
@@ -283,7 +284,7 @@ def all_problems_analysis(graph_dir: str, outdir:str):
                     if is_tag_kind(e2, ["a"]):
                         count_follows_subst += 1
 
-            final_clue = prob_to_graph[problem].student_clues_tracker[student][-1][-1]
+            final_clue = prob_to_graph[problem].student_clues_tracker[student][-1]["clues"]
             rewrite_data.append({"student":student,
                                  "problem":problem,
                                 "edits": edits,

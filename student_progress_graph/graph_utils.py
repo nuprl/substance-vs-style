@@ -43,7 +43,7 @@ def load_graph(filepath:str) -> Graph:
     yaml.SafeLoader.add_constructor('!Graph', graph_constructor)
     yaml.SafeLoader.add_constructor('!Edge', edge_constructor)
     yaml.SafeLoader.add_constructor('!Node', node_constructor)
-    
+
     with open(filepath, "r") as fp:
         graph = yaml.safe_load(fp)
     

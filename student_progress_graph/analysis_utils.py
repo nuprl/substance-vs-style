@@ -175,14 +175,14 @@ def populate_clues(graph: Graph) -> Graph:
     Augment graph edges with clue sets
     """
     FOUND_ERRORS_STUDENTS = []
-    student_clues_tracker = {student: [(0,start_state)] for student,start_state 
+    student_clues_tracker = {student: [{"attempt_id":0,"clues":start_state}] for student,start_state 
                              in graph.get_start_node_states().items()}
     for i,e in enumerate(graph.edges):
-        prev_clues = student_clues_tracker[e.username][-1][-1]
+        prev_clues = student_clues_tracker[e.username][-1]["clues"]
         try:
             
             next_clues = compute_next_clues(prev_clues, e._edge_tags)
-            student_clues_tracker[e.username].append((e.attempt_id, next_clues))
+            student_clues_tracker[e.username].append({"attempt_id":e.attempt_id, "clues":next_clues})
             graph.edges[i].add_clues(next_clues)
             
         except ContinuityError as err:
@@ -202,6 +202,9 @@ def populate_clues(graph: Graph) -> Graph:
         print(f"Problem clues: {json.dumps(graph.problem_clues, indent=4)}")
         raise ContinuityError(f"Found continuity errors in students:\n{set(FOUND_ERRORS_STUDENTS)}")
     
+    for username in student_clues_tracker.keys():
+        student_clues_tracker[username].sort(key=lambda x: x["attempt_id"])
+
     graph.student_clues_tracker = student_clues_tracker
     return graph
 
@@ -216,7 +219,7 @@ def load_problem_clues(filepath:str, problem:str) -> Dict[int, str]:
     problem_clues_dict = {}
     for tag in problem_clues:
         k,v = list(tag.items())[0]
-        problem_clues_dict[k] = v
+        problem_clues_dict[k] = list(v)
     return problem_clues_dict
 
 def load_problem_answers(filepath, problem) -> List[str]:
@@ -299,14 +302,14 @@ def compute_node_clusters(graph: Graph)-> dict:
     node_to_clues = {}
     for student,clues in graph.get_start_node_states().items():
         start_node = graph.get_start_node_id(student)
-        node_to_clues[start_node] = set([tuple(clues)])
+        node_to_clues[start_node] = [clues]
         
     for e in graph.edges:
         if e.node_to.id not in node_to_clues.keys():
-            node_to_clues[e.node_to.id] = set()
-        node_to_clues[e.node_to.id].add(tuple(e.clues))
+            node_to_clues[e.node_to.id] = []
+        node_to_clues[e.node_to.id] += e.clues
     
-    return {k:list(v) for k,v in node_to_clues.items()}
+    return {k:list(set(v)) for k,v in node_to_clues.items()}
 
 def get_path_clues(g: Graph) -> Union[dict, ValueError]:
     """

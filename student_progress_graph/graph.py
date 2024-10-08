@@ -88,7 +88,7 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
         return dikt
     
     def add_clues(self, clues: List[int]):
-        self.clues = clues
+        self.clues = list(clues)
     
     @classmethod
     def from_dict(cls, edge:dict) -> "Edge":

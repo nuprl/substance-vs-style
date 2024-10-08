@@ -113,7 +113,7 @@ def run_RQ1(graph: Graph, outdir:str):
         likelihood_fail_cycle = len(fail_cycle) / len(tot_cycle)
         likelihood_msg = f"Likelihood fail with cycle {likelihood_fail_cycle} vs. no cycle {likelihood_fail_no_cycle}"
         print(likelihood_msg)
-        # assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
+        assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
         
         df["has_cycle"] = df.apply(lambda x: int(x["cycle_length"] > 0), axis=1)
         df["not_has_cycle"] = df.apply(lambda x: int(x["cycle_length"] == 0), axis=1)
@@ -122,7 +122,7 @@ def run_RQ1(graph: Graph, outdir:str):
         print(f"P(is_success) | P(has_cycle): {prob_a_given_b}")
         prob_a, prob_b_neg, prob_anb_neg, prob_a_given_b_neg = conditional_prob("is_success", "not_has_cycle", df)
         print(f"P(is_success) | NOT P(has_cycle): {prob_a_given_b_neg}")
-        # assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
+        assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
         
     # Save analyses for RQ1
     with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:

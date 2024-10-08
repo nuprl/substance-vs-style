@@ -18,6 +18,7 @@ SUCCESS_CLUES = {
     "pattern": [1,2,3,4,5],
     "times_with": [1,2,3,4,5],
     "student_grades": [1,2,3,4],
+    "sortedBooks": [1,2,3,4,5,6]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -97,6 +98,23 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "sortedBooks": {
+        "success": {
+            "student29": {
+                5: "missing clue 1 takes list of dict; implicit clue"
+            }
+        },
+        "neutral": {
+            "student49": {
+                1: "Model ignores instruction to filter by author"
+            }
+        },
+        "breakout": {
+            "student67": {
+                3: "student unsuccessful, keeps making same error--cycle could be cut short"
+            }
+        }
+    },
     "times_with": {
         "start_node": {
             "student35": {

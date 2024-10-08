@@ -25,7 +25,9 @@ SUCCESS_CLUES = {
     "reverseWords": [1,2,3,4,5],
     "remove_odd": [1,2,3,4],
     "print_time": [1,2,3,4,5],
-    "getSeason": [1,2,3,4]
+    "getSeason": [1,2,3,4],
+    "generateCardDeck": [1,2,3,4,5],
+    "find_multiples": [1,2]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -73,6 +75,25 @@ KNOWN_EXCEPTIONS = {
                 5: "same as student12"
             }
         }
+    },
+    "find_multiples": {
+        "success": {
+            "student22": {
+                3: "model infers clue 1 from func signature"
+            },
+            "student5": {
+                1: "model infers correct answer from func signature though prompt is wrong"
+            },
+            "student74": {
+                1: "model infers correct answer from func signature though prompt is wrong"
+            }
+        },
+        "breakout": {
+            "student11": {
+                3: "missing same clue as loop"
+            }
+        }
+
     },
     # fran
     "add_int": {
@@ -150,6 +171,58 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "generateCardDeck": {
+        "success": {
+            "student33": {
+                1: "missing clue 3,5. 5 implicit, 4 can be implicit in this case"
+            },
+            "student60":{
+                5: "missing clue 5 is implicit"
+            },
+            "student63": {
+                1: "missing clue 1 is implicit. 4 can be implicit in this case"
+            },
+            "student64": {
+                7: "clues 1,4,5 should be awarded"
+            }
+        },
+        "neutral": {
+            "student40": {
+                2: "model ignores sorting instruction",
+                3: "model ignores sorting instruction"
+            },
+            "student50": {
+                1: "model ignores sorting instruction",
+                2: "model ignores sorting instruction",
+                3: "model ignores sorting instruction"
+            }
+        },
+        "cycles":{
+            "student40": {
+                2: "model ignores sorting instruction",
+                3: "model ignores sorting instruction"
+            },
+            "student50": {
+                1: "model ignores sorting instruction",
+                2: "model ignores sorting instruction",
+                3: "model ignores sorting instruction"
+            }
+        },
+        "breakout": {
+            "student35": {
+                3: "student missing same clue as loop, fails"
+            },
+            "student60": {
+                5: "model ignores sorting instruction"
+            },
+            "student64": {
+                6: "model starts paying attention to sorting instruction when word sort appears"
+            },
+            "student69": {
+                2: "student fails"
+            }
+        }
+    },
     "getSeason": {
         "start_node" : {
             "student14": {

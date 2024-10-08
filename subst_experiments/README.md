@@ -13,7 +13,7 @@
    `./bin/prepare_subst.sh CATEGORY ORIGINAL SPLIT`
    The first argument is the category, the second argument is the replacement value.
 
-   eg. `./bin/prepare_subst.sh "return" "output" two.of.each.firstlast.all.39b90b2`
+   eg. `./bin/prepare_subst.sh "return" "output" all.prompts.full.label.d2c1570`
    replaces all occurrance of words tagged with category 'return' with the correct word variation of 'output'.(i.e. returns-outputs, returning-outputting.)
 
 3. Run generations on Discovery:
@@ -24,7 +24,7 @@
    sbatch ./bin/prepare_subst.sh CATEGORY ORIGINAL SPLIT
    ```
       
-   eg. `sbatch ./bin/run_generation.sh return output two.of.each.firstlast.all.39b90b2`
+   eg. `sbatch ./bin/run_generation.sh return output all.prompts.full.label.d2c1570`
    This will create a dir splitname_return_output, with a sub dir completions_jsons storing all the json.gz files.
 
 4. Convert generations to MultiPL-E format:
@@ -44,7 +44,7 @@
    Run this from the generation_experiments dir. 
    
    ```bash
-   python3 pass_1.py --orig_dir generations_studenteval/multiple generations_two.of.each.firstlast.all.39b90b2_concatenate_concatenate/multiple 
+   python3 pass_1.py --orig_dir generations_studenteval/multiple generations_all.prompts.full.label.d2c1570_concatenate_concatenate/multiple 
    ```
 
 

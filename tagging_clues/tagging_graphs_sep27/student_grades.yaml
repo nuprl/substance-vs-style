@@ -204,7 +204,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - m2
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -309,7 +310,8 @@ edges:
   attempt_id: 1
   total_attempts: 3
   state: neutral
-  _edge_tags: null
+  _edge_tags:
+    - 0
 - !Edge
   node_from: *id006
   node_to: *id007

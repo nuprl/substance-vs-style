@@ -24,7 +24,8 @@ SUCCESS_CLUES = {
     "set_chars": [1,2,3,4,5],
     "reverseWords": [1,2,3,4,5],
     "remove_odd": [1,2,3,4],
-    "print_time": [1,2,3,4,5]
+    "print_time": [1,2,3,4,5],
+    "getSeason": [1,2,3,4]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -149,6 +150,64 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "getSeason": {
+        "start_node" : {
+            "student14": {
+                0: "model hallucinates month numbers instead of str"
+            },
+            "student45": {
+                0: "model out of tokens"
+            }
+        },
+        "fail": {
+            "student31": {
+                3: "model out of token"
+            }
+        },
+        "neutral": {
+            "student45": {
+                1: "model out of token",
+                2: "model out of token"
+            },
+            "student55": {
+                3: "model run out of token"
+            },
+            "student9": {
+                2: "model out of token",
+                3: "model out of token"
+            }
+        },
+        "success": {
+            "student46": {
+                3: "model guesses months correctly"
+            },
+            "student47": {
+                1: "missing clue 1 implicit"
+            },
+            "student7": {
+                3: "missing clue1 is implicit"
+            }
+        },
+        "cycles": {
+            "student31": {
+                3: "model out of token"
+            },
+            "student55": {
+                3: "model out of token"
+            }
+        },
+        "breakout": {
+            "student15": {
+                4: "model out of token"
+            },
+            "student45": {
+                3: "model out of token, thus less detail better"
+            },
+            "student6": {
+                3: "model out of token"
+            }
+        }
+    },
     "print_time": {
         "start_node": {
             "student57": {

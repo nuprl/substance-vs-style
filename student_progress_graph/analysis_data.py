@@ -21,6 +21,7 @@ SUCCESS_CLUES = {
     "sortedBooks": [1,2,3,4,5,6],
     "sort_physicists": [1,2,3,4,5,6],
     "sortBySuccessRate": [1,2,3,4,5,6],
+    "set_chars": [1,2,3,4,5],
 }
 
 KNOWN_EXCEPTIONS = {
@@ -145,6 +146,25 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "set_chars": {
+        "success": {
+            "student19": {
+                1: "missing clue 4 return string is implicit"
+            },
+            "student20": {
+                3: "student should be awarded clue 1. 4 is implicit",
+                4: "student should be awarded clue 1. 4 is implicit"
+            },
+            "student77": {
+                1: "clue 4 implicit"
+            }
+        },
+        "breakout": {
+            "student20": {
+                4: "this is loop over success state, ignore."
+            }
+        }
+    },
     "sortBySuccessRate": {
         "fail": {
             "student33": {

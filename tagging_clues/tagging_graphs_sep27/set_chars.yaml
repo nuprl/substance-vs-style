@@ -436,7 +436,7 @@ edges:
   total_attempts: 5
   state: neutral
   _edge_tags:
-    - a5
+    - m4
 - !Edge
   node_from: *id010
   node_to: *id001
@@ -458,7 +458,7 @@ edges:
   total_attempts: 5
   state: neutral
   _edge_tags:
-    - d5
+    - l4
 - !Edge
   node_from: *id001
   node_to: *id001
@@ -479,7 +479,7 @@ edges:
   total_attempts: 5
   state: neutral
   _edge_tags:
-    - a5
+    - m4
 - !Edge
   node_from: *id001
   node_to: *id002
@@ -503,7 +503,7 @@ edges:
   total_attempts: 5
   state: success
   _edge_tags:
-    - m5
+    - a5
 - !Edge
   node_from: *id004
   node_to: *id002
@@ -551,6 +551,7 @@ student_start_node_tags:
     - 1
     - 2
     - 3
+    - 4
   student77:
     - 1
     - 2

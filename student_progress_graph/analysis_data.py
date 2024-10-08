@@ -22,6 +22,7 @@ SUCCESS_CLUES = {
     "sort_physicists": [1,2,3,4,5,6],
     "sortBySuccessRate": [1,2,3,4,5,6],
     "set_chars": [1,2,3,4,5],
+    "reverseWords": [1,2,3,4,5]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -146,6 +147,27 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "reverseWords": {
+        "success": {
+            "student1": {
+                2: "5 return list implicit"
+            },
+            "student14": {
+                3: "1,5 input+return implicit"
+            },
+            "student46": {
+                1: "5 return is implicit"
+            },
+            "student7": {
+                1: "1 implicit"
+            }
+        },
+        "breakout": {
+            "student1": {
+                2: "argue this edge could be a2 not m2"
+            }
+        }
+    },
     "set_chars": {
         "success": {
             "student19": {

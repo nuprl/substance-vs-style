@@ -22,7 +22,8 @@ SUCCESS_CLUES = {
     "sort_physicists": [1,2,3,4,5,6],
     "sortBySuccessRate": [1,2,3,4,5,6],
     "set_chars": [1,2,3,4,5],
-    "reverseWords": [1,2,3,4,5]
+    "reverseWords": [1,2,3,4,5],
+    "remove_odd": [1,2,3,4]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -147,6 +148,72 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "remove_odd": {
+        "start_node": {
+            "student0": {
+                0: "model uses % which ignores floats"
+            },
+            "student41": {
+                0: "model follows student instructions too closely, commits python error of modify list while iterating"
+            }
+        },
+        "neutral": {
+            "student0": {
+                1: "same as prev attempt",
+                2: "same as prev attempt",
+                4: "same as prev attempt"
+            },
+            "student25": {
+                1: "issue of using % ignores floats",
+                2: "same as prev",
+                3: "same as prev",
+            },
+            "student41": {
+                1: "same as prev",
+                2: "same as prev",
+            }
+        },
+        "fail": {
+            "student25": {
+                4: "same as prev"
+            },
+            "student41": {
+                3: "same as prev"
+            }
+        },
+        "success": {
+            "student18": {
+                1: "missing clue 1,4 is implicit"
+            }
+        },
+        "cycles": {
+            "student0": {
+                1: "same issue of % seen before",
+                2: "same issue of % seen before"
+            },
+            "student25": {
+                1: "same issue of %",
+                2: "same as prev"
+            },
+            "student41": {
+                3: "same python list out of index issue"
+            }
+        },
+        "breakout": {
+            "student0": {
+                5: "issue of %, rephrasing helps"
+            },
+            "student17": {
+                8: "student stuck between 2 cycles"
+            },
+            "student4": {
+                6: "same errors as cycle"
+            },
+            "student51": {
+                3: "same error as cycle"
+            }
+        }
+    },
     "reverseWords": {
         "success": {
             "student1": {
@@ -165,7 +232,7 @@ KNOWN_EXCEPTIONS = {
         "breakout": {
             "student1": {
                 2: "argue this edge could be a2 not m2"
-            }
+            },
         }
     },
     "set_chars": {

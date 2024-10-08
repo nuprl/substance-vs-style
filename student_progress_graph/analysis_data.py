@@ -19,7 +19,8 @@ SUCCESS_CLUES = {
     "times_with": [1,2,3,4,5],
     "student_grades": [1,2,3,4],
     "sortedBooks": [1,2,3,4,5,6],
-    "sort_physicists": [1,2,3,4,5,6]
+    "sort_physicists": [1,2,3,4,5,6],
+    "sortBySuccessRate": [1,2,3,4,5,6],
 }
 
 KNOWN_EXCEPTIONS = {
@@ -144,6 +145,34 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "sortBySuccessRate": {
+        "fail": {
+            "student33": {
+                2: "student uses 'returning entries each on a separate line' which model interprets as print"
+            },
+            "student79": {
+                4: "same issue as student33"
+            }
+        },
+        "neutral": {
+            "student79": {
+                3: "model interprets put each element on separate line as print",
+            }
+        },
+        "success": {
+            "student64": {
+                2: "clue 6 return is implicit"
+            }
+        },
+        "breakout": {
+            "student23": {
+                2: "breakout edge leads to fail, student makes same mistake"
+            },
+            "student79": {
+                4: "breakout edge leads into another cycle"
+            }
+        }
+    },
     "sortedBooks": {
         "success": {
             "student29": {

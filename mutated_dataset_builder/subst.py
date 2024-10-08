@@ -128,7 +128,7 @@ def substitute_prompt(prompt: str, category: str, value: str):
 
     
     changed = False
-    original = None
+    changed_original = None
     # Iterate over all matches in the example string
     for match in pattern.finditer(prompt):
         # Extract CATEGORY
@@ -139,10 +139,11 @@ def substitute_prompt(prompt: str, category: str, value: str):
             actual_value = get_word_variation(value, category)
             # Replace the match with the new value
             prompt = prompt.replace(match.group(0), actual_value)
+            changed_original = original
             changed = True
         else:#use the original for every tagged token that is not in the given category class.
             prompt = prompt.replace(match.group(0), original)
-    return prompt, changed, original
+    return prompt, changed, changed_original
 
 def main_with_args(original_dataset: str, split:str, output_path: Path,category: str, value: str):
     original_dataset = datasets.load_dataset(original_dataset, split=split)

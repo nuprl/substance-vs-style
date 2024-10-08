@@ -128,6 +128,7 @@ def substitute_prompt(prompt: str, category: str, value: str):
 
     
     changed = False
+    original = None
     # Iterate over all matches in the example string
     for match in pattern.finditer(prompt):
         # Extract CATEGORY
@@ -141,15 +142,16 @@ def substitute_prompt(prompt: str, category: str, value: str):
             changed = True
         else:#use the original for every tagged token that is not in the given category class.
             prompt = prompt.replace(match.group(0), original)
-    return prompt, changed
+    return prompt, changed, original
 
 def main_with_args(original_dataset: str, split:str, output_path: Path,category: str, value: str):
     original_dataset = datasets.load_dataset(original_dataset, split=split)
     results = [ ]
     for item in original_dataset:
         prompt = item['prompt']
-        substituted_prompt, changed= substitute_prompt(prompt, category, value)
+        substituted_prompt, changed, original= substitute_prompt(prompt, category, value)
         item['prompt'] = substituted_prompt
+        item["original"] = original
         if changed:
             results.append(item)
         # else: #Filter out prompts that do not have any tokens from the given category class–they are identical to the original.

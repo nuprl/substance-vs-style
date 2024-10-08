@@ -30,17 +30,41 @@ SUCCESS_CLUES = {
     "find_multiples": [1,2],
     "findHorizontals": [1,2,3,4,5,6],
     "create_list": [1,2,3,4,5],
-    "convert": [1,2,3,4,5]
+    "convert": [1,2,3,4,5],
+    "combine": [1,2,3],
 }
 
 KNOWN_EXCEPTIONS = {
     #arya
+    "combine": {
+        "start_node": {
+            "student19": {
+                0: "argue that student needed to clarify structure better"
+            },
+            "student42": {
+                0: "argue that student needed to clarify structure better"
+            }
+        },
+        "success": {
+            "student20": {
+                5: "model somehow divines shape of format despite terse prompt"
+            },
+            "student54": {
+                4: "model somehow divines shape of format despite terse prompt"
+            }
+        },
+        "neutral": {
+            "student54": {
+                3: "student needed to clarify structure better"
+            }
+        }
+    },
     # student12, 77 special cases. "2nd index": indexing ambiguity + trivial success
     "sort_physicists": {
         "success": {
             "student12": {
                 3: "student should be awarded clue 2 in start clues"
-            }
+            },
         },
         "fail": {
             "student19": {

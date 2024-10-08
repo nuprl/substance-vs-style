@@ -29,7 +29,8 @@ SUCCESS_CLUES = {
     "generateCardDeck": [1,2,3,4,5],
     "find_multiples": [1,2],
     "findHorizontals": [1,2,3,4,5,6],
-    "create_list": [1,2,3,4,5]
+    "create_list": [1,2,3,4,5],
+    "convert": [1,2,3,4,5]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -173,6 +174,62 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "convert": {
+        "start_node": {
+            "student18": {
+                0: "model makes python error where it forgets to add temp to acc in base case (no -1), error keeping state"
+            }
+        },
+        "neutral": {
+            "student0": {
+                1: "model runs out of token",
+                2: "model runs out of token",
+                3: "model runs out of token",
+                4: "model runs out of token",
+                5: "model runs out of token",
+                6: "model runs out of token",
+                7: "student did not explicitly say capitalize"
+            },
+            "student18":{
+                1: "model ignores split instruction",
+                2: "model misinterprets next string instruction",
+            }
+        },
+        "fail": {
+            "student18": {
+                3: "model runs out of tokens"
+            }
+        },
+        "success": {
+            "student17": {
+                31: "1,5 implicit"
+            },
+            "student51": {
+                2: "clue 5 implicit"
+            }
+        },
+        "cycles": {
+            "student0": {
+                3: "model runs out of tokens",
+                5: "model runs out of tokens",
+                6: "model runs out of tokens"
+            }
+        },
+        "breakout": {
+            "student17": {
+                31: "I would argue that attempt 30 is misleading because student doesnt say split, and replaces -1 with empty string instead of space"
+            },
+            "student21": {
+                9: "previous node is already success"
+            },
+            "student3": {
+                9: "student breaksout into cycle"
+            },
+            "student4": {
+                2: "breakout edge goes nowhere"
+            }
+        }
+    },
     "create_list": {
         "start_node": {
             "student57": {

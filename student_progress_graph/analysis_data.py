@@ -28,7 +28,8 @@ SUCCESS_CLUES = {
     "getSeason": [1,2,3,4],
     "generateCardDeck": [1,2,3,4,5],
     "find_multiples": [1,2],
-    "findHorizontals": [1,2,3,4,5,6]
+    "findHorizontals": [1,2,3,4,5,6],
+    "create_list": [1,2,3,4,5]
 }
 
 KNOWN_EXCEPTIONS = {
@@ -172,6 +173,27 @@ KNOWN_EXCEPTIONS = {
         }
     },
     # Carolyn
+    "create_list": {
+        "start_node": {
+            "student57": {
+                0: "model ignores (implicit) instruction to repeat for every item in list"
+            }
+        },
+        "success": {
+            "student20": {
+                1: "clue 1,5 implicit"
+            },
+            "student36": {
+                2: "clue 1 implicit"
+            },
+            "student43": {
+                1: "clue 1 implicit; 3 should have been awarded in attempt 0"
+            },
+            "student54": {
+                2: "clue 1 implicit"
+            }
+        }
+    },
     "findHorizontals": {
         "breakout": {
             "student70": {

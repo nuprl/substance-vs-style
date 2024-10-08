@@ -208,6 +208,9 @@ def load_problem_answers(filepath, problem) -> List[str]:
         for item in yaml.safe_load(fp)[problem]["tests"]:
             if "output" in item.keys():
                 problem_answers.append(str(yaml.safe_load(item["output"])))
+
+    # fix None
+    problem_answers = [s.replace("'None'", "None") for s in problem_answers]
     return problem_answers
 
 def get_breakout_edge(cycle_edges: List[Edge]) -> Union[None, Edge]:
@@ -309,9 +312,9 @@ def score_nodes_by_tests_passed(g: Graph, problem_answers: List[str], overwrite:
     """
     Tags nodes with a score which is (num tests passed = num errors)
     """
-    for i,n in enumerate(g.nodes):
+    for _,n in enumerate(g.nodes):
         node_id = n.id
-        num_correct_print = sum([int(n.stdout[i].rsplit("\n",1)[0] == problem_answers[i])
+        num_correct_print = sum([int(n.stdout[i].rstrip() == problem_answers[i])
                                  for i in range(len(problem_answers))])
         num_error = sum([int("error:" in stderr.lower()) for stderr in n.stderr])
         score = num_correct_print - num_error

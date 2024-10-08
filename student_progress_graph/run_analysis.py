@@ -89,12 +89,15 @@ def run_RQ1(graph: Graph, outdir:str):
     fail_cycle = tot_fail[tot_fail["cycle_length"] > 0]
     succ_cycle = tot_succ[tot_succ["cycle_length"] > 0]
 
-    fail_rate = 100 * len(fail_cycle)/len(tot_fail)
-
     if len(tot_succ) > 0:
         succ_rate = 100 * len(succ_cycle)/len(tot_succ)
     else:
         succ_rate = 0
+
+    if len(tot_fail) > 0:
+        fail_rate = 100 * len(fail_cycle)/len(tot_fail)
+    else:
+        fail_rate = 0
 
     print(f"Total num fail: {len(tot_fail)}, num has loop: {len(fail_cycle)}, {fail_rate} %")
     print(f"Total num success: {len(tot_succ)}, num has loop: {len(succ_cycle)}, {succ_rate} %")
@@ -155,14 +158,13 @@ def single_problem_analysis(graph_yaml: str, outdir:str):
     
     graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
     problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
-    
     # augment graph with clue, node info, get success node
     graph = populate_clues(graph)
     graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
     # graph = score_nodes_by_target_dist(graph, success_node.id, overwrite=True)
     success_node = [n for n in graph.nodes if n._node_tags == len(problem_answers)]
     # check that only one success node exists
-    assert len(success_node) == 1, f"Can only be 1 success node: {len(success_node)}"
+    assert len(success_node) == 1, f"Can only be 1 success node: {[success_node, problem_answers]}"
     success_node = success_node[0]
     print(f"Success node {success_node.id}")
     

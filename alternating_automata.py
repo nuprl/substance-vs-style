@@ -8,14 +8,14 @@ nodes as follows.
    - One goes from the "model" node for the "from" node to the "user" node.
    - One goes from the "user" node to the "model" node for the "to" node.
 
-We also add a special "start" node (TODO).
+We also add a special "start" node.
 """
 from pathlib import Path
 import yaml
 import re
 from tqdm.auto import tqdm
 from collections import defaultdict
-from typing import TypedDict, List, Set, NamedTuple, Tuple, Optional
+from typing import TypedDict, List, Set, NamedTuple, Tuple
 import subprocess
 import argparse
 
@@ -65,6 +65,7 @@ class UserEdge(NamedTuple):
     from_node_id: str
     to_node_id: str
     text: str
+    state: str
 
 
 def create_model_node(node: Node, edge: Edge) -> ModelNode:
@@ -116,7 +117,7 @@ def get_student_trajectory(student_name: str, start_node_tags: dict[str, str], e
     first_user_node_id = f"u_{student_name}_0"
     
     new_user_nodes =[ UserNode(student_name, first_user_node_id, "initial") ]
-    new_user_edges = [ UserEdge(first_user_node_id, first_model_node_id, start_node_tags.get(student_name, "")) ]
+    new_user_edges = [ UserEdge(first_user_node_id, first_model_node_id, start_node_tags.get(student_name, ""), "initial") ]
 
     last_model_node_id = first_model_node_id
     for existing_edge in edges:
@@ -124,8 +125,8 @@ def get_student_trajectory(student_name: str, start_node_tags: dict[str, str], e
         # We are going to connect the last model node to the next model node and introduce a new user node to do so.
         new_user_node = UserNode(student_name, f"u_{student_name}_{existing_edge['attempt_id']}", existing_edge["state"])
         new_user_nodes.append(new_user_node)
-        new_user_edges.append(UserEdge(last_model_node_id, new_user_node.id, ""))
-        new_user_edges.append(UserEdge(new_user_node.id, next_model_node_id, edge_tag_to_label(existing_edge["_edge_tags"])))
+        new_user_edges.append(UserEdge(last_model_node_id, new_user_node.id, "", ""))
+        new_user_edges.append(UserEdge(new_user_node.id, next_model_node_id, edge_tag_to_label(existing_edge["_edge_tags"]), existing_edge["state"]))
         last_model_node_id = next_model_node_id
 
     return new_user_nodes, new_user_edges
@@ -174,7 +175,12 @@ def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
                 more_style = ""
             f.write(f"  {user_node.id} [shape=diamond, {more_style} label=\"{user_node.username}\"];\n")
         for user_edge in user_edges:
-            f.write(f"  {user_edge.from_node_id} -> {user_edge.to_node_id} [label=\"{user_edge.text}\"];\n")
+            more_style = ""
+            if user_edge.state == "fail":
+                more_style = ', color = "red", style = "dashed"'
+            elif user_edge.state == "success":
+                more_style = ', color = "green", style = "dashed"'
+            f.write(f"  {user_edge.from_node_id} -> {user_edge.to_node_id} [label=\"{user_edge.text}\" {more_style}];\n")
         f.write("}\n")
 
 

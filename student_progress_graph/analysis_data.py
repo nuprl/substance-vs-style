@@ -21,6 +21,29 @@ Student with out of token errors have been removed. Students that achieve a succ
 then keep messing around have been trimmed so their path ends at first success.
 """
 
+# went through KNOWN_EXCEPTIONS and counted all instances of implicit clues
+# this is very much a lower bound
+IMPLICIT_CLUES = {
+    "add_up": ["student55"],
+    "topScores": ["student50"],
+    "convert": ["student21", "student17","student51"],
+    "create_list": ["student20","student36","student54"],
+    "generateCardDeck": ["student33","student60","student63"],
+    "getSeason": ["student47", "student7"],
+    "print_time": ["student12","student36","student38","student42","student43","student54"],
+    "remove_odd": ["student18"],
+    "reverseWords": ["student1","student14","student46","student7"],
+    "set_chars": ["student19","student77"],
+    "sortBySuccessRate": ["student64"],
+    "sortedBooks": ["student29"],
+    "times_with": ["student69"],
+    "total_bill": ["student40", "student50", "student79"],
+    "pattern": ["student4","student41"],
+    "readingIceCream": ["student27"],
+    "translate": ["student50","student59","student60"],
+    "percentWin": ["student3","student4","student51"]
+
+}
 
 SUCCESS_CLUES = {
     "add_up": [1,2,3,4,5],

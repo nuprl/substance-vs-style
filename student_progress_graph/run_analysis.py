@@ -35,7 +35,6 @@ def clean_graph(graph: Graph, problem_answers: List[str]) -> Graph:
     test coverage being low.
     Removes students with out of token errors.
     """
-    graph = trim_graph(graph, problem_answers)
     students_to_remove = IGNORE_SUCCESS.get(graph.problem,[]) + \
                         OUT_OF_TOKENS_ERROR.get(graph.problem, []) + \
                         IGNORE_FAIL.get(graph.problem, [])

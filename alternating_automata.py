@@ -121,10 +121,23 @@ def get_first_model_node_for_user(user_nodes: List[UserNode], user_edges: List[U
             first_model_nodes.append((user, model_node))
     return first_model_nodes
         
+def read_start_node_tags(graph: dict) -> dict[str, str]:
+    start_node_tags = graph["student_start_node_tags"]
+    results = { }
+    for student, tags in start_node_tags.items():
+        user = student.replace("student", "s")
+        if not tags:
+            tags = [0]
+        label = ",".join([f"a{tag}" for tag in tags])
+        if label == "a0":
+            label = ""
+        results[user] = label
+    return results
 
 def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
     graph = load_graph_yaml(graph_yaml_path)
     existing_edges: List[Edge] = graph["edges"]
+    start_node_tags = read_start_node_tags(graph)
     model_nodes = create_model_nodes(existing_edges)
 
     user_nodes, user_edges = create_user_nodes_and_edges(existing_edges)
@@ -132,7 +145,7 @@ def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
     for (user, first_model_node) in first_model_nodes:
         n = UserNode(user, f"u_{user}", "initial")
         user_nodes.append(n)   
-        user_edges.append(UserEdge(n.id, first_model_node.id, ""))
+        user_edges.append(UserEdge(n.id, first_model_node.id, start_node_tags.get(user, "")))
 
 
     with dot_output_path.open("w") as f:

@@ -19,36 +19,11 @@ import contextlib
 from .analysis_data import OUT_OF_TOKENS_ERROR
 '''
 Analyzing common patterns in graphs
-
-NOTE:
-
-- is IGNORE_SUCCESS necessary in computing likelihood of fail given cycle?
-- do we need to exclude exceptional problems from all_problems analysis (model
-    misinterprets good prompts for problem specific reasons)
 '''
 global SUPPRESS_ASSERTS
 
-def display_edge_info(graph: Graph):
-    """
-    For each edge, print some info
-    """
-    for e in graph.edges:
-        # if all([str(t)[0] in ['m','l','0'] for t in e._edge_tags]):
-            prev_clue = None
-            for item in  graph.student_clues_tracker[e.username]:
-                attempt_id, clues = item["attempt_id"], item["clues"]
-                if attempt_id == (e.attempt_id - 1):
-                    prev_clue = clues
-                    break
-            diff = set(e.clues).difference(prev_clue)
-            score_before = e.node_from._node_tags 
-            score_after = e.node_to._node_tags 
-            if score_after > score_before: #or len(diff) > 0:
-                print(f"{e._edge_tags}: {prev_clue} -> {e.clues}= {diff}, {score_before}>{score_after}")
-
 def run_RQ1(graph: Graph, outdir:str):
     os.makedirs(f"{outdir}/RQ1", exist_ok=True)
-    ## RQ1: All about Cycles
     
     # check that only successful students reach successful clue set
     check_clues(graph)
@@ -72,6 +47,19 @@ def run_RQ1(graph: Graph, outdir:str):
     # check that breakout edges are significant
     check_breakout_edges(breakout_edges, graph)
     
+    # Save analyses for RQ1
+    with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
+        yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
+    with open(f"{outdir}/RQ1/graph_with_clues.yaml","w") as fp:
+        yaml.dump(graph, fp)
+    with open(f"{outdir}/RQ1/path_clues.json","w") as fp:
+        path_summary = get_path_clues(graph)
+        json.dump(path_summary, fp, indent=1)
+    # save exceptions
+    if graph.problem in KNOWN_EXCEPTIONS.keys():
+        with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
+            json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
+
     # Print some info about success rate with cycles
     print("## Cycle success rate summary:")
     df = df_cycle_summary(cycle_summary, graph)
@@ -98,26 +86,12 @@ def run_RQ1(graph: Graph, outdir:str):
     else:
         fail_rate = 0
 
-    print(f"Total num fail: {len(tot_fail)}, num has loop: {len(fail_cycle)}, {fail_rate} %")
-    print(f"Total num success: {len(tot_succ)}, num has loop: {len(succ_cycle)}, {succ_rate} %")
-    
+    print(f"Total num fail: {len(tot_fail)}, num fail has loop: {len(fail_cycle)}, {fail_rate} %")
+    print(f"Total num success: {len(tot_succ)}, num succ has loop: {len(succ_cycle)}, {succ_rate} %")
     
     fail_no_cycle = tot_fail[tot_fail["cycle_length"] == 0]
     tot_no_cycle = df[df["cycle_length"] == 0]
     tot_cycle = df[df["cycle_length"] > 0]
-
-    # Save analyses for RQ1
-    with open(f"{outdir}/RQ1/graph_cycles.yaml","w") as fp:
-        yaml.dump({"cycle_summary":cycle_summary, "breakout_edges": breakout_edges}, fp)
-    with open(f"{outdir}/RQ1/graph_with_clues.yaml","w") as fp:
-        yaml.dump(graph, fp)
-    with open(f"{outdir}/RQ1/path_clues.json","w") as fp:
-        path_summary = get_path_clues(graph)
-        json.dump(path_summary, fp, indent=1)
-    # save exceptions
-    if graph.problem in KNOWN_EXCEPTIONS.keys():
-        with open(f"{outdir}/RQ1/exceptions.json", "w") as fp:
-            json.dump(KNOWN_EXCEPTIONS[graph.problem], fp, indent=3)
         
     
     if len(fail_cycle) > 0:
@@ -142,14 +116,9 @@ def run_RQ1(graph: Graph, outdir:str):
         df.to_csv(f"{outdir}/RQ1/cycles_and_success_corr.csv")
 
         if not SUPPRESS_ASSERTS:
-            # assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
+            assert likelihood_fail_cycle > likelihood_fail_no_cycle, f"Found that cycle is not more likely to fail: {likelihood_msg}."
             assert prob_a_given_b < prob_a_given_b_neg, f"success has cycle {prob_a_given_b}, not has cycle {prob_a_given_b_neg}"
-        
-    ## other info to display
-    try:
-        display_edge_info(graph)
-    except:
-        pass
+
     
     
 def single_problem_analysis(graph_yaml: str, outdir:str, problem_clues_yaml:str):
@@ -157,7 +126,7 @@ def single_problem_analysis(graph_yaml: str, outdir:str, problem_clues_yaml:str)
     graph = load_graph(graph_yaml)
     graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
     problem_answers = load_problem_answers(problem_clues_yaml, graph.problem)
-    graph = clean_graph(graph, problem_answers)
+    graph = remove_out_of_token_errors(graph)
     
     assert all([e._edge_tags != None for e in graph.edges]), "Must tag graph first!"
     assert graph.problem in SUCCESS_CLUES.keys(),\
@@ -165,25 +134,14 @@ def single_problem_analysis(graph_yaml: str, outdir:str, problem_clues_yaml:str)
     
     # augment graph with clue, node info, get success node
     graph = populate_clues(graph)
-    graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
-    # graph = score_nodes_by_target_dist(graph, success_node.id, overwrite=True)
-    success_node = [n for n in graph.nodes if n._node_tags == len(problem_answers)]
-    # check that only one success node exists
-    assert len(success_node) == 1, f"Can only be 1 success node: {[success_node, problem_answers]}"
-    success_node = success_node[0]
+        # graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
+        # graph = score_nodes_by_target_dist(graph, success_node.id, overwrite=True)
+    success_node = SUCCESS_NODE_IDS[graph.problem]
     print(f"Success node {success_node.id}")
     
     ## RQ1: cycle behavior
     run_RQ1(graph, outdir)
-    
 
-def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
-    results = ""
-    for var_a, var_b in var_tuples:
-        corr, pval = stats.pearsonr(df[var_a], df[var_b])
-        res = f"{var_a}-{var_b}: pearsonr {corr}, pvalue {pval}"
-        results += "\n" + res
-    return results
 
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)

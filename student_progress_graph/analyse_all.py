@@ -18,14 +18,6 @@ import yaml
 import contextlib
 from .analysis_data import OUT_OF_TOKENS_ERROR
 
-def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
-    results = ""
-    for var_a, var_b in var_tuples:
-        corr, pval = stats.pearsonr(df[var_a], df[var_b])
-        res = f"{var_a}-{var_b}: pearsonr {corr:.3f}, pvalue {pval:.3f}"
-        results += "\n" + res
-    return results
-
 def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     graphs = []
     prob_to_graph = {}
@@ -36,20 +28,17 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
             print(f"Skipping {graph_name}")
             continue
         graph = load_graph(graph_yaml)
-        graph = clean_graph(graph)
+        graph = remove_out_of_token_errors(graph)
         graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
-        problem_answers = load_problem_answers(problem_clues_yaml, graph.problem)
         graph = populate_clues(graph)
         prob_to_graph[graph.problem] = graph
         graphs.append(graph)
     
     print(f"--- Running for problems {[g.problem for g in graphs]}")
-    
-    # run_RQ2(graphs, f"{outdir}/RQ2", prob_to_graph) 
 
-    run_RQ3(graphs, f"{outdir}/RQ3", prob_to_graph)
+    run_RQ2(graphs, f"{outdir}/RQ3", prob_to_graph)
 
-def run_RQ3(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
+def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     os.makedirs(outdir, exist_ok=True)
 
     """
@@ -197,144 +186,6 @@ def num_rewrite_to_subst(edge_list: List[Edge]) -> int:
             and a.attempt_id == b.attempt_id-1:
             count += 1
     return count
-
-
-def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
-    os.makedirs(outdir, exist_ok=True)
-    ## correlate length of path with success
-    path_data = []
-    for graph in graphs:
-        student_paths = get_path_clues(graph)
-        student_success = graph.get_successful_students()
-        
-        for name,path in student_paths.items():
-            student_start_clues = graph.get_start_node_states()[name]
-            path_data.append({
-                "problem": graph.problem,
-                "username": name,
-                "path": path,
-                "path_len": len(path),
-                "is_success": bool(name in student_success),
-                "start_clues": student_start_clues,
-                "start_clues_len": len(student_start_clues),
-                "total_clues": len(SUCCESS_CLUES[graph.problem])
-            })
-
-    print("## Correlation results:")
-    
-    path_df = pd.DataFrame(path_data)
-    print(path_df.corr())
-    
-    variables = [("path_len", "is_success"), ("start_clues_len","is_success"),
-                         ("path_len","start_clues_len")]
-    print(display_pearsonr_results(path_df, variables))
-        
-    # What makes students that start with few clues, successful in the end?
-    # versus students that start with many clues, but engage in re-writes
-    """
-    1. classify for "few start clues" and "lots of start clues" based on
-        a threshhold
-    2. see how many succeed out of the classes
-    """
-    print("## Correlation of number of start clues and success")
-    THRESHHOLD = 0.4
-    print(f"Threshhold for defining 'few' num clues: {THRESHHOLD}")
-    path_df["has_few_start_clues"] = path_df["start_clues_len"] / path_df["total_clues"]
-    path_df["has_few_start_clues"] = path_df["has_few_start_clues"].apply(lambda x: x <= THRESHHOLD)
-    print(path_df.value_counts(["has_few_start_clues"]))
-    print(path_df.value_counts(["has_few_start_clues", "is_success"]))
-    
-    """
-    Prelim results:
-    - majority of students start with many clues (78%)
-    - of those that start with many clues, probability of success is pretty even 50%
-    - of those that start with few clues, only a few recah success (20%)
-    RQ:
-        - why do students with many clues still fail?
-        - how do students with few clues succeed?
-    """
-    path_df = path_df.sort_values(["has_few_start_clues", "is_success"]).reset_index()
-    path_df.to_csv(f"{outdir}/path_data.csv")
-    
-    print("## Rewriting habits")
-    # rewriting is how students debug, but not often helps
-    # how often does final rewrite lead to success?
-    problem_edit_history = {}
-    modifier_success_count = 0
-    for graph in graphs:
-        student_to_edit_history = defaultdict(list)
-        for e in graph.edges:
-            student_to_edit_history[e.username].append(e._edge_tags)
-            if e.state == "success" and is_tag_kind(e._edge_tags, ["l","m","0"]):
-                modifier_success_count += 1
-        problem_edit_history[graph.problem] = student_to_edit_history
-        
-    print(f"{modifier_success_count} / {len(path_df)} = {modifier_success_count / len(path_df)}")
-    
-    # useful for students to debug, not so much for model
-    # check how often after after a rewrite a substantial tag occurs
-    rewrite_data = []
-    for problem,student_edits in problem_edit_history.items():
-        succ_students = prob_to_graph[problem].get_successful_students()
-        
-        for student, edits in student_edits.items():
-            count_follows_subst = 0
-            count_modifiers = 0
-            for (e1, e2) in zip(edits, edits[1:]):
-                if is_tag_kind(e1, ["l","m","0"]):
-                    count_modifiers += 1
-                    if is_tag_kind(e2, ["a"]):
-                        count_follows_subst += 1
-
-            final_clue = prob_to_graph[problem].student_clues_tracker[student][-1]["clues"]
-            rewrite_data.append({"student":student,
-                                 "problem":problem,
-                                "edits": edits,
-                                "has_all_clues": len(final_clue) == len(SUCCESS_CLUES[problem]),
-                                "edits_len": len(edits),
-                                "has_modifiers": count_modifiers>0,
-                                "no_modifiers": count_modifiers == 0,
-                                "count_modifiers": count_modifiers,
-                                "has_follows_subst": count_follows_subst > 0,
-                                "not_has_follows_subst": count_follows_subst == 0,
-                                "count_follows_subst": count_follows_subst,
-                                "is_success": student in succ_students})
-    
-    
-    rewrite_df = pd.DataFrame(rewrite_data)
-    rewrite_df["frequency_follows_subst"] = rewrite_df["count_follows_subst"] / rewrite_df["count_modifiers"]
-    print(display_pearsonr_results(rewrite_df, [("has_modifiers","is_success")]))
-    
-    # how often has_follow_subst + is_success
-    """
-    probability of A|B
-    A: is_success
-    B: has_follows_subst
-    
-    P(A|B) = P(AnB)/P(B)
-    
-    Keep in mind this will not be high because we still need 
-    all the clues
-    
-    NOTE: P(A|B) will be higher if we compute SUCCESS over all students?
-    think maybe its the same.
-    """
-    for var_a, var_b in [("is_success","has_modifiers"), ("is_success","has_follows_subst"),
-                         ("is_success","no_modifiers"), ("is_success","not_has_follows_subst"),
-                         ("is_success","has_all_clues")]:
-        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, rewrite_df)
-        print(f"Probability {var_a} given {var_b}: var_a {prob_a:.2f} var_b {prob_b:.2f} \
-                a_given_b: {prob_a_given_b:.2f}")
-
-    # correlation over filtered df
-    rewrite_df = rewrite_df[rewrite_df["has_modifiers"]]
-    assert not rewrite_df.isna().any().any()
-    print(rewrite_df)
-    
-    print(rewrite_df[["frequency_follows_subst","is_success"]].corr())
-    variables = [("frequency_follows_subst","is_success"), ("count_modifiers","is_success")]
-    print(display_pearsonr_results(rewrite_df, variables))
-    rewrite_df.to_csv("rewrites_data.csv")   
 
 
 def main(args):

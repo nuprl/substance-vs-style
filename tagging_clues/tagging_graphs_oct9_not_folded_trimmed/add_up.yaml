@@ -1,0 +1,1464 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: 'return sum([x for x in arr if isinstance(x, (int, float))])
+
+
+    '
+  completion_to: 'return sum(arr)
+
+    '
+  diff: "--- \n+++ \n@@ -16,7 +16,5 @@\n of all the-integers-and-floats.+numbers.\
+    \ \"\"\""
+  node_from: &id002 !Node
+    _node_tags: null
+    id: 3
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '0
+
+      '
+    - '0
+
+      '
+    - '0
+
+      '
+  node_to: &id001 !Node
+    _node_tags: null
+    id: 0
+    stderr:
+    - 'TypeError: unsupported operand type(s) for +: ''int'' and ''list'''
+    - 'TypeError: unsupported operand type(s) for +: ''int'' and ''list'''
+    - 'TypeError: unsupported operand type(s) for +: ''int'' and ''list'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    takes a list of strings, integers,\
+    \ and floats and returns the sum of all the integers and floats.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    takes a list of strings, integers,\
+    \ and floats and returns the sum of all the numbers.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student1
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: 'return sum(arr)
+
+    '
+  completion_to: "sum = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            sum += i\n    return sum\n\n"
+  diff: "--- \n+++ \n@@ -16,5 +16,7 @@\n of all the-numbers.+ints+and+floats. \"\"\
+    \""
+  node_from: *id001
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    takes a list of strings, integers,\
+    \ and floats and returns the sum of all the numbers.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    takes a list of strings, integers,\
+    \ and floats and returns the sum of all the ints and floats.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student1
+- !Edge
+  _edge_tags:
+  - a6
+  - d2
+  - d3
+  attempt_id: 1
+  clues: null
+  completion_from: "result = 0\n    for i in arr:\n        result += i\n    return\
+    \ result\n\n"
+  completion_to: "total = 0\n    for i in arr:\n        if i == '2':\n           \
+    \ total += 2\n        elif i == '3':\n            total += 3\n        elif i ==\
+    \ '3.4':\n            total += 3.4\n        elif i == '4':\n            total\
+    \ += 4\n    return total\n\n"
+  diff: "--- \n+++ \n@@ -1,16 +1,24 @@\n def add_up(arr): \"\"\"+if+string+contains+characters+2,+3,+3.4,+or+4,\
+    \ add up-all-number-characters+those+numbers in the-brackets+string and output\
+    \ the-result+answer \"\"\""
+  node_from: &id005 !Node
+    _node_tags: null
+    id: 7
+    stderr:
+    - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''list'''
+    - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''list'''
+    - 'TypeError: unsupported operand type(s) for +=: ''int'' and ''list'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    add up all number characters in\
+    \ the brackets and output the result\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    if string contains characters 2, 3,\
+    \ 3.4, or 4, add up those numbers in the string and output the answer\n    \"\"\
+    \"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student14
+- !Edge
+  _edge_tags:
+  - a5
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if i == '2':\n         \
+    \   total += 2\n        elif i == '3':\n            total += 3\n        elif i\
+    \ == '3.4':\n            total += 3.4\n        elif i == '4':\n            total\
+    \ += 4\n    return total\n\n"
+  completion_to: "sum = 0\n    for i in arr:\n        if i == '2' or i == '3' or i\
+    \ == '3.4' or i == '4':\n            sum += int(i)\n    return sum\n"
+  diff: "--- \n+++ \n@@ -2,7 +2,8 @@\n add_up(arr): \"\"\" if-string+the+arrangement\
+    \ contains characters 2,@@ -20,5 +21,8 @@\n and output the-answer+answer.+else,+return+0\
+    \ \"\"\""
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    if string contains characters 2,\
+    \ 3, 3.4, or 4, add up those numbers in the string and output the answer\n   \
+    \ \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    if the arrangement contains characters\
+    \ 2, 3, 3.4, or 4, add up those numbers in the string and output the answer. else,\
+    \ return 0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student14
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        if i == '2' or i == '3' or\
+    \ i == '3.4' or i == '4':\n            sum += int(i)\n    return sum\n"
+  completion_to: "sum = 0\n    for i in range(len(arr)):\n        if arr[i] == 2:\n\
+    \            sum += 2\n        elif arr[i] == 3:\n            sum += 3\n     \
+    \   elif arr[i] == 3.4:\n            sum += 3.4\n        elif arr[i] == 4:\n \
+    \           sum += 4\n    return sum\n"
+  diff: "--- \n+++ \n@@ -17,7 +17,7 @@\n numbers in the-string+arrangement and output\
+    \ the"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    if the arrangement contains characters\
+    \ 2, 3, 3.4, or 4, add up those numbers in the string and output the answer. else,\
+    \ return 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    if the arrangement contains characters\
+    \ 2, 3, 3.4, or 4, add up those numbers in the arrangement and output the answer.\
+    \ else, return 0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student14
+- !Edge
+  _edge_tags:
+  - d6
+  attempt_id: 4
+  clues: null
+  completion_from: "sum = 0\n    for i in range(len(arr)):\n        if arr[i] == 2:\n\
+    \            sum += 2\n        elif arr[i] == 3:\n            sum += 3\n     \
+    \   elif arr[i] == 3.4:\n            sum += 3.4\n        elif arr[i] == 4:\n \
+    \           sum += 4\n    return sum\n"
+  completion_to: "total = 0\n    for i in range(len(arr)):\n        for j in range(len(arr[i])):\n\
+    \            total += int(arr[i][j])\n    return total\n"
+  diff: "--- \n+++ \n@@ -1,28 +1,14 @@\n def add_up(arr): \"\"\"-if-the-arrangement-contains-characters-2,-3,-3.4,-or-4,\
+    \ add up-those-numbers+all+number+characters in-the-arrangement-and+each+arrangement.\
+    \ output-the-answer.-else,-return-0+total \"\"\""
+  node_from: *id002
+  node_to: &id013 !Node
+    _node_tags: null
+    id: 10
+    stderr:
+    - 'ValueError: invalid literal for int() with base 10: ''one'''
+    - 'ValueError: invalid literal for int() with base 10: ''hello'''
+    - ''
+    stdout:
+    - ''
+    - ''
+    - '0
+
+      '
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    if the arrangement contains characters\
+    \ 2, 3, 3.4, or 4, add up those numbers in the arrangement and output the answer.\
+    \ else, return 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    add up all number characters in each\
+    \ arrangement. output total\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 5
+  username: student14
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: 'return sum(arr)
+
+
+    '
+  completion_to: "if len(arr) == 0:\n        return 0\n    else:\n        return arr[0]\
+    \ + add_up(arr[1:])\n"
+  diff: "--- \n+++ \n@@ -1,13 +1,15 @@\n def add_up(arr): \"\"\"-Adds+For+each+number+in+the+list,+adds\
+    \ the numbers-in-the-list-and returns the number."
+  node_from: *id001
+  node_to: &id003 !Node
+    _node_tags: null
+    id: 1
+    stderr:
+    - 'TypeError: can only concatenate list (not "int") to list'
+    - 'TypeError: can only concatenate list (not "int") to list'
+    - 'TypeError: can only concatenate list (not "int") to list'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Adds the numbers in the list and\
+    \ returns the number. If there are no numbers, returns 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For each number in the list, adds\
+    \ the numbers returns the number. If there are no numbers, returns 0.\n    \"\"\
+    \"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student15
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "if len(arr) == 0:\n        return 0\n    else:\n        return\
+    \ arr[0] + add_up(arr[1:])\n"
+  completion_to: "num_list = []\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            num_list.append(i)\n    if len(num_list) == 0:\n    \
+    \    return 0\n    else:\n        return sum(num_list)\n"
+  diff: "--- \n+++ \n@@ -4,12 +4,31 @@\n For each number+variable in the list,+if+the+variable+is+a+number,\
+    \ adds the-numbers+number+to+a+separate+list.+Adds+the+number+in+this+list+together+and\
+    \ returns the number."
+  node_from: *id003
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    For each number in the list, adds\
+    \ the numbers returns the number. If there are no numbers, returns 0.\n    \"\"\
+    \"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For each number variable in the list,\
+    \ if the variable is a number, adds the number to a separate list. Adds the number\
+    \ in this list together and returns the number. If there are no numbers, returns\
+    \ 0.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student15
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 3
+  clues: null
+  completion_from: "num_list = []\n    for i in arr:\n        if type(i) == int or\
+    \ type(i) == float:\n            num_list.append(i)\n    if len(num_list) == 0:\n\
+    \        return 0\n    else:\n        return sum(num_list)\n"
+  completion_to: "nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n\
+    \        except:\n            pass\n    if len(nums) == 0:\n        return 0\n\
+    \    return sum(nums)\n"
+  diff: "--- \n+++ \n@@ -3,7 +3,6 @@\n \"\"\" For each-number variable in the@@ -11,12\
+    \ +10,15 @@\n if the variable-is+can+be+casted+to a-number,+float, adds the-number+variable\
+    \ to a separate"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    For each number variable in the\
+    \ list, if the variable is a number, adds the number to a separate list. Adds\
+    \ the number in this list together and returns the number. If there are no numbers,\
+    \ returns 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For each variable in the list, if\
+    \ the variable can be casted to a float, adds the variable to a separate list.\
+    \ Adds the number in this list together and returns the number. If there are no\
+    \ numbers, returns 0.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student15
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n\
+    \        except:\n            pass\n    if len(nums) == 0:\n        return 0\n\
+    \    return sum(nums)\n"
+  completion_to: "nums = []\n    for i in arr:\n        try:\n            nums.append(float(i))\n\
+    \        except:\n            pass\n    if len(nums) == 0:\n        return 0\n\
+    \    else:\n        return sum(nums)\n"
+  diff: ''
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    For each variable in the list, if\
+    \ the variable can be casted to a float, adds the variable to a separate list.\
+    \ Adds the number in this list together and returns the number. If there are no\
+    \ numbers, returns 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For each variable in the list, if\
+    \ the variable can be casted to a float, adds the variable to a separate list.\
+    \ Adds the number in this list together and returns the number. If there are no\
+    \ numbers, returns 0.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 5
+  username: student15
+- !Edge
+  _edge_tags:
+  - a1
+  attempt_id: 1
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if type(item) == int:\n\
+    \            sum += item\n    return sum\n"
+  completion_to: "total = 0\n    for i in arr:\n        for j in i:\n            try:\n\
+    \                total += j\n            except TypeError:\n                pass\n\
+    \    return total\n"
+  diff: "--- \n+++ \n@@ -5,20 +5,31 @@\n items in the-list,-if+list+inside+the+list+add+each+item+together.+If\
+    \ the item is+not an-integer-add-them-together.+integer,+ignore+any+errors. Return\
+    \ the sum of-those-integers.+the+integers+in+the+list. \"\"\""
+  node_from: *id002
+  node_to: &id008 !Node
+    _node_tags: null
+    id: 5
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '9
+
+      '
+    - '6.4
+
+      '
+    - '0
+
+      '
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    For items in the list, if the item\
+    \ is an integer add them together. Return the sum of those integers.\n    \"\"\
+    \"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For items in the list inside the list\
+    \ add each item together. If the item is not an integer, ignore any errors. Return\
+    \ the sum of the integers in the list.\n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student24
+- !Edge
+  _edge_tags:
+  - m1
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0.0\n    for item in arr:\n        total += float(item)\n\
+    \    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        total += float(i)\n    return\
+    \ total\n"
+  diff: "--- \n+++ \n@@ -5,9 +5,9 @@\n a list with-another-internal-list.+a+list+inside.\
+    \ Creates a new@@ -25,7 +25,10 @@\n item in the-internal+list+inside+the+input\
+    \ list to a"
+  node_from: &id004 !Node
+    _node_tags: null
+    id: 11
+    stderr:
+    - 'TypeError: float() argument must be a string or a real number, not ''list'''
+    - 'TypeError: float() argument must be a string or a real number, not ''list'''
+    - 'TypeError: float() argument must be a string or a real number, not ''list'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  node_to: *id004
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes a list with another internal\
+    \ list. Creates a new float variable and sets it to zero, and then converts each\
+    \ item in the internal list to a float in any way possible and adds them to the\
+    \ float variable. Then, returns that float variable.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes a list with a list inside. Creates\
+    \ a new float variable and sets it to zero, and then converts each item in the\
+    \ list inside the input list to a float in any way possible and adds them to the\
+    \ float variable. Then, returns that float variable.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student31
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        total += float(i)\n    return\
+    \ total\n"
+  completion_to: "trueList = []\n    for item in arr:\n        for element in item:\n\
+    \            trueList.append(element)\n    total = 0.0\n    for item in trueList:\n\
+    \        total += float(item)\n    return total\n"
+  diff: "--- \n+++ \n@@ -8,6 +8,34 @@\n a list inside.+Then,+creates+a+new+list+and+for+every+item+in+the+input+list,+takes+each+element+inside+that+item+and+adds+it+to+a+new+list+called+trueList.\
+    \ Creates a new@@ -24,12 +52,7 @@\n each item in-the-list-inside-the-input-list+trueList\
+    \ to a float"
+  node_from: *id004
+  node_to: &id012 !Node
+    _node_tags: null
+    id: 8
+    stderr:
+    - 'ValueError: could not convert string to float: ''one'''
+    - 'ValueError: could not convert string to float: ''hello'''
+    - ''
+    stdout:
+    - ''
+    - ''
+    - '0.0
+
+      '
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes a list with a list inside.\
+    \ Creates a new float variable and sets it to zero, and then converts each item\
+    \ in the list inside the input list to a float in any way possible and adds them\
+    \ to the float variable. Then, returns that float variable.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes a list with a list inside. Then,\
+    \ creates a new list and for every item in the input list, takes each element\
+    \ inside that item and adds it to a new list called trueList. Creates a new float\
+    \ variable and sets it to zero, and then converts each item in trueList to a float\
+    \ in any way possible and adds them to the float variable. Then, returns that\
+    \ float variable.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student31
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        total += i\n    return total\n"
+  completion_to: "sum = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            sum += i\n    return sum\n"
+  diff: "--- \n+++ \n@@ -4,14 +4,31 @@\n Takes an array.-Adds-up+For each-number+value+in+the+array,+if+it+is+a+number,+adds+it+to+the+sum.+Output+is+the+sum+of+all+the+numbers\
+    \ in the array.-Outputs-the-total. \"\"\""
+  node_from: *id005
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes an array. Adds up each number\
+    \ in the array. Outputs the total.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes an array. For each value in\
+    \ the array, if it is a number, adds it to the sum. Output is the sum of all the\
+    \ numbers in the array.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student45
+- !Edge
+  _edge_tags:
+  - m2
+  - m3
+  attempt_id: 2
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            sum += i\n    return sum\n"
+  completion_to: "sum = 0\n    for i in arr:\n        try:\n            sum += i\n\
+    \        except:\n            pass\n    return sum\n\nprint(add_up([1,2,3,4,5]))\n\
+    print(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]))\n\
+    print(add_"
+  diff: "--- \n+++ \n@@ -4,13 +4,13 @@\n Takes an array.-For+Reads each value in the-array,-if+array.+If\
+    \ it is a@@ -20,6 +20,20 @@\n to the sum.+If+it+is+not+a+number,+skips+to+the+next+value+in+the+array.\
+    \ Output is the"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes an array. For each value in\
+    \ the array, if it is a number, adds it to the sum. Output is the sum of all the\
+    \ numbers in the array.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value in\
+    \ the array. If it is a number, adds it to the sum. If it is not a number, skips\
+    \ to the next value in the array. Output is the sum of all the numbers in the\
+    \ array.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student45
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        try:\n            sum += i\n\
+    \        except:\n            pass\n    return sum\n\nprint(add_up([1,2,3,4,5]))\n\
+    print(add_up([1,2,3,4,5, \"a\"]))\nprint(add_up([1,2,3,4,5, \"a\", \"b\"]))\n\
+    print(add_"
+  completion_to: "sum = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            sum += i\n    return sum\n"
+  diff: ''
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value\
+    \ in the array. If it is a number, adds it to the sum. If it is not a number,\
+    \ skips to the next value in the array. Output is the sum of all the numbers in\
+    \ the array.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes an array. Reads each value in\
+    \ the array. If it is a number, adds it to the sum. If it is not a number, skips\
+    \ to the next value in the array. Output is the sum of all the numbers in the\
+    \ array.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student45
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 1
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        sum += i\n    return sum\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n    return total\n"
+  diff: "--- \n+++ \n@@ -5,6 +5,9 @@\n in an array,+removes+all+strings, outputs all\
+    \ integers"
+  node_from: *id005
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes in an array, outputs all integers\
+    \ added together that are in the array.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings,\
+    \ outputs all integers added together that are in the array.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student46
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int:\n   \
+    \         total += i\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n    return total\n\nprint(add_up([1,2,\"a\",3]))\n"
+  diff: "--- \n+++ \n@@ -10,7 +10,7 @@\n strings, outputs all-integers+numbers added\
+    \ together that"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings,\
+    \ outputs all integers added together that are in the array.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings,\
+    \ outputs all numbers added together that are in the array.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student46
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int:\n   \
+    \         total += i\n    return total\n\nprint(add_up([1,2,\"a\",3]))\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5,\"\
+    hello\"]))\nprint(add_up([1,2,3,4,5,\"hello\", \"world\"]))\nprint(add_up([1"
+  diff: "--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Takes in+a+list+within an array, removes"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes in an array, removes all strings,\
+    \ outputs all numbers added together that are in the array.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes\
+    \ all strings, outputs all numbers added together that are in the array.\n   \
+    \ \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student46
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int:\n   \
+    \         total += i\n    return total\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,5,\"\
+    hello\"]))\nprint(add_up([1,2,3,4,5,\"hello\", \"world\"]))\nprint(add_up([1"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n        elif type(i) == float:\n            total += i\n \
+    \   return total\n\nprint(add_up([1,2,3,'a']))\n"
+  diff: ''
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes in a list within an array,\
+    \ removes all strings, outputs all numbers added together that are in the array.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes in a list within an array, removes\
+    \ all strings, outputs all numbers added together that are in the array.\n   \
+    \ \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student46
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int:\n   \
+    \         total += i\n        elif type(i) == float:\n            total += i\n\
+    \    return total\n\nprint(add_up([1,2,3,'a']))\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n    return total\n\nprint(add_up([1,2,3,4,5,6,7,8,9]))\nprint(add_up([1,2,3,4,5,6,7,8,9,\"\
+    a\"]))\nprint(add_up([1,2,3,4,"
+  diff: "--- \n+++ \n@@ -4,10 +4,15 @@\n Takes in a+array+and+withing+that+array+list,+from+the\
+    \ list-within-an-array, removes all strings,"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Takes in a list within an array,\
+    \ removes all strings, outputs all numbers added together that are in the array.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Takes in a array and withing that\
+    \ array list, from the list removes all strings, outputs all numbers added together\
+    \ that are in the array.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 6
+  username: student46
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: 'return sum(arr)
+
+    '
+  completion_to: "sum = 0\n    for item in arr:\n        if type(item) == float:\n\
+    \            sum += item\n    return sum\n"
+  diff: "--- \n+++ \n@@ -7,5 +7,17 @@\n the floats in-arr\"+arr,+neglect+the+item+if+the+item+in+arr+is+not+a+float\"\
+    \ \"\"\""
+  node_from: *id001
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr\"\
+    \n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr, neglect\
+    \ the item if the item in arr is not a float\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if type(item) == float:\n\
+    \            sum += item\n    return sum\n"
+  completion_to: "sum = 0\n    for item in arr:\n        if isinstance(item, float):\n\
+    \            sum += item\n    return sum\n"
+  diff: "--- \n+++ \n@@ -2,12 +2,16 @@\n add_up(arr): \"\"\" \"add-up all the floats\
+    \ in-arr,+arr+into+a+number+named+sum, neglect the item@@ -19,5 +23,7 @@\n is\
+    \ not a-float\"+float,+return+sum\" \"\"\""
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add up all the floats in arr,\
+    \ neglect the item if the item in arr is not a float\"\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add all the floats in arr into a\
+    \ number named sum, neglect the item if the item in arr is not a float, return\
+    \ sum\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if isinstance(item, float):\n\
+    \            sum += item\n    return sum\n"
+  completion_to: "sum = 0\n    for item in arr:\n        if type(item) == float:\n\
+    \            sum += item\n    return sum\n"
+  diff: "--- \n+++ \n@@ -4,7 +4,7 @@\n \"add all the-floats+doubles in arr into"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add all the floats in arr into\
+    \ a number named sum, neglect the item if the item in arr is not a float, return\
+    \ sum\"\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a number named sum, neglect the item if the item in arr is not a float, return\
+    \ sum\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if type(item) == float:\n\
+    \            sum += item\n    return sum\n"
+  completion_to: "sum = 0\n    for item in arr:\n        if isinstance(item, int):\n\
+    \            sum += item\n    return sum\n\n"
+  diff: "--- \n+++ \n@@ -23,7 +23,7 @@\n is not a-float,+double, return sum\" \"\"\
+    \""
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a number named sum, neglect the item if the item in arr is not a float, return\
+    \ sum\"\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a number named sum, neglect the item if the item in arr is not a double, return\
+    \ sum\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if isinstance(item, int):\n\
+    \            sum += item\n    return sum\n\n"
+  completion_to: "sum = 0.0\n    for i in arr:\n        if isinstance(i, float):\n\
+    \            sum += i\n    return sum\n"
+  diff: "--- \n+++ \n@@ -9,7 +9,7 @@\n arr into a-number+double named sum, neglect"
+  node_from: *id002
+  node_to: &id006 !Node
+    _node_tags: null
+    id: 12
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '0.0
+
+      '
+    - '0.0
+
+      '
+    - '0.0
+
+      '
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a number named sum, neglect the item if the item in arr is not a double, return\
+    \ sum\"\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a double named sum, neglect the item if the item in arr is not a double, return\
+    \ sum\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 6
+  clues: null
+  completion_from: "sum = 0.0\n    for i in arr:\n        if isinstance(i, float):\n\
+    \            sum += i\n    return sum\n"
+  completion_to: "sum = 0\n    for item in arr:\n        if type(item) == float or\
+    \ type(item) == int:\n            sum += item\n    return sum\n"
+  diff: ''
+  node_from: *id006
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a double named sum, neglect the item if the item in arr is not a double, return\
+    \ sum\"\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    \"add all the doubles in arr into\
+    \ a double named sum, neglect the item if the item in arr is not a double, return\
+    \ sum\"\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 7
+  username: student47
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       sum += i\n    return sum\n"
+  completion_to: "sum = 0\n    for i in arr:\n        if type(i) == int:\n       \
+    \     sum += i\n        elif type(i) == list:\n            sum += add_up(i)\n\
+    \    return sum\n"
+  diff: "--- \n+++ \n@@ -7,8 +7,8 @@\n that runs through-an-array+a+list of lists.\
+    \ The@@ -26,7 +26,11 @@\n sum of all-numbers.+numbers+in+the+inner+list. The function\
+    \ should"
+  node_from: *id002
+  node_to: &id007 !Node
+    _node_tags: null
+    id: 9
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '9
+
+      '
+    - '3
+
+      '
+    - '0
+
+      '
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Write a function that runs through\
+    \ an array of lists. The function should get all numbers from the list and returns\
+    \ the sum of all numbers. The function should avoid strings if they are elements\
+    \ in the list. \n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists. The function should get all numbers from the list and returns\
+    \ the sum of all numbers in the inner list. The function should avoid strings\
+    \ if they are elements in the list. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 7
+  username: student55
+- !Edge
+  _edge_tags:
+  - m2
+  - m3
+  attempt_id: 2
+  clues: null
+  completion_from: "sum = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       sum += i\n        elif type(i) == list:\n            sum += add_up(i)\n\
+    \    return sum\n"
+  completion_to: "sum = 0\n    for i in arr:\n        if isinstance(i, list):\n  \
+    \          sum += add_up(i)\n        elif isinstance(i, int) or isinstance(i,\
+    \ float):\n            sum += i\n    return sum\n\nprint(add_up([1, 2, 3, [4,\
+    \ 5, 6], 7, 8, 9, [10, 11, 12]]))\nprint(add_up"
+  diff: "--- \n+++ \n@@ -17,6 +17,10 @@\n get all numbers+(both+integers+or+floats)\
+    \ from the list"
+  node_from: *id007
+  node_to: *id008
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists. The function should get all numbers from the list and returns\
+    \ the sum of all numbers in the inner list. The function should avoid strings\
+    \ if they are elements in the list. \n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists. The function should get all numbers (both integers or floats)\
+    \ from the list and returns the sum of all numbers in the inner list. The function\
+    \ should avoid strings if they are elements in the list.\n    \"\"\"\n    "
+  state: success
+  total_attempts: 7
+  username: student55
+- !Edge
+  _edge_tags:
+  - d3
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for num in arr:\n        total += num\n    return\
+    \ total\n\nprint(add_up([1,2,3,4,5]))\n"
+  completion_to: 'return sum(arr)
+
+    '
+  diff: "--- \n+++ \n@@ -1,9 +1,12 @@\n def add_up(arr): \"\"\"-add+Return the-numbers+sum+of+the+integers\
+    \ in the list"
+  node_from: *id005
+  node_to: *id001
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    add the numbers in the list \n \
+    \   \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Return the sum of the integers in\
+    \ the list\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student58
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 2
+  clues: null
+  completion_from: 'return sum(arr)
+
+    '
+  completion_to: "total = 0\n    for num in arr:\n        total += num\n    return\
+    \ total\n"
+  diff: "--- \n+++ \n@@ -1,13 +1,13 @@\n def add_up(arr): \"\"\"-Return+Add+together+and+return\
+    \ the-sum-of-the-integers+numbers in the-list+list. \"\"\""
+  node_from: *id001
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Return the sum of the integers in\
+    \ the list\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together and return the numbers\
+    \ in the list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student58
+- !Edge
+  _edge_tags:
+  - d3
+  attempt_id: 3
+  clues: null
+  completion_from: "total = 0\n    for num in arr:\n        total += num\n    return\
+    \ total\n"
+  completion_to: 'return sum(x for x in arr if type(x) == int)
+
+
+    '
+  diff: "--- \n+++ \n@@ -1,13 +1,16 @@\n def add_up(arr): \"\"\"-Add-together-and-return+Return\
+    \ the-numbers+sum+of+the+integers in the list.+Ignore+the+string. \"\"\""
+  node_from: *id005
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together and return the numbers\
+    \ in the list.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Return the sum of the integers in\
+    \ the list. Ignore the string.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student58
+- !Edge
+  _edge_tags:
+  - m4
+  - m2
+  - a5
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for item in arr:\n        if type(item) == int:\n\
+    \            total += item\n    return total\n"
+  completion_to: "new_list = []\n    for item in arr:\n        if type(item) == int:\n\
+    \            new_list.append(item)\n    return sum(new_list)\n"
+  diff: "--- \n+++ \n@@ -15,13 +15,60 @@\n and integers. Function-takes+checks+each+item+in+the+list+to+check+if+it+is+an+integer+or+a+string.+If+it+is+an+integer+it+adds+it+to+a+new+list.+If+it+is+not+an+integer+it+ignores+it.+Outputs\
+    \ the sum of+each+ingter+in the-integers-and-outputs-it+new+list.+If+the+original+list+contains+no+integers,+return+0\
+    \ \"\"\""
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Input: list of items, that may be\
+    \ a combination of strings and integers. Function takes the sum of the integers\
+    \ and outputs it\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Input: list of items, that may be\
+    \ a combination of strings and integers. Function checks each item in the list\
+    \ to check if it is an integer or a string. If it is an integer it adds it to\
+    \ a new list. If it is not an integer it ignores it. Outputs the sum of each ingter\
+    \ in the new list. If the original list contains no integers, return 0\n    \"\
+    \"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student6
+- !Edge
+  _edge_tags:
+  - a6
+  attempt_id: 2
+  clues: null
+  completion_from: "new_list = []\n    for item in arr:\n        if type(item) ==\
+    \ int:\n            new_list.append(item)\n    return sum(new_list)\n"
+  completion_to: "new_list = []\n    for item in arr:\n        if item.isdigit():\n\
+    \            new_list.append(int(item))\n    if len(new_list) == 0:\n        return\
+    \ 0\n    else:\n        return sum(new_list)\n"
+  diff: "--- \n+++ \n@@ -4,16 +4,7 @@\n Input: list of-items,-that-may-be-a-combination-of-strings-and-integers.+strings.\
+    \ Function checks each@@ -26,16 +17,20 @@\n if it is-an-integer-or a-string.+number+character.\
+    \ If it is+a+number,+convert+it+to an integer+and it adds it@@ -47,7 +42,8 @@\n\
+    \ it is not-an+a+number integer it ignores"
+  node_from: *id002
+  node_to: &id010 !Node
+    _node_tags: null
+    id: 2
+    stderr:
+    - 'AttributeError: ''list'' object has no attribute ''isdigit'''
+    - 'AttributeError: ''list'' object has no attribute ''isdigit'''
+    - 'AttributeError: ''list'' object has no attribute ''isdigit'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Input: list of items, that may be\
+    \ a combination of strings and integers. Function checks each item in the list\
+    \ to check if it is an integer or a string. If it is an integer it adds it to\
+    \ a new list. If it is not an integer it ignores it. Outputs the sum of each ingter\
+    \ in the new list. If the original list contains no integers, return 0\n    \"\
+    \"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Input: list of strings. Function checks\
+    \ each item in the list to check if it is a number character. If it is a number,\
+    \ convert it to an integer and it adds it to a new list. If it is not a number\
+    \ integer it ignores it. Outputs the sum of each ingter in the new list. If the\
+    \ original list contains no integers, return 0\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student6
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        try:\n            total\
+    \ += i[0]\n        except:\n            total += 0\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int:\n     \
+    \       total += i\n        else:\n            total += 0\n    return total\n"
+  diff: "--- \n+++ \n@@ -8,7 +8,7 @@\n in the first-entry+row of an array,"
+  node_from: &id011 !Node
+    _node_tags: null
+    id: 4
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '0
+
+      '
+    - '3
+
+      '
+    - '0
+
+      '
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    This function takes entries in the\
+    \ first entry of an array, and adds them to the total if the entry is a number.\
+    \ Otherwise, it adds 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    This function takes entries in the\
+    \ first row of an array, and adds them to the total if the entry is a number.\
+    \ Otherwise, it adds 0.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student65
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int:\n   \
+    \         total += i\n        else:\n            total += 0\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        total += i\n    return total\n"
+  diff: "--- \n+++ \n@@ -3,29 +3,19 @@\n \"\"\" This function-takes-entries+adds+all+numbers\
+    \ in+an+array+together+and+returns the-first-row-of-an-array,-and-adds-them-to-the-total-if-the-entry-is-a-number.-Otherwise,+total.+Otherwise\
+    \ it-adds+returns 0. \"\"\""
+  node_from: *id002
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    This function takes entries in the\
+    \ first row of an array, and adds them to the total if the entry is a number.\
+    \ Otherwise, it adds 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    This function adds all numbers in\
+    \ an array together and returns the total. Otherwise it returns 0.\n    \"\"\"\
+    \n    "
+  state: neutral
+  total_attempts: 6
+  username: student65
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        total += i\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        else:\n            total += 0\n \
+    \   return total\n"
+  diff: "--- \n+++ \n@@ -3,19 +3,25 @@\n \"\"\" This function-adds-all-numbers+takes+entries\
+    \ in an-array-together+array, and-returns+adds+them+to the-total.-Otherwise+total+if+the+entry+is+a+number.+Otherwise,\
+    \ it-returns+adds 0. \"\"\""
+  node_from: *id005
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    This function adds all numbers in\
+    \ an array together and returns the total. Otherwise it returns 0.\n    \"\"\"\
+    \n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    This function takes entries in an\
+    \ array, and adds them to the total if the entry is a number. Otherwise, it adds\
+    \ 0.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student65
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        else:\n            total += 0\n \
+    \   return total\n"
+  completion_to: "total = 0\n    for entry in arr:\n        if isinstance(entry, int):\n\
+    \            total += entry\n        else:\n            total += 0\n    return\
+    \ total\n"
+  diff: "--- \n+++ \n@@ -5,7 +5,7 @@\n function takes entries-in+within an array,\
+    \ and"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    This function takes entries in an\
+    \ array, and adds them to the total if the entry is a number. Otherwise, it adds\
+    \ 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    This function takes entries within\
+    \ an array, and adds them to the total if the entry is a number. Otherwise, it\
+    \ adds 0.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student65
+- !Edge
+  _edge_tags:
+  - a1
+  attempt_id: 5
+  clues: null
+  completion_from: "total = 0\n    for entry in arr:\n        if isinstance(entry,\
+    \ int):\n            total += entry\n        else:\n            total += 0\n \
+    \   return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        for j in i:\n            if\
+    \ isinstance(j, int):\n                total += j\n            else:\n       \
+    \         total += 0\n    return total\n"
+  diff: "--- \n+++ \n@@ -1,13 +1,20 @@\n def add_up(arr): \"\"\"-This+For+each+list+in+an+array,+this\
+    \ function takes-entries-within-an-array,+each+entry+in+the+list and adds them"
+  node_from: *id002
+  node_to: *id007
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    This function takes entries within\
+    \ an array, and adds them to the total if the entry is a number. Otherwise, it\
+    \ adds 0.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    For each list in an array, this function\
+    \ takes each entry in the list and adds them to the total if the entry is a number.\
+    \ Otherwise, it adds 0.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 6
+  username: student65
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        elif type(i) == str:\n          \
+    \  continue\n        else:\n            total += 0\n    return total\n"
+  diff: "--- \n+++ \n@@ -1,10 +1,9 @@\n def add_up(arr): \"\"\"-sums-the-total-of+adds+up+only\
+    \ integers and floats"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    sums the total of integers and floats\
+    \ in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    adds up only integers and floats in\
+    \ an array. strings are ignored, empty spots count as 0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student7
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        elif type(i) == str:\n          \
+    \  continue\n        else:\n            total += 0\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if isinstance(i, int) or isinstance(i,\
+    \ float):\n            total += i\n    return total\n\n"
+  diff: "--- \n+++ \n@@ -1,9 +1,7 @@\n def add_up(arr): \"\"\"-adds-up-only+sums integers\
+    \ and floats"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    adds up only integers and floats\
+    \ in an array. strings are ignored, empty spots count as 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    sums integers and floats in an array.\
+    \ strings are ignored, empty spots count as 0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student7
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if isinstance(i, int) or\
+    \ isinstance(i, float):\n            total += i\n    return total\n\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        elif i == None:\n            total\
+    \ += 0\n    return total\n"
+  diff: "--- \n+++ \n@@ -1,13 +1,18 @@\n def add_up(arr): \"\"\"+iterates+through+the+array+and\
+    \ sums+the+total+of integers and-floats-in-an-array.+floats. strings are ignored,"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    sums integers and floats in an array.\
+    \ strings are ignored, empty spots count as 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    iterates through the array and sums\
+    \ the total of integers and floats. strings are ignored, empty spots count as\
+    \ 0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student7
+- !Edge
+  _edge_tags:
+  - d3
+  - d2
+  - d4
+  - d5
+  attempt_id: 4
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == int or type(i)\
+    \ == float:\n            total += i\n        elif i == None:\n            total\
+    \ += 0\n    return total\n"
+  completion_to: "for i in arr:\n        print(i)\n\nadd_up([1,2,3,4,5])\n"
+  diff: "--- \n+++ \n@@ -6,19 +6,6 @@\n the array and-sums-the-total-of-integers-and-floats.-strings-are-ignored,-empty-spots-count-as-0+prints+i\
+    \ \"\"\""
+  node_from: *id002
+  node_to: &id009 !Node
+    _node_tags: null
+    id: 6
+    stderr:
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    iterates through the array and sums\
+    \ the total of integers and floats. strings are ignored, empty spots count as\
+    \ 0\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    iterates through the array and prints\
+    \ i\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student7
+- !Edge
+  _edge_tags:
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  attempt_id: 5
+  clues: null
+  completion_from: "for i in arr:\n        print(i)\n\nadd_up([1,2,3,4,5])\n"
+  completion_to: "total = 0\n    for row in arr:\n        for item in row:\n     \
+    \       if type(item) == int or type(item) == float:\n                total +=\
+    \ item\n    return total\n"
+  diff: "--- \n+++ \n@@ -4,8 +4,23 @@\n iterates through the-array+column and-prints-i+rows+and+sums+the+total+of+integers+and+floats.+strings+are+ignored,+empty+spots+count+as+0\
+    \ \"\"\""
+  node_from: *id009
+  node_to: *id008
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    iterates through the array and prints\
+    \ i\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    iterates through the column and rows\
+    \ and sums the total of integers and floats. strings are ignored, empty spots\
+    \ count as 0\n    \"\"\"\n    "
+  state: success
+  total_attempts: 6
+  username: student7
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == str:\n   \
+    \         if i.lower() in [\"zero\", \"one\", \"two\", \"three\", \"four\", \"\
+    five\", \"six\", \"seven\", \"eight\", \"nine\"]:\n                total += int(i)\n\
+    \        else:\n            total += i\n    return total\n"
+  completion_to: "total = 0\n    for item in arr:\n        if isinstance(item, str):\n\
+    \            if item.isdigit():\n                total += int(item)\n        \
+    \    else:\n                total += word_to_num(item)\n        else:\n      \
+    \      total += item\n    return total\n\n"
+  diff: "--- \n+++ \n@@ -3,9 +3,6 @@\n \"\"\" Add together-each-value-in the list.\
+    \ If"
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each value in the list.\
+    \ If there is a string, and the word inside is a number in written form, add that\
+    \ number too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together the list. If there is\
+    \ a string, and the word inside is a number in written form, add that number too.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "total = 0\n    for item in arr:\n        if isinstance(item, str):\n\
+    \            if item.isdigit():\n                total += int(item)\n        \
+    \    else:\n                total += word_to_num(item)\n        else:\n      \
+    \      total += item\n    return total\n\n"
+  completion_to: "total = 0\n    for item in arr:\n        if type(item) == str:\n\
+    \            if item.isdigit():\n                total += int(item)\n        \
+    \    elif item.lower() in words:\n                total += words[item.lower()]\n\
+    \        else:\n            total += item\n    return total\n"
+  diff: "--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Add together+each+item+in the list.\
+    \ If"
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together the list. If there\
+    \ is a string, and the word inside is a number in written form, add that number\
+    \ too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each item in the list.\
+    \ If there is a string, and the word inside is a number in written form, add that\
+    \ number too.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "total = 0\n    for item in arr:\n        if type(item) == str:\n\
+    \            if item.isdigit():\n                total += int(item)\n        \
+    \    elif item.lower() in words:\n                total += words[item.lower()]\n\
+    \        else:\n            total += item\n    return total\n"
+  completion_to: "total = 0\n    for item in arr:\n        if type(item) == int:\n\
+    \            total += item\n        elif type(item) == str and item.isdigit():\n\
+    \            total += int(item)\n    return total\n\n"
+  diff: "--- \n+++ \n@@ -5,6 +5,11 @@\n together each item+that+is+not+a+string in\
+    \ the list."
+  node_from: *id005
+  node_to: *id002
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each item in the list.\
+    \ If there is a string, and the word inside is a number in written form, add that\
+    \ number too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. If there is a string, and the word inside is a number\
+    \ in written form, add that number too.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - d6
+  attempt_id: 4
+  clues: null
+  completion_from: "total = 0\n    for item in arr:\n        if type(item) == int:\n\
+    \            total += item\n        elif type(item) == str and item.isdigit():\n\
+    \            total += int(item)\n    return total\n\n"
+  completion_to: "sum = 0\n    for item in arr:\n        if type(item) != str:\n \
+    \           sum += item\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,\"\
+    5\"]))\nprint(add_up([1,2,3,4,\"5\",6]))\n"
+  diff: "--- \n+++ \n@@ -13,23 +13,4 @@\n in the list.-If-there-is-a-string,-and-the-word-inside-is-a-number-in-written-form,-add-that-number-too.\
+    \ \"\"\""
+  node_from: *id002
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. If there is a string, and the word inside is a number\
+    \ in written form, add that number too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - a6
+  attempt_id: 5
+  clues: null
+  completion_from: "sum = 0\n    for item in arr:\n        if type(item) != str:\n\
+    \            sum += item\n    return sum\n\nprint(add_up([1,2,3,4,5]))\nprint(add_up([1,2,3,4,\"\
+    5\"]))\nprint(add_up([1,2,3,4,\"5\",6]))\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == str:\n     \
+    \       if i.isdigit():\n                total += int(i)\n        else:\n    \
+    \        total += i\n    return total\n\nprint(add_up([1, 2, 3, \"4\"]))\nprint(add_up([1,\
+    \ 2, 3, \"4\", \"5\"]))\nprint(add_up([1, 2,"
+  diff: "--- \n+++ \n@@ -13,4 +13,23 @@\n in the list.+If+there+is+a+string,+and+the+word+inside+is+a+number+in+written+form,+add+that+item+too.\
+    \ \"\"\""
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. \n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. If there is a string, and the word inside is a number\
+    \ in written form, add that item too.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 6
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == str:\n   \
+    \         if i.isdigit():\n                total += int(i)\n        else:\n  \
+    \          total += i\n    return total\n\nprint(add_up([1, 2, 3, \"4\"]))\nprint(add_up([1,\
+    \ 2, 3, \"4\", \"5\"]))\nprint(add_up([1, 2,"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == str:\n     \
+    \       if i.isdigit():\n                total += int(i)\n        else:\n    \
+    \        total += i\n    return total\n"
+  diff: "--- \n+++ \n@@ -4,12 +4,7 @@\n Add together each-item-that-is-not-a-string+integer\
+    \ in the list.@@ -30,6 +25,6 @@\n form, add that-item+number too. \"\"\""
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each item that is not\
+    \ a string in the list. If there is a string, and the word inside is a number\
+    \ in written form, add that item too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each integer in the list.\
+    \ If there is a string, and the word inside is a number in written form, add that\
+    \ number too.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 7
+  clues: null
+  completion_from: "total = 0\n    for i in arr:\n        if type(i) == str:\n   \
+    \         if i.isdigit():\n                total += int(i)\n        else:\n  \
+    \          total += i\n    return total\n"
+  completion_to: "total = 0\n    for i in arr:\n        if type(i) == str:\n     \
+    \       if i in num_dict:\n                total += num_dict[i]\n        else:\n\
+    \            total += i\n    return total\n"
+  diff: "--- \n+++ \n@@ -4,7 +4,7 @@\n Add together each-integer+number in the list."
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def add_up(arr):\n    \"\"\"\n    Add together each integer in the\
+    \ list. If there is a string, and the word inside is a number in written form,\
+    \ add that number too.\n    \"\"\"\n    "
+  prompt_to: "def add_up(arr):\n    \"\"\"\n    Add together each number in the list.\
+    \ If there is a string, and the word inside is a number in written form, add that\
+    \ number too.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student9
+nodes:
+- *id001
+- *id003
+- *id010
+- *id002
+- *id011
+- *id008
+- *id009
+- *id005
+- *id012
+- *id007
+- *id013
+- *id004
+- *id006
+problem: add_up
+problem_clues: {}
+student_clues_tracker: {}
+student_colors: {}
+student_start_node_tags:
+  student1:
+  - 2
+  - 3
+  - 4
+  student14:
+  - 2
+  - 3
+  - 4
+  student15:
+  - 2
+  - 3
+  - 4
+  - 5
+  student24:
+  - 2
+  - 4
+  student31:
+  - 1
+  - 3
+  - 4
+  student45:
+  - 2
+  - 3
+  - 4
+  student46:
+  - 2
+  - 4
+  student47:
+  - 3
+  - 4
+  student55:
+  - 1
+  - 2
+  - 3
+  - 4
+  student58:
+  - 2
+  - 3
+  - 4
+  student6:
+  - 2
+  - 4
+  student65:
+  - 2
+  - 3
+  - 4
+  - 5
+  student7:
+  - 2
+  - 3
+  - 4
+  - 5
+  student9:
+  - 4
+  - 6

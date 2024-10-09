@@ -1,0 +1,1219 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[::2].upper()\n"
+  completion_to: "if len(s) == 1:\n        return s.upper()\n    else:\n        return\
+    \ s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hey\"\
+    ))\nprint(altText(\"h\"))\nprint(altText(\"hi\"))\nprint(altText(\"h e y\"))\n"
+  diff: "--- \n+++ \n@@ -16,7 +16,13 @@\n letter as upper-case.+case,+not+including+the+lower+case+letters.\
+    \ If it is"
+  node_from: !Node
+    _node_tags: null
+    id: 3
+    stderr: &id021
+    - ''
+    - ''
+    - ''
+    stdout: &id022
+    - 'ILV OSEDLHN WM
+
+      '
+    - 'CMUES
+
+      '
+    - 'T
+
+      '
+  node_to: !Node
+    _node_tags: null
+    id: 5
+    stderr: &id001
+    - ''
+    - ''
+    - ''
+    stdout: &id002
+    - 'ILV OSEDLHN WM oet e opissi.
+
+      '
+    - 'CMUESoptr
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper case. If it is just a one letter\
+    \ word it is turned into an upper case letter.\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every other letter as upper case, not including the lower case letters.\
+    \ If it is just a one letter word it is turned into an upper case letter. \n \
+    \   \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"\
+    hey\"))\nprint(altText(\"h\"))\nprint(altText(\"hi\"))\nprint(altText(\"h e y\"\
+    ))\n"
+  completion_to: "if len(s) == 1:\n        return s.upper()\n    else:\n        return\
+    \ s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"hi\"\
+    ))\nprint(altText(\"h\"))\nprint(altText(\"what\"))\nprint(altText(\"is\"))\n\
+    print(altText(\"up\"))\nprint(altText(\"dog\"))\nprint(altText(\""
+  diff: "--- \n+++ \n@@ -17,7 +17,6 @@\n as upper case,-not including the lower"
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper case, not including the lower\
+    \ case letters. If it is just a one letter word it is turned into an upper case\
+    \ letter. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every other letter as upper case, including the lower case letters.\
+    \ If it is just a one letter word it is turned into an upper case letter. \n \
+    \   \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - l2
+  - a3
+  attempt_id: 3
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[::2].upper() + s[1::2]\n\nprint(altText(\"hello\"))\nprint(altText(\"\
+    hi\"))\nprint(altText(\"h\"))\nprint(altText(\"what\"))\nprint(altText(\"is\"\
+    ))\nprint(altText(\"up\"))\nprint(altText(\"dog\"))\nprint(altText(\""
+  completion_to: "if len(s) == 1:\n        return s.upper()\n    else:\n        return\
+    \ s[::2].upper() + s[1::2]\n"
+  diff: "--- \n+++ \n@@ -16,12 +16,7 @@\n letter as upper-case,-including-the-lower-case-letters.+cas.\
+    \ If it is@@ -38,4 +33,13 @@\n upper case letter.+It+then+returns+the+whole+phrase+that+was+given.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper case, including the lower case\
+    \ letters. If it is just a one letter word it is turned into an upper case letter.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every other letter as upper cas. If it is just a one letter word\
+    \ it is turned into an upper case letter. It then returns the whole phrase that\
+    \ was given.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 4
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[::2].upper() + s[1::2]\n"
+  completion_to: "s = s.lower()\n    s = s.replace(\" \", \"\")\n    new_s = \"\"\n\
+    \    for i in range(len(s)):\n        if i % 2 == 0:\n            new_s += s[i].upper()\n\
+    \        else:\n            new_s += s[i]\n    return new_s\n\nprint(altText(\"\
+    hello\"))\nprint(altText(\"hello world\"))\nprint(alt"
+  diff: "--- \n+++ \n@@ -41,5 +41,12 @@\n phrase that was-given.+given,+including+all+characters+upper+and+lower+case.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 10
+    stderr: &id003
+    - ''
+    - ''
+    - ''
+    stdout: &id004
+    - 'IlOvEtOsEeDoLpHiNsSwIm.
+
+      '
+    - 'CoMpUtErS
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper cas. If it is just a one letter\
+    \ word it is turned into an upper case letter. It then returns the whole phrase\
+    \ that was given.\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every other letter as upper cas. If it is just a one letter word\
+    \ it is turned into an upper case letter. It then returns the whole phrase that\
+    \ was given, including all characters upper and lower case. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues: null
+  completion_from: "s = s.lower()\n    s = s.replace(\" \", \"\")\n    new_s = \"\"\
+    \n    for i in range(len(s)):\n        if i % 2 == 0:\n            new_s += s[i].upper()\n\
+    \        else:\n            new_s += s[i]\n    return new_s\n\nprint(altText(\"\
+    hello\"))\nprint(altText(\"hello world\"))\nprint(alt"
+  completion_to: "if len(s) == 1:\n        return s.upper()\n    else:\n        return\
+    \ s[0] + altText(s[1:])\n"
+  diff: "--- \n+++ \n@@ -16,22 +16,20 @@\n letter as upper-cas.+case. If it is just\
+    \ a-one-letter+one-letter word it is turned into an-upper-case+upper-case letter.\
+    \ It then"
+  node_from: !Node
+    _node_tags: null
+    id: 10
+    stderr: *id003
+    stdout: *id004
+  node_to: !Node
+    _node_tags: null
+    id: 2
+    stderr: &id005
+    - ''
+    - ''
+    - ''
+    stdout: &id006
+    - 'I love to see dolphins swim.
+
+      '
+    - 'computerS
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper cas. If it is just a one letter\
+    \ word it is turned into an upper case letter. It then returns the whole phrase\
+    \ that was given, including all characters upper and lower case. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every other letter as upper case. If it is just a one-letter word\
+    \ it is turned into an upper-case letter. It then returns the whole phrase that\
+    \ was given, including all characters upper and lower case. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - d2
+  attempt_id: 6
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[0] + altText(s[1:])\n"
+  completion_to: "if len(s) == 1:\n        return s.upper()\n    else:\n        return\
+    \ s[0].upper() + s[1:].lower()\n"
+  diff: "--- \n+++ \n@@ -12,7 +12,6 @@\n and outputs every-other letter as upper"
+  node_from: !Node
+    _node_tags: null
+    id: 2
+    stderr: *id005
+    stdout: *id006
+  node_to: !Node
+    _node_tags: null
+    id: 0
+    stderr: &id007
+    - ''
+    - ''
+    - ''
+    stdout: &id008
+    - 'I love to see dolphins swim.
+
+      '
+    - 'Computers
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every other letter as upper case. If it is just a one-letter\
+    \ word it is turned into an upper-case letter. It then returns the whole phrase\
+    \ that was given, including all characters upper and lower case. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and outputs every letter as upper case. If it is just a one-letter word it is\
+    \ turned into an upper-case letter. It then returns the whole phrase that was\
+    \ given, including all characters upper and lower case. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 7
+  clues: null
+  completion_from: "if len(s) == 1:\n        return s.upper()\n    else:\n       \
+    \ return s[0].upper() + s[1:].lower()\n"
+  completion_to: "new_s = \"\"\n    for i in range(len(s)):\n        if i % 2 == 0:\n\
+    \            new_s += s[i].upper()\n        else:\n            new_s += s[i].lower()\n\
+    \    return new_s\n\nprint(altText(\"hello\"))\nprint(altText(\"hello world\"\
+    ))\nprint(altText(\"h\"))\nprint(altText(\"\"))\n"
+  diff: "--- \n+++ \n@@ -10,12 +10,15 @@\n or sentence and-outputs+replaces every+other\
+    \ letter-as+with+the upper-case.+case+letter. If it is@@ -35,10 +38,8 @@\n returns\
+    \ the whole-phrase-that-was-given,+updated+phrase, including all characters"
+  node_from: !Node
+    _node_tags: null
+    id: 0
+    stderr: *id007
+    stdout: *id008
+  node_to: !Node
+    _node_tags: null
+    id: 9
+    stderr: &id009
+    - ''
+    - ''
+    - ''
+    stdout: &id010
+    - 'I LoVe tO SeE DoLpHiNs sWiM.
+
+      '
+    - 'CoMpUtErS
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function takes in a word or\
+    \ sentence and outputs every letter as upper case. If it is just a one-letter\
+    \ word it is turned into an upper-case letter. It then returns the whole phrase\
+    \ that was given, including all characters upper and lower case. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function takes in a word or sentence\
+    \ and replaces every other letter with the upper case letter. If it is just a\
+    \ one-letter word it is turned into an upper-case letter. It then returns the\
+    \ whole updated phrase, including all characters upper and lower case. \n    \"\
+    \"\"\n    "
+  state: success
+  total_attempts: 8
+  username: student23
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: 'return s[::2].upper() + s[1::2]
+
+    '
+  completion_to: 'return s[::2].upper() + s[1::2]
+
+    '
+  diff: "--- \n+++ \n@@ -21,12 +21,15 @@\n supposed to convert-every-alternative-character+the+characters\
+    \ of the string+in+even+index+positions into uppercase and"
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  prompt_from: "def altText(s):\n    \"\"\"\n    's' is a string value provided. Starting\
+    \ from the first character of the string, the function is supposed to convert\
+    \ every alternative character of the string into uppercase and then return the\
+    \ string.\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    's' is a string value provided. Starting\
+    \ from the first character of the string, the function is supposed to convert\
+    \ the characters of the string in even index positions into uppercase and then\
+    \ return the string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student35
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: 'return s[::2].upper() + s[1::2]
+
+    '
+  completion_to: 'return "".join([s[i].upper() if i%2==0 else s[i] for i in range(len(s))])
+
+    '
+  diff: "--- \n+++ \n@@ -31,10 +31,30 @@\n index positions into-uppercase-and-then-return+uppercase.+The+characters+of\
+    \ the-string.+string+should+be+in+the+same+order+as+below,+only+the+characters+in+even+index+positions+are+to+be+turned+uppercase.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 9
+    stderr: *id009
+    stdout: *id010
+  prompt_from: "def altText(s):\n    \"\"\"\n    's' is a string value provided. Starting\
+    \ from the first character of the string, the function is supposed to convert\
+    \ the characters of the string in even index positions into uppercase and then\
+    \ return the string.\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    's' is a string value provided. Starting\
+    \ from the first character of the string, the function is supposed to convert\
+    \ the characters of the string in even index positions into uppercase. The characters\
+    \ of the string should be in the same order as below, only the characters in even\
+    \ index positions are to be turned uppercase.\n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student35
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].upper()\n            else:\n                new_string\
+    \ += s[i].lower()\n        return new_"
+  completion_to: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  diff: "--- \n+++ \n@@ -23,6 +23,11 @@\n multiple characters, returns+a+new+string+that+has\
+    \ the same input"
+  node_from: !Node
+    _node_tags: null
+    id: 15
+    stderr: &id011
+    - 'NameError: name ''new_'' is not defined'
+    - 'NameError: name ''new_'' is not defined'
+    - ''
+    stdout: &id012
+    - ''
+    - ''
+    - 'T
+
+      '
+  node_to: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  prompt_from: "def altText(s):\n    \"\"\"\n    if the string has one character,\
+    \ returns a capital letter when given a lowercase letter. if the string has multiple\
+    \ characters, returns the same input with alternating uppercase and lowercase\
+    \ letters\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    if the string has one character, returns\
+    \ a capital letter when given a lowercase letter. if the string has multiple characters,\
+    \ returns a new string that has the same input with alternating uppercase and\
+    \ lowercase letters\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student40
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  completion_to: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  diff: "--- \n+++ \n@@ -23,9 +23,7 @@\n multiple characters, returns-a-new-string+new_string\
+    \ that has the"
+  node_from: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  node_to: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  prompt_from: "def altText(s):\n    \"\"\"\n    if the string has one character,\
+    \ returns a capital letter when given a lowercase letter. if the string has multiple\
+    \ characters, returns a new string that has the same input with alternating uppercase\
+    \ and lowercase letters\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    if the string has one character, returns\
+    \ a capital letter when given a lowercase letter. if the string has multiple characters,\
+    \ returns new_string that has the same input with alternating uppercase and lowercase\
+    \ letters\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student40
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 3
+  clues: null
+  completion_from: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  completion_to: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].upper()\n            else:\n                new_string\
+    \ += s[i].lower()\n        return new_"
+  diff: "--- \n+++ \n@@ -22,17 +22,37 @@\n has multiple characters,-returns-new_string-that-has+creates+a+variable+called+'new_string',+which+will+take+the+original+string+passed+through+the+function+and+return\
+    \ the same-input+string+but with+letters+of alternating-uppercase-and-lowercase+case.+new_string+will+have\
+    \ letters+of+alternating+case. \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  node_to: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  prompt_from: "def altText(s):\n    \"\"\"\n    if the string has one character,\
+    \ returns a capital letter when given a lowercase letter. if the string has multiple\
+    \ characters, returns new_string that has the same input with alternating uppercase\
+    \ and lowercase letters\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    if the string has one character, returns\
+    \ a capital letter when given a lowercase letter. if the string has multiple characters,\
+    \ creates a variable called 'new_string', which will take the original string\
+    \ passed through the function and return the same string but with letters of alternating\
+    \ case. new_string will have letters of alternating case.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student40
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ \"\"\n        for i in range(len(s)):\n            if i % 2 == 0:\n        \
+    \        new_string += s[i].upper()\n            else:\n                new_string\
+    \ += s[i].lower()\n        return new_"
+  completion_to: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ ''\n        for i in range(len(s)):\n            if i % 2 == 0:\n          \
+    \      new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  diff: "--- \n+++ \n@@ -55,4 +55,6 @@\n of alternating case.+returns+new_string \"\
+    \"\""
+  node_from: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  node_to: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  prompt_from: "def altText(s):\n    \"\"\"\n    if the string has one character,\
+    \ returns a capital letter when given a lowercase letter. if the string has multiple\
+    \ characters, creates a variable called 'new_string', which will take the original\
+    \ string passed through the function and return the same string but with letters\
+    \ of alternating case. new_string will have letters of alternating case.\n   \
+    \ \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    if the string has one character, returns\
+    \ a capital letter when given a lowercase letter. if the string has multiple characters,\
+    \ creates a variable called 'new_string', which will take the original string\
+    \ passed through the function and return the same string but with letters of alternating\
+    \ case. new_string will have letters of alternating case. returns new_string\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student40
+- !Edge
+  _edge_tags:
+  - l2
+  attempt_id: 5
+  clues: null
+  completion_from: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s.lower()\n    else:\n        new_string =\
+    \ ''\n        for i in range(len(s)):\n            if i % 2 == 0:\n          \
+    \      new_string += s[i].lower()\n            else:\n                new_string\
+    \ += s[i].upper()\n        return new_"
+  completion_to: "if len(s) == 1:\n        if s.islower():\n            return s.upper()\n\
+    \        else:\n            return s\n    else:\n        new_s = \"\"\n      \
+    \  for i in range(len(s)):\n            if i % 2 == 0:\n                new_s\
+    \ += s[i].upper()\n            else:\n                new_s += s[i].lower()\n\
+    \        return new_s\n\n"
+  diff: "--- \n+++ \n@@ -22,39 +22,12 @@\n has multiple characters,-creates-a-variable-called-'new_string',-which-will-take-the-original-string-passed-through\
+    \ the function-and-return-the-same-string-but-with-letters-of-alternating-case.-new_string\
+    \ will-have-letters-of-alternating-case.-returns-new_string+make+every+other+character+uppercase.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 15
+    stderr: *id011
+    stdout: *id012
+  node_to: !Node
+    _node_tags: null
+    id: 9
+    stderr: *id009
+    stdout: *id010
+  prompt_from: "def altText(s):\n    \"\"\"\n    if the string has one character,\
+    \ returns a capital letter when given a lowercase letter. if the string has multiple\
+    \ characters, creates a variable called 'new_string', which will take the original\
+    \ string passed through the function and return the same string but with letters\
+    \ of alternating case. new_string will have letters of alternating case. returns\
+    \ new_string\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    if the string has one character, returns\
+    \ a capital letter when given a lowercase letter. if the string has multiple characters,\
+    \ the function will make every other character uppercase. \n    \"\"\"\n    "
+  state: success
+  total_attempts: 6
+  username: student40
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: "s = s.lower()\n    s = s.split()\n    for i in range(len(s)):\n\
+    \        s[i] = s[i].capitalize()\n    return ' '.join(s)\n"
+  completion_to: "print(\"\\n\\n\")\n    print(\"Input: \" + s)\n    print(\"Output:\
+    \ \" + altTextHelper(s))\n    print(\"\\n\\n\")\n"
+  diff: "--- \n+++ \n@@ -15,7 +15,11 @@\n is not a+white space+or+a+punctuation capitalized\
+    \ starting with"
+  node_from: !Node
+    _node_tags: null
+    id: 13
+    stderr: &id019
+    - ''
+    - ''
+    - ''
+    stdout: &id020
+    - 'I Love To See Dolphins Swim.
+
+      '
+    - 'Computers
+
+      '
+    - 'T
+
+      '
+  node_to: !Node
+    _node_tags: null
+    id: 12
+    stderr: &id013
+    - ''
+    - ''
+    - ''
+    stdout: &id014
+    - 'None
+
+      '
+    - 'None
+
+      '
+    - 'None
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    Print the string that is input with\
+    \ every other character that is not a space capitalized starting with a capital\
+    \ letter. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    Print the string that is input with\
+    \ every other character that is not a white space or a punctuation capitalized\
+    \ starting with a capital letter. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student44
+- !Edge
+  _edge_tags:
+  - m1
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "print(\"\\n\\n\")\n    print(\"Input: \" + s)\n    print(\"Output:\
+    \ \" + altTextHelper(s))\n    print(\"\\n\\n\")\n"
+  completion_to: "if len(s) == 0:\n        return \"\"\n    if s[0].isalpha():\n \
+    \       return s[0].upper() + altText(s[1:])\n    else:\n        return s[0] +\
+    \ altText(s[1:])\n"
+  diff: "--- \n+++ \n@@ -1,29 +1,69 @@\n def altText(s): \"\"\"-Print+Go+through+every+character+in\
+    \ the-string+string.+If+the+character+is+a+letter+and that+character is-input-with-every-other+the+first\
+    \ character+in+the+string,+print+it+capitalized.+If+the+character+is+a+letter\
+    \ that is not-a-white-space-or-a-punctuation-capitalized-starting-with-a-capital-letter.+the+first+in+the+string,+print+in+lowercase+if+the+previous+letter+that+was+printed+was+in+capital.+If+the+last+letter+was+printed+in+uppercase,+print+it+in+lowercase.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 12
+    stderr: *id013
+    stdout: *id014
+  node_to: !Node
+    _node_tags: null
+    id: 4
+    stderr: &id015
+    - ''
+    - ''
+    - ''
+    stdout: &id016
+    - 'I LOVE TO SEE DOLPHINS SWIM.
+
+      '
+    - 'COMPUTERS
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    Print the string that is input with\
+    \ every other character that is not a white space or a punctuation capitalized\
+    \ starting with a capital letter. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    Go through every character in the string.\
+    \ \nIf the character is a letter and that character is the first character in\
+    \ the string, print it capitalized. \nIf the character is a letter that is not\
+    \ the first in the string, print in lowercase if the previous  letter that was\
+    \ printed was in capital. If the last letter was printed in uppercase, print it\
+    \ in lowercase. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student44
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "if len(s) == 0:\n        return \"\"\n    if s[0].isalpha():\n\
+    \        return s[0].upper() + altText(s[1:])\n    else:\n        return s[0]\
+    \ + altText(s[1:])\n"
+  completion_to: "print(s[0].upper(), end=\"\")\n    for i in range(1, len(s)):\n\
+    \        if s[i-1].isupper():\n            print(s[i].lower(), end=\"\")\n   \
+    \     else:\n            print(s[i].upper(), end=\"\")\n    print()\n\naltText(\"\
+    Hello World\")\naltText(\"Hello World\")\naltText(\"Hello World\")\naltText(\"\
+    Hello World"
+  diff: "--- \n+++ \n@@ -21,9 +21,9 @@\n the first character-in+of the-string,+input,\
+    \ print it capitalized.@@ -38,13 +38,11 @@\n not the first+one in the-string,-print-in-lowercase-if+input+and\
+    \ the previous letter@@ -53,10 +51,13 @@\n printed was in-capital.+uppercase,+print+in+lowercase.\
+    \ If the-last+previous letter was printed"
+  node_from: !Node
+    _node_tags: null
+    id: 4
+    stderr: *id015
+    stdout: *id016
+  node_to: !Node
+    _node_tags: null
+    id: 16
+    stderr: &id027
+    - 'SyntaxError: unterminated string literal (detected at line 18)'
+    - 'SyntaxError: unterminated string literal (detected at line 18)'
+    - 'SyntaxError: unterminated string literal (detected at line 18)'
+    stdout: &id028
+    - ''
+    - ''
+    - ''
+  prompt_from: "def altText(s):\n    \"\"\"\n    Go through every character in the\
+    \ string. \nIf the character is a letter and that character is the first character\
+    \ in the string, print it capitalized. \nIf the character is a letter that is\
+    \ not the first in the string, print in lowercase if the previous  letter that\
+    \ was printed was in capital. If the last letter was printed in uppercase, print\
+    \ it in lowercase. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    Go through every character in the string.\
+    \ \nIf the character is a letter and that character is the first character of\
+    \ the input, print it capitalized. \nIf the character is a letter that is not\
+    \ the first one in the input and the previous letter that was printed was in uppercase,\
+    \ print in lowercase. \nIf the previous letter was printed in uppercase, print\
+    \ it in lowercase. \n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student44
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "s = list(s)\n    for i in range(len(s)):\n        if random.random()\
+    \ < 0.5:\n            s[i] = s[i].upper()\n    return ''.join(s)\n"
+  completion_to: "words = s.split()\n    newWords = []\n    for word in words:\n \
+    \       newWord = ''\n        for i in range(len(word)):\n            if random.random()\
+    \ < 0.5:\n                newWord += word[i].upper()\n            else:\n    \
+    \            newWord += word[i]\n        newWords.append(newWord)\n    return\
+    \ ' '.join(newWords)\n"
+  diff: "--- \n+++ \n@@ -3,11 +3,14 @@\n \"\"\" takes a-string-and+string. capitalizes\
+    \ random letters in-it+each+word+of+that+string. \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 11
+    stderr: &id017
+    - 'NameError: name ''random'' is not defined'
+    - 'NameError: name ''random'' is not defined'
+    - 'NameError: name ''random'' is not defined'
+    stdout: &id018
+    - ''
+    - ''
+    - ''
+  node_to: !Node
+    _node_tags: null
+    id: 11
+    stderr: *id017
+    stdout: *id018
+  prompt_from: "def altText(s):\n    \"\"\"\n    takes a string and capitalizes random\
+    \ letters in it\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    takes a string. capitalizes random\
+    \ letters in each word of that string. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student59
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "words = s.split()\n    newWords = []\n    for word in words:\n\
+    \        newWord = ''\n        for i in range(len(word)):\n            if random.random()\
+    \ < 0.5:\n                newWord += word[i].upper()\n            else:\n    \
+    \            newWord += word[i]\n        newWords.append(newWord)\n    return\
+    \ ' '.join(newWords)\n"
+  completion_to: "words = s.split()\n    altWords = []\n    for word in words:\n \
+    \       altWord = \"\"\n        for i in range(len(word)):\n            if random.randint(0,1)\
+    \ == 1:\n                altWord += word[i].upper()\n            else:\n     \
+    \           altWord += word[i]\n        altWords.append(altWord)\n    return altWords\n"
+  diff: "--- \n+++ \n@@ -12,5 +12,19 @@\n word of that-string.+string+and+adds+the+new+words+to+a+list.+returns+this+new+list+of+words\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 11
+    stderr: *id017
+    stdout: *id018
+  node_to: !Node
+    _node_tags: null
+    id: 11
+    stderr: *id017
+    stdout: *id018
+  prompt_from: "def altText(s):\n    \"\"\"\n    takes a string. capitalizes random\
+    \ letters in each word of that string. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    takes a string. capitalizes random\
+    \ letters in each word of that string and adds the new words to a list. returns\
+    \ this new list of words\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student59
+- !Edge
+  _edge_tags:
+  - l1
+  - a2
+  - d4
+  attempt_id: 1
+  clues: null
+  completion_from: "result = \"\"\n    for i in range(len(s)):\n        if i % 2 ==\
+    \ 0:\n            result += s[i].upper()\n        else:\n            result +=\
+    \ s[i]\n    return result\n"
+  completion_to: "newString = \"\"\n    for i in range(len(s)):\n        if i % 2\
+    \ == 0:\n            newString += s[i].lower()\n        else:\n            newString\
+    \ += s[i].upper()\n    return newString\n\nprint(altText(\"Hello World\"))\n"
+  diff: "--- \n+++ \n@@ -7,7 +7,6 @@\n a string as-a parameter. This function@@ -20,16\
+    \ +19,4 @@\n letter is capitalized.-This-functions-starts-by-capitalizing-the-first-letter.-This-function-ignores-spaces.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 9
+    stderr: *id009
+    stdout: *id010
+  node_to: !Node
+    _node_tags: null
+    id: 8
+    stderr: &id025
+    - ''
+    - ''
+    - ''
+    stdout: &id026
+    - 'i lOvE To sEe dOlPhInS SwIm.
+
+      '
+    - 'cOmPuTeRs
+
+      '
+    - 't
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    This function inputs a string as\
+    \ a parameter. This function returns that string except every other letter is\
+    \ capitalized. This functions starts by capitalizing the first letter. This function\
+    \ ignores spaces. \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    This function inputs a string as parameter.\
+    \ This function returns that string except every other letter is capitalized.\
+    \ \n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student60
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: 'return s[::2].upper() + s[1::2].lower()
+
+
+    print(altText("hello"))
+
+    print(altText("HELLO"))
+
+    print(altText("hElLo"))
+
+    print(altText("hElLo wOrLd"))
+
+    '
+  completion_to: "s = s.lower()\n    s = s.replace(\" \", \"\")\n    s = s.replace(\"\
+    .\", \"\")\n    s = s.replace(\",\", \"\")\n    s = s.replace(\"!\", \"\")\n \
+    \   s = s.replace(\"?\", \"\")\n    s = s.replace(\"-\", \"\")\n    s = s.replace(\"\
+    '\", \"\")\n    s = s.replace(\"\\\"\", \"\")\n"
+  diff: "--- \n+++ \n@@ -23,4 +23,14 @@\n being a capital.+It+outputs+the+same+string+but+with+the+capitalization+adjusted.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 12
+    stderr: *id013
+    stdout: *id014
+  prompt_from: "def altText(s):\n    \"\"\"\n    The function takes in a string and\
+    \ capitalizes every other letter in the string, starting with the first letter\
+    \ being a capital.\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    The function takes in a string and\
+    \ capitalizes every other letter in the string, starting with the first letter\
+    \ being a capital. It outputs the same string but with the capitalization adjusted.\
+    \ \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student63
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "s = s.lower()\n    s = s.replace(\" \", \"\")\n    s = s.replace(\"\
+    .\", \"\")\n    s = s.replace(\",\", \"\")\n    s = s.replace(\"!\", \"\")\n \
+    \   s = s.replace(\"?\", \"\")\n    s = s.replace(\"-\", \"\")\n    s = s.replace(\"\
+    '\", \"\")\n    s = s.replace(\"\\\"\", \"\")\n"
+  completion_to: 'return s.title()[::2]
+
+
+    print(altText("hello"))
+
+    print(altText("HELLO"))
+
+    print(altText("hElLo"))
+
+    print(altText("HeLLo"))
+
+    print(altText("HElLo"))
+
+    '
+  diff: "--- \n+++ \n@@ -8,13 +8,17 @@\n a string and-capitalizes+outputs+the+same+string+but+with\
+    \ every other letter-in-the-string,+being+capitalized, starting with the@@ -23,14\
+    \ +27,4 @@\n being a capital.-It-outputs-the-same-string-but-with-the-capitalization-adjusted.\
+    \ \"\"\""
+  node_from: !Node
+    _node_tags: null
+    id: 12
+    stderr: *id013
+    stdout: *id014
+  node_to: !Node
+    _node_tags: null
+    id: 6
+    stderr: &id023
+    - ''
+    - ''
+    - ''
+    stdout: &id024
+    - 'ILv oSeDlhn wm
+
+      '
+    - 'Cmues
+
+      '
+    - 'T
+
+      '
+  prompt_from: "def altText(s):\n    \"\"\"\n    The function takes in a string and\
+    \ capitalizes every other letter in the string, starting with the first letter\
+    \ being a capital. It outputs the same string but with the capitalization adjusted.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    The function takes in a string and\
+    \ outputs the same string but with every other letter being capitalized, starting\
+    \ with the first letter being a capital.  \n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student63
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: 'return s.title()
+
+    '
+  completion_to: 'return s[::2].upper() + s[1::2].lower()
+
+
+    print(altText(''computers''))
+
+    print(altText(''T''))
+
+    '
+  diff: "--- \n+++ \n@@ -1,6 +1,24 @@\n def altText(s): \"\"\"+def+altText(s):+brings+in+input+'computers'+and+capitalizes+every+other+letter+starting+at+'C'+and+ending+at+'S'\
+    \ def altText(s): brings"
+  node_from: !Node
+    _node_tags: null
+    id: 13
+    stderr: *id019
+    stdout: *id020
+  node_to: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  prompt_from: "def altText(s):\n    \"\"\"\n    def altText(s): brings in input 'T'\
+    \ and outputs the capitalized version\n    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input 'computers'\
+    \ and capitalizes every other letter starting at 'C' and ending at 'S'\ndef altText(s):\
+    \ brings in input 'T' and outputs the capitalized version\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student75
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: 'return s[::2].upper() + s[1::2].lower()
+
+
+    print(altText(''computers''))
+
+    print(altText(''T''))
+
+    '
+  completion_to: "new_string = \"\"\n    for i in range(len(s)):\n        if i % 2\
+    \ == 0:\n            new_string += s[i].upper()\n        else:\n            new_string\
+    \ += s[i].lower()\n    return new_string\n\nprint(altText(\"computers\"))\nprint(altText(\"\
+    T\"))\n"
+  diff: "--- \n+++ \n@@ -19,6 +19,15 @@\n ending at 'S'+and+prints+the+lowercase+letters+in+their+original+spelling\
+    \ def altText(s): brings"
+  node_from: !Node
+    _node_tags: null
+    id: 5
+    stderr: *id001
+    stdout: *id002
+  node_to: !Node
+    _node_tags: null
+    id: 9
+    stderr: *id009
+    stdout: *id010
+  prompt_from: "def altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input\
+    \ 'computers' and capitalizes every other letter starting at 'C' and ending at\
+    \ 'S'\ndef altText(s): brings in input 'T' and outputs the capitalized version\n\
+    \    \"\"\"\n    "
+  prompt_to: "def altText(s):\n    \"\"\"\n    \ndef altText(s): brings in input 'computers'\
+    \ and capitalizes every other letter starting at 'C' and ending at 'S' and prints\
+    \ the lowercase letters in their original spelling \ndef altText(s): brings in\
+    \ input 'T' and outputs the capitalized version\n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student75
+nodes:
+- !Node
+  _node_tags: null
+  id: 0
+  stderr: *id007
+  stdout: *id008
+- !Node
+  _node_tags: null
+  id: 1
+  stderr:
+  - ''
+  - ''
+  - ''
+  stdout:
+  - 'I lOvE To sEe dOlPhInS SwIm.
+
+    '
+  - 'cOmPuTeRs
+
+    '
+  - 't
+
+    '
+- !Node
+  _node_tags: null
+  id: 2
+  stderr: *id005
+  stdout: *id006
+- !Node
+  _node_tags: null
+  id: 3
+  stderr: *id021
+  stdout: *id022
+- !Node
+  _node_tags: null
+  id: 4
+  stderr: *id015
+  stdout: *id016
+- !Node
+  _node_tags: null
+  id: 5
+  stderr: *id001
+  stdout: *id002
+- !Node
+  _node_tags: null
+  id: 6
+  stderr: *id023
+  stdout: *id024
+- !Node
+  _node_tags: null
+  id: 7
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  stdout:
+  - ''
+  - ''
+  - ''
+- !Node
+  _node_tags: null
+  id: 8
+  stderr: *id025
+  stdout: *id026
+- !Node
+  _node_tags: null
+  id: 9
+  stderr: *id009
+  stdout: *id010
+- !Node
+  _node_tags: null
+  id: 10
+  stderr: *id003
+  stdout: *id004
+- !Node
+  _node_tags: null
+  id: 11
+  stderr: *id017
+  stdout: *id018
+- !Node
+  _node_tags: null
+  id: 12
+  stderr: *id013
+  stdout: *id014
+- !Node
+  _node_tags: null
+  id: 13
+  stderr: *id019
+  stdout: *id020
+- !Node
+  _node_tags: null
+  id: 14
+  stderr:
+  - ''
+  - ''
+  - ''
+  stdout:
+  - 'I lOvE To sEe dOlPhInS SwIm.
+
+    '
+  - 'COmPuTeRs
+
+    '
+  - 'T
+
+    '
+- !Node
+  _node_tags: null
+  id: 15
+  stderr: *id011
+  stdout: *id012
+- !Node
+  _node_tags: null
+  id: 16
+  stderr: *id027
+  stdout: *id028
+problem: altText
+problem_clues:
+  1: input string
+  2: alternating uppercase
+  3: return all letters, including spaces
+  4: first letter upper
+student_clues_tracker: {}
+student_colors: {}
+student_start_node_tags:
+  student23:
+  - 1
+  - 2
+  - 4
+  student35:
+  - 1
+  - 2
+  - 3
+  - 4
+  student40:
+  - 1
+  - 2
+  - 3
+  - 4
+  student44:
+  - 1
+  - 2
+  - 4
+  student59:
+  - 1
+  - 3
+  student60:
+  - 1
+  - 3
+  - 4
+  student63:
+  - 1
+  - 2
+  - 3
+  - 4
+  student75:
+  - 1
+  - 2
+  - 3

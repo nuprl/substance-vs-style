@@ -212,10 +212,10 @@ def all_problems_analysis(graph_dir: str, outdir:str):
         # discard any that we have not verified yet
         graph_name = os.path.basename(graph_yaml).replace(".yaml","")
         if not graph_name in SUCCESS_CLUES.keys():
+            print(f"Skipping {graph_name}")
             continue
         graph = load_graph(graph_yaml)
         problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
-        graph = clean_graph(graph, problem_answers)
         graph = populate_clues(graph)
         prob_to_graph[graph.problem] = graph
         graphs.append(graph)

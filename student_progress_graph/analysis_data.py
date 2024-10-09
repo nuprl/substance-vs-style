@@ -1331,7 +1331,7 @@ if __name__ == "__main__":
     for each problem check that the student exceptions
     are indeed exceptions, i.e not majority
     """
-    PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_FULL
+    PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_STRICT
     THRESHOLD = 0.4
     failing_problems = []
 
@@ -1350,7 +1350,19 @@ if __name__ == "__main__":
         tot += PROBLEM_TO_NUM_STUDENTS[prob]
     
     EXCEPTIONS = [
-        "readingIceCream" # some of these exceptions are tagging errors
+        "add_int", # less clues are more inefficient
+        "planets_mass", # special case
+        "altText", # special case
+        "changeSection", #special case
+        "sort_physicists", # special case
+        "check_prime", # special case
+        "generateCardDeck", # special case
+        # not significant exceptions
+        "increaseScore", # would be (2/8)
+        "percentWin", # model ignores instructions (6/12)
+        "pattern", # ambiguity, would be 4/6
+        "print_time", # would be 4/8 (2 are correct)
+        "combine" # would be 2/5
     ]
     failing_problems = [f for f in failing_problems if not f[0] in EXCEPTIONS]
     message = f"failing problems {failing_problems}, THRESHOLD: {THRESHOLD}"

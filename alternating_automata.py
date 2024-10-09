@@ -160,7 +160,7 @@ def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
             else:
                 shape = "circle"
                 more_style = ""
-            f.write(f"  {model_node.id} [shape={shape}, {more_style} label=\"\"];\n")
+            f.write(f"  {model_node.id} [shape={shape}, {more_style} label=\"{model_node.id}\"];\n")
         # Label the user nodes with their username
         for user_node in user_nodes:
             if user_node.state == "fail":

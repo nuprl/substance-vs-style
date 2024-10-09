@@ -415,7 +415,7 @@ edges:
   node_from: *id002
   node_to: &id006 !Node
     _node_tags: null
-    id: 16
+    id: 15
     stderr:
     - 'ValueError: invalid literal for int() with base 10: ''\tice cream\t3'''
     - ''
@@ -644,7 +644,7 @@ edges:
     \ returns sum \"\"\""
   node_from: &id017 !Node
     _node_tags: null
-    id: 15
+    id: 14
     stderr:
     - 'ValueError: invalid literal for int() with base 10: ''ice cream'''
     - 'ValueError: invalid literal for int() with base 10: ''frozen yogurt'''
@@ -908,23 +908,7 @@ edges:
     \ string-and+contains+\".\", convert it into a-number,-then-add-that-number+float.+Otherwise,+convert+it+into+an+integer.+Add+this+float+or+integer\
     \ to the sum."
   node_from: *id003
-  node_to: &id016 !Node
-    _node_tags: null
-    id: 14
-    stderr:
-    - ''
-    - ''
-    - ''
-    stdout:
-    - '36.5
-
-      '
-    - '10
-
-      '
-    - '0
-
-      '
+  node_to: *id005 # techinically, this student has a different output, but functionally same as success
   prompt_from: "def readingIceCream(lines):\n    \"\"\"\n    Create a variable for\
     \ the sum. Go through each string in the input list. After the second time \"\\\
     t\" appears in the string, save the rest of the string and convert it into a number,\
@@ -1086,7 +1070,7 @@ nodes:
 - *id015
 - *id004
 - *id005
-- *id016
+# - *id016
 - *id017
 - *id006
 problem: readingIceCream

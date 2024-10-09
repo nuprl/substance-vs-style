@@ -414,7 +414,7 @@ edges:
     \ \"\"\""
   attempt_id: 1
   total_attempts: 2
-  state: fail
+  state: success
   _edge_tags:
     - a7
 - !Edge
@@ -710,7 +710,7 @@ edges:
   diff: "--- \n+++ \n@@ -44,4 +44,7 @@\n outputs the sum+with+four+digits \"\"\""
   attempt_id: 1
   total_attempts: 2
-  state: fail
+  state: success
   _edge_tags:
     - a7
 - !Edge
@@ -735,7 +735,7 @@ edges:
     \ \"\"\""
   attempt_id: 1
   total_attempts: 2
-  state: fail
+  state: success
   _edge_tags:
     - a7
 student_start_node_tags:

@@ -24,24 +24,75 @@ then keep messing around have been trimmed so their path ends at first success.
 # went through KNOWN_EXCEPTIONS and counted all instances of implicit clues
 # this is very much a lower bound
 IMPLICIT_CLUES = {
-    "add_up": ["student55"],
-    "topScores": ["student50"],
-    "convert": ["student21", "student17","student51"],
-    "create_list": ["student20","student36","student54"],
-    "generateCardDeck": ["student33","student60","student63"],
-    "getSeason": ["student47", "student7"],
-    "print_time": ["student12","student36","student38","student42","student43","student54"],
-    "remove_odd": ["student18"],
-    "reverseWords": ["student1","student14","student46","student7"],
-    "set_chars": ["student19","student77"],
-    "sortBySuccessRate": ["student64"],
-    "sortedBooks": ["student29"],
-    "times_with": ["student69"],
-    "total_bill": ["student40", "student50", "student79"],
-    "pattern": ["student4","student41"],
-    "readingIceCream": ["student27"],
-    "translate": ["student50","student59","student60"],
-    "percentWin": ["student3","student4","student51"]
+    "add_up": {
+        "student55": [5],
+    },
+    "topScores": {
+        "student50": [8,3],
+    },
+    "convert": {
+        "student21": [1],
+        "student17": [1,5],
+        "student51": [5],
+    },
+    "create_list": {
+        "student20": [1,5],
+        "student36": [1],
+        "student54": [1],
+    },
+    "generateCardDeck": {
+        "student33":[3,5,4],
+        "student60":[5],
+        "student63":[1,4],
+    },
+    "getSeason": {
+        "student47":[1],
+        "student7":[1]
+    },
+    "print_time": {
+        "student12":[1],
+        "student36":[1],
+        "student38":[1],
+        "student42":[1],
+        "student43":[1],
+        "student54":[1],
+    },
+    "remove_odd": {
+        "student18":[1,4],
+    },
+    "reverseWords": {
+        "student1":[5],
+        "student14":[1,5],
+        "student46":[5],
+        "student7":[1]
+    },
+    "set_chars": {
+        "student19":[4],
+        "student77":[4],
+    },
+    "sortBySuccessRate": {"student64":[6]},
+    "sortedBooks": {"student29":[1]},
+    "times_with": {"student69":[1]},
+    "total_bill": {
+        "student40":[1],
+        "student50":[3], 
+        "student79":[2]
+    },
+    "pattern": {
+        "student4":[5],
+        "student41":[1]
+    },
+    "readingIceCream": {"student27":[7]},
+    "translate": {
+        "student50":[3,6,7],
+        "student59":[3,7],
+        "student60":[3,7]
+    },
+    "percentWin": {
+        "student3":[6],
+        "student4":[1],
+        "student51":[1]
+    }
 
 }
 

@@ -16,11 +16,10 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-from .analysis_data import OUT_OF_TOKENS_ERROR
+from .analysis_data import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES
 
 def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     graphs = []
-    prob_to_graph = {}
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):
         # discard any that we have not verified yet
         graph_name = os.path.basename(graph_yaml).replace(".yaml","")
@@ -31,14 +30,12 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
         graph = remove_out_of_token_errors(graph)
         graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
         graph = populate_clues(graph)
-        prob_to_graph[graph.problem] = graph
         graphs.append(graph)
     
     print(f"--- Running for problems {[g.problem for g in graphs]}")
+    run_RQ2(graphs, args.outdir)
 
-    run_RQ2(graphs, f"{outdir}/RQ2", prob_to_graph)
-
-def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
+def run_RQ2(graphs: List[Graph], outdir:str):
     os.makedirs(outdir, exist_ok=True)
 
     """
@@ -51,30 +48,38 @@ def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     Result
         This shows that success depends on substance
     """
-    final_edge_data = []
+    terminal_edge_data = []
     for graph in graphs:
+        success_clues = list(SUCCESS_CLUES[graph.problem])
         for e in graph.edges:
             if e.state in ["success","fail"]:
-                final_edge_data.append({
+                is_success = e.state == "success"
+                if graph.problem in IMPLICIT_CLUES.keys() and \
+                    e.username in IMPLICIT_CLUES[graph.problem]:
+                    e.clues += IMPLICIT_CLUES[graph.problem][e.username]
+                has_all_clues = e.clues == success_clues
+
+                terminal_edge_data.append({
                     "problem": graph.problem,
-                    "success_clues": list(SUCCESS_CLUES[graph.problem]),
+                    "success_clues": success_clues,
                     "state": e.state,
                     "clues": e.clues,
-                    "is_success": e.state == "success",
-                    "is_fail": e.state == "fail",
+                    "has_all_clues": has_all_clues,
+                    "is_missing_clues": not has_all_clues,
+                    "is_success": is_success,
+                    "is_fail": not is_success,
                 })
 
-    edge_df = pd.DataFrame(final_edge_data)
-    edge_df["has_all_clues"] = edge_df["success_clues"] == edge_df["clues"]
-    edge_df["not_has_all_clues"] = edge_df["success_clues"] != edge_df["clues"]
-    print(edge_df)
+    edge_df = pd.DataFrame(terminal_edge_data)
+    # print(edge_df)
     succ_edge_df = edge_df[edge_df["state"] == "success"]
-    print(f"Has all clues {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].sum()/len(succ_edge_df):.2f}")
+    print(f"has_all_clues/ num_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].sum()/len(succ_edge_df):.2f}")
 
-    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","not_has_all_clues"), ("is_fail","has_all_clues"),
-                        ("is_fail", "not_has_all_clues")]:
+    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues"), ("is_fail","has_all_clues"),
+                        ("is_fail", "is_missing_clues")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, edge_df)
-        print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
     """
     2. Cycles
@@ -102,24 +107,26 @@ def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
             if breakout_edge:
                 cycle_edge_list.pop()
 
+            has_only_trivial_edits = all([not is_any_tag_kind(e._edge_tags, ["a","d"]) for e in cycle_edge_list])
+            cycle_clues = [e.clues for e in cycle_edge_list]
+            has_missing_clues = all([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
             cycles_data.append({
                 "username": student,
                 "is_success": (student in succ_students),
                 "cycle_num_edges": len(cycle_edge_list),
                 "has_cycle": len(cycle_edge_list) > 0,
                 "not_has_cycle": len(cycle_edge_list) == 0,
-                "cycle_clues": [e.clues for e in cycle_edge_list],
+                "cycle_clues": cycle_clues,
                 "cycle_edits": [e._edge_tags for e in cycle_edge_list],
                 "has_breakout_edge": bool(breakout_edge is not None),
+                "not_has_breakout_edge": bool(breakout_edge is None),
+                "has_only_trivial_edits": has_only_trivial_edits,
+                "has_substantial_edits": not has_only_trivial_edits,
+                "has_missing_clues": has_missing_clues,
+                "not_has_missing_clues": not has_missing_clues,
             })
     df_cycles = pd.DataFrame(cycles_data)
     print(df_cycles.value_counts("is_success"))
-    df_cycles["has_only_trivial_edits"] = df_cycles["cycle_edits"].apply(lambda x: all([is_tag_kind(edit, [0,"m","l"]) for edit in x]))
-    df_cycles["has_substantial_edits"] = df_cycles["has_only_trivial_edits"].apply(lambda x: not x)
-    df_cycles["has_missing_clues"] = df_cycles["cycle_clues"].apply(lambda x: all([clue != SUCCESS_CLUES[graph.problem] for clue in x]))
-    df_cycles["not_has_missing_clues"] = df_cycles["has_missing_clues"].apply(lambda x: not x)
-    df_cycles["not_has_breakout_edge"] = df_cycles["has_breakout_edge"].apply(lambda x: not x)
-    print(df_cycles)
 
     num_trivial_cycles = df_cycles['has_only_trivial_edits'].sum()
     num_missing_clues_cycles = df_cycles['has_missing_clues'].sum()
@@ -129,7 +136,8 @@ def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     for var_a, var_b in [("is_success","has_cycle"), ("is_success","not_has_cycle"), ("is_success","has_breakout_edge"),
                         ("is_success", "not_has_breakout_edge"), ]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_cycles)
-        print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
     corr = display_pearsonr_results(df_cycles, [("is_success","cycle_num_edges")])
     print(corr)
@@ -157,7 +165,7 @@ def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
                 "problem": graph.problem,
                 "edge_list": edge_list,
                 "last_edge": last_edge,
-                "has_final_rewrite": is_tag_kind(last_edge._edge_tags, ["m","l",0]),
+                "has_final_rewrite": is_any_tag_kind(last_edge._edge_tags, ["m","l",0]),
                 "is_success": last_edge.state == "success",
                 "num_rewrite->subst": num_rewrite_to_subst(edge_list)
             })
@@ -182,7 +190,7 @@ def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
 def num_rewrite_to_subst(edge_list: List[Edge]) -> int:
     count = 0
     for a,b in zip(edge_list, edge_list[1:]):
-        if is_tag_kind(a._edge_tags, ["l","m",0]) and is_tag_kind(b._edge_tags, ["a","d"]) \
+        if is_any_tag_kind(a._edge_tags, ["l","m",0]) and is_any_tag_kind(b._edge_tags, ["a","d"]) \
             and a.attempt_id == b.attempt_id-1:
             count += 1
     return count

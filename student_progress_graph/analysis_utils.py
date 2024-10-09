@@ -80,11 +80,11 @@ def conditional_prob(var_a: str, var_b: str, df: pd.DataFrame) -> Tuple[float]:
     prob_a_given_b = prob_anb / prob_b
     return prob_a, prob_b, prob_anb, prob_a_given_b
     
-def is_tag_kind(edge_tag: List[Union[str, int]], tag_kinds:List[str]) -> bool:
+def is_any_tag_kind(edge_tag: List[Union[str, int]], tag_kinds:List[str]) -> bool:
     """
-    Checks if an edge tag is a modifier: l or m
+    Checks if an edge tag is any of the tag kinds
     """
-    return all([str(t)[0] in tag_kinds for t in edge_tag])
+    return any([str(t)[0] in tag_kinds for t in edge_tag])
 
 def is_known_exception(e: Edge, problem: str, key: str) -> Union[bool, ValueError]:
     """

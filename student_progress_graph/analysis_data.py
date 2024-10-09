@@ -35,6 +35,43 @@ SUCCESS_CLUES = {
     "check_prime": [1,2,3,4]
 }
 
+# these are manually verified
+SUCCESS_NODE_IDS = {
+   "add_int": 1,
+   "add_up": 5,
+   "altText": 9,
+   "assessVowels": 1,
+   "changeSection": 16,
+   "check_prime": 5,
+   "combine": 7,
+   "convert": 29,
+   "create_list": 2,
+   "fib": 4,
+   "findHorizontals": None,
+   "find_multiples": 8,
+   "generateCardDeck": 7,
+   "getSeason": 10,
+   "increaseScore": 0,
+   "laugh": 11,
+   "pattern": 0,
+   "percentWin": 8,
+   "planets_mass": 2,
+   "print_time": 5,
+   "readingIceCream": 13,
+   "remove_odd": 6,
+   "reverseWords": 3,
+   "set_chars": 7,
+   "sortBySuccessRate": 2,
+   "sort_physicists": 7,
+   "sortedBooks": 0,
+   "student_grades": 0, # noone succeeds
+   "subtract_add": 4,
+   "times_with": 8,
+   "topScores": 4,
+   "total_bill": 5,
+   "translate": 4
+}
+
 KNOWN_EXCEPTIONS = {
     #arya
     "combine": {
@@ -66,12 +103,18 @@ KNOWN_EXCEPTIONS = {
             "student12": {
                 3: "student should be awarded clue 2 in start clues"
             },
+            "student54": {
+                2: "missing clue 2,5. 5 implied. 2 should be awarded"
+            },
+            "student57": {
+                2: "student incorrect, but tests pass"
+            },
         },
-        "fail": {
-            "student19": {
-                1: "Model runs out of tokens"
-            }
-        },
+        # "fail": {
+        #     "student19": {
+        #         1: "Model runs out of tokens"
+        #     }
+        # },
         "neutral": {
             "student20": {
                 2: "first index versus index 1: zero-indexing ambiguity"
@@ -94,7 +137,7 @@ KNOWN_EXCEPTIONS = {
         },
         "breakout": {
             "student12": {
-                3: "student is technically incorrect, but due to lacking test coverage, passes"
+                3: "student is technically incorrect, but due to lacking test coverage, passes to success, causing breakout"
             },
             "student57": {
                 2: "same as student12"
@@ -133,19 +176,22 @@ KNOWN_EXCEPTIONS = {
             "student54": {4: "clue 1 optional, but more efficient - student has long path to success"}
         },
         # false neutral, should be success because has all clues
-        "neutral": {
-            "student38": {1: "marked as neutral because not last attempt, but successful",
-                        2: "this attempt follows a previous success"},
-        },
+        # "neutral": {
+        #     "student38": {1: "marked as neutral because not last attempt, but successful",
+        #                 2: "this attempt follows a previous success"},
+        # },
         # false fail, should be success because all clues
-        "fail": {
-            "student38": {3: "this final attempt follows a previous success"},
-        }
+        # "fail": {
+        #     "student38": {3: "this final attempt follows a previous success"},
+        # }
     },
     "add_up": {
         "success": {
             "student24": {1: """incomplete clues is successful due to use of python try-except
-                          (student mentions 'error' in prompt)"""}
+                          (student mentions 'error' in prompt)"""},
+            "student55": {
+                2: "clue 5 base case 0 implied"
+            }
         },
         "fail":{
             "student65": {5: "has all clues, but still fails because model interprets 'number' as int"}
@@ -163,14 +209,18 @@ KNOWN_EXCEPTIONS = {
         }
     },
     "topScores": {
-        "success": {},
+        "success": {
+            "student50": {
+                1: "missing clue 8,3 is implicit"
+            }
+        },
         "neutral": {
-            "student45": {1:"student with all clues gets fail because of LLM runs out of tokens",
-                          2:"same as previous attempt",
-                          3:"same as previous attempt",
-                          4:"same as previous attempt",
-                          5:"same as previous attempt",
-                          6:"same as previous attempt"},
+            # "student45": {1:"student with all clues gets fail because of LLM runs out of tokens",
+            #               2:"same as previous attempt",
+            #               3:"same as previous attempt",
+            #               4:"same as previous attempt",
+            #               5:"same as previous attempt",
+            #               6:"same as previous attempt"},
             "student53": {4: """student has all clues; wording leads to LLM fail. Good example to highlight,
                           since student eventually gets it right. What did they change? Got rid of 'lookback'
                           statements""",
@@ -178,24 +228,24 @@ KNOWN_EXCEPTIONS = {
                           7: "same as previous attempt",
                           8: "same as previous attempt",
                           9: "same as previous attempt"
-                          }
+                          },
         },
-        "fail": {
-            "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
-        },
-        "cycles": {
-            "student45": {
-                3: "student with all clues gets fail because of LLM runs out of tokens",
-                4: "same as previous attempt"
-            },
-        },
+        # "fail": {
+        #     "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
+        # },
+        # "cycles": {
+        #     "student45": {
+        #         3: "student with all clues gets fail because of LLM runs out of tokens",
+        #         4: "same as previous attempt"
+        #     },
+        # },
         "breakout": {
             "student15": {
                 10: "Student breaks out into another cycle",
             },
-            "student53": {
-                10: "LLM runs out of tokens error in node_from. Should have been a success from attempt 7"
-            }
+            # "student53": {
+            #     10: "LLM runs out of tokens error in node_from. Should have been a success from attempt 7" # trimmed
+            # }
         }
     },
     # Carolyn
@@ -206,6 +256,7 @@ KNOWN_EXCEPTIONS = {
                 2: "no need to describe prime, model knows"
             },
             "student32": {
+                1: "no need to describe prime",
                 2: "no need to describe prime"
             },
             "student49": {
@@ -237,32 +288,35 @@ KNOWN_EXCEPTIONS = {
         }
     },
     "convert": {
-        "start_node": {
-            "student18": {
-                0: "model makes python error where it forgets to add temp to acc in base case (no -1), error keeping state"
-            }
-        },
+        # "start_node": {
+        #     "student18": {
+        #         0: "model makes python error where it forgets to add temp to acc in base case (no -1), error keeping state"
+        #     }
+        # },
         "neutral": {
-            "student0": {
-                1: "model runs out of token",
-                2: "model runs out of token",
-                3: "model runs out of token",
-                4: "model runs out of token",
-                5: "model runs out of token",
-                6: "model runs out of token",
-                7: "student did not explicitly say capitalize"
-            },
+            # "student0": {
+            #     1: "model runs out of token",
+            #     2: "model runs out of token",
+            #     3: "model runs out of token",
+            #     4: "model runs out of token",
+            #     5: "model runs out of token",
+            #     6: "model runs out of token",
+            #     7: "student did not explicitly say capitalize"
+            # },
             "student18":{
                 1: "model ignores split instruction",
                 2: "model misinterprets next string instruction",
             }
         },
-        "fail": {
-            "student18": {
-                3: "model runs out of tokens"
-            }
-        },
+        # "fail": {
+        #     "student18": {
+        #         3: "model runs out of tokens"
+        #     }
+        # },
         "success": {
+            "student21": {
+                7: "clue 1 implied"
+            },
             "student17": {
                 31: "1,5 implicit"
             },
@@ -271,19 +325,19 @@ KNOWN_EXCEPTIONS = {
             }
         },
         "cycles": {
-            "student0": {
-                3: "model runs out of tokens",
-                5: "model runs out of tokens",
-                6: "model runs out of tokens"
-            }
+            # "student0": {
+            #     3: "model runs out of tokens",
+            #     5: "model runs out of tokens",
+            #     6: "model runs out of tokens"
+            # }
         },
         "breakout": {
             "student17": {
                 31: "I would argue that attempt 30 is misleading because student doesnt say split, and replaces -1 with empty string instead of space"
             },
-            "student21": {
-                9: "previous node is already success"
-            },
+            # "student21": {
+            #     9: "previous node is already success"
+            # },
             "student3": {
                 9: "student breaksout into cycle"
             },
@@ -377,27 +431,27 @@ KNOWN_EXCEPTIONS = {
             "student14": {
                 0: "model hallucinates month numbers instead of str"
             },
-            "student45": {
-                0: "model out of tokens"
-            }
+            # "student45": {
+            #     0: "model out of tokens"
+            # }
         },
-        "fail": {
-            "student31": {
-                3: "model out of token"
-            }
-        },
+        # "fail": {
+        #     "student31": {
+        #         3: "model out of token"
+        #     }
+        # },
         "neutral": {
-            "student45": {
-                1: "model out of token",
-                2: "model out of token"
-            },
-            "student55": {
-                3: "model run out of token"
-            },
-            "student9": {
-                2: "model out of token",
-                3: "model out of token"
-            }
+            # "student45": {
+            #     1: "model out of token",
+            #     2: "model out of token"
+            # },
+            # "student55": {
+            #     3: "model run out of token"
+            # },
+            # "student9": {
+            #     2: "model out of token",
+            #     3: "model out of token"
+            # }
         },
         "success": {
             "student46": {
@@ -411,30 +465,30 @@ KNOWN_EXCEPTIONS = {
             }
         },
         "cycles": {
-            "student31": {
-                3: "model out of token"
-            },
-            "student55": {
-                3: "model out of token"
-            }
+            # "student31": {
+            #     3: "model out of token"
+            # },
+            # "student55": {
+            #     3: "model out of token"
+            # }
         },
         "breakout": {
-            "student15": {
-                4: "model out of token"
-            },
-            "student45": {
-                3: "model out of token, thus less detail better"
-            },
-            "student6": {
-                3: "model out of token"
-            }
+            # "student15": {
+            #     4: "model out of token"
+            # },
+            # "student45": {
+            #     3: "model out of token, thus less detail better"
+            # },
+            # "student6": {
+            #     3: "model out of token"
+            # }
         }
     },
     "print_time": {
         "start_node": {
-            "student57": {
-                0: "model out of tokens"
-            },
+            # "student57": {
+            #     0: "model out of tokens"
+            # },
             "student77": {
                 0: "first attempt correct"
             }
@@ -460,9 +514,9 @@ KNOWN_EXCEPTIONS = {
             }
         },
         "fail": {
-            "student57": {
-                1: "model runs out of token"
-            }
+            # "student57": {
+            #     1: "model runs out of token"
+            # }
         },
         "neutral": {
             "student77": {
@@ -571,9 +625,9 @@ KNOWN_EXCEPTIONS = {
             }
         },
         "breakout": {
-            "student20": {
-                4: "this is loop over success state, ignore."
-            }
+            # "student20": {
+            #     4: "this is loop over success state, ignore."
+            # }
         }
     },
     "sortBySuccessRate": {
@@ -593,6 +647,9 @@ KNOWN_EXCEPTIONS = {
         "success": {
             "student64": {
                 2: "clue 6 return is implicit"
+            },
+            "student69": {
+                2: "test coverage issue makes this a success, reverse+sort by nominee is equivalent to sort by success rate"
             }
         },
         "breakout": {
@@ -633,7 +690,7 @@ KNOWN_EXCEPTIONS = {
         },
         "fail": {
             "student63": {
-                1: "studenteval original is_success is wrong, this completion is successful"
+                1: "studenteval original is_success=False is wrong, this completion is successful"
             }
         },
         "success": {
@@ -666,6 +723,15 @@ KNOWN_EXCEPTIONS = {
             },
             "student64": {
                 3: "missing clue 1,3,8. 1,3,8 could be implicit."
+            },
+            "student50": {
+                1: "clue3 implicit"
+            },
+            "student75": {
+                1: ""
+            },
+            "student79": {
+                1: ""
             }
         },
         "breakout": {
@@ -842,15 +908,15 @@ KNOWN_EXCEPTIONS = {
                 1: "Wrong base case of [], student did not consider.",
                 2: "Model adds an additional store operation for first element, which is wrong"
             },
-            "student70": {
-                2: "Model out of tokens"
-            }
+            # "student70": {
+            #     2: "Model out of tokens"
+            # }
         },
-        "fail": {
-            "student70": {
-                4: "Clue 2 is worded ambiguously. Treat all elements as integers could mean list of integers."
-            }
-        },
+        # "fail": {
+        #     "student70": {
+        #         4: "Clue 2 is worded ambiguously. Treat all elements as integers could mean list of integers."
+        #     }
+        # },
         "cycles": {
             "student29": {
                 1: "Model ignored instruction of odd/even. 0 indexing issue"
@@ -881,8 +947,9 @@ KNOWN_EXCEPTIONS = {
         },
         "success": {
             "student23": {
-                4: "sub clue 3 for clue 5. [1,2,3,4,6] and [1,3,4,5,6] both correct + \
-                    student reaches success by attempt 1"
+                1: "[1,2,3,4,6] and [1,3,4,5,6] both correct"
+                # 4: "sub clue 3 for clue 5. [1,2,3,4,6] and [1,3,4,5,6] both correct + \
+                #     student reaches success by attempt 1"
             },
             "student50": {
                 1: "6 implicit. 4 missing, but tests pass because of coverage."
@@ -951,6 +1018,10 @@ KNOWN_EXCEPTIONS = {
         "neutral": {
             "student37": {
                 1: "Student has all clues, but model still misinterpreting."
+            },
+            "student2": {
+                2: "student should be awarded misdirection clue 7 in start node",
+                17: "student has clue 7 misdirection"
             }
         },
         "breakout": {
@@ -1004,12 +1075,12 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 1: "Same model misinterpretation issue as 23. Model does not consider order of output."
             },
-            "student40": {
-                1: "Model runs out of tokens but would be correct.",
-                2: "same as previous attempt",
-                3: "same as previous attempt",
-                4: "same as previous attempt"
-            },
+            # "student40": {
+            #     1: "Model runs out of tokens but would be correct.",
+            #     2: "same as previous attempt",
+            #     3: "same as previous attempt",
+            #     4: "same as previous attempt"
+            # },
             "student63": {
                 1: "hallucination",
             }
@@ -1026,9 +1097,9 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 0: "Same model misinterpretation issue as 23."
             },
-            "student40": {
-                0: "Model runs out of tokens"
-            },
+            # "student40": {
+            #     0: "Model runs out of tokens"
+            # },
             "student63": {
                 0: "Same misinterpretation as 23."
             }
@@ -1042,17 +1113,17 @@ KNOWN_EXCEPTIONS = {
             "student35": {
                 1: "Same model misinterpretation issue as 23."
             },
-            "student40": {
-                3: "Model runs out of tokens error."
-            }
+            # "student40": {
+            #     3: "Model runs out of tokens error."
+            # }
         },
         "breakout": {
             "student23": {
                 4: "Same model order misinterpretation issue"
             },
-            "student40": {
-                5: "Breaksout because model manages to fit within token limit"
-            }
+            # "student40": {
+            #     5: "Breaksout because model manages to fit within token limit"
+            # }
         }
     },
     "changeSection": {
@@ -1116,142 +1187,12 @@ KNOWN_EXCEPTIONS = {
     
 }
 
-IGNORE_SUCCESS = {
-    # student is trivially successful due to lacking test coverage
-    "planet_mass" : ["student14"],
-    "altText": ["student75"],
-    "fib": ["student11", "student2","student22"],
-    "increaseScore": ["student75"],
-    "percentWin": ["student21"],
-    "sort_physicists": ["student77","student12","student57"]
+OUT_OF_TOKENS_ERROR = {
+    "altText": ["student40"],
+    "subtract_add": ["student70"],
+    "print_time": ["student57"],
+    'getSeason': ['student45', 'student31', 'student55', 'student9', 'student15', 'student6'],
+    "convert": ["student0","student18"],
+    "topScores": ["student45"],
+    "sort_physicists": ["student19"],
 }
-
-
-PROBLEM_TO_NUM_STUDENTS_FULL = {
-    "add_int": 10,
-    "add_up": 17,
-    "add_word": 14,
-    "altText": 15,
-    "andCount": 12,
-    "assessVowels": 12,
-    "changeSection": 13,
-    "check_for_aspen": 12,
-    "check_prime": 12,
-    "combine": 10,
-    "convert": 14,
-    "correctNumberofPlayers": 12,
-    "create_list": 10,
-    "edit_col": 12,
-    "exp": 15,
-    "fib": 10,
-    "findHorizontals": 12,
-    "find_multiples": 12,
-    "generateCardDeck": 15,
-    "getSeason": 17,
-    "hasHorizontalWin": 15,
-    "has_qu": 10,
-    "increaseScore": 15,
-    "laugh": 11,
-    "layoverTrips": 7,
-    "meeps_morps": 12,
-    "mod_end": 10,
-    "multisplit": 17,
-    "order_strings": 8,
-    "partialWordle": 11,
-    "pattern": 14,
-    "percentWin": 14,
-    "planets_mass": 16,
-    "print_time": 10,
-    "readingIceCream": 11,
-    "reduce": 14,
-    "remove_odd": 14,
-    "reverseWords": 14,
-    "set_chars": 10,
-    "sortBySuccessRate": 15,
-    "sort_physicists": 10,
-    "sortedBooks": 12,
-    "student_grades": 12,
-    "subtract_add": 11,
-    "times_with": 15,
-    "topScores": 16,
-    "total_bill": 15,
-    "translate": 15
-}
-
-# NOT COUNTING STUDENTS WITH 1 ATTEMPT
-PROBLEM_TO_NUM_STUDENTS_STRICT = {
-   "topScores": 11,
-   "translate": 7,
-   "sortBySuccessRate": 13,
-   "convert": 12,
-   "planets_mass": 9,
-   "times_with": 11,
-   "increaseScore": 8,
-   "reduce": 2,
-   "subtract_add": 9,
-   "check_for_aspen": 4,
-   "add_word": 9,
-   "sortedBooks": 10,
-   "create_list": 6,
-   "combine": 5,
-   "hasHorizontalWin": 6,
-   "total_bill": 13,
-   "layoverTrips": 4,
-   "has_qu": 3,
-   "order_strings": 3,
-   "remove_odd": 13,
-   "changeSection": 11,
-   "getSeason": 15,
-   "pattern": 6,
-   "student_grades": 6,
-   "generateCardDeck": 13,
-   "fib": 8,
-   "print_time": 8,
-   "correctNumberofPlayers": 3,
-   "exp": 2,
-   "percentWin": 12,
-   "meeps_morps": 4,
-   "sort_physicists": 9,
-   "assessVowels": 8,
-   "add_int": 6,
-   "readingIceCream": 11,
-   "laugh": 9,
-   "andCount": 1,
-   "partialWordle": 2,
-   "set_chars": 8,
-   "mod_end": 4,
-   "add_up": 15,
-   "findHorizontals": 8,
-   "multisplit": 3,
-   "altText": 8,
-   "reverseWords": 9,
-   "check_prime": 8,
-   "find_multiples": 9,
-   "edit_col": 2
-}
-
-if __name__ == "__main__":
-    """
-    for each problem check that the student exceptions
-    are indeed exceptions, i.e not majority
-    """
-    PROBLEM_TO_NUM_STUDENTS = PROBLEM_TO_NUM_STUDENTS_FULL
-    THRESHOLD = 0.4
-    failing_problems = []
-    for prob in SUCCESS_CLUES.keys():
-        if prob not in KNOWN_EXCEPTIONS.keys():
-            continue
-        exceptions = KNOWN_EXCEPTIONS[prob]
-        student_exceptions = set()
-        for _, v in exceptions.items():
-            student_exceptions.update(set(list(v.keys())))
-        if len(student_exceptions) > (THRESHOLD * PROBLEM_TO_NUM_STUDENTS[prob]):
-            failing_problems.append((prob, len(student_exceptions), PROBLEM_TO_NUM_STUDENTS[prob]))
-    
-    EXCEPTIONS = [
-        "readingIceCream" # some of these exceptions are tagging errors
-    ]
-    failing_problems = [f for f in failing_problems if not f[0] in EXCEPTIONS]
-    message = f"failing problems {failing_problems}, THRESHOLD: {THRESHOLD}"
-    assert len(failing_problems) == 0, message
-    print(message)

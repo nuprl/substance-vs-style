@@ -4,6 +4,7 @@ from networkx.readwrite.json_graph import adjacency
 import yaml
 import networkx as nx
 from dataclasses import dataclass
+from collections import defaultdict
 
 State = Literal['success','fail','neutral',
                 '_dummy_']
@@ -61,6 +62,12 @@ class Edge(yaml.YAMLObject):
     state: State
     _edge_tags: Union[None, List[str]] = None
     clues: Union[None, List[int]] = None
+
+    def __hash__(self):
+        return hash("\n".join(str(getattr(self, k)) for k in [
+            "node_from","node_to","username","prompt_from","prompt_to","completion_from",
+            "completion_to", "attempt_id","total_attempts"
+        ]))
     
     def __repr__(self):
         # return f"%r" % self.state
@@ -81,7 +88,7 @@ attempt_id=%r,total_attempts=%r,state=%r, clues=%r""" % (self.__class__.__name__
         return dikt
     
     def add_clues(self, clues: List[int]):
-        self.clues = clues
+        self.clues = list(clues)
     
     @classmethod
     def from_dict(cls, edge:dict) -> "Edge":
@@ -111,30 +118,7 @@ class Graph(yaml.YAMLObject):
     """
     yaml_tag = u'!Graph'
     SUCCESS_NODE_COLOR = "green"
-    BASE_NODE_COLOR="grey"
-    COLORS = [
-        '#d83034', # red
-        '#f9e858', # yellow
-        '#008dff', # med blue
-        '#4ecb8d', # green
-        '#c701ff', # purple
-        '#ffcd8e', # light orange
-        '#003a7d', # dark blue
-        '#Ff73b6', # pink
-        '#ff7f50', # coral
-        '#7fff00', # chartreuse
-        '#8a2be2', # blue violet
-        '#ffd700', # gold
-        '#ff4500', # orange red
-        '#00ced1', # dark turquoise
-        '#ff1493', # deep pink
-        '#9400d3', # dark violet
-        '#00bfff', # deep sky blue
-    ]
-    student_colors: dict = {}
-    student_start_node_tags: dict = {}
-    student_clues_tracker : dict = {}
-    problem_clues: dict = {}
+    BASE_NODE_COLOR="red"
     
     def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], **kwargs):
         self.problem=problem
@@ -143,6 +127,30 @@ class Graph(yaml.YAMLObject):
         
         self.student_start_node_tags = kwargs.pop("student_start_node_tags", {})
         self.problem_clues = kwargs.pop("problem_clues", {})
+
+        self.COLORS = [
+            '#d83034', # red
+            '#f9e858', # yellow
+            '#008dff', # med blue
+            '#4ecb8d', # green
+            '#c701ff', # purple
+            '#ffcd8e', # light orange
+            '#003a7d', # dark blue
+            '#Ff73b6', # pink
+            '#ff7f50', # coral
+            '#7fff00', # chartreuse
+            '#8a2be2', # blue violet
+            '#ffd700', # gold
+            '#ff4500', # orange red
+            '#00ced1', # dark turquoise
+            '#ff1493', # deep pink
+            '#9400d3', # dark violet
+            '#00bfff', # deep sky blue
+        ]
+        self.student_colors = {}
+
+        # this is initialized after tagging
+        self.student_clues_tracker = {}
     
     def __repr__(self):
         return "%s(problem=%r, nodes=%r, edges=%r)" % (
@@ -228,6 +236,13 @@ class Graph(yaml.YAMLObject):
                 return e.node_from.id
         raise ValueError(f"Start node not found {username}, {self.problem}")
     
+    def get_student_edges(self) -> dict[str, List[Edge]]:
+        student_to_edges = defaultdict(list)
+        for e in self.edges:
+            student_to_edges[e.username].append(e)
+        student_to_edges = {k: sorted(v, key=lambda x: x.attempt_id) for k,v in student_to_edges.items()}
+        return student_to_edges
+
     def adjacency(self):
         adjacency = {n.id:[] for n in self.nodes}
         for e in self.edges:

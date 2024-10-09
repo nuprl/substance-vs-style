@@ -1,4 +1,4 @@
-from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, IGNORE_SUCCESS
+from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, OUT_OF_TOKENS_ERROR
 from .graph_utils import load_graph, Graph, Edge, get_student_subgraph, Node
 import itertools as it
 from typing import List, Union, Dict, Tuple
@@ -6,9 +6,66 @@ import json
 import pandas as pd
 import yaml
 import networkx as nx
+from copy import deepcopy
+from scipy import stats
 
 class ContinuityError(Exception):
     pass
+
+def remove_out_of_token_errors(graph: Graph) -> Graph:
+    """
+    Removes students with out of token errors.
+    """
+    students_to_remove = OUT_OF_TOKENS_ERROR.get(graph.problem, [])
+    if len(students_to_remove) > 0:
+        graph = remove_students(graph, students_to_remove)
+        print("Removed students:", students_to_remove)
+    return graph
+
+def remove_students(graph: Graph, students: List[str]) -> Graph:
+    """
+    Removes students and associated edges/data
+    """
+    def try_pop(obj, key):
+        if obj:
+            obj.pop(key)
+
+    new_graph = deepcopy(graph)
+    for student in students:
+        try_pop(getattr(new_graph,"student_colors"), student)
+        try_pop(getattr(new_graph,"student_start_node_tags"), student)
+        try_pop(getattr(new_graph,"student_clues_tracker"), student)
+    new_graph.edges = [e for e in new_graph.edges if not e.username in set(students)]
+    return new_graph
+
+
+def trim_graph(graph:Graph, success_node_id: int) -> Graph:
+    """
+    Sometimes,students are successful before their last attempt, but keep
+    playing with the model. Prune these extra interactions
+    """
+    student_edges = graph.get_student_edges()
+    edges_to_delete = []
+    edges_to_retag = []
+    students_to_delete = []
+    for student, sorted_attempts in student_edges.items():
+        for i, attempt in enumerate(sorted_attempts):
+            if i == 0 and attempt.node_from.id == success_node_id:
+                # first attempt was correct, delete student
+                students_to_delete.append(student)
+                break
+            elif attempt.node_to.id == success_node_id:
+                # first correct attempt
+                edges_to_delete += sorted_attempts[i+1:]
+                edges_to_retag.append(attempt)
+                break
+
+    graph = remove_students(graph, students_to_delete)
+    graph.edges = [e for e in graph.edges if e not in set(edges_to_delete)]
+    for i,e in enumerate(graph.edges):
+        if e in set(edges_to_retag):
+            graph.edges[i].state = "success"
+    return graph
 
 def conditional_prob(var_a: str, var_b: str, df: pd.DataFrame) -> Tuple[float]:
     """
@@ -36,6 +93,7 @@ def is_known_exception(e: Edge, problem: str, key: str) -> Union[bool, ValueErro
     exception_keys = ["cycles","breakout","success","fail","neutral", "start_node"]
     if key not in exception_keys:
         raise ValueError(f"Received key {key}, expected one of known keys: {exception_keys}")
+
     try:
         reason = KNOWN_EXCEPTIONS[problem][key][e.username][e.attempt_id]
         return True
@@ -50,8 +108,9 @@ def compute_next_clues(
     Given a set of clues, compute the next set by applying the edits.
     Raises continuity error if the edits cannot be applied
     """
-    if clues is None:
+    if clues is None or clues == [0]: #no clues placeholder
         clues = []
+
     if edits is None:
         raise ContinuityError("No clues found on edge. Please compute clues first.")
         
@@ -59,19 +118,22 @@ def compute_next_clues(
     for c in edits:
         if c == 0: #no change
             continue
-        elif c[0] == "d": #delete
-            # if int(c[1]) in prev_clues:
+        elif c[0] == "d": 
+            #delete clue
             try:
                 prev_clues.remove(int(c[1]))
             except KeyError:
                 raise ContinuityError("Remove error")
-        elif c[0] == "a": #add
-            if int(c[1]) not in prev_clues:
+        elif c[0] == "a": 
+            #add clue must not be in previous
+            if prev_clues == []:
+                prev_clues = set([int(c[1])])
+            elif int(c[1]) not in prev_clues:
                 prev_clues.add(int(c[1]))
             else:
                 raise ContinuityError("Add error")
         elif c[0] == "l" or c[0] == "m":
-            # check continuity errors
+            # modified clue must be in previous
             if int(c[1]) not in prev_clues:
                 raise ContinuityError("Modifier error")
     return list(prev_clues)
@@ -111,18 +173,19 @@ def check_clues(graph: Graph, verbose:bool=True) -> Union[ValueError,bool]:
         if is_known_exception(e, graph.problem, key=e.state):
             continue
         elif e.state == "success" and e.clues != SUCCESS_CLUES[graph.problem]:
-            raise ValueError(f"False success: {e_dict}")
+            raise ValueError(f"False success, does not match success clues: {e_dict}")
         elif e.state == "fail" and e.clues == SUCCESS_CLUES[graph.problem]:
-            raise ValueError(f"False fail: {e_dict}")
+            raise ValueError(f"False fail, matches success clues: {e_dict}")
         elif e.state == "neutral" and e.clues == SUCCESS_CLUES[graph.problem]:
-            raise ValueError(f"False neutral, should be success: {e_dict}")
+            raise ValueError(f"False neutral, matches success clues: {e_dict}")
     return True
 
-def check_cycles(graph: Graph) -> Union[ValueError,Dict[str, List[Edge]]]:
+def check_cycles(graph: Graph, suppress_check: bool = False) -> Union[ValueError,Dict[str, List[Edge]]]:
     """
     For each student subgraph, check that cycle/loops either have
     incomplete clues or trivial edits, or is a known exception.
-    If check fails, raises a value error.
+    If check fails, raises a value error. Otherwise returns
+    cycle summary that includes breakout edges.
     """
     summary = {}
     for student in graph.get_students():
@@ -140,10 +203,12 @@ def check_cycles(graph: Graph) -> Union[ValueError,Dict[str, List[Edge]]]:
                 (is_self_loop and [e.node_from.id] in cycle)):
                 if is_known_exception(e, graph.problem, key="cycles"):
                     continue 
-                elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]):
+                elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]) \
+                    and not suppress_check:
                     raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
                 else:
                     cycle_summary.append(e)
+            # save breakout edge
             elif e.node_from.id in cycle_nodes and e.node_to.id not in cycle_nodes:
                 cycle_summary.append(e)
         summary[student] = sorted(cycle_summary, key=lambda x: x.attempt_id)
@@ -154,14 +219,14 @@ def populate_clues(graph: Graph) -> Graph:
     Augment graph edges with clue sets
     """
     FOUND_ERRORS_STUDENTS = []
-    student_clues_tracker = {student: [(0,start_state)] for student,start_state 
+    student_clues_tracker = {student: [{"attempt_id":0,"clues":start_state}] for student,start_state 
                              in graph.get_start_node_states().items()}
     for i,e in enumerate(graph.edges):
-        prev_clues = student_clues_tracker[e.username][-1][-1]
+        prev_clues = student_clues_tracker[e.username][-1]["clues"]
         try:
             
             next_clues = compute_next_clues(prev_clues, e._edge_tags)
-            student_clues_tracker[e.username].append((e.attempt_id, next_clues))
+            student_clues_tracker[e.username].append({"attempt_id":e.attempt_id, "clues":next_clues})
             graph.edges[i].add_clues(next_clues)
             
         except ContinuityError as err:
@@ -181,6 +246,9 @@ def populate_clues(graph: Graph) -> Graph:
         print(f"Problem clues: {json.dumps(graph.problem_clues, indent=4)}")
         raise ContinuityError(f"Found continuity errors in students:\n{set(FOUND_ERRORS_STUDENTS)}")
     
+    for username in student_clues_tracker.keys():
+        student_clues_tracker[username].sort(key=lambda x: x["attempt_id"])
+
     graph.student_clues_tracker = student_clues_tracker
     return graph
 
@@ -221,10 +289,11 @@ def get_breakout_edge(cycle_edges: List[Edge]) -> Union[None, Edge]:
     If a breakout edge exists, return the Edge, otherwise return None.
     """
     if len(cycle_edges) < 2:
+        # need at least 2 for breakout edge
         return None
-    last_edge = cycle_edges.pop()
+    last_edge = cycle_edges[-1]
     nodes = []
-    for e in cycle_edges:
+    for e in cycle_edges[:-1]:
         nodes += [e.node_from.id, e.node_to.id]
     nodes = set(nodes)
     if last_edge.node_to.id in nodes:
@@ -253,7 +322,7 @@ def df_cycle_summary(
 
 def check_breakout_edges(
     breakout_edges: Dict[str, List[Edge]],
-    problem: str
+    graph: Graph
 ) -> Union[ValueError, None]:
     """
     Given a dict of student usernames to breakout edges.
@@ -261,29 +330,16 @@ def check_breakout_edges(
     a student breaks out of a loop only by adding new clues.
     Raises a ValueError if this is not the case.
     """
+    problem = graph.problem
+    # succ_students = graph.get_successful_students()
     for student,bedge in breakout_edges.items():
+        # # only check successful students
+        # if bedge != None and student in succ_students:
         if bedge != None:
-            added_clues = [str(i)[0] for i in bedge._edge_tags]
-            if not ("a" in added_clues or "d" in added_clues) and \
+            if not (is_tag_kind(bedge._edge_tags, ["a","d"])) and \
                 not is_known_exception(bedge, problem, key="breakout"):
                 raise ValueError(f"Breakout edge is trivial: {student}, {_edge_to_dict(bedge, False)}")
 
-def compute_node_clusters(graph: Graph)-> dict:
-    """
-    For a graph, produce a dict of node ids to
-    set of clues associated with the node
-    """
-    node_to_clues = {}
-    for student,clues in graph.get_start_node_states().items():
-        start_node = graph.get_start_node_id(student)
-        node_to_clues[start_node] = set([tuple(clues)])
-        
-    for e in graph.edges:
-        if e.node_to.id not in node_to_clues.keys():
-            node_to_clues[e.node_to.id] = set()
-        node_to_clues[e.node_to.id].add(tuple(e.clues))
-    
-    return {k:list(v) for k,v in node_to_clues.items()}
 
 def get_path_clues(g: Graph) -> Union[dict, ValueError]:
     """
@@ -308,45 +364,26 @@ def get_path_clues(g: Graph) -> Union[dict, ValueError]:
     
     return student_paths
 
+def score_node(node:Node, problem_answers: List[str]) -> Node:
+    num_correct_print = sum([int(node.stdout[i].rstrip('\n') == problem_answers[i])
+                                for i in range(len(problem_answers))])
+    num_error = sum([int("error:" in stderr.lower()) for stderr in node.stderr])
+    score = num_correct_print - num_error
+    return score
+
 def score_nodes_by_tests_passed(g: Graph, problem_answers: List[str], overwrite:bool=True) -> Graph:
     """
     Tags nodes with a score which is (num tests passed = num errors)
     """
     for _,n in enumerate(g.nodes):
-        node_id = n.id
-        num_correct_print = sum([int(n.stdout[i].rstrip() == problem_answers[i])
-                                 for i in range(len(problem_answers))])
-        num_error = sum([int("error:" in stderr.lower()) for stderr in n.stderr])
-        score = num_correct_print - num_error
-        g.tag_node(node_id, score, overwrite=overwrite)
+        score = score_node(n, problem_answers)
+        g.tag_node(n.id, score, overwrite=overwrite)
     return g
 
-def score_nodes_by_target_dist(
-    g: Graph, 
-    target_node_id: int, 
-    overwrite:bool=True
-) -> Union[Graph, ValueError]:
-    """
-    Tags nodes N with a score which is the length of shortest path from
-    node N to target_node_id (usually the success node)
-    """
-    G = g.to_networkx()
-    for n in g.nodes:
-        node_id = n.id
-        if node_id == target_node_id:
-            g.tag_node(node_id, 0, overwrite=overwrite)
-        else:
-            try:
-                shortest_path = nx.shortest_path(G, source=node_id, target=target_node_id)
-                shortest_len = len(shortest_path) - 1
-            except nx.NetworkXNoPath:
-                shortest_len = -1
-            g.tag_node(node_id, shortest_len, overwrite=overwrite)
-    
-    for n in g.nodes:
-        if n._node_tags:
-            n._node_tags = list(set(n._node_tags))
-            
-        if not (n._node_tags and len(n._node_tags) == 1):
-            raise ValueError("Found node with different shortest path scores. This should not happen.")
-    return g
+def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
+    results = ""
+    for var_a, var_b in var_tuples:
+        corr, pval = stats.pearsonr(df[var_a], df[var_b])
+        res = f"{var_a}-{var_b}: pearsonr {corr}, pvalue {pval}"
+        results += "\n" + res
+    return results

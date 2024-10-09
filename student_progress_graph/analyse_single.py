@@ -138,6 +138,10 @@ def single_problem_analysis(graph_yaml: str, outdir:str, problem_clues_yaml:str)
         # graph = score_nodes_by_target_dist(graph, success_node.id, overwrite=True)
     success_node = SUCCESS_NODE_IDS[graph.problem]
     print(f"Success node {success_node}")
+
+    # check all success edges end in success node id
+    success_edges = [e.node_to.id == success_node for e in graph.edges if e.state == "success"]
+    assert all(success_edges), "Not all success egdes end in success node id!"
     
     ## RQ1: cycle behavior
     run_RQ1(graph, outdir)

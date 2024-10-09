@@ -1,3 +1,8 @@
+# Note on naming
+
+A 'trimmed' graph refers to a graph where students reach success early, but keep messing around. The
+edges after the initial success have been trimmed.
+
 # Problem graphs
 
 *NOTE*: please read this whole document :).

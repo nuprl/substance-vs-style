@@ -1,0 +1,50 @@
+# Analyzing single problem percentWin.yaml
+Success node 8
+## Cycle edge info:
+student0:[]
+student10:[]
+student17:[[11, 11, [2, 3], ['m3']], [9, 9, [2, 3], ['l3']], [9, 14, [2, 3, 5], ['a5']]]
+breakoutedge student17
+student18:[]
+student21:[]
+student25:[]
+student26:[[9, 11, [2, 3], [0]], [9, 14, [2, 3, 5], [0]]]
+breakoutedge student26
+student3:[]
+student30:[]
+student4:[[14, 14, [2, 3, 4, 5, 6], ['m4']], [14, 8, [2, 3, 4, 5, 6], ['m4']]]
+breakoutedge student4
+student41:[[0, 0, [1, 2, 3, 5], ['a5']], [0, 0, [1, 2, 3, 5], [0]]]
+student51:[]
+## Cycle success rate summary:
+      student  cycle_length  is_success  is_failure
+0    student0             0        True       False
+1   student10             0       False        True
+2   student17             3        True       False
+3   student18             0        True       False
+4   student21             0        True       False
+5   student25             0        True       False
+6   student26             2       False        True
+7    student3             0        True       False
+8   student30             0        True       False
+9    student4             2        True       False
+10  student41             2       False        True
+11  student51             0        True       False
+Total num fail: 3, num fail has loop: 2, 66.66666666666667 %
+Total num success: 9, num succ has loop: 2, 22.22222222222222 %
+Likelihood fail with cycle 0.5 vs. no cycle 0.125
+      student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0    student0             0        True       False          0              1
+1   student10             0       False        True          0              1
+2   student17             3        True       False          1              0
+3   student18             0        True       False          0              1
+4   student21             0        True       False          0              1
+5   student25             0        True       False          0              1
+6   student26             2       False        True          1              0
+7    student3             0        True       False          0              1
+8   student30             0        True       False          0              1
+9    student4             2        True       False          1              0
+10  student41             2       False        True          1              0
+11  student51             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.5
+P(is_success) | NOT P(has_cycle): 0.8750000000000001

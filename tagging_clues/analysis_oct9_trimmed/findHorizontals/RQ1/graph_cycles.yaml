@@ -1,0 +1,182 @@
+breakout_edges:
+  student27: null
+  student32: null
+  student49: null
+  student62: null
+  student66: null
+  student67: null
+  student70: &id003 !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "d = {}\n    for i in range(len(puzzle)):\n        for word in\
+      \ wordList:\n            if word in puzzle[i]:\n                d[word] = i\n\
+      \    return d\n"
+    completion_to: "d = {}\n    for i in range(len(puzzle)):\n        for j in range(len(wordList)):\n\
+      \            if isSubstring(puzzle[i],wordList[j]):\n                d[wordList[j]]\
+      \ = i\n    return d\n"
+    diff: "--- \n+++ \n@@ -25,6 +25,9 @@\n the same letters+in+any+order as a string"
+    node_from: &id002 !Node
+      _node_tags: null
+      id: 1
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '{''tea'': 2}
+
+        '
+      - '{}
+
+        '
+      - '{''it'': 3}
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 13
+      stderr:
+      - 'NameError: name ''isSubstring'' is not defined'
+      - 'NameError: name ''isSubstring'' is not defined'
+      - 'NameError: name ''isSubstring'' is not defined'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    create an\
+      \ empty dictionary. iterate through each string of the input list puzzle. if\
+      \ any of the strings in puzzle contain the same letters as a string from wordList,\
+      \ add that string from wordList as a key to the dictionary with the index of\
+      \ the string from puzzle where it appeared as the value. return the dictionary.\n\
+      \    \"\"\"\n    "
+    prompt_to: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    create an empty\
+      \ dictionary. iterate through each string of the input list puzzle. if any of\
+      \ the strings in puzzle contain the same letters in any order as a string from\
+      \ wordList, add that string from wordList as a key to the dictionary with the\
+      \ index of the string from puzzle where it appeared as the value. return the\
+      \ dictionary.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student70
+  student78: null
+cycle_summary:
+  student27: []
+  student32:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "#make a dictionary of each element in wordList that that can\
+      \ be found with the letters in puzzle (even if the letters in an element of\
+      \ puzzle need to be retordered), paired with its index in puzzle\n    #only\
+      \ include elements of wordlist that appear in puzzle\n    #make a dictionary\
+      \ of each element in wordList that that can be found with the letters in puzzle\
+      \ (even if the letters in an element of puzzle need to be retordered), paired\
+      \ with its index in puzzle"
+    completion_to: "#make a dictionary of the letters in puzzle and their indices\n\
+      \    puzzleDict = {}\n    for i in range(len(puzzle)):\n        if puzzle[i]\
+      \ not in puzzleDict:\n            puzzleDict[puzzle[i]] = [i]\n        else:\n\
+      \            puzzleDict[puzzle[i]].append(i)\n    #make a dictionary of the\
+      \ letters in wordList and their indices\n    wordList"
+    diff: ''
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'None
+
+        '
+      - 'None
+
+        '
+      - 'None
+
+        '
+    node_to: *id001
+    prompt_from: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    Return a\
+      \ dictionary of each element in wordList that that can be found with the letters\
+      \ in puzzle (even if the letters in an element of puzzle need to be retordered),\
+      \ paired with its index in puzzle. Only include elements of wordlist that appear\
+      \ in puzzle\n    \"\"\"\n    "
+    prompt_to: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    Return a dictionary\
+      \ of each element in wordList that that can be found with the letters in puzzle\
+      \ (even if the letters in an element of puzzle need to be retordered), paired\
+      \ with its index in puzzle. Only include elements of wordlist that appear in\
+      \ puzzle\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student32
+  student49: []
+  student62: []
+  student66: []
+  student67: []
+  student70:
+  - !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "d = {}\n    for string in puzzle:\n        for word in wordList:\n\
+      \            if word in string:\n                if word not in d:\n       \
+      \             d[word] = string.count(word)\n                else:\n        \
+      \            d[word] += string.count(word)\n    return d\n"
+    completion_to: "d = {}\n    for i in range(len(puzzle)):\n        for word in\
+      \ wordList:\n            if word in puzzle[i]:\n                d[word] = i\n\
+      \    return d\n"
+    diff: "--- \n+++ \n@@ -22,6 +22,10 @@\n in puzzle contain+the+same+letters+as\
+      \ a string from@@ -39,21 +43,17 @@\n dictionary with the-count+index of the-number-of-times-it-appears-in-the-strings+string\
+      \ from puzzle+where+it+appeared as-its+the value. return the"
+    node_from: !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '{''tea'': 1}
+
+        '
+      - '{}
+
+        '
+      - '{''it'': 1}
+
+        '
+    node_to: *id002
+    prompt_from: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    create an\
+      \ empty dictionary. iterate through each string of the input list puzzle. if\
+      \ any of the strings in puzzle contain a string from wordList, add that string\
+      \ from wordList as a key to the dictionary with the count of the number of times\
+      \ it appears in the strings from puzzle as its value. return the dictionary.\n\
+      \    \"\"\"\n    "
+    prompt_to: "def findHorizontals(puzzle,wordList):\n    \"\"\"\n    create an empty\
+      \ dictionary. iterate through each string of the input list puzzle. if any of\
+      \ the strings in puzzle contain the same letters as a string from wordList,\
+      \ add that string from wordList as a key to the dictionary with the index of\
+      \ the string from puzzle where it appeared as the value. return the dictionary.\n\
+      \    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student70
+  - *id003
+  student78: []

@@ -1,0 +1,44 @@
+{
+   "success": {
+      "student12": {
+         "3": "student should be awarded clue 2 in start clues"
+      },
+      "student54": {
+         "2": "missing clue 2,5. 5 implied. 2 should be awarded"
+      },
+      "student57": {
+         "2": "student incorrect, but tests pass"
+      }
+   },
+   "neutral": {
+      "student20": {
+         "2": "first index versus index 1: zero-indexing ambiguity"
+      },
+      "student36": {
+         "1": "model ignores filter by physics",
+         "2": "model ignores sort by key1, does sort because inability to lookback and get key1 after filtering"
+      },
+      "student77": {
+         "2": "model ignores instruction to only return the scientist. model should understand it means name",
+         "3": "model lookback error, same as student36.2",
+         "4": "same as previous attempt"
+      }
+   },
+   "cycles": {
+      "student77": {
+         "2": "these are two cycles, technically this is a breakout edge",
+         "4": "this is a trivial edit; lookback error is the problem here"
+      }
+   },
+   "breakout": {
+      "student12": {
+         "3": "student is technically incorrect, but due to lacking test coverage, passes to success, causing breakout"
+      },
+      "student57": {
+         "2": "same as student12"
+      },
+      "student77": {
+         "5": "same as student12"
+      }
+   }
+}

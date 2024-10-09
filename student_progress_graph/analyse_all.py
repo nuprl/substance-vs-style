@@ -36,7 +36,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     
     print(f"--- Running for problems {[g.problem for g in graphs]}")
 
-    run_RQ2(graphs, f"{outdir}/RQ3", prob_to_graph)
+    run_RQ2(graphs, f"{outdir}/RQ2", prob_to_graph)
 
 def run_RQ2(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     os.makedirs(outdir, exist_ok=True)

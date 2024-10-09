@@ -1,0 +1,18 @@
+# Analyzing single problem convert.yaml
+Removed students: ['student0', 'student18']
+Success node 29
+## Cycle edge info:
+student10:[]
+student17:[[33, 26, [2], ['m2']], [33, 33, [2], [0]], [33, 22, [2, 3], ['a3']], [2, 2, [2, 3, 4], [0]], [2, 25, [2, 3, 4], [0]], [31, 31, [2, 4], [0]], [5, 5, [], [0]], [42, 22, [2, 3, 4], ['a3']], [42, 29, [2, 3, 4], ['m4']]]
+breakoutedge student17
+student21:[[0, 29, [2, 3, 4, 5], ['m4']]]
+student25:[[32, 32, [2, 4], ['l4']]]
+student26:[[20, 20, [2], ['m2']]]
+student3:[[16, 10, [2], ['a2']], [38, 38, [2, 4], [0]]]
+breakoutedge student3
+student30:[[28, 28, [2, 4], [0]], [28, 32, [2, 3, 4], ['a3', 'm4']]]
+breakoutedge student30
+student4:[[34, 34, [2, 4], ['l2']], [34, 35, [2, 4], ['m2']]]
+breakoutedge student4
+student41:[[0, 0, [2, 3, 4], ['m4']]]
+student51:[]

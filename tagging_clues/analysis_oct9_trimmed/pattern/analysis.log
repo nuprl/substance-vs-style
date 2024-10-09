@@ -1,0 +1,30 @@
+# Analyzing single problem pattern.yaml
+Success node 0
+## Cycle edge info:
+student17:[]
+student25:[]
+student26:[]
+student3:[[2, 8, [1, 4, 5], [0]]]
+student4:[]
+student41:[[1, 1, [2, 3, 4, 5], ['m4']], [1, 4, [2, 3, 4, 5], ['m4']]]
+breakoutedge student41
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student17             0        True       False
+1  student25             0        True       False
+2  student26             0       False        True
+3   student3             1       False        True
+4   student4             0        True       False
+5  student41             2        True       False
+Total num fail: 2, num fail has loop: 1, 50.0 %
+Total num success: 4, num succ has loop: 1, 25.0 %
+Likelihood fail with cycle 0.5 vs. no cycle 0.25
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student17             0        True       False          0              1
+1  student25             0        True       False          0              1
+2  student26             0       False        True          0              1
+3   student3             1       False        True          1              0
+4   student4             0        True       False          0              1
+5  student41             2        True       False          1              0
+P(is_success) | P(has_cycle): 0.5
+P(is_success) | NOT P(has_cycle): 0.75

@@ -1,0 +1,272 @@
+breakout_edges:
+  student19: null
+  student20: &id002 !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: "s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n"
+    completion_to: "s = list(s)\n    for i in range(len(l)):\n        if l[i] < len(s):\n\
+      \            s[l[i]] = c\n    return ''.join(s)\n"
+    diff: "--- \n+++ \n@@ -15,5 +15,16 @@\n to the input-c+c.+If+index+l+is+out+of+range+don't+change+that+letter.\
+      \ \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 9
+      stderr:
+      - ''
+      - 'IndexError: list assignment index out of range'
+      - ''
+      stdout:
+      - 'uvurybudy loves upples.
+
+        '
+      - ''
+      - 'toast and jam and toast and ham
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'uvurybudy loves upples.
+
+        '
+      - 'iqe cream is the best
+
+        '
+      - 'toast and jam and toast and ham
+
+        '
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input\
+      \ s that are located in index l to the input c\n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s\
+      \ that are located in index l to the input c.\nIf index l is out of range don't\
+      \ change that letter.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 5
+    username: student20
+  student36: null
+  student38: null
+  student42: null
+  student43: null
+  student57: &id005 !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "for i in l:\n        if i < len(s):\n            s = s[:i] +\
+      \ c + s[i+1:]\n        else:\n            s = s + c\n    return s\n"
+    completion_to: "for i in l:\n        if i < len(s):\n            s = s[:i] + c\
+      \ + s[i+1:]\n    return s\n"
+    diff: "--- \n+++ \n@@ -20,22 +20,17 @@\n with given character-and-also if given\
+      \ index is-1++not+in the length of the string,-add-character-at-end-as-well+ignore+index\
+      \ \"\"\""
+    node_from: &id004 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'uvurybudy loves upples.
+
+        '
+      - 'iqe cream is the bestq
+
+        '
+      - 'toast and jam and toast and ham
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'uvurybudy loves upples.
+
+        '
+      - 'iqe cream is the best
+
+        '
+      - 'toast and jam and toast and ham
+
+        '
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character\
+      \ and also if given index is 1+ the length of the string, add character at end\
+      \ as well\n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character\
+      \ if given index is not in the length of the string, ignore index\n    \"\"\"\
+      \n    "
+    state: success
+    total_attempts: 5
+    username: student57
+  student77: null
+cycle_summary:
+  student19: []
+  student20:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    completion_from: "s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n"
+    completion_to: "s = list(s)\n    for i in l:\n        s[i] = c\n    return ''.join(s)\n"
+    diff: ''
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input\
+      \ s that are located in index l to the input c\n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    Replace letters in input s\
+      \ that are located in index l to the input c\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student20
+  - *id002
+  student36: []
+  student38:
+  - !Edge
+    _edge_tags:
+    - m2
+    attempt_id: 1
+    clues:
+    - 2
+    completion_from: 'return s[:l]+c+s[l+1:]
+
+      '
+    completion_to: "if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n\
+      \        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n"
+    diff: "--- \n+++ \n@@ -1,11 +1,14 @@\n def set_chars(s,c,l): \"\"\"-Replace+Find+the+l\
+      \ character-l in s+and+replace with c \"\"\""
+    node_from: &id003 !Node
+      _node_tags: null
+      id: 1
+      stderr:
+      - 'TypeError: slice indices must be integers or None or have an __index__ method'
+      - 'TypeError: slice indices must be integers or None or have an __index__ method'
+      - 'TypeError: slice indices must be integers or None or have an __index__ method'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id003
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    Replace character l in s\
+      \ with c\n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and\
+      \ replace with c\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student38
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 2
+    completion_from: "if l == 0:\n        return c + s[l+1:]\n    elif l == len(s)-1:\n\
+      \        return s[:l] + c\n    else:\n        return s[:l] + c + s[l+1:]\n"
+    completion_to: 'return s[:l]+c+s[l+1:]
+
+      '
+    diff: ''
+    node_from: *id003
+    node_to: *id003
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s\
+      \ and replace with c\n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    Find the l character in s and\
+      \ replace with c \n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student38
+  student42: []
+  student43: []
+  student57:
+  - !Edge
+    _edge_tags:
+    - l4
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: "if l[0] == 0:\n        s = c + s[l[0]+1:]\n    elif l[0] ==\
+      \ len(s)-1:\n        s = s[:l[0]] + c\n    else:\n        s = s[:l[0]] + c +\
+      \ s[l[0]+1:]\n    return s\n"
+    completion_to: "for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n"
+    diff: "--- \n+++ \n@@ -20,17 +20,4 @@\n with given character.-if-given-index-is-1+-the-length-of-string,-add-character-at-end\
+      \ \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - 'IndexError: list index out of range'
+      stdout:
+      - 'uverybody loves apples.
+
+        '
+      - 'iqe cream is the best
+
+        '
+      - ''
+    node_to: *id004
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character.\
+      \ if given index is 1+ the length of string, add character at end\n    \"\"\"\
+      \n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character.\
+      \ \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student57
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: "for i in l:\n        s = s[:i] + c + s[i+1:]\n    return s\n"
+    completion_to: "for i in l:\n        if i < len(s):\n            s = s[:i] + c\
+      \ + s[i+1:]\n        else:\n            s = s + c\n    return s\n"
+    diff: "--- \n+++ \n@@ -19,5 +19,23 @@\n list with given-character.+character+and+also+if+given+index+is+1++the+length+of+the+string,+add+character+at+end+as+well\
+      \ \"\"\""
+    node_from: *id004
+    node_to: *id004
+    prompt_from: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character.\
+      \ \n    \"\"\"\n    "
+    prompt_to: "def set_chars(s,c,l):\n    \"\"\"\n    given a string and a character\
+      \ and a list, replace string at specified index in list with given character\
+      \ and also if given index is 1+ the length of the string, add character at end\
+      \ as well\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student57
+  - *id005
+  student77: []

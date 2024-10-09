@@ -1,0 +1,94 @@
+breakout_edges:
+  student20: null
+  student36: &id002 !Edge
+    _edge_tags:
+    - a4
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: 'return [dt[i] for i in lst]
+
+
+      '
+    completion_to: 'return [dt.get(i, None) for i in lst]
+
+      '
+    diff: "--- \n+++ \n@@ -15,5 +15,15 @@\n the objects in-lst+lst.+If+the+object+does+not+appear+in+dt+return+none\
+      \ \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - 'KeyError: ''c'''
+      - 'KeyError: 5'
+      - 'KeyError: ''a'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''b'', ''d'', None]
+
+        '
+      - '[''a'', None, ''c'']
+
+        '
+      - '[None, None, None]
+
+        '
+    prompt_from: "def create_list(dt, lst):\n    \"\"\"\n    using dt as a reference,\
+      \ return the associated objects of the objects in lst\n    \"\"\"\n    "
+    prompt_to: "def create_list(dt, lst):\n    \"\"\"\n    using dt as a reference,\
+      \ return the associated objects of the objects in lst. If the object does not\
+      \ appear in dt return none\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student36
+  student42: null
+  student43: null
+  student54: null
+  student57: null
+cycle_summary:
+  student20: []
+  student36:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: 'return [dt[i] for i in lst]
+
+      '
+    completion_to: 'return [dt[i] for i in lst]
+
+
+      '
+    diff: "--- \n+++ \n@@ -2,15 +2,18 @@\n create_list(dt, lst): \"\"\"-Using+using+dt+as+a+reference,+return+the+associated+objects+of\
+      \ the objects in-dt,-return-their-associated-keys-in-dt+lst \"\"\""
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def create_list(dt, lst):\n    \"\"\"\n    Using the objects in\
+      \ dt, return their associated keys in dt\n    \"\"\"\n    "
+    prompt_to: "def create_list(dt, lst):\n    \"\"\"\n    using dt as a reference,\
+      \ return the associated objects of the objects in lst\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student36
+  - *id002
+  student42: []
+  student43: []
+  student54: []
+  student57: []

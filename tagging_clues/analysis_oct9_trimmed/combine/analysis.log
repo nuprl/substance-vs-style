@@ -1,0 +1,10 @@
+# Analyzing single problem combine.yaml
+Success node 7
+## Cycle edge info:
+student19:[]
+student20:[[1, 5, [1], ['d2']], [5, 5, [1], [0]], [5, 7, [1, 2], ['a2']]]
+breakoutedge student20
+student42:[]
+student43:[]
+student54:[[5, 5, [1, 3], ['a3']], [5, 8, [1, 2, 3], ['m1', 'a2']]]
+breakoutedge student54

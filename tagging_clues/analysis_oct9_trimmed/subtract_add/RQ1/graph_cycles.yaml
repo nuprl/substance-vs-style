@@ -1,0 +1,284 @@
+breakout_edges:
+  student27: null
+  student29: null
+  student32: null
+  student49: null
+  student62: &id002 !Edge
+    _edge_tags:
+    - a4
+    attempt_id: 4
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \        if i % 2 == 0:\n            count -= lst[i]\n        else:\n      \
+      \      count += lst[i]\n    return count\n\n"
+    completion_to: "count = int(lst[0])\n    for i in range(1, len(lst)):\n      \
+      \  if i % 2 == 0:\n            count += int(lst[i])\n        else:\n       \
+      \     count -= int(lst[i])\n    return count\n\nprint(subtract_add([\"5\", \"\
+      4\", \"6\"]))\nprint(subtract_add([\"1\", \"2\", \""
+    diff: "--- \n+++ \n@@ -6,19 +6,27 @@\n element into int,+add+first+element+to+count.+if+index+of+element+is+odd,\
+      \ subtract-even-indexes-and-add-odd-indexes-in-list-and+from+count.+if+index+of+element+is+even,\
+      \ add to-count,-return-count+count. \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '2
+
+        '
+      - '2
+
+        '
+      - '0
+
+        '
+      - '0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - ''
+      - ''
+      - ''
+      - 'IndexError: list index out of range'
+      stdout:
+      - '-2
+
+        '
+      - '-2
+
+        '
+      - '0
+
+        '
+      - ''
+    prompt_from: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ subtract even indexes and add odd indexes in list and add to count, return\
+      \ count\n    \"\"\"\n    "
+    prompt_to: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ add first element to count. if index of element is odd, subtract from count.\
+      \ if index of element is even, add to count.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student62
+  student66: null
+  student67: null
+  student68: null
+cycle_summary:
+  student27: []
+  student29:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "sum = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \        if i % 2 == 0:\n            lst[i] *= -1\n        sum += lst[i]\n \
+      \   return sum\n"
+    completion_to: "if lst == []:\n        return 0\n    else:\n        total = 0\n\
+      \        for i in range(len(lst)):\n            if i % 2 == 0:\n           \
+      \     total += int(lst[i])\n            else:\n                total -= int(lst[i])\n\
+      \        return total\n"
+    diff: "--- \n+++ \n@@ -15,10 +15,11 @@\n list entries that+don't correspond to\
+      \ an-odd+even index by -1."
+    node_from: !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '2
+
+        '
+      - '2
+
+        '
+      - '0
+
+        '
+      - '0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '-2
+
+        '
+      - '-2
+
+        '
+      - '0
+
+        '
+      - '0
+
+        '
+    prompt_from: "def subtract_add(lst):\n    \"\"\"\n    For each list entry, convert\
+      \ the input to an integer. Multiply list entries that correspond to an odd index\
+      \ by -1. Then add all of the list entries together and return their sum. If\
+      \ the list is empty, return 0.\n    \"\"\"\n    "
+    prompt_to: "def subtract_add(lst):\n    \"\"\"\n    For each list entry, convert\
+      \ the input to an integer. Multiply list entries that don't correspond to an\
+      \ even index by -1. Then add all of the list entries together and return their\
+      \ sum. If the list is empty, return 0.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student29
+  student32: []
+  student49: []
+  student62:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: "total = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \        if i % 2 == 0:\n            total -= lst[i]\n        else:\n      \
+      \      total += lst[i]\n    return total\n"
+    completion_to: "count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \    for i in range(len(lst)):\n        if i % 2 == 0:\n            count -=\
+      \ lst[i]\n        else:\n            count += lst[i]\n    return count\n"
+    diff: "--- \n+++ \n@@ -14,7 +14,11 @@\n each element in-list,+list+and+add+to+count,\
+      \ return-total+count \"\"\""
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ alternate between subtracting and adding each element in list, return total\n\
+      \    \"\"\"\n    "
+    prompt_to: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ alternate between subtracting and adding each element in list and add to count,\
+      \ return count\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student62
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: "count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \    for i in range(len(lst)):\n        if i % 2 == 0:\n            count -=\
+      \ lst[i]\n        else:\n            count += lst[i]\n    return count\n"
+    completion_to: "count = 0\n    for i in range(len(lst)):\n        lst[i] = int(lst[i])\n\
+      \        if i % 2 == 0:\n            count -= lst[i]\n        else:\n      \
+      \      count += lst[i]\n    return count\n\n"
+    diff: "--- \n+++ \n@@ -6,13 +6,13 @@\n element into int,-alternate-between-subtracting+subtract+even+indexes\
+      \ and-adding-each-element+add+odd+indexes in list and"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ alternate between subtracting and adding each element in list and add to count,\
+      \ return count\n    \"\"\"\n    "
+    prompt_to: "def subtract_add(lst):\n    \"\"\"\n    turn each element into int,\
+      \ subtract even indexes and add odd indexes in list and add to count, return\
+      \ count\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student62
+  - *id002
+  student66:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "if len(lst) == 2:\n        return lst[0] - lst[1]\n    elif\
+      \ len(lst) == 4:\n        return (lst[0] - lst[1]) + (lst[2] - lst[3])\n   \
+      \ else:\n        return 0\n\n"
+    completion_to: "if len(lst) == 0:\n        return 0\n    elif len(lst) == 2:\n\
+      \        return int(lst[0]) - int(lst[1])\n    else:\n        return int(lst[0])\
+      \ - int(lst[1]) + int(lst[2]) - int(lst[3])\n"
+    diff: "--- \n+++ \n@@ -2,9 +2,12 @@\n subtract_add(lst): \"\"\" Change-them+the+first+two+items\
+      \ into-integers.+integers Subtract the second@@ -17,6 +20,14 @@\n the first\
+      \ item.+change+the+third+and+forth+items+into+integers then subtract the@@ -38,8\
+      \ +49,13 @@\n two items in-the list+change+those+two+items+into+integers subtract\
+      \ the second"
+    node_from: !Node
+      _node_tags: null
+      id: 13
+      stderr:
+      - 'TypeError: unsupported operand type(s) for -: ''str'' and ''str'''
+      - 'TypeError: unsupported operand type(s) for -: ''str'' and ''str'''
+      - 'TypeError: unsupported operand type(s) for -: ''str'' and ''str'''
+      - ''
+      stdout:
+      - ''
+      - ''
+      - ''
+      - '0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '-2
+
+        '
+      - '-2
+
+        '
+      - '0
+
+        '
+      - '0
+
+        '
+    prompt_from: "def subtract_add(lst):\n    \"\"\"\n    Change them into integers.\
+      \ Subtract the second item in the array list from the first item. then subtract\
+      \ the forth item from the third item then add the two sums. if there are just\
+      \ two items in the list subtract the second one from the first one and return\
+      \ the product. if there are no items then return zero\n    \"\"\"\n    "
+    prompt_to: "def subtract_add(lst):\n    \"\"\"\n    Change the first two items\
+      \ into integers Subtract the second item in the array list from the first item.\
+      \ change the third and forth items into integers then subtract the forth item\
+      \ from the third item then add the two sums. if there are just two items in\
+      \ list change those two items into integers subtract the second one from the\
+      \ first one and return the product. if there are no items then return zero\n\
+      \    \"\"\"\n    "
+    state: success
+    total_attempts: 5
+    username: student66
+  student67: []
+  student68: []

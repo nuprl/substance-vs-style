@@ -1,0 +1,185 @@
+breakout_edges:
+  student1: &id002 !Edge
+    _edge_tags:
+    - m2
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: "words = words[::-1]\n    words.sort()\n    return words\n"
+    completion_to: "new_words = []\n    for word in words:\n        new_words.append(word[::-1])\n\
+      \    new_words.sort()\n    return new_words\n"
+    diff: "--- \n+++ \n@@ -7,11 +7,15 @@\n of words, reverses-them+each+word+in+the+list,\
+      \ and+alphabetically orders-them-in-alphabetical-order.+those+new+words. \"\"\
+      \""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''eat'', ''tree'']
+
+        '
+      - '[''ax'', ''by'', ''chaz'']
+
+        '
+      - '[''ax'', ''by'', ''chaz'']
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''eert'', ''tae'']
+
+        '
+      - '[''xa'', ''yb'', ''zahc'']
+
+        '
+      - '[''xa'', ''yb'', ''zahc'']
+
+        '
+    prompt_from: "def reverseWords(words):\n    \"\"\"\n    takes a list of words,\
+      \ reverses them and orders them in alphabetical order.\n    \"\"\"\n    "
+    prompt_to: "def reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses\
+      \ each word in the list, and alphabetically orders those new words.\n    \"\"\
+      \"\n    "
+    state: success
+    total_attempts: 3
+    username: student1
+  student39: null
+  student46: null
+  student55: null
+  student58: null
+  student6: null
+  student7: null
+cycle_summary:
+  student1:
+  - !Edge
+    _edge_tags:
+    - l2
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: "#reverse the words\n    words.reverse()\n    #sort the words\n\
+      \    words.sort()\n    return words\n"
+    completion_to: "words = words[::-1]\n    words.sort()\n    return words\n"
+    diff: "--- \n+++ \n@@ -7,10 +7,9 @@\n of words, reverses-the-words,+them and-puts+orders\
+      \ them in alphabetical"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def reverseWords(words):\n    \"\"\"\n    takes a list of words,\
+      \ reverses the words, and puts them in alphabetical order.\n    \"\"\"\n    "
+    prompt_to: "def reverseWords(words):\n    \"\"\"\n    takes a list of words, reverses\
+      \ them and orders them in alphabetical order.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student1
+  - *id002
+  student39: []
+  student46: []
+  student55: []
+  student58:
+  - !Edge
+    _edge_tags:
+    - m2
+    attempt_id: 1
+    clues:
+    - 2
+    - 5
+    completion_from: 'return [word[::-1] for word in words]
+
+      '
+    completion_to: 'return [word[::-1] for word in words]
+
+      '
+    diff: "--- \n+++ \n@@ -1,12 +1,15 @@\n def reverseWords(words): \"\"\"-Return+take\
+      \ each-string+item in the list+and+return+it in reverse \"\"\""
+    node_from: &id003 !Node
+      _node_tags: null
+      id: 1
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''tae'', ''eert'']
+
+        '
+      - '[''xa'', ''yb'', ''zahc'']
+
+        '
+      - '[''yb'', ''zahc'', ''xa'']
+
+        '
+    node_to: *id003
+    prompt_from: "def reverseWords(words):\n    \"\"\"\n    Return each string in\
+      \ the list in reverse\n    \"\"\"\n    "
+    prompt_to: "def reverseWords(words):\n    \"\"\"\n    take each item in the list\
+      \ and return it in reverse\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student58
+  - !Edge
+    _edge_tags:
+    - m5
+    attempt_id: 2
+    clues:
+    - 2
+    - 5
+    completion_from: 'return [word[::-1] for word in words]
+
+      '
+    completion_to: 'return [word[::-1] for word in words]
+
+      '
+    diff: "--- \n+++ \n@@ -1,15 +1,13 @@\n def reverseWords(words): \"\"\"-take+Reverse\
+      \ each-item+string in the+list.+return+the list-and-return-it-in-reverse \"\"\
+      \""
+    node_from: *id003
+    node_to: *id003
+    prompt_from: "def reverseWords(words):\n    \"\"\"\n    take each item in the\
+      \ list and return it in reverse\n    \"\"\"\n    "
+    prompt_to: "def reverseWords(words):\n    \"\"\"\n    Reverse each string in the\
+      \ list. return the list\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student58
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 5
+    completion_from: 'return [word[::-1] for word in words]
+
+      '
+    completion_to: 'return [word[::-1] for word in words]
+
+      '
+    diff: "--- \n+++ \n@@ -2,6 +2,9 @@\n reverseWords(words): \"\"\" Reverse+the+characters+in\
+      \ each string in"
+    node_from: *id003
+    node_to: *id003
+    prompt_from: "def reverseWords(words):\n    \"\"\"\n    Reverse each string in\
+      \ the list. return the list\n    \"\"\"\n    "
+    prompt_to: "def reverseWords(words):\n    \"\"\"\n    Reverse the characters in\
+      \ each string in the list. return the list\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student58
+  student6: []
+  student7: []

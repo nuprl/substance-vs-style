@@ -1,0 +1,103 @@
+breakout_edges:
+  student13: null
+  student16: null
+  student2: null
+  student22: null
+  student37: null
+  student5: null
+  student72: null
+  student74: null
+cycle_summary:
+  student13: []
+  student16: []
+  student2:
+  - !Edge
+    _edge_tags:
+    - l3
+    - d4
+    attempt_id: 4
+    clues:
+    - 2
+    - 3
+    completion_from: "vowels = ['a', 'e', 'i', 'o', 'u']\n    for char in s:\n   \
+      \     if char in vowels:\n            print(char)\n"
+    completion_to: "vowels = set('aeiou')\n    s = s.lower()\n    for vowel in s:\n\
+      \        if vowel in vowels:\n            print(vowel)\n"
+    diff: "--- \n+++ \n@@ -4,18 +4,6 @@\n This function prints-a-list-of all-\"a\"\
+      ,-\"e\",-\"I\",-or-\"u\"-that-appear-in-the-input+vowels \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 3
+      stderr: &id001
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      stdout: &id002
+      - ''
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        8'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        8'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        8'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        8'
+      stdout:
+      - ''
+      - ''
+      - ''
+      - ''
+    prompt_from: "def assessVowels(s):\n    \"\"\"\n    This function prints a list\
+      \ of all \"a\", \"e\", \"I\", or \"u\" that appear in the input\n    \"\"\"\n\
+      \    "
+    prompt_to: "def assessVowels(s):\n    \"\"\"\n    This function prints all vowels\n\
+      \    \"\"\"\n    "
+    state: neutral
+    total_attempts: 7
+    username: student2
+  - !Edge
+    _edge_tags:
+    - l3
+    attempt_id: 6
+    clues:
+    - 2
+    - 3
+    completion_from: "vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n      \
+      \  if i in vowels:\n            print(i)\n"
+    completion_to: "vowels = ['a', 'e', 'i', 'o', 'u']\n    for i in s:\n        if\
+      \ i in vowels:\n            print(i)\n\nassessVowels('supercalifragilisticexpialidocious')\n"
+    diff: "--- \n+++ \n@@ -7,8 +7,5 @@\n a list of-all vowels-that-appear \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 3
+      stderr: *id001
+      stdout: *id002
+    node_to: !Node
+      _node_tags: null
+      id: 3
+      stderr: *id001
+      stdout: *id002
+    prompt_from: "def assessVowels(s):\n    \"\"\"\n    This function prints a list\
+      \ of all vowels that appear\n    \"\"\"\n    "
+    prompt_to: "def assessVowels(s):\n    \"\"\"\n    This function prints a list\
+      \ of vowels \n    \"\"\"\n    "
+    state: fail
+    total_attempts: 7
+    username: student2
+  student22: []
+  student37: []
+  student5: []
+  student72: []
+  student74: []

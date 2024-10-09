@@ -1,0 +1,456 @@
+breakout_edges:
+  student10: null
+  student17: null
+  student18: null
+  student21: &id003 !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: 'return s[i:] + s[:i]
+
+      '
+    completion_to: "if i == 0:\n        return s\n    else:\n        return s[i:]\
+      \ + s[:i][::-1]\n"
+    diff: "--- \n+++ \n@@ -10,23 +10,31 @@\n within string length,+create+a+new+string+up+to+this+index+and+after.\
+      \ reverse the-characters+new+String up to-the-given-number+this index and concatenate\
+      \ this with the-rest-of+string+after the-original-string+index. \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: &id001
+      - ''
+      - ''
+      - ''
+      stdout: &id002
+      - 'rds the door.Turn towa
+
+        '
+      - 'the tall sail
+
+        '
+      - 'stablishinge
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'rds the door.awot nruT
+
+        '
+      - 'lias llat eht
+
+        '
+      - 'stablishinge
+
+        '
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    given a string and a number\
+      \ within string length, reverse the characters up to the given number index\
+      \ and concatenate this with the rest of the original string\n    \"\"\"\n  \
+      \  "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    given a string and a number\
+      \ within string length, create a new string up to this index and after. reverse\
+      \ the new String up to this index and concatenate this with the string after\
+      \ the index.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student21
+  student25: null
+  student26: null
+  student3: null
+  student30: null
+  student4: null
+  student41: null
+cycle_summary:
+  student10: []
+  student17:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 10
+    clues:
+    - 2
+    - 3
+    - 4
+    completion_from: "s = list(s)\n    for x in range(0,i):\n        s[x], s[i] =\
+      \ s[i], s[x]\n        i -= 1\n    return ''.join(s)\n"
+    completion_to: "l = []\n    for x in s:\n        l.append(x)\n    l = l[i:] +\
+      \ l[:i]\n    return \"\".join(l)\n"
+    diff: ''
+    node_from: !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - 'IndexError: list index out of range'
+      - ''
+      stdout:
+      - 'rurn towaTds the door.
+
+        '
+      - ''
+      - 'setablishing
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'rds the door.Turn towa
+
+        '
+      - 'the tall sail
+
+        '
+      - 'stablishinge
+
+        '
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    run a for loop through\
+      \ s, putting each letter into a list, then using i as the index point as where\
+      \ to reverse the order of the string.\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    run a for loop through s,\
+      \ putting each letter into a list, then using i as the index point as where\
+      \ to reverse the order of the string.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 11
+    username: student17
+  student18: []
+  student21:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: 'return s[i:]+s[:i]
+
+      '
+    completion_to: 'return s[i:] + s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -10,14 +10,7 @@\n within string length,-produce-a-string-that-reverses-the-order-of+reverse\
+      \ the characters up@@ -26,7 +19,9 @@\n given number index-concatenated+and+concatenate+this\
+      \ with the rest"
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id001
+      stdout: *id002
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id001
+      stdout: *id002
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    given a string and a number\
+      \ within string length, produce a string that reverses the order of the characters\
+      \ up to the given number index concatenated with the rest of the original string\n\
+      \    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    given a string and a number\
+      \ within string length, reverse the characters up to the given number index\
+      \ and concatenate this with the rest of the original string\n    \"\"\"\n  \
+      \  "
+    state: neutral
+    total_attempts: 6
+    username: student21
+  - *id003
+  student25: []
+  student26: []
+  student3:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    completion_from: 'return s[i:]+s[:i]
+
+      '
+    completion_to: 'return s[i:]+s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -5,7 +5,7 @@\n a function which-reverse+make the order of@@\
+      \ -15,4 +15,5 @@\n of the string+backward \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: &id004
+      - ''
+      - ''
+      - ''
+      stdout: &id005
+      - 'rds the door.Turn towa
+
+        '
+      - 'the tall sail
+
+        '
+      - 'stablishinge
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id004
+      stdout: *id005
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    create a function which\
+      \ reverse the order of i first letters of the string\n\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    create a function which make\
+      \ the order of i first letters of the string backward \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student3
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    completion_from: 'return s[i:]+s[:i]
+
+      '
+    completion_to: 'return s[i:]+s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -1,19 +1,18 @@\n def changeSection(s,i): \"\"\"-create-a-function-which-make-the-order-of+take\
+      \ i first letters of the string+and+then+write+it+in backward+order \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id004
+      stdout: *id005
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id004
+      stdout: *id005
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    create a function which\
+      \ make the order of i first letters of the string backward \n    \"\"\"\n  \
+      \  "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    take i first letters of the\
+      \ string and then write it in backward order\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student3
+  - !Edge
+    _edge_tags:
+    - m2
+    - m3
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    completion_from: 'return s[i:]+s[:i]
+
+      '
+    completion_to: 'return s[i:] + s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -1,7 +1,19 @@\n def changeSection(s,i): \"\"\"-take+create+a+function+with+2+inputs+string+(s)+and+index+number+(i).+Take\
+      \ i first letters@@ -10,9 +22,10 @@\n string and then-write-it-in-backward+reverse+the\
+      \ order+of+those+letters \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id004
+      stdout: *id005
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id004
+      stdout: *id005
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    take i first letters of\
+      \ the string and then write it in backward order\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    create a function with 2\
+      \ inputs string (s) and index number (i). Take i first letters of the string\
+      \ and then reverse the order of those letters\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student3
+  student30: []
+  student4:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    completion_from: 'return s[i:] + s[:i]
+
+      '
+    completion_to: 'return s[i:]+s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -1,11 +1,9 @@\n def changeSection(s,i): \"\"\"-creates-the-inverse-of+flips\
+      \ the inputted string+around \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: &id006
+      - ''
+      - ''
+      - ''
+      stdout: &id007
+      - 'rds the door.Turn towa
+
+        '
+      - 'the tall sail
+
+        '
+      - 'stablishinge
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id006
+      stdout: *id007
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    creates the inverse of\
+      \ the inputted string\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    flips the inputted string\
+      \ around\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student4
+  - !Edge
+    _edge_tags:
+    - m2
+    - a3
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    completion_from: 'return s[i:]+s[:i]
+
+      '
+    completion_to: 'return s[i:] + s[:i]
+
+      '
+    diff: "--- \n+++ \n@@ -1,9 +1,24 @@\n def changeSection(s,i): \"\"\"-flips+takes\
+      \ the inputted string+(s)+and+takes+the+number+of+characters+(i)+and+flips+them\
+      \ around+in+the+outputted+string \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id006
+      stdout: *id007
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr: *id006
+      stdout: *id007
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    flips the inputted string\
+      \ around\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    takes the inputted string\
+      \ (s) and takes the number of characters (i) and flips them around in the outputted\
+      \ string\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student4
+  student41:
+  - !Edge
+    _edge_tags:
+    - m2
+    - l3
+    - m4
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 4
+    completion_from: 'print(s[:i][::-1] + s[i:])
+
+      '
+    completion_to: "print(s[i:][::-1])\n    print(s[:i])\n"
+    diff: "--- \n+++ \n@@ -1,35 +1,26 @@\n def changeSection(s,i): \"\"\"-Segments-the-inputted-string-up-to-the-given-integer.-Then-prints-the-letters-in-the-segmented-string+Prints\
+      \ in reverse-order.-Then-prints the-segment+length of the string-after+equal+to\
+      \ the-given-integer.+number+that+is+inputted,+then+prints+the+rest+of+the+string.\
+      \ \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 9
+      stderr: &id008
+      - ''
+      - ''
+      - ''
+      stdout: &id009
+      - 'None
+
+        '
+      - 'None
+
+        '
+      - 'None
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 9
+      stderr: *id008
+      stdout: *id009
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    Segments the inputted string\
+      \ up to the given integer. Then prints the letters in the segmented string in\
+      \ reverse order. Then prints the segment of the string after the given integer.\n\
+      \    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    Prints in reverse the length\
+      \ of the string equal to the number that is inputted, then prints the rest of\
+      \ the string.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student41
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    completion_from: "print(s[i:][::-1])\n    print(s[:i])\n"
+    completion_to: 'print(s[i::-1],s[i:])
+
+      '
+    diff: "--- \n+++ \n@@ -2,21 +2,23 @@\n changeSection(s,i): \"\"\" Prints+each+letter\
+      \ in-reverse the-length+section of the string-equal+up to the-number-that-is-inputted,-then+given+integer+in+reverse+order.+Then\
+      \ prints the rest"
+    node_from: !Node
+      _node_tags: null
+      id: 9
+      stderr: *id008
+      stdout: *id009
+    node_to: !Node
+      _node_tags: null
+      id: 9
+      stderr: *id008
+      stdout: *id009
+    prompt_from: "def changeSection(s,i):\n    \"\"\"\n    Prints in reverse the length\
+      \ of the string equal to the number that is inputted, then prints the rest of\
+      \ the string.\n    \"\"\"\n    "
+    prompt_to: "def changeSection(s,i):\n    \"\"\"\n    Prints each letter in the\
+      \ section of the string up to the given integer in reverse order. Then prints\
+      \ the rest of the string.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student41

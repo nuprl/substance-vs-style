@@ -1,0 +1,57 @@
+{
+   "success": {
+      "student14": {
+         "4": "Student describes function incorrectly, missing many clues, but tests do not cover all cases,                     so student trivially succeeds."
+      },
+      "student53": {
+         "1": "Missing clue 1, which could be implicit? Interesting that model automatically associates value with dict"
+      }
+   },
+   "neutral": {
+      "student46": {
+         "1": "This student is an interesting example where by providing LESS words, model predicts correct.                     This is because originally, model is conflating instructions. Student breaks out of loop by removing                         instructions."
+      },
+      "student55": {
+         "1": "Capitalization missing",
+         "3": "I think this is still missing clue 2,3 which student removed"
+      },
+      "student65": {
+         "2": "Interesting case where planets the veriable and planets the concept is conflated by model."
+      }
+   },
+   "fail": {
+      "student65": {
+         "3": "Interesting case where explicitly specifying input is dictionary makes model hallucinate planets_dict.                     possibly because of conflation with planets the word."
+      }
+   },
+   "breakout": {
+      "student46": {
+         "2": "This student is an interesting example where by providing LESS words, model predicts correct.                     This is because originally, model is conflating instructions. Student breaks out of loop by removing                         instructions."
+      },
+      "student14": {
+         "4": "Student rewrites to include capitalization, reaching success. However, Student describes function                     incorrectly, missing many clues, but tests do not cover all cases, so student trivially succeeds."
+      },
+      "student47": {
+         "3": "Cycle cut short, but student arguably would continue cycle."
+      },
+      "student55": {
+         "4": "May be tagging error, as recorded above. This edge actually adds clue 2,3 which student                     have previously removed, but deletion was not tagged"
+      },
+      "student65": {
+         "3": "Cycle cut short, but student arguably would continue cycle."
+      }
+   },
+   "cycles": {
+      "student55": {
+         "1": "Loop persists despite non-trivial edge because student is missing capitalization."
+      },
+      "student65": {
+         "2": "Interesting case where planets the veriable and planets the concept is conflated by model."
+      }
+   },
+   "start_node": {
+      "student46": {
+         "0": "This student is an interesting example where by providing LESS words, model predicts correct.                     This is because originally, model is conflating instructions. Student breaks out of loop by removing                         instructions."
+      }
+   }
+}

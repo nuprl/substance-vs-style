@@ -1,0 +1,37 @@
+# Analyzing single problem fib.yaml
+Success node 4
+## Cycle edge info:
+student11:[]
+student13:[[9, 7, [1, 2], [0]], [9, 7, [1, 2], [0]], [7, 7, [1, 2], [0]], [9, 5, [1, 2, 4], ['a4']]]
+breakoutedge student13
+student16:[[6, 6, [2, 5], ['a2']]]
+student2:[[6, 6, [2, 5], ['m2']], [6, 6, [2, 5], ['m2']], [6, 4, [2, 5], ['m5']]]
+breakoutedge student2
+student22:[]
+student37:[]
+student5:[[6, 6, [2, 5], [0]], [6, 6, [2, 5], ['m2']]]
+student8:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student11             0        True       False
+1  student13             4        True       False
+2  student16             1       False        True
+3   student2             3        True       False
+4  student22             0        True       False
+5  student37             0        True       False
+6   student5             2       False        True
+7   student8             0        True       False
+Total num fail: 2, num fail has loop: 2, 100.0 %
+Total num success: 6, num succ has loop: 2, 33.333333333333336 %
+Likelihood fail with cycle 0.5 vs. no cycle 0.0
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student11             0        True       False          0              1
+1  student13             4        True       False          1              0
+2  student16             1       False        True          1              0
+3   student2             3        True       False          1              0
+4  student22             0        True       False          0              1
+5  student37             0        True       False          0              1
+6   student5             2       False        True          1              0
+7   student8             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.5
+P(is_success) | NOT P(has_cycle): 1.0

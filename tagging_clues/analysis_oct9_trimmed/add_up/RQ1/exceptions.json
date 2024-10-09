@@ -1,0 +1,26 @@
+{
+   "success": {
+      "student24": {
+         "1": "incomplete clues is successful due to use of python try-except\n                          (student mentions 'error' in prompt)"
+      },
+      "student55": {
+         "2": "clue 5 base case 0 implied"
+      }
+   },
+   "fail": {
+      "student65": {
+         "5": "has all clues, but still fails because model interprets 'number' as int"
+      }
+   },
+   "breakout": {
+      "student31": {
+         "2": "student only has 2 attempts; incomplete data"
+      },
+      "student47": {
+         "5": "breakout edge leads into another cycle"
+      },
+      "student65": {
+         "5": "breakout edge leads to final node; could be another cycle"
+      }
+   }
+}

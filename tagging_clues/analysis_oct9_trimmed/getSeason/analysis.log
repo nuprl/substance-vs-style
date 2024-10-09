@@ -1,0 +1,40 @@
+# Analyzing single problem getSeason.yaml
+Removed students: ['student45', 'student31', 'student55', 'student9', 'student15', 'student6']
+Success node 10
+## Cycle edge info:
+student1:[]
+student14:[[13, 13, [2, 3, 4], ['m4']]]
+student24:[[4, 4, [2], [0]]]
+student28:[[2, 2, [1, 2], ['a1']], [2, 2, [1, 2], ['m2']], [2, 2, [1, 2, 4], ['a4']]]
+student39:[]
+student46:[[8, 8, [1, 2], [0]], [8, 13, [1, 2, 3], ['a3']]]
+breakoutedge student46
+student47:[]
+student65:[]
+student7:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0   student1             0       False        True
+1  student14             1       False        True
+2  student24             1       False        True
+3  student28             3       False        True
+4  student39             0       False        True
+5  student46             2        True       False
+6  student47             0        True       False
+7  student65             0       False        True
+8   student7             0        True       False
+Total num fail: 6, num fail has loop: 3, 50.0 %
+Total num success: 3, num succ has loop: 1, 33.333333333333336 %
+Likelihood fail with cycle 0.75 vs. no cycle 0.6
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0   student1             0       False        True          0              1
+1  student14             1       False        True          1              0
+2  student24             1       False        True          1              0
+3  student28             3       False        True          1              0
+4  student39             0       False        True          0              1
+5  student46             2        True       False          1              0
+6  student47             0        True       False          0              1
+7  student65             0       False        True          0              1
+8   student7             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.25
+P(is_success) | NOT P(has_cycle): 0.39999999999999997

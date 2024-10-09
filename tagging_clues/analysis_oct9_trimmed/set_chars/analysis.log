@@ -1,0 +1,37 @@
+# Analyzing single problem set_chars.yaml
+Success node 7
+## Cycle edge info:
+student19:[]
+student20:[[9, 9, [2, 3], [0]], [9, 7, [2, 3, 5], ['a5']]]
+breakoutedge student20
+student36:[]
+student38:[[1, 1, [2], ['m2']], [1, 1, [2], [0]]]
+student42:[]
+student43:[]
+student57:[[4, 5, [1, 2, 3, 4], ['l4']], [5, 5, [1, 2, 3, 4], ['m4']], [5, 7, [1, 2, 3, 4, 5], ['a5']]]
+breakoutedge student57
+student77:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student19             0        True       False
+1  student20             2        True       False
+2  student36             0       False        True
+3  student38             2       False        True
+4  student42             0        True       False
+5  student43             0       False        True
+6  student57             3        True       False
+7  student77             0        True       False
+Total num fail: 3, num fail has loop: 1, 33.333333333333336 %
+Total num success: 5, num succ has loop: 2, 40.0 %
+Likelihood fail with cycle 0.3333333333333333 vs. no cycle 0.4
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student19             0        True       False          0              1
+1  student20             2        True       False          1              0
+2  student36             0       False        True          0              1
+3  student38             2       False        True          1              0
+4  student42             0        True       False          0              1
+5  student43             0       False        True          0              1
+6  student57             3        True       False          1              0
+7  student77             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.6666666666666666
+P(is_success) | NOT P(has_cycle): 0.6

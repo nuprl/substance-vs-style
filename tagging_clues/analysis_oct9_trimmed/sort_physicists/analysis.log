@@ -1,0 +1,39 @@
+# Analyzing single problem sort_physicists.yaml
+Removed students: ['student19']
+Success node 7
+## Cycle edge info:
+student12:[[2, 2, [1, 3, 4, 5, 6], ['m5']], [2, 2, [1, 3, 4, 5, 6], ['m1']], [2, 7, [1, 3, 4, 5, 6], ['m5']]]
+breakoutedge student12
+student20:[]
+student36:[]
+student38:[[2, 2, [1], [0]]]
+student43:[]
+student54:[]
+student57:[[0, 0, [1, 3, 4, 5, 6], ['a4', 'a6']], [0, 7, [1, 3, 4, 5, 6], [0]]]
+breakoutedge student57
+student77:[[0, 0, [1, 2, 3, 5, 6], ['a6']], [0, 7, [1, 2, 3, 4, 5, 6], ['m4']]]
+breakoutedge student77
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student12             3        True       False
+1  student20             0       False        True
+2  student36             0        True       False
+3  student38             1       False        True
+4  student43             0       False        True
+5  student54             0        True       False
+6  student57             2        True       False
+7  student77             2        True       False
+Total num fail: 3, num fail has loop: 1, 33.333333333333336 %
+Total num success: 5, num succ has loop: 3, 60.0 %
+Likelihood fail with cycle 0.25 vs. no cycle 0.5
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student12             3        True       False          1              0
+1  student20             0       False        True          0              1
+2  student36             0        True       False          0              1
+3  student38             1       False        True          1              0
+4  student43             0       False        True          0              1
+5  student54             0        True       False          0              1
+6  student57             2        True       False          1              0
+7  student77             2        True       False          1              0
+P(is_success) | P(has_cycle): 0.75
+P(is_success) | NOT P(has_cycle): 0.5

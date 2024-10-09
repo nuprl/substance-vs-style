@@ -1,0 +1,425 @@
+breakout_edges:
+  student0: null
+  student10: null
+  student17: &id003 !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 4
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: "matches = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            matches += 1\n    return (matches/len(guess))*100\n"
+    completion_to: "matches = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            matches += 1\n    percent = matches/len(guess)\n\
+      \    return str(percent*100) + \"%\"\n"
+    diff: "--- \n+++ \n@@ -23,4 +23,8 @@\n a percent number+with+the+percent+symbol\
+      \ \"\"\""
+    node_from: &id002 !Node
+      _node_tags: null
+      id: 9
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75.0
+
+        '
+      - '33.33333333333333
+
+        '
+      - '100.0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 14
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75.0%
+
+        '
+      - '33.33333333333333%
+
+        '
+      - '100.0%
+
+        '
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity, lastly\
+      \ turn the answer into a percent number\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity, lastly\
+      \ turn the answer into a percent number with the percent symbol\n    \"\"\"\n\
+      \    "
+    state: neutral
+    total_attempts: 6
+    username: student17
+  student18: null
+  student21: null
+  student25: null
+  student26: &id005 !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return (count/len(guess))*100\n"
+    completion_to: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return str((count/len(guess))*100)\
+      \ + \"%\"\n"
+    diff: "--- \n+++ \n@@ -20,8 +20,8 @@\n and display the-difference,-multiply+difference.+Multiply\
+      \ the difference by@@ -30,5 +30,5 @@\n display followed by-%+'%' \"\"\""
+    node_from: &id004 !Node
+      _node_tags: null
+      id: 9
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75.0
+
+        '
+      - '33.33333333333333
+
+        '
+      - '100.0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 14
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75.0%
+
+        '
+      - '33.33333333333333%
+
+        '
+      - '100.0%
+
+        '
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    Count how many characters\
+      \ in a range of numbers match those in another range of numbers and display\
+      \ the difference, multiply the difference by 100 and display followed by %\n\
+      \    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    Count how many characters\
+      \ in a range of numbers match those in another range of numbers and display\
+      \ the difference. Multiply the difference by 100 and display followed by '%'\n\
+      \    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student26
+  student3: null
+  student30: null
+  student4: &id007 !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)\
+      \ + \"%\"\n"
+    completion_to: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    percent = count/len(guess)\n \
+      \   return str(round(percent*100)) + \"%\"\n"
+    diff: "--- \n+++ \n@@ -19,9 +19,13 @@\n list 2, returns-in-integer-format+number+rounded+to+the+nearest+whole+numbers\
+      \ including percent sign"
+    node_from: &id006 !Node
+      _node_tags: null
+      id: 14
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75.0%
+
+        '
+      - '33.33333333333333%
+
+        '
+      - '100.0%
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '75%
+
+        '
+      - '33%
+
+        '
+      - '100%
+
+        '
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    determines the percent\
+      \ of items in list 1 that are identical to the items in list 2, returns in integer\
+      \ format including percent sign\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    determines the percent\
+      \ of items in list 1 that are identical to the items in list 2, returns number\
+      \ rounded to the nearest whole numbers including percent sign\n    \"\"\"\n\
+      \    "
+    state: success
+    total_attempts: 4
+    username: student4
+  student41: null
+  student51: null
+cycle_summary:
+  student0: []
+  student10: []
+  student17:
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    completion_from: "matches = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            matches += 1\n    return matches/len(guess)\n"
+    completion_to: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return count/len(guess)\n"
+    diff: "--- \n+++ \n@@ -14,7 +14,12 @@\n and calculates the-similarity-in-percents+similarity,+then+give+the+answer+as+a+percentage\
+      \ \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '0.75
+
+        '
+      - '0.3333333333333333
+
+        '
+      - '1.0
+
+        '
+    node_to: *id001
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity in percents\n\
+      \    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity, then give\
+      \ the answer as a percentage\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student17
+  - !Edge
+    _edge_tags:
+    - l3
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    completion_from: "matches = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            matches += 1\n    return matches/len(guess)*100\n"
+    completion_to: "matches = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            matches += 1\n    return (matches/len(guess))*100\n"
+    diff: "--- \n+++ \n@@ -15,10 +15,12 @@\n calculates the similarity,-then-multiply+lastly+turn\
+      \ the answer-by-100+into+a+percent+number \"\"\""
+    node_from: *id002
+    node_to: *id002
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity, then multiply\
+      \ the answer by 100\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    matches the numbers\
+      \ and letters of the two given strings and calculates the similarity, lastly\
+      \ turn the answer into a percent number\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student17
+  - *id003
+  student18: []
+  student21: []
+  student25: []
+  student26:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    completion_from: "if len(guess) != len(answers):\n        return \"Error: lists\
+      \ are not the same length\"\n    else:\n        correct = 0\n        for i in\
+      \ range(len(guess)):\n            if guess[i] == answers[i]:\n             \
+      \   correct += 1\n        return (correct/len(guess))*100\n"
+    completion_to: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return count/len(guess)\n"
+    diff: ''
+    node_from: *id004
+    node_to: !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '0.75
+
+        '
+      - '0.3333333333333333
+
+        '
+      - '1.0
+
+        '
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    Count how many characters\
+      \ in a range of numbers match those in another range of numbers and display\
+      \ the difference as a percentage\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    Count how many characters\
+      \ in a range of numbers match those in another range of numbers and display\
+      \ the difference as a percentage\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student26
+  - *id005
+  student3: []
+  student30: []
+  student4:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)\
+      \ + \"%\"\n"
+    completion_to: "count = 0\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            count += 1\n    return str(count/len(guess)*100)\
+      \ + \"%\"\n"
+    diff: "--- \n+++ \n@@ -20,8 +20,7 @@\n 2, returns in-whole-number+integer format\
+      \ including percent"
+    node_from: *id006
+    node_to: *id006
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    determines the percent\
+      \ of items in list 1 that are identical to the items in list 2, returns in whole\
+      \ number format including percent sign\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    determines the percent\
+      \ of items in list 1 that are identical to the items in list 2, returns in integer\
+      \ format including percent sign\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student4
+  - *id007
+  student41:
+  - !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+    completion_from: "correct = 1\n    for i in range(len(guess)):\n        if guess[i]\
+      \ != answers[i]:\n            correct -= 1/len(guess)\n    print(\"You got\"\
+      ,correct*100,\"% correct.\")\n"
+    completion_to: "correct = 1\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            correct = correct\n        else:\n           \
+      \ correct = correct - (1/len(guess))\n    print(correct*100,'%')\n"
+    diff: "--- \n+++ \n@@ -53,7 +53,13 @@\n of correct responses-as+multiplied+by+100+and+followed+by\
+      \ a-percentage.+percent+sign. \"\"\""
+    node_from: &id008 !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'None
+
+        '
+      - 'None
+
+        '
+      - 'None
+
+        '
+    node_to: *id008
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    Given two lists,\
+      \ compares each item in the second list to each item in the first list. For\
+      \ each item in the second list that does not match the first list, it subtracts\
+      \ from one, one divided by the total length of the list. Then it prints the\
+      \ proportion of correct responses as a percentage.\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares\
+      \ each item in the second list to each item in the first list. For each item\
+      \ in the second list that does not match the first list, it subtracts from one,\
+      \ one divided by the total length of the list. Then it prints the proportion\
+      \ of correct responses multiplied by 100 and followed by a percent sign.\n \
+      \   \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student41
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+    completion_from: "correct = 1\n    for i in range(len(guess)):\n        if guess[i]\
+      \ == answers[i]:\n            correct = correct\n        else:\n           \
+      \ correct = correct - (1/len(guess))\n    print(correct*100,'%')\n"
+    completion_to: "correct = 1\n    for i in range(len(answers)):\n        if guess[i]\
+      \ == answers[i]:\n            correct = correct\n        else:\n           \
+      \ correct = correct - (1/len(answers))\n    print(\"You got\",correct*100,\"\
+      % correct.\")\n"
+    diff: "--- \n+++ \n@@ -18,14 +18,14 @@\n the first list.-For-each+Every+time+an\
+      \ item in the second list-that does not match"
+    node_from: *id008
+    node_to: *id008
+    prompt_from: "def percentWin(guess,answers):\n    \"\"\"\n    Given two lists,\
+      \ compares each item in the second list to each item in the first list. For\
+      \ each item in the second list that does not match the first list, it subtracts\
+      \ from one, one divided by the total length of the list. Then it prints the\
+      \ proportion of correct responses multiplied by 100 and followed by a percent\
+      \ sign.\n    \"\"\"\n    "
+    prompt_to: "def percentWin(guess,answers):\n    \"\"\"\n    Given two lists, compares\
+      \ each item in the second list to each item in the first list. Every time an\
+      \ item in the second list does not match the first list, it subtracts from one,\
+      \ one divided by the total length of the list. Then it prints the proportion\
+      \ of correct responses multiplied by 100 and followed by a percent sign.\n \
+      \   \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student41
+  student51: []

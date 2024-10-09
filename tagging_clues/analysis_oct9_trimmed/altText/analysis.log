@@ -1,0 +1,31 @@
+# Analyzing single problem altText.yaml
+Removed students: ['student40']
+Success node 9
+## Cycle edge info:
+student23:[[5, 5, [1, 2, 4], ['m2']], [5, 10, [1, 2, 3, 4], ['m2']]]
+breakoutedge student23
+student35:[[5, 9, [1, 2, 3, 4], ['m2']]]
+student44:[]
+student59:[[11, 11, [1, 3], [0]], [11, 11, [1, 3], [0]]]
+student63:[]
+student75:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student23             2        True       False
+1  student35             1        True       False
+2  student44             0       False        True
+3  student59             2       False        True
+4  student63             0       False        True
+5  student75             0        True       False
+Total num fail: 3, num fail has loop: 1, 33.333333333333336 %
+Total num success: 3, num succ has loop: 2, 66.66666666666667 %
+Likelihood fail with cycle 0.3333333333333333 vs. no cycle 0.6666666666666666
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student23             2        True       False          1              0
+1  student35             1        True       False          1              0
+2  student44             0       False        True          0              1
+3  student59             2       False        True          1              0
+4  student63             0       False        True          0              1
+5  student75             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.6666666666666666
+P(is_success) | NOT P(has_cycle): 0.3333333333333333

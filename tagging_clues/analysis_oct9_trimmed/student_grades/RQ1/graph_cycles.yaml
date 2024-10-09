@@ -1,0 +1,83 @@
+breakout_edges:
+  student11: null
+  student16: null
+  student2: null
+  student5: null
+  student61: null
+  student74: null
+cycle_summary:
+  student11:
+  - !Edge
+    _edge_tags:
+    - m2
+    attempt_id: 1
+    clues:
+    - 2
+    completion_from: "for student in students:\n        for grade in grades:\n   \
+      \         if student == grade:\n                students[student] = grades[grade]\n\
+      \    return students\n\nprint(student_grades(students, grades))"
+    completion_to: "for student in students:\n        for grade in grades:\n     \
+      \       if student == grade:\n                students[student] = grades[grade]\n\
+      \    return students\n\nprint(student_grades(students, grades))"
+    diff: "--- \n+++ \n@@ -27,5 +27,9 @@\n from grades to+update+the+values+in students.\
+      \ \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '{''Alice'': 20, ''Bob'': 11}
+
+        '
+      - '{''Alice'': 20}
+
+        '
+      - '{''Sam'': 21, ''Ari'': 67, ''Chris'': 23}
+
+        '
+    node_to: *id001
+    prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+      \ two dictionaries: students and grades. If the values from students equals\
+      \ to the keys from grades, then sign the values from grades to students.\n \
+      \   \"\"\"\n    "
+    prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+      \ two dictionaries: students and grades. If the values from students equals\
+      \ to the keys from grades, then sign the values from grades to update the values\
+      \ in students.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student11
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 2
+    completion_from: "for student in students:\n        for grade in grades:\n   \
+      \         if student == grade:\n                students[student] = grades[grade]\n\
+      \    return students\n\nprint(student_grades(students, grades))"
+    completion_to: "for student in students:\n        for grade in grades:\n     \
+      \       if student == grade:\n                students[student] = grades[grade]\n\
+      \    return students\n\nprint(student_grades(students, grades))\n"
+    diff: ''
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+      \ two dictionaries: students and grades. If the values from students equals\
+      \ to the keys from grades, then sign the values from grades to update the values\
+      \ in students.\n    \"\"\"\n    "
+    prompt_to: "def student_grades(students, grades):\n    \"\"\"\n    by comparing\
+      \ two dictionaries: students and grades. If the values from students equals\
+      \ to the keys from grades, then sign the values from grades to update the values\
+      \ in students.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student11
+  student16: []
+  student2: []
+  student5: []
+  student61: []
+  student74: []

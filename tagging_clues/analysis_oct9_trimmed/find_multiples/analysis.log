@@ -1,0 +1,41 @@
+# Analyzing single problem find_multiples.yaml
+Success node 8
+## Cycle edge info:
+student11:[[4, 4, [], [0]], [4, 4, [], [0]], [4, 7, [], [0]]]
+breakoutedge student11
+student13:[[4, 4, [1], [0]], [4, 8, [1, 2], ['a2']]]
+breakoutedge student13
+student16:[[5, 5, [2], [0]]]
+student2:[[6, 6, [], [0]]]
+student22:[]
+student5:[]
+student61:[[4, 4, [1], [0]], [4, 8, [1, 2], ['a2']]]
+breakoutedge student61
+student72:[]
+student74:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student11             3       False        True
+1  student13             2        True       False
+2  student16             1       False        True
+3   student2             1       False        True
+4  student22             0        True       False
+5   student5             0        True       False
+6  student61             2        True       False
+7  student72             0        True       False
+8  student74             0        True       False
+Total num fail: 3, num fail has loop: 3, 100.0 %
+Total num success: 6, num succ has loop: 2, 33.333333333333336 %
+Likelihood fail with cycle 0.6 vs. no cycle 0.0
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student11             3       False        True          1              0
+1  student13             2        True       False          1              0
+2  student16             1       False        True          1              0
+3   student2             1       False        True          1              0
+4  student22             0        True       False          0              1
+5   student5             0        True       False          0              1
+6  student61             2        True       False          1              0
+7  student72             0        True       False          0              1
+8  student74             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.39999999999999997
+P(is_success) | NOT P(has_cycle): 1.0

@@ -1,0 +1,331 @@
+breakout_edges:
+  student23: null
+  student50: null
+  student59: null
+  student60: &id003 !Edge
+    _edge_tags:
+    - a6
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "words = sentence.split()\n    for word in words:\n        if\
+      \ word in lexicon:\n            print(lexicon[word], end = \" \")\n        else:\n\
+      \            print(\"UNK\", end = \" \")\n    print()\n"
+    completion_to: "words = sentence.split()\n    translation = []\n    for word in\
+      \ words:\n        if word in lexicon:\n            translation.append(lexicon[word])\n\
+      \        else:\n            translation.append('UNK')\n    return ' '.join(translation)\n"
+    diff: "--- \n+++ \n@@ -24,7 +24,7 @@\n The function then-prints+returns the string\
+      \ in@@ -42,7 +42,7 @@\n dictionary, the function-prints+returns 'UNK' for that"
+    node_from: &id002 !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        7'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'je aime mes trois chats
+
+        '
+      - 'je aime mes trois UNK
+
+        '
+      - 'UNK UNK UNK UNK
+
+        '
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    This function\
+      \ takes in a dictionary and a string as parameters. The dictionary contains\
+      \ the translation of given english words. The function then prints the string\
+      \ in french. If a word in the function is not in the dictionary, the function\
+      \ prints 'UNK' for that word. \n    \"\"\"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    This function takes\
+      \ in a dictionary and a string as parameters. The dictionary contains the translation\
+      \ of given english words. The function then returns the string in french. If\
+      \ a word in the function is not in the dictionary, the function returns 'UNK'\
+      \ for that word. \n    \"\"\"\n    "
+    state: success
+    total_attempts: 4
+    username: student60
+  student64: null
+  student69: null
+  student75: null
+cycle_summary:
+  student23:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 4
+    completion_from: "words = sentence.split()\n    translated_words = []\n    for\
+      \ word in words:\n        if word in lexicon:\n            translated_words.append(lexicon[word])\n\
+      \        else:\n            translated_words.append(word)\n    return \" \"\
+      .join(translated_words)\n\nlexicon = {\n    \"merry\":\"god\",\n    \"christmas\"\
+      :\"jul\",\n    \"and\":\"och\",\n   "
+    completion_to: "words = sentence.split()\n    translated_words = []\n    for word\
+      \ in words:\n        if word in lexicon:\n            translated_words.append(lexicon[word])\n\
+      \        else:\n            translated_words.append(word)\n    return \" \"\
+      .join(translated_words)\n\nlexicon = {\n    \"merry\":\"god\",\n    \"christmas\"\
+      :\"jul\",\n    \"and\":\"och\",\n   "
+    diff: "--- \n+++ \n@@ -13,7 +13,7 @@\n the English words-into.+into a different\
+      \ language."
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - 'SyntaxError: ''{'' was never closed'
+      - 'SyntaxError: ''{'' was never closed'
+      - 'SyntaxError: ''{'' was never closed'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id001
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    This function\
+      \ takes in a dictionary of words, translating the English words into. a different\
+      \ language. THe function then takes in a sentence and uses the dictionary to\
+      \ replace the English words with the translated word from a different language.\
+      \ \n    \"\"\"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    This function takes\
+      \ in a dictionary of words, translating the English words into a different language.\
+      \ THe function then takes in a sentence and uses the dictionary to replace the\
+      \ English words with the translated word from a different language. \n    \"\
+      \"\"\n    "
+    state: fail
+    total_attempts: 2
+    username: student23
+  student50: []
+  student59: []
+  student60:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    completion_from: "words = sentence.split()\n    for word in words:\n        if\
+      \ word in lexicon:\n            print(lexicon[word],end=\" \")\n        else:\n\
+      \            print(\"UNK\",end=\" \")\n    print()\n"
+    completion_to: "words = sentence.split()\n    for word in words:\n        if word\
+      \ in lexicon:\n            print(lexicon[word], end = \" \")\n        else:\n\
+      \            print(\"UNK\", end = \" \")\n    print()\n"
+    diff: ''
+    node_from: *id002
+    node_to: *id002
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    This function\
+      \ takes in a dictionary and a string as parameters. The dictionary contains\
+      \ the translation of given english words. The function then prints the string\
+      \ in french. If a word in the function is not in the dictionary, the function\
+      \ prints 'UNK' for that word. \n    \"\"\"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    This function takes\
+      \ in a dictionary and a string as parameters. The dictionary contains the translation\
+      \ of given english words. The function then prints the string in french. If\
+      \ a word in the function is not in the dictionary, the function prints 'UNK'\
+      \ for that word. \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student60
+  - *id003
+  student64:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 1
+    clues:
+    - 4
+    - 5
+    completion_from: "translated = []\n    for word in sentence:\n        if word\
+      \ in lexicon:\n            translated.append(lexicon[word])\n        else:\n\
+      \            translated.append('UNK')\n    return translated\n"
+    completion_to: "translated_sentence = []\n    for word in sentence:\n        if\
+      \ word in lexicon:\n            translated_sentence.append(lexicon[word])\n\
+      \        else:\n            translated_sentence.append('UNK')\n    return translated_sentence\n"
+    diff: "--- \n+++ \n@@ -3,7 +3,7 @@\n \"\"\" For each-word+string in sentence,\
+      \ find"
+    node_from: &id004 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''je'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'']
+
+        '
+      - '[''je'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'']
+
+        '
+      - '[''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'', ''UNK'',
+        ''UNK'', ''UNK'', ''UNK'']
+
+        '
+    node_to: *id004
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    For each word\
+      \ in sentence, find key value in lexicon and create new string with its value\
+      \ pair. If the word is not in lexicon, append 'UNK' to new string.\n    \"\"\
+      \"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    For each string\
+      \ in sentence, find key value in lexicon and create new string with its value\
+      \ pair. If the word is not in lexicon, append 'UNK' to new string.\n    \"\"\
+      \"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student64
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 2
+    clues:
+    - 4
+    - 5
+    completion_from: "translated_sentence = []\n    for word in sentence:\n      \
+      \  if word in lexicon:\n            translated_sentence.append(lexicon[word])\n\
+      \        else:\n            translated_sentence.append('UNK')\n    return translated_sentence\n"
+    completion_to: "new_sentence = []\n    for word in sentence:\n        if word\
+      \ in lexicon:\n            new_sentence.append(lexicon[word])\n        else:\n\
+      \            new_sentence.append('UNK')\n    return new_sentence\n"
+    diff: "--- \n+++ \n@@ -2,8 +2,8 @@\n translate(lexicon,sentence): \"\"\" For-each-string+every+word\
+      \ in sentence, find"
+    node_from: *id004
+    node_to: *id004
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    For each string\
+      \ in sentence, find key value in lexicon and create new string with its value\
+      \ pair. If the word is not in lexicon, append 'UNK' to new string.\n    \"\"\
+      \"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    For every word in\
+      \ sentence, find key value in lexicon and create new string with its value pair.\
+      \ If the word is not in lexicon, append 'UNK' to new string.\n    \"\"\"\n \
+      \   "
+    state: fail
+    total_attempts: 3
+    username: student64
+  student69:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 4
+    completion_from: "words = sentence.split(\" \")\n    translated_words = []\n \
+      \   for word in words:\n        if word in lexicon:\n            translated_words.append(lexicon[word])\n\
+      \        else:\n            translated_words.append(word)\n    return \" \"\
+      .join(translated_words)\n\nprint translate(lexicon, \"I am a boy\")"
+    completion_to: "words = sentence.split()\n    translation = []\n    for word in\
+      \ words:\n        translation.append(lexicon.get(word, word))\n    return \"\
+      \ \".join(translation)\n\nprint translate(lexicon, \"bear eat princess\")"
+    diff: "--- \n+++ \n@@ -12,18 +12,19 @@\n and add each-group-of-strings+word to\
+      \ a list.+For+every+word+in+the+list, if the word-in-the-list matches a key"
+    node_from: &id005 !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id005
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    Enter a string.\
+      \ Separate the string on spaces and add each group of strings to a list. if\
+      \ the word in the list matches a key in the dictionary, print the value of that\
+      \ key.\n    \"\"\"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    Enter a string.\
+      \ Separate the string on spaces and add each word to a list. For every word\
+      \ in the list, if the word matches a key in the dictionary, print the value\
+      \ of that key.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 2
+    username: student69
+  student75:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 4
+    - 6
+    completion_from: "words = sentence.split(\" \")\n    translation = []\n    for\
+      \ word in words:\n        if word in lexicon:\n            translation.append(lexicon[word])\n\
+      \        else:\n            translation.append(word)\n    return \" \".join(translation)\n\
+      \nlexicon = {\n    \"one\" : \"un\",\n    \"two\" : \"deux\",\n    \"three\"\
+      \ : \"trois\",\n    \"four"
+    completion_to: "words = sentence.split(' ')\n    translation = []\n    for word\
+      \ in words:\n        translation.append(lexicon[word])\n    return translation\n\
+      \nprint translate(lexicon, \"I like my three cats\")\n"
+    diff: "--- \n+++ \n@@ -22,8 +22,7 @@\n output french as-input=english,-output=french+input=output\
+      \ def translate(lexicon,sentence): defines"
+    node_from: !Node
+      _node_tags: null
+      id: 1
+      stderr:
+      - 'SyntaxError: unterminated string literal (detected at line 19)'
+      - 'SyntaxError: unterminated string literal (detected at line 19)'
+      - 'SyntaxError: unterminated string literal (detected at line 19)'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      - 'SyntaxError: Missing parentheses in call to ''print''. Did you mean print(...)?'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def translate(lexicon,sentence):\n    \"\"\"\n    def translate(lexicon,sentence):\
+      \ pairs an english word with its french translation to create the ability to\
+      \ input english and output french as input=english, output=french\ndef translate(lexicon,sentence):\
+      \ defines {\"one\"=\"un\", \"two\"=\"deux\", \"three\"=\"trois\", \"four=\"\
+      quatre\", \"I\"=\"je\", \"you\"=\"tu\", \"and\"=\"et\", \"cats\"=\"chats\",\
+      \ \"love\"=\"aime\", \"like\"=aime\", \"my\"=\"mes\"}, this program will run\
+      \ the phrase input=\"I like my three cats\" through def translate and output={}\
+      \ translation\n    \"\"\"\n    "
+    prompt_to: "def translate(lexicon,sentence):\n    \"\"\"\n    def translate(lexicon,sentence):\
+      \ pairs an english word with its french translation to create the ability to\
+      \ input english and output french as input=output\ndef translate(lexicon,sentence):\
+      \ defines {\"one\"=\"un\", \"two\"=\"deux\", \"three\"=\"trois\", \"four=\"\
+      quatre\", \"I\"=\"je\", \"you\"=\"tu\", \"and\"=\"et\", \"cats\"=\"chats\",\
+      \ \"love\"=\"aime\", \"like\"=aime\", \"my\"=\"mes\"}, this program will run\
+      \ the phrase input=\"I like my three cats\" through def translate and output={}\
+      \ translation\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student75

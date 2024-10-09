@@ -1,0 +1,166 @@
+breakout_edges:
+  student17: null
+  student25: null
+  student26: null
+  student3: null
+  student4: null
+  student41: &id002 !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: 'return [[x for x in range(1,y+1)] for y in range(1,value+1)]
+
+
+      print(pattern(3))'
+    completion_to: 'return [[i for i in range(value)] for j in range(value)]
+
+      '
+    diff: "--- \n+++ \n@@ -30,16 +30,12 @@\n list should have-each+every integer-greater-than+between\
+      \ zero-up-to, and-including, the-value-inputted.+inputted+value. \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 1
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[[1], [1, 2], [1, 2, 3]]
+
+        '
+      - '[[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]
+
+        '
+      - '[[1], [1, 2]]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+
+        '
+      - '[[0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3]]
+
+        '
+      - '[[0, 1], [0, 1]]
+
+        '
+    prompt_from: "def pattern(value):\n    \"\"\"\n    Returns a list of lists. The\
+      \ number of lists in the output list should be equal to the value. All of the\
+      \ lists within the output list should have each integer greater than zero up\
+      \ to, and including, the value inputted.\n    \"\"\"\n    "
+    prompt_to: "def pattern(value):\n    \"\"\"\n    Returns a list of lists. The\
+      \ number of lists in the output list should be equal to the value. All of the\
+      \ lists within the output list should have every integer between zero and the\
+      \ inputted value.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student41
+cycle_summary:
+  student17: []
+  student25: []
+  student26: []
+  student3:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 5
+    clues:
+    - 1
+    - 4
+    - 5
+    completion_from: 'return [i for i in range(1, value + 1)]
+
+
+      '
+    completion_to: "list_pattern = []\n    for i in range(1, value+1):\n        list_pattern.append(i)\n\
+      \        list_pattern.append(i)\n        list_pattern.append(i)\n    return\
+      \ list_pattern\n\nprint(pattern(3))\n"
+    diff: "--- \n+++ \n@@ -17,5 +17,6 @@\n value start from-1+1.+insert \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[1, 2, 3]
+
+        '
+      - '[1, 2, 3, 4]
+
+        '
+      - '[1, 2]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[1, 1, 1, 2, 2, 2, 3, 3, 3]
+
+        '
+      - '[1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4]
+
+        '
+      - '[1, 1, 1, 2, 2, 2]
+
+        '
+    prompt_from: "def pattern(value):\n    \"\"\"\n    create function which take\
+      \ 1 input (value). create list of ascending numbers of value start from 1\n\
+      \    \"\"\"\n    "
+    prompt_to: "def pattern(value):\n    \"\"\"\n    create function which take 1\
+      \ input (value). create list of ascending numbers of value start from 1. insert\
+      \ \n    \"\"\"\n    "
+    state: fail
+    total_attempts: 6
+    username: student3
+  student4: []
+  student41:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "output = []\n    for i in range(value):\n        output.append(list(range(1,\
+      \ i+2)))\n    return output\n\nprint(pattern(5))\n"
+    completion_to: 'return [[x for x in range(1,y+1)] for y in range(1,value+1)]
+
+
+      print(pattern(3))'
+    diff: "--- \n+++ \n@@ -20,8 +20,10 @@\n to the value.-Each-list+All+of+the+lists\
+      \ within the output"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def pattern(value):\n    \"\"\"\n    Returns a list of lists. The\
+      \ number of lists in the output list should be equal to the value. Each list\
+      \ within the output list should have each integer greater than zero up to, and\
+      \ including, the value inputted.\n    \"\"\"\n    "
+    prompt_to: "def pattern(value):\n    \"\"\"\n    Returns a list of lists. The\
+      \ number of lists in the output list should be equal to the value. All of the\
+      \ lists within the output list should have each integer greater than zero up\
+      \ to, and including, the value inputted.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student41
+  - *id002

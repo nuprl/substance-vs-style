@@ -1,0 +1,74 @@
+breakout_edges:
+  student23: null
+  student33: null
+  student35: null
+  student50: null
+  student59: null
+  student75: null
+cycle_summary:
+  student23: []
+  student33: []
+  student35:
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    completion_from: "if score < 0:\n        score = abs(score)\n        if score\
+      \ < 10:\n            score = 10\n        else:\n            score += 1\n   \
+      \ else:\n        if score < 10:\n            score = 10\n        else:\n   \
+      \         score += 1\n    return score\n"
+    completion_to: "if score < 0:\n        score = abs(score)\n    if score < 10:\n\
+      \        score = 10\n    else:\n        score += 1\n    return score\n"
+    diff: "--- \n+++ \n@@ -71,7 +71,10 @@\n (including 10) is-provided,+given+as+initial+input,\
+      \ its value is"
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '11
+
+        '
+      - '10
+
+        '
+      - '11
+
+        '
+      - '16
+
+        '
+      - '21
+
+        '
+    node_to: *id001
+    prompt_from: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+      \ is to convert the input score into a number that is greater than or equal\
+      \ to 10. If a negative number is provided, it is to be converted into a positive\
+      \ number and if its value is less than 10, it should become 10. If a positive\
+      \ single digit is provided, it should be converted into 10. If a positive double-digit\
+      \ number (including 10) is provided, its value is to be increased by 1.\n  \
+      \  \"\"\"\n    "
+    prompt_to: "def increaseScore(score):\n    \"\"\"\n    The purpose of the function\
+      \ is to convert the input score into a number that is greater than or equal\
+      \ to 10. If a negative number is provided, it is to be converted into a positive\
+      \ number and if its value is less than 10, it should become 10. If a positive\
+      \ single digit is provided, it should be converted into 10. If a positive double-digit\
+      \ number (including 10) is given as initial input, its value is to be increased\
+      \ by 1.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student35
+  student50: []
+  student59: []
+  student75: []

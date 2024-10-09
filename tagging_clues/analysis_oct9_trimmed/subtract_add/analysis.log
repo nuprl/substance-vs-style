@@ -1,0 +1,37 @@
+# Analyzing single problem subtract_add.yaml
+Removed students: ['student70']
+Success node 4
+## Cycle edge info:
+student27:[]
+student29:[[11, 4, [1, 2, 3, 4, 5], [0]]]
+student32:[]
+student49:[]
+student62:[[11, 11, [2, 3, 5], [0]], [11, 11, [2, 3, 5], ['m3']], [11, 3, [2, 3, 4, 5], ['a4']]]
+breakoutedge student62
+student66:[[13, 4, [1, 2, 3, 4, 5], [0]]]
+student67:[]
+student68:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student27             0        True       False
+1  student29             1        True       False
+2  student32             0       False        True
+3  student49             0        True       False
+4  student62             3       False        True
+5  student66             1        True       False
+6  student67             0       False        True
+7  student68             0        True       False
+Total num fail: 3, num fail has loop: 1, 33.333333333333336 %
+Total num success: 5, num succ has loop: 2, 40.0 %
+Likelihood fail with cycle 0.3333333333333333 vs. no cycle 0.4
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student27             0        True       False          0              1
+1  student29             1        True       False          1              0
+2  student32             0       False        True          0              1
+3  student49             0        True       False          0              1
+4  student62             3       False        True          1              0
+5  student66             1        True       False          1              0
+6  student67             0       False        True          0              1
+7  student68             0        True       False          0              1
+P(is_success) | P(has_cycle): 0.6666666666666666
+P(is_success) | NOT P(has_cycle): 0.6

@@ -1,0 +1,31 @@
+{
+   "fail": {
+      "student33": {
+         "2": "student uses 'returning entries each on a separate line' which model interprets as print"
+      },
+      "student79": {
+         "4": "same issue as student33"
+      }
+   },
+   "neutral": {
+      "student79": {
+         "3": "model interprets put each element on separate line as print"
+      }
+   },
+   "success": {
+      "student64": {
+         "2": "clue 6 return is implicit"
+      },
+      "student69": {
+         "2": "test coverage issue makes this a success, reverse+sort by nominee is equivalent to sort by success rate"
+      }
+   },
+   "breakout": {
+      "student23": {
+         "2": "breakout edge leads to fail, student makes same mistake"
+      },
+      "student79": {
+         "4": "breakout edge leads into another cycle"
+      }
+   }
+}

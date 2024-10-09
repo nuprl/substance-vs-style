@@ -1,0 +1,685 @@
+breakout_edges:
+  student27: null
+  student29: &id003 !Edge
+    _edge_tags:
+    - a4
+    - a5
+    attempt_id: 5
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "sortedBooks = []\n    for book in books:\n        if book[\"\
+      author\"] == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"
+    completion_to: "sortedList = []\n    for book in books:\n        if book['author']\
+      \ == writer:\n            sortedList.append(book)\n    sortedList.sort(key=lambda\
+      \ x: x['year'])\n    return sortedList\n"
+    diff: "--- \n+++ \n@@ -31,12 +31,12 @@\n to that parameter,-with-each-input-entry-on-a-new-line+sorted+in+order+according+to+the+year+value\
+      \ \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}, {''author'': ''Austen'',
+        ''book'': ''Pride and Prejudice'', ''year'': 1813}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Pride and Prejudice'', ''year'': 1813},
+        {''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return a list with\
+      \ all input entries where the author value corresponds to that parameter, with\
+      \ each input entry on a new line\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return a list with\
+      \ all input entries where the author value corresponds to that parameter, sorted\
+      \ in order according to the year value\n    \"\"\"\n    "
+    state: success
+    total_attempts: 6
+    username: student29
+  student32: null
+  student49: null
+  student62: null
+  student66: null
+  student67: &id008 !Edge
+    _edge_tags:
+    - l6
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 6
+    completion_from: 'return sorted(books, key=lambda book: book[writer])
+
+      '
+    completion_to: "writerBooks = []\n    for book in books:\n        if book['writer']\
+      \ == writer:\n            writerBooks.append(book)\n    return writerBooks\n\
+      \n"
+    diff: "--- \n+++ \n@@ -4,7 +4,7 @@\n \"\"\" Returns the-dictionaries+information\
+      \ of the specified"
+    node_from: &id007 !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - 'KeyError: ''Austen'''
+      - 'KeyError: ''Woolf'''
+      - 'KeyError: ''Austen'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 10
+      stderr:
+      - 'KeyError: ''writer'''
+      - 'KeyError: ''writer'''
+      - 'KeyError: ''writer'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries\
+      \ of the specified writer.\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Returns the information\
+      \ of the specified writer.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student67
+  student68: &id010 !Edge
+    _edge_tags:
+    - a4
+    - a5
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "sortedBooks = []\n    for book in books:\n        if book['author']\
+      \ == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"
+    completion_to: 'return sorted([book for book in books if book[''author''] == writer],
+      key=lambda book: book[''year''])
+
+      '
+    diff: "--- \n+++ \n@@ -22,7 +22,16 @@\n input string in-a-dictionary-list+the+order+from+lowest+to+highest+value+of+their+'year'+key+value\
+      \ \"\"\""
+    node_from: &id009 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}, {''author'': ''Austen'',
+        ''book'': ''Pride and Prejudice'', ''year'': 1813}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Pride and Prejudice'', ''year'': 1813},
+        {''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary\
+      \ list and a string, return all the dictionaries whose 'author' key value equals\
+      \ the input string in a dictionary list \n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary\
+      \ list and a string, return all the dictionaries whose 'author' key value equals\
+      \ the input string in the order from lowest to highest value of their 'year'\
+      \ key value \n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student68
+  student70: &id012 !Edge
+    _edge_tags:
+    - a4
+    - a5
+    attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: 'return [book for book in books if book[''author''] == writer]
+
+      '
+    completion_to: 'return sorted([book for book in books if book[''author''] == writer],
+      key=lambda book: book[''year''])
+
+      '
+    diff: "--- \n+++ \n@@ -23,4 +23,12 @@\n the input writer.+Sort+the+entries+in+order+of+increasing+year.\
+      \ \"\"\""
+    node_from: &id011 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}, {''author'': ''Austen'',
+        ''book'': ''Pride and Prejudice'', ''year'': 1813}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Pride and Prejudice'', ''year'': 1813},
+        {''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the\
+      \ entries in the input list where the value for the 'author' key is equal to\
+      \ the input writer.\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the entries\
+      \ in the input list where the value for the 'author' key is equal to the input\
+      \ writer. Sort the entries in order of increasing year.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 5
+    username: student70
+  student78: null
+cycle_summary:
+  student27: []
+  student29:
+  - !Edge
+    _edge_tags:
+    - m6
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 6
+    completion_from: 'return [book for book in books if book[''author''] == writer]
+
+      '
+    completion_to: "for book in books:\n        if book[\"author\"] == writer:\n \
+      \           print(book)\n            print(\"\\n\")\n"
+    diff: "--- \n+++ \n@@ -27,5 +27,12 @@\n corresponds to that-parameter+parameter,+with+a+line+break+between+each+entry\
+      \ \"\"\""
+    node_from: *id001
+    node_to: &id002 !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        6'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        6'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        6'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return all input\
+      \ entries where the author value corresponds to that parameter\n    \"\"\"\n\
+      \    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return all input\
+      \ entries where the author value corresponds to that parameter, with a line\
+      \ break between each entry\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student29
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 6
+    completion_from: 'return ''\n''.join([book for book in books if book.split(''
+      - '')[1] == writer])
+
+
+      '
+    completion_to: "for book in books:\n        if book['author'] == writer:\n   \
+      \         print(book)\n\nsortedBooks(books, 'J. R. R. Tolkien')\n"
+    diff: "--- \n+++ \n@@ -28,9 +28,12 @@\n to that parameter,-separated-by+with+each+sub-dictionary+starting+on\
+      \ a+new line-break \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 12
+      stderr:
+      - 'AttributeError: ''dict'' object has no attribute ''split'''
+      - 'AttributeError: ''dict'' object has no attribute ''split'''
+      - 'AttributeError: ''dict'' object has no attribute ''split'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id002
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return all input\
+      \ entries where the author value corresponds to that parameter, separated by\
+      \ a line break\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Check the second\
+      \ parameter of the input for the string of author name. Then return all input\
+      \ entries where the author value corresponds to that parameter, with each sub-dictionary\
+      \ starting on a new line\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student29
+  - *id003
+  student32:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 4
+    - 5
+    - 6
+    completion_from: "books.sort(key=lambda x: x[\"year\"])\n    books.pop()\n   \
+      \ return books\n"
+    completion_to: "books.sort(key=lambda x: x['year'])\n    books.pop()\n    return\
+      \ books\n"
+    diff: "--- \n+++ \n@@ -2,6 +2,12 @@\n sortedBooks(books, writer): \"\"\"+Returns+the+list+with+the+a\
+      \ Sort the elements"
+    node_from: &id004 !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Pride and Prejudice'', ''year'': 1813},
+        {''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]
+
+        '
+      - '[{''author'': ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}]
+
+        '
+      - '[]
+
+        '
+    node_to: *id004
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Sort the elements\
+      \ of the array by the year value in its dictionary, from lowest to highest.\
+      \ Then removes the last element in the array and returns the rest\n    \"\"\"\
+      \n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Returns the list\
+      \ with the a\n\nSort the elements of the array by the year value in its dictionary,\
+      \ from lowest to highest. Then removes the last element in the array and returns\
+      \ the rest\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student32
+  student49: []
+  student62:
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    completion_from: "for book in books:\n        if book['author'] != writer:\n \
+      \           books.remove(book)\n    return books\n\n"
+    completion_to: "for book in books:\n        if book['author'] != writer:\n   \
+      \         books.remove(book)\n    return books\n"
+    diff: "--- \n+++ \n@@ -2,12 +2,18 @@\n sortedBooks(books, writer): \"\"\"+iterate+through+each+element+in+list,\
+      \ remove-any element from list-that+if+it does not have"
+    node_from: &id005 !Node
+      _node_tags: null
+      id: 11
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[{''author'': ''Austen'', ''book'': ''Emma'', ''year'': 1815}, {''author'':
+        ''Austen'', ''book'': ''Persuasion'', ''year'': 1818}, {''author'': ''Austen'',
+        ''book'': ''Pride and Prejudice'', ''year'': 1813}]
+
+        '
+      - '[{''author'': ''Woolf'', ''book'': ''The Voyage Out'', ''year'': 1915}]
+
+        '
+      - '[]
+
+        '
+    node_to: *id005
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    remove any element\
+      \ from list that does not have the same 'author' as the string provided by user\n\
+      \    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    iterate through each\
+      \ element in list, remove element from list if it does not have the same 'author'\
+      \ as the string provided by user\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student62
+  student66:
+  - !Edge
+    _edge_tags:
+    - m5
+    attempt_id: 1
+    clues:
+    - 4
+    - 5
+    completion_from: "books.sort(key=lambda x: x['year'])\n    if len(books) > 1:\n\
+      \        if books[0]['title'] == 'The Voyage Out':\n            books.pop(0)\n\
+      \        else:\n            books.pop(1)\n    else:\n        if books[0]['title']\
+      \ == 'The Voyage Out':\n            books.pop(0)\n    return books\n"
+    completion_to: "for book in books:\n        if book['title'] == 'The Voyage Out':\n\
+      \            books.remove(book)\n    books.sort(key=lambda x: x['year'])\n \
+      \   return books\n"
+    diff: "--- \n+++ \n@@ -7,11 +7,17 @@\n array list by+the+key year with+smallest+number+first+in\
+      \ the-oldest-book+array+list first remove the@@ -32,5 +38,5 @@\n remove the\
+      \ other-dictionary+dictionary. \"\"\""
+    node_from: &id006 !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - 'KeyError: ''title'''
+      - 'KeyError: ''title'''
+      - 'KeyError: ''title'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id006
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Sort the array\
+      \ list by year with the oldest book first remove the book 'The Voyage Out' unless\
+      \ there are two dictionaries within the array list then remove the other dictionary\n\
+      \    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Sort the array list\
+      \ by the key year with smallest number first in the array list first remove\
+      \ the book 'The Voyage Out' unless there are two dictionaries within the array\
+      \ list then remove the other dictionary.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 2
+    username: student66
+  student67:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 6
+    completion_from: 'return sorted(books, key=lambda book: book[writer])
+
+      '
+    completion_to: 'return sorted(books[writer], key=lambda book: book[''title''])
+
+
+      '
+    diff: "--- \n+++ \n@@ -3,9 +3,7 @@\n writer): \"\"\" Returns-a-list-of+the dictionaries\
+      \ of the"
+    node_from: *id007
+    node_to: !Node
+      _node_tags: null
+      id: 13
+      stderr:
+      - 'TypeError: list indices must be integers or slices, not str'
+      - 'TypeError: list indices must be integers or slices, not str'
+      - 'TypeError: list indices must be integers or slices, not str'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    Returns a list\
+      \ of dictionaries of the specified author.\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    Returns the dictionaries\
+      \ of the specified author.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student67
+  - *id008
+  student68:
+  - !Edge
+    _edge_tags:
+    - m6
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 6
+    completion_from: 'return [book for book in books if book[''author''] == writer]
+
+      '
+    completion_to: "sortedBooks = []\n    for book in books:\n        if book['author']\
+      \ == writer:\n            sortedBooks.append(book)\n    return sortedBooks\n"
+    diff: "--- \n+++ \n@@ -21,4 +21,8 @@\n the input string+in+a+dictionary+list \"\
+      \"\""
+    node_from: *id009
+    node_to: *id009
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary\
+      \ list and a string, return all the dictionaries whose 'author' key value equals\
+      \ the input string \n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    given a dictionary\
+      \ list and a string, return all the dictionaries whose 'author' key value equals\
+      \ the input string in a dictionary list \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student68
+  - *id010
+  student70:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 6
+    completion_from: 'return [book for book in books if book[''author''] == writer]
+
+      '
+    completion_to: 'return [book for book in books if book[''author''] == writer]
+
+
+      print(sortedBooks(books, ''J. R. R. Tolkien''))
+
+      print(sortedBooks(books, ''George R. R. Martin''))
+
+      '
+    diff: ''
+    node_from: *id011
+    node_to: *id011
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the\
+      \ entries in the dictionary where the value for the 'author' key is equal to\
+      \ the input writer.\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the entries\
+      \ in the dictionary where the value for the 'author' key is equal to the input\
+      \ writer.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student70
+  - !Edge
+    _edge_tags:
+    - m1
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 6
+    completion_from: 'return {k: v for k, v in books.items() if v[''author''] == writer}
+
+
+      print(sortedBooks(books, ''J. R. R. Tolkien''))
+
+      '
+    completion_to: 'return [book for book in books if book[''author''] == writer]
+
+      '
+    diff: "--- \n+++ \n@@ -8,8 +8,8 @@\n entries in the-dictionary-books+input+list\
+      \ where the value"
+    node_from: !Node
+      _node_tags: null
+      id: 9
+      stderr:
+      - 'AttributeError: ''list'' object has no attribute ''items'''
+      - 'AttributeError: ''list'' object has no attribute ''items'''
+      - 'AttributeError: ''list'' object has no attribute ''items'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: *id011
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the\
+      \ entries in the dictionary books where the value for the 'author' key is equal\
+      \ to the input writer.\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    return all the entries\
+      \ in the input list where the value for the 'author' key is equal to the input\
+      \ writer.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student70
+  - *id012
+  student78:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 6
+    completion_from: 'return sorted([book for book in books if book[''author''] ==
+      writer], key=lambda x: x[''title''])
+
+      '
+    completion_to: 'return sorted([book for book in books if book[''author''] == writer],
+      key=lambda x: x[''title''])
+
+      '
+    diff: "--- \n+++ \n@@ -14,12 +14,10 @@\n list of dictionaries-where+thats+authors+match\
+      \ the input writer-matches-the-key-author \"\"\""
+    node_from: &id013 !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - 'KeyError: ''title'''
+      - 'KeyError: ''title'''
+      - ''
+      stdout:
+      - ''
+      - ''
+      - '[]
+
+        '
+    node_to: *id013
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    if books is a list\
+      \ of dictionaries, output a list of dictionaries where the input writer matches\
+      \ the key author\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    if books is a list\
+      \ of dictionaries, output a list of dictionaries thats authors match the input\
+      \ writer\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student78
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 6
+    completion_from: 'return sorted([book for book in books if book[''author''] ==
+      writer], key=lambda x: x[''title''])
+
+      '
+    completion_to: 'return sorted([book for book in books if book[''author''] == writer],
+      key=lambda book: book[''title''])
+
+      '
+    diff: "--- \n+++ \n@@ -14,9 +14,17 @@\n list of dictionaries-thats-authors-match+where+the+associated+data+to+the+key+'author'+is+equal+to\
+      \ the input writer"
+    node_from: *id013
+    node_to: *id013
+    prompt_from: "def sortedBooks(books, writer):\n    \"\"\"\n    if books is a list\
+      \ of dictionaries, output a list of dictionaries thats authors match the input\
+      \ writer\n    \"\"\"\n    "
+    prompt_to: "def sortedBooks(books, writer):\n    \"\"\"\n    if books is a list\
+      \ of dictionaries, output a list of dictionaries where the associated data to\
+      \ the key 'author' is equal to the input writer\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 3
+    username: student78

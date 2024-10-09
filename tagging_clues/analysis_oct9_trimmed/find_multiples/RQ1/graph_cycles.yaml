@@ -1,0 +1,366 @@
+breakout_edges:
+  student11: &id002 !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues: []
+    completion_from: "multiples = []\n    for i in range(start,stop):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n\n\
+      print(find_multiples(1,10,2))\n"
+    completion_to: "multiples=[]\n    sum=0\n    while sum<stop:\n        sum=sum+start*factor\n\
+      \        multiples.append(sum)\n    return multiples\n\nprint(find_multiples(3,100,5))\n"
+    diff: "--- \n+++ \n@@ -27,7 +27,7 @@\n we get the-stop-start.+sum==stop. Then\
+      \ create a"
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80]
+
+        '
+      - '[10, 15, 20, 25]
+
+        '
+      - '[1062, 1239, 1416, 1593, 1770, 1947]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80, 100]
+
+        '
+      - '[50]
+
+        '
+      - '[177000]
+
+        '
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for three inputs:start, stop, factor. By adding up start*factor and records\
+      \ all the sum of those all the way until we get the stop-start. Then create\
+      \ a list to hold those values\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for three inputs:start, stop, factor. By adding up start*factor and records\
+      \ all the sum of those all the way until we get the sum==stop. Then create a\
+      \ list to hold those values\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student11
+  student13: &id004 !Edge
+    _edge_tags:
+    - a2
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    completion_from: "multiples = []\n    for i in range(start,stop):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    completion_to: "multiples = []\n    for i in range(start,stop+1):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    diff: "--- \n+++ \n@@ -10,7 +10,7 @@\n of the factor-in+between the range of@@\
+      \ -18,5 +18,11 @@\n start and stop+numbers,+including+the+start+and+stop numbers.\
+      \ \"\"\""
+    node_from: &id003 !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80]
+
+        '
+      - '[10, 15, 20, 25]
+
+        '
+      - '[1062, 1239, 1416, 1593, 1770, 1947]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80, 100]
+
+        '
+      - '[10, 15, 20, 25, 30]
+
+        '
+      - '[1062, 1239, 1416, 1593, 1770, 1947]
+
+        '
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    The function\
+      \ will find the multiples of the factor in the range of the start and stop numbers.\n\
+      \    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    The function\
+      \ will find the multiples of the factor between the range of the start and stop\
+      \ numbers, including the start and stop numbers.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student13
+  student16: null
+  student2: null
+  student22: null
+  student5: null
+  student61: &id008 !Edge
+    _edge_tags:
+    - a2
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    completion_from: 'return [x for x in range(start,stop) if x % factor == 0]
+
+      '
+    completion_to: "multiples = []\n    for i in range(start,stop+1):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    diff: "--- \n+++ \n@@ -12,6 +12,10 @@\n the second item+(including+the+second+item)\
+      \ in the input"
+    node_from: &id007 !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80]
+
+        '
+      - '[10, 15, 20, 25]
+
+        '
+      - '[1062, 1239, 1416, 1593, 1770, 1947]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 8
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[20, 40, 60, 80, 100]
+
+        '
+      - '[10, 15, 20, 25, 30]
+
+        '
+      - '[1062, 1239, 1416, 1593, 1770, 1947]
+
+        '
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    Function\
+      \ returns multiples from the first item to the second item in the input in multiples\
+      \ of the third item\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    Function returns\
+      \ multiples from the first item to the second item (including the second item)\
+      \ in the input in multiples of the third item\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student61
+  student72: null
+  student74: null
+cycle_summary:
+  student11:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues: []
+    completion_from: "multiples = []\n    for i in range(start,stop):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    completion_to: "result = []\n    i = start\n    while i < stop:\n        if i\
+      \ % factor == 0:\n            result.append(i)\n        i += 1\n    return result\n"
+    diff: "--- \n+++ \n@@ -5,16 +5,18 @@\n function ask for-start,+three+inputs:start,\
+      \ stop,-factor-and-by+factor.+By adding up start*factor and-getting+records+all+the\
+      \ sum of those"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for start, stop, factor and by adding up start*factor and getting sum\
+      \ of those all the way until we get the stop. Then create a list to hold those\
+      \ values\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for three inputs:start, stop, factor. By adding up start*factor and records\
+      \ all the sum of those all the way until we get the stop. Then create a list\
+      \ to hold those values\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student11
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues: []
+    completion_from: "result = []\n    i = start\n    while i < stop:\n        if\
+      \ i % factor == 0:\n            result.append(i)\n        i += 1\n    return\
+      \ result\n"
+    completion_to: "multiples = []\n    for i in range(start,stop):\n        if i\
+      \ % factor == 0:\n            multiples.append(i)\n    return multiples\n\n\
+      print(find_multiples(1,10,2))\n"
+    diff: "--- \n+++ \n@@ -27,7 +27,7 @@\n we get the-stop.+stop-start. Then create\
+      \ a"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for three inputs:start, stop, factor. By adding up start*factor and records\
+      \ all the sum of those all the way until we get the stop. Then create a list\
+      \ to hold those values\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    a function\
+      \ ask for three inputs:start, stop, factor. By adding up start*factor and records\
+      \ all the sum of those all the way until we get the stop-start. Then create\
+      \ a list to hold those values\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student11
+  - *id002
+  student13:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    completion_from: "multiples = []\n    for i in range(start,stop):\n        if\
+      \ i % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    completion_to: "multiples = []\n    for i in range(start,stop):\n        if i\
+      \ % factor == 0:\n            multiples.append(i)\n    return multiples\n"
+    diff: "--- \n+++ \n@@ -10,7 +10,7 @@\n of the factor-between+in the range of"
+    node_from: *id003
+    node_to: *id003
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    The function\
+      \ will find the multiples of the factor between the range of the start and stop\
+      \ numbers.\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    The function\
+      \ will find the multiples of the factor in the range of the start and stop numbers.\n\
+      \    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student13
+  - *id004
+  student16:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues:
+    - 2
+    completion_from: 'return list(range(start,stop+1,factor))
+
+      '
+    completion_to: 'return list(range(start,stop+1,factor))
+
+      '
+    diff: ''
+    node_from: &id005 !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[1, 21, 41, 61, 81]
+
+        '
+      - '[10, 15, 20, 25, 30]
+
+        '
+      - '[1000, 1177, 1354, 1531, 1708, 1885]
+
+        '
+    node_to: *id005
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    from the\
+      \ start number inputted, count by the factor until the stop number, including\
+      \ the stop number and return as list\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    from the start\
+      \ number inputted, count by the factor until the stop number, including the\
+      \ stop number and return as list\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student16
+  student2:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 3
+    clues: []
+    completion_from: "while start < stop:\n        print(start)\n        start +=\
+      \ factor\n\nfind_multiples(1,10,2)\n"
+    completion_to: "i = start\n    while i < stop:\n        print(i)\n        i +=\
+      \ factor\n\nfind_multiples(0,100,10)\n"
+    diff: ''
+    node_from: &id006 !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'None
+
+        '
+      - 'None
+
+        '
+      - 'None
+
+        '
+    node_to: *id006
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    This function\
+      \ prints the start value and adds the value factor until it reaches the stop\
+      \ value\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    This function\
+      \ prints the start value and adds the value factor until it reaches the stop\
+      \ value\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student2
+  student22: []
+  student5: []
+  student61:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    completion_from: 'return [x for x in range(start,stop) if x % factor == 0]
+
+      '
+    completion_to: 'return [x for x in range(start,stop) if x % factor == 0]
+
+      '
+    diff: "--- \n+++ \n@@ -4,10 +4,14 @@\n Function returns multiples-between+from+the\
+      \ first-two-items+item+to+the+second+item in the input"
+    node_from: *id007
+    node_to: *id007
+    prompt_from: "def find_multiples(start,stop,factor):\n    \"\"\"\n    Function\
+      \ returns multiples between first two items in the input in multiples of the\
+      \ third item\n    \"\"\"\n    "
+    prompt_to: "def find_multiples(start,stop,factor):\n    \"\"\"\n    Function returns\
+      \ multiples from the first item to the second item in the input in multiples\
+      \ of the third item\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student61
+  - *id008
+  student72: []
+  student74: []

@@ -1,0 +1,1429 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ in times:\n            times[meeting[0]].append(meeting[1])\n        else:\n\
+    \            times[meeting[0]] = [meeting[1]]\n    return times\n"
+  completion_to: "dictionary = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting:\n            if type(person) == int:\n                if meeting[0]\
+    \ in dictionary:\n                    dictionary[meeting[0]].append(person)\n\
+    \                else:\n                    dictionary[meeting[0]] = [person]\n\
+    \    return dictionary\n\nprint(times_with([['Melinda', 32], ['Melinda', 32],\
+    \ ['Melinda', 32], ['"
+  diff: "--- \n+++ \n@@ -29,13 +29,19 @@\n dictionary where the-age-given+key is the+name+and+appends+the\
+    \ value-for+which+is the-names-given+age+that+is+given. \"\"\""
+  node_from: &id017 !Node
+    _node_tags: null
+    id: 16
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{30: [[''Alice'', ''Bob'', ''Carol'']]}
+
+      '
+    - '{30: [[''Alice'', ''Bob'', ''Carol'']], 20: [[''Alice'', ''Bob'']]}
+
+      '
+    - '{10: [[''Alice'', ''Bob'']], 5: [[''Carol'']]}
+
+      '
+  node_to: &id001 !Node
+    _node_tags: null
+    id: 11
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{30: [30]}
+
+      '
+    - '{30: [30], 20: [20]}
+
+      '
+    - '{10: [10], 5: [5]}
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a list within a list, consisting of the age as an integer, and names as a string.\
+    \ The output creates a dictionary where the age given is the value for the names\
+    \ given \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ list within a list, consisting of the age as an integer, and names as a string.\
+    \ The output creates a dictionary where the key is the name and appends the value\
+    \ which is the age that is given. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student23
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "dictionary = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting:\n            if type(person) == int:\n                if meeting[0]\
+    \ in dictionary:\n                    dictionary[meeting[0]].append(person)\n\
+    \                else:\n                    dictionary[meeting[0]] = [person]\n\
+    \    return dictionary\n\nprint(times_with([['Melinda', 32], ['Melinda', 32],\
+    \ ['Melinda', 32], ['"
+  completion_to: "times_with = {}\n    for meeting in meetings:\n        if meeting[1]\
+    \ not in times_with:\n            times_with[meeting[1]] = [meeting[0]]\n    \
+    \    else:\n            times_with[meeting[1]].append(meeting[0])\n    return\
+    \ times_with\n"
+  diff: "--- \n+++ \n@@ -13,8 +13,6 @@\n consisting of the-age-as an integer, and@@\
+    \ -40,7 +38,7 @@\n which is the-age+integar that is given."
+  node_from: *id001
+  node_to: &id002 !Node
+    _node_tags: null
+    id: 4
+    stderr:
+    - 'TypeError: unhashable type: ''list'''
+    - 'TypeError: unhashable type: ''list'''
+    - 'TypeError: unhashable type: ''list'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a list within a list, consisting of the age as an integer, and names as a string.\
+    \ The output creates a dictionary where the key is the name and appends the value\
+    \ which is the age that is given. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ list within a list, consisting of the an integer, and names as a string. The\
+    \ output creates a dictionary where the key is the name and appends the value\
+    \ which is the integar that is given. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student23
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 3
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        if meeting[1]\
+    \ not in times_with:\n            times_with[meeting[1]] = [meeting[0]]\n    \
+    \    else:\n            times_with[meeting[1]].append(meeting[0])\n    return\
+    \ times_with\n"
+  completion_to: "times_with = {}\n    for meeting in meetings:\n        if meeting[1]\
+    \ not in times_with:\n            times_with[meeting[1]] = meeting[0]\n      \
+    \  else:\n            times_with[meeting[1]] += meeting[0]\n    return times_with\n"
+  diff: "--- \n+++ \n@@ -12,7 +12,6 @@\n list, consisting of-the an integer, and@@\
+    \ -32,7 +31,10 @@\n the name and-appends+updates+the+dictionary+with the value\
+    \ which"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a list within a list, consisting of the an integer, and names as a string. The\
+    \ output creates a dictionary where the key is the name and appends the value\
+    \ which is the integar that is given. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ list within a list, consisting of an integer, and names as a string. The output\
+    \ creates a dictionary where the key is the name and updates the dictionary with\
+    \ the value which is the integar that is given. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student23
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 4
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        if meeting[1]\
+    \ not in times_with:\n            times_with[meeting[1]] = meeting[0]\n      \
+    \  else:\n            times_with[meeting[1]] += meeting[0]\n    return times_with\n"
+  completion_to: "times_dict = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting[1:]:\n            if person not in times_dict:\n                times_dict[person]\
+    \ = meeting[0]\n            else:\n                times_dict[person] += meeting[0]\n\
+    \    return times_dict\n"
+  diff: "--- \n+++ \n@@ -13,12 +13,20 @@\n consisting of an-integer,+integer+in+the+outer+list,\
+    \ and names as a-string.+string+in+the+inner+list. The output creates"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a list within a list, consisting of an integer, and names as a string. The output\
+    \ creates a dictionary where the key is the name and updates the dictionary with\
+    \ the value which is the integar that is given. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ list within a list, consisting of an integer in the outer list, and names as\
+    \ a string in the inner list. The output creates a dictionary where the key is\
+    \ the name and updates the dictionary with the value which is the integar that\
+    \ is given. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student23
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times_dict = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting[1:]:\n            if person not in times_dict:\n                times_dict[person]\
+    \ = meeting[0]\n            else:\n                times_dict[person] += meeting[0]\n\
+    \    return times_dict\n"
+  completion_to: "times_dict = {}\n    for meeting in meetings:\n        for name\
+    \ in meeting[1:]:\n            if name not in times_dict:\n                times_dict[name]\
+    \ = meeting[0]\n            else:\n                times_dict[name] += meeting[0]\n\
+    \    return times_dict\n"
+  diff: "--- \n+++ \n@@ -37,7 +37,7 @@\n key is the-name+string and updates the@@\
+    \ -48,7 +48,7 @@\n which is the-integar+integer that is given."
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a list within a list, consisting of an integer in the outer list, and names\
+    \ as a string in the inner list. The output creates a dictionary where the key\
+    \ is the name and updates the dictionary with the value which is the integar that\
+    \ is given. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ list within a list, consisting of an integer in the outer list, and names as\
+    \ a string in the inner list. The output creates a dictionary where the key is\
+    \ the string and updates the dictionary with the value which is the integer that\
+    \ is given. \n    \"\"\"\n    "
+  state: fail
+  total_attempts: 6
+  username: student23
+- !Edge
+  _edge_tags:
+  - d5
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        for name in\
+    \ meeting[1:]:\n            if name in times:\n                times[name] +=\
+    \ meeting[0]\n            else:\n                times[name] = meeting[0]\n  \
+    \  return times\n"
+  completion_to: "times = {}\n    for i in range(len(meetings)):\n        for j in\
+    \ range(len(meetings[i])):\n            if type(meetings[i][j]) == int:\n    \
+    \            num = meetings[i][j]\n                for k in range(j+1, len(meetings[i])):\n\
+    \                    if meetings[i][k] in times:\n                        times[meetings[i][k]]\
+    \ +="
+  diff: "--- \n+++ \n@@ -24,7 +24,23 @@\n list of lists.-The+A+dictionary+is+made+where+the+keys+are+string+names+and+the+values+are+their+corresponding+numbers.The\
+    \ number provided in@@ -67,22 +83,4 @@\n was initially assigned.-The-output-is-a-dictionary-where-the-keys-are-string-names-and-the-values-are-their-corresponding-numbers.\
+    \ \"\"\""
+  node_from: *id002
+  node_to: &id011 !Node
+    _node_tags: null
+    id: 0
+    stderr:
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    The function is supposed\
+    \ to calculate the number of meetings of each string. It iterates through each\
+    \ list of the list of lists. The number provided in each list is assigned to all\
+    \ the strings in the list next to it. If a string name is repeated in some other\
+    \ list, the corresponding number is not assigned rather added to the number which\
+    \ was initially assigned. The output is a dictionary where the keys are string\
+    \ names and the values are their corresponding numbers.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    The function is supposed\
+    \ to calculate the number of meetings of each string. It iterates through each\
+    \ list of the list of lists. A dictionary is made where the keys are string names\
+    \ and the values are their corresponding numbers.The number provided in each list\
+    \ is assigned to all the strings in the list next to it. If a string name is repeated\
+    \ in some other list, the corresponding number is not assigned rather added to\
+    \ the number which was initially assigned. \n    \"\"\"\n    "
+  state: fail
+  total_attempts: 2
+  username: student35
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues:
+  - 1
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ not in times:\n            times[meeting[0]] = meeting[1]\n        else:\n \
+    \           times[meeting[0]] += meeting[1]\n    return times\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        for time in meeting:\n\
+    \            if time in times:\n                times[time] += 1\n           \
+    \ else:\n                times[time] = 1\n    return times\n"
+  diff: "--- \n+++ \n@@ -36,6 +36,13 @@\n to each key.+each+string+will+be+its+own+key.\
+    \ if a key"
+  node_from: &id003 !Node
+    _node_tags: null
+    id: 5
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{30: [''Alice'', ''Bob'', ''Carol'']}
+
+      '
+    - '{30: [''Alice'', ''Bob'', ''Carol''], 20: [''Alice'', ''Bob'']}
+
+      '
+    - '{10: [''Alice'', ''Bob''], 5: [''Carol'']}
+
+      '
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    the input will consist\
+    \ of a list of lists. an empty dictionary will be made. the strings will be keys\
+    \ in the dictionary and the numbers will be the values that correspond to each\
+    \ key. if a key appears twice, then the values will be added and will correspond\
+    \ to only one key.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    the input will consist of\
+    \ a list of lists. an empty dictionary will be made. the strings will be keys\
+    \ in the dictionary and the numbers will be the values that correspond to each\
+    \ key. each string will be its own key. if a key appears twice, then the values\
+    \ will be added and will correspond to only one key.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student40
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 2
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        for time in\
+    \ meeting:\n            if time in times:\n                times[time] += 1\n\
+    \            else:\n                times[time] = 1\n    return times\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        for person in\
+    \ meeting[1:]:\n            if person not in times:\n                times[person]\
+    \ = meeting[0]\n            else:\n                times[person] += meeting[0]\n\
+    \    return times\n"
+  diff: "--- \n+++ \n@@ -16,32 +16,27 @@\n will be made.+each+string+within the-strings+list\
+    \ will be-keys-in-the-dictionary-and+a+key. the numbers+outside+of+each+list will\
+    \ be the-values-that-correspond-to+value+for each-key.-each-string-will-be-its-own\
+    \ key. if a"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    the input will consist\
+    \ of a list of lists. an empty dictionary will be made. the strings will be keys\
+    \ in the dictionary and the numbers will be the values that correspond to each\
+    \ key. each string will be its own key. if a key appears twice, then the values\
+    \ will be added and will correspond to only one key.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    the input will consist of\
+    \ a list of lists. an empty dictionary will be made. each string within the list\
+    \ will be a  key. the numbers outside of each list will be the value for each\
+    \ key. if a key appears twice, then the values will be added and will correspond\
+    \ to only one key.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student40
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        for person in\
+    \ meeting[1:]:\n            if person not in times:\n                times[person]\
+    \ = meeting[0]\n            else:\n                times[person] += meeting[0]\n\
+    \    return times\n"
+  completion_to: "times_with = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting:\n            if person not in times_with:\n                times_with[person]\
+    \ = 1\n            else:\n                times_with[person] += 1\n    return\
+    \ times_with\n\nprint(times_with(meetings))\n"
+  diff: ''
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    the input will consist\
+    \ of a list of lists. an empty dictionary will be made. each string within the\
+    \ list will be a  key. the numbers outside of each list will be the value for\
+    \ each key. if a key appears twice, then the values will be added and will correspond\
+    \ to only one key.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    the input will consist of\
+    \ a list of lists. an empty dictionary will be made. each string within the list\
+    \ will be a  key. the numbers outside of each list will be the value for each\
+    \ key. if a key appears twice, then the values will be added and will correspond\
+    \ to only one key.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student40
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues:
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ in times:\n            times[meeting[0]] += meeting[1]\n        else:\n    \
+    \        times[meeting[0]] = meeting[1]\n    return times\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ in times:\n            times[meeting[0]] += meeting[1]\n        else:\n    \
+    \        times[meeting[0]] = meeting[1]\n    return times\n"
+  diff: "--- \n+++ \n@@ -14,11 +14,11 @@\n a dictionary with-a+each name-corresponding+pointing\
+    \ to-the+one number. If a"
+  node_from: *id003
+  node_to: *id003
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    Input is an array containing\
+    \ a number and names. Return a dictionary with a name corresponding to the number.\
+    \ If a name in the list of names appears next to more than one number, add the\
+    \ two numbers together when returning a number.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    Input is an array containing\
+    \ a number and names. Return a dictionary with each name pointing to one number.\
+    \ If a name in the list of names appears next to more than one number, add the\
+    \ two numbers together when returning a number.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student50
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues:
+  - 3
+  - 4
+  completion_from: "times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ in times:\n            times[meeting[0]] += meeting[1]\n        else:\n    \
+    \        times[meeting[0]] = meeting[1]\n    return times\n"
+  completion_to: "d = {}\n    for meeting in meetings:\n        if type(meeting) ==\
+    \ int:\n            num = meeting\n        else:\n            for name in meeting:\n\
+    \                if name in d:\n                    d[name] += num\n         \
+    \       else:\n                    d[name] = num\n    return d\n"
+  diff: "--- \n+++ \n@@ -13,35 +13,39 @@\n Return a dictionary-with+where each-name-pointing-to-one-number.-If-a\
+    \ name in the list of names-appears-next+points to+the+number.+If+there+are+several+lists+of+names+and+several+numbers,+if+names+appear+in\
+    \ more than one-number,+list, add the-two+corresponding numbers-together-when-returning-a-number.+together.\
+    \ \"\"\""
+  node_from: *id003
+  node_to: &id004 !Node
+    _node_tags: null
+    id: 12
+    stderr:
+    - 'UnboundLocalError: local variable ''num'' referenced before assignment'
+    - 'UnboundLocalError: local variable ''num'' referenced before assignment'
+    - 'UnboundLocalError: local variable ''num'' referenced before assignment'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    Input is an array containing\
+    \ a number and names. Return a dictionary with each name pointing to one number.\
+    \ If a name in the list of names appears next to more than one number, add the\
+    \ two numbers together when returning a number.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    Input is an array containing\
+    \ a number and names. Return a dictionary where each name in the list of names\
+    \ points to the number. If there are several lists of names and several numbers,\
+    \ if names appear in more than one list, add the corresponding numbers together.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student50
+- !Edge
+  _edge_tags:
+  - a1
+  - a2
+  attempt_id: 3
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "d = {}\n    for meeting in meetings:\n        if type(meeting)\
+    \ == int:\n            num = meeting\n        else:\n            for name in meeting:\n\
+    \                if name in d:\n                    d[name] += num\n         \
+    \       else:\n                    d[name] = num\n    return d\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        for name in meeting:\n\
+    \            if name in times:\n                times[name] += meeting[name]\n\
+    \            else:\n                times[name] = meeting[name]\n    return times\n"
+  diff: "--- \n+++ \n@@ -2,18 +2,15 @@\n times_with(meetings): \"\"\" Input-is-an-array-containing-a-number-and-names.+contains+lists+of+names+with+numbers+besides+them.\
+    \ Return-a-dictionary-where each name in@@ -21,31 +18,35 @@\n list of names-points-to+with\
+    \ the-number.+number+as+a+dictionary. If-there-are-several-lists-of-names-and-several-numbers,-if-names-appear+a+name+appears\
+    \ in more than one-list,+list+of+names, add the-corresponding-numbers-together.+number+besides+the+list+together+and+return+that+number+in+the+dictionary.\
+    \ \"\"\""
+  node_from: *id004
+  node_to: &id014 !Node
+    _node_tags: null
+    id: 13
+    stderr:
+    - 'IndexError: list index out of range'
+    - 'IndexError: list index out of range'
+    - 'IndexError: list index out of range'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    Input is an array containing\
+    \ a number and names. Return a dictionary where each name in the list of names\
+    \ points to the number. If there are several lists of names and several numbers,\
+    \ if names appear in more than one list, add the corresponding numbers together.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    Input contains lists of names\
+    \ with numbers besides them. Return each name in the list of names with the number\
+    \ as a dictionary. If a name appears in more than one list of names, add the number\
+    \ besides the list together and return that number in the dictionary.\n    \"\"\
+    \"\n    "
+  state: fail
+  total_attempts: 4
+  username: student50
+- !Edge
+  _edge_tags:
+  - a5
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        if meeting[1]\
+    \ in times_with:\n            times_with[meeting[1]] += meeting[0]\n        else:\n\
+    \            times_with[meeting[1]] = meeting[0]\n    return times_with\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        times[meeting[1]]\
+    \ = meeting[0]\n    return times\n"
+  diff: "--- \n+++ \n@@ -54,5 +54,13 @@\n place from the-list+list.+returns+a+dictionary+of+keys+and+their+values\
+    \ \"\"\""
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    takes a list of lists as\
+    \ an input. creates an empty dictionary. for each list in the inputted list, takes\
+    \ each value in the [1] place and make it a key and add it to the created dictionary,\
+    \ then make the value of that key the value in the [0] place from the list\n \
+    \   \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    takes a list of lists as\
+    \ an input. creates an empty dictionary. for each list in the inputted list, takes\
+    \ each value in the [1] place and make it a key and add it to the created dictionary,\
+    \ then make the value of that key the value in the [0] place from the list. returns\
+    \ a dictionary of keys and their values\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student59
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "times = {}\n    for meeting in meetings:\n        times[meeting[1]]\
+    \ = meeting[0]\n    return times\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        for name in meeting[1]:\n\
+    \            times[name] = meeting[0]\n    return times\n"
+  diff: "--- \n+++ \n@@ -9,58 +9,38 @@\n as an input.-creates-an-empty-dictionary.\
+    \ for each list-in+inside the inputted list,-takes-each+there+is+a value-in+and+a+list+of+names.+returns+a+dictionary+of\
+    \ the-[1]-place-and-make-it-a-key-and-add-it-to-the-created-dictionary,-then-make+names+with\
+    \ the value of-that-key the value in the-[0]-place+list+they+came from-the-list.-returns-a-dictionary-of-keys-and-their-values\
+    \ \"\"\""
+  node_from: *id002
+  node_to: &id006 !Node
+    _node_tags: null
+    id: 6
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{''Alice'': 30, ''Bob'': 30, ''Carol'': 30}
+
+      '
+    - '{''Alice'': 20, ''Bob'': 20, ''Carol'': 30}
+
+      '
+    - '{''Alice'': 10, ''Bob'': 10, ''Carol'': 5}
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    takes a list of lists as\
+    \ an input. creates an empty dictionary. for each list in the inputted list, takes\
+    \ each value in the [1] place and make it a key and add it to the created dictionary,\
+    \ then make the value of that key the value in the [0] place from the list. returns\
+    \ a dictionary of keys and their values\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    takes a list of lists as\
+    \ an input. for each list inside the inputted list, there is a value and a list\
+    \ of names. returns a dictionary of the names with the value of the value in the\
+    \ list they came from\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student59
+- !Edge
+  _edge_tags:
+  - a3
+  - a5
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  completion_from: "for i in range(len(meetings)):\n        for j in range(len(meetings[i][1])):\n\
+    \            if meetings[i][1][j] in times_with_dict:\n                times_with_dict[meetings[i][1][j]]\
+    \ += meetings[i][0]\n            else:\n                times_with_dict[meetings[i][1][j]]\
+    \ = meetings[i][0]\n"
+  completion_to: "dic = {}\n    for i in meetings:\n        for j in i[1]:\n     \
+    \       if j in dic:\n                dic[j] += i[0]\n            else:\n    \
+    \            dic[j] = i[0]\n    return dic\n"
+  diff: "--- \n+++ \n@@ -56,4 +56,38 @@\n added to that.+The+function+then+would+return+a+dictionary+containing+the+total+value+assigned+to+every+string.+Given+[+[30,+['Alice',+'Bob',+'Carol']]+],+the+function+would+return+{+'Alice':+30,+'Bob':+30,+'Carol':+30+}\
+    \ \"\"\""
+  node_from: &id015 !Node
+    _node_tags: null
+    id: 14
+    stderr:
+    - 'NameError: name ''times_with_dict'' is not defined'
+    - 'NameError: name ''times_with_dict'' is not defined'
+    - 'NameError: name ''times_with_dict'' is not defined'
+    stdout:
+    - ''
+    - ''
+    - ''
+  node_to: &id005 !Node
+    _node_tags: null
+    id: 8
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{''Alice'': 30, ''Bob'': 30, ''Carol'': 30}
+
+      '
+    - '{''Alice'': 50, ''Bob'': 50, ''Carol'': 30}
+
+      '
+    - '{''Alice'': 10, ''Bob'': 10, ''Carol'': 5}
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    This function takes in\
+    \ a int and a 2d list as parameters. The 2d list is given in the form [ [30, ['Alice',\
+    \ 'Bob', 'Carol']], [20, ['Alice', 'Bob']] ]. This function assigns the value\
+    \ of the int to every string in the list. If the string appears multiple times,\
+    \ the number is added to that. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    This function takes in a\
+    \ int and a 2d list as parameters. The 2d list is given in the form [ [30, ['Alice',\
+    \ 'Bob', 'Carol']], [20, ['Alice', 'Bob']] ]. This function assigns the value\
+    \ of the int to every string in the list. If the string appears multiple times,\
+    \ the number is added to that. The function then would return a dictionary containing\
+    \ the total value assigned to every string. Given [ [30, ['Alice', 'Bob', 'Carol']]\
+    \ ], the function would return { 'Alice': 30, 'Bob': 30, 'Carol': 30 }\n\n   \
+    \ \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student60
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        for name\
+    \ in meeting[1:]:\n            if name in times_with:\n                times_with[name]\
+    \ += meeting[0]\n            else:\n                times_with[name] = meeting[0]\n\
+    \    return times_with\n"
+  completion_to: "times_with = {}\n    for meeting in meetings:\n        for name\
+    \ in meeting[1]:\n            if name not in times_with:\n                times_with[name]\
+    \ = meeting[0]\n            else:\n                times_with[name] += meeting[0]\n\
+    \    return times_with\n\nprint(times_with([[10, [\"A\", \"B\", \"C\"]], [20,\
+    \ [\"A\", \"B\", \"D"
+  diff: "--- \n+++ \n@@ -36,10 +36,12 @@\n the dictionary has-one-of+a+name+from the-names+name+lists\
+    \ as the key,@@ -62,6 +64,12 @@\n list that the+list+of+names+that+has+the name\
+    \ is found"
+  node_from: *id002
+  node_to: *id005
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    The function takes in a\
+    \ list of lists and outputs a dictionary. Each list in the list has a number as\
+    \ the first entry, then a list of names. Each item in the dictionary has one of\
+    \ the names as the key, and the value is the sum of the numbers that are the first\
+    \ entry of each list that the name is found in. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    The function takes in a list\
+    \ of lists and outputs a dictionary. Each list in the list has a number as the\
+    \ first entry, then a list of names. Each item in the dictionary has a name from\
+    \ the name lists as the key, and the value is the sum of the numbers that are\
+    \ the first entry of each list that the list of names that has the name is found\
+    \ in. \n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student63
+- !Edge
+  _edge_tags:
+  - a2
+  - m3
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting:\n            if person in times_with:\n                times_with[person]\
+    \ += 1\n            else:\n                times_with[person] = 1\n    return\
+    \ times_with\n"
+  completion_to: "times_with = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting[1]:\n            if person in times_with:\n                times_with[person]\
+    \ += 1\n            else:\n                times_with[person] = 1\n    return\
+    \ times_with\n"
+  diff: "--- \n+++ \n@@ -1,12 +1,20 @@\n def times_with(meetings): \"\"\"-In+For+each+meeting+in+meetings,+look+at+index+1+for\
+    \ list-inside of-meetings,-create+persons.+Create a new dictionary@@ -19,10 +27,12\
+    \ @@\n the value as-number-outside+index+0 of-lists.+list+of+persons. For next\
+    \ list"
+  node_from: *id002
+  node_to: &id013 !Node
+    _node_tags: null
+    id: 3
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{''Alice'': 1, ''Bob'': 1, ''Carol'': 1}
+
+      '
+    - '{''Alice'': 2, ''Bob'': 2, ''Carol'': 1}
+
+      '
+    - '{''Alice'': 1, ''Bob'': 1, ''Carol'': 1}
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    In list inside of meetings,\
+    \ create a new dictionary with the key as name and the value as number outside\
+    \ of lists. For next list of lists, add number to keys in dictionary. If keys\
+    \ do not already exist, create new key.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    For each meeting in meetings,\
+    \ look at index 1 for list of persons. Create a new dictionary with the key as\
+    \ name and the value as index 0 of list of persons. For next list of lists, add\
+    \ number to keys in dictionary. If keys do not already exist, create new key.\n\
+    \    \"\"\"\n    "
+  state: fail
+  total_attempts: 2
+  username: student64
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 4
+  completion_from: 'return {name: time for time, names in meetings for name in names}
+
+
+    print(times_with([[1, ["A", "B", "C"]], [2, ["A", "B", "D"]]]))
+
+    '
+  completion_to: "times_dict = {}\n    for meeting in meetings:\n        for name\
+    \ in meeting[1]:\n            if name in times_dict:\n                times_dict[name]\
+    \ += meeting[0]\n            else:\n                times_dict[name] = meeting[0]\n\
+    \    return times_dict\n\nprint(times_with([[1, [\"A\", \"B\"]], [2, [\"A\", \"\
+    C\"]]]))\n"
+  diff: "--- \n+++ \n@@ -51,4 +51,19 @@\n is a value.+if+the+name+appears+more+than+once,+add+the+new+number+to+the+previous+number\
+    \ \"\"\""
+  node_from: *id006
+  node_to: *id005
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    Enter a list of lists.\
+    \ Each element in the lists is a list where index 0 is a number and index 1 is\
+    \ a list of names. for each element in the list of lists, create a dictionary\
+    \ where the name is a key and the number is a value. \n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    Enter a list of lists. Each\
+    \ element in the lists is a list where index 0 is a number and index 1 is a list\
+    \ of names. for each element in the list of lists, create a dictionary where the\
+    \ name is a key and the number is a value. if the name appears more than once,\
+    \ add the new number to the previous number\n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student69
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues:
+  - 2
+  completion_from: "#print(meetings)\n    times = []\n    for meeting in meetings:\n\
+    \        times.append(meeting[0])\n    times.sort()\n    #print(times)\n    #print(meetings)\n\
+    \    for meeting in meetings:\n        meeting[0] = times.index(meeting[0])\n\
+    \    #print(meetings)\n    return meetings\n"
+  completion_to: "#print(meetings)\n    #print(meetings[0])\n    #print(meetings[0][0])\n\
+    \    #print(meetings[0][1])\n    #print(meetings[0][1][0])\n    #print(meetings[0][1][1])\n\
+    \    #print(meetings[0][1][2])\n    #print(meetings[0][1][3])\n    #"
+  diff: "--- \n+++ \n@@ -17,5 +17,5 @@\n and output of-val1,2,3:val1+val:val1 \"\"\
+    \""
+  node_from: &id016 !Node
+    _node_tags: null
+    id: 15
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[[0, [''Alice'', ''Bob'', ''Carol'']]]
+
+      '
+    - '[[1, [''Alice'', ''Bob'', ''Carol'']], [0, [''Alice'', ''Bob'']]]
+
+      '
+    - '[[1, [''Alice'', ''Bob'']], [0, [''Carol'']]]
+
+      '
+  node_to: &id007 !Node
+    _node_tags: null
+    id: 1
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'None
+
+      '
+    - 'None
+
+      '
+    - 'None
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val1,2,3:val1\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val:val1\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student75
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues:
+  - 2
+  completion_from: "#print(meetings)\n    #print(meetings[0])\n    #print(meetings[0][0])\n\
+    \    #print(meetings[0][1])\n    #print(meetings[0][1][0])\n    #print(meetings[0][1][1])\n\
+    \    #print(meetings[0][1][2])\n    #print(meetings[0][1][3])\n    #"
+  completion_to: 'return [str(meetings[0]) + ":" + str(meetings[0]) for meetings in
+    meetings]
+
+    '
+  diff: "--- \n+++ \n@@ -17,5 +17,7 @@\n and output of-val:val1+val1:val1,+val2:val1,+val3:val1\
+    \ \"\"\""
+  node_from: *id007
+  node_to: &id008 !Node
+    _node_tags: null
+    id: 17
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''30:30'']
+
+      '
+    - '[''30:30'', ''20:20'']
+
+      '
+    - '[''10:10'', ''5:5'']
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val:val1\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val1:val1, val2:val1, val3:val1\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student75
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues:
+  - 2
+  completion_from: 'return [str(meetings[0]) + ":" + str(meetings[0]) for meetings
+    in meetings]
+
+    '
+  completion_to: "times = {}\n    for meeting in meetings:\n        time = meeting[0]\n\
+    \        people = meeting[1]\n        for person in people:\n            if person\
+    \ in times:\n                times[person].append(time)\n            else:\n \
+    \               times[person] = [time]\n    return times\n"
+  diff: "--- \n+++ \n@@ -17,7 +17,5 @@\n and output of-val1:val1,-val2:val1,-val3:val1+val(1,2,3):val0\
+    \ \"\"\""
+  node_from: *id008
+  node_to: &id009 !Node
+    _node_tags: null
+    id: 7
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{''Alice'': [30], ''Bob'': [30], ''Carol'': [30]}
+
+      '
+    - '{''Alice'': [30, 20], ''Bob'': [30, 20], ''Carol'': [30]}
+
+      '
+    - '{''Alice'': [10], ''Bob'': [10], ''Carol'': [5]}
+
+      '
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val1:val1, val2:val1, val3:val1\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val(1,2,3):val0\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student75
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues:
+  - 2
+  completion_from: "times = {}\n    for meeting in meetings:\n        time = meeting[0]\n\
+    \        people = meeting[1]\n        for person in people:\n            if person\
+    \ in times:\n                times[person].append(time)\n            else:\n \
+    \               times[person] = [time]\n    return times\n"
+  completion_to: "for meeting in meetings:\n        print(str(meeting[1]).replace(\"\
+    '\", \"\").replace(\"[\", \"\").replace(\"]\", \"\") + \":\" + str(meeting[0]))\n"
+  diff: "--- \n+++ \n@@ -17,5 +17,8 @@\n and output of-val(1,2,3):val0+val(1,2,3):val0,+print+without+\"\
+    []\" \"\"\""
+  node_from: *id009
+  node_to: &id010 !Node
+    _node_tags: null
+    id: 10
+    stderr:
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      5'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val(1,2,3):val0\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val(1,2,3):val0, print without \"[]\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student75
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 5
+  clues:
+  - 2
+  - 4
+  completion_from: "for meeting in meetings:\n        print(str(meeting[1]).replace(\"\
+    '\", \"\").replace(\"[\", \"\").replace(\"]\", \"\") + \":\" + str(meeting[0]))\n"
+  completion_to: "times = {}\n    for meeting in meetings:\n        for person in\
+    \ meeting[1]:\n            if person not in times:\n                times[person]\
+    \ = 0\n            times[person] += meeting[0]\n    return times\n"
+  diff: "--- \n+++ \n@@ -17,8 +17,9 @@\n and output of-val(1,2,3):val0,-print-without-\"\
+    []\"+val1:val0,+increase+val1+++1 \"\"\""
+  node_from: *id010
+  node_to: *id005
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val(1,2,3):val0, print without \"[]\"\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    def times_with(meetings):\
+    \ takes the input [ [30, ['Alice', 'Bob', 'Carol']] ] and produces and output\
+    \ of val1:val0, increase val1 + 1\n    \"\"\"\n    "
+  state: success
+  total_attempts: 6
+  username: student75
+- !Edge
+  _edge_tags:
+  - a5
+  attempt_id: 1
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "times_with = {}\n    for meeting in meetings:\n        for person\
+    \ in meeting:\n            if type(person) == str:\n                if person\
+    \ in times_with:\n                    times_with[person] += 1\n              \
+    \  else:\n                    times_with[person] = 1\n    return times_with\n\n\
+    print(times_with([[\"sam\", 3], [\"dean\", 3], [\"carl\", 2], [\"dean\", 2],"
+  completion_to: "times = {}\n    for meeting in meetings:\n        times[meeting[0]]\
+    \ = meeting[1]\n    return times\n"
+  diff: "--- \n+++ \n@@ -45,19 +45,7 @@\n most lists and-add-to-the-list-if-the-same-name-already-has-a-value-in-the+return+that\
+    \ dictionary. \"\"\""
+  node_from: &id012 !Node
+    _node_tags: null
+    id: 2
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '{}
+
+      '
+    - '{}
+
+      '
+    - '{}
+
+      '
+  node_to: *id003
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    you are going to have a\
+    \ nested list as an input. the inner most lists are going to have strings. next\
+    \ to them they will have an integer. your goal is to create a dictionary with\
+    \ the names in the inner most lists and add to the list if the same name already\
+    \ has a value in the dictionary.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    you are going to have a nested\
+    \ list as an input. the inner most lists are going to have strings. next to them\
+    \ they will have an integer. your goal is to create a dictionary with the names\
+    \ in the inner most lists and return that dictionary.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student79
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 2
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "times = {}\n    for meeting in meetings:\n        times[meeting[0]]\
+    \ = meeting[1]\n    return times\n"
+  completion_to: 'pass
+
+    '
+  diff: "--- \n+++ \n@@ -44,6 +44,10 @@\n inner most lists+with+the+corresponding+number\
+    \ and return that"
+  node_from: *id003
+  node_to: *id007
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    you are going to have a\
+    \ nested list as an input. the inner most lists are going to have strings. next\
+    \ to them they will have an integer. your goal is to create a dictionary with\
+    \ the names in the inner most lists and return that dictionary.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    you are going to have a nested\
+    \ list as an input. the inner most lists are going to have strings. next to them\
+    \ they will have an integer. your goal is to create a dictionary with the names\
+    \ in the inner most lists with the corresponding number and return that dictionary.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student79
+- !Edge
+  _edge_tags:
+  - l5
+  attempt_id: 3
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: 'pass
+
+    '
+  completion_to: "# create an empty dictionary\n    # loop through the list\n    #\
+    \ create a key with the name and the value with the number\n    # return the dictionary\n\
+    \    pass\n"
+  diff: "--- \n+++ \n@@ -49,7 +49,5 @@\n corresponding number and-return-that-dictionary.+return.\
+    \ \"\"\""
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    you are going to have a\
+    \ nested list as an input. the inner most lists are going to have strings. next\
+    \ to them they will have an integer. your goal is to create a dictionary with\
+    \ the names in the inner most lists with the corresponding number and return that\
+    \ dictionary.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    you are going to have a nested\
+    \ list as an input. the inner most lists are going to have strings. next to them\
+    \ they will have an integer. your goal is to create a dictionary with the names\
+    \ in the inner most lists with the corresponding number and return.\n    \"\"\"\
+    \n    "
+  state: neutral
+  total_attempts: 6
+  username: student79
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 4
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "# create an empty dictionary\n    # loop through the list\n  \
+    \  # create a key with the name and the value with the number\n    # return the\
+    \ dictionary\n    pass\n"
+  completion_to: "# your code here\n    pass\n\n"
+  diff: "--- \n+++ \n@@ -24,6 +24,10 @@\n next to them+in+an+outer+list they will\
+    \ have"
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    you are going to have a\
+    \ nested list as an input. the inner most lists are going to have strings. next\
+    \ to them they will have an integer. your goal is to create a dictionary with\
+    \ the names in the inner most lists with the corresponding number and return.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    you are going to have a nested\
+    \ list as an input. the inner most lists are going to have strings. next to them\
+    \ in an outer list they will have an integer. your goal is to create a dictionary\
+    \ with the names in the inner most lists with the corresponding number and return.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 6
+  username: student79
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 5
+  clues:
+  - 1
+  - 2
+  - 3
+  - 5
+  completion_from: "# your code here\n    pass\n\n"
+  completion_to: "# create a dictionary\n    # loop through the list\n    # check\
+    \ if the name is in the dictionary\n    # if it is, add the number to the value\n\
+    \    # if it is not, add the name as a key and the number as a value\n    # return\
+    \ the dictionary\n    times = {}\n    for meeting in meetings:\n        if meeting[0]\
+    \ in times:\n            times[meeting[0]] += meeting[1]\n       "
+  diff: "--- \n+++ \n@@ -42,12 +42,15 @@\n dictionary with the+keys+of names in the\
+    \ inner most lists+and with the corresponding"
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def times_with(meetings):\n    \"\"\"\n    you are going to have a\
+    \ nested list as an input. the inner most lists are going to have strings. next\
+    \ to them in an outer list they will have an integer. your goal is to create a\
+    \ dictionary with the names in the inner most lists with the corresponding number\
+    \ and return.\n    \"\"\"\n    "
+  prompt_to: "def times_with(meetings):\n    \"\"\"\n    you are going to have a nested\
+    \ list as an input. the inner most lists are going to have strings. next to them\
+    \ in an outer list they will have an integer. your goal is to create a dictionary\
+    \ with the keys of names in the inner most lists and with the corresponding number\
+    \ and return.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 6
+  username: student79
+nodes:
+- *id011
+- *id007
+- *id012
+- *id013
+- *id002
+- *id003
+- *id006
+- *id009
+- *id005
+- !Node
+  _node_tags: null
+  id: 9
+  stderr:
+  - 'TypeError: int() argument must be a string, a bytes-like object or a real number,
+    not ''list'''
+  - 'TypeError: int() argument must be a string, a bytes-like object or a real number,
+    not ''list'''
+  - 'TypeError: int() argument must be a string, a bytes-like object or a real number,
+    not ''list'''
+  stdout:
+  - ''
+  - ''
+  - ''
+- *id010
+- *id001
+- *id004
+- *id014
+- *id015
+- *id016
+- *id017
+- *id008
+problem: times_with
+problem_clues:
+  1: input is nested list
+  2: describe nested list structure
+  3: make dictionary where keys are people and values are numbers
+  4: sum times
+  5: return dictionary
+student_clues_tracker:
+  student23:
+  - attempt_id: 0
+    clues: &id018
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 5
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student35:
+  - attempt_id: 0
+    clues: &id019
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student40:
+  - attempt_id: 0
+    clues: &id020
+    - 1
+    - 3
+    - 4
+  - attempt_id: 1
+    clues:
+    - 1
+    - 3
+    - 4
+  - attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  - attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student50:
+  - attempt_id: 0
+    clues: &id021
+    - 3
+    - 4
+  - attempt_id: 1
+    clues:
+    - 3
+    - 4
+  - attempt_id: 2
+    clues:
+    - 3
+    - 4
+  - attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student59:
+  - attempt_id: 0
+    clues: &id022
+    - 1
+    - 2
+    - 3
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  - attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  student60:
+  - attempt_id: 0
+    clues: &id023
+    - 1
+    - 2
+    - 4
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  student63:
+  - attempt_id: 0
+    clues: &id024
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  student64:
+  - attempt_id: 0
+    clues: &id025
+    - 1
+    - 3
+    - 4
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student69:
+  - attempt_id: 0
+    clues: &id026
+    - 1
+    - 2
+    - 3
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+  student75:
+  - attempt_id: 0
+    clues: &id027
+    - 2
+  - attempt_id: 1
+    clues:
+    - 2
+  - attempt_id: 2
+    clues:
+    - 2
+  - attempt_id: 3
+    clues:
+    - 2
+  - attempt_id: 4
+    clues:
+    - 2
+  - attempt_id: 5
+    clues:
+    - 2
+    - 4
+  student79:
+  - attempt_id: 0
+    clues: &id028
+    - 1
+    - 2
+    - 3
+  - attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  - attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  - attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  - attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+  - attempt_id: 5
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+student_colors: {}
+student_start_node_tags:
+  student23: *id018
+  student35: *id019
+  student40: *id020
+  student50: *id021
+  student59: *id022
+  student60: *id023
+  student63: *id024
+  student64: *id025
+  student69: *id026
+  student75: *id027
+  student79: *id028

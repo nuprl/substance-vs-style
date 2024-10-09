@@ -1,0 +1,506 @@
+breakout_edges:
+  student14: &id002 !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 4
+    clues:
+    - 3
+    - 6
+    completion_from: "if 'sun' in planets:\n        return 15\n    else:\n       \
+      \ return 0\n"
+    completion_to: "if 'Sun' in planets:\n        return 15\n    else:\n        return\
+      \ 0\n"
+    diff: "--- \n+++ \n@@ -2,7 +2,7 @@\n planets_mass(planets): \"\"\" if-'sun'+'Sun'\
+      \ is in planets,"
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '0
+
+        '
+      - '0
+
+        '
+      - '0
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '15
+
+        '
+      - '15
+
+        '
+      - '0
+
+        '
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets,\
+      \ output is 15. else, output 0\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    if 'Sun' is in planets,\
+      \ output is 15. else, output 0\n    \"\"\"\n    "
+    state: success
+    total_attempts: 5
+    username: student14
+  student24: null
+  student46: &id004 !Edge
+    _edge_tags:
+    - l1
+    attempt_id: 2
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "for key in planets:\n        if key[0].isupper() == False:\n\
+      \            del planets[key]\n    mass = 0\n    for key in planets:\n     \
+      \   mass += planets[key]\n    return mass\n"
+    completion_to: "total = 0\n    for planet in planets:\n        if planet == \"\
+      Mercury\" or planet == \"Venus\" or planet == \"Earth\" or planet == \"Mars\"\
+      \ or planet == \"Jupiter\" or planet == \"Saturn\" or planet == \"Uranus\" or\
+      \ planet == \"Neptune\":\n            total += planets[planet]\n    return total\n"
+    diff: "--- \n+++ \n@@ -12,12 +12,7 @@\n the keys are-strings,-with-the-first-letter-capitalized,+strings\
+      \ and integers are"
+    node_from: &id003 !Node
+      _node_tags: null
+      id: 16
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '115
+
+        '
+      - '145
+
+        '
+      - '100
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '15
+
+        '
+      - '15
+
+        '
+      - '0
+
+        '
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    The function will take\
+      \ in a dictionary where the keys are strings, with the first letter capitalized,\
+      \ and integers are stored inside them. It will remove any strings that are not\
+      \ associated with planets, then it will take all the integers stored inside\
+      \ and add them together and output that.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    The function will take\
+      \ in a dictionary where the keys are strings and integers are stored inside\
+      \ them. It will remove any strings that are not associated with planets, then\
+      \ it will take all the integers stored inside and add them together and output\
+      \ that.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student46
+  student47: &id006 !Edge
+    _edge_tags:
+    - m2
+    - m3
+    attempt_id: 3
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: 'return planets[''Venus''][''mass''] + planets[''Mercury''][''mass'']
+
+      '
+    completion_to: "mass = 0\n    for planet in planets:\n        if planet['name']\
+      \ == 'Venus' or planet['name'] == 'Mercury':\n            mass += planet['mass']\n\
+      \    return mass\n"
+    diff: "--- \n+++ \n@@ -6,8 +6,15 @@\n all the integers+that+are associated with+with+a+string+that+is\
+      \ 'Venus' and 'Mercury'\""
+    node_from: &id005 !Node
+      _node_tags: null
+      id: 10
+      stderr:
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'KeyError: ''Venus'''
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - 'TypeError: string indices must be integers'
+      - 'TypeError: string indices must be integers'
+      - 'TypeError: string indices must be integers'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    \"add up all the integers\
+      \ associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    \"add up all the integers\
+      \ that are associated with with a string that is 'Venus' and 'Mercury'\"\n \
+      \   \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student47
+  student53: null
+  student55: &id008 !Edge
+    _edge_tags:
+    - m2
+    - m3
+    attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "total = 0\n    for planet in planets:\n        total += planets[planet]\n\
+      \    return total\n"
+    completion_to: "total = 0\n    for planet in planets:\n        if planet != \"\
+      Sun\" and planet != \"Pluto\":\n            total += planets[planet]\n    return\
+      \ total\n"
+    diff: "--- \n+++ \n@@ -40,4 +40,11 @@\n returns the total.+The+sun+and+pluto+are+not+planets.\
+      \ \"\"\""
+    node_from: &id007 !Node
+      _node_tags: null
+      id: 16
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '115
+
+        '
+      - '145
+
+        '
+      - '100
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '15
+
+        '
+      - '15
+
+        '
+      - '0
+
+        '
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    Write a function that\
+      \ gets a dictionary. The key of the dictionary is the name of the planet and\
+      \ the value is the mass. The function should sum up the masses of only the planets\
+      \ and returns the total.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    Write a function that\
+      \ gets a dictionary. The key of the dictionary is the name of the planet and\
+      \ the value is the mass. The function should sum up the masses of only the planets\
+      \ and returns the total. The sun and pluto are not planets.\n    \"\"\"\n  \
+      \  "
+    state: success
+    total_attempts: 5
+    username: student55
+  student58: null
+  student65: &id010 !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "total_mass = 0\n    for key in planets:\n        if key in planets:\n\
+      \            total_mass += planets[key][\"mass\"]\n    return total_mass\n"
+    completion_to: "total_mass = 0\n    for planet in planets:\n        if planet\
+      \ in planets_dict:\n            total_mass += planets[planet]\n        else:\n\
+      \            total_mass += 0\n    return total_mass\n"
+    diff: "--- \n+++ \n@@ -13,22 +13,26 @@\n the key is+the+name+of a planet,-it-takes-the-entry-and-adds-it+its+value+is+added\
+      \ to the total mass.+Otherwise,+0+is+added. The function-outputs+returns the\
+      \ total mass"
+    node_from: &id009 !Node
+      _node_tags: null
+      id: 15
+      stderr:
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'TypeError: ''int'' object is not subscriptable'
+      stdout:
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 17
+      stderr:
+      - 'NameError: name ''planets_dict'' is not defined. Did you mean: ''planets_mass''?'
+      - 'NameError: name ''planets_dict'' is not defined. Did you mean: ''planets_mass''?'
+      - 'NameError: name ''planets_dict'' is not defined. Did you mean: ''planets_mass''?'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    This function takes\
+      \ the input of a dictionary. If the key is a planet, it takes the entry and\
+      \ adds it to the total mass. The function outputs the total mass of all planets\
+      \ in the dictionary.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    This function takes the\
+      \ input of a dictionary. If the key is the name of a planet, its value is added\
+      \ to the total mass. Otherwise, 0 is added. The function returns the total mass\
+      \ of all planets in the dictionary.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student65
+cycle_summary:
+  student14:
+  - !Edge
+    _edge_tags:
+    - a6
+    attempt_id: 3
+    clues:
+    - 3
+    - 6
+    completion_from: "if 'sun' in planets:\n        return 15\n    else:\n       \
+      \ return 0\n"
+    completion_to: "if 'sun' in planets:\n        return 15\n    else:\n        return\
+      \ 0\n"
+    diff: "--- \n+++ \n@@ -5,9 +5,11 @@\n 'sun' is in-the-string,+planets, output\
+      \ is-15+15.+else,+output+0 \"\"\""
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    if 'sun' is in the string,\
+      \ output is 15\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    if 'sun' is in planets,\
+      \ output is 15. else, output 0\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student14
+  - *id002
+  student24:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 1
+    clues:
+    - 4
+    - 5
+    - 6
+    completion_from: "total_mass = 0\n    for name in planets:\n        if name in\
+      \ planets:\n            total_mass += planets[name]\n    return total_mass\n"
+    completion_to: "mass = 0\n    for planet in planets:\n        if planet in planet_mass:\n\
+      \            mass += planet_mass[planet]\n    return mass\n"
+    diff: "--- \n+++ \n@@ -5,6 +5,7 @@\n each item in+the dictionary, add the@@ -17,10\
+      \ +18,9 @@\n name is in-the-dictionary-for-planets.+a+different+dictionary.\
+      \ Return the sum"
+    node_from: !Node
+      _node_tags: null
+      id: 16
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '115
+
+        '
+      - '145
+
+        '
+      - '100
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 5
+      stderr:
+      - 'NameError: name ''planet_mass'' is not defined. Did you mean: ''planets_mass''?'
+      - 'NameError: name ''planet_mass'' is not defined. Did you mean: ''planets_mass''?'
+      - 'NameError: name ''planet_mass'' is not defined. Did you mean: ''planets_mass''?'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    For each item in dictionary,\
+      \ add the values from that name if the name is in the dictionary for planets.\
+      \ Return the sum of those values.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    For each item in the dictionary,\
+      \ add the values from that name if the name is in a different dictionary. Return\
+      \ the sum of those values.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student24
+  student46:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "# remove all keys that are not planets\n    for key in planets.keys():\n\
+      \        if key[0] != key[0].upper():\n            del planets[key]\n    # add\
+      \ all the values together\n    total = 0\n    for value in planets.values():\n\
+      \        total += value\n    return total\n"
+    completion_to: "for key in planets:\n        if key[0].isupper() == False:\n \
+      \           del planets[key]\n    mass = 0\n    for key in planets:\n      \
+      \  mass += planets[key]\n    return mass\n"
+    diff: ''
+    node_from: *id003
+    node_to: *id003
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    The function will take\
+      \ in a dictionary where the keys are strings, with the first letter capitalized,\
+      \ and integers are stored inside them. It will remove any strings that are not\
+      \ associated with planets, then it will take all the integers stored inside\
+      \ and add them together and output that.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    The function will take\
+      \ in a dictionary where the keys are strings, with the first letter capitalized,\
+      \ and integers are stored inside them. It will remove any strings that are not\
+      \ associated with planets, then it will take all the integers stored inside\
+      \ and add them together and output that.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student46
+  - *id004
+  student47:
+  - !Edge
+    _edge_tags:
+    - m5
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 5
+    completion_from: 'return sum(planets[''Venus''][''mass'']) + sum(planets[''Mercury''][''mass''])
+
+      '
+    completion_to: 'return planets[''Venus''][''mass''] + planets[''Mercury''][''mass'']
+
+      '
+    diff: "--- \n+++ \n@@ -5,7 +5,7 @@\n up all the-floats+integers associated with\
+      \ 'Venus'"
+    node_from: *id005
+    node_to: *id005
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    \"add up all the floats\
+      \ associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    \"add up all the integers\
+      \ associated with 'Venus' and 'Mercury'\"\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student47
+  - *id006
+  student53: []
+  student55:
+  - !Edge
+    _edge_tags:
+    - l1
+    - d2
+    - d3
+    attempt_id: 2
+    clues:
+    - 1
+    - 4
+    - 5
+    - 6
+    completion_from: "mass = 0\n    for planet in planets:\n        if planet != \"\
+      sun\" and planet != \"pluto\":\n            mass += planets[planet]\n    return\
+      \ mass\n"
+    completion_to: "total = 0\n    for planet in planets:\n        total += planets[planet]['mass']\n\
+      \    return total\n\n"
+    diff: "--- \n+++ \n@@ -7,49 +7,19 @@\n that gets a-dictionary-of-planets-and-their-masses.-All-the-planets-masses-in-a-dictionary-using-the-name-of-the-planet-as-the-key.+dictionary.\
+      \ The function should-return+sum+up the-sum+masses of-all the-planets'-masses.-The-sun+planets\
+      \ and-pluto-are-not-planets,-so-they-cannot-be-added.+returns+the+total. \"\"\
+      \""
+    node_from: *id007
+    node_to: !Node
+      _node_tags: null
+      id: 15
+      stderr:
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'TypeError: ''int'' object is not subscriptable'
+      - 'TypeError: ''int'' object is not subscriptable'
+      stdout:
+      - ''
+      - ''
+      - ''
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    Write a function that\
+      \ gets a dictionary of planets and their masses. All the planets masses in a\
+      \ dictionary using the name of the planet as the key. The function should return\
+      \ the sum of all the planets' masses. The sun and pluto are not planets, so\
+      \ they cannot be added.\n    \"\"\"\n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    Write a function that\
+      \ gets a dictionary. The function should sum up the masses of the planets and\
+      \ returns the total.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student55
+  - *id008
+  student58: []
+  student65:
+  - !Edge
+    _edge_tags:
+    - d1
+    attempt_id: 1
+    clues:
+    - 4
+    - 5
+    - 6
+    completion_from: "total_mass = 0\n    for key in planets:\n        if planets[key][\"\
+      type\"] == \"planet\":\n            total_mass += planets[key][\"mass\"]\n \
+      \   return total_mass\n"
+    completion_to: "total_mass = 0\n    for planet in planets:\n        total_mass\
+      \ += planets[planet]['mass']\n    return total_mass\n"
+    diff: "--- \n+++ \n@@ -3,27 +3,7 @@\n \"\"\" This function-takes-a-dictionary.-If-an-entry-is-a-planet,-then-it-adds-the-key-to-the-total-mass.-The-output-is+returns\
+      \ the total mass@@ -31,6 +11,6 @@\n all planets in-the-dictionary.+a+dictionary\
+      \ \"\"\""
+    node_from: *id009
+    node_to: *id009
+    prompt_from: "def planets_mass(planets):\n    \"\"\"\n    This function takes\
+      \ a dictionary. If an entry is a planet, then it adds the key to the total mass.\
+      \ The output is the total mass of all planets in the dictionary.\n    \"\"\"\
+      \n    "
+    prompt_to: "def planets_mass(planets):\n    \"\"\"\n    This function returns\
+      \ the total mass of all planets in a dictionary\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student65
+  - *id010

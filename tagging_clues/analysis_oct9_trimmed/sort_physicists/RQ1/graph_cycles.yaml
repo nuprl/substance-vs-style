@@ -1,0 +1,396 @@
+breakout_edges:
+  student12: &id002 !Edge
+    _edge_tags:
+    - m5
+    attempt_id: 3
+    clues:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort()\n    return physicists\n"
+    completion_to: 'return sorted([i[0] for i in scientists if i[2] == "Physics"],
+      key=lambda x: x[1])
+
+      '
+    diff: "--- \n+++ \n@@ -1,7 +1,7 @@\n def sort_physicists(scientists): \"\"\"-Create+Return\
+      \ a list of@@ -10,9 +10,8 @@\n element each list-within-the-list+of+scientists\
+      \ if the 2nd@@ -20,7 +19,7 @@\n says \"Physics\". Sort-the+this list from least@@\
+      \ -37,7 +36,7 @@\n list within the-big+scientists list. Return this"
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[]
+
+        '
+      - '[]
+
+        '
+      - '[]
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Ghez'']
+
+        '
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    Create a list\
+      \ of the 0th element each list within the list if the 2nd element says \"Physics\"\
+      . Sort the list from least to greatest by looking at the 1st value in each list\
+      \ within the big list. Return this sorted list.\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    Return a list of\
+      \ the 0th element each list of scientists if the 2nd element says \"Physics\"\
+      . Sort this list from least to greatest by looking at the 1st value in each\
+      \ list within the scientists list. Return this sorted list.\n    \"\"\"\n  \
+      \  "
+    state: success
+    total_attempts: 4
+    username: student12
+  student20: null
+  student36: null
+  student38: null
+  student43: null
+  student54: null
+  student57: &id005 !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[-1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x.split()[-1])\n    return physicists\n"
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[-1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x[1])\n    return physicists\n\nprint(sort_physicists(scientists))\n"
+    diff: "--- \n+++ \n@@ -29,15 +29,19 @@\n in a new-list-where+list.+however, if\
+      \ multiple values are to be-added,+added+to+the+new+list, list in order"
+    node_from: &id004 !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''Ghez'', ''Peiris'', ''Strickland'']
+
+        '
+      - '[''Ghez'', ''Peiris'', ''Strickland'']
+
+        '
+      - '[''Ghez'']
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Ghez'']
+
+        '
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    when given a list\
+      \ of lists, if last index of list in lists is equal to \"Physics\", return the\
+      \ first value in list of lists in a new list where if multiple values are to\
+      \ be added, list in order of ascending order of the second value in list of\
+      \ lists.\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    when given a list\
+      \ of lists, if last index of list in lists is equal to \"Physics\", return the\
+      \ first value in list of lists in a new list. however, if multiple values are\
+      \ to be added to the new list, list in order of ascending order of the second\
+      \ value in list of lists.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 3
+    username: student57
+  student77: &id007 !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 5
+    clues:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort()\n    return physicists\n"
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x[1])\n    return physicists\n"
+    diff: "--- \n+++ \n@@ -29,23 +29,45 @@\n Then sort the-list-into-ascending-order+scientists\
+      \ based on the-number+numbers given in the set of+lists+from+smallest+to+largest.+For+example,+if+the+scientist+has+the+smallest+number+attached+to+them+in+the+set+of\
+      \ lists,-but-don't-return+they+should+be+placed+first+in the-number.+output+list.\
+      \ \"\"\""
+    node_from: &id006 !Node
+      _node_tags: null
+      id: 0
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''Ghez'', ''Peiris'', ''Strickland'']
+
+        '
+      - '[''Ghez'', ''Peiris'', ''Strickland'']
+
+        '
+      - '[''Ghez'']
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 7
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Peiris'', ''Ghez'', ''Strickland'']
+
+        '
+      - '[''Ghez'']
+
+        '
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    Given a set of\
+      \ lists with a scientist, number, and a subject, respectively, only return the\
+      \ scientist if the subject is \"Physics\" in a list. Then sort the list into\
+      \ ascending order based on the number given in the set of lists, but don't return\
+      \ the number.\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists\
+      \ with a scientist, number, and a subject, respectively, only return the scientist\
+      \ if the subject is \"Physics\" in a list. Then sort the scientists based on\
+      \ the numbers given in the set of lists from smallest to largest. For example,\
+      \ if the scientist has the smallest number attached to them in the set of lists,\
+      \ they should be placed first in the output list.\n    \"\"\"\n    "
+    state: success
+    total_attempts: 6
+    username: student77
+cycle_summary:
+  student12:
+  - !Edge
+    _edge_tags:
+    - m5
+    attempt_id: 1
+    clues:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort()\n    return physicists\n"
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x[1])\n    return physicists\n"
+    diff: "--- \n+++ \n@@ -40,4 +40,8 @@\n the big list.+Return+this+sorted+list \"\
+      \"\""
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    Create a list\
+      \ of the 0th element in the list within the list if the 2nd element says \"\
+      Physics\". Sort the list from least to greatest by looking at the 1st value\
+      \ in the list within the big list.\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    Create a list of\
+      \ the 0th element in the list within the list if the 2nd element says \"Physics\"\
+      . Sort the list from least to greatest by looking at the 1st value in the list\
+      \ within the big list. Return this sorted list\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student12
+  - !Edge
+    _edge_tags:
+    - m1
+    attempt_id: 2
+    clues:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x[1])\n    return physicists\n"
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort()\n    return physicists\n"
+    diff: "--- \n+++ \n@@ -8,8 +8,7 @@\n the 0th element-in-the+each list within the@@\
+      \ -34,7 +33,7 @@\n 1st value in-the+each list within the@@ -43,5 +42,5 @@\n\
+      \ Return this sorted-list+list. \"\"\""
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    Create a list\
+      \ of the 0th element in the list within the list if the 2nd element says \"\
+      Physics\". Sort the list from least to greatest by looking at the 1st value\
+      \ in the list within the big list. Return this sorted list\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    Create a list of\
+      \ the 0th element each list within the list if the 2nd element says \"Physics\"\
+      . Sort the list from least to greatest by looking at the 1st value in each list\
+      \ within the big list. Return this sorted list.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 4
+    username: student12
+  - *id002
+  student20: []
+  student36: []
+  student38:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 1
+    clues:
+    - 1
+    completion_from: "new_list = []\n    for scientist in scientists:\n        if\
+      \ scientist == \"Peiris\":\n            new_list.append(scientist)\n       \
+      \ elif scientist == \"Ghez\":\n            new_list.append(scientist)\n    \
+      \    elif scientist == \"Strickland\":\n            new_list.append(scientist)\n\
+      \    return new_list\n\nprint(sort_physicists(physicists))\n"
+    completion_to: "new_list = []\n    for name in scientists:\n        if name ==\
+      \ \"Peiris\":\n            new_list.append(name)\n        elif name == \"Ghez\"\
+      :\n            new_list.append(name)\n        elif name == \"Strickland\":\n\
+      \            new_list.append(name)\n    return new_list\n"
+    diff: "--- \n+++ \n@@ -2,7 +2,6 @@\n sort_physicists(scientists): \"\"\" If-first\
+      \ position in list@@ -18,6 +17,8 @@\n If position in+list+in scientists has\
+      \ \"Ghez\",@@ -29,6 +30,8 @@\n If position in+list+in scientists has \"Strickland\"\
+      ,"
+    node_from: &id003 !Node
+      _node_tags: null
+      id: 2
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - '[]
+
+        '
+      - '[]
+
+        '
+      - '[]
+
+        '
+    node_to: *id003
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    If first position\
+      \ in list in scientists has \"Peiris\", add 'Peiris' to new list. If position\
+      \ in scientists has \"Ghez\", add 'Ghez' to new list. If position in scientists\
+      \ has \"Strickland\", add 'Strickland' to new list. \n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    If position in list\
+      \ in scientists has \"Peiris\", add 'Peiris' to new list. If position in list\
+      \ in scientists has \"Ghez\", add 'Ghez' to new list. If position in list in\
+      \ scientists has \"Strickland\", add 'Strickland' to new list. \n    \"\"\"\n\
+      \    "
+    state: fail
+    total_attempts: 2
+    username: student38
+  student43: []
+  student54: []
+  student57:
+  - !Edge
+    _edge_tags:
+    - a4
+    - a6
+    attempt_id: 1
+    clues:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    completion_from: 'return [scientist[0] for scientist in scientists if scientist[-1]
+      == "Physics"]
+
+
+      print(sort_physicists(scientists))'
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[-1] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort(key=lambda x: x.split()[-1])\n    return physicists\n"
+    diff: "--- \n+++ \n@@ -30,4 +30,26 @@\n a new list+where+if+multiple+values+are+to+be+added,+list+in+order+of+ascending+order+of+the+second+value+in+list+of+lists.\
+      \ \"\"\""
+    node_from: *id004
+    node_to: *id004
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    when given a list\
+      \ of lists, if last index of list in lists is equal to \"Physics\", return the\
+      \ first value in list of lists in a new list\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    when given a list\
+      \ of lists, if last index of list in lists is equal to \"Physics\", return the\
+      \ first value in list of lists in a new list where if multiple values are to\
+      \ be added, list in order of ascending order of the second value in list of\
+      \ lists.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 3
+    username: student57
+  - *id005
+  student77:
+  - !Edge
+    _edge_tags:
+    - a6
+    attempt_id: 1
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    completion_from: 'return [scientist for scientist, number, subject in scientists
+      if subject == "Physics"]
+
+      '
+    completion_to: "physicists = []\n    for scientist in scientists:\n        if\
+      \ scientist[2] == \"Physics\":\n            physicists.append(scientist[0])\n\
+      \    physicists.sort()\n    return physicists\n"
+    diff: "--- \n+++ \n@@ -26,4 +26,11 @@\n in a list.+Then+sort+the+list+into+alphabetical+order.\
+      \ \"\"\""
+    node_from: *id006
+    node_to: *id006
+    prompt_from: "def sort_physicists(scientists):\n    \"\"\"\n    Given a set of\
+      \ lists with a scientist, number, and a subject, respectively, only return the\
+      \ scientist if the subject is \"Physics\" in a list.\n    \"\"\"\n    "
+    prompt_to: "def sort_physicists(scientists):\n    \"\"\"\n    Given a set of lists\
+      \ with a scientist, number, and a subject, respectively, only return the scientist\
+      \ if the subject is \"Physics\" in a list. Then sort the list into alphabetical\
+      \ order.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 6
+    username: student77
+  - *id007

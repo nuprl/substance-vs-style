@@ -1,0 +1,764 @@
+breakout_edges:
+  student11: null
+  student13: null
+  student2: null
+  student22: &id009 !Edge
+    _edge_tags:
+    - d3
+    attempt_id: 3
+    clues: []
+    completion_from: 'return ''h'' + ''a'' * size + ''h''
+
+      '
+    completion_to: 'return "ha" * size
+
+
+      print(laugh(3))
+
+      '
+    diff: "--- \n+++ \n@@ -7,9 +7,11 @@\n integer and write+'ha'+as+many+times+as\
+      \ the-string-'h'+'a'-* integer \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 5
+      stderr: &id007
+      - ''
+      - ''
+      - ''
+      stdout: &id008
+      - 'haaaah
+
+        '
+      - 'hah
+
+        '
+      - 'haaah
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 4
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'hahahaha
+
+        '
+      - 'ha
+
+        '
+      - 'hahaha
+
+        '
+    prompt_from: "def laugh(size):\n    \"\"\"\n    take in an integer and write the\
+      \ string 'h'+'a' * integer\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    take in an integer and write 'ha'\
+      \ as many times as the integer\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 7
+    username: student22
+  student37: null
+  student5: null
+  student72: null
+  student8: &id014 !Edge
+    _edge_tags:
+    - m2
+    - m6
+    attempt_id: 17
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\"*size + \"h\" + laugh(size-1)\n\nprint(laugh(3))\n"
+    completion_to: "if size == 0:\n        return \"ha\"\n    else:\n        return\
+      \ \"ha\" + \"ha\" * (size - 1) + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
+    diff: "--- \n+++ \n@@ -1,12 +1,6 @@\n def laugh(size): \"\"\"-The-function-repeats-the-following-process:\
+      \ If n is@@ -15,7 +9,10 @@\n value, the function-returns+creates+a+string+containing\
+      \ \"h\" plus n@@ -30,12 +27,18 @@\n occurrences of \"a\",+repeated until-there-are-0-occurrences+\"\
+      ha\"+is+the+last+part of-\"a\"-left+the+string.+Then+return+the+string. \"\"\
+      \""
+    node_from: !Node
+      _node_tags: null
+      id: 3
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'haaaahhaaahhaahhahh
+
+        '
+      - 'hahh
+
+        '
+      - 'haaahhaahhahh
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 33
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'hahahaha hahaha haha ha ha
+
+        '
+      - 'ha ha
+
+        '
+      - 'hahaha haha ha ha
+
+        '
+    prompt_from: "def laugh(size):\n    \"\"\"\n    The function repeats the following\
+      \ process: If n is the input value, the function returns \"h\" plus n occurrences\
+      \ of \"a\", plus \" h\" plus n-1 occurrences of \"a\", until there are 0 occurrences\
+      \ of \"a\" left\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    If n is the input value, the function\
+      \ creates a string containing \"h\" plus n occurrences of \"a\", plus \" h\"\
+      \ plus n-1 occurrences of \"a\", repeated until \"ha\" is the last part of the\
+      \ string. Then return the string.\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 18
+    username: student8
+cycle_summary:
+  student11: []
+  student13: []
+  student2:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 7
+    clues: []
+    completion_from: "for i in range(size):\n        print(\"ha\", end=\"\")\n   \
+      \ print(\"!\")\n\nlaugh(3)\n"
+    completion_to: "for i in range(size):\n        print(\"ha\", end=\"\")\n    print(\"\
+      !\")\n\nlaugh(3)\n"
+    diff: "--- \n+++ \n@@ -7,7 +7,7 @@\n \"ha\" for every-input+value greater than\
+      \ zero."
+    node_from: !Node
+      _node_tags: null
+      id: 22
+      stderr: &id001
+      - 'IndentationError: expected an indented block after ''for'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''for'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''for'' statement on line
+        5'
+      stdout: &id002
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 22
+      stderr: *id001
+      stdout: *id002
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints \"ha\" for\
+      \ every input greater than zero.\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints \"ha\" for\
+      \ every value greater than zero.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 9
+    clues: []
+    completion_from: 'print(''ha''*size)
+
+
+      laugh(5)
+
+      '
+    completion_to: 'print("ha" * size)
+
+
+      laugh(3)
+
+      '
+    diff: "--- \n+++ \n@@ -4,7 +4,5 @@\n This function prints-a-string-'ha'+ha \"\"\
+      \""
+    node_from: !Node
+      _node_tags: null
+      id: 23
+      stderr: &id003
+      - 'RecursionError: maximum recursion depth exceeded'
+      - 'RecursionError: maximum recursion depth exceeded'
+      - 'RecursionError: maximum recursion depth exceeded'
+      stdout: &id004
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints a string\
+      \ 'ha'\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints ha\n    \"\"\
+      \"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - d3
+    - d4
+    attempt_id: 12
+    clues: []
+    completion_from: "ha = \"ha\"\n    print(ha * size, end=\" \")\n    return\n\n\
+      laugh(3)\n"
+    completion_to: 'print("ha" * size)
+
+
+      laugh(10)
+
+      '
+    diff: "--- \n+++ \n@@ -5,11 +5,4 @@\n function prints ha-times-the-input-value-with-spaces-between\
+      \ \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 35
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'None
+
+        '
+      - 'None
+
+        '
+      - 'None
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints ha times\
+      \ the input value with spaces between\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints ha \n    \"\
+      \"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 13
+    clues: []
+    completion_from: 'print("ha" * size)
+
+
+      laugh(10)
+
+      '
+    completion_to: 'print("ha" * size + "!")
+
+
+      laugh(3)
+
+      '
+    diff: "--- \n+++ \n@@ -4,5 +4,6 @@\n This function prints-ha+a+word \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    node_to: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints ha \n   \
+      \ \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints a word\n  \
+      \  \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - a1
+    - a3
+    attempt_id: 14
+    clues:
+    - 1
+    - 3
+    completion_from: 'print("ha" * size + "!")
+
+
+      laugh(3)
+
+      '
+    completion_to: 'print("ha" * size)
+
+
+      laugh(10)
+
+      '
+    diff: "--- \n+++ \n@@ -4,6 +4,9 @@\n This function prints-a-word+\"ha\"+times+the+value+inputted\
+      \ \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    node_to: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints a word\n\
+      \    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints \"ha\" times\
+      \ the value inputted \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 15
+    clues:
+    - 1
+    - 3
+    completion_from: 'print("ha" * size)
+
+
+      laugh(10)
+
+      '
+    completion_to: 'print("ha" * size)
+
+
+      laugh(3)
+
+      '
+    diff: "--- \n+++ \n@@ -5,7 +5,11 @@\n function prints \"ha\"+the+amount+of times+as\
+      \ the value inputted"
+    node_from: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    node_to: !Node
+      _node_tags: null
+      id: 23
+      stderr: *id003
+      stdout: *id004
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function prints \"ha\" times\
+      \ the value inputted \n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function prints \"ha\" the\
+      \ amount of times as the value inputted \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 21
+    clues:
+    - 1
+    - 3
+    - 6
+    completion_from: "ha = \"ha\"\n    ha_size = \"ha\" * size\n    return ha_size\
+      \ + \"!\"\n\nprint(laugh(3))\n"
+    completion_to: "laugh = \"ha\"\n    laugh += \"ha\" * (size - 1)\n    laugh +=\
+      \ \"!\"\n    return laugh\n\nprint(laugh(3))"
+    diff: ''
+    node_from: !Node
+      _node_tags: null
+      id: 16
+      stderr: &id005
+      - ''
+      - ''
+      - ''
+      stdout: &id006
+      - 'hahahaha!
+
+        '
+      - 'ha!
+
+        '
+      - 'hahaha!
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 16
+      stderr: *id005
+      stdout: *id006
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function uses laugh to determine\
+      \ the amount of times \"ha\" is printed and the length of a's that appear after\
+      \ the h. \n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function uses laugh to determine\
+      \ the amount of times \"ha\" is printed and the length of a's that appear after\
+      \ the h. \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 22
+    clues:
+    - 1
+    - 3
+    - 6
+    completion_from: "laugh = \"ha\"\n    laugh += \"ha\" * (size - 1)\n    laugh\
+      \ += \"!\"\n    return laugh\n\nprint(laugh(3))"
+    completion_to: 'return "ha" + "ha" * (size - 1) + "!"
+
+
+      print(laugh(3))
+
+      '
+    diff: "--- \n+++ \n@@ -11,7 +11,7 @@\n amount of times-\"ha\"+ha is printed and"
+    node_from: !Node
+      _node_tags: null
+      id: 16
+      stderr: *id005
+      stdout: *id006
+    node_to: !Node
+      _node_tags: null
+      id: 16
+      stderr: *id005
+      stdout: *id006
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function uses laugh to determine\
+      \ the amount of times \"ha\" is printed and the length of a's that appear after\
+      \ the h. \n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function uses laugh to determine\
+      \ the amount of times ha is printed and the length of a's that appear after\
+      \ the h. \n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 26
+    username: student2
+  - !Edge
+    _edge_tags:
+    - a5
+    attempt_id: 25
+    clues:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    completion_from: "for i in range(size):\n        print(\"ha\", end=\"\")\n   \
+      \ print(\"h\")\n"
+    completion_to: "for i in range(size):\n        print(\"h\" + \"a\"*i + \"h\")\n\
+      \    for i in range(size-1,0,-1):\n        print(\"h\" + \"a\"*i + \"h\")\n"
+    diff: "--- \n+++ \n@@ -14,7 +14,8 @@\n amount of times-ha+an+h is printed. This@@\
+      \ -30,10 +31,13 @@\n h with a's+after+it the size of-laugh+laugh.+It then subtracts\
+      \ 1@@ -46,5 +50,15 @@\n h with less-a's+a's.+It+does+this+until+it+reaches+a+value+of+1\
+      \ \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 22
+      stderr: *id001
+      stdout: *id002
+    node_to: !Node
+      _node_tags: null
+      id: 22
+      stderr: *id001
+      stdout: *id002
+    prompt_from: "def laugh(size):\n    \"\"\"\n    This function uses the size of\
+      \ laugh to determine the amount of times ha is printed. This function creates\
+      \ a loop in which it prints an h with a's the size of laugh then subtracts 1\
+      \ from the size and prints an h with less a's\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    This function uses the size of laugh\
+      \ to determine the amount of times an h is printed. This function creates a\
+      \ loop in which it prints an h with a's after it the size of laugh. It then\
+      \ subtracts 1 from the size and prints an h with less a's. It does this until\
+      \ it reaches a value of 1\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 26
+    username: student2
+  student22:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 2
+    clues:
+    - 3
+    completion_from: "if size < 1:\n        return 'h'\n    else:\n        return\
+      \ 'h' + 'a' * size + 'h'\n\nprint(laugh(3))\n"
+    completion_to: 'return ''h'' + ''a'' * size + ''h''
+
+      '
+    diff: "--- \n+++ \n@@ -9,14 +9,7 @@\n write the string-'h'+'a',-but-add-as-many-'a'-as-the+'h'+'a'+*\
+      \ integer-amount \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 5
+      stderr: *id007
+      stdout: *id008
+    node_to: !Node
+      _node_tags: null
+      id: 5
+      stderr: *id007
+      stdout: *id008
+    prompt_from: "def laugh(size):\n    \"\"\"\n    take in an integer and write the\
+      \ string 'h'+'a', but add as many 'a' as the integer amount\n    \"\"\"\n  \
+      \  "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    take in an integer and write the\
+      \ string 'h'+'a' * integer\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 7
+    username: student22
+  - *id009
+  student37: []
+  student5:
+  - !Edge
+    _edge_tags:
+    - m4
+    attempt_id: 3
+    clues:
+    - 1
+    - 4
+    - 6
+    completion_from: "if size == 0:\n        return \"\"\n    else:\n        return\
+      \ \"ha\" + \"a\" * (size - 1) + \" \" + laugh(size - 1)\n\n\nprint(laugh(3))\n"
+    completion_to: "if size == 0:\n        return \"\"\n    else:\n        return\
+      \ \"ha\" + \"a\" * (size - 1) + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
+    diff: "--- \n+++ \n@@ -38,7 +38,7 @@\n current number of-'ha's+\"ha\"s left to\
+      \ produce.@@ -50,4 +50,10 @@\n between the ha's+but+not+at+the+very+end. \"\"\
+      \""
+    node_from: !Node
+      _node_tags: null
+      id: 2
+      stderr: &id010
+      - ''
+      - ''
+      - ''
+      stdout: &id011
+      - "haaaa haaa haa ha \n"
+      - "ha \n"
+      - "haaa haa ha \n"
+    node_to: !Node
+      _node_tags: null
+      id: 2
+      stderr: *id010
+      stdout: *id011
+    prompt_from: "def laugh(size):\n    \"\"\"\n    the function laugh will take the\
+      \ input of an int and should output a string with \"ha\" as many times as the\
+      \ input int. However each respective \"ha\" has as many a's as the current number\
+      \ of 'ha's left to produce. and add a space in between the ha's\n\n\n    \"\"\
+      \"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    the function laugh will take the\
+      \ input of an int and should output a string with \"ha\" as many times as the\
+      \ input int. However each respective \"ha\" has as many a's as the current number\
+      \ of \"ha\"s left to produce. and add a space in between the ha's but not at\
+      \ the very end. \n\n\n    \"\"\"\n    "
+    state: fail
+    total_attempts: 4
+    username: student5
+  student72:
+  - !Edge
+    _edge_tags:
+    - d5
+    attempt_id: 3
+    clues:
+    - 1
+    - 2
+    - 3
+    - 6
+    completion_from: "if size == 0:\n        return \"ha\"\n    else:\n        return\
+      \ \"ha\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
+    completion_to: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"ha\" + laugh(size - 1)\n"
+    diff: "--- \n+++ \n@@ -36,5 +36,5 @@\n when a =-1.+2. \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 25
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'haaaaa haaaa haaa haa ha
+
+        '
+      - 'haa ha
+
+        '
+      - 'haaaa haaa haa ha
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 12
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'hahahahah
+
+        '
+      - 'hah
+
+        '
+      - 'hahahah
+
+        '
+    prompt_from: "def laugh(size):\n    \"\"\"\n    Produce a string, with each word\
+      \ starting with h and then however many a's the input says. Decrease the count\
+      \ of a's by one following the h for each word after. Stop when a = 1.\n    \"\
+      \"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    Produce a string, with each word\
+      \ starting with h and then however many a's the input says. Decrease the count\
+      \ of a's by one following the h for each word after. Stop when a = 2.\n    \"\
+      \"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student72
+  student8:
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 4
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\"*size + \" \" + laugh(size-1)\n\nprint(laugh(3))"
+    completion_to: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
+    diff: ''
+    node_from: !Node
+      _node_tags: null
+      id: 15
+      stderr: &id012
+      - ''
+      - ''
+      - ''
+      stdout: &id013
+      - 'haaaa haaa haa ha h
+
+        '
+      - 'ha h
+
+        '
+      - 'haaa haa ha h
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 15
+      stderr: *id012
+      stdout: *id013
+    prompt_from: "def laugh(size):\n    \"\"\"\n    If n is the input value, the function\
+      \ returns \"h\" plus n occurrences of \"a\" after, then \" h\" plus n-1 occurrences\
+      \ of \"a\" after, and repeats this while the last two characters in the string\
+      \ are not \"ha\".\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    If n is the input value, the function\
+      \ returns \"h\" plus n occurrences of \"a\" after, then \" h\" plus n-1 occurrences\
+      \ of \"a\" after, and repeats this while the last two characters in the string\
+      \ are not \"ha\".\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 18
+    username: student8
+  - !Edge
+    _edge_tags:
+    - l5
+    attempt_id: 12
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "if size == 0:\n        return \"ha\"\n    else:\n        return\
+      \ \"ha\" + laugh(size - 1)\n\nprint(laugh(3))"
+    completion_to: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\"*size + \" \" + laugh(size-1)\n\nprint(laugh(3))"
+    diff: "--- \n+++ \n@@ -30,16 +30,11 @@\n occurrences of \"a\",-etc.,-and-stops-when-\"\
+      ha\"-is+etc.+Doesn't+add the last-part-of-the-string.+\"+h\" \"\"\""
+    node_from: !Node
+      _node_tags: null
+      id: 30
+      stderr:
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'hahahahaha
+
+        '
+      - 'haha
+
+        '
+      - 'hahahaha
+
+        '
+    node_to: !Node
+      _node_tags: null
+      id: 15
+      stderr: *id012
+      stdout: *id013
+    prompt_from: "def laugh(size):\n    \"\"\"\n    The function repeats the following\
+      \ process: If n is the input value, the function returns \"h\" plus n occurrences\
+      \ of \"a\", then \" h\" plus n-1 occurrences of \"a\", etc., and stops when\
+      \ \"ha\" is the last part of the string.\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    The function repeats the following\
+      \ process: If n is the input value, the function returns \"h\" plus n occurrences\
+      \ of \"a\", then \" h\" plus n-1 occurrences of \"a\", etc. Doesn't add the\
+      \ last \" h\"\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 18
+    username: student8
+  - !Edge
+    _edge_tags:
+    - 0
+    attempt_id: 13
+    clues:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    completion_from: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\"*size + \" \" + laugh(size-1)\n\nprint(laugh(3))"
+    completion_to: "if size == 0:\n        return \"h\"\n    else:\n        return\
+      \ \"h\" + \"a\" * size + \" \" + laugh(size - 1)\n\nprint(laugh(3))\n"
+    diff: "--- \n+++ \n@@ -31,8 +31,7 @@\n of \"a\", etc.-Doesn't-add+Removes the\
+      \ last \""
+    node_from: !Node
+      _node_tags: null
+      id: 15
+      stderr: *id012
+      stdout: *id013
+    node_to: !Node
+      _node_tags: null
+      id: 15
+      stderr: *id012
+      stdout: *id013
+    prompt_from: "def laugh(size):\n    \"\"\"\n    The function repeats the following\
+      \ process: If n is the input value, the function returns \"h\" plus n occurrences\
+      \ of \"a\", then \" h\" plus n-1 occurrences of \"a\", etc. Doesn't add the\
+      \ last \" h\"\n    \"\"\"\n    "
+    prompt_to: "def laugh(size):\n    \"\"\"\n    The function repeats the following\
+      \ process: If n is the input value, the function returns \"h\" plus n occurrences\
+      \ of \"a\", then \" h\" plus n-1 occurrences of \"a\", etc. Removes the last\
+      \ \" h\"\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 18
+    username: student8
+  - *id014

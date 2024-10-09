@@ -1,0 +1,57 @@
+{
+   "start_node": {
+      "student10": {
+         "0": "model misinterprets instruction, backwards as reverse over of splits, not reverse letters"
+      },
+      "student21": {
+         "0": "same as student10; language ambiguity- 'concatenated' means append to end, model confised"
+      },
+      "student26": {
+         "0": "1-index instead of 0-index"
+      },
+      "student30": {
+         "0": "Model misinterprets before as after"
+      }
+   },
+   "success": {
+      "student25": {
+         "1": "Interesting case where model manages to successfully interpret ambiguous language of student."
+      }
+   },
+   "fail": {
+      "student18": {
+         "3": "Model does wrong recursion order"
+      },
+      "student21": {
+         "5": "same error as previous attempt"
+      },
+      "student30": {
+         "4": "same as previous attempt"
+      }
+   },
+   "neutral": {
+      "student26": {
+         "1": "display instead of return makes model misinterpret print instead of return"
+      },
+      "student21": {
+         "1": "same error as previous attempt",
+         "2": "same error as previous attempt",
+         "3": "same error as previous attempt",
+         "4": "same error as previous attempt"
+      },
+      "student30": {
+         "2": "model misinterpretation same as student10",
+         "3": "model misinterprets order"
+      }
+   },
+   "cycles": {
+      "student30": {
+         "3": "model misinterpretation, same as previous"
+      }
+   },
+   "breakout": {
+      "student21": {
+         "2": "breakout goes into another cycle"
+      }
+   }
+}

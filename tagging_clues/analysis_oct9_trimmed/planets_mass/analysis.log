@@ -1,0 +1,40 @@
+# Analyzing single problem planets_mass.yaml
+Success node 2
+## Cycle edge info:
+student14:[[7, 7, [3, 6], ['a6']], [7, 2, [3, 6], ['m3']]]
+breakoutedge student14
+student24:[[16, 5, [4, 5, 6], ['m4']]]
+student46:[[16, 16, [1, 2, 3, 4, 5, 6], [0]], [16, 2, [1, 2, 3, 4, 5, 6], ['l1']]]
+breakoutedge student46
+student47:[[10, 10, [2, 3, 5], ['m5']], [10, 0, [2, 3, 5], ['m2', 'm3']]]
+breakoutedge student47
+student53:[]
+student55:[[16, 15, [1, 4, 5, 6], ['l1', 'd2', 'd3']], [16, 2, [1, 2, 3, 4, 5, 6], ['m2', 'm3']]]
+breakoutedge student55
+student58:[]
+student65:[[15, 15, [4, 5, 6], ['d1']], [15, 17, [1, 2, 3, 4, 5, 6], ['m4']]]
+breakoutedge student65
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student14             2        True       False
+1  student24             1       False        True
+2  student46             2        True       False
+3  student47             2       False        True
+4  student53             0        True       False
+5  student55             2        True       False
+6  student58             0       False        True
+7  student65             2       False        True
+Total num fail: 4, num fail has loop: 3, 75.0 %
+Total num success: 4, num succ has loop: 3, 75.0 %
+Likelihood fail with cycle 0.5 vs. no cycle 0.5
+     student  cycle_length  is_success  is_failure  has_cycle  not_has_cycle
+0  student14             2        True       False          1              0
+1  student24             1       False        True          1              0
+2  student46             2        True       False          1              0
+3  student47             2       False        True          1              0
+4  student53             0        True       False          0              1
+5  student55             2        True       False          1              0
+6  student58             0       False        True          0              1
+7  student65             2       False        True          1              0
+P(is_success) | P(has_cycle): 0.5
+P(is_success) | NOT P(has_cycle): 0.5

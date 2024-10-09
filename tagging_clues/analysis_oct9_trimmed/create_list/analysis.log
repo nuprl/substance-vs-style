@@ -1,0 +1,20 @@
+# Analyzing single problem create_list.yaml
+Success node 2
+## Cycle edge info:
+student20:[]
+student36:[[5, 5, [2, 3, 5], [0]], [5, 2, [2, 3, 4, 5], ['a4']]]
+breakoutedge student36
+student42:[]
+student43:[]
+student54:[]
+student57:[]
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student20             0        True       False
+1  student36             2        True       False
+2  student42             0        True       False
+3  student43             0        True       False
+4  student54             0        True       False
+5  student57             0        True       False
+Total num fail: 0, num fail has loop: 0, 0 %
+Total num success: 6, num succ has loop: 1, 16.666666666666668 %

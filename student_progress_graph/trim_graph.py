@@ -1,22 +1,13 @@
 from collections import defaultdict
 import glob
-import re
 import pandas as pd
-from re import L
 import json
 import argparse
 import os
-import yaml
-import glob
-import pandas as pd
-import networkx as nx
 from .analysis_utils import *
-from scipy import stats
 from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
-import contextlib
-from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR, IGNORE_FAIL
 from tqdm import tqdm
 
 def main(args):

@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR, IGNORE_FAIL
+from .analysis_data import OUT_OF_TOKENS_ERROR
 
 def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> str:
     results = ""
@@ -36,7 +36,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
             print(f"Skipping {graph_name}")
             continue
         graph = load_graph(graph_yaml)
-        # recompute state on edges
+        graph = clean_graph(graph)
         graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
         problem_answers = load_problem_answers(problem_clues_yaml, graph.problem)
         graph = populate_clues(graph)

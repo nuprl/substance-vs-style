@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR, IGNORE_FAIL
+from .analysis_data import OUT_OF_TOKENS_ERROR
 '''
 Analyzing common patterns in graphs
 
@@ -27,21 +27,6 @@ NOTE:
     misinterprets good prompts for problem specific reasons)
 '''
 global SUPPRESS_ASSERTS
-
-def clean_graph(graph: Graph, problem_answers: List[str]) -> Graph:
-    """
-    Trims graph for extra edges after initial success.
-    Removes observed cases where student fails but is marked as success due to
-    test coverage being low.
-    Removes students with out of token errors.
-    """
-    students_to_remove = IGNORE_SUCCESS.get(graph.problem,[]) + \
-                        OUT_OF_TOKENS_ERROR.get(graph.problem, []) + \
-                        IGNORE_FAIL.get(graph.problem, [])
-    if len(students_to_remove) > 0:
-        graph = remove_students(graph, students_to_remove)
-        print("Removed students:", students_to_remove)
-    return graph
 
 def display_edge_info(graph: Graph):
     """
@@ -92,11 +77,7 @@ def run_RQ1(graph: Graph, outdir:str):
     df = df_cycle_summary(cycle_summary, graph)
     
     def _check_success(item):
-        if graph.problem in IGNORE_SUCCESS.keys() and \
-            item["student"] in IGNORE_SUCCESS[graph.problem]:
-                return False
-        else:
-            return item["is_success"]
+        return item["is_success"]
         
     df["is_success"] = df.apply(_check_success,axis=1)
     df["is_failure"] = df.apply(lambda x: not x["is_success"], axis=1)

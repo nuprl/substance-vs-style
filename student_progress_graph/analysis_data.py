@@ -1208,22 +1208,6 @@ KNOWN_EXCEPTIONS = {
     
 }
 
-IGNORE_SUCCESS = {
-    # student is trivially successful due to lacking test coverage
-    "planets_mass" : ["student14"],
-    "altText": ["student75"],
-    "fib": ["student11", "student2","student22"],
-    "increaseScore": ["student75","student50"], #50 is hardcoded
-    "percentWin": ["student21"],
-    "sort_physicists": ["student77","student12","student57"],
-    "subtract_add": ["student66"], # hardcoded,
-    "times_with": ["student75"], # hardcoded
-    "reverseWords": ["student14"] # student14 needs to be filtered because successful, but not marked as such
-}
-# cases where studenteval judged a completion wrong
-IGNORE_FAIL = {
-    # "times_with": ["student63"] # fixed by changing state label in yaml
-}
 OUT_OF_TOKENS_ERROR = {
     "altText": ["student40"],
     "subtract_add": ["student70"],
@@ -1371,3 +1355,24 @@ if __name__ == "__main__":
 
     assert len(failing_problems) == 0, message
     print(message)
+
+
+"""
+Old data
+"""
+_IGNORE_SUCCESS = {
+    # student is trivially successful due to lacking test coverage
+    "planets_mass" : ["student14"],
+    "altText": ["student75"],
+    "fib": ["student11", "student2","student22"],
+    "increaseScore": ["student75","student50"], #50 is hardcoded
+    "percentWin": ["student21"],
+    "sort_physicists": ["student77","student12","student57"],
+    "subtract_add": ["student66"], # hardcoded,
+    "times_with": ["student75"], # hardcoded
+    "reverseWords": ["student14"] # student14 needs to be filtered because successful, but not marked as such
+}
+# cases where studenteval judged a completion wrong
+_IGNORE_FAIL = {
+    "times_with": ["student63"] # fixed by changing state label in yaml
+}

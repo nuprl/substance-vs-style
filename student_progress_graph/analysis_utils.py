@@ -1,4 +1,4 @@
-from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, IGNORE_SUCCESS
+from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, OUT_OF_TOKENS_ERROR
 from .graph_utils import load_graph, Graph, Edge, get_student_subgraph, Node
 import itertools as it
 from typing import List, Union, Dict, Tuple
@@ -10,6 +10,16 @@ from copy import deepcopy
 
 class ContinuityError(Exception):
     pass
+
+def clean_graph(graph: Graph, problem_answers: List[str]) -> Graph:
+    """
+    Removes students with out of token errors.
+    """
+    students_to_remove = OUT_OF_TOKENS_ERROR.get(graph.problem, [])
+    if len(students_to_remove) > 0:
+        graph = remove_students(graph, students_to_remove)
+        print("Removed students:", students_to_remove)
+    return graph
 
 def remove_students(graph: Graph, students: List[str]) -> Graph:
     """

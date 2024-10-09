@@ -167,6 +167,8 @@ def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
                 more_style = 'color = "red", style = "filled",'
             elif user_node.state == "initial":
                 more_style = 'style = "dashed",'
+            elif user_node.state == "success":
+                more_style = 'color = "green", style = "filled",'
             else:
                 more_style = ""
             f.write(f"  {user_node.id} [shape=diamond, {more_style} label=\"{user_node.username}\"];\n")

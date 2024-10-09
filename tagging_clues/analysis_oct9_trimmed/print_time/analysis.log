@@ -9,3 +9,13 @@ student42:[]
 student43:[]
 student54:[[10, 10, [2, 3, 4], ['m3']], [10, 6, [2, 3, 4, 5], ['m2', 'm3', 'a5']]]
 breakoutedge student54
+## Cycle success rate summary:
+     student  cycle_length  is_success  is_failure
+0  student12             0        True       False
+1  student36             0        True       False
+2  student38             0        True       False
+3  student42             0        True       False
+4  student43             0        True       False
+5  student54             2        True       False
+Total num fail: 0, num fail has loop: 0, 0 %
+Total num success: 6, num succ has loop: 1, 16.666666666666668 %

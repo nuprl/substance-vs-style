@@ -336,7 +336,7 @@ def check_breakout_edges(
         # # only check successful students
         # if bedge != None and student in succ_students:
         if bedge != None:
-            if not (is_tag_kind(bedge._edge_tags, ["a","d"])) and \
+            if not (any([str(t)[0] in ["a","d"] for t in bedge._edge_tags])) and \
                 not is_known_exception(bedge, problem, key="breakout"):
                 raise ValueError(f"Breakout edge is trivial: {student}, {_edge_to_dict(bedge, False)}")
 

@@ -1,3 +1,26 @@
+"""
+# A Note on meaning of KNOWN_EXCEPTIONS keys:
+
+- "cycle": any edge that falls under this category means that this is a non-trivial
+    ['a','d','l','m'] edge in a cycle that gives the student all needed clues. According to hypothesis, this should be rare
+
+- "breakout": any edge that falls under this category means that this is a trivial/rewrite breakout
+    edge [eg. 'm','l',0], which per our hypothesis should be rare.
+
+- "success": edge is success but not all clues have been collected
+
+- "fail": edge is fail, but all clues have been collected
+
+- "neutral": edge is not fail/success (non-terminal), but all clues have been collected -> should be a success
+
+- "start_node": start_node had all clues, should have been a success.
+
+These should all be EXCEPTIONS, or they refute our hypotheses.
+
+Student with out of token errors have been removed. Students that achieve a success, but
+then keep messing around have been trimmed so their path ends at first success.
+"""
+
 
 SUCCESS_CLUES = {
     "add_up": [1,2,3,4,5],
@@ -187,8 +210,7 @@ KNOWN_EXCEPTIONS = {
     },
     "add_up": {
         "success": {
-            "student24": {1: """incomplete clues is successful due to use of python try-except
-                          (student mentions 'error' in prompt)"""},
+            "student24": {1: "incomplete clues is successful due to use of python try-except (student mentions 'error' in prompt)"},
             "student55": {
                 2: "clue 5 base case 0 implied"
             }
@@ -728,10 +750,10 @@ KNOWN_EXCEPTIONS = {
                 1: "clue3 implicit"
             },
             "student75": {
-                1: ""
+                1: "clue 2,3,4,6 missing. Model gets correct because student provides an ICL example, and model is familiar with sales_tax problems"
             },
             "student79": {
-                1: ""
+                1: "missing clue 2 is implicit"
             }
         },
         "breakout": {
@@ -1167,17 +1189,17 @@ KNOWN_EXCEPTIONS = {
                 3: "same error as previous attempt",
                 4: "same error as previous attempt",
             },
-            "student30": {
-                # note student 30 has a success at attempt 1, not recorded correctly
-                2: "model misinterpretation same as student10",
-                3: "model misinterprets order",
-            }
+            # "student30": {
+            #     # note student 30 has a success at attempt 1, not recorded correctly
+            #     2: "model misinterpretation same as student10",
+            #     3: "model misinterprets order",
+            # }
         },
-        "cycles": {
-            "student30": {
-                3: "model misinterpretation, same as previous",
-            }
-        },
+        # "cycles": {
+        #     "student30": {
+        #         3: "model misinterpretation, same as previous",
+        #     }
+        # },
         "breakout": {
             "student21": {
                 2: "breakout goes into another cycle"

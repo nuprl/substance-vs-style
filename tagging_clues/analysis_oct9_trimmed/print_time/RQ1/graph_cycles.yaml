@@ -1,0 +1,127 @@
+breakout_edges:
+  student12: null
+  student36: null
+  student38: null
+  student42: null
+  student43: null
+  student54: &id002 !Edge
+    _edge_tags:
+    - m2
+    - m3
+    - a5
+    attempt_id: 2
+    clues:
+    - 2
+    - 3
+    - 4
+    - 5
+    completion_from: "if day == 'Sat' or day == 'Sun':\n        print('It\\'s the\
+      \ weekend!')\n    else:\n        print('It\\'s a weekday.')\n    if hour >=\
+      \ 0 and hour < 8:\n        print('Sleeping...')\n    elif hour >= 8 and hour\
+      \ < 12:\n        print('Working...')\n    elif hour >= 12 and hour < 18:\n \
+      \       print('Eating...')\n   "
+    completion_to: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n \
+      \   elif day == 'Mon' or day == 'Tue' or day == 'Wed' or day == 'Thu' or day\
+      \ == 'Fri':\n        return 'weekday'\n    elif hour >= 0 and hour < 8:\n  \
+      \      return 'sleeping'\n    else:\n        return 'weekday'\n"
+    diff: "--- \n+++ \n@@ -5,15 +5,15 @@\n Sat or Sun,-print+return weekend. If Mon-Fri,-print+return\
+      \ weekday. If hours 0-8,-print+return sleeping. \"\"\""
+    node_from: &id001 !Node
+      _node_tags: null
+      id: 10
+      stderr:
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      - 'IndentationError: expected an indented block after ''if'' statement on line
+        5'
+      stdout:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    node_to: !Node
+      _node_tags: null
+      id: 6
+      stderr:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      stdout:
+      - 'weekend
+
+        '
+      - 'weekend
+
+        '
+      - 'weekday
+
+        '
+      - 'weekday
+
+        '
+      - 'weekday
+
+        '
+      - 'weekday
+
+        '
+    prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, print\
+      \ weekend. If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\
+      \"\n    "
+    prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, return weekend.\
+      \ If Mon-Fri, return weekday. If hours 0-8, return sleeping.\n    \"\"\"\n \
+      \   "
+    state: neutral
+    total_attempts: 5
+    username: student54
+cycle_summary:
+  student12: []
+  student36: []
+  student38: []
+  student42: []
+  student43: []
+  student54:
+  - !Edge
+    _edge_tags:
+    - m3
+    attempt_id: 1
+    clues:
+    - 2
+    - 3
+    - 4
+    completion_from: "if day == 0 or day == 6:\n        print(\"It's the weekend!\"\
+      )\n    elif day >= 1 and day <= 5:\n        print(\"It's a weekday.\")\n   \
+      \ if hour >= 0 and hour < 8:\n        print(\"It's sleeping time.\")\n    elif\
+      \ hour >= 8 and hour < 18:\n        print(\"It's working time.\")\n    elif\
+      \ hour >= 18 and hour < 24:\n        print(\"It's"
+    completion_to: "if day == 'Sat' or day == 'Sun':\n        print('It\\'s the weekend!')\n\
+      \    else:\n        print('It\\'s a weekday.')\n    if hour >= 0 and hour <\
+      \ 8:\n        print('Sleeping...')\n    elif hour >= 8 and hour < 12:\n    \
+      \    print('Working...')\n    elif hour >= 12 and hour < 18:\n        print('Eating...')\n\
+      \   "
+    diff: "--- \n+++ \n@@ -2,9 +2,9 @@\n print_time(day,hour): \"\"\" If-sat+Sat or-sun,+Sun,\
+      \ print weekend. If"
+    node_from: *id001
+    node_to: *id001
+    prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If sat or sun, print\
+      \ weekend. If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\
+      \"\n    "
+    prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, print weekend.\
+      \ If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\"\n    "
+    state: neutral
+    total_attempts: 5
+    username: student54
+  - *id002

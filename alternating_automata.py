@@ -85,41 +85,16 @@ def create_model_nodes(edges: List[Edge]) -> Set[ModelNode]:
     model_nodes = set(ModelNode(f"m{node_id}", node_states[node_id]) for node_id in all_node_ids)
     return model_nodes
 
-def create_user_nodes_and_edges(edges: List[Edge]) -> Tuple[List[UserNode], List[UserEdge]]:
-    user_nodes = []
-    user_edges = []
-    for user_node_num, edge in enumerate(edges):
-        from_node_num = edge["node_from"]["id"]
-        to_node_num = edge["node_to"]["id"]
-        user_node_id = f"u{user_node_num}"
-        user_node = UserNode(edge["username"].replace("student", "s"), user_node_id, edge["state"])
-        user_nodes.append(user_node)
-        label = ",".join([f"{tag}" for tag in edge["_edge_tags"]]) if edge["_edge_tags"] else "0"
-        if label == "0":
-            label = ""
-        user_edges.append(UserEdge(f"m{from_node_num}", user_node_id, ""))
-        user_edges.append(UserEdge(user_node_id, f"m{to_node_num}", label))
-    return user_nodes, user_edges
 
-# For each user, we find the model node that is the first to transition to it.
-# Specifically, if a model node has an edge out for a user and no edge in for
-# that user, then that model node is the first to transition to it.
-def get_first_model_node_for_user(user_nodes: List[UserNode], user_edges: List[UserEdge], model_nodes: Set[ModelNode]) -> List[Tuple[str, ModelNode]]:
-    first_model_nodes = []
-    for model_node in model_nodes:
-        # Find all the node IDs that transition to this model node
-        from_user_node_ids = [edge.from_node_id for edge in user_edges if edge.to_node_id == model_node.id]
-        # Find all the node IDs that transition from this model node
-        to_user_node_ids = [edge.to_node_id for edge in user_edges if edge.from_node_id == model_node.id]
+def edge_tag_to_label(tags):
+    if not tags:
+        return ""
+    l =  ",".join([f"{tag}" for tag in tags])
+    if l == "0":
+        return ""
+    return l
 
 
-        from_users = {user_node.username for user_node in user_nodes if user_node.id in from_user_node_ids}
-        to_users = {user_node.username for user_node in user_nodes if user_node.id in to_user_node_ids}
-        # This is the first model node for the difference
-        delta = list(set(to_users) - set(from_users))
-        for user in delta:
-            first_model_nodes.append((user, model_node))
-    return first_model_nodes
         
 def read_start_node_tags(graph: dict) -> dict[str, str]:
     start_node_tags = graph["student_start_node_tags"]
@@ -134,18 +109,44 @@ def read_start_node_tags(graph: dict) -> dict[str, str]:
         results[user] = label
     return results
 
+def get_student_trajectory(student_name: str, start_node_tags: dict[str, str], existing_edges: List[Edge]) -> Tuple[List[UserNode], List[UserEdge]]:
+    edges = [edge for edge in existing_edges if edge["username"].replace("student", "s") == student_name]
+    edges.sort(key=lambda x: x["attempt_id"])
+    first_model_node_id = f"m{edges[0]['node_from']['id']}"
+    first_user_node_id = f"u_{student_name}_0"
+    
+    new_user_nodes =[ UserNode(student_name, first_user_node_id, "initial") ]
+    new_user_edges = [ UserEdge(first_user_node_id, first_model_node_id, start_node_tags.get(student_name, "")) ]
+
+    last_model_node_id = first_model_node_id
+    for existing_edge in edges:
+        next_model_node_id = f"m{existing_edge['node_to']['id']}"
+        # We are going to connect the last model node to the next model node and introduce a new user node to do so.
+        new_user_node = UserNode(student_name, f"u_{student_name}_{existing_edge['attempt_id']}", existing_edge["state"])
+        new_user_nodes.append(new_user_node)
+        new_user_edges.append(UserEdge(last_model_node_id, new_user_node.id, ""))
+        new_user_edges.append(UserEdge(new_user_node.id, next_model_node_id, edge_tag_to_label(existing_edge["_edge_tags"])))
+        last_model_node_id = next_model_node_id
+
+    return new_user_nodes, new_user_edges
+
 def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
     graph = load_graph_yaml(graph_yaml_path)
     existing_edges: List[Edge] = graph["edges"]
     start_node_tags = read_start_node_tags(graph)
+
     model_nodes = create_model_nodes(existing_edges)
 
-    user_nodes, user_edges = create_user_nodes_and_edges(existing_edges)
-    first_model_nodes = get_first_model_node_for_user(user_nodes, user_edges, model_nodes)
-    for (user, first_model_node) in first_model_nodes:
-        n = UserNode(user, f"u_{user}", "initial")
-        user_nodes.append(n)   
-        user_edges.append(UserEdge(n.id, first_model_node.id, start_node_tags.get(user, "")))
+    # s0, s1, ...
+    student_names: List[str] = list(start_node_tags.keys())
+    student_names.sort()
+
+    user_nodes = []
+    user_edges = []
+    for student_name in student_names:
+        new_user_nodes, new_user_edges = get_student_trajectory(student_name, start_node_tags, existing_edges)
+        user_nodes.extend(new_user_nodes)
+        user_edges.extend(new_user_edges)
 
 
     with dot_output_path.open("w") as f:
@@ -160,7 +161,7 @@ def main_with_args(graph_yaml_path: Path, dot_output_path: Path, render: bool):
             else:
                 shape = "circle"
                 more_style = ""
-            f.write(f"  {model_node.id} [shape={shape}, {more_style} label=\"{model_node.id}\"];\n")
+            f.write(f"  {model_node.id} [shape={shape}, {more_style} label=\"\"];\n")
         # Label the user nodes with their username
         for user_node in user_nodes:
             if user_node.state == "fail":

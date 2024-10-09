@@ -159,7 +159,7 @@ def check_clues(graph: Graph, verbose:bool=True) -> Union[ValueError,bool]:
             raise ValueError(f"False neutral, should be success: {e_dict}")
     return True
 
-def check_cycles(graph: Graph) -> Union[ValueError,Dict[str, List[Edge]]]:
+def check_cycles(graph: Graph, suppress_check: bool = False) -> Union[ValueError,Dict[str, List[Edge]]]:
     """
     For each student subgraph, check that cycle/loops either have
     incomplete clues or trivial edits, or is a known exception.
@@ -181,7 +181,8 @@ def check_cycles(graph: Graph) -> Union[ValueError,Dict[str, List[Edge]]]:
                 (is_self_loop and [e.node_from.id] in cycle)):
                 if is_known_exception(e, graph.problem, key="cycles"):
                     continue 
-                elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]):
+                elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]) \
+                    and not suppress_check:
                     raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
                 else:
                     cycle_summary.append(e)
@@ -266,9 +267,9 @@ def get_breakout_edge(cycle_edges: List[Edge]) -> Union[None, Edge]:
     """
     if len(cycle_edges) < 2:
         return None
-    last_edge = cycle_edges.pop()
+    last_edge = cycle_edges[-1]
     nodes = []
-    for e in cycle_edges:
+    for e in cycle_edges[:-1]:
         nodes += [e.node_from.id, e.node_to.id]
     nodes = set(nodes)
     if last_edge.node_to.id in nodes:

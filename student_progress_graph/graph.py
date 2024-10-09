@@ -119,31 +119,6 @@ class Graph(yaml.YAMLObject):
     yaml_tag = u'!Graph'
     SUCCESS_NODE_COLOR = "green"
     BASE_NODE_COLOR="grey"
-    COLORS = [
-        '#d83034', # red
-        '#f9e858', # yellow
-        '#008dff', # med blue
-        '#4ecb8d', # green
-        '#c701ff', # purple
-        '#ffcd8e', # light orange
-        '#003a7d', # dark blue
-        '#Ff73b6', # pink
-        '#ff7f50', # coral
-        '#7fff00', # chartreuse
-        '#8a2be2', # blue violet
-        '#ffd700', # gold
-        '#ff4500', # orange red
-        '#00ced1', # dark turquoise
-        '#ff1493', # deep pink
-        '#9400d3', # dark violet
-        '#00bfff', # deep sky blue
-    ]
-    student_colors: dict = {}
-
-    # this is initialized after tagging
-    student_start_node_tags: dict = {}
-    student_clues_tracker : dict = {}
-    problem_clues: dict = {}
     
     def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], **kwargs):
         self.problem=problem
@@ -152,6 +127,30 @@ class Graph(yaml.YAMLObject):
         
         self.student_start_node_tags = kwargs.pop("student_start_node_tags", {})
         self.problem_clues = kwargs.pop("problem_clues", {})
+
+        self.COLORS = [
+            '#d83034', # red
+            '#f9e858', # yellow
+            '#008dff', # med blue
+            '#4ecb8d', # green
+            '#c701ff', # purple
+            '#ffcd8e', # light orange
+            '#003a7d', # dark blue
+            '#Ff73b6', # pink
+            '#ff7f50', # coral
+            '#7fff00', # chartreuse
+            '#8a2be2', # blue violet
+            '#ffd700', # gold
+            '#ff4500', # orange red
+            '#00ced1', # dark turquoise
+            '#ff1493', # deep pink
+            '#9400d3', # dark violet
+            '#00bfff', # deep sky blue
+        ]
+        self.student_colors = {}
+
+        # this is initialized after tagging
+        self.student_clues_tracker = {}
     
     def __repr__(self):
         return "%s(problem=%r, nodes=%r, edges=%r)" % (

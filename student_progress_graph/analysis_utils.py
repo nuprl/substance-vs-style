@@ -105,7 +105,9 @@ def compute_next_clues(
             except KeyError:
                 raise ContinuityError("Remove error")
         elif c[0] == "a": #add
-            if int(c[1]) not in prev_clues:
+            if prev_clues == set([0]):
+                prev_clues = set([int(c[1])])
+            elif int(c[1]) not in prev_clues:
                 prev_clues.add(int(c[1]))
             else:
                 raise ContinuityError("Add error")
@@ -237,7 +239,7 @@ def load_problem_clues(filepath:str, problem:str) -> Dict[int, str]:
     problem_clues_dict = {}
     for tag in problem_clues:
         k,v = list(tag.items())[0]
-        problem_clues_dict[k] = list(v)
+        problem_clues_dict[k] = v
     return problem_clues_dict
 
 def load_problem_answers(filepath, problem) -> List[str]:
@@ -353,7 +355,7 @@ def get_path_clues(g: Graph) -> Union[dict, ValueError]:
     return student_paths
 
 def score_node(node:Node, problem_answers: List[str]) -> Node:
-    num_correct_print = sum([int(node.stdout[i].rstrip() == problem_answers[i])
+    num_correct_print = sum([int(node.stdout[i].rstrip('\n') == problem_answers[i])
                                 for i in range(len(problem_answers))])
     num_error = sum([int("error:" in stderr.lower()) for stderr in node.stderr])
     score = num_correct_print - num_error

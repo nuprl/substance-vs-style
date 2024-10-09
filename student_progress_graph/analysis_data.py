@@ -66,11 +66,11 @@ KNOWN_EXCEPTIONS = {
                 3: "student should be awarded clue 2 in start clues"
             },
         },
-        "fail": {
-            "student19": {
-                1: "Model runs out of tokens"
-            }
-        },
+        # "fail": {
+        #     "student19": {
+        #         1: "Model runs out of tokens"
+        #     }
+        # },
         "neutral": {
             "student20": {
                 2: "first index versus index 1: zero-indexing ambiguity"
@@ -91,17 +91,17 @@ KNOWN_EXCEPTIONS = {
                 4: "this is a trivial edit; lookback error is the problem here" 
             }
         },
-        "breakout": {
-            "student12": {
-                3: "student is technically incorrect, but due to lacking test coverage, passes"
-            },
-            "student57": {
-                2: "same as student12"
-            },
-            "student77": {
-                5: "same as student12"
-            }
-        }
+        # "breakout": {
+        #     "student12": {
+        #         3: "student is technically incorrect, but due to lacking test coverage, passes"
+        #     },
+        #     "student57": {
+        #         2: "same as student12"
+        #     },
+        #     "student77": {
+        #         5: "same as student12"
+        #     }
+        # }
     },
     "find_multiples": {
         "success": {
@@ -115,11 +115,11 @@ KNOWN_EXCEPTIONS = {
                 1: "model infers correct answer from func signature though prompt is wrong"
             }
         },
-        "breakout": {
-            "student11": {
-                3: "missing same clue as loop"
-            }
-        }
+        # "breakout": {
+        #     "student11": {
+        #         3: "missing same clue as loop"
+        #     }
+        # }
 
     },
     # fran
@@ -137,9 +137,9 @@ KNOWN_EXCEPTIONS = {
                         2: "this attempt follows a previous success"},
         },
         # false fail, should be success because all clues
-        "fail": {
-            "student38": {3: "this final attempt follows a previous success"},
-        }
+        # "fail": {
+        #     "student38": {3: "this final attempt follows a previous success"},
+        # }
     },
     "add_up": {
         "success": {
@@ -149,27 +149,27 @@ KNOWN_EXCEPTIONS = {
         "fail":{
             "student65": {5: "has all clues, but still fails because model interprets 'number' as int"}
         },
-        "breakout": {
-            "student31":{
-                2: "student only has 2 attempts; incomplete data"
-            },
-            "student47":{
-                5: "breakout edge leads into another cycle"
-            },
-            "student65": {
-                5: "breakout edge leads to final node; could be another cycle"
-            }
-        }
+        # "breakout": {
+        #     "student31":{
+        #         2: "student only has 2 attempts; incomplete data"
+        #     },
+        #     "student47":{
+        #         5: "breakout edge leads into another cycle"
+        #     },
+        #     "student65": {
+        #         5: "breakout edge leads to final node; could be another cycle"
+        #     }
+        # }
     },
     "topScores": {
         "success": {},
         "neutral": {
-            "student45": {1:"student with all clues gets fail because of LLM runs out of tokens",
-                          2:"same as previous attempt",
-                          3:"same as previous attempt",
-                          4:"same as previous attempt",
-                          5:"same as previous attempt",
-                          6:"same as previous attempt"},
+            # "student45": {1:"student with all clues gets fail because of LLM runs out of tokens",
+            #               2:"same as previous attempt",
+            #               3:"same as previous attempt",
+            #               4:"same as previous attempt",
+            #               5:"same as previous attempt",
+            #               6:"same as previous attempt"},
             "student53": {4: """student has all clues; wording leads to LLM fail. Good example to highlight,
                           since student eventually gets it right. What did they change? Got rid of 'lookback'
                           statements""",
@@ -179,19 +179,19 @@ KNOWN_EXCEPTIONS = {
                           9: "same as previous attempt"
                           }
         },
-        "fail": {
-            "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
-        },
-        "cycles": {
-            "student45": {
-                3: "student with all clues gets fail because of LLM runs out of tokens",
-                4: "same as previous attempt"
-            },
-        },
+        # "fail": {
+        #     "student45": {7:"student with all clues gets fail because of LLM runs out of tokens"}
+        # },
+        # "cycles": {
+        #     "student45": {
+        #         3: "student with all clues gets fail because of LLM runs out of tokens",
+        #         4: "same as previous attempt"
+        #     },
+        # },
         "breakout": {
-            "student15": {
-                10: "Student breaks out into another cycle",
-            },
+        #     "student15": {
+        #         10: "Student breaks out into another cycle",
+        #     },
             "student53": {
                 10: "LLM runs out of tokens error in node_from. Should have been a success from attempt 7"
             }
@@ -217,7 +217,7 @@ KNOWN_EXCEPTIONS = {
                 1: "no need to describe prime"
             },
             "student70": {
-                4: "bool implicit; no need to describve prime"
+                4: "no need to describve prime"
             }
         },
         "breakout": {
@@ -236,103 +236,107 @@ KNOWN_EXCEPTIONS = {
         }
     },
     "convert": {
-        "start_node": {
-            "student18": {
-                0: "model makes python error where it forgets to add temp to acc in base case (no -1), error keeping state"
-            }
-        },
-        "neutral": {
-            "student0": {
-                1: "model runs out of token",
-                2: "model runs out of token",
-                3: "model runs out of token",
-                4: "model runs out of token",
-                5: "model runs out of token",
-                6: "model runs out of token",
-                7: "student did not explicitly say capitalize"
-            },
-            "student18":{
-                1: "model ignores split instruction",
-                2: "model misinterprets next string instruction",
-            }
-        },
-        "fail": {
-            "student18": {
-                3: "model runs out of tokens"
-            }
-        },
+        # "start_node": {
+        #     "student18": {
+        #         0: "model makes python error where it forgets to add temp to acc in base case (no -1), error keeping state"
+        #     }
+        # },
+        # "neutral": {
+        #     # "student0": {
+        #     #     1: "model runs out of token",
+        #     #     2: "model runs out of token",
+        #     #     3: "model runs out of token",
+        #     #     4: "model runs out of token",
+        #     #     5: "model runs out of token",
+        #     #     6: "model runs out of token",
+        #     #     7: "student did not explicitly say capitalize"
+        #     # },
+        #     # "student18":{
+        #     #     1: "model ignores split instruction",
+        #     #     2: "model misinterprets next string instruction",
+        #     # }
+        # },
+        # "fail": {
+        #     "student18": {
+        #         3: "model runs out of tokens"
+        #     }
+        # },
         "success": {
             "student17": {
                 31: "1,5 implicit"
             },
-            "student51": {
-                2: "clue 5 implicit"
-            }
+
+            # "student51": {
+            #     2: "clue 5 implicit"
+            # }
         },
-        "cycles": {
-            "student0": {
-                3: "model runs out of tokens",
-                5: "model runs out of tokens",
-                6: "model runs out of tokens"
-            }
-        },
-        "breakout": {
-            "student17": {
-                31: "I would argue that attempt 30 is misleading because student doesnt say split, and replaces -1 with empty string instead of space"
-            },
-            "student21": {
-                9: "previous node is already success"
-            },
-            "student3": {
-                9: "student breaksout into cycle"
-            },
-            "student4": {
-                2: "breakout edge goes nowhere"
-            }
-        }
+        # "cycles": {
+        #     "student0": {
+        #         3: "model runs out of tokens",
+        #         5: "model runs out of tokens",
+        #         6: "model runs out of tokens"
+        #     }
+        # },
+        # "breakout": {
+        #     "student17": {
+        #         31: "I would argue that attempt 30 is misleading because student doesnt say split, and replaces -1 with empty string instead of space"
+        #     },
+        #     "student21": {
+        #         9: "previous node is already success"
+        #     },
+        #     "student3": {
+        #         9: "student breaksout into cycle"
+        #     },
+        #     "student4": {
+        #         2: "breakout edge goes nowhere"
+        #     }
+        # }
     },
     "create_list": {
         "start_node": {
             "student57": {
                 0: "model ignores (implicit) instruction to repeat for every item in list"
-            }
-        },
-        "success": {
-            "student20": {
-                1: "clue 1,5 implicit"
-            },
-            "student36": {
-                2: "clue 1 implicit"
             },
             "student43": {
-                1: "clue 1 implicit; 3 should have been awarded in attempt 0"
-            },
-            "student54": {
-                2: "clue 1 implicit"
+                0: "model misinterprets 'just do the first value in list'"
             }
-        }
+        },
+        # "success": {
+        #     "student20": {
+        #         1: "clue 1,5 implicit"
+        #     },
+        #     "student36": {
+        #         2: "clue 1 implicit"
+        #     },
+        #     "student43": {
+        #         1: "clue 1 implicit; 3 should have been awarded in attempt 0"
+        #     },
+        #     "student54": {
+        #         2: "clue 1 implicit"
+        #     }
+        # }
     },
-    "findHorizontals": {
-        "breakout": {
-            "student70": {
-                3: "student fails, could be cont cycle"
-            }
-        }
-    },
+    # "findHorizontals": {
+    #     "breakout": {
+    #         "student70": {
+    #             3: "student fails, could be cont cycle"
+    #         }
+    #     }
+    # },
     "generateCardDeck": {
         "success": {
             "student33": {
                 1: "missing clue 3,5. 5 implicit, 4 can be implicit in this case"
             },
             "student60":{
-                5: "missing clue 5 is implicit"
+                5: "print not return"
             },
             "student63": {
                 1: "missing clue 1 is implicit. 4 can be implicit in this case"
             },
-            "student64": {
-                7: "clues 1,4,5 should be awarded"
-            }
+            # "student64": {
+            #     7: "clues 1,4,5 should be awarded"
+            # }
         },
         "neutral": {
             "student40": {
@@ -343,6 +347,14 @@ KNOWN_EXCEPTIONS = {
                 1: "model ignores sorting instruction",
                 2: "model ignores sorting instruction",
                 3: "model ignores sorting instruction"
+            },
+            "student64": {
+                1: "model ignores sorting instruction",
+                2: "model ignores sorting instruction",
+                3: "model ignores sorting instruction",
+                4: "model ignores sorting instruction",
+                5: "model ignores sorting instruction",
+                6: "model sort by wrong key"
             }
         },
         "cycles":{
@@ -354,21 +366,26 @@ KNOWN_EXCEPTIONS = {
                 1: "model ignores sorting instruction",
                 2: "model ignores sorting instruction",
                 3: "model ignores sorting instruction"
+            },
+            "student64": {
+                1: "model ignores sorting instruction",
+                3: "model ignores sorting instruction",
+                5: "model ignores sorting instruction"
             }
         },
         "breakout": {
-            "student35": {
-                3: "student missing same clue as loop, fails"
-            },
+            # "student35": {
+            #     3: "student missing same clue as loop, fails"
+            # },
             "student60": {
                 5: "model ignores sorting instruction"
             },
             "student64": {
                 6: "model starts paying attention to sorting instruction when word sort appears"
             },
-            "student69": {
-                2: "student fails"
-            }
+            # "student69": {
+            #     2: "student fails"
+            # }
         }
     },
     "getSeason": {
@@ -376,96 +393,123 @@ KNOWN_EXCEPTIONS = {
             "student14": {
                 0: "model hallucinates month numbers instead of str"
             },
-            "student45": {
-                0: "model out of tokens"
-            }
+            # "student45": {
+            #     0: "model out of tokens"
+            # }
         },
-        "fail": {
-            "student31": {
-                3: "model out of token"
-            }
-        },
-        "neutral": {
-            "student45": {
-                1: "model out of token",
-                2: "model out of token"
-            },
-            "student55": {
-                3: "model run out of token"
-            },
-            "student9": {
-                2: "model out of token",
-                3: "model out of token"
-            }
-        },
+        # "fail": {
+        #     "student31": {
+        #         3: "model out of token"
+        #     }
+        # },
+        # "neutral": {
+        #     "student45": {
+        #         1: "model out of token",
+        #         2: "model out of token"
+        #     },
+        #     "student55": {
+        #         3: "model run out of token"
+        #     },
+        #     "student9": {
+        #         2: "model out of token",
+        #         3: "model out of token"
+        #     }
+        # },
         "success": {
             "student46": {
                 3: "model guesses months correctly"
             },
-            "student47": {
-                1: "missing clue 1 implicit"
-            },
-            "student7": {
-                3: "missing clue1 is implicit"
-            }
+            # "student47": {
+            #     1: "missing clue 1 implicit"
+            # },
+            # "student7": {
+            #     3: "missing clue1 is implicit"
+            # }
         },
-        "cycles": {
-            "student31": {
-                3: "model out of token"
-            },
-            "student55": {
-                3: "model out of token"
-            }
-        },
-        "breakout": {
-            "student15": {
-                4: "model out of token"
-            },
-            "student45": {
-                3: "model out of token, thus less detail better"
-            },
-            "student6": {
-                3: "model out of token"
-            }
-        }
+        # "cycles": {
+        #     "student31": {
+        #         3: "model out of token"
+        #     },
+        #     "student55": {
+        #         3: "model out of token"
+        #     }
+        # },
+        # "breakout": {
+        #     "student15": {
+        #         4: "model out of token"
+        #     },
+        #     "student45": {
+        #         3: "model out of token, thus less detail better"
+        #     },
+        #     "student6": {
+        #         3: "model out of token"
+        #     }
+        # }
     },
     "print_time": {
         "start_node": {
-            "student57": {
-                0: "model out of tokens"
+            "student36": {
+                0: "Sat instead of Saturday"
+            },
+            "student38": {
+                0: "if statement order model follows too closely"
+            },
+            "student42": {
+                0: "model ignores return instruction and prints instead"
+            },
+            "student43": {
+                0: "this attempt should have been correct, but was cropped badly"
             },
             "student77": {
                 0: "first attempt correct"
             }
         },
-        "success": {
-            "student12": {
-                3: "missing clue 1 is implicit"
-            },
-            "student36": {
-                2: "missing clue 1 is implicit"
-            },
-            "student38": {
-                1: "missing clue 1 is implicit"
-            },
-            "student42": {
-                2: "missing clue 1 is implicit"
-            },
-            "student43": {
-                1: "missing clue 1 is implicit"
-            },
-            "student54": {
-                4: "missing clue 1 implicit"
-            }
-        },
-        "fail": {
-            "student57": {
-                1: "model runs out of token"
-            }
-        },
+        # "start_node": {
+        #     # "student57": {
+        #     #     0: "model out of tokens"
+        #     # },
+        #     # "student77": {
+        #     #     0: "first attempt correct"
+        #     # }
+        # },
+        # "success": {
+        #     "student12": {
+        #         3: "missing clue 1 is implicit"
+        #     },
+        #     "student36": {
+        #         2: "missing clue 1 is implicit"
+        #     },
+        #     "student38": {
+        #         1: "missing clue 1 is implicit"
+        #     },
+        #     "student42": {
+        #         2: "missing clue 1 is implicit"
+        #     },
+        #     "student43": {
+        #         1: "missing clue 1 is implicit"
+        #     },
+        #     "student54": {
+        #         4: "missing clue 1 implicit"
+        #     }
+        # },
+        # "fail": {
+        #     "student57": {
+        #         1: "model runs out of token"
+        #     }
+        # },
         "neutral": {
             "student77": {
                 1: "first attempt was correct"
+            },
+            "student36": {
+                1: "missing 8 inclusive"
+            },
+            "student42": {
+                1: "missing 8 inclusive"
+            },
+            "student54": {
+                2:"missing 8 inclusive",
+                3:"missing 8 inclusive"
             }
         }
     },
@@ -502,11 +546,11 @@ KNOWN_EXCEPTIONS = {
                 3: "same as prev"
             }
         },
-        "success": {
-            "student18": {
-                1: "missing clue 1,4 is implicit"
-            }
-        },
+        # "success": {
+        #     "student18": {
+        #         1: "missing clue 1,4 is implicit"
+        #     }
+        # },
         "cycles": {
             "student0": {
                 1: "same issue of % seen before",
@@ -524,56 +568,71 @@ KNOWN_EXCEPTIONS = {
             "student0": {
                 5: "issue of %, rephrasing helps"
             },
-            "student17": {
-                8: "student stuck between 2 cycles"
-            },
-            "student4": {
-                6: "same errors as cycle"
-            },
-            "student51": {
-                3: "same error as cycle"
-            }
+            # "student17": {
+            #     8: "student stuck between 2 cycles"
+            # },
+            # "student4": {
+            #     6: "same errors as cycle"
+            # },
+            # "student51": {
+            #     3: "same error as cycle"
+            # }
         }
     },
     "reverseWords": {
-        "success": {
+        "start_node": {
             "student1": {
-                2: "5 return list implicit"
+                0: "word ambiguity"
             },
-            "student14": {
-                3: "1,5 input+return implicit"
-            },
-            "student46": {
-                1: "5 return is implicit"
-            },
-            "student7": {
-                1: "1 implicit"
+        },
+        "neutral": {
+            "student1": {
+                1: "word ambiguity, like planets mass"
             }
         },
-        "breakout": {
+        # "success": {
+        #     "student1": {
+        #         2: "5 return list implicit"
+        #     },
+        #     "student14": {
+        #         3: "1,5 input+return implicit"
+        #     },
+        #     "student46": {
+        #         1: "5 return is implicit"
+        #     },
+        #     "student7": {
+        #         1: "1 implicit"
+        #     }
+        # },
+        # "breakout": {
+        #     "student1": {
+        #         2: "argue this edge could be a2 not m2"
+        #     },
+        # },
+        "cycles": {
             "student1": {
-                2: "argue this edge could be a2 not m2"
-            },
+                1: "word ambiguity"
+            }
         }
     },
     "set_chars": {
-        "success": {
-            "student19": {
-                1: "missing clue 4 return string is implicit"
-            },
-            "student20": {
-                3: "student should be awarded clue 1. 4 is implicit",
-                4: "student should be awarded clue 1. 4 is implicit"
-            },
-            "student77": {
-                1: "clue 4 implicit"
-            }
-        },
-        "breakout": {
-            "student20": {
-                4: "this is loop over success state, ignore."
-            }
-        }
+        # "success": {
+        #     "student19": {
+        #         1: "missing clue 4 return string is implicit"
+        #     },
+        #     "student20": {
+        #         3: "student should be awarded clue 1. 4 is implicit",
+        #         4: "student should be awarded clue 1. 4 is implicit"
+        #     },
+        #     "student77": {
+        #         1: "clue 4 implicit"
+        #     }
+        # },
+        # "breakout": {
+        #     "student20": {
+        #         4: "this is loop over success state, ignore."
+        #     }
+        # }
     },
     "sortBySuccessRate": {
         "fail": {
@@ -589,36 +648,36 @@ KNOWN_EXCEPTIONS = {
                 3: "model interprets put each element on separate line as print",
             }
         },
-        "success": {
-            "student64": {
-                2: "clue 6 return is implicit"
-            }
-        },
-        "breakout": {
-            "student23": {
-                2: "breakout edge leads to fail, student makes same mistake"
-            },
-            "student79": {
-                4: "breakout edge leads into another cycle"
-            }
-        }
+        # "success": {
+        #     "student64": {
+        #         2: "clue 6 return is implicit"
+        #     }
+        # },
+        # "breakout": {
+        #     "student23": {
+        #         2: "breakout edge leads to fail, student makes same mistake"
+        #     },
+        #     "student79": {
+        #         4: "breakout edge leads into another cycle"
+        #     }
+        # }
     },
     "sortedBooks": {
-        "success": {
-            "student29": {
-                5: "missing clue 1 takes list of dict; implicit clue"
-            }
-        },
+        # "success": {
+        #     "student29": {
+        #         5: "missing clue 1 takes list of dict; implicit clue"
+        #     }
+        # },
         "neutral": {
             "student49": {
                 1: "Model ignores instruction to filter by author"
             }
         },
-        "breakout": {
-            "student67": {
-                3: "student unsuccessful, keeps making same error--cycle could be cut short"
-            }
-        }
+        # "breakout": {
+        #     "student67": {
+        #         3: "student unsuccessful, keeps making same error--cycle could be cut short"
+        #     }
+        # }
     },
     "times_with": {
         "start_node": {
@@ -630,27 +689,27 @@ KNOWN_EXCEPTIONS = {
                 0: "Model requires more info on nested list structure. Less ambiguous than student35, but still could be misinterpreted"
             }
         },
-        "fail": {
-            "student63": {
-                1: "studenteval original is_success is wrong, this completion is successful"
-            }
-        },
+        # "fail": {
+        #     "student63": {
+        #         1: "studenteval original is_success is wrong, this completion is successful"
+        #     }
+        # },
         "success": {
             "student69": {
                 1: "clue 1 return dictionary is implicit"
             },
-            "student75": {
-                5: "student hardcoded answer, somehow model got correct completion, even though prompt was wrong"
-            }
+            # "student75": {
+            #     5: "student hardcoded answer, somehow model got correct completion, even though prompt was wrong"
+            # }
         },
-        "breakout": {
-            "student50": {
-                2: "Student goes on to make same mistake as loop"
-            },
-            "student59": {
-                2: "I would argue this is an a4 not m4, structure of nested list"
-            }
-        }
+        # "breakout": {
+        #     # "student50": {
+        #     #     2: "Student goes on to make same mistake as loop"
+        #     # },
+        #     "student59": {
+        #         2: "I would argue this is an a4 not m4, structure of nested list"
+        #     }
+        # }
     },
     "total_bill": {
         "success": {
@@ -663,15 +722,15 @@ KNOWN_EXCEPTIONS = {
             "student60": {
                 1: "Missing clue 3,4. This is because sales tax (clue 6) is umbrella term for clue 3,4"
             },
-            "student64": {
-                3: "missing clue 1,3,8. 1,3,8 could be implicit."
-            }
+            # "student64": {
+            #     3: "missing clue 1,3,8. 1,3,8 could be implicit."
+            # }
         },
-        "breakout": {
-            "student64": {
-                2: "breakout edge tagged as m4 but should be a4"
-            }
-        }
+        # "breakout": {
+        #     "student64": {
+        #         2: "breakout edge tagged as m4 but should be a4"
+        #     }
+        # }
     },
     "pattern": {
         "start_node": {
@@ -680,42 +739,56 @@ KNOWN_EXCEPTIONS = {
             },
             "student3": {
                 0: "ambiguous wording, could be interpreted either way"
+            },
+            "student4": {
+                0: "model misinterprets a recursive decreasing function of inner lists"
+            },
+            "student41": {
+                0: "model hallucinates +2 for inclusive range?"
             }
         },
         "success": {
             "student17": {
-                3: "Hardcoded ICL examples, thus model correct"
+                3: "interesting example where student gives Hardcoded ICL examples, thus model correct"
             },
-            "student4": {
-                1: "clue 5 return is implicit"
-            },
-            "student41": {
-                3: "clue 1 input int is implicit"
-            }
+            # "student4": {
+            #     1: "clue 5 return is implicit"
+            # },
+            # "student41": {
+            #     3: "clue 1 input int is implicit"
+            # }
         },
         "neutral": {
             "student3": {
                 2: "Ambiguous wording could be interpreted either way"
+            },
+            "student41": {
+                1: "model adds an inclusive range where not specified"
             }
         },
         "breakout": {
+            # "student41": {
+            #     2: "I would say this edge is d4 not m4"
+            # }
+        },
+        "cycles": {
             "student41": {
-                2: "I would say this edge is d4 not m4"
+                1: "model error recorded above"
             }
         }
     },
     "readingIceCream": {
         "success": {
-            "student27": {
-                1: "Missing clue is 7, return total, which can be implicit."
-            },
-            "student32": {
-                2: "Missing clue 1,5. I argue clue 5 should be awarded in attempt 1. \
-                Clue 1, input is list of strings, is implicit."
-            },
-            "student62": {
-                3: "Missing clue 1,4. 1 is implicit. 4 should have been awarded in attempt 2."
-            },
+            # "student27": {
+            #     1: "Missing clue is 7, return total, which can be implicit."
+            # },
+            # "student32": {
+            #     2: "Missing clue 1,5. I argue clue 5 should be awarded in attempt 1. \
+            #     Clue 1, input is list of strings, is implicit."
+            # },
+            # "student62": {
+            #     3: "Missing clue 1,4. 1 is implicit. 4 should have been awarded in attempt 2."
+            # },
             "student66": {
                 2: "Missing clue 1,3. 1 is implicit. 3 should have been awarded? This is a python \
                     quirk where splitting on space is the same as splitting on \t. Student got somewhat lucky"
@@ -724,7 +797,10 @@ KNOWN_EXCEPTIONS = {
         "neutral": {
             "student70": {
                 1: "Model thinks number == integer, rather than float. Student understood and corrected this."
-            }
+            },
+            "student32": {
+                1: "Model ignores instruction to 'not be limited to integers'."
+            },
         },
         "cycles": {
             "student70": {
@@ -768,20 +844,21 @@ KNOWN_EXCEPTIONS = {
                     This is because originally, model is conflating instructions. Student breaks out of loop by removing \
                         instructions."
             },
-            "student14": {
-                4: "Student rewrites to include capitalization, reaching success. However, Student describes function \
-                    incorrectly, missing many clues, but tests do not cover all cases, so student trivially succeeds."
-            },
-            "student47": {
-                3: "Cycle cut short, but student arguably would continue cycle."
-            },
+            # "student14": {
+            #     4: "Student rewrites to include capitalization, reaching success. However, Student describes function \
+            #         incorrectly, missing many clues, but tests do not cover all cases, so student trivially succeeds."
+            # },
+            # "student47": {
+            #     3: "Cycle cut short, but student arguably would continue cycle."
+            # },
             "student55": {
-                4: "May be tagging error, as recorded above. This edge actually adds clue 2,3 which student \
-                    have previously removed, but deletion was not tagged"
+                4: "clue 2,3 are very lightly hinted at with 'planets'" 
+                #"May be tagging error, as recorded above. This edge actually adds clue 2,3 which student \
+                #    have previously removed, but deletion was not tagged"
             },
-            "student65": {
-                3: "Cycle cut short, but student arguably would continue cycle."
-            }
+            # "student65": {
+            #     3: "Cycle cut short, but student arguably would continue cycle."
+            # }
         },
         "cycles":{
             "student55": {
@@ -801,18 +878,18 @@ KNOWN_EXCEPTIONS = {
     },
     "fib": {
         "success": {
-            "student11": {
-                1: "Ignore because hardcoded numbers",
-            },
+            # "student11": {
+            #     1: "Ignore because hardcoded numbers",
+            # },
             "student13": {
                 10: "No need for clue 3 explanation of fib. It's a problem seen by models."
             },
-            "student2": {
-                3: "Hardcoded"
-            },
-            "student22": {
-                2: "Hardcoded"
-            },
+            # "student2": {
+            #     3: "Hardcoded"
+            # },
+            # "student22": {
+            #     2: "Hardcoded"
+            # },
             "student37": {
                 1: "No need for clue 3 explanation of fib. It's a problem seen by models."
             }
@@ -834,16 +911,16 @@ KNOWN_EXCEPTIONS = {
             "student29": {
                 1: "Model ignored instruction of odd/even. 0 indexing issue"
             },
-            "student66": {
-                3: "Hardcoded"
-            },
+            # "student66": {
+            #     3: "Hardcoded"
+            # },
             "student68": {
                 1: "Wrong base case of [], student did not consider.",
                 2: "Model adds an additional store operation for first element, which is wrong"
             },
-            "student70": {
-                2: "Model out of tokens"
-            }
+            # "student70": {
+            #     2: "Model out of tokens"
+            # }
         },
         "fail": {
             "student70": {
@@ -854,24 +931,24 @@ KNOWN_EXCEPTIONS = {
             "student29": {
                 1: "Model ignored instruction of odd/even. 0 indexing issue"
             },
-            "student66": {
-                3: "Hardcoded, student wrong."
-            }
+            # "student66": {
+            #     3: "Hardcoded, student wrong."
+            # }
         }
     },
-    "translate": {
-        "success": {
-            "student50": {
-                1: "missing clues 3,6,7 are implicit"
-            },
-            "student59": {
-                1: "missing clue 3,7 are implicit"
-            },
-            "student60": {
-                3: "missing clue 3,7 are implicit"
-            }
-        }
-    },
+    # "translate": {
+    #     "success": {
+    #         "student50": {
+    #             1: "missing clues 3,6,7 are implicit"
+    #         },
+    #         "student59": {
+    #             1: "missing clue 3,7 are implicit"
+    #         },
+    #         "student60": {
+    #             3: "missing clue 3,7 are implicit"
+    #         }
+    #     }
+    # },
     "increaseScore": {
         "start_node": {
             "student33": {
@@ -883,67 +960,83 @@ KNOWN_EXCEPTIONS = {
                 4: "sub clue 3 for clue 5. [1,2,3,4,6] and [1,3,4,5,6] both correct + \
                     student reaches success by attempt 1"
             },
-            "student50": {
-                1: "6 implicit. 4 missing, but tests pass because of coverage."
-            },
+            # "student50": {
+            #     1: "6 implicit. 4 missing, but tests pass because of coverage."
+            # },
             "student59": {
                 1: "[1,3,4,5,6] ok"
             },
             "student60": {
                 2: "[1,3,4,5,6] ok"
             },
-            "student75": {
-                1: "hardcoded"
-            }
+            # "student75": {
+            #     1: "hardcoded"
+            # }
         }
     },
     "percentWin": {
-        "fail": {
-            "student10": {
-                3: "model ignores clue 4"
-            }
-        },
+        # "fail": {
+        #     "student10": {
+        #         3: "model ignores clue 4"
+        #     }
+        # },
         "success": {
             "student17": {
-                5: "missing clue 6 is implied. Clue 1 is wrong, but thanks to python polymorphism passes"
+                5: "clue 1 is wrong (student says given strings instead of lists) but thanks to python polymorphism passes"
             },
             "student18": {
                 3: "same as student 17, string input instead of list input, but passes"
             },
-            "student21": {
-                2: "passes due to test coverage"
+            "student25": {
+                3: "no return string, but model makes connection to string by adding '%'"
             },
             "student3": {
-                2: "clue 6 return is implied"
+                2: "no return string, but model makes connection to string by adding '%'"
             },
+            # "student21": {
+            #     2: "passes due to test coverage"
+            # },
+            # "student3": {
+            #     2: "clue 6 return is implied"
+            # },
             "student30": {
-                1: "clues 1,2,3 are included, though student gives step by step instructions."
+                1: "no return string, but model makes connection to string by adding '%'"
             },
-            "student4": {
-                3: "clue 1 implied"
-            },
-            "student51": {
-                3: "clue 1 implied"
-            }
+            # "student4": {
+            #     3: "clue 1 implied"
+            # },
+            # "student51": {
+            #     3: "clue 1 implied"
+            # }
         },
         "neutral": {
-            "student25": {
-                2: "model rounds to 2 decimals instead of whole number"
-            }
+        #     "student25": {
+        #         2: "model rounds to 2 decimals instead of whole number"
+        #     },
+            "student4": {
+                1: "model ignores instruction to round to whole num",
+                2: "model ignores instruction to round to whole num"
+            },
+            # "student51": {
+            #     2: "model ignores instruction to put into 'percent notation' by adding %, but student never mentions string thing"
+            # }
         },
         "cycles": {
-            "student10": {
-                3: "model ignores integer in prompt"
+            # "student10": {
+            #     3: "model ignores integer in prompt"
+            # }
+            "student4": {
+                2: "model ignores rounding instruction"
             }
         },
-        "breakout": {
-            "student26": {
-                3: "next edge is breakout. Model ignores instruction to add %, until student specifies '%' (string)"
-            },
-            "student4": {
-                3: "model ignores instruction to turn to integer, instead prefers next word of rounding"
-            }
-        }
+        # "breakout": {
+        #     "student26": {
+        #         3: "next edge is breakout. Model ignores instruction to add %, until student specifies '%' (string)"
+        #     },
+        #     "student4": {
+        #         3: "model ignores instruction to turn to integer, instead prefers next word of rounding"
+        #     }
+        # }
     },
     # Arjun
     "laugh": {
@@ -952,11 +1045,11 @@ KNOWN_EXCEPTIONS = {
                 1: "Student has all clues, but model still misinterpreting."
             }
         },
-        "breakout": {
-            "student8": {
-                17: "Could argue that breakout edge is just loop cut short because student gives up"
-            }
-        }
+        # "breakout": {
+        #     "student8": {
+        #         17: "Could argue that breakout edge is just loop cut short because student gives up"
+        #     }
+        # }
     },
     "assessVowels": {
         "start_node": {
@@ -1117,15 +1210,28 @@ KNOWN_EXCEPTIONS = {
 
 IGNORE_SUCCESS = {
     # student is trivially successful due to lacking test coverage
-    "planet_mass" : ["student14"],
+    "planets_mass" : ["student14"],
     "altText": ["student75"],
     "fib": ["student11", "student2","student22"],
-    "increaseScore": ["student75"],
+    "increaseScore": ["student75","student50"], #50 is hardcoded
     "percentWin": ["student21"],
-    "sort_physicists": ["student77","student12","student57"]
+    "sort_physicists": ["student77","student12","student57"],
+    "subtract_add": ["student66"], # hardcoded,
+    "times_with": ["student75"], # hardcoded
+    "reverseWords": ["student14"] # student14 needs to be filtered because successful, but not marked as such
+}
+# cases where studenteval judged a completion wrong
+IGNORE_FAIL = {
+    "times_with": ["student63"]
 }
 OUT_OF_TOKENS_ERROR = {
-    "altText": ["student40"]
+    "altText": ["student40"],
+    "subtract_add": ["student70"],
+    "print_time": ["student57"],
+    'getSeason': ['student45', 'student31', 'student55', 'student9', 'student15', 'student6'],
+    "convert": ["student0","student18"],
+    "topScores": ["student45"],
+    "sort_physicists": ["student19"],
 }
 
 

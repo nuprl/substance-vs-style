@@ -312,8 +312,8 @@ percentWin:
     - 2: compares items from both lists and counts matches
     - 3: computes percent match
     - 4: rounds to whole percent
-    - 5: convert to string and add "%" sign
-    - 6: returns
+    - 5: add "%" sign
+    - 6: returns string
   tests:
   - input: '[''1'', ''1'', ''X'', ''2''], [''1'', ''1'', ''1'', ''2'']'
     output: '''75%'''

@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR
+from .analysis_data import IGNORE_SUCCESS, OUT_OF_TOKENS_ERROR, IGNORE_FAIL
 '''
 Analyzing common patterns in graphs
 
@@ -37,7 +37,8 @@ def clean_graph(graph: Graph, problem_answers: List[str]) -> Graph:
     """
     graph = trim_graph(graph, problem_answers)
     students_to_remove = IGNORE_SUCCESS.get(graph.problem,[]) + \
-                        OUT_OF_TOKENS_ERROR.get(graph.problem, [])
+                        OUT_OF_TOKENS_ERROR.get(graph.problem, []) + \
+                        IGNORE_FAIL.get(graph.problem, [])
     if len(students_to_remove) > 0:
         graph = remove_students(graph, students_to_remove)
         print("Removed students:", students_to_remove)

@@ -835,7 +835,9 @@ edges:
   _edge_tags:
     - a4
     - a5
-    - a6
+    - a1
+    - a2
+    - a3
 - !Edge
   node_from: *id002
   node_to: *id013
@@ -1063,6 +1065,7 @@ edges:
   state: success
   _edge_tags:
     - m5
+    - a6
 student_start_node_tags: 
   student0:
     - 1
@@ -1074,7 +1077,6 @@ student_start_node_tags:
     - 1
     - 2
     - 3
-    - 6
   student17:
     - 2
     - 3
@@ -1090,7 +1092,6 @@ student_start_node_tags:
     - 1
     - 2
     - 3
-    - 6
   student26:
     - 2
     - 3
@@ -1100,6 +1101,7 @@ student_start_node_tags:
   student30: #No starting clues
     - 0
   student4:
+    - 1
     - 2
     - 3
   student41:
@@ -1107,6 +1109,6 @@ student_start_node_tags:
     - 2
     - 3
   student51:
+    - 1
     - 2
     - 3
-    - 6

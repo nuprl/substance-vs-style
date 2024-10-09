@@ -118,7 +118,7 @@ class Graph(yaml.YAMLObject):
     """
     yaml_tag = u'!Graph'
     SUCCESS_NODE_COLOR = "green"
-    BASE_NODE_COLOR="grey"
+    BASE_NODE_COLOR="red"
     
     def __init__(self, problem:str, nodes: List[Node],edges: List[Edge], **kwargs):
         self.problem=problem

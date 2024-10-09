@@ -31,20 +31,24 @@ def main(args):
         problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
         graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
         success_node = [n for n in graph.nodes if n._node_tags == len(problem_answers)]
+        
+        # for some reason readingIceCream has strange stdouts, so go by studenteval labels
+        if graph.problem == "readingIceCream":
+            success_node = list(set([e.node_to for e in graph.edges if e.state == "success"]))
+
         if len(success_node) != 1:
             print(graph_name, len(success_node))
-            print([n._node_tags for n in graph.nodes])
             continue
+
         success_node = success_node[0]
 
         for i,e in enumerate(graph.edges):
-            if e.node_to.id == success_node.id:
-                if e.state != "success":
-                    print(f"False fail {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
-                elif e.state == "success" and e.node_to.id != success_node.id:
-                    print(f"False success {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
-                elif e.state == "neutral" and (e.node_to.id == success_node.id or e.node_from.id == success_node.id):
-                    print(f"False neutral {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
+            if e.node_to.id == success_node.id and e.state != "success":
+                print(f"False fail {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
+            elif e.state == "success" and e.node_to.id != success_node.id:
+                print(f"False success {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
+            elif e.state == "neutral" and (e.node_to.id == success_node.id or e.node_from.id == success_node.id):
+                print(f"False neutral {graph.problem}, {e.node_from.id}->{e.node_to.id}, {e.username}")
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

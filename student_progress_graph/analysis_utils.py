@@ -38,7 +38,7 @@ def remove_students(graph: Graph, students: List[str]) -> Graph:
     return new_graph
 
 
-def trim_graph(graph:Graph, problem_answers: List[str]) -> Graph:
+def trim_graph(graph:Graph, problem_answers: List[str], success_node_id: int) -> Graph:
     """
     Sometimes,students are successful before their last attempt, but keep
     playing with the model. Prune these extra interactions
@@ -48,15 +48,14 @@ def trim_graph(graph:Graph, problem_answers: List[str]) -> Graph:
     edges_to_retag = []
     for student, sorted_attempts in student_edges.items():
         for i, attempt in enumerate(sorted_attempts):
-            if i == 0 and score_node(attempt.node_from, problem_answers) == len(problem_answers):
-                # first attempt was correct
+            if i == 0 and attempt.node_from.id == success_node_id:
+                # first attempt was correct, delete
                 edges_to_delete += sorted_attempts[i+1:]
-                edges_to_retag.append(sorted_attempts[i])
                 break
-            elif score_node(attempt.node_to, problem_answers) == len(problem_answers):
+            elif attempt.node_to.id == success_node_id:
                 # first correct attempt
                 edges_to_delete += sorted_attempts[i+1:]
-                edges_to_retag.append(sorted_attempts[i])
+                edges_to_retag.append(attempt)
                 break
 
     graph.edges = [e for e in graph.edges if e not in set(edges_to_delete)]

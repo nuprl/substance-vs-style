@@ -1,0 +1,757 @@
+problem: assessVowels
+nodes:
+- &id001
+  id: 0
+  stdout:
+  - |
+    ['a', 'e', 'a', 'a', 'e']
+  - |
+    ['o', 'e', 'i', 'e', 'e']
+  - |
+    ['e']
+  - |
+    []
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags:
+- &id003
+  id: 1
+  stdout:
+  - |
+    ['I', 'a', 'e', 'a', 'a', 'e']
+  - |
+    ['A', 'o', 'e', 'i', 'e', 'e']
+  - |
+    ['A', 'A', 'e']
+  - |
+    []
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags:
+- &id002
+  id: 2
+  stdout:
+  - |
+    ['i', 'a', 'e', 'a', 'a', 'e']
+  - |
+    ['a', 'o', 'e', 'i', 'e', 'e']
+  - |
+    ['a', 'a', 'e']
+  - |
+    []
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags:
+- &id005
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 7
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 7
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 7
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 7
+  _node_tags:
+- &id006
+  id: 4
+  stdout:
+  - |
+    None
+  - |
+    None
+  - |
+    None
+  - |
+    None
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags:
+- &id004
+  id: 5
+  stdout:
+  - |
+    ['a', 'e']
+  - |
+    ['o', 'e', 'i']
+  - |
+    ['e']
+  - |
+    []
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags:
+- &id007
+  id: 6
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 8
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 8
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 8
+  - |-
+    IndentationError: expected an indented block after 'if' statement on line 8
+  _node_tags:
+edges:
+- node_from: *id001
+  node_to: *id002
+  username: student13
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function extracts the vowels in the string and returns them in a list.
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. 
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for char in s:
+            if char in vowels:
+                vowelList.append(char)
+        return vowelList
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowels_in_string = []
+        for char in s.lower():
+            if char in vowels:
+                vowels_in_string.append(char)
+        return vowels_in_string
+  diff: |-
+    --- 
+    +++ 
+    @@ -8,7 +8,13 @@
+     characters, the function-extracts+should+make+all+characters+lowercase+then+extract the vowels in
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+  - d4
+- node_from: *id002
+  node_to: *id003
+  username: student13
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the function should make all characters lowercase then extract the vowels in the string and returns them in a list. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Given a string of characters, the functions should then extract the vowels in the string and returns them in a list, making sure to account for both uppercase and lowercase versions of the vowels. 
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowels_in_string = []
+        for char in s.lower():
+            if char in vowels:
+                vowels_in_string.append(char)
+        return vowels_in_string
+  completion_to: |
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
+        vowelList = []
+        for i in s:
+            if i in vowels:
+                vowelList.append(i)
+        return vowelList
+  diff: |-
+    --- 
+    +++ 
+    @@ -7,12 +7,8 @@
+     of characters, the-function+functions should-make-all-characters-lowercase then extract the@@ -25,5 +21,18 @@
+     them in a-list.+list,+making+sure+to+account+for+both+uppercase+and+lowercase+versions+of+the+vowels. """
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags:
+  - a4
+- node_from: *id004
+  node_to: *id001
+  username: student16
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order (repetitions ok)
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        used = []
+        for char in s:
+            if char in vowels:
+                if char not in used:
+                    used.append(char)
+        return used
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        return [v for v in s if v in vowels]
+  diff: |-
+    --- 
+    +++ 
+    @@ -13,4 +13,10 @@
+     in the input+in+the+same+order+(repetitions+ok) """
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+  - m3
+- node_from: *id001
+  node_to: *id003
+  username: student16
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order (repetitions ok)
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        return a list of strings with all vowels used in the input in the same order including capitalizations (repetitions ok)
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        return [v for v in s if v in vowels]
+  completion_to: |
+    vowels = []
+        for char in s:
+            if char.lower() in "aeiou":
+                vowels.append(char)
+        return vowels
+  diff: |-
+    --- 
+    +++ 
+    @@ -17,6 +17,8 @@
+     the same order+including+capitalizations (repetitions ok) """
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags:
+  - a4
+- node_from: *id005
+  node_to: *id001
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every value from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every vowel from the input
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for i in s:
+            if i in vowels:
+                print(i)
+  completion_to: |-
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        list_of_vowels = []
+        for i in s:
+            if i in vowels:
+                list_of_vowels.append(i)
+        return list_of_vowels
+
+    print(assessVowels('aeiou'))
+    print(assessVowels('abcdefghijklmnop
+  diff: |-
+    --- 
+    +++ 
+    @@ -10,7 +10,7 @@
+     strings of every-value+vowel from the input
+  attempt_id: 1
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+  - a3
+- node_from: *id001
+  node_to: *id006
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function pints a list containing strings of every vowel from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list containing strings of every vowel from the input
+        """
+        
+  completion_from: |-
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        list_of_vowels = []
+        for i in s:
+            if i in vowels:
+                list_of_vowels.append(i)
+        return list_of_vowels
+
+    print(assessVowels('aeiou'))
+    print(assessVowels('abcdefghijklmnop
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for i in s:
+            if i in vowels:
+                vowelList.append(i)
+        print(vowelList)
+
+    assessVowels('supercalifragilisticexpialidocious')
+  diff: |-
+    --- 
+    +++ 
+    @@ -3,7 +3,7 @@
+     """ This function-pints+prints a list containing
+  attempt_id: 2
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+  - 0
+- node_from: *id006
+  node_to: *id005
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list containing strings of every vowel from the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all "a", "e", "I", or "u" that appear in the input
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for i in s:
+            if i in vowels:
+                vowelList.append(i)
+        print(vowelList)
+
+    assessVowels('supercalifragilisticexpialidocious')
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for char in s:
+            if char in vowels:
+                print(char)
+  diff: |-
+    --- 
+    +++ 
+    @@ -6,12 +6,16 @@
+     prints a list-containing-strings of-every-vowel-from+all+"a",+"e",+"I",+or+"u"+that+appear+in the input """
+  attempt_id: 3
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+  - m3
+  - a4
+- node_from: *id005
+  node_to: *id007
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all "a", "e", "I", or "u" that appear in the input
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints all vowels
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for char in s:
+            if char in vowels:
+                print(char)
+  completion_to: |
+    vowels = set('aeiou')
+        s = s.lower()
+        for vowel in s:
+            if vowel in vowels:
+                print(vowel)
+  diff: |-
+    --- 
+    +++ 
+    @@ -4,18 +4,6 @@
+     This function prints-a-list-of all-"a",-"e",-"I",-or-"u"-that-appear-in-the-input+vowels """
+  attempt_id: 4
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+  - l3
+  - d4
+- node_from: *id007
+  node_to: *id005
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints all vowels
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all vowels that appear
+        """
+        
+  completion_from: |
+    vowels = set('aeiou')
+        s = s.lower()
+        for vowel in s:
+            if vowel in vowels:
+                print(vowel)
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for i in s:
+            if i in vowels:
+                print(i)
+  diff: |-
+    --- 
+    +++ 
+    @@ -4,6 +4,11 @@
+     This function prints+a+list+of all vowels+that+appear """
+  attempt_id: 5
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+  - m3
+- node_from: *id005
+  node_to: *id005
+  username: student2
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        This function prints a list of all vowels that appear
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        This function prints a list of vowels 
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for i in s:
+            if i in vowels:
+                print(i)
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        for i in s:
+            if i in vowels:
+                print(i)
+
+    assessVowels('supercalifragilisticexpialidocious')
+  diff: |-
+    --- 
+    +++ 
+    @@ -7,8 +7,5 @@
+     a list of-all vowels-that-appear """
+  attempt_id: 6
+  total_attempts: 7
+  state: fail
+  _edge_tags:
+  - l3
+- node_from: *id001
+  node_to: *id003
+  username: student22
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        takes in a string and returns a list of vowels 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        takes in a string and checks for uppercase and lowercase vowels and returns a list of those uppercase and lowercase vowels, if any
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for letter in s:
+            if letter in vowels:
+                vowelList.append(letter)
+        return vowelList
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        vowelList = []
+        for letter in s:
+            if letter in vowels:
+                vowelList.append(letter)
+        return vowelList
+  diff: |-
+    --- 
+    +++ 
+    @@ -6,9 +6,22 @@
+     a string and+checks+for+uppercase+and+lowercase+vowels+and returns a list of-vowels+those+uppercase+and+lowercase+vowels,+if+any """
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - m3
+  - a4
+- node_from: *id001
+  node_to: *id003
+  username: student37
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        Write a function which takes a string as an input and returns a list of each vowel present in the string, case sensitive
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Write a function which takes a string as an input and returns a list of each vowel present in the string, where capitalized vowels are present in the return list as capitalized and lower case vowels as lower case
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        return [x for x in s if x in vowels]
+  completion_to: |
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
+        return [x for x in s if x in vowels]
+  diff: |-
+    --- 
+    +++ 
+    @@ -22,6 +22,22 @@
+     in the string,+where+capitalized+vowels+are+present+in+the+return+list+as+capitalized+and+lower case-sensitive+vowels+as+lower+case """
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - m4
+- node_from: *id001
+  node_to: *id001
+  username: student5
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. 
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for char in s:
+            if char in vowels:
+                vowelList.append(char)
+        return vowelList
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        output = []
+        for i in s:
+            if i in vowels:
+                output.append(i)
+        return output
+  diff: |-
+    --- 
+    +++ 
+    @@ -28,4 +28,11 @@
+     were originally written.+include+both+capital+and+lower+case+letters. """
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+  - m4
+- node_from: *id001
+  node_to: *id001
+  username: student5
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string in the case they were originally written. include both capital and lower case letters. 
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        the function assessVowels will take input of a string and return a list of all the vowels in that string. include both capital and lower case letters. 
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        output = []
+        for i in s:
+            if i in vowels:
+                output.append(i)
+        return output
+  completion_to: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        vowelList = []
+        for i in s:
+            if i in vowels:
+                vowelList.append(i)
+        return vowelList
+  diff: |-
+    --- 
+    +++ 
+    @@ -20,14 +20,7 @@
+     vowels in that-string-in-the-case-they-were-originally-written.+string. include both capital
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags:
+  - m4
+- node_from: *id001
+  node_to: *id003
+  username: student72
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        Return a list of the vowels in the input.
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        Return a list of both the uppercase and lowercase vowels in the input.
+        """
+        
+  completion_from: |
+    vowels = ['a', 'e', 'i', 'o', 'u']
+        return [x for x in s if x in vowels]
+  completion_to: |
+    return [c for c in s if c in 'aeiouAEIOU']
+  diff: |-
+    --- 
+    +++ 
+    @@ -5,7 +5,11 @@
+     a list of+both the+uppercase+and+lowercase vowels in the
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - a4
+- node_from: *id001
+  node_to: *id003
+  username: student74
+  prompt_from: |-
+    def assessVowels(s):
+        """
+        puts all the vowels of a string in a list
+        """
+        
+  prompt_to: |-
+    def assessVowels(s):
+        """
+        puts all the vowels of a string in a list, including capital and lower case letters
+        """
+        
+  completion_from: |
+    vowels = ['a','e','i','o','u']
+        vowelList = []
+        for letter in s:
+            if letter in vowels:
+                vowelList.append(letter)
+        return vowelList
+  completion_to: |
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
+        vowelList = []
+        for letter in s:
+            if letter in vowels:
+                vowelList.append(letter)
+        return vowelList
+  diff: |-
+    --- 
+    +++ 
+    @@ -10,5 +10,11 @@
+     string in a-list+list,+including+capital+and+lower+case+letters """
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+  - a4
+student_start_node_tags:
+  student13:
+  - 1
+  - 2
+  - 3
+  - 4
+  student16:
+  - 1
+  - 2
+  - 3
+  student2:
+  - 2
+  student22:
+  - 1
+  - 2
+  - 3
+  student37:
+  - 1
+  - 2
+  - 3
+  - 4
+  student5:
+  - 1
+  - 2
+  - 3
+  - 4
+  student72:
+  - 1
+  - 2
+  - 3
+  student74:
+  - 1
+  - 2
+  - 3

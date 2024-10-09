@@ -1,0 +1,269 @@
+!Graph
+problem: andCount
+nodes:
+- &id003 !Node
+  id: 0
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''el'' is not defined'
+  - 'NameError: name ''el'' is not defined'
+  - 'NameError: name ''el'' is not defined'
+  _node_tags: null
+- &id004 !Node
+  id: 1
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  _node_tags: null
+- &id002 !Node
+  id: 2
+  stdout:
+  - '27
+
+    '
+  - '12
+
+    '
+  - '0
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 3
+  stdout:
+  - '3
+
+    '
+  - '6
+
+    '
+  - '0
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 4
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    Reads list, and if list has\
+    \ '&' and majority '-', returns the lowest number of dashes in an item times 3.\
+    \ If the majority of the input in an item is '&', returns the highest number of\
+    \ & times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' in an item of the list,\
+    \ and majority '-', returns the lowest number of dashes in an item times 3. If\
+    \ the majority of the input in an item is '&', returns the highest number of &\
+    \ times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n    "
+  completion_from: "count = 0\n    dashCount = 0\n    andCount = 0\n    for item in\
+    \ andGrid:\n        if '&' in item:\n            if item.count('-') > item.count('&'):\n\
+    \                dashCount += item.count('-')\n                andCount += item.count('&')\n\
+    \            else:\n                dashCount += item.count('&')\n           \
+    \     andCount += item.count('-')\n   "
+  completion_to: "count = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      count += item.count('-') * 3\n            else:\n                count\
+    \ += item.count('&') * 2\n    return count\n"
+  diff: "--- \n+++ \n@@ -1,13 +1,14 @@\n def andCount(andGrid): \"\"\"-Reads+If+'&'+in+an+item+of+the\
+    \ list,-and-if-list-has-'&' and majority '-',"
+  attempt_id: 1
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' in an item of the list,\
+    \ and majority '-', returns the lowest number of dashes in an item times 3. If\
+    \ the majority of the input in an item is '&', returns the highest number of &\
+    \ times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and majority '-', returns the lowest number of dashes in an item\
+    \ times 3. If the majority of the input in an item is '&', returns the highest\
+    \ number of & times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n \
+    \   "
+  completion_from: "count = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      count += item.count('-') * 3\n            else:\n                count\
+    \ += item.count('&') * 2\n    return count\n"
+  completion_to: "count = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      count += item.count('-') * 3\n            else:\n                count\
+    \ += item.count('&') * 2\n    return count\n"
+  diff: "--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" If '&'+and+'-'+is in an item"
+  attempt_id: 2
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and majority '-', returns the lowest number of dashes in an item\
+    \ times 3. If the majority of the input in an item is '&', returns the highest\
+    \ number of & times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n \
+    \   "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', and majority '-', returns the\
+    \ lowest number of dashes in an item times 3. If the majority of the input in\
+    \ an item is '&', returns the highest number of & times 2. Returns 0 if there\
+    \ aren't both & and -.\n    \"\"\"\n    "
+  completion_from: "count = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      count += item.count('-') * 3\n            else:\n                count\
+    \ += item.count('&') * 2\n    return count\n"
+  completion_to: "andCount = 0\n    for i in andGrid:\n        if '&' in i and '-'\
+    \ in i:\n            if i.count('-') > i.count('&'):\n                andCount\
+    \ += i.count('-') * 3\n            else:\n                andCount += i.count('&')\
+    \ * 2\n    return andCount\n"
+  diff: "--- \n+++ \n@@ -12,6 +12,14 @@\n of the list,+and+if+there+are+more+'-'+than+'&',\
+    \ and majority '-',"
+  attempt_id: 3
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id003
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', and majority '-', returns the\
+    \ lowest number of dashes in an item times 3. If the majority of the input in\
+    \ an item is '&', returns the highest number of & times 2. Returns 0 if there\
+    \ aren't both & and -.\n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. and majority '-', returns the lowest number of dashes in an item times 3.\
+    \ If the majority of the input in an item is '&', returns the highest number of\
+    \ & times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n    "
+  completion_from: "andCount = 0\n    for i in andGrid:\n        if '&' in i and '-'\
+    \ in i:\n            if i.count('-') > i.count('&'):\n                andCount\
+    \ += i.count('-') * 3\n            else:\n                andCount += i.count('&')\
+    \ * 2\n    return andCount\n"
+  completion_to: "andCount = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      andCount += item.count('-') * 3\n            else:\n                andCount\
+    \ += item.count('&') * 2\n        elif '&' in item:\n            andCount += item.count('&')\
+    \ * 2\n        el"
+  diff: "--- \n+++ \n@@ -20,6 +20,12 @@\n '-' than '&',+returns+number+of+'-'+times+3.\
+    \ and majority '-',"
+  attempt_id: 4
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. and majority '-', returns the lowest number of dashes in an item times 3.\
+    \ If the majority of the input in an item is '&', returns the highest number of\
+    \ & times 2. Returns 0 if there aren't both & and -.\n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. Otherwise returns the number of '&' times 2. and majority '-', returns the\
+    \ lowest number of dashes in an item times 3. If the majority of the input in\
+    \ an item is '&', returns the highest number of & times 2. Returns 0 if there\
+    \ aren't both & and -.\n    \"\"\"\n    "
+  completion_from: "andCount = 0\n    for item in andGrid:\n        if '&' in item\
+    \ and '-' in item:\n            if item.count('-') > item.count('&'):\n      \
+    \          andCount += item.count('-') * 3\n            else:\n              \
+    \  andCount += item.count('&') * 2\n        elif '&' in item:\n            andCount\
+    \ += item.count('&') * 2\n        el"
+  completion_to: "andCount = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      andCount += item.count('-') * 3\n            else:\n                andCount\
+    \ += item.count('&') * 2\n    return andCount\n"
+  diff: "--- \n+++ \n@@ -26,6 +26,14 @@\n '-' times 3.+Otherwise+returns+the+number+of+'&'+times+2.\
+    \ and majority '-',"
+  attempt_id: 5
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. Otherwise returns the number of '&' times 2. and majority '-', returns the\
+    \ lowest number of dashes in an item times 3. If the majority of the input in\
+    \ an item is '&', returns the highest number of & times 2. Returns 0 if there\
+    \ aren't both & and -.\n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. Otherwise returns the number of '&' times 2. \n    \"\"\"\n    "
+  completion_from: "andCount = 0\n    for item in andGrid:\n        if '&' in item\
+    \ and '-' in item:\n            if item.count('-') > item.count('&'):\n      \
+    \          andCount += item.count('-') * 3\n            else:\n              \
+    \  andCount += item.count('&') * 2\n    return andCount\n"
+  completion_to: "count = 0\n    for i in andGrid:\n        if '&' in i and '-' in\
+    \ i:\n            if i.count('-') > i.count('&'):\n                count += i.count('-')\
+    \ * 3\n            else:\n                count += i.count('&') * 2\n    return\
+    \ count\n"
+  diff: "--- \n+++ \n@@ -34,46 +34,4 @@\n '&' times 2.-and-majority-'-',-returns-the-lowest-number-of-dashes-in-an-item-times-3.-If-the-majority-of-the-input-in-an-item-is-'&',-returns-the-highest-number-of-&-times-2.-Returns-0-if-there-aren't-both-&-and--.\
+    \ \"\"\""
+  attempt_id: 6
+  total_attempts: 8
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id004
+  username: student67
+  prompt_from: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. Otherwise returns the number of '&' times 2. \n    \"\"\"\n    "
+  prompt_to: "def andCount(andGrid):\n    \"\"\"\n    If '&' and '-' is in an item\
+    \ of the list, and if there are more '-' than '&', returns number of '-' times\
+    \ 3. Otherwise returns the number of '&' times 2. \n    \"\"\"\n    "
+  completion_from: "count = 0\n    for i in andGrid:\n        if '&' in i and '-'\
+    \ in i:\n            if i.count('-') > i.count('&'):\n                count +=\
+    \ i.count('-') * 3\n            else:\n                count += i.count('&') *\
+    \ 2\n    return count\n"
+  completion_to: "count = 0\n    for item in andGrid:\n        if '&' in item and\
+    \ '-' in item:\n            if item.count('-') > item.count('&'):\n          \
+    \      count += item.count('-') * 3\n            else:\n                count\
+    \ += item.count('&') * 2\n        elif '&' in item:\n            count += item.count('&')\
+    \ * 2\n        elif '-' in"
+  diff: ''
+  attempt_id: 7
+  total_attempts: 8
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

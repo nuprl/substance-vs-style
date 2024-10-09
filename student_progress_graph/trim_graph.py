@@ -21,7 +21,7 @@ def main(args):
         graph = load_graph(graph_yaml)
         graph.problem_clues = load_problem_clues(args.problem_clues_yaml, graph.problem)
         problem_answers = load_problem_answers(args.problem_clues_yaml, graph.problem)
-        graph = trim_graph(graph, problem_answers)
+        graph = trim_graph(graph, problem_answers, SUCCESS_NODE_IDS[graph.problem])
         with open(f"{args.outdir}/{graph.problem}.yaml", "w") as fp:
             yaml.dump(graph, fp)
 

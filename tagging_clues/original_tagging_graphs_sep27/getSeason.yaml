@@ -1,0 +1,1593 @@
+!Graph
+problem: getSeason
+nodes:
+- &id016 !Node
+  id: 0
+  stdout:
+  - 'winter
+
+    '
+  - 'spring
+
+    '
+  - 'summer
+
+    '
+  - 'autumn
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id018 !Node
+  id: 1
+  stdout:
+  - 'Winter
+
+    '
+  - 'Spring
+
+    '
+  - 'Summer
+
+    '
+  - 'Autumn
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id010 !Node
+  id: 2
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 5'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 5'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 5'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 5'
+  _node_tags: null
+- &id008 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 9'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 9'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 9'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 9'
+  _node_tags: null
+- &id009 !Node
+  id: 4
+  stdout:
+  - 'Invalid Month
+
+    '
+  - 'Invalid Month
+
+    '
+  - 'Invalid Month
+
+    '
+  - 'Invalid Month
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id015 !Node
+  id: 5
+  stdout:
+  - 'Winter
+
+    '
+  - 'Spring
+
+    '
+  - 'Summer
+
+    '
+  - 'Fall
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id011 !Node
+  id: 6
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: unterminated string literal (detected at line 11)'
+  - 'SyntaxError: unterminated string literal (detected at line 11)'
+  - 'SyntaxError: unterminated string literal (detected at line 11)'
+  - 'SyntaxError: unterminated string literal (detected at line 11)'
+  _node_tags: null
+- &id013 !Node
+  id: 7
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id002 !Node
+  id: 8
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    11'
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    11'
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    11'
+  - 'IndentationError: expected an indented block after ''elif'' statement on line
+    11'
+  _node_tags: null
+- &id012 !Node
+  id: 9
+  stdout:
+  - 'Not a valid month
+
+    '
+  - 'Not a valid month
+
+    '
+  - 'Not a valid month
+
+    '
+  - 'Not a valid month
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id014 !Node
+  id: 10
+  stdout:
+  - 'winter
+
+    '
+  - 'spring
+
+    '
+  - 'summer
+
+    '
+  - 'fall
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id004 !Node
+  id: 11
+  stdout:
+  - 'error
+
+    '
+  - 'error
+
+    '
+  - 'error
+
+    '
+  - 'error
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 12
+  stdout:
+  - 'invalid month
+
+    '
+  - 'invalid month
+
+    '
+  - 'invalid month
+
+    '
+  - 'invalid month
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 13
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id006 !Node
+  id: 14
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  _node_tags: null
+- &id017 !Node
+  id: 15
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id007 !Node
+  id: 16
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: ''{'' was never closed'
+  - 'SyntaxError: ''{'' was never closed'
+  - 'SyntaxError: ''{'' was never closed'
+  - 'SyntaxError: ''{'' was never closed'
+  _node_tags: null
+- &id001 !Node
+  id: 17
+  stdout:
+  - 'Invalid month
+
+    '
+  - 'Invalid month
+
+    '
+  - 'Invalid month
+
+    '
+  - 'Invalid month
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student1
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes the month and returns\
+    \ the season that the month falls into.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes the name of a month and\
+    \ returns the season that the month falls into.\n    \"\"\"\n    "
+  completion_from: "if month in [12, 1, 2]:\n        return 'Winter'\n    elif month\
+    \ in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n     \
+    \   return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n \
+    \   else:\n        return 'Invalid month'\n"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -3,6 +3,9 @@\n \"\"\" Takes the+name+of+a month and returns"
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student14
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    if input is December, January,\
+    \ or February, output is winter. If input is March, April, or May, output is spring.\
+    \ If input is June, July, or August, output is summer. If input is September,\
+    \ October, or November, output is fall.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output\
+    \ is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8,\
+    \ output is summer. If month == 9, 10, or 11, output is fall.\n    \"\"\"\n  \
+    \  "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        return \"\
+    winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"\
+    spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"\
+    summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"\
+    fall\"\n    else:\n        return \"invalid month\"\n"
+  completion_to: "if month == 12 or month == 1 or month == 2:\n        return \"winter\"\
+    \n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n\
+    \    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n\
+    \    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n\
+    \    else:\n        return \"error\"\n"
+  diff: "--- \n+++ \n@@ -2,42 +2,42 @@\n getSeason(month): \"\"\" if-input-is-December,-January,+month+==+12,+1,\
+    \ or-February,+2, output is winter. If-input-is-March,-April,+month+==+3,+4, or-May,+5,\
+    \ output is spring. If-input-is-June,-July,+month+==+6,+7, or-August,+8, output\
+    \ is summer. If-input-is-September,-October,+month+==+9,+10, or-November,+11,\
+    \ output is fall."
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - d1
+    - m4
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student14
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output\
+    \ is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8,\
+    \ output is summer. If month == 9, 10, or 11, output is fall.\n    \"\"\"\n  \
+    \  "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output\
+    \ is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8,\
+    \ output is summer. If month == 9, 10, or 11, output is fall. No else statement.\n\
+    \    \"\"\"\n    "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        return \"\
+    winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"\
+    spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"\
+    summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"\
+    fall\"\n    else:\n        return \"error\"\n"
+  completion_to: "if month == 12 or month == 1 or month == 2:\n        return \"winter\"\
+    \n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n\
+    \    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n\
+    \    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n"
+  diff: "--- \n+++ \n@@ -41,4 +41,7 @@\n output is fall.+No+else+statement. \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id005
+  node_to: *id005
+  username: student14
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output\
+    \ is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8,\
+    \ output is summer. If month == 9, 10, or 11, output is fall. No else statement.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    if month == 12, 1, or 2, output\
+    \ is winter. If month == 3, 4, or 5, output is spring. If month == 6, 7, or 8,\
+    \ output is summer. If month == 9, 10, or 11, output is fall. No else statement.\
+    \ 12 == December, 1 == January\n    \"\"\"\n    "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        return \"\
+    winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"\
+    spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"\
+    summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"\
+    fall\"\n"
+  completion_to: "if month == 12 or month == 1 or month == 2:\n        return \"winter\"\
+    \n    elif month == 3 or month == 4 or month == 5:\n        return \"spring\"\n\
+    \    elif month == 6 or month == 7 or month == 8:\n        return \"summer\"\n\
+    \    elif month == 9 or month == 10 or month == 11:\n        return \"fall\"\n"
+  diff: "--- \n+++ \n@@ -44,4 +44,10 @@\n No else statement.+12+==+December,+1+==+January\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id001
+  node_to: *id006
+  username: student15
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Has a dictionary matching a\
+    \ season to a month. If the inputted month is in the season, returns that season.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in order,\
+    \ with index 0 = 0 and the rest of the indexes corresponding to the correct month.\
+    \ Has a dictionary matching a season to a month. If the inputted month is in the\
+    \ season, returns that season.\n    \"\"\"\n    "
+  completion_from: "season = {\n        \"Winter\": [12, 1, 2],\n        \"Spring\"\
+    : [3, 4, 5],\n        \"Summer\": [6, 7, 8],\n        \"Fall\": [9, 10, 11]\n\
+    \    }\n    for key, value in season.items():\n        if month in value:\n  \
+    \          return key\n    return \"Invalid month\"\n"
+  completion_to: "months = [\"January\", \"February\", \"March\", \"April\", \"May\"\
+    , \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"\
+    December\"]\n    season = {\"Winter\": [0, 1, 11], \"Spring\": [2, 3, 4], \"Summer\"\
+    : [5, 6, 7], \"Fall\": [8, 9, 10]}\n    for key in season:\n        if months.index(month)\
+    \ in"
+  diff: "--- \n+++ \n@@ -1,6 +1,30 @@\n def getSeason(month): \"\"\"+Has+a+list+of+all+months+in+order,+with+index+0+=+0+and+the+rest+of+the+indexes+corresponding+to+the+correct+month.\
+    \ Has a dictionary"
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id006
+  node_to: *id007
+  username: student15
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in\
+    \ order, with index 0 = 0 and the rest of the indexes corresponding to the correct\
+    \ month. Has a dictionary matching a season to a month. If the inputted month\
+    \ is in the season, returns that season.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in order.\
+    \ Index 0 of the list is '0', and the rest of the indexes corresponding to the\
+    \ correct month. Has a dictionary matching a season to a month. If the inputted\
+    \ month is in the season, returns that season.\n    \"\"\"\n    "
+  completion_from: "months = [\"January\", \"February\", \"March\", \"April\", \"\
+    May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\"\
+    , \"December\"]\n    season = {\"Winter\": [0, 1, 11], \"Spring\": [2, 3, 4],\
+    \ \"Summer\": [5, 6, 7], \"Fall\": [8, 9, 10]}\n    for key in season:\n     \
+    \   if months.index(month) in"
+  completion_to: "months = ['0', 'January', 'February', 'March', 'April', 'May', 'June',\
+    \ 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict\
+    \ = {'Winter': ['December', 'January', 'February'], 'Spring': ['March', 'April',\
+    \ 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September', 'October',\
+    \ 'November']"
+  diff: "--- \n+++ \n@@ -8,12 +8,14 @@\n all months in-order,-with-index+order.+Index\
+    \ 0-=-0+of+the+list+is+'0', and the rest"
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id007
+  node_to: *id006
+  username: student15
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in\
+    \ order. Index 0 of the list is '0', and the rest of the indexes corresponding\
+    \ to the correct month. Has a dictionary matching a season to a month. If the\
+    \ inputted month is in the season, returns that season.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in order.\
+    \ Index 0 of the list is '0', and the rest of the indexes corresponding to the\
+    \ correct month. Has a dictionary matching a season to a month. \nfor each key,\
+    \ value in the dictionary, if the inputted month = value, returns the key.\n \
+    \   \"\"\"\n    "
+  completion_from: "months = ['0', 'January', 'February', 'March', 'April', 'May',\
+    \ 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n\
+    \    seasonDict = {'Winter': ['December', 'January', 'February'], 'Spring': ['March',\
+    \ 'April', 'May'], 'Summer': ['June', 'July', 'August'], 'Fall': ['September',\
+    \ 'October', 'November']"
+  completion_to: "months = ['0', 'January', 'February', 'March', 'April', 'May', 'June',\
+    \ 'July', 'August', 'September', 'October', 'November', 'December']\n    seasonDict\
+    \ = {'Winter': [12, 1, 2], 'Spring': [3, 4, 5], 'Summer': [6, 7, 8], 'Fall': [9,\
+    \ 10, 11]}\n    for key, value in seasonDict."
+  diff: "--- \n+++ \n@@ -36,15 +36,20 @@\n to a month.-If+for+each+key,+value+in+the+dictionary,+if\
+    \ the inputted month-is-in+=+value,+returns the-season,-returns-that-season.+key.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id006
+  node_to: *id008
+  username: student15
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in\
+    \ order. Index 0 of the list is '0', and the rest of the indexes corresponding\
+    \ to the correct month. Has a dictionary matching a season to a month. \nfor each\
+    \ key, value in the dictionary, if the inputted month = value, returns the key.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Has a list of all months in order.\
+    \ Index 0 of the list is '0', and the rest of the indexes corresponding to the\
+    \ correct month. Has a dictionary matching a season to a month. \nfor each key,\
+    \ value in the dictionary, if the inputted month is in the list of values, returns\
+    \ the key that is matched with that value.\n    \"\"\"\n    "
+  completion_from: "months = ['0', 'January', 'February', 'March', 'April', 'May',\
+    \ 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n\
+    \    seasonDict = {'Winter': [12, 1, 2], 'Spring': [3, 4, 5], 'Summer': [6, 7,\
+    \ 8], 'Fall': [9, 10, 11]}\n    for key, value in seasonDict."
+  completion_to: "months = ['0','January','February','March','April','May','June','July','August','September','October','November','December']\n\
+    \    seasons = {'Winter':['December','January','February'],'Spring':['March','April','May'],'Summer':['June','July','August'],'Fall':['September','October','November']}\n\
+    \    for key, value in seasons.items():\n        if months.index(month) in value:\n"
+  diff: "--- \n+++ \n@@ -47,9 +47,19 @@\n the inputted month-=-value,+is+in+the+list+of+values,\
+    \ returns the-key.+key+that+is+matched+with+that+value. \"\"\""
+  attempt_id: 4
+  total_attempts: 5
+  state: fail
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id009
+  username: student24
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    For the given month, return\
+    \ the season that occurs during that month\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    If the number of a month is in\
+    \ the list, return the season for that month\n    \"\"\"\n    "
+  completion_from: "if month in [12, 1, 2]:\n        return \"Winter\"\n    elif month\
+    \ in [3, 4, 5]:\n        return \"Spring\"\n    elif month in [6, 7, 8]:\n   \
+    \     return \"Summer\"\n    elif month in [9, 10, 11]:\n        return \"Fall\"\
+    \n    else:\n        return \"Invalid month\"\n"
+  completion_to: "if month in [12, 1, 2]:\n        return 'Winter'\n    elif month\
+    \ in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n     \
+    \   return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n \
+    \   else:\n        return 'Invalid Month'\n"
+  diff: "--- \n+++ \n@@ -1,16 +1,20 @@\n def getSeason(month): \"\"\"-For+If the-given-month,+number+of+a+month+is+in+the+list,\
+    \ return the season-that-occurs-during+for that month \"\"\""
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id009
+  node_to: *id009
+  username: student24
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    If the number of a month is\
+    \ in the list, return the season for that month\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    If the number of a month is in\
+    \ the list, return the season for that month\n    \"\"\"\n    "
+  completion_from: "if month in [12, 1, 2]:\n        return 'Winter'\n    elif month\
+    \ in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n     \
+    \   return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n \
+    \   else:\n        return 'Invalid Month'\n"
+  completion_to: "if month in [12, 1, 2]:\n        return 'Winter'\n    elif month\
+    \ in [3, 4, 5]:\n        return 'Spring'\n    elif month in [6, 7, 8]:\n     \
+    \   return 'Summer'\n    elif month in [9, 10, 11]:\n        return 'Fall'\n \
+    \   else:\n        return 'Invalid Month'\n\nprint(getSeason(2))\nprint(getSeason("
+  diff: ''
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id010
+  node_to: *id010
+  username: student28
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month represents the months in a year. The code should take seasons associated\
+    \ with that month and print the associated season of that month. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month is a string and Month represents the months in a year. The code\
+    \ should take seasons associated with that month and print the associated season\
+    \ of that month. \n    \"\"\"\n    "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        print(\"\
+    Winter\")\n    elif month == 3 or month == 4 or month == 5:\n        print(\"\
+    Spring\")\n    elif month == 6 or month == 7 or month == 8:\n        print(\"\
+    Summer\")\n    elif month == 9 or month == 10 or month == 11:\n        print(\"\
+    Fall\")\n    else:\n        print(\"Error: Invalid month\")\n"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        print(\"Winter\")\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\"\
+    )\n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -7,6 +7,11 @@\n one parameter, month.+Month+is+a+string+and\
+    \ Month represents the"
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id010
+  node_to: *id010
+  username: student28
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month is a string and Month represents the months in a year. The code\
+    \ should take seasons associated with that month and print the associated season\
+    \ of that month. \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month is a string and Month represents the months in a year. There are\
+    \ seasons associated with each month. Winter, spring, summer, and fall. The code\
+    \ should take seasons associated with that month and print the associated season\
+    \ of that month. \n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        print(\"Winter\")\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\"\
+    )\n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        print(\"Winter\")\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\"\
+    )\n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -19,6 +19,18 @@\n in a year.+There+are+seasons+associated+with+each+month.+Winter,+spring,+summer,+and+fall.\
+    \ The code should"
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id010
+  node_to: *id010
+  username: student28
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month is a string and Month represents the months in a year. There are\
+    \ seasons associated with each month. Winter, spring, summer, and fall. The code\
+    \ should take seasons associated with that month and print the associated season\
+    \ of that month. \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    This function takes one parameter,\
+    \ month. Month is a string and Month represents the months in a year. There are\
+    \ seasons associated with each month. Winter, spring, summer, and fall. The code\
+    \ should take seasons associated with that month and print the associated season\
+    \ of that month. The months of December, January, and February should be winter,\
+    \ and so on. \n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        print(\"Winter\")\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\"\
+    )\n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        print(\"Winter\")\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        print(\"Spring\")\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        print(\"Summer\"\
+    )\n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -48,4 +48,17 @@\n of that month.+The+months+of+December,+January,+and+February+should+be+winter,+and+so+on.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id002
+  node_to: *id011
+  username: student31
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in: 'summer', 'winter', 'spring', or 'fall'.\n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == 'January' or month == 'February' or month == 'December':\n\
+    \        return 'winter'\n    elif month == 'March' or month == 'April' or month\
+    \ == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July'\
+    \ or month == 'August':\n        return 'summer'\n    elif month == 'September'\
+    \ or month == 'October' or month == 'November"
+  diff: "--- \n+++ \n@@ -21,5 +21,10 @@\n that month is-in.+in:+'summer',+'winter',+'spring',+or+'fall'.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id011
+  node_to: *id011
+  username: student31
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in: 'summer', 'winter', 'spring', or 'fall'.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in: December, January, and February are all in winter, March, April, and\
+    \ May are all in spring, June, July, and August are all in summer, and October,\
+    \ September, and November are all in fall.\n    \"\"\"\n    "
+  completion_from: "if month == 'January' or month == 'February' or month == 'December':\n\
+    \        return 'winter'\n    elif month == 'March' or month == 'April' or month\
+    \ == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July'\
+    \ or month == 'August':\n        return 'summer'\n    elif month == 'September'\
+    \ or month == 'October' or month == 'November"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -22,9 +22,37 @@\n month is in:-'summer',-'winter',-'spring',-or-'fall'.+December,+January,+and+February+are+all+in+winter,+March,+April,+and+May+are+all+in+spring,+June,+July,+and+August+are+all+in+summer,+and+October,+September,+and+November+are+all+in+fall.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - d3
+    - a4
+- !Edge
+  node_from: *id011
+  node_to: *id011
+  username: student31
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in: December, January, and February are all in winter, March, April, and\
+    \ May are all in spring, June, July, and August are all in summer, and October,\
+    \ September, and November are all in fall.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes a string corresponding\
+    \ to one month of the year, and returns a string indicating what season that month\
+    \ is in: December, January, and February are all in winter, March, April, and\
+    \ May are all in spring, June, July, and August are all in summer, and October,\
+    \ September, and November are all in the season \"fall\".\n    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -54,5 +54,7 @@\n are all in-fall.+the+season+\"fall\". \"\"\
+    \""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - a3
+    - m4
+- !Edge
+  node_from: *id012
+  node_to: *id009
+  username: student39
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The goal for this function,\
+    \ getSeason is when provided with a month of the year to return what season that\
+    \ belongs to. \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason\
+    \ is when provided with a number corresponding to a month of the year to return\
+    \ what season that month belongs to. \n    \"\"\"\n    "
+  completion_from: "if month in [12,1,2]:\n        return \"Winter\"\n    elif month\
+    \ in [3,4,5]:\n        return \"Spring\"\n    elif month in [6,7,8]:\n       \
+    \ return \"Summer\"\n    elif month in [9,10,11]:\n        return \"Fall\"\n \
+    \   else:\n        return \"Not a valid month\"\n"
+  completion_to: "if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\
+    \n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n\
+    \    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n\
+    \    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n\
+    \    else:\n        return \"Invalid Month\"\n\nprint"
+  diff: "--- \n+++ \n@@ -12,6 +12,10 @@\n provided with a+number+corresponding+to+a\
+    \ month of the@@ -21,6 +25,7 @@\n what season that+month belongs to. \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id009
+  node_to: *id013
+  username: student39
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The goal for this function,\
+    \ getSeason is when provided with a number corresponding to a month of the year\
+    \ to return what season that month belongs to. \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason\
+    \ is when provided a month of the year to return what season that month belongs\
+    \ to. The month of the year will correspond with a numerical value based on the\
+    \ order of the month during the year. For example January = 1.\n    \"\"\"\n \
+    \   "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        return \"\
+    Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"\
+    Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"\
+    Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"\
+    Fall\"\n    else:\n        return \"Invalid Month\"\n\nprint"
+  completion_to: "if month >= 3 and month <= 5:\n        return \"Spring\"\n    elif\
+    \ month >= 6 and month <= 8:\n        return \"Summer\"\n    elif month >= 9 and\
+    \ month <= 11:\n        return \"Fall\"\n    else:\n        return \"Winter\"\n"
+  diff: "--- \n+++ \n@@ -10,11 +10,6 @@\n is when provided-with-a-number-corresponding-to\
+    \ a month of@@ -28,4 +23,30 @@\n month belongs to.+The+month+of+the+year+will+correspond+with+a+numerical+value+based+on+the+order+of+the+month+during+the+year.+For+example+January+=+1.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id013
+  node_to: *id001
+  username: student39
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The goal for this function,\
+    \ getSeason is when provided a month of the year to return what season that month\
+    \ belongs to. The month of the year will correspond with a numerical value based\
+    \ on the order of the month during the year. For example January = 1.\n    \"\"\
+    \"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The goal for this function, getSeason\
+    \ is when provided a month of the year to return what season that month belongs\
+    \ to. The month of the year will correspond with a numerical value based on the\
+    \ order of the month during the year. The input should be converted to a numerical\
+    \ value before giving returning the season.\n    \"\"\"\n    "
+  completion_from: "if month >= 3 and month <= 5:\n        return \"Spring\"\n   \
+    \ elif month >= 6 and month <= 8:\n        return \"Summer\"\n    elif month >=\
+    \ 9 and month <= 11:\n        return \"Fall\"\n    else:\n        return \"Winter\"\
+    \n"
+  completion_to: "if month == 12 or month == 1 or month == 2:\n        return \"Winter\"\
+    \n    elif month == 3 or month == 4 or month == 5:\n        return \"Spring\"\n\
+    \    elif month == 6 or month == 7 or month == 8:\n        return \"Summer\"\n\
+    \    elif month == 9 or month == 10 or month == 11:\n        return \"Fall\"\n\
+    \    else:\n        return \"Invalid month\"\n"
+  diff: "--- \n+++ \n@@ -44,9 +44,18 @@\n during the year.-For-example-January-=-1.+The+input+should+be+converted+to+a+numerical+value+before+giving+returning+the+season.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id011
+  node_to: *id011
+  username: student45
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"December\", \"January\", or \"February\", season is 'winter'. If month\
+    \ is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\"\
+    , \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\"\
+    , or \"November\", season is \"fall\".\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"December\", \"January\", or \"February\", season is 'winter'. If month\
+    \ is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\"\
+    , \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\"\
+    , or \"November\", season is \"fall\".\n    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: ''
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id011
+  node_to: *id011
+  username: student45
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"December\", \"January\", or \"February\", season is 'winter'. If month\
+    \ is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\"\
+    , \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\"\
+    , or \"November\", season is \"fall\".\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"December\", \"January\", or \"February\", season is 'winter'. If month\
+    \ is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\"\
+    , \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\"\
+    , or \"November\", season is 'fall'.\n    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return 'winter'\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return 'spring'\n    elif month == \"\
+    June\" or month == \"July\" or month == \"August\":\n        return 'summer'\n\
+    \    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -58,5 +58,5 @@\n \"November\", season is-\"fall\".+'fall'.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id011
+  node_to: *id014
+  username: student45
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"December\", \"January\", or \"February\", season is 'winter'. If month\
+    \ is \"March\", \"April\", or \"May\", season is 'spring'. If month is \"June\"\
+    , \"July\", or \"August\", season is 'summer'. If month is \"September\", \"October\"\
+    , or \"November\", season is 'fall'.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes one parameter, a string,\
+    \ which we will call month. Outputs a string which we will call season. If month\
+    \ is \"January\", season is 'winter'. If month is \"April\", season is 'spring'.\
+    \ If month is \"August\", season is 'summer'. If month is \"October\", season\
+    \ is 'fall'.\n    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return 'winter'\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return 'spring'\n    elif month == \"\
+    June\" or month == \"July\" or month == \"August\":\n        return 'summer'\n\
+    \    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month == \"January\":\n        return \"winter\"\n    elif month\
+    \ == \"April\":\n        return \"spring\"\n    elif month == \"August\":\n  \
+    \      return \"summer\"\n    elif month == \"October\":\n        return \"fall\"\
+    \n    else:\n        return \"Invalid month\"\n"
+  diff: "--- \n+++ \n@@ -22,29 +22,20 @@\n If month is-\"December\", \"January\",-or-\"\
+    February\", season is 'winter'. If month is-\"March\", \"April\",-or-\"May\",\
+    \ season is 'spring'. If month is-\"June\",-\"July\",-or \"August\", season is@@\
+    \ -52,10 +43,7 @@\n If month is-\"September\", \"October\",-or-\"November\", season\
+    \ is 'fall'."
+  attempt_id: 3
+  total_attempts: 4
+  state: success
+  _edge_tags:
+    - l4
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student46
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month, then outputs the season commonly associated with that\
+    \ month.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month, then outputs the season commonly associated with that\
+    \ month.\n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: ''
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id002
+  node_to: *id005
+  username: student46
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month, then outputs the season commonly associated with that\
+    \ month.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month, then outputs the season commonly associated with that\
+    \ month, in lower case.\n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month in [\"january\", \"february\", \"december\"]:\n       \
+    \ return \"winter\"\n    elif month in [\"march\", \"april\", \"may\"]:\n    \
+    \    return \"spring\"\n    elif month in [\"june\", \"july\", \"august\"]:\n\
+    \        return \"summer\"\n    elif month in [\"september\", \"october\", \"\
+    november\"]:\n        return \"fall\""
+  diff: "--- \n+++ \n@@ -18,5 +18,8 @@\n associated with that-month.+month,+in+lower+case.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id005
+  node_to: *id014
+  username: student46
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month, then outputs the season commonly associated with that\
+    \ month, in lower case.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The functions take in a string,\
+    \ representing a month in with the first letter being upper case, then outputs\
+    \ the season commonly associated with that month, in lower case.\n    \"\"\"\n\
+    \    "
+  completion_from: "if month in [\"january\", \"february\", \"december\"]:\n     \
+    \   return \"winter\"\n    elif month in [\"march\", \"april\", \"may\"]:\n  \
+    \      return \"spring\"\n    elif month in [\"june\", \"july\", \"august\"]:\n\
+    \        return \"summer\"\n    elif month in [\"september\", \"october\", \"\
+    november\"]:\n        return \"fall\""
+  completion_to: "if month in [\"December\", \"January\", \"February\"]:\n       \
+    \ return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n    \
+    \    return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n\
+    \        return \"summer\"\n    elif month in [\"September\", \"October\", \"\
+    November\"]:\n        return \"fall\"\n    else:\n        return \"Invalid month\"\
+    \n\n"
+  diff: "--- \n+++ \n@@ -9,7 +9,15 @@\n string, representing a-month,+month+in+with+the+first+letter+being+upper+case,\
+    \ then outputs the"
+  attempt_id: 3
+  total_attempts: 4
+  state: success
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id015
+  node_to: *id014
+  username: student47
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    \"January, February, March\
+    \ is winter, April, May, June is spring, July, August, September is summer, October,\
+    \ November, December is fall, determine the class of the input\"\n    \"\"\"\n\
+    \    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    \"January, February, March is\
+    \ winter, April, May, June is spring, July, August, September is summer, October,\
+    \ November, December is fall, determine the class of the input, produce an all\
+    \ lower case string\"\n    \"\"\"\n    "
+  completion_from: "if month in [\"January\", \"February\", \"March\"]:\n        return\
+    \ \"Winter\"\n    elif month in [\"April\", \"May\", \"June\"]:\n        return\
+    \ \"Spring\"\n    elif month in [\"July\", \"August\", \"September\"]:\n     \
+    \   return \"Summer\"\n    elif month in [\"October\", \"November\", \"December\"\
+    ]:\n        return \"Fall\"\n    else:\n        return \"Invalid month\"\n\nprint"
+  completion_to: "if month in [\"January\", \"February\", \"March\"]:\n        return\
+    \ \"winter\"\n    elif month in [\"April\", \"May\", \"June\"]:\n        return\
+    \ \"spring\"\n    elif month in [\"July\", \"August\", \"September\"]:\n     \
+    \   return \"summer\"\n    elif month in [\"October\", \"November\", \"December\"\
+    ]:\n        return \"fall\"\n    else:\n        return \"Invalid month\"\n\n"
+  diff: "--- \n+++ \n@@ -26,5 +26,11 @@\n class of the-input\"+input,+produce+an+all+lower+case+string\"\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id015
+  node_to: *id011
+  username: student55
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Write a function that gets\
+    \ the name of the month and returns the season that the majority of the month\
+    \ is represented by in the north hemisphere.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Write a function that gets the\
+    \ name of the month and returns the season that the majority of the month is represented\
+    \ by in the north hemisphere. The first letter of the season should be in lowercase.\n\
+    \    \"\"\"\n    "
+  completion_from: "if month in ['December', 'January', 'February']:\n        return\
+    \ 'Winter'\n    elif month in ['March', 'April', 'May']:\n        return 'Spring'\n\
+    \    elif month in ['June', 'July', 'August']:\n        return 'Summer'\n    elif\
+    \ month in ['September', 'October', 'November']:\n        return 'Fall'\n    else:\n\
+    \        return 'Invalid month'\n\nprint"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -28,4 +28,14 @@\n the north hemisphere.+The+first+letter+of+the+season+should+be+in+lowercase.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id011
+  node_to: *id016
+  username: student55
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Write a function that gets\
+    \ the name of the month and returns the season that the majority of the month\
+    \ is represented by in the north hemisphere. The first letter of the season should\
+    \ be in lowercase.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Write a function that gets the\
+    \ name of the month and returns the season that the majority of the month is represented\
+    \ by in the north hemisphere. The first letter of the season should be in lowercase.\n\
+    \    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month in [\"December\", \"January\", \"February\"]:\n       \
+    \ return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n    \
+    \    return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n\
+    \        return \"summer\"\n    elif month in [\"September\", \"October\", \"\
+    November\"]:\n        return \"autumn\"\n    else:\n        return \"Invalid month\"\
+    \n"
+  diff: ''
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id016
+  node_to: *id011
+  username: student55
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Write a function that gets\
+    \ the name of the month and returns the season that the majority of the month\
+    \ is represented by in the north hemisphere. The first letter of the season should\
+    \ be in lowercase.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Write a function that gets the\
+    \ name of the month and returns the season that the majority of the month is represented\
+    \ by in the north hemisphere. The first letter of the season should be in lowercase.\
+    \ For the case of autumn, provide the return statement as 'fall'.\n    \"\"\"\n\
+    \    "
+  completion_from: "if month in [\"December\", \"January\", \"February\"]:\n     \
+    \   return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n  \
+    \      return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n\
+    \        return \"summer\"\n    elif month in [\"September\", \"October\", \"\
+    November\"]:\n        return \"autumn\"\n    else:\n        return \"Invalid month\"\
+    \n"
+  completion_to: "if month == 'January' or month == 'February' or month == 'December':\n\
+    \        return 'winter'\n    elif month == 'March' or month == 'April' or month\
+    \ == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July'\
+    \ or month == 'August':\n        return 'summer'\n    elif month == 'September'\
+    \ or month == 'October' or month == 'November"
+  diff: "--- \n+++ \n@@ -38,4 +38,15 @@\n be in lowercase.+For+the+case+of+autumn,+provide+the+return+statement+as+'fall'.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id011
+  node_to: *id014
+  username: student55
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Write a function that gets\
+    \ the name of the month and returns the season that the majority of the month\
+    \ is represented by in the north hemisphere. The first letter of the season should\
+    \ be in lowercase. For the case of autumn, provide the return statement as 'fall'.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Write a function that gets the\
+    \ name of the month and returns the season that the majority of the month is represented\
+    \ by in the north hemisphere. The first letter of the season should be in lowercase.\
+    \ For the case of autumn, provide the return statement as 'fall'.\n    \"\"\"\n\
+    \    "
+  completion_from: "if month == 'January' or month == 'February' or month == 'December':\n\
+    \        return 'winter'\n    elif month == 'March' or month == 'April' or month\
+    \ == 'May':\n        return 'spring'\n    elif month == 'June' or month == 'July'\
+    \ or month == 'August':\n        return 'summer'\n    elif month == 'September'\
+    \ or month == 'October' or month == 'November"
+  completion_to: "if month in ['January', 'February', 'December']:\n        return\
+    \ 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n\
+    \    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif\
+    \ month in ['September', 'October', 'November']:\n        return 'fall'\n    else:\n\
+    \        return 'Invalid month'\n\n"
+  diff: ''
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student6
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Function takes in an inputted\
+    \ month of the year and outputs the season that the month is in \n    \"\"\"\n\
+    \    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Function takes in the name of\
+    \ an inputted month of the year and outputs the season that the month is in \n\
+    \    \"\"\"\n    "
+  completion_from: "if month == 12 or month == 1 or month == 2:\n        return \"\
+    Winter\"\n    elif month == 3 or month == 4 or month == 5:\n        return \"\
+    Spring\"\n    elif month == 6 or month == 7 or month == 8:\n        return \"\
+    Summer\"\n    elif month == 9 or month == 10 or month == 11:\n        return \"\
+    Fall\"\n    else:\n        return \"Invalid month\"\n"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -4,6 +4,9 @@\n Function takes in+the+name+of an inputted month"
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student6
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Function takes in the name\
+    \ of an inputted month of the year and outputs the season that the month is in\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Function takes in the name of\
+    \ an inputted month of the year and outputs the season that the month is in. It\
+    \ returns and prints the correct outputted season\n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  diff: "--- \n+++ \n@@ -21,5 +21,13 @@\n the month is-in+in.+It+returns+and+prints+the+correct+outputted+season\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id002
+  node_to: *id006
+  username: student6
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Function takes in the name\
+    \ of an inputted month of the year and outputs the season that the month is in.\
+    \ It returns and prints the correct outputted season\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Function takes in the name of\
+    \ an inputted month of the year and outputs the season that the month is in. It\
+    \ returns and prints the correct outputted season, with a return statement after\
+    \ each if, else or elif statement\n    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        print(\"The month of\", month, \"is in the season of Winter\"\
+    )\n        return \"Winter\"\n    elif month == \"March\" or month == \"April\"\
+    \ or month == \"May\":\n        print(\"The month of\", month, \"is in the season\
+    \ of Spring\")\n        return \"Spring\"\n    elif month == \"June\" or month\
+    \ =="
+  diff: "--- \n+++ \n@@ -29,5 +29,16 @@\n the correct outputted-season+season,+with+a+return+statement+after+each+if,+else+or+elif+statement\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id002
+  node_to: *id011
+  username: student65
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    This function inputs the string\
+    \ of a month and returns the name of the season it is in (in the northern hemisphere)\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    This function inputs a string\
+    \ of the name of a month and returns the name of the season it is in (in the northern\
+    \ hemisphere). The input should be capitalized, the output should not.\n    \"\
+    \"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    December\":\n        return \"Winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"Spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"Summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November\"\
+    :"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -4,8 +4,11 @@\n This function inputs+a+string+of the-string+name\
+    \ of a month@@ -22,5 +25,14 @@\n (in the northern-hemisphere)+hemisphere).+The+input+should+be+capitalized,+the+output+should+not.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id017
+  node_to: *id001
+  username: student7
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and\
+    \ returns the season for which the month is found in. The first three months of\
+    \ the year are considered to be winter, the next three months are considered to\
+    \ be spring, the next three months are considered summer, and the last three months\
+    \ are considered fall.\n\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns\
+    \ the season for which the month is found in. The months are assigned numbers\
+    \ one to twelve, respectively. The first three months of the year are considered\
+    \ to be winter, the next three months are considered to be spring, the next three\
+    \ months are considered summer, and the last three months are considered fall.\n\
+    \n    \"\"\"\n    "
+  completion_from: "if month < 4:\n        return \"Winter\"\n    elif month < 7:\n\
+    \        return \"Spring\"\n    elif month < 10:\n        return \"Summer\"\n\
+    \    else:\n        return \"Fall\"\n"
+  completion_to: "if month == 1 or month == 2 or month == 3:\n        return \"Winter\"\
+    \n    elif month == 4 or month == 5 or month == 6:\n        return \"Spring\"\n\
+    \    elif month == 7 or month == 8 or month == 9:\n        return \"Summer\"\n\
+    \    elif month == 10 or month == 11 or month == 12:\n        return \"Fall\"\n\
+    \    else:\n        return \"Invalid month\"\n"
+  diff: "--- \n+++ \n@@ -16,6 +16,15 @@\n is found in.+The+months+are+assigned+numbers+one+to+twelve,+respectively.\
+    \ The first three"
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id015
+  username: student7
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and\
+    \ returns the season for which the month is found in. The months are assigned\
+    \ numbers one to twelve, respectively. The first three months of the year are\
+    \ considered to be winter, the next three months are considered to be spring,\
+    \ the next three months are considered summer, and the last three months are considered\
+    \ fall.\n\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns\
+    \ the season for which the month is found in. January, February, and March are\
+    \ considered to be winter; April, May, and June are considered to be spring; July,\
+    \ August, and September are considered summer; and the rest are considered fall.\n\
+    \n    \"\"\"\n    "
+  completion_from: "if month == 1 or month == 2 or month == 3:\n        return \"\
+    Winter\"\n    elif month == 4 or month == 5 or month == 6:\n        return \"\
+    Spring\"\n    elif month == 7 or month == 8 or month == 9:\n        return \"\
+    Summer\"\n    elif month == 10 or month == 11 or month == 12:\n        return\
+    \ \"Fall\"\n    else:\n        return \"Invalid month\"\n"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    March\":\n        return \"Winter\"\n    elif month == \"April\" or month == \"\
+    May\" or month == \"June\":\n        return \"Spring\"\n    elif month == \"July\"\
+    \ or month == \"August\" or month == \"September\":\n        return \"Summer\"\
+    \n    else:\n        return \"Fall\"\n"
+  diff: "--- \n+++ \n@@ -16,48 +16,34 @@\n is found in.-The-months-are-assigned-numbers-one-to-twelve,-respectively.-The-first-three-months-of-the-year+January,+February,+and+March\
+    \ are considered to be-winter,-the-next-three-months+winter;+April,+May,+and+June\
+    \ are considered to be-spring,-the-next-three-months+spring;+July,+August,+and+September\
+    \ are considered-summer,+summer; and the-last-three-months+rest are considered\
+    \ fall."
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id015
+  node_to: *id014
+  username: student7
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and\
+    \ returns the season for which the month is found in. January, February, and March\
+    \ are considered to be winter; April, May, and June are considered to be spring;\
+    \ July, August, and September are considered summer; and the rest are considered\
+    \ fall.\n\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    Takes an inputted month and returns\
+    \ the season for which the month is found in. January, February, and March will\
+    \ return \"winter\"; April, May, and June will return \"spring\"; July, August,\
+    \ and September will return \"summer\"; and the rest will return \"fall\".\n\n\
+    \    \"\"\"\n    "
+  completion_from: "if month == \"January\" or month == \"February\" or month == \"\
+    March\":\n        return \"Winter\"\n    elif month == \"April\" or month == \"\
+    May\" or month == \"June\":\n        return \"Spring\"\n    elif month == \"July\"\
+    \ or month == \"August\" or month == \"September\":\n        return \"Summer\"\
+    \n    else:\n        return \"Fall\"\n"
+  completion_to: "if month == \"January\" or month == \"February\" or month == \"\
+    March\":\n        return \"winter\"\n    elif month == \"April\" or month == \"\
+    May\" or month == \"June\":\n        return \"spring\"\n    elif month == \"July\"\
+    \ or month == \"August\" or month == \"September\":\n        return \"summer\"\
+    \n    else:\n        return \"fall\"\n"
+  diff: "--- \n+++ \n@@ -20,31 +20,27 @@\n February, and March-are-considered-to-be-winter;+will+return+\"\
+    winter\"; April, May, and June-are-considered-to-be-spring;+will+return+\"spring\"\
+    ; July, August, and September-are-considered-summer;+will+return+\"summer\"; and\
+    \ the rest-are-considered-fall.+will+return+\"fall\". \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: success
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id018
+  node_to: *id016
+  username: student9
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to.\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\n\
+    \    \"\"\"\n    "
+  completion_from: "if month in (\"December\", \"January\", \"February\"):\n     \
+    \   return \"Winter\"\n    elif month in (\"March\", \"April\", \"May\"):\n  \
+    \      return \"Spring\"\n    elif month in (\"June\", \"July\", \"August\"):\n\
+    \        return \"Summer\"\n    elif month in (\"September\", \"October\", \"\
+    November\"):\n        return \"Autumn\"\n    else:\n        return \"Invalid month\"\
+    \n\n"
+  completion_to: "if month in [\"December\", \"January\", \"February\"]:\n       \
+    \ return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n    \
+    \    return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n\
+    \        return \"summer\"\n    elif month in [\"September\", \"October\", \"\
+    November\"]:\n        return \"autumn\"\n    else:\n        return \"Error\"\n\
+    \n"
+  diff: "--- \n+++ \n@@ -10,4 +10,13 @@\n string belongs to.+It+makes+the+first+letter+of+the+output+lowercase.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id016
+  node_to: *id011
+  username: student9
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ It uses the string \"fall\" instead of \"autumn\".\n    \"\"\"\n    "
+  completion_from: "if month in [\"December\", \"January\", \"February\"]:\n     \
+    \   return \"winter\"\n    elif month in [\"March\", \"April\", \"May\"]:\n  \
+    \      return \"spring\"\n    elif month in [\"June\", \"July\", \"August\"]:\n\
+    \        return \"summer\"\n    elif month in [\"September\", \"October\", \"\
+    November\"]:\n        return \"autumn\"\n    else:\n        return \"Error\"\n\
+    \n"
+  completion_to: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  diff: "--- \n+++ \n@@ -19,4 +19,12 @@\n the output lowercase.+It+uses+the+string+\"\
+    fall\"+instead+of+\"autumn\". \"\"\""
+  attempt_id: 2
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id011
+  node_to: *id002
+  username: student9
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ It uses the string \"fall\" instead of \"autumn\".\n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ If the string is 'September', 'October', or 'November', the output is 'fall'.\n\
+    \    \"\"\"\n    "
+  completion_from: "if month == \"December\" or month == \"January\" or month == \"\
+    February\":\n        return \"winter\"\n    elif month == \"March\" or month ==\
+    \ \"April\" or month == \"May\":\n        return \"spring\"\n    elif month ==\
+    \ \"June\" or month == \"July\" or month == \"August\":\n        return \"summer\"\
+    \n    elif month == \"September\" or month == \"October\" or month == \"November"
+  completion_to: "if month == 'September' or month == 'October' or month == 'November':\n\
+    \        return 'fall'\n    elif month == 'December' or month == 'January' or\
+    \ month == 'February':\n        return 'winter'\n    elif month == 'March' or\
+    \ month == 'April' or month == 'May':\n        return 'spring'\n    elif month\
+    \ == 'June' or month == 'July' or month == 'August':"
+  diff: "--- \n+++ \n@@ -19,12 +19,16 @@\n the output lowercase.-It-uses+If the string-\"\
+    fall\"-instead-of-\"autumn\".+is+'September',+'October',+or+'November',+the+output+is+'fall'.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id002
+  node_to: *id016
+  username: student9
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ If the string is 'September', 'October', or 'November', the output is 'fall'.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ \n    \"\"\"\n    "
+  completion_from: "if month == 'September' or month == 'October' or month == 'November':\n\
+    \        return 'fall'\n    elif month == 'December' or month == 'January' or\
+    \ month == 'February':\n        return 'winter'\n    elif month == 'March' or\
+    \ month == 'April' or month == 'May':\n        return 'spring'\n    elif month\
+    \ == 'June' or month == 'July' or month == 'August':"
+  completion_to: "if month in ['December', 'January', 'February']:\n        return\
+    \ 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n\
+    \    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif\
+    \ month in ['September', 'October', 'November']:\n        return 'autumn'\n  \
+    \  else:\n        return 'Error'\n\n"
+  diff: "--- \n+++ \n@@ -19,16 +19,4 @@\n the output lowercase.-If-the-string-is-'September',-'October',-or-'November',-the-output-is-'fall'.\
+    \ \"\"\""
+  attempt_id: 4
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - d4
+- !Edge
+  node_from: *id016
+  node_to: *id014
+  username: student9
+  prompt_from: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def getSeason(month):\n    \"\"\"\n    The function determines which\
+    \ season the string belongs to. It makes the first letter of the output lowercase.\
+    \ Instead of returning 'autumn', return 'fall'.\n    \"\"\"\n    "
+  completion_from: "if month in ['December', 'January', 'February']:\n        return\
+    \ 'winter'\n    elif month in ['March', 'April', 'May']:\n        return 'spring'\n\
+    \    elif month in ['June', 'July', 'August']:\n        return 'summer'\n    elif\
+    \ month in ['September', 'October', 'November']:\n        return 'autumn'\n  \
+    \  else:\n        return 'Error'\n\n"
+  completion_to: "if month in ('December', 'January', 'February'):\n        return\
+    \ 'winter'\n    elif month in ('March', 'April', 'May'):\n        return 'spring'\n\
+    \    elif month in ('June', 'July', 'August'):\n        return 'summer'\n    elif\
+    \ month in ('September', 'October', 'November'):\n        return 'fall'\n    else:\n\
+    \        return 'unknown'\n"
+  diff: "--- \n+++ \n@@ -19,4 +19,10 @@\n the output lowercase.+Instead+of+returning+'autumn',+return+'fall'.\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 6
+  state: success
+  _edge_tags:
+    - a4
+student_start_node_tags: 
+  student1:
+    - 1
+  student14:
+    - 1
+    - 2
+    - 3
+    - 4
+  student15:
+    - 2
+  student24:
+    - 2
+  student28:
+    - 2
+  student31:
+    - 1
+    - 2
+  student39:
+    - 2
+  student45:
+    - 1
+    - 2
+    - 3
+    - 4
+  student46:
+    - 1
+    - 2
+  student47:
+    - 2
+    - 3
+    - 4
+  student55:
+    - 1
+    - 2
+  student6:
+    - 2
+  student65:
+    - 1
+    - 2
+  student7:
+    - 2
+    - 4
+  student9:
+    - 1
+    - 2

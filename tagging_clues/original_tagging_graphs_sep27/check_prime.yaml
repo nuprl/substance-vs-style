@@ -1,0 +1,583 @@
+!Graph
+problem: check_prime
+nodes:
+- &id005 !Node
+  id: 0
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''<='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<='' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id004 !Node
+  id: 1
+  stdout:
+  - ''
+  - 'False
+
+    '
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''math'' is not defined'
+  - ''
+  - 'NameError: name ''math'' is not defined'
+  - 'NameError: name ''math'' is not defined'
+  _node_tags: null
+- &id001 !Node
+  id: 2
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''str'' object cannot be interpreted as an integer'
+  - 'TypeError: ''str'' object cannot be interpreted as an integer'
+  - 'TypeError: ''str'' object cannot be interpreted as an integer'
+  - 'TypeError: ''str'' object cannot be interpreted as an integer'
+  _node_tags: null
+- &id003 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: not all arguments converted during string formatting'
+  - 'TypeError: not all arguments converted during string formatting'
+  - 'TypeError: not all arguments converted during string formatting'
+  - 'TypeError: not all arguments converted during string formatting'
+  _node_tags: null
+- &id006 !Node
+  id: 4
+  stdout:
+  - ''
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''<'' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id002 !Node
+  id: 5
+  stdout:
+  - 'True
+
+    '
+  - 'False
+
+    '
+  - 'False
+
+    '
+  - 'True
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student29
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    If the input number is prime\
+    \ return \"True\". Else, return \"False\"\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    Convert each input to an integer.\
+    \ If that integer is prime return \"True\". Else, return \"False\"\n    \"\"\"\
+    \n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -1,10 +1,15 @@\n def check_prime(num): \"\"\"+Convert+each+input+to+an+integer.\
+    \ If-the-input-number+that+integer is prime return"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student29
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    Convert each input to an integer.\
+    \ If that integer is prime return \"True\". Else, return \"False\"\n    \"\"\"\
+    \n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    Convert the input to an integer.\
+    \ Then check if the integer is a prime number and return \"True\" if it is prime\
+    \ and \"False\" if it's not\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "try:\n        num = int(num)\n        if num > 1:\n            for\
+    \ i in range(2, num):\n                if (num % i) == 0:\n                  \
+    \  return False\n            else:\n                return True\n        else:\n\
+    \            return False\n    except ValueError:\n        return False\n\n"
+  diff: "--- \n+++ \n@@ -2,19 +2,30 @@\n check_prime(num): \"\"\" Convert-each+the\
+    \ input to an integer.-If-that+Then+check+if+the integer is+a prime+number+and\
+    \ return-\"True\".-Else,-return+\"True\"+if+it+is+prime+and \"False\"+if+it's+not\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student32
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    if num is a prime number, return\
+    \ \"True\". if not, return \"False\"\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    Turns num into int. If num is\
+    \ a prime number, return \"True\". if not, return \"False\"\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n\n"
+  completion_to: "num = int(num)\n    if num == 1:\n        return \"False\"\n   \
+    \ for i in range(2, num):\n        if num % i == 0:\n            return \"False\"\
+    \n    return \"True\"\n"
+  diff: "--- \n+++ \n@@ -1,7 +1,11 @@\n def check_prime(num): \"\"\"-if+Turns+num+into+int.+If\
+    \ num is a"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student32
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    Turns num into int. If num\
+    \ is a prime number, return \"True\". if not, return \"False\"\n    \"\"\"\n \
+    \   "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    Turns num into int. Return a\
+    \ bool indicating if num is a prime number.\n    \"\"\"\n    "
+  completion_from: "num = int(num)\n    if num == 1:\n        return \"False\"\n \
+    \   for i in range(2, num):\n        if num % i == 0:\n            return \"False\"\
+    \n    return \"True\"\n"
+  completion_to: "num = int(num)\n    if num < 2:\n        return False\n    if num\
+    \ == 2:\n        return True\n    if num % 2 == 0:\n        return False\n   \
+    \ for i in range(3, int(num ** 0.5) + 1, 2):\n        if num % i == 0:\n     \
+    \       return False\n    return True\n\n"
+  diff: "--- \n+++ \n@@ -5,16 +5,14 @@\n num into int.-If+Return+a+bool+indicating+if\
+    \ num is a prime-number,-return-\"True\".-if-not,-return-\"False\"+number. \"\"\
+    \""
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student34
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    if num is divisible by an integer\
+    \ other than 1 or itself it is false, otherwise it is true\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    if num cannot produce an integer\
+    \ when divided by integers other than 1 or itself, return true. If otherwise return\
+    \ false.\n    \"\"\"\n    "
+  completion_from: "for i in range(2,num):\n        if num % i == 0:\n           \
+    \ return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2,num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -3,21 +3,23 @@\n \"\"\" if num-is-divisible-by+cannot+produce\
+    \ an integer+when+divided+by+integers other than 1 or-itself-it-is-false,+itself,+return+true.+If\
+    \ otherwise-it-is-true+return+false. \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student49
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given an integer, if the integer\
+    \ is only divisible by itself and 1, return True otherwise return False\n    \"\
+    \"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a string type cast it into\
+    \ an integer, if the integer is only divisible by itself and 1, return True otherwise\
+    \ return False\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -2,6 +2,12 @@\n check_prime(num): \"\"\" given+a+string+type+cast+it+into\
+    \ an integer, if"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student49
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a string type cast it\
+    \ into an integer, if the integer is only divisible by itself and 1, return True\
+    \ otherwise return False\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    typecast num as an integer, if\
+    \ num is only divisible by itself and 1, return True otherwise return False\n\
+    \    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "num = int(num)\n    if num > 1:\n        for i in range(2, num):\n\
+    \            if (num % i) == 0:\n                return False\n        else:\n\
+    \            return True\n    else:\n        return False\n\n"
+  diff: "--- \n+++ \n@@ -1,18 +1,13 @@\n def check_prime(num): \"\"\"-given-a-string-type-cast-it-into+typecast+num+as\
+    \ an integer, if-the-integer+num is only divisible"
+  attempt_id: 2
+  total_attempts: 3
+  state: success
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student66
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    if the number is prime return\
+    \ true\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    if the number is prime return\
+    \ true else return false\n    \"\"\"\n    "
+  completion_from: "for i in range(2, num):\n        if num % i == 0:\n          \
+    \  return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n\n"
+  diff: "--- \n+++ \n@@ -8,4 +8,7 @@\n prime return true+else+return+false \"\"\""
+  attempt_id: 1
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id003
+  username: student66
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    if the number is prime return\
+    \ true else return false\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    if the number is not divisible\
+    \ buy 4 or 3 return true else return false\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n\n"
+  completion_to: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  diff: "--- \n+++ \n@@ -5,7 +5,12 @@\n the number is-prime+not+divisible+buy+4+or+3\
+    \ return true else"
+  attempt_id: 2
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student66
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    if the number is not divisible\
+    \ buy 4 or 3 return true else return false\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    change the string into an in\
+    \ if the number is not divisible buy 4 or 3 return true else return false\n  \
+    \  \"\"\"\n    "
+  completion_from: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  completion_to: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  diff: "--- \n+++ \n@@ -1,6 +1,12 @@\n def check_prime(num): \"\"\"+change+the+string+into+an+in\
+    \ if the number"
+  attempt_id: 3
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student66
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    change the string into an in\
+    \ if the number is not divisible buy 4 or 3 return true else return false\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    change the string into an integer\
+    \ if the number is not divisible buy 4 or 3 return true else return false\n  \
+    \  \"\"\"\n    "
+  completion_from: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  completion_to: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  diff: "--- \n+++ \n@@ -6,7 +6,7 @@\n string into an-in+integer if the number"
+  attempt_id: 4
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student66
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    change the string into an integer\
+    \ if the number is not divisible buy 4 or 3 return true else return false\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    change the input into an integer\
+    \ if the number is not divisible buy 4 or 3 return true else return false\n  \
+    \  \"\"\"\n    "
+  completion_from: "if num % 4 == 0 or num % 3 == 0:\n        return False\n    else:\n\
+    \        return True\n\n"
+  completion_to: "num = int(num)\n    if num % 4 == 0 or num % 3 == 0:\n        return\
+    \ False\n    else:\n        return True\n\n"
+  diff: "--- \n+++ \n@@ -3,7 +3,7 @@\n \"\"\" change the-string+input into an integer"
+  attempt_id: 5
+  total_attempts: 6
+  state: success
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id003
+  node_to: *id002
+  username: student67
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    Returns 'True' if input is\
+    \ a prime number.\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    Converts input into an integer.\
+    \ Returns 'True' if input is a prime number.\n    \"\"\"\n    "
+  completion_from: "if num == 2:\n        return True\n    if num % 2 == 0:\n    \
+    \    return False\n    for i in range(3, int(num**0.5)+1, 2):\n        if num\
+    \ % i == 0:\n            return False\n    return True\n\n"
+  completion_to: "num = int(num)\n    if num == 1:\n        return False\n    elif\
+    \ num == 2:\n        return True\n    else:\n        for i in range(2, num):\n\
+    \            if num % i == 0:\n                return False\n        return True\n\
+    \n"
+  diff: "--- \n+++ \n@@ -1,6 +1,11 @@\n def check_prime(num): \"\"\"+Converts+input+into+an+integer.\
+    \ Returns 'True' if"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id001
+  node_to: *id004
+  username: student68
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a string, convert into\
+    \ an integer and return true if it's a prime number. if not, return false\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a string, first cast the\
+    \ string into an integer and return true if that number is a prime number. if\
+    \ not, return false\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "num = int(num)\n    if num % 2 == 0 and num > 2:\n        return\
+    \ False\n    for i in range(3, int(math.sqrt(num)) + 1, 2):\n        if num %\
+    \ i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -4,7 +4,10 @@\n given a string,-convert+first+cast+the+string\
+    \ into an integer@@ -12,7 +15,9 @@\n return true if-it's+that+number+is a prime\
+    \ number."
+  attempt_id: 1
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id001
+  username: student68
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a string, first cast\
+    \ the string into an integer and return true if that number is a prime number.\
+    \ if not, return false\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a string, first cast the\
+    \ string into an integer and return true if that number is a prime number. if\
+    \ not, return false. \n    \"\"\"\n    "
+  completion_from: "num = int(num)\n    if num % 2 == 0 and num > 2:\n        return\
+    \ False\n    for i in range(3, int(math.sqrt(num)) + 1, 2):\n        if num %\
+    \ i == 0:\n            return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    elif num == 2:\n       \
+    \ return True\n    else:\n        for i in range(2, num):\n            if num\
+    \ % i == 0:\n                return False\n        return True\n"
+  diff: "--- \n+++ \n@@ -24,5 +24,5 @@\n if not, return-false+false. \"\"\""
+  attempt_id: 2
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student68
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a string, first cast\
+    \ the string into an integer and return true if that number is a prime number.\
+    \ if not, return false. \n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a string, first cast the\
+    \ string into an integer. return true if that number is a prime number. if not,\
+    \ return false. \n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    elif num == 2:\n     \
+    \   return True\n    else:\n        for i in range(2, num):\n            if num\
+    \ % i == 0:\n                return False\n        return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -10,8 +10,7 @@\n string into an-integer-and+integer. return\
+    \ true if"
+  attempt_id: 3
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student68
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a string, first cast\
+    \ the string into an integer. return true if that number is a prime number. if\
+    \ not, return false. \n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a character, convert the\
+    \ character into a number. return true if that number is a prime number. if not,\
+    \ return false. \n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: "--- \n+++ \n@@ -3,14 +3,13 @@\n \"\"\" given a-string,-first-cast+character,+convert\
+    \ the-string+character into-an-integer.+a+number. return true if"
+  attempt_id: 4
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student68
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    given a character, convert\
+    \ the character into a number. return true if that number is a prime number. if\
+    \ not, return false. \n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    given a character, convert the\
+    \ character into a number. return true if that number is a prime number. if not,\
+    \ return false. \n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  completion_to: "if num == 1:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n"
+  diff: ''
+  attempt_id: 5
+  total_attempts: 6
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id005
+  node_to: *id001
+  username: student70
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    return whether the input num\
+    \ is prime.\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    convert the input to an integer.\
+    \ return whether the input num is prime.\n    \"\"\"\n    "
+  completion_from: "if num <= 1:\n        return False\n    elif num == 2:\n     \
+    \   return True\n    elif num % 2 == 0:\n        return False\n    else:\n   \
+    \     for i in range(3, int(num ** 0.5) + 1, 2):\n            if num % i == 0:\n\
+    \                return False\n        return True\n\n"
+  completion_to: "if num == 1:\n        return False\n    elif num == 2:\n       \
+    \ return True\n    else:\n        for i in range(2, num):\n            if num\
+    \ % i == 0:\n                return False\n        return True\n\n"
+  diff: "--- \n+++ \n@@ -1,6 +1,12 @@\n def check_prime(num): \"\"\"+convert+the+input+to+an+integer.\
+    \ return whether the"
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id001
+  node_to: *id006
+  username: student70
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    convert the input to an integer.\
+    \ return whether the input num is prime.\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    save the input num to an integer\
+    \ variable. return whether this integer is prime.\n    \"\"\"\n    "
+  completion_from: "if num == 1:\n        return False\n    elif num == 2:\n     \
+    \   return True\n    else:\n        for i in range(2, num):\n            if num\
+    \ % i == 0:\n                return False\n        return True\n\n"
+  completion_to: "if num < 2:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n\n"
+  diff: "--- \n+++ \n@@ -1,17 +1,18 @@\n def check_prime(num): \"\"\"-convert-the-input-to-an-integer.-return-whether+save\
+    \ the input num+to+an+integer+variable.+return+whether+this+integer is prime.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - d1
+- !Edge
+  node_from: *id006
+  node_to: *id006
+  username: student70
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    save the input num to an integer\
+    \ variable. return whether this integer is prime.\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    treat the input num as an integer.\
+    \ return whether this integer is prime.\n    \"\"\"\n    "
+  completion_from: "if num < 2:\n        return False\n    for i in range(2, num):\n\
+    \        if num % i == 0:\n            return False\n    return True\n\n"
+  completion_to: "if num == 2:\n        return True\n    if num < 2 or num % 2 ==\
+    \ 0:\n        return False\n    for i in range(3, int(num ** 0.5) + 1, 2):\n \
+    \       if num % i == 0:\n            return False\n    return True\n\n"
+  diff: "--- \n+++ \n@@ -1,14 +1,13 @@\n def check_prime(num): \"\"\"-save+treat the\
+    \ input num-to+as an-integer-variable.+integer. return whether this"
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id006
+  node_to: *id002
+  username: student70
+  prompt_from: "def check_prime(num):\n    \"\"\"\n    treat the input num as an integer.\
+    \ return whether this integer is prime.\n    \"\"\"\n    "
+  prompt_to: "def check_prime(num):\n    \"\"\"\n    create a new variable that saves\
+    \ the input num as an integer using int(). return whether this integer is prime.\n\
+    \    \"\"\"\n    "
+  completion_from: "if num == 2:\n        return True\n    if num < 2 or num % 2 ==\
+    \ 0:\n        return False\n    for i in range(3, int(num ** 0.5) + 1, 2):\n \
+    \       if num % i == 0:\n            return False\n    return True\n\n"
+  completion_to: "num = int(num)\n    if num > 1:\n        for i in range(2, num):\n\
+    \            if (num % i) == 0:\n                return False\n              \
+    \  break\n        else:\n            return True\n    else:\n        return False\n\
+    \n"
+  diff: "--- \n+++ \n@@ -1,13 +1,20 @@\n def check_prime(num): \"\"\"-treat+create+a+new+variable+that+saves\
+    \ the input num as an-integer.+integer+using+int(). return whether this"
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+    - m1
+student_start_node_tags:
+  student29:
+    - 2
+    - 3
+  student32:
+    - 2
+    - 3
+  student34:
+    - 2
+    - 3
+  student49:
+    - 2
+    - 3
+  student66:
+    - 2
+    - 3
+  student67:
+    - 2
+    - 3
+  student68:
+    - 1
+    - 2
+    - 3
+  student70:
+    - 3

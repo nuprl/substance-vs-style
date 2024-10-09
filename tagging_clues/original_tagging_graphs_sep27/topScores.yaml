@@ -1,0 +1,2566 @@
+!Graph
+problem: topScores
+nodes:
+- &id036 !Node
+  id: 0
+  stdout:
+  - '[[''Penelope'', 100], [''Alex'', 99], [''Rachel'', 80], [''Matt'', 76], [''Pete'',
+    50]]
+
+    '
+  - '[[''Ben'', 100], [''Alex'', 99], [''Ro'', 97], [''Ira'', 95], [''Kip'', 92],
+    [''Sam'', 80], [''Matt'', 76], [''Hans'', 65]]
+
+    '
+  - '[[''Bob'', 65], [''Rachel'', 65], [''Alex'', 33]]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id009 !Node
+  id: 1
+  stdout:
+  - '[''Penelope'', ''Alex'', ''Rachel'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'']
+
+    '
+  - '[''Bob'', ''Rachel'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id034 !Node
+  id: 2
+  stdout:
+  - '[''Pete'', ''Matt'', ''Rachel'', ''Alex'', ''Penelope'']
+
+    '
+  - '[''Kip'', ''Ira'', ''Ro'', ''Alex'', ''Ben'']
+
+    '
+  - '[''Alex'', ''Bob'', ''Rachel'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id012 !Node
+  id: 3
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>='' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id013 !Node
+  id: 4
+  stdout:
+  - '[''Penelope'', ''Alex'', ''Rachel'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id008 !Node
+  id: 5
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''<'' not supported between instances of ''int'' and ''str'''
+  - 'TypeError: ''<'' not supported between instances of ''int'' and ''str'''
+  - 'TypeError: ''<'' not supported between instances of ''int'' and ''str'''
+  _node_tags: null
+- &id019 !Node
+  id: 6
+  stdout:
+  - '[''Matt'', ''Rachel'', ''Pete'']
+
+    '
+  - '[''Matt'', ''Sam'', ''Hans'']
+
+    '
+  - '[''Bob'', ''Rachel'', ''Alex'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id032 !Node
+  id: 7
+  stdout:
+  - 'None
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'']
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id041 !Node
+  id: 8
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 7'
+  _node_tags: null
+- &id037 !Node
+  id: 9
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  - 'SyntaxError: invalid syntax'
+  _node_tags: null
+- &id024 !Node
+  id: 10
+  stdout:
+  - 'None
+
+    '
+  - ''
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - 'NameError: name ''new_'' is not defined'
+  - ''
+  _node_tags: null
+- &id005 !Node
+  id: 11
+  stdout:
+  - '[''Penelope'', ''Alex'', ''Rachel'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'', ''Sam'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id029 !Node
+  id: 12
+  stdout:
+  - '[''Penelope'', ''Alex'', ''Rachel'', ''Matt'', ''Pete'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'', ''Sam'', ''Matt'', ''Hans'']
+
+    '
+  - '[''Bob'', ''Rachel'', ''Alex'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id040 !Node
+  id: 13
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    11'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    11'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    11'
+  _node_tags: null
+- !Node
+  id: 14
+  stdout:
+  - '100
+
+    '
+  - '100
+
+    '
+  - '65
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id011 !Node
+  id: 15
+  stdout:
+  - '[''Penelope'', ''Alex'', ''Rachel'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'']
+
+    '
+  - '[''Rachel'', ''Bob'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id015 !Node
+  id: 16
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: expected '':'''
+  - 'SyntaxError: expected '':'''
+  - 'SyntaxError: expected '':'''
+  _node_tags: null
+- &id031 !Node
+  id: 17
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: ''('' was never closed'
+  - 'SyntaxError: ''('' was never closed'
+  - 'SyntaxError: ''('' was never closed'
+  _node_tags: null
+- &id028 !Node
+  id: 18
+  stdout:
+  - '[''Pete'', ''Matt'', ''Rachel'', ''Alex'', ''Penelope'']
+
+    '
+  - '[''Hans'', ''Matt'', ''Sam'', ''Kip'', ''Ira'', ''Ro'', ''Alex'', ''Ben'']
+
+    '
+  - '[''Alex'', ''Bob'', ''Rachel'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id022 !Node
+  id: 19
+  stdout:
+  - '[''Rachel'', ''Penelope'', ''Alex'']
+
+    '
+  - '[''Sam'', ''Ro'', ''Kip'', ''Ira'', ''Ben'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id030 !Node
+  id: 20
+  stdout:
+  - '[]
+
+    '
+  - '[[92, ''Kip''], [76, ''Matt''], [80, ''Sam''], [100, ''Ben''], [99, ''Alex'']]
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- !Node
+  id: 21
+  stdout:
+  - ''
+  - '[[92, ''Kip''], [76, ''Matt''], [100, ''Ben''], [99, ''Alex''], [95, ''Ira'']]
+
+    '
+  - ''
+  stderr:
+  - 'IndexError: list index out of range'
+  - ''
+  - 'IndexError: list index out of range'
+  _node_tags: null
+- &id017 !Node
+  id: 22
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'SyntaxError: ''['' was never closed'
+  - 'SyntaxError: ''['' was never closed'
+  - 'SyntaxError: ''['' was never closed'
+  _node_tags: null
+- &id021 !Node
+  id: 23
+  stdout:
+  - '[''Alex'', ''Penelope'', ''Rachel'']
+
+    '
+  - '[''Ben'', ''Ira'', ''Kip'', ''Ro'', ''Sam'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id033 !Node
+  id: 24
+  stdout:
+  - '[''Matt'', ''Rachel'', ''Penelope'', ''Pete'', ''Alex'']
+
+    '
+  - '[''Kip'', ''Matt'', ''Sam'', ''Ben'', ''Alex'', ''Ro'', ''Hans'', ''Ira'']
+
+    '
+  - '[''Bob'', ''Rachel'', ''Alex'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id018 !Node
+  id: 25
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'AttributeError: ''list'' object has no attribute ''split'''
+  - 'AttributeError: ''list'' object has no attribute ''split'''
+  - 'AttributeError: ''list'' object has no attribute ''split'''
+  _node_tags: null
+- &id006 !Node
+  id: 26
+  stdout:
+  - '[''Penelope'', ''Alex'']
+
+    '
+  - '[''Ben'', ''Alex'', ''Ro'', ''Ira'', ''Kip'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id007 !Node
+  id: 27
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''math'' is not defined'
+  - 'NameError: name ''math'' is not defined'
+  - 'NameError: name ''math'' is not defined'
+  _node_tags: null
+- &id020 !Node
+  id: 28
+  stdout:
+  - '[''Rachel'', ''Penelope'', ''Alex'']
+
+    '
+  - '[''Sam'', ''Ro'', ''Kip'', ''Ira'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id039 !Node
+  id: 29
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  _node_tags: null
+- &id042 !Node
+  id: 30
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 10'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 10'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 10'
+  _node_tags: null
+- &id016 !Node
+  id: 31
+  stdout:
+  - '[[100, ''Penelope''], [99, ''Alex''], [80, ''Rachel'']]
+
+    '
+  - '[[100, ''Ben''], [99, ''Alex''], [97, ''Ro'']]
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id004 !Node
+  id: 32
+  stdout:
+  - '[''Rachel'', ''Penelope'', ''Alex'']
+
+    '
+  - '[''Sam'', ''Ro'', ''Kip'', ''Ira'', ''Ben'', ''Alex'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 33
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'TypeError: ''>'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>'' not supported between instances of ''str'' and ''int'''
+  - 'TypeError: ''>'' not supported between instances of ''str'' and ''int'''
+  _node_tags: null
+- &id023 !Node
+  id: 34
+  stdout:
+  - 'None
+
+    '
+  - ''
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - 'NameError: name ''new'' is not defined'
+  - ''
+  _node_tags: null
+- &id035 !Node
+  id: 35
+  stdout:
+  - '[80, 50, 100, 76, 99]
+
+    '
+  - '[80, 97, 76, 92, 95, 65, 100, 99]
+
+    '
+  - '[65, 65, 33]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id025 !Node
+  id: 36
+  stdout:
+  - '[''Penelope'', ''Alex'']
+
+    '
+  - '[''Kip'', ''Ben'', ''Alex'', ''Ro'', ''Ira'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id026 !Node
+  id: 37
+  stdout:
+  - '[''Rachel'', ''Alex'', ''Penelope'']
+
+    '
+  - '[''Sam'', ''Kip'', ''Ira'', ''Ro'', ''Alex'', ''Ben'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id038 !Node
+  id: 38
+  stdout:
+  - '[[50, ''Pete''], [76, ''Matt''], [80, ''Rachel''], [99, ''Alex''], [100, ''Penelope'']]
+
+    '
+  - '[[65, ''Hans''], [76, ''Matt''], [80, ''Sam''], [92, ''Kip''], [95, ''Ira''],
+    [97, ''Ro''], [99, ''Alex''], [100, ''Ben'']]
+
+    '
+  - '[[33, ''Alex''], [65, ''Bob''], [65, ''Rachel'']]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id043 !Node
+  id: 39
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    13'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    13'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    13'
+  _node_tags: null
+- &id010 !Node
+  id: 40
+  stdout:
+  - '[[100, ''Penelope''], [99, ''Alex''], [80, ''Rachel'']]
+
+    '
+  - '[[100, ''Ben''], [99, ''Alex''], [97, ''Ro''], [95, ''Ira''], [92, ''Kip'']]
+
+    '
+  - '[[65, ''Bob''], [65, ''Rachel'']]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 41
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 6'
+  _node_tags: null
+- &id003 !Node
+  id: 42
+  stdout:
+  - '[''Rachel'', ''Penelope'', ''Alex'']
+
+    '
+  - '[''Kip'', ''Sam'', ''Ben'', ''Alex'', ''Ro'', ''Ira'']
+
+    '
+  - '[]
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id027 !Node
+  id: 43
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndexError: list index out of range'
+  - 'IndexError: list index out of range'
+  - 'IndexError: list index out of range'
+  _node_tags: null
+- &id014 !Node
+  id: 44
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student14
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    output the first four names with\
+    \ a number above 80\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    if the string contains a number\
+    \ above 80, print its paired name\n    \"\"\"\n    "
+  completion_from: "for i in range(len(lst)):\n        if lst[i][1] > 80:\n      \
+    \      print(lst[i][0])\n"
+  completion_to: "for i in range(len(lst)):\n        if int(lst[i][1]) > 80:\n   \
+    \         print(lst[i][0])\n"
+  diff: "--- \n+++ \n@@ -1,14 +1,16 @@\n def topScores(lst): \"\"\"-output+if the-first-four-names-with+string+contains\
+    \ a number above-80+80,+print+its+paired+name \"\"\""
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - d3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student14
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    if the string contains a number\
+    \ above 80, print its paired name\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    if the first item in the string\
+    \ is equal to or greater than 80, print the second item in the string\n    \"\"\
+    \"\n    "
+  completion_from: "for i in range(len(lst)):\n        if int(lst[i][1]) > 80:\n \
+    \           print(lst[i][0])\n"
+  completion_to: "for i in lst:\n        if i[0] >= 80:\n            print(i[1])\n\
+    \ntopScores([[60, \"Fred\"], [80, \"Barney\"], [90, \"Wilma\"], [70, \"Betty\"\
+    ]])\n"
+  diff: "--- \n+++ \n@@ -3,14 +3,23 @@\n \"\"\" if the+first+item+in+the string-contains-a-number-above+is+equal+to+or+greater+than\
+    \ 80, print-its-paired-name+the+second+item+in+the+string \"\"\""
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id002
+  node_to: *id003
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number is greater than 76, adds the name to a list. Returns the list.\n    \"\
+    \"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the number\
+    \ in index 0 is greater than 76, adds the name to a list. Returns the list.\n\
+    \    \"\"\"\n    "
+  completion_from: "top_scores = []\n    for i in lst:\n        if i[1] > 76:\n  \
+    \          top_scores.append(i[0])\n    return top_scores\n"
+  completion_to: "topScores = []\n    for i in lst:\n        if i[0] > 76:\n     \
+    \       topScores.append(i[1])\n    return topScores\n"
+  diff: "--- \n+++ \n@@ -9,6 +9,9 @@\n if the number+in+index+0 is greater than"
+  attempt_id: 1
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number in index 0 is greater than 76, adds the name to a list. Returns the list.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the number\
+    \ in index 0 is greater than 76, adds the name to a list. Sorts in reverse alphabetical\
+    \ order. Returns the list. \n    \"\"\"\n    "
+  completion_from: "topScores = []\n    for i in lst:\n        if i[0] > 76:\n   \
+    \         topScores.append(i[1])\n    return topScores\n"
+  completion_to: "topScores = []\n    for i in lst:\n        if i[0] > 76:\n     \
+    \       topScores.append(i[1])\n    topScores.sort(reverse = True)\n    return\
+    \ topScores\n"
+  diff: "--- \n+++ \n@@ -22,6 +22,11 @@\n to a list.+Sorts+in+reverse+alphabetical+order.\
+    \ Returns the list."
+  attempt_id: 2
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number in index 0 is greater than 76, adds the name to a list. Sorts in reverse\
+    \ alphabetical order. Returns the list. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the number\
+    \ in index 0 is greater than 76, adds the name to a list. Sorts in reverse numerical\
+    \ order by the number in index 0. Returns the list. \n    \"\"\"\n    "
+  completion_from: "topScores = []\n    for i in lst:\n        if i[0] > 76:\n   \
+    \         topScores.append(i[1])\n    topScores.sort(reverse = True)\n    return\
+    \ topScores\n"
+  completion_to: "top = []\n    for i in lst:\n        if i[0] > 76:\n           \
+    \ top.append(i[1])\n    top.sort(reverse = True)\n    return top\n"
+  diff: "--- \n+++ \n@@ -25,8 +25,14 @@\n Sorts in reverse-alphabetical-order.+numerical+order+by+the+number+in+index+0.\
+    \ Returns the list."
+  attempt_id: 3
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number in index 0 is greater than 76, adds the name to a list. Sorts in reverse\
+    \ numerical order by the number in index 0. Returns the list. \n    \"\"\"\n \
+    \   "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the number\
+    \ in index 0 is greater than 76, adds the [num, name] list to a list. Sorts in\
+    \ reverse numerical order by the number in index 0. Adds the names to a second\
+    \ list. Returns the second list. \n    \"\"\"\n    "
+  completion_from: "top = []\n    for i in lst:\n        if i[0] > 76:\n         \
+    \   top.append(i[1])\n    top.sort(reverse = True)\n    return top\n"
+  completion_to: "topScores = []\n    names = []\n    for i in lst:\n        if i[0]\
+    \ > 76:\n            topScores.append(i)\n    topScores.sort(reverse = True)\n\
+    \    for i in topScores:\n        names.append(i[1])\n    return names\n"
+  diff: "--- \n+++ \n@@ -18,7 +18,9 @@\n 76, adds the-name+[num,+name]+list to a list.@@\
+    \ -33,7 +35,15 @@\n in index 0.+Adds+the+names+to+a+second+list. Returns the+second\
+    \ list. \"\"\""
+  attempt_id: 4
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id005
+  node_to: *id006
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number in index 0 is greater than 76, adds the [num, name] list to a list. Sorts\
+    \ in reverse numerical order by the number in index 0. Adds the names to a second\
+    \ list. Returns the second list. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the number\
+    \ in index 0 is greater than 80, adds the [num, name] list to a list. Sorts in\
+    \ reverse numerical order by the number in index 0. Adds the names to a second\
+    \ list. Returns the second list. \n    \"\"\"\n    "
+  completion_from: "topScores = []\n    names = []\n    for i in lst:\n        if\
+    \ i[0] > 76:\n            topScores.append(i)\n    topScores.sort(reverse = True)\n\
+    \    for i in topScores:\n        names.append(i[1])\n    return names\n"
+  completion_to: "top = []\n    names = []\n    for i in lst:\n        if i[0] > 80:\n\
+    \            top.append(i)\n    top.sort(reverse = True)\n    for i in top:\n\
+    \        names.append(i[1])\n    return names\n"
+  diff: "--- \n+++ \n@@ -15,7 +15,7 @@\n is greater than-76,+80, adds the [num,"
+  attempt_id: 5
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - a2
+- !Edge
+  node_from: *id006
+  node_to: *id007
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in lst, if the\
+    \ number in index 0 is greater than 80, adds the [num, name] list to a list. Sorts\
+    \ in reverse numerical order by the number in index 0. Adds the names to a second\
+    \ list. Returns the second list. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in list, sorts the\
+    \ listsin reverse numerical order by the number in index 0. Divides the length\
+    \ of the list by 2, rounding up to create number \"top\". Adds the top \"top\"\
+    \ names in the list to a second list. Returns the second list.\n    \"\"\"\n \
+    \   "
+  completion_from: "top = []\n    names = []\n    for i in lst:\n        if i[0] >\
+    \ 80:\n            top.append(i)\n    top.sort(reverse = True)\n    for i in top:\n\
+    \        names.append(i[1])\n    return names\n"
+  completion_to: "lst.sort(key=lambda x: x[0], reverse=True)\n    top = math.ceil(len(lst)\
+    \ / 2)\n    topList = []\n    for i in range(top):\n        topList.append(lst[i][1])\n\
+    \    return topList\n"
+  diff: "--- \n+++ \n@@ -5,27 +5,10 @@\n each list in-lst,-if+list,+sorts the-number-in-index-0-is-greater-than-80,-adds-the-[num,-name]-list-to-a-list.-Sorts-in+listsin\
+    \ reverse numerical order@@ -35,9 +18,28 @@\n in index 0.+Divides+the+length+of+the+list+by+2,+rounding+up+to+create+number+\"\
+    top\". Adds the+top+\"top\" names+in+the+list to a second"
+  attempt_id: 6
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id007
+  node_to: *id008
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    For each list in list, sorts\
+    \ the listsin reverse numerical order by the number in index 0. Divides the length\
+    \ of the list by 2, rounding up to create number \"top\". Adds the top \"top\"\
+    \ names in the list to a second list. Returns the second list.\n    \"\"\"\n \
+    \   "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Does not use math. For each list\
+    \ in list, sorts the listsin reverse numerical order by the number in index 0.\
+    \ Divides the length of the list by 2, rounding up to create number \"top\". Adds\
+    \ the top \"top\" names in the list to a second list. Returns the second list.\n\
+    \    \"\"\"\n    "
+  completion_from: "lst.sort(key=lambda x: x[0], reverse=True)\n    top = math.ceil(len(lst)\
+    \ / 2)\n    topList = []\n    for i in range(top):\n        topList.append(lst[i][1])\n\
+    \    return topList\n"
+  completion_to: "top = []\n    for i in range(len(lst)):\n        lst[i].sort(reverse=True)\n\
+    \        top.append(lst[i][:int(len(lst[i])/2 + 0.5)])\n    return top\n"
+  diff: "--- \n+++ \n@@ -1,6 +1,10 @@\n def topScores(lst): \"\"\"+Does+not+use+math.\
+    \ For each list"
+  attempt_id: 7
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id008
+  node_to: *id009
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Does not use math. For each list\
+    \ in list, sorts the listsin reverse numerical order by the number in index 0.\
+    \ Divides the length of the list by 2, rounding up to create number \"top\". Adds\
+    \ the top \"top\" names in the list to a second list. Returns the second list.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\". Adds the\
+    \ top \"top\" names in the list to a second list. Returns the second list.\n \
+    \   \"\"\"\n    "
+  completion_from: "top = []\n    for i in range(len(lst)):\n        lst[i].sort(reverse=True)\n\
+    \        top.append(lst[i][:int(len(lst[i])/2 + 0.5)])\n    return top\n"
+  completion_to: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n  \
+    \  top = math.ceil(len(lst)/2)\n    topScores = []\n    for i in range(top):\n\
+    \        topScores.append(lst[i][1])\n    return topScores\n"
+  diff: "--- \n+++ \n@@ -1,9 +1,7 @@\n def topScores(lst): \"\"\"-Does-not-use+Imports\
+    \ math. For each"
+  attempt_id: 8
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id009
+  node_to: *id010
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\". Adds the\
+    \ top \"top\" names in the list to a second list. Returns the second list.\n \
+    \   \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list.\n    \"\"\"\n    "
+  completion_from: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n\
+    \    top = math.ceil(len(lst)/2)\n    topScores = []\n    for i in range(top):\n\
+    \        topScores.append(lst[i][1])\n    return topScores\n"
+  completion_to: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n  \
+    \  top = math.ceil(len(lst) / 2)\n    if len(lst) % 2 == 0:\n        top += 1\n\
+    \    return lst[:top]\n"
+  diff: "--- \n+++ \n@@ -33,7 +33,22 @@\n to create number-\"top\".+\"top\",+if+the+number+of+the+length+of+the+list+is+even,+adds+one+to+top.\
+    \ Adds the top"
+  attempt_id: 9
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id010
+  node_to: *id009
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list, but only the names.\n\
+    \    \"\"\"\n    "
+  completion_from: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n\
+    \    top = math.ceil(len(lst) / 2)\n    if len(lst) % 2 == 0:\n        top +=\
+    \ 1\n    return lst[:top]\n"
+  completion_to: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n  \
+    \  top = math.ceil(len(lst)/2)\n    topList = []\n    for i in range(top):\n \
+    \       topList.append(lst[i][1])\n    return topList\n"
+  diff: "--- \n+++ \n@@ -64,5 +64,9 @@\n Returns the second-list.+list,+but+only+the+names.\
+    \ \"\"\""
+  attempt_id: 10
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id009
+  node_to: *id011
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list, but only the names.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list.\n    \"\"\"\n    "
+  completion_from: "import math\n    lst.sort(key=lambda x: x[0], reverse=True)\n\
+    \    top = math.ceil(len(lst)/2)\n    topList = []\n    for i in range(top):\n\
+    \        topList.append(lst[i][1])\n    return topList\n"
+  completion_to: "import math\n    lst.sort(reverse=True)\n    top = math.ceil(len(lst)/2)\n\
+    \    topList = []\n    for i in range(top):\n        topList.append(lst[i][1])\n\
+    \    return topList\n"
+  diff: "--- \n+++ \n@@ -64,9 +64,5 @@\n Returns the second-list,-but-only-the-names.+list.\
+    \ \"\"\""
+  attempt_id: 11
+  total_attempts: 13
+  state: neutral
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id011
+  node_to: *id008
+  username: student15
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Imports math. For each list in\
+    \ list, sorts the listsin reverse numerical order by the number in index 0. Divides\
+    \ the length of the list by 2, rounding up to create number \"top\", if the number\
+    \ of the length of the list is even, adds one to top. Adds the top \"top\" names\
+    \ in the list to a second list. Returns the second list.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    For each list in list, sorts the\
+    \ lists in reverse numerical order by the number in index 0. If the length of\
+    \ the list is 5, adds the top 3 names to a second list. If the length of the list\
+    \ is 8, adds the top 5 names to a second list. If the length of the list is 3,\
+    \ adds none of the names\n\n\n    \"\"\"\n    "
+  completion_from: "import math\n    lst.sort(reverse=True)\n    top = math.ceil(len(lst)/2)\n\
+    \    topList = []\n    for i in range(top):\n        topList.append(lst[i][1])\n\
+    \    return topList\n"
+  completion_to: "for i in range(len(lst)):\n        lst[i] = sorted(lst[i], reverse=True)\n\
+    \    top_scores = []\n    for i in range(len(lst)):\n        if len(lst[i]) ==\
+    \ 5:\n            top_scores.append(lst[i][0:3])\n        elif len(lst[i]) ==\
+    \ 8:\n            top"
+  diff: "--- \n+++ \n@@ -1,8 +1,6 @@\n def topScores(lst): \"\"\"-Imports-math. For\
+    \ each list@@ -10,7 +8,8 @@\n list, sorts the-listsin+lists+in reverse numerical\
+    \ order@@ -20,49 +19,51 @@\n in index 0.-Divides-the-length-of-the-list-by-2,-rounding-up-to-create-number-\"\
+    top\",-if-the-number-of+If the length of the list is-even,+5, adds-one-to-top.-Adds\
+    \ the top-\"top\"+3 names-in-the-list to a second list.-Returns+If the+length+of+the+list+is+8,+adds+the+top+5+names+to+a\
+    \ second list.+If+the+length+of+the+list+is+3,+adds+none+of+the+names \"\"\""
+  attempt_id: 12
+  total_attempts: 13
+  state: fail
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id012
+  node_to: *id003
+  username: student24
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Return the name of a person in\
+    \ the list who scored 80 or above.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Check each list inside the list\
+    \ given, and if the list[0] is greater than or equal to 80, return a list of that\
+    \ list[1]\n    \"\"\"\n    "
+  completion_from: "for name, score in lst:\n        if score >= 80:\n           \
+    \ return name\n    return None\n"
+  completion_to: 'return [lst[i][1] for i in range(len(lst)) if lst[i][0] >= 80]
+
+    '
+  diff: "--- \n+++ \n@@ -1,18 +1,28 @@\n def topScores(lst): \"\"\"-Return-the-name-of-a-person-in+Check+each+list+inside\
+    \ the list-who-scored-80+given,+and+if+the+list[0]+is+greater+than or-above.+equal+to+80,+return+a+list+of+that+list[1]\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags:
+    - a1
+    - m2
+    - m3
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student31
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Returns a list of the names whose corresponding scores were\
+    \ the highest, and were a minimum of 80.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Returns a list of the names whose corresponding scores were\
+    \ the highest, and were a minimum of 80, sorted from highest corresponding score\
+    \ to lowest.\n    \"\"\"\n    "
+  completion_from: "topScores = []\n    for i in lst:\n        if i[0] >= 80:\n  \
+    \          topScores.append(i[1])\n    return topScores\n"
+  completion_to: "# Create a list of the names whose corresponding scores were the\
+    \ highest, and were a minimum of 80\n    top_scores = [i[1] for i in lst if i[0]\
+    \ >= 80]\n    # Sort the list from highest corresponding score to lowest\n   \
+    \ top_scores.sort(key=lambda x: x[0], reverse=True)\n    return top_scores\n"
+  diff: "--- \n+++ \n@@ -39,5 +39,12 @@\n a minimum of-80.+80,+sorted+from+highest+corresponding+score+to+lowest.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student31
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Returns a list of the names whose corresponding scores were\
+    \ the highest, and were a minimum of 80, sorted from highest corresponding score\
+    \ to lowest.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Sorts this list from highest integer score to lowest, and\
+    \ returns a list of the names whose corresponding scores were a minimum of 80.\n\
+    \    \"\"\"\n    "
+  completion_from: "# Create a list of the names whose corresponding scores were the\
+    \ highest, and were a minimum of 80\n    top_scores = [i[1] for i in lst if i[0]\
+    \ >= 80]\n    # Sort the list from highest corresponding score to lowest\n   \
+    \ top_scores.sort(key=lambda x: x[0], reverse=True)\n    return top_scores\n"
+  completion_to: "lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for\
+    \ x in lst if x[0] >= 80]\n"
+  diff: "--- \n+++ \n@@ -22,7 +22,17 @@\n a string name.-Returns+Sorts+this+list+from+highest+integer+score+to+lowest,+and+returns\
+    \ a list of@@ -32,19 +42,8 @@\n corresponding scores were-the-highest,-and-were\
+    \ a minimum of-80,-sorted-from-highest-corresponding-score-to-lowest.+80. \"\"\
+    \""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id005
+  node_to: *id013
+  username: student31
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Sorts this list from highest integer score to lowest, and\
+    \ returns a list of the names whose corresponding scores were a minimum of 80.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list containing multiple\
+    \ internal lists, with each internal list containing two items: an integer score\
+    \ and a string name. Sorts this list from highest integer score to lowest, and\
+    \ returns a list of the names whose corresponding scores were a minimum of 80,\
+    \ with a maximum list length of 5.\n    \"\"\"\n    "
+  completion_from: "lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for\
+    \ x in lst if x[0] >= 80]\n"
+  completion_to: "lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for\
+    \ x in lst if x[0] >= 80][:5]\n"
+  diff: "--- \n+++ \n@@ -45,5 +45,12 @@\n a minimum of-80.+80,+with+a+maximum+list+length+of+5.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: success
+  _edge_tags:
+    - a5
+- !Edge
+  node_from: *id014
+  node_to: *id015
+  username: student39
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The goal for the function topScores\
+    \ is when provided a list including a numerical scores and names is to return\
+    \ the names of those who have the highest scores \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The goal for the function topScores\
+    \ is when provided a list including a numerical scores and names is to return\
+    \ the names of those who have the highest scores above 80\n    \"\"\"\n    "
+  completion_from: "# The first step is to sort the list in descending order\n   \
+    \ lst.sort(reverse = True)\n    # The next step is to create a list that will\
+    \ contain the names of the top scorers\n    top_scorers = []\n    # The next step\
+    \ is to create a variable that will contain the highest score\n    top_score =\
+    \ lst[0][0]\n    # The next step is to create a for loop that will go through\
+    \ the"
+  completion_to: "#create a list to store the names of the people with the highest\
+    \ scores\n    topScores = []\n    #create a variable to store the highest score\n\
+    \    highestScore = 0\n    #loop through the list\n    for i in range(len(lst)):\n\
+    \        #if the score is greater than 80 and greater than the current highest\
+    \ score\n        if lst[i][1] > 80 and lst[i][1] > highestScore"
+  diff: "--- \n+++ \n@@ -30,4 +30,6 @@\n the highest scores+above+80 \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags:
+    - a2
+- !Edge
+  node_from: *id016
+  node_to: *id017
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list to a new list of lists called newLst. Then sort\
+    \ newLst and remove all but the three lists with the highest values at index 0.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then convert the lists\
+    \ in newLst to strings.\n    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    return newLst[:3]\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) > 5:\n\
+    \        newLst = newLst[:5]\n    for i in range(len(newLst)):\n        newLst[i]\
+    \ = str(newLst["
+  diff: "--- \n+++ \n@@ -32,6 +32,9 @@\n add the list+at+index+1 to a new@@ -42,13\
+    \ +45,22 @@\n newLst. Then sort-newLst-and+newLst.+If+there+are+more+than+five+lists+in+newLst,\
+    \ remove-all-but+any+lists+after the-three+five lists with the@@ -57,4 +69,12\
+    \ @@\n at index 0.+Then+convert+the+lists+in+newLst+to+strings. \"\"\""
+  attempt_id: 1
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - a3
+    - a4
+    - a5
+- !Edge
+  node_from: *id017
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then convert the lists\
+    \ in newLst to strings.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then make a new list\
+    \ called finalLst. For each list in newLst, add the value at index 1 to finalLst.\n\
+    \    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    for i in range(len(newLst)):\n        newLst[i]\
+    \ = str(newLst["
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) > 5:\n\
+    \        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n      \
+    \  finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -70,11 +70,23 @@\n index 0. Then-convert+make+a+new+list+called+finalLst.+For+each+list+in+newLst,+add\
+    \ the-lists-in-newLst+value+at+index+1 to-strings.+finalLst. \"\"\""
+  attempt_id: 2
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id014
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then make a new list\
+    \ called finalLst. For each list in newLst, add the value at index 1 to finalLst.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then make a new list\
+    \ called finalLst. For each list in newLst, add the value at index 1 to finalLst.\
+    \ Return finalLst.\n    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) > 5:\n\
+    \        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n      \
+    \  finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -89,4 +89,6 @@\n 1 to finalLst.+Return+finalLst. \"\"\""
+  attempt_id: 3
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id014
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst. If there are more than five lists in newLst, remove any lists\
+    \ after the five lists with the highest values at index 0. Then make a new list\
+    \ called finalLst. For each list in newLst, add the value at index 1 to finalLst.\
+    \ Return finalLst.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. Return finalLst.\n    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse = True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -45,7 +45,11 @@\n newLst. Then sort-newLst.+newLst+from+highest+to+lowest.\
+    \ If there are"
+  attempt_id: 4
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id014
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. Return finalLst.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. When that's finished, return finalLst.\n    \"\"\"\n\
+    \    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse = True)\n    if len(newLst)\
+    \ > 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n\
+    \        finalLst.append(i[1])\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) > 5:\n\
+    \        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n      \
+    \  finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -93,6 +93,9 @@\n 1 to finalLst.-Return+When+that's+finished,+return\
+    \ finalLst. \"\"\""
+  attempt_id: 5
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id014
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. When that's finished, return finalLst.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. The output should be finalLst.\n    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) > 5:\n\
+    \        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n      \
+    \  finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -93,9 +93,9 @@\n 1 to finalLst.-When-that's-finished,-return+The+output+should+be\
+    \ finalLst. \"\"\""
+  attempt_id: 6
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id014
+  node_to: *id014
+  username: student45
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which\
+    \ we will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. The output should be finalLst.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Takes a list of lists, which we\
+    \ will call lst. For each list in lst, if the value at index 0 is greater than\
+    \ or equal to 80, add the list at index 1 to a new list of lists called newLst.\
+    \ Then sort newLst from highest to lowest. If there are more than five lists in\
+    \ newLst, remove any lists after the five lists with the highest values at index\
+    \ 0. Then make a new list called finalLst. For each list in newLst, add the value\
+    \ at index 1 to finalLst. Output finalLst.\n    \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n     \
+    \       newLst.append(i)\n    newLst.sort(reverse=True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  completion_to: "newLst = []\n    for i in lst:\n        if i[0] >= 80:\n       \
+    \     newLst.append(i)\n    newLst.sort(reverse = True)\n    if len(newLst) >\
+    \ 5:\n        newLst = newLst[:5]\n    finalLst = []\n    for i in newLst:\n \
+    \       finalLst.append(i[1])\n"
+  diff: "--- \n+++ \n@@ -93,9 +93,6 @@\n 1 to finalLst.-The-output-should-be+Output\
+    \ finalLst. \"\"\""
+  attempt_id: 7
+  total_attempts: 8
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id018
+  node_to: *id019
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, return the list of\
+    \ strings whose integer is greater than 80\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if\
+    \ the zeroth index is less than or equal to 80, add the 1st index into a list\
+    \ and return this new list \n    \"\"\"\n    "
+  completion_from: 'return [x for x in lst if int(x.split()[1]) > 80]
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] <= 80:\n      \
+    \      new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"bob\"\
+    ], [90, \"sally\"], [100, \"joe\"], [70, \"jane\"]]))\n"
+  diff: "--- \n+++ \n@@ -3,15 +3,31 @@\n \"\"\" taken lst,+loop+each+list+and+if+the+zeroth+index+is+less+than+or+equal+to+80,+add+the+1st+index+into+a+list+and\
+    \ return-the+this+new list-of-strings-whose-integer-is-greater-than-80 \"\"\""
+  attempt_id: 1
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - d2
+    - a6
+    - a1
+    - m3
+- !Edge
+  node_from: *id019
+  node_to: *id003
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and\
+    \ if the zeroth index is less than or equal to 80, add the 1st index into a list\
+    \ and return this new list \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if\
+    \ the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] <= 80:\n    \
+    \        new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"\
+    bob\"], [90, \"sally\"], [100, \"joe\"], [70, \"jane\"]]))\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"John\"\
+    ], [90, \"Sam\"], [70, \"Jane\"], [60, \"Joe\"]]))\n"
+  diff: "--- \n+++ \n@@ -12,7 +12,7 @@\n zeroth index is-less+more than or equal"
+  attempt_id: 2
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - a2
+- !Edge
+  node_from: *id003
+  node_to: *id020
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and\
+    \ if the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if\
+    \ the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list in the order of the highest zeroth index. If the list\
+    \ is larger than 4 items, then return only 4 items with the highest zeroth index.\
+    \ \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i[1])\n    return new_lst\n\nprint(topScores([[80, \"\
+    John\"], [90, \"Sam\"], [70, \"Jane\"], [60, \"Joe\"]]))\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst)\
+    \ > 4:\n        return new_lst[:4]\n    else:\n        return new_lst\n"
+  diff: "--- \n+++ \n@@ -30,4 +30,30 @@\n this new list+in+the+order+of+the+highest+zeroth+index.+If+the+list+is+larger+than+4+items,+then+return+only+4+items+with+the+highest+zeroth+index.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - a4
+    - m3
+- !Edge
+  node_from: *id020
+  node_to: *id021
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and\
+    \ if the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list in the order of the highest zeroth index. If the list\
+    \ is larger than 4 items, then return only 4 items with the highest zeroth index.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and if\
+    \ the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list by sorting from the highest 0th index of the original\
+    \ list. If the list is larger than 5 items, then return only 5 items with the\
+    \ highest zeroth index. \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n    if len(new_lst)\
+    \ > 4:\n        return new_lst[:4]\n    else:\n        return new_lst\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i[1])\n    new_lst.sort()\n    if len(new_lst) > 5:\n  \
+    \      return new_lst[-5:]\n    else:\n        return new_lst\n"
+  diff: "--- \n+++ \n@@ -30,26 +30,29 @@\n this new list-in+by+sorting+from the-order+highest+0th+index\
+    \ of the-highest-zeroth-index.+original+list. If the list is larger than-4+5 items,\
+    \ then return only-4+5 items with the"
+  attempt_id: 4
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - m4
+    - a5
+- !Edge
+  node_from: *id021
+  node_to: *id022
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, loop each list and\
+    \ if the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list by sorting from the highest 0th index of the original\
+    \ list. If the list is larger than 5 items, then return only 5 items with the\
+    \ highest zeroth index. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, sort the list be the\
+    \ highest 0th index then if the zeroth index is more than or equal to 80, add\
+    \ the 1st index into a list and return this new list by sorting from the highest\
+    \ 0th index of the original list. If the list is larger than 5 items, then return\
+    \ only 5 items with the highest zeroth index. \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i[1])\n    new_lst.sort()\n    if len(new_lst) > 5:\n\
+    \        return new_lst[-5:]\n    else:\n        return new_lst\n"
+  completion_to: "lst.sort(reverse=True)\n    new_lst = []\n    for i in lst:\n  \
+    \      if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n\
+    \    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return\
+    \ new_lst\n"
+  diff: "--- \n+++ \n@@ -3,10 +3,15 @@\n \"\"\" taken lst,-loop-each+sort+the list-and+be+the+highest+0th+index+then\
+    \ if the zeroth"
+  attempt_id: 5
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - d1
+    - m4
+- !Edge
+  node_from: *id022
+  node_to: *id008
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, sort the list be the\
+    \ highest 0th index then if the zeroth index is more than or equal to 80, add\
+    \ the 1st index into a list and return this new list by sorting from the highest\
+    \ 0th index of the original list. If the list is larger than 5 items, then return\
+    \ only 5 items with the highest zeroth index. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    taken lst, loop through each list\
+    \ and sort the list in the order of the highest 0th index. Given new list if the\
+    \ zeroth index is more than or equal to 80, add the 1st index into a list and\
+    \ return this new list by sorting from the highest 0th index of the original list.\
+    \ If the list is larger than 5 items, then return only 5 items with the highest\
+    \ zeroth index. \n    \"\"\"\n    "
+  completion_from: "lst.sort(reverse=True)\n    new_lst = []\n    for i in lst:\n\
+    \        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n\
+    \    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return\
+    \ new_lst\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        i.sort(reverse=True)\n\
+    \        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n\
+    \    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return\
+    \ new_lst\n\nprint("
+  diff: "--- \n+++ \n@@ -3,15 +3,25 @@\n \"\"\" taken lst,+loop+through+each+list+and\
+    \ sort the list-be+in+the+order+of the highest 0th-index-then+index.+Given+new+list\
+    \ if the zeroth"
+  attempt_id: 6
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id008
+  node_to: *id023
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    taken lst, loop through each\
+    \ list and sort the list in the order of the highest 0th index. Given new list\
+    \ if the zeroth index is more than or equal to 80, add the 1st index into a list\
+    \ and return this new list by sorting from the highest 0th index of the original\
+    \ list. If the list is larger than 5 items, then return only 5 items with the\
+    \ highest zeroth index. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Append to a new\
+    \ list and sort the new list in the order of the largest 0th index in the nested\
+    \ list. Add the 1st index into a new list and return this new list. If the list\
+    \ is larger than 5 items, then return only 5 items with the highest zeroth index.\
+    \ \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        i.sort(reverse=True)\n\
+    \        if i[0] >= 80:\n            new_lst.append(i[1])\n    new_lst.sort(reverse=True)\n\
+    \    if len(new_lst) > 5:\n        return new_lst[:5]\n    else:\n        return\
+    \ new_lst\n\nprint("
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i)\n    new_lst.sort(reverse=True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        return new"
+  diff: "--- \n+++ \n@@ -1,60 +1,59 @@\n def topScores(lst): \"\"\"-taken-lst,-loop+Loop\
+    \ through each+lst+and+take+the+nested+list+with+a+0th+index+larger+than+or+equal+to+80.+Append+to+a+new\
+    \ list and sort the+new list in the order of the-highest+largest 0th-index.-Given-new-list-if+index+in\
+    \ the-zeroth-index-is-more-than-or-equal-to-80,-add+nested+list.+Add the 1st index\
+    \ into a+new list and return this new-list-by-sorting-from-the-highest-0th-index-of-the-original\
+    \ list. If the"
+  attempt_id: 7
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id023
+  node_to: *id024
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Append to a new\
+    \ list and sort the new list in the order of the largest 0th index in the nested\
+    \ list. Add the 1st index into a new list and return this new list. If the list\
+    \ is larger than 5 items, then return only 5 items with the highest zeroth index.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Append to a new\
+    \ list and sort the new list in the order of the largest 0th index in the nested\
+    \ list. Add the 1st index into a new list and return this list. If the list is\
+    \ larger than 5 items then take then eliminate the last elements to make 5 total\
+    \ items. \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i)\n    new_lst.sort(reverse=True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        return new"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        new_"
+  diff: "--- \n+++ \n@@ -53,7 +53,6 @@\n and return this-new list. If the@@ -62,15\
+    \ +61,17 @@\n larger than 5-items,+items then-return-only+take+then+eliminate+the+last+elements+to+make\
+    \ 5-items-with-the-highest-zeroth-index.+total+items. \"\"\""
+  attempt_id: 8
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - m5
+- !Edge
+  node_from: *id024
+  node_to: *id024
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Append to a new\
+    \ list and sort the new list in the order of the largest 0th index in the nested\
+    \ list. Add the 1st index into a new list and return this list. If the list is\
+    \ larger than 5 items then take then eliminate the last elements to make 5 total\
+    \ items. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Define and append\
+    \ to a new list and sort the new list in the order of the largest 0th index in\
+    \ the nested list. Add the 1st index into a another defined new list and return\
+    \ this list. If the list is larger than 5 items then take then eliminate the last\
+    \ elements to make 5 total items. \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        new_"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n      \
+    \      new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        new_"
+  diff: "--- \n+++ \n@@ -20,7 +20,9 @@\n equal to 80.-Append+Define+and+append to\
+    \ a new@@ -48,6 +50,8 @@\n index into a+another+defined new list and"
+  attempt_id: 9
+  total_attempts: 11
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id024
+  node_to: *id013
+  username: student53
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Loop through each lst and take\
+    \ the nested list with a 0th index larger than or equal to 80. Define and append\
+    \ to a new list and sort the new list in the order of the largest 0th index in\
+    \ the nested list. Add the 1st index into a another defined new list and return\
+    \ this list. If the list is larger than 5 items then take then eliminate the last\
+    \ elements to make 5 total items. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    if 0th index of the nested list\
+    \ of lst is greater than or equal to 80, return a list of the 1st index in the\
+    \ order from the largest 0th index integer. Return up to a list of 5 items. \n\
+    \    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in lst:\n        if i[0] >= 80:\n    \
+    \        new_lst.append(i)\n    new_lst.sort(reverse = True)\n    new_lst2 = []\n\
+    \    for i in new_lst:\n        new_lst2.append(i[1])\n    if len(new_lst2) >\
+    \ 5:\n        new_"
+  completion_to: 'return [x[1] for x in sorted(lst, key=lambda x: x[0], reverse=True)
+    if x[0] >= 80][:5]
+
+    '
+  diff: "--- \n+++ \n@@ -1,81 +1,44 @@\n def topScores(lst): \"\"\"-Loop-through-each-lst-and-take+if+0th+index+of\
+    \ the nested list-with-a-0th-index-larger+of+lst+is+greater than or equal to-80.-Define-and-append-to+80,+return\
+    \ a-new list-and-sort+of the-new-list+1st+index in the order-of+from the largest\
+    \ 0th index-in-the-nested-list.-Add-the-1st-index-into+integer.+Return+up+to a-another-defined-new\
+    \ list-and-return-this-list.-If-the-list-is-larger-than+of 5-items-then-take-then-eliminate-the-last-elements-to-make-5-total\
+    \ items. \"\"\""
+  attempt_id: 10
+  total_attempts: 11
+  state: success
+  _edge_tags:
+    - l1
+    - l4
+- !Edge
+  node_from: *id002
+  node_to: *id006
+  username: student55
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Write a function that gets a\
+    \ list of lists of grades and names of students, and returns the name from the\
+    \ highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\
+    \"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns the name from the\
+    \ highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\
+    \"\n    "
+  completion_from: 'return [x[0] for x in sorted(lst, key=lambda x: x[1], reverse=True)
+    if x[1] > 80]
+
+
+    '
+  completion_to: "# create a list of tuples\n    lst = [(x[0], x[1]) for x in lst]\n\
+    \    # sort the list of tuples\n    lst.sort(reverse=True)\n    # create a list\
+    \ of names\n    lst = [x[1] for x in lst if x[0] > 80]\n    # return the list\n\
+    \    return lst\n"
+  diff: "--- \n+++ \n@@ -5,18 +5,33 @@\n a function that-gets+runs+through a list\
+    \ of lists+with+2+elements.+The+first+element+is+the+grade+and+the+second+element+is+the+name\
+    \ of-grades-and-names-of-students,-and+the+student.+This+function returns the\
+    \ name"
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m1
+- !Edge
+  node_from: *id006
+  node_to: *id003
+  username: student55
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns the name from the\
+    \ highest grade to the lowest, if only the grades are higher than 80.\n    \"\"\
+    \"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns the name from the\
+    \ highest grade to the lowest, if only the grades are higher or equal than 80.\n\
+    \    \"\"\"\n    "
+  completion_from: "# create a list of tuples\n    lst = [(x[0], x[1]) for x in lst]\n\
+    \    # sort the list of tuples\n    lst.sort(reverse=True)\n    # create a list\
+    \ of names\n    lst = [x[1] for x in lst if x[0] > 80]\n    # return the list\n\
+    \    return lst\n"
+  completion_to: "# your code here\n    return [i[1] for i in lst if i[0] >= 80]\n"
+  diff: "--- \n+++ \n@@ -48,6 +48,8 @@\n grades are higher+or+equal than 80. \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a6
+- !Edge
+  node_from: *id003
+  node_to: *id005
+  username: student55
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns the name from the\
+    \ highest grade to the lowest, if only the grades are higher or equal than 80.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns all the name of the\
+    \ students with grades higher or equal to 80. The order of the return is from\
+    \ the highest grade to the lowest one.\n    \"\"\"\n    "
+  completion_from: "# your code here\n    return [i[1] for i in lst if i[0] >= 80]\n"
+  completion_to: "# your code here\n    return [name for grade, name in sorted(lst,\
+    \ key=lambda x: x[0], reverse=True) if grade >= 80]\n"
+  diff: "--- \n+++ \n@@ -33,23 +33,31 @@\n This function returns+all the name+of+the+students+with+grades+higher+or+equal+to+80.+The+order+of+the+return+is\
+    \ from the highest grade to the-lowest,-if-only-the-grades-are-higher-or-equal-than-80.+lowest+one.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id005
+  node_to: *id013
+  username: student55
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns all the name of the\
+    \ students with grades higher or equal to 80. The order of the return is from\
+    \ the highest grade to the lowest one.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Write a function that runs through\
+    \ a list of lists with 2 elements. The first element is the grade and the second\
+    \ element is the name of the student. This function returns the names of 5 students\
+    \ with grades higher or equal to 80. The order of the return is from the highest\
+    \ grade to the lowest one.\n    \"\"\"\n    "
+  completion_from: "# your code here\n    return [name for grade, name in sorted(lst,\
+    \ key=lambda x: x[0], reverse=True) if grade >= 80]\n"
+  completion_to: 'return [name for grade, name in sorted(lst, reverse=True) if grade
+    >= 80][:5]
+
+    '
+  diff: "--- \n+++ \n@@ -33,11 +33,10 @@\n This function returns-all the-name+names\
+    \ of-the+5 students with grades"
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+    - a5
+- !Edge
+  node_from: *id025
+  node_to: *id014
+  username: student65
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. If the first entry in the list (the score) is greater\
+    \ than 80, add the second entry in the list (the name) to a list to be output\
+    \ at the end.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. If the first entry in the list (the score) is greater\
+    \ than or equal to 80, add the second entry in the list (the name) to a list to\
+    \ be output at the end. The final list should be ordered by names with the largest\
+    \ score to names with the smallest score.\n    \"\"\"\n    "
+  completion_from: "output = []\n    for i in lst:\n        if i[0] > 80:\n      \
+    \      output.append(i[1])\n    return output\n\nprint(topScores([[90, 'John'],\
+    \ [80, 'Bob'], [85, 'Alice'], [70, 'James']]))\n"
+  completion_to: "# Your code here\n    pass\n"
+  diff: "--- \n+++ \n@@ -25,6 +25,9 @@\n is greater than+or+equal+to 80, add the@@\
+    \ -44,4 +47,22 @@\n at the end.+The+final+list+should+be+ordered+by+names+with+the+largest+score+to+names+with+the+smallest+score.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id014
+  node_to: *id026
+  username: student65
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. If the first entry in the list (the score) is greater\
+    \ than or equal to 80, add the second entry in the list (the name) to a list to\
+    \ be output at the end. The final list should be ordered by names with the largest\
+    \ score to names with the smallest score.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. First, sort the lists by the first entry. If the first\
+    \ entry in the list (the score) is greater than or equal to 80, add the second\
+    \ entry in the list (the name) to a list to be output at the end. \n    \"\"\"\
+    \n    "
+  completion_from: "# Your code here\n    pass\n"
+  completion_to: "lst.sort()\n    output = []\n    for i in lst:\n        if i[0]\
+    \ >= 80:\n            output.append(i[1])\n    return output\n"
+  diff: "--- \n+++ \n@@ -13,6 +13,14 @@\n 2 as inputs.+First,+sort+the+lists+by+the+first+entry.\
+    \ If the first@@ -47,22 +55,4 @@\n at the end.-The-final-list-should-be-ordered-by-names-with-the-largest-score-to-names-with-the-smallest-score.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id026
+  node_to: *id005
+  username: student65
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. First, sort the lists by the first entry. If the first\
+    \ entry in the list (the score) is greater than or equal to 80, add the second\
+    \ entry in the list (the name) to a list to be output at the end. \n    \"\"\"\
+    \n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    This function has a list of lists\
+    \ of length 2 as inputs. First, sort the lists by the first entry in descending\
+    \ order. If the first entry in the list (the score) is greater than or equal to\
+    \ 80, add the second entry in the list (the name) to a list to be output at the\
+    \ end. \n    \"\"\"\n    "
+  completion_from: "lst.sort()\n    output = []\n    for i in lst:\n        if i[0]\
+    \ >= 80:\n            output.append(i[1])\n    return output\n"
+  completion_to: "lst.sort(reverse=True)\n    output = []\n    for i in lst:\n   \
+    \     if i[0] >= 80:\n            output.append(i[1])\n    return output\n\nprint(topScores([[80,\
+    \ \"John\"], [90, \"Jane\"], [70, \"Joe\"], [60, \"Jack\"]]))\n"
+  diff: "--- \n+++ \n@@ -20,7 +20,10 @@\n by the first-entry.+entry+in+descending+order.\
+    \ If the first"
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id017
+  node_to: *id027
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people in from oldest to youngest, as long as there is\
+    \ less than a 10-year gap between the two. \n\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from oldest to youngest, as long as there is less\
+    \ than a 10-year gap between the two. \n\n    \"\"\"\n    "
+  completion_from: "# Initialize a list to store the names of people who are eligible\
+    \ to be in the top scores list.\n    top_scores = []\n    # Iterate through the\
+    \ list of lists.\n    for i in range(len(lst)):\n        # If the list is empty,\
+    \ add the first person to the list.\n        if len(top_scores) == 0:\n      \
+    \      top_scores.append(lst[i][1"
+  completion_to: "# Create a list of names\n    names = []\n    # Iterate through\
+    \ the list of lists\n    for i in range(len(lst)):\n        # If the difference\
+    \ between the current age and the next age is less than 10, append the name to\
+    \ the list\n        if lst[i][0] - lst[i+1][0] < 10:\n            names.append(lst[i][1])\n\
+    \    return names"
+  diff: "--- \n+++ \n@@ -27,7 +27,6 @@\n names of people-in from oldest to"
+  attempt_id: 1
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+  - 0
+- !Edge
+  node_from: *id027
+  node_to: *id028
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from oldest to youngest, as long as there is less\
+    \ than a 10-year gap between the two. \n\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from oldest to youngest\n    \"\"\"\n    "
+  completion_from: "# Create a list of names\n    names = []\n    # Iterate through\
+    \ the list of lists\n    for i in range(len(lst)):\n        # If the difference\
+    \ between the current age and the next age is less than 10, append the name to\
+    \ the list\n        if lst[i][0] - lst[i+1][0] < 10:\n            names.append(lst[i][1])\n\
+    \    return names"
+  completion_to: "lst.sort(key=lambda x: x[0])\n    return [x[1] for x in lst]\n"
+  diff: "--- \n+++ \n@@ -30,18 +30,5 @@\n from oldest to-youngest,-as-long-as-there-is-less-than-a-10-year-gap-between-the-two.+youngest\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+  - 0
+- !Edge
+  node_from: *id028
+  node_to: *id028
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from oldest to youngest\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from youngest to oldest\n    \"\"\"\n    "
+  completion_from: "lst.sort(key=lambda x: x[0])\n    return [x[1] for x in lst]\n"
+  completion_to: "lst.sort(key=lambda x: x[0])\n    return [x[1] for x in lst]\n"
+  diff: "--- \n+++ \n@@ -28,7 +28,7 @@\n of people from+youngest+to oldest-to-youngest\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - d4
+- !Edge
+  node_from: *id028
+  node_to: *id029
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people from youngest to oldest\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest\n    \"\"\"\
+    \n    "
+  completion_from: "lst.sort(key=lambda x: x[0])\n    return [x[1] for x in lst]\n"
+  completion_to: "lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for\
+    \ x in lst]\n"
+  diff: "--- \n+++ \n@@ -27,8 +27,11 @@\n names of people+sorted+by+age from+oldest+to\
+    \ youngest-to-oldest \"\"\""
+  attempt_id: 4
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id029
+  node_to: *id030
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest\n    \"\"\"\
+    \n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long is the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  completion_from: "lst.sort(key=lambda x: x[0], reverse=True)\n    return [x[1] for\
+    \ x in lst]\n"
+  completion_to: "if len(lst) > 5:\n        lst = lst[:5]\n    elif len(lst) < 5 and\
+    \ len(lst) > 3:\n        lst = lst[:3]\n    else:\n        lst = []\n    return\
+    \ lst\n"
+  diff: "--- \n+++ \n@@ -33,5 +33,52 @@\n from oldest to-youngest+youngest.+The+returned+list+will+be+at+most+5+names+long+is+the+original+list+of+lists+has+more+than+5+items,+if+the+original+list+of+lists+has+between+4+and+5+items,+the+returned+list+will+have+3+names,+else,+the+returned+list+will+be+empty.\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - a5
+- !Edge
+  node_from: *id030
+  node_to: *id031
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long is the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long is the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  completion_from: "if len(lst) > 5:\n        lst = lst[:5]\n    elif len(lst) < 5\
+    \ and len(lst) > 3:\n        lst = lst[:3]\n    else:\n        lst = []\n    return\
+    \ lst\n"
+  completion_to: "#sort the list of lists by age\n    lst.sort(key=lambda x: x[0])\n\
+    \    #reverse the list of lists\n    lst.reverse()\n    #create a list to hold\
+    \ the names of the people\n    names = []\n    #iterate through the list of lists\n\
+    \    for i in range(len(lst)):\n        #if the list of lists has more than 5\
+    \ items\n        if len(l"
+  diff: ''
+  attempt_id: 6
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id031
+  node_to: *id017
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long is the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long if the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  completion_from: "#sort the list of lists by age\n    lst.sort(key=lambda x: x[0])\n\
+    \    #reverse the list of lists\n    lst.reverse()\n    #create a list to hold\
+    \ the names of the people\n    names = []\n    #iterate through the list of lists\n\
+    \    for i in range(len(lst)):\n        #if the list of lists has more than 5\
+    \ items\n        if len(l"
+  completion_to: "lst.sort(key=lambda x: x[0])\n    lst.reverse()\n    if len(lst)\
+    \ > 5:\n        return [lst[0][1], lst[1][1], lst[2][1], lst[3][1], lst[4][1]]\n\
+    \    elif len(lst) == 5:\n        return [lst[0][1], lst[1]["
+  diff: "--- \n+++ \n@@ -44,7 +44,7 @@\n 5 names long-is+if the original list"
+  attempt_id: 7
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id017
+  node_to: *id032
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be at most 5 names long if the original list of lists has more than\
+    \ 5 items, if the original list of lists has between 4 and 5 items, the returned\
+    \ list will have 3 names, else, the returned list will be empty. \n    \"\"\"\n\
+    \    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items; 3 names\
+    \ long if the original list of lists has between 4 and 5 items; else the returned\
+    \ list will be empty. \n    \"\"\"\n    "
+  completion_from: "lst.sort(key=lambda x: x[0])\n    lst.reverse()\n    if len(lst)\
+    \ > 5:\n        return [lst[0][1], lst[1][1], lst[2][1], lst[3][1], lst[4][1]]\n\
+    \    elif len(lst) == 5:\n        return [lst[0][1], lst[1]["
+  completion_to: "names = []\n    ages = []\n    for i in lst:\n        ages.append(i[0])\n\
+    \        names.append(i[1])\n    ages, names = (list(t) for t in zip(*sorted(zip(ages,\
+    \ names), reverse=True)))\n    if len(lst) > 5:\n        return names[:5]\n  \
+    \  elif len(lst) > 3:\n        return"
+  diff: "--- \n+++ \n@@ -21,6 +21,7 @@\n respectively. Returns a+new list of the@@\
+    \ -39,8 +40,6 @@\n list will be-at-most 5 names long@@ -48,13 +47,14 @@\n the\
+    \ original list-of-lists has more than 5-items,+items;+3+names+long if the original@@\
+    \ -66,15 +66,8 @@\n 4 and 5-items,-the-returned-list-will-have-3-names,-else,+items;+else\
+    \ the returned list"
+  attempt_id: 8
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id032
+  node_to: *id033
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items; 3 names\
+    \ long if the original list of lists has between 4 and 5 items; else the returned\
+    \ list will be empty. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items; The returned\
+    \ list will be 3 names long if the original list has between 4 and 5 items; The\
+    \ returned list will be empty if the original list has less than 4 items\n   \
+    \ \"\"\"\n    "
+  completion_from: "names = []\n    ages = []\n    for i in lst:\n        ages.append(i[0])\n\
+    \        names.append(i[1])\n    ages, names = (list(t) for t in zip(*sorted(zip(ages,\
+    \ names), reverse=True)))\n    if len(lst) > 5:\n        return names[:5]\n  \
+    \  elif len(lst) > 3:\n        return"
+  completion_to: "new_lst = []\n    for i in range(len(lst)):\n        new_lst.append(lst[i][1])\n\
+    \    return new_lst\n"
+  diff: "--- \n+++ \n@@ -52,6 +52,11 @@\n than 5 items;+The+returned+list+will+be\
+    \ 3 names long@@ -59,19 +64,25 @@\n the original list-of-lists has between 4 and\
+    \ 5 items;-else-the+The returned list will be-empty.+empty+if+the+original+list+has+less+than+4+items\
+    \ \"\"\""
+  attempt_id: 9
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id033
+  node_to: *id034
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items; The returned\
+    \ list will be 3 names long if the original list has between 4 and 5 items; The\
+    \ returned list will be empty if the original list has less than 4 items\n   \
+    \ \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items.\n    \"\
+    \"\"\n    "
+  completion_from: "new_lst = []\n    for i in range(len(lst)):\n        new_lst.append(lst[i][1])\n\
+    \    return new_lst\n"
+  completion_to: "lst.sort(key=lambda x: x[0])\n    return [i[1] for i in lst[-5:]]\n"
+  diff: "--- \n+++ \n@@ -51,38 +51,5 @@\n more than 5-items;-The-returned-list-will-be-3-names-long-if-the-original-list-has-between-4-and-5-items;-The-returned-list-will-be-empty-if-the-original-list-has-less-than-4-items+items.\
+    \ \"\"\""
+  attempt_id: 10
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - l5
+- !Edge
+  node_from: *id034
+  node_to: *id017
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. Returns a\
+    \ new list of the names of people sorted by age from oldest to youngest. The returned\
+    \ list will be 5 names long if the original list has more than 5 items.\n    \"\
+    \"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created and returned of the names of people sorted by age from oldest\
+    \ to youngest. If the original list is less than 4 items long, the new list will\
+    \ return empty. If the original list is between 4 and 5 items long, the new list\
+    \ will return 3 names. If the original list is more than 5 items long, the new\
+    \ list will return 5 names. \n    \"\"\"\n    "
+  completion_from: "lst.sort(key=lambda x: x[0])\n    return [i[1] for i in lst[-5:]]\n"
+  completion_to: "newLst = []\n    if len(lst) < 4:\n        return newLst\n    elif\
+    \ len(lst) >= 4 and len(lst) <= 5:\n        for i in range(3):\n            newLst.append(lst[i][1])\n\
+    \        return newLst\n    else:\n        for i in range(5):\n            newLst.append(lst[i][1"
+  diff: "--- \n+++ \n@@ -19,10 +19,14 @@\n a person respectively.-Returns-a+A new\
+    \ list+will+be+created+and+returned of the names@@ -35,21 +39,55 @@\n oldest to\
+    \ youngest.-The-returned-list-will-be-5-names-long-if+If the original list-has+is+less+than+4+items+long,+the+new+list+will+return+empty.+If+the+original+list+is+between+4+and+5+items+long,+the+new+list+will+return+3+names.+If+the+original+list+is\
+    \ more than 5-items.+items+long,+the+new+list+will+return+5+names. \"\"\""
+  attempt_id: 11
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - m5
+- !Edge
+  node_from: *id017
+  node_to: *id033
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created and returned of the names of people sorted by age from oldest\
+    \ to youngest. If the original list is less than 4 items long, the new list will\
+    \ return empty. If the original list is between 4 and 5 items long, the new list\
+    \ will return 3 names. If the original list is more than 5 items long, the new\
+    \ list will return 5 names. \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created and returned of the names of people sorted by age from oldest\
+    \ to youngest.  \n    \"\"\"\n    "
+  completion_from: "newLst = []\n    if len(lst) < 4:\n        return newLst\n   \
+    \ elif len(lst) >= 4 and len(lst) <= 5:\n        for i in range(3):\n        \
+    \    newLst.append(lst[i][1])\n        return newLst\n    else:\n        for i\
+    \ in range(5):\n            newLst.append(lst[i][1"
+  completion_to: "new_lst = []\n    for i in range(len(lst)):\n        new_lst.append(lst[i][1])\n\
+    \    return new_lst\n"
+  diff: "--- \n+++ \n@@ -39,55 +39,4 @@\n oldest to youngest.-If-the-original-list-is-less-than-4-items-long,-the-new-list-will-return-empty.-If-the-original-list-is-between-4-and-5-items-long,-the-new-list-will-return-3-names.-If-the-original-list-is-more-than-5-items-long,-the-new-list-will-return-5-names.\
+    \ \"\"\""
+  attempt_id: 12
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - d5
+- !Edge
+  node_from: *id033
+  node_to: *id033
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created and returned of the names of people sorted by age from oldest\
+    \ to youngest.  \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created of the names of people sorted by age from oldest to youngest.\
+    \  \n    \"\"\"\n    "
+  completion_from: "new_lst = []\n    for i in range(len(lst)):\n        new_lst.append(lst[i][1])\n\
+    \    return new_lst\n"
+  completion_to: "newList = []\n    for i in range(len(lst)):\n        newList.append(lst[i][1])\n\
+    \    return newList\n"
+  diff: "--- \n+++ \n@@ -25,8 +25,6 @@\n will be created-and-returned of the names"
+  attempt_id: 13
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id033
+  node_to: *id035
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created of the names of people sorted by age from oldest to youngest.\
+    \  \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Creates a new list of the names\
+    \ sorted by age from oldest to youngest.  \n    \"\"\"\n    "
+  completion_from: "newList = []\n    for i in range(len(lst)):\n        newList.append(lst[i][1])\n\
+    \    return newList\n"
+  completion_to: "# Sort the list by age.\n    lst.sort(key=lambda x: x[1], reverse=True)\n\
+    \    # Create a new list of names sorted by age.\n    newList = []\n    for i\
+    \ in range(len(lst)):\n        newList.append(lst[i][0])\n    return newList\n"
+  diff: "--- \n+++ \n@@ -1,35 +1,13 @@\n def topScores(lst): \"\"\"-Iterates-through+Creates\
+    \ a-list-of-lists,-with-each-list-housing-the-age-and-name-of-a-person-respectively.-A\
+    \ new list-will-be-created of the names-of-people sorted by age"
+  attempt_id: 14
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - d1
+- !Edge
+  node_from: *id035
+  node_to: *id036
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Creates a new list of the names\
+    \ sorted by age from oldest to youngest.  \n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created sorting the names of people by their age, from oldest to youngest\n\
+    \    \"\"\"\n    "
+  completion_from: "# Sort the list by age.\n    lst.sort(key=lambda x: x[1], reverse=True)\n\
+    \    # Create a new list of names sorted by age.\n    newList = []\n    for i\
+    \ in range(len(lst)):\n        newList.append(lst[i][0])\n    return newList\n"
+  completion_to: "newLst = []\n    for i in range(len(lst)):\n        newLst.append([lst[i][1],\
+    \ lst[i][0]])\n    newLst.sort(key = lambda x: x[1], reverse = True)\n    return\
+    \ newLst\n"
+  diff: "--- \n+++ \n@@ -1,18 +1,40 @@\n def topScores(lst): \"\"\"-Creates+Iterates+through\
+    \ a+list+of+lists,+with+each+list+housing+the+age+and+name+of+a+person+respectively.+A\
+    \ new list-of+will+be+created+sorting the names-sorted+of+people by-age+their+age,\
+    \ from oldest to-youngest.+youngest \"\"\""
+  attempt_id: 15
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - a1
+- !Edge
+  node_from: *id036
+  node_to: *id037
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created sorting the names of people by their age, from oldest to youngest\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created sorting the namess by their age, from oldest to youngest\n \
+    \   \"\"\"\n    "
+  completion_from: "newLst = []\n    for i in range(len(lst)):\n        newLst.append([lst[i][1],\
+    \ lst[i][0]])\n    newLst.sort(key = lambda x: x[1], reverse = True)\n    return\
+    \ newLst\n"
+  completion_to: "#Create a new list to hold the sorted names\n    sortedNames = []\n\
+    \    #Iterate through the list of lists\n    for i in range(len(lst)):\n     \
+    \   #Iterate through the list of lists again\n        for j in range(len(lst)):\n\
+    \            #If the first list's first element is greater than the second list's\
+    \ first element, then add the second list's second element to the sortedNames\
+    \ list\n            if"
+  diff: "--- \n+++ \n@@ -27,9 +27,7 @@\n created sorting the-names-of-people+namess\
+    \ by their age,"
+  attempt_id: 16
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id037
+  node_to: *id038
+  username: student7
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created sorting the namess by their age, from oldest to youngest\n \
+    \   \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    Iterates through a list of lists,\
+    \ with each list housing the age and name of a person respectively. A new list\
+    \ will be created sorting the names by their age, from oldest to youngest\n  \
+    \  \"\"\"\n    "
+  completion_from: "#Create a new list to hold the sorted names\n    sortedNames =\
+    \ []\n    #Iterate through the list of lists\n    for i in range(len(lst)):\n\
+    \        #Iterate through the list of lists again\n        for j in range(len(lst)):\n\
+    \            #If the first list's first element is greater than the second list's\
+    \ first element, then add the second list's second element to the sortedNames\
+    \ list\n            if"
+  completion_to: "lst.sort(key=lambda x: x[0])\n    return lst\n"
+  diff: "--- \n+++ \n@@ -27,7 +27,7 @@\n created sorting the-namess+names by their\
+    \ age,"
+  attempt_id: 17
+  total_attempts: 18
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id039
+  node_to: *id014
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function finds the highest\
+    \ number in the list, and prints the string next to it in order from highest number\
+    \ to lowest number.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function finds the highest\
+    \ value in the list, and prints the string next to it in order from highest number\
+    \ to lowest number.\n    \"\"\"\n    "
+  completion_from: "lst.sort(reverse=True)\n    for i in range(len(lst)):\n      \
+    \  print(lst[i][1])\n"
+  completion_to: "#The function finds the highest value in the list, and prints the\
+    \ string next to it in order from highest number to lowest number.\n    #The function\
+    \ finds the highest value in the list, and prints the string next to it in order\
+    \ from highest number to lowest number.\n    #The function finds the highest value\
+    \ in the list, and prints the string next to it in order from highest number to\
+    \ lowest number.\n    #The function finds the highest value in the list, and"
+  diff: "--- \n+++ \n@@ -6,7 +6,7 @@\n finds the highest-number+value in the list,"
+  attempt_id: 1
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id014
+  node_to: *id040
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function finds the highest\
+    \ value in the list, and prints the string next to it in order from highest number\
+    \ to lowest number.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function finds the highest\
+    \ three values in the list, and prints the string next to it in order from highest\
+    \ number to lowest number.\n    \"\"\"\n    "
+  completion_from: "#The function finds the highest value in the list, and prints\
+    \ the string next to it in order from highest number to lowest number.\n    #The\
+    \ function finds the highest value in the list, and prints the string next to\
+    \ it in order from highest number to lowest number.\n    #The function finds the\
+    \ highest value in the list, and prints the string next to it in order from highest\
+    \ number to lowest number.\n    #The function finds the highest value in the list,\
+    \ and"
+  completion_to: "#creates a list of the top three scores\n    topScores = []\n  \
+    \  for i in range(3):\n        topScores.append(max(lst))\n        lst.remove(max(lst))\n\
+    \    #prints the top three scores in order from highest to lowest\n    for i in\
+    \ range(3):\n        print(topScores[i], \":\", lst[i])\n"
+  diff: "--- \n+++ \n@@ -6,7 +6,8 @@\n finds the highest-value+three+values in the\
+    \ list,"
+  attempt_id: 2
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id040
+  node_to: *id041
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function finds the highest\
+    \ three values in the list, and prints the string next to it in order from highest\
+    \ number to lowest number.\n    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the values in\
+    \ the list. The values that are the over 80 are ordered from highest to lowest.\
+    \ The strings are printed in the order of their corresponding values.\n    \"\"\
+    \"\n    "
+  completion_from: "#creates a list of the top three scores\n    topScores = []\n\
+    \    for i in range(3):\n        topScores.append(max(lst))\n        lst.remove(max(lst))\n\
+    \    #prints the top three scores in order from highest to lowest\n    for i in\
+    \ range(3):\n        print(topScores[i], \":\", lst[i])\n"
+  completion_to: "lst = sorted(lst, key=lambda x: x[1], reverse=True)\n    for i in\
+    \ range(len(lst)):\n        if lst[i][1] >= 80:\n            print(lst[i][0],\
+    \ lst[i][1])\n"
+  diff: "--- \n+++ \n@@ -3,27 +3,34 @@\n \"\"\" The function-finds+reads the-highest-three\
+    \ values in the-list,-and-prints+list.+The+values+that+are the-string-next-to-it-in-order+over+80+are+ordered\
+    \ from highest-number to-lowest-number.+lowest.+The+strings+are+printed+in+the+order+of+their+corresponding+values.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - a2
+- !Edge
+  node_from: *id041
+  node_to: *id042
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function reads the values\
+    \ in the list. The values that are the over 80 are ordered from highest to lowest.\
+    \ The strings are printed in the order of their corresponding values.\n    \"\"\
+    \"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the values in\
+    \ the list. The values that are over 80 are ordered from highest to lowest. The\
+    \ strings are printed in the order of their corresponding values.\n    \"\"\"\n\
+    \    "
+  completion_from: "lst = sorted(lst, key=lambda x: x[1], reverse=True)\n    for i\
+    \ in range(len(lst)):\n        if lst[i][1] >= 80:\n            print(lst[i][0],\
+    \ lst[i][1])\n"
+  completion_to: "# The list is sorted from highest to lowest\n    lst.sort(reverse=True)\n\
+    \    # The list is iterated through\n    for i in range(len(lst)):\n        #\
+    \ The values that are over 80 are printed\n        if lst[i] > 80:\n         \
+    \   print(lst[i])\n"
+  diff: "--- \n+++ \n@@ -13,7 +13,6 @@\n values that are-the over 80 are"
+  attempt_id: 4
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id042
+  node_to: *id041
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function reads the values\
+    \ in the list. The values that are over 80 are ordered from highest to lowest.\
+    \ The strings are printed in the order of their corresponding values.\n    \"\"\
+    \"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are over 80 are ordered from highest to lowest.\
+    \ The strings are printed in the order of their corresponding numbers.\n    \"\
+    \"\"\n    "
+  completion_from: "# The list is sorted from highest to lowest\n    lst.sort(reverse=True)\n\
+    \    # The list is iterated through\n    for i in range(len(lst)):\n        #\
+    \ The values that are over 80 are printed\n        if lst[i] > 80:\n         \
+    \   print(lst[i])\n"
+  completion_to: "lst.sort(reverse=True)\n    for i in range(len(lst)):\n        if\
+    \ lst[i] > 80:\n            print(lst[i])\n"
+  diff: "--- \n+++ \n@@ -5,12 +5,12 @@\n function reads the-values+numbers in the\
+    \ list. The-values+numbers that are over@@ -31,5 +31,5 @@\n of their corresponding-values.+numbers.\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id041
+  node_to: *id043
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are over 80 are ordered from highest to lowest.\
+    \ The strings are printed in the order of their corresponding numbers.\n    \"\
+    \"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are greater than 76 are ordered from highest to\
+    \ lowest. The strings are printed in the order of their corresponding numbers.\n\
+    \    \"\"\"\n    "
+  completion_from: "lst.sort(reverse=True)\n    for i in range(len(lst)):\n      \
+    \  if lst[i] > 80:\n            print(lst[i])\n"
+  completion_to: "# Create a list of numbers that are greater than 76\n    new_lst\
+    \ = []\n    for i in lst:\n        if i > 76:\n            new_lst.append(i)\n\
+    \    # Sort the list from highest to lowest\n    new_lst.sort(reverse=True)\n\
+    \    # Print the strings in the order of their corresponding numbers\n    for\
+    \ i in new_lst:\n        print(lst.index"
+  diff: "--- \n+++ \n@@ -13,8 +13,9 @@\n numbers that are-over-80+greater+than+76\
+    \ are ordered from"
+  attempt_id: 6
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - d2
+- !Edge
+  node_from: *id043
+  node_to: *id031
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are greater than 76 are ordered from highest to\
+    \ lowest. The strings are printed in the order of their corresponding numbers.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are greater than 76 are ordered from highest to\
+    \ lowest. The strings are printed in the order of their corresponding numbers.\n\
+    \    \"\"\"\n    "
+  completion_from: "# Create a list of numbers that are greater than 76\n    new_lst\
+    \ = []\n    for i in lst:\n        if i > 76:\n            new_lst.append(i)\n\
+    \    # Sort the list from highest to lowest\n    new_lst.sort(reverse=True)\n\
+    \    # Print the strings in the order of their corresponding numbers\n    for\
+    \ i in new_lst:\n        print(lst.index"
+  completion_to: "for i in range(len(lst)):\n        if lst[i][1] > 76:\n        \
+    \    lst[i] = (lst[i][0], lst[i][1])\n        else:\n            lst[i] = (lst[i][0],\
+    \ 0)\n    lst.sort(key = lambda x: x[1], reverse = True)\n    for i in range(len(l"
+  diff: ''
+  attempt_id: 7
+  total_attempts: 9
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id031
+  node_to: *id042
+  username: student9
+  prompt_from: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are greater than 76 are ordered from highest to\
+    \ lowest. The strings are printed in the order of their corresponding numbers.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def topScores(lst):\n    \"\"\"\n    The function reads the numbers\
+    \ in the list. The numbers that are greater than 76 are ordered from highest to\
+    \ lowest. The strings are then printed in the order of their corresponding numbers.\n\
+    \    \"\"\"\n    "
+  completion_from: "for i in range(len(lst)):\n        if lst[i][1] > 76:\n      \
+    \      lst[i] = (lst[i][0], lst[i][1])\n        else:\n            lst[i] = (lst[i][0],\
+    \ 0)\n    lst.sort(key = lambda x: x[1], reverse = True)\n    for i in range(len(l"
+  completion_to: "# The list is sorted from highest to lowest.\n    lst.sort(reverse=True)\n\
+    \    # The list is looped through.\n    for i in range(len(lst)):\n        # The\
+    \ numbers that are greater than 76 are printed.\n        if lst[i] > 76:\n   \
+    \         print(lst[i])\n"
+  diff: "--- \n+++ \n@@ -25,6 +25,7 @@\n The strings are+then printed in the"
+  attempt_id: 8
+  total_attempts: 9
+  state: fail
+  _edge_tags:
+    - 0
+student_start_node_tags:
+  student14:
+    - 2
+    - 3
+  student15:
+    - 1
+    - 3
+  student24:
+    - 2
+    - 3
+  student31:
+    - 1
+    - 2
+    - 3
+    - 6
+  student39:
+    - 1
+    - 3
+  student45:
+    - 1
+    - 2
+    - 6
+  student53:
+    - 2
+    - 3
+  student55:
+    - 1
+    - 2
+    - 3
+    - 4
+  student65:
+    - 1
+    - 2
+    - 3
+  student7:
+    - 1
+    - 3
+    - 4
+  student9:
+    - 4

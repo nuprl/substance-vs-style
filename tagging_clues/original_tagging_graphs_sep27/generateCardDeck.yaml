@@ -1,0 +1,1891 @@
+!Graph
+problem: generateCardDeck
+nodes:
+- &id007 !Node
+  id: 0
+  stdout:
+  - '[''1D'', ''1H'', ''1S'', ''2D'', ''2H'', ''2S'', ''AD'', ''AH'', ''AS'']
+
+    '
+  - '[''2D'', ''2H'', ''6D'', ''6H'', ''JD'', ''JH'', ''QD'', ''QH'']
+
+    '
+  - '[''2H'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 1
+  stdout:
+  - '[''S1'', ''S2'', ''SA'', ''H1'', ''H2'', ''HA'', ''D1'', ''D2'', ''DA'']
+
+    '
+  - '[''H6'', ''HQ'', ''HJ'', ''H2'', ''D6'', ''DQ'', ''DJ'', ''D2'']
+
+    '
+  - '[''H2'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id006 !Node
+  id: 2
+  stdout:
+  - '[''1S'', ''1H'', ''1D'', ''2S'', ''2H'', ''2D'', ''AS'', ''AH'', ''AD'']
+
+    '
+  - '[''6H'', ''6D'', ''QH'', ''QD'', ''JH'', ''JD'', ''2H'', ''2D'']
+
+    '
+  - '[''2H'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id004 !Node
+  id: 3
+  stdout:
+  - '[''1S'', ''2S'', ''AS'', ''1H'', ''2H'', ''AH'', ''1D'', ''2D'', ''AD'']
+
+    '
+  - '[''6H'', ''QH'', ''JH'', ''2H'', ''6D'', ''QD'', ''JD'', ''2D'']
+
+    '
+  - '[''2H'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id008 !Node
+  id: 4
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  - 'IndentationError: expected an indented block after ''for'' statement on line
+    6'
+  _node_tags: null
+- &id005 !Node
+  id: 5
+  stdout:
+  - '[''D1'', ''D2'', ''DA'', ''H1'', ''H2'', ''HA'', ''S1'', ''S2'', ''SA'']
+
+    '
+  - '[''D6'', ''DQ'', ''DJ'', ''D2'', ''H6'', ''HQ'', ''HJ'', ''H2'']
+
+    '
+  - '[''H2'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id009 !Node
+  id: 6
+  stdout:
+  - 'None
+
+    '
+  - 'None
+
+    '
+  - 'None
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 7
+  stdout:
+  - '[''D1'', ''D2'', ''DA'', ''H1'', ''H2'', ''HA'', ''S1'', ''S2'', ''SA'']
+
+    '
+  - '[''D2'', ''D6'', ''DJ'', ''DQ'', ''H2'', ''H6'', ''HJ'', ''HQ'']
+
+    '
+  - '[''H2'']
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 8
+  stdout:
+  - ''
+  - ''
+  - ''
+  stderr:
+  - 'NameError: name ''Card'' is not defined'
+  - 'NameError: name ''Card'' is not defined'
+  - 'NameError: name ''Card'' is not defined'
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The letter at the end of the first dictionary adds on the\
+    \ lowest number of the second dictionary. This keeps going and forms a new list\
+    \ with all the combined letters and numbers. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The letter at the end of the first list adds on the lowest number\
+    \ of the second dictionary. This keeps going and forms a new list with all the\
+    \ combined letters and numbers. \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit+val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -15,7 +15,7 @@\n of the first-dictionary+list adds on the"
+  attempt_id: 1
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The letter at the end of the first list adds on the lowest\
+    \ number of the second dictionary. This keeps going and forms a new list with\
+    \ all the combined letters and numbers. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The letter at index -1 of the first list adds on the lowest number\
+    \ of the second dictionary. This keeps going and forms a new list with all the\
+    \ combined letters and numbers. \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit+val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -10,8 +10,8 @@\n The letter at-the-end+index+-1 of the first"
+  attempt_id: 2
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The letter at index -1 of the first list adds on the lowest\
+    \ number of the second dictionary. This keeps going and forms a new list with\
+    \ all the combined letters and numbers. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The letter at the last index of the first list adds on the lowest\
+    \ number of the second list and then the letters in the alphabet. This keeps going\
+    \ and forms a new list with all the combined letters and numbers. \n    \"\"\"\
+    \n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -10,8 +10,9 @@\n The letter at+the+last index--1 of the first@@\
+    \ -24,7 +25,14 @@\n of the second-dictionary.+list+and+then+the+letters+in+the+alphabet.\
+    \ This keeps going"
+  attempt_id: 3
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The letter at the last index of the first list adds on the\
+    \ lowest number of the second list and then the letters in the alphabet. This\
+    \ keeps going and forms a new list with all the combined letters and numbers.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The letter at the beginning of the first list adds on the lowest\
+    \ number of the second list and then the letters in the alphabet. This keeps going\
+    \ and forms a new list with all the combined letters and numbers. \n    \"\"\"\
+    \n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -11,8 +11,7 @@\n letter at the-last-index+beginning of the\
+    \ first"
+  attempt_id: 4
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The letter at the beginning of the first list adds on the\
+    \ lowest number of the second list and then the letters in the alphabet. This\
+    \ keeps going and forms a new list with all the combined letters and numbers.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The last letter at the end of the first list adds on the lowest number\
+    \ of the second list and then the letters in the alphabet. This keeps going and\
+    \ forms a new list with all the combined letters and numbers. \n    \"\"\"\n \
+    \   "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -8,10 +8,11 @@\n two lists. The+last letter at the-beginning+end\
+    \ of the first"
+  attempt_id: 5
+  total_attempts: 7
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student23
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs two lists. The last letter at the end of the first list adds on the lowest\
+    \ number of the second list and then the letters in the alphabet. This keeps going\
+    \ and forms a new list with all the combined letters and numbers. \n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ two lists. The letter that comes first within the alphabet in the first list\
+    \ adds on the lowest number of the second list and then the letters in the alphabet.\
+    \ This keeps going and forms a new list with all the combined letters and numbers.\
+    \ \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -8,12 +8,14 @@\n two lists. The-last letter-at+that+comes+first+within\
+    \ the-end-of+alphabet+in the first list"
+  attempt_id: 6
+  total_attempts: 7
+  state: fail
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student33
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function takes\
+    \ a series of input strings and another series of input strings, and then splices\
+    \ each string from the first series with each string from the second series\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function takes\
+    \ a series of input strings \"suits\" and another series of input strings \"vals\"\
+    . It sorts each series first into alphabetical order followed by in order of increasing\
+    \ numerical value. Then it splices each string from the first series with each\
+    \ string from the second series\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "suits.sort()\n    vals.sort()\n    deck = []\n    for suit in suits:\n\
+    \        for val in vals:\n            deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -10,14 +10,32 @@\n of input strings+\"suits\" and another\
+    \ series of input-strings,-and-then+strings+\"vals\".+It+sorts+each+series+first+into+alphabetical+order+followed+by+in+order+of+increasing+numerical+value.+Then+it\
+    \ splices each string"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id003
+  node_to: *id004
+  username: student35
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first\
+    \ list of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. This goes on until the elements of the first list are exhausted.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first list\
+    \ of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. No function is called for this but rather the two stings which\
+    \ are to be attached are concatenated. This goes on until the elements of the\
+    \ first list are exhausted.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -47,6 +47,24 @@\n these new attachments.+No+function+is+called+for+this+but+rather+the+two+stings+which+are+to+be+attached+are+concatenated.\
+    \ This goes on"
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student35
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first\
+    \ list of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. No function is called for this but rather the two stings which\
+    \ are to be attached are concatenated. This goes on until the elements of the\
+    \ first list are exhausted.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first list\
+    \ of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. No function is called for this but rather the two stings which\
+    \ are to be attached are concatenated. During concatenation, the element of the\
+    \ first list is put first and the element of the second list is put second. This\
+    \ goes on until the elements of the first list are exhausted.\n    \"\"\"\n  \
+    \  "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -65,6 +65,27 @@\n attached are concatenated.+During+concatenation,+the+element+of+the+first+list+is+put+first+and+the+element+of+the+second+list+is+put+second.\
+    \ This goes on"
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id004
+  node_to: *id005
+  username: student35
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first\
+    \ list of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. No function is called for this but rather the two stings which\
+    \ are to be attached are concatenated. During concatenation, the element of the\
+    \ first list is put first and the element of the second list is put second. This\
+    \ goes on until the elements of the first list are exhausted.\n    \"\"\"\n  \
+    \  "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    From the first list\
+    \ of parameters, the function takes the last element first and goes backwards\
+    \ towards the first element. It attaches these elements with the inputs given\
+    \ in the second list. A new list is made which is appended continuously with these\
+    \ new attachments. No function is called for this but rather the two stings which\
+    \ are to be attached are concatenated. During concatenation, the element of the\
+    \ first list is put first and the element of the second list is put second. The\
+    \ suit comes first and then the val for every concatenation. And the suits list\
+    \ starts from backwards. This goes on until the elements of the first list are\
+    \ exhausted.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits[::-1]:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -86,6 +86,24 @@\n is put second.+The+suit+comes+first+and+then+the+val+for+every+concatenation.+And+the+suits+list+starts+from+backwards.\
+    \ This goes on"
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id004
+  node_to: *id001
+  username: student40
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two\
+    \ lists containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two lists\
+    \ containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -30,5 +30,13 @@\n in the other-list.+list,+with+letters+appearing+first+and+numbers+appearing+second.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student40
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two\
+    \ lists containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two lists\
+    \ containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second. the new strings will appear\
+    \ in alphabetical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -39,4 +39,12 @@\n numbers appearing second.+the+new+strings+will+appear+in+alphabetical+order.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student40
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two\
+    \ lists containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second. the new strings will appear\
+    \ in alphabetical order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two lists\
+    \ containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second. the new strings will appear\
+    \ in alphabetical and numerical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -46,5 +46,7 @@\n appear in alphabetical+and+numerical order.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student40
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two\
+    \ lists containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second. the new strings will appear\
+    \ in alphabetical and numerical order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    when given two lists\
+    \ containing strings, the function will return 1 list. Each individual string\
+    \ within the first list will be combined with each string in the other list, with\
+    \ letters appearing first and numbers appearing second. the new strings in the\
+    \ new list will appear in alphabetical order. if multiple strings have the same\
+    \ first letter, then they will appear in numerical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return sorted(deck)\n"
+  diff: "--- \n+++ \n@@ -42,11 +42,28 @@\n the new strings+in+the+new+list will appear\
+    \ in alphabetical-and+order.+if+multiple+strings+have+the+same+first+letter,+then+they+will+appear+in\
+    \ numerical order. \"\"\""
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id004
+  node_to: *id006
+  username: student44
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For every value\
+    \ in the first array, starting from the last one, \nconcatenate with each value\
+    \ in the second array. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For every value\
+    \ starting with the last one in the first array\nconcatenate with each value in\
+    \ the second array starting with the first one. \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for val in vals:\n        for suit in suits:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -5,15 +5,15 @@\n For every value+starting+with+the+last+one\
+    \ in the first-array,-starting-from-the-last-one,+array concatenate with each@@\
+    \ -21,5 +21,10 @@\n in the second-array.+array+starting+with+the+first+one. \"\
+    \"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id006
+  node_to: *id004
+  username: student44
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For every value\
+    \ starting with the last one in the first array\nconcatenate with each value in\
+    \ the second array starting with the first one. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Starting with the\
+    \ last value in the first array\nconcatenate with each value starting with the\
+    \ first one in the second array . \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for val in vals:\n        for suit in suits:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -2,14 +2,11 @@\n generateCardDeck(suits, vals): \"\"\"-For-every-value-starting+Starting\
+    \ with the last-one+value in the first@@ -18,13 +15,14 @@\n with each value+starting+with+the+first+one\
+    \ in the second array-starting-with-the-first-one.+. \"\"\""
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student44
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Starting with\
+    \ the last value in the first array\nconcatenate with each value starting with\
+    \ the first one in the second array . \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Starting with the\
+    \ first value in the second array,\nconcatenate it with each value of the first\
+    \ array starting with its last one. \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -5,24 +5,24 @@\n Starting with the-last+first value in the-first-array+second+array,\
+    \ concatenate+it with each value+of+the+first+array starting with-the-first-one-in-the-second-array-.+its+last+one.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id007
+  node_to: *id001
+  username: student50
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two\
+    \ lists of strings. Combine the first element with the first list with the first\
+    \ element in the second list and add that to a new list, which will be returned.\
+    \ Keep adding the first element of the first list to each element of the second\
+    \ list and add each addition to the new list. Return the list in alphabetical\
+    \ order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two lists\
+    \ of strings. Combine the first element with the first list with the first element\
+    \ in the second list and add that to a new list, which will be returned [ex, if\
+    \ the first element of the first list is F and an element of the second list is\
+    \ 7, combine them like F7]. Keep adding the first element of the first list to\
+    \ each element of the second list and add each addition to the new list. Return\
+    \ the list in alphabetical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return sorted(deck)\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -34,7 +34,31 @@\n which will be-returned.+returned+[ex,+if+the+first+element+of+the+first+list+is+F+and+an+element+of+the+second+list+is+7,+combine+them+like+F7].\
+    \ Keep adding the"
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student50
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two\
+    \ lists of strings. Combine the first element with the first list with the first\
+    \ element in the second list and add that to a new list, which will be returned\
+    \ [ex, if the first element of the first list is F and an element of the second\
+    \ list is 7, combine them like F7]. Keep adding the first element of the first\
+    \ list to each element of the second list and add each addition to the new list.\
+    \ Return the list in alphabetical order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two lists\
+    \ of strings. Combine the first element with the first list with the first element\
+    \ in the second list and add that to a new list, which will be returned [ex, if\
+    \ the first element of the first list is F and an element of the second list is\
+    \ 7, combine them like F7]. Keep adding the first element of the first list to\
+    \ each element of the second list and add each addition to the new list. Return\
+    \ the list in alphabetical order and numerical order [ex. A1, B2, C3]\n    \"\"\
+    \"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -88,5 +88,12 @@\n list in alphabetical-order.+order+and+numerical+order+[ex.+A1,+B2,+C3]\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student50
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two\
+    \ lists of strings. Combine the first element with the first list with the first\
+    \ element in the second list and add that to a new list, which will be returned\
+    \ [ex, if the first element of the first list is F and an element of the second\
+    \ list is 7, combine them like F7]. Keep adding the first element of the first\
+    \ list to each element of the second list and add each addition to the new list.\
+    \ Return the list in alphabetical order and numerical order [ex. A1, B2, C3]\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two lists\
+    \ of strings. Combine the first element with the first list with the first element\
+    \ in the second list and add that to a new list, which will be returned [ex, if\
+    \ the first element of the first list is F and an element of the second list is\
+    \ 7, combine them like F7]. Keep adding the first element of the first list to\
+    \ each element of the second list and add each addition to the new list. Reorder\
+    \ the new list to make it in alphabetical and numerical order, then return\n \
+    \   \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -83,17 +83,18 @@\n the new list.-Return+Reorder the+new list+to+make+it\
+    \ in alphabetical-order and numerical-order-[ex.-A1,-B2,-C3]+order,+then+return\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student50
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two\
+    \ lists of strings. Combine the first element with the first list with the first\
+    \ element in the second list and add that to a new list, which will be returned\
+    \ [ex, if the first element of the first list is F and an element of the second\
+    \ list is 7, combine them like F7]. Keep adding the first element of the first\
+    \ list to each element of the second list and add each addition to the new list.\
+    \ Reorder the new list to make it in alphabetical and numerical order, then return\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    There are two lists\
+    \ of strings. Combine the first element with the first list with the first element\
+    \ in the second list and add that to a new list, which will be returned [ex, if\
+    \ the first element of the first list is F and an element of the second list is\
+    \ 7, combine them like F7]. Keep adding the first element of the first list to\
+    \ each element of the second list and add each addition to the new list. Reorder\
+    \ the new list to make it in alphabetical and numerical order, then return\n \
+    \   \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    deck.sort()\n    return deck\n"
+  diff: ''
+  attempt_id: 4
+  total_attempts: 5
+  state: success
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student59
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns a list of all possible combinations\
+    \ of suits and values.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns a list of all possible combinations\
+    \ of values and suits\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -22,7 +22,7 @@\n possible combinations of+values+and suits-and-values.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student59
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns a list of all possible combinations\
+    \ of values and suits\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns a list of all possible combinations\
+    \ of suits and values in alphabetical order\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -22,7 +22,10 @@\n possible combinations of+suits+and values-and-suits+in+alphabetical+order\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student59
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns a list of all possible combinations\
+    \ of suits and values in alphabetical order\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns an ordered list of all possible\
+    \ combinations of values and suits\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -15,17 +15,15 @@\n as inputs. returns-a+an+ordered list of\
+    \ all possible combinations of+values+and suits-and-values-in-alphabetical-order\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student59
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns an ordered list of all possible\
+    \ combinations of values and suits\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    takes a list of\
+    \ suits and a list of values as inputs. returns an ordered list of all possible\
+    \ combinations of suits and values\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -23,7 +23,7 @@\n possible combinations of+suits+and values-and-suits\
+    \ \"\"\""
+  attempt_id: 4
+  total_attempts: 5
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id008
+  node_to: *id001
+  username: student60
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs suits and vals as a list as its parameters. This function prints out\
+    \ every combination of these parameters. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ suits and vals as a list as its parameters. This function prints out every combination\
+    \ of these parameters. As an example. If you input ['H', 'D'] as suits and ['6',\
+    \ 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6', 'DJ', 'DQ', 'H2','H6',\
+    \ 'HJ', 'HQ']\n    \"\"\"\n    "
+  completion_from: "for suit in suits:\n        for val in vals:\n            print(val\
+    \ + \" of \" + suit)\n\ngenerateCardDeck(suits, vals)\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -23,4 +23,31 @@\n of these parameters.+As+an+example.+If+you+input+['H',+'D']+as+suits+and+['6',+'Q',+'J',+'2']+as+vals,+the+function+prints+['D2',+'D6',+'DJ',+'DQ',+'H2','H6',+'HJ',+'HQ']\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - a4
+- !Edge
+  node_from: *id001
+  node_to: *id009
+  username: student60
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs suits and vals as a list as its parameters. This function prints out\
+    \ every combination of these parameters. As an example. If you input ['H', 'D']\
+    \ as suits and ['6', 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6',\
+    \ 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ suits and vals as a list as its parameters. This function prints out every combination\
+    \ of these parameters. As an example. If you input ['H', 'D'] as suits and ['6',\
+    \ 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6', 'DJ', 'DQ', 'H2','H6',\
+    \ 'HJ', 'HQ']. This function prints the final values alphabetically. \n    \"\"\
+    \"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    deck.sort()\n    print(deck)\n"
+  diff: "--- \n+++ \n@@ -49,5 +49,12 @@\n 'DQ', 'H2','H6', 'HJ',-'HQ']+'HQ'].+This+function+prints+the+final+values+alphabetically.\
+    \ \"\"\""
+  attempt_id: 2
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id009
+  node_to: *id001
+  username: student60
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs suits and vals as a list as its parameters. This function prints out\
+    \ every combination of these parameters. As an example. If you input ['H', 'D']\
+    \ as suits and ['6', 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6',\
+    \ 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. This function prints the final values alphabetically.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ suits and vals as a list as its parameters. This function prints out every combination\
+    \ of these parameters. As an example. If you input ['H', 'D'] as suits and ['6',\
+    \ 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6', 'DJ', 'DQ', 'H2','H6',\
+    \ 'HJ', 'HQ']. The final output in the list is ordered alphabetically. 'D6' would\
+    \ be in the list before 'S1'\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    deck.sort()\n    print(deck)\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit+val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -50,11 +50,21 @@\n 'H2','H6', 'HJ', 'HQ'].-This-function-prints+The+final+output+in\
+    \ the-final-values+list+is+ordered alphabetically.+'D6'+would+be+in+the+list+before+'S1'\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student60
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs suits and vals as a list as its parameters. This function prints out\
+    \ every combination of these parameters. As an example. If you input ['H', 'D']\
+    \ as suits and ['6', 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6',\
+    \ 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. The final output in the list is ordered\
+    \ alphabetically. 'D6' would be in the list before 'S1'\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ suits and vals as a list as its parameters. This function prints out every combination\
+    \ of these parameters. As an example. If you input ['H', 'D'] as suits and ['6',\
+    \ 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6', 'DJ', 'DQ', 'H2','H6',\
+    \ 'HJ', 'HQ']. The final output in the list is ordered C then D then H then S\
+    \ \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit+val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit+val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -58,13 +58,11 @@\n list is ordered-alphabetically.-'D6'-would-be-in-the-list-before-'S1'+C+then+D+then+H+then+S\
+    \ \"\"\""
+  attempt_id: 4
+  total_attempts: 6
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student60
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function\
+    \ inputs suits and vals as a list as its parameters. This function prints out\
+    \ every combination of these parameters. As an example. If you input ['H', 'D']\
+    \ as suits and ['6', 'Q', 'J', '2'] as vals, the function prints\n['D2', 'D6',\
+    \ 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. The final output in the list is ordered\
+    \ C then D then H then S \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    This function inputs\
+    \ suits and vals as a list as its parameters. This function prints out every combination\
+    \ of these parameters sorted alphabetically. As an example. If you input ['H',\
+    \ 'D'] as suits and ['6', 'Q', 'J', '2'] as vals, the function prints\n['D2',\
+    \ 'D6', 'DJ', 'DQ', 'H2','H6', 'HJ', 'HQ']. \n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit+val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    deck.sort()\n    return deck\n"
+  diff: "--- \n+++ \n@@ -22,7 +22,9 @@\n combination of these-parameters.+parameters+sorted+alphabetically.\
+    \ As an example.@@ -50,19 +52,4 @@\n 'H2','H6', 'HJ', 'HQ'].-The-final-output-in-the-list-is-ordered-C-then-D-then-H-then-S\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 6
+  state: success
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student63
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function takes\
+    \ in multiple lists made up of single characters and outputs one list in which\
+    \ all the entries are two characters strings made up of the combination of each\
+    \ character from each original list. \n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function takes\
+    \ in multiple lists made up of single characters and outputs one list in which\
+    \ all the entries are two characters strings made up of the combination of each\
+    \ character from each original list. The resulting list will be arranged in alphabetical\
+    \ order based on the letters of each string.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return sorted(deck)\n"
+  diff: "--- \n+++ \n@@ -38,4 +38,20 @@\n each original list.+The+resulting+list+will+be+arranged+in+alphabetical+order+based+on+the+letters+of+each+string.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id001
+  node_to: *id004
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Results in vals must be in alphabetical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -23,4 +23,12 @@\n values in vals.+Results+in+vals+must+be+in+alphabetical+order.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - a3
+- !Edge
+  node_from: *id004
+  node_to: *id001
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Results in vals must be in alphabetical order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -23,9 +23,10 @@\n values in vals.-Results+Each+card in-vals+list\
+    \ must be in"
+  attempt_id: 2
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order of suits.\n    \"\"\
+    \"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -31,5 +31,7 @@\n be in alphabetical-order.+order+of+suits.\
+    \ \"\"\""
+  attempt_id: 3
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order of suits.\n    \"\"\
+    \"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order by suits.\n    \"\"\
+    \"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -32,6 +32,6 @@\n in alphabetical order-of+by suits. \"\"\""
+  attempt_id: 4
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order by suits.\n    \"\"\
+    \"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order by first character.\n\
+    \    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -33,5 +33,6 @@\n alphabetical order by-suits.+first+character.\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id007
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Each card in list must be in alphabetical order by first character.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Sort each card in deck by alphabetical order of first character.\n\
+    \    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(val + suit)\n    deck.sort()\n    return deck\n"
+  diff: "--- \n+++ \n@@ -23,16 +23,15 @@\n values in vals.-Each+Sort+each card in-list-must-be-in+deck+by\
+    \ alphabetical order-by+of first character. \"\"\""
+  attempt_id: 6
+  total_attempts: 8
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id007
+  node_to: *id002
+  username: student64
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Sort each card in deck by alphabetical order of first character.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    For each character\
+    \ in suits, create a list that appends each of the suits with each of the values\
+    \ in vals. Sort each card in deck by alphabetical order of suit character.\n \
+    \   \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    deck.sort()\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    deck.sort()\n    return deck\n"
+  diff: "--- \n+++ \n@@ -32,6 +32,6 @@\n alphabetical order of-first+suit character.\
+    \ \"\"\""
+  attempt_id: 7
+  total_attempts: 8
+  state: success
+  _edge_tags:
+    - l3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student69
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Enter two arrays\
+    \ of characters. Print an array with the first array multiplied by the second\
+    \ array.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Enter two arrays\
+    \ of characters. Print an array with the reverse of the first array multiplied\
+    \ by the second array.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -12,6 +12,9 @@\n array with the+reverse+of+the first array\
+    \ multiplied"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id005
+  username: student69
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Enter two arrays\
+    \ of characters. Print an array with the reverse of the first array multiplied\
+    \ by the second array.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    Enter two arrays\
+    \ of characters. Reverse the order of the first array. Print an array with the\
+    \ the first array multiplied by the second array.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "suits.reverse()\n    deck = []\n    for suit in suits:\n       \
+    \ for val in vals:\n            deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -7,13 +7,18 @@\n arrays of characters.+Reverse+the+order+of+the+first+array.\
+    \ Print an array with the-reverse-of the first array"
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The data on the\
+    \ left is put through the defined function generateCardDeck to output data on\
+    \ the right.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The data on the\
+    \ left is put through the defined function using suits and vals to output data\
+    \ on the right.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(Card(suit, val))\n    return deck\n"
+  diff: "--- \n+++ \n@@ -13,7 +13,10 @@\n the defined function-generateCardDeck+using+suits+and+vals\
+    \ to output data"
+  attempt_id: 1
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The data on the\
+    \ left is put through the defined function using suits and vals to output data\
+    \ on the right.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The data on the\
+    \ left is put through the defined function using suits and vals and defines the\
+    \ term Card for the function generateCardDeck to output data on the right.\n \
+    \   \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: 'return [Card(suit, val) for suit in suits for val in vals]
+
+    '
+  diff: "--- \n+++ \n@@ -17,6 +17,15 @@\n suits and vals+and+defines+the+term+Card+for+the+function+generateCardDeck\
+    \ to output data"
+  attempt_id: 2
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The data on the\
+    \ left is put through the defined function using suits and vals and defines the\
+    \ term Card for the function generateCardDeck to output data on the right.\n \
+    \   \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The term Card is\
+    \ defined in relation to the function generateCardDeck which inputs the data on\
+    \ the left side of the table and outputs the data on the right side of the table.\n\
+    \    \"\"\"\n    "
+  completion_from: 'return [Card(suit, val) for suit in suits for val in vals]
+
+    '
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(Card(suit, val))\n    return deck\n"
+  diff: "--- \n+++ \n@@ -3,33 +3,36 @@\n vals): \"\"\" The+term+Card+is+defined+in+relation+to+the+function+generateCardDeck+which+inputs+the\
+    \ data on the left-is-put-through+side+of the-defined-function-using-suits+table\
+    \ and-vals-and-defines+outputs the-term-Card-for-the-function-generateCardDeck-to-output\
+    \ data on the-right.+right+side+of+the+table. \"\"\""
+  attempt_id: 3
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The term Card\
+    \ is defined in relation to the function generateCardDeck which inputs the data\
+    \ on the left side of the table and outputs the data on the right side of the\
+    \ table.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function defines\
+    \ Card as the left input in relation to the function generateCardDeck which inputs\
+    \ the data on the left side of the table and outputs the data on the right side\
+    \ of the table.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: 'return [Card(suit, val) for suit in suits for val in vals]
+
+    '
+  diff: "--- \n+++ \n@@ -3,10 +3,13 @@\n vals): \"\"\" The-term+function+defines Card-is-defined+as+the+left+input\
+    \ in relation to"
+  attempt_id: 4
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The function defines\
+    \ Card as the left input in relation to the function generateCardDeck which inputs\
+    \ the data on the left side of the table and outputs the data on the right side\
+    \ of the table.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program defines\
+    \ Card as the input data, ['S\", 'H', 'D'], ['1', '2', 'A'] and uses the defined\
+    \ function generateCardDeck(suits, vals): to create an output which combines both\
+    \ blocks of information.\n    \"\"\"\n    "
+  completion_from: 'return [Card(suit, val) for suit in suits for val in vals]
+
+    '
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(Card(suit, val))\n    return deck\n"
+  diff: "--- \n+++ \n@@ -3,39 +3,34 @@\n vals): \"\"\" The-function+program defines\
+    \ Card as the-left input-in-relation+data,+['S\",+'H',+'D'],+['1',+'2',+'A']+and+uses+the+defined+function+generateCardDeck(suits,+vals):\
+    \ to-the-function-generateCardDeck+create+an+output which-inputs-the-data-on-the-left-side+combines+both+blocks\
+    \ of-the-table-and-outputs-the-data-on-the-right-side-of-the-table.+information.\
+    \ \"\"\""
+  attempt_id: 5
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program defines\
+    \ Card as the input data, ['S\", 'H', 'D'], ['1', '2', 'A'] and uses the defined\
+    \ function generateCardDeck(suits, vals): to create an output which combines both\
+    \ blocks of information.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program defines\
+    \ Card as the input data, Card == ['H'], ['2'], and uses the defined function\
+    \ generateCardDeck(suits, vals): to create an output which combines both blocks\
+    \ of information.\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(Card(suit, val))\n    return deck\n"
+  diff: "--- \n+++ \n@@ -10,12 +10,10 @@\n the input data,-['S\",-'H',-'D'],-['1',-'2',-'A']+Card+==+['H'],+['2'],\
+    \ and uses the"
+  attempt_id: 6
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id003
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program defines\
+    \ Card as the input data, Card == ['H'], ['2'], and uses the defined function\
+    \ generateCardDeck(suits, vals): to create an output which combines both blocks\
+    \ of information.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then flips the order of suit[] making the variables print in the\
+    \ opposite order, this program then outputs and combination of the suit [] and\
+    \ val []\ndef generateCardDeck(suits, vals): brings in the information: ['H',\
+    \ 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs and\
+    \ combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit+val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -2,33 +2,108 @@\n generateCardDeck(suits, vals): \"\"\"-The-program-defines-Card-as-the-input-data,-Card-==-['H'],-['2'],-and-uses-the-defined-function+def\
+    \ generateCardDeck(suits, vals):-to-create-an-output-which-combines+brings+in+the+information:+['S',+'H',+'D'],+['1',+'2',+'A']+and+defines+Card=[],+Card+then+flips+the+order+of+suit[]+making+the+variables+print+in+the+opposite+order,+this+program+then+outputs+and+combination+of+the+suit+[]+and+val+[]+def+generateCardDeck(suits,+vals):+brings+in+the+information:+['H',+'D'],+['6',+'Q',+'J',+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+the+opposite+order+of+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information:['H'],+['2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of\
+    \ both-blocks-of-information.+the+suit+[]+and+the+val+[]. \"\"\""
+  attempt_id: 7
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - a1 
+    - a2
+- !Edge
+  node_from: *id001
+  node_to: *id003
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then flips the order of suit[] making the variables print in the\
+    \ opposite order, this program then outputs and combination of the suit [] and\
+    \ val []\ndef generateCardDeck(suits, vals): brings in the information: ['H',\
+    \ 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs and\
+    \ combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program, generateCardDeck(suits,\
+    \ vals):, defines Card as the input data, Card == ['H'], ['2'], and creates an\
+    \ output that combines both [] of information.\n    \"\"\"\n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit+val)\n    return Card\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(Card(suit, val))\n    return deck\n"
+  diff: "--- \n+++ \n@@ -2,108 +2,28 @@\n generateCardDeck(suits, vals): \"\"\"-def+The+program,\
+    \ generateCardDeck(suits,-vals):-brings-in+vals):,+defines+Card+as the-information:-['S',-'H',-'D'],-['1',-'2',-'A']+input+data,+Card+==+['H'],+['2'],\
+    \ and-defines-Card=[],-Card-then-flips-the-order+creates+an+output+that+combines+both+[]\
+    \ of-suit[]-making-the-variables-print-in-the-opposite-order,-this-program-then-outputs-and-combination-of-the-suit-[]-and-val-[]-def-generateCardDeck(suits,-vals):-brings-in-the-information:-['H',-'D'],-['6',-'Q',-'J',-'2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-the-opposite-order-of-the-suit-[]-and-the-val-[].-def-generateCardDeck(suits,-vals):-brings-in-the-information:['H'],-['2']-and-defines-Card=[],-this-program-then-outputs-and-combination-of-both-the-suit-[]-and-the-val-[].+information.\
+    \ \"\"\""
+  attempt_id: 8
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - l2
+- !Edge
+  node_from: *id003
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    The program, generateCardDeck(suits,\
+    \ vals):, defines Card as the input data, Card == ['H'], ['2'], and creates an\
+    \ output that combines both [] of information.\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information ['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(Card(suit, val))\n    return deck\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -2,28 +2,31 @@\n generateCardDeck(suits, vals): \"\"\"-The-program,+def\
+    \ generateCardDeck(suits,-vals):,+vals):+brings+in+the+information+['H'],+['2']+and\
+    \ defines-Card-as+Card=[],+this+program+then+outputs+and+combination+of+both the-input-data,-Card-==-['H'],-['2'],+suit+[]\
+    \ and-creates-an-output-that-combines-both-[]-of-information.+the+val+[]. \"\"\
+    \""
+  attempt_id: 9
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - m2
+- !Edge
+  node_from: *id001
+  node_to: *id004
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information ['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A']; ['H', 'D'],\
+    \ ['6', 'Q', 'J', '2']; ['H'], ['2'] and defines Card=[], this program then outputs\
+    \ and combination of both the suit [] and the val [].\n    \"\"\"\n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card=[]\n    for suit in suits:\n        for val in vals:\n    \
+    \        Card.append(val+suit)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -8,7 +8,19 @@\n brings in the-information+information:+['S',+'H',+'D'],+['1',+'2',+'A'];+['H',+'D'],+['6',+'Q',+'J',+'2'];\
+    \ ['H'], ['2'] and"
+  attempt_id: 10
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A']; ['H', 'D'],\
+    \ ['6', 'Q', 'J', '2']; ['H'], ['2'] and defines Card=[], this program then outputs\
+    \ and combination of both the suit [] and the val [].\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of both the suit [] and the\
+    \ val [].\ndef generateCardDeck(suits, vals): brings in the information: ['H',\
+    \ 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs and\
+    \ combination of both the suit [] and the val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card=[]\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(val+suit)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit+val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -14,14 +14,63 @@\n 'D'], ['1', '2',-'A'];+'A']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+def+generateCardDeck(suits,+vals):+brings+in+the+information:\
+    \ ['H', 'D'], ['6', 'Q', 'J',-'2'];-['H'],+'2']+and+defines+Card=[],+this+program+then+outputs+and+combination+of+both+the+suit+[]+and+the+val+[].+ef+generateCardDeck(suits,+vals):+brings+in+the+information:['H'],\
+    \ ['2'] and defines"
+  attempt_id: 11
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id005
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of both the suit [] and the\
+    \ val [].\ndef generateCardDeck(suits, vals): brings in the information: ['H',\
+    \ 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs and\
+    \ combination of both the suit [] and the val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then reverses the order of suit[] making the variables print in\
+    \ the opposite order starting with ['D'], this program then outputs and combination\
+    \ of the suit [] and val []\ndef generateCardDeck(suits, vals): brings in the\
+    \ information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program\
+    \ then outputs and combination of the opposite order of the suit [] and the val\
+    \ [].\ndef generateCardDeck(suits, vals): brings in the information:['H'], ['2']\
+    \ and defines Card=[], this program then outputs and combination of both the suit\
+    \ [] and the val [].\n    \"\"\"\n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit+val)\n    return Card\n"
+  completion_to: "Card = []\n    suits.reverse()\n    for suit in suits:\n       \
+    \ for val in vals:\n            Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -18,6 +18,24 @@\n and defines Card=[],+Card+then+reverses+the+order+of+suit[]+making+the+variables+print+in+the+opposite+order+starting+with+['D'],\
+    \ this program then@@ -25,14 +43,12 @@\n and combination of-both the suit [] and-the\
+    \ val-[].+[] def generateCardDeck(suits, vals):@@ -56,7 +72,10 @@\n and combination\
+    \ of-both+the+opposite+order+of the suit []@@ -64,7 +83,7 @@\n the val [].-ef+def\
+    \ generateCardDeck(suits, vals): brings"
+  attempt_id: 12
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id005
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then reverses the order of suit[] making the variables print in\
+    \ the opposite order starting with ['D'], this program then outputs and combination\
+    \ of the suit [] and val []\ndef generateCardDeck(suits, vals): brings in the\
+    \ information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program\
+    \ then outputs and combination of the opposite order of the suit [] and the val\
+    \ [].\ndef generateCardDeck(suits, vals): brings in the information:['H'], ['2']\
+    \ and defines Card=[], this program then outputs and combination of both the suit\
+    \ [] and the val [].\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of both the  reverse suit\
+    \ [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of both the suit [] and the reverse val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card = []\n    suits.reverse()\n    for suit in suits:\n     \
+    \   for val in vals:\n            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card=[]\n    for suit in suits:\n        for val in vals:\n    \
+    \        Card.append(suit+val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -18,24 +18,6 @@\n and defines Card=[],-Card-then-reverses-the-order-of-suit[]-making-the-variables-print-in-the-opposite-order-starting-with-['D'],\
+    \ this program then@@ -43,12 +25,15 @@\n and combination of+both the+reverse suit\
+    \ [] and+the val-[]+[]. def generateCardDeck(suits, vals):@@ -72,18 +57,16 @@\n\
+    \ and combination of-the-opposite-order-of+both the suit [] and the+reverse val\
+    \ [].-def+ef generateCardDeck(suits, vals): brings"
+  attempt_id: 13
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of both the  reverse suit\
+    \ [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of both the suit [] and the reverse val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the reverse order of the\
+    \ suit [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the suit [] and the reverse order of the val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card=[]\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit+val)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit+val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -25,9 +25,11 @@\n and combination of-both the reverse+order+of+the\
+    \ suit [] and@@ -57,13 +59,15 @@\n and combination of-both the suit [] and the\
+    \ reverse+order+of+the val []. ef"
+  attempt_id: 14
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the reverse order of the\
+    \ suit [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the suit [] and the reverse order of the val [].\nef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] and the reverse\
+    \ order of the  val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit+val)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -26,13 +26,13 @@\n combination of the+suit+[]+and+the reverse\
+    \ order of-the-suit-[]-and the val [].@@ -60,17 +60,17 @@\n combination of the+reverse+order+of+the\
+    \ suit [] and the-reverse-order-of-the val [].-ef+def generateCardDeck(suits,\
+    \ vals): brings"
+  attempt_id: 15
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] and the reverse\
+    \ order of the  val [].\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] and the  val\
+    \ [] except the suit [] will output in the reverse order of the input.\ndef generateCardDeck(suits,\
+    \ vals): brings in the information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines\
+    \ Card=[], this program then outputs and combination of the reverse order of the\
+    \ suit [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:['H'],\
+    \ ['2'] and defines Card=[], this program then outputs and combination of both\
+    \ the suit [] and the val [].\n    \"\"\"\n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card=[]\n    for i in suits:\n        for j in vals:\n         \
+    \   Card.append(i+j)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -30,12 +30,21 @@\n [] and the+val+[]+except+the+suit+[]+will+output+in+the\
+    \ reverse order of the-val-[].+input. def generateCardDeck(suits, vals):"
+  attempt_id: 16
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] and the  val\
+    \ [] except the suit [] will output in the reverse order of the input.\ndef generateCardDeck(suits,\
+    \ vals): brings in the information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines\
+    \ Card=[], this program then outputs and combination of the reverse order of the\
+    \ suit [] and the val [].\ndef generateCardDeck(suits, vals): brings in the information:['H'],\
+    \ ['2'] and defines Card=[], this program then outputs and combination of both\
+    \ the suit [] and the val [].\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [reverse order]\
+    \ and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card=[]\n    for i in suits:\n        for j in vals:\n       \
+    \     Card.append(i+j)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -27,24 +27,12 @@\n of the suit-[]+[reverse+order] and the\
+    \ val []-except-the-suit-[]-will-output-in-the-reverse-order-of-the-input. def\
+    \ generateCardDeck(suits, vals):"
+  attempt_id: 17
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [reverse order]\
+    \ and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] in a reversed\
+    \ order and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -27,8 +27,11 @@\n of the suit-[reverse-order]+[]+in+a+reversed+order\
+    \ and the val"
+  attempt_id: 18
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] in a reversed\
+    \ order and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the reverse order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] in a reversed\
+    \ order and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -60,7 +60,7 @@\n combination of the-reverse+opposite order\
+    \ of the"
+  attempt_id: 19
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], this program then outputs and combination of the suit [] in a reversed\
+    \ order and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then flips the order of suit[] making the numbers print reversed,\
+    \ this program then outputs and combination of the suit [] in a reversed order\
+    \ and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          Card.append(suit + val)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -18,6 +18,18 @@\n and defines Card=[],+Card+then+flips+the+order+of+suit[]+making+the+numbers+print+reversed,\
+    \ this program then"
+  attempt_id: 20
+  total_attempts: 22
+  state: neutral
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id001
+  node_to: *id005
+  username: student75
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then flips the order of suit[] making the numbers print reversed,\
+    \ this program then outputs and combination of the suit [] in a reversed order\
+    \ and the  val []\ndef generateCardDeck(suits, vals): brings in the information:\
+    \ ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], this program then outputs\
+    \ and combination of the opposite order of the suit [] and the val [].\ndef generateCardDeck(suits,\
+    \ vals): brings in the information:['H'], ['2'] and defines Card=[], this program\
+    \ then outputs and combination of both the suit [] and the val [].\n    \"\"\"\
+    \n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    def generateCardDeck(suits,\
+    \ vals): brings in the information: ['S', 'H', 'D'], ['1', '2', 'A'] and defines\
+    \ Card=[], Card then reverses the order of suit[] making the variables print in\
+    \ the opposite order starting with ['D'], this program then outputs and combination\
+    \ of the suit [] and val []\ndef generateCardDeck(suits, vals): brings in the\
+    \ information: ['H', 'D'], ['6', 'Q', 'J', '2'] and defines Card=[], Card then\
+    \ reverses the order of val[] making the variables print in the opposite order\
+    \ starting with ['2'], this program then outputs and combination of the opposite\
+    \ order of the suit [] and the val [].\ndef generateCardDeck(suits, vals): brings\
+    \ in the information:['H'], ['2'] and defines Card=[], this program then outputs\
+    \ and combination of both the suit [] and the val [].\n    \"\"\"\n    "
+  completion_from: "Card = []\n    for suit in suits:\n        for val in vals:\n\
+    \            Card.append(suit + val)\n    return Card\n"
+  completion_to: "Card = []\n    suits.reverse()\n    for i in suits:\n        for\
+    \ j in vals:\n            Card.append(i + j)\n    return Card\n"
+  diff: "--- \n+++ \n@@ -20,16 +20,22 @@\n Card=[], Card then-flips+reverses the order\
+    \ of suit[] making the-numbers+variables print-reversed,+in+the+opposite+order+starting+with+['D'],\
+    \ this program then@@ -40,12 +46,7 @@\n the suit []-in-a-reversed-order and-the\
+    \ val [] def@@ -64,6 +65,24 @@\n and defines Card=[],+Card+then+reverses+the+order+of+val[]+making+the+variables+print+in+the+opposite+order+starting+with+['2'],\
+    \ this program then"
+  attempt_id: 21
+  total_attempts: 22
+  state: fail
+  _edge_tags:
+    - 0
+- !Edge
+  node_from: *id004
+  node_to: *id001
+  username: student79
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two\
+    \ lists, both with strings. you should use a nested for loop to concatenate the\
+    \ two strings and then add them to a list in increasing order. Increasing order\
+    \ means spades (S) are greater than hearts (H), and hearts are greater than diamonds\
+    \ (D). suit takes precedence over rank.\n\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two lists,\
+    \ both with strings. you should use a nested for loop to concatenate the two strings\
+    \ and then add them to a list in increasing order. Increasing order means spades\
+    \ (S) are greater than hearts (H), and hearts are greater than diamonds (D). suit\
+    \ takes precedence over rank. when you concatenate the letter should be before\
+    \ the number. \n\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(val + suit)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit+val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -53,4 +53,14 @@\n precedence over rank.+when+you+concatenate+the+letter+should+be+before+the+number.\
+    \ \"\"\""
+  attempt_id: 1
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m4
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student79
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two\
+    \ lists, both with strings. you should use a nested for loop to concatenate the\
+    \ two strings and then add them to a list in increasing order. Increasing order\
+    \ means spades (S) are greater than hearts (H), and hearts are greater than diamonds\
+    \ (D). suit takes precedence over rank. when you concatenate the letter should\
+    \ be before the number. \n\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two lists,\
+    \ both with strings. you should use a nested for loop to concatenate the two strings\
+    \ and then add them to a list in decreasing order. Increasing order means spades\
+    \ (S) are greater than hearts (H), and hearts are greater than diamonds (D). suit\
+    \ takes precedence over rank. when you concatenate the letter should be before\
+    \ the number. \n\n    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit+val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -29,7 +29,7 @@\n a list in-increasing+decreasing order. Increasing\
+    \ order"
+  attempt_id: 2
+  total_attempts: 4
+  state: neutral
+  _edge_tags:
+    - m3
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student79
+  prompt_from: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two\
+    \ lists, both with strings. you should use a nested for loop to concatenate the\
+    \ two strings and then add them to a list in decreasing order. Increasing order\
+    \ means spades (S) are greater than hearts (H), and hearts are greater than diamonds\
+    \ (D). suit takes precedence over rank. when you concatenate the letter should\
+    \ be before the number. \n\n    \"\"\"\n    "
+  prompt_to: "def generateCardDeck(suits, vals):\n    \"\"\"\n    there are two lists,\
+    \ both with strings. you should use a nested for loop to concatenate the two strings\
+    \ and then add them to a list in decreasing order. Increasing order means spades\
+    \ (S) are greater than hearts (H), and hearts are greater than diamonds (D). \"\
+    J\" is smaller than \"Q\", which is smaller than \"A\". suit takes precedence\
+    \ over rank. when you concatenate the letter should be before the number. \n\n\
+    \    \"\"\"\n    "
+  completion_from: "deck = []\n    for suit in suits:\n        for val in vals:\n\
+    \            deck.append(suit + val)\n    return deck\n"
+  completion_to: "deck = []\n    for suit in suits:\n        for val in vals:\n  \
+    \          deck.append(suit + val)\n    return deck\n"
+  diff: "--- \n+++ \n@@ -48,6 +48,16 @@\n than diamonds (D).+\"J\"+is+smaller+than+\"\
+    Q\",+which+is+smaller+than+\"A\". suit takes precedence"
+  attempt_id: 3
+  total_attempts: 4
+  state: fail
+  _edge_tags:
+    - m3
+student_start_node_tags:
+  student23:
+    - 1
+    - 2
+    - 4
+  student33:
+    - 1
+    - 2
+  student35:
+    - 1
+    - 2
+    - 4
+  student40:
+    - 1
+    - 2
+    - 5
+  student44:
+    - 2
+    - 4
+  student50:
+    - 1
+    - 2
+    - 3
+    - 5
+  student59:
+    - 1
+    - 2
+    - 5
+  student60:
+    - 1
+    - 2
+  student63:
+    - 2
+    - 5
+  student64:
+    - 2
+  student69:
+    - 1
+    - 2
+  student75: # no clues
+  student79:
+    - 1
+    - 2
+    - 3
+    - 4

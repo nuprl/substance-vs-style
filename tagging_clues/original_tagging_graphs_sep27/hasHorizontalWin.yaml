@@ -1,0 +1,387 @@
+!Graph
+problem: hasHorizontalWin
+nodes:
+- &id004 !Node
+  id: 0
+  stdout:
+  - 'False
+
+    '
+  - 'True
+
+    '
+  - 'True
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id003 !Node
+  id: 1
+  stdout:
+  - 'False
+
+    '
+  - 'False
+
+    '
+  - 'False
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id002 !Node
+  id: 2
+  stdout:
+  - 'True
+
+    '
+  - 'True
+
+    '
+  - 'False
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+- &id001 !Node
+  id: 3
+  stdout:
+  - 'True
+
+    '
+  - 'False
+
+    '
+  - 'False
+
+    '
+  stderr:
+  - ''
+  - ''
+  - ''
+  _node_tags: null
+edges:
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student35
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    'board' is a\
+    \ list of lists with string values. 'letter' is a string value. The function checks\
+    \ if there is any list inside the list of lists in which all the values are the\
+    \ exact same as that of 'letter'. If so, it returns True otherwise False.\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    'board' is a list\
+    \ of lists with string values. 'letter' is a string value. The function checks\
+    \ if there is any list inside the list of lists in which all the values match\
+    \ with letter. If so, it returns True otherwise False.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row.count(letter) == len(row):\n\
+    \            return True\n    return False\n"
+  completion_to: "for row in board:\n        if row.count(letter) == len(row):\n \
+    \           return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -34,14 +34,9 @@\n all the values-are-the-exact-same-as-that-of-'letter'.+match+with+letter.\
+    \ If so, it"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student44
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Return true\
+    \ if there is an index that has the same value for all the arrays in the array\
+    \ or there is an array with all the same values.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Return true if\
+    \ there is an index that contains the same value in all the arrays in the array\
+    \ or there is an array with all the same values.\n    \"\"\"\n    "
+  completion_from: "for i in range(len(board)):\n        if board[i][0] == letter\
+    \ and board[i][1] == letter and board[i][2] == letter:\n            return True\n\
+    \    return False\n"
+  completion_to: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n\n"
+  diff: "--- \n+++ \n@@ -10,11 +10,11 @@\n an index that-has+contains the same value-for+in\
+    \ all the arrays"
+  attempt_id: 1
+  total_attempts: 3
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student44
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Return true\
+    \ if there is an index that contains the same value in all the arrays in the array\
+    \ or there is an array with all the same values.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Return true if\
+    \ there is an index that contains the same value in all the arrays in the array\
+    \ or there is an array with all the same values.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n\n"
+  completion_to: "for i in range(len(board)):\n        if board[i][0] == board[i][1]\
+    \ == board[i][2] == letter:\n            return True\n    return False\n"
+  diff: ''
+  attempt_id: 2
+  total_attempts: 3
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student50
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    If all elements\
+    \ of a row or all elements of a column in a 2D array are the same, return true.\
+    \ Else, return false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the height\
+    \ and width of a 2D array, which will be iterated over. If all elements of a row\
+    \ or all elements of a column in a 2D array are the same, return true. Else, return\
+    \ false.\n    \"\"\"\n    "
+  completion_from: "for i in range(3):\n        if board[i][0] == board[i][1] == board[i][2]\
+    \ == letter:\n            return True\n        if board[0][i] == board[1][i] ==\
+    \ board[2][i] == letter:\n            return True\n    return False\n"
+  completion_to: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  diff: "--- \n+++ \n@@ -2,6 +2,20 @@\n hasHorizontalWin(board, letter): \"\"\"+Measure+the+height+and+width+of+a+2D+array,+which+will+be+iterated+over.\
+    \ If all elements"
+  attempt_id: 1
+  total_attempts: 6
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student50
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the\
+    \ height and width of a 2D array, which will be iterated over. If all elements\
+    \ of a row or all elements of a column in a 2D array are the same, return true.\
+    \ Else, return false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the height\
+    \ and width of a 2D array, which will be iterated over. If all elements of a row\
+    \ or all elements of a column in a 2D array are the same, return true. make sure\
+    \ to check all elements in the row or column. Else, return false.\n    \"\"\"\n\
+    \    "
+  completion_from: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  completion_to: "for i in range(len(board)):\n        if board[i][0] == letter and\
+    \ board[i][1] == letter and board[i][2] == letter:\n            return True\n\
+    \    for i in range(len(board)):\n        if board[0][i] == letter and board[1][i]\
+    \ == letter and board[2][i] == letter:\n            return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -37,6 +37,17 @@\n same, return true.+make+sure+to+check+all+elements+in+the+row+or+column.\
+    \ Else, return false."
+  attempt_id: 2
+  total_attempts: 6
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student50
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the\
+    \ height and width of a 2D array, which will be iterated over. If all elements\
+    \ of a row or all elements of a column in a 2D array are the same, return true.\
+    \ make sure to check all elements in the row or column. Else, return false.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the height\
+    \ and width of a 2D array, which will be iterated over. If all elements of a row\
+    \ or all elements of a column in a 2D array are the same, return true. make sure\
+    \ to check all elements in the row or column. Else, return false.\n    \"\"\"\n\
+    \    "
+  completion_from: "for i in range(len(board)):\n        if board[i][0] == letter\
+    \ and board[i][1] == letter and board[i][2] == letter:\n            return True\n\
+    \    for i in range(len(board)):\n        if board[0][i] == letter and board[1][i]\
+    \ == letter and board[2][i] == letter:\n            return True\n    return False\n"
+  completion_to: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  diff: ''
+  attempt_id: 3
+  total_attempts: 6
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student50
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Measure the\
+    \ height and width of a 2D array, which will be iterated over. If all elements\
+    \ of a row or all elements of a column in a 2D array are the same, return true.\
+    \ make sure to check all elements in the row or column. Else, return false.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Iterate through\
+    \ a 2D array. If a row or column of an array contain all the same element, return\
+    \ true. Else, return false.\n    \"\"\"\n    "
+  completion_from: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  completion_to: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  diff: "--- \n+++ \n@@ -2,52 +2,26 @@\n hasHorizontalWin(board, letter): \"\"\"-Measure-the-height-and-width-of+Iterate+through\
+    \ a 2D-array,-which-will-be-iterated-over.+array. If-all-elements-of a row or+column+of+an+array+contain\
+    \ all-elements-of-a-column-in-a-2D-array-are the-same,+same+element, return true.-make-sure-to-check-all-elements-in-the-row-or-column.\
+    \ Else, return false."
+  attempt_id: 4
+  total_attempts: 6
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student50
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Iterate through\
+    \ a 2D array. If a row or column of an array contain all the same element, return\
+    \ true. Else, return false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Iterate through\
+    \ a 2D array. If a row or column of an array contain all the same element, return\
+    \ true. For example, if the row length is 5, check all 5 elements in the list.\
+    \ Else, return false.\n    \"\"\"\n    "
+  completion_from: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  completion_to: "for row in range(len(board)):\n        if board[row][0] == letter\
+    \ and board[row][1] == letter and board[row][2] == letter:\n            return\
+    \ True\n    return False\n"
+  diff: "--- \n+++ \n@@ -22,6 +22,21 @@\n element, return true.+For+example,+if+the+row+length+is+5,+check+all+5+elements+in+the+list.\
+    \ Else, return false."
+  attempt_id: 5
+  total_attempts: 6
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id003
+  node_to: *id001
+  username: student64
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if every character in list is equal to letter, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if all 5 characters in list is equal to letter, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row == [letter, letter, letter]:\n\
+    \            return True\n    return False\n"
+  completion_to: "for row in board:\n        if row[0] == letter and row[1] == letter\
+    \ and row[2] == letter and row[3] == letter and row[4] == letter:\n          \
+    \  return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -7,8 +7,9 @@\n of lists, if-every-character+all+5+characters\
+    \ in list is"
+  attempt_id: 1
+  total_attempts: 5
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id002
+  username: student64
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if all 5 characters in list is equal to letter, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if a list has consecutive 'X' or 'O' character, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row[0] == letter and row[1] == letter\
+    \ and row[2] == letter and row[3] == letter and row[4] == letter:\n          \
+    \  return True\n    return False\n"
+  completion_to: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -7,15 +7,14 @@\n of lists, if-all-5-characters-in+a list-is-equal-to-letter,+has+consecutive+'X'+or+'O'+character,\
+    \ return true. Otherwise,"
+  attempt_id: 2
+  total_attempts: 5
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student64
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if a list has consecutive 'X' or 'O' character, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if each character in list is an 'X' or 'O' character, return true. Otherwise,\
+    \ return false.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n"
+  completion_to: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -7,10 +7,12 @@\n of lists, if-a+each+character+in list-has-consecutive+is+an\
+    \ 'X' or 'O'"
+  attempt_id: 3
+  total_attempts: 5
+  state: neutral
+  _edge_tags: null
+- !Edge
+  node_from: *id002
+  node_to: *id002
+  username: student64
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if each character in list is an 'X' or 'O' character, return true. Otherwise,\
+    \ return false.\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    In list of lists,\
+    \ if each character in list is equal to letter, return true. Otherwise, return\
+    \ false.\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n"
+  completion_to: "for row in board:\n        if row[0] == row[1] == row[2] == letter:\n\
+    \            return True\n    return False\n\n"
+  diff: "--- \n+++ \n@@ -12,11 +12,9 @@\n in list is-an-'X'-or-'O'-character,+equal+to+letter,\
+    \ return true. Otherwise,"
+  attempt_id: 4
+  total_attempts: 5
+  state: fail
+  _edge_tags: null
+- !Edge
+  node_from: *id001
+  node_to: *id001
+  username: student69
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Enter a list\
+    \ of lists of strings. if any list has five consecutive 'X' values, return true.\
+    \ else return false\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Enter a list where\
+    \ the 0th index is a list of lists of strings, and the 1st index is a character.\
+    \ if any list in the 0th index has five consecutive values of the character entered\
+    \ in the 1st index, return true. else return false\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row.count(letter) == 5:\n      \
+    \      return True\n    return False\n"
+  completion_to: "for row in board:\n        for i in range(len(row) - 4):\n     \
+    \       if row[i] == letter and row[i + 1] == letter and row[i + 2] == letter\
+    \ and row[i + 3] == letter and row[i + 4] == letter:\n                return True\n\
+    \    return False\n"
+  diff: "--- \n+++ \n@@ -5,18 +5,43 @@\n Enter a list+where+the+0th+index+is+a+list\
+    \ of lists of-strings.+strings,+and+the+1st+index+is+a+character. if any list+in+the+0th+index\
+    \ has five consecutive-'X'-values,+values+of+the+character+entered+in+the+1st+index,\
+    \ return true. else"
+  attempt_id: 1
+  total_attempts: 2
+  state: success
+  _edge_tags: null
+- !Edge
+  node_from: *id004
+  node_to: *id004
+  username: student76
+  prompt_from: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Looks through\
+    \ a list of lists and if one list contains only 'X' it returns True if not it\
+    \ returns False\n    \"\"\"\n    "
+  prompt_to: "def hasHorizontalWin(board, letter):\n    \"\"\"\n    Looks through\
+    \ a dictionary and if one list inside the dictionary contains only 'X' it returns\
+    \ True if not it returns False\n    \"\"\"\n    "
+  completion_from: "for row in board:\n        if row.count(letter) == 3:\n      \
+    \      return True\n    return False\n"
+  completion_to: "for row in board:\n        if row.count(letter) == 3:\n        \
+    \    return True\n    return False\n"
+  diff: "--- \n+++ \n@@ -5,13 +5,14 @@\n Looks through a-list-of-lists+dictionary\
+    \ and if one list+inside+the+dictionary contains only 'X'"
+  attempt_id: 1
+  total_attempts: 2
+  state: fail
+  _edge_tags: null
+student_start_node_tags: {}

@@ -36,6 +36,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
             print(f"Skipping {graph_name}")
             continue
         graph = load_graph(graph_yaml)
+        # recompute state on edges
         graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
         problem_answers = load_problem_answers(problem_clues_yaml, graph.problem)
         graph = populate_clues(graph)
@@ -61,25 +62,28 @@ def run_RQ3(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     Result
         This shows that success depends on substance
     """
-    success_edge_data = []
+    final_edge_data = []
     for graph in graphs:
         for e in graph.edges:
-            success_edge_data.append({
-                "problem": graph.problem,
-                "success_clues": list(SUCCESS_CLUES[graph.problem]),
-                "state": e.state,
-                "clues": e.clues,
-                "is_success": e.state == "success"
-            })
+            if e.state in ["success","fail"]:
+                final_edge_data.append({
+                    "problem": graph.problem,
+                    "success_clues": list(SUCCESS_CLUES[graph.problem]),
+                    "state": e.state,
+                    "clues": e.clues,
+                    "is_success": e.state == "success",
+                    "is_fail": e.state == "fail",
+                })
 
-    edge_df = pd.DataFrame(success_edge_data)
+    edge_df = pd.DataFrame(final_edge_data)
     edge_df["has_all_clues"] = edge_df["success_clues"] == edge_df["clues"]
     edge_df["not_has_all_clues"] = edge_df["success_clues"] != edge_df["clues"]
     print(edge_df)
     succ_edge_df = edge_df[edge_df["state"] == "success"]
     print(f"Has all clues {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].sum()/len(succ_edge_df):.2f}")
 
-    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","not_has_all_clues")]:
+    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","not_has_all_clues"), ("is_fail","has_all_clues"),
+                        ("is_fail", "not_has_all_clues")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, edge_df)
         print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
 
@@ -134,7 +138,7 @@ def run_RQ3(graphs: List[Graph], outdir:str, prob_to_graph: dict[str, Graph]):
     print(f"Num cycles with missing clues {num_missing_clues_cycles} / {len(df_cycles)} = {num_missing_clues_cycles / len(df_cycles):.2f}")
 
     for var_a, var_b in [("is_success","has_cycle"), ("is_success","not_has_cycle"), ("is_success","has_breakout_edge"),
-                        ("is_success", "not_has_breakout_edge")]:
+                        ("is_success", "not_has_breakout_edge"), ]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_cycles)
         print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
 

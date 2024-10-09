@@ -2,7 +2,7 @@ import glob
 import argparse
 import os
 from .analysis_utils import load_graph, trim_graph
-from .analysis_data import SUCCESS_NODE_IDS
+from .analysis_data import SUCCESS_NODE_IDS, SUCCESS_CLUES
 import yaml
 from tqdm import tqdm
 

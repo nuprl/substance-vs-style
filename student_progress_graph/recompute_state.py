@@ -1,7 +1,8 @@
 import glob
 import argparse
 import os
-from .analysis_data import SUCCESS_NODE_IDS
+from .analysis_data import SUCCESS_NODE_IDS, SUCCESS_CLUES
+from .graph_utils import load_graph
 from tqdm import tqdm
 
 def main(args):

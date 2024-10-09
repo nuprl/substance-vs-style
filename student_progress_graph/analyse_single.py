@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Any, Tuple
 import yaml
 import contextlib
-from .analysis_data import OUT_OF_TOKENS_ERROR
+from .analysis_data import OUT_OF_TOKENS_ERROR, SUCCESS_NODE_IDS, SUCCESS_CLUES
 '''
 Analyzing common patterns in graphs
 '''
@@ -137,7 +137,7 @@ def single_problem_analysis(graph_yaml: str, outdir:str, problem_clues_yaml:str)
         # graph = score_nodes_by_tests_passed(graph, problem_answers, overwrite=True)
         # graph = score_nodes_by_target_dist(graph, success_node.id, overwrite=True)
     success_node = SUCCESS_NODE_IDS[graph.problem]
-    print(f"Success node {success_node.id}")
+    print(f"Success node {success_node}")
     
     ## RQ1: cycle behavior
     run_RQ1(graph, outdir)

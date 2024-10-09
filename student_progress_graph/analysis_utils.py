@@ -35,18 +35,24 @@ def trim_graph(graph:Graph, problem_answers: List[str]) -> Graph:
     """
     student_edges = graph.get_student_edges()
     edges_to_delete = []
+    edges_to_retag = []
     for student, sorted_attempts in student_edges.items():
         for i, attempt in enumerate(sorted_attempts):
             if i == 0 and score_node(attempt.node_from, problem_answers) == len(problem_answers):
                 # first attempt was correct
                 edges_to_delete += sorted_attempts[i+1:]
+                edges_to_retag.append(sorted_attempts[i])
                 break
             elif score_node(attempt.node_to, problem_answers) == len(problem_answers):
                 # first correct attempt
                 edges_to_delete += sorted_attempts[i+1:]
+                edges_to_retag.append(sorted_attempts[i])
                 break
 
     graph.edges = [e for e in graph.edges if e not in set(edges_to_delete)]
+    for i,e in enumerate(graph.edges):
+        if e in set(edges_to_retag):
+            graph.edges[i].state = "success"
     return graph
 
 def conditional_prob(var_a: str, var_b: str, df: pd.DataFrame) -> Tuple[float]:

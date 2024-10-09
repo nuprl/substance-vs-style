@@ -1222,7 +1222,7 @@ IGNORE_SUCCESS = {
 }
 # cases where studenteval judged a completion wrong
 IGNORE_FAIL = {
-    "times_with": ["student63"]
+    # "times_with": ["student63"] # fixed by relabeling
 }
 OUT_OF_TOKENS_ERROR = {
     "altText": ["student40"],

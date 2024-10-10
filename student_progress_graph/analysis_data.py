@@ -15,7 +15,7 @@
 
 - "start_node": start_node had all clues, should have been a success.
 
-These should all be EXCEPTIONS, or they refute our hypotheses.
+These should all be EXCEPTIONS, or they refute our hypotheses
 
 Student with out of token errors have been removed. Students that achieve a success, but
 then keep messing around have been trimmed so their path ends at first success.

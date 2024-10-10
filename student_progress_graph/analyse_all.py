@@ -18,6 +18,7 @@ import yaml
 import contextlib
 from .analysis_data import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES
 
+
 def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     graphs = []
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):

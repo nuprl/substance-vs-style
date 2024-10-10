@@ -18,7 +18,6 @@ import yaml
 import contextlib
 from .analysis_data import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES
 
-
 def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     graphs = []
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):
@@ -144,7 +143,7 @@ def run_RQ2(graphs: List[Graph], outdir:str):
     print(corr)
 
     """
-    3. Rewrites
+    3. Rewrites/breakout edges
 
     Rewrites do not help model, but help student debug what is wrong with model.
 
@@ -161,17 +160,18 @@ def run_RQ2(graphs: List[Graph], outdir:str):
     for graph in graphs:
         for student, edge_list in graph.get_student_edges().items():
             last_edge = edge_list[-1]
+            has_final_rewrite = all([str(t)[0] in ["l","m","0"] for t in last_edge._edge_tags])
             path_data.append({
                 "student": student,
                 "problem": graph.problem,
                 "edge_list": edge_list,
                 "last_edge": last_edge,
-                "has_final_rewrite": is_any_tag_kind(last_edge._edge_tags, ["m","l",0]),
+                "has_final_rewrite": has_final_rewrite,
+                "not_has_final_rewrite": not has_final_rewrite,
                 "is_success": last_edge.state == "success",
                 "num_rewrite->subst": num_rewrite_to_subst(edge_list)
             })
     path_df = pd.DataFrame(path_data)
-    path_df["not_has_final_rewrite"] =  path_df["has_final_rewrite"].apply(lambda x: not x)
 
     num_last_edge_is_rewrite = path_df["has_final_rewrite"].sum()
     print(f"P(is_success & has_final_rewrite): {(path_df['is_success']& path_df['has_final_rewrite']).mean():.2f}")
@@ -181,12 +181,24 @@ def run_RQ2(graphs: List[Graph], outdir:str):
     path_df["rewrite->subst"] = path_df["num_rewrite->subst"].apply(lambda x: x>0)
     path_df["not_rewrite->subst"] = path_df["rewrite->subst"].apply(lambda x: not x)
 
-    for var_a, var_b in [("is_success","rewrite->subst"), ("is_success","not_rewrite->subst")]:
-        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, path_df)
-        print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+    """
+    How often is a success edge a rewrite? versus not
 
-    corr = display_pearsonr_results(path_df, [("is_success","num_rewrite->subst")])
-    print(corr)
+    P(is_success | has_final_rewrite)
+    """
+    for var_a, var_b in [("has_final_rewrite", "is_success"), ("not_has_final_rewrite", "is_success")]:
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, path_df)
+        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
+
+    """
+    Breakout edges and rewrites:
+    - How often is a cycle followed by a breakout edge within 2 steps
+    - how often is rewrite followed by a substantial edit within 2 steps
+    Does this lead to success?
+    """
+    
+
 
 def num_rewrite_to_subst(edge_list: List[Edge]) -> int:
     count = 0

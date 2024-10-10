@@ -64,7 +64,13 @@ def run_RQ2(graphs: List[Graph], outdir:str):
                     "success_clues": success_clues,
                     "state": e.state,
                     "clues": e.clues,
+                    "has_final_rewrite": all([str(t)[0] in ["l","m","0"] for t in e._edge_tags]),
+                    "has_final_trivial": all([t  == 0 for t in e._edge_tags]),
+                    "has_final_l": all([str(t)[0]  == "l" for t in e._edge_tags]),
+                    "has_final_m": all([str(t)[0]  == "m" for t in e._edge_tags]),
                     "has_all_clues": has_all_clues,
+                    "ratio_clues": (len(e.clues) / len(success_clues)),
+                    "has_leq_half_clues": (len(e.clues) / len(success_clues)) <= 0.5,
                     "is_missing_clues": not has_all_clues,
                     "is_success": is_success,
                     "is_fail": not is_success,
@@ -73,14 +79,34 @@ def run_RQ2(graphs: List[Graph], outdir:str):
     edge_df = pd.DataFrame(terminal_edge_data)
     # print(edge_df)
     succ_edge_df = edge_df[edge_df["state"] == "success"]
+    succ_edge_df.to_csv(f"{outdir}/successful_terminal_edges.csv")
     print(f"has_all_clues/ num_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].sum()/len(succ_edge_df):.2f}")
 
-    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues"), ("is_fail","has_all_clues"),
-                        ("is_fail", "is_missing_clues")]:
+    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues"),
+                         ("is_missing_clues", "is_success"), ("has_all_clues","is_success"),
+                         ("is_fail","has_all_clues"),("is_fail", "is_missing_clues"),
+                         ("has_all_clues","is_fail"),("is_missing_clues","is_fail")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, edge_df)
         # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
+    print("out of has all clues, how many succ:", (edge_df["has_all_clues"] & edge_df["is_success"]).sum() /edge_df["has_all_clues"].sum())
+
+    for var in ["has_final_trivial","has_final_rewrite","has_final_l","has_final_m"]:
+        has_final_rewrite = succ_edge_df[var]
+        print(f"{var} out of succ_edges: {has_final_rewrite.sum()}/{len(succ_edge_df)} = {has_final_rewrite.mean():.2f}")
+    
+    # P(had_final_m|has_final_rewrite)
+    for var_a, var_b in [("has_final_m","has_final_rewrite")]:
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, succ_edge_df)
+        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.3f}")
+
+    # probability that final rewrite fixes a prompt with little clues
+    # out of prompts with little clues, p(is_success | has_final_rewrite)
+    little_clues = edge_df[ edge_df["has_leq_half_clues"]]
+    for var_a, var_b in [("is_success","has_final_rewrite")]:
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, little_clues)
+        print(f"little clues P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
     """
     2. Cycles
 
@@ -107,7 +133,9 @@ def run_RQ2(graphs: List[Graph], outdir:str):
             if breakout_edge:
                 cycle_edge_list.pop()
 
-            has_only_trivial_edits = all([not is_any_tag_kind(e._edge_tags, ["a","d"]) for e in cycle_edge_list])
+            has_only_rewrite_edits = all([all([str(t)[0] in ["0","m","l"] for t in e._edge_tags]) for e in cycle_edge_list])
+            
+            has_only_trivial_edits = all([all([str(t)[0] in ["0"] for t in e._edge_tags]) for e in cycle_edge_list])
             cycle_clues = [e.clues for e in cycle_edge_list]
             has_missing_clues = all([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
             cycles_data.append({
@@ -115,26 +143,30 @@ def run_RQ2(graphs: List[Graph], outdir:str):
                 "is_success": (student in succ_students),
                 "cycle_num_edges": len(cycle_edge_list),
                 "has_cycle": len(cycle_edge_list) > 0,
+                "has_long_cycle": len(cycle_edge_list) > 3,
                 "not_has_cycle": len(cycle_edge_list) == 0,
                 "cycle_clues": cycle_clues,
                 "cycle_edits": [e._edge_tags for e in cycle_edge_list],
                 "has_breakout_edge": bool(breakout_edge is not None),
                 "not_has_breakout_edge": bool(breakout_edge is None),
                 "has_only_trivial_edits": has_only_trivial_edits,
-                "has_substantial_edits": not has_only_trivial_edits,
+                "has_only_rewrite_edits": has_only_rewrite_edits,
+                "has_substantial_edits": not has_only_rewrite_edits,
                 "has_missing_clues": has_missing_clues,
                 "not_has_missing_clues": not has_missing_clues,
             })
     df_cycles = pd.DataFrame(cycles_data)
     print(df_cycles.value_counts("is_success"))
 
+    print(f"% has only trivial edits {df_cycles['has_only_trivial_edits'].mean():.2f}, has only rewrite {df_cycles['has_only_rewrite_edits'].mean():.2f}")
     num_trivial_cycles = df_cycles['has_only_trivial_edits'].sum()
     num_missing_clues_cycles = df_cycles['has_missing_clues'].sum()
     print(f"Num cycles with only trivial edits {num_trivial_cycles} / {len(df_cycles)} = {num_trivial_cycles / len(df_cycles):.2f}")
     print(f"Num cycles with missing clues {num_missing_clues_cycles} / {len(df_cycles)} = {num_missing_clues_cycles / len(df_cycles):.2f}")
 
     for var_a, var_b in [("is_success","has_cycle"), ("is_success","not_has_cycle"), ("is_success","has_breakout_edge"),
-                        ("is_success", "not_has_breakout_edge"), ]:
+                         ("has_only_trivial_edits", "has_only_rewrite_edits"),
+                        ("is_success", "not_has_breakout_edge"),("is_success","has_long_cycle") ]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_cycles)
         # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")

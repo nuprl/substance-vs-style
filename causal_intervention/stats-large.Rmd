@@ -1,0 +1,244 @@
+---
+title: "prompt analysis"
+output:
+  pdf_document: default
+  html_document: default
+date: '2024-10-09'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lme4)
+library(multcomp)
+```
+
+# Data reformatting
+
+```{r}
+data.raw = read.csv('llama3p1_70b_base.csv',header=TRUE)
+orig <- unique(subset(data.raw,select=c(1,2,8:10))) %>% rename(success = n_successes_original,
+                                                       pass = pass1_original) %>% mutate(category = "Baseline",
+                                                                                         intervention = "None",
+                                                                                         original_word = NA)
+subs <- subset(data.raw,select=-c(8:9)) %>% rename(success = n_successes_intervened,
+                                                       pass = pass1_intervened,
+                                                   category = intervention_category)
+
+data <- rbind(orig,subs) %>% mutate(n = 50)
+data$category <- fct_relevel(data$category,"Baseline")
+data$intervention <- fct_relevel(data$intervention,"None")
+```
+
+# String interventions
+
+```{r}
+string.ps <- subset(data,category=="string")$prompt_id
+strings <- subset(data,(category=="string"|category=="Baseline")&prompt_id %in% string.ps)
+```
+
+```{r}
+string.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=strings,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(string.model)
+```
+
+# Dict interventions
+
+```{r}
+dict.ps <- subset(data,category=="dictionary")$prompt_id
+dicts <- subset(data,(category=="dictionary"|category=="Baseline")&prompt_id %in% dict.ps)
+```
+
+```{r}
+dict.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=dicts,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(dict.model)
+```
+
+# Integer interventions
+
+```{r}
+int.ps <- subset(data,category=="integer")$prompt_id
+ints <- subset(data,(category=="integer"|category=="Baseline")&prompt_id %in% int.ps)
+```
+
+```{r}
+int.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=ints,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(int.model)
+```
+
+# List interventions
+
+```{r}
+list.ps <- subset(data,category=="list")$prompt_id
+lists <- subset(data,(category=="list"|category=="Baseline")&prompt_id %in% list.ps)
+```
+
+```{r}
+list.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=lists,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(list.model)
+```
+
+# Key interventions
+
+```{r}
+key.ps <- subset(data,category=="key")$prompt_id
+keys <- subset(data,(category=="key"|category=="Baseline")&prompt_id %in% key.ps)
+```
+
+```{r}
+key.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=keys,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(key.model)
+```
+
+# Typecast interventions
+
+```{r}
+cast.ps <- subset(data,category=="typecast")$prompt_id
+casts <- subset(data,(category=="typecast"|category=="Baseline")&prompt_id %in% cast.ps)
+```
+
+```{r}
+cast.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=casts,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(cast.model)
+```
+
+# Concatenation interventions
+
+```{r}
+concat.ps <- subset(data,category=="concatenate")$prompt_id
+concats <- subset(data,(category=="concatenate"|category=="Baseline")&prompt_id %in% concat.ps)
+```
+
+```{r}
+concat.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=concats,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(concat.model)
+```
+
+# Insert/Append interventions
+
+```{r}
+append.ps <- subset(data,category=="insert")$prompt_id
+appends <- subset(data,(category=="insert"|category=="Baseline")&prompt_id %in% append.ps)
+```
+
+```{r}
+append.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=appends,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(append.model)
+```
+
+# Skip interventions
+
+```{r}
+skip.ps <- subset(data,category=="skip")$prompt_id
+skips <- subset(data,(category=="skip"|category=="Baseline")&prompt_id %in% skip.ps)
+```
+
+```{r}
+skip.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=skips,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(skip.model)
+```
+
+# Return interventions
+
+```{r}
+return.ps <- subset(data,category=="return")$prompt_id
+returns <- subset(data,(category=="return"|category=="Baseline")&prompt_id %in% return.ps)
+```
+
+```{r}
+return.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=returns,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(return.model)
+```
+
+# Loop through interventions
+
+```{r}
+loop.ps <- subset(data,category=="loop_through")$prompt_id
+loops <- subset(data,(category=="loop_through"|category=="Baseline")&prompt_id %in% loop.ps)
+```
+
+```{r}
+loop.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=loops,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(loop.model)
+```
+
+# Input interventions
+
+## Take interventions
+
+```{r}
+take.ps <- subset(data,category=="take")$prompt_id
+takes <- subset(data,(category=="take"|category=="Baseline")&prompt_id %in% take.ps)
+```
+
+```{r}
+take.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=takes,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(take.model)
+```
+
+## Parameter interventions
+
+```{r}
+param.ps <- subset(data,category=="parameter")$prompt_id
+params <- subset(data,(category=="parameter"|category=="Baseline")&prompt_id %in% param.ps)
+```
+
+```{r}
+param.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=params,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(param.model)
+```
+
+## Provide interventions
+
+```{r}
+provide.ps <- subset(data,category=="provide")$prompt_id
+provides <- subset(data,(category=="provide"|category=="Baseline")&prompt_id %in% provide.ps)
+```
+
+```{r}
+provide.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|prompt_id), weights=n, data=provides,family="binomial",control=glmerControl(optimizer="bobyqa",calc.derivs = FALSE))
+```
+
+```{r}
+summary(provide.model)
+```
+

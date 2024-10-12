@@ -39,7 +39,7 @@ def run_RQ1(graph: Graph, outdir:str):
         e_list = [[e.node_from.id, e.node_to.id, e.clues, e._edge_tags] 
                   for e in edges]
         print(f"{student}:{e_list}")
-        breakout_edge = get_breakout_edge(edges)
+        breakout_edge = get_breakout_edge(graph, student, edges)
         breakout_edges[student] = breakout_edge
         if breakout_edge:
             print(f"breakoutedge {student}")

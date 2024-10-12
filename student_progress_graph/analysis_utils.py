@@ -1,3 +1,4 @@
+from collections import defaultdict
 from .analysis_data import SUCCESS_CLUES, KNOWN_EXCEPTIONS, OUT_OF_TOKENS_ERROR
 from .graph_utils import load_graph, Graph, Edge, get_student_subgraph, Node
 import itertools as it
@@ -11,6 +12,18 @@ from scipy import stats
 
 class ContinuityError(Exception):
     pass
+
+def compact_cycle_summary(cycle_summary: Dict[str, List[Edge]]) -> Dict[str, List[Tuple[int]]]:
+    """
+    Return a cycle summary with only edge node ids for debugging purposes
+    """
+    compact_cs = {}
+    for student, cycles in cycle_summary.items():
+        new_cycles = []
+        for cycle_edges in cycles:
+            new_cycles.append([(e.node_from.id, e.node_to.id) for e in cycle_edges])
+        compact_cs[student] = new_cycles
+    return compact_cs
 
 def remove_out_of_token_errors(graph: Graph) -> Graph:
     """
@@ -187,31 +200,37 @@ def check_cycles(graph: Graph, suppress_check: bool = False) -> Union[ValueError
     If check fails, raises a value error. Otherwise returns
     cycle summary that includes breakout edges.
     """
-    summary = {}
+    summary = defaultdict(list)
     for student in graph.get_students():
         subgraph = get_student_subgraph(graph, student)
         G = subgraph.to_networkx()
-        cycle = list(nx.simple_cycles(G))
+        student_cycles = list(nx.simple_cycles(G))
+        if len(student_cycles) == 0:
+            continue
         
-        # for each edge in cycle, check that edge_tag is 0
-        # or clues are missing
-        cycle_summary = []
-        cycle_nodes = list(it.chain(*cycle))
-        for e in subgraph.edges:
-            is_self_loop = (e.node_from.id == e.node_to.id)
-            if ([e.node_from.id, e.node_to.id] in cycle or 
-                (is_self_loop and [e.node_from.id] in cycle)):
-                if is_known_exception(e, graph.problem, key="cycles"):
-                    continue 
-                elif not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]) \
-                    and not suppress_check:
-                    raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
-                else:
-                    cycle_summary.append(e)
-            # save breakout edge
-            elif e.node_from.id in cycle_nodes and e.node_to.id not in cycle_nodes:
-                cycle_summary.append(e)
-        summary[student] = sorted(cycle_summary, key=lambda x: x.attempt_id)
+        # # for each edge in cycle, check that edge_tag is 0
+        # # or clues are missing
+        for cycle in student_cycles:
+            cycle_summary = []
+            if len(cycle) == 1:
+                # self-loop: get the edges in it
+                for e in sorted(subgraph.edges, key=lambda x: x.attempt_id):
+                    if (e.node_from.id == e.node_to.id) and e.node_to.id == cycle[0]:
+                        cycle_summary.append(e)
+                        if not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]) \
+                            and not suppress_check:
+                            raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
+            else:
+                cycle_nodes = list(zip(cycle, cycle[1:])) + [(cycle[-1], cycle[0])]
+                for e in sorted(subgraph.edges, key=lambda x: x.attempt_id):
+                    if (e.node_from.id, e.node_to.id) in cycle_nodes:
+                        cycle_summary.append(e)
+                        if not(e._edge_tags == [0] or e.clues != SUCCESS_CLUES[graph.problem]) \
+                            and not suppress_check:
+                            raise ValueError(f"Found non-trivial edge in loop: {yaml.dump(e)}")
+
+        summary[student].append(cycle_summary)
+    summary = {k:v for k,v in summary.items() if v not in [[], [[]]]} # hack
     return summary
         
 def populate_clues(graph: Graph) -> Graph:
@@ -281,25 +300,26 @@ def load_problem_answers(filepath, problem) -> List[str]:
     problem_answers = [s.replace("'None'", "None") for s in problem_answers]
     return problem_answers
 
-def get_breakout_edge(cycle_edges: List[Edge]) -> Union[None, Edge]:
+def get_breakout_edge(graph:Graph, student:str,cycle_edges: List[Edge]) -> Union[None, Edge]:
     """
     Given a list of edges gathered from a cycle with
-    nx.simple_cycle, determine if the final edge is a "breakout_edge"
-    i.e. the edge that breaks out of the cycle.
-    If a breakout edge exists, return the Edge, otherwise return None.
+    nx.simple_cycle, if a breakout_edge that exists cycle exists, return it.
+    Otherwise return None.
     """
-    if len(cycle_edges) < 2:
-        # need at least 2 for breakout edge
-        return None
-    last_edge = cycle_edges[-1]
-    nodes = []
-    for e in cycle_edges[:-1]:
-        nodes += [e.node_from.id, e.node_to.id]
-    nodes = set(nodes)
-    if last_edge.node_to.id in nodes:
-        return None
-    else:
-        return last_edge
+    cycle_edges = sorted(cycle_edges, key=lambda x: x.attempt_id)
+    cycle_nodes = set()
+    for e in cycle_edges:
+        cycle_nodes.add(e.node_from.id)
+        cycle_nodes.add(e.node_to.id)
+    subgraph = get_student_subgraph(graph, student)
+    for e in subgraph.edges:
+        if e.attempt_id > cycle_edges[-1].attempt_id:
+            # edge after cycle
+            if e.node_to.id not in cycle_nodes:
+                return e
+    
+    return None
+
 
 def df_cycle_summary(
     cycle_edges: Dict[str, List[Edge]], 

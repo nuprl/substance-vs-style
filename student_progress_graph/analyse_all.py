@@ -69,45 +69,55 @@ def run_RQ2(graphs: List[Graph], outdir:str):
                     "has_final_l": all([str(t)[0]  == "l" for t in e._edge_tags]),
                     "has_final_m": all([str(t)[0]  == "m" for t in e._edge_tags]),
                     "has_all_clues": has_all_clues,
-                    "ratio_clues": (len(e.clues) / len(success_clues)),
                     "has_leq_half_clues": (len(e.clues) / len(success_clues)) <= 0.5,
                     "is_missing_clues": not has_all_clues,
                     "is_success": is_success,
                     "is_fail": not is_success,
                 })
 
-    edge_df = pd.DataFrame(terminal_edge_data)
-    # print(edge_df)
-    succ_edge_df = edge_df[edge_df["state"] == "success"]
+    terminal_edge_df = pd.DataFrame(terminal_edge_data)
+    terminal_edge_df.to_csv(f"{outdir}/terminal_edge.csv")
+    succ_edge_df = terminal_edge_df[terminal_edge_df["state"] == "success"]
     succ_edge_df.to_csv(f"{outdir}/successful_terminal_edges.csv")
-    print(f"has_all_clues/ num_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].sum()/len(succ_edge_df):.2f}")
 
-    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues"),
-                        #  ("is_missing_clues", "is_success"), ("has_all_clues","is_success"),
-                        #  ("is_fail","has_all_clues"),("is_fail", "is_missing_clues"),
-                        #  ("has_all_clues","is_fail"),("is_missing_clues","is_fail")
-                         ]:
-        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, edge_df)
-        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
+    print(f"has_all_clues/ num_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].mean():.2f}")
+
+    print("---- Out of all terminal edges:")
+    for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues")]:
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, terminal_edge_df)
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
-    print(f"out of has all clues, how many succ:{ (edge_df['has_all_clues'] & edge_df['is_success']).sum() / edge_df['has_all_clues'].sum():.2f}")
+    print("---- How many out of has all clues terminal edges are successful?")
+    all_clues_succ = succ_edge_df['has_all_clues'].sum()
+    num_all_clues = terminal_edge_df['has_all_clues'].sum()
+    print(f"Num(succ/has_all_clues): {all_clues_succ}/{num_all_clues} = {all_clues_succ/num_all_clues:.2f}")
 
+    print("---- How many rewrite kinds out of successful terminal edges?")
     for var in ["has_final_trivial","has_final_rewrite","has_final_l","has_final_m"]:
-        has_final_rewrite = succ_edge_df[var]
-        print(f"{var} out of succ_edges: {has_final_rewrite.sum()}/{len(succ_edge_df)} = {has_final_rewrite.mean():.2f}")
+        nom = succ_edge_df[var]
+        print(f"{var} out of succ_edges: {nom.sum()}/{len(succ_edge_df)} = {nom.mean():.2f}")
     
     # P(had_final_m|has_final_rewrite)
     for var_a, var_b in [("has_final_m","has_final_rewrite")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, succ_edge_df)
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.3f}")
 
+    print("---- Out of all SUCC final rewrite edges, how many are m?")
+    final_m = (succ_edge_df['has_final_m']&succ_edge_df['has_final_rewrite']).sum()
+    final_rewrite = succ_edge_df['has_final_rewrite'].sum()
+    print(f"Num(m/rewrite): {final_m}/{final_rewrite} = {final_m/final_rewrite:.2f}")
+
+    print("---- Out of terminal edges with <= 0.5 clyes, how many are successful with final rewrite?")
     # probability that final rewrite fixes a prompt with little clues
     # out of prompts with little clues, p(is_success | has_final_rewrite)
-    little_clues = edge_df[ edge_df["has_leq_half_clues"]]
+    leq_half_clues = terminal_edge_df[ terminal_edge_df["has_leq_half_clues"]]
     for var_a, var_b in [("is_success","has_final_rewrite")]:
-        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, little_clues)
+        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, leq_half_clues)
         print(f"little clues P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
+    
+    a = len(leq_half_clues[leq_half_clues["is_success"] & leq_half_clues["has_final_rewrite"]])
+    b = leq_half_clues["has_final_rewrite"].sum()
+    print(f"Num(succ&final_rewrite/has final rewrite) in had_leq_half_clues: {a}/{b}={a/b:.2f}")
 
     """
     2. Cycles
@@ -129,106 +139,125 @@ def run_RQ2(graphs: List[Graph], outdir:str):
     for graph in graphs:
         succ_students = graph.get_successful_students()
         cycle_summary = check_cycles(graph, suppress_check=True)
-        for student, cycle_edge_list in cycle_summary.items():
-            # check if has breakout edge
-            last_edge = get_breakout_edge(cycle_edge_list)
-            if last_edge:
-                last_edge = cycle_edge_list.pop()
 
-            has_only_rewrite_edits = all([all([str(t)[0] in ["0","m","l"] for t in e._edge_tags]) for e in cycle_edge_list])
-            has_only_trivial_edits = all([all([str(t)[0] in ["0"] for t in e._edge_tags]) for e in cycle_edge_list])
-            cycle_clues = [e.clues for e in cycle_edge_list]
-            has_missing_clues = all([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
-            has_0_breakout_edge = bool(last_edge and any([str(t)[0] in ['0'] for t in last_edge._edge_tags]))
-            has_m_breakout_edge = bool(last_edge and all([str(t)[0] in ['m'] for t in last_edge._edge_tags]))
-            has_a_breakout_edge = bool(last_edge and any([str(t)[0] in ['a'] for t in last_edge._edge_tags]))
-            has_l_breakout_edge = bool(last_edge and any([str(t)[0] in ['l'] for t in last_edge._edge_tags]))
-            has_d_breakout_edge = bool(last_edge and any([str(t)[0] in ['d'] for t in last_edge._edge_tags]))
-            cycles_data.append({
-                "problem": graph.problem,
-                "username": student,
-                "cycle_list": [(e.node_from.id, e.node_to.id) for e in cycle_edge_list],
-                "is_success": (student in succ_students),
-                "cycle_num_edges": len(cycle_edge_list),
-                "has_cycle": len(cycle_edge_list) > 0,
-                "has_long_cycle": len(cycle_edge_list) > 3,
-                "has_two_cycle": len(cycle_edge_list) >= 2,
-                "not_has_cycle": len(cycle_edge_list) == 0,
-                "cycle_clues": cycle_clues,
-                "cycle_edits": [e._edge_tags for e in cycle_edge_list],
-                "last_edge": bool(last_edge),
-                "last_edge_tags": [] if not last_edge else last_edge._edge_tags,
-                "has_0_breakout_edge": has_0_breakout_edge,
-                "has_m_breakout_edge": has_m_breakout_edge,
-                "has_a_breakout_edge": has_a_breakout_edge,
-                "has_l_breakout_edge": has_l_breakout_edge,
-                "has_d_breakout_edge": has_d_breakout_edge,
-                "has_only_trivial_edits": has_only_trivial_edits,
-                "has_only_rewrite_edits": has_only_rewrite_edits,
-                "has_substantial_edits": not has_only_rewrite_edits,
-                "has_missing_clues": has_missing_clues,
-                "not_has_missing_clues": not has_missing_clues,
-            })
+        for student in graph.get_students():
+            if student in cycle_summary.keys():
+                cycles = cycle_summary[student]
+            
+                for cycle_edge_list in cycles:
+
+                    # get breakout edge
+                    last_edge = get_breakout_edge(graph, student, cycle_edge_list)
+
+                    has_only_rewrite_edits = all([all([str(t)[0] in ["0","m","l"] for t in e._edge_tags]) 
+                                                for e in cycle_edge_list])
+                    has_only_trivial_edits = all([all([str(t)[0] in ["0"] for t in e._edge_tags]) 
+                                                for e in cycle_edge_list])
+                    cycle_clues = [e.clues for e in cycle_edge_list]
+                    has_missing_clues = all([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
+                    has_0_breakout_edge = bool(last_edge and any([str(t)[0] in ['0'] for t in last_edge._edge_tags]))
+                    has_m_breakout_edge = bool(last_edge and all([str(t)[0] in ['m'] for t in last_edge._edge_tags]))
+                    has_a_breakout_edge = bool(last_edge and any([str(t)[0] in ['a'] for t in last_edge._edge_tags]))
+                    has_l_breakout_edge = bool(last_edge and any([str(t)[0] in ['l'] for t in last_edge._edge_tags]))
+                    has_d_breakout_edge = bool(last_edge and any([str(t)[0] in ['d'] for t in last_edge._edge_tags]))
+                    cycles_data.append({
+                        "problem": graph.problem,
+                        "username": student,
+                        "cycle_list": [(e.node_from.id, e.node_to.id) for e in cycle_edge_list],
+                        "is_success": (student in succ_students),
+                        "cycle_num_edges": len(cycle_edge_list),
+                        "has_cycle": len(cycle_edge_list) > 0,
+                        "has_long_cycle": len(cycle_edge_list) > 3,
+                        "not_has_cycle": len(cycle_edge_list) == 0,
+                        "cycle_clues": cycle_clues,
+                        "cycle_edits": [e._edge_tags for e in cycle_edge_list],
+                        "has_breakout_edge": bool(last_edge),
+                        "breakout_edge_tags": [] if not last_edge else last_edge._edge_tags,
+                        "has_0_breakout_edge": has_0_breakout_edge,
+                        "has_m_breakout_edge": has_m_breakout_edge,
+                        "has_a_breakout_edge": has_a_breakout_edge,
+                        "has_l_breakout_edge": has_l_breakout_edge,
+                        "has_d_breakout_edge": has_d_breakout_edge,
+                        "cycle_has_only_trivial_edits": has_only_trivial_edits,
+                        "cycle_has_only_rewrite_edits": has_only_rewrite_edits,
+                        "has_substantial_edits": not has_only_rewrite_edits,
+                        "has_missing_clues": has_missing_clues,
+                        "not_has_missing_clues": not has_missing_clues,
+                    })
+            else:
+                cycles_data.append({
+                    "problem": graph.problem,
+                    "username":student,
+                    "cycle_list":[],
+                    "is_success": (student in succ_students),
+                    "cycle_num_edges": 0,
+                    "has_cycle": False,
+                    "has_long_cycle": False,
+                    "not_has_cycle": True,
+                    "cycle_clues": [],
+                    "cycle_edits": [],
+                    "has_breakout_edge": False,
+                    "breakout_edge_tags": [],
+                    "has_0_breakout_edge": False,
+                    "has_m_breakout_edge": False,
+                    "has_a_breakout_edge": False,
+                    "has_l_breakout_edge": False,
+                    "has_d_breakout_edge": False,
+                    "cycle_has_only_trivial_edits": False,
+                    "cycle_has_only_rewrite_edits": False,
+                    "has_substantial_edits": False,
+                    "has_missing_clues": False,
+                    "not_has_missing_clues": False,
+
+                })
+                
     df_cycles = pd.DataFrame(cycles_data)
-    df_cycles.to_csv(f"{outdir}/cycles.csv")
+    df_cycles.to_csv(f"{outdir}/data_cycles.csv")
+    print("---- ## CYCLES")
     print(df_cycles.value_counts("is_success"))
 
-    print(f"% has only trivial edits {df_cycles['has_only_trivial_edits'].mean():.2f}, has only rewrite {df_cycles['has_only_rewrite_edits'].mean():.2f}")
-    num_trivial_cycles = df_cycles['has_only_trivial_edits'].sum()
-    num_missing_clues_cycles = df_cycles['has_missing_clues'].sum()
-    # num_has_br_edge = df_cycles["has_breakout_edge"].sum()
-    num_has_cycle = df_cycles["has_cycle"].sum()
-    # print(f"Num has br: {num_has_br_edge}")
-    print(f"Num has cycle: {num_has_cycle}")
-    print(f"Num cycles with only trivial edits {num_trivial_cycles} / {len(df_cycles)} = {num_trivial_cycles / len(df_cycles):.2f}")
-    print(f"Num cycles with missing clues {num_missing_clues_cycles} / {len(df_cycles)} = {num_missing_clues_cycles / len(df_cycles):.2f}")
+    print("---- How many cyles have only REWRITE edits?")
+    print(f"{df_cycles['cycle_has_only_rewrite_edits'].mean():.2f}")
 
+    print("---- How many cyles have only trivial edits?")
+    print(f"{df_cycles['cycle_has_only_trivial_edits'].mean():.2f}")
+    
+    num_has_cycle = df_cycles["has_cycle"].sum()
+    print("---- How many trivial cycles are there out of all cycles?")
+    num_trivial_cycles = df_cycles['cycle_has_only_trivial_edits'].sum()
+    print(f"{num_trivial_cycles} / {num_has_cycle} = {num_trivial_cycles / num_has_cycle:.2f}")
+    
+    print("---- How many missing clues cycles are there out of all cycles?")
+    num_missing_clues_cycles = df_cycles['has_missing_clues'].sum()
+    print(f"{num_missing_clues_cycles} / {num_has_cycle} = {num_missing_clues_cycles / num_has_cycle:.2f}")
+    
+    print("---- Of all edges:")
     for var_a, var_b in [("is_success","has_cycle"), ("is_success","not_has_cycle"),
-                        ("has_only_trivial_edits", "has_only_rewrite_edits"),
                         ("is_success","has_long_cycle"),
-                        # ("is_success","has_breakout_edge"),
-                        # ("has_breakout_edge","is_success")
+                        ("is_success","has_breakout_edge"),
+                        ("has_breakout_edge","is_success"),
+                        ("cycle_has_only_trivial_edits", "cycle_has_only_rewrite_edits"),
                         ]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_cycles)
-        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
-    print("HAS CYCLES")
     df_has_cycles = df_cycles[df_cycles["has_cycle"]]
-    print(len(df_has_cycles))
-    succ_cycles = df_cycles[df_cycles["is_success"] & df_cycles["has_cycle"]]
-    print(f"has cycle and is succ: {len(succ_cycles)}")
-    for v in ["has_0_breakout_edge","has_l_breakout_edge","has_m_breakout_edge","has_a_breakout_edge",
-              "has_d_breakout_edge","last_edge"]:
-        print(f"How many cycles have {v} edge: {df_has_cycles[v].sum()} / {len(df_has_cycles)} = {(df_has_cycles[v]).mean():.2f}")
-        print(f"How many succ cycles have {v} edge: {succ_cycles[v].sum()} / {len(succ_cycles)} = {(succ_cycles[v]).mean():.2f}")
-    
-    succ_cycles.to_csv(f"{outdir}/succ_cycles_with_edge_out.csv")
-    print(f"prob succ {df_has_cycles['is_success'].mean()}")
-    for var_a, var_b in [("is_success","last_edge"),
-                        #  ("not_has_breakout_edge","is_success"),
-                        #  ("is_success", "not_has_breakout_edge"),
-                        # ("is_success","has_breakout_edge"),
-                        # ("has_breakout_edge","has_two_cycle"),
-                        # ("has_two_cycle","has_breakout_edge"),
-                        # ("has_breakout_edge","is_success")
-                        ]:
-        prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_has_cycles)
-        # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
-        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
+    df_has_cycles.to_csv(f"{outdir}/has_cycles.csv")
 
-    print(f"how many beats out of cycles {df_has_cycles['last_edge'].sum()}/{len(df_has_cycles)} = {df_has_cycles['last_edge'].mean()}")
-    # print(f"has_breakout out of cycles {df_has_cycles['has_breakout_edge'].sum()}/{len(df_has_cycles)} = {df_has_cycles['has_breakout_edge'].mean()}")
+    print(f"---- Out of all cycles: tot {len(df_has_cycles)}")
+    print(f"How many are succ? {df_has_cycles['is_success'].sum()} -> {df_has_cycles['is_success'].mean():.2f}")
+
+    for v in ["has_0_breakout_edge","has_l_breakout_edge","has_m_breakout_edge","has_a_breakout_edge",
+              "has_d_breakout_edge","has_breakout_edge"]:
+        print(f"{v}: {df_has_cycles[v].sum()} / {len(df_has_cycles)} = {(df_has_cycles[v]).mean():.2f}")
+        
+    succ_cycles = df_cycles[df_cycles["is_success"] & df_cycles["has_cycle"]]
+    print(f"---- Out of all SUCC cycles: tot {len(succ_cycles)}")
+    succ_cycles.to_csv(f"{outdir}/succ_cycles.csv")
     
-    # print("SUCC CYCLES")
-    # succ_cycles = df_has_cycles[df_has_cycles["is_success"]]
-    # for var_a, var_b in [("has_breakout_edge","has_long_cycle"),
-    #                      ("has_breakout_edge","is_success")]:
-    #     prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, succ_cycles)
-    #     # print(f"P( {var_a} | {var_b}) = var_a {prob_a:.2f} var_b {prob_b:.2f} a_given_b: {prob_a_given_b:.2f}")
-    #     print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
-    # print(f"has_breakout out of succ cycles {succ_cycles['has_breakout_edge'].sum()}/{len(succ_cycles)} = {succ_cycles['has_breakout_edge'].mean()}")
-    # print(f"last_edge out of succ cycles {succ_cycles['last_edge'].sum()}/{len(succ_cycles)} = {succ_cycles['last_edge'].mean()}")
+    for v in ["has_0_breakout_edge","has_l_breakout_edge","has_m_breakout_edge","has_a_breakout_edge",
+              "has_d_breakout_edge","has_breakout_edge"]:
+        print(f"{v}: {succ_cycles[v].sum()} / {len(succ_cycles)} = {(succ_cycles[v]).mean():.2f}")
     
     corr = display_pearsonr_results(df_cycles, [("is_success","cycle_num_edges")])
     print(corr)

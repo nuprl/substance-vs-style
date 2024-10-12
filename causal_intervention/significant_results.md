@@ -1,10 +1,12 @@
-# Results for LLama 8B
+# Mixed-effects modeling
 
 Results are from mixed-effects binary logistic regression models, including random effects for prompt ID and problem. The random effects structure for problem contains both random slopes and intercepts; due to issues with convergence, the random effects for prompt ID contain only random intercepts. 
 
 The outcome variable for our data is a proportion. In GLMR models, the number of observations upon which the proportion is based can be included as a weight argument. These results are based on 200 samples, so all models were fit with a weight of 200.
 
 All comparisons use the original, unmodified prompt as the baseline condition.
+
+# Results for LLama 8B
 
 ## Type categories
 
@@ -72,3 +74,66 @@ Skip:
 
 Typecast:
 	- Cast has a significant negative effect
+
+# Results for LLama 70B
+
+## Type categories
+
+String: 
+	- Character has a significant negative effect
+	- Set of characters has a significant negative effect
+	- The largest magnitude effect is set of characters
+
+Integer:
+	- No significant effects
+
+List:
+	- Brackets has a significant negative effect
+	- Set has a significant negative effect
+	- Set of brackets has a significant negative effect
+	- The largest magnitude effect is set
+
+Dictionary:
+	- No significant effects
+
+Key:
+	- Attribute has a significant negative effect
+
+## Control flow categories
+
+Take:
+	- No significant effects
+
+Parameter:
+	- Argument has a significant positive effect
+
+Provide:
+	- Provide has a significant negative effect
+
+Return:
+	- Display has a significant negative effect
+	- Print has a significant negative effect
+	- The strongest magnitude effect is print
+
+Loop:
+	- Execute a for loop with has a significant negative effect
+	- Iterate through has a significant negative effect
+	- Loop through has a significant negative effect
+	- Run a for loop through has a significant negative effect
+	- The strongest magnitude effect is execute a for loop with
+
+## Operation categories
+
+Concatenate:
+	- No significant effects
+
+Insert:
+	- No significant effects
+
+Skip:
+	- Ignore has a significant negative effect
+	- Neglect has a significant negative effect
+	- The strongest magnitude effect is neglect
+
+Typecast:
+	- Change has a significant positive effect

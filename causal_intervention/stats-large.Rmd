@@ -25,7 +25,7 @@ subs <- subset(data.raw,select=-c(8:9)) %>% rename(success = n_successes_interve
                                                        pass = pass1_intervened,
                                                    category = intervention_category)
 
-data <- rbind(orig,subs) %>% mutate(n = 50)
+data <- rbind(orig,subs) %>% mutate(n = 200)
 data$category <- fct_relevel(data$category,"Baseline")
 data$intervention <- fct_relevel(data$intervention,"None")
 ```

@@ -9,8 +9,6 @@ date: '2024-10-09'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
-library(lme4)
-library(multcomp)
 ```
 
 # Data reformatting
@@ -20,18 +18,37 @@ data.raw = read.csv('llama3p1_8b_base.csv',header=TRUE)
 
 canonical <- c("string","list","integer","dictionary","key","loop_through","parameter","take","provide","return","append","skip", "typecast",  "concatenate")
 
-data <- data.raw %>% mutate(difference = pass1_intervened-pass1_original,
-                            Term = ifelse(intervention %in% canonical,"Standard","Others"))
+small <- data.raw %>% mutate(difference = pass1_intervened-pass1_original,
+                            Term = ifelse(intervention %in% canonical,"Standard","Others"),
+                            Model = "8B")
 ```
 
 ```{r}
-sum <- data %>% group_by(intervention_category,Term) %>% summarize(meanDifference = mean(difference),
-                                                                   Lemma = unique(str_to_title(ifelse(intervention_category=="loop_through","loop through",ifelse(intervention_category=="insert","append",intervention_category)))))
+data.raw = read.csv('llama3p1_70b_base.csv',header=TRUE)
+
+large <- data.raw %>% mutate(difference = pass1_intervened-pass1_original,
+                            Term = ifelse(intervention %in% canonical,"Standard","Others"),
+                            Model = "70B")
+```
+
+```{r}
+all <- rbind(small,large)
+```
+
+
+```{r}
+sum <- all %>% group_by(Model,intervention_category,Term) %>% summarize(meanDifference = mean(difference),
+                                                                   Lemma = unique(str_to_title(ifelse(intervention_category=="loop_through","loop through",ifelse(intervention_category=="insert","append",intervention_category)))),
+                                                                   Color = unique(paste(Model,Term,sep=" - ")))
 sum
 ```
 
 ```{r}
 sum$Lemma <- factor(sum$Lemma,levels=c("Dictionary","Key","Integer","List","String","Parameter","Provide","Take","Loop Through","Return","Append","Concatenate","Skip","Typecast"))
-ggplot(data=sum,aes(y=meanDifference,x=Lemma,fill=Term)) + geom_col(position="dodge2") + ylim(-0.1,0.1)  + theme(text=element_text(size=16),legend.position="bottom",axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-ggsave("lexical_effects.pdf",width=10,height=4)
+sum$Color <- factor(sum$Color,levels=c("8B - Standard","8B - Others","70B - Standard", "70B - Others"))
+```
+
+```{r}
+ggplot(data=sum,aes(y=meanDifference,x=Lemma,fill=Color)) + geom_col(position="dodge2")  + theme(text=element_text(size=16),legend.position="bottom",axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + scale_fill_discrete(name = "",type=c("#980043","#ffccee","#1769b8","#b5e0f9")) + guides(fill=guide_legend(nrow=2,byrow=TRUE))
+ggsave("lexical_effects.pdf",width=6,height=4) 
 ```

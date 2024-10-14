@@ -242,3 +242,212 @@ provide.model <- glmer(pass ~ intervention + (1+intervention|problem) + (1|promp
 summary(provide.model)
 ```
 
+
+# Export results to Latex
+
+```{r}
+round_sig <- Vectorize(function(x, sig = 3) {
+  # Handle special case for zero
+  if (x == 0) return(0)
+  
+  # Calculate the factor to round to significant figures
+  scale <- ceiling(log10(abs(x)))
+  rounded_value <- round(x, sig - scale - 1)
+  
+  return(format(rounded_value, nsmall = 0, scientific = FALSE))
+})
+
+round_p <- Vectorize(function(x, sig = 3) {
+  # Handle special case for zero
+  x <- as.numeric(x)
+  if (x < 0.0001) return("\\textbf{\\textless 0.0001}")
+  
+  # Calculate the factor to round to significant figures
+  scale <- ceiling(log10(abs(x)))
+  rounded_value <- round(x, sig - scale - 1)
+  
+  return(format(rounded_value, nsmall = 0, scientific = FALSE))
+})
+```
+
+```{r}
+model_summary <- tidy(string.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(list.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(int.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(dict.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(key.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(return.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(take.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(param.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(provide.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(cast.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(skip.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(loop.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(concat.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```
+
+```{r}
+model_summary <- tidy(append.model, effects = "fixed") %>%
+  mutate(across(c(estimate, std.error, statistic,p.value), round_sig),
+         across(c(p.value),round_p),
+         term=str_replace(term,"intervention",""))
+
+model_sum <- model_summary %>% dplyr::select(term:p.value)
+
+# Create the LaTeX table
+kable(model_sum, format = "latex", booktabs = TRUE, escape = FALSE,col.names = c("Fixed effects","$\\widehat{\\beta}$","SE","$z$","$p$"))
+
+```

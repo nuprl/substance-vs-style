@@ -2,6 +2,8 @@
 set -x
 set -e
 
+ORIG_DIR=$1
+
 # Specify the parent directory containing subdirectories
 PARENT_DIR="/work/arjunguha-research-group/zi.wu/studenteval_nlp/generation_experiments"
 cd "$PARENT_DIR"
@@ -22,4 +24,4 @@ for dir in generations*/; do
 done
 
 
-python3 pass_1.py --orig_dir 70b_generations_studenteval/multiple "${DIR_ARGS[@]}"
+python3 pass_1.py --orig_dir "$ORIG_DIR/multiple" "${DIR_ARGS[@]}"

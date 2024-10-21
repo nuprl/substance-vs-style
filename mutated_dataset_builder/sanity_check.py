@@ -9,33 +9,19 @@ import argparse
 
 #Category, possible substitution words, in their original form
 subst_to_run = {
-    #string:
     "string": ["word","phrase","string","character","set of characters"],
-    #list:
     "list":["brackets","set of brackets","set","list","array list","array"],
-    #dictionary:
     "dictionary":["map","dictionary"],
-    #integer:
     "integer": ["integer","whole number","int"],
-    #return
     "return": ["return","output","print","produce","display"],
-    #parameter
     "parameter": ["parameter","argument","value provided","input"],
-    #take
     "take": ["take","bring in","accept","get","input"],
-    #provide
     "provide": ["provide","enter","input"],
-    #concatenate
     "concatenate": ["concatenate","combine","splice","add"],
-    #insert
     "insert": ["insert","add","append","attach"],
-    #loop
     "loop through": ["go through","run through","iterate through","loop through","run a for loop through","look through","execute a for loop with"],
-    #skip
     "skip": ["skip","avoid","neglect","ignore","remove"],
-    #typecast
     "typecast": ["typecast","type cast","cast","convert","change"],
-    #key
     "key": ["key","item","entry","attribute","part","element","variable"],
 }
 

@@ -11,7 +11,6 @@ import re
 from main import TAGS
 
 # Key is the input format of the replacement word. Values are what we wish the replacement words could look like.
-# This is much faster than spacy
 WORDS_V = {
     "word":["word","words"],
     "phrase":["phrase","phrases"],
@@ -123,7 +122,6 @@ def substitute_prompt(prompt: str, category: str, value: str):
     category_variations = CATEGORIES_V[category]
 
     # Regex pattern to match $CATEGORY:ORIGINAL$
-    # pattern = re.compile(r"\$(\w+):([\w\s]+)\$")
     pattern = re.compile(r"\$([\w\s]+):([\w\s]+)\$")
 
     

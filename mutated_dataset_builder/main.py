@@ -4,8 +4,6 @@ import spacy
 import json
 import argparse
 import re
-#string, list, dictionary, integer, return, input, concatenate
-#and maybe also:loop, skip, typecast, key
 
 # For each KEY:VALUE pair of TAGS, when we see the word KEY in the prompt, we tag it
 # with VALUE using tag_prompt.
@@ -39,8 +37,6 @@ TAGS = {
     "maps": "dictionaries",
     "dictionary": "dictionary",
     "dictionaries": "dictionaries",
-    #"array": "dictionary",#array tagged list already
-    #"arrays": "dictionaries",
     #integer:
     "integer": "integer",
     "integers": "integers",
@@ -87,8 +83,6 @@ TAGS = {
     "accepts": "takes",
     "get": "take",
     "gets": "takes",
-    # "input": "take",
-    # "inputs": "takes",
     #provide
     "provide": "provide",
     "provides": "provides",
@@ -96,8 +90,6 @@ TAGS = {
     "enter": "provide",
     "enters": "provides",
     "entered": "provided",
-    # "input": "provide",
-    # "inputs": "provides",
     "inputted": "provided",
     #concatenate
     "combine": "concatenate",
@@ -117,10 +109,6 @@ TAGS = {
     "added": ["concatenated","inserted"],
     "adding": ["concatenating","inserting"],
     #insert
-    # "add": "insert",
-    # "adds": "inserts",
-    # "added": "inserted",
-    # "adding": "inserting",
     "insert": "insert",
     "inserts": "inserts",
     "inserted": "inserted",
@@ -276,32 +264,27 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
 
 def main_with_args(original_dataset: str, output_path: Path):
     nlp = spacy.load("en_core_web_trf")
-    # original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
-    full_dataset = datasets.load_dataset(original_dataset, split="test")
-    middle_dataset = full_dataset.filter(lambda x: not x['first_attempt'] and not x['last_attempt'])
+    original_dataset = datasets.load_dataset(original_dataset, split="only_subsets")
     #[ ] Drop columns that seem pointless: prints, tests_passed,  total_tests, completion.  (Some of these are now stale – after substitution, we are going to get different values for these columns)
     columns_to_drop = ['prints', 'tests_passed', 'total_tests', 'completion', 'is_success','first_attempt','last_attempt','is_first_success', 'is_first_failure', 'is_last_success', 'is_last_failure'] 
 
     results = [ ]
-    for item in middle_dataset:#middle_dataset
+    for item in original_dataset:
         original_prompt = item["prompt"]
         tagged_prompt = tag_prompt(nlp, original_prompt)
         item['prompt'] = tagged_prompt
         #[ ] Single column “subset” with values first_success / first_failure / last_success / last_failure
-        # subset_value = None
-        # if item['is_first_success']:
-        #     subset_value = 'first_success' 
-        # elif item['is_last_success']:
-        #     subset_value = 'last_success'
-        # elif item['is_first_failure']:
-        #     subset_value = 'first_failure'
-        # elif item['is_last_failure']:
-        #     subset_value = 'last_failure'
-        # else:
-        #     raise ValueError("No subset value found")
-        subset_value = 'middle_failure'
-        if item['is_success']:
-            subset_value = 'middle_success'
+        subset_value = None
+        if item['is_first_success']:
+            subset_value = 'first_success' 
+        elif item['is_last_success']:
+            subset_value = 'last_success'
+        elif item['is_first_failure']:
+            subset_value = 'first_failure'
+        elif item['is_last_failure']:
+            subset_value = 'last_failure'
+        else:
+            raise ValueError("No subset value found")
         item['subset'] = subset_value
         # Drop columns that seem pointless
         for column in columns_to_drop:

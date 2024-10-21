@@ -46,8 +46,6 @@ echo "$subst_to_run" | jq -c 'to_entries[]' | while read -r item; do
     for TARGET in "${value_array[@]}"; do
         TARGET=$(echo "$TARGET" | xargs)  # Trim whitespace
         CATEGORY=$key
-        # ./bin/prepare_subst.sh "${CATEGORY}" "${TARGET}" ${SPLIT}
-        # echo "Preparing substitution: ${key} -> ${value}"
         # Submit the job and capture the job ID
         if [ -z "$previous_job_id" ]; then
             job_id=$(sbatch ./bin/run_generation.sh "${CATEGORY}" "${TARGET}" ${SPLIT} | awk '{print $4}')

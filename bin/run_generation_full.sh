@@ -31,4 +31,10 @@ python3 -m prl_ml.batched_lm_generation.vllm_base \
     --batch-size 100 \
     --extra-columns __index_level_0__,problem,entrypoint,assertions,username,submitted_text,prompt
 
+echo "Formating..."
+python3 -m prl_ml.batched_lm_generation.multiple_format $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/multiple --tests-field assertions --language py`
+
+echo "Executing..."
+sbatch /work/arjunguha-research-group/arjun/jobs/exec_multipl-e.sbatch $EXPERIMENT_DIR/multiple`
+
 echo "Done."

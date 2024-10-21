@@ -30,7 +30,6 @@ import json
 print(json.dumps(subst_to_run))
 EOF
 )
-previous_job_id=""
 
 # Parse the Python JSON output back into bash and run commands for each substitution
 echo "$subst_to_run" | jq -c 'to_entries[]' | while read -r item; do
@@ -44,8 +43,8 @@ echo "$subst_to_run" | jq -c 'to_entries[]' | while read -r item; do
     for TARGET in "${value_array[@]}"; do
         TARGET=$(echo "$TARGET" | xargs)  # Trim whitespace
         CATEGORY=$key
-        EXPERIMENT_DIR="generation_experiments/generations_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}"
-        python3 -m prl_ml.batched_lm_generation.multiple_format $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/multiple --tests-field assertions --language py
-        sbatch /work/arjunguha-research-group/arjun/jobs/exec_multipl-e.sbatch $EXPERIMENT_DIR/multiple
+        ./bin/prepare_subst.sh "${CATEGORY}" "${TARGET}" ${SPLIT}
+        echo "Preparing substitution: ${CATEGORY} -> ${TARGET}"
+        
     done
 done

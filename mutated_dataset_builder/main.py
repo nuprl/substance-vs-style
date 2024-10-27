@@ -5,199 +5,126 @@ import json
 import argparse
 import re
 
-# For each KEY:VALUE pair of TAGS, when we see the word KEY in the prompt, we tag it
-# with VALUE using tag_prompt.
+# TAGS is a dictionary that maps a word's variations to the corresponding tagging category's variations.
+# The Key is a word's base form, and the value is a list of dictionaries. Each dictionary has two keys: "variant" is the variation of this base word, and "category" is the variation of the category that this base word should be tagged as.
+# For each word in a prompt, if we find this word in one of the variations of a base word, we tag it with the corresponding category's variation.
+# eg. If we see the word "phrases" in a prompt, we tag it with "$strings:phrases$" because "phrases" is a variation of the base word "phrase", and should be tagged as "strings", the correct variation of the category "string".
 #See charlie_sysnonyms.csv
 TAGS = {
-    #string:
-    "word": "string",
-    "words": "strings",
-    "phrase": "string",
-    "phrases": "strings",
-    "string": "string",
-    "strings": "strings",
-    "set of characters": "string",
-    "sets of characters": "strings",
-    "character": "string",
-    "characters": "strings",
-    #list:
-    "brackets": ["list","lists"],
-    "set of brackets": "list",
-    "sets of brackets": "lists",
-    "set": "list",
-    "sets": "lists",
-    "list": "list",
-    "lists": "lists",
-    "array": "list",
-    "arrays": "lists",
-    "array list": "list",
-    "array lists": "lists",
-    #dictionary:
-    "map": "dictionary",
-    "maps": "dictionaries",
-    "dictionary": "dictionary",
-    "dictionaries": "dictionaries",
-    #integer:
-    "integer": "integer",
-    "integers": "integers",
-    "whole number": "integer",
-    "whole numbers": "integers",
-    "int": "integer",
-    "ints": "integers",
-    #return
-    "output": "return",
-    "outputs": "returns",
-    "outputted": "returned",
-    "outputting": "returning",
-    "return": "return",
-    "returns": "returns",
-    "returned": "returned",
-    "returning": "returning",
-    "print": "return",
-    "prints": "returns", 
-    "printed": "returned",
-    "printing": "returning",
-    "produce": "return",
-    "produces": "returns",
-    "produced": "returned",
-    "producing": "returning",
-    "display": "return",
-    "displays": "returns",
-    "displayed": "returned",
-    "displaying": "returning",
-    #parameter
-    "parameter": "parameter",
-    "parameters": "parameters",
-    "argument": "parameter",
-    "arguments": "parameters",
-    "value provided": "parameter",
-    "values provided": "parameters",
-    "input": ["parameter","take","provide"],
-    "inputs": ["parameters","takes","provides"],
-    #takes
-    "take": "take",
-    "takes": "takes",
-    "bring in": "take",
-    "brings in": "takes",
-    "accept": "take",
-    "accepts": "takes",
-    "get": "take",
-    "gets": "takes",
-    #provide
-    "provide": "provide",
-    "provides": "provides",
-    "provided": "provided",
-    "enter": "provide",
-    "enters": "provides",
-    "entered": "provided",
-    "inputted": "provided",
-    #concatenate
-    "combine": "concatenate",
-    "combines": "concatenates",
-    "combined": "concatenated",
-    "combining": "concatenating",
-    "splice": "concatenate",
-    "splices": "concatenates",
-    "spliced": "concatenated",
-    "splicing": "concatenating",
-    "concatenate": "concatenate",
-    "concatenates": "concatenates",
-    "concatenated": "concatenated",
-    "concatenating": "concatenating",
-    "add": ["concatenate","insert"],
-    "adds": ["concatenates","inserts"],
-    "added": ["concatenated","inserted"],
-    "adding": ["concatenating","inserting"],
-    #insert
-    "insert": "insert",
-    "inserts": "inserts",
-    "inserted": "inserted",
-    "inserting": "inserting",
-    "attach": "insert",
-    "attaches": "inserts",
-    "attached": "inserted",
-    "attaching": "inserting",
-    "append": "insert",
-    "appends": "inserts",
-    "appended": "inserted",
-    "appending": "inserting",
-    #loop
-    "go through": "loop through",
-    "goes through": "loops through",
-    "run through": "loop through",
-    "runs through": "loops through",
-    "iterate through": "loop through",
-    "iterates through": "loops through",
-    "loop through": "loop through",
-    "loops through": "loops through",
-    "run a for loop through": "loop through",
-    "runs a for loop through": "loops through",
-    "look through": "loop through",
-    "looks through": "loops through",
-    "execute a for loop with": "loop through",
-    "executes a for loop with": "loops through",
-    #skip
-    "skip": "skip",
-    "skips": "skips",
-    "skipped": "skipped",
-    "skipping": "skipping",
-    "avoid": "skip",
-    "avoids": "skips",
-    "avoided": "skipped",
-    "avoiding": "skipping",
-    "neglect": "skip",
-    "neglects": "skips",
-    "neglected": "skipped",
-    "neglecting": "skipping",
-    "ignore": "skip",
-    "ignores": "skips",
-    "ignored": "skipped",
-    "ignoring": "skipping",
-    "remove": "skip",
-    "removes": "skips",
-    "removed": "skipped",
-    "removing": "skipping",
-    #typecast
-    "convert": "typecast",
-    "converts": "typecasts",
-    "converted": "typecasted",
-    "converting": "typecasting",
-    "cast": "typecast",
-    "casts": "typecasts",
-    "casted": "typecasted",
-    "casting": "typecasting",
-    "change": "typecast",
-    "changes": "typecasts",
-    "changed": "typecasted",
-    "changing": "typecasting",
-    "type cast": "typecast",
-    "type casts": "typecasts",
-    "type casted": "typecasted",
-    "type casting": "typecasting",
-    "cast": "typecast",
-    "casts": "typecasts",
-    "casted": "typecasted",
-    "casting": "typecasting",
-    "typecast": "typecast",
-    "typecasts": "typecasts",
-    "typecasted": "typecasted",
-    "typecasting": "typecasting",
-    #key
-    "key": "key",
-    "keys": "keys",
-    "item": "key",
-    "items": "keys",
-    "entry": "key",
-    "entries": "keys",
-    "attribute": "key",
-    "attributes": "keys",
-    "part": "key",
-    "parts": "keys",
-    "element": "key",
-    "elements": "keys",
-    "variable": "key",
-    "variables": "keys",
+    # "string": ["string","word","phrase","set of characters","character"],
+    "string":[{"variant":"string","category":"string"},{"variant":"strings","category":"strings"}],
+    "word":[{"variant":"word","category":"string"},{"variant":"words","category":"strings"}],
+    "phrase":[{"variant":"phrase","category":"string"},{"variant":"phrases","category":"strings"}],
+    "set of characters":[{"variant":"set of characters","category":"string"},{"variant":"sets of characters","category":"strings"}],
+    "character":[{"variant":"character","category":"string"},{"variant":"characters","category":"strings"}],
+
+    # "list":["brackets","set of brackets","set","list","array","array list"],
+    "brackets":[{"variant":"brackets","category":"list"},{"variant":"brackets","category":"lists"}],
+    "set of brackets":[{"variant":"set of brackets","category":"list"},{"variant":"sets of brackets","category":"lists"}],
+    "set":[{"variant":"set","category":"list"},{"variant":"sets","category":"lists"}],
+    "list":[{"variant":"list","category":"list"},{"variant":"lists","category":"lists"}],
+    "array":[{"variant":"array","category":"list"},{"variant":"arrays","category":"lists"}],
+    "array list":[{"variant":"array list","category":"list"},{"variant":"array lists","category":"lists"}],
+
+    # "dictionary":["map","dictionary"],
+    "map":[{"variant":"map","category":"dictionary"},{"variant":"maps","category":"dictionaries"}],
+    "dictionary":[{"variant":"dictionary","category":"dictionary"},{"variant":"dictionaries","category":"dictionaries"}],
+
+    # "integer": ["integer","whole number","int"],
+    "integer":[{"variant":"integer","category":"integer"},{"variant":"integers","category":"integers"}],
+    "whole number":[{"variant":"whole number","category":"integer"},{"variant":"whole numbers","category":"integers"}],
+    "int":[{"variant":"int","category":"integer"},{"variant":"ints","category":"integers"}],
+
+    # "return":["output","return","print","produce","display"],
+    "output":[{"variant":"output","category":"return"},{"variant":"outputs","category":"returns"}, {"variant":"outputted","category":"returned"}, {"variant":"outputting","category":"returning"}],
+    "return":[{"variant":"return","category":"return"},{"variant":"returns","category":"returns"}, {"variant":"returned","category":"returned"}, {"variant":"returning","category":"returning"}],
+    "print":[{"variant":"print","category":"return"},{"variant":"prints","category":"returns"}, {"variant":"printed","category":"returned"}, {"variant":"printing","category":"returning"}],
+    "produce":[{"variant":"produce","category":"return"},{"variant":"produces","category":"returns"}, {"variant":"produced","category":"returned"}, {"variant":"producing","category":"returning"}],
+    "display":[{"variant":"display","category":"return"},{"variant":"displays","category":"returns"}, {"variant":"displayed","category":"returned"}, {"variant":"displaying","category":"returning"}],
+
+    # "parameter": ["parameter","argument","value provided","input"],
+    "parameter":[{"variant":"parameter","category":"parameter"},{"variant":"parameters","category":"arguments"}],
+    "argument":[{"variant":"argument","category":"parameter"},{"variant":"arguments","category":"arguments"}],
+    "value provided":[{"variant":"value provided","category":"parameter"},{"variant":"values provided","category":"arguments"}],
+    "input":[{"variant":"input","category":"parameter"},{"variant":"inputs","category":"arguments"}],
+
+    # "take": ["take","bring in","accept","get"],
+    "take":[{"variant":"take","category":"take"},{"variant":"takes","category":"takes"}],
+    "bring in":[{"variant":"bring in","category":"take"},{"variant":"brings in","category":"takes"}],
+    "accept":[{"variant":"accept","category":"take"},{"variant":"accepts","category":"takes"}],
+    "get":[{"variant":"get","category":"take"},{"variant":"gets","category":"takes"}],
+
+    # "provide":["provide","enter","input"],
+    "provide":[{"variant":"provide","category":"provide"},{"variant":"provides","category":"provides"}, {"variant":"provided","category":"provided"}],
+    "enter":[{"variant":"enter","category":"provide"},{"variant":"enters","category":"provides"}, {"variant":"entered","category":"provided"}],
+    "input":[{"variant":"input","category":"provide"},{"variant":"inputs","category":"provides"}, {"variant":"inputted","category":"provided"}],
+
+    # "concatenate": ["combine","splice","concatenate","add"],
+    "combine":[{"variant":"combine","category":"concatenate"},{"variant":"combines","category":"concatenates"}, {"variant":"combined","category":"concatenated"}, {"variant":"combining","category":"concatenating"}],
+    "splice":[{"variant":"splice","category":"concatenate"},{"variant":"splices","category":"concatenates"}, {"variant":"spliced","category":"concatenated"}, {"variant":"splicing","category":"concatenating"}],
+    "concatenate":[{"variant":"concatenate","category":"concatenate"},{"variant":"concatenates","category":"concatenates"}, {"variant":"concatenated","category":"concatenated"}, {"variant":"concatenating","category":"concatenating"}],
+    "add":[{"variant":"add","category":"concatenate"},{"variant":"adds","category":"concatenates"}, {"variant":"added","category":"concatenated"}, {"variant":"adding","category":"concatenating"}],
+
+    # "insert": ["insert","attach","append"],
+    "insert":[{"variant":"insert","category":"insert"},{"variant":"inserts","category":"inserts"}, {"variant":"inserted","category":"inserted"}, {"variant":"inserting","category":"inserting"}],
+    "attach":[{"variant":"attach","category":"insert"},{"variant":"attaches","category":"inserts"}, {"variant":"attached","category":"inserted"}, {"variant":"attaching","category":"inserting"}],
+    "append":[{"variant":"append","category":"insert"},{"variant":"appends","category":"inserts"}, {"variant":"appended","category":"inserted"}, {"variant":"appending","category":"inserting"}],
+
+    # "loop through": ["go through","run through","iterate through","loop through","run a for loop through","look through","execute a for loop with"],
+    "go through":[{"variant":"go through","category":"loop through"},{"variant":"goes through","category":"loops through"}],
+    "run through":[{"variant":"run through","category":"loop through"},{"variant":"runs through","category":"loops through"}],
+    "iterate through":[{"variant":"iterate through","category":"loop through"},{"variant":"iterates through","category":"loops through"}],
+    "loop through":[{"variant":"loop through","category":"loop through"},{"variant":"loops through","category":"loops through"}],
+    "run a for loop through":[{"variant":"run a for loop through","category":"loop through"},{"variant":"runs a for loop through","category":"loops through"}],
+    "look through":[{"variant":"look through","category":"loop through"},{"variant":"looks through","category":"loops through"}],
+    "execute a for loop with":[{"variant":"execute a for loop with","category":"loop through"},{"variant":"executes a for loop with","category":"loops through"}],
+
+    # "skip": ["skip","avoid","neglect","ignore","remove"],
+    "skip":[{"variant":"skip","category":"skip"},{"variant":"skips","category":"skips"}, {"variant":"skipped","category":"skipped"}, {"variant":"skipping","category":"skipping"}],
+    "avoid":[{"variant":"avoid","category":"skip"},{"variant":"avoids","category":"skips"}, {"variant":"avoided","category":"skipped"}, {"variant":"avoiding","category":"skipping"}],
+    "neglect":[{"variant":"neglect","category":"skip"},{"variant":"neglects","category":"skips"}, {"variant":"neglected","category":"skipped"}, {"variant":"neglecting","category":"skipping"}],
+    "ignore":[{"variant":"ignore","category":"skip"},{"variant":"ignores","category":"skips"}, {"variant":"ignored","category":"skipped"}, {"variant":"ignoring","category":"skipping"}],
+    "remove":[{"variant":"remove","category":"skip"},{"variant":"removes","category":"skips"}, {"variant":"removed","category":"skipped"}, {"variant":"removing","category":"skipping"}],
+
+    # "typecast": ["convert","change","type cast","cast","typecast"],
+    "convert":[{"variant":"convert","category":"typecast"},{"variant":"converts","category":"typecasts"}, {"variant":"converted","category":"typecasted"}, {"variant":"converting","category":"typecasting"}],
+    "change":[{"variant":"change","category":"typecast"},{"variant":"changes","category":"typecasts"}, {"variant":"changed","category":"typecasted"}, {"variant":"changing","category":"typecasting"}],
+    "type cast":[{"variant":"type cast","category":"typecast"},{"variant":"type casts","category":"typecasts"}, {"variant":"type casted","category":"typecasted"}, {"variant":"type casting","category":"typecasting"}],
+    "cast":[{"variant":"cast","category":"typecast"},{"variant":"casts","category":"typecasts"}, {"variant":"casted","category":"typecasted"}, {"variant":"casting","category":"typecasting"}],
+    "typecast":[{"variant":"typecast","category":"typecast"},{"variant":"typecasts","category":"typecasts"}, {"variant":"typecasted","category":"typecasted"}, {"variant":"typecasting","category":"typecasting"}],
+
+    # "key": ["key","item","entry","attribute","part","element","variable"],
+    "key":[{"variant":"key","category":"key"},{"variant":"keys","category":"keys"}],
+    "item":[{"variant":"item","category":"key"},{"variant":"items","category":"keys"}],
+    "entry":[{"variant":"entry","category":"key"},{"variant":"entries","category":"keys"}],
+    "attribute":[{"variant":"attribute","category":"key"},{"variant":"attributes","category":"keys"}],
+    "part":[{"variant":"part","category":"key"},{"variant":"parts","category":"keys"}],
+    "element":[{"variant":"element","category":"key"},{"variant":"elements","category":"keys"}],
+    "variable":[{"variant":"variable","category":"key"},{"variant":"variables","category":"keys"}],
 }
+
+
+def search_word_tag(doc,i,last_end,phrase,length,new_prompt):
+    found = False
+    for word,variations in TAGS.items():
+        for variation in variations:
+            if phrase == variation['variant']:
+                category = variation['category']
+                new_prompt.append(f"${category}:{phrase}$")
+                last_end = doc[i+length-1].idx + len(doc[i+length-1].text)
+                i += length
+                found=True
+                return found,i,last_end,new_prompt
+            elif phrase.lower() == variation['variant']:
+                category = variation['category']
+                uppercategory = category[0].upper() + category[1:]
+                new_prompt.append(f"${uppercategory}:{phrase}$")
+                last_end = doc[i+length-1].idx + len(doc[i+length-1].text)
+                i += length
+                found=True
+                return found,i,last_end,new_prompt
+    return found,i,last_end,new_prompt
+
 
     
 def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
@@ -226,32 +153,25 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
         if doc[i].idx > last_end:
             new_prompt.append(prompt[last_end:doc[i].idx])
 
-        # Check for five-token phrases
         if i < len(doc) - 4:
             five_token_phrase = f"{doc[i].text} {doc[i+1].text} {doc[i+2].text} {doc[i+3].text} {doc[i+4].text}"
-            if five_token_phrase in TAGS:
-                new_prompt.append(f"${TAGS[five_token_phrase]}:{five_token_phrase}$")
-                last_end = doc[i+4].idx + len(doc[i+4].text)
-                i += 5
+            found,i,last_end,new_prompt=search_word_tag(doc,i,last_end,five_token_phrase,5,new_prompt)
+            if found:
                 continue
+
         # Check for two-token phrases
         if i < len(doc) - 1:
             two_token_phrase = f"{doc[i].text} {doc[i+1].text}"
-            if two_token_phrase in TAGS:
-                new_prompt.append(f"${TAGS[two_token_phrase]}:{two_token_phrase}$")
-                last_end = doc[i+1].idx + len(doc[i+1].text)
-                i += 2
+            found,i,last_end,new_prompt=search_word_tag(doc,i,last_end,two_token_phrase,2,new_prompt)
+            if found:
                 continue
         
         # Handle single-token categories
         token = doc[i]
-        if token.text in TAGS:
-            new_prompt.append(f"${TAGS[token.text]}:{token.text}$")
-        elif token.text.lower() in TAGS:
-            tag = TAGS[token.text.lower()]
-            uppercasetag = tag[0].upper() + tag[1:]
-            new_prompt.append(f"${uppercasetag}:{token.text}$")
-        else:
+        phrase = token.text
+        found,i,last_end,new_prompt=search_word_tag(doc,i,last_end,phrase,1,new_prompt)
+        
+        if not found:
             new_prompt.append(token.text)
         
         last_end = token.idx + len(token.text)
@@ -261,6 +181,7 @@ def tag_prompt(nlp: spacy.Language, prompt: str) -> str:
         new_prompt.append(prompt[last_end:])
     modified_prompt = "".join(new_prompt)
     return modified_prompt
+
 
 def main_with_args(original_dataset: str, output_path: Path):
     nlp = spacy.load("en_core_web_trf")
@@ -308,7 +229,7 @@ def main_with_args(original_dataset: str, output_path: Path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--original_dataset", type=str, default="wellesley-easel/StudentEval")
-    parser.add_argument("--output_path", type=Path, default=Path("tagged_prompts_middle.jsonl"))
+    parser.add_argument("--output_path", type=Path, default=Path("tagged_prompts_try.jsonl"))
     args = parser.parse_args()
     main_with_args(args.original_dataset, args.output_path)
 

@@ -15,8 +15,9 @@ run `./bin/eval_all.sh`
 ## Step 4: Compute Pass 1
 Compute the original and updated Pass@1 of the substituted prompts.
 
-To get the original Pass@1, we need to run generations for the original unmodified studenteval dataset. Run `./bin/run_generation_full.sh`. Modify the MODEL and the EXPERIMENT_DIR.
+To get the original Pass@1, we need to run generations for the original unmodified studenteval dataset. Run `./bin/run_generation_full.sh`. Modify the MODEL and the EXPERIMENT_DIR. To get pass@1 of orig studenteval, run `python3 pass_1_studenteval_orig.py --orig_dir EXPERIMENT_DIR`
+eg. `python3 pass_1_studenteval_orig.py --orig_dir /work/arjunguha-research-group/zi.wu/studenteval_nlp/generation_experiments/gpt4o-mini/studenteval/extracted_jsons`
 
 Then run `./bin/pass_1.sh EXPERIMENT_DIR` with the EXPERIMENT_DIR being where the generations of the original studenteval are stored.
-
+eg. `./bin/pass_1.sh /work/arjunguha-research-group/zi.wu/studenteval_nlp/generation_experiments/gpt4o-mini`
 This will print out the pass 1 for all subsitution experiments.

@@ -125,7 +125,7 @@ def main():
                         action="store_true", help="Suppress the header")
     parser.add_argument("-k", type=int, default=1, help="The value of k")
     parser.add_argument(
-        "--orig_dir", type=str,  help="Directory with full results of orig studenteval", default="generations_studenteval/multiple")
+        "--orig_dir", type=str,  help="Directory with full results of orig studenteval")
     parser.add_argument(
         "dirs", type=str,  help="Directories with results. ", nargs="+")
     args = parser.parse_args()
@@ -136,9 +136,10 @@ def main():
     if not args.suppress_header:
         print("Dataset,Original_Pass@1,Updated_Pass@1,NumProblems,Delta_Pass@1")
     for d in args.dirs:
-        name = d.split("/")[-2] if d.split("/")[-1] != "" else d.split("/")[-3]
+        name = d.split("/")[-2] if d.split("/")[-1] != "" else d.split("/")[-3]     
         results = [for_file(p) for p in itertools.chain(
             Path(d).glob("*.results.json"), Path(d).glob("*.results.json.gz"))]
+        # print("results",results)
         # results = {r["__index_level_0__"]: r for r in results if r is not None}
         # results = list(results.values())
         # indices = [r["__index_level_0__"] for r in results]

@@ -31,9 +31,9 @@ python3 -m prl_ml.batched_lm_generation.gpt4o_chatcoder \
 
 
 echo "Formating..."
-python3 -m prl_ml.batched_lm_generation.multiple_format $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/multiple --tests-field assertions --language py`
+python3 -m prl_ml.batched_lm_generation.completion_extraction $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/extracted_jsons
 
 echo "Executing..."
-sbatch /work/arjunguha-research-group/arjun/jobs/exec_multipl-e.sbatch $EXPERIMENT_DIR/multiple`
+sbatch python3 -m prl_ml.batched_lm_generation.execute_python --experiment-dir $EXPERIMENT_DIR/extracted_jsons
 
 echo "Done."

@@ -17,8 +17,8 @@ CATEGORY=$1
 TARGET=$2
 SPLIT=$3
     
-DATASET_STR="jsonl:${EXPERIMENT_REPO}/subst_experiments/experiment_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}.jsonl"
-EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/generations_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}"
+DATASET_STR="jsonl:${EXPERIMENT_REPO}/subst_experiments/experiment_${SPLIT}_${CATEGORY// /_}.${TARGET// /_}.jsonl"
+EXPERIMENT_DIR="${EXPERIMENT_REPO}/generation_experiments/generations_${SPLIT}_${CATEGORY// /_}.${TARGET// /_}"
 
 mkdir -p $EXPERIMENT_DIR
     

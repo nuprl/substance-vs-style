@@ -44,7 +44,7 @@ echo "$subst_to_run" | jq -c 'to_entries[]' | while read -r item; do
     for TARGET in "${value_array[@]}"; do
         TARGET=$(echo "$TARGET" | xargs)  # Trim whitespace
         CATEGORY=$key
-        EXPERIMENT_DIR="generation_experiments/gpt4o-mini/interventions/generations_${SPLIT}_${CATEGORY// /_}_${TARGET// /_}"
+        EXPERIMENT_DIR="generation_experiments/gpt4o-mini/interventions/generations_${SPLIT}_${CATEGORY// /_}.${TARGET// /_}"
         python3 -m prl_ml.batched_lm_generation.completion_extraction $EXPERIMENT_DIR/completions_jsons $EXPERIMENT_DIR/extracted_jsons
         sbatch --wrap="python3 -m prl_ml.batched_lm_generation.execute_python --experiment-dir \"${EXPERIMENT_DIR}/extracted_jsons\""
     done

@@ -43,10 +43,10 @@ TAGS = {
     "display":[{"variant":"display","category":"return"},{"variant":"displays","category":"returns"}, {"variant":"displayed","category":"returned"}, {"variant":"displaying","category":"returning"}],
 
     # "parameter": ["parameter","argument","value provided","input"],
-    "parameter":[{"variant":"parameter","category":"parameter"},{"variant":"parameters","category":"arguments"}],
-    "argument":[{"variant":"argument","category":"parameter"},{"variant":"arguments","category":"arguments"}],
-    "value provided":[{"variant":"value provided","category":"parameter"},{"variant":"values provided","category":"arguments"}],
-    "input":[{"variant":"input","category":"parameter"},{"variant":"inputs","category":"arguments"}],
+    "parameter":[{"variant":"parameter","category":"parameter"},{"variant":"parameters","category":"parameters"}],
+    "argument":[{"variant":"argument","category":"parameter"},{"variant":"arguments","category":"parameters"}],
+    "value provided":[{"variant":"value provided","category":"parameter"},{"variant":"values provided","category":"parameters"}],
+    "input":[{"variant":"input","category":"parameter"},{"variant":"inputs","category":"parameters"}],
 
     # "take": ["take","bring in","accept","get"],
     "take":[{"variant":"take","category":"take"},{"variant":"takes","category":"takes"}],

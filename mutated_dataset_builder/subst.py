@@ -13,6 +13,8 @@ from main import TAGS
 def build_CATEGORY_V(TAGS):
     CATEGORY_V = {}
     for word,variations in TAGS.items():
+        if word == "input" or word == "add":
+            continue
         category = variations[0]['category']
         if category not in CATEGORY_V:
             CATEGORY_V[category] = []
@@ -28,6 +30,7 @@ def get_word_variation(word: str, category: str):
     for base_word, variations in TAGS.items():
         if base_word == word:
             for variation in variations:
+                # print("variation",variation)
                 if variation['category'] == category.lower():
                     replace=variation['variant']
                     break

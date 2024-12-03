@@ -46,29 +46,31 @@ TAGS = {
     "parameter":[{"variant":"parameter","category":"parameter"},{"variant":"parameters","category":"parameters"}],
     "argument":[{"variant":"argument","category":"parameter"},{"variant":"arguments","category":"parameters"}],
     "value provided":[{"variant":"value provided","category":"parameter"},{"variant":"values provided","category":"parameters"}],
-    "input":[{"variant":"input","category":"parameter"},{"variant":"inputs","category":"parameters"}],
+    "input":[{"variant":"input","category":"parameter"},{"variant":"inputs","category":"parameters"},{"variant":"input","category":"take"},{"variant":"inputs","category":"takes"},{"variant":"input","category":"provide"},{"variant":"inputs","category":"provides"}, {"variant":"inputted","category":"provided"}],
 
-    # "take": ["take","bring in","accept","get"],
+    # "take": ["take","bring in","accept","get","input"],
     "take":[{"variant":"take","category":"take"},{"variant":"takes","category":"takes"}],
     "bring in":[{"variant":"bring in","category":"take"},{"variant":"brings in","category":"takes"}],
     "accept":[{"variant":"accept","category":"take"},{"variant":"accepts","category":"takes"}],
     "get":[{"variant":"get","category":"take"},{"variant":"gets","category":"takes"}],
+    # "input":[{"variant":"input","category":"take"},{"variant":"inputs","category":"takes"}],
 
     # "provide":["provide","enter","input"],
     "provide":[{"variant":"provide","category":"provide"},{"variant":"provides","category":"provides"}, {"variant":"provided","category":"provided"}],
     "enter":[{"variant":"enter","category":"provide"},{"variant":"enters","category":"provides"}, {"variant":"entered","category":"provided"}],
-    "input":[{"variant":"input","category":"provide"},{"variant":"inputs","category":"provides"}, {"variant":"inputted","category":"provided"}],
+    # "input":[{"variant":"input","category":"provide"},{"variant":"inputs","category":"provides"}, {"variant":"inputted","category":"provided"}],
 
     # "concatenate": ["combine","splice","concatenate","add"],
     "combine":[{"variant":"combine","category":"concatenate"},{"variant":"combines","category":"concatenates"}, {"variant":"combined","category":"concatenated"}, {"variant":"combining","category":"concatenating"}],
     "splice":[{"variant":"splice","category":"concatenate"},{"variant":"splices","category":"concatenates"}, {"variant":"spliced","category":"concatenated"}, {"variant":"splicing","category":"concatenating"}],
     "concatenate":[{"variant":"concatenate","category":"concatenate"},{"variant":"concatenates","category":"concatenates"}, {"variant":"concatenated","category":"concatenated"}, {"variant":"concatenating","category":"concatenating"}],
-    "add":[{"variant":"add","category":"concatenate"},{"variant":"adds","category":"concatenates"}, {"variant":"added","category":"concatenated"}, {"variant":"adding","category":"concatenating"}],
+    "add":[{"variant":"add","category":"concatenate"},{"variant":"adds","category":"concatenates"}, {"variant":"added","category":"concatenated"}, {"variant":"adding","category":"concatenating"},{"variant":"add","category":"insert"},{"variant":"adds","category":"inserts"}, {"variant":"added","category":"inserted"}, {"variant":"adding","category":"inserting"}],
 
-    # "insert": ["insert","attach","append"],
+    # "insert": ["insert","attach","append","add"],
     "insert":[{"variant":"insert","category":"insert"},{"variant":"inserts","category":"inserts"}, {"variant":"inserted","category":"inserted"}, {"variant":"inserting","category":"inserting"}],
     "attach":[{"variant":"attach","category":"insert"},{"variant":"attaches","category":"inserts"}, {"variant":"attached","category":"inserted"}, {"variant":"attaching","category":"inserting"}],
     "append":[{"variant":"append","category":"insert"},{"variant":"appends","category":"inserts"}, {"variant":"appended","category":"inserted"}, {"variant":"appending","category":"inserting"}],
+    # "add":[{"variant":"add","category":"insert"},{"variant":"adds","category":"inserts"}, {"variant":"added","category":"inserted"}, {"variant":"adding","category":"inserting"}],
 
     # "loop through": ["go through","run through","iterate through","loop through","run a for loop through","look through","execute a for loop with"],
     "go through":[{"variant":"go through","category":"loop through"},{"variant":"goes through","category":"loops through"}],
@@ -102,6 +104,7 @@ TAGS = {
     "element":[{"variant":"element","category":"key"},{"variant":"elements","category":"keys"}],
     "variable":[{"variant":"variable","category":"key"},{"variant":"variables","category":"keys"}],
 }
+
 
 
 def search_word_tag(doc,i,last_end,phrase,length,new_prompt):

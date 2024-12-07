@@ -12,9 +12,6 @@ A directory named `generations_${SPLIT}_${CATEGORY}_${TARGET}` that has the gene
 To evaluate the result, we convert the generation into MultiPLE format to execute the generated code and save outputs.
 run `./bin/eval_all.sh`
 
-For chatcoder:
-`./bin/eval_all_chatcoder.sh`
-
 ## Step 4: Compute Pass 1
 Compute the original and updated Pass@1 of the substituted prompts.
 

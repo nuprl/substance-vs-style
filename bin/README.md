@@ -12,6 +12,9 @@ A directory named `generations_${SPLIT}_${CATEGORY}_${TARGET}` that has the gene
 To evaluate the result, we convert the generation into MultiPLE format to execute the generated code and save outputs.
 run `./bin/eval_all.sh`
 
+For chatcoder:
+`./bin/eval_all_chatcoder.sh`
+
 ## Step 4: Compute Pass 1
 Compute the original and updated Pass@1 of the substituted prompts.
 
@@ -21,3 +24,5 @@ eg. `python3 pass_1_studenteval_orig.py --orig_dir /work/arjunguha-research-grou
 Then run `./bin/pass_1.sh EXPERIMENT_DIR` with the EXPERIMENT_DIR being where the generations of the original studenteval are stored.
 eg. `./bin/pass_1.sh /work/arjunguha-research-group/zi.wu/studenteval_nlp/generation_experiments/gpt4o-mini`
 This will print out the pass 1 for all subsitution experiments.
+
+OR. Run the ipynb in at causal_intervention/Generate heatmaps and inputs for mixed-effects models.ipynb. 

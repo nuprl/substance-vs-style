@@ -1,24 +1,28 @@
-from collections import defaultdict
 import glob
-import re
 import pandas as pd
-from re import L
-import json
 import argparse
 import os
-import yaml
 import glob
 import pandas as pd
-import networkx as nx
-from .analysis_utils import *
-from scipy import stats
-from pathlib import Path
-from typing import List, Dict, Union, Any, Tuple
-import yaml
+from .analysis_utils import (
+    load_graph, 
+    remove_out_of_token_errors, 
+    load_problem_clues, 
+    populate_clues, 
+    conditional_prob, 
+    check_cycles, 
+    get_breakout_edge, 
+    display_pearsonr_results
+)
+from .graph import Graph
+from typing import List
 import contextlib
-from .student_edge_cases import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES
+from .student_edge_cases import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES, SUCCESS_CLUES
 
-def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
+def load_graphs_from_dir(graph_dir: str, problem_clues_yaml:str) -> List[Graph]:
+    """
+    Given a dir with graph.yamls and a problem_clues.yaml, load all graphs
+    """
     graphs = []
     for graph_yaml in glob.glob(f"{graph_dir}/*.yaml"):
         # discard any that we have not verified yet
@@ -27,59 +31,67 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
             print(f"Skipping {graph_name}")
             continue
         graph = load_graph(graph_yaml)
-        graph = remove_out_of_token_errors(graph)
+        graph = remove_out_of_token_errors(graph) # removes 13 OOT errors, so 303-13 = 290
         graph.problem_clues = load_problem_clues(problem_clues_yaml, graph.problem)
         graph = populate_clues(graph)
         graphs.append(graph)
-    
-    print(f"--- Running for problems {[g.problem for g in graphs]}")
-    
-    os.makedirs(outdir, exist_ok=True)
+    return graphs
 
+def load_terminal_edge_data(graphs: List[Graph]) -> List[dict]:
     """
-    1. Success clues
-
-    Method
-        - for each graph, we check that successful students have all clues
-    Experiment
-        - out of all successful edges, how many have all clues?
-    Result
-        This shows that success depends on substance
+    Given a list of graphs, collect details for each final edge
     """
     terminal_edge_data = []
     for graph in graphs:
         success_clues = list(SUCCESS_CLUES[graph.problem])
-        for e in graph.edges:
-            if e.state in ["success","fail"]:
-                is_success = e.state == "success"
-                if graph.problem in IMPLICIT_CLUES.keys() and \
-                    e.username in IMPLICIT_CLUES[graph.problem]:
-                    e.clues += IMPLICIT_CLUES[graph.problem][e.username]
-                has_all_clues = e.clues == success_clues
+        for student,edge_list in graph.get_student_edges().items():
+            e = max(edge_list, key=lambda x: x.attempt_id)
+            assert e.state in ["success","fail"]
+            is_success = e.state == "success"
+            # add any implicit clues
+            if graph.problem in IMPLICIT_CLUES.keys() and \
+                e.username in IMPLICIT_CLUES[graph.problem]:
+                e.clues += IMPLICIT_CLUES[graph.problem][e.username]
+            has_all_clues = set(e.clues) == set(success_clues)
 
-                terminal_edge_data.append({
-                    "problem": graph.problem,
-                    "success_clues": success_clues,
-                    "state": e.state,
-                    "clues": e.clues,
-                    "has_final_rewrite": all([str(t)[0] in ["l","m","0"] for t in e._edge_tags]),
-                    "has_final_trivial": all([t  == 0 for t in e._edge_tags]),
-                    "has_final_l": all([str(t)[0]  == "l" for t in e._edge_tags]),
-                    "has_final_m": all([str(t)[0]  == "m" for t in e._edge_tags]),
-                    "has_all_clues": has_all_clues,
-                    "has_leq_half_clues": (len(e.clues) / len(success_clues)) <= 0.5,
-                    "is_missing_clues": not has_all_clues,
-                    "is_success": is_success,
-                    "is_fail": not is_success,
-                })
+            terminal_edge_data.append({
+                "problem": graph.problem,
+                "success_clues": success_clues,
+                "username": e.username,
+                "state": e.state,
+                "clues": e.clues,
+                "has_final_rewrite": all([str(t)[0] in ["l","m","0"] for t in e._edge_tags]),
+                "has_final_trivial": all([t == 0 for t in e._edge_tags]),
+                "has_final_l": all([str(t)[0]  == "l" for t in e._edge_tags]),
+                "has_final_m": all([str(t)[0]  == "m" for t in e._edge_tags]),
+                "has_all_clues": has_all_clues,
+                "has_leq_half_clues": (len(set(e.clues)) / len(set(success_clues))) <= 0.5,
+                "is_missing_clues": not has_all_clues,
+                "is_success": is_success,
+                "is_fail": not is_success,
+            })
+    return terminal_edge_data
 
-    print("############ TERMINAL EDGE DATA ############")
+def terminal_edge_analysis(graphs: List[Graph], outdir: str):
+    """
+    Collect all students' final edges and analyse patterns. Save
+    analysis data to outdir
+    """
+    terminal_edge_data = load_terminal_edge_data(graphs)
     terminal_edge_df = pd.DataFrame(terminal_edge_data)
     terminal_edge_df.to_csv(f"{outdir}/terminal_edge.csv")
     succ_edge_df = terminal_edge_df[terminal_edge_df["state"] == "success"]
     succ_edge_df.to_csv(f"{outdir}/successful_terminal_edges.csv")
 
-    print(f"has_all_clues/ num_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].mean():.2f}")
+    print("############ TERMINAL EDGE DATA ############")
+
+    print("--- stats")
+    print("num students:", len(set(terminal_edge_df["username"])))
+    print("num problems:", len(set(terminal_edge_df["problem"])))
+    print("num students & prob:", len(terminal_edge_df.groupby(["username","problem"])))
+    print("num succ students & prob:", terminal_edge_df.groupby(["username","problem"]).agg({"is_success": "all"})["is_success"].sum())
+    
+    print(f"(succ & has_all_clues) / tot_succ: {succ_edge_df['has_all_clues'].sum()} / {len(succ_edge_df)} = {succ_edge_df['has_all_clues'].mean():.2f}")
 
     print("---- Out of all terminal edges:")
     for var_a, var_b in [("is_success","has_all_clues"), ("is_success","is_missing_clues")]:
@@ -89,7 +101,7 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     print("---- How many out of has all clues terminal edges are successful?")
     all_clues_succ = succ_edge_df['has_all_clues'].sum()
     num_all_clues = terminal_edge_df['has_all_clues'].sum()
-    print(f"Num(succ/has_all_clues): {all_clues_succ}/{num_all_clues} = {all_clues_succ/num_all_clues:.2f}")
+    print(f"(succ & has_all_clues) / has_all_clues: {all_clues_succ}/{num_all_clues} = {all_clues_succ/num_all_clues:.2f}")
 
     print("---- How many rewrite kinds out of successful terminal edges?")
     for var in ["has_final_trivial","has_final_rewrite","has_final_l","has_final_m"]:
@@ -99,39 +111,28 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     # P(had_final_m|has_final_rewrite)
     for var_a, var_b in [("has_final_m","has_final_rewrite")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, succ_edge_df)
-        print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.3f}")
+        print(f"P( {var_a} & succ | {var_b} & succ) = {prob_a_given_b:.3f}")
 
-    print("---- Out of all SUCC final rewrite edges, how many are m?")
-    final_m = (succ_edge_df['has_final_m']&succ_edge_df['has_final_rewrite']).sum()
+    print("---- Out of all SUCC final rewrite edges, how many contain m?")
+    final_m = (succ_edge_df['has_final_m'] & succ_edge_df['has_final_rewrite']).sum()
     final_rewrite = succ_edge_df['has_final_rewrite'].sum()
-    print(f"Num(m/rewrite): {final_m}/{final_rewrite} = {final_m/final_rewrite:.2f}")
+    print(f"Num(contain m & succ / have rewrite & succ): {final_m}/{final_rewrite} = {final_m/final_rewrite:.2f}")
 
-    print("---- Out of terminal edges with <= 0.5 clyes, how many are successful with final rewrite?")
+    print("---- Out of terminal edges with <= 0.5 clues, how many are successful with final rewrite?")
     # probability that final rewrite fixes a prompt with little clues
     # out of prompts with little clues, p(is_success | has_final_rewrite)
     leq_half_clues = terminal_edge_df[ terminal_edge_df["has_leq_half_clues"]]
     for var_a, var_b in [("is_success","has_final_rewrite")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, leq_half_clues)
-        print(f"little clues P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
+        print(f"out of all final edges with little clues: P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
     
     a = len(leq_half_clues[leq_half_clues["is_success"] & leq_half_clues["has_final_rewrite"]])
     b = leq_half_clues["has_final_rewrite"].sum()
-    print(f"Num(succ&final_rewrite/has final rewrite) in had_leq_half_clues: {a}/{b}={a/b:.2f}")
+    print(f"Num( succ & final_rewrite/ has final rewrite) in had_leq_half_clues: {a}/{b}={a/b:.2f}")
 
+def load_cycles_data(graphs: List[str]) -> List[dict]:
     """
-    2. Cycles
-
-    Method
-        - for each graph, we check that cycle edges are trivial edits
-        or student is missing clues
-    Experiment
-        - out of all the cyles, how many fit this? [lower bound]
-    Result
-        Shows loops are due to missing something
-
-    Show that students have a higher likelihood of giving up with cycles
-
-    `P(success | not cycle) vs P(success | cycle)`
+    For each graph, extract a summary of cycles
     """
     # dataframe [problem, cycle_num_edges, cycle_edits]
     cycles_data = []
@@ -142,9 +143,8 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
         for student in graph.get_students():
             if student in cycle_summary.keys():
                 cycles = cycle_summary[student]
-            
+                assert len(cycles) == 1, (student, graph.problem)
                 for cycle_edge_list in cycles:
-
                     # get breakout edge
                     last_edge = get_breakout_edge(graph, student, cycle_edge_list)
 
@@ -152,11 +152,11 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
                                                 for e in cycle_edge_list])
                     has_only_trivial_edits = all([all([str(t)[0] in ["0"] for t in e._edge_tags]) 
                                                 for e in cycle_edge_list])
-                    cycle_clues = [e.clues for e in cycle_edge_list]
-                    num_edits_with_missing_clues = sum([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
-                    num_trivial = sum([e._edge_tags == [0] for e in cycle_edge_list])
+                    cycle_clues = [set(e.clues) for e in cycle_edge_list]
+                    num_edits_with_missing_clues = sum([clue != set(SUCCESS_CLUES[graph.problem]) for clue in cycle_clues])
+                    num_trivial = sum([set(e._edge_tags) == set([0]) for e in cycle_edge_list])
                     num_rewrite = sum([all([str(t)[0] in ['l','m','0'] for t in e._edge_tags]) for e in cycle_edge_list])
-                    has_missing_clues = all([clue != SUCCESS_CLUES[graph.problem] for clue in cycle_clues])
+                    has_missing_clues = all([clue != set(SUCCESS_CLUES[graph.problem]) for clue in cycle_clues])
                     has_0_breakout_edge = bool(last_edge and any([str(t)[0] in ['0'] for t in last_edge._edge_tags]))
                     has_m_breakout_edge = bool(last_edge and all([str(t)[0] in ['m'] for t in last_edge._edge_tags]))
                     has_a_breakout_edge = bool(last_edge and any([str(t)[0] in ['a'] for t in last_edge._edge_tags]))
@@ -191,48 +191,43 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
                     })
             else:
                 cycles_data.append({
-                    "problem": graph.problem,
-                    "username":student,
-                    "cycle_list":[],
-                    "is_success": (student in succ_students),
-                    "cycle_num_edges": 0,
-                    "has_cycle": False,
-                    "has_long_cycle": False,
-                    "not_has_cycle": True,
-                    "cycle_num_edits_with_missing_clues": 0,
-                    "cycle_num_rewrite_edits":0,
-                    "cycle_num_trivial_edits":0,
-                    "cycle_clues": [],
-                    "cycle_edits": [],
-                    "has_breakout_edge": False,
-                    "breakout_edge_tags": [],
-                    "has_0_breakout_edge": False,
-                    "has_m_breakout_edge": False,
-                    "has_a_breakout_edge": False,
-                    "has_l_breakout_edge": False,
-                    "has_d_breakout_edge": False,
-                    "cycle_has_only_trivial_edits": False,
-                    "cycle_has_only_rewrite_edits": False,
-                    "has_substantial_edits": False,
-                    "has_missing_clues": False,
+                    "problem": graph.problem,"username":student,"cycle_list":[],"is_success": (student in succ_students),
+                    "cycle_num_edges": 0,"has_cycle": False,"has_long_cycle": False,"not_has_cycle": True,
+                    "cycle_num_edits_with_missing_clues": 0,"cycle_num_rewrite_edits":0,"cycle_num_trivial_edits":0,
+                    "cycle_clues": [],"cycle_edits": [],"has_breakout_edge": False,"breakout_edge_tags": [],
+                    "has_0_breakout_edge": False,"has_m_breakout_edge": False,"has_a_breakout_edge": False,
+                    "has_l_breakout_edge": False,"has_d_breakout_edge": False,"cycle_has_only_trivial_edits": False,
+                    "cycle_has_only_rewrite_edits": False,"has_substantial_edits": False,"has_missing_clues": False,
                     "not_has_missing_clues": False,
-
                 })
+    return cycles_data
 
-    print("\n############ ALL CASES: CYCLES DATA ############")
-
+def cycles_analysis(graphs: List[str], outdir:str):
+    """
+    Collect all students' cycles and analyse patterns. Save
+    analysis data to outdir
+    """
+    cycles_data = load_cycles_data(graphs)
     df_cycles = pd.DataFrame(cycles_data)
     df_cycles.to_csv(f"{outdir}/data_cycles.csv")
-    print("---- ALL EDGES: CYCLES")
-    print(df_cycles.value_counts("is_success"))
     
-    print("---- Of all edges:")
+    print("\n############ ALL CASES: CYCLES DATA ############")
+    print("--- stats")
+    print("num students:", len(set(df_cycles["username"])))
+    print("num problems:", len(set(df_cycles["problem"])))
+    print("num students & prob:", len(df_cycles.groupby(["username","problem"])))
+    print("num succ students & prob:", df_cycles.groupby(["username","problem"]).agg({"is_success": "all"})["is_success"].sum())
+    
+
+    print(f'(is_succ & has_cycle / tot) {(df_cycles["is_success"] & df_cycles["has_cycle"]).sum()} / {len(df_cycles)} ='+
+          f'{(df_cycles["is_success"] & df_cycles["has_cycle"]).mean():.2f}')
+    print("---- For each student/graph pair:")
+
     for var_a, var_b in [("is_success","has_cycle"), ("is_success","not_has_cycle"),
                         ("is_success","has_long_cycle"),
                         ("is_success","has_breakout_edge"),
                         ("has_breakout_edge","is_success"),
-                        ("cycle_has_only_trivial_edits", "cycle_has_only_rewrite_edits"),
-                        ]:
+                        ("cycle_has_only_trivial_edits", "cycle_has_only_rewrite_edits")]:
         prob_a, prob_b, prob_anb, prob_a_given_b = conditional_prob(var_a, var_b, df_cycles)
         print(f"P( {var_a} | {var_b}) = {prob_a_given_b:.2f}")
 
@@ -262,7 +257,6 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     num_trivial = df_has_cycles['cycle_num_trivial_edits'].sum()
     num_edits = df_has_cycles["cycle_list"].apply(lambda x: len(x)).sum()
     print(f"Num(trivial edits/ cycle edges): {num_trivial}/{num_edits}={num_trivial/num_edits:.2f}")
-    
 
     print("---- How many cycles have only REWRITE edits?")
     only_rewrite = df_has_cycles['cycle_has_only_rewrite_edits']
@@ -302,6 +296,12 @@ def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     
     corr = display_pearsonr_results(df_cycles, [("is_success","cycle_num_edges")])
     print(corr)
+
+def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
+    graphs = load_graphs_from_dir(graph_dir, problem_clues_yaml)
+    print(f"--- Running for problems {[g.problem for g in graphs]}")
+    terminal_edge_analysis(graphs, outdir)
+    cycles_analysis(graphs, outdir)
 
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)

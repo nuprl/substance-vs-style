@@ -1,0 +1,731 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - m5
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 1:\n        return 1\n    elif n == 2:\n        return\
+    \ 1\n    elif n == 13:\n        print('Hello')\n    elif n == 21:\n        print('Hello')\n\
+    \    elif n == 34:\n        print('Hello World')\n    else:\n        return fib(n-1)\
+    \ + fib(n-2)\n\nprint(fib(7))\n"
+  completion_to: "if n == 1 or n == 13 or n == 21:\n        return True\n    else:\n\
+    \        return False\n\n"
+  diff: "--- \n+++ \n@@ -7,7 +7,7 @@\n if n==1 or-13+n==13 or-21+n==21 \"\"\""
+  node_from: &id010 !Node
+    _node_tags: null
+    id: 3
+    stderr:
+    - 'IndentationError: expected an indented block after ''elif'' statement on line
+      9'
+    - 'IndentationError: expected an indented block after ''elif'' statement on line
+      9'
+    - 'IndentationError: expected an indented block after ''elif'' statement on line
+      9'
+    - 'IndentationError: expected an indented block after ''elif'' statement on line
+      9'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+  node_to: &id006 !Node
+    _node_tags: null
+    id: 4
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'True
+
+      '
+    - 'True
+
+      '
+    - 'True
+
+      '
+    - 'False
+
+      '
+  prompt_from: "def fib(n):\n    \"\"\"\n    a function check if n==1 or 13 or 21\n\
+    \    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    a function check if n==1 or n==13 or n==21\n\
+    \    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student11
+- !Edge
+  _edge_tags:
+  - m1
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  completion_to: "fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n\
+    \        a, b = b, a + b\n    return n in fib_set\n"
+  diff: "--- \n+++ \n@@ -1,16 +1,25 @@\n def fib(n): \"\"\"-If+Check inputted number+against+the+set+of+Fibonacci+numbers.+If+the+number\
+    \ is-a-Fibonacci-number,+in+the+set, return-true,-otherwise+True,+otherwise, return-false.+False.\
+    \ \"\"\""
+  node_from: &id003 !Node
+    _node_tags: null
+    id: 9
+    stderr:
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+  node_to: &id001 !Node
+    _node_tags: null
+    id: 2
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'False
+
+      '
+    - 'False
+
+      '
+    - 'False
+
+      '
+    - 'False
+
+      '
+  prompt_from: "def fib(n):\n    \"\"\"\n    If inputted number is a Fibonacci number,\
+    \ return true, otherwise return false.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check inputted number against the set of\
+    \ Fibonacci numbers. If the number is in the set, return True, otherwise, return\
+    \ False.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 2
+  clues: null
+  completion_from: "fib_set = set()\n    a, b = 0, 1\n    while b < n:\n        fib_set.add(b)\n\
+    \        a, b = b, a + b\n    return n in fib_set\n"
+  completion_to: "if n in fib_set:\n        return True\n    else:\n        return\
+    \ False\n"
+  diff: "--- \n+++ \n@@ -2,9 +2,11 @@\n fib(n): \"\"\" Check+if inputted number-against+is+in\
+    \ the set of"
+  node_from: *id001
+  node_to: &id002 !Node
+    _node_tags: null
+    id: 8
+    stderr:
+    - 'NameError: name ''fib_set'' is not defined'
+    - 'NameError: name ''fib_set'' is not defined'
+    - 'NameError: name ''fib_set'' is not defined'
+    - 'NameError: name ''fib_set'' is not defined'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check inputted number against the set\
+    \ of Fibonacci numbers. If the number is in the set, return True, otherwise, return\
+    \ False.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is in the set\
+    \ of Fibonacci numbers. If the number is in the set, return True, otherwise, return\
+    \ False.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "if n in fib_set:\n        return True\n    else:\n        return\
+    \ False\n"
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  diff: "--- \n+++ \n@@ -6,19 +6,12 @@\n inputted number is-in-the-set-of+a Fibonacci-numbers.+number.\
+    \ If-the-number-is-in-the-set,+it+is, return True, otherwise,"
+  node_from: *id002
+  node_to: *id003
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is in the set\
+    \ of Fibonacci numbers. If the number is in the set, return True, otherwise, return\
+    \ False.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True, otherwise, return False.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  diff: ''
+  node_from: *id003
+  node_to: &id004 !Node
+    _node_tags: null
+    id: 7
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'True
+
+      '
+    - 'False
+
+      '
+    - 'False
+
+      '
+    - 'False
+
+      '
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True, otherwise, return False.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True, otherwise, return False.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  diff: "--- \n+++ \n@@ -13,8 +13,14 @@\n it is, return-True,-otherwise,+True.+If+it+is+not+a+Fibonacci+number,\
+    \ return False. \"\"\""
+  node_from: *id004
+  node_to: *id003
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True, otherwise, return False.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 6
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  diff: ''
+  node_from: *id003
+  node_to: *id004
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 7
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  completion_to: "if n == 0 or n == 1:\n        return True\n    else:\n        return\
+    \ fib(n-1) + fib(n-2) == n\n"
+  diff: ''
+  node_from: *id004
+  node_to: *id004
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 8
+  clues: null
+  completion_from: "if n == 0 or n == 1:\n        return True\n    else:\n       \
+    \ return fib(n-1) + fib(n-2) == n\n"
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  diff: ''
+  node_from: *id004
+  node_to: *id003
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 9
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    elif n == 2:\n        return True\n    elif n == 3:\n        return\
+    \ True\n    elif n == 5:\n        return True\n    elif n == 8:\n        return\
+    \ True\n    elif n == 13:\n        return True\n    elif n == 21:\n        return\
+    \ True\n    elif n =="
+  completion_to: "fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n\
+    \    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n\
+    \    return n in fib_set\n"
+  diff: "--- \n+++ \n@@ -1,14 +1,23 @@\n def fib(n): \"\"\"+Put+all+possible+Fibonacci+numbers+in+a+set.\
+    \ Check if+the inputted number is-a-Fibonacci-number.+in+that+set. If it is,@@\
+    \ -18,9 +27,9 @@\n it is not-a-Fibonacci-number,+in+the+set, return False. \"\"\
+    \""
+  node_from: *id003
+  node_to: &id005 !Node
+    _node_tags: null
+    id: 5
+    stderr:
+    - ''
+    - 'KeyError: ''pop from an empty set'''
+    - 'KeyError: ''pop from an empty set'''
+    - 'KeyError: ''pop from an empty set'''
+    stdout:
+    - 'True
+
+      '
+    - ''
+    - ''
+    - ''
+  prompt_from: "def fib(n):\n    \"\"\"\n    Check if inputted number is a Fibonacci\
+    \ number. If it is, return True. If it is not a Fibonacci number, return False.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in a\
+    \ set. Check if the inputted number is in that set. If it is, return True. If\
+    \ it is not in the set, return False.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - d4
+  attempt_id: 10
+  clues: null
+  completion_from: "fib_set = set()\n    fib_set.add(0)\n    fib_set.add(1)\n    fib_set.add(1)\n\
+    \    for i in range(2, n):\n        fib_set.add(fib_set.pop() + fib_set.pop())\n\
+    \    return n in fib_set\n"
+  completion_to: "if n == 0:\n        return False\n    elif n == 1:\n        return\
+    \ True\n    else:\n        a = 0\n        b = 1\n        while b < n:\n      \
+    \      a, b = b, a + b\n        return b == n\n"
+  diff: "--- \n+++ \n@@ -1,35 +1,25 @@\n def fib(n): \"\"\"-Put-all-possible-Fibonacci-numbers-in-a-set.-Check+The+function+checks\
+    \ if the inputted number is-in-that-set.-If+a+Fibonacci+number+and+if it is,-return+returns\
+    \ True.-If+Else, it-is-not-in-the-set,-return+returns False. \"\"\""
+  node_from: *id005
+  node_to: *id006
+  prompt_from: "def fib(n):\n    \"\"\"\n    Put all possible Fibonacci numbers in\
+    \ a set. Check if the inputted number is in that set. If it is, return True. If\
+    \ it is not in the set, return False.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    The function checks if the inputted number\
+    \ is a Fibonacci number and if it is, returns True. Else, it returns False.\n\
+    \    \"\"\"\n    "
+  state: success
+  total_attempts: 11
+  username: student13
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n\
+    \    else:\n        return fib(n-1) + fib(n-2)\n"
+  diff: "--- \n+++ \n@@ -7,5 +7,9 @@\n number doesn't have-9+9,+return+true+or+false\
+    \ \"\"\""
+  node_from: &id007 !Node
+    _node_tags: null
+    id: 6
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '1
+
+      '
+    - '233
+
+      '
+    - '10946
+
+      '
+    - '4181
+
+      '
+  node_to: *id007
+  prompt_from: "def fib(n):\n    \"\"\"\n    check if a number doesn't have 9\n  \
+    \  \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    check if a number doesn't have 9, return\
+    \ true or false\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 2
+  username: student16
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n\
+    \    else:\n        return fib(n-1) + fib(n-2)\n"
+  diff: "--- \n+++ \n@@ -10,5 +10,16 @@\n value contains a+'9'+but+returns+true+if+the+value+does+not+contain+a\
+    \ 9 \"\"\""
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def fib(n):\n    \"\"\"\n    this function returns false if the value\
+    \ contains a 9\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    this function returns false if the value\
+    \ contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\
+    \n    "
+  state: neutral
+  total_attempts: 4
+  username: student2
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n\
+    \    else:\n        return fib(n-1) + fib(n-2)\n"
+  diff: "--- \n+++ \n@@ -3,6 +3,12 @@\n \"\"\" this function+returns+only+true+or+false.+It\
+    \ returns false if"
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def fib(n):\n    \"\"\"\n    this function returns false if the value\
+    \ contains a '9' but returns true if the value does not contain a 9\n    \"\"\"\
+    \n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    this function returns only true or false.\
+    \ It returns false if the value contains a '9' but returns true if the value does\
+    \ not contain a 9\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student2
+- !Edge
+  _edge_tags:
+  - m5
+  attempt_id: 3
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 19:\n        return False\n    else:\n        return True\n\
+    \nprint(fib(19))\n"
+  diff: "--- \n+++ \n@@ -14,18 +14,15 @@\n if the value-contains-a-'9'+is+19 but returns\
+    \ true if the value-does+is not-contain-a-9+19 \"\"\""
+  node_from: *id007
+  node_to: *id006
+  prompt_from: "def fib(n):\n    \"\"\"\n    this function returns only true or false.\
+    \ It returns false if the value contains a '9' but returns true if the value does\
+    \ not contain a 9\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    this function returns only true or false.\
+    \ It returns false if the value is 19 but returns true if the value is not 19\n\
+    \    \"\"\"\n    "
+  state: success
+  total_attempts: 4
+  username: student2
+- !Edge
+  _edge_tags:
+  - d1
+  - a2
+  - a5
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n in ['1','13','21']:\n        return True\n    else:\n     \
+    \   return False\n\nfib(13)\n"
+  diff: "--- \n+++ \n@@ -1,20 +1,21 @@\n def fib(n): \"\"\"-write-a-function-that-checks+check\
+    \ to see if-a+the number is part of the-fibonacci-sequence+list+['1','13','21']+and+return+a+boolean+value\
+    \ \"\"\""
+  node_from: *id007
+  node_to: *id001
+  prompt_from: "def fib(n):\n    \"\"\"\n    write a function that checks to see if\
+    \ a number is part of the fibonacci sequence \n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    check to see if the number is part of the\
+    \ list ['1','13','21'] and return a boolean value \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student22
+- !Edge
+  _edge_tags:
+  - m5
+  attempt_id: 2
+  clues: null
+  completion_from: "if n in ['1','13','21']:\n        return True\n    else:\n   \
+    \     return False\n\nfib(13)\n"
+  completion_to: "if n in [1,13,21]:\n        return True\n    else:\n        return\
+    \ False\n\nfib(1)\n"
+  diff: "--- \n+++ \n@@ -12,7 +12,7 @@\n of the list-['1','13','21']+[1,13,21] and\
+    \ return a"
+  node_from: *id001
+  node_to: *id006
+  prompt_from: "def fib(n):\n    \"\"\"\n    check to see if the number is part of\
+    \ the list ['1','13','21'] and return a boolean value \n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    check to see if the number is part of the\
+    \ list [1,13,21] and return a boolean value \n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student22
+- !Edge
+  _edge_tags:
+  - m4
+  - a6
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2)\n\nfib(10)\n"
+  completion_to: "x = 0\n    y = 1\n    for i in range(n):\n        x, y = y, x +\
+    \ y\n        if x == n:\n            return True\n        elif x > n:\n      \
+    \      return False\n\nprint(fib(7))\n"
+  diff: "--- \n+++ \n@@ -9,26 +9,45 @@\n an integer and-returns-True-if-the-integer-is-contained-on-the-list-of+then+uses+a+for+loop+to+produce\
+    \ numbers in the fibonacci sequence-and+stored+in+the+variable+x.+At+the+end+of+each+loop,+if+x+equals+the+input+integer,+return+True,+if+x+is+greater+than+the+input+integer,+return\
+    \ False-if-it-is-not \"\"\""
+  node_from: &id008 !Node
+    _node_tags: null
+    id: 0
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'True
+
+      '
+    - '377
+
+      '
+    - '17711
+
+      '
+    - '6765
+
+      '
+  node_to: *id006
+  prompt_from: "def fib(n):\n    \"\"\"\n    Write a function which takes an integer\
+    \ and returns True if the integer is contained on the list of numbers in the fibonacci\
+    \ sequence and False if it is not\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Write a function which takes an integer\
+    \ and then uses a for loop to produce numbers in the fibonacci sequence stored\
+    \ in the variable x. At the end of each loop, if x equals the input integer, return\
+    \ True, if x is greater than the input integer, return False\n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student37
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n\
+    \    else:\n        return fib(n-1) + fib(n-2)\n"
+  diff: "--- \n+++ \n@@ -7,17 +7,17 @@\n should take an-int-as-a input and return\
+    \ a Boolean+(true+or+false) expression declaring-wither+wether the input only"
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def fib(n):\n    \"\"\"\n    the function fib(n) should take an int\
+    \ as a input and return a Boolean expression declaring wither the input only contains\
+    \ 1, 2, or 3\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    the function fib(n) should take an input\
+    \ and return a Boolean (true or false) expression declaring wether the input only\
+    \ contains 1, 2, or 3\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student5
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "if n == 0:\n        return 0\n    elif n == 1:\n        return\
+    \ 1\n    else:\n        return fib(n-1) + fib(n-2)\n"
+  completion_to: "if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n\
+    \    else:\n        return fib(n-1) + fib(n-2)\n"
+  diff: "--- \n+++ \n@@ -10,14 +10,8 @@\n input and return-a-Boolean-(true-or-false)-expression-declaring-wether+true+if\
+    \ the input only@@ -26,4 +20,12 @@\n 2, or 3+and+false+if+the+input+contains+other+numbers\
+    \ \"\"\""
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def fib(n):\n    \"\"\"\n    the function fib(n) should take an input\
+    \ and return a Boolean (true or false) expression declaring wether the input only\
+    \ contains 1, 2, or 3\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    the function fib(n) should take an input\
+    \ and return true if the input only contains 1, 2, or 3 and false if the input\
+    \ contains other numbers\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student5
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 1
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) or fib(n-2)\n"
+  completion_to: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  diff: "--- \n+++ \n@@ -2,13 +2,15 @@\n fib(n): \"\"\" Returns-whether-or-not-a+True+if+the\
+    \ number is a Fibonacci-number+number,+or+False+otherwise. \"\"\""
+  node_from: &id009 !Node
+    _node_tags: null
+    id: 1
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'True
+
+      '
+    - 'True
+
+      '
+    - 'True
+
+      '
+    - 'True
+
+      '
+  node_to: *id004
+  prompt_from: "def fib(n):\n    \"\"\"\n    Returns whether or not a number is a\
+    \ Fibonacci number\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci\
+    \ number, or False otherwise.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student8
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 2
+  clues: null
+  completion_from: "if n == 0:\n        return True\n    elif n == 1:\n        return\
+    \ True\n    else:\n        return fib(n-1) + fib(n-2) == n\n"
+  completion_to: "a, b = 0, 1\n    while a <= n:\n        if a == n:\n           \
+    \ return True\n        a, b = b, a + b\n    return False\n"
+  diff: "--- \n+++ \n@@ -1,16 +1,18 @@\n def fib(n): \"\"\"-Returns-True+Checks if\
+    \ the-number+input+value is-a+the+sum+of+any+two+consecutive Fibonacci-number,-or-False-otherwise.+numbers\
+    \ \"\"\""
+  node_from: *id004
+  node_to: *id006
+  prompt_from: "def fib(n):\n    \"\"\"\n    Returns True if the number is a Fibonacci\
+    \ number, or False otherwise.\n    \"\"\"\n    "
+  prompt_to: "def fib(n):\n    \"\"\"\n    Checks if the input value is the sum of\
+    \ any two consecutive Fibonacci numbers\n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student8
+nodes:
+- *id008
+- *id009
+- *id001
+- *id010
+- *id006
+- *id005
+- *id007
+- *id004
+- *id002
+- *id003
+problem: fib
+problem_clues: {}
+student_clues_tracker: {}
+student_colors: {}
+student_start_node_tags:
+  student11:
+  - 5
+  student13:
+  - 1
+  - 2
+  student16:
+  - 5
+  student2:
+  - 2
+  - 5
+  student22:
+  - 1
+  student37:
+  - 1
+  - 2
+  - 4
+  student5:
+  - 2
+  - 5
+  student8:
+  - 1

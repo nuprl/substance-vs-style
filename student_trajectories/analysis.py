@@ -215,8 +215,10 @@ def cycles_analysis(graphs: List[str], outdir:str):
     print("--- stats")
     print("num students:", len(set(df_cycles["username"])))
     print("num problems:", len(set(df_cycles["problem"])))
+    print("num has cycle:", df_cycles["has_cycle"].sum())
+    print("len:", len(df_cycles))
     print("num students & prob:", len(df_cycles.groupby(["username","problem"])))
-    print("num succ students & prob:", df_cycles.groupby(["username","problem"]).agg({"is_success": "all"})["is_success"].sum())
+    print("num succ students & prob:", df_cycles.groupby(["username","problem"]).agg({"is_success": "sum"})["is_success"].sum())
     
 
     print(f'(is_succ & has_cycle / tot) {(df_cycles["is_success"] & df_cycles["has_cycle"]).sum()} / {len(df_cycles)} ='+

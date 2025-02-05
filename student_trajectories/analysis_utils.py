@@ -59,7 +59,6 @@ def trim_graph(graph:Graph, success_node_id: int) -> Graph:
                 edges_to_delete += sorted_attempts[i+1:]
                 edges_to_retag.append(attempt)
                 break
-
     graph = remove_students(graph, students_to_delete)
     graph.edges = [e for e in graph.edges if e not in set(edges_to_delete)]
     for i,e in enumerate(graph.edges):

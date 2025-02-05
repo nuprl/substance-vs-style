@@ -42,8 +42,8 @@ class Node(yaml.YAMLObject):
         return cls(**node)
     
     @classmethod
-    def dummy_node(cls) -> "Node":
-        return cls(-1, ["_stdout_"],["_stderr_"])
+    def dummy_node(cls, id: int = -1) -> "Node":
+        return cls(id, ["_stdout_"],["_stderr_"])
 
 @dataclass  
 class Edge(yaml.YAMLObject):

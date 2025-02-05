@@ -251,7 +251,7 @@ def load_problem_answers(filepath, problem) -> List[str]:
 def get_breakout_edge(graph:Graph, student:str,cycle_edges: List[Edge]) -> Union[None, Edge]:
     """
     Given a list of edges gathered from a cycle with
-    nx.simple_cycle, if a breakout_edge that exists cycle exists, return it.
+    nx.simple_cycle, if a breakout_edge that exits cycle exists, return it.
     Otherwise return None.
     """
     cycle_edges = sorted(cycle_edges, key=lambda x: x.attempt_id)

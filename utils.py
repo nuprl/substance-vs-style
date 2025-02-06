@@ -2,9 +2,12 @@ from datasets import load_from_disk, load_dataset, Dataset
 import os
 import numpy as np
 from typing import List
+import pandas as pd
 
 def load(dataset, split):
-    if os.path.exists(dataset):
+    if dataset.endswith(".csv"):
+        ds = Dataset.from_pandas(pd.read_csv(dataset))
+    elif os.path.exists(dataset):
         ds = load_from_disk(dataset)
     else:
         ds = load_dataset(dataset)

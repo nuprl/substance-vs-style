@@ -7,7 +7,7 @@ from utils import load
 """
 Eventually add filters based on headers
 """
-HEADERS = ["__index_level_0__", "problem", "username", "entrypoint", "tests_passed", "total_tests"]
+HEADERS = ["__index_level_0__", "problem", "username", "tests_passed", "total_tests"]
 DATATYPES = ["number", "str", "str", "str", "number", "number"]
 
 SUCCESS_HEADERS = ["is_success", "first_attempt","is_first_success", "last_attempt", "is_last_success"]
@@ -56,7 +56,7 @@ def update_components(
     )
     row = row.iloc[0]
     prompt = gr.Code(row["prompt"], language="python", label="Prompt")
-    submitted_text = gr.Textbox(row["submitted_text"], type="text", label="Submitted Text")
+    submitted_text = gr.Textbox(row["prompt"]+row["completion"], type="text", label="Submitted Text")
     completion = gr.Code(row["completion"], language="python", label="Completion")
     assertions = gr.Code(row["assertions"], language="python", label="Assertions")
     prints = gr.Code(row["prints"], language="python", label="Prints")

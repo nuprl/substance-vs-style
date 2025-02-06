@@ -20,7 +20,7 @@ def remove_out_of_token_errors(graph: Graph) -> Graph:
     students_to_remove = OUT_OF_TOKENS_ERROR.get(graph.problem, [])
     if len(students_to_remove) > 0:
         graph = remove_students(graph, students_to_remove)
-        print("Removed students:", students_to_remove)
+        print("Removed students:", graph.problem, students_to_remove)
     return graph
 
 def remove_students(graph: Graph, students: List[str]) -> Graph:

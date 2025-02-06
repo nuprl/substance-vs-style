@@ -1,3 +1,4 @@
+import datasets
 import glob
 import pandas as pd
 import argparse
@@ -18,6 +19,7 @@ from .graph import Graph
 from typing import List
 import contextlib
 from .student_edge_cases import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES, SUCCESS_CLUES
+import numpy as np
 
 def load_graphs_from_dir(graph_dir: str, problem_clues_yaml:str) -> List[Graph]:
     """
@@ -72,13 +74,11 @@ def load_terminal_edge_data(graphs: List[Graph]) -> List[dict]:
             })
     return terminal_edge_data
 
-def terminal_edge_analysis(graphs: List[Graph], outdir: str):
+def terminal_edge_analysis(terminal_edge_df: pd.DataFrame, outdir: str):
     """
     Collect all students' final edges and analyse patterns. Save
     analysis data to outdir
     """
-    terminal_edge_data = load_terminal_edge_data(graphs)
-    terminal_edge_df = pd.DataFrame(terminal_edge_data)
     terminal_edge_df.to_csv(f"{outdir}/terminal_edge.csv")
     succ_edge_df = terminal_edge_df[terminal_edge_df["state"] == "success"]
     succ_edge_df.to_csv(f"{outdir}/successful_terminal_edges.csv")
@@ -302,10 +302,11 @@ def cycles_analysis(graphs: List[str], outdir:str):
 def all_problems_analysis(graph_dir: str, outdir:str, problem_clues_yaml: str):
     graphs = load_graphs_from_dir(graph_dir, problem_clues_yaml)
     print(f"--- Running for problems {[g.problem for g in graphs]}")
-    terminal_edge_analysis(graphs, outdir)
+    terminal_edge_data = load_terminal_edge_data(graphs)
+    terminal_edge_analysis(pd.DataFrame(terminal_edge_data), outdir)
     cycles_analysis(graphs, outdir)
 
-def main(args):
+def main_experiment(args):
     os.makedirs(args.outdir, exist_ok=True)
     logfile = f"{args.outdir}/analysis.log"
     
@@ -318,13 +319,118 @@ def main(args):
     with open(logfile, 'r') as log_fp:
         log_contents = log_fp.read()
         print(log_contents)
-        
+
+"""
+These are all final attempts that for some reason were not tagged correctly.
+Explicity include them.
+"""
+FALSE_NEG_FINAL_ATTEMPTS = {
+    "changeSection": {"student17": 918},
+    "topScores": {"student7": 1393},
+    "findHorizontals": {
+        "student67": 771,
+        "student49": 761,
+        "student62": 765
+    },
+    "sortedBooks": {"student67": 1165},
+    "sort_physicists": {"student20": 1251},
+    "add_up": {"student9": 20},
+    "sortBySuccessRate": {"student59": 1197},
+    "reverseWords": {"student58": 1580},
+    "readingIceCream": {"student67": 738}
+}
+
+def is_false_neg_final_attempt(problem: str, username: str, idx: str):
+    fals_neg_idx = str(FALSE_NEG_FINAL_ATTEMPTS.get(problem, {}).get(username, ""))
+    return str(idx) == fals_neg_idx
+
+def test_is_false_neg():
+    assert is_false_neg_final_attempt("topScores","student7",1393)
+    assert not is_false_neg_final_attempt("findHorizontals","student67",738)
+
+
+def main_additional_models(args):
+    """
+    For all other models, we only have the final edge completion + is_success.
+    Thus, we collect clues for the final edge from graphs.
+    Then, we can answer the question:
+
+    P(is_success | has_all_clues)
+    P(is_success | not has_all_clues)
+    """
+    test_is_false_neg()
+    os.makedirs(args.outdir, exist_ok=True)
+    graphs = load_graphs_from_dir(args.graph_dir, args.problem_clues_yaml)
+    
+    model_df = datasets.load_from_disk(args.model_eval_dataset)["test"].to_pandas()
+    terminal_edge_data = []
+    
+    # for each problem, student final edge find the clues in graphs
+    for graph in graphs:
+        student_edges = graph.get_student_edges()
+        # modify rows correponding to problem, student
+        for _,row in model_df.iterrows():
+            if (row["problem"] == graph.problem and row["username"] in student_edges.keys() and 
+                    (row["last_attempt"] or 
+                     is_false_neg_final_attempt(row["problem"],row["username"],row["__index_level_0__"]))
+            ):
+                edgelist = sorted(student_edges[row["username"]], key=lambda x: x.attempt_id)
+                final_edge = edgelist[-1]
+                if final_edge.prompt_to.strip() != row["prompt"].strip():
+                    # only case where this should happen is in a final edge that doesn't match up
+                    # because in our graph analysis we stop at first success, whereas studenteval
+                    # completions dont
+                    if final_edge.attempt_id < final_edge.total_attempts-1:
+                        print(row["username"], graph.problem, final_edge.attempt_id, final_edge.total_attempts)
+                    else:
+                        raise ValueError("Should never happen")
+                
+                # add any implicit clues
+                if final_edge.username in IMPLICIT_CLUES.get(graph.problem, []):
+                    final_edge.clues += IMPLICIT_CLUES[graph.problem][final_edge.username]
+                has_all_clues = set(final_edge.clues) == set(graph.problem_clues)
+
+                terminal_edge_data.append({
+                    "problem": graph.problem,
+                    "success_clues": list(set(graph.problem_clues)),
+                    "username": final_edge.username,
+                    "state": "success" if row["is_success"] else "fail",
+                    "clues": final_edge.clues,
+                    "has_final_rewrite": all([str(t)[0] in ["l","m","0"] for t in final_edge._edge_tags]),
+                    "has_final_trivial": all([t == 0 for t in final_edge._edge_tags]),
+                    "has_final_l": all([str(t)[0]  == "l" for t in final_edge._edge_tags]),
+                    "has_final_m": all([str(t)[0]  == "m" for t in final_edge._edge_tags]),
+                    "has_all_clues": has_all_clues,
+                    "has_leq_half_clues": (len(set(final_edge.clues)) / len(set(graph.problem_clues))) <= 0.5,
+                    "is_missing_clues": not has_all_clues,
+                    "is_success": row["is_success"],
+                    "is_fail": not row["is_success"],
+                })
+    
+    terminal_edge_df = pd.DataFrame(terminal_edge_data)
+    terminal_edge_df.to_csv(f"{args.outdir}/terminal_edge_data.csv")
+    terminal_edge_analysis(terminal_edge_df, args.outdir)
+    
+
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("graph_dir")
-    parser.add_argument("outdir")
-    parser.add_argument("problem_clues_yaml")
-    parser.add_argument("--suppress-asserts","-q", action="store_true")
+    subparsers = parser.add_subparsers(dest="cmd")
+
+    parser_code_davinci = subparsers.add_parser("code_davinci")
+    parser_code_davinci.add_argument("graph_dir")
+    parser_code_davinci.add_argument("outdir")
+    parser_code_davinci.add_argument("problem_clues_yaml")
+    parser_code_davinci.add_argument("--suppress-asserts","-q", action="store_true")
+    
+    parser_others = subparsers.add_parser("other_models")
+    parser_others.add_argument("graph_dir")
+    parser_others.add_argument("outdir")
+    parser_others.add_argument("problem_clues_yaml")
+    parser_others.add_argument("model_eval_dataset")
+    
     args = parser.parse_args()
-    SUPPRESS_ASSERTS = args.suppress_asserts
-    main(args)
+    if args.cmd == "code_davinci":
+        SUPPRESS_ASSERTS = args.suppress_asserts
+        main_experiment(args)
+    else:
+        main_additional_models(args)

@@ -381,7 +381,8 @@ def main_additional_models(args):
                     # because in our graph analysis we stop at first success, whereas studenteval
                     # completions dont
                     if final_edge.attempt_id < final_edge.total_attempts-1:
-                        print(row["username"], graph.problem, final_edge.attempt_id, final_edge.total_attempts)
+                        print(f"Untrimmed edges: {row['username']}, {graph.problem}" + 
+                              f", attempt {final_edge.attempt_id} / {final_edge.total_attempts}")
                     else:
                         raise ValueError("Should never happen")
                 

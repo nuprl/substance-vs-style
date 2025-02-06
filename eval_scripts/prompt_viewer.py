@@ -56,12 +56,19 @@ def update_components(
     )
     row = row.iloc[0]
     prompt = gr.Code(row["prompt"], language="python", label="Prompt")
-    submitted_text = gr.Textbox(row["prompt"]+row["completion"], type="text", label="Submitted Text")
+    if "submitted_text" in row.keys():
+        submitted_text = gr.Textbox(row["submitted_text"], type="text", label="Submitted Text")
+    else:
+        submitted_text = gr.Textbox(row["prompt"]+row["completion"], type="text", label="Submitted Text")
     completion = gr.Code(row["completion"], language="python", label="Completion")
     assertions = gr.Code(row["assertions"], language="python", label="Assertions")
     prints = gr.Code(row["prints"], language="python", label="Prints")
-    code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
-    code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
+    if "stderr" in row.keys():
+        code_err = gr.Textbox("\n".join(row["stderr"]), label="Code Errors", type="text")
+        code_output = gr.Code("\n".join(row["stdout"]), language="python", label="Code Outputs")
+    else:
+        code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
+        code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
     slider = gr.Slider(0, len(ds) - 1, step=1, label="Problem ID (click and arrow keys to navigate):", value=slider)
     return [slider, header_data, success_data, prompt, submitted_text, 
             completion, assertions, prints, code_err, code_output]
@@ -127,7 +134,6 @@ def main(args):
         )
         
         prompt = gr.Code("__prompt__", language="python", label="Prompt")            
-        submitted_text = gr.Textbox("__submitted_text__", type="text", label="Submitted Text")
         completion = gr.Code("__completion__", language="python", label="Completion")
                 
         with gr.Row():
@@ -140,6 +146,8 @@ def main(args):
             with gr.Row():
                 code_output = gr.Code("__stdout__", language="python", label="Code Outputs")
                 code_err = gr.Textbox("__stderr__", label="Code Errors", type="text")
+        
+        submitted_text = gr.Textbox("__submitted_text__", type="text", label="Submitted Text")
         
         gr.Markdown("**Logging**\n")
         with gr.Column():

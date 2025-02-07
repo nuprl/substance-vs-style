@@ -20,6 +20,7 @@ from typing import List
 import contextlib
 from .student_edge_cases import OUT_OF_TOKENS_ERROR, IMPLICIT_CLUES, SUCCESS_CLUES
 import numpy as np
+STUDENTEVAL = datasets.load_dataset("wellesley-easel/StudentEval", split="test")
 
 def load_graphs_from_dir(graph_dir: str, problem_clues_yaml:str) -> List[Graph]:
     """
@@ -408,7 +409,83 @@ def additional_models_analysis(args):
     
     terminal_edge_df = pd.DataFrame(terminal_edge_data)
     terminal_edge_analysis(terminal_edge_df, args.outdir)
+
+def get_studenteval_prompt(id: int) -> str:
+    for item in STUDENTEVAL:
+        if str(item["__index_level_0__"]) == str(id):
+            return item["prompt"].strip()
+    raise ValueError("Should never happen")
+
+def is_studenteval_last_attempt(id: int) -> bool:
+    for item in STUDENTEVAL:
+        if str(item["__index_level_0__"]) == str(id):
+            return item["last_attempt"] or \
+                is_false_neg_final_attempt(item["problem"], item["username"], id)
+    raise ValueError("Should never happen")
+
+def main_additional_models_passk(args):
+    """
+    Compare pass@k scores for edges with all clues vs missing clues
+    """
+    test_is_false_neg()
+    graphs = load_graphs_from_dir(args.graph_dir, args.problem_clues_yaml)
+    problem_to_graph = {g.problem:g for g in graphs}
+    model_passk = pd.read_csv(args.model_result_csv)
     
+    def _has_all_clues(problem:str, prompt:str) -> bool:
+        graph = problem_to_graph[problem]
+        edge_clues = list(set([frozenset(e.clues) for e in graph.edges if 
+                    e.prompt_to.strip() == prompt.strip()]))
+        if len(edge_clues) == 0:
+            # these are likely trimmed edges, just assume true because student
+            # was previously successful; this way results are not biased towards our
+            # hypothesis
+            print(f"Edge not found: {problem}, {prompt}")
+            return True
+        assert len(edge_clues) == 1, edge_clues
+        edge_clues = edge_clues[0]
+        return set(edge_clues) == set(graph.problem_clues)
+
+    # filter out any problems not used in trajectories
+    model_passk = model_passk[model_passk["problem"].isin(problem_to_graph.keys())]
+    
+    # get studenteval prompt, last attempt. cache because expensive
+    if os.path.exists(f"{args.outdir}/studenteval_res.csv"):
+        model_passk = pd.read_csv(f"{args.outdir}/studenteval_res.csv")
+    else:
+        model_passk["prompt"] = model_passk.apply(
+            lambda x: get_studenteval_prompt(x["studenteval_id"]), axis=1)
+        model_passk["last_attempt"] = model_passk.apply(
+            lambda x: 1 if is_studenteval_last_attempt(x["studenteval_id"]) else 0, axis=1)
+
+    model_passk.to_csv(f"{args.outdir}/studenteval_res.csv")
+
+    # filter out any attempt that is not a last attempt
+    final_prompts = []
+    for g in graphs:
+        for student,edgelist in g.get_student_edges().items():
+            final_edge = max(edgelist, key=lambda x: x.attempt_id)
+            final_prompts.append(final_edge.prompt_to.strip())
+    model_passk = model_passk[model_passk["prompt"].isin(final_prompts)]
+    model_passk = model_passk[model_passk["last_attempt"] == 1]
+
+    assert len(model_passk) > 0, len(model_passk)
+    assert len(model_passk["problem"].unique()) == 33
+
+    # add clues
+    model_passk["has_all_clues"] = model_passk.apply(
+        lambda x: 1 if _has_all_clues(x["problem"], x["prompt"]) else 0, axis=1)
+    print(model_passk)
+
+    # groupby has all clues
+    model_passk_by_problem = model_passk.groupby(
+        ["has_all_clues","problem"]).agg({"pass1":"mean"}).sort_values("problem").reset_index()
+    model_passk = model_passk.groupby("has_all_clues").agg({"pass1":"mean"}).reset_index()
+
+    # save
+    model_passk_by_problem.to_csv(f"{args.outdir}/model_passk_by_problem.csv")
+    model_passk.to_csv(f"{args.outdir}/model_passk.csv")
+
 def main_additional_models(args):
     test_is_false_neg()
     os.makedirs(args.outdir, exist_ok=True)
@@ -423,6 +500,7 @@ def main_additional_models(args):
     with open(logfile, 'r') as log_fp:
         log_contents = log_fp.read()
         print(log_contents)
+
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
@@ -439,10 +517,18 @@ if __name__=="__main__":
     parser_others.add_argument("outdir")
     parser_others.add_argument("problem_clues_yaml")
     parser_others.add_argument("model_eval_dataset")
+
+    parser_passk = subparsers.add_parser("passk")
+    parser_passk.add_argument("graph_dir")
+    parser_passk.add_argument("outdir")
+    parser_passk.add_argument("problem_clues_yaml")
+    parser_passk.add_argument("model_result_csv")
     
     args = parser.parse_args()
     if args.cmd == "code_davinci":
         SUPPRESS_ASSERTS = args.suppress_asserts
         main_experiment(args)
-    else:
+    elif args.cmd == "other_models":
         main_additional_models(args)
+    else:
+        main_additional_models_passk(args)

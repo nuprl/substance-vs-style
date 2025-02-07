@@ -1,0 +1,91 @@
+# Analyzing all problems that have been reviewed
+Removed students: convert ['student0', 'student18']
+Removed students: print_time ['student57']
+Removed students: subtract_add ['student70']
+Removed students: altText ['student40']
+Removed students: topScores ['student45']
+Removed students: sort_physicists ['student19']
+Removed students: getSeason ['student45', 'student31', 'student55', 'student9', 'student15', 'student6']
+--- Running for problems ['generateCardDeck', 'fib', 'pattern', 'total_bill', 'translate', 'student_grades', 'convert', 'sortBySuccessRate', 'laugh', 'times_with', 'readingIceCream', 'set_chars', 'find_multiples', 'print_time', 'remove_odd', 'subtract_add', 'findHorizontals', 'altText', 'combine', 'topScores', 'sort_physicists', 'reverseWords', 'planets_mass', 'increaseScore', 'add_up', 'check_prime', 'sortedBooks', 'percentWin', 'changeSection', 'assessVowels', 'add_int', 'create_list', 'getSeason']
+############ TERMINAL EDGE DATA ############
+--- stats
+num students: 75
+num problems: 33
+num students & prob: 290
+num succ students & prob: 148
+(succ & has_all_clues) / tot_succ: 94 / 148 = 0.64
+---- Out of all terminal edges:
+P( is_success | has_all_clues) = 0.90
+P( is_success | is_missing_clues) = 0.29
+---- How many out of has all clues terminal edges are successful?
+(succ & has_all_clues) / has_all_clues: 94/105 = 0.90
+---- How many rewrite kinds out of successful terminal edges?
+has_final_trivial out of succ_edges: 16/148 = 0.11
+has_final_rewrite out of succ_edges: 64/148 = 0.43
+has_final_l out of succ_edges: 6/148 = 0.04
+has_final_m out of succ_edges: 42/148 = 0.28
+P( has_final_m & succ | has_final_rewrite & succ) = 0.656
+---- Out of all SUCC final rewrite edges, how many contain m?
+Num(contain m & succ / have rewrite & succ): 42/64 = 0.66
+---- Out of terminal edges with <= 0.5 clues, how many are successful with final rewrite?
+out of all final edges with little clues: P( is_success | has_final_rewrite) = 0.10
+Num( succ & final_rewrite/ has final rewrite) in had_leq_half_clues: 5/52=0.10
+
+############ ALL CASES: CYCLES DATA ############
+--- stats
+num students: 75
+num problems: 33
+num has cycle: 146
+len: 290
+num students & prob: 290
+num succ students & prob: 148
+(is_succ & has_cycle / tot) 44 / 290 =0.15
+---- For each student/graph pair:
+P( is_success | has_cycle) = 0.30
+P( is_success | not_has_cycle) = 0.72
+P( is_success | has_long_cycle) = 0.14
+P( is_success | has_breakout_edge) = 0.60
+P( has_breakout_edge | is_success) = 0.30
+P( cycle_has_only_trivial_edits | cycle_has_only_rewrite_edits) = 0.43
+
+############ STUDENTS WITH CYCLES ############
+---- How many trivial cycles are there out of all cycles?
+41 / 146 = 0.28
+---- How many missing clues cycles are there out of all cycles?
+125 / 146 = 0.86
+---- Of all cycles edges, how many have missing clues?
+Num(missing edges/ cycle edges): 239/265=0.90
+---- Of all cycles edges, how many have rewrite edits?
+Num(rewrite edits/ cycle edges): 200/265=0.75
+---- Of all cycles edges, how many have trivial edits?
+Num(trivial edits/ cycle edges): 108/265=0.41
+---- How many cycles have only REWRITE edits?
+96 / 146 =  0.66
+---- How many cycles have only trivial edits?
+41 / 146 =  0.28
+---- Of all students with cycles, what is the probability of success if a breakout edge?
+P( is_success | has_breakout_edge) = 0.60
+P( is_success | has_a_breakout_edge) = 0.72
+P( is_success | has_m_breakout_edge) = 0.69
+P( is_success | has_l_breakout_edge) = 0.75
+P( is_success | has_d_breakout_edge) = 0.17
+P( is_success | has_0_breakout_edge) = 0.41
+---- Out of all that have cycles: tot 146
+How many are succ? 44 -> 0.30
+has_0_breakout_edge: 17 / 146 = 0.12
+has_l_breakout_edge: 4 / 146 = 0.03
+has_m_breakout_edge: 29 / 146 = 0.20
+has_a_breakout_edge: 18 / 146 = 0.12
+has_d_breakout_edge: 6 / 146 = 0.04
+has_breakout_edge: 73 / 146 = 0.50
+
+##### SUCC CYCLES ######
+---- Out of all SUCC cycles: tot 44
+has_0_breakout_edge: 7 / 44 = 0.16
+has_l_breakout_edge: 3 / 44 = 0.07
+has_m_breakout_edge: 20 / 44 = 0.45
+has_a_breakout_edge: 13 / 44 = 0.30
+has_d_breakout_edge: 1 / 44 = 0.02
+has_breakout_edge: 44 / 44 = 1.00
+
+is_success-cycle_num_edges: pearsonr -0.4208344622603569, pvalue 7.094244251816139e-14

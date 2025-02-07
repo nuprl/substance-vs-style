@@ -1,0 +1,40 @@
+# Analyzing all problems that have been reviewed
+Removed students: convert ['student0', 'student18']
+Removed students: print_time ['student57']
+Removed students: subtract_add ['student70']
+Removed students: altText ['student40']
+Removed students: topScores ['student45']
+Removed students: sort_physicists ['student19']
+Removed students: getSeason ['student45', 'student31', 'student55', 'student9', 'student15', 'student6']
+Untrimmed edges: student21, convert, attempt 7 / 10
+Untrimmed edges: student20, set_chars, attempt 3 / 5
+Untrimmed edges: student18, remove_odd, attempt 1 / 3
+Untrimmed edges: student23, increaseScore, attempt 1 / 5
+Untrimmed edges: student55, add_up, attempt 2 / 7
+Untrimmed edges: student32, check_prime, attempt 1 / 3
+Untrimmed edges: student30, percentWin, attempt 1 / 3
+Untrimmed edges: student30, changeSection, attempt 1 / 5
+Untrimmed edges: student38, add_int, attempt 1 / 4
+############ TERMINAL EDGE DATA ############
+--- stats
+num students: 75
+num problems: 33
+num students & prob: 290
+num succ students & prob: 82
+(succ & has_all_clues) / tot_succ: 54 / 82 = 0.66
+---- Out of all terminal edges:
+P( is_success | has_all_clues) = 0.55
+P( is_success | is_missing_clues) = 0.15
+---- How many out of has all clues terminal edges are successful?
+(succ & has_all_clues) / has_all_clues: 54/99 = 0.55
+---- How many rewrite kinds out of successful terminal edges?
+has_final_trivial out of succ_edges: 13/82 = 0.16
+has_final_rewrite out of succ_edges: 36/82 = 0.44
+has_final_l out of succ_edges: 1/82 = 0.01
+has_final_m out of succ_edges: 22/82 = 0.27
+P( has_final_m & succ | has_final_rewrite & succ) = 0.611
+---- Out of all SUCC final rewrite edges, how many contain m?
+Num(contain m & succ / have rewrite & succ): 22/36 = 0.61
+---- Out of terminal edges with <= 0.5 clues, how many are successful with final rewrite?
+out of all final edges with little clues: P( is_success | has_final_rewrite) = 0.08
+Num( succ & final_rewrite/ has final rewrite) in had_leq_half_clues: 5/59=0.08

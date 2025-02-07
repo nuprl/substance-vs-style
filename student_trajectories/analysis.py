@@ -349,7 +349,7 @@ def test_is_false_neg():
     assert not is_false_neg_final_attempt("findHorizontals","student67",738)
 
 
-def main_additional_models(args):
+def additional_models_analysis(args):
     """
     For all other models, we only have the final edge completion + is_success.
     Thus, we collect clues for the final edge from graphs.
@@ -358,8 +358,6 @@ def main_additional_models(args):
     P(is_success | has_all_clues)
     P(is_success | not has_all_clues)
     """
-    test_is_false_neg()
-    os.makedirs(args.outdir, exist_ok=True)
     graphs = load_graphs_from_dir(args.graph_dir, args.problem_clues_yaml)
     
     model_df = datasets.load_from_disk(args.model_eval_dataset)["test"].to_pandas()
@@ -409,9 +407,22 @@ def main_additional_models(args):
                 })
     
     terminal_edge_df = pd.DataFrame(terminal_edge_data)
-    terminal_edge_df.to_csv(f"{args.outdir}/terminal_edge_data.csv")
     terminal_edge_analysis(terminal_edge_df, args.outdir)
     
+def main_additional_models(args):
+    test_is_false_neg()
+    os.makedirs(args.outdir, exist_ok=True)
+    logfile = f"{args.outdir}/analysis.log"
+    
+    with open(logfile, 'w') as log_fp:
+        with contextlib.redirect_stdout(log_fp), contextlib.redirect_stderr(log_fp):
+            print("# Analyzing all problems that have been reviewed")
+            additional_models_analysis(args)
+            
+    # print logfile at end
+    with open(logfile, 'r') as log_fp:
+        log_contents = log_fp.read()
+        print(log_contents)
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()

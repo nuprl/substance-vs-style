@@ -271,7 +271,7 @@ def display_pearsonr_results(df: pd.DataFrame, var_tuples: List[Tuple[str]]) -> 
     results = ""
     for var_a, var_b in var_tuples:
         corr, pval = stats.pearsonr(df[var_a], df[var_b])
-        res = f"{var_a}-{var_b}: pearsonr {corr}, pvalue {pval}"
+        res = f"{var_a}-{var_b}: pearsonr {corr}, pvalue {pval}, nsample {len(df)}"
         results += "\n" + res
     return results
 

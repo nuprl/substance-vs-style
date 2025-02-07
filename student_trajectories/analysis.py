@@ -434,16 +434,23 @@ def main_additional_models_passk(args):
     
     def _has_all_clues(problem:str, prompt:str) -> bool:
         graph = problem_to_graph[problem]
-        edge_clues = list(set([frozenset(e.clues) for e in graph.edges if 
-                    e.prompt_to.strip() == prompt.strip()]))
-        if len(edge_clues) == 0:
+        edges = [e for e in graph.edges if e.prompt_to.strip() == prompt.strip()]
+        if len(edges) == 0:
             # these are likely trimmed edges, just assume true because student
             # was previously successful; this way results are not biased towards our
             # hypothesis
             print(f"Edge not found: {problem}, {prompt}")
             return True
+        
+        edge_clues = set([frozenset(e.clues) for e in edges])
+        username = set([e.username for e in edges])
+        assert len(username) == 1, username
         assert len(edge_clues) == 1, edge_clues
-        edge_clues = edge_clues[0]
+        edge_clues = list(edge_clues.pop())
+        username = username.pop()
+        if problem in IMPLICIT_CLUES.keys() and \
+            username in IMPLICIT_CLUES[graph.problem]:
+            edge_clues += IMPLICIT_CLUES[graph.problem][username]
         return set(edge_clues) == set(graph.problem_clues)
 
     # filter out any problems not used in trajectories
@@ -461,14 +468,16 @@ def main_additional_models_passk(args):
     model_passk.to_csv(f"{args.outdir}/studenteval_res.csv")
 
     # filter out any attempt that is not a last attempt
-    final_prompts = []
+    final_prompts, num_has_all_clues = [],0
     for g in graphs:
         for student,edgelist in g.get_student_edges().items():
             final_edge = max(edgelist, key=lambda x: x.attempt_id)
             final_prompts.append(final_edge.prompt_to.strip())
+            if _has_all_clues(g.problem, final_edge.prompt_to.strip()):
+                num_has_all_clues += 1
     model_passk = model_passk[model_passk["prompt"].isin(final_prompts)]
     model_passk = model_passk[model_passk["last_attempt"] == 1]
-
+    
     assert len(model_passk) > 0, len(model_passk)
     assert len(model_passk["problem"].unique()) == 33
 
@@ -479,8 +488,9 @@ def main_additional_models_passk(args):
 
     # groupby has all clues
     model_passk_by_problem = model_passk.groupby(
-        ["has_all_clues","problem"]).agg({"pass1":"mean"}).sort_values("problem").reset_index()
-    model_passk = model_passk.groupby("has_all_clues").agg({"pass1":"mean"}).reset_index()
+        ["has_all_clues","problem"]).agg({"pass1":"mean","prompt":"count"}).sort_values("problem").reset_index()
+    model_passk = model_passk.groupby("has_all_clues").agg({"pass1":"mean","prompt":"count"}).reset_index()
+    print(f"Num terminal edge: {len(final_prompts)}, of which has all clues: {num_has_all_clues}")
 
     # save
     model_passk_by_problem.to_csv(f"{args.outdir}/model_passk_by_problem.csv")

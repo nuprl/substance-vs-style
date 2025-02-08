@@ -1,0 +1,741 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 1
+  clues: null
+  completion_from: "if day in ['Monday','Tuesday','Wednesday','Thursday','Friday']:\n\
+    \        if hour >= 0 and hour <= 8:\n            return 'Sleeping'\n        else:\n\
+    \            return 'Weekday'\n    elif day in ['Saturday','Sunday']:\n      \
+    \  if hour >= 0 and hour <= 8:\n            return 'Sleeping'\n        else:\n\
+    \            return 'Weekend'\n    else:\n        return 'Invalid day'\n"
+  completion_to: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"Saturday\"\
+    \ or day == \"Sunday\":\n        return \"weekend\"\n    else:\n        return\
+    \ \"weekday\"\n\nprint(print_time(\"Monday\",5))\nprint(print_time(\"Saturday\"\
+    ,5))\nprint(print_time(\"Monday\",12))\n"
+  diff: "--- \n+++ \n@@ -1,28 +1,35 @@\n def print_time(day,hour): \"\"\"+If+the+hour+is+between+0+and+8,+return+sleeping.\
+    \ Return+weekend if the day-of-the-week is-a+Saturday+or+Sunday.+Return weekday-or-weekend\
+    \ if the-hour+day is-not+any+day between-0+Monday and-8.-Else,-return-sleeping.+Friday.\
+    \ \"\"\""
+  node_from: &id009 !Node
+    _node_tags: null
+    id: 2
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'Invalid day
+
+      '
+    - 'Invalid day
+
+      '
+    - 'Invalid day
+
+      '
+    - 'Invalid day
+
+      '
+    - 'Invalid day
+
+      '
+    - 'Invalid day
+
+      '
+  node_to: &id001 !Node
+    _node_tags: null
+    id: 8
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'sleeping
+
+      '
+    - 'weekday
+
+      '
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    Return if the day of the\
+    \ week is a weekday or weekend if the hour is not between 0 and 8. Else, return\
+    \ sleeping.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If the hour is between 0\
+    \ and 8, return sleeping. Return weekend if the day is Saturday or Sunday. Return\
+    \ weekday if the day is any day between Monday and Friday.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student12
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 2
+  clues: null
+  completion_from: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"\
+    Saturday\" or day == \"Sunday\":\n        return \"weekend\"\n    else:\n    \
+    \    return \"weekday\"\n\nprint(print_time(\"Monday\",5))\nprint(print_time(\"\
+    Saturday\",5))\nprint(print_time(\"Monday\",12))\n"
+  completion_to: "if hour >= 0 and hour <= 8:\n        return \"sleeping\"\n    elif\
+    \ day == \"Saturday\" or day == \"Sunday\":\n        return \"weekend\"\n    else:\n\
+    \        return \"weekday\"\n\nprint(print_time(\"Monday\",5))\nprint(print_time(\"\
+    Saturday\",10))\nprint(print_time(\"Monday\",22))\n"
+  diff: "--- \n+++ \n@@ -11,7 +11,8 @@\n 8, return sleeping.-Return+Else,+return weekend\
+    \ if the@@ -20,7 +21,8 @@\n Saturday or Sunday.-Return+Else,+return weekday if\
+    \ the"
+  node_from: *id001
+  node_to: &id002 !Node
+    _node_tags: null
+    id: 3
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'sleeping
+
+      '
+    - 'sleeping
+
+      '
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If the hour is between\
+    \ 0 and 8, return sleeping. Return weekend if the day is Saturday or Sunday. Return\
+    \ weekday if the day is any day between Monday and Friday.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If the hour is between 0\
+    \ and 8, return sleeping. Else, return weekend if the day is Saturday or Sunday.\
+    \ Else, return weekday if the day is any day between Monday and Friday.\n    \"\
+    \"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student12
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 3
+  clues: null
+  completion_from: "if hour >= 0 and hour <= 8:\n        return \"sleeping\"\n   \
+    \ elif day == \"Saturday\" or day == \"Sunday\":\n        return \"weekend\"\n\
+    \    else:\n        return \"weekday\"\n\nprint(print_time(\"Monday\",5))\nprint(print_time(\"\
+    Saturday\",10))\nprint(print_time(\"Monday\",22))\n"
+  completion_to: "if hour >= 0 and hour <= 8:\n        return \"sleeping\"\n    elif\
+    \ day == \"Sat\" or day == \"Sun\":\n        return \"weekend\"\n    else:\n \
+    \       return \"weekday\"\n\nprint(print_time(\"Mon\",8))\n"
+  diff: "--- \n+++ \n@@ -18,9 +18,9 @@\n the day is-Saturday+Sat or-Sunday.+Sun. Else,\
+    \ return weekday"
+  node_from: *id002
+  node_to: &id004 !Node
+    _node_tags: null
+    id: 5
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'weekend
+
+      '
+    - 'weekend
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'sleeping
+
+      '
+    - 'sleeping
+
+      '
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If the hour is between\
+    \ 0 and 8, return sleeping. Else, return weekend if the day is Saturday or Sunday.\
+    \ Else, return weekday if the day is any day between Monday and Friday.\n    \"\
+    \"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If the hour is between 0\
+    \ and 8, return sleeping. Else, return weekend if the day is Sat or Sun. Else,\
+    \ return weekday if the day is any day between Monday and Friday.\n    \"\"\"\n\
+    \    "
+  state: success
+  total_attempts: 4
+  username: student12
+- !Edge
+  _edge_tags:
+  - l2
+  attempt_id: 1
+  clues: null
+  completion_from: "if day == \"Saturday\" or day == \"Sunday\":\n        return \"\
+    Weekend\"\n    elif hour >= 9 and hour <= 23:\n        return \"Weekday\"\n  \
+    \  else:\n        return \"Sleeping\"\n\nprint(print_time(\"Monday\",10))\nprint(print_time(\"\
+    Saturday\",10))\nprint(print_time(\"Sunday\",10))\nprint(print_time(\"Monday\"\
+    ,2))\n"
+  completion_to: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n   \
+    \ elif hour >= 0 and hour < 8:\n        return 'sleeping'\n    else:\n       \
+    \ return 'weekday'\n\nprint(print_time('Sat',5))\nprint(print_time('Mon',5))\n\
+    print(print_time('Mon',8))\n"
+  diff: "--- \n+++ \n@@ -1,31 +1,13 @@\n def print_time(day,hour): \"\"\"-Accept-the-day-of-the-week,-and-the-time-of-day-and-if-the-time-is-between-9-23-return+Return\
+    \ weekend for Sat and Sun-and+or weekday for any"
+  node_from: &id010 !Node
+    _node_tags: null
+    id: 4
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'Weekday
+
+      '
+    - 'Weekday
+
+      '
+    - 'Weekday
+
+      '
+    - 'Weekday
+
+      '
+    - 'Sleeping
+
+      '
+    - 'Sleeping
+
+      '
+  node_to: &id003 !Node
+    _node_tags: null
+    id: 0
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'weekend
+
+      '
+    - 'weekend
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'sleeping
+
+      '
+    - 'weekday
+
+      '
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    Accept the day of the week,\
+    \ and the time of day and if the time is between 9-23 return weekend for Sat and\
+    \ Sun and weekday for any other. If the time is between 0-8 return sleeping\n\
+    \    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    Return weekend for Sat and\
+    \ Sun or weekday for any other.  If the time is between 0-8 return sleeping\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student36
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n \
+    \   elif hour >= 0 and hour < 8:\n        return 'sleeping'\n    else:\n     \
+    \   return 'weekday'\n\nprint(print_time('Sat',5))\nprint(print_time('Mon',5))\n\
+    print(print_time('Mon',8))\n"
+  completion_to: "if day == \"Sat\" or day == \"Sun\":\n        return \"weekend\"\
+    \n    elif hour < 9:\n        return \"sleeping\"\n    else:\n        return \"\
+    weekday\"\n\nprint(print_time(\"Sat\",5))\nprint(print_time(\"Mon\",8))\nprint(print_time(\"\
+    Mon\",11))\n"
+  diff: "--- \n+++ \n@@ -17,7 +17,7 @@\n time is between-0-8+0-9 return sleeping \"\
+    \"\""
+  node_from: *id003
+  node_to: *id004
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    Return weekend for Sat\
+    \ and Sun or weekday for any other.  If the time is between 0-8 return sleeping\n\
+    \    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    Return weekend for Sat and\
+    \ Sun or weekday for any other.  If the time is between 0-9 return sleeping\n\
+    \    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student36
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues: null
+  completion_from: "if day in ['Sat','Sun']:\n        return 'weekend'\n    else:\n\
+    \        return 'weekday'\n    \n    if hour in range(0,9):\n        return 'sleeping'\n\
+    \    else:\n        return 'not sleeping'\n\nprint_time('Sat',5)\n"
+  completion_to: "if hour < 9:\n        return 'sleeping'\n    elif day == 'Sat' or\
+    \ day == 'Sun':\n        return 'weekend'\n    else:\n        return 'weekday'\n\
+    print_time('Sat',5)\n"
+  diff: "--- \n+++ \n@@ -1,6 +1,15 @@\n def print_time(day,hour): \"\"\"+If+hour+is+from+0+to+8,+return+'sleeping'.\
+    \ Return 'weekend' if@@ -13,13 +22,4 @@\n 'weekday' if not.-If-hour-is-from-0-to-8,-return-'sleeping'.\
+    \ \"\"\""
+  node_from: &id006 !Node
+    _node_tags: null
+    id: 6
+    stderr:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'weekend
+
+      '
+    - 'weekend
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+    - 'weekday
+
+      '
+  node_to: *id004
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    Return 'weekend' if day\
+    \ is 'Sat' or 'Sun' and 'weekday' if not. If hour is from 0 to 8, return 'sleeping'.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If hour is from 0 to 8, return\
+    \ 'sleeping'. Return 'weekend' if day is 'Sat' or 'Sun' and 'weekday' if not.\
+    \ \n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student38
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues: null
+  completion_from: "if hour < 8:\n        print(\"sleeping\")\n    elif day == \"\
+    Sat\" or day == \"Sun\":\n        print(\"weekend\")\n    else:\n        print(\"\
+    weekday\")\n\nprint_time(\"Sat\",8)\nprint_time(\"Sat\",7)\nprint_time(\"Mon\"\
+    ,8)\n"
+  completion_to: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"Sat\"\
+    \ or day == \"Sun\":\n        return \"weekend\"\n    else:\n        return \"\
+    weekday\"\n"
+  diff: "--- \n+++ \n@@ -16,7 +16,7 @@\n 0 and 8,-output+return the string \"sleeping\"\
+    .@@ -34,11 +34,13 @@\n and if so,-output+return the string \"weekend\". else,-output+return+the+string\
+    \ \"weekday\". \"\"\""
+  node_from: &id005 !Node
+    _node_tags: null
+    id: 10
+    stderr:
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    - 'IndentationError: expected an indented block after ''if'' statement on line
+      5'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  node_to: *id003
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    take in a day and an hour.\
+    \ if the hour is between 0 and 8, output the string \"sleeping\". if not, check\
+    \ if the day is either \"Sat\" or \"Sun\", and if so, output the string \"weekend\"\
+    . else, output \"weekday\". \n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    take in a day and an hour.\
+    \ if the hour is between 0 and 8, return the string \"sleeping\". if not, check\
+    \ if the day is either \"Sat\" or \"Sun\", and if so, return the string \"weekend\"\
+    . else, return the string \"weekday\". \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student42
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"\
+    Sat\" or day == \"Sun\":\n        return \"weekend\"\n    else:\n        return\
+    \ \"weekday\"\n"
+  completion_to: "if hour <= 8:\n        return \"sleeping\"\n    elif day == \"Sat\"\
+    \ or day == \"Sun\":\n        return \"weekend\"\n    else:\n        return \"\
+    weekday\"\n"
+  diff: "--- \n+++ \n@@ -12,9 +12,11 @@\n the hour is-between-0-and+less+than+or+equal+to\
+    \ 8, return the"
+  node_from: *id003
+  node_to: *id004
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    take in a day and an hour.\
+    \ if the hour is between 0 and 8, return the string \"sleeping\". if not, check\
+    \ if the day is either \"Sat\" or \"Sun\", and if so, return the string \"weekend\"\
+    . else, return the string \"weekday\". \n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    take in a day and an hour.\
+    \ if the hour is less than or equal to 8, return the string \"sleeping\". if not,\
+    \ check if the day is either \"Sat\" or \"Sun\", and if so, return the string\
+    \ \"weekend\". else, return the string \"weekday\". \n    \"\"\"\n    "
+  state: success
+  total_attempts: 3
+  username: student42
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n \
+    \   elif hour >= 0 and hour <= 8:\n        return 'sleeping'\n    else:\n    \
+    \    return 'weekday'\n    \nprint_time('Sat',5)\n\nprint_time('Sat',9)\n\nprint_time('Mon',5)\n\
+    \nprint_time('Mon',9)\n\nprint_time('Sun',5"
+  completion_to: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n   \
+    \ elif hour in range(0,9):\n        return 'sleeping'\n    else:\n        return\
+    \ 'weekday'\n"
+  diff: ''
+  node_from: &id012 !Node
+    _node_tags: null
+    id: 11
+    stderr:
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  node_to: *id004
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    First check the first component\
+    \ of the input, if it is Sat or if it is Sun, then return weekend. If not true,\
+    \ then check the second component of the input, if the it is in the range from\
+    \ 0 to 8, including 0 and 8, then return sleeping. If not true, then return weekday.\
+    \ \n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    First check the first component\
+    \ of the input, if it is Sat or if it is Sun, then return weekend. If not true,\
+    \ then check the second component of the input, if the it is in the range from\
+    \ 0 to 8, including 0 and 8, then return sleeping. If not true, then return weekday.\
+    \ \n    \"\"\"\n    "
+  state: success
+  total_attempts: 2
+  username: student43
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues: null
+  completion_from: "if day == 0 or day == 6:\n        print(\"It's the weekend!\"\
+    )\n    elif day >= 1 and day <= 5:\n        print(\"It's a weekday.\")\n    if\
+    \ hour >= 0 and hour < 8:\n        print(\"It's sleeping time.\")\n    elif hour\
+    \ >= 8 and hour < 18:\n        print(\"It's working time.\")\n    elif hour >=\
+    \ 18 and hour < 24:\n        print(\"It's"
+  completion_to: "if day == 'Sat' or day == 'Sun':\n        print('It\\'s the weekend!')\n\
+    \    else:\n        print('It\\'s a weekday.')\n    if hour >= 0 and hour < 8:\n\
+    \        print('Sleeping...')\n    elif hour >= 8 and hour < 12:\n        print('Working...')\n\
+    \    elif hour >= 12 and hour < 18:\n        print('Eating...')\n   "
+  diff: "--- \n+++ \n@@ -2,9 +2,9 @@\n print_time(day,hour): \"\"\" If-sat+Sat or-sun,+Sun,\
+    \ print weekend. If"
+  node_from: *id005
+  node_to: *id005
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If sat or sun, print weekend.\
+    \ If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, print weekend.\
+    \ If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student54
+- !Edge
+  _edge_tags:
+  - m2
+  - m3
+  - a5
+  attempt_id: 2
+  clues: null
+  completion_from: "if day == 'Sat' or day == 'Sun':\n        print('It\\'s the weekend!')\n\
+    \    else:\n        print('It\\'s a weekday.')\n    if hour >= 0 and hour < 8:\n\
+    \        print('Sleeping...')\n    elif hour >= 8 and hour < 12:\n        print('Working...')\n\
+    \    elif hour >= 12 and hour < 18:\n        print('Eating...')\n   "
+  completion_to: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n   \
+    \ elif day == 'Mon' or day == 'Tue' or day == 'Wed' or day == 'Thu' or day ==\
+    \ 'Fri':\n        return 'weekday'\n    elif hour >= 0 and hour < 8:\n       \
+    \ return 'sleeping'\n    else:\n        return 'weekday'\n"
+  diff: "--- \n+++ \n@@ -5,15 +5,15 @@\n Sat or Sun,-print+return weekend. If Mon-Fri,-print+return\
+    \ weekday. If hours 0-8,-print+return sleeping. \"\"\""
+  node_from: *id005
+  node_to: *id006
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, print weekend.\
+    \ If Mon-Fri, print weekday. If hours 0-8, print sleeping.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, return weekend.\
+    \ If Mon-Fri, return weekday. If hours 0-8, return sleeping.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 5
+  username: student54
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 3
+  clues: null
+  completion_from: "if day == 'Sat' or day == 'Sun':\n        return 'weekend'\n \
+    \   elif day == 'Mon' or day == 'Tue' or day == 'Wed' or day == 'Thu' or day ==\
+    \ 'Fri':\n        return 'weekday'\n    elif hour >= 0 and hour < 8:\n       \
+    \ return 'sleeping'\n    else:\n        return 'weekday'\n"
+  completion_to: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"Sat\"\
+    \ or day == \"Sun\":\n        return \"weekend\"\n    else:\n        return \"\
+    weekday\"\n\nprint_time(\"Mon\",9)\n\nprint_time(\"Sat\",7)\n\nprint_time(\"Sun\"\
+    ,8)\n\nprint_time(\"Mon\",8)\n\nprint_time(\"Sat\",8)\n\nprint_"
+  diff: "--- \n+++ \n@@ -1,6 +1,11 @@\n def print_time(day,hour): \"\"\"+If+hours+0-8,+return+sleeping.\
+    \ If Sat or@@ -11,9 +16,4 @@\n Mon-Fri, return weekday.-If-hours-0-8,-return-sleeping.\
+    \ \"\"\""
+  node_from: *id006
+  node_to: &id007 !Node
+    _node_tags: null
+    id: 9
+    stderr:
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    - 'NameError: name ''print_'' is not defined. Did you mean: ''print''?'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If Sat or Sun, return weekend.\
+    \ If Mon-Fri, return weekday. If hours 0-8, return sleeping.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If hours 0-8, return sleeping.\
+    \ If Sat or Sun, return weekend. If Mon-Fri, return weekday. \n    \"\"\"\n  \
+    \  "
+  state: neutral
+  total_attempts: 5
+  username: student54
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "if hour < 8:\n        return \"sleeping\"\n    elif day == \"\
+    Sat\" or day == \"Sun\":\n        return \"weekend\"\n    else:\n        return\
+    \ \"weekday\"\n\nprint_time(\"Mon\",9)\n\nprint_time(\"Sat\",7)\n\nprint_time(\"\
+    Sun\",8)\n\nprint_time(\"Mon\",8)\n\nprint_time(\"Sat\",8)\n\nprint_"
+  completion_to: "if hour < 8 or hour == 8:\n        return \"sleeping\"\n    elif\
+    \ day == \"Sat\" or day == \"Sun\":\n        return \"weekend\"\n    else:\n \
+    \       return \"weekday\"\n\nprint_time(\"Mon\",8)\n"
+  diff: "--- \n+++ \n@@ -4,6 +4,10 @@\n If hours 0-8,+or+equal+to+8, return sleeping.\
+    \ If"
+  node_from: *id007
+  node_to: *id004
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    If hours 0-8, return sleeping.\
+    \ If Sat or Sun, return weekend. If Mon-Fri, return weekday. \n    \"\"\"\n  \
+    \  "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    If hours 0-8, or equal to\
+    \ 8, return sleeping. If Sat or Sun, return weekend. If Mon-Fri, return weekday.\
+    \ \n    \"\"\"\n    "
+  state: success
+  total_attempts: 5
+  username: student54
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 1
+  clues: null
+  completion_from: "if day == \"Sat\" or day == \"Sun\":\n        return \"weekend\"\
+    \n    elif day == \"Mon\" or day == \"Tue\":\n        if hour >= 9 and hour <=\
+    \ 23:\n            return \"weekday\"\n        elif hour >= 0 and hour <= 8:\n\
+    \            return \"sleeping\"\n        else:\n            return \"There are\
+    \ only 24 hours in a day where midnight starts at 0.\"\n    else:\n       "
+  completion_to: "if day == \"Sat\" or day == \"Sun\":\n        return \"weekend\"\
+    \n    elif day == \"Mon\" or day == \"Tue\" or day == \"Wed\" or day == \"Thu\"\
+    \ or day == \"Fri\":\n        if hour >= 9 and hour <= 23:\n            return\
+    \ \"weekday\"\n        elif hour >= 0 and hour <= 8:\n            return \"sleeping\"\
+    \n        else:\n            return \"There are"
+  diff: "--- \n+++ \n@@ -20,12 +20,12 @@\n if string is-a-weekday-(i.e.-\"Mon\"+\"\
+    Mon\",+\"Tue\",+\"Wed\",+\"Thu\" or-\"Tue\"),+\"Fri\", take into account"
+  node_from: &id008 !Node
+    _node_tags: null
+    id: 1
+    stderr:
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    - 'IndentationError: expected an indented block after ''else'' statement on line
+      14'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  node_to: &id011 !Node
+    _node_tags: null
+    id: 7
+    stderr:
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    - 'SyntaxError: unterminated string literal (detected at line 13)'
+    stdout:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  prompt_from: "def print_time(day,hour):\n    \"\"\"\n    given a string and an integer,\
+    \ if given string is either \"Sat\" or \"Sun\", return \"weekend\". if string\
+    \ is a weekday (i.e. \"Mon\" or \"Tue\"), take into account the integer. if integer\
+    \ is from 9-23, return \"weekday\". if integer is from 0-8, return \"sleeping\"\
+    . if integer is more than 24, return an error statement stating there are only\
+    \ 24 hours in a day where midnight starts at 0.\n    \"\"\"\n    "
+  prompt_to: "def print_time(day,hour):\n    \"\"\"\n    given a string and an integer,\
+    \ if given string is either \"Sat\" or \"Sun\", return \"weekend\". if string\
+    \ is \"Mon\", \"Tue\", \"Wed\", \"Thu\" or \"Fri\", take into account the integer.\
+    \ if integer is from 9-23, return \"weekday\". if integer is from 0-8, return\
+    \ \"sleeping\". if integer is more than 24, return an error statement stating\
+    \ there are only 24 hours in a day where midnight starts at 0.\n    \"\"\"\n \
+    \   "
+  state: fail
+  total_attempts: 2
+  username: student57
+nodes:
+- *id003
+- *id008
+- *id009
+- *id002
+- *id010
+- *id004
+- *id006
+- *id011
+- *id001
+- *id007
+- *id005
+- *id012
+problem: print_time
+problem_clues: {}
+student_clues_tracker: {}
+student_colors: {}
+student_start_node_tags:
+  student12:
+  - 2
+  - 5
+  student36:
+  - 2
+  - 3
+  - 4
+  - 5
+  student38:
+  - 2
+  - 3
+  - 4
+  - 5
+  student42:
+  - 2
+  - 3
+  - 4
+  - 5
+  student43:
+  - 2
+  - 3
+  - 4
+  - 5
+  student54:
+  - 2
+  - 3
+  - 4
+  student57:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5

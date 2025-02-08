@@ -1,0 +1,74 @@
+,problem,success_clues,username,state,clues,has_final_rewrite,has_final_trivial,has_final_l,has_final_m,has_all_clues,has_leq_half_clues,is_missing_clues,is_success,is_fail
+1,generateCardDeck,"[1, 2, 3, 4, 5]",student33,success,"[1, 2, 3, 3, 5, 4]",False,False,False,False,True,False,False,True,False
+5,generateCardDeck,"[1, 2, 3, 4, 5]",student50,success,"[1, 2, 3, 4, 5]",True,True,False,False,True,False,False,True,False
+8,generateCardDeck,"[1, 2, 3, 4, 5]",student63,success,"[2, 3, 5, 1, 4]",False,False,False,False,True,False,False,True,False
+9,generateCardDeck,"[1, 2, 3, 4, 5]",student64,success,"[2, 3]",True,False,True,False,False,True,True,True,False
+13,fib,"[1, 2, 3, 4, 5, 6]",student2,success,"[2, 5]",True,False,False,True,False,True,True,True,False
+16,fib,"[1, 2, 3, 4, 5, 6]",student11,success,[5],True,False,False,True,False,True,True,True,False
+19,fib,"[1, 2, 3, 4, 5, 6]",student22,success,"[2, 5]",True,False,False,True,False,True,True,True,False
+20,fib,"[1, 2, 3, 4, 5, 6]",student37,success,"[1, 2, 4, 6]",False,False,False,False,False,False,True,True,False
+22,pattern,"[1, 2, 3, 4, 5]",student4,success,"[1, 2, 3, 4, 5]",True,False,False,True,True,False,False,True,False
+24,pattern,"[1, 2, 3, 4, 5]",student25,success,"[1, 2, 3, 4, 5]",True,False,False,True,True,False,False,True,False
+34,total_bill,"[1, 2, 3, 4, 5, 6, 7, 8]",student60,success,"[1, 2, 3, 6, 7, 8]",False,False,False,False,False,False,True,True,False
+35,total_bill,"[1, 2, 3, 4, 5, 6, 7, 8]",student63,success,"[1, 2, 3, 4, 5, 6, 7, 8]",False,False,False,False,True,False,False,True,False
+39,total_bill,"[1, 2, 3, 4, 5, 6, 7, 8]",student79,success,"[1, 3, 4, 5, 6, 7, 2]",False,False,False,False,False,False,True,True,False
+41,translate,"[1, 2, 3, 4, 5, 6, 7]",student50,success,"[1, 2, 4, 5, 3, 6, 7]",False,False,False,False,True,False,False,True,False
+42,translate,"[1, 2, 3, 4, 5, 6, 7]",student59,success,"[1, 2, 4, 5, 6, 3, 7]",False,False,False,False,True,False,False,True,False
+43,translate,"[1, 2, 3, 4, 5, 6, 7]",student60,success,"[1, 2, 4, 5, 6, 3, 7]",False,False,False,False,True,False,False,True,False
+66,sortBySuccessRate,"[1, 2, 3, 4, 5, 6]",student40,success,"[1, 2, 3, 4, 5, 6]",False,False,False,False,True,False,False,True,False
+71,sortBySuccessRate,"[1, 2, 3, 4, 5, 6]",student63,success,"[1, 2, 3, 4, 5, 6]",False,False,False,False,True,False,False,True,False
+73,sortBySuccessRate,"[1, 2, 3, 4, 5, 6]",student69,success,"[1, 2, 3, 4, 6]",True,True,False,False,False,False,True,True,False
+95,readingIceCream,"[1, 2, 3, 4, 5, 6, 7]",student27,success,"[1, 2, 3, 4, 5, 6, 7]",False,False,False,False,True,False,False,True,False
+103,readingIceCream,"[1, 2, 3, 4, 5, 6, 7]",student68,success,"[1, 2, 3, 4, 5, 6, 7]",False,False,False,False,True,False,False,True,False
+104,readingIceCream,"[1, 2, 3, 4, 5, 6, 7]",student70,success,"[1, 2, 3, 4, 5, 6, 7]",True,False,False,True,True,False,False,True,False
+106,set_chars,"[1, 2, 3, 4, 5]",student19,success,"[1, 2, 3, 5, 4]",False,False,False,False,True,False,False,True,False
+110,set_chars,"[1, 2, 3, 4, 5]",student42,success,"[1, 2, 3, 4, 5]",False,False,False,False,True,False,False,True,False
+113,set_chars,"[1, 2, 3, 4, 5]",student77,success,"[1, 2, 3, 5, 4]",False,False,False,False,True,False,False,True,False
+117,find_multiples,"[1, 2]",student13,success,"[1, 2]",False,False,False,False,True,False,False,True,False
+119,find_multiples,"[1, 2]",student22,success,[2],True,True,False,False,False,True,True,True,False
+120,find_multiples,"[1, 2]",student61,success,"[1, 2]",False,False,False,False,True,False,False,True,False
+121,find_multiples,"[1, 2]",student72,success,"[1, 2]",False,False,False,False,True,False,False,True,False
+126,print_time,"[1, 2, 3, 4, 5]",student42,success,"[2, 3, 4, 5, 1]",True,False,False,True,True,False,False,True,False
+127,print_time,"[1, 2, 3, 4, 5]",student43,success,"[2, 3, 4, 5, 1]",True,True,False,False,True,False,False,True,False
+129,remove_odd,"[1, 2, 3, 4]",student0,success,"[1, 2, 3, 4]",True,False,False,True,True,False,False,True,False
+134,remove_odd,"[1, 2, 3, 4]",student18,success,"[2, 3, 1, 4]",True,True,False,False,True,False,False,True,False
+141,subtract_add,"[1, 2, 3, 4, 5]",student27,success,"[1, 2, 3, 4, 5]",False,False,False,False,True,False,False,True,False
+142,subtract_add,"[1, 2, 3, 4, 5]",student29,success,"[1, 2, 3, 4, 5]",True,True,False,False,True,False,False,True,False
+146,subtract_add,"[1, 2, 3, 4, 5]",student66,success,"[1, 2, 3, 4, 5]",True,True,False,False,True,False,False,True,False
+161,altText,"[1, 2, 3, 4]",student63,success,"[1, 2, 3, 4]",True,True,False,False,True,False,False,True,False
+165,combine,"[1, 2, 3]",student42,success,"[1, 2, 3]",True,False,False,True,True,False,False,True,False
+178,sort_physicists,"[1, 2, 3, 4, 5, 6]",student12,success,"[1, 3, 4, 5, 6]",True,False,False,True,False,False,True,True,False
+180,sort_physicists,"[1, 2, 3, 4, 5, 6]",student36,success,"[1, 2, 3, 4, 5, 6]",True,False,False,True,True,False,False,True,False
+182,sort_physicists,"[1, 2, 3, 4, 5, 6]",student43,success,"[1, 3, 4, 5, 6]",False,False,False,False,False,False,True,True,False
+184,sort_physicists,"[1, 2, 3, 4, 5, 6]",student57,success,"[1, 3, 4, 5, 6]",True,True,False,False,False,False,True,True,False
+185,sort_physicists,"[1, 2, 3, 4, 5, 6]",student77,success,"[1, 2, 3, 4, 5, 6]",True,False,False,True,True,False,False,True,False
+186,reverseWords,"[1, 2, 3, 4, 5]",student1,success,"[1, 2, 3, 4, 5]",True,False,False,True,True,False,False,True,False
+191,reverseWords,"[1, 2, 3, 4, 5]",student55,success,"[1, 2, 3, 4, 5]",False,False,False,False,True,False,False,True,False
+193,planets_mass,"[1, 2, 3, 4, 5, 6]",student14,success,"[3, 6]",True,False,False,True,False,True,True,True,False
+202,increaseScore,"[1, 2, 3, 4, 5, 6]",student33,success,"[1, 2, 3, 4, 6]",True,False,False,True,False,False,True,True,False
+203,increaseScore,"[1, 2, 3, 4, 5, 6]",student35,success,"[1, 2, 3, 4]",True,False,False,True,False,False,True,True,False
+204,increaseScore,"[1, 2, 3, 4, 5, 6]",student50,success,"[1, 2, 3]",False,False,False,False,False,True,True,True,False
+205,increaseScore,"[1, 2, 3, 4, 5, 6]",student59,success,"[1, 3, 4, 5, 6]",False,False,False,False,False,False,True,True,False
+209,add_up,"[1, 2, 3, 4, 5, 6]",student7,success,"[1, 2, 3, 4, 5]",False,False,False,False,False,False,True,True,False
+214,add_up,"[1, 2, 3, 4, 5, 6]",student31,success,"[1, 3, 4]",True,False,False,True,False,True,True,True,False
+222,check_prime,"[1, 2, 3, 4]",student32,success,"[1, 2, 3]",False,False,False,False,False,False,True,True,False
+229,sortedBooks,"[1, 2, 3, 4, 5, 6]",student27,success,"[1, 2, 3, 4, 5, 6]",False,False,False,False,True,False,False,True,False
+236,sortedBooks,"[1, 2, 3, 4, 5, 6]",student68,success,"[1, 2, 3, 4, 5, 6]",False,False,False,False,True,False,False,True,False
+241,percentWin,"[1, 2, 3, 4, 5, 6]",student4,success,"[2, 3, 4, 5, 6, 1]",True,False,False,True,True,False,False,True,False
+245,percentWin,"[1, 2, 3, 4, 5, 6]",student21,success,"[1, 3, 4, 5, 6]",False,False,False,False,False,False,True,True,False
+250,percentWin,"[1, 2, 3, 4, 5, 6]",student51,success,"[2, 3, 4, 5, 6, 1]",True,False,False,True,True,False,False,True,False
+253,changeSection,"[1, 2, 3, 4]",student10,success,"[1, 2, 3, 4]",True,False,False,True,True,False,False,True,False
+256,changeSection,"[1, 2, 3, 4]",student21,success,"[1, 2, 3, 4]",True,True,False,False,True,False,False,True,False
+262,assessVowels,"[1, 2, 3, 4]",student5,success,"[1, 2, 3, 4]",True,False,False,True,True,False,False,True,False
+263,assessVowels,"[1, 2, 3, 4]",student13,success,"[1, 2, 3, 4]",False,False,False,False,True,False,False,True,False
+266,assessVowels,"[1, 2, 3, 4]",student37,success,"[1, 2, 3, 4]",True,False,False,True,True,False,False,True,False
+267,assessVowels,"[1, 2, 3, 4]",student72,success,"[1, 2, 3, 4]",False,False,False,False,True,False,False,True,False
+268,assessVowels,"[1, 2, 3, 4]",student74,success,"[1, 2, 3, 4]",False,False,False,False,True,False,False,True,False
+272,add_int,"[1, 2, 3, 4]",student42,success,"[1, 2, 3, 4]",False,False,False,False,True,False,False,True,False
+273,add_int,"[1, 2, 3, 4]",student54,success,"[2, 3, 4]",True,False,True,False,False,False,True,True,False
+275,create_list,"[1, 2, 3, 4, 5]",student20,success,"[2, 3, 4, 1, 5]",False,False,False,False,True,False,False,True,False
+276,create_list,"[1, 2, 3, 4, 5]",student36,success,"[2, 3, 4, 5, 1]",False,False,False,False,True,False,False,True,False
+277,create_list,"[1, 2, 3, 4, 5]",student42,success,"[1, 2, 3, 4, 5]",False,False,False,False,True,False,False,True,False
+279,create_list,"[1, 2, 3, 4, 5]",student54,success,"[2, 3, 4, 5, 1]",False,False,False,False,True,False,False,True,False
+287,getSeason,"[1, 2, 3, 4]",student46,success,"[1, 2, 3]",True,False,False,True,False,False,True,True,False
+288,getSeason,"[1, 2, 3, 4]",student47,success,"[2, 3, 4, 1]",True,False,False,True,True,False,False,True,False

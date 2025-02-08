@@ -1,0 +1,2832 @@
+!Graph
+COLORS:
+- '#d83034'
+- '#f9e858'
+- '#008dff'
+- '#4ecb8d'
+- '#c701ff'
+- '#ffcd8e'
+- '#003a7d'
+- '#Ff73b6'
+- '#ff7f50'
+- '#7fff00'
+- '#8a2be2'
+- '#ffd700'
+- '#ff4500'
+- '#00ced1'
+- '#ff1493'
+- '#9400d3'
+- '#00bfff'
+edges:
+- !Edge
+  _edge_tags:
+  - a3
+  - a5
+  attempt_id: 1
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i < 0:\n         \
+    \   new_lst.append(i)\n        else:\n            new_lst.append(alphabet[i])\n\
+    \    return new_lst\n"
+  completion_to: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',\
+    \ 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    for i in lst:\n        if i >= 0"
+  diff: "--- \n+++ \n@@ -5,32 +5,57 @@\n a list of-numbers-and-returns-a+numbers,+have+another\
+    \ list with the+letters+in+the+alphabet,+create+an+answer+list,+iterate+through+the+input+list,+append+the+letter+with+the\
+    \ corresponding-indexes+index of the-alphabet,-where-negative-numbers-as-indexes-means-to-take+list+with+the+letters\
+    \ in the-next-index-as+alphabet+to+the+answer+list,+create a new string+when+encounter+a+negative+number,+and+return+the+answer+list\
+    \ \"\"\""
+  node_from: &id039 !Node
+    _node_tags: null
+    id: 15
+    stderr:
+    - 'NameError: name ''alphabet'' is not defined'
+    - 'NameError: name ''alphabet'' is not defined'
+    - 'NameError: name ''alphabet'' is not defined'
+    stdout:
+    - ''
+    - ''
+    - ''
+  node_to: &id001 !Node
+    _node_tags: null
+    id: 11
+    stderr:
+    - 'SyntaxError: expected '':'''
+    - 'SyntaxError: expected '':'''
+    - 'SyntaxError: expected '':'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers and returns\
+    \ a list with the corresponding indexes of the alphabet, where negative numbers\
+    \ as indexes means to take in the next index as a new string\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers, have another\
+    \ list with the letters in the alphabet, create an answer list, iterate through\
+    \ the input list, append the letter with the corresponding index of the list with\
+    \ the letters in the alphabet to the answer list, create a new string when encounter\
+    \ a negative number, and return the answer list\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',\
+    \ 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    for i in lst:\n        if i >= 0"
+  completion_to: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',\
+    \ 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    temp = ''\n    for num in lst:\n"
+  diff: "--- \n+++ \n@@ -18,13 +18,20 @@\n create an answer-list,-iterate+list.+When+iterating\
+    \ through the input list,-append+create+a+temp+string+variable+and+assign the\
+    \ letter with@@ -42,20 +49,29 @@\n alphabet to the+temp+variable,+append+the+temp+variable+into+the\
+    \ answer list,-create+and+start a new+temp string when encounter a negative-number,-and-return+number.+Return\
+    \ the answer-list+list. \"\"\""
+  node_from: *id001
+  node_to: &id002 !Node
+    _node_tags: null
+    id: 19
+    stderr:
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      8'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      8'
+    - 'IndentationError: expected an indented block after ''for'' statement on line
+      8'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers, have another\
+    \ list with the letters in the alphabet, create an answer list, iterate through\
+    \ the input list, append the letter with the corresponding index of the list with\
+    \ the letters in the alphabet to the answer list, create a new string when encounter\
+    \ a negative number, and return the answer list\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers, have another\
+    \ list with the letters in the alphabet, create an answer list. When iterating\
+    \ through the input list, create a temp string variable and assign the letter\
+    \ with the corresponding index of the list with the letters in the alphabet to\
+    \ the temp variable, append the temp variable into the answer list, and start\
+    \ a new temp string when encounter a negative number. Return the answer list.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 3
+  clues: null
+  completion_from: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',\
+    \ 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    temp = ''\n    for num in lst:\n"
+  completion_to: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',\
+    \ 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    temp = ''\n    for i in lst:\n"
+  diff: "--- \n+++ \n@@ -5,8 +5,8 @@\n a list of-numbers,-have+numbers.+Have another\
+    \ list with@@ -15,6 +15,7 @@\n in the alphabet,+and create an answer@@ -29,9 +30,10\
+    \ @@\n a temp string-variable-and-assign+variable,+have+it+add the letter with@@\
+    \ -50,26 +52,25 @@\n to the temp-variable,-append+variable.+Append the temp variable\
+    \ into the answer-list,-and+list.+If+encounter+a+negative+number, start a new\
+    \ temp-string-when-encounter-a-negative-number.+string. Return the answer"
+  node_from: *id002
+  node_to: *id002
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers, have another\
+    \ list with the letters in the alphabet, create an answer list. When iterating\
+    \ through the input list, create a temp string variable and assign the letter\
+    \ with the corresponding index of the list with the letters in the alphabet to\
+    \ the temp variable, append the temp variable into the answer list, and start\
+    \ a new temp string when encounter a negative number. Return the answer list.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable, have it add the letter\
+    \ with the corresponding index of the list with the letters in the alphabet to\
+    \ the temp variable. Append the temp variable into the answer list. If encounter\
+    \ a negative number,  start a new temp string. Return the answer list.\n    \"\
+    \"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 4
+  clues: null
+  completion_from: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',\
+    \ 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    temp = ''\n    for i in lst:\n"
+  completion_to: "answer = []\n    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',\
+    \ 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',\
+    \ 'y', 'z']\n    for num in lst:\n        temp = ''\n"
+  diff: "--- \n+++ \n@@ -30,9 +30,13 @@\n a temp string-variable,-have-it+variable.+While+the+number+is+not+negative,\
+    \ add the letter@@ -61,16 +65,6 @@\n the answer list.-If-encounter-a-negative-number,-start-a-new-temp-string.\
+    \ Return the answer"
+  node_from: *id002
+  node_to: &id003 !Node
+    _node_tags: null
+    id: 40
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'None
+
+      '
+    - 'None
+
+      '
+    - 'None
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable, have it add the letter\
+    \ with the corresponding index of the list with the letters in the alphabet to\
+    \ the temp variable. Append the temp variable into the answer list. If encounter\
+    \ a negative number,  start a new temp string. Return the answer list.\n    \"\
+    \"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While the number is not\
+    \ negative, add the letter with the corresponding index of the list with the letters\
+    \ in the alphabet to the temp variable. Append the temp variable into the answer\
+    \ list. Return the answer list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 5
+  clues: null
+  completion_from: "answer = []\n    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g',\
+    \ 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',\
+    \ 'x', 'y', 'z']\n    for num in lst:\n        temp = ''\n"
+  completion_to: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',\
+    \ 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    for num in lst:\n        temp = ''\n"
+  diff: "--- \n+++ \n@@ -33,6 +33,7 @@\n variable. While the+iterating number is not"
+  node_from: *id003
+  node_to: *id003
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While the number is not\
+    \ negative, add the letter with the corresponding index of the list with the letters\
+    \ in the alphabet to the temp variable. Append the temp variable into the answer\
+    \ list. Return the answer list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While the iterating number\
+    \ is not negative, add the letter with the corresponding index of the list with\
+    \ the letters in the alphabet to the temp variable. Append the temp variable into\
+    \ the answer list. Return the answer list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - l4
+  attempt_id: 6
+  clues: null
+  completion_from: "alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',\
+    \ 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']\n\
+    \    answer = []\n    for num in lst:\n        temp = ''\n"
+  completion_to: "answer = []\n    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g',\
+    \ 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',\
+    \ 'x', 'y', 'z']\n    for num in lst:\n        temp = ''\n"
+  diff: "--- \n+++ \n@@ -32,9 +32,7 @@\n string variable. While-the-iterating-number+num\
+    \ is not negative,"
+  node_from: *id003
+  node_to: *id003
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While the iterating number\
+    \ is not negative, add the letter with the corresponding index of the list with\
+    \ the letters in the alphabet to the temp variable. Append the temp variable into\
+    \ the answer list. Return the answer list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While num is not negative,\
+    \ add the letter with the corresponding index of the list with the letters in\
+    \ the alphabet to the temp variable. Append the temp variable into the answer\
+    \ list. Return the answer list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m2
+  - m3
+  - m4
+  attempt_id: 7
+  clues: null
+  completion_from: "answer = []\n    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g',\
+    \ 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',\
+    \ 'x', 'y', 'z']\n    for num in lst:\n        temp = ''\n"
+  completion_to: "abc = [chr(i) for i in range(97, 123)]\n    answer = ''\n    for\
+    \ i in lst:\n        if i == -1:\n            answer += ' '\n        else:\n \
+    \           answer += abc[i]\n    return answer.split(' ')\n\n"
+  diff: "--- \n+++ \n@@ -6,36 +6,40 @@\n list of numbers.-Have-another+Create+a+ABC\
+    \ list with the letters in the-alphabet,+alphabet and create an answer-list.-When-iterating+string.+Iterate\
+    \ through the input list,-create-a-temp-string-variable.-While-num+if+there is-not-negative,+\"\
+    -1\"+then+add+'+'+to+the+answer+string,+or+otherwise, add the letter@@ -45,27\
+    \ +49,17 @@\n index of the-list-with-the-letters-in-the-alphabet-to-the-temp-variable.-Append-the-temp-variable-into+answer+string.+Split\
+    \ the answer-list.-Return+string+at+'+'.+return the answer-list.+string. \"\"\""
+  node_from: *id003
+  node_to: &id004 !Node
+    _node_tags: null
+    id: 37
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''abcd'']
+
+      '
+    - '[''a'', ''b'', ''c'']
+
+      '
+    - '[''bbb'', ''zzz'', ''abc'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Have another\
+    \ list with the letters in the alphabet, and create an answer list. When iterating\
+    \ through the input list, create a temp string variable. While num is not negative,\
+    \ add the letter with the corresponding index of the list with the letters in\
+    \ the alphabet to the temp variable. Append the temp variable into the answer\
+    \ list. Return the answer list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Create a\
+    \ ABC list with the letters in the alphabet and create an answer string. Iterate\
+    \ through the input list, if there is \"-1\" then add ' ' to the answer string,\
+    \ or otherwise, add the letter with the corresponding index of the answer string.\
+    \ Split the answer string at ' '. return the answer string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 8
+  clues: null
+  completion_from: "abc = [chr(i) for i in range(97, 123)]\n    answer = ''\n    for\
+    \ i in lst:\n        if i == -1:\n            answer += ' '\n        else:\n \
+    \           answer += abc[i]\n    return answer.split(' ')\n\n"
+  completion_to: "abc = [chr(i) for i in range(65, 91)]\n    answer = ''\n    for\
+    \ i in lst:\n        if i == -1:\n            answer += ' '\n        else:\n \
+    \           answer += abc[i]\n    return answer.split(' ')\n\n"
+  diff: "--- \n+++ \n@@ -12,6 +12,7 @@\n list with the+capital letters in the"
+  node_from: *id004
+  node_to: &id023 !Node
+    _node_tags: null
+    id: 29
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''ABCD'']
+
+      '
+    - '[''A'', ''B'', ''C'']
+
+      '
+    - '[''BBB'', ''ZZZ'', ''ABC'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Create\
+    \ a ABC list with the letters in the alphabet and create an answer string. Iterate\
+    \ through the input list, if there is \"-1\" then add ' ' to the answer string,\
+    \ or otherwise, add the letter with the corresponding index of the answer string.\
+    \ Split the answer string at ' '. return the answer string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    takes a list of numbers. Create a\
+    \ ABC list with the capital letters in the alphabet and create an answer string.\
+    \ Iterate through the input list, if there is \"-1\" then add ' ' to the answer\
+    \ string, or otherwise, add the letter with the corresponding index of the answer\
+    \ string. Split the answer string at ' '. return the answer string.\n    \"\"\"\
+    \n    "
+  state: success
+  total_attempts: 9
+  username: student0
+- !Edge
+  _edge_tags:
+  - m5
+  attempt_id: 1
+  clues: null
+  completion_from: "new_lst = []\n    new_str = \"\"\n    for i in lst:\n        if\
+    \ i == -1:\n            new_lst.append(new_str)\n            new_str = \"\"\n\
+    \        else:\n            new_str += chr(i + 97)\n    new_lst.append(new_str)\n\
+    \    return new_lst\n\nprint(convert([1,2,3,"
+  completion_to: "# Create empty list to store the converted numbers\n    converted_list\
+    \ = []\n    # Create empty string to store the converted numbers\n    converted_string\
+    \ = \"\"\n    # Create a list of the alphabet\n    alphabet = [\"a\", \"b\", \"\
+    c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"\
+    n\", \"o\", \"p\", \"q\", \""
+  diff: "--- \n+++ \n@@ -6,12 +6,30 @@\n a list of+numbers+ranging+from+-1+to+25,+and+function+outputs+a+list+of+the+corresponding+letters+and+line+breaks.+Function+converts+the\
+    \ integers from-0-25.-Function-converts-integers+0-25 into letters by@@ -25,13\
+    \ +43,6 @@\n of the alphabet.-Function-would-return-a-list-of-letters. When the\
+    \ user"
+  node_from: *id004
+  node_to: &id005 !Node
+    _node_tags: null
+    id: 27
+    stderr:
+    - 'SyntaxError: unterminated string literal (detected at line 10)'
+    - 'SyntaxError: unterminated string literal (detected at line 10)'
+    - 'SyntaxError: unterminated string literal (detected at line 10)'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    User inputs a list of integers\
+    \ from 0-25. Function converts integers into letters by matching the number with\
+    \ the corresponding letter of the alphabet. Function would return a list of letters.\
+    \ When the user inputs -1, function should end current string in list and start\
+    \ a new string. \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    User inputs a list of numbers ranging\
+    \ from -1 to 25, and function outputs a list of the corresponding letters and\
+    \ line breaks. Function converts the integers from 0-25 into letters by matching\
+    \ the number with the corresponding letter of the alphabet. When the user inputs\
+    \ -1, function should end current string in list and start a new string. \n  \
+    \  \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student10
+- !Edge
+  _edge_tags:
+  - m5
+  attempt_id: 2
+  clues: null
+  completion_from: "# Create empty list to store the converted numbers\n    converted_list\
+    \ = []\n    # Create empty string to store the converted numbers\n    converted_string\
+    \ = \"\"\n    # Create a list of the alphabet\n    alphabet = [\"a\", \"b\", \"\
+    c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"\
+    n\", \"o\", \"p\", \"q\", \""
+  completion_to: "# create a list of the alphabet\n    alphabet = ['a', 'b', 'c',\
+    \ 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',\
+    \ 't', 'u', 'v', 'w', 'x', 'y', 'z']\n    # create a list to store the letters"
+  diff: "--- \n+++ \n@@ -60,4 +60,12 @@\n a new string.+Function+should+return+a+list+of+the+letters.\
+    \ \"\"\""
+  node_from: *id005
+  node_to: *id003
+  prompt_from: "def convert(lst):\n    \"\"\"\n    User inputs a list of numbers ranging\
+    \ from -1 to 25, and function outputs a list of the corresponding letters and\
+    \ line breaks. Function converts the integers from 0-25 into letters by matching\
+    \ the number with the corresponding letter of the alphabet. When the user inputs\
+    \ -1, function should end current string in list and start a new string. \n  \
+    \  \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    User inputs a list of numbers ranging\
+    \ from -1 to 25, and function outputs a list of the corresponding letters and\
+    \ line breaks. Function converts the integers from 0-25 into letters by matching\
+    \ the number with the corresponding letter of the alphabet. When the user inputs\
+    \ -1, function should end current string in list and start a new string. Function\
+    \ should return a list of the letters.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 3
+  username: student10
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: 'return [chr(x+65) for x in lst]
+
+    '
+  completion_to: 'return [chr(i+65) for i in lst if i >= 0]
+
+
+    print(convert([-1,1,1,3,2,1,2,3,1]))
+
+    '
+  diff: "--- \n+++ \n@@ -15,5 +15,12 @@\n at 0 as-A+A.+ignoring+any+negative+numbers+in+the+list.\
+    \ \"\"\""
+  node_from: &id016 !Node
+    _node_tags: null
+    id: 39
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', ''@'', ''B'', ''@'', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', ''@'', ''Z'', ''Z'', ''Z'', ''@'', ''A'', ''B'', ''C'']
+
+      '
+  node_to: &id006 !Node
+    _node_tags: null
+    id: 33
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', ''B'', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', ''Z'', ''Z'', ''Z'', ''A'', ''B'', ''C'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. ignoring any negative numbers\
+    \ in the list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 2
+  clues: null
+  completion_from: 'return [chr(i+65) for i in lst if i >= 0]
+
+
+    print(convert([-1,1,1,3,2,1,2,3,1]))
+
+    '
+  completion_to: 'return ''''.join(chr(ord(''A'') + abs(x)) if x >= 0 else '','' for
+    x in lst)
+
+    '
+  diff: "--- \n+++ \n@@ -15,12 +15,19 @@\n at 0 as-A.-ignoring-any+A,+turning+the\
+    \ negative numbers-in+into+commas,+and+then+turning the-list.+output+into+one+string.\
+    \ \"\"\""
+  node_from: *id006
+  node_to: &id007 !Node
+    _node_tags: null
+    id: 31
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'A,B,C
+
+      '
+    - 'BBB,ZZZ,ABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. ignoring any negative numbers\
+    \ in the list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then turning the output into one string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 3
+  clues: null
+  completion_from: 'return ''''.join(chr(ord(''A'') + abs(x)) if x >= 0 else '',''
+    for x in lst)
+
+    '
+  completion_to: "lst = [x for x in lst if x >= 0]\n    lst = [chr(x+65) for x in\
+    \ lst]\n    lst = [x for i, x in enumerate(lst) if i == 0 or x != lst[i-1]]\n\
+    \    return ''.join(lst)\n\nprint(convert([-1, -1, -1, -1, -1, -"
+  diff: "--- \n+++ \n@@ -15,19 +15,28 @@\n at 0 as-A,-turning-the+A+ignoring+any negative\
+    \ numbers-into-commas,-and-then-turning+in the-output-into-one-string.+list.+Removing+the+commas+in+the+answer+when+the+letters+are+the+same+or+in+alphabetical+order.\
+    \ \"\"\""
+  node_from: *id007
+  node_to: &id008 !Node
+    _node_tags: null
+    id: 36
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'ABC
+
+      '
+    - 'BZABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then turning the output into one string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing the commas in the answer when the letters are the same or\
+    \ in alphabetical order.  \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "lst = [x for x in lst if x >= 0]\n    lst = [chr(x+65) for x in\
+    \ lst]\n    lst = [x for i, x in enumerate(lst) if i == 0 or x != lst[i-1]]\n\
+    \    return ''.join(lst)\n\nprint(convert([-1, -1, -1, -1, -1, -"
+  completion_to: "result = \"\"\n    for i in lst:\n        if i >= 0:\n         \
+    \   result += chr(i + 65)\n    return result\n\nprint(convert([-1, -1, -1, -1,\
+    \ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1"
+  diff: "--- \n+++ \n@@ -28,7 +28,7 @@\n commas in the-answer+output when the letters"
+  node_from: *id008
+  node_to: &id009 !Node
+    _node_tags: null
+    id: 22
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'ABC
+
+      '
+    - 'BBBZZZABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing the commas in the answer when the letters are the same or\
+    \ in alphabetical order.  \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing the commas in the output when the letters are the same or\
+    \ in alphabetical order.  \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - l2
+  - d3
+  attempt_id: 5
+  clues: null
+  completion_from: "result = \"\"\n    for i in lst:\n        if i >= 0:\n       \
+    \     result += chr(i + 65)\n    return result\n\nprint(convert([-1, -1, -1, -1,\
+    \ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1"
+  completion_to: 'return [chr(i+65) for i in lst if i>=0]
+
+
+    print(convert([-1,1,2,3,4,5]))'
+  diff: "--- \n+++ \n@@ -23,20 +23,4 @@\n in the list.-Removing-the-commas-in-the-output-when-the-letters-are-the-same-or-in-alphabetical-order.\
+    \ \"\"\""
+  node_from: *id009
+  node_to: *id006
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing the commas in the output when the letters are the same or\
+    \ in alphabetical order.  \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.  \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 6
+  clues: null
+  completion_from: 'return [chr(i+65) for i in lst if i>=0]
+
+
+    print(convert([-1,1,2,3,4,5]))'
+  completion_to: "new_lst = []\n    for i in lst:\n        if i >= 0:\n          \
+    \  new_lst.append(chr(i + 65))\n    if new_lst == sorted(new_lst) or len(set(new_lst))\
+    \ == 1:\n        return ''.join(new_lst)\n    else:\n        return ','.join(new_lst)\n\
+    \nprint(con"
+  diff: "--- \n+++ \n@@ -23,4 +23,33 @@\n in the list.+Then+take+the+list+of+converted+letters,+removing+any+commas+between+letters+in+the+last+when+the+letters+are+in+alphabetical+order,+or+when+they+are+the+same+letters.\
+    \ \"\"\""
+  node_from: *id006
+  node_to: &id010 !Node
+    _node_tags: null
+    id: 26
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'ABC
+
+      '
+    - 'B,B,B,Z,Z,Z,A,B,C
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.  \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Then take the list of converted letters, removing any commas between\
+    \ letters in the last when the letters are in alphabetical order, or when they\
+    \ are the same letters.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - l2
+  attempt_id: 7
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i >= 0:\n        \
+    \    new_lst.append(chr(i + 65))\n    if new_lst == sorted(new_lst) or len(set(new_lst))\
+    \ == 1:\n        return ''.join(new_lst)\n    else:\n        return ','.join(new_lst)\n\
+    \nprint(con"
+  completion_to: 'return [chr(i + 65) for i in lst if i >= 0]
+
+
+    print(convert([-1, -2, -3, -4, 1, 2, 3, 4]))
+
+    print(convert([25, 1, 27, 30, 2, 5, 29, 28]))
+
+    print(convert([-1, -2, -3, -4, -5, -6, -7, -8'
+  diff: "--- \n+++ \n@@ -23,33 +23,4 @@\n in the list.-Then-take-the-list-of-converted-letters,-removing-any-commas-between-letters-in-the-last-when-the-letters-are-in-alphabetical-order,-or-when-they-are-the-same-letters.\
+    \ \"\"\""
+  node_from: *id010
+  node_to: *id006
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Then take the list of converted letters, removing any commas between\
+    \ letters in the last when the letters are in alphabetical order, or when they\
+    \ are the same letters.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 8
+  clues: null
+  completion_from: 'return [chr(i + 65) for i in lst if i >= 0]
+
+
+    print(convert([-1, -2, -3, -4, 1, 2, 3, 4]))
+
+    print(convert([25, 1, 27, 30, 2, 5, 29, 28]))
+
+    print(convert([-1, -2, -3, -4, -5, -6, -7, -8'
+  completion_to: 'return [chr(i+65) for i in lst if i>=0]
+
+
+    print(convert([-1,1,2,3,4,5]))
+
+    '
+  diff: ''
+  node_from: *id006
+  node_to: *id006
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 9
+  clues: null
+  completion_from: 'return [chr(i+65) for i in lst if i>=0]
+
+
+    print(convert([-1,1,2,3,4,5]))
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if i >= 0:\n          \
+    \  new_lst.append(chr(i+65))\n    return ''.join(new_lst)\n"
+  diff: "--- \n+++ \n@@ -23,4 +23,12 @@\n in the list.+Removing+all+commas+in+the+list+of+outputs\
+    \ \"\"\""
+  node_from: *id006
+  node_to: *id009
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing all commas in the list of outputs\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 10
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i >= 0:\n        \
+    \    new_lst.append(chr(i+65))\n    return ''.join(new_lst)\n"
+  completion_to: 'return '',''.join(map(lambda x: chr(x + 65) if x >= 0 else '','',
+    lst))
+
+    '
+  diff: "--- \n+++ \n@@ -16,19 +16,10 @@\n 0 as A-ignoring-any+turning+all negative\
+    \ numbers-in-the-list.-Removing-all-commas-in-the-list-of-outputs+into+commas.\
+    \ \"\"\""
+  node_from: *id009
+  node_to: &id011 !Node
+    _node_tags: null
+    id: 41
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'A,B,C,D
+
+      '
+    - 'A,,,B,,,C
+
+      '
+    - 'B,B,B,,,Z,Z,Z,,,A,B,C
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A ignoring any negative numbers in\
+    \ the list. Removing all commas in the list of outputs\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A turning all negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 11
+  clues: null
+  completion_from: 'return '',''.join(map(lambda x: chr(x + 65) if x >= 0 else '','',
+    lst))
+
+    '
+  completion_to: 'return [''''.join([chr(i + 65) if i >= 0 else '','' for i in lst])]
+
+    '
+  diff: "--- \n+++ \n@@ -15,11 +15,22 @@\n at 0 as-A+A, turning-all+the negative numbers\
+    \ into-commas.+commas,+and+then+turning+the+output+into+one+string+in+a+list.\
+    \ \"\"\""
+  node_from: *id011
+  node_to: &id012 !Node
+    _node_tags: null
+    id: 14
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''ABCD'']
+
+      '
+    - '[''A,B,C'']
+
+      '
+    - '[''BBB,ZZZ,ABC'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A turning all negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then turning the output into one string in a list.\n    \"\"\"\n\
+    \    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 12
+  clues: null
+  completion_from: 'return [''''.join([chr(i + 65) if i >= 0 else '','' for i in lst])]
+
+    '
+  completion_to: "lst = [chr(x+65) if x >= 0 else ',' for x in lst]\n    lst = [''.join(g)\
+    \ for k, g in groupby(lst)]\n    return lst\n"
+  diff: "--- \n+++ \n@@ -24,9 +24,15 @@\n commas, and then-turning+group the-output+letters+in+alphabetical+order+or+the+same\
+    \ into one string"
+  node_from: *id012
+  node_to: &id013 !Node
+    _node_tags: null
+    id: 17
+    stderr:
+    - 'NameError: name ''groupby'' is not defined'
+    - 'NameError: name ''groupby'' is not defined'
+    - 'NameError: name ''groupby'' is not defined'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then turning the output into one string in a list.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then group the letters in alphabetical order or the same into one\
+    \ string in a list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - l3
+  attempt_id: 13
+  clues: null
+  completion_from: "lst = [chr(x+65) if x >= 0 else ',' for x in lst]\n    lst = [''.join(g)\
+    \ for k, g in groupby(lst)]\n    return lst\n"
+  completion_to: "res = []\n    for i in lst:\n        if i > 0:\n            res.append(chr(i\
+    \ + 64))\n        elif i < 0:\n            res.append(\",\")\n    return res\n"
+  diff: "--- \n+++ \n@@ -21,22 +21,8 @@\n negative numbers into-commas,-and-then-group+commas+separating\
+    \ the-letters-in-alphabetical-order-or-the-same-into-one-string-in-a-list.+letters.\
+    \ \"\"\""
+  node_from: *id013
+  node_to: &id014 !Node
+    _node_tags: null
+    id: 21
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'']
+
+      '
+    - '['','', ''A'', '','', ''B'']
+
+      '
+    - '[''A'', ''A'', ''A'', '','', ''Y'', ''Y'', ''Y'', '','', ''A'', ''B'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas, and then group the letters in alphabetical order or the same into one\
+    \ string in a list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas separating the letters. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 14
+  clues: null
+  completion_from: "res = []\n    for i in lst:\n        if i > 0:\n            res.append(chr(i\
+    \ + 64))\n        elif i < 0:\n            res.append(\",\")\n    return res\n"
+  completion_to: "lst = [i for i in lst if i != 0]\n    lst = [i if i > 0 else -i\
+    \ for i in lst]\n    lst = [chr(i + 64) for i in lst]\n    lst = [i if i != '@'\
+    \ else ',' for i in lst]\n    return ''.join(lst)\n"
+  diff: ''
+  node_from: *id014
+  node_to: &id015 !Node
+    _node_tags: null
+    id: 30
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABC
+
+      '
+    - 'AAAB
+
+      '
+    - 'AAAAYYYAAB
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas separating the letters. \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas separating the letters. \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - d3
+  - d4
+  attempt_id: 15
+  clues: null
+  completion_from: "lst = [i for i in lst if i != 0]\n    lst = [i if i > 0 else -i\
+    \ for i in lst]\n    lst = [chr(i + 64) for i in lst]\n    lst = [i if i != '@'\
+    \ else ',' for i in lst]\n    return ''.join(lst)\n"
+  completion_to: 'return [chr(i+65) for i in lst]
+
+    '
+  diff: "--- \n+++ \n@@ -15,14 +15,5 @@\n at 0 as-A,-turning-the-negative-numbers-into-commas-separating-the-letters.+A.\
+    \ \"\"\""
+  node_from: *id015
+  node_to: *id016
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning the negative numbers into\
+    \ commas separating the letters. \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a3
+  - a4
+  attempt_id: 16
+  clues: null
+  completion_from: 'return [chr(i+65) for i in lst]
+
+    '
+  completion_to: "lst = [i for i in lst if i != 0]\n    lst = [chr(i + 65) for i in\
+    \ lst]\n    lst = \"\".join(lst)\n    lst = lst.split(\"-\")\n    lst = [i for\
+    \ i in lst if i != \"\"]\n    return lst\n"
+  diff: "--- \n+++ \n@@ -16,4 +16,20 @@\n 0 as A.+grouping+the+output+as+a+single+string,+then+use+the+negative+numbers+as+points+of+seperation.\
+    \ \"\"\""
+  node_from: *id016
+  node_to: &id017 !Node
+    _node_tags: null
+    id: 8
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''BCD'']
+
+      '
+    - '[''@B@C'']
+
+      '
+    - '[''BBB@ZZZ@BC'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as points of seperation.\n    \"\"\"\n\
+    \    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 17
+  clues: null
+  completion_from: "lst = [i for i in lst if i != 0]\n    lst = [chr(i + 65) for i\
+    \ in lst]\n    lst = \"\".join(lst)\n    lst = lst.split(\"-\")\n    lst = [i\
+    \ for i in lst if i != \"\"]\n    return lst\n"
+  completion_to: "#print(lst)\n    lst = [x+1 for x in lst]\n    #print(lst)\n   \
+    \ lst = [x-1 for x in lst]\n    #print(lst)\n    lst = [chr(x+65) for x in lst]\n\
+    \    #print(lst)\n    lst = ''.join(lst)\n    #print(lst)"
+  diff: ''
+  node_from: *id017
+  node_to: *id003
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as points of seperation.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as points of seperation.\n    \"\"\"\n\
+    \    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 18
+  clues: null
+  completion_from: "#print(lst)\n    lst = [x+1 for x in lst]\n    #print(lst)\n \
+    \   lst = [x-1 for x in lst]\n    #print(lst)\n    lst = [chr(x+65) for x in lst]\n\
+    \    #print(lst)\n    lst = ''.join(lst)\n    #print(lst)"
+  completion_to: 'return ''''.join([chr(i+65) for i in lst])
+
+    '
+  diff: "--- \n+++ \n@@ -29,7 +29,11 @@\n negative numbers as+commas+and points of-seperation.+separation+between+strings.\
+    \ \"\"\""
+  node_from: *id003
+  node_to: &id018 !Node
+    _node_tags: null
+    id: 2
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'A@B@C
+
+      '
+    - 'BBB@ZZZ@ABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as points of seperation.\n    \"\"\"\n\
+    \    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as commas and points of separation between\
+    \ strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 19
+  clues: null
+  completion_from: 'return ''''.join([chr(i+65) for i in lst])
+
+    '
+  completion_to: 'return ''''.join(chr(ord(''A'') + i) for i in lst)
+
+    '
+  diff: ''
+  node_from: *id018
+  node_to: *id018
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as commas and points of separation between\
+    \ strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as commas and points of separation between\
+    \ strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 20
+  clues: null
+  completion_from: 'return ''''.join(chr(ord(''A'') + i) for i in lst)
+
+    '
+  completion_to: "output = ''\n    for i in lst:\n        if i < 0:\n            output\
+    \ += ','\n        elif i == 0:\n            output += 'A'\n        else:\n   \
+    \         output += chr(i+64)\n    return output\n"
+  diff: "--- \n+++ \n@@ -24,7 +24,7 @@\n single string, then-use+turn the negative\
+    \ numbers@@ -35,5 +35,6 @@\n of separation between+the strings. \"\"\""
+  node_from: *id018
+  node_to: &id019 !Node
+    _node_tags: null
+    id: 25
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'AABC
+
+      '
+    - 'A,A,B
+
+      '
+    - 'AAA,YYY,AAB
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then use the negative numbers as commas and points of separation between\
+    \ strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then turn the negative numbers as commas and points of separation between\
+    \ the strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 21
+  clues: null
+  completion_from: "output = ''\n    for i in lst:\n        if i < 0:\n          \
+    \  output += ','\n        elif i == 0:\n            output += 'A'\n        else:\n\
+    \            output += chr(i+64)\n    return output\n"
+  completion_to: 'return ''''.join(chr(ord(''A'') + i) for i in lst).replace(''-'',
+    '','')
+
+
+    '
+  diff: "--- \n+++ \n@@ -15,7 +15,10 @@\n at 0 as-A.+A,+1+as+B. grouping the output"
+  node_from: *id019
+  node_to: *id018
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A. grouping the output as a single\
+    \ string, then turn the negative numbers as commas and points of separation between\
+    \ the strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, 1 as B. grouping the output as\
+    \ a single string, then turn the negative numbers as commas and points of separation\
+    \ between the strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - l2
+  - d3
+  - l4
+  attempt_id: 22
+  clues: null
+  completion_from: 'return ''''.join(chr(ord(''A'') + i) for i in lst).replace(''-'',
+    '','')
+
+
+    '
+  completion_to: 'return ''''.join(map(lambda x: chr(x+65) if x >= 0 else '','', lst))
+
+    '
+  diff: "--- \n+++ \n@@ -16,28 +16,9 @@\n 0 as A,-1-as-B.-grouping-the-output-as-a-single-string,-then-turn-the+turning\
+    \ negative numbers-as-commas-and-points-of-separation-between-the-strings.+into+commas.\
+    \ \"\"\""
+  node_from: *id018
+  node_to: *id007
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, 1 as B. grouping the output as\
+    \ a single string, then turn the negative numbers as commas and points of separation\
+    \ between the strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 23
+  clues: null
+  completion_from: 'return ''''.join(map(lambda x: chr(x+65) if x >= 0 else '','',
+    lst))
+
+    '
+  completion_to: 'return ''''.join([chr(x + 65) if x >= 0 else '','' for x in lst])
+
+    '
+  diff: ''
+  node_from: *id007
+  node_to: *id007
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 24
+  clues: null
+  completion_from: 'return ''''.join([chr(x + 65) if x >= 0 else '','' for x in lst])
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if i == -1:\n         \
+    \   new_lst.append('-')\n        else:\n            new_lst.append(chr(i+65))\n\
+    \    return new_lst\n"
+  diff: "--- \n+++ \n@@ -16,9 +16,12 @@\n 0 as A,-turning-negative-numbers-into-commas.+using+the+-1+points+to+separate+the+string.\
+    \ \"\"\""
+  node_from: *id007
+  node_to: &id020 !Node
+    _node_tags: null
+    id: 1
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', ''-'', ''B'', ''-'', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', ''-'', ''Z'', ''Z'', ''Z'', ''-'', ''A'', ''B'', ''C'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ commas.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, using the -1 points to separate\
+    \ the string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a3
+  - m4
+  attempt_id: 25
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i == -1:\n       \
+    \     new_lst.append('-')\n        else:\n            new_lst.append(chr(i+65))\n\
+    \    return new_lst\n"
+  completion_to: "lst = [chr(i + 65) for i in lst]\n    lst = ''.join(lst)\n    lst\
+    \ = lst.replace('-1', '-1 ')\n    return lst\n"
+  diff: "--- \n+++ \n@@ -16,9 +16,18 @@\n 0 as A,+grouping+the+answer+as+one+string,+and+then\
+    \ using the -1+as points to separate"
+  node_from: *id020
+  node_to: *id018
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, using the -1 points to separate\
+    \ the string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, grouping the answer as one string,\
+    \ and then using the -1 as points to separate the string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - d2
+  - d3
+  - d4
+  attempt_id: 26
+  clues: null
+  completion_from: "lst = [chr(i + 65) for i in lst]\n    lst = ''.join(lst)\n   \
+    \ lst = lst.replace('-1', '-1 ')\n    return lst\n"
+  completion_to: "result = []\n    for i in lst:\n        if i == -1:\n          \
+    \  result.append(i)\n    for i in range(len(result)):\n        lst.remove(-1)\n\
+    \    for i in range(0, len(lst), 3):\n        result.append(lst[i:i+3])\n    for\
+    \ i in range(len(result)):\n        if result[i] =="
+  diff: "--- \n+++ \n@@ -1,36 +1,20 @@\n def convert(lst): \"\"\"-change-numbers-to-letters-matching-the-order-of-the-alphabet-starting-at-0-as-A,-grouping-the-answer-as-one-string,-and-then-using-the--1-as-points-to-separate-the-string.+input:+[1,+1,+1,+-1,+25,+25,+25,+-1,+0,+1,+2]+output:+['BBB',+'ZZZ',+'ABC']\
+    \ \"\"\""
+  node_from: *id018
+  node_to: &id021 !Node
+    _node_tags: null
+    id: 5
+    stderr:
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    - 'SyntaxError: invalid syntax'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, grouping the answer as one string,\
+    \ and then using the -1 as points to separate the string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    \n\ninput: [1, 1, 1, -1, 25, 25,\
+    \ 25, -1, 0, 1, 2]\noutput: ['BBB', 'ZZZ', 'ABC']\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 27
+  clues: null
+  completion_from: "result = []\n    for i in lst:\n        if i == -1:\n        \
+    \    result.append(i)\n    for i in range(len(result)):\n        lst.remove(-1)\n\
+    \    for i in range(0, len(lst), 3):\n        result.append(lst[i:i+3])\n    for\
+    \ i in range(len(result)):\n        if result[i] =="
+  completion_to: "result = []\n    for i in lst:\n        if i == -1:\n          \
+    \  result.append('')\n        elif i == 0:\n            result.append('A')\n \
+    \       elif i == 1:\n            result.append('B')\n        elif i == 2:\n \
+    \           result.append('C')\n        elif i == 25:\n            result.append('Z')\n\
+    \        else:\n            result."
+  diff: "--- \n+++ \n@@ -1,7 +1,9 @@\n def convert(lst): \"\"\"-input:+if+user+inputs\
+    \ [1, 1, 1,@@ -12,9 +14,11 @@\n -1, 0, 1,-2]-output:+2],+output+should+be ['BBB',\
+    \ 'ZZZ',-'ABC']+'ABC']. \"\"\""
+  node_from: *id021
+  node_to: *id021
+  prompt_from: "def convert(lst):\n    \"\"\"\n    \n\ninput: [1, 1, 1, -1, 25, 25,\
+    \ 25, -1, 0, 1, 2]\noutput: ['BBB', 'ZZZ', 'ABC']\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    if user inputs [1, 1, 1, -1, 25,\
+    \ 25, 25, -1, 0, 1, 2], output should be ['BBB', 'ZZZ', 'ABC'].\n    \"\"\"\n\
+    \    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a2
+  - a4
+  attempt_id: 28
+  clues: null
+  completion_from: "result = []\n    for i in lst:\n        if i == -1:\n        \
+    \    result.append('')\n        elif i == 0:\n            result.append('A')\n\
+    \        elif i == 1:\n            result.append('B')\n        elif i == 2:\n\
+    \            result.append('C')\n        elif i == 25:\n            result.append('Z')\n\
+    \        else:\n            result."
+  completion_to: 'return [chr(x + 65) if x >= 0 else "" for x in lst]
+
+
+    '
+  diff: "--- \n+++ \n@@ -1,24 +1,24 @@\n def convert(lst): \"\"\"-if-user-inputs-[1,-1,-1,--1,-25,-25,-25,--1,-0,-1,-2],-output-should-be-['BBB',-'ZZZ',-'ABC'].+change+numbers+to+letters+matching+the+order+of+the+alphabet+starting+at+0+as+A,+turning+negative+numbers+into+\"\
+    \" \"\"\""
+  node_from: *id021
+  node_to: &id022 !Node
+    _node_tags: null
+    id: 42
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', '''', ''B'', '''', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', '''', ''Z'', ''Z'', ''Z'', '''', ''A'', ''B'', ''C'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    if user inputs [1, 1, 1, -1, 25,\
+    \ 25, 25, -1, 0, 1, 2], output should be ['BBB', 'ZZZ', 'ABC'].\n    \"\"\"\n\
+    \    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\"\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - a3
+  attempt_id: 29
+  clues: null
+  completion_from: 'return [chr(x + 65) if x >= 0 else "" for x in lst]
+
+
+    '
+  completion_to: 'return "".join(["" if n < 0 else chr(n + 65) for n in lst])
+
+    '
+  diff: "--- \n+++ \n@@ -20,5 +20,11 @@\n negative numbers into-\"\"+\"\",+grouping+the+output+as+one+string.\
+    \ \"\"\""
+  node_from: *id022
+  node_to: *id009
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\"\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\", grouping the output as one string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m3
+  attempt_id: 30
+  clues: null
+  completion_from: 'return "".join(["" if n < 0 else chr(n + 65) for n in lst])
+
+    '
+  completion_to: "output = []\n    for i in lst:\n        if i < 0:\n            output.append(\"\
+    \")\n        else:\n            output.append(chr(i + 65))\n    return output\n"
+  diff: "--- \n+++ \n@@ -21,10 +21,14 @@\n numbers into \"\",+and grouping the output\
+    \ as one-string.+string+in+a+list. \"\"\""
+  node_from: *id009
+  node_to: *id022
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\", grouping the output as one string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\", and grouping the output as one string in a list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 31
+  clues: null
+  completion_from: "output = []\n    for i in lst:\n        if i < 0:\n          \
+    \  output.append(\"\")\n        else:\n            output.append(chr(i + 65))\n\
+    \    return output\n"
+  completion_to: 'return [''''.join(chr(i + 65) for i in lst[:lst.index(-1)])] + convert(lst[lst.index(-1)
+    + 1:]) if -1 in lst else [''''.join(chr(i + 65) for i in lst)]
+
+    '
+  diff: "--- \n+++ \n@@ -16,11 +16,6 @@\n 0 as A,-turning-negative-numbers-into-\"\
+    \", and grouping the@@ -30,5 +25,11 @@\n string in a-list.+list,+using+-1+as+places+to+slice.\
+    \ \"\"\""
+  node_from: *id022
+  node_to: *id023
+  prompt_from: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, turning negative numbers into\
+    \ \"\", and grouping the output as one string in a list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    change numbers to letters matching\
+    \ the order of the alphabet starting at 0 as A, and grouping the output as one\
+    \ string in a list, using -1 as places to slice. \n    \"\"\"\n    "
+  state: success
+  total_attempts: 32
+  username: student17
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: "res = []\n    temp = []\n    for i in lst:\n        if i == -1:\n\
+    \            res.append(''.join(temp))\n            temp = []\n        else:\n\
+    \            temp.append(chr(i+97))\n    return res\n"
+  completion_to: "result = []\n    for i in range(len(lst)):\n        if lst[i] ==\
+    \ -1:\n            result.append('')\n        else:\n            result.append(chr(lst[i]+65))\n\
+    \    return result\n"
+  diff: "--- \n+++ \n@@ -12,20 +12,27 @@\n and create a-list-of-string-of-alphabetical-letters-based+list.+Based\
+    \ on their assigned numbers in the-lst.+lst,+create+a+string+of+capitalized+alphabetical+letters+and+add+to+the+list.\
+    \ When there is@@ -35,7 +42,7 @@\n lst, create a-new+separate string and add"
+  node_from: &id036 !Node
+    _node_tags: null
+    id: 7
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[]
+
+      '
+    - '[''a'', ''b'']
+
+      '
+    - '[''bbb'', ''zzz'']
+
+      '
+  node_to: *id022
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list of string of alphabetical letters based on their\
+    \ assigned numbers in the lst. When there is -1 in the lst, create a new string\
+    \ and add it to the list. Return a list of created strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list. Based on their assigned numbers in the lst, create\
+    \ a string of capitalized alphabetical letters and add to the list. When there\
+    \ is -1 in the lst, create a separate string and add it to the list. Return a\
+    \ list of created strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student18
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "result = []\n    for i in range(len(lst)):\n        if lst[i]\
+    \ == -1:\n            result.append('')\n        else:\n            result.append(chr(lst[i]+65))\n\
+    \    return result\n"
+  completion_to: "lst_str = []\n    for i in range(len(lst)):\n        if lst[i] ==\
+    \ -1:\n            lst_str.append(chr(lst[i+1]+65))\n        else:\n         \
+    \   lst_str.append(chr(lst[i]+65))\n    return lst_str\n"
+  diff: "--- \n+++ \n@@ -22,7 +22,6 @@\n the lst, create-a string of capitalized@@\
+    \ -44,6 +43,10 @@\n a separate string+from+the+next+index and add it"
+  node_from: *id022
+  node_to: &id024 !Node
+    _node_tags: null
+    id: 9
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', ''B'', ''B'', ''C'', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', ''Z'', ''Z'', ''Z'', ''Z'', ''A'', ''A'', ''B'', ''C'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list. Based on their assigned numbers in the lst, create\
+    \ a string of capitalized alphabetical letters and add to the list. When there\
+    \ is -1 in the lst, create a separate string and add it to the list. Return a\
+    \ list of created strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list. Based on their assigned numbers in the lst, create\
+    \ string of capitalized alphabetical letters and add to the list. When there is\
+    \ -1 in the lst, create a separate string from the next index and add it to the\
+    \ list. Return a list of created strings.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student18
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "lst_str = []\n    for i in range(len(lst)):\n        if lst[i]\
+    \ == -1:\n            lst_str.append(chr(lst[i+1]+65))\n        else:\n      \
+    \      lst_str.append(chr(lst[i]+65))\n    return lst_str\n"
+  completion_to: "lst_num = []\n    for i in lst:\n        if i == -1:\n         \
+    \   lst_num.append(i)\n        else:\n            lst_num.append(i+65)\n    lst_str\
+    \ = []\n    for i in range(len(lst_num)):\n        if lst_num[i] == -1:\n    \
+    \        lst_str.append(chr("
+  diff: "--- \n+++ \n@@ -41,7 +41,7 @@\n lst, create a-separate+new string from the"
+  node_from: *id024
+  node_to: &id038 !Node
+    _node_tags: null
+    id: 12
+    stderr:
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    - 'SyntaxError: ''('' was never closed'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list. Based on their assigned numbers in the lst, create\
+    \ string of capitalized alphabetical letters and add to the list. When there is\
+    \ -1 in the lst, create a separate string from the next index and add it to the\
+    \ list. Return a list of created strings.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Assign a number from 0~25 to each\
+    \ alphabet, and create a list. Based on their assigned numbers in the lst, create\
+    \ string of capitalized alphabetical letters and add to the list. When there is\
+    \ -1 in the lst, create a new string from the next index and add it to the list.\
+    \ Return a list of created strings.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student18
+- !Edge
+  _edge_tags:
+  - l4
+  attempt_id: 1
+  clues: null
+  completion_from: "result = []\n    temp = []\n    for i in lst:\n        if i ==\
+    \ -1:\n            result.append(''.join(temp))\n            temp = []\n     \
+    \   else:\n            temp.append(chr(i+65))\n    return result\n"
+  completion_to: "output = []\n    for i in lst:\n        if i == -1:\n          \
+    \  output.append(\" \")\n        else:\n            output.append(chr(i + 65))\n\
+    \    return \"\".join(output)\n"
+  diff: "--- \n+++ \n@@ -33,7 +33,7 @@\n will produce a-list+set of strings that@@\
+    \ -46,11 +46,10 @@\n the input set,-creating-a-new-string only+separating+the+strings\
+    \ when there is"
+  node_from: &id026 !Node
+    _node_tags: null
+    id: 0
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[]
+
+      '
+    - '[''A'', ''B'']
+
+      '
+    - '[''BBB'', ''ZZZ'']
+
+      '
+  node_to: &id025 !Node
+    _node_tags: null
+    id: 32
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'A B C
+
+      '
+    - 'BBB ZZZ ABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string only when there is a -1 in the\
+    \ input.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a set of strings that correspond to the given\
+    \ numbers in the input set, only separating the strings when there is a -1 in\
+    \ the input.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "output = []\n    for i in lst:\n        if i == -1:\n        \
+    \    output.append(\" \")\n        else:\n            output.append(chr(i + 65))\n\
+    \    return \"\".join(output)\n"
+  completion_to: "result = []\n    for i in lst:\n        if i == -1:\n          \
+    \  result.append(\"\")\n        else:\n            result.append(chr(i+65))\n\
+    \    return result\n"
+  diff: "--- \n+++ \n@@ -33,7 +33,7 @@\n will produce a-set+list of strings that@@\
+    \ -46,10 +46,10 @@\n the input set,-only-separating-the-strings+creating+a+new+string\
+    \ when there is"
+  node_from: *id025
+  node_to: *id022
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a set of strings that correspond to the given\
+    \ numbers in the input set, only separating the strings when there is a -1 in\
+    \ the input.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string when there is a -1 in the input.\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 3
+  clues: null
+  completion_from: "result = []\n    for i in lst:\n        if i == -1:\n        \
+    \    result.append(\"\")\n        else:\n            result.append(chr(i+65))\n\
+    \    return result\n"
+  completion_to: "result = []\n    current_string = \"\"\n    for num in lst:\n  \
+    \      if num == -1:\n            result.append(current_string)\n            current_string\
+    \ = \"\"\n        else:\n            current_string += chr(num + 65)\n    return\
+    \ result"
+  diff: "--- \n+++ \n@@ -50,9 +50,11 @@\n a new string-when-there-is+each+time+it+comes+across\
+    \ a -1 in"
+  node_from: *id022
+  node_to: *id026
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string when there is a -1 in the input.\n\
+    \    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string each time it comes across a\
+    \ -1 in the input.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 4
+  clues: null
+  completion_from: "result = []\n    current_string = \"\"\n    for num in lst:\n\
+    \        if num == -1:\n            result.append(current_string)\n          \
+    \  current_string = \"\"\n        else:\n            current_string += chr(num\
+    \ + 65)\n    return result"
+  completion_to: "# create a list to store the result\n    result = []\n    # create\
+    \ a variable to store the current string\n    curr_str = \"\"\n    # loop through\
+    \ the input list\n    for num in lst:\n        # if the number is -1\n       \
+    \ if num == -1:\n            # append the current string to the result\n     \
+    \       result.append(curr_str)\n            # reset the current string\n    \
+    \        curr_str"
+  diff: "--- \n+++ \n@@ -48,7 +48,7 @@\n set, creating a-new+separate string each\
+    \ time"
+  node_from: *id026
+  node_to: *id003
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string each time it comes across a\
+    \ -1 in the input.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a separate string each time it comes across\
+    \ a -1 in the input.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 5
+  clues: null
+  completion_from: "# create a list to store the result\n    result = []\n    # create\
+    \ a variable to store the current string\n    curr_str = \"\"\n    # loop through\
+    \ the input list\n    for num in lst:\n        # if the number is -1\n       \
+    \ if num == -1:\n            # append the current string to the result\n     \
+    \       result.append(curr_str)\n            # reset the current string\n    \
+    \        curr_str"
+  completion_to: "result = []\n    for i in range(len(lst)):\n        if lst[i] ==\
+    \ -1:\n            result.append(\"\")\n        else:\n            result[-1]\
+    \ += chr(lst[i] + 65)\n    return result\n"
+  diff: "--- \n+++ \n@@ -48,14 +48,10 @@\n set, creating a-separate+new string+at\
+    \ each-time-it-comes-across-a -1 in the"
+  node_from: *id003
+  node_to: &id027 !Node
+    _node_tags: null
+    id: 34
+    stderr:
+    - 'IndexError: list index out of range'
+    - 'IndexError: list index out of range'
+    - 'IndexError: list index out of range'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a separate string each time it comes across\
+    \ a -1 in the input.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string at each -1 in the input.\n \
+    \   \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 6
+  clues: null
+  completion_from: "result = []\n    for i in range(len(lst)):\n        if lst[i]\
+    \ == -1:\n            result.append(\"\")\n        else:\n            result[-1]\
+    \ += chr(lst[i] + 65)\n    return result\n"
+  completion_to: "output = []\n    temp = ''\n    for i in range(len(lst)):\n    \
+    \    if lst[i] == -1:\n            output.append(temp)\n            temp = ''\n\
+    \        else:\n            temp += chr(lst[i] + 65)\n    return output\n"
+  diff: "--- \n+++ \n@@ -31,11 +31,19 @@\n the code will-produce-a+look+at+each+index+of+the+input\
+    \ list of-strings+strings,+build+a+string that correspond to@@ -46,12 +54,23 @@\n\
+    \ the input set,-creating+and+add+that+string+to+the+output+list+and+start a new-string-at-each+one+when+it+comes+across\
+    \ -1 in the"
+  node_from: *id027
+  node_to: *id026
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will produce a list of strings that correspond to the given\
+    \ numbers in the input set, creating a new string at each -1 in the input.\n \
+    \   \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will look at each index of the input list of strings, build\
+    \ a string that correspond to the given numbers in the input set, and add that\
+    \ string to the output list and start a new one when it comes across -1 in the\
+    \ input.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 7
+  clues: null
+  completion_from: "output = []\n    temp = ''\n    for i in range(len(lst)):\n  \
+    \      if lst[i] == -1:\n            output.append(temp)\n            temp = ''\n\
+    \        else:\n            temp += chr(lst[i] + 65)\n    return output\n"
+  completion_to: "output = []\n    current_string = \"\"\n    for i in lst:\n    \
+    \    if i == -1:\n            output.append(current_string)\n            current_string\
+    \ = \"\"\n        else:\n            current_string += chr(i + 65)\n    output.append(current_string)\n\
+    \    return output\n\nprint(convert([11, 11, -1, 2, 1, 0, -1, 27,"
+  diff: "--- \n+++ \n@@ -75,4 +75,19 @@\n in the input.+we+will+also+add+the+string+when+we+reach+the+end+of+the+input+list.\
+    \ \"\"\""
+  node_from: *id026
+  node_to: *id023
+  prompt_from: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will look at each index of the input list of strings, build\
+    \ a string that correspond to the given numbers in the input set, and add that\
+    \ string to the output list and start a new one when it comes across -1 in the\
+    \ input.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    each number in the input set corresponds\
+    \ to the order of the alphabet from A to Z, all capital, with 0 being A, 1 being\
+    \ B, etc. the code will look at each index of the input list of strings, build\
+    \ a string that correspond to the given numbers in the input set, and add that\
+    \ string to the output list and start a new one when it comes across -1 in the\
+    \ input. we will also add the string when we reach the end of the input list.\n\
+    \    \"\"\"\n    "
+  state: success
+  total_attempts: 10
+  username: student21
+- !Edge
+  _edge_tags:
+  - m2
+  - a4
+  attempt_id: 1
+  clues: null
+  completion_from: 'return [chr(x + 64) for x in lst]
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if i < 0:\n           \
+    \ new_lst.append('')\n        else:\n            new_lst.append(chr(i+65))\n \
+    \   return ''.join(new_lst)\n"
+  diff: "--- \n+++ \n@@ -1,15 +1,30 @@\n def convert(lst): \"\"\"+Letters+A-Z+correspond+with+numbers+0-25.\
+    \ This function-converts-integers-to+creates+a+string+by+replacing+the+given+number+with\
+    \ its corresponding-letter-in-the-alphabet.+number.+Negative+numbers+start+a+new+string.\
+    \ \"\"\""
+  node_from: &id041 !Node
+    _node_tags: null
+    id: 23
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''@'', ''A'', ''B'', ''C'']
+
+      '
+    - '[''@'', ''?'', ''A'', ''?'', ''B'']
+
+      '
+    - '[''A'', ''A'', ''A'', ''?'', ''Y'', ''Y'', ''Y'', ''?'', ''@'', ''A'', ''B'']
+
+      '
+  node_to: *id009
+  prompt_from: "def convert(lst):\n    \"\"\"\n    This function converts integers\
+    \ to its corresponding letter in the alphabet.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Letters A-Z correspond with numbers\
+    \ 0-25. This function creates a string by replacing the given number with its\
+    \ corresponding number. Negative numbers start a new string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student25
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i < 0:\n         \
+    \   new_lst.append('')\n        else:\n            new_lst.append(chr(i+65))\n\
+    \    return ''.join(new_lst)\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i == -1:\n         \
+    \   new_lst.append(\" \")\n        else:\n            new_lst.append(chr(i+65))\n\
+    \    return \"\".join(new_lst)\n"
+  diff: "--- \n+++ \n@@ -21,9 +21,9 @@\n its corresponding number.-Negative-numbers-start+Input+\"\
+    -1\"+starts a new string."
+  node_from: *id009
+  node_to: *id025
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Letters A-Z correspond with numbers\
+    \ 0-25. This function creates a string by replacing the given number with its\
+    \ corresponding number. Negative numbers start a new string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Letters A-Z correspond with numbers\
+    \ 0-25. This function creates a string by replacing the given number with its\
+    \ corresponding number. Input \"-1\" starts a new string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student25
+- !Edge
+  _edge_tags:
+  - l4
+  attempt_id: 3
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i == -1:\n       \
+    \     new_lst.append(\" \")\n        else:\n            new_lst.append(chr(i+65))\n\
+    \    return \"\".join(new_lst)\n"
+  completion_to: "output = \"\"\n    for i in lst:\n        if i == -1:\n        \
+    \    output += \" \"\n        else:\n            output += chr(i + 65)\n    return\
+    \ output\n"
+  diff: "--- \n+++ \n@@ -26,5 +26,5 @@\n starts a new-string.+output. \"\"\""
+  node_from: *id025
+  node_to: *id025
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Letters A-Z correspond with numbers\
+    \ 0-25. This function creates a string by replacing the given number with its\
+    \ corresponding number. Input \"-1\" starts a new string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Letters A-Z correspond with numbers\
+    \ 0-25. This function creates a string by replacing the given number with its\
+    \ corresponding number. Input \"-1\" starts a new output.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student25
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 1
+  clues: null
+  completion_from: "alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    return ''.join([alphabet[abs(int(i))]\
+    \ for i in lst.split()])\n"
+  completion_to: "d = {abs(num): chr(65+num) for num in range(26)}\n    return ''.join([d[int(num)]\
+    \ for num in lst.split()])\n"
+  diff: "--- \n+++ \n@@ -1,34 +1,32 @@\n def convert(lst): \"\"\"-The+Create+a+dictionary+where+the\
+    \ absolute values+of+numbers from-0-to-25-correspond-to-the+0-25+equal+capital\
+    \ letters of the alphabet.-Take+Replace the numbers in a given string-and-replace-them-with+according+to\
+    \ the-letters-of-the-alphabet.+dictionary \"\"\""
+  node_from: &id028 !Node
+    _node_tags: null
+    id: 20
+    stderr:
+    - 'AttributeError: ''list'' object has no attribute ''split'''
+    - 'AttributeError: ''list'' object has no attribute ''split'''
+    - 'AttributeError: ''list'' object has no attribute ''split'''
+    stdout:
+    - ''
+    - ''
+    - ''
+  node_to: *id028
+  prompt_from: "def convert(lst):\n    \"\"\"\n    The absolute values from 0 to 25\
+    \ correspond to the letters of the alphabet. Take the numbers in a given string\
+    \ and replace them with the letters of the alphabet.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Create a dictionary where the absolute\
+    \ values of numbers from 0-25 equal capital letters of the alphabet. Replace the\
+    \ numbers in a given string according to the dictionary\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 2
+  username: student26
+- !Edge
+  _edge_tags:
+  - l1
+  - l2
+  attempt_id: 1
+  clues: null
+  completion_from: 'return [chr(i + 65) for i in lst]
+
+
+    '
+  completion_to: "lst = [i for i in lst]\n    lst.append(',')\n    return lst\n\n"
+  diff: "--- \n+++ \n@@ -1,21 +1,15 @@\n def convert(lst): \"\"\"-convert-the+create+a\
+    \ list+with+element of-index-number-into-list-of-letters-of-corresponding-index-numbers-of-alphabetical-table+alphabet+last+element+are+comma\
+    \ \"\"\""
+  node_from: *id016
+  node_to: &id029 !Node
+    _node_tags: null
+    id: 24
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[0, 1, 2, 3, '','']
+
+      '
+    - '[0, -1, 1, -1, 2, '','']
+
+      '
+    - '[1, 1, 1, -1, 25, 25, 25, -1, 0, 1, 2, '','']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into list of letters of corresponding index \nnumbers of alphabetical table\n\
+    \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    create a list with element of alphabet\
+    \ last element are comma\n\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - m1
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "lst = [i for i in lst]\n    lst.append(',')\n    return lst\n\n"
+  completion_to: 'return ''''.join(map(lambda x: chr(x + 97), lst))
+
+
+    '
+  diff: "--- \n+++ \n@@ -1,15 +1,21 @@\n def convert(lst): \"\"\"-create-a+convert+the\
+    \ list-with-element of-alphabet-last-element-are-comma+index+number+into+string+of+letters+of+corresponding+index+numbers+of+alphabetical+table\
+    \ \"\"\""
+  node_from: *id029
+  node_to: &id030 !Node
+    _node_tags: null
+    id: 4
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'abcd
+
+      '
+    - 'a`b`c
+
+      '
+    - 'bbb`zzz`abc
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    create a list with element of alphabet\
+    \ last element are comma\n\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of letters of corresponding index \nnumbers of alphabetical table\n\
+    \n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - l1
+  - l2
+  attempt_id: 3
+  clues: null
+  completion_from: 'return ''''.join(map(lambda x: chr(x + 97), lst))
+
+
+    '
+  completion_to: "lst = lst[:-1]\n    lst = [ord(i) for i in lst]\n    return lst\n\
+    \n"
+  diff: "--- \n+++ \n@@ -1,21 +1,16 @@\n def convert(lst): \"\"\"-convert-the+call+a\
+    \ list+with+element of-index-number-into-string-of-letters-of-corresponding-index-numbers-of-alphabetical-table+alphabet+and+last+element+are+comma\
+    \ \"\"\""
+  node_from: *id030
+  node_to: &id031 !Node
+    _node_tags: null
+    id: 10
+    stderr:
+    - 'TypeError: ord() expected string of length 1, but int found'
+    - 'TypeError: ord() expected string of length 1, but int found'
+    - 'TypeError: ord() expected string of length 1, but int found'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of letters of corresponding index \nnumbers of alphabetical table\n\
+    \n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    call a list with element of alphabet\
+    \ and last element are comma\n\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - d1
+  - d2
+  attempt_id: 4
+  clues: null
+  completion_from: "lst = lst[:-1]\n    lst = [ord(i) for i in lst]\n    return lst\n\
+    \n"
+  completion_to: 'return lst[0]
+
+    '
+  diff: "--- \n+++ \n@@ -2,15 +2,12 @@\n convert(lst): \"\"\" call-a-list-with+out\
+    \ element of-alphabet-and-last-element-are-comma+the+following+list+[A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,+',']\
+    \ \"\"\""
+  node_from: *id031
+  node_to: &id032 !Node
+    _node_tags: null
+    id: 16
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '0
+
+      '
+    - '0
+
+      '
+    - '1
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    call a list with element of alphabet\
+    \ and last element are comma\n\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    call out element of the following\
+    \ list [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z, ',']\n    \"\"\"\n\
+    \    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - a2
+  attempt_id: 5
+  clues: null
+  completion_from: 'return lst[0]
+
+    '
+  completion_to: 'return [ord(i) - 97 for i in lst]
+
+
+    '
+  diff: "--- \n+++ \n@@ -1,13 +1,18 @@\n def convert(lst): \"\"\"-call-out-element+convert+the+list+into+list\
+    \ of-the-following-list-[A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,-',']+alphabet+with+number+represent+index+of+alphabet+table\
+    \ \"\"\""
+  node_from: *id032
+  node_to: *id031
+  prompt_from: "def convert(lst):\n    \"\"\"\n    call out element of the following\
+    \ list [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z, ',']\n    \"\"\"\n\
+    \    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list into list of alphabet\
+    \ with number represent index of alphabet table\n\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 6
+  clues: null
+  completion_from: 'return [ord(i) - 97 for i in lst]
+
+
+    '
+  completion_to: 'return [letters[i] for i in lst]
+
+    '
+  diff: "--- \n+++ \n@@ -4,15 +4,15 @@\n convert the list+of+index+number into list\
+    \ of-alphabet-with-number-represent+letters+of+corresponding index-of-alphabet-table+numbers\
+    \ \"\"\""
+  node_from: *id031
+  node_to: &id033 !Node
+    _node_tags: null
+    id: 3
+    stderr:
+    - 'NameError: name ''letters'' is not defined'
+    - 'NameError: name ''letters'' is not defined'
+    - 'NameError: name ''letters'' is not defined'
+    stdout:
+    - ''
+    - ''
+    - ''
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list into list of alphabet\
+    \ with number represent index of alphabet table\n\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into list of letters of corresponding index \nnumbers\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 7
+  clues: null
+  completion_from: 'return [letters[i] for i in lst]
+
+    '
+  completion_to: "lst_converted = []\n    for i in lst:\n        lst_converted.append(chr(i+65))\n\
+    \    return lst_converted\n"
+  diff: "--- \n+++ \n@@ -8,11 +8,20 @@\n index number into-list+string of+capital\
+    \ letters of corresponding index numbers+of+alphabetical+table+and+insert+into+a+list\
+    \ \"\"\""
+  node_from: *id033
+  node_to: *id016
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into list of letters of corresponding index \nnumbers\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and insert into a list\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 8
+  clues: null
+  completion_from: "lst_converted = []\n    for i in lst:\n        lst_converted.append(chr(i+65))\n\
+    \    return lst_converted\n"
+  completion_to: "result = []\n    for i in lst:\n        if i == -1:\n          \
+    \  result.append(',')\n        else:\n            result.append(chr(i+65))\n \
+    \   return result\n"
+  diff: "--- \n+++ \n@@ -24,4 +24,7 @@\n into a list+(-1+represent+comma) \"\"\""
+  node_from: *id016
+  node_to: &id034 !Node
+    _node_tags: null
+    id: 38
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', '','', ''B'', '','', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', '','', ''Z'', ''Z'', ''Z'', '','', ''A'', ''B'', ''C'']
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and insert into a list\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and insert into a list (-1 represent comma)\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 9
+  clues: null
+  completion_from: "result = []\n    for i in lst:\n        if i == -1:\n        \
+    \    result.append(',')\n        else:\n            result.append(chr(i+65))\n\
+    \    return result\n"
+  completion_to: "for i in range(len(lst)):\n        if lst[i] == -1:\n          \
+    \  lst[i] = ','\n        else:\n            lst[i] = chr(lst[i]+65)\n    return\
+    \ lst\n"
+  diff: "--- \n+++ \n@@ -8,8 +8,6 @@\n index number into-string-of capital letters\
+    \ of@@ -18,13 +16,7 @@\n numbers of alphabetical-table-and-insert-into-a-list-(-1+table(-1\
+    \ represent comma) \"\"\""
+  node_from: *id034
+  node_to: *id034
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and insert into a list (-1 represent comma)\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into capital letters of corresponding index numbers of alphabetical table(-1\
+    \ represent comma)\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - d4
+  attempt_id: 10
+  clues: null
+  completion_from: "for i in range(len(lst)):\n        if lst[i] == -1:\n        \
+    \    lst[i] = ','\n        else:\n            lst[i] = chr(lst[i]+65)\n    return\
+    \ lst\n"
+  completion_to: 'return ''''.join([chr(i + 65) for i in lst])
+
+
+    '
+  diff: "--- \n+++ \n@@ -8,6 +8,8 @@\n index number into+string+of capital letters\
+    \ of@@ -16,7 +18,5 @@\n numbers of alphabetical-table(-1-represent-comma)+table\
+    \ \"\"\""
+  node_from: *id034
+  node_to: *id018
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into capital letters of corresponding index numbers of alphabetical table(-1\
+    \ represent comma)\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - a4
+  attempt_id: 11
+  clues: null
+  completion_from: 'return ''''.join([chr(i + 65) for i in lst])
+
+
+    '
+  completion_to: "lst_str = []\n    for i in range(len(lst)):\n        if lst[i] ==\
+    \ -1:\n            lst_str.append('')\n        else:\n            lst_str[-1]\
+    \ += chr(lst[i]+65)\n    return lst_str\n"
+  diff: "--- \n+++ \n@@ -19,4 +19,19 @@\n of alphabetical table+and+then+insert+into+a+list+(-1+represent+where+to+split+into+a+new+element)\
+    \ \"\"\""
+  node_from: *id018
+  node_to: *id027
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and then insert into a list (-1 represent where to split into a new element)\n\
+    \    \"\"\"\n    "
+  state: neutral
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - d4
+  attempt_id: 12
+  clues: null
+  completion_from: "lst_str = []\n    for i in range(len(lst)):\n        if lst[i]\
+    \ == -1:\n            lst_str.append('')\n        else:\n            lst_str[-1]\
+    \ += chr(lst[i]+65)\n    return lst_str\n"
+  completion_to: "lst2 = []\n    for i in lst:\n        lst2.append(chr(i+65))\n \
+    \   return lst2\n"
+  diff: "--- \n+++ \n@@ -25,13 +25,4 @@\n into a list-(-1-represent-where-to-split-into-a-new-element)\
+    \ \"\"\""
+  node_from: *id027
+  node_to: *id016
+  prompt_from: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and then insert into a list (-1 represent where to split into a new element)\n\
+    \    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    convert the list of index number\
+    \ into string of capital letters of corresponding index numbers of alphabetical\
+    \ table and then insert into a list \n    \"\"\"\n    "
+  state: fail
+  total_attempts: 13
+  username: student3
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: 'return [chr(x + 65) if x >= 0 else '' '' for x in lst]
+
+
+    '
+  completion_to: 'return [chr(x + 65) if x >= 0 else '' '' for x in lst]
+
+
+    '
+  diff: ''
+  node_from: &id035 !Node
+    _node_tags: null
+    id: 28
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''A'', ''B'', ''C'', ''D'']
+
+      '
+    - '[''A'', '' '', ''B'', '' '', ''C'']
+
+      '
+    - '[''B'', ''B'', ''B'', '' '', ''Z'', ''Z'', ''Z'', '' '', ''A'', ''B'', ''C'']
+
+      '
+  node_to: *id035
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 =\
+    \ A, 1 = B, 2 = C, and so on. -1 = a space.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 = A,\
+    \ 1 = B, 2 = C, and so on. -1 = a space.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student30
+- !Edge
+  _edge_tags:
+  - a3
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: 'return [chr(x + 65) if x >= 0 else '' '' for x in lst]
+
+
+    '
+  completion_to: "new_lst = []\n    for i in lst:\n        if i == -1:\n         \
+    \   new_lst.append(' ')\n        else:\n            new_lst.append(chr(i + 65))\n\
+    \    return ''.join(new_lst)\n"
+  diff: "--- \n+++ \n@@ -17,8 +17,22 @@\n and so on.+Return+strings+of+letters+with+no+spaces.+A\
+    \ -1-=+in+lst+indicates+the+start+of a-space.+new+string. \"\"\""
+  node_from: *id035
+  node_to: *id025
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 =\
+    \ A, 1 = B, 2 = C, and so on. -1 = a space.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 = A,\
+    \ 1 = B, 2 = C, and so on. \n\nReturn strings of letters with no spaces. A -1\
+    \ in lst indicates the start of a new string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student30
+- !Edge
+  _edge_tags:
+  - a5
+  attempt_id: 3
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i == -1:\n       \
+    \     new_lst.append(' ')\n        else:\n            new_lst.append(chr(i + 65))\n\
+    \    return ''.join(new_lst)\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i == -1:\n         \
+    \   new_lst.append(\"]\")\n            new_lst.append(\"[\")\n        else:\n\
+    \            new_lst.append(chr(i+65))\n    return \"\".join(new_lst)\n"
+  diff: "--- \n+++ \n@@ -35,4 +35,14 @@\n a new string.+Separate+strings+with+commas.+Enclose+the+new+list+with+brackets.\
+    \ \"\"\""
+  node_from: *id025
+  node_to: &id040 !Node
+    _node_tags: null
+    id: 18
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - 'ABCD
+
+      '
+    - 'A][B][C
+
+      '
+    - 'BBB][ZZZ][ABC
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 =\
+    \ A, 1 = B, 2 = C, and so on. \n\nReturn strings of letters with no spaces. A\
+    \ -1 in lst indicates the start of a new string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Convert numbers to letters. 0 = A,\
+    \ 1 = B, 2 = C, and so on. \n\nReturn strings of letters with no spaces. A -1\
+    \ in lst indicates the start of a new string. Separate strings with commas. Enclose\
+    \ the new list with brackets.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student30
+- !Edge
+  _edge_tags:
+  - l2
+  attempt_id: 1
+  clues: null
+  completion_from: "new_lst = []\n    for i in range(len(lst)):\n        if lst[i]\
+    \ == -1:\n            new_lst.append([])\n        else:\n            new_lst[-1].append(chr(lst[i]\
+    \ + 97))\n    return new_lst\n"
+  completion_to: "new_lst = []\n    for i in lst:\n        if i == -1:\n         \
+    \   new_lst.append([])\n        else:\n            new_lst[-1].append(i)\n   \
+    \ return new_lst\n\n"
+  diff: "--- \n+++ \n@@ -11,16 +11,6 @@\n list of letters,-letter-values-are-assigned-consecutively-beginning-at-the-index-0,\
+    \ creating a new"
+  node_from: *id027
+  node_to: *id027
+  prompt_from: "def convert(lst):\n    \"\"\"\n    converts a list of numbers into\
+    \ a list of letters, letter values are assigned consecutively beginning at the\
+    \ index 0, creating a new item in new list when -1 is in the inputted list\n \
+    \   \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    converts a list of numbers into a\
+    \ list of letters, creating a new item in new list when -1 is in the inputted\
+    \ list\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student4
+- !Edge
+  _edge_tags:
+  - m2
+  attempt_id: 2
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i == -1:\n       \
+    \     new_lst.append([])\n        else:\n            new_lst[-1].append(i)\n \
+    \   return new_lst\n\n"
+  completion_to: "new_lst = []\n    sub_lst = []\n    for i in lst:\n        if i\
+    \ == -1:\n            new_lst.append(sub_lst)\n            sub_lst = []\n    \
+    \    else:\n            sub_lst.append(chr(i + 97))\n    return new_lst\n"
+  diff: "--- \n+++ \n@@ -1,28 +1,36 @@\n def convert(lst): \"\"\"-converts+create\
+    \ a+new list-of-numbers-into-a-list+with+stings of letters,-creating+inputted+numbers+correspond+to+the+index+in+the+alphabet+beginning+at+zero,+begins\
+    \ a new item in+the new list when--1+'-1' is-in-the-inputted-list+passed \"\"\""
+  node_from: *id027
+  node_to: &id042 !Node
+    _node_tags: null
+    id: 35
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[]
+
+      '
+    - '[[''a''], [''b'']]
+
+      '
+    - '[[''b'', ''b'', ''b''], [''z'', ''z'', ''z'']]
+
+      '
+  prompt_from: "def convert(lst):\n    \"\"\"\n    converts a list of numbers into\
+    \ a list of letters, creating a new item in new list when -1 is in the inputted\
+    \ list\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    create a new list with stings of\
+    \ letters, inputted numbers correspond to the index in the alphabet beginning\
+    \ at zero, begins a new item in the new list when '-1' is passed\n    \"\"\"\n\
+    \    "
+  state: fail
+  total_attempts: 3
+  username: student4
+- !Edge
+  _edge_tags:
+  - m2
+  - m3
+  - m4
+  attempt_id: 1
+  clues: null
+  completion_from: "new_lst = []\n    for i in lst:\n        if i == -1:\n       \
+    \     new_lst.append(i)\n        else:\n            new_lst.append(chr(i + 96))\n\
+    \    return new_lst\n"
+  completion_to: "alphabet = \"abcdefghijklmnopqrstuvwxyz\"\n    new_lst = []\n  \
+    \  temp = \"\"\n    for i in lst:\n        if i == -1:\n            new_lst.append(temp)\n\
+    \            temp = \"\"\n        else:\n            temp += alphabet[i]\n   \
+    \ return new_lst\n"
+  diff: "--- \n+++ \n@@ -8,38 +8,23 @@\n a list with+letters+from the-letter-corresponding+alphabet+that+correspond\
+    \ to-each-number+the+index in the inputted-list.-If-there-is-a-negative-one,-the-corresponding-letters-should-be-printed-as-a-separate-item-in-the-list.-Otherwise,-the-corresponding+list,+starting+from+zero.+Corresponding\
+    \ letters should be@@ -47,6 +32,21 @@\n as one string+to+insert+into+the+list.+A+negative+one+indicates+the+start+of+a+new+item\
+    \ in the list."
+  node_from: &id037 !Node
+    _node_tags: null
+    id: 6
+    stderr:
+    - ''
+    - ''
+    - ''
+    stdout:
+    - '[''`'', ''a'', ''b'', ''c'']
+
+      '
+    - '[''`'', -1, ''a'', -1, ''b'']
+
+      '
+    - '[''a'', ''a'', ''a'', -1, ''y'', ''y'', ''y'', -1, ''`'', ''a'', ''b'']
+
+      '
+  node_to: *id036
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ the letter corresponding to each number in the inputted list. If there is a\
+    \ negative one, the corresponding letters should be printed as a separate item\
+    \ in the list. Otherwise, the corresponding letters should be combined as one\
+    \ string in the list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ letters from the alphabet that correspond to the index in the inputted list,\
+    \ starting from zero. Corresponding letters should be combined as one string to\
+    \ insert into the list. A negative one indicates the start of a new item in the\
+    \ list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student41
+- !Edge
+  _edge_tags:
+  - m3
+  - m4
+  attempt_id: 2
+  clues: null
+  completion_from: "alphabet = \"abcdefghijklmnopqrstuvwxyz\"\n    new_lst = []\n\
+    \    temp = \"\"\n    for i in lst:\n        if i == -1:\n            new_lst.append(temp)\n\
+    \            temp = \"\"\n        else:\n            temp += alphabet[i]\n   \
+    \ return new_lst\n"
+  completion_to: "result = []\n    temp = \"\"\n    for i in lst:\n        if i ==\
+    \ -1:\n            result.append(temp)\n            temp = \"\"\n        else:\n\
+    \            temp += chr(i + 65)\n    return result\n"
+  diff: "--- \n+++ \n@@ -8,6 +8,7 @@\n a list with+capitalized letters from the@@\
+    \ -24,7 +25,14 @@\n starting from zero.-Corresponding+Until+a+negative+one+is+in+the+list,\
+    \ letters should be"
+  node_from: *id036
+  node_to: *id026
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ letters from the alphabet that correspond to the index in the inputted list,\
+    \ starting from zero. Corresponding letters should be combined as one string to\
+    \ insert into the list. A negative one indicates the start of a new item in the\
+    \ list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ capitalized letters from the alphabet that correspond to the index in the inputted\
+    \ list, starting from zero. Until a negative one is in the list, letters should\
+    \ be combined as one string to insert into the list. A negative one indicates\
+    \ the start of a new item in the list.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 4
+  username: student41
+- !Edge
+  _edge_tags:
+  - m4
+  attempt_id: 3
+  clues: null
+  completion_from: "result = []\n    temp = \"\"\n    for i in lst:\n        if i\
+    \ == -1:\n            result.append(temp)\n            temp = \"\"\n        else:\n\
+    \            temp += chr(i + 65)\n    return result\n"
+  completion_to: "result = []\n    temp = ''\n    for i in lst:\n        if i == -1:\n\
+    \            result.append(temp)\n            temp = ''\n        else:\n     \
+    \       temp += chr(i + 65)\n    return result\n"
+  diff: "--- \n+++ \n@@ -8,7 +8,6 @@\n a list with-capitalized letters from the@@\
+    \ -25,6 +24,14 @@\n starting from zero.+Letters+in+the+returned+list+should+be+capitalized.\
+    \ Until a negative@@ -39,9 +46,20 @@\n combined as one-string-to-insert+string.+When+a+negative+one+is+reached+this+combination+of+letters+can+be+inserted\
+    \ into the list.@@ -49,9 +67,6 @@\n negative one indicates-the-start-of a new\
+    \ item"
+  node_from: *id026
+  node_to: *id026
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ capitalized letters from the alphabet that correspond to the index in the inputted\
+    \ list, starting from zero. Until a negative one is in the list, letters should\
+    \ be combined as one string to insert into the list. A negative one indicates\
+    \ the start of a new item in the list.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Given a list, returns a list with\
+    \ letters from the alphabet that correspond to the index in the inputted list,\
+    \ starting from zero. Letters in the returned list should be capitalized. Until\
+    \ a negative one is in the list, letters should be combined as one string. When\
+    \ a negative one is reached this combination of letters can be inserted into the\
+    \ list. A negative one indicates a new item in the list.\n    \"\"\"\n    "
+  state: fail
+  total_attempts: 4
+  username: student41
+- !Edge
+  _edge_tags:
+  - 0
+  attempt_id: 1
+  clues: null
+  completion_from: "result = []\n    for i in lst:\n        if i == -1:\n        \
+    \    result.append(\"\")\n        else:\n            result[-1] += chr(i + 65)\n\
+    \    return result\n\n"
+  completion_to: "str = \"\"\n    for i in lst:\n        if i == -1:\n           \
+    \ str += \" \"\n        else:\n            str += chr(i+65)\n    return str\n"
+  diff: ''
+  node_from: *id027
+  node_to: *id025
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Each character in the alphabet\
+    \ is assigned an index value starting with A =0. Take each item in the list and\
+    \ add the corresponding character to a string. If -1, start the next character\
+    \ with a new string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Each character in the alphabet is\
+    \ assigned an index value starting with A =0. Take each item in the list and add\
+    \ the corresponding character to a string. If -1, start the next character with\
+    \ a new string.\n    \"\"\"\n    "
+  state: neutral
+  total_attempts: 3
+  username: student51
+- !Edge
+  _edge_tags:
+  - a5
+  attempt_id: 2
+  clues: null
+  completion_from: "str = \"\"\n    for i in lst:\n        if i == -1:\n         \
+    \   str += \" \"\n        else:\n            str += chr(i+65)\n    return str\n"
+  completion_to: "result = []\n    temp = \"\"\n    for i in lst:\n        if i ==\
+    \ -1:\n            result.append(temp)\n            temp = \"\"\n        else:\n\
+    \            temp += chr(i+65)\n    result.append(temp)\n    return result\n"
+  diff: "--- \n+++ \n@@ -29,14 +29,23 @@\n to a string.-If--1,-start-the-next-character-with+When+-1+appears+make\
+    \ a new-string.+string+and+add+the+following+characters+to+it.+return+a+list+of+strings.\
+    \ \"\"\""
+  node_from: *id025
+  node_to: *id023
+  prompt_from: "def convert(lst):\n    \"\"\"\n    Each character in the alphabet\
+    \ is assigned an index value starting with A =0. Take each item in the list and\
+    \ add the corresponding character to a string. If -1, start the next character\
+    \ with a new string.\n    \"\"\"\n    "
+  prompt_to: "def convert(lst):\n    \"\"\"\n    Each character in the alphabet is\
+    \ assigned an index value starting with A =0. Take each item in the list and add\
+    \ the corresponding character to a string. When -1 appears make a new string and\
+    \ add the following characters to it. return a list of strings.\n    \"\"\"\n\
+    \    "
+  state: success
+  total_attempts: 3
+  username: student51
+nodes:
+- *id026
+- *id020
+- *id018
+- *id033
+- *id030
+- *id021
+- *id037
+- *id036
+- *id017
+- *id024
+- *id031
+- *id001
+- *id038
+- !Node
+  _node_tags: null
+  id: 13
+  stderr:
+  - ''
+  - ''
+  - ''
+  stdout:
+  - '[''A'', ''B'', ''C'']
+
+    '
+  - '[''A'', ''B'', ''C'']
+
+    '
+  - '[''B'', ''B'', ''B'', ''A'', ''B'', ''C'']
+
+    '
+- *id012
+- *id039
+- *id032
+- *id013
+- *id040
+- *id002
+- *id028
+- *id014
+- *id009
+- *id041
+- *id029
+- *id019
+- *id010
+- *id005
+- *id035
+- *id023
+- *id015
+- *id007
+- *id025
+- *id006
+- *id027
+- *id042
+- *id008
+- *id004
+- *id034
+- *id016
+- *id003
+- *id011
+- *id022
+- !Node
+  _node_tags: null
+  id: 43
+  stderr:
+  - 'IndentationError: expected an indented block after ''if'' statement on line 14'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 14'
+  - 'IndentationError: expected an indented block after ''if'' statement on line 14'
+  stdout:
+  - ''
+  - ''
+  - ''
+problem: convert
+problem_clues: {}
+student_clues_tracker: {}
+student_colors: {}
+student_start_node_tags:
+  student0:
+  - 1
+  - 2
+  - 4
+  student10:
+  - 1
+  - 2
+  - 4
+  - 5
+  student17:
+  - 2
+  student18:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  student21:
+  - 2
+  - 3
+  - 4
+  - 5
+  student25:
+  - 2
+  student26:
+  - 2
+  student3:
+  - 1
+  - 2
+  student30:
+  - 2
+  - 4
+  student4:
+  - 2
+  - 4
+  student41:
+  - 2
+  - 3
+  - 4
+  student51:
+  - 2
+  - 3
+  - 4

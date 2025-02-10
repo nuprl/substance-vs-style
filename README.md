@@ -1,4 +1,10 @@
-# NLP analysis of StudentEval
+# Substance-vs-Style
+
+## Overview
+
+This repository contains the code and data for the paper ["Substance Beats Style: Why Beginning Students Fail to Code with LLMs"](https://arxiv.org/abs/2410.19792).
+
+## Running Experiments
 
 ## Substitution Experiment Workflow
 
@@ -8,7 +14,7 @@
 
    a. `mutated_dataset_builder/main.py` rule-based script that creates a preliminary tagged dataset
       [nuprl-staging/studenteval_tagged_prompts](https://huggingface.co/datasets/nuprl-staging/studenteval_tagged_prompts).
-   b. We transform this dataset to the file [tagged_prompts_for_edits](https://github.com/franlucc/studenteval_nlp/blob/main/tagged_prompts_for_edits.yaml) by running json_to_yaml.py. We manually edit this file.
+   b. We transform this dataset to the file [tagged_prompts_for_edits](https://github.com/nuprl/substance-vs-style/blob/main/for_edits/tagged_prompts_firstlast.yaml) by running `json_to_yaml.py`. We manually edit this file.
    c. We map these edits back to a new split of the tagged dataset
 
 2. We then run bash script bin/prepare_subst.sh on the validated dataset to get various splits of substituted data base on target word and replacement value. Create a directory subst_experiments where the dataset will be stored in jsonl format.
@@ -26,7 +32,12 @@
 
 ## Student Trajectories Experiment Workflow
 
-TODO
+1. Follow instructions in `eval_scripts/README.md` to get `stderr/stdout` outputs for StudentEval completions, saved as a dataset.
+
+2. Use `student_trajectories/parse_graph.py` to turn the dataset into student trajectory graphs (saved as .yaml files).
+
+3. Use `student_trajectories/alternating_automata.py` to turn the graphs into alternating automata (saved as .dot files), which
+can be rendered into viewable `.pdf` files using Graphviz. For an interactive `.html` prompt, use `student_trajectories/plot_graph.py`.
 
 ## Use of AI assistants
 
